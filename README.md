@@ -10,6 +10,25 @@ Thousands of people move to Sydney each year with no way to know what it’s act
 
 This project directly aligns with the *Community Strategic Plan: Delivering Sustainable Sydney 2030-2050*, aiming to help residents evaluate neighbourhoods based on the core community values: a city for people, a city that moves, an environmentally responsive city, a lively cultural city, and a future-focused economy.
 
+**Problem Statement**
+
+Newcomers making high-stakes decisions (international students, migrants, interstate movers) face four major challenges:
+1. **The Fragmented Information Gap:** Users must choose a suburb with no access to structured resident voices — existing tools only show rental prices or cafe locations.
+2. **Hidden Civic Data:** The City of Sydney collects rich data (representing 7,724 open-field resident survey responses), but raw data is private, and the synthesized insights are buried in static 44-page PDFs, making them completely unqueryable.
+3. **Disconnected Datasets:** Crime data (BOCSAR), walkability data, and infrastructure data exist in entirely separate portals with no tool connecting them.
+4. **Liveability is Subjective:** A young family's priorities differ wildly from an international student's, but current tools offer the exact same generic results for all.
+
+**The Solution: An AI-Driven Spatial Liveability Engine** 
+
+To solve this, CivicSense AI has built a conversational and geospatial application that features an interactive suburb heatmap, a conversational chat app, and a side-by-side source comparison. 
+
+To elevate this project beyond a standard dashboard, our team has designed **five interactive features**:
+1. **Conversational Map Control (AI Spatial Interface):** The user doesn't just chat with a text assistant; the AI actively controls the map. Using LangChain, when a user asks for "safe areas with parks", the LLM outputs a conversational response alongside a structured JSON state that dynamically updates the Leaflet map's heatmaps and filters in real-time.
+2. **Personalised Liveability Profiles:** Delivering on the promise of a "personalised liveability map for everyone", users can create accounts via Supabase and save their personal dimension weights (e.g., 80% Transport, 20% Nightlife). The system recalculates all suburb scores based on these exact preferences.
+3. **"Bring Your Own Context" (Custom Spatial Anchors):** Users can input custom vector points (e.g., their exact university campus or workplace). The system evaluates suburbs based on their spatial relationship to the user's daily commute.
+4. **Custom RAG for Rental Ads:** Users can upload a PDF of a rental listing they are considering. The local RAG system cross-references the specific address with Reddit sentiment and BOCSAR crime stats to provide highly contextualised advice.
+5. **Side-by-Side Source Comparison:** A unique UI panel that explicitly compares 
+
 ---
 
 ## ✨ Key Features

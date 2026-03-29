@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    @apply text-slateText;
+    background: radial-gradient(circle at 42% 18%, rgba(252, 211, 170, 0.2), transparent 26%),
+      radial-gradient(circle at 58% 58%, rgba(244, 114, 182, 0.09), transparent 24%),
+      linear-gradient(180deg, #f8f8fb 0%, #f1f2f7 100%);
+  }
+}
+
+@layer utilities {
+  .liveability-map .leaflet-top.leaflet-right {
+    right: 10px;
+    top: 106px;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.3s ease;
+  }
+
+  .animate-typing-dot {
+    animation: typing-dot 1.2s infinite;
+  }
+
+  .animate-live-pulse {
+    animation: live-pulse 2s infinite;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing-dot {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
