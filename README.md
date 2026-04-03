@@ -1,162 +1,101 @@
-# 🌆 Sydney Liveability AI
-**An AI-Driven Spatial Liveability Engine**
+# Sydney Liveability AI
+An AI-assisted, map-based web application to compare Sydney suburbs using civic data, crime statistics, and resident discourse.
 
-[![Next.js](https://img.shields.io/badge/Frontend-Next.js-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
-[![ChromaDB](https://img.shields.io/badge/VectorStore-ChromaDB-FF6F00?style=flat)](https://www.trychroma.com/)
-[![LangChain](https://img.shields.io/badge/RAG-LangChain-121212?style=flat)](https://langchain.com/)
+## Table of Contents
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Branch Convention](#branch-convention)
+- [Team](#team)
 
-Thousands of people move to Sydney each year with no way to know what it's actually like to live in each suburb. **Sydney Liveability AI** bridges this gap by merging civic infrastructure data, crime statistics, and authentic community voices into an interactive, conversational map interface.
+## Overview
+- Scope: ANLP 36118 project (UTS), Autumn 2026.
+- MVP suburbs: Newtown, Glebe, Redfern, Surry Hills, Haymarket.
+- Current backend status: boilerplate endpoints are available at `/` and `/health`.
 
-This project directly aligns with the *Community Strategic Plan: Delivering Sustainable Sydney 2030-2050*, aiming to help residents evaluate neighbourhoods based on the core community values: a city for people, a city that moves, an environmentally responsive city, a lively cultural city, and a future-focused economy.
-
----
-
-## 🧭 Problem Statement
-
-Newcomers making high-stakes decisions (international students, migrants, interstate movers) face four major challenges:
-
-1. **The Fragmented Information Gap:** Users must choose a suburb with no access to structured resident voices — existing tools only show rental prices or cafe locations.
-2. **Hidden Civic Data:** The City of Sydney collects rich data (representing 7,724 open-field resident survey responses), but raw data is private, and the synthesised insights are buried in static 44-page PDFs, making them completely unsearchable.
-3. **Disconnected Datasets:** Crime data (BOCSAR), walkability data, and infrastructure data exist in entirely separate portals with no tool connecting them.
-4. **Liveability is Subjective:** A young family's priorities differ wildly from an international student's, but current tools offer the exact same generic results for all.
-
----
-
-## ✨ Key Features
-
-1. **Conversational Map Control (AI Spatial Interface):** Users don't just chat with text — the AI actively controls the map. Using LangChain and Claude, queries like *"show me safe areas with parks"* generate a conversational response and a JSON state that dynamically updates Leaflet map filters and heatmaps.
-2. **Personalised Liveability Profiles:** Integrated with Supabase Auth, users can save custom dimension weights (e.g., 80% Transport, 20% Nightlife) to instantly recalculate suburb scores based on their unique priorities.
-3. **Bring Your Own Context:** Users weight liveability dimensions, upload rental PDFs for address-level advice, or drop a pin for their workplace to re-rank suburbs by commuting proximity.
-4. **Custom RAG for Rental Ads:** Users can upload a PDF of a rental listing. The RAG system cross-references the exact address with local Reddit sentiment and BOCSAR crime stats.
-5. **Side-by-Side Source Comparison:** An explicit UI panel that contrasts official City of Sydney report themes with organic Reddit resident discourse for the exact same suburb.
-
----
-
-## 🗂️ Repository Structure
-
-This repository is structured as a monorepo to encompass the entire end-to-end NLP pipeline — from data acquisition and exploratory model training to the final full-stack web application.
+## Repository Structure
 
 ```text
 sydney-liveability-ai/
 │
-├── data_extraction/              # Scripts for acquiring and cleaning raw data
-│   ├── extract_reddit.py         # PRAW script for r/sydney scraping
-│   ├── extract_arcgis.py         # City of Sydney ArcGIS open data download + processing
-│   ├── parse_pdf.py              # pypdf script for Community Insights Report
-│   └── process_bocsar.py         # Script to clean and format BOCSAR crime CSVs
+├── data_extraction/              # Data acquisition and preprocessing scripts
+│   ├── extract_reddit.py
+│   ├── extract_arcgis.py
+│   ├── parse_pdf.py
+│   └── process_bocsar.py
 │
-├── notebooks/                    # Jupyter notebooks for EDA and Model Training
-│   ├── 01_eda_and_cleaning.ipynb # Initial data exploration
-│   ├── 02_traditional_nlp.ipynb  # TF-IDF keyword extraction & VADER sentiment
-│   ├── 03_topic_modeling.ipynb   # Gensim LDA training and topic discovery
-│   └── 04_modern_nlp.ipynb       # MiniLM embeddings and RAG pipeline testing
+├── notebooks/                    # EDA and model training only
+│   ├── 01_eda_and_cleaning.ipynb
+│   ├── 02_traditional_nlp.ipynb
+│   ├── 03_topic_modeling.ipynb
+│   ├── 04_modern_nlp.ipynb
+│   └── requirements.txt
 │
-├── backend/                      # FastAPI Application (Production API)
-│   ├── main.py                   # FastAPI server entry point
-│   ├── api/                      # Endpoints (/api/chat · /api/civic · /api/comparison · /api/rental)
-│   ├── core/                     # LangChain orchestration & ChromaDB logic
-│   └── requirements.txt          # Python dependencies for the backend
+├── backend/                      # FastAPI production backend
+│   ├── main.py
+│   ├── api/
+│   ├── core/
+│   └── requirements.txt
 │
-├── frontend/                     # Next.js Application (User Interface)
-│   ├── src/                      # React components, Turf.js logic, Leaflet maps
-│   ├── public/                   # Static assets
-│   ├── package.json              # Node.js dependencies
-│   └── tailwind.config.ts        # UI styling configuration
+├── frontend/                     # Next.js frontend
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── tailwind.config.ts
 │
-├── data/                         # Local dataset storage (Ignored in Git)
+├── data/                         # Local datasets (ignored in Git)
 │   ├── raw/
-│   │   ├── bocsar/               # Raw BOCSAR Excel files
-│   │   ├── arcgis/               # Downloaded City of Sydney ArcGIS datasets
-│   │   └── reddit/               # Raw Reddit JSON files per suburb
 │   └── processed/
-│       ├── bocsar_clean.csv
-│       ├── arcgis/               # Cleaned GeoJSON files per dataset
-│       ├── community_report.json
-│       ├── vader_scores.json
-│       ├── lda_topic_mapping.json
-│       ├── suburbs.geojson       # ⚠️ Committed to Git — static suburb boundary polygons
-│       └── chromadb/             # ChromaDB vector store (persistent)
+│       └── suburbs.geojson       # Committed static geometry
 │
-├── AGENTS.md                     # AI assistant context and coding rules for the team
-├── .gitignore                    # Ensures large data files & API keys are not committed
-└── README.md                     # Project documentation
+├── AGENTS.md
+├── .gitignore
+└── README.md
 ```
 
----
+## Tech Stack
+- Frontend: Next.js, Tailwind CSS, Leaflet.js, Turf.js, Framer Motion.
+- Backend: FastAPI, uvicorn, Supabase.
+- Backend NLP: LangChain, ChromaDB, Claude API (`claude-sonnet-4-20250514`), sentence-transformers, pypdf, PRAW, spaCy, geopandas.
+- Notebooks NLP/EDA: NLTK, Gensim, scikit-learn, VADER, TextBlob, pyLDAvis, Matplotlib, Seaborn.
 
-## 📊 Verified Data Pillars
-
-- **Community Insights Report 2024:** The City of Sydney analysed over 13,500 pieces of community feedback and 7,724 open-field survey responses. Our pipeline extracts the official thematic findings and direct resident quotes across the 5 MVP suburbs (Newtown · Glebe · Redfern · Surry Hills · Haymarket).
-- **Reddit PRAW:** Unstructured social text scraped from `r/sydney`, filtered by suburb tags to capture authentic, unfiltered neighbourhood sentiment.
-- **BOCSAR Crime Stats:** SA4 area-level criminal incident data. Our 5 MVP suburbs map to two SA4 areas — `Inner West` (Newtown · Glebe) and `City and Inner South` (Redfern · Surry Hills · Haymarket). This is a known data granularity limitation documented in the evaluation.
-- **City of Sydney ArcGIS:** Point-of-interest datasets downloaded from the [City of Sydney Data Hub](https://data-cityofsydney.opendata.arcgis.com), including Sports Facilities and additional infrastructure datasets selected for suburb-level coverage. See `extract_arcgis.py` for the confirmed dataset list.
-
----
-
-## 🧠 NLP Architecture: Traditional vs. Modern
-
-In alignment with the ANLP assessment framework, this project explicitly compares the static outputs of traditional NLP pipelines against the deep contextual understanding of modern Transformer-based LLMs and RAG architectures:
-
-| Technique | Type | Role in Project |
-| :--- | :--- | :--- |
-| **TF-IDF Keyword Extraction** | Traditional | Identifies top terms per suburb by counting word co-occurrences (e.g., *transport, rent, noise*). |
-| **LDA Topic Modelling (Gensim)** | Traditional | Unsupervised discovery of overarching themes (e.g., identifying "Transport" as dominant). |
-| **VADER / TextBlob** | Lexicon | Fast baseline sentiment scoring per suburb and topic. |
-| **Sentence Embeddings (MiniLM)** | Modern | Semantic similarity for vectorising PDF quotes and Reddit text into ChromaDB, capturing context that traditional n-grams miss. |
-| **LLM (Claude) + RAG** | Modern | Generates synthesised, cited natural language answers that dynamically control the UI. |
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** Next.js · Tailwind CSS · Leaflet.js · Turf.js · Framer Motion · Recharts/D3
-- **Backend:** Python FastAPI · Supabase (PostgreSQL + Auth) · uvicorn
-- **Backend (production):** LangChain · ChromaDB · Claude API (`claude-sonnet-4-20250514`) · sentence-transformers (`all-MiniLM-L6-v2`) · pypdf · PRAW · spaCy · geopandas
-- **Notebooks (EDA + training):** NLTK · Gensim · scikit-learn · VADER · TextBlob · pyLDAvis · Matplotlib · Seaborn
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-
 - Python 3.10+
 - Node.js 18+
-- Supabase account and API keys
+- Supabase account
 - Anthropic API Key
 
 ### 1. Backend Setup
-
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Backend will run at `http://127.0.0.1:8000`.
+Backend URL: `http://127.0.0.1:8000`
 
-Quick verification endpoints:
-
+Quick checks:
 ```bash
 curl http://127.0.0.1:8000/
 curl http://127.0.0.1:8000/health
 ```
 
 ### 2. Frontend Setup
-
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-Frontend will run at `http://localhost:3000` (or the next available port shown in the terminal if `3000` is busy).
+Frontend URL: `http://localhost:3000` (or the port shown in terminal).
 
 ### 3. Notebooks Setup
-
 ```bash
 cd notebooks
 python -m venv venv-notebooks
@@ -165,41 +104,50 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Jupyter will print a local access URL in the terminal (usually `http://localhost:8888/tree`) with a token parameter. Open that exact URL in your browser.
+Open the URL printed by Jupyter (commonly `http://localhost:8888/tree` with token).
 
-To run notebooks directly in VS Code instead of the browser:
+VS Code option:
+1. Install extensions: Python, Jupyter.
+2. Open any `.ipynb` in `notebooks/`.
+3. Select kernel from `notebooks/venv-notebooks`.
 
-1. Install the VS Code extensions `Python` and `Jupyter`.
-2. Open any `.ipynb` file from `notebooks/`.
-3. Click **Select Kernel** and choose the Python interpreter from `notebooks/venv-notebooks`.
-4. Run cells with the play button or **Run All**.
+Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into `backend/venv`.
 
-The backend and notebooks use separate virtual environments and separate `requirements.txt` files. The backend environment is for production only and must not include notebook dependencies. The notebooks environment is for EDA and model training only and is never deployed.
-
-### Environment Variables Setup
-
-Copy the example environment files from the repository root and create a dedicated `.env` file per Python environment:
+## Environment Variables
+Create environment files from templates at repository root:
 
 ```bash
-# From repository root
 cp .env.backend.example backend/.env
 cp .env.example notebooks/.env
 ```
 
-If you are on Windows (PowerShell):
+Windows PowerShell:
 
 ```powershell
 Copy-Item .env.backend.example backend/.env
 Copy-Item .env.example notebooks/.env
 ```
 
-After copying, open both files and fill in the real keys and URLs.
+Then fill values in both files.
 
----
+## Branch Convention
+- Direct commits, pushes, or changes to `main` are prohibited.
+- Each student must work on a personal branch prefixed with their name.
 
-## 👥 The Team (Group 3)
+Workflow:
+```bash
+git checkout main
+git pull origin main
+git checkout -b yourname/short-task-name
+git add .
+git commit -m "feat: clear summary of change"
+git push -u origin yourname/short-task-name
+```
 
-Built collaboratively for **ANLP 36118 (Autumn 2026) — Master of Data Science and Innovation, UTS**.
+Open a Pull Request from your branch to the team integration branch.
+
+## Team
+Group 3 — ANLP 36118 (UTS)
 
 - Ying-Kai Liao
 - Padmasri Srinivas
@@ -208,4 +156,8 @@ Built collaboratively for **ANLP 36118 (Autumn 2026) — Master of Data Science 
 - Juan David Rodriguez
 - Luis Gerardo Robinson
 
-> **Disclaimer:** This project is submitted as an academic requirement for the University of Technology Sydney (UTS).
+---
+
+Subject: ANLP 36118 | Master of Data Science and Innovation | University of Technology Sydney (UTS)
+
+
