@@ -1,21 +1,26 @@
 # Sydney Liveability AI
+[![Frontend: Next.js](https://img.shields.io/badge/Frontend-Next.js-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![Backend: FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Vector Store: ChromaDB](https://img.shields.io/badge/VectorStore-ChromaDB-FF6F00?style=flat)](https://www.trychroma.com/)
+[![RAG: LangChain](https://img.shields.io/badge/RAG-LangChain-121212?style=flat)](https://langchain.com/)
+
 An AI-assisted, map-based web application to compare Sydney suburbs using civic data, crime statistics, and resident discourse.
 
-## Table of Contents
-- [Overview](#overview)
-- [Repository Structure](#repository-structure)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Branch Convention](#branch-convention)
-- [Team](#team)
+## 📚 Table of Contents
+- [🧭 Overview](#-overview)
+- [🗂️ Repository Structure](#-repository-structure)
+- [🛠️ Tech Stack](#-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [🔐 Environment Variables](#-environment-variables)
+- [🌿 Branch Convention](#-branch-convention)
+- [👥 Team](#-team)
 
-## Overview
+## 🧭 Overview
 - Scope: ANLP 36118 project (UTS), Autumn 2026.
 - MVP suburbs: Newtown, Glebe, Redfern, Surry Hills, Haymarket.
 - Current backend status: boilerplate endpoints are available at `/` and `/health`.
 
-## Repository Structure
+## 🗂️ Repository Structure
 
 ```text
 sydney-liveability-ai/
@@ -55,21 +60,21 @@ sydney-liveability-ai/
 └── README.md
 ```
 
-## Tech Stack
+## 🛠️ Tech Stack
 - Frontend: Next.js, Tailwind CSS, Leaflet.js, Turf.js, Framer Motion.
 - Backend: FastAPI, uvicorn, Supabase.
 - Backend NLP: LangChain, ChromaDB, Claude API (`claude-sonnet-4-20250514`), sentence-transformers, pypdf, PRAW, spaCy, geopandas.
 - Notebooks NLP/EDA: NLTK, Gensim, scikit-learn, VADER, TextBlob, pyLDAvis, Matplotlib, Seaborn.
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 - Python 3.10+
 - Node.js 18+
 - Supabase account
 - Anthropic API Key
 
-### 1. Backend Setup
+### 1. 🧩 Backend Setup
 ```bash
 cd backend
 python -m venv venv
@@ -86,7 +91,7 @@ curl http://127.0.0.1:8000/
 curl http://127.0.0.1:8000/health
 ```
 
-### 2. Frontend Setup
+### 2. 🎨 Frontend Setup
 ```bash
 cd frontend
 npm install
@@ -95,7 +100,7 @@ npm run dev
 
 Frontend URL: `http://localhost:3000` (or the port shown in terminal).
 
-### 3. Notebooks Setup
+### 3. 📓 Notebooks Setup
 ```bash
 cd notebooks
 python -m venv venv-notebooks
@@ -113,7 +118,7 @@ VS Code option:
 
 Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into `backend/venv`.
 
-## Environment Variables
+## 🔐 Environment Variables
 Create environment files from templates at repository root:
 
 ```bash
@@ -130,23 +135,53 @@ Copy-Item .env.example notebooks/.env
 
 Then fill values in both files.
 
-## Branch Convention
+## 🌿 Branch Convention
 - Direct commits, pushes, or changes to `main` are prohibited.
 - Each student must work on a personal branch prefixed with their name.
 
-Workflow:
+Detailed workflow for each student:
+
+1. Update your local `main` before creating a new branch:
+
 ```bash
 git checkout main
 git pull origin main
+```
+
+2. Create a personal branch with your name as prefix:
+
+```bash
 git checkout -b yourname/short-task-name
+```
+
+Examples:
+
+- `nelkit/backend-boilerplate`
+- `juan/data-extraction`
+- `yingkai/notebook-cleaning`
+
+3. Commit your work on your personal branch only:
+
+```bash
 git add .
 git commit -m "feat: clear summary of change"
+```
+
+4. Push your branch to remote:
+
+```bash
 git push -u origin yourname/short-task-name
 ```
 
-Open a Pull Request from your branch to the team integration branch.
+5. Open a Pull Request from your branch to the team integration branch.
 
-## Team
+Important:
+
+- Never push directly to `main`.
+- Keep working in your personal branch for all contributions.
+- Merge only through Pull Request review.
+
+## 👥 Team
 Group 3 — ANLP 36118 (UTS)
 
 - Ying-Kai Liao
