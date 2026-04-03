@@ -37,11 +37,13 @@ sydney-liveability-ai/
 │   ├── 01_eda_and_cleaning.ipynb
 │   ├── 02_traditional_nlp.ipynb
 │   ├── 03_topic_modeling.ipynb
-│   └── 04_modern_nlp.ipynb
+│   ├── 04_modern_nlp.ipynb
+│   └── requirements.txt
 ├── backend/                # FastAPI application — production code only
 │   ├── main.py
 │   ├── api/
-│   └── core/
+│   ├── core/
+│   └── requirements.txt
 ├── frontend/               # Next.js application
 │   └── src/
 ├── data/                   # Local only — never committed to Git
@@ -52,15 +54,54 @@ sydney-liveability-ai/
 
 ---
 
+## Environment setup
+
+Set up and run backend and notebooks with separate virtual environments.
+
+### Backend environment
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+### Notebooks environment
+
+```bash
+cd notebooks
+python -m venv venv-notebooks
+source venv-notebooks/bin/activate  # Windows: venv-notebooks\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook
+```
+
+The two virtual environments must be kept separate — never install notebook dependencies into the backend venv or the production deploy will break.
+
+---
+
+## Current backend bootstrap
+
+The backend has a minimal FastAPI boilerplate to validate local setup:
+
+- `GET /` returns project metadata and upcoming endpoints.
+- `GET /health` returns `{ "status": "ok" }`.
+
+Keep these routes available while `/api/civic` and `/api/chat` are being built.
+
+---
+
 ## Tech stack
 
 Do not introduce new libraries or frameworks without team agreement. The approved stack is:
 
 **Frontend:** Next.js · Tailwind CSS · Leaflet.js · Turf.js · Framer Motion · lucide-react
 
-**Backend:** Python FastAPI · Supabase (PostgreSQL + Auth) · uvicorn
+**Backend (production):** fastapi · uvicorn · langchain · langchain-anthropic · chromadb · sentence-transformers · pypdf · praw · supabase · python-dotenv · pandas · geopandas · shapely · requests
 
-**AI / NLP:** LangChain · ChromaDB · Anthropic Claude API (`claude-sonnet-4-20250514`) · sentence-transformers (`all-MiniLM-L6-v2`) · Gensim · NLTK · scikit-learn · pypdf · PRAW
+**Notebooks (EDA + training):** fastapi · uvicorn · langchain · langchain-anthropic · chromadb · sentence-transformers · pypdf · praw · supabase · python-dotenv · pandas · geopandas · shapely · requests · nltk · gensim · scikit-learn · spacy · textblob · vaderSentiment · jupyter · matplotlib · seaborn · plotly · wordcloud · pyLDAvis · openpyxl
 
 ---
 
@@ -185,7 +226,7 @@ These response shapes are fixed. Do not change them without updating both the ba
 
 ## Environment variables
 
-All required variables must be present in `.env.example`. Never hardcode any of these values in source code:
+All required variables must be present in the environment templates (`.env.backend.example` for backend and `.env.example` for notebooks/frontend). Never hardcode any of these values in source code:
 
 ```
 ANTHROPIC_API_KEY=
@@ -245,7 +286,7 @@ The current frontend uses static data from `data.ts` and `utils.ts`. The task is
 
 ## What still needs to be built
 
-Everything in `backend/` · `data_extraction/` · and `notebooks/` is empty and needs to be implemented. See the Notion board for the full task list with priorities and dependencies.
+Most of `backend/` · `data_extraction/` · and `notebooks/` still needs implementation. A minimal backend boilerplate is already in place (`/` and `/health`). See the Notion board for the full task list with priorities and dependencies.
 
 ---
 

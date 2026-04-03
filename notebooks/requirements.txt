@@ -12,3 +12,16 @@ pandas
 geopandas
 shapely
 requests
+nltk
+gensim
+scikit-learn
+spacy
+textblob
+vaderSentiment
+jupyter
+matplotlib
+seaborn
+plotly
+wordcloud
+pyLDAvis
+openpyxl

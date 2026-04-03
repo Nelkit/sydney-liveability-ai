@@ -112,7 +112,8 @@ In alignment with the ANLP assessment framework, this project explicitly compare
 
 - **Frontend:** Next.js · Tailwind CSS · Leaflet.js · Turf.js · Framer Motion · Recharts/D3
 - **Backend:** Python FastAPI · Supabase (PostgreSQL + Auth) · uvicorn
-- **AI / NLP Pipeline:** LangChain · ChromaDB · Claude API (`claude-sonnet-4-20250514`) · sentence-transformers (`all-MiniLM-L6-v2`) · pypdf · spaCy · NLTK · Gensim · scikit-learn · PRAW
+- **Backend (production):** LangChain · ChromaDB · Claude API (`claude-sonnet-4-20250514`) · sentence-transformers (`all-MiniLM-L6-v2`) · pypdf · PRAW · spaCy · geopandas
+- **Notebooks (EDA + training):** NLTK · Gensim · scikit-learn · VADER · TextBlob · pyLDAvis · Matplotlib · Seaborn
 
 ---
 
@@ -123,7 +124,7 @@ In alignment with the ANLP assessment framework, this project explicitly compare
 - Python 3.10+
 - Node.js 18+
 - Supabase account and API keys
-- Anthropic API key
+- Anthropic API Key
 
 ### 1. Backend Setup
 
@@ -135,6 +136,15 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+Backend will run at `http://127.0.0.1:8000`.
+
+Quick verification endpoints:
+
+```bash
+curl http://127.0.0.1:8000/
+curl http://127.0.0.1:8000/health
+```
+
 ### 2. Frontend Setup
 
 ```bash
@@ -143,7 +153,47 @@ npm install
 npm run dev
 ```
 
-Create a `.env.local` file in both `backend/` and `frontend/` using `.env.example` as the template.
+Frontend will run at `http://localhost:3000` (or the next available port shown in the terminal if `3000` is busy).
+
+### 3. Notebooks Setup
+
+```bash
+cd notebooks
+python -m venv venv-notebooks
+source venv-notebooks/bin/activate  # Windows: venv-notebooks\Scripts\activate
+pip install -r requirements.txt
+jupyter notebook
+```
+
+Jupyter will print a local access URL in the terminal (usually `http://localhost:8888/tree`) with a token parameter. Open that exact URL in your browser.
+
+To run notebooks directly in VS Code instead of the browser:
+
+1. Install the VS Code extensions `Python` and `Jupyter`.
+2. Open any `.ipynb` file from `notebooks/`.
+3. Click **Select Kernel** and choose the Python interpreter from `notebooks/venv-notebooks`.
+4. Run cells with the play button or **Run All**.
+
+The backend and notebooks use separate virtual environments and separate `requirements.txt` files. The backend environment is for production only and must not include notebook dependencies. The notebooks environment is for EDA and model training only and is never deployed.
+
+### Environment Variables Setup
+
+Copy the example environment files from the repository root and create a dedicated `.env` file per Python environment:
+
+```bash
+# From repository root
+cp .env.backend.example backend/.env
+cp .env.example notebooks/.env
+```
+
+If you are on Windows (PowerShell):
+
+```powershell
+Copy-Item .env.backend.example backend/.env
+Copy-Item .env.example notebooks/.env
+```
+
+After copying, open both files and fill in the real keys and URLs.
 
 ---
 
