@@ -57,8 +57,6 @@ out/
 dist/
 
 # Data (local storage - ignored in Git)
-data/raw/
-data/processed/
 
 # Logs
 logs/

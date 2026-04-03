@@ -3,7 +3,7 @@
 import "leaflet/dist/leaflet.css";
 
 import L from "leaflet";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Layers3, MapPinned, Shield } from "lucide-react";
 import { Suburb, Weights } from "./types";
 import { scoreSuburb } from "./utils";
@@ -103,6 +103,17 @@ function layerValue(suburb: Suburb, layer: string, weights: Weights) {
   return suburb.scoreBase.lifestyle;
 }
 
+function normalizeSuburbName(name: string) {
+  return name.replace(" (NSW)", "").trim().toLowerCase();
+}
+
+function getFeatureSuburbName(feature: GeoJSON.Feature) {
+  const props = feature.properties as Record<string, unknown> | null;
+  const rawName = props?.SAL_NAME21;
+  if (typeof rawName !== "string") return null;
+  return normalizeSuburbName(rawName);
+}
+
 export function MapPanel({
   suburbs,
   ranked,
@@ -115,6 +126,51 @@ export function MapPanel({
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<L.Map | null>(null);
   const overlaysRef = useRef<L.LayerGroup | null>(null);
+  const [suburbsGeoJson, setSuburbsGeoJson] = useState<GeoJSON.FeatureCollection | null>(null);
+  const [geoJsonLoaded, setGeoJsonLoaded] = useState(false);
+  const hasFittedBoundsRef = useRef(false);
+
+  const suburbsByName = useMemo(() => {
+    const byName = new Map<string, Suburb>();
+    suburbs.forEach((suburb) => byName.set(normalizeSuburbName(suburb.name), suburb));
+    return byName;
+  }, [suburbs]);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadGeoJson() {
+      try {
+        const urls = ["/suburbs.geojson", "/layers/suburbs.geojson"];
+        let data: GeoJSON.FeatureCollection | null = null;
+
+        for (const url of urls) {
+          const response = await fetch(url);
+          if (!response.ok) continue;
+          data = (await response.json()) as GeoJSON.FeatureCollection;
+          break;
+        }
+
+        if (!data) throw new Error("Unable to load suburbs layer");
+
+        if (!cancelled) {
+          setSuburbsGeoJson(data);
+          setGeoJsonLoaded(true);
+        }
+      } catch {
+        if (!cancelled) {
+          setSuburbsGeoJson(null);
+          setGeoJsonLoaded(true);
+        }
+      }
+    }
+
+    loadGeoJson();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     const container = mapContainerRef.current;
@@ -147,24 +203,11 @@ export function MapPanel({
       opacity: 0.75
     }).addTo(map);
 
-    if (suburbs.length > 0) {
-      const bounds = L.latLngBounds([] as L.LatLngTuple[]);
-      suburbs.forEach((suburb) => {
-        (suburb.polygon as L.LatLngTuple[]).forEach((point) => bounds.extend(point));
-      });
-
-      if (bounds.isValid()) {
-        map.fitBounds(bounds.pad(0.08), {
-          maxZoom: 15,
-          animate: false
-        });
-      }
-    }
-
     const overlayGroup = L.layerGroup().addTo(map);
 
     mapRef.current = map;
     overlaysRef.current = overlayGroup;
+    hasFittedBoundsRef.current = false;
 
     return () => {
       overlayGroup.clearLayers();
@@ -172,33 +215,100 @@ export function MapPanel({
       mapRef.current = null;
       overlaysRef.current = null;
     };
-  }, [suburbs]);
+  }, []);
 
   useEffect(() => {
     const overlayGroup = overlaysRef.current;
-    if (!overlayGroup) return;
+    const map = mapRef.current;
+    if (!overlayGroup || !map) return;
+    if (!geoJsonLoaded) return;
 
     overlayGroup.clearLayers();
+
+    if (suburbsGeoJson) {
+      const renderedLayer = L.geoJSON(suburbsGeoJson, {
+        filter: (feature) => {
+          if (!feature) return false;
+          const featureName = getFeatureSuburbName(feature);
+          return Boolean(featureName && suburbsByName.has(featureName));
+        },
+        style: (feature) => {
+          if (!feature) return {};
+          const featureName = getFeatureSuburbName(feature);
+          if (!featureName) return {};
+
+          const suburb = suburbsByName.get(featureName);
+          if (!suburb) return {};
+
+          const value = layerValue(suburb, layer, weights);
+          const heatColor = scoreToHeatColor(value);
+          const opacity = selectedSuburbId && selectedSuburbId !== suburb.id ? 0.15 : 0.52;
+          const isSelected = selectedSuburbId === suburb.id;
+
+          return {
+            color: isSelected ? "#f8fafc" : heatColor,
+            fillColor: heatColor,
+            fillOpacity: opacity,
+            weight: isSelected ? 2.2 : 0.8
+          };
+        },
+        onEachFeature: (feature, layerItem) => {
+          const featureName = getFeatureSuburbName(feature);
+          if (!featureName) return;
+
+          const suburb = suburbsByName.get(featureName);
+          if (!suburb) return;
+
+          layerItem.on("click", () => onSelectSuburb(suburb.name));
+          if (selectedSuburbId === suburb.id) {
+            if ("bringToFront" in layerItem && typeof layerItem.bringToFront === "function") {
+              layerItem.bringToFront();
+            }
+          }
+        }
+      });
+
+      renderedLayer.addTo(overlayGroup);
+
+      if (!hasFittedBoundsRef.current) {
+        const bounds = renderedLayer.getBounds();
+        if (bounds.isValid()) {
+          map.fitBounds(bounds.pad(0.08), {
+            maxZoom: 15,
+            animate: false
+          });
+          hasFittedBoundsRef.current = true;
+        }
+      }
+    } else {
+      // Fallback to legacy polygons only if GeoJSON is unavailable.
+      suburbs.forEach((suburb) => {
+        const value = layerValue(suburb, layer, weights);
+        const heatColor = scoreToHeatColor(value);
+        const opacity = selectedSuburbId && selectedSuburbId !== suburb.id ? 0.15 : 0.52;
+        const isSelected = selectedSuburbId === suburb.id;
+        const smoothPolygon = smoothClosedPolygon(suburb.polygon as L.LatLngTuple[], 9);
+
+        const polygon = L.polygon(smoothPolygon as L.LatLngExpression[], {
+          color: isSelected ? "#f8fafc" : heatColor,
+          fillColor: heatColor,
+          fillOpacity: opacity,
+          weight: isSelected ? 2.2 : 0.8,
+          smoothFactor: 0,
+          lineJoin: "round",
+          lineCap: "round"
+        });
+
+        polygon.on("click", () => onSelectSuburb(suburb.name));
+        polygon.addTo(overlayGroup);
+      });
+    }
 
     suburbs.forEach((suburb) => {
       const value = layerValue(suburb, layer, weights);
       const heatColor = scoreToHeatColor(value);
       const opacity = selectedSuburbId && selectedSuburbId !== suburb.id ? 0.15 : 0.52;
       const isSelected = selectedSuburbId === suburb.id;
-      const smoothPolygon = smoothClosedPolygon(suburb.polygon as L.LatLngTuple[], 9);
-
-      const polygon = L.polygon(smoothPolygon as L.LatLngExpression[], {
-        color: isSelected ? "#f8fafc" : heatColor,
-        fillColor: heatColor,
-        fillOpacity: opacity,
-        weight: isSelected ? 2.2 : 0.8,
-        smoothFactor: 0,
-        lineJoin: "round",
-        lineCap: "round"
-      });
-
-      polygon.on("click", () => onSelectSuburb(suburb.name));
-      polygon.addTo(overlayGroup);
 
       const circle = L.circle(suburb.center as L.LatLngExpression, {
         radius: 260 + value * 6,
@@ -239,12 +349,8 @@ export function MapPanel({
       });
 
       label.addTo(overlayGroup);
-
-      if (isSelected) {
-        polygon.bringToFront();
-      }
     });
-  }, [suburbs, layer, weights, selectedSuburbId, onSelectSuburb]);
+  }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, layer, weights, selectedSuburbId, onSelectSuburb]);
 
   return (
     <section className="relative h-full overflow-hidden bg-[radial-gradient(circle_at_30%_18%,rgba(254,215,170,0.3),transparent_28%),linear-gradient(180deg,#eff2f8,#e9edf6)]">
