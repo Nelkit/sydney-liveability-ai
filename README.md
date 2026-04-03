@@ -67,7 +67,6 @@ sydney-liveability-ai/
 - Notebooks NLP/EDA: NLTK, Gensim, scikit-learn, VADER, TextBlob, pyLDAvis, Matplotlib, Seaborn.
 
 ## 🚀 Getting Started
-
 ### ✅ Prerequisites
 - Python 3.10+
 - Node.js 18+
@@ -194,5 +193,10 @@ Group 3 — ANLP 36118 (UTS)
 ---
 
 Subject: ANLP 36118 | Master of Data Science and Innovation | University of Technology Sydney (UTS)
+
+## 🔗 Links of Interest
+
+- Poster: https://www.figma.com/design/eBDd4sDvIbWX61pE25RYkK/Sydney-Liveability-AI%E2%80%94Poster?node-id=1-2&t=LRnrogOncMyVH9Si-1
+- Project Planning: https://www.notion.so/nelkitdev/Sydney-Liveability-AI-Project-3370093b498b806c9b28cd35348e208e?source=copy_link
 
 
