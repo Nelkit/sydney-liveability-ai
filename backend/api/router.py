@@ -1,7 +1,10 @@
 from fastapi import APIRouter
 
+from api.civic import router as civic_router
+
 
 router = APIRouter(tags=["system"])
+router.include_router(civic_router)
 
 
 @router.get("/")
