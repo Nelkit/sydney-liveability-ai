@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+from api.reddit_router import router as reddit_router
 from api.router import router as system_router
 
 
@@ -13,3 +14,4 @@ app = FastAPI(
 )
 
 app.include_router(system_router)
+app.include_router(reddit_router)

@@ -12,3 +12,7 @@ pandas
 geopandas
 shapely
 requests
+transformers
+torch
+vaderSentiment
+textblob
