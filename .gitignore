@@ -65,3 +65,7 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+/openspec
+.claude
+.codex
