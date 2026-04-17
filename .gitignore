@@ -55,6 +55,8 @@ yarn-error.log
 out/
 .nuxt
 dist/
+# TypeScript incremental build cache
+*.tsbuildinfo
 
 # Data (local storage - ignored in Git)
 

@@ -256,11 +256,16 @@ export default function HomePage() {
     setSelectedSuburbId(suburb.id);
 
     const scored = scoreSuburb(suburb, weights);
+    const analysisHref = `/suburb/${encodeURIComponent(suburb.name)}`;
     setChatMessages((prev) => [
       ...prev,
       {
         role: "ai",
-        html: `You selected <strong>${suburb.name}</strong>. Current score: <strong style='color:${suburb.color}'>${scored}/100</strong>.`,
+        html:
+          `You selected <strong>${suburb.name}</strong>. Current score: ` +
+          `<strong style='color:${suburb.color}'>${scored}/100</strong>.<br /><br />` +
+          `<a href='${analysisHref}' class='inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 hover:border-slate-500'>` +
+          `Open Reddit NLP analysis →</a>`,
         source: "BOCSAR - City of Sydney ArcGIS - Community Insights 2024 - Reddit"
       }
     ]);
