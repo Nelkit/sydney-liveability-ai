@@ -147,7 +147,65 @@ def fetch_suburb_posts(
 
 
 def _suburb_slug(name: str) -> str:
-    return name.lower().replace(" ", "_")
+    return name.lower().replace(" ", "_").replace("-", "_")
+
+
+# ---------------------------------------------------------------------------
+# Local data loading (Arctic Shift pre-processed files)
+# ---------------------------------------------------------------------------
+
+def load_suburb_posts(
+    suburb: str,
+    data_dir: str | Path = "data/processed/reddit",
+    min_score: int = MIN_SCORE,
+) -> list[RedditPost]:
+    """Load pre-processed Reddit posts for a suburb from local JSON files.
+
+    Args:
+        suburb: Suburb name (e.g. "Surry Hills").
+        data_dir: Directory containing per-suburb JSON files.
+        min_score: Minimum upvote score filter.
+
+    Returns:
+        List of RedditPost objects, or empty list if no data file exists.
+    """
+    slug = _suburb_slug(suburb)
+    filepath = Path(data_dir) / f"{slug}.json"
+
+    if not filepath.exists():
+        return []
+
+    with open(filepath, "r", encoding="utf-8") as f:
+        records = json.load(f)
+
+    return [
+        RedditPost(**record)
+        for record in records
+        if record.get("score", 0) >= min_score
+    ]
+
+
+def list_available_suburbs(
+    data_dir: str | Path = "data/processed/reddit",
+) -> list[str]:
+    """List all suburbs that have pre-processed Reddit data available."""
+    index_path = Path(data_dir) / "_suburb_index.json"
+    if index_path.exists():
+        with open(index_path, "r", encoding="utf-8") as f:
+            index = json.load(f)
+        return sorted(index.keys())
+
+    # Fallback: scan directory for JSON files
+    data_path = Path(data_dir)
+    if not data_path.exists():
+        return []
+    suburbs = []
+    for f in data_path.glob("*.json"):
+        if f.name.startswith("_"):
+            continue
+        name = f.stem.replace("_", " ").title()
+        suburbs.append(name)
+    return sorted(suburbs)
 
 
 def bulk_extract(

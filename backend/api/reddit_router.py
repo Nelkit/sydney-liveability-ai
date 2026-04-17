@@ -1,4 +1,4 @@
-"""Reddit analysis API endpoint with Supabase caching."""
+"""Reddit analysis API endpoint with local data and optional Supabase caching."""
 
 from __future__ import annotations
 
@@ -7,6 +7,7 @@ import logging
 import os
 import sys
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 from fastapi import APIRouter
 
@@ -17,6 +18,7 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api/reddit", tags=["reddit"])
 
 CACHE_TTL_HOURS = 24
+LOCAL_ANALYSIS_CACHE = Path("data/processed/reddit_analyses")
 
 
 def _normalise_suburb(raw: str) -> str:
@@ -96,30 +98,76 @@ def _cache_write(supabase, analysis: dict) -> None:
         logger.warning("Cache write failed, result not cached")
 
 
+def _local_cache_path(suburb: str) -> Path:
+    slug = suburb.lower().replace(" ", "_").replace("-", "_")
+    return LOCAL_ANALYSIS_CACHE / f"{slug}.json"
+
+
+def _local_cache_lookup(suburb: str) -> dict | None:
+    """Check local file cache for a pre-computed NLP analysis."""
+    path = _local_cache_path(suburb)
+    if not path.exists():
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        logger.warning("Local cache read failed for %s", suburb)
+        return None
+
+
+def _local_cache_write(suburb: str, analysis: dict) -> None:
+    """Write NLP analysis to local file cache."""
+    try:
+        LOCAL_ANALYSIS_CACHE.mkdir(parents=True, exist_ok=True)
+        path = _local_cache_path(suburb)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(analysis, f, indent=2, ensure_ascii=False)
+    except Exception:
+        logger.warning("Local cache write failed for %s", suburb)
+
+
+@router.get("/suburbs")
+def list_suburbs() -> dict:
+    """List all suburbs with available Reddit data."""
+    from data_extraction.extract_reddit import list_available_suburbs
+
+    suburbs = list_available_suburbs()
+    return {"suburbs": suburbs, "count": len(suburbs)}
+
+
 @router.get("/{suburb}")
 def analyse_suburb_endpoint(suburb: str) -> dict:
     """Analyse Reddit discourse about a Sydney suburb.
 
     Returns aspect-based sentiment, emotion profile, community narrative,
-    and source references. Results are cached for 24 hours.
+    and source references. Results are cached locally and optionally in
+    Supabase.
     """
     normalised = _normalise_suburb(suburb)
 
-    # Check cache
+    # 1. Check local file cache (static data = permanent cache)
+    local_cached = _local_cache_lookup(normalised)
+    if local_cached is not None:
+        return local_cached
+
+    # 2. Check Supabase cache
     supabase = _get_supabase()
     cached = _cache_lookup(supabase, normalised)
     if cached is not None:
+        _local_cache_write(normalised, cached)
         return cached
 
-    # Cache miss: fetch from Reddit and run NLP pipeline
-    from data_extraction.extract_reddit import fetch_suburb_posts
+    # 3. Cache miss: load from pre-processed local data
+    from data_extraction.extract_reddit import load_suburb_posts
     from core.nlp.pipeline import analyse_suburb
 
-    posts = fetch_suburb_posts(normalised)
+    posts = load_suburb_posts(normalised)
     result = analyse_suburb(normalised, posts)
     response = result.to_dict()
 
-    # Cache the result
+    # Cache the result locally and in Supabase
+    _local_cache_write(normalised, response)
     _cache_write(supabase, response)
 
     return response

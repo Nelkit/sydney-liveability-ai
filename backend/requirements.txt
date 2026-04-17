@@ -6,6 +6,7 @@ chromadb
 sentence-transformers
 pypdf
 praw
+zstandard
 supabase
 python-dotenv
 pandas
