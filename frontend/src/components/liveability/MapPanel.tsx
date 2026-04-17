@@ -21,6 +21,7 @@ type MapPanelProps = {
 };
 
 const layers = ["Liveability", "Safety", "Transport", "Lifestyle"];
+const SMALL_LABEL_MIN_ZOOM = 15;
 
 const HEAT_STOPS = [
   { t: 0, color: { r: 59, g: 130, b: 246 } },
@@ -114,6 +115,13 @@ function getFeatureSuburbName(feature: GeoJSON.Feature) {
   return normalizeSuburbName(rawName);
 }
 
+function getFeatureSuburbLabel(feature: GeoJSON.Feature) {
+  const props = feature.properties as Record<string, unknown> | null;
+  const rawName = props?.SAL_NAME21;
+  if (typeof rawName !== "string") return null;
+  return rawName.replace(" (NSW)", "").trim();
+}
+
 export function MapPanel({
   suburbs,
   ranked,
@@ -128,6 +136,7 @@ export function MapPanel({
   const overlaysRef = useRef<L.LayerGroup | null>(null);
   const [suburbsGeoJson, setSuburbsGeoJson] = useState<GeoJSON.FeatureCollection | null>(null);
   const [geoJsonLoaded, setGeoJsonLoaded] = useState(false);
+  const [mapZoom, setMapZoom] = useState<number | null>(null);
   const hasFittedBoundsRef = useRef(false);
 
   const suburbsByName = useMemo(() => {
@@ -205,11 +214,20 @@ export function MapPanel({
 
     const overlayGroup = L.layerGroup().addTo(map);
 
+    setMapZoom(map.getZoom());
+
+    const onZoomEnd = () => {
+      setMapZoom(map.getZoom());
+    };
+
+    map.on("zoomend", onZoomEnd);
+
     mapRef.current = map;
     overlaysRef.current = overlayGroup;
     hasFittedBoundsRef.current = false;
 
     return () => {
+      map.off("zoomend", onZoomEnd);
       overlayGroup.clearLayers();
       map.remove();
       mapRef.current = null;
@@ -226,7 +244,22 @@ export function MapPanel({
     overlayGroup.clearLayers();
 
     if (suburbsGeoJson) {
-      const renderedLayer = L.geoJSON(suburbsGeoJson, {
+      // Base layer: render every suburb from GeoJSON with subtle styling.
+      const allSuburbsLayer = L.geoJSON(suburbsGeoJson, {
+        style: {
+          color: "#64748b",
+          fillColor: "#64748b",
+          fillOpacity: 0.14,
+          weight: 0.8,
+          opacity: 0.7
+        },
+        interactive: false
+      });
+
+      allSuburbsLayer.addTo(overlayGroup);
+
+      // Highlight layer: only the current top-5 mock suburbs.
+      const highlightedLayer = L.geoJSON(suburbsGeoJson, {
         filter: (feature) => {
           if (!feature) return false;
           const featureName = getFeatureSuburbName(feature);
@@ -268,24 +301,75 @@ export function MapPanel({
         }
       });
 
-      renderedLayer.addTo(overlayGroup);
+      highlightedLayer.addTo(overlayGroup);
 
       if (!hasFittedBoundsRef.current) {
-        const bounds = renderedLayer.getBounds();
-        if (bounds.isValid()) {
-          map.fitBounds(bounds.pad(0.08), {
+        const preferredBounds = highlightedLayer.getBounds();
+        const fallbackBounds = allSuburbsLayer.getBounds();
+        const boundsToFit = preferredBounds.isValid() ? preferredBounds : fallbackBounds;
+
+        if (boundsToFit.isValid()) {
+          map.fitBounds(boundsToFit.pad(0.08), {
             maxZoom: 15,
             animate: false
           });
           hasFittedBoundsRef.current = true;
         }
       }
+
+      if ((mapZoom ?? map.getZoom()) >= SMALL_LABEL_MIN_ZOOM) {
+        const visibleBounds = map.getBounds().pad(0.15);
+
+        allSuburbsLayer.eachLayer((layerItem) => {
+          const layerWithFeature = layerItem as L.Layer & { feature?: GeoJSON.Feature };
+          const feature = layerWithFeature.feature;
+          if (!feature) return;
+
+          const normalizedName = getFeatureSuburbName(feature);
+          if (!normalizedName) return;
+          if (suburbsByName.has(normalizedName)) return;
+
+          if (!("getBounds" in layerItem) || typeof (layerItem as { getBounds?: () => L.LatLngBounds }).getBounds !== "function") {
+            return;
+          }
+
+          const bounds = (layerItem as { getBounds: () => L.LatLngBounds }).getBounds();
+          if (!bounds.isValid()) return;
+
+          const center = bounds.getCenter();
+          if (!visibleBounds.contains(center)) return;
+
+          const suburbLabel = getFeatureSuburbLabel(feature);
+          if (!suburbLabel) return;
+
+          const smallLabel = L.marker(center, {
+            interactive: false,
+            keyboard: false,
+            icon: L.divIcon({
+              className: "suburb-name-label",
+              html: `<span style="
+                color: #334155;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 0.01em;
+                text-shadow: 0 1px 3px rgba(255,255,255,0.75);
+                white-space: nowrap;
+                transform: translate(-50%, -50%);
+                display: inline-block;
+                opacity: 0.9;
+              ">${suburbLabel}</span>`
+            })
+          });
+
+          smallLabel.addTo(overlayGroup);
+        });
+      }
     } else {
       // Fallback to legacy polygons only if GeoJSON is unavailable.
       suburbs.forEach((suburb) => {
         const value = layerValue(suburb, layer, weights);
         const heatColor = scoreToHeatColor(value);
-        const opacity = selectedSuburbId && selectedSuburbId !== suburb.id ? 0.15 : 0.52;
+        const opacity = selectedSuburbId && selectedSuburbId !== suburb.id ? 0.30 : 0.52;
         const isSelected = selectedSuburbId === suburb.id;
         const smoothPolygon = smoothClosedPolygon(suburb.polygon as L.LatLngTuple[], 9);
 
@@ -350,7 +434,7 @@ export function MapPanel({
 
       label.addTo(overlayGroup);
     });
-  }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, layer, weights, selectedSuburbId, onSelectSuburb]);
+  }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, mapZoom, layer, weights, selectedSuburbId, onSelectSuburb]);
 
   return (
     <section className="relative h-full overflow-hidden bg-[radial-gradient(circle_at_30%_18%,rgba(254,215,170,0.3),transparent_28%),linear-gradient(180deg,#eff2f8,#e9edf6)]">
