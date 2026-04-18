@@ -1,4 +1,5 @@
 ﻿import json
+import os
 import time
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
@@ -6,10 +7,17 @@ from typing import Dict, Iterable, List, Tuple
 import requests
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-REQUEST_TIMEOUT_SECONDS = 120
-REQUEST_PAUSE_SECONDS = 2
-
-MVP_SUBURBS = ["Newtown", "Glebe", "Redfern", "Surry Hills", "Haymarket"]
+OVERPASS_QUERY_URLS = [
+    OVERPASS_URL,
+    "https://overpass.kumi.systems/api/interpreter",
+]
+OVERPASS_BOUNDARY_URLS = [
+    OVERPASS_URL,
+    "https://overpass.kumi.systems/api/interpreter",
+]
+REQUEST_TIMEOUT_SECONDS = int(os.getenv("OSM_REQUEST_TIMEOUT_SECONDS", "120"))
+REQUEST_PAUSE_SECONDS = float(os.getenv("OSM_REQUEST_PAUSE_SECONDS", "2"))
+REQUEST_RETRY_ATTEMPTS = int(os.getenv("OSM_REQUEST_RETRY_ATTEMPTS", "4"))
 
 AMENITY_CATEGORIES = [
     "cafe",
@@ -83,7 +91,7 @@ def compute_bbox_from_geometry(geometry: Dict) -> Tuple[float, float, float, flo
     return south, west, north, east
 
 
-def load_mvp_suburb_bboxes(geojson_path: Path) -> Dict[str, Tuple[float, float, float, float]]:
+def load_suburb_bboxes(geojson_path: Path) -> Dict[str, Tuple[float, float, float, float]]:
     with geojson_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -91,12 +99,115 @@ def load_mvp_suburb_bboxes(geojson_path: Path) -> Dict[str, Tuple[float, float, 
     for feature in data.get("features", []):
         properties = feature.get("properties", {})
         suburb_name = strip_nsw_suffix(properties.get("SAL_NAME21", ""))
-        if suburb_name in MVP_SUBURBS:
-            bboxes[suburb_name] = compute_bbox_from_geometry(feature.get("geometry", {}))
+        if not suburb_name:
+            continue
 
-    missing = sorted(set(MVP_SUBURBS) - set(bboxes.keys()))
-    if missing:
-        raise RuntimeError(f"Missing suburb geometries in GeoJSON: {', '.join(missing)}")
+        bbox = compute_bbox_from_geometry(feature.get("geometry", {}))
+        if suburb_name in bboxes:
+            prev_south, prev_west, prev_north, prev_east = bboxes[suburb_name]
+            south, west, north, east = bbox
+            bboxes[suburb_name] = (
+                min(prev_south, south),
+                min(prev_west, west),
+                max(prev_north, north),
+                max(prev_east, east),
+            )
+        else:
+            bboxes[suburb_name] = bbox
+
+    if not bboxes:
+        raise RuntimeError("No suburb geometries found in GeoJSON")
+
+    return bboxes
+
+
+def _merge_bbox(
+    current: Tuple[float, float, float, float],
+    incoming: Tuple[float, float, float, float],
+) -> Tuple[float, float, float, float]:
+    cur_south, cur_west, cur_north, cur_east = current
+    in_south, in_west, in_north, in_east = incoming
+    return (
+        min(cur_south, in_south),
+        min(cur_west, in_west),
+        max(cur_north, in_north),
+        max(cur_east, in_east),
+    )
+
+
+def run_overpass_query(
+    query: str,
+    timeout_seconds: int,
+    endpoints: List[str],
+    attempts: int = 3,
+) -> Dict:
+    errors: List[str] = []
+    for endpoint in endpoints:
+        for attempt in range(attempts):
+            try:
+                response = requests.post(endpoint, data={"data": query}, timeout=timeout_seconds)
+            except requests.RequestException as exc:
+                errors.append(f"{endpoint}: request error ({exc})")
+                if attempt < attempts - 1:
+                    time.sleep(REQUEST_PAUSE_SECONDS * (2 ** attempt))
+                continue
+
+            if response.status_code == 200:
+                return response.json()
+
+            text_sample = response.text[:180].replace("\n", " ").strip()
+            errors.append(f"{endpoint}: status {response.status_code} ({text_sample})")
+
+            if response.status_code in (429, 502, 503, 504) and attempt < attempts - 1:
+                time.sleep(REQUEST_PAUSE_SECONDS * (2 ** attempt))
+                continue
+            break
+
+    detail = "; ".join(errors[-4:]) if errors else "unknown error"
+    raise RuntimeError(f"Overpass query failed after retries: {detail}")
+
+
+def load_suburb_bboxes_from_overpass() -> Dict[str, Tuple[float, float, float, float]]:
+    # Prefer area by council name to include all City of Sydney suburb/locality relations.
+    query = "\n".join(
+        [
+            "[out:json][timeout:180];",
+            "area[\"name\"=\"Council of the City of Sydney\"]->.cityArea;",
+            "(",
+            "  relation[\"boundary\"=\"administrative\"][\"admin_level\"=\"10\"][\"place\"=\"suburb\"](area.cityArea);",
+            "  relation[\"boundary\"=\"administrative\"][\"place\"=\"suburb\"](area.cityArea);",
+            ");",
+            "out bb tags;",
+        ]
+    )
+    payload = run_overpass_query(
+        query=query,
+        timeout_seconds=max(REQUEST_TIMEOUT_SECONDS, 180),
+        endpoints=OVERPASS_BOUNDARY_URLS,
+        attempts=3,
+    )
+
+    bboxes: Dict[str, Tuple[float, float, float, float]] = {}
+    for element in payload.get("elements", []):
+        tags = element.get("tags", {})
+        suburb_name = strip_nsw_suffix(tags.get("name", "")).strip()
+        bounds = element.get("bounds", {})
+        if not suburb_name or not bounds:
+            continue
+
+        bbox = (
+            float(bounds["minlat"]),
+            float(bounds["minlon"]),
+            float(bounds["maxlat"]),
+            float(bounds["maxlon"]),
+        )
+        if suburb_name in bboxes:
+            bboxes[suburb_name] = _merge_bbox(bboxes[suburb_name], bbox)
+        else:
+            bboxes[suburb_name] = bbox
+
+    if not bboxes:
+        raise RuntimeError("No suburb boundaries returned by Overpass")
 
     return bboxes
 
@@ -133,18 +244,38 @@ def build_overpass_query(bbox: Tuple[float, float, float, float]) -> str:
 
 
 def fetch_overpass_data(query: str) -> Dict:
-    response = requests.post(
-        OVERPASS_URL,
-        data={"data": query},
-        timeout=REQUEST_TIMEOUT_SECONDS,
-    )
-    status_code = response.status_code
-    if status_code == 200:
-        return {"status_code": status_code, "data": response.json()}
-    return {"status_code": status_code, "data": None, "text": response.text}
+    last_payload: Dict = {"status_code": None, "data": None, "text": "No response"}
+    for endpoint in OVERPASS_QUERY_URLS:
+        try:
+            response = requests.post(
+                endpoint,
+                data={"data": query},
+                timeout=REQUEST_TIMEOUT_SECONDS,
+            )
+        except requests.RequestException as exc:
+            last_payload = {
+                "status_code": None,
+                "data": None,
+                "text": str(exc),
+                "endpoint": endpoint,
+            }
+            continue
+
+        status_code = response.status_code
+        if status_code == 200:
+            return {"status_code": status_code, "data": response.json(), "endpoint": endpoint}
+
+        last_payload = {
+            "status_code": status_code,
+            "data": None,
+            "text": response.text,
+            "endpoint": endpoint,
+        }
+
+    return last_payload
 
 
-def fetch_with_retry(query: str, attempts: int = 4) -> Dict:
+def fetch_with_retry(query: str, attempts: int = REQUEST_RETRY_ATTEMPTS) -> Dict:
     last_payload = None
     for attempt in range(attempts):
         payload = fetch_overpass_data(query)
@@ -177,11 +308,13 @@ def fetch_elements_for_suburb(
     for category in AMENITY_CATEGORIES:
         query = build_overpass_query_for_sets(bbox, [category], [])
         payload = fetch_with_retry(query)
+        payload["query"] = query
         responses.append(payload)
         if payload["status_code"] != 200:
-            raise RuntimeError(
-                f"Overpass fallback failed for amenity={category} with status {payload['status_code']}"
+            print(
+                f"Warning: Overpass fallback failed for amenity={category} with status {payload['status_code']}"
             )
+            continue
         for element in payload["data"].get("elements", []):
             key = (element.get("type"), element.get("id"))
             if key not in seen:
@@ -192,11 +325,13 @@ def fetch_elements_for_suburb(
     for category in LEISURE_CATEGORIES:
         query = build_overpass_query_for_sets(bbox, [], [category])
         payload = fetch_with_retry(query)
+        payload["query"] = query
         responses.append(payload)
         if payload["status_code"] != 200:
-            raise RuntimeError(
-                f"Overpass fallback failed for leisure={category} with status {payload['status_code']}"
+            print(
+                f"Warning: Overpass fallback failed for leisure={category} with status {payload['status_code']}"
             )
+            continue
         for element in payload["data"].get("elements", []):
             key = (element.get("type"), element.get("id"))
             if key not in seen:
@@ -246,14 +381,31 @@ def main() -> None:
     raw_osm_dir.mkdir(parents=True, exist_ok=True)
     processed_output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    suburb_bboxes = load_mvp_suburb_bboxes(geojson_path)
+    try:
+        suburb_bboxes = load_suburb_bboxes_from_overpass()
+        print(f"Loaded {len(suburb_bboxes)} suburbs from Overpass boundaries")
+    except Exception as exc:
+        print(f"Warning: could not load suburb boundaries from Overpass: {exc}")
+        print(f"Falling back to local GeoJSON: {geojson_path}")
+        suburb_bboxes = load_suburb_bboxes(geojson_path)
+        print(f"Loaded {len(suburb_bboxes)} suburbs from local GeoJSON")
+
+    suburbs = sorted(suburb_bboxes.keys())
 
     suburb_counts: Dict[str, Dict[str, int]] = {}
     suburb_weighted_scores: Dict[str, float] = {}
 
-    for index, suburb in enumerate(MVP_SUBURBS):
+    for index, suburb in enumerate(suburbs):
         bbox = suburb_bboxes[suburb]
-        elements, query, responses, fallback_used = fetch_elements_for_suburb(bbox)
+        print(f"Fetching {suburb} ({index + 1}/{len(suburbs)})")
+        try:
+            elements, query, responses, fallback_used = fetch_elements_for_suburb(bbox)
+        except Exception as exc:
+            print(f"Warning: failed to fetch OSM data for {suburb}: {exc}")
+            elements = []
+            query = build_overpass_query(bbox)
+            responses = [{"status_code": None, "data": None, "error": str(exc)}]
+            fallback_used = False
 
         raw_path = raw_osm_dir / f"{slugify(suburb)}_pois.json"
         raw_payload = {
@@ -275,13 +427,13 @@ def main() -> None:
         suburb_weighted_scores[suburb] = compute_weighted_raw_score(counts)
 
         print(f"Fetched {suburb}: {len(elements)} elements")
-        if index < len(MVP_SUBURBS) - 1:
+        if index < len(suburbs) - 1:
             time.sleep(REQUEST_PAUSE_SECONDS)
 
     normalized_scores = min_max_normalize(suburb_weighted_scores)
 
     output = {}
-    for suburb in MVP_SUBURBS:
+    for suburb in suburbs:
         row = {"osm_score": round(normalized_scores[suburb], 4)}
         row.update(suburb_counts[suburb])
         output[suburb] = row
