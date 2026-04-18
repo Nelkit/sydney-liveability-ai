@@ -1,0 +1,101 @@
+{
+  "suburb": "Paddington",
+  "post_count": 23,
+  "fetched_at": "2026-04-18T02:14:08.806615+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.279,
+      "mentions": 8
+    },
+    "transport": {
+      "score": 0.441,
+      "mentions": 10
+    },
+    "community": {
+      "score": 0.475,
+      "mentions": 20
+    },
+    "affordability": {
+      "score": 0.207,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.231,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.005,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.47,
+      "mentions": 8
+    },
+    "food_and_cafe": {
+      "score": 0.556,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "fear": 0.0868,
+    "anger": 0.082,
+    "disgust": 0.0569,
+    "surprise": 0.0542,
+    "neutral": 0.4748,
+    "sadness": 0.0891,
+    "joy": 0.1562
+  },
+  "narrative": "Reddit discussions about Paddington are most positive about food and cafe (0.56) and community (0.47). Residents are most critical about affordability (0.21) and noise (0.01). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Today reporter almost taken down by cyclist on pedestrian crossing\nFollowing on from yesterday's post about Paddington NIMBYs taking the council to the Human Rights Commission over a pedestrian crossi",
+      "url": "https://reddit.com/r/sydney/comments/1dijtcx/today_reporter_almost_taken_down_by_cyclist_on/",
+      "score": 100
+    },
+    {
+      "text": "Definitely Newcastle, if only because of the streetscape of Government Buses. There are a few terrace houses that look vaguely Paddington, and plenty of other suburbs that look like they could be in S",
+      "url": "https://reddit.com/r/sydney/comments/1bs15dn/which_nsw_town_is_most_like_sydney_in_terms_of/kxctpat/",
+      "score": 98
+    },
+    {
+      "text": ">“The whole cycling thing is good on one level. Unfortunately, there are a number of cyclists who will cause problems. The demographic of Paddington is getting older. There are a lot of people around ",
+      "url": "https://reddit.com/r/sydney/comments/1dhlix1/paddington_residents_residents_lodge_human_rights/l8xv1qx/",
+      "score": 86
+    },
+    {
+      "text": "Lost around the Oxford Street end of Centennial Park\nPosting for a friend.  On the highly improbable chance that someone found this little bag-bear around the Oxford Street / Paddington end of Centenn",
+      "url": "https://reddit.com/r/sydney/comments/1pwslzt/lost_around_the_oxford_street_end_of_centennial/",
+      "score": 52
+    },
+    {
+      "text": "A police officer has been charged with the murder of couple Jesse Baird and Luke Davies.\n\nBaird’s former partner Beau Lamarre walked into Bondi police station about 10.30am on Friday and was taken int",
+      "url": "https://reddit.com/r/sydney/comments/1axq59k/police_officer_charged_with_murder_of_missing/krpmeyj/",
+      "score": 42
+    },
+    {
+      "text": "Also walk around in Paddington on Thursday or Friday evening, you might see a gallery opening, pop in for a viewing of potential art purchase and a glass of sparkling wine and some hors d'oeuvre.",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzu4nob/",
+      "score": 42
+    },
+    {
+      "text": "Where to get tested for autism as an adult\nAre there any places that offer a decent assessment and potential diagnosis for autism or ADD/ADHD? I live in paddington, but willing to travel where needed.",
+      "url": "https://reddit.com/r/sydney/comments/1adl2yw/where_to_get_tested_for_autism_as_an_adult/",
+      "score": 40
+    },
+    {
+      "text": "Pro: the outdoor lifestyle year round especially if you’re  into fitness. Access to quality pubs and restaurants. Close vicinity to the Beaches (the harbour beaches, Bondi, Bronte, Clovelly, Coogee, m",
+      "url": "https://reddit.com/r/sydney/comments/1ce1ir8/what_are_the_pros_and_cons_of_living_at_bondi/l1gbkhg/",
+      "score": 39
+    },
+    {
+      "text": "The whole ~~cycling~~ people thing is good on one level. Unfortunately, there are a number of ~~cyclists~~ shit cunts who will cause problems. The demographic of ~~Paddington~~ Australia is getting ol",
+      "url": "https://reddit.com/r/sydney/comments/1dhlix1/paddington_residents_residents_lodge_human_rights/l8y5c75/",
+      "score": 34
+    },
+    {
+      "text": "I remember an older colleague of mine saying you could barely give away a house in back in the day in Redfern, Paddington, Surry Hills etc. No one wanted to live there. Now look at those suburbs.",
+      "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5zjvyq/",
+      "score": 25
+    }
+  ]
+}

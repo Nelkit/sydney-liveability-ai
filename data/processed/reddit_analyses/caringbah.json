@@ -1,0 +1,101 @@
+{
+  "suburb": "Caringbah",
+  "post_count": 11,
+  "fetched_at": "2026-04-18T02:17:58.633110+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.732,
+      "mentions": 6
+    },
+    "community": {
+      "score": 0.744,
+      "mentions": 9
+    },
+    "nightlife": {
+      "score": 0.598,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.611,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.61,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.61,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.1608,
+    "neutral": 0.324,
+    "surprise": 0.0533,
+    "fear": 0.1897,
+    "disgust": 0.1508,
+    "anger": 0.0345,
+    "sadness": 0.0869
+  },
+  "narrative": "Reddit discussions about Caringbah are most positive about community (0.74) and transport (0.73). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "A typical bus trip in the Shire\nMy partner caught this wonderful interaction with this \"gentleman\" and a very patient driver on the 477 yesterday morning on the way to Caringbah",
+      "url": "https://reddit.com/r/sydney/comments/1enqdgf/a_typical_bus_trip_in_the_shire/",
+      "score": 102
+    },
+    {
+      "text": "Ok Ray White Caringbah",
+      "url": "https://reddit.com/r/sydney/comments/18zudeo/is_the_shire_the_next_eastern_suburbs/kgk2akh/",
+      "score": 71
+    },
+    {
+      "text": "I once carted a cardboard cutout of Andy from Hamish and Andy to my friend (Caringbah to Sutherland). Got a few funny looks.",
+      "url": "https://reddit.com/r/sydney/comments/1dk8hdz/whats_the_weirdest_thing_youve_seen_people_carry/l9g9dbt/",
+      "score": 39
+    },
+    {
+      "text": "Somewhere within the Cronulla/Caringbah end of the shire.",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgeiaj7/",
+      "score": 30
+    },
+    {
+      "text": "Southern Sydney Health District and Health direct providing wrong information about Caringbah Urgent Care\nTLDR: you don't need to speak to health direct or make an appointment to access Urgent Care at",
+      "url": "https://reddit.com/r/sydney/comments/1f3ahz2/southern_sydney_health_district_and_health_direct/",
+      "score": 23
+    },
+    {
+      "text": "Or Caringbah Cats.. \n\nI'm in the area but not sure how my girl would adapt to another cat in the house so wouldn't risk it.",
+      "url": "https://reddit.com/r/sydney/comments/1bih5u3/long_shot_might_anyone_be_interested_in/kvkehyd/",
+      "score": 8
+    },
+    {
+      "text": "Caringbah a suburb of Sydney",
+      "url": "https://reddit.com/r/sydney/comments/1d7h4md/cold_morning_in_sydney/l719j7s/",
+      "score": 6
+    },
+    {
+      "text": "Endeavour High School, Caringbah. The scripture teacher started a cult and abducted some year 8 girls - late 1970s.",
+      "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzz6c2i/",
+      "score": 4
+    },
+    {
+      "text": "Gets bad on the T4 again near Kirrawee through to almost Caringbah",
+      "url": "https://reddit.com/r/sydney/comments/1auvq9j/t8_blackspot_getting_worse/kr81big/",
+      "score": 3
+    },
+    {
+      "text": "Depends on what you're after with your walkability as well as your budget.\n\nPlenty of suburbs in the Shire have a train station, village style shops, gyms and supermarkets within walking distance of e",
+      "url": "https://reddit.com/r/sydney/comments/1b344sc/sydney_daily_random_discussion_thread_01032024/kst1les/",
+      "score": 3
+    }
+  ]
+}

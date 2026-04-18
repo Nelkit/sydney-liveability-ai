@@ -1,0 +1,101 @@
+{
+  "suburb": "Castlereagh",
+  "post_count": 27,
+  "fetched_at": "2026-04-18T02:12:58.409144+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.374,
+      "mentions": 9
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.688,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.872,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.812,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.854,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.4,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.1613,
+    "neutral": 0.3729,
+    "joy": 0.048,
+    "fear": 0.2134,
+    "disgust": 0.091,
+    "sadness": 0.0264,
+    "anger": 0.087
+  },
+  "narrative": "Reddit discussions about Castlereagh are most positive about food and cafe (0.87) and affordability (0.85). Residents are most critical about transport (0.40) and safety (0.37). This analysis is based on 27 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Annoying, they dont mention the address for people who may have someone they know who works in a law firm near there. It appears to be near 155 Castlereagh st, based on Jin & Co cafe sign in the backg",
+      "url": "https://reddit.com/r/sydney/comments/1b1urdo/sydney_shooting_man_shot_in_cbd/kshai9w/",
+      "score": 270
+    },
+    {
+      "text": "Bees dropping from the sky in the city!\nNever seen anything like this before. Corner of Market st and Castlereagh st on the awning of the St Laurent shop there are thousands of bees swarming on a meta",
+      "url": "https://reddit.com/r/sydney/comments/1p65f5p/bees_dropping_from_the_sky_in_the_city/",
+      "score": 262
+    },
+    {
+      "text": "77 year old man shot in the groin by another man in his 70s, at a law firm building. What the hell. [https://www.dailymail.co.uk/news/article-13134069/Sydney-shooting-man-shot-Castlereagh-Street.html]",
+      "url": "https://reddit.com/r/sydney/comments/1b1urdo/sydney_shooting_man_shot_in_cbd/kshf98a/",
+      "score": 149
+    },
+    {
+      "text": "If this is the Palestine march, it usually gathers at Hyde Park, with road closures around Elizabeth, Castlereagh, Pitt Streets.",
+      "url": "https://reddit.com/r/sydney/comments/1atina9/sydney_demonstration_today_10000_expected_in_the/kqxkxyi/",
+      "score": 141
+    },
+    {
+      "text": "No, their city property is on Castlereagh St. But that whole facade used to be a billboard for them in the shape of a volcano with a video screen where that gaping hole now sits.",
+      "url": "https://reddit.com/r/sydney/comments/1anbkg1/years_later_the_hole_remains/kprcgm7/",
+      "score": 140
+    },
+    {
+      "text": "Wait what? There's two?  \nSomeone else jumped an hour ago too next to the Fire and Rescue on Castlereagh st near Hyde Park.  \nI was in my office and people started crowding the windows.",
+      "url": "https://reddit.com/r/sydney/comments/1bvekdc/apparently_someone_has_just_jumped_off_an/kxz6igx/",
+      "score": 129
+    },
+    {
+      "text": "This dailymail article unethically shows the victim's face, if you are concerned about someone you know who works there. \n\n\nhttps://www.dailymail.co.uk/news/article-13134069/Sydney-shooting-man-shot-C",
+      "url": "https://reddit.com/r/sydney/comments/1b1urdo/sydney_shooting_man_shot_in_cbd/kshg5u6/",
+      "score": 64
+    },
+    {
+      "text": "Just as valuable is a map indicating where the stands are. There was a time the Liverpool St stands were moving from Castlereagh St to Elizabeth St and all over.\n\n 'Stand N\" without a map is extremely",
+      "url": "https://reddit.com/r/sydney/comments/1c93x8f/ive_wanted_something_like_for_buses_for_years/l0iz2gu/",
+      "score": 64
+    },
+    {
+      "text": "Someone jumped/fell to their death not long ago on Castlereagh st, too. Horrifying.",
+      "url": "https://reddit.com/r/sydney/comments/1bvekdc/apparently_someone_has_just_jumped_off_an/kxz8xn7/",
+      "score": 60
+    },
+    {
+      "text": "Old Prince Edward Theatre, now an office tower on Castlereagh St\nSource: Archives State Library of NSW\n\n\"The Prince Edward Theatre, in Castlereagh Street, between Martin Place and King Street, was bui",
+      "url": "https://reddit.com/r/sydney/comments/1fr22d4/old_prince_edward_theatre_now_an_office_tower_on/",
+      "score": 45
+    }
+  ]
+}

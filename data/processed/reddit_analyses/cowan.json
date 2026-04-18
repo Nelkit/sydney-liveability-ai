@@ -1,0 +1,101 @@
+{
+  "suburb": "Cowan",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:14.818681+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.952,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.641,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.756,
+      "mentions": 7
+    },
+    "community": {
+      "score": 0.566,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.194,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.262,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.342,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.194,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "joy": 0.1445,
+    "surprise": 0.1065,
+    "neutral": 0.5338,
+    "disgust": 0.0146,
+    "fear": 0.1128,
+    "anger": 0.0213,
+    "sadness": 0.0665
+  },
+  "narrative": "Reddit discussions about Cowan are most positive about food and cafe (0.95) and green space (0.76). Residents are most critical about safety (0.19) and noise (0.19). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "God Tier Level Pies\n40 years in Sydney and how have I never been here before???\n\nPlace looks a little run down but OMFG the pies!!\n\nWife and I shared Chicken and Mushroom, Red Wine and Garlic Beef, an",
+      "url": "https://reddit.com/r/sydney/comments/1i3xtl3/god_tier_level_pies/",
+      "score": 511
+    },
+    {
+      "text": "Cowan to Hawkesbury River station on the jerusalem bay track was what i was thinking of\n\nOtford -> bundeena -> ferry to cronulla -> cronulla back to central is a 30km. Read the park closures for this ",
+      "url": "https://reddit.com/r/sydney/comments/198tfaa/what_is_a_thing_sydney_does_better_than_any_other/kictzzb/",
+      "score": 15
+    },
+    {
+      "text": "If you don't mind a hike as well, catch the train to Cowan and hike ~2.5km to Jerusalem bay.\n\nOysters on the bay that you can hack off and eat but not sure at the moment if they're clear ( there was a",
+      "url": "https://reddit.com/r/sydney/comments/1dbtolm/can_you_recommend_me_any_great_campgrounds/l7t914v/",
+      "score": 10
+    },
+    {
+      "text": "Remembering back to the 1970s.\n\n 4 car single deck trains off peak.  \n\n2 car single deck trains off peak to Campbelltown from Lidcombe (shuttle) and for the Hornsby to Cowan shuttle.   \n\nOff peak freq",
+      "url": "https://reddit.com/r/sydney/comments/1dsk5a1/how_much_has_the_sydney_rail_lines_changed_since/lb3hfzg/",
+      "score": 10
+    },
+    {
+      "text": "Where to see wildflowers 2024 - day trip or weekender\nThinking of heading down the south coast. Wondering what wildflowers are out and about.\n\nFor those who aren't in the know, there is a national par",
+      "url": "https://reddit.com/r/sydney/comments/1f9iml2/where_to_see_wildflowers_2024_day_trip_or/",
+      "score": 8
+    },
+    {
+      "text": "Go check out the old Pacific Highway between Cowan and Brooklyn if you want to see the invincibles.",
+      "url": "https://reddit.com/r/sydney/comments/1b54mdg/some_motor_bike_riders_think_theyre_invincible/kt4bhbn/",
+      "score": 7
+    },
+    {
+      "text": "The Hawkesbury River is the geographic boundary of Sydney in the North.\n\nPopulation wise most of the lower the Central Coast is often counted in the population of 'Greater Sydney' along with Blue Moun",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxfr0t/",
+      "score": 6
+    },
+    {
+      "text": "PSA : Anyone heading North via the Pacific Highway through Berowra/Cowan should rethink their choices.\n\nThere's a major accident on the Cowan on-ramp to the M1, and it's been at least partially closed",
+      "url": "https://reddit.com/r/sydney/comments/1dnjkjb/sydney_daily_random_discussion_thread_25062024/la5yr5s/",
+      "score": 6
+    },
+    {
+      "text": "Haven’t tried port hacking yet, but me and my bf went crabbing and fishing on the Hawkesbury several times in recent months. Yes it’s clean and safe to eat, with a fishing licence of course. We’ve bee",
+      "url": "https://reddit.com/r/sydney/comments/192a4qc/fishing_or_crab_port_hacking_and_hawkesbury_river/kh16o65/",
+      "score": 5
+    },
+    {
+      "text": "To the North; Kuring-gai Chase NP (Cowan. Berowra?) and Brisbane Waters National Park (Wondabyne & Woy Woy).\n\nTo the West; Blue Mtns National Park. Basically Glenbrook or anything further west.\n\nTo th",
+      "url": "https://reddit.com/r/sydney/comments/1dbtolm/can_you_recommend_me_any_great_campgrounds/l7wd0sz/",
+      "score": 4
+    }
+  ]
+}

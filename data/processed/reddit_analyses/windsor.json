@@ -1,0 +1,101 @@
+{
+  "suburb": "Windsor",
+  "post_count": 19,
+  "fetched_at": "2026-04-18T02:15:47.052254+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.4,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.529,
+      "mentions": 14
+    },
+    "affordability": {
+      "score": 0.819,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.972,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.956,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.317,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.559,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.599,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "disgust": 0.1951,
+    "neutral": 0.4656,
+    "anger": 0.073,
+    "sadness": 0.0252,
+    "fear": 0.1189,
+    "surprise": 0.0658,
+    "joy": 0.0563
+  },
+  "narrative": "Reddit discussions about Windsor are most positive about food and cafe (0.97) and nightlife (0.96). Residents are most critical about safety (0.40) and green space (0.32). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Old Windsor Scramblers Getting Out of Hand\nThese scramblers have always been a blight on the Old Windsor Road and adjacent suburbs for what feels like years. It seems nothing has been done about them ",
+      "url": "https://reddit.com/r/sydney/comments/1k425fy/old_windsor_scramblers_getting_out_of_hand/",
+      "score": 247
+    },
+    {
+      "text": "There are a few farmers/butchers out Windsor way who will sell you the whole cow.  \n\nSciberra’s Fresh is a fruit shop near Windsor and they had someone advertising this about a year ago.",
+      "url": "https://reddit.com/r/sydney/comments/1drvpoh/ordering_a_cow_in_nsw/lay6kzf/",
+      "score": 107
+    },
+    {
+      "text": "Long jetty on the central coast has a newtown feel\n\nLeura has a balmain vibe\n\nThirroul and Port kembla both have an innerwest feel too\n\nCanley heights has some enmore vibes\n\nAreas such as Lakemba, whi",
+      "url": "https://reddit.com/r/sydney/comments/1de1ml2/maybe_a_stupid_question_but_are_there_any/l88qbb7/",
+      "score": 77
+    },
+    {
+      "text": "From the Guardian article \n\n“He allegedly began texting the teenager in April 2022, asking her to send intimate, naked images and requesting sex for money.\n\nCalling her “bubs” and “gorgeous” by text a",
+      "url": "https://reddit.com/r/sydney/comments/1cldfs3/former_nsw_police_sex_crimes_officer_stood_trial/l2t47j7/",
+      "score": 64
+    },
+    {
+      "text": "From the Guardian article \n\n“Glen Coleman met the 19-year-old at Windsor police station in February 2022 after she came in to make a complaint that her cousin had threatened to share naked images of h",
+      "url": "https://reddit.com/r/sydney/comments/1cldfs3/former_nsw_police_sex_crimes_officer_stood_trial/l2t3sti/",
+      "score": 38
+    },
+    {
+      "text": "Windsor Motel is an absolute dump and it’s a 30 minute walk from the station. \n\nLike if OP is absolutely desperate, it might be their only option but it’s a pretty shitty option.",
+      "url": "https://reddit.com/r/sydney/comments/1awfup4/air_bnb_host_never_left_a_key_or_contacted_us/krir618/",
+      "score": 18
+    },
+    {
+      "text": "I really love the [public art murals](https://artpharmacy.com.au/projects/public-art-murals/) that have been cropping up around Windsor – Hawkesbury City Council's done a great job in commissioning th",
+      "url": "https://reddit.com/r/sydney/comments/1d4ssw5/i_think_this_is_supposed_to_be_a_representation/l6gonpl/",
+      "score": 16
+    },
+    {
+      "text": "Hey OP, I had a look on google and the Windsor Motel has a room available for the next week for $125 a night. It's REALLY far out of the city but it's probably the cheapest you can find right now. It'",
+      "url": "https://reddit.com/r/sydney/comments/1awfup4/air_bnb_host_never_left_a_key_or_contacted_us/krip6a8/",
+      "score": 13
+    },
+    {
+      "text": "Cheapest gym memberships that cover the basics? Western Sydney area\nI'm trying to cut out some expenses and subscriptions I have that I can't really afford at the moment. I've been with Anytime Fitnes",
+      "url": "https://reddit.com/r/sydney/comments/1q8s3wu/cheapest_gym_memberships_that_cover_the_basics/",
+      "score": 9
+    },
+    {
+      "text": "I moved to Central Coast last year after 25 years in Sydney, the last 15 or so in the North West (Quakers Hill).  I grew up in Northern NSW on a rural property and so I have never liked Sydney, but Un",
+      "url": "https://reddit.com/r/sydney/comments/1atkegq/anyone_feels_life_quality_improve_after_move_out/kqyu6pv/",
+      "score": 8
+    }
+  ]
+}

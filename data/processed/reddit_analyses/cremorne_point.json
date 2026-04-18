@@ -1,0 +1,76 @@
+{
+  "suburb": "Cremorne Point",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:51.731712+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.804,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.8,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.718,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.1835,
+    "surprise": 0.1626,
+    "neutral": 0.4236,
+    "sadness": 0.0317,
+    "anger": 0.0617,
+    "fear": 0.0294,
+    "disgust": 0.1075
+  },
+  "narrative": "Reddit discussions about Cremorne Point are most positive about community (0.80) and safety (0.80). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sunset from Cremorne Point\nA lovely winter sunset last night!",
+      "url": "https://reddit.com/r/sydney/comments/1l98p8o/sunset_from_cremorne_point/",
+      "score": 485
+    },
+    {
+      "text": "My 1st boss hit one of these in-ground conduits 30ish years ago, completely shut down Cremorne Point. Telecom techs (telstra now) spent 4 days rewiring it all in shifts.... they would've loved the pay",
+      "url": "https://reddit.com/r/sydney/comments/191gw2n/this_cant_be_good/kgvh5l3/",
+      "score": 209
+    },
+    {
+      "text": "Not a beach but Cremorne Point. Lots of rock shelves with full view of the Harbour, Opera House, bridge, CBD. Cracking spot.",
+      "url": "https://reddit.com/r/sydney/comments/1b03682/quite_beach_with_rocks_on_a_cliff_near_by/ks5fexe/",
+      "score": 8
+    },
+    {
+      "text": "It's actually more like Cremorne point.\nhttps://twitter.com/AusEmbCO/status/1446882687441068037/photo/2\n\nhttps://hillsdistrictmums.com.au/wp-content/uploads/2021/10/Cremorne-Point-Reserve.jpg",
+      "url": "https://reddit.com/r/sydney/comments/1bllf2z/p_sherman_42_wallaby_way/kw6cwcy/",
+      "score": 5
+    },
+    {
+      "text": "I would try to do some of the following, involving being on water, looking at water and drinking near water. Catch ferry to Milson’s point. Walk to Wendy Whiteley’s garden, have a picnic. Catch an Ube",
+      "url": "https://reddit.com/r/sydney/comments/1c2per1/what_if_you_had_one_night_left/kzdgasi/",
+      "score": 2
+    }
+  ]
+}

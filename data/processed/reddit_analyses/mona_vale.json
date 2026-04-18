@@ -1,0 +1,101 @@
+{
+  "suburb": "Mona Vale",
+  "post_count": 29,
+  "fetched_at": "2026-04-18T02:12:45.272500+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.772,
+      "mentions": 22
+    },
+    "transport": {
+      "score": 0.825,
+      "mentions": 15
+    },
+    "noise": {
+      "score": 0.98,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.694,
+      "mentions": 12
+    },
+    "green_space": {
+      "score": 0.788,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.782,
+      "mentions": 9
+    },
+    "affordability": {
+      "score": 0.913,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.351,
+      "mentions": 5
+    }
+  },
+  "emotions": {
+    "fear": 0.1734,
+    "neutral": 0.5153,
+    "anger": 0.0465,
+    "joy": 0.0364,
+    "sadness": 0.0655,
+    "surprise": 0.1464,
+    "disgust": 0.0165
+  },
+  "narrative": "Reddit discussions about Mona Vale are most positive about noise (0.98) and affordability (0.91). Residents are most critical about safety (0.69) and food and cafe (0.35). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "NSW Government Petition - Conduct a Feasibility Study for a Northern Beaches Metro Line\nDue to all of the issues we on the Northern Beaches experience with transport to the city and beyond, I've submi",
+      "url": "https://reddit.com/r/sydney/comments/1jtbnjw/nsw_government_petition_conduct_a_feasibility/",
+      "score": 118
+    },
+    {
+      "text": "Parramatta Road to Green Square light rail proposal\nI came across this randomly via a search engine. \n\nNot sure how likely it is to happen but interesting if you’re into this sort of thing. \n\nPersonal",
+      "url": "https://reddit.com/r/sydney/comments/1on7y9z/parramatta_road_to_green_square_light_rail/",
+      "score": 105
+    },
+    {
+      "text": "Welcome to Mona Vale.\n[removed]",
+      "url": "https://reddit.com/r/sydney/comments/1qjivoc/welcome_to_mona_vale/",
+      "score": 76
+    },
+    {
+      "text": "Mona Vale Road potholes\nBeware the potholes on Mona vale road. Took out two of my tyres and 7 other cars were victims in the time it took someone to come tow me. 3 Good Samaritans offered to help me c",
+      "url": "https://reddit.com/r/sydney/comments/1ku3inh/mona_vale_road_potholes/",
+      "score": 54
+    },
+    {
+      "text": "By \"motorway\" you might mean Mona Vale Rd which is the only 90 zone in the area. I've been riding there for many years. There's an entire breakdown lane which is the bike lane and I have never seen cy",
+      "url": "https://reddit.com/r/sydney/comments/1d8cmie/belrose_crash_driver_charged_after_cyclists/l75jwlj/",
+      "score": 28
+    },
+    {
+      "text": "the B line B1 bus to and from Mona Vale.\n\n\nnear the back of the bus\nI would feel sick whenever I am on it because they put the aircon on full blast. even during winter. \n\n\n\n\nonce my friends and I took",
+      "url": "https://reddit.com/r/sydney/comments/1adr9ft/what_public_place_has_the_coldest_air_con/kk3dnkd/",
+      "score": 22
+    },
+    {
+      "text": "Murder in Mona Vale last night\nAbsolutely shocking",
+      "url": "https://reddit.com/r/sydney/comments/1odqpbc/murder_in_mona_vale_last_night/",
+      "score": 16
+    },
+    {
+      "text": "Mini Me: Climb the Harbour Bridge (the other one)  \nCentre, Point: take a selfie of you pointing at Sydney Tower Eye while standing on top of Campsie Centre  \nTen Minute Man: get from Circular Quay st",
+      "url": "https://reddit.com/r/sydney/comments/1atm1wb/sydney_is_turned_into_an_open_world_game_what/kqypq3n/",
+      "score": 13
+    },
+    {
+      "text": "Lodge a claim with Service NSW. Lost two rims, two tyres and suspension damage on Mona Vale Rd. Took images and approach images. All paid.\nI have since learned if the pothole has been repaired the pay",
+      "url": "https://reddit.com/r/sydney/comments/1cx2ka2/pot_hole_car_damage_help/l50dl6f/",
+      "score": 12
+    },
+    {
+      "text": "It’s was a nice start to the day by being almost wiped out by a dog trailer truck not even using the correct lane and speeding though Mona vale rd turning right into forest way while I was turning lef",
+      "url": "https://reddit.com/r/sydney/comments/1akdgy3/sydney_daily_random_discussion_thread_07022024/kp8bevj/",
+      "score": 10
+    }
+  ]
+}

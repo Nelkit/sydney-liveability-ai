@@ -1,0 +1,91 @@
+{
+  "suburb": "Claymore",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:18:50.801621+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.602,
+      "mentions": 6
+    },
+    "community": {
+      "score": 0.521,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.595,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.0707,
+    "neutral": 0.6072,
+    "anger": 0.0641,
+    "sadness": 0.0491,
+    "disgust": 0.1388,
+    "surprise": 0.0589,
+    "joy": 0.0112
+  },
+  "narrative": "Reddit discussions about Claymore are most positive about safety (0.60) and affordability (0.59). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Police have the discretion to make a call on whether its safe or not, its similar to asking \"How legal are fuzzy dice hanging from your rear vision mirror?\". It comes under the same thing. If they thi",
+      "url": "https://reddit.com/r/sydney/comments/1bysj5o/are_small_ornaments_on_the_car_dashboard/kyleqyk/",
+      "score": 40
+    },
+    {
+      "text": "I thought they should rename Claymore to Anti-personel mine.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiem3d1/",
+      "score": 34
+    },
+    {
+      "text": "Hillcroft = Claymore",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kieiohf/",
+      "score": 21
+    },
+    {
+      "text": "They renamed Claymore after they turned the public housing into an estate.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie6ggr/",
+      "score": 14
+    },
+    {
+      "text": "Ghetto's are usually large areas of low income, poverty, housing commission areas where people are struggling and crime is high. Bankstown isn't like that. It's just families there mainly. There are s",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kidwf2x/",
+      "score": 11
+    },
+    {
+      "text": "There was never housing commission in Raby. It was private homes built primarily in the 1980s. Claymore, Minto, Airds all ex housing commission now new build estates.",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kvj037d/",
+      "score": 8
+    },
+    {
+      "text": "> those ankle bracelets\n\n\nAKA The Claymore Fitbit",
+      "url": "https://reddit.com/r/sydney/comments/1cnt7hw/man_charged_over_alleged_stabbing_of_woman/l3e3obn/",
+      "score": 3
+    },
+    {
+      "text": "Western Sydney is a vast area, bigger than most world cities we consider major cities. Spanian takes you to the “worst of the worst” areas that are exclusively or mostly housing commission (suburbs li",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kierfmk/",
+      "score": 2
+    }
+  ]
+}

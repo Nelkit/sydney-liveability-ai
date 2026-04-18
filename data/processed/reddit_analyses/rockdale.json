@@ -1,0 +1,101 @@
+{
+  "suburb": "Rockdale",
+  "post_count": 105,
+  "fetched_at": "2026-04-18T01:56:35.266366+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.486,
+      "mentions": 38
+    },
+    "safety": {
+      "score": 0.3,
+      "mentions": 25
+    },
+    "community": {
+      "score": 0.584,
+      "mentions": 86
+    },
+    "green_space": {
+      "score": 0.642,
+      "mentions": 19
+    },
+    "nightlife": {
+      "score": 0.754,
+      "mentions": 20
+    },
+    "affordability": {
+      "score": 0.895,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.809,
+      "mentions": 14
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.0514,
+    "sadness": 0.0863,
+    "disgust": 0.0987,
+    "surprise": 0.1021,
+    "neutral": 0.5308,
+    "anger": 0.0698,
+    "joy": 0.061
+  },
+  "narrative": "Reddit discussions about Rockdale are most positive about affordability (0.90) and food and cafe (0.81). Residents are most critical about transport (0.49) and safety (0.30). This analysis is based on 105 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "The 420 bus from SYD International Airport to Rockdale Station is a horrible experience & it's by design\nCatching a train from SYD International Airport to Rockdale Station costs $20.95: https://i.img",
+      "url": "https://reddit.com/r/sydney/comments/1q63u8d/the_420_bus_from_syd_international_airport_to/",
+      "score": 736
+    },
+    {
+      "text": "Goodnight, Sydney.\nTaken from my balcony in Rockdale at dusk. What a glorious moon it is. No edits, just lowered brightness.",
+      "url": "https://reddit.com/r/sydney/comments/1op1peh/goodnight_sydney/",
+      "score": 498
+    },
+    {
+      "text": "To all the families at Rockdale Council chambers\nCongratulations.  The citizenship ceremony was one of the largest I’ve seen there in years.  Lots of people proudly taking pics with their citizenship ",
+      "url": "https://reddit.com/r/sydney/comments/1n3nxgy/to_all_the_families_at_rockdale_council_chambers/",
+      "score": 195
+    },
+    {
+      "text": "Move further down and you will find a large Nepalese population in the rockdale area. Brighton and parts of kogarah have large Greek populations.  People tend to gravitate to areas they feel comfortab",
+      "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5ytro8/",
+      "score": 185
+    },
+    {
+      "text": "What is with all the absolute psychos on the road around Bexley/Rockdale?!\nDriving home today after a marketplace pickup in North Bexley, sitting at the lights on park road turning to go right onto th",
+      "url": "https://reddit.com/r/sydney/comments/1ayrp4s/what_is_with_all_the_absolute_psychos_on_the_road/",
+      "score": 152
+    },
+    {
+      "text": "If you worked at a shop in the airport, how would you travel to and from?\nSorry if this is the wrong sub, couldn't find a more relatable one to post.\n\n  \nI'm currently looking for a job and found that",
+      "url": "https://reddit.com/r/sydney/comments/1p4firt/if_you_worked_at_a_shop_in_the_airport_how_would/",
+      "score": 139
+    },
+    {
+      "text": "Sinkhole opens in industrial building car park at Rockdale adjacent to M6 motorway as tunnelling work stopped",
+      "url": "https://reddit.com/r/sydney/comments/1b3gjdq/sinkhole_opens_in_industrial_building_car_park_at/",
+      "score": 124
+    },
+    {
+      "text": "Firstly RIP to the people who died - particularly the innocent child.\n\nTough to speculate on what happened at the moment. Recall an incident at Rockdale about 20 years ago (link below) where an Asian ",
+      "url": "https://reddit.com/r/sydney/comments/1aw1d0m/man_arrested_over_alleged_triple_murder_after/krew1am/",
+      "score": 118
+    },
+    {
+      "text": "Bayside council is such bullshit\nThis is the council that just makes the least sense, it’s geography sucks, culturally the two regions of it have absolutely zero in common, it genuinely annoys me how ",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/",
+      "score": 108
+    },
+    {
+      "text": "Rockdale/Kogarah - not as posh as Lane Cove obviously but I think it's a half hour to Wynyard from there on the train? Ashfield's pretty good too, it's still got some apartments advertised at that pri",
+      "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lah0387/",
+      "score": 106
+    }
+  ]
+}

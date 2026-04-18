@@ -1,0 +1,91 @@
+{
+  "suburb": "Glenmore Park",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:18:57.025518+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.666,
+      "mentions": 8
+    },
+    "safety": {
+      "score": 0.661,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.494,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.606,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.632,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.897,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.897,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1138,
+    "fear": 0.1255,
+    "surprise": 0.1401,
+    "disgust": 0.0834,
+    "neutral": 0.4969,
+    "anger": 0.0207,
+    "joy": 0.0195
+  },
+  "narrative": "Reddit discussions about Glenmore Park are most positive about affordability (0.90) and noise (0.90). Residents are most critical about food and cafe (0.50) and transport (0.49). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Crackdown as new Sydney homes sink into ground\nA 7NEWS investigation last month exposed a number of sinking suburbs across the city. From Glenmore Park to Box Hill, families reported issues like crack",
+      "url": "https://reddit.com/r/sydney/comments/1e674gd/crackdown_as_new_sydney_homes_sink_into_ground/",
+      "score": 262
+    },
+    {
+      "text": "OP says Penrith but they could very well be Glenmore Park or Jamisontown which is right next to the motorway.\n\nThe bus is 30 mins to the station at 8:30 which kind of sucks.",
+      "url": "https://reddit.com/r/sydney/comments/1b61vzk/just_wanna_vent_about_the_m4/kta6hes/",
+      "score": 21
+    },
+    {
+      "text": "Felt it in Glenmore park … just a big rumble and vibration. Never experienced it before but there was no mistaking it",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwete5/",
+      "score": 21
+    },
+    {
+      "text": "Pickup basketball \nHey guys, I have moved to glenmore park recently and I was wondering if there is any group/area that i can join to play some pickup basketball. \n\nAll I could find was leagues and as",
+      "url": "https://reddit.com/r/sydney/comments/1ejjj4d/pickup_basketball/",
+      "score": 9
+    },
+    {
+      "text": "They’re now saying the epicentre was Glenmore Park (not Leura)",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktwedrh/",
+      "score": 4
+    },
+    {
+      "text": "Glenmore Park is fairly high above Nepean River and on SES maps appears to be above the major flood level from the Nepean River.",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/koinupv/",
+      "score": 3
+    },
+    {
+      "text": "Glenmore Park, south of Penrith. So close to M4 it's easy to get anywhere.",
+      "url": "https://reddit.com/r/sydney/comments/1d4nz0p/family_friendly_suburbs/l6gzzp4/",
+      "score": 3
+    },
+    {
+      "text": "Suburb recommendations in Western Sydney\nOur family was looking to move to Sydney from interstate. Given our budget, we are looking at Western Sydney. We have been looking into a few suburbs where to ",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "suburb": "Greendale",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:08.532524+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "community": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.3937,
+    "fear": 0.1692,
+    "anger": 0.1688,
+    "sadness": 0.1595,
+    "disgust": 0.0624,
+    "surprise": 0.0421,
+    "joy": 0.0043
+  },
+  "narrative": "Reddit discussions about Greendale are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Camping area Bents basin in Greendale can have fires. Still in Sydney too",
+      "url": "https://reddit.com/r/sydney/comments/1agq0u1/is_there_anywhere_with_30_min_drive_of_sydney/kok30jt/",
+      "score": 2
+    }
+  ]
+}

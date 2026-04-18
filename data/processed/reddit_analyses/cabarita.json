@@ -1,0 +1,101 @@
+{
+  "suburb": "Cabarita",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:32.041886+00:00",
+  "aspects": {
+    "nightlife": {
+      "score": 0.74,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.743,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.71,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.776,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.808,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.776,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.592,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.371,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "joy": 0.1457,
+    "neutral": 0.5896,
+    "surprise": 0.1334,
+    "sadness": 0.0204,
+    "anger": 0.0106,
+    "disgust": 0.0891,
+    "fear": 0.0112
+  },
+  "narrative": "Reddit discussions about Cabarita are most positive about green space (0.81) and transport (0.78). Residents are most critical about affordability (0.59) and safety (0.37). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Evening at Cabarita\nDeparting westward from Cabarita, nice sky!",
+      "url": "https://reddit.com/r/sydney/comments/1m20urw/evening_at_cabarita/",
+      "score": 187
+    },
+    {
+      "text": "Lime bike map radius.\nI love using lime bikes. and so does lots of others I've been watching the maps radius expand every few weeks these last couple of months and the last 2 days it's been expanding ",
+      "url": "https://reddit.com/r/sydney/comments/1s32brk/lime_bike_map_radius/",
+      "score": 38
+    },
+    {
+      "text": "I lived quite close to Concord until recently. The central bit of Concord is lovely, Majors Bay Road has become very nice both physically and in terms of the selection of restaurants, cafes and local ",
+      "url": "https://reddit.com/r/sydney/comments/1ccgz19/concord_or_frenchs_forest/l15gotf/",
+      "score": 7
+    },
+    {
+      "text": "And if you want a view then the “Italian Inner West” is also the area to look in - Vela Dining at Cabarita Point, Angelo’s nearby, Oliveto on the Concord side of the same peninsula. Sydney Rowing Club",
+      "url": "https://reddit.com/r/sydney/comments/1cqx2m1/best_cheap_italian_food_in_sydney/l3wu432/",
+      "score": 7
+    },
+    {
+      "text": "Cabarita / Breakfast Point are pretty higher end.",
+      "url": "https://reddit.com/r/sydney/comments/1csghqv/is_the_canada_bay_area_middle_or_upper_class/l45409q/",
+      "score": 7
+    },
+    {
+      "text": "There’s boat rental at Cabarita as well.",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzwo4ht/",
+      "score": 5
+    },
+    {
+      "text": "16 Regatta Way, Cabarita, NSW 2137 https://www.realestate.com.au/property-terrace-nsw-cabarita-144484412\n\n$5.6 million for some river water views, shared walls and at least 6 apartments having a full ",
+      "url": "https://reddit.com/r/sydney/comments/1c2z5xu/auction_price_insanity/kzh3a6i/",
+      "score": 4
+    },
+    {
+      "text": "whats the current thinking on where its safe to eat fish from the harbour? I thought it was generally considered not a good idea if caught west of the harbour bridge, but i see so many people fishing ",
+      "url": "https://reddit.com/r/sydney/comments/1chsb0u/sydney_daily_random_discussion_thread_02052024/l26wrk1/",
+      "score": 4
+    },
+    {
+      "text": "Honestly, forget entertaining your kid, entertain YOURSELF. \n\nYour child will be happy to just observe the world with you. So get into those art galleries and museums while you can and your baby will ",
+      "url": "https://reddit.com/r/sydney/comments/1bjzhbx/free_or_cheap_stuff_to_do_with_a_4m_old/kvylvvd/",
+      "score": 3
+    },
+    {
+      "text": "According to [census stats](https://profile.id.com.au/canada-bay/seifa-disadvantage-small-area) - it's in the top 17% least disadvantaged areas in Australia. Some areas are a lot higher - Cabarita is ",
+      "url": "https://reddit.com/r/sydney/comments/1csghqv/is_the_canada_bay_area_middle_or_upper_class/l48gqpu/",
+      "score": 2
+    }
+  ]
+}

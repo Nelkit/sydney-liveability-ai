@@ -1,0 +1,101 @@
+{
+  "suburb": "Warwick Farm",
+  "post_count": 32,
+  "fetched_at": "2026-04-18T02:12:02.112022+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.517,
+      "mentions": 22
+    },
+    "green_space": {
+      "score": 0.525,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.594,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.522,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.728,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.766,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5573,
+    "surprise": 0.2186,
+    "sadness": 0.0253,
+    "joy": 0.0382,
+    "anger": 0.047,
+    "disgust": 0.0457,
+    "fear": 0.068
+  },
+  "narrative": "Reddit discussions about Warwick Farm are most positive about noise (0.77) and transport (0.73). Residents are most critical about food and cafe (0.50) and nightlife (0.50). This analysis is based on 32 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "That’s Warwick Farm",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4e37xr/",
+      "score": 547
+    },
+    {
+      "text": "Milperra and Warwick Farm aren't that close to one another",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4e57q0/",
+      "score": 381
+    },
+    {
+      "text": "They never should have closed Warwick Farm Racecourse Station. Think of how much easier it would have been for the horse to get a train from there instead",
+      "url": "https://reddit.com/r/sydney/comments/1c0ht41/im_gonna_take_my_horse_to_the_old_town_road/kywf1f2/",
+      "score": 189
+    },
+    {
+      "text": "Visit the real harbour bridge at Peter Warren Warwick farm.",
+      "url": "https://reddit.com/r/sydney/comments/1cojj2k/what_are_some_experiences_every_sydneysider_has/l3ei5kc/",
+      "score": 165
+    },
+    {
+      "text": "Yeah, the fuck OP smoking to think thos is Milperra? warwick farm station is pretty much to the left of this picture",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4efssw/",
+      "score": 142
+    },
+    {
+      "text": "Warwick Farm harbour bridge",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie42y1/",
+      "score": 95
+    },
+    {
+      "text": "That’s not Milperra OP, it’s two suburbs away from Milperra. That’s Warwick Farm.",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4ed7a8/",
+      "score": 70
+    },
+    {
+      "text": "Well it was Warwick Farm",
+      "url": "https://reddit.com/r/sydney/comments/1c0ht41/im_gonna_take_my_horse_to_the_old_town_road/kywhc8s/",
+      "score": 53
+    },
+    {
+      "text": "Loud bangs? Heard in Warwick farm and Edmonton park \nDoes anyone have any insight into the loud bangs? My brother just messaged me from his workplace a few suburbs over because the kids at his work we",
+      "url": "https://reddit.com/r/sydney/comments/1d9akxl/loud_bangs_heard_in_warwick_farm_and_edmonton_park/",
+      "score": 39
+    },
+    {
+      "text": "\"Eagle Farm!?\" I thought you said \"Warwick Farm\" Oh shit I'm gonna be late!",
+      "url": "https://reddit.com/r/sydney/comments/1c0ht41/im_gonna_take_my_horse_to_the_old_town_road/kywigsi/",
+      "score": 39
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "suburb": "Acacia Gardens",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:26.912081+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.597,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.622,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.65,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.65,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.561,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.897,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.897,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.897,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "neutral": 0.912,
+    "joy": 0.0285,
+    "surprise": 0.0162,
+    "sadness": 0.0173,
+    "disgust": 0.0063,
+    "anger": 0.004,
+    "fear": 0.0157
+  },
+  "narrative": "Reddit discussions about Acacia Gardens are most positive about noise (0.90) and nightlife (0.90). Residents are most critical about transport (0.60) and green space (0.56). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "It does depend on the suburb.\n\nSome of the northern suburbs like Acacia gardens, Glenwood, (East) Quakers Hill, Stanhope etc are nice. Surrounding Blacktown centre suburb are a lot of low income and n",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kivbvh7/",
+      "score": 18
+    },
+    {
+      "text": "Stanhope gardens, acacia gardens, Kellyville ridge, parklea and Glenwood are all in the same area and all rely heavily on either driving and taking a metro and/or buses to commute. They’re all heavily",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/koi77hl/",
+      "score": 11
+    },
+    {
+      "text": "Suburb recommendations in Western Sydney\nOur family was looking to move to Sydney from interstate. Given our budget, we are looking at Western Sydney. We have been looking into a few suburbs where to ",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/",
+      "score": 2
+    }
+  ]
+}

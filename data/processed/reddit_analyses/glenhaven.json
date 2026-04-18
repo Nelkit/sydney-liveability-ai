@@ -1,0 +1,66 @@
+{
+  "suburb": "Glenhaven",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:34.449662+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.412,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.397,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.397,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.648,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6177,
+    "surprise": 0.3032,
+    "sadness": 0.0351,
+    "joy": 0.0099,
+    "disgust": 0.0138,
+    "anger": 0.0085,
+    "fear": 0.0118
+  },
+  "narrative": "Reddit discussions about Glenhaven are most positive about nightlife (0.65) and safety (0.50). Residents are most critical about noise (0.40) and green space (0.40). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Have Riverstone, Kenthurst and Glenhaven covered in our group chat - all reported nothing as well.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktweaks/",
+      "score": 6
+    },
+    {
+      "text": "Anyone lost power in glenhaven area?\nI’ve lost power, wondering if anyone is experiencing this or it’s me",
+      "url": "https://reddit.com/r/sydney/comments/1p9aace/anyone_lost_power_in_glenhaven_area/",
+      "score": 2
+    },
+    {
+      "text": "Yeah I can see from Glenhaven too",
+      "url": "https://reddit.com/r/sydney/comments/1d7nsq6/what_is_this_crazy_cloud_over_sydney_right_now/l70srjf/",
+      "score": 2
+    }
+  ]
+}

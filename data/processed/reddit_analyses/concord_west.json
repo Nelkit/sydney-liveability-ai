@@ -1,0 +1,101 @@
+{
+  "suburb": "Concord West",
+  "post_count": 16,
+  "fetched_at": "2026-04-18T02:16:18.494184+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.667,
+      "mentions": 13
+    },
+    "noise": {
+      "score": 0.88,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.797,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.792,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.743,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.707,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.346,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.267,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "joy": 0.0486,
+    "fear": 0.0457,
+    "surprise": 0.1561,
+    "neutral": 0.6418,
+    "anger": 0.0297,
+    "disgust": 0.0432,
+    "sadness": 0.0349
+  },
+  "narrative": "Reddit discussions about Concord West are most positive about noise (0.88) and affordability (0.80). Residents are most critical about transport (0.35) and safety (0.27). This analysis is based on 16 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Steam train departing Concord West this morning \nHeard something similar to an old train whistle so I went out to my balcony and was greeted by this pleasant surprise.",
+      "url": "https://reddit.com/r/sydney/comments/1c28uvc/steam_train_departing_concord_west_this_morning/",
+      "score": 124
+    },
+    {
+      "text": "For your budget you may have to share unfortunately or go further out. You could get something in that price range in a place like concord west but it's a sleepy little area. Still nice though. ",
+      "url": "https://reddit.com/r/sydney/comments/1cyicge/moving_to_sydney_good_suburbs_to_rent/l59qvk8/",
+      "score": 69
+    },
+    {
+      "text": "Bicentennial Park\nNot a bad option for those coming from the Northern Suburbs area to SOP, to do the walk to/from Concord West.",
+      "url": "https://reddit.com/r/sydney/comments/1s6q3cb/bicentennial_park/",
+      "score": 57
+    },
+    {
+      "text": "What the hell has happened to the T9 line Epping to City?\nSince last week the 7:44am at Concord West has been cancelled leaving almost 30 minutes between the 7:29 and 7:59 trains. Both the 7:59am and ",
+      "url": "https://reddit.com/r/sydney/comments/1aqztz9/what_the_hell_has_happened_to_the_t9_line_epping/",
+      "score": 50
+    },
+    {
+      "text": ">**Not stopping at**\r  \nStarted 2h ago, ended 2h ago\r  \nNorth Strathfield,Concord West,West Ryde,Denistone,Eastwood due to an issue with a freight train at Asquith. Please allow extra travel time.\n\nTh",
+      "url": "https://reddit.com/r/sydney/comments/199jhc4/just_a_shoutout_to_transport_nsw/kieqpgs/",
+      "score": 22
+    },
+    {
+      "text": "If you can walk go to Concord west station.",
+      "url": "https://reddit.com/r/sydney/comments/1c21ixw/pickup_spot_for_qudos_bank_arena/kz71lnk/",
+      "score": 15
+    },
+    {
+      "text": "I think OP’s price range is going to be be difficult for an apartment in Conford West. The whole Concord West-North Strathfield-North Homebush stretch is now more like $600-750 for a one bedder. I thi",
+      "url": "https://reddit.com/r/sydney/comments/1cyicge/moving_to_sydney_good_suburbs_to_rent/l5ahcqi/",
+      "score": 10
+    },
+    {
+      "text": "The parking can absolutely be booked out - you'll see it on the electronic signs on the way in if they're all done.  Generally only P1 will sell out though.\n\nNot helped by P6 probably being closed due",
+      "url": "https://reddit.com/r/sydney/comments/1bayzh7/olympic_park_parking/ku5ybg4/",
+      "score": 8
+    },
+    {
+      "text": "I found a list once upon a time when I used to park in Concord West quite often, but not any more.\n\nThe list for Olympic Park was basically anything they run the special buses for (State of Origin, NR",
+      "url": "https://reddit.com/r/sydney/comments/1b23vif/does_this_count_as_street_parking/kslyg93/",
+      "score": 5
+    },
+    {
+      "text": "What the hell is happening on the T9 line since last week? We're at Concord West which is on the express stops trains, so only a train every 15 minutes or so at peak hour. The 7:44am to the city has b",
+      "url": "https://reddit.com/r/sydney/comments/1aq3mvg/trains_fucked_issues_st_leonards/kqbyy0p/",
+      "score": 4
+    }
+  ]
+}

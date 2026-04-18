@@ -1,0 +1,56 @@
+{
+  "suburb": "Lurnea",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:10.513641+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.442,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.442,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.442,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.5281,
+    "anger": 0.3827,
+    "fear": 0.0446,
+    "neutral": 0.0299,
+    "sadness": 0.0095,
+    "joy": 0.0028,
+    "surprise": 0.0023
+  },
+  "narrative": "Reddit discussions about Lurnea are most positive about safety (0.50) and affordability (0.50). Residents are most critical about nightlife (0.44) and food and cafe (0.44). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
+  "sources": [
+    {
+      "text": "Casula was never bad.\n\nLurnea was, especially Wonga Rd side, probably better now\n\nLiverpool will always be shit.\n\nGrew up in the area from 1990s to 2010s.\n\nFight me.",
+      "url": "https://reddit.com/r/sydney/comments/1ah1ika/why_do_people_still_trash_talk_western_sydney/koksllz/",
+      "score": 4
+    }
+  ]
+}

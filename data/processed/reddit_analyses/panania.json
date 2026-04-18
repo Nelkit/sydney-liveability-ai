@@ -1,0 +1,71 @@
+{
+  "suburb": "Panania",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:21.209883+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.504,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.135,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.307,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.3943,
+    "neutral": 0.0835,
+    "surprise": 0.2417,
+    "anger": 0.1755,
+    "disgust": 0.078,
+    "sadness": 0.0232,
+    "joy": 0.0038
+  },
+  "narrative": "Reddit discussions about Panania are most positive about community (0.50) and food and cafe (0.50). Residents are most critical about safety (0.31) and transport (0.14). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is fear.",
+  "sources": [
+    {
+      "text": "Please help a visually impaired person out!! Is this a snail or something to be concerned about?\nMy roommates are at work so I can't ask them 😅\n\nWent to take out the rubbish and saw this big circle th",
+      "url": "https://reddit.com/r/sydney/comments/1o6ddsg/please_help_a_visually_impaired_person_out_is/",
+      "score": 82
+    },
+    {
+      "text": "T8 line. Shits fucked at like panania or something.\nWas waiting at glenfeild got told track failure at panania trains gonna be a while.",
+      "url": "https://reddit.com/r/sydney/comments/1jd84gw/t8_line_shits_fucked_at_like_panania_or_something/",
+      "score": 51
+    },
+    {
+      "text": "NSW Police operation unfolding in Panania, south-west Sydney\n>Specialist police and officers from the Bankstown Area Command have been deployed at Wollongbar Avenue in Panania. \n\n>The public is urged ",
+      "url": "https://reddit.com/r/sydney/comments/1nwl2qs/nsw_police_operation_unfolding_in_panania/",
+      "score": 42
+    },
+    {
+      "text": "I was told as a kid that the suburb that is now Panania used to be all part of East Hills (adjacent suburb). Sometime after East Hills train station went in they wanted to put another train station be",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo1v8f/",
+      "score": 7
+    }
+  ]
+}

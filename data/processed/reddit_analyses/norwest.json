@@ -1,0 +1,101 @@
+{
+  "suburb": "Norwest",
+  "post_count": 39,
+  "fetched_at": "2026-04-18T02:10:03.958300+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.596,
+      "mentions": 28
+    },
+    "safety": {
+      "score": 0.593,
+      "mentions": 11
+    },
+    "nightlife": {
+      "score": 0.927,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.748,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.666,
+      "mentions": 11
+    },
+    "transport": {
+      "score": 0.433,
+      "mentions": 15
+    },
+    "affordability": {
+      "score": 0.634,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5413,
+    "surprise": 0.1354,
+    "sadness": 0.0374,
+    "joy": 0.0535,
+    "fear": 0.1234,
+    "disgust": 0.0653,
+    "anger": 0.0436
+  },
+  "narrative": "Reddit discussions about Norwest are most positive about nightlife (0.93) and noise (0.75). Residents are most critical about green space (0.50) and transport (0.43). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Bravo to this legend at Norwest Hospital…",
+      "url": "https://reddit.com/r/sydney/comments/1k42ycf/bravo_to_this_legend_at_norwest_hospital/",
+      "score": 1186
+    },
+    {
+      "text": "Anyone know what type of lizard is this\nFound in norwest",
+      "url": "https://reddit.com/r/sydney/comments/1fypxmc/anyone_know_what_type_of_lizard_is_this/",
+      "score": 172
+    },
+    {
+      "text": "Help with retrieving dead pet from M7 motorway in Norwest!! \nWhat a shambles it is to retrieve the body of a pet dog that was run over. \n\nWe had a freak incident yesterday where our family dog took of",
+      "url": "https://reddit.com/r/sydney/comments/1hcbaip/help_with_retrieving_dead_pet_from_m7_motorway_in/",
+      "score": 147
+    },
+    {
+      "text": "Warning for those using the taxi stand at the Norwest Metro for drop off or pick up.\nIf you happen to use the taxi stand beside (in front of) on Brookhollow Road to pick up or drop off, please don't. ",
+      "url": "https://reddit.com/r/sydney/comments/1d3y2ib/warning_for_those_using_the_taxi_stand_at_the/",
+      "score": 39
+    },
+    {
+      "text": "I don't know how to feel.\nI'd argue the business park called NorWest would be in or atleast the edge of  the north west bubble",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxzfwye/",
+      "score": 34
+    },
+    {
+      "text": "McDonalds at Norwest tables are very scarce so you should clean it yourself. If he was petty he would have \"accidentally\" thrown out your sunglasses. You were being both inconsiderate and a jerk.",
+      "url": "https://reddit.com/r/sydney/comments/1bxvmn7/rude_customer_at_mcdonalds_in_sydney_left/kyfe65a/",
+      "score": 28
+    },
+    {
+      "text": "Why are there so many red-light cameras in Blacktown?\nHeaded over to the hood after quite a while to drop a friend off in Oxford St....what struck me was the sheer number of red light cameras installe",
+      "url": "https://reddit.com/r/sydney/comments/1fe99bl/why_are_there_so_many_redlight_cameras_in/",
+      "score": 26
+    },
+    {
+      "text": "North West, try The Seed Thai at Norwest. Beautiful lake views, great food!",
+      "url": "https://reddit.com/r/sydney/comments/1dm9fiy/best_thai_restaurants_in_sydney/l9u4rha/",
+      "score": 18
+    },
+    {
+      "text": "Metro Line Redundancy\nIs the metro network actually two metro lines? Norwest and City + Southwest?\n\nIf there's a breakdown at crows nest, does this mean that the whole network is down or is the Norwes",
+      "url": "https://reddit.com/r/sydney/comments/1f8fm4a/metro_line_redundancy/",
+      "score": 17
+    },
+    {
+      "text": "I've lived in the Inner West, North Shore, Norwest and Western Sydney and Western Sydney was my least favorite place to be. Relative to the other areas it's dirty, people are rude, crime rates are hig",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie2tks/",
+      "score": 17
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "suburb": "Prairiewood",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:48.202403+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.749,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.749,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.3341,
+    "surprise": 0.0107,
+    "neutral": 0.3213,
+    "sadness": 0.0192,
+    "anger": 0.062,
+    "disgust": 0.0321,
+    "fear": 0.2206
+  },
+  "narrative": "Reddit discussions about Prairiewood are most positive about transport (0.93) and noise (0.93). Residents are most critical about food and cafe (0.50) and nightlife (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is joy.",
+  "sources": [
+    {
+      "text": "I moved to Prairiewood literally two days before the riot. It was certainly a colourful welcome. I’m glad there are consequences for these hoons.",
+      "url": "https://reddit.com/r/sydney/comments/1c658p6/nsw_police_arrest_man_in_connection_with_riot/kzyqvdt/",
+      "score": 31
+    },
+    {
+      "text": "I'm a massive fan of public transport and use it for 90% of my daily travel needs. But I'm lucky to live in the inner west, an area with abundant public transport. \n\nThere are times for work or family",
+      "url": "https://reddit.com/r/sydney/comments/1bivdnn/streets_are_being_smashed_as_drivers_try_to_save/kvno1pa/",
+      "score": 8
+    },
+    {
+      "text": "Went to prairiewood high and we had bomb threats, lots of fights after school with machetes, trolley poles etc either with people from our school or others. I remember fairvale, quite a few mates I us",
+      "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzynoey/",
+      "score": 4
+    }
+  ]
+}

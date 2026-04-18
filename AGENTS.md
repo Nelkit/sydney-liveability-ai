@@ -122,8 +122,10 @@ Do not introduce new libraries or frameworks without team agreement. The approve
 
 ### Data
 - Raw data files go in `data/raw/` and are never committed to Git.
-- Processed data files go in `data/processed/` and are never committed to Git.
-- The only exception is `data/processed/suburbs.geojson` — this static geometry file must be committed to the repository.
+- Processed data files go in `data/processed/` and are never committed to Git, with three explicit exceptions that must be committed:
+  - `data/processed/suburbs.geojson` — static suburb geometry.
+  - `data/processed/reddit/` — pre-processed Reddit post data, produced from the Arctic Shift bulk dumps. Committed so the backend can serve suburb analyses without re-running extraction.
+  - `data/processed/reddit_analyses/` — NLP pipeline output (aspect scores, emotions, narrative, sources) per suburb. Committed so the chat demo runs without downloading the ~1.8 GB of transformer models the pipeline depends on.
 - The ChromaDB `persist_directory` must point to `data/processed/chromadb/`.
 - All text chunks ingested into ChromaDB must carry three metadata fields: `suburb` · `source` · `theme`.
 
@@ -219,7 +221,7 @@ These response shapes are fixed. Do not change them without updating both the ba
 - Never push directly to `main`. All work happens on feature branches.
 - Branch naming: `feature/data` · `feature/nlp` · `feature/backend` · `feature/frontend`.
 - Open a Pull Request to `develop` when a task is ready for review. At least one other team member must approve before merging.
-- Never commit: API keys · `.env` files · `data/raw/` · `data/processed/` · `node_modules/` · `venv/` · `.next/`.
+- Never commit: API keys · `.env` files · `data/raw/` · `node_modules/` · `venv/` · `.next/`. Most of `data/processed/` is also ignored; see the Data section above for the three committed exceptions.
 - Commit messages must be descriptive. Do not write "fix" or "update" alone — write "fix: suburb weight normalisation in /api/civic" instead.
 
 ---

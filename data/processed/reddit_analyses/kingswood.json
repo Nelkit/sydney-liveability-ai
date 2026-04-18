@@ -1,0 +1,101 @@
+{
+  "suburb": "Kingswood",
+  "post_count": 17,
+  "fetched_at": "2026-04-18T02:16:08.544826+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.244,
+      "mentions": 8
+    },
+    "community": {
+      "score": 0.303,
+      "mentions": 16
+    },
+    "transport": {
+      "score": 0.404,
+      "mentions": 6
+    },
+    "noise": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.842,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.85,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.533,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "anger": 0.0925,
+    "fear": 0.0936,
+    "disgust": 0.1014,
+    "neutral": 0.4794,
+    "sadness": 0.0493,
+    "surprise": 0.1393,
+    "joy": 0.0447
+  },
+  "narrative": "Reddit discussions about Kingswood are most positive about noise (0.99) and green space (0.85). Residents are most critical about community (0.30) and safety (0.24). This analysis is based on 17 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "NSW Police charge 15-year-old boy with stabbing murder of pizza shop owner in Kingswood",
+      "url": "https://reddit.com/r/sydney/comments/1iipmx9/nsw_police_charge_15yearold_boy_with_stabbing/",
+      "score": 457
+    },
+    {
+      "text": "PSA: Trains out west of St Marys\nAnyone going to Blue Mountains or to Penrith, overhead wires down at Kingswood. No trains beyond St Marys.",
+      "url": "https://reddit.com/r/sydney/comments/1lovy7i/psa_trains_out_west_of_st_marys/",
+      "score": 111
+    },
+    {
+      "text": "Cool Jess Fox / Nathan Cleary murals/ads, Kingswood",
+      "url": "https://reddit.com/r/sydney/comments/1g8imy3/cool_jess_fox_nathan_cleary_muralsads_kingswood/",
+      "score": 59
+    },
+    {
+      "text": "Ladders at the front/back of the train, carriage by carriage. Had to do this at kingswood after something similar.",
+      "url": "https://reddit.com/r/sydney/comments/1aqdkog/person_struck_by_a_train_macdonaldtown/kqcolkt/",
+      "score": 29
+    },
+    {
+      "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
+      "score": 27
+    },
+    {
+      "text": "Kingswood Hotel.",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1us9y3/",
+      "score": 18
+    },
+    {
+      "text": "My bro really out here linking rentals in Tregear, Emerton, kingswood and colyton lmfao",
+      "url": "https://reddit.com/r/sydney/comments/1c2lk00/a_fulltime_wage_is_not_always_enough_to_live_in/kzc5noz/",
+      "score": 14
+    },
+    {
+      "text": "Also felt in Kingswood right near Jamison Rd",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwe865/",
+      "score": 9
+    },
+    {
+      "text": "A guy I went to school with got glassed on his 18th birthday at the Kingswood.",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1vzwti/",
+      "score": 5
+    },
+    {
+      "text": "I see Dr Alex Ganora who has an office in Leichardt and in Kingswood. He is a muscular skeletal pain specialist. Need a referral to see him. He has organised cortisone injections in my neck, lower spi",
+      "url": "https://reddit.com/r/sydney/comments/1adlfv6/chronic_pain_clinics_in_sydney/kodly2i/",
+      "score": 2
+    }
+  ]
+}

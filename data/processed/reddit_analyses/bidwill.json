@@ -1,0 +1,81 @@
+{
+  "suburb": "Bidwill",
+  "post_count": 6,
+  "fetched_at": "2026-04-18T02:19:30.494655+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.131,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.365,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.729,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.677,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.729,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.2519,
+    "disgust": 0.2742,
+    "anger": 0.035,
+    "surprise": 0.0091,
+    "sadness": 0.0449,
+    "neutral": 0.3832,
+    "joy": 0.0017
+  },
+  "narrative": "Reddit discussions about Bidwill are most positive about transport (0.73) and green space (0.73). Residents are most critical about community (0.36) and safety (0.13). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Have you been to Bidwill, or Wilmot? There are absolutely terrible looking areas there, I live right next to them, I have friends that live in them. There are actually bad areas of Sydney. Not to say ",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiej1ae/",
+      "score": 47
+    },
+    {
+      "text": "TfNSW have been working on 3-4 possible routes to run from Tallawong to St Mary's with potential stops in the new Marsden Park town centre, Bidwill, Dharuk and possibly Mount Druitt (though Mount Drui",
+      "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/ky8hoi8/",
+      "score": 34
+    },
+    {
+      "text": "Mount druitt never really had much public housing to gentrify away. Bidwill, 5km away was the housing commission that mount druitt gots its bad name from.",
+      "url": "https://reddit.com/r/sydney/comments/193wtwv/affordable_housing/khghck0/",
+      "score": 4
+    },
+    {
+      "text": "It's not just any old commission. There are downright derelict homes throughout the area. Also, I said where HAHA, unless you mean where in those suburbs, in which case take a stroll through Amelia Wa",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kig164b/",
+      "score": 4
+    },
+    {
+      "text": "The girls in bidwill put men in maximum prison to shame.\n\nHad a cousin board up windows in bedrooms because they'd let themselves in and have mates in cars outside.\n\nShe wasn't looking for trouble, th",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktu8clq/",
+      "score": 3
+    },
+    {
+      "text": "Try Tregear or Bidwill or Whalan - those are rough parts of Sydney, which are not Mount Druitt btw. Crime stats just lump that whole area together by postcode which doesn't reflect reality.",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktu0399/",
+      "score": 2
+    }
+  ]
+}

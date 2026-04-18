@@ -1,0 +1,61 @@
+{
+  "suburb": "Emerton",
+  "post_count": 2,
+  "fetched_at": "2026-04-18T02:20:56.125466+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.829,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.829,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5463,
+    "surprise": 0.3546,
+    "joy": 0.0781,
+    "disgust": 0.0036,
+    "sadness": 0.0123,
+    "anger": 0.0036,
+    "fear": 0.0015
+  },
+  "narrative": "Reddit discussions about Emerton are most positive about transport (0.84) and safety (0.84). Residents are most critical about affordability (0.83) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kive325/",
+      "score": 51
+    },
+    {
+      "text": "My bro really out here linking rentals in Tregear, Emerton, kingswood and colyton lmfao",
+      "url": "https://reddit.com/r/sydney/comments/1c2lk00/a_fulltime_wage_is_not_always_enough_to_live_in/kzc5noz/",
+      "score": 14
+    }
+  ]
+}
