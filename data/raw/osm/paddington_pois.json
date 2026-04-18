@@ -1,0 +1,1774 @@
+{
+  "suburb": "Paddington",
+  "bbox": {
+    "south": -33.8899323,
+    "west": 151.2182076,
+    "north": -33.8767887,
+    "east": 151.2375744
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8899323,151.2182076,-33.8767887,151.2375744);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8899323,151.2182076,-33.8767887,151.2375744);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8899323,151.2182076,-33.8767887,151.2375744);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8899323,151.2182076,-33.8767887,151.2375744);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:34:30Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 2522579363,
+            "tags": {
+              "addr:housenumber": "128",
+              "addr:postcode": "2010",
+              "addr:street": "Liverpool Street",
+              "addr:suburb": "Darlinghurst",
+              "amenity": "cafe",
+              "check_date": "2025-07-27",
+              "name": "Fable Coffee",
+              "old_name": "Ecabar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3984360119,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Arthouse Kitchen",
+              "outdoor_seating": "yes",
+              "toilets:wheelchair": "yes",
+              "website": "https://arthousekitchen.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4112641174,
+            "tags": {
+              "leisure": "playground",
+              "name": "Oatley Road Playground",
+              "source": "NSW LPI Base Map"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4229084350,
+            "tags": {
+              "addr:housenumber": "348",
+              "addr:street": "Victoria Street",
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "La Tavola",
+              "name:en": "A Tavola",
+              "opening_hours": "Mo-Sa 12:00-15:00, 18:00-21:30",
+              "phone": "+61 2 9331 7871",
+              "website": "http://atavola.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4289258709,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Fresh Daily on Gordon",
+              "outdoor_seating": "yes",
+              "shop": "convenience"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4289312511,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-17",
+              "contact:instagram": "wolf.paddington",
+              "name": "Wolf",
+              "opening_hours": "Mo-Sa 07:00-15:00; Su 08:00-12:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4370860997,
+            "tags": {
+              "amenity": "library",
+              "check_date": "2025-11-12",
+              "name": "Paddington Library",
+              "source": "NSW LPI Base Map",
+              "source:date": "2016-08",
+              "wikidata": "Q78023712"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4547385189,
+            "tags": {
+              "addr:housenumber": "379B",
+              "addr:postcode": "2010",
+              "addr:street": "South Dowling Street",
+              "amenity": "cafe",
+              "contact:facebook": "https://www.facebook.com/Monkey-Barista-Coffee-House-1656945374631462/",
+              "name": "Monkey Barista",
+              "opening_hours": "Mo-Sa 07:00-16:00; Su 08:00-16:00",
+              "phone": "+61 452 453 686"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4547386189,
+            "tags": {
+              "addr:street": "Albion Avenue",
+              "amenity": "cafe",
+              "name": "Morris",
+              "website": "https://morrispaddington.square.site/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4568753746,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "local",
+              "name": "Kate's on 9"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4568753747,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "local",
+              "name": "De Novo Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4645231591,
+            "tags": {
+              "addr:housenumber": "340",
+              "addr:postcode": "2010",
+              "addr:street": "Victoria Street",
+              "amenity": "restaurant",
+              "check_date": "2025-01-12",
+              "check_date:opening_hours": "2025-01-12",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "Una's",
+              "opening_hours": "Mo-Su 10:00-21:00",
+              "outdoor_seating": "yes",
+              "website": "https://www.unasrestaurant.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4689171659,
+            "tags": {
+              "alt_name": "10WilliamSt",
+              "amenity": "restaurant",
+              "email": "info@10williamst.com.au",
+              "name": "10 William St",
+              "phone": "+61 2 9360 3310",
+              "website": "http://10williamst.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4866607621,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Bills",
+              "name:en": "Bills",
+              "website": "https://www.bills.com.au/en/locations/darlinghurst"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4936516722,
+            "tags": {
+              "addr:housenumber": "154",
+              "addr:street": "New South Head Road",
+              "leisure": "sports_centre",
+              "name": "Pilates Physique",
+              "phone": "+61 2 9363 3387",
+              "sport": "pilates",
+              "website": "https://www.pilatesphysique.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4951822887,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-11-10",
+              "name": "Bar Latte"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5365007622,
+            "tags": {
+              "addr:postcode": "2010",
+              "addr:street": "Liverpool Street",
+              "amenity": "cafe",
+              "name": "The Bunker Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5469438921,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Bake Bar",
+              "outdoor_seating": "yes",
+              "website": "https://bakebar.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5469438922,
+            "tags": {
+              "amenity": "cafe",
+              "contact:instagram": "cafefivewayspaddington",
+              "name": "Caf\u00e9 Fiveways",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5469439021,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2023-04-23",
+              "cuisine": "thai",
+              "email": "info@eatthai.com.au",
+              "name": "Eat Thai",
+              "opening_hours": "Su-Th 17:00-21:30; Fr-Sa 17:00-22:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9361 6640",
+              "website": "https://www.eatthai.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5512620521,
+            "tags": {
+              "addr:housenumber": "227",
+              "addr:postcode": "2021",
+              "addr:street": "Glenmore Road",
+              "amenity": "restaurant",
+              "check_date": "2023-04-23",
+              "name": "Sonder",
+              "outdoor_seating": "yes",
+              "phone": "+61 481 056 848",
+              "website": "https://sondercafe.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5555376256,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Fu Manchu"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5555377377,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Eat Thai",
+              "website": "https://eatthaidarlinghurst.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5555622665,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee;breakfast",
+              "name": "Bar Coluzzi"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5662510922,
+            "tags": {
+              "addr:housenumber": "51",
+              "addr:street": "Moncur Street",
+              "amenity": "restaurant",
+              "cuisine": "italian_pizza;italian",
+              "name": "Big mamas",
+              "name:en": "Big Mamas Trattoria Italiana",
+              "website": "https://bigmamas.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5748633847,
+            "tags": {
+              "addr:housenumber": "252",
+              "addr:street": "Forbes Street",
+              "amenity": "cafe",
+              "check_date": "2025-07-27",
+              "contact:instagram": "therustyrabbit",
+              "name": "The Rusty Rabbit",
+              "opening_hours": "Mo-Fr 07:00-15:30; Sa-Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 405 062 037",
+              "website": "https://therustyrabbit.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5748633901,
+            "tags": {
+              "amenity": "cafe",
+              "name": "A Brewer\u2019s Tale",
+              "opening_hours": "Mo-Fr 07:00-14:30; Sa,Su 08:00-14:30",
+              "outdoor_seating": "yes",
+              "website": "https://abrewerstale.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5748678492,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe Claudine"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5748678509,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Little Bishop"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5754922211,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5756213965,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5757884112,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-12-10",
+              "name": "Organic Bread Bar",
+              "outdoor_seating": "yes",
+              "shop": "bakery",
+              "website": "https://www.organicbreadbar.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5757884128,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-12-10",
+              "name": "Apache",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5757884131,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Buon Ricordo Ristorante",
+              "website": "https://buonricordo.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5794885753,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "restaurant",
+              "check_date": "2024-08-04",
+              "name": "Arthur's Pizza"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5795829888,
+            "tags": {
+              "addr:housenumber": "390",
+              "addr:postcode": "2010",
+              "addr:state": "NSW",
+              "addr:street": "Victoria Street",
+              "addr:suburb": "Darlinghurst",
+              "amenity": "cafe",
+              "check_date": "2025-12-02",
+              "cuisine": "sandwich;coffee_shop",
+              "internet_access:fee": "no",
+              "level": "0",
+              "name": "Bites Cafe",
+              "opening_hours": "Mo-Fr 06:30-19:00, Sa-Su 07:30-17:00",
+              "source": "local knowledge",
+              "website": "https://www.svhs.org.au/patients-visitors/facility-access/on-site-services/dining",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5886006993,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "name": "Showchef Teppanyaki"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5886006995,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-08-06",
+              "cuisine": "thai",
+              "name": "Thai Nesia"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5889366085,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2024-09-09",
+              "cuisine": "indian",
+              "name": "Flavour of India",
+              "opening_hours": "Mo-Su 18:00-22:00",
+              "website": "https://flavourofindia.co/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5897977917,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-08-04",
+              "name": "Ampersand Cafe & Bookstore"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5897978230,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "name": "Jackie's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5901653562,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "cafe",
+              "name": "Micky's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902813542,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "name": "Sushi n' Blue Train"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902814220,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "restaurant",
+              "name": "Fred's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902814227,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "restaurant",
+              "name": "The Paddington"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902885381,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Thirty Coffee"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902885715,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "pizza",
+              "name": "Italian Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902885778,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Piccadilly Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902885807,
+            "tags": {
+              "amenity": "cafe",
+              "name": "14 Queen"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6037842301,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Missy K",
+              "opening_hours": "Mo-Su 17:30-21:30",
+              "phone": "+61 2 9331 0064",
+              "website": "https://www.missyk.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6367260713,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6367438799,
+            "tags": {
+              "amenity": "cafe",
+              "contact:instagram": "the_bonython_cafe",
+              "name": "The Bonython Cafe",
+              "opening_hours": "Mo-Fr 08:00-15:00; Sa 08:00-14:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6369840474,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6622307515,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-11-10",
+              "fixme": "Correct name and other details",
+              "level": "0",
+              "name": "Baristas Coffee Edgecliff",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6622307516,
+            "tags": {
+              "amenity": "cafe",
+              "level": "0",
+              "name": "Cafe Mia",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6622307518,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "level": "0",
+              "name": "Sushi 2 Go"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6622307519,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Blooms The Chemist",
+              "brand:wikidata": "Q63367543",
+              "check_date": "2024-11-10",
+              "dispensing": "yes",
+              "drive_through": "no",
+              "healthcare": "pharmacy",
+              "level": "0",
+              "name": "Blooms The Chemist",
+              "shop": "chemist"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6622307522,
+            "tags": {
+              "amenity": "cafe",
+              "level": "0",
+              "name": "Green Bowl Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9900891316,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2022-07-21",
+              "cuisine": "japanese",
+              "level": "0",
+              "name": "Yachiyo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10294762323,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-22",
+              "contact:facebook": "https://facebook.com/people/Cafe-on-Mona/100085687124074",
+              "cuisine": "breakfast;coffee_shop",
+              "name": "Cafe on Mona",
+              "opening_hours": "Mo-Fr 06:30-15:30; Sa 07:30-15:00",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10294804841,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2026-03-04",
+              "check_date:opening_hours": "2026-03-04",
+              "contact:instagram": "jerseywoollahra",
+              "name": "Jersey",
+              "opening_hours": "Mo-Su 07:00-16:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10312416727,
+            "tags": {
+              "addr:housenumber": "110",
+              "addr:street": "Boundary Street",
+              "amenity": "restaurant",
+              "name": "Paddington Fish & Chips"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10571683814,
+            "tags": {
+              "amenity": "cafe",
+              "contact:instagram": "strangerespresso",
+              "name": "Bar Stranger",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10571700037,
+            "tags": {
+              "amenity": "restaurant",
+              "contact:instagram": "jozo_paddington",
+              "indoor_seating": "yes",
+              "name": "Jozo",
+              "opening_hours": "Mo-Th 06:00-15:00; Fr 06:00-21:00; Sa,Su 06:00-15:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10740494607,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "email": "info@vinoecucina.com.au",
+              "name": "Vino e Cucina",
+              "opening_hours": "Tu-Fr 17:00-21:30; Sa 12:00-21:30; Su 12:00-21:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9331 7389",
+              "website": "https://www.vinoecucina.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10740501805,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Tuckerbox"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10740501905,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Il Baretto"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10920999141,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The Daily Greens"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10970295367,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Pizza & Pasta"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11126518579,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Marta",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9361 6641",
+              "website": "https://marta.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11126536158,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-09",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "bench",
+              "name": "Ada\u2019s Affair",
+              "outdoor_seating": "yes",
+              "toilets": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11180398367,
+            "tags": {
+              "amenity": "cafe",
+              "contact:instagram": "paddingtonalimentari",
+              "name": "Paddington Alimentari"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11180531707,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Barbetta",
+              "opening_hours": "Mo-We 07:00-16:00; Th-Fr 07:00-16:00, 17:30-22:00; Sa 07:30-16:00, 17:30-22:00; Su 08:00-16:00",
+              "website": "https://barbetta.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11265482347,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-25",
+              "cuisine": "coffee_shop",
+              "name": "Crystal Car Wash Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11273245616,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Buffalo Dining Club",
+              "website": "https://www.buffalodiningclub.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11273245617,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date:opening_hours": "2025-01-12",
+              "cuisine": "vietnamese",
+              "name": "Eat Fuh",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11331924872,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Bootsdarling",
+              "website": "https://www.cafebootsdarling.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11360667442,
+            "tags": {
+              "amenity": "restaurant",
+              "bar": "yes",
+              "name": "Tequila Mockingbird",
+              "website": "https://www.tequila-mockingbird.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11471100594,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "pizza",
+              "name": "Christo\u2019s Pizzeria",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11471100596,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Padre Coffee",
+              "website": "https://www.padrecoffee.com.au/pages/paddington-"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11471881756,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Paddington Compounding Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11635792035,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Old Mate\u2019s",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11658513928,
+            "tags": {
+              "amenity": "library",
+              "name": "NAS Library",
+              "operator": "National Art School",
+              "website": "https://nas.edu.au/library/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11715915743,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Omeio Artisanal Deli",
+              "opening_hours": "Mo-Su 07:00-15:00",
+              "shop": "deli",
+              "website": "https://omeio.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11794962495,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11794965494,
+            "tags": {
+              "addr:housenumber": "339",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Paddington Grind",
+              "outdoor_seating": "yes",
+              "website": "https://m.facebook.com/pages/Paddington-Grind/142137619164649"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11794982660,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11815611467,
+            "tags": {
+              "amenity": "cafe",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12089720381,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "name": "Mr. T's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12089720392,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Juniper",
+              "website": "https://www.junipercafebar.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12184987629,
+            "tags": {
+              "amenity": "cafe",
+              "name": "St. Honore Cafe & Bakery",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12223609725,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "note": "Part of the Woolworths store, unsure how to tag it."
+            }
+          },
+          {
+            "type": "node",
+            "id": 12286244177,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-07-27",
+              "contact:instagram": "perfect.day.deli",
+              "name": "Perfect Day Deli",
+              "opening_hours": "Mo-Su 07:30-17:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12327744483,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Chemist Warehouse",
+              "brand:wikidata": "Q48782120",
+              "healthcare": "pharmacy",
+              "name": "Chemist Warehouse"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12385327422,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "pizza"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12385327424,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Bill Warner Chemist",
+              "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-13:00; Su off",
+              "website": "https://www.billwarnerchemist.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12563759440,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop;sandwich",
+              "name": "Cross Section"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12644670533,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Cipri Italian",
+              "website": "https://cipriitalian.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12982188835,
+            "tags": {
+              "addr:housenumber": "393",
+              "addr:street": "Liverpool Street",
+              "amenity": "restaurant",
+              "check_date": "2025-07",
+              "cuisine": "japanese",
+              "indoor_seating": "yes",
+              "name": "Nomidokoro Indigo",
+              "reservation": "yes",
+              "website": "https://nomidokoroindigo.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13115653368,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe On R"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13174756951,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-09",
+              "indoor_seating": "yes",
+              "name": "I Maccheroni",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13240110359,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Cafe Moda"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13323101191,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Darbury",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13705567545,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "fine_dining",
+              "name": "Saint Peter"
+            }
+          },
+          {
+            "type": "way",
+            "id": 4292684,
+            "tags": {
+              "check_date": "2024-10-25",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Green Park",
+              "name:etymology": "James Green",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/green-park",
+              "wikidata": "Q21929043"
+            }
+          },
+          {
+            "type": "way",
+            "id": 12281514,
+            "tags": {
+              "leisure": "park",
+              "name": "Moore Park",
+              "operator": "Greater Sydney Parklands",
+              "operator:wikidata": "Q135059646",
+              "website": "https://www.centennialparklands.com.au/visit/our-parks/moore-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 26517413,
+            "tags": {
+              "dog": "no",
+              "leisure": "playground",
+              "name": "Cook's Paddock",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/parks,_reserves_and_playgrounds/list_of_parks_and_playgrounds/parks_and_playgrounds/james_cook_reserve_cooks_paddock"
+            }
+          },
+          {
+            "type": "way",
+            "id": 65559753,
+            "tags": {
+              "addr:housenumber": "188",
+              "addr:street": "New South Head Road",
+              "amenity": "school",
+              "email": "office@ascham.nsw.edu.au",
+              "name": "Ascham",
+              "phone": "+61 2 8356 7000",
+              "religion": "none",
+              "website": "https://www.ascham.nsw.edu.au/",
+              "wikidata": "Q4140009"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173735877,
+            "tags": {
+              "check_date": "2023-11-19",
+              "leisure": "park",
+              "name": "Paddington Reservoir Gardens",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/paddington-reservoir-gardens",
+              "wikidata": "Q7123336"
+            }
+          },
+          {
+            "type": "way",
+            "id": 195511273,
+            "tags": {
+              "leisure": "sports_centre",
+              "sport": "bowls"
+            }
+          },
+          {
+            "type": "way",
+            "id": 222248656,
+            "tags": {
+              "check_date": "2023-11-19",
+              "leisure": "park",
+              "name": "Regent Street Reserve",
+              "note": "no name sign"
+            }
+          },
+          {
+            "type": "way",
+            "id": 226244772,
+            "tags": {
+              "check_date": "2025-11-25",
+              "dog": "no",
+              "leisure": "park",
+              "name": "Moncur Reserve",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/list-of-parks-reserves-and-playgrounds/moncur-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 246435456,
+            "tags": {
+              "dog": "no",
+              "leisure": "park",
+              "name": "Gugara Park",
+              "old_name": "Dillon Street Reserve",
+              "operator": "Woollahra Municipal Council",
+              "operator:type": "government",
+              "operator:wikidata": "Q56477516",
+              "website": "https://www.woollahra.nsw.gov.au/Recreation/list-of-parks-reserves-and-playgrounds/Gugara-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 270790547,
+            "tags": {
+              "addr:housenumber": "406",
+              "addr:street": "Victoria Street",
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "St Vincent's Private Hospital",
+              "phone": "+61 2 8382 7111",
+              "website": "https://www.svph.org.au",
+              "wikidata": "Q108737144"
+            }
+          },
+          {
+            "type": "way",
+            "id": 270790549,
+            "tags": {
+              "check_date": "2023-11-08",
+              "leisure": "park",
+              "name": "Barcom Avenue Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 331769891,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 375472865,
+            "tags": {
+              "amenity": "school",
+              "contact:email": "darlinghur-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9361 5389",
+              "contact:phone": "+61 2 9331 4295",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Darlinghurst Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "311",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1883-03-01",
+              "website": "https://www.darlinghur-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 409347592,
+            "tags": {
+              "check_date": "2023-10-16",
+              "dog": "no",
+              "leisure": "park",
+              "name": "Pat Thompson Park",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/list-of-parks-reserves-and-playgrounds/pat-thompson-park",
+              "wikidata": "Q21934797"
+            }
+          },
+          {
+            "type": "way",
+            "id": 416934536,
+            "tags": {
+              "addr:housenumber": "312",
+              "addr:postcode": "2010",
+              "addr:street": "Victoria Street",
+              "addr:suburb": "Darlinghurst",
+              "amenity": "restaurant",
+              "building": "commercial",
+              "building:levels": "2",
+              "cuisine": "italian",
+              "name": "Mad Pizza E Bar",
+              "opening_hours": "12:00-23:00",
+              "takeaway": "yes",
+              "website": "https://madpizzaebar.com.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423229174,
+            "tags": {
+              "addr:housenumber": "346",
+              "addr:street": "Victoria Street",
+              "amenity": "restaurant",
+              "branch": "Darlinghurst",
+              "building": "yes",
+              "building:levels": "2",
+              "cuisine": "mexican",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "Beach Burrito Company"
+            }
+          },
+          {
+            "type": "way",
+            "id": 445377932,
+            "tags": {
+              "access": "yes",
+              "communication:amateur_radio:pota": "AU-10422",
+              "leisure": "park",
+              "name": "Centennial Park",
+              "name:zh": "\u767e\u5e74\u7d00\u5ff5\u516c\u5712",
+              "opening_hours": "24/7",
+              "operator": "Greater Sydney Parklands",
+              "operator:wikidata": "Q135059646",
+              "source:location": "bing",
+              "start_date": "1888",
+              "toilets:wheelchair": "yes",
+              "website": "https://www.centennialparklands.com.au/visit/our-parks/centennial-park",
+              "wheelchair": "yes",
+              "wheelchair:description": "great access for wheelchairs throughout most of the park",
+              "wikidata": "Q61721649",
+              "wikipedia": "en:Centennial Park (Sydney)"
+            }
+          },
+          {
+            "type": "way",
+            "id": 503146874,
+            "tags": {
+              "check_date": "2023-10-01",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 503148264,
+            "tags": {
+              "leisure": "park",
+              "name": "Royal Hospital for Women Park",
+              "opening_hours": "24/7",
+              "operator": "Woollahra Municipal Council",
+              "operator:type": "government",
+              "operator:wikidata": "Q56477516",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/parks,_reserves_and_playgrounds/list_of_parks_and_playgrounds/parks_and_playgrounds/royal_hospital_for_women_park",
+              "wikidata": "Q21934796"
+            }
+          },
+          {
+            "type": "way",
+            "id": 568546375,
+            "tags": {
+              "addr:postcode": "2021",
+              "addr:suburb": "Paddington",
+              "amenity": "school",
+              "contact:email": "glenmorerd-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9361 4284",
+              "contact:phone": "+61 2 9360 4880",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Glenmore Road Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "354",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1883-06-01",
+              "website": "https://www.glenmorerd-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 579983827,
+            "tags": {
+              "leisure": "park",
+              "name": "Womerah Gardens"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600047313,
+            "tags": {
+              "check_date": "2023-11-18",
+              "leisure": "park",
+              "name": "Strong Memorial Reserve",
+              "source": "LPI Base Map and Imagery June 2018"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600047314,
+            "tags": {
+              "addr:postcode": "2021",
+              "addr:suburb": "Paddington",
+              "amenity": "school",
+              "contact:email": "paddington-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9360 9319",
+              "contact:phone": "+61 2 9361 6730",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Paddington Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "329",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1856-05-01",
+              "website": "https://www.paddington-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 607379093,
+            "tags": {
+              "check_date": "2023-10-01",
+              "leisure": "park",
+              "name": "Arthur Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 607379113,
+            "tags": {
+              "check_date": "2023-10-19",
+              "leisure": "park",
+              "name": "Surrey Street Playground",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/surrey-street-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 607379156,
+            "tags": {
+              "check_date": "2023-10-19",
+              "leisure": "park",
+              "name": "Nimrod Street Rest Area"
+            }
+          },
+          {
+            "type": "way",
+            "id": 632337568,
+            "tags": {
+              "addr:housenumber": "390",
+              "addr:street": "Victoria Street",
+              "alt_name": "St. Vincent's Hospital Darlinghurst",
+              "amenity": "hospital",
+              "emergency": "yes",
+              "healthcare": "hospital",
+              "name": "St Vincent's Hospital",
+              "phone": "+61 2 8382 1111",
+              "website": "https://www.svhs.org.au",
+              "wikidata": "Q7595607",
+              "wikipedia": "en:St Vincent's Hospital, Sydney"
+            }
+          },
+          {
+            "type": "way",
+            "id": 680029318,
+            "tags": {
+              "check_date": "2023-05-26",
+              "leisure": "park",
+              "name": "Windsor Street Reserve",
+              "opening_hours": "24/7"
+            }
+          },
+          {
+            "type": "way",
+            "id": 680038377,
+            "tags": {
+              "addr:housenumber": "47",
+              "addr:street": "Windsor Street",
+              "amenity": "restaurant",
+              "building": "retail",
+              "building:architecture": "victorian",
+              "cuisine": "italian",
+              "name": "Lucio's"
+            }
+          },
+          {
+            "type": "way",
+            "id": 680052913,
+            "tags": {
+              "dog": "no",
+              "leisure": "playground",
+              "name": "Cambridge Street Playground",
+              "operator": "Woolahra council"
+            }
+          },
+          {
+            "type": "way",
+            "id": 680053655,
+            "tags": {
+              "dog": "no",
+              "leisure": "playground",
+              "name": "Union Street Playground",
+              "operator": "Woolahra council",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/parks,_reserves_and_playgrounds/list_of_parks_and_playgrounds/parks_and_playgrounds/union_street_playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 681334546,
+            "tags": {
+              "dog": "no",
+              "leisure": "playground",
+              "name": "Soudan Street Playground",
+              "operator": "Woollahra Municipal Council"
+            }
+          },
+          {
+            "type": "way",
+            "id": 831704639,
+            "tags": {
+              "dog": "no",
+              "indoor": "no",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 907704852,
+            "tags": {
+              "dog": "no",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 907709792,
+            "tags": {
+              "check_date": "2023-07-09",
+              "leisure": "park",
+              "name": "Sutherland Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 907710814,
+            "tags": {
+              "check_date": "2023-11-15",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 916536554,
+            "tags": {
+              "check_date": "2025-11-17",
+              "leisure": "park",
+              "name": "Stewart Street Pocket Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 964446312,
+            "tags": {
+              "leisure": "park",
+              "name": "Hall\u2019s Reserve",
+              "opening_hours": "24/7"
+            }
+          },
+          {
+            "type": "way",
+            "id": 970276233,
+            "tags": {
+              "attraction": "maze",
+              "fee": "no",
+              "leisure": "park",
+              "name": "Neild Avenue Maze"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1027354802,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1027354803,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1064211060,
+            "tags": {
+              "check_date": "2025-11-17",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1089403645,
+            "tags": {
+              "leisure": "park",
+              "name": "Comber Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1092233022,
+            "tags": {
+              "leisure": "playground",
+              "name": "Spring Street Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1092590811,
+            "tags": {
+              "leisure": "park",
+              "name": "Lacrozia Playground",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/lacrozia-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1092590812,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1117763116,
+            "tags": {
+              "leisure": "park",
+              "name": "Rose Terrace Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1131271752,
+            "tags": {
+              "leisure": "playground",
+              "playground:theme": "swing"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1221863196,
+            "tags": {
+              "leisure": "park",
+              "name": "Napier Street Open Space"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1225862414,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1260485945,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1298020728,
+            "tags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "Sacred Heart Health Service"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1313804738,
+            "tags": {
+              "addr:housenumber": "48",
+              "addr:street": "Womerah Avenue",
+              "amenity": "cafe",
+              "building": "semidetached_house",
+              "building:levels": "2",
+              "cuisine": "coffee_shop",
+              "layer": "1",
+              "name": "Bob\u2019s General Store",
+              "outdoor_seating": "yes",
+              "shop": "convenience"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1320933786,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1328453502,
+            "tags": {
+              "amenity": "school",
+              "name": "Sydney Grammar School Edgecliff Preparatory",
+              "website": "https://edgecliff.sydgram.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1409953610,
+            "tags": {
+              "leisure": "park",
+              "name": "Drivers Triangle",
+              "source": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856",
+              "source:start_date": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856",
+              "start_date": "1881",
+              "website": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1451181001,
+            "tags": {
+              "leisure": "park",
+              "name": "Stewart Street Reserve"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
