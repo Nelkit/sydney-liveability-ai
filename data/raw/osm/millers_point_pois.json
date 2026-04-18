@@ -1,0 +1,570 @@
+{
+  "suburb": "Millers Point",
+  "bbox": {
+    "south": -33.8637407,
+    "west": 151.2015503,
+    "north": -33.8551485,
+    "east": 151.2069664
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8637407,151.2015503,-33.8551485,151.2069664);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8637407,151.2015503,-33.8551485,151.2069664);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8637407,151.2015503,-33.8551485,151.2069664);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8637407,151.2015503,-33.8551485,151.2069664);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:32:26Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 20958943,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1422547406,
+            "tags": {
+              "alt_name": "Bar Cycle",
+              "amenity": "cafe",
+              "name": "BarCycle Walsh Bay",
+              "opening_hours": "Mo-Su 07:00-16:00",
+              "phone": "+61 2 9247 0772",
+              "website": "https://barcyclewalshbay.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1648068662,
+            "tags": {
+              "amenity": "cafe",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1648167914,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1648316521,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1648316528,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Zupano"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1652365022,
+            "tags": {
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Kent Street",
+              "addr:suburb": "Millers Point",
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "name": "Tago-An",
+              "outdoor_seating": "no",
+              "smoking": "no",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1652394239,
+            "tags": {
+              "addr:housenumber": "110",
+              "addr:street": "Kent St",
+              "amenity": "cafe",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "name": "South Dowling Sandwiches",
+              "phone": "+61 2 9241 1941",
+              "takeaway": "yes",
+              "website": "https://www.southdowling.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1653959469,
+            "tags": {
+              "addr:housenumber": "135",
+              "addr:postcode": "2000",
+              "addr:street": "Harrington Street",
+              "amenity": "restaurant",
+              "name": "Belgian Beer Cafe",
+              "website": "http://heritagebarandrestaurant.com.au",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4036221995,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Kent St Pharmacy",
+              "shop": "chemist"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4036222390,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Lucetta"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4514137743,
+            "tags": {
+              "addr:housenumber": "29",
+              "addr:place": "The Rocks",
+              "addr:street": "Kent Street",
+              "amenity": "restaurant",
+              "cuisine": "fish",
+              "name": "Fish at the Rocks",
+              "phone": "+61 2 9252 4614",
+              "website": "https://fishattherocks.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5151396541,
+            "tags": {
+              "addr:housename": "Tower 1",
+              "addr:housenumber": "100",
+              "addr:street": "Barangaroo Avenue",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "cuisine": "steak",
+              "email": "barangaroo@themeatandwineco.com",
+              "name": "The Meat & Wine Co",
+              "phone": "+61 2 8629 8888",
+              "website": "https://themeatandwineco.com/locations/barangaroo/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5767617653,
+            "tags": {
+              "amenity": "restaurant",
+              "email": "info@nolasydney.com",
+              "name": "NOLA New Orleans Style BBQ Restaurant.",
+              "opening_hours": "Mo-Fr 11:45-01:00; Sa 16:00-01:00; Su 11:45-18:00",
+              "phone": "+61 2 9188 3039",
+              "website": "https://www.nolasydney.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5835837685,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "New Orleans Smokehouse."
+            }
+          },
+          {
+            "type": "node",
+            "id": 6287371073,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Callao",
+              "phone": "+61 2 8529 8996",
+              "website": "https://callao.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6498939114,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The Common Room",
+              "opening_hours": "Mo-Fr 07:00-16:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8831716037,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee;sandwich",
+              "name": "Courtyard Coffee Shop",
+              "source": "survey;local knowledge"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9908926722,
+            "tags": {
+              "amenity": "restaurant",
+              "contact:email": "reservations@ventuno.com.au",
+              "contact:instagram": "ventunorestaurantsydney",
+              "cuisine": "italian",
+              "level": "0",
+              "name": "Ventuno",
+              "opening_hours": "Mo-Tu 12:00-15:00, 17:00-21:00; We-Fr 12:00-15:00, 17:30-21:00; Sa 11:30-21:30; Su 12:00-21:00",
+              "phone": "+61 2 9247 4444",
+              "website": "https://srghospitality.com.au/venue/ventuno/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9908926723,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2024-08-23",
+              "cuisine": "tapas",
+              "name": "Lavana"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12117849341,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Brix & Beans"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12272572875,
+            "tags": {
+              "addr:housenumber": "23",
+              "addr:street": "Hickson Road",
+              "amenity": "restaurant",
+              "bar": "yes",
+              "branch": "Walsh Bay",
+              "brand": "Elements Bar and Grill",
+              "contact:facebook": "https://www.facebook.com/ElementsBarandGrill",
+              "cuisine": "steak_house;italian",
+              "email": "info@elementsgroup.com.au",
+              "highchair": "yes",
+              "name": "Elements Bar and Grill Walsh Bay",
+              "not:name": "Elements Seafood Grillhouse",
+              "outdoor_seating": "yes",
+              "payment:american_express": "yes",
+              "payment:cards": "yes",
+              "payment:cash": "yes",
+              "payment:contactless": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "payment:google_pay": "yes",
+              "payment:mastercard": "yes",
+              "payment:visa": "yes",
+              "payment:visa_debit": "yes",
+              "phone:AU": "1300 353 636",
+              "reservation": "recommended",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "website": "https://www.elementsbarandgrill.com.au",
+              "website:menu": "https://www.elementsbarandgrill.com.au/menu/dinner",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12666110499,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "indoor_seating": "yes",
+              "name": "\u0100nn\u00e1m\u0113se",
+              "name:etymology": "Annam (French protectorate)",
+              "name:etymology:wikidata": "Q10828323",
+              "outdoor_seating": "yes",
+              "website": "https://annamese.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12998738401,
+            "tags": {
+              "amenity": "restaurant",
+              "indoor_seating": "yes",
+              "name": "Haven",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13542684691,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Winghaus",
+              "opening_hours": "Su-Mo 11:30-21:00; Tu-We 11:30-21:30; Th-Fr 11:30-22:30; Sa 11:30-22:00",
+              "website": "https://winghaus.com.au/winghaus-barangaroo/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 4354665,
+            "tags": {
+              "check_date": "2025-08-13",
+              "leisure": "park",
+              "name": "Lang Park",
+              "name:etymology": "John Dunmore Lang",
+              "name:etymology:wikidata": "Q3181392",
+              "opening_hours": "24/7",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/lang-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 55218510,
+            "tags": {
+              "dog": "unleashed",
+              "leisure": "park",
+              "name": "Observatory Hill Park",
+              "name:en": "Observatory Hill Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "source": "nearmap",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/observatory-park",
+              "wikidata": "Q21973063"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151982836,
+            "tags": {
+              "leisure": "park",
+              "name": "The Paddock",
+              "source": "survey",
+              "source:name": "LPI Base Map July 2018"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151982837,
+            "tags": {
+              "leisure": "park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151982839,
+            "tags": {
+              "leisure": "park",
+              "name": "Argyle Place Park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151996603,
+            "tags": {
+              "check_date": "2025-10-08",
+              "leisure": "park",
+              "name": "Pottinger Park",
+              "operator": "City of Sydney",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424430,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Munn Reserve",
+              "source": "survey",
+              "source:geometry": "LPI Base Map Feb 2016",
+              "source:name": "survey",
+              "start_date": "1981-09-21",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/munn-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424432,
+            "tags": {
+              "leisure": "park",
+              "name": "Clyne Reserve",
+              "source": "survey",
+              "source:geometry": "LPI Base Map Feb 2016",
+              "wikidata": "Q21962751"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424880,
+            "tags": {
+              "check_date": "2023-06-06",
+              "leisure": "park",
+              "name": "Watson Road Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194"
+            }
+          },
+          {
+            "type": "way",
+            "id": 271666241,
+            "tags": {
+              "access": "customers",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 271666242,
+            "tags": {
+              "building": "yes",
+              "leisure": "sports_centre",
+              "name": "King George V Recreation Centre",
+              "short_name": "KGV",
+              "website": "https://www.cityofsydney.nsw.gov.au/explore/facilities/community-centres/king-george-v-recreation-centre"
+            }
+          },
+          {
+            "type": "way",
+            "id": 396635733,
+            "tags": {
+              "leisure": "park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 537322593,
+            "tags": {
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Trinity Avenue",
+              "addr:suburb": "Dawes Point",
+              "leisure": "park",
+              "name": "Trinity Avenue Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 539213347,
+            "tags": {
+              "addr:postcode": "2000",
+              "amenity": "school",
+              "contact:email": "fortstreet-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9241 2397",
+              "contact:phone": "+61 2 9247 2963",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Fort Street Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "181",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1850-04-01",
+              "website": "https://www.fortstreet-p.schools.nsw.edu.au/",
+              "wikidata": "Q5472133",
+              "wikipedia": "en:Fort Street Public School"
+            }
+          },
+          {
+            "type": "way",
+            "id": 539217449,
+            "tags": {
+              "addr:postcode": "2000",
+              "addr:suburb": "Millers Point",
+              "amenity": "school",
+              "contact:email": "observhill-e.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9247 4787",
+              "contact:phone": "+61 2 9247 7321",
+              "fee": "no",
+              "name": "Observatory Hill Environmental Education Centre",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "start_date": "1991-01-29",
+              "website": "http://observatoryhilleec.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1026912885,
+            "tags": {
+              "leisure": "park",
+              "name": "Hickson Park",
+              "start_date": "2020-12-08",
+              "website": "https://www.barangaroo.com/past-present-future/barangaroo-south/hickson-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1230017667,
+            "tags": {
+              "leisure": "park",
+              "name": "King George V Memorial Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1252283957,
+            "tags": {
+              "leisure": "playground",
+              "name": "Abraham Mott Hall Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1252283967,
+            "tags": {
+              "leisure": "park",
+              "name": "Nita McCrae Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/nita-mccrae-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1299698503,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1308133778,
+            "tags": {
+              "leisure": "park"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
