@@ -1,8 +1,9 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
+import { Coffee, Flame, Hexagon, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AssistantSidebar } from "../components/liveability/AssistantSidebar";
 import { importanceOptions, quickChips, suburbs, weightPrompts } from "../components/liveability/data";
@@ -377,6 +378,14 @@ export default function HomePage() {
                       <Coffee size={10} /> {getImportanceLabel(selectedLevels.lifestyle)}
                     </span>
                   </button>
+
+                  <Link
+                    href="/overview"
+                    className="ml-2 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-bold tracking-[0.04em] text-slate-700 shadow-[0_6px_16px_rgba(15,23,42,0.06)] transition hover:border-slate-400 hover:text-slate-900"
+                  >
+                    <Hexagon size={11} />
+                    HEX OVERVIEW
+                  </Link>
 
                   {profileOpen ? (
                     <motion.div
