@@ -136,6 +136,95 @@ def list_suburbs() -> dict:
     return {"suburbs": suburbs, "count": len(suburbs)}
 
 
+@router.get("/summary")
+def summary() -> dict:
+    """Lightweight overview of every suburb that has data.
+
+    Returns per-suburb: post_count, composite liveability score (mean of
+    the 8 aspect scores), top/bottom aspect, dominant emotion.  Uses the
+    pre-computed NLP analysis cache; suburbs without a cached analysis
+    fall back to raw post_count from the suburb index (score=null).
+
+    Designed for the hexagon overview page to render ~hundreds of
+    suburbs in one request.
+    """
+    from data_extraction.extract_reddit import list_available_suburbs
+
+    suburbs = list_available_suburbs()
+
+    # Load suburb index for raw post counts (includes suburbs without
+    # a cached NLP analysis).
+    index_path = Path("data/processed/reddit") / "_suburb_index.json"
+    raw_counts: dict[str, int] = {}
+    if index_path.exists():
+        try:
+            with open(index_path, "r", encoding="utf-8") as f:
+                index = json.load(f)
+            raw_counts = {k: v.get("post_count", 0) for k, v in index.items()}
+        except Exception:
+            logger.warning("Suburb index read failed")
+
+    rows: list[dict] = []
+    for suburb in suburbs:
+        cached = _local_cache_lookup(suburb)
+        if cached is not None:
+            aspects = cached.get("aspects", {}) or {}
+            # Composite score = mean of aspect scores with at least 1 mention;
+            # if everything is unseen, fall back to mean of raw scores (0.5s).
+            scored = [
+                v.get("score", 0.5)
+                for v in aspects.values()
+                if v.get("mentions", 0) > 0
+            ]
+            if not scored:
+                scored = [v.get("score", 0.5) for v in aspects.values()] or [0.5]
+            composite = round(sum(scored) / len(scored), 3)
+
+            mentioned = [
+                (k, v.get("score", 0.5))
+                for k, v in aspects.items()
+                if v.get("mentions", 0) > 0
+            ]
+            if mentioned:
+                mentioned.sort(key=lambda pair: pair[1], reverse=True)
+                top_aspect = mentioned[0][0]
+                bottom_aspect = mentioned[-1][0]
+            else:
+                top_aspect = None
+                bottom_aspect = None
+
+            emotions = cached.get("emotions", {}) or {}
+            dominant = None
+            if emotions:
+                dominant = max(emotions.items(), key=lambda pair: pair[1])[0]
+
+            rows.append(
+                {
+                    "suburb": suburb,
+                    "post_count": cached.get("post_count", 0),
+                    "score": composite,
+                    "top_aspect": top_aspect,
+                    "bottom_aspect": bottom_aspect,
+                    "dominant_emotion": dominant,
+                    "cached": True,
+                }
+            )
+        else:
+            rows.append(
+                {
+                    "suburb": suburb,
+                    "post_count": raw_counts.get(suburb, 0),
+                    "score": None,
+                    "top_aspect": None,
+                    "bottom_aspect": None,
+                    "dominant_emotion": None,
+                    "cached": False,
+                }
+            )
+
+    return {"suburbs": rows, "count": len(rows)}
+
+
 @router.get("/{suburb}")
 def analyse_suburb_endpoint(suburb: str) -> dict:
     """Analyse Reddit discourse about a Sydney suburb.

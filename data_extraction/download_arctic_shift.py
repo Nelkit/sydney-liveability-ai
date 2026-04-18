@@ -142,6 +142,20 @@ def _download_stream(
                 time.sleep(wait)
                 continue
 
+            if resp.status_code == 422:
+                # Arctic Shift returns 422 for transient timeouts ("Timeout.
+                # Maybe slow down a bit").  Back off and retry.
+                retry_count += 1
+                wait = min(30.0, 3.0 * retry_count)
+                body = resp.text[:160]
+                print(
+                    f"  422 from API ({body}). Retry {retry_count}/{MAX_RETRIES} in {wait}s"
+                )
+                if retry_count >= MAX_RETRIES:
+                    raise RuntimeError(f"Persistent 422: {body}")
+                time.sleep(wait)
+                continue
+
             if resp.status_code >= 500:
                 retry_count += 1
                 wait = min(30.0, 2.0 * retry_count)

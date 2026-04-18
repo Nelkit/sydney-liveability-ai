@@ -46,11 +46,19 @@ class RedditPost:
 # File reading helpers
 # ---------------------------------------------------------------------------
 
-def _open_file(path: Path):
-    """Open a JSON or zst-compressed file, returning a file-like object."""
-    if path.suffix == ".zst":
+def _iter_records(path: Path):
+    """Yield parsed JSON records from a file.
+
+    Handles JSON arrays, newline-delimited JSON (.ndjson/.jsonl), and
+    zstandard-compressed variants of either (*.zst).  NDJSON variants
+    are streamed line-by-line so large files don't balloon memory.
+    """
+    suffixes = [s.lower() for s in path.suffixes]
+    zstd_wrapped = ".zst" in suffixes
+
+    if zstd_wrapped:
         try:
-            import zstandard as zstd
+            import zstandard as zstd  # type: ignore
         except ImportError:
             print(
                 "Error: zstandard package required for .zst files. "
@@ -60,41 +68,57 @@ def _open_file(path: Path):
             sys.exit(1)
         fh = open(path, "rb")
         dctx = zstd.ZstdDecompressor()
-        return dctx.stream_reader(fh)
-    return open(path, "r", encoding="utf-8")
+        import io
 
-
-def _iter_records(path: Path):
-    """Yield parsed JSON records from a file.
-
-    Handles both JSON arrays and newline-delimited JSON (NDJSON).
-    """
-    raw = _open_file(path)
-
-    # For zst files, read all bytes then decode
-    if path.suffix == ".zst":
-        content = raw.read().decode("utf-8")
-        raw.close()
+        stream = dctx.stream_reader(fh)
+        text_stream: "io.IOBase" = io.TextIOWrapper(stream, encoding="utf-8")
     else:
-        content = raw.read()
-        raw.close()
+        fh = None
+        text_stream = open(path, "r", encoding="utf-8")
 
-    content = content.strip()
+    # Treat .ndjson/.jsonl as line-delimited without peeking.
+    streaming_suffixes = {".ndjson", ".jsonl"}
+    is_streaming = any(s in streaming_suffixes for s in suffixes)
 
-    # Try JSON array first
-    if content.startswith("["):
-        records = json.loads(content)
-        yield from records
-        return
+    try:
+        if not is_streaming:
+            first = text_stream.read(1)
+            while first and first.isspace():
+                first = text_stream.read(1)
+            if first == "[":
+                # Whole-array JSON — buffer the rest and parse once.
+                rest = text_stream.read()
+                content = first + rest
+                for record in json.loads(content):
+                    yield record
+                return
+            # Not an array — fall through to line-delimited handling.
+            leading = first or ""
+        else:
+            leading = ""
 
-    # Fall back to newline-delimited JSON
-    for line in content.split("\n"):
-        line = line.strip()
-        if line:
-            try:
-                yield json.loads(line)
-            except json.JSONDecodeError:
+        partial = leading
+        for line in text_stream:
+            combined = partial + line
+            partial = ""
+            stripped = combined.strip()
+            if not stripped:
                 continue
+            try:
+                yield json.loads(stripped)
+            except json.JSONDecodeError:
+                # Skip malformed lines (e.g. partial write at end of file)
+                continue
+    finally:
+        try:
+            text_stream.close()
+        except Exception:
+            pass
+        if fh is not None:
+            try:
+                fh.close()
+            except Exception:
+                pass
 
 
 # ---------------------------------------------------------------------------
