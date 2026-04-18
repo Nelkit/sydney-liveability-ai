@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:10.908354+00:00",
   "aspects": {
     "nightlife": {
-      "score": 0.897,
-      "mentions": 4
+      "score": 0.765,
+      "mentions": 4,
+      "raw_score": 0.897
     },
     "community": {
-      "score": 0.519,
-      "mentions": 14
+      "score": 0.513,
+      "mentions": 14,
+      "raw_score": 0.519
     },
     "green_space": {
-      "score": 0.61,
-      "mentions": 5
+      "score": 0.573,
+      "mentions": 5,
+      "raw_score": 0.61
     },
     "safety": {
-      "score": 0.487,
-      "mentions": 10
+      "score": 0.491,
+      "mentions": 10,
+      "raw_score": 0.487
     },
     "affordability": {
-      "score": 0.449,
-      "mentions": 3
+      "score": 0.466,
+      "mentions": 3,
+      "raw_score": 0.449
     },
     "transport": {
-      "score": 0.655,
-      "mentions": 5
+      "score": 0.603,
+      "mentions": 5,
+      "raw_score": 0.655
     },
     "noise": {
-      "score": 0.046,
-      "mentions": 2
+      "score": 0.197,
+      "mentions": 2,
+      "raw_score": 0.046
     },
     "food_and_cafe": {
-      "score": 0.046,
-      "mentions": 2
+      "score": 0.197,
+      "mentions": 2,
+      "raw_score": 0.046
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1muyg0o/factory_fumes_in_condell_park_revesby_area_what/",
       "score": 46
     }
-  ]
+  ],
+  "confidence": 0.667,
+  "confidence_tier": "medium"
 }

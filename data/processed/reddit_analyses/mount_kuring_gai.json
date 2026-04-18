@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:21:11.966211+00:00",
   "aspects": {
     "transport": {
-      "score": 0.915,
-      "mentions": 1
+      "score": 0.514,
+      "mentions": 1,
+      "raw_score": 0.915
     },
     "green_space": {
-      "score": 0.915,
-      "mentions": 1
+      "score": 0.514,
+      "mentions": 1,
+      "raw_score": 0.915
     },
     "noise": {
-      "score": 0.915,
-      "mentions": 1
+      "score": 0.514,
+      "mentions": 1,
+      "raw_score": 0.915
     },
     "community": {
-      "score": 0.915,
-      "mentions": 1
+      "score": 0.514,
+      "mentions": 1,
+      "raw_score": 0.915
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -52,5 +60,7 @@
       "url": "https://reddit.com/r/sydney/comments/1fywyt0/best_place_to_see_lace_monitors/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

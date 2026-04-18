@@ -5,35 +5,43 @@
   "aspects": {
     "nightlife": {
       "score": 0.724,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.724
     },
     "community": {
       "score": 0.657,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.657
     },
     "safety": {
       "score": 0.327,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.327
     },
     "transport": {
       "score": 0.422,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.422
     },
     "food_and_cafe": {
       "score": 0.835,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.835
     },
     "green_space": {
       "score": 0.609,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.609
     },
     "noise": {
       "score": 0.572,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.572
     },
     "affordability": {
       "score": 0.737,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.737
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kieqhow/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

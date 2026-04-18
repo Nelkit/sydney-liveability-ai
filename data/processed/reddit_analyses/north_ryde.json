@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.413,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.413
     },
     "community": {
       "score": 0.42,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.42
     },
     "safety": {
       "score": 0.342,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.342
     },
     "noise": {
       "score": 0.323,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.323
     },
     "affordability": {
       "score": 0.336,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.336
     },
     "nightlife": {
       "score": 0.435,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.435
     },
     "food_and_cafe": {
       "score": 0.281,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.281
     },
     "green_space": {
       "score": 0.291,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.291
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/198lbm1/macquarie_parks_lachlans_line_apartment_complex/ki867zx/",
       "score": 82
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

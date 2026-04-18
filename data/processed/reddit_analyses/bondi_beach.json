@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.403,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.403
     },
     "transport": {
       "score": 0.389,
-      "mentions": 28
+      "mentions": 28,
+      "raw_score": 0.389
     },
     "safety": {
       "score": 0.34,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.34
     },
     "noise": {
       "score": 0.36,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.36
     },
     "nightlife": {
       "score": 0.623,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.623
     },
     "affordability": {
       "score": 0.782,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.782
     },
     "green_space": {
       "score": 0.628,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.628
     },
     "food_and_cafe": {
       "score": 0.668,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.668
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
       "score": 237
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

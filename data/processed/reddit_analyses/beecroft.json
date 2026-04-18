@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:11.920539+00:00",
   "aspects": {
     "community": {
-      "score": 0.571,
-      "mentions": 16
+      "score": 0.552,
+      "mentions": 16,
+      "raw_score": 0.571
     },
     "green_space": {
-      "score": 0.563,
-      "mentions": 6
+      "score": 0.546,
+      "mentions": 6,
+      "raw_score": 0.563
     },
     "safety": {
-      "score": 0.435,
-      "mentions": 7
+      "score": 0.452,
+      "mentions": 7,
+      "raw_score": 0.435
     },
     "nightlife": {
-      "score": 0.456,
-      "mentions": 4
+      "score": 0.468,
+      "mentions": 4,
+      "raw_score": 0.456
     },
     "transport": {
-      "score": 0.536,
-      "mentions": 9
+      "score": 0.526,
+      "mentions": 9,
+      "raw_score": 0.536
     },
     "food_and_cafe": {
-      "score": 0.828,
-      "mentions": 2
+      "score": 0.741,
+      "mentions": 2,
+      "raw_score": 0.828
     },
     "noise": {
-      "score": 0.981,
-      "mentions": 1
+      "score": 0.853,
+      "mentions": 1,
+      "raw_score": 0.981
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c93x8f/ive_wanted_something_like_for_buses_for_years/l0j5hxc/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

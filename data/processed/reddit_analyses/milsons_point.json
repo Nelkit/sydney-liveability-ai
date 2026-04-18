@@ -5,35 +5,43 @@
   "aspects": {
     "nightlife": {
       "score": 0.837,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.837
     },
     "community": {
       "score": 0.74,
-      "mentions": 31
+      "mentions": 31,
+      "raw_score": 0.74
     },
     "food_and_cafe": {
       "score": 0.882,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.882
     },
     "transport": {
       "score": 0.545,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.545
     },
     "affordability": {
       "score": 0.681,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.681
     },
     "safety": {
       "score": 0.538,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.538
     },
     "green_space": {
       "score": 0.804,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.804
     },
     "noise": {
       "score": 0.146,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.146
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1sgm53k/fireworks_at_milsons_point/",
       "score": 27
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

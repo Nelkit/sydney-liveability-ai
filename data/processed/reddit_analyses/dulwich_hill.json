@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.739,
-      "mentions": 80
+      "mentions": 80,
+      "raw_score": 0.739
     },
     "safety": {
       "score": 0.747,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.747
     },
     "nightlife": {
       "score": 0.538,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.538
     },
     "noise": {
       "score": 0.886,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.886
     },
     "transport": {
       "score": 0.763,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.763
     },
     "food_and_cafe": {
       "score": 0.86,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.86
     },
     "affordability": {
       "score": 0.854,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.854
     },
     "green_space": {
       "score": 0.633,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.633
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1h9wmb8/15_speed_bumps_in_1km_is_this_sydneys_most_speed/",
       "score": 117
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

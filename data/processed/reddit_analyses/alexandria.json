@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.486,
-      "mentions": 120
+      "mentions": 120,
+      "raw_score": 0.486
     },
     "safety": {
       "score": 0.443,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.443
     },
     "green_space": {
       "score": 0.468,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.468
     },
     "nightlife": {
       "score": 0.438,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.438
     },
     "affordability": {
       "score": 0.393,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.393
     },
     "transport": {
       "score": 0.534,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.534
     },
     "food_and_cafe": {
       "score": 0.59,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.59
     },
     "noise": {
       "score": 0.803,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.803
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1conp4l/ausgrid_outage_in_newtown_enmore_erskineville/",
       "score": 193
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

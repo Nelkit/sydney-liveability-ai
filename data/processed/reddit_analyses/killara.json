@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:02.261367+00:00",
   "aspects": {
     "safety": {
-      "score": 0.678,
-      "mentions": 3
+      "score": 0.565,
+      "mentions": 3,
+      "raw_score": 0.678
     },
     "community": {
-      "score": 0.385,
-      "mentions": 7
+      "score": 0.458,
+      "mentions": 7,
+      "raw_score": 0.385
     },
     "nightlife": {
-      "score": 0.8,
-      "mentions": 2
+      "score": 0.61,
+      "mentions": 2,
+      "raw_score": 0.8
     },
     "affordability": {
-      "score": 0.663,
-      "mentions": 1
+      "score": 0.56,
+      "mentions": 1,
+      "raw_score": 0.663
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d67hx2/north_shore_northern_line_services_delayed_due_to/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

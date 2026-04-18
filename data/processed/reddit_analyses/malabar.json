@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:00.180207+00:00",
   "aspects": {
     "community": {
-      "score": 0.521,
-      "mentions": 13
+      "score": 0.516,
+      "mentions": 13,
+      "raw_score": 0.521
     },
     "nightlife": {
-      "score": 0.491,
-      "mentions": 4
+      "score": 0.493,
+      "mentions": 4,
+      "raw_score": 0.491
     },
     "transport": {
-      "score": 0.863,
-      "mentions": 3
+      "score": 0.778,
+      "mentions": 3,
+      "raw_score": 0.863
     },
     "noise": {
-      "score": 0.962,
-      "mentions": 1
+      "score": 0.854,
+      "mentions": 1,
+      "raw_score": 0.962
     },
     "green_space": {
-      "score": 0.87,
-      "mentions": 2
+      "score": 0.784,
+      "mentions": 2,
+      "raw_score": 0.87
     },
     "food_and_cafe": {
-      "score": 0.984,
-      "mentions": 2
+      "score": 0.871,
+      "mentions": 2,
+      "raw_score": 0.984
     },
     "safety": {
-      "score": 0.379,
-      "mentions": 2
+      "score": 0.407,
+      "mentions": 2,
+      "raw_score": 0.379
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cbh3fl/recommendations_on_bushwalks_with_war_relics/l0yiqbj/",
       "score": 12
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

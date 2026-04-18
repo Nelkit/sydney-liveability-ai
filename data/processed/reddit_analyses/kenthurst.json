@@ -5,35 +5,43 @@
   "aspects": {
     "affordability": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.34,
-      "mentions": 2
+      "score": 0.484,
+      "mentions": 2,
+      "raw_score": 0.34
     },
     "noise": {
-      "score": 0.397,
-      "mentions": 1
+      "score": 0.49,
+      "mentions": 1,
+      "raw_score": 0.397
     },
     "green_space": {
-      "score": 0.34,
-      "mentions": 2
+      "score": 0.484,
+      "mentions": 2,
+      "raw_score": 0.34
     },
     "transport": {
-      "score": 0.169,
-      "mentions": 1
+      "score": 0.467,
+      "mentions": 1,
+      "raw_score": 0.169
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uq8gi/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

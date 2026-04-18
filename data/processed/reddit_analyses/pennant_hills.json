@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.43,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.43
     },
     "community": {
       "score": 0.458,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.458
     },
     "nightlife": {
       "score": 0.872,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.872
     },
     "affordability": {
       "score": 0.87,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.87
     },
     "noise": {
       "score": 0.807,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.807
     },
     "transport": {
       "score": 0.449,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.449
     },
     "green_space": {
       "score": 0.756,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.756
     },
     "food_and_cafe": {
       "score": 0.827,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.827
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dr4ai6/t3_lane_added_on_parramatta_rd_between_ashfield/lasotmf/",
       "score": 62
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.69,
-      "mentions": 233
+      "mentions": 233,
+      "raw_score": 0.69
     },
     "nightlife": {
       "score": 0.657,
-      "mentions": 92
+      "mentions": 92,
+      "raw_score": 0.657
     },
     "green_space": {
       "score": 0.791,
-      "mentions": 67
+      "mentions": 67,
+      "raw_score": 0.791
     },
     "transport": {
       "score": 0.574,
-      "mentions": 90
+      "mentions": 90,
+      "raw_score": 0.574
     },
     "safety": {
       "score": 0.414,
-      "mentions": 60
+      "mentions": 60,
+      "raw_score": 0.414
     },
     "affordability": {
       "score": 0.84,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.84
     },
     "noise": {
       "score": 0.614,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.614
     },
     "food_and_cafe": {
       "score": 0.739,
-      "mentions": 53
+      "mentions": 53,
+      "raw_score": 0.739
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1plefja/a_big_echidna_at_fairfax_walk_manly_today/",
       "score": 428
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

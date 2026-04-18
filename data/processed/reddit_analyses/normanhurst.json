@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:07.424037+00:00",
   "aspects": {
     "community": {
-      "score": 0.624,
-      "mentions": 9
+      "score": 0.545,
+      "mentions": 9,
+      "raw_score": 0.624
     },
     "noise": {
-      "score": 0.752,
-      "mentions": 1
+      "score": 0.592,
+      "mentions": 1,
+      "raw_score": 0.752
     },
     "transport": {
-      "score": 0.466,
-      "mentions": 6
+      "score": 0.488,
+      "mentions": 6,
+      "raw_score": 0.466
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.5
     },
     "safety": {
-      "score": 0.414,
-      "mentions": 3
+      "score": 0.468,
+      "mentions": 3,
+      "raw_score": 0.414
     },
     "affordability": {
-      "score": 0.164,
-      "mentions": 1
+      "score": 0.377,
+      "mentions": 1,
+      "raw_score": 0.164
     },
     "green_space": {
-      "score": 0.228,
-      "mentions": 2
+      "score": 0.4,
+      "mentions": 2,
+      "raw_score": 0.228
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l82vvid/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

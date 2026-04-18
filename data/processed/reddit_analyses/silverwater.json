@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:37.189404+00:00",
   "aspects": {
     "community": {
-      "score": 0.534,
-      "mentions": 14
+      "score": 0.525,
+      "mentions": 14,
+      "raw_score": 0.534
     },
     "safety": {
-      "score": 0.251,
-      "mentions": 12
+      "score": 0.317,
+      "mentions": 12,
+      "raw_score": 0.251
     },
     "green_space": {
-      "score": 0.513,
-      "mentions": 3
+      "score": 0.51,
+      "mentions": 3,
+      "raw_score": 0.513
     },
     "transport": {
-      "score": 0.865,
-      "mentions": 4
+      "score": 0.768,
+      "mentions": 4,
+      "raw_score": 0.865
     },
     "nightlife": {
-      "score": 0.833,
-      "mentions": 2
+      "score": 0.744,
+      "mentions": 2,
+      "raw_score": 0.833
     },
     "affordability": {
-      "score": 0.526,
-      "mentions": 1
+      "score": 0.519,
+      "mentions": 1,
+      "raw_score": 0.526
     },
     "noise": {
-      "score": 0.714,
-      "mentions": 2
+      "score": 0.657,
+      "mentions": 2,
+      "raw_score": 0.714
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b0am8o/just_watched_10news_coverage_of_the_murder_of_the/ks6snta/",
       "score": 23
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

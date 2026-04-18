@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:55.394415+00:00",
   "aspects": {
     "community": {
-      "score": 0.244,
-      "mentions": 16
+      "score": 0.346,
+      "mentions": 16,
+      "raw_score": 0.244
     },
     "transport": {
-      "score": 0.79,
-      "mentions": 6
+      "score": 0.674,
+      "mentions": 6,
+      "raw_score": 0.79
     },
     "safety": {
-      "score": 0.602,
-      "mentions": 6
+      "score": 0.561,
+      "mentions": 6,
+      "raw_score": 0.602
     },
     "noise": {
-      "score": 0.79,
-      "mentions": 3
+      "score": 0.674,
+      "mentions": 3,
+      "raw_score": 0.79
     },
     "affordability": {
-      "score": 0.909,
-      "mentions": 3
+      "score": 0.745,
+      "mentions": 3,
+      "raw_score": 0.909
     },
     "green_space": {
-      "score": 0.949,
-      "mentions": 3
+      "score": 0.769,
+      "mentions": 3,
+      "raw_score": 0.949
     },
     "nightlife": {
-      "score": 0.851,
-      "mentions": 5
+      "score": 0.711,
+      "mentions": 5,
+      "raw_score": 0.851
     },
     "food_and_cafe": {
-      "score": 0.918,
-      "mentions": 2
+      "score": 0.751,
+      "mentions": 2,
+      "raw_score": 0.918
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj31uu/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

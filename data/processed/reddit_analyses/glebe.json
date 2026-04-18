@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.595,
-      "mentions": 159
+      "mentions": 159,
+      "raw_score": 0.595
     },
     "transport": {
       "score": 0.627,
-      "mentions": 58
+      "mentions": 58,
+      "raw_score": 0.627
     },
     "nightlife": {
       "score": 0.478,
-      "mentions": 49
+      "mentions": 49,
+      "raw_score": 0.478
     },
     "safety": {
       "score": 0.422,
-      "mentions": 61
+      "mentions": 61,
+      "raw_score": 0.422
     },
     "green_space": {
       "score": 0.645,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.645
     },
     "affordability": {
       "score": 0.433,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.433
     },
     "noise": {
       "score": 0.502,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.502
     },
     "food_and_cafe": {
       "score": 0.746,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.746
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b61ajm/sydney_driver_lucky_to_be_alive_after_car_he_was/",
       "score": 150
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

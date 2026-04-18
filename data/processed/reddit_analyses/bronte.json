@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.517,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.517
     },
     "safety": {
       "score": 0.3,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.3
     },
     "transport": {
       "score": 0.232,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.232
     },
     "green_space": {
       "score": 0.569,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.569
     },
     "nightlife": {
       "score": 0.461,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.461
     },
     "food_and_cafe": {
       "score": 0.647,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.647
     },
     "noise": {
       "score": 0.753,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.753
     },
     "affordability": {
       "score": 0.253,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.253
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jes75n/bondi_bronte_etc_aerial_view_from_flight_to_nz/",
       "score": 110
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

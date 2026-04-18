@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:10.639117+00:00",
   "aspects": {
     "community": {
-      "score": 0.485,
-      "mentions": 17
+      "score": 0.487,
+      "mentions": 17,
+      "raw_score": 0.485
     },
     "green_space": {
-      "score": 0.827,
-      "mentions": 4
+      "score": 0.783,
+      "mentions": 4,
+      "raw_score": 0.827
     },
     "affordability": {
-      "score": 0.88,
-      "mentions": 3
+      "score": 0.829,
+      "mentions": 3,
+      "raw_score": 0.88
     },
     "transport": {
-      "score": 0.836,
-      "mentions": 3
+      "score": 0.791,
+      "mentions": 3,
+      "raw_score": 0.836
     },
     "safety": {
-      "score": 0.417,
-      "mentions": 11
+      "score": 0.428,
+      "mentions": 11,
+      "raw_score": 0.417
     },
     "nightlife": {
-      "score": 0.133,
-      "mentions": 4
+      "score": 0.182,
+      "mentions": 4,
+      "raw_score": 0.133
     },
     "food_and_cafe": {
-      "score": 0.734,
-      "mentions": 2
+      "score": 0.703,
+      "mentions": 2,
+      "raw_score": 0.734
     },
     "noise": {
-      "score": 0.847,
-      "mentions": 1
+      "score": 0.801,
+      "mentions": 1,
+      "raw_score": 0.847
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cwvz0g/woman_dies_after_being_hit_by_van_at_pymble/l4zrsp9/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 0.867,
+  "confidence_tier": "high"
 }

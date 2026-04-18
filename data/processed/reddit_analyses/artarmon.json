@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.907,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.907
     },
     "community": {
       "score": 0.881,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.881
     },
     "safety": {
       "score": 0.901,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.901
     },
     "green_space": {
       "score": 0.97,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.97
     },
     "affordability": {
       "score": 0.964,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.964
     },
     "nightlife": {
       "score": 0.956,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.956
     },
     "food_and_cafe": {
       "score": 0.963,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.963
     },
     "noise": {
       "score": 0.423,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.423
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bc04ni/what_does_this_place_in_artarmon_north_shore_do/",
       "score": 188
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

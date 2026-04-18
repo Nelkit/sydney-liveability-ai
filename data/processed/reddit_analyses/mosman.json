@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.359,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.359
     },
     "transport": {
       "score": 0.409,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.409
     },
     "community": {
       "score": 0.679,
-      "mentions": 68
+      "mentions": 68,
+      "raw_score": 0.679
     },
     "green_space": {
       "score": 0.708,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.708
     },
     "nightlife": {
       "score": 0.63,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.63
     },
     "food_and_cafe": {
       "score": 0.581,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.581
     },
     "affordability": {
       "score": 0.538,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.538
     },
     "noise": {
       "score": 0.998,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.998
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1hzg55c/mandolong_road_mosman/",
       "score": 234
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:53.642456+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.508,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "community": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.508,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "noise": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.508,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/1khe92p/express_lake_cecil_park/",
       "score": 42
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

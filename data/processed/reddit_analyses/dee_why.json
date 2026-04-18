@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.294,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.294
     },
     "community": {
       "score": 0.573,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.573
     },
     "transport": {
       "score": 0.65,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.65
     },
     "noise": {
       "score": 0.622,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.622
     },
     "nightlife": {
       "score": 0.551,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.551
     },
     "green_space": {
       "score": 0.904,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.904
     },
     "affordability": {
       "score": 0.913,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.913
     },
     "food_and_cafe": {
       "score": 0.741,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.741
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jtbnjw/nsw_government_petition_conduct_a_feasibility/",
       "score": 118
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

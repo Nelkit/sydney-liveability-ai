@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:38.591887+00:00",
   "aspects": {
     "transport": {
-      "score": 0.655,
-      "mentions": 10
+      "score": 0.598,
+      "mentions": 10,
+      "raw_score": 0.655
     },
     "community": {
-      "score": 0.593,
-      "mentions": 14
+      "score": 0.559,
+      "mentions": 14,
+      "raw_score": 0.593
     },
     "nightlife": {
-      "score": 0.656,
-      "mentions": 8
+      "score": 0.599,
+      "mentions": 8,
+      "raw_score": 0.656
     },
     "food_and_cafe": {
-      "score": 0.599,
-      "mentions": 5
+      "score": 0.563,
+      "mentions": 5,
+      "raw_score": 0.599
     },
     "green_space": {
-      "score": 0.568,
-      "mentions": 3
+      "score": 0.543,
+      "mentions": 3,
+      "raw_score": 0.568
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
-      "score": 0.989,
-      "mentions": 2
+      "score": 0.81,
+      "mentions": 2,
+      "raw_score": 0.989
     },
     "affordability": {
-      "score": 0.989,
-      "mentions": 2
+      "score": 0.81,
+      "mentions": 2,
+      "raw_score": 0.989
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dm6fx9/harbour_views_poker_machines_not_enough_to_save/l9vcslg/",
       "score": 37
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

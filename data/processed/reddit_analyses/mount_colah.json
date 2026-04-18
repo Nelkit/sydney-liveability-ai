@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:44.768077+00:00",
   "aspects": {
     "safety": {
-      "score": 0.03,
-      "mentions": 2
+      "score": 0.453,
+      "mentions": 2,
+      "raw_score": 0.03
     },
     "community": {
-      "score": 0.03,
-      "mentions": 2
+      "score": 0.453,
+      "mentions": 2,
+      "raw_score": 0.03
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1da2q6i/i_recently_shot_a_house_next_to_the_big_ponds/l7j5sx7/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

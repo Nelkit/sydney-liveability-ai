@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:01.796048+00:00",
   "aspects": {
     "community": {
-      "score": 0.364,
-      "mentions": 12
+      "score": 0.437,
+      "mentions": 12,
+      "raw_score": 0.364
     },
     "safety": {
-      "score": 0.258,
-      "mentions": 11
+      "score": 0.387,
+      "mentions": 11,
+      "raw_score": 0.258
     },
     "noise": {
-      "score": 0.048,
-      "mentions": 2
+      "score": 0.289,
+      "mentions": 2,
+      "raw_score": 0.048
     },
     "green_space": {
-      "score": 0.172,
-      "mentions": 3
+      "score": 0.347,
+      "mentions": 3,
+      "raw_score": 0.172
     },
     "transport": {
-      "score": 0.828,
-      "mentions": 6
+      "score": 0.653,
+      "mentions": 6,
+      "raw_score": 0.828
     },
     "food_and_cafe": {
-      "score": 0.823,
-      "mentions": 2
+      "score": 0.651,
+      "mentions": 2,
+      "raw_score": 0.823
     },
     "affordability": {
-      "score": 0.949,
-      "mentions": 1
+      "score": 0.71,
+      "mentions": 1,
+      "raw_score": 0.949
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ccfy16/is_it_still_racist_around_cronulla/l158pfp/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.467,
+  "confidence_tier": "medium"
 }

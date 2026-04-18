@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:53.118099+00:00",
   "aspects": {
     "community": {
-      "score": 0.857,
-      "mentions": 21
+      "score": 0.774,
+      "mentions": 21,
+      "raw_score": 0.857
     },
     "transport": {
-      "score": 0.861,
-      "mentions": 9
+      "score": 0.777,
+      "mentions": 9,
+      "raw_score": 0.861
     },
     "noise": {
-      "score": 0.937,
-      "mentions": 2
+      "score": 0.835,
+      "mentions": 2,
+      "raw_score": 0.937
     },
     "safety": {
-      "score": 0.843,
-      "mentions": 6
+      "score": 0.763,
+      "mentions": 6,
+      "raw_score": 0.843
     },
     "green_space": {
-      "score": 0.903,
-      "mentions": 3
+      "score": 0.809,
+      "mentions": 3,
+      "raw_score": 0.903
     },
     "nightlife": {
-      "score": 0.933,
-      "mentions": 7
+      "score": 0.832,
+      "mentions": 7,
+      "raw_score": 0.933
     },
     "affordability": {
-      "score": 0.906,
-      "mentions": 3
+      "score": 0.811,
+      "mentions": 3,
+      "raw_score": 0.906
     },
     "food_and_cafe": {
-      "score": 0.909,
-      "mentions": 6
+      "score": 0.814,
+      "mentions": 6,
+      "raw_score": 0.909
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ahr7vn/eating_on_the_northern_beaches/koq0oms/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

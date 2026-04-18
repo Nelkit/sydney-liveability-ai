@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.565,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.565
     },
     "community": {
       "score": 0.608,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.608
     },
     "transport": {
       "score": 0.659,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.659
     },
     "food_and_cafe": {
       "score": 0.783,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.783
     },
     "affordability": {
       "score": 0.76,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.76
     },
     "nightlife": {
       "score": 0.604,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.604
     },
     "green_space": {
       "score": 0.692,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.692
     },
     "noise": {
       "score": 0.799,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.799
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cojj2k/what_are_some_experiences_every_sydneysider_has/l3f99vk/",
       "score": 22
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

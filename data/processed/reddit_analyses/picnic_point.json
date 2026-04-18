@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:47.012233+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.806,
-      "mentions": 1
+      "score": 0.531,
+      "mentions": 1,
+      "raw_score": 0.806
     },
     "affordability": {
-      "score": 0.806,
-      "mentions": 1
+      "score": 0.531,
+      "mentions": 1,
+      "raw_score": 0.806
     },
     "community": {
-      "score": 0.845,
-      "mentions": 2
+      "score": 0.534,
+      "mentions": 2,
+      "raw_score": 0.845
     },
     "transport": {
-      "score": 0.783,
-      "mentions": 2
+      "score": 0.528,
+      "mentions": 2,
+      "raw_score": 0.783
     },
     "safety": {
-      "score": 0.612,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.612
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1and6xf/police_operation_on_m5/kprkg5r/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

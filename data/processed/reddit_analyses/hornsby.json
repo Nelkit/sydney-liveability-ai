@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.363,
-      "mentions": 79
+      "mentions": 79,
+      "raw_score": 0.363
     },
     "transport": {
       "score": 0.611,
-      "mentions": 124
+      "mentions": 124,
+      "raw_score": 0.611
     },
     "community": {
       "score": 0.605,
-      "mentions": 228
+      "mentions": 228,
+      "raw_score": 0.605
     },
     "nightlife": {
       "score": 0.553,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.553
     },
     "green_space": {
       "score": 0.583,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.583
     },
     "affordability": {
       "score": 0.71,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.71
     },
     "noise": {
       "score": 0.475,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.475
     },
     "food_and_cafe": {
       "score": 0.748,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.748
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
       "score": 267
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

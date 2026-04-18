@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:45.160855+00:00",
   "aspects": {
     "safety": {
-      "score": 0.39,
-      "mentions": 11
+      "score": 0.416,
+      "mentions": 11,
+      "raw_score": 0.39
     },
     "community": {
-      "score": 0.407,
-      "mentions": 17
+      "score": 0.429,
+      "mentions": 17,
+      "raw_score": 0.407
     },
     "noise": {
-      "score": 0.048,
-      "mentions": 1
+      "score": 0.153,
+      "mentions": 1,
+      "raw_score": 0.048
     },
     "green_space": {
-      "score": 0.404,
-      "mentions": 9
+      "score": 0.426,
+      "mentions": 9,
+      "raw_score": 0.404
     },
     "transport": {
-      "score": 0.621,
-      "mentions": 5
+      "score": 0.593,
+      "mentions": 5,
+      "raw_score": 0.621
     },
     "nightlife": {
-      "score": 0.653,
-      "mentions": 7
+      "score": 0.617,
+      "mentions": 7,
+      "raw_score": 0.653
     },
     "food_and_cafe": {
-      "score": 0.782,
-      "mentions": 4
+      "score": 0.716,
+      "mentions": 4,
+      "raw_score": 0.782
     },
     "affordability": {
-      "score": 0.878,
-      "mentions": 2
+      "score": 0.79,
+      "mentions": 2,
+      "raw_score": 0.878
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bf7a5x/inner_west_council_demerger_rejected/kuylzyv/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

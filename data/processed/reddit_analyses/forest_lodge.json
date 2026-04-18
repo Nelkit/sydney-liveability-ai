@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:18.359591+00:00",
   "aspects": {
     "safety": {
-      "score": 0.105,
-      "mentions": 4
+      "score": 0.329,
+      "mentions": 4,
+      "raw_score": 0.105
     },
     "nightlife": {
-      "score": 0.137,
-      "mentions": 3
+      "score": 0.343,
+      "mentions": 3,
+      "raw_score": 0.137
     },
     "community": {
-      "score": 0.195,
-      "mentions": 12
+      "score": 0.368,
+      "mentions": 12,
+      "raw_score": 0.195
     },
     "transport": {
-      "score": 0.491,
-      "mentions": 4
+      "score": 0.496,
+      "mentions": 4,
+      "raw_score": 0.491
     },
     "green_space": {
-      "score": 0.663,
-      "mentions": 3
+      "score": 0.571,
+      "mentions": 3,
+      "raw_score": 0.663
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1f5qbt5/police_helicopter_circling_around_forest/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

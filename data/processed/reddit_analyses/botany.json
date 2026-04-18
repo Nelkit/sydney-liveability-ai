@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.397,
-      "mentions": 31
+      "mentions": 31,
+      "raw_score": 0.397
     },
     "community": {
       "score": 0.614,
-      "mentions": 71
+      "mentions": 71,
+      "raw_score": 0.614
     },
     "transport": {
       "score": 0.652,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.652
     },
     "affordability": {
       "score": 0.823,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.823
     },
     "food_and_cafe": {
       "score": 0.786,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.786
     },
     "green_space": {
       "score": 0.619,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.619
     },
     "nightlife": {
       "score": 0.722,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.722
     },
     "noise": {
       "score": 0.547,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.547
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1i7pfie/something_is_on_fire_behind_the_airport/",
       "score": 129
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

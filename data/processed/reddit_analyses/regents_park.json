@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:14.192336+00:00",
   "aspects": {
     "transport": {
-      "score": 0.558,
-      "mentions": 17
+      "score": 0.539,
+      "mentions": 17,
+      "raw_score": 0.558
     },
     "community": {
-      "score": 0.573,
-      "mentions": 18
+      "score": 0.549,
+      "mentions": 18,
+      "raw_score": 0.573
     },
     "affordability": {
-      "score": 0.714,
-      "mentions": 3
+      "score": 0.643,
+      "mentions": 3,
+      "raw_score": 0.714
     },
     "noise": {
-      "score": 0.739,
-      "mentions": 2
+      "score": 0.659,
+      "mentions": 2,
+      "raw_score": 0.739
     },
     "green_space": {
-      "score": 0.697,
-      "mentions": 5
+      "score": 0.631,
+      "mentions": 5,
+      "raw_score": 0.697
     },
     "safety": {
-      "score": 0.45,
-      "mentions": 3
+      "score": 0.467,
+      "mentions": 3,
+      "raw_score": 0.45
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
-      "score": 0.664,
-      "mentions": 2
+      "score": 0.609,
+      "mentions": 2,
+      "raw_score": 0.664
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/ky8kjid/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.667,
+  "confidence_tier": "medium"
 }

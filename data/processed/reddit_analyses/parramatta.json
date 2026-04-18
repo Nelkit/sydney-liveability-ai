@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.632,
-      "mentions": 727
+      "mentions": 727,
+      "raw_score": 0.632
     },
     "affordability": {
       "score": 0.623,
-      "mentions": 117
+      "mentions": 117,
+      "raw_score": 0.623
     },
     "nightlife": {
       "score": 0.676,
-      "mentions": 229
+      "mentions": 229,
+      "raw_score": 0.676
     },
     "green_space": {
       "score": 0.697,
-      "mentions": 170
+      "mentions": 170,
+      "raw_score": 0.697
     },
     "food_and_cafe": {
       "score": 0.732,
-      "mentions": 120
+      "mentions": 120,
+      "raw_score": 0.732
     },
     "transport": {
       "score": 0.635,
-      "mentions": 486
+      "mentions": 486,
+      "raw_score": 0.635
     },
     "safety": {
       "score": 0.506,
-      "mentions": 265
+      "mentions": 265,
+      "raw_score": 0.506
     },
     "noise": {
       "score": 0.568,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.568
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jb1ytm/chaos_at_parramatta_station_tonight_nobody_has_a/",
       "score": 825
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.528,
-      "mentions": 3
+      "score": 0.504,
+      "mentions": 3,
+      "raw_score": 0.528
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
-      "score": 0.528,
-      "mentions": 3
+      "score": 0.504,
+      "mentions": 3,
+      "raw_score": 0.528
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c7jaal/rant_hate_how_car_centric_this_city_is/l0a2ac1/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

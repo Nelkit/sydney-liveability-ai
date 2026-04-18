@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.587,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.587
     },
     "community": {
       "score": 0.656,
-      "mentions": 62
+      "mentions": 62,
+      "raw_score": 0.656
     },
     "transport": {
       "score": 0.667,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.667
     },
     "safety": {
       "score": 0.522,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.522
     },
     "nightlife": {
       "score": 0.779,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.779
     },
     "noise": {
       "score": 0.887,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.887
     },
     "affordability": {
       "score": 0.84,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.84
     },
     "green_space": {
       "score": 0.842,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.842
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bpoxvl/i_was_just_curious_as_to_other_80s_and_90s_westys/",
       "score": 61
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

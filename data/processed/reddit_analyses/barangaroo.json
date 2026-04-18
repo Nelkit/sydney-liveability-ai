@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.62,
-      "mentions": 186
+      "mentions": 186,
+      "raw_score": 0.62
     },
     "nightlife": {
       "score": 0.605,
-      "mentions": 101
+      "mentions": 101,
+      "raw_score": 0.605
     },
     "food_and_cafe": {
       "score": 0.738,
-      "mentions": 54
+      "mentions": 54,
+      "raw_score": 0.738
     },
     "green_space": {
       "score": 0.756,
-      "mentions": 55
+      "mentions": 55,
+      "raw_score": 0.756
     },
     "transport": {
       "score": 0.598,
-      "mentions": 91
+      "mentions": 91,
+      "raw_score": 0.598
     },
     "safety": {
       "score": 0.531,
-      "mentions": 54
+      "mentions": 54,
+      "raw_score": 0.531
     },
     "affordability": {
       "score": 0.71,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.71
     },
     "noise": {
       "score": 0.687,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.687
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1fho4fg/barangaroo/",
       "score": 499
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

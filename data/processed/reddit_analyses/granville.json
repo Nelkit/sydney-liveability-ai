@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.435,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.435
     },
     "community": {
       "score": 0.483,
-      "mentions": 62
+      "mentions": 62,
+      "raw_score": 0.483
     },
     "transport": {
       "score": 0.779,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.779
     },
     "nightlife": {
       "score": 0.906,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.906
     },
     "food_and_cafe": {
       "score": 0.835,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.835
     },
     "affordability": {
       "score": 0.944,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.944
     },
     "green_space": {
       "score": 0.914,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.914
     },
     "noise": {
       "score": 0.832,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.832
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4pb1w/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

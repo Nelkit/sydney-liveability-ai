@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.533,
-      "mentions": 330
+      "mentions": 330,
+      "raw_score": 0.533
     },
     "food_and_cafe": {
       "score": 0.701,
-      "mentions": 78
+      "mentions": 78,
+      "raw_score": 0.701
     },
     "transport": {
       "score": 0.623,
-      "mentions": 117
+      "mentions": 117,
+      "raw_score": 0.623
     },
     "nightlife": {
       "score": 0.69,
-      "mentions": 133
+      "mentions": 133,
+      "raw_score": 0.69
     },
     "green_space": {
       "score": 0.881,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.881
     },
     "safety": {
       "score": 0.342,
-      "mentions": 180
+      "mentions": 180,
+      "raw_score": 0.342
     },
     "noise": {
       "score": 0.234,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.234
     },
     "affordability": {
       "score": 0.645,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.645
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1btiugf/can_anyone_beat_the_bondi_hotel_surcharge/",
       "score": 1084
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

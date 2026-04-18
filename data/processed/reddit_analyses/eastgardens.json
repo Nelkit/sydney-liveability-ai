@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:06.680448+00:00",
   "aspects": {
     "safety": {
-      "score": 0.124,
-      "mentions": 7
+      "score": 0.174,
+      "mentions": 7,
+      "raw_score": 0.124
     },
     "noise": {
-      "score": 0.011,
-      "mentions": 3
+      "score": 0.076,
+      "mentions": 3,
+      "raw_score": 0.011
     },
     "community": {
-      "score": 0.045,
-      "mentions": 17
+      "score": 0.106,
+      "mentions": 17,
+      "raw_score": 0.045
     },
     "nightlife": {
-      "score": 0.01,
-      "mentions": 4
+      "score": 0.075,
+      "mentions": 4,
+      "raw_score": 0.01
     },
     "green_space": {
-      "score": 0.42,
-      "mentions": 7
+      "score": 0.431,
+      "mentions": 7,
+      "raw_score": 0.42
     },
     "affordability": {
-      "score": 0.275,
-      "mentions": 4
+      "score": 0.305,
+      "mentions": 4,
+      "raw_score": 0.275
     },
     "transport": {
-      "score": 0.35,
-      "mentions": 15
+      "score": 0.37,
+      "mentions": 15,
+      "raw_score": 0.35
     },
     "food_and_cafe": {
-      "score": 0.849,
-      "mentions": 2
+      "score": 0.802,
+      "mentions": 2,
+      "raw_score": 0.849
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1gj4ab/",
       "score": 20
     }
-  ]
+  ],
+  "confidence": 0.867,
+  "confidence_tier": "high"
 }

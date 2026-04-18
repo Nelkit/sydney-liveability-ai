@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:14.935082+00:00",
   "aspects": {
     "community": {
-      "score": 0.59,
-      "mentions": 6
+      "score": 0.521,
+      "mentions": 6,
+      "raw_score": 0.59
     },
     "food_and_cafe": {
-      "score": 0.557,
-      "mentions": 5
+      "score": 0.513,
+      "mentions": 5,
+      "raw_score": 0.557
     },
     "safety": {
-      "score": 0.282,
-      "mentions": 2
+      "score": 0.449,
+      "mentions": 2,
+      "raw_score": 0.282
     },
     "transport": {
-      "score": 0.797,
-      "mentions": 4
+      "score": 0.569,
+      "mentions": 4,
+      "raw_score": 0.797
     },
     "affordability": {
-      "score": 0.723,
-      "mentions": 2
+      "score": 0.552,
+      "mentions": 2,
+      "raw_score": 0.723
     },
     "nightlife": {
-      "score": 0.723,
-      "mentions": 2
+      "score": 0.552,
+      "mentions": 2,
+      "raw_score": 0.723
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ab59cm/what_lebanesemiddle_eastern_foods_and_restaurants/kjlmkci/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

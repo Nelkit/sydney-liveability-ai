@@ -11,6 +11,7 @@ sys.path.insert(0, ".")
 from data_extraction.extract_reddit import RedditPost
 
 from .aspects import ASPECT_TAXONOMY, classify_aspects
+from .confidence import compute_confidence, confidence_tier, shrink_aspects
 from .emotions import aggregate_emotions, detect_emotions
 from .sentiment import aggregate_aspect_sentiment
 from .synthesise import get_synthesiser
@@ -25,6 +26,8 @@ class SuburbAnalysis:
     emotions: dict[str, float] = field(default_factory=dict)
     narrative: str = ""
     sources: list[dict] = field(default_factory=list)
+    confidence: float = 0.0
+    confidence_tier: str = "low"
 
     def to_dict(self) -> dict:
         return {
@@ -35,6 +38,8 @@ class SuburbAnalysis:
             "emotions": self.emotions,
             "narrative": self.narrative,
             "sources": self.sources,
+            "confidence": self.confidence,
+            "confidence_tier": self.confidence_tier,
         }
 
 
@@ -44,7 +49,8 @@ def _empty_analysis(suburb: str) -> SuburbAnalysis:
         post_count=0,
         fetched_at=datetime.now(timezone.utc).isoformat(),
         aspects={
-            name: {"score": 0.5, "mentions": 0} for name in ASPECT_TAXONOMY
+            name: {"score": 0.5, "raw_score": 0.5, "mentions": 0}
+            for name in ASPECT_TAXONOMY
         },
         emotions={},
         narrative=(
@@ -52,6 +58,8 @@ def _empty_analysis(suburb: str) -> SuburbAnalysis:
             "to generate a meaningful analysis at this time."
         ),
         sources=[],
+        confidence=0.0,
+        confidence_tier="low",
     )
 
 
@@ -85,10 +93,15 @@ def analyse_suburb(suburb: str, posts: list[RedditPost]) -> SuburbAnalysis:
         if name not in aspects:
             aspects[name] = {"score": 0.5, "mentions": 0}
 
-    # Step 3: Aggregate emotions
+    # Step 3: Confidence + shrinkage (single-signal, post_count-based)
+    confidence = compute_confidence(len(posts))
+    aspects = shrink_aspects(aspects, confidence)
+    tier = confidence_tier(confidence)
+
+    # Step 4: Aggregate emotions
     emotions = aggregate_emotions(emotion_results)
 
-    # Step 4: Synthesis
+    # Step 5: Synthesis
     post_dicts = [
         {"text": p.text, "score": p.score, "url": p.url} for p in posts
     ]
@@ -110,4 +123,6 @@ def analyse_suburb(suburb: str, posts: list[RedditPost]) -> SuburbAnalysis:
         emotions=emotions,
         narrative=narrative,
         sources=sources,
+        confidence=round(confidence, 3),
+        confidence_tier=tier,
     )

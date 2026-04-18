@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:34.889150+00:00",
   "aspects": {
     "transport": {
-      "score": 0.758,
-      "mentions": 5
+      "score": 0.603,
+      "mentions": 5,
+      "raw_score": 0.758
     },
     "community": {
-      "score": 0.674,
-      "mentions": 10
+      "score": 0.57,
+      "mentions": 10,
+      "raw_score": 0.674
     },
     "noise": {
-      "score": 0.95,
-      "mentions": 3
+      "score": 0.68,
+      "mentions": 3,
+      "raw_score": 0.95
     },
     "affordability": {
-      "score": 0.595,
-      "mentions": 3
+      "score": 0.538,
+      "mentions": 3,
+      "raw_score": 0.595
     },
     "nightlife": {
-      "score": 0.87,
-      "mentions": 4
+      "score": 0.648,
+      "mentions": 4,
+      "raw_score": 0.87
     },
     "green_space": {
-      "score": 0.958,
-      "mentions": 2
+      "score": 0.683,
+      "mentions": 2,
+      "raw_score": 0.958
     },
     "safety": {
-      "score": 0.569,
-      "mentions": 4
+      "score": 0.528,
+      "mentions": 4,
+      "raw_score": 0.569
     },
     "food_and_cafe": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.684,
+      "mentions": 1,
+      "raw_score": 0.961
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cq2w6q/what_plant_is_this_the_rainbow_lorikeets_love_them/l3opns3/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:24.096774+00:00",
   "aspects": {
     "community": {
-      "score": 0.613,
-      "mentions": 14
+      "score": 0.56,
+      "mentions": 14,
+      "raw_score": 0.613
     },
     "safety": {
-      "score": 0.772,
-      "mentions": 6
+      "score": 0.645,
+      "mentions": 6,
+      "raw_score": 0.772
     },
     "green_space": {
-      "score": 0.689,
-      "mentions": 5
+      "score": 0.601,
+      "mentions": 5,
+      "raw_score": 0.689
     },
     "transport": {
-      "score": 0.737,
-      "mentions": 7
+      "score": 0.626,
+      "mentions": 7,
+      "raw_score": 0.737
     },
     "noise": {
-      "score": 0.812,
-      "mentions": 1
+      "score": 0.666,
+      "mentions": 1,
+      "raw_score": 0.812
     },
     "food_and_cafe": {
-      "score": 0.667,
-      "mentions": 2
+      "score": 0.589,
+      "mentions": 2,
+      "raw_score": 0.667
     },
     "nightlife": {
-      "score": 0.612,
-      "mentions": 2
+      "score": 0.56,
+      "mentions": 2,
+      "raw_score": 0.612
     },
     "affordability": {
-      "score": 0.638,
-      "mentions": 2
+      "score": 0.574,
+      "mentions": 2,
+      "raw_score": 0.638
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzzwdgg/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

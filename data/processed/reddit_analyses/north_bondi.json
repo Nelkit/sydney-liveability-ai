@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:51.552316+00:00",
   "aspects": {
     "community": {
-      "score": 0.773,
-      "mentions": 13
+      "score": 0.637,
+      "mentions": 13,
+      "raw_score": 0.773
     },
     "transport": {
-      "score": 0.479,
-      "mentions": 6
+      "score": 0.489,
+      "mentions": 6,
+      "raw_score": 0.479
     },
     "nightlife": {
-      "score": 0.482,
-      "mentions": 7
+      "score": 0.491,
+      "mentions": 7,
+      "raw_score": 0.482
     },
     "affordability": {
-      "score": 0.237,
-      "mentions": 2
+      "score": 0.368,
+      "mentions": 2,
+      "raw_score": 0.237
     },
     "food_and_cafe": {
-      "score": 0.707,
-      "mentions": 3
+      "score": 0.603,
+      "mentions": 3,
+      "raw_score": 0.707
     },
     "safety": {
-      "score": 0.757,
-      "mentions": 3
+      "score": 0.629,
+      "mentions": 3,
+      "raw_score": 0.757
     },
     "green_space": {
-      "score": 0.637,
-      "mentions": 2
+      "score": 0.569,
+      "mentions": 2,
+      "raw_score": 0.637
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4qrgw/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

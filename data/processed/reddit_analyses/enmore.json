@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.596,
-      "mentions": 50
+      "mentions": 50,
+      "raw_score": 0.596
     },
     "nightlife": {
       "score": 0.674,
-      "mentions": 111
+      "mentions": 111,
+      "raw_score": 0.674
     },
     "community": {
       "score": 0.625,
-      "mentions": 173
+      "mentions": 173,
+      "raw_score": 0.625
     },
     "safety": {
       "score": 0.653,
-      "mentions": 53
+      "mentions": 53,
+      "raw_score": 0.653
     },
     "transport": {
       "score": 0.808,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.808
     },
     "affordability": {
       "score": 0.659,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.659
     },
     "noise": {
       "score": 0.503,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.503
     },
     "green_space": {
       "score": 0.887,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.887
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1khk83m/enmore_theatre_seating/",
       "score": 158
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

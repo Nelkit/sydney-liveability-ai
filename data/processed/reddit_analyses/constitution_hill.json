@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:54.401169+00:00",
   "aspects": {
     "community": {
-      "score": 0.608,
-      "mentions": 2
+      "score": 0.507,
+      "mentions": 2,
+      "raw_score": 0.608
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c7lkxq/prawn_crackers_sydney/l08snp6/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:53.260425+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.794,
-      "mentions": 4
+      "score": 0.549,
+      "mentions": 4,
+      "raw_score": 0.794
     },
     "community": {
-      "score": 0.792,
-      "mentions": 5
+      "score": 0.549,
+      "mentions": 5,
+      "raw_score": 0.792
     },
     "nightlife": {
-      "score": 0.754,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.754
     },
     "food_and_cafe": {
-      "score": 0.754,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.754
     },
     "transport": {
-      "score": 0.754,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.754
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/195ctj1/new_years_fireworks_for_2025/khmrucq/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

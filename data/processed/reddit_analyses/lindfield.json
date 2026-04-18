@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.925,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.925
     },
     "community": {
       "score": 0.586,
-      "mentions": 31
+      "mentions": 31,
+      "raw_score": 0.586
     },
     "nightlife": {
       "score": 0.23,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.23
     },
     "safety": {
       "score": 0.243,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.243
     },
     "affordability": {
       "score": 0.571,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.571
     },
     "noise": {
       "score": 0.777,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.777
     },
     "food_and_cafe": {
       "score": 0.746,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.746
     },
     "transport": {
       "score": 0.702,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.702
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bdl64i/accident_in_lindfield/kunjnxb/",
       "score": 21
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

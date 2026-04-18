@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:47.778891+00:00",
   "aspects": {
     "safety": {
-      "score": 0.23,
-      "mentions": 11
+      "score": 0.392,
+      "mentions": 11,
+      "raw_score": 0.23
     },
     "community": {
-      "score": 0.319,
-      "mentions": 4
+      "score": 0.428,
+      "mentions": 4,
+      "raw_score": 0.319
     },
     "transport": {
-      "score": 0.407,
-      "mentions": 1
+      "score": 0.463,
+      "mentions": 1,
+      "raw_score": 0.407
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c4ii70/stabbing_at_good_shepherd_church_in_wakeley/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

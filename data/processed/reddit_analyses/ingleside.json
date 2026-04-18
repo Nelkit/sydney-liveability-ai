@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:36.276808+00:00",
   "aspects": {
     "transport": {
-      "score": 0.229,
-      "mentions": 1
+      "score": 0.473,
+      "mentions": 1,
+      "raw_score": 0.229
     },
     "community": {
-      "score": 0.93,
-      "mentions": 2
+      "score": 0.543,
+      "mentions": 2,
+      "raw_score": 0.93
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/198nb1u/nurseries_in_sydney_and_places_where_people_buy/ki8mm4s/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

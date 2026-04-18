@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:43.132355+00:00",
   "aspects": {
     "transport": {
-      "score": 0.683,
-      "mentions": 3
+      "score": 0.518,
+      "mentions": 3,
+      "raw_score": 0.683
     },
     "green_space": {
-      "score": 0.633,
-      "mentions": 2
+      "score": 0.513,
+      "mentions": 2,
+      "raw_score": 0.633
     },
     "community": {
-      "score": 0.633,
-      "mentions": 2
+      "score": 0.513,
+      "mentions": 2,
+      "raw_score": 0.633
     },
     "affordability": {
-      "score": 0.633,
-      "mentions": 2
+      "score": 0.513,
+      "mentions": 2,
+      "raw_score": 0.633
     },
     "nightlife": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "safety": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "noise": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "food_and_cafe": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6v20g4/",
       "score": 15
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

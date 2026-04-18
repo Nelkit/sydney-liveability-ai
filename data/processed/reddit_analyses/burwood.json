@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.337,
-      "mentions": 145
+      "mentions": 145,
+      "raw_score": 0.337
     },
     "safety": {
       "score": 0.303,
-      "mentions": 125
+      "mentions": 125,
+      "raw_score": 0.303
     },
     "community": {
       "score": 0.582,
-      "mentions": 251
+      "mentions": 251,
+      "raw_score": 0.582
     },
     "nightlife": {
       "score": 0.669,
-      "mentions": 78
+      "mentions": 78,
+      "raw_score": 0.669
     },
     "food_and_cafe": {
       "score": 0.646,
-      "mentions": 55
+      "mentions": 55,
+      "raw_score": 0.646
     },
     "affordability": {
       "score": 0.754,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.754
     },
     "noise": {
       "score": 0.381,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.381
     },
     "green_space": {
       "score": 0.63,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.63
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gpi53y/worst_fb_marketplace_interactions_lighthearted/",
       "score": 493
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:26.430721+00:00",
   "aspects": {
     "community": {
-      "score": 0.664,
-      "mentions": 18
+      "score": 0.62,
+      "mentions": 18,
+      "raw_score": 0.664
     },
     "green_space": {
-      "score": 0.564,
-      "mentions": 4
+      "score": 0.547,
+      "mentions": 4,
+      "raw_score": 0.564
     },
     "transport": {
-      "score": 0.502,
-      "mentions": 5
+      "score": 0.501,
+      "mentions": 5,
+      "raw_score": 0.502
     },
     "nightlife": {
-      "score": 0.502,
-      "mentions": 4
+      "score": 0.501,
+      "mentions": 4,
+      "raw_score": 0.502
     },
     "safety": {
-      "score": 0.486,
-      "mentions": 6
+      "score": 0.49,
+      "mentions": 6,
+      "raw_score": 0.486
     },
     "affordability": {
-      "score": 0.487,
-      "mentions": 3
+      "score": 0.49,
+      "mentions": 3,
+      "raw_score": 0.487
     },
     "noise": {
-      "score": 0.972,
-      "mentions": 1
+      "score": 0.846,
+      "mentions": 1,
+      "raw_score": 0.972
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqhuc/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

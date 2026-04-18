@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:34.020472+00:00",
   "aspects": {
     "community": {
-      "score": 0.761,
-      "mentions": 5
+      "score": 0.552,
+      "mentions": 5,
+      "raw_score": 0.761
     },
     "green_space": {
-      "score": 0.643,
-      "mentions": 4
+      "score": 0.529,
+      "mentions": 4,
+      "raw_score": 0.643
     },
     "nightlife": {
-      "score": 0.78,
-      "mentions": 3
+      "score": 0.556,
+      "mentions": 3,
+      "raw_score": 0.78
     },
     "safety": {
-      "score": 0.643,
-      "mentions": 3
+      "score": 0.529,
+      "mentions": 3,
+      "raw_score": 0.643
     },
     "food_and_cafe": {
-      "score": 0.677,
-      "mentions": 1
+      "score": 0.535,
+      "mentions": 1,
+      "raw_score": 0.677
     },
     "transport": {
-      "score": 0.677,
-      "mentions": 1
+      "score": 0.535,
+      "mentions": 1,
+      "raw_score": 0.677
     },
     "affordability": {
-      "score": 0.776,
-      "mentions": 1
+      "score": 0.555,
+      "mentions": 1,
+      "raw_score": 0.776
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh5piuv/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

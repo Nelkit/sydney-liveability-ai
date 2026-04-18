@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:20.150585+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.44,
-      "mentions": 2
+      "score": 0.486,
+      "mentions": 2,
+      "raw_score": 0.44
     },
     "community": {
-      "score": 0.487,
-      "mentions": 7
+      "score": 0.497,
+      "mentions": 7,
+      "raw_score": 0.487
     },
     "nightlife": {
-      "score": 0.951,
-      "mentions": 2
+      "score": 0.605,
+      "mentions": 2,
+      "raw_score": 0.951
     },
     "transport": {
-      "score": 0.809,
-      "mentions": 3
+      "score": 0.572,
+      "mentions": 3,
+      "raw_score": 0.809
     },
     "safety": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.616,
+      "mentions": 1,
+      "raw_score": 0.997
     },
     "affordability": {
-      "score": 0.951,
-      "mentions": 2
+      "score": 0.605,
+      "mentions": 2,
+      "raw_score": 0.951
     },
     "noise": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.616,
+      "mentions": 1,
+      "raw_score": 0.997
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwg17b4/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

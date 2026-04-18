@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:32.378849+00:00",
   "aspects": {
     "safety": {
-      "score": 0.905,
-      "mentions": 1
+      "score": 0.581,
+      "mentions": 1,
+      "raw_score": 0.905
     },
     "nightlife": {
-      "score": 0.897,
-      "mentions": 2
+      "score": 0.579,
+      "mentions": 2,
+      "raw_score": 0.897
     },
     "community": {
-      "score": 0.776,
-      "mentions": 5
+      "score": 0.555,
+      "mentions": 5,
+      "raw_score": 0.776
     },
     "transport": {
-      "score": 0.501,
-      "mentions": 1
+      "score": 0.5,
+      "mentions": 1,
+      "raw_score": 0.501
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bup1a7/people_of_sydney_isolated_pubs_with_a_view/kxwl3lh/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

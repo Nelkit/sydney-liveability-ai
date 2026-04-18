@@ -207,6 +207,8 @@ def summary() -> dict:
                     "bottom_aspect": bottom_aspect,
                     "dominant_emotion": dominant,
                     "cached": True,
+                    "confidence": cached.get("confidence", 0.0),
+                    "confidence_tier": cached.get("confidence_tier", "low"),
                 }
             )
         else:
@@ -219,6 +221,8 @@ def summary() -> dict:
                     "bottom_aspect": None,
                     "dominant_emotion": None,
                     "cached": False,
+                    "confidence": 0.0,
+                    "confidence_tier": "low",
                 }
             )
 

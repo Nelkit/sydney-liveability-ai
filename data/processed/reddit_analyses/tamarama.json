@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:28.196119+00:00",
   "aspects": {
     "transport": {
-      "score": 0.679,
-      "mentions": 3
+      "score": 0.56,
+      "mentions": 3,
+      "raw_score": 0.679
     },
     "safety": {
-      "score": 0.64,
-      "mentions": 5
+      "score": 0.547,
+      "mentions": 5,
+      "raw_score": 0.64
     },
     "community": {
-      "score": 0.636,
-      "mentions": 6
+      "score": 0.545,
+      "mentions": 6,
+      "raw_score": 0.636
     },
     "food_and_cafe": {
-      "score": 0.329,
-      "mentions": 3
+      "score": 0.443,
+      "mentions": 3,
+      "raw_score": 0.329
     },
     "nightlife": {
-      "score": 0.38,
-      "mentions": 3
+      "score": 0.46,
+      "mentions": 3,
+      "raw_score": 0.38
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b0bo5v/manly_beach_only_australian_beach_in_tripadvisors/ksbb39c/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

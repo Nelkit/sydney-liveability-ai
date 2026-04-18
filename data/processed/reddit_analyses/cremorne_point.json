@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:51.731712+00:00",
   "aspects": {
     "community": {
-      "score": 0.804,
-      "mentions": 5
+      "score": 0.551,
+      "mentions": 5,
+      "raw_score": 0.804
     },
     "safety": {
-      "score": 0.8,
-      "mentions": 1
+      "score": 0.55,
+      "mentions": 1,
+      "raw_score": 0.8
     },
     "green_space": {
-      "score": 0.718,
-      "mentions": 2
+      "score": 0.536,
+      "mentions": 2,
+      "raw_score": 0.718
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c2per1/what_if_you_had_one_night_left/kzdgasi/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

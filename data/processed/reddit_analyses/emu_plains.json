@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:37.249051+00:00",
   "aspects": {
     "transport": {
-      "score": 0.39,
-      "mentions": 6
+      "score": 0.412,
+      "mentions": 6,
+      "raw_score": 0.39
     },
     "safety": {
-      "score": 0.373,
-      "mentions": 6
+      "score": 0.398,
+      "mentions": 6,
+      "raw_score": 0.373
     },
     "green_space": {
-      "score": 0.513,
-      "mentions": 4
+      "score": 0.51,
+      "mentions": 4,
+      "raw_score": 0.513
     },
     "community": {
-      "score": 0.511,
-      "mentions": 17
+      "score": 0.509,
+      "mentions": 17,
+      "raw_score": 0.511
     },
     "nightlife": {
-      "score": 0.506,
-      "mentions": 3
+      "score": 0.505,
+      "mentions": 3,
+      "raw_score": 0.506
     },
     "affordability": {
-      "score": 0.848,
-      "mentions": 3
+      "score": 0.778,
+      "mentions": 3,
+      "raw_score": 0.848
     },
     "noise": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.89,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
       "score": 27
     }
-  ]
+  ],
+  "confidence": 0.8,
+  "confidence_tier": "high"
 }

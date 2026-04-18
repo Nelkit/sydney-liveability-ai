@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.459,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.459
     },
     "transport": {
       "score": 0.441,
-      "mentions": 46
+      "mentions": 46,
+      "raw_score": 0.441
     },
     "community": {
       "score": 0.553,
-      "mentions": 85
+      "mentions": 85,
+      "raw_score": 0.553
     },
     "affordability": {
       "score": 0.833,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.833
     },
     "food_and_cafe": {
       "score": 0.834,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.834
     },
     "nightlife": {
       "score": 0.781,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.781
     },
     "green_space": {
       "score": 0.617,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.617
     },
     "noise": {
       "score": 0.475,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.475
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1q4n0vs/old_campsie_centre_maccas/",
       "score": 96
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

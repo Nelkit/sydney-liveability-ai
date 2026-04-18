@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:16.998278+00:00",
   "aspects": {
     "community": {
-      "score": 0.222,
-      "mentions": 4
+      "score": 0.463,
+      "mentions": 4,
+      "raw_score": 0.222
     },
     "transport": {
-      "score": 0.889,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.889
     },
     "affordability": {
-      "score": 0.889,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.889
     },
     "nightlife": {
-      "score": 0.889,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.889
     },
     "green_space": {
-      "score": 0.889,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.889
     },
     "food_and_cafe": {
-      "score": 0.889,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.889
     },
     "safety": {
-      "score": 0.858,
-      "mentions": 2
+      "score": 0.548,
+      "mentions": 2,
+      "raw_score": 0.858
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/198irdg/what_ya_mean_i_cant_ride_me_bike_across_anzac/ki8559o/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

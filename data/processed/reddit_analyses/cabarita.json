@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:32.041886+00:00",
   "aspects": {
     "nightlife": {
-      "score": 0.74,
-      "mentions": 4
+      "score": 0.596,
+      "mentions": 4,
+      "raw_score": 0.74
     },
     "community": {
-      "score": 0.743,
-      "mentions": 9
+      "score": 0.597,
+      "mentions": 9,
+      "raw_score": 0.743
     },
     "food_and_cafe": {
-      "score": 0.71,
-      "mentions": 5
+      "score": 0.584,
+      "mentions": 5,
+      "raw_score": 0.71
     },
     "transport": {
-      "score": 0.776,
-      "mentions": 2
+      "score": 0.61,
+      "mentions": 2,
+      "raw_score": 0.776
     },
     "green_space": {
-      "score": 0.808,
-      "mentions": 3
+      "score": 0.623,
+      "mentions": 3,
+      "raw_score": 0.808
     },
     "noise": {
-      "score": 0.776,
-      "mentions": 2
+      "score": 0.61,
+      "mentions": 2,
+      "raw_score": 0.776
     },
     "affordability": {
-      "score": 0.592,
-      "mentions": 2
+      "score": 0.537,
+      "mentions": 2,
+      "raw_score": 0.592
     },
     "safety": {
-      "score": 0.371,
-      "mentions": 2
+      "score": 0.448,
+      "mentions": 2,
+      "raw_score": 0.371
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1csghqv/is_the_canada_bay_area_middle_or_upper_class/l48gqpu/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

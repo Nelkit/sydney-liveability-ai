@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:56.880659+00:00",
   "aspects": {
     "transport": {
-      "score": 0.538,
-      "mentions": 13
+      "score": 0.529,
+      "mentions": 13,
+      "raw_score": 0.538
     },
     "community": {
-      "score": 0.522,
-      "mentions": 19
+      "score": 0.517,
+      "mentions": 19,
+      "raw_score": 0.522
     },
     "green_space": {
-      "score": 0.619,
-      "mentions": 5
+      "score": 0.591,
+      "mentions": 5,
+      "raw_score": 0.619
     },
     "nightlife": {
-      "score": 0.591,
-      "mentions": 6
+      "score": 0.57,
+      "mentions": 6,
+      "raw_score": 0.591
     },
     "food_and_cafe": {
-      "score": 0.917,
-      "mentions": 2
+      "score": 0.82,
+      "mentions": 2,
+      "raw_score": 0.917
     },
     "affordability": {
-      "score": 0.917,
-      "mentions": 2
+      "score": 0.82,
+      "mentions": 2,
+      "raw_score": 0.917
     },
     "safety": {
-      "score": 0.632,
-      "mentions": 6
+      "score": 0.601,
+      "mentions": 6,
+      "raw_score": 0.632
     },
     "noise": {
-      "score": 0.737,
-      "mentions": 4
+      "score": 0.682,
+      "mentions": 4,
+      "raw_score": 0.737
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bf9g5q/where_it_started_and_where_its_going_light_rail/kuzlwe2/",
       "score": 15
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

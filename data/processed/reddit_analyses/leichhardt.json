@@ -5,35 +5,43 @@
   "aspects": {
     "affordability": {
       "score": 0.451,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.451
     },
     "food_and_cafe": {
       "score": 0.514,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.514
     },
     "community": {
       "score": 0.531,
-      "mentions": 111
+      "mentions": 111,
+      "raw_score": 0.531
     },
     "nightlife": {
       "score": 0.491,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.491
     },
     "green_space": {
       "score": 0.461,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.461
     },
     "safety": {
       "score": 0.546,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.546
     },
     "transport": {
       "score": 0.486,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.486
     },
     "noise": {
       "score": 0.449,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.449
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1k06tlu/bunnings_receipt_to_be_fair_leichhardt_is_to_spell/",
       "score": 160
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

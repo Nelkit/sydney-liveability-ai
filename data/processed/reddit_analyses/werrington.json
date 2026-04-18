@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:30.439421+00:00",
   "aspects": {
     "transport": {
-      "score": 0.502,
-      "mentions": 6
+      "score": 0.501,
+      "mentions": 6,
+      "raw_score": 0.502
     },
     "safety": {
-      "score": 0.496,
-      "mentions": 5
+      "score": 0.498,
+      "mentions": 5,
+      "raw_score": 0.496
     },
     "community": {
-      "score": 0.628,
-      "mentions": 13
+      "score": 0.568,
+      "mentions": 13,
+      "raw_score": 0.628
     },
     "green_space": {
-      "score": 0.705,
-      "mentions": 4
+      "score": 0.609,
+      "mentions": 4,
+      "raw_score": 0.705
     },
     "nightlife": {
-      "score": 0.711,
-      "mentions": 1
+      "score": 0.613,
+      "mentions": 1,
+      "raw_score": 0.711
     },
     "affordability": {
-      "score": 0.369,
-      "mentions": 1
+      "score": 0.43,
+      "mentions": 1,
+      "raw_score": 0.369
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dhg42o/major_train_delays_affecting_t1_t2_t5/l8xapqb/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

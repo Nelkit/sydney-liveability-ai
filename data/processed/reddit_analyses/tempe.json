@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.669,
-      "mentions": 53
+      "mentions": 53,
+      "raw_score": 0.669
     },
     "nightlife": {
       "score": 0.837,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.837
     },
     "safety": {
       "score": 0.795,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.795
     },
     "food_and_cafe": {
       "score": 0.806,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.806
     },
     "affordability": {
       "score": 0.862,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.862
     },
     "green_space": {
       "score": 0.809,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.809
     },
     "transport": {
       "score": 0.758,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.758
     },
     "noise": {
       "score": 0.799,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.799
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d9dtpz/is_the_m8_leaking_under_the_cooks_river_at_tempe/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

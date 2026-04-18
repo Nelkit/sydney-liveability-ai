@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.801,
-      "mentions": 89
+      "mentions": 89,
+      "raw_score": 0.801
     },
     "safety": {
       "score": 0.772,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.772
     },
     "affordability": {
       "score": 0.799,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.799
     },
     "transport": {
       "score": 0.764,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.764
     },
     "noise": {
       "score": 0.879,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.879
     },
     "food_and_cafe": {
       "score": 0.888,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.888
     },
     "green_space": {
       "score": 0.843,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.843
     },
     "nightlife": {
       "score": 0.573,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.573
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gqn91c/time_lapse_of_last_nights_storm/",
       "score": 128
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

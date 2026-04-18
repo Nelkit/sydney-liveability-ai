@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.77,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.77
     },
     "affordability": {
       "score": 0.894,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.894
     },
     "food_and_cafe": {
       "score": 0.909,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.909
     },
     "community": {
       "score": 0.713,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.713
     },
     "green_space": {
       "score": 0.906,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.906
     },
     "nightlife": {
       "score": 0.904,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.904
     },
     "noise": {
       "score": 0.991,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.991
     },
     "safety": {
       "score": 0.559,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.559
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dijtcx/today_reporter_almost_taken_down_by_cyclist_on/l94jr29/",
       "score": 32
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

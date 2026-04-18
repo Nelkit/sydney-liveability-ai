@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.461,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.461
     },
     "nightlife": {
       "score": 0.439,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.439
     },
     "community": {
       "score": 0.608,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.608
     },
     "green_space": {
       "score": 0.843,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.843
     },
     "affordability": {
       "score": 0.896,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.896
     },
     "safety": {
       "score": 0.48,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.48
     },
     "food_and_cafe": {
       "score": 0.668,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.668
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d0xm7x/rouse_hill_to_cbd/l5q3qj9/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

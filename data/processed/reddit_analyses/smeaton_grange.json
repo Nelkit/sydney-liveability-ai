@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:49.118369+00:00",
   "aspects": {
     "community": {
-      "score": 0.541,
-      "mentions": 2
+      "score": 0.504,
+      "mentions": 2,
+      "raw_score": 0.541
     },
     "safety": {
-      "score": 0.262,
-      "mentions": 1
+      "score": 0.476,
+      "mentions": 1,
+      "raw_score": 0.262
     },
     "green_space": {
-      "score": 0.953,
-      "mentions": 1
+      "score": 0.545,
+      "mentions": 1,
+      "raw_score": 0.953
     },
     "transport": {
-      "score": 0.953,
-      "mentions": 1
+      "score": 0.545,
+      "mentions": 1,
+      "raw_score": 0.953
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cxtb0b/want_to_start_gymastics_in_sydney/l551fqp/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

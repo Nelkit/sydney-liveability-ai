@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:22.425584+00:00",
   "aspects": {
     "community": {
-      "score": 0.674,
-      "mentions": 11
+      "score": 0.575,
+      "mentions": 11,
+      "raw_score": 0.674
     },
     "nightlife": {
-      "score": 0.855,
-      "mentions": 1
+      "score": 0.654,
+      "mentions": 1,
+      "raw_score": 0.855
     },
     "safety": {
-      "score": 0.519,
-      "mentions": 2
+      "score": 0.508,
+      "mentions": 2,
+      "raw_score": 0.519
     },
     "food_and_cafe": {
-      "score": 0.956,
-      "mentions": 1
+      "score": 0.698,
+      "mentions": 1,
+      "raw_score": 0.956
     },
     "noise": {
-      "score": 0.956,
-      "mentions": 1
+      "score": 0.698,
+      "mentions": 1,
+      "raw_score": 0.956
     },
     "transport": {
-      "score": 0.733,
-      "mentions": 2
+      "score": 0.601,
+      "mentions": 2,
+      "raw_score": 0.733
     },
     "green_space": {
-      "score": 0.993,
-      "mentions": 1
+      "score": 0.714,
+      "mentions": 1,
+      "raw_score": 0.993
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1rqjofu/big_w_has_more_pokopia_stock/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

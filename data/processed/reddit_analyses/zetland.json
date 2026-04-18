@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.603,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.603
     },
     "community": {
       "score": 0.602,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.602
     },
     "transport": {
       "score": 0.8,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.8
     },
     "noise": {
       "score": 0.793,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.793
     },
     "food_and_cafe": {
       "score": 0.823,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.823
     },
     "green_space": {
       "score": 0.799,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.799
     },
     "affordability": {
       "score": 0.628,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.628
     },
     "nightlife": {
       "score": 0.634,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.634
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1hfexme/open_on_the_holidays/",
       "score": 59
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

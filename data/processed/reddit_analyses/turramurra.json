@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:30.316334+00:00",
   "aspects": {
     "transport": {
-      "score": 0.414,
-      "mentions": 9
+      "score": 0.428,
+      "mentions": 9,
+      "raw_score": 0.414
     },
     "safety": {
-      "score": 0.409,
-      "mentions": 11
+      "score": 0.424,
+      "mentions": 11,
+      "raw_score": 0.409
     },
     "community": {
-      "score": 0.586,
-      "mentions": 16
+      "score": 0.572,
+      "mentions": 16,
+      "raw_score": 0.586
     },
     "affordability": {
-      "score": 0.493,
-      "mentions": 4
+      "score": 0.494,
+      "mentions": 4,
+      "raw_score": 0.493
     },
     "green_space": {
       "score": 0.499,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.499
     },
     "nightlife": {
-      "score": 0.636,
-      "mentions": 6
+      "score": 0.613,
+      "mentions": 6,
+      "raw_score": 0.636
     },
     "noise": {
-      "score": 0.944,
-      "mentions": 1
+      "score": 0.87,
+      "mentions": 1,
+      "raw_score": 0.944
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kotub66/",
       "score": 19
     }
-  ]
+  ],
+  "confidence": 0.833,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.769,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.769
     },
     "community": {
       "score": 0.697,
-      "mentions": 65
+      "mentions": 65,
+      "raw_score": 0.697
     },
     "safety": {
       "score": 0.584,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.584
     },
     "nightlife": {
       "score": 0.85,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.85
     },
     "green_space": {
       "score": 0.852,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.852
     },
     "affordability": {
       "score": 0.84,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.84
     },
     "food_and_cafe": {
       "score": 0.873,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.873
     },
     "noise": {
       "score": 0.977,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.977
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvt99gv/",
       "score": 50
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

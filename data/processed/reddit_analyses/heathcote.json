@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.613,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.613
     },
     "community": {
       "score": 0.611,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.611
     },
     "nightlife": {
       "score": 0.626,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.626
     },
     "transport": {
       "score": 0.542,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.542
     },
     "food_and_cafe": {
       "score": 0.637,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.637
     },
     "green_space": {
       "score": 0.725,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.725
     },
     "affordability": {
       "score": 0.382,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.382
     },
     "noise": {
       "score": 0.701,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.701
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1de3l9r/cant_possibly_miss_your_exit_better_come_to_a/l89it9d/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

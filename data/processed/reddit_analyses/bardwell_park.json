@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:48.268602+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.974,
-      "mentions": 2
+      "score": 0.579,
+      "mentions": 2,
+      "raw_score": 0.974
     },
     "community": {
-      "score": 0.899,
-      "mentions": 4
+      "score": 0.567,
+      "mentions": 4,
+      "raw_score": 0.899
     },
     "affordability": {
-      "score": 0.975,
-      "mentions": 1
+      "score": 0.579,
+      "mentions": 1,
+      "raw_score": 0.975
     },
     "nightlife": {
-      "score": 0.974,
-      "mentions": 2
+      "score": 0.579,
+      "mentions": 2,
+      "raw_score": 0.974
     },
     "transport": {
-      "score": 0.423,
-      "mentions": 1
+      "score": 0.487,
+      "mentions": 1,
+      "raw_score": 0.423
     },
     "safety": {
-      "score": 0.423,
-      "mentions": 1
+      "score": 0.487,
+      "mentions": 1,
+      "raw_score": 0.423
     },
     "green_space": {
-      "score": 0.525,
-      "mentions": 3
+      "score": 0.504,
+      "mentions": 3,
+      "raw_score": 0.525
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5zihca/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

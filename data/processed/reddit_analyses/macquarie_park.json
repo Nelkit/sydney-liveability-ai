@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.765,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.765
     },
     "community": {
       "score": 0.71,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.71
     },
     "green_space": {
       "score": 0.657,
-      "mentions": 51
+      "mentions": 51,
+      "raw_score": 0.657
     },
     "safety": {
       "score": 0.281,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.281
     },
     "affordability": {
       "score": 0.447,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.447
     },
     "nightlife": {
       "score": 0.623,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.623
     },
     "food_and_cafe": {
       "score": 0.535,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.535
     },
     "noise": {
       "score": 0.13,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.13
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1i39ezr/a_tree_has_just_fallen_on_university_ave/",
       "score": 172
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

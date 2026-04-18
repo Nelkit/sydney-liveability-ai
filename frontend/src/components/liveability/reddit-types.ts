@@ -14,9 +14,12 @@ export type AspectKey =
   | "green_space";
 
 export type AspectScore = {
-  score: number; // 0..1, 0.5 neutral
+  score: number; // 0..1, 0.5 neutral; confidence-shrunk
+  raw_score?: number; // 0..1, pre-shrinkage VADER-weighted value
   mentions: number;
 };
+
+export type ConfidenceTier = "high" | "medium" | "low";
 
 export type EmotionKey =
   | "anger"
@@ -41,6 +44,8 @@ export type SuburbAnalysis = {
   emotions: Partial<Record<EmotionKey, number>>;
   narrative: string;
   sources: SourcePost[];
+  confidence: number;
+  confidence_tier: ConfidenceTier;
 };
 
 export const ASPECT_ORDER: AspectKey[] = [

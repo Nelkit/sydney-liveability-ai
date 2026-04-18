@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:44.585881+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.506,
-      "mentions": 4
+      "score": 0.502,
+      "mentions": 4,
+      "raw_score": 0.506
     },
     "community": {
-      "score": 0.523,
-      "mentions": 7
+      "score": 0.507,
+      "mentions": 7,
+      "raw_score": 0.523
     },
     "nightlife": {
-      "score": 0.611,
-      "mentions": 4
+      "score": 0.533,
+      "mentions": 4,
+      "raw_score": 0.611
     },
     "noise": {
-      "score": 0.796,
-      "mentions": 1
+      "score": 0.589,
+      "mentions": 1,
+      "raw_score": 0.796
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -92,5 +100,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dmfday/whats_the_most_embarassing_personalised_plate/l9zrme6/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

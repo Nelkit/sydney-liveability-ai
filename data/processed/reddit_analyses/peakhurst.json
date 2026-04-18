@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.248,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.248
     },
     "affordability": {
       "score": 0.253,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.253
     },
     "community": {
       "score": 0.339,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.339
     },
     "nightlife": {
       "score": 0.525,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.525
     },
     "transport": {
       "score": 0.7,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.7
     },
     "food_and_cafe": {
       "score": 0.637,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.637
     },
     "green_space": {
       "score": 0.511,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.511
     },
     "noise": {
       "score": 0.955,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.955
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/196wtwu/15million_social_housing_contract_being_completed/khwpb82/",
       "score": 19
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

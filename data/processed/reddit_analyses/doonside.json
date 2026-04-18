@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:12:34.638960+00:00",
   "aspects": {
     "transport": {
-      "score": 0.294,
-      "mentions": 10
+      "score": 0.301,
+      "mentions": 10,
+      "raw_score": 0.294
     },
     "community": {
-      "score": 0.427,
-      "mentions": 18
+      "score": 0.429,
+      "mentions": 18,
+      "raw_score": 0.427
     },
     "noise": {
-      "score": 0.239,
-      "mentions": 2
+      "score": 0.248,
+      "mentions": 2,
+      "raw_score": 0.239
     },
     "safety": {
-      "score": 0.592,
-      "mentions": 13
+      "score": 0.589,
+      "mentions": 13,
+      "raw_score": 0.592
     },
     "green_space": {
       "score": 0.503,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.503
     },
     "nightlife": {
-      "score": 0.623,
-      "mentions": 5
+      "score": 0.619,
+      "mentions": 5,
+      "raw_score": 0.623
     },
     "affordability": {
-      "score": 0.748,
-      "mentions": 4
+      "score": 0.74,
+      "mentions": 4,
+      "raw_score": 0.748
     },
     "food_and_cafe": {
-      "score": 0.876,
-      "mentions": 3
+      "score": 0.863,
+      "mentions": 3,
+      "raw_score": 0.876
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kievzv2/",
       "score": 18
     }
-  ]
+  ],
+  "confidence": 0.967,
+  "confidence_tier": "high"
 }

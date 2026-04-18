@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:43.911371+00:00",
   "aspects": {
     "community": {
-      "score": 0.694,
-      "mentions": 4
+      "score": 0.539,
+      "mentions": 4,
+      "raw_score": 0.694
     },
     "noise": {
-      "score": 0.779,
-      "mentions": 1
+      "score": 0.556,
+      "mentions": 1,
+      "raw_score": 0.779
     },
     "safety": {
-      "score": 0.779,
-      "mentions": 1
+      "score": 0.556,
+      "mentions": 1,
+      "raw_score": 0.779
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bbcjte/i_found_a_map_of_old_sydney_town_from_when_i_was/kualsmk/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

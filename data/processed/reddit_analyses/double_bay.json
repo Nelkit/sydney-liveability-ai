@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.535,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.535
     },
     "community": {
       "score": 0.511,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.511
     },
     "green_space": {
       "score": 0.698,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.698
     },
     "noise": {
       "score": 0.465,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.465
     },
     "food_and_cafe": {
       "score": 0.356,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.356
     },
     "transport": {
       "score": 0.434,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.434
     },
     "affordability": {
       "score": 0.837,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.837
     },
     "nightlife": {
       "score": 0.532,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.532
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cdav1f/cybertruck_in_sydney/l1as0de/",
       "score": 65
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

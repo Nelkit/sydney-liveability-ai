@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:50.801621+00:00",
   "aspects": {
     "safety": {
-      "score": 0.602,
-      "mentions": 6
+      "score": 0.527,
+      "mentions": 6,
+      "raw_score": 0.602
     },
     "community": {
-      "score": 0.521,
-      "mentions": 4
+      "score": 0.506,
+      "mentions": 4,
+      "raw_score": 0.521
     },
     "affordability": {
-      "score": 0.595,
-      "mentions": 2
+      "score": 0.525,
+      "mentions": 2,
+      "raw_score": 0.595
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kierfmk/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

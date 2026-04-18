@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:15.614960+00:00",
   "aspects": {
     "community": {
-      "score": 0.885,
-      "mentions": 18
+      "score": 0.782,
+      "mentions": 18,
+      "raw_score": 0.885
     },
     "safety": {
-      "score": 0.272,
-      "mentions": 8
+      "score": 0.333,
+      "mentions": 8,
+      "raw_score": 0.272
     },
     "transport": {
-      "score": 0.257,
-      "mentions": 8
+      "score": 0.322,
+      "mentions": 8,
+      "raw_score": 0.257
     },
     "affordability": {
-      "score": 0.757,
-      "mentions": 7
+      "score": 0.688,
+      "mentions": 7,
+      "raw_score": 0.757
     },
     "food_and_cafe": {
-      "score": 0.877,
-      "mentions": 4
+      "score": 0.776,
+      "mentions": 4,
+      "raw_score": 0.877
     },
     "green_space": {
-      "score": 0.926,
-      "mentions": 5
+      "score": 0.812,
+      "mentions": 5,
+      "raw_score": 0.926
     },
     "nightlife": {
-      "score": 0.906,
-      "mentions": 7
+      "score": 0.798,
+      "mentions": 7,
+      "raw_score": 0.906
     },
     "noise": {
-      "score": 0.968,
-      "mentions": 3
+      "score": 0.843,
+      "mentions": 3,
+      "raw_score": 0.968
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aqztz9/what_the_hell_has_happened_to_the_t9_line_epping/kqgph8m/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

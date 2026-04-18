@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.634,
-      "mentions": 79
+      "mentions": 79,
+      "raw_score": 0.634
     },
     "safety": {
       "score": 0.673,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.673
     },
     "transport": {
       "score": 0.713,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.713
     },
     "food_and_cafe": {
       "score": 0.678,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.678
     },
     "affordability": {
       "score": 0.779,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.779
     },
     "nightlife": {
       "score": 0.745,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.745
     },
     "green_space": {
       "score": 0.794,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.794
     },
     "noise": {
       "score": 0.693,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.693
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1civ1d2/french_motorist_busted_racking_up_240_demerit/l2c0knw/",
       "score": 102
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.494,
-      "mentions": 2
+      "score": 0.5,
+      "mentions": 2,
+      "raw_score": 0.494
     },
     "safety": {
-      "score": 0.04,
-      "mentions": 1
+      "score": 0.469,
+      "mentions": 1,
+      "raw_score": 0.04
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/199agrg/reading_my_way_through_sydney_any_suggestions/kidbf7w/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:06.066448+00:00",
   "aspects": {
     "safety": {
-      "score": 0.484,
-      "mentions": 4
+      "score": 0.498,
+      "mentions": 4,
+      "raw_score": 0.484
     },
     "community": {
-      "score": 0.899,
-      "mentions": 3
+      "score": 0.553,
+      "mentions": 3,
+      "raw_score": 0.899
     },
     "noise": {
-      "score": 0.908,
-      "mentions": 1
+      "score": 0.554,
+      "mentions": 1,
+      "raw_score": 0.908
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dk7ddr/police_search_for_driver_of_ute_after_pedestrian/l9k5oy0/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.694,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.694
     },
     "transport": {
       "score": 0.68,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.68
     },
     "safety": {
       "score": 0.498,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.498
     },
     "affordability": {
       "score": 0.232,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.232
     },
     "green_space": {
       "score": 0.38,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.38
     },
     "food_and_cafe": {
       "score": 0.905,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.905
     },
     "noise": {
       "score": 0.595,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.595
     },
     "nightlife": {
       "score": 0.645,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.645
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krvaq9m/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

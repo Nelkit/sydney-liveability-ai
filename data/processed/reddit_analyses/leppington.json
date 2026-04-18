@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.66,
-      "mentions": 56
+      "mentions": 56,
+      "raw_score": 0.66
     },
     "community": {
       "score": 0.643,
-      "mentions": 47
+      "mentions": 47,
+      "raw_score": 0.643
     },
     "noise": {
       "score": 0.57,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.57
     },
     "safety": {
       "score": 0.555,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.555
     },
     "green_space": {
       "score": 0.609,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.609
     },
     "food_and_cafe": {
       "score": 0.706,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.706
     },
     "affordability": {
       "score": 0.644,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.644
     },
     "nightlife": {
       "score": 0.821,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.821
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dkvh2q/sydney_metro_offpeak_frequency_change/l9kopk3/",
       "score": 35
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

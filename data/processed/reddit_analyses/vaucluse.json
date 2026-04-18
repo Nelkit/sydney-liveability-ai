@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.744,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.744
     },
     "nightlife": {
       "score": 0.734,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.734
     },
     "food_and_cafe": {
       "score": 0.707,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.707
     },
     "transport": {
       "score": 0.701,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.701
     },
     "safety": {
       "score": 0.678,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.678
     },
     "affordability": {
       "score": 0.664,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.664
     },
     "green_space": {
       "score": 0.63,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.63
     },
     "noise": {
       "score": 0.499,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.499
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/18wng23/any_advice_on_dealing_with_local_teenagers/kg1qvbz/",
       "score": 71
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

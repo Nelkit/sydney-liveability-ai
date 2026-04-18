@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:41.613092+00:00",
   "aspects": {
     "community": {
-      "score": 0.248,
-      "mentions": 6
+      "score": 0.45,
+      "mentions": 6,
+      "raw_score": 0.248
     },
     "safety": {
-      "score": 0.724,
-      "mentions": 4
+      "score": 0.545,
+      "mentions": 4,
+      "raw_score": 0.724
     },
     "noise": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.598,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "affordability": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.598,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "green_space": {
-      "score": 0.933,
-      "mentions": 2
+      "score": 0.587,
+      "mentions": 2,
+      "raw_score": 0.933
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bxh0o7/roos_wallabies_in_werrington/kyfh2mo/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

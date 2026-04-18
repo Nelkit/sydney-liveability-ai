@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.535,
-      "mentions": 79
+      "mentions": 79,
+      "raw_score": 0.535
     },
     "safety": {
       "score": 0.561,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.561
     },
     "nightlife": {
       "score": 0.591,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.591
     },
     "green_space": {
       "score": 0.674,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.674
     },
     "food_and_cafe": {
       "score": 0.76,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.76
     },
     "affordability": {
       "score": 0.731,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.731
     },
     "transport": {
       "score": 0.548,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.548
     },
     "noise": {
       "score": 0.928,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.928
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1lypkv3/maroubra/",
       "score": 54
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

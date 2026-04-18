@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.693,
-      "mentions": 89
+      "mentions": 89,
+      "raw_score": 0.693
     },
     "transport": {
       "score": 0.748,
-      "mentions": 46
+      "mentions": 46,
+      "raw_score": 0.748
     },
     "nightlife": {
       "score": 0.792,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.792
     },
     "food_and_cafe": {
       "score": 0.943,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.943
     },
     "affordability": {
       "score": 0.811,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.811
     },
     "green_space": {
       "score": 0.797,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.797
     },
     "safety": {
       "score": 0.713,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.713
     },
     "noise": {
       "score": 0.76,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.76
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ord9fc/homebush/",
       "score": 138
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

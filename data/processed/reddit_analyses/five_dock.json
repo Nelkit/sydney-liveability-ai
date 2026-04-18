@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.694,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.694
     },
     "transport": {
       "score": 0.874,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.874
     },
     "nightlife": {
       "score": 0.871,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.871
     },
     "food_and_cafe": {
       "score": 0.824,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.824
     },
     "affordability": {
       "score": 0.918,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.918
     },
     "green_space": {
       "score": 0.958,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.958
     },
     "safety": {
       "score": 0.745,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.745
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bxao9n/why_are_taxis_in_sydney_so_fcking_shite/kye0yam/",
       "score": 40
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

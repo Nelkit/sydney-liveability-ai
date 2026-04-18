@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:52.083386+00:00",
   "aspects": {
     "community": {
-      "score": 0.522,
-      "mentions": 17
+      "score": 0.513,
+      "mentions": 17,
+      "raw_score": 0.522
     },
     "transport": {
       "score": 0.501,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.501
     },
     "safety": {
       "score": 0.5,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.5
     },
     "nightlife": {
-      "score": 0.74,
-      "mentions": 7
+      "score": 0.644,
+      "mentions": 7,
+      "raw_score": 0.74
     },
     "food_and_cafe": {
-      "score": 0.907,
-      "mentions": 7
+      "score": 0.744,
+      "mentions": 7,
+      "raw_score": 0.907
     },
     "green_space": {
-      "score": 0.889,
-      "mentions": 3
+      "score": 0.733,
+      "mentions": 3,
+      "raw_score": 0.889
     },
     "affordability": {
-      "score": 0.655,
-      "mentions": 4
+      "score": 0.593,
+      "mentions": 4,
+      "raw_score": 0.655
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cf9uve/travelling_to_darlington_for_a_week/l1pixoq/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

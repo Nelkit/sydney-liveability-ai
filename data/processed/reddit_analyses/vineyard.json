@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:04.985748+00:00",
   "aspects": {
     "transport": {
-      "score": 0.789,
-      "mentions": 2
+      "score": 0.548,
+      "mentions": 2,
+      "raw_score": 0.789
     },
     "community": {
-      "score": 0.789,
-      "mentions": 2
+      "score": 0.548,
+      "mentions": 2,
+      "raw_score": 0.789
     },
     "safety": {
-      "score": 0.762,
-      "mentions": 2
+      "score": 0.544,
+      "mentions": 2,
+      "raw_score": 0.762
     },
     "affordability": {
-      "score": 0.789,
-      "mentions": 1
+      "score": 0.548,
+      "mentions": 1,
+      "raw_score": 0.789
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/19eram5/train_collided_with_an_abandoned_trailer_on_a/kjgfkx1/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

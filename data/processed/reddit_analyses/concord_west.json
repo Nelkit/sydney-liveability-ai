@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:18.494184+00:00",
   "aspects": {
     "community": {
-      "score": 0.667,
-      "mentions": 13
+      "score": 0.589,
+      "mentions": 13,
+      "raw_score": 0.667
     },
     "noise": {
-      "score": 0.88,
-      "mentions": 2
+      "score": 0.703,
+      "mentions": 2,
+      "raw_score": 0.88
     },
     "affordability": {
-      "score": 0.797,
-      "mentions": 3
+      "score": 0.658,
+      "mentions": 3,
+      "raw_score": 0.797
     },
     "food_and_cafe": {
-      "score": 0.792,
-      "mentions": 2
+      "score": 0.656,
+      "mentions": 2,
+      "raw_score": 0.792
     },
     "nightlife": {
-      "score": 0.743,
-      "mentions": 3
+      "score": 0.63,
+      "mentions": 3,
+      "raw_score": 0.743
     },
     "green_space": {
-      "score": 0.707,
-      "mentions": 2
+      "score": 0.61,
+      "mentions": 2,
+      "raw_score": 0.707
     },
     "transport": {
-      "score": 0.346,
-      "mentions": 9
+      "score": 0.418,
+      "mentions": 9,
+      "raw_score": 0.346
     },
     "safety": {
-      "score": 0.267,
-      "mentions": 3
+      "score": 0.376,
+      "mentions": 3,
+      "raw_score": 0.267
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aq3mvg/trains_fucked_issues_st_leonards/kqbyy0p/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

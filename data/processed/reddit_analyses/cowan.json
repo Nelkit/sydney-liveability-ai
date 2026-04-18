@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:14.818681+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.952,
-      "mentions": 2
+      "score": 0.696,
+      "mentions": 2,
+      "raw_score": 0.952
     },
     "transport": {
-      "score": 0.641,
-      "mentions": 5
+      "score": 0.561,
+      "mentions": 5,
+      "raw_score": 0.641
     },
     "green_space": {
-      "score": 0.756,
-      "mentions": 7
+      "score": 0.611,
+      "mentions": 7,
+      "raw_score": 0.756
     },
     "community": {
-      "score": 0.566,
-      "mentions": 6
+      "score": 0.529,
+      "mentions": 6,
+      "raw_score": 0.566
     },
     "safety": {
-      "score": 0.194,
-      "mentions": 2
+      "score": 0.367,
+      "mentions": 2,
+      "raw_score": 0.194
     },
     "affordability": {
-      "score": 0.262,
-      "mentions": 1
+      "score": 0.397,
+      "mentions": 1,
+      "raw_score": 0.262
     },
     "nightlife": {
-      "score": 0.342,
-      "mentions": 2
+      "score": 0.432,
+      "mentions": 2,
+      "raw_score": 0.342
     },
     "noise": {
-      "score": 0.194,
-      "mentions": 2
+      "score": 0.367,
+      "mentions": 2,
+      "raw_score": 0.194
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dbtolm/can_you_recommend_me_any_great_campgrounds/l7wd0sz/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

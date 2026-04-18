@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.432,
-      "mentions": 233
+      "mentions": 233,
+      "raw_score": 0.432
     },
     "affordability": {
       "score": 0.366,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.366
     },
     "transport": {
       "score": 0.571,
-      "mentions": 202
+      "mentions": 202,
+      "raw_score": 0.571
     },
     "safety": {
       "score": 0.338,
-      "mentions": 81
+      "mentions": 81,
+      "raw_score": 0.338
     },
     "green_space": {
       "score": 0.547,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.547
     },
     "nightlife": {
       "score": 0.648,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.648
     },
     "food_and_cafe": {
       "score": 0.599,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.599
     },
     "noise": {
       "score": 0.422,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.422
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kziz6hk/",
       "score": 169
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

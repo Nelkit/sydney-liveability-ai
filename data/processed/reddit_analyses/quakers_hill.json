@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:03.153828+00:00",
   "aspects": {
     "safety": {
-      "score": 0.347,
-      "mentions": 4
+      "score": 0.393,
+      "mentions": 4,
+      "raw_score": 0.347
     },
     "transport": {
-      "score": 0.564,
-      "mentions": 12
+      "score": 0.545,
+      "mentions": 12,
+      "raw_score": 0.564
     },
     "community": {
-      "score": 0.574,
-      "mentions": 19
+      "score": 0.552,
+      "mentions": 19,
+      "raw_score": 0.574
     },
     "noise": {
-      "score": 0.537,
-      "mentions": 4
+      "score": 0.526,
+      "mentions": 4,
+      "raw_score": 0.537
     },
     "affordability": {
-      "score": 0.811,
-      "mentions": 6
+      "score": 0.718,
+      "mentions": 6,
+      "raw_score": 0.811
     },
     "food_and_cafe": {
-      "score": 0.76,
-      "mentions": 4
+      "score": 0.682,
+      "mentions": 4,
+      "raw_score": 0.76
     },
     "green_space": {
-      "score": 0.667,
-      "mentions": 4
+      "score": 0.617,
+      "mentions": 4,
+      "raw_score": 0.667
     },
     "nightlife": {
-      "score": 0.976,
-      "mentions": 2
+      "score": 0.833,
+      "mentions": 2,
+      "raw_score": 0.976
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxbctw/",
       "score": 11
     }
-  ]
+  ],
+  "confidence": 0.7,
+  "confidence_tier": "high"
 }

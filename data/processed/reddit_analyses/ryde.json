@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.628,
-      "mentions": 174
+      "mentions": 174,
+      "raw_score": 0.628
     },
     "nightlife": {
       "score": 0.733,
-      "mentions": 58
+      "mentions": 58,
+      "raw_score": 0.733
     },
     "noise": {
       "score": 0.769,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.769
     },
     "food_and_cafe": {
       "score": 0.723,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.723
     },
     "safety": {
       "score": 0.421,
-      "mentions": 59
+      "mentions": 59,
+      "raw_score": 0.421
     },
     "transport": {
       "score": 0.683,
-      "mentions": 77
+      "mentions": 77,
+      "raw_score": 0.683
     },
     "green_space": {
       "score": 0.732,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.732
     },
     "affordability": {
       "score": 0.6,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.6
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1komuun/who_park_like_this_top_ryde_shopping_center/",
       "score": 177
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

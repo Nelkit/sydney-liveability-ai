@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:41.294968+00:00",
   "aspects": {
     "community": {
-      "score": 0.579,
-      "mentions": 8
+      "score": 0.532,
+      "mentions": 8,
+      "raw_score": 0.579
     },
     "safety": {
-      "score": 0.429,
-      "mentions": 2
+      "score": 0.472,
+      "mentions": 2,
+      "raw_score": 0.429
     },
     "noise": {
-      "score": 0.423,
-      "mentions": 1
+      "score": 0.469,
+      "mentions": 1,
+      "raw_score": 0.423
     },
     "green_space": {
-      "score": 0.597,
-      "mentions": 3
+      "score": 0.539,
+      "mentions": 3,
+      "raw_score": 0.597
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l48yfrm/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

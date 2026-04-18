@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:24.833906+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.777,
-      "mentions": 2
+      "score": 0.537,
+      "mentions": 2,
+      "raw_score": 0.777
     },
     "community": {
-      "score": 0.61,
-      "mentions": 4
+      "score": 0.515,
+      "mentions": 4,
+      "raw_score": 0.61
     },
     "transport": {
-      "score": 0.944,
-      "mentions": 1
+      "score": 0.559,
+      "mentions": 1,
+      "raw_score": 0.944
     },
     "safety": {
-      "score": 0.221,
-      "mentions": 1
+      "score": 0.463,
+      "mentions": 1,
+      "raw_score": 0.221
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/19az8qz/sydney_modern_art_scene_is_thriving/kiolykm/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

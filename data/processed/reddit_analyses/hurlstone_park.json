@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:12:39.313338+00:00",
   "aspects": {
     "transport": {
-      "score": 0.527,
-      "mentions": 18
+      "score": 0.526,
+      "mentions": 18,
+      "raw_score": 0.527
     },
     "safety": {
-      "score": 0.574,
-      "mentions": 5
+      "score": 0.572,
+      "mentions": 5,
+      "raw_score": 0.574
     },
     "community": {
-      "score": 0.526,
-      "mentions": 27
+      "score": 0.525,
+      "mentions": 27,
+      "raw_score": 0.526
     },
     "affordability": {
-      "score": 0.56,
-      "mentions": 4
+      "score": 0.558,
+      "mentions": 4,
+      "raw_score": 0.56
     },
     "green_space": {
-      "score": 0.406,
-      "mentions": 19
+      "score": 0.409,
+      "mentions": 19,
+      "raw_score": 0.406
     },
     "nightlife": {
-      "score": 0.48,
-      "mentions": 3
+      "score": 0.481,
+      "mentions": 3,
+      "raw_score": 0.48
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1chgzi7/sydney_commuters_face_tough_time_as_t3_line/l22mvv7/",
       "score": 15
     }
-  ]
+  ],
+  "confidence": 0.967,
+  "confidence_tier": "high"
 }

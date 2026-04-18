@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.68,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.68
     },
     "transport": {
       "score": 0.742,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.742
     },
     "safety": {
       "score": 0.627,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.627
     },
     "food_and_cafe": {
       "score": 0.862,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.862
     },
     "affordability": {
       "score": 0.895,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.895
     },
     "green_space": {
       "score": 0.949,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.949
     },
     "nightlife": {
       "score": 0.838,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.838
     },
     "noise": {
       "score": 0.842,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.842
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/190nb63/self_wash_car_bays_where_on_earth_are_they/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

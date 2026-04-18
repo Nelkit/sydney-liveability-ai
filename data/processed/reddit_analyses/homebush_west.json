@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:18.400525+00:00",
   "aspects": {
     "community": {
-      "score": 0.565,
-      "mentions": 6
+      "score": 0.515,
+      "mentions": 6,
+      "raw_score": 0.565
     },
     "nightlife": {
-      "score": 0.56,
-      "mentions": 2
+      "score": 0.514,
+      "mentions": 2,
+      "raw_score": 0.56
     },
     "green_space": {
-      "score": 0.56,
-      "mentions": 2
+      "score": 0.514,
+      "mentions": 2,
+      "raw_score": 0.56
     },
     "transport": {
-      "score": 0.503,
-      "mentions": 2
+      "score": 0.501,
+      "mentions": 2,
+      "raw_score": 0.503
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
-      "score": 0.352,
-      "mentions": 1
+      "score": 0.465,
+      "mentions": 1,
+      "raw_score": 0.352
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gmwhs4/can_anyone_tell_me_how_frequent_is_the/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:22.835807+00:00",
   "aspects": {
     "safety": {
-      "score": 0.277,
-      "mentions": 8
+      "score": 0.314,
+      "mentions": 8,
+      "raw_score": 0.277
     },
     "community": {
-      "score": 0.334,
-      "mentions": 18
+      "score": 0.362,
+      "mentions": 18,
+      "raw_score": 0.334
     },
     "nightlife": {
-      "score": 0.521,
-      "mentions": 4
+      "score": 0.518,
+      "mentions": 4,
+      "raw_score": 0.521
     },
     "transport": {
-      "score": 0.522,
-      "mentions": 6
+      "score": 0.518,
+      "mentions": 6,
+      "raw_score": 0.522
     },
     "green_space": {
-      "score": 0.955,
-      "mentions": 3
+      "score": 0.879,
+      "mentions": 3,
+      "raw_score": 0.955
     },
     "affordability": {
-      "score": 0.962,
-      "mentions": 1
+      "score": 0.885,
+      "mentions": 1,
+      "raw_score": 0.962
     },
     "noise": {
-      "score": 0.965,
-      "mentions": 2
+      "score": 0.887,
+      "mentions": 2,
+      "raw_score": 0.965
     },
     "food_and_cafe": {
-      "score": 0.962,
-      "mentions": 1
+      "score": 0.885,
+      "mentions": 1,
+      "raw_score": 0.962
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jl0cui/fast_bikes_racing_this_sat_night_australian/",
       "score": 20
     }
-  ]
+  ],
+  "confidence": 0.833,
+  "confidence_tier": "high"
 }

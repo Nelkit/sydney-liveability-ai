@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.665,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.665
     },
     "transport": {
       "score": 0.374,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.374
     },
     "community": {
       "score": 0.381,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.381
     },
     "nightlife": {
       "score": 0.418,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.418
     },
     "safety": {
       "score": 0.15,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.15
     },
     "affordability": {
       "score": 0.133,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.133
     },
     "noise": {
       "score": 0.007,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.007
     },
     "green_space": {
       "score": 0.187,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.187
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1altbdl/how_livable_is_wolli_creek_really/kpju1ob/",
       "score": 29
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

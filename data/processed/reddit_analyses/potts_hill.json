@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:01.296451+00:00",
   "aspects": {
     "community": {
-      "score": 0.601,
-      "mentions": 5
+      "score": 0.517,
+      "mentions": 5,
+      "raw_score": 0.601
     },
     "safety": {
-      "score": 0.926,
-      "mentions": 1
+      "score": 0.571,
+      "mentions": 1,
+      "raw_score": 0.926
     },
     "food_and_cafe": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.519,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "transport": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.519,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kye7q50/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

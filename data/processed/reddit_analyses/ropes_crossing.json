@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:24.922007+00:00",
   "aspects": {
     "community": {
-      "score": 0.642,
-      "mentions": 6
+      "score": 0.533,
+      "mentions": 6,
+      "raw_score": 0.642
     },
     "safety": {
-      "score": 0.87,
-      "mentions": 2
+      "score": 0.586,
+      "mentions": 2,
+      "raw_score": 0.87
     },
     "noise": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.614,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "affordability": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.614,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "green_space": {
-      "score": 0.814,
-      "mentions": 3
+      "score": 0.573,
+      "mentions": 3,
+      "raw_score": 0.814
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1adh7b2/navigation_game_challenge/kk244lr/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

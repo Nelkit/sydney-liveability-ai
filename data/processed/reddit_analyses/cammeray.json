@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:55.772090+00:00",
   "aspects": {
     "community": {
-      "score": 0.228,
-      "mentions": 10
+      "score": 0.4,
+      "mentions": 10,
+      "raw_score": 0.228
     },
     "green_space": {
-      "score": 0.658,
-      "mentions": 2
+      "score": 0.558,
+      "mentions": 2,
+      "raw_score": 0.658
     },
     "safety": {
-      "score": 0.66,
-      "mentions": 5
+      "score": 0.559,
+      "mentions": 5,
+      "raw_score": 0.66
     },
     "nightlife": {
-      "score": 0.621,
-      "mentions": 1
+      "score": 0.544,
+      "mentions": 1,
+      "raw_score": 0.621
     },
     "transport": {
-      "score": 0.764,
-      "mentions": 3
+      "score": 0.597,
+      "mentions": 3,
+      "raw_score": 0.764
     },
     "affordability": {
-      "score": 0.613,
-      "mentions": 1
+      "score": 0.541,
+      "mentions": 1,
+      "raw_score": 0.613
     },
     "food_and_cafe": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.626,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/196ykf2/best_pizza_in_sydney/khy56gh/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

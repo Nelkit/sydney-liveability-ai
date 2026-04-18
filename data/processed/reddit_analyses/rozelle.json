@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.537,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.537
     },
     "green_space": {
       "score": 0.615,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.615
     },
     "community": {
       "score": 0.702,
-      "mentions": 92
+      "mentions": 92,
+      "raw_score": 0.702
     },
     "transport": {
       "score": 0.646,
-      "mentions": 58
+      "mentions": 58,
+      "raw_score": 0.646
     },
     "nightlife": {
       "score": 0.913,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.913
     },
     "food_and_cafe": {
       "score": 0.976,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.976
     },
     "affordability": {
       "score": 0.971,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.971
     },
     "noise": {
       "score": 0.326,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.326
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/19dvw36/lived_in_london_for_12_years_considering_moving/kj8pp5x/",
       "score": 160
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

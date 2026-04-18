@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:58.537238+00:00",
   "aspects": {
     "safety": {
-      "score": 0.145,
-      "mentions": 1
+      "score": 0.476,
+      "mentions": 1,
+      "raw_score": 0.145
     },
     "community": {
-      "score": 0.146,
-      "mentions": 2
+      "score": 0.476,
+      "mentions": 2,
+      "raw_score": 0.146
     },
     "nightlife": {
-      "score": 0.2,
-      "mentions": 1
+      "score": 0.48,
+      "mentions": 1,
+      "raw_score": 0.2
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktwew0j/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

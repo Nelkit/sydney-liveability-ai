@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:56.359057+00:00",
   "aspects": {
     "safety": {
-      "score": 0.72,
-      "mentions": 3
+      "score": 0.61,
+      "mentions": 3,
+      "raw_score": 0.72
     },
     "food_and_cafe": {
-      "score": 0.735,
-      "mentions": 1
+      "score": 0.617,
+      "mentions": 1,
+      "raw_score": 0.735
     },
     "transport": {
-      "score": 0.229,
-      "mentions": 1
+      "score": 0.364,
+      "mentions": 1,
+      "raw_score": 0.229
     },
     "community": {
-      "score": 0.445,
-      "mentions": 7
+      "score": 0.473,
+      "mentions": 7,
+      "raw_score": 0.445
     },
     "green_space": {
-      "score": 0.775,
-      "mentions": 2
+      "score": 0.637,
+      "mentions": 2,
+      "raw_score": 0.775
     },
     "nightlife": {
-      "score": 0.609,
-      "mentions": 1
+      "score": 0.554,
+      "mentions": 1,
+      "raw_score": 0.609
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cw3pj7/rashays_food_frozenmicrowaved/l4u87eg/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

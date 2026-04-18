@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.588,
-      "mentions": 533
+      "mentions": 533,
+      "raw_score": 0.588
     },
     "food_and_cafe": {
       "score": 0.578,
-      "mentions": 167
+      "mentions": 167,
+      "raw_score": 0.578
     },
     "nightlife": {
       "score": 0.584,
-      "mentions": 221
+      "mentions": 221,
+      "raw_score": 0.584
     },
     "transport": {
       "score": 0.571,
-      "mentions": 167
+      "mentions": 167,
+      "raw_score": 0.571
     },
     "safety": {
       "score": 0.482,
-      "mentions": 188
+      "mentions": 188,
+      "raw_score": 0.482
     },
     "affordability": {
       "score": 0.589,
-      "mentions": 67
+      "mentions": 67,
+      "raw_score": 0.589
     },
     "noise": {
       "score": 0.538,
-      "mentions": 43
+      "mentions": 43,
+      "raw_score": 0.538
     },
     "green_space": {
       "score": 0.72,
-      "mentions": 67
+      "mentions": 67,
+      "raw_score": 0.72
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dvr2hm/gyg_newtown_this_couple_with_their_dog_sitting_on/",
       "score": 601
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

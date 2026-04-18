@@ -5,35 +5,43 @@
   "aspects": {
     "affordability": {
       "score": 0.724,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.724
     },
     "community": {
       "score": 0.615,
-      "mentions": 76
+      "mentions": 76,
+      "raw_score": 0.615
     },
     "green_space": {
       "score": 0.613,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.613
     },
     "food_and_cafe": {
       "score": 0.95,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.95
     },
     "nightlife": {
       "score": 0.834,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.834
     },
     "transport": {
       "score": 0.468,
-      "mentions": 52
+      "mentions": 52,
+      "raw_score": 0.468
     },
     "noise": {
       "score": 0.079,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.079
     },
     "safety": {
       "score": 0.503,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.503
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ae4549/trains_severely_delayed_between_redfern_and/",
       "score": 127
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

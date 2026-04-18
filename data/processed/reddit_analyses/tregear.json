@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:24.237499+00:00",
   "aspects": {
     "community": {
-      "score": 0.85,
-      "mentions": 3
+      "score": 0.547,
+      "mentions": 3,
+      "raw_score": 0.85
     },
     "transport": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "affordability": {
-      "score": 0.829,
-      "mentions": 2
+      "score": 0.544,
+      "mentions": 2,
+      "raw_score": 0.829
     },
     "safety": {
-      "score": 0.822,
-      "mentions": 2
+      "score": 0.543,
+      "mentions": 2,
+      "raw_score": 0.822
     },
     "green_space": {
-      "score": 0.867,
-      "mentions": 2
+      "score": 0.549,
+      "mentions": 2,
+      "raw_score": 0.867
     },
     "nightlife": {
-      "score": 0.867,
-      "mentions": 2
+      "score": 0.549,
+      "mentions": 2,
+      "raw_score": 0.867
     },
     "food_and_cafe": {
-      "score": 0.867,
-      "mentions": 2
+      "score": 0.549,
+      "mentions": 2,
+      "raw_score": 0.867
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktu0399/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

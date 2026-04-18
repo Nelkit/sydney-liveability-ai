@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:29.712807+00:00",
   "aspects": {
     "community": {
-      "score": 0.778,
-      "mentions": 17
+      "score": 0.704,
+      "mentions": 17,
+      "raw_score": 0.778
     },
     "safety": {
-      "score": 0.531,
-      "mentions": 4
+      "score": 0.523,
+      "mentions": 4,
+      "raw_score": 0.531
     },
     "nightlife": {
-      "score": 0.829,
-      "mentions": 5
+      "score": 0.741,
+      "mentions": 5,
+      "raw_score": 0.829
     },
     "transport": {
-      "score": 0.767,
-      "mentions": 3
+      "score": 0.696,
+      "mentions": 3,
+      "raw_score": 0.767
     },
     "affordability": {
-      "score": 0.868,
-      "mentions": 4
+      "score": 0.77,
+      "mentions": 4,
+      "raw_score": 0.868
     },
     "noise": {
-      "score": 0.963,
-      "mentions": 2
+      "score": 0.84,
+      "mentions": 2,
+      "raw_score": 0.963
     },
     "food_and_cafe": {
-      "score": 0.876,
-      "mentions": 4
+      "score": 0.776,
+      "mentions": 4,
+      "raw_score": 0.876
     },
     "green_space": {
-      "score": 0.624,
-      "mentions": 12
+      "score": 0.591,
+      "mentions": 12,
+      "raw_score": 0.624
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l52o9zs/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

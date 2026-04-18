@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.483,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.483
     },
     "transport": {
       "score": 0.646,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.646
     },
     "food_and_cafe": {
       "score": 0.889,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.889
     },
     "nightlife": {
       "score": 0.753,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.753
     },
     "safety": {
       "score": 0.584,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.584
     },
     "affordability": {
       "score": 0.537,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.537
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.831,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.831
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ahkh9s/need_advice_on_whether_to_move_after_a_rent/kop08fs/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

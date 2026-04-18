@@ -5,35 +5,43 @@
   "aspects": {
     "nightlife": {
       "score": 0.668,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.668
     },
     "community": {
       "score": 0.626,
-      "mentions": 119
+      "mentions": 119,
+      "raw_score": 0.626
     },
     "safety": {
       "score": 0.507,
-      "mentions": 50
+      "mentions": 50,
+      "raw_score": 0.507
     },
     "food_and_cafe": {
       "score": 0.675,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.675
     },
     "transport": {
       "score": 0.693,
-      "mentions": 53
+      "mentions": 53,
+      "raw_score": 0.693
     },
     "affordability": {
       "score": 0.799,
-      "mentions": 25
+      "mentions": 25,
+      "raw_score": 0.799
     },
     "green_space": {
       "score": 0.754,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.754
     },
     "noise": {
       "score": 0.712,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.712
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
       "score": 251
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

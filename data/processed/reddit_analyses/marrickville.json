@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.716,
-      "mentions": 388
+      "mentions": 388,
+      "raw_score": 0.716
     },
     "safety": {
       "score": 0.597,
-      "mentions": 108
+      "mentions": 108,
+      "raw_score": 0.597
     },
     "transport": {
       "score": 0.699,
-      "mentions": 137
+      "mentions": 137,
+      "raw_score": 0.699
     },
     "nightlife": {
       "score": 0.753,
-      "mentions": 141
+      "mentions": 141,
+      "raw_score": 0.753
     },
     "food_and_cafe": {
       "score": 0.724,
-      "mentions": 105
+      "mentions": 105,
+      "raw_score": 0.724
     },
     "affordability": {
       "score": 0.767,
-      "mentions": 52
+      "mentions": 52,
+      "raw_score": 0.767
     },
     "green_space": {
       "score": 0.668,
-      "mentions": 65
+      "mentions": 65,
+      "raw_score": 0.668
     },
     "noise": {
       "score": 0.715,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.715
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ehbuxi/if_you_had_to_name_yourself_after_a_sydney_suburb/",
       "score": 312
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

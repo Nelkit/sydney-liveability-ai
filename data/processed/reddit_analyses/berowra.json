@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.555,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.555
     },
     "transport": {
       "score": 0.46,
-      "mentions": 28
+      "mentions": 28,
+      "raw_score": 0.46
     },
     "green_space": {
       "score": 0.514,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.514
     },
     "food_and_cafe": {
       "score": 0.423,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.423
     },
     "nightlife": {
       "score": 0.496,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.496
     },
     "affordability": {
       "score": 0.207,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.207
     },
     "noise": {
       "score": 0.452,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.452
     },
     "safety": {
       "score": 0.438,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.438
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dapka4/best_metro_station_for_parking/",
       "score": 29
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.58,
-      "mentions": 41
+      "mentions": 41,
+      "raw_score": 0.58
     },
     "nightlife": {
       "score": 0.527,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.527
     },
     "safety": {
       "score": 0.464,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.464
     },
     "transport": {
       "score": 0.562,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.562
     },
     "affordability": {
       "score": 0.516,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.516
     },
     "green_space": {
       "score": 0.498,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.498
     },
     "noise": {
       "score": 0.753,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.753
     },
     "food_and_cafe": {
       "score": 0.595,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.595
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aqdkog/person_struck_by_a_train_macdonaldtown/kqc8be0/",
       "score": 39
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

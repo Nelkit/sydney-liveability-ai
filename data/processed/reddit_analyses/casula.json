@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:00.732581+00:00",
   "aspects": {
     "community": {
-      "score": 0.339,
-      "mentions": 9
+      "score": 0.441,
+      "mentions": 9,
+      "raw_score": 0.339
     },
     "noise": {
-      "score": 0.974,
-      "mentions": 1
+      "score": 0.674,
+      "mentions": 1,
+      "raw_score": 0.974
     },
     "affordability": {
-      "score": 0.974,
-      "mentions": 1
+      "score": 0.674,
+      "mentions": 1,
+      "raw_score": 0.974
     },
     "transport": {
-      "score": 0.898,
-      "mentions": 4
+      "score": 0.646,
+      "mentions": 4,
+      "raw_score": 0.898
     },
     "nightlife": {
-      "score": 0.939,
-      "mentions": 2
+      "score": 0.661,
+      "mentions": 2,
+      "raw_score": 0.939
     },
     "food_and_cafe": {
-      "score": 0.939,
-      "mentions": 2
+      "score": 0.661,
+      "mentions": 2,
+      "raw_score": 0.939
     },
     "green_space": {
-      "score": 0.932,
-      "mentions": 4
+      "score": 0.658,
+      "mentions": 4,
+      "raw_score": 0.932
     },
     "safety": {
-      "score": 0.907,
-      "mentions": 2
+      "score": 0.649,
+      "mentions": 2,
+      "raw_score": 0.907
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cjy77i/10_days_of_rain_any_plans/l2lzedx/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

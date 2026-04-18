@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.553,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.553
     },
     "safety": {
       "score": 0.468,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.468
     },
     "green_space": {
       "score": 0.491,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.491
     },
     "transport": {
       "score": 0.362,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.362
     },
     "noise": {
       "score": 0.396,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.396
     },
     "food_and_cafe": {
       "score": 0.787,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.787
     },
     "nightlife": {
       "score": 0.517,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.517
     },
     "affordability": {
       "score": 0.464,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.464
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aom0nu/someone_has_illegally_dumped_construction_waste/kq0asta/",
       "score": 46
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

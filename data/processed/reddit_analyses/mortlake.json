@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:59.813471+00:00",
   "aspects": {
     "nightlife": {
-      "score": 0.889,
-      "mentions": 2
+      "score": 0.565,
+      "mentions": 2,
+      "raw_score": 0.889
     },
     "safety": {
-      "score": 0.82,
-      "mentions": 2
+      "score": 0.553,
+      "mentions": 2,
+      "raw_score": 0.82
     },
     "community": {
-      "score": 0.819,
-      "mentions": 3
+      "score": 0.553,
+      "mentions": 3,
+      "raw_score": 0.819
     },
     "transport": {
-      "score": 0.945,
-      "mentions": 3
+      "score": 0.574,
+      "mentions": 3,
+      "raw_score": 0.945
     },
     "food_and_cafe": {
-      "score": 0.983,
-      "mentions": 1
+      "score": 0.581,
+      "mentions": 1,
+      "raw_score": 0.983
     },
     "green_space": {
-      "score": 0.983,
-      "mentions": 1
+      "score": 0.581,
+      "mentions": 1,
+      "raw_score": 0.983
     },
     "noise": {
-      "score": 0.983,
-      "mentions": 1
+      "score": 0.581,
+      "mentions": 1,
+      "raw_score": 0.983
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqtym7/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

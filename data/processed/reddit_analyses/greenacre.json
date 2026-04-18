@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.464,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.464
     },
     "green_space": {
       "score": 0.44,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.44
     },
     "community": {
       "score": 0.667,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.667
     },
     "food_and_cafe": {
       "score": 0.802,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.802
     },
     "transport": {
       "score": 0.69,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.69
     },
     "affordability": {
       "score": 0.762,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.762
     },
     "nightlife": {
       "score": 0.686,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.686
     },
     "noise": {
       "score": 0.863,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.863
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l50eebh/",
       "score": 34
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

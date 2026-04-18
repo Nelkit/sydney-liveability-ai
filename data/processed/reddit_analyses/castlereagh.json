@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:12:58.409144+00:00",
   "aspects": {
     "safety": {
-      "score": 0.374,
-      "mentions": 9
+      "score": 0.387,
+      "mentions": 9,
+      "raw_score": 0.374
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.688,
-      "mentions": 15
+      "score": 0.669,
+      "mentions": 15,
+      "raw_score": 0.688
     },
     "food_and_cafe": {
-      "score": 0.872,
-      "mentions": 3
+      "score": 0.835,
+      "mentions": 3,
+      "raw_score": 0.872
     },
     "nightlife": {
-      "score": 0.812,
-      "mentions": 3
+      "score": 0.781,
+      "mentions": 3,
+      "raw_score": 0.812
     },
     "affordability": {
-      "score": 0.854,
-      "mentions": 2
+      "score": 0.819,
+      "mentions": 2,
+      "raw_score": 0.854
     },
     "transport": {
-      "score": 0.4,
-      "mentions": 4
+      "score": 0.41,
+      "mentions": 4,
+      "raw_score": 0.4
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1fr22d4/old_prince_edward_theatre_now_an_office_tower_on/",
       "score": 45
     }
-  ]
+  ],
+  "confidence": 0.9,
+  "confidence_tier": "high"
 }

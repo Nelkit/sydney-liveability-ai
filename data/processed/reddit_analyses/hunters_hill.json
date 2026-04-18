@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.324,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.324
     },
     "community": {
       "score": 0.311,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.311
     },
     "safety": {
       "score": 0.358,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.358
     },
     "noise": {
       "score": 0.399,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.399
     },
     "nightlife": {
       "score": 0.493,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.493
     },
     "food_and_cafe": {
       "score": 0.528,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.528
     },
     "affordability": {
       "score": 0.86,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.86
     },
     "green_space": {
       "score": 0.238,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.238
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxy7txd/",
       "score": 29
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

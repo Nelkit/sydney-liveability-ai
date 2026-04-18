@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.714,
-      "mentions": 55
+      "mentions": 55,
+      "raw_score": 0.714
     },
     "safety": {
       "score": 0.634,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.634
     },
     "green_space": {
       "score": 0.741,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.741
     },
     "transport": {
       "score": 0.586,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.586
     },
     "nightlife": {
       "score": 0.557,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.557
     },
     "noise": {
       "score": 0.836,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.836
     },
     "food_and_cafe": {
       "score": 0.78,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.78
     },
     "affordability": {
       "score": 0.478,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.478
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1as2skm/missing_tuxedo_cat_camperdownnewtown_please/",
       "score": 55
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

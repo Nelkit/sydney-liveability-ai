@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.69,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.69
     },
     "nightlife": {
       "score": 0.497,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.497
     },
     "food_and_cafe": {
       "score": 0.62,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.62
     },
     "safety": {
       "score": 0.537,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.537
     },
     "noise": {
       "score": 0.824,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.824
     },
     "affordability": {
       "score": 0.268,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.268
     },
     "transport": {
       "score": 0.594,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.594
     },
     "green_space": {
       "score": 0.45,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.45
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cf29sk/how_could_george_st_around_town_hallhaymarket_be/",
       "score": 81
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:23.613506+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.436,
-      "mentions": 1
+      "score": 0.485,
+      "mentions": 1,
+      "raw_score": 0.436
     },
     "community": {
-      "score": 0.572,
-      "mentions": 4
+      "score": 0.517,
+      "mentions": 4,
+      "raw_score": 0.572
     },
     "safety": {
-      "score": 0.829,
-      "mentions": 3
+      "score": 0.577,
+      "mentions": 3,
+      "raw_score": 0.829
     },
     "affordability": {
-      "score": 0.976,
-      "mentions": 1
+      "score": 0.611,
+      "mentions": 1,
+      "raw_score": 0.976
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c0y954/a_big_problem_for_a_large_part_of_society_sydney/kz1f1xo/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

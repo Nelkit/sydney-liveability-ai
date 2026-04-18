@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:37.109437+00:00",
   "aspects": {
     "community": {
-      "score": 0.862,
-      "mentions": 3
+      "score": 0.536,
+      "mentions": 3,
+      "raw_score": 0.862
     },
     "food_and_cafe": {
-      "score": 0.841,
-      "mentions": 2
+      "score": 0.534,
+      "mentions": 2,
+      "raw_score": 0.841
     },
     "nightlife": {
-      "score": 0.879,
-      "mentions": 1
+      "score": 0.538,
+      "mentions": 1,
+      "raw_score": 0.879
     },
     "transport": {
-      "score": 0.879,
-      "mentions": 1
+      "score": 0.538,
+      "mentions": 1,
+      "raw_score": 0.879
     },
     "affordability": {
-      "score": 0.879,
-      "mentions": 1
+      "score": 0.538,
+      "mentions": 1,
+      "raw_score": 0.879
     },
     "safety": {
-      "score": 0.879,
-      "mentions": 1
+      "score": 0.538,
+      "mentions": 1,
+      "raw_score": 0.879
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c444e9/historicaesthetically_beautiful_restaurants_with/kznn8t8/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

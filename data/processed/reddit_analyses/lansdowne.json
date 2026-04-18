@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:06.203127+00:00",
   "aspects": {
     "nightlife": {
-      "score": 0.371,
-      "mentions": 7
+      "score": 0.44,
+      "mentions": 7,
+      "raw_score": 0.371
     },
     "community": {
-      "score": 0.47,
-      "mentions": 11
+      "score": 0.486,
+      "mentions": 11,
+      "raw_score": 0.47
     },
     "food_and_cafe": {
-      "score": 0.308,
-      "mentions": 2
+      "score": 0.41,
+      "mentions": 2,
+      "raw_score": 0.308
     },
     "safety": {
-      "score": 0.413,
-      "mentions": 6
+      "score": 0.459,
+      "mentions": 6,
+      "raw_score": 0.413
     },
     "noise": {
-      "score": 0.297,
-      "mentions": 2
+      "score": 0.405,
+      "mentions": 2,
+      "raw_score": 0.297
     },
     "transport": {
-      "score": 0.454,
-      "mentions": 2
+      "score": 0.479,
+      "mentions": 2,
+      "raw_score": 0.454
     },
     "affordability": {
-      "score": 0.54,
-      "mentions": 2
+      "score": 0.519,
+      "mentions": 2,
+      "raw_score": 0.54
     },
     "green_space": {
-      "score": 0.449,
-      "mentions": 1
+      "score": 0.476,
+      "mentions": 1,
+      "raw_score": 0.449
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/18x42sh/help_with_story_setting/kg2263v/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.467,
+  "confidence_tier": "medium"
 }

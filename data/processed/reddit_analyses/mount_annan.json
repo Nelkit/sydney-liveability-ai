@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:04.114174+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.524,
-      "mentions": 4
+      "score": 0.506,
+      "mentions": 4,
+      "raw_score": 0.524
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.527,
-      "mentions": 4
+      "score": 0.507,
+      "mentions": 4,
+      "raw_score": 0.527
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cq2hck/12052024_mothers_night_thread/l3om3oo/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

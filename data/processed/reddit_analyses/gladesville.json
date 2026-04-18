@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.475,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.475
     },
     "community": {
       "score": 0.522,
-      "mentions": 68
+      "mentions": 68,
+      "raw_score": 0.522
     },
     "transport": {
       "score": 0.481,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.481
     },
     "nightlife": {
       "score": 0.604,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.604
     },
     "noise": {
       "score": 0.466,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.466
     },
     "green_space": {
       "score": 0.38,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.38
     },
     "affordability": {
       "score": 0.651,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.651
     },
     "food_and_cafe": {
       "score": 0.767,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.767
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gd2fif/rode_my_bike_from_the_city_to_the_north_shore/",
       "score": 107
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

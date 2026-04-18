@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:45.723514+00:00",
   "aspects": {
     "transport": {
-      "score": 0.726,
-      "mentions": 4
+      "score": 0.568,
+      "mentions": 4,
+      "raw_score": 0.726
     },
     "community": {
-      "score": 0.74,
-      "mentions": 9
+      "score": 0.572,
+      "mentions": 9,
+      "raw_score": 0.74
     },
     "safety": {
-      "score": 0.905,
-      "mentions": 1
+      "score": 0.621,
+      "mentions": 1,
+      "raw_score": 0.905
     },
     "food_and_cafe": {
-      "score": 0.751,
-      "mentions": 1
+      "score": 0.575,
+      "mentions": 1,
+      "raw_score": 0.751
     },
     "nightlife": {
-      "score": 0.751,
-      "mentions": 1
+      "score": 0.575,
+      "mentions": 1,
+      "raw_score": 0.751
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -92,5 +100,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj8jjl/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

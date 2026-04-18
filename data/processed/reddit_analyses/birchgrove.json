@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:37.272427+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.756,
-      "mentions": 8
+      "score": 0.628,
+      "mentions": 8,
+      "raw_score": 0.756
     },
     "community": {
-      "score": 0.737,
-      "mentions": 14
+      "score": 0.619,
+      "mentions": 14,
+      "raw_score": 0.737
     },
     "nightlife": {
-      "score": 0.736,
-      "mentions": 3
+      "score": 0.618,
+      "mentions": 3,
+      "raw_score": 0.736
     },
     "safety": {
-      "score": 0.707,
-      "mentions": 5
+      "score": 0.603,
+      "mentions": 5,
+      "raw_score": 0.707
     },
     "affordability": {
-      "score": 0.994,
-      "mentions": 3
+      "score": 0.747,
+      "mentions": 3,
+      "raw_score": 0.994
     },
     "transport": {
-      "score": 0.992,
-      "mentions": 6
+      "score": 0.746,
+      "mentions": 6,
+      "raw_score": 0.992
     },
     "food_and_cafe": {
-      "score": 0.998,
-      "mentions": 1
+      "score": 0.749,
+      "mentions": 1,
+      "raw_score": 0.998
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c9aaqu/balmain_east_is_under_rated/l0keopz/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

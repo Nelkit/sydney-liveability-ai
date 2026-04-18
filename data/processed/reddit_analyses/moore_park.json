@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.659,
-      "mentions": 73
+      "mentions": 73,
+      "raw_score": 0.659
     },
     "safety": {
       "score": 0.555,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.555
     },
     "community": {
       "score": 0.573,
-      "mentions": 75
+      "mentions": 75,
+      "raw_score": 0.573
     },
     "noise": {
       "score": 0.449,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.449
     },
     "transport": {
       "score": 0.565,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.565
     },
     "nightlife": {
       "score": 0.843,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.843
     },
     "affordability": {
       "score": 0.772,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.772
     },
     "food_and_cafe": {
       "score": 0.869,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.869
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1r4e80v/free_ticket_to_halsey_tonight/",
       "score": 86
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.813,
-      "mentions": 47
+      "mentions": 47,
+      "raw_score": 0.813
     },
     "safety": {
       "score": 0.35,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.35
     },
     "affordability": {
       "score": 0.622,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.622
     },
     "food_and_cafe": {
       "score": 0.801,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.801
     },
     "nightlife": {
       "score": 0.769,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.769
     },
     "transport": {
       "score": 0.657,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.657
     },
     "green_space": {
       "score": 0.666,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.666
     },
     "noise": {
       "score": 0.134,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.134
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1de1ml2/maybe_a_stupid_question_but_are_there_any/l88qbb7/",
       "score": 77
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

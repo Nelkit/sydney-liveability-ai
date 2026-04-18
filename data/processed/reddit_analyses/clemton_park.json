@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:32.185323+00:00",
   "aspects": {
     "community": {
-      "score": 0.957,
-      "mentions": 3
+      "score": 0.546,
+      "mentions": 3,
+      "raw_score": 0.957
     },
     "affordability": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "green_space": {
-      "score": 0.959,
-      "mentions": 2
+      "score": 0.546,
+      "mentions": 2,
+      "raw_score": 0.959
     },
     "transport": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.546,
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "nightlife": {
-      "score": 0.579,
-      "mentions": 1
+      "score": 0.508,
+      "mentions": 1,
+      "raw_score": 0.579
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ayya29/sydney_daily_random_discussion_thread_25022024/ks15sed/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

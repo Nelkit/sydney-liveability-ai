@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:23.994365+00:00",
   "aspects": {
     "community": {
-      "score": 0.321,
-      "mentions": 8
+      "score": 0.44,
+      "mentions": 8,
+      "raw_score": 0.321
     },
     "green_space": {
-      "score": 0.471,
-      "mentions": 2
+      "score": 0.49,
+      "mentions": 2,
+      "raw_score": 0.471
     },
     "safety": {
-      "score": 0.196,
-      "mentions": 2
+      "score": 0.399,
+      "mentions": 2,
+      "raw_score": 0.196
     },
     "nightlife": {
-      "score": 0.225,
-      "mentions": 2
+      "score": 0.408,
+      "mentions": 2,
+      "raw_score": 0.225
     },
     "food_and_cafe": {
-      "score": 0.914,
-      "mentions": 1
+      "score": 0.638,
+      "mentions": 1,
+      "raw_score": 0.914
     },
     "affordability": {
-      "score": 0.53,
-      "mentions": 2
+      "score": 0.51,
+      "mentions": 2,
+      "raw_score": 0.53
     },
     "transport": {
-      "score": 0.466,
-      "mentions": 1
+      "score": 0.489,
+      "mentions": 1,
+      "raw_score": 0.466
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c99l52/george_street_transformation_wins_australian/l0l67qm/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

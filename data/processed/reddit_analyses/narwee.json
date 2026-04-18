@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:37.083623+00:00",
   "aspects": {
     "community": {
-      "score": 0.653,
-      "mentions": 6
+      "score": 0.531,
+      "mentions": 6,
+      "raw_score": 0.653
     },
     "transport": {
-      "score": 0.652,
-      "mentions": 4
+      "score": 0.53,
+      "mentions": 4,
+      "raw_score": 0.652
     },
     "safety": {
-      "score": 0.866,
-      "mentions": 4
+      "score": 0.573,
+      "mentions": 4,
+      "raw_score": 0.866
     },
     "food_and_cafe": {
-      "score": 0.888,
-      "mentions": 2
+      "score": 0.578,
+      "mentions": 2,
+      "raw_score": 0.888
     },
     "affordability": {
-      "score": 0.888,
-      "mentions": 2
+      "score": 0.578,
+      "mentions": 2,
+      "raw_score": 0.888
     },
     "nightlife": {
-      "score": 0.866,
-      "mentions": 2
+      "score": 0.573,
+      "mentions": 2,
+      "raw_score": 0.866
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1w239t/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

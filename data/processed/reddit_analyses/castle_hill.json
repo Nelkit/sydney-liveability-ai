@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.523,
-      "mentions": 43
+      "mentions": 43,
+      "raw_score": 0.523
     },
     "community": {
       "score": 0.527,
-      "mentions": 93
+      "mentions": 93,
+      "raw_score": 0.527
     },
     "noise": {
       "score": 0.746,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.746
     },
     "affordability": {
       "score": 0.438,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.438
     },
     "nightlife": {
       "score": 0.57,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.57
     },
     "safety": {
       "score": 0.396,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.396
     },
     "green_space": {
       "score": 0.624,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.624
     },
     "food_and_cafe": {
       "score": 0.761,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.761
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb0qsm/",
       "score": 62
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

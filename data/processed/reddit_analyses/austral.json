@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:26.962815+00:00",
   "aspects": {
     "community": {
-      "score": 0.615,
-      "mentions": 11
+      "score": 0.573,
+      "mentions": 11,
+      "raw_score": 0.615
     },
     "safety": {
       "score": 0.499,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.499
     },
     "transport": {
-      "score": 0.379,
-      "mentions": 6
+      "score": 0.423,
+      "mentions": 6,
+      "raw_score": 0.379
     },
     "green_space": {
-      "score": 0.494,
-      "mentions": 1
+      "score": 0.496,
+      "mentions": 1,
+      "raw_score": 0.494
     },
     "food_and_cafe": {
-      "score": 0.494,
-      "mentions": 1
+      "score": 0.496,
+      "mentions": 1,
+      "raw_score": 0.494
     },
     "affordability": {
-      "score": 0.308,
-      "mentions": 2
+      "score": 0.378,
+      "mentions": 2,
+      "raw_score": 0.308
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1blnmw2/what_are_your_thoughts_on_the_australleppington/kw8rewp/",
       "score": 33
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

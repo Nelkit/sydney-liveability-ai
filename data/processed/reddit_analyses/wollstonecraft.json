@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:15.353256+00:00",
   "aspects": {
     "safety": {
-      "score": 0.241,
-      "mentions": 9
+      "score": 0.276,
+      "mentions": 9,
+      "raw_score": 0.241
     },
     "community": {
-      "score": 0.218,
-      "mentions": 20
+      "score": 0.256,
+      "mentions": 20,
+      "raw_score": 0.218
     },
     "transport": {
-      "score": 0.525,
-      "mentions": 17
+      "score": 0.522,
+      "mentions": 17,
+      "raw_score": 0.525
     },
     "affordability": {
-      "score": 0.94,
-      "mentions": 1
+      "score": 0.881,
+      "mentions": 1,
+      "raw_score": 0.94
     },
     "green_space": {
-      "score": 0.94,
-      "mentions": 1
+      "score": 0.881,
+      "mentions": 1,
+      "raw_score": 0.94
     },
     "nightlife": {
-      "score": 0.793,
-      "mentions": 2
+      "score": 0.754,
+      "mentions": 2,
+      "raw_score": 0.793
     },
     "noise": {
-      "score": 0.678,
-      "mentions": 5
+      "score": 0.654,
+      "mentions": 5,
+      "raw_score": 0.678
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1azboa5/sydney_metro_is_next_level/ks0wp0v/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.867,
+  "confidence_tier": "high"
 }

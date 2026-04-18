@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.471,
-      "mentions": 92
+      "mentions": 92,
+      "raw_score": 0.471
     },
     "transport": {
       "score": 0.427,
-      "mentions": 173
+      "mentions": 173,
+      "raw_score": 0.427
     },
     "community": {
       "score": 0.51,
-      "mentions": 245
+      "mentions": 245,
+      "raw_score": 0.51
     },
     "green_space": {
       "score": 0.641,
-      "mentions": 41
+      "mentions": 41,
+      "raw_score": 0.641
     },
     "affordability": {
       "score": 0.703,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.703
     },
     "nightlife": {
       "score": 0.591,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.591
     },
     "food_and_cafe": {
       "score": 0.663,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.663
     },
     "noise": {
       "score": 0.499,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.499
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dhsu3y/should_the_m4_entrance_at_strathfield_be_changed/",
       "score": 287
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

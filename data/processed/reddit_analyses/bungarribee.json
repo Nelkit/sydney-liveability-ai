@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:49.668219+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.553,
-      "mentions": 3
+      "score": 0.509,
+      "mentions": 3,
+      "raw_score": 0.553
     },
     "community": {
-      "score": 0.708,
-      "mentions": 3
+      "score": 0.535,
+      "mentions": 3,
+      "raw_score": 0.708
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c51z6u/why_no_left_turn_after_10pm/kzsljy2/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

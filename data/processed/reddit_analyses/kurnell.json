@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.542,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.542
     },
     "safety": {
       "score": 0.633,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.633
     },
     "green_space": {
       "score": 0.661,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.661
     },
     "nightlife": {
       "score": 0.508,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.508
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.529,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.529
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dd39t7/two_women_dead_after_being_swept_off_rocks_with_a/",
       "score": 49
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

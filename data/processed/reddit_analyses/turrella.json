@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:27.070755+00:00",
   "aspects": {
     "transport": {
-      "score": 0.426,
-      "mentions": 5
+      "score": 0.483,
+      "mentions": 5,
+      "raw_score": 0.426
     },
     "community": {
-      "score": 0.453,
-      "mentions": 5
+      "score": 0.489,
+      "mentions": 5,
+      "raw_score": 0.453
     },
     "safety": {
-      "score": 0.378,
-      "mentions": 3
+      "score": 0.472,
+      "mentions": 3,
+      "raw_score": 0.378
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l60f4r7/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

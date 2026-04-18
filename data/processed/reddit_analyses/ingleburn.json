@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:19.197823+00:00",
   "aspects": {
     "community": {
-      "score": 0.705,
-      "mentions": 7
+      "score": 0.568,
+      "mentions": 7,
+      "raw_score": 0.705
     },
     "safety": {
-      "score": 0.485,
-      "mentions": 2
+      "score": 0.495,
+      "mentions": 2,
+      "raw_score": 0.485
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dtbasc/forklift_licence/lb8h20a/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

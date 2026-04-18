@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:21:05.675959+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.438,
-      "mentions": 1
+      "score": 0.498,
+      "mentions": 1,
+      "raw_score": 0.438
     },
     "community": {
-      "score": 0.438,
-      "mentions": 1
+      "score": 0.498,
+      "mentions": 1,
+      "raw_score": 0.438
     },
     "nightlife": {
-      "score": 0.438,
-      "mentions": 1
+      "score": 0.498,
+      "mentions": 1,
+      "raw_score": 0.438
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -52,5 +60,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aonuyu/legal_graffiti_walls_in_sydney/kq1f1yf/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

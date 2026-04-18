@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.635,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.635
     },
     "nightlife": {
       "score": 0.526,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.526
     },
     "food_and_cafe": {
       "score": 0.516,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.516
     },
     "transport": {
       "score": 0.552,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.552
     },
     "green_space": {
       "score": 0.821,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.821
     },
     "affordability": {
       "score": 0.658,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.658
     },
     "safety": {
       "score": 0.567,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.567
     },
     "noise": {
       "score": 0.665,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.665
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1djz93t/where_do_you_take_someone_for_their_second_visit/",
       "score": 81
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

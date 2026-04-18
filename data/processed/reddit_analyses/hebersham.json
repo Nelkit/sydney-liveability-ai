@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:35.450687+00:00",
   "aspects": {
     "safety": {
-      "score": 0.766,
-      "mentions": 3
+      "score": 0.527,
+      "mentions": 3,
+      "raw_score": 0.766
     },
     "community": {
-      "score": 0.866,
-      "mentions": 2
+      "score": 0.537,
+      "mentions": 2,
+      "raw_score": 0.866
     },
     "noise": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.549,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "affordability": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.549,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "green_space": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.549,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cmws8d/woman_allegedly_stabbed_by_man_at_sydney_gym_car/l33exrq/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

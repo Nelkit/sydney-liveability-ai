@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:33.668859+00:00",
   "aspects": {
     "community": {
-      "score": 0.519,
-      "mentions": 18
+      "score": 0.514,
+      "mentions": 18,
+      "raw_score": 0.519
     },
     "green_space": {
-      "score": 0.815,
-      "mentions": 4
+      "score": 0.731,
+      "mentions": 4,
+      "raw_score": 0.815
     },
     "transport": {
-      "score": 0.715,
-      "mentions": 8
+      "score": 0.658,
+      "mentions": 8,
+      "raw_score": 0.715
     },
     "nightlife": {
-      "score": 0.642,
-      "mentions": 3
+      "score": 0.604,
+      "mentions": 3,
+      "raw_score": 0.642
     },
     "affordability": {
-      "score": 0.717,
-      "mentions": 4
+      "score": 0.659,
+      "mentions": 4,
+      "raw_score": 0.717
     },
     "safety": {
-      "score": 0.693,
-      "mentions": 5
+      "score": 0.642,
+      "mentions": 5,
+      "raw_score": 0.693
     },
     "noise": {
-      "score": 0.857,
-      "mentions": 2
+      "score": 0.762,
+      "mentions": 2,
+      "raw_score": 0.857
     },
     "food_and_cafe": {
-      "score": 0.87,
-      "mentions": 4
+      "score": 0.771,
+      "mentions": 4,
+      "raw_score": 0.87
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cyfohr/we_are_almost_there/l5ak6oq/",
       "score": 11
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

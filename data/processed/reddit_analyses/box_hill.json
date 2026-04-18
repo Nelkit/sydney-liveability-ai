@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:49.189404+00:00",
   "aspects": {
     "transport": {
-      "score": 0.773,
-      "mentions": 4
+      "score": 0.709,
+      "mentions": 4,
+      "raw_score": 0.773
     },
     "community": {
-      "score": 0.717,
-      "mentions": 16
+      "score": 0.666,
+      "mentions": 16,
+      "raw_score": 0.717
     },
     "safety": {
-      "score": 0.64,
-      "mentions": 7
+      "score": 0.607,
+      "mentions": 7,
+      "raw_score": 0.64
     },
     "affordability": {
-      "score": 0.747,
-      "mentions": 7
+      "score": 0.689,
+      "mentions": 7,
+      "raw_score": 0.747
     },
     "noise": {
-      "score": 0.76,
-      "mentions": 3
+      "score": 0.699,
+      "mentions": 3,
+      "raw_score": 0.76
     },
     "food_and_cafe": {
-      "score": 0.996,
-      "mentions": 1
+      "score": 0.88,
+      "mentions": 1,
+      "raw_score": 0.996
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "green_space": {
-      "score": 0.362,
-      "mentions": 2
+      "score": 0.394,
+      "mentions": 2,
+      "raw_score": 0.362
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki86x2b/",
       "score": 12
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

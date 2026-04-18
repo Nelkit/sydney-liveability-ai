@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ASPECT_LABEL, AspectKey } from "./reddit-types";
+import { ASPECT_LABEL, AspectKey, ConfidenceTier } from "./reddit-types";
 
 export type HexRow = {
   suburb: string;
@@ -11,6 +11,8 @@ export type HexRow = {
   bottom_aspect: AspectKey | null;
   dominant_emotion: string | null;
   cached: boolean;
+  confidence: number;
+  confidence_tier: ConfidenceTier;
 };
 
 type HexagonGridProps = {

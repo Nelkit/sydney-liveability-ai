@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.584,
-      "mentions": 13
+      "score": 0.553,
+      "mentions": 13,
+      "raw_score": 0.584
     },
     "affordability": {
-      "score": 0.505,
-      "mentions": 4
+      "score": 0.503,
+      "mentions": 4,
+      "raw_score": 0.505
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
-      "score": 0.483,
-      "mentions": 6
+      "score": 0.489,
+      "mentions": 6,
+      "raw_score": 0.483
     },
     "noise": {
-      "score": 0.711,
-      "mentions": 1
+      "score": 0.634,
+      "mentions": 1,
+      "raw_score": 0.711
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie7w26/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

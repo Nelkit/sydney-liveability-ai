@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:46.155439+00:00",
   "aspects": {
     "transport": {
-      "score": 0.514,
-      "mentions": 6
+      "score": 0.506,
+      "mentions": 6,
+      "raw_score": 0.514
     },
     "community": {
-      "score": 0.529,
-      "mentions": 10
+      "score": 0.512,
+      "mentions": 10,
+      "raw_score": 0.529
     },
     "safety": {
-      "score": 0.494,
-      "mentions": 5
+      "score": 0.498,
+      "mentions": 5,
+      "raw_score": 0.494
     },
     "nightlife": {
-      "score": 0.643,
-      "mentions": 5
+      "score": 0.557,
+      "mentions": 5,
+      "raw_score": 0.643
     },
     "food_and_cafe": {
-      "score": 0.808,
-      "mentions": 3
+      "score": 0.623,
+      "mentions": 3,
+      "raw_score": 0.808
     },
     "green_space": {
-      "score": 0.672,
-      "mentions": 3
+      "score": 0.569,
+      "mentions": 3,
+      "raw_score": 0.672
     },
     "affordability": {
-      "score": 0.783,
-      "mentions": 2
+      "score": 0.613,
+      "mentions": 2,
+      "raw_score": 0.783
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1azgd5r/proposed_lilyfield_interchange_and_freeways/ks3zzzu/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

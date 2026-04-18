@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:40.850860+00:00",
   "aspects": {
     "community": {
-      "score": 0.496,
-      "mentions": 11
+      "score": 0.498,
+      "mentions": 11,
+      "raw_score": 0.496
     },
     "food_and_cafe": {
-      "score": 0.352,
-      "mentions": 1
+      "score": 0.426,
+      "mentions": 1,
+      "raw_score": 0.352
     },
     "affordability": {
-      "score": 0.549,
-      "mentions": 3
+      "score": 0.524,
+      "mentions": 3,
+      "raw_score": 0.549
     },
     "nightlife": {
-      "score": 0.77,
-      "mentions": 2
+      "score": 0.635,
+      "mentions": 2,
+      "raw_score": 0.77
     },
     "transport": {
-      "score": 0.671,
-      "mentions": 2
+      "score": 0.586,
+      "mentions": 2,
+      "raw_score": 0.671
     },
     "safety": {
-      "score": 0.52,
-      "mentions": 2
+      "score": 0.51,
+      "mentions": 2,
+      "raw_score": 0.52
     },
     "green_space": {
-      "score": 0.313,
-      "mentions": 2
+      "score": 0.406,
+      "mentions": 2,
+      "raw_score": 0.313
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ax1wnx/councils_positions_on_increased_density/krl51y4/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

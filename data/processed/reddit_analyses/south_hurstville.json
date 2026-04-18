@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:40.385771+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.161,
-      "mentions": 2
+      "score": 0.432,
+      "mentions": 2,
+      "raw_score": 0.161
     },
     "community": {
-      "score": 0.359,
-      "mentions": 5
+      "score": 0.472,
+      "mentions": 5,
+      "raw_score": 0.359
     },
     "safety": {
-      "score": 0.359,
-      "mentions": 5
+      "score": 0.472,
+      "mentions": 5,
+      "raw_score": 0.359
     },
     "transport": {
-      "score": 0.354,
-      "mentions": 3
+      "score": 0.471,
+      "mentions": 3,
+      "raw_score": 0.354
     },
     "affordability": {
-      "score": 0.002,
-      "mentions": 1
+      "score": 0.4,
+      "mentions": 1,
+      "raw_score": 0.002
     },
     "green_space": {
-      "score": 0.002,
-      "mentions": 1
+      "score": 0.4,
+      "mentions": 1,
+      "raw_score": 0.002
     },
     "nightlife": {
-      "score": 0.145,
-      "mentions": 2
+      "score": 0.429,
+      "mentions": 2,
+      "raw_score": 0.145
     },
     "noise": {
-      "score": 0.002,
-      "mentions": 1
+      "score": 0.4,
+      "mentions": 1,
+      "raw_score": 0.002
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gcl7ho/make_these_cheeks_red_raw_who_wana_link_xo_south/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

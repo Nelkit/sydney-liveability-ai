@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.647,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.647
     },
     "community": {
       "score": 0.661,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.661
     },
     "nightlife": {
       "score": 0.629,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.629
     },
     "green_space": {
       "score": 0.479,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.479
     },
     "food_and_cafe": {
       "score": 0.659,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.659
     },
     "affordability": {
       "score": 0.587,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.587
     },
     "transport": {
       "score": 0.586,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.586
     },
     "noise": {
       "score": 0.595,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.595
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dwiy2b/theories_behind_prevalence_of_older_deros_in_the/",
       "score": 35
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

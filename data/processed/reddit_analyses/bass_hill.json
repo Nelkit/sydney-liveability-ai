@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:12.391109+00:00",
   "aspects": {
     "community": {
-      "score": 0.74,
-      "mentions": 9
+      "score": 0.604,
+      "mentions": 9,
+      "raw_score": 0.74
     },
     "safety": {
-      "score": 0.701,
-      "mentions": 4
+      "score": 0.587,
+      "mentions": 4,
+      "raw_score": 0.701
     },
     "transport": {
-      "score": 0.704,
-      "mentions": 5
+      "score": 0.588,
+      "mentions": 5,
+      "raw_score": 0.704
     },
     "nightlife": {
-      "score": 0.787,
-      "mentions": 2
+      "score": 0.624,
+      "mentions": 2,
+      "raw_score": 0.787
     },
     "green_space": {
-      "score": 0.826,
-      "mentions": 1
+      "score": 0.641,
+      "mentions": 1,
+      "raw_score": 0.826
     },
     "food_and_cafe": {
-      "score": 0.77,
-      "mentions": 5
+      "score": 0.617,
+      "mentions": 5,
+      "raw_score": 0.77
     },
     "affordability": {
-      "score": 0.795,
-      "mentions": 3
+      "score": 0.628,
+      "mentions": 3,
+      "raw_score": 0.795
     },
     "noise": {
-      "score": 0.747,
-      "mentions": 1
+      "score": 0.607,
+      "mentions": 1,
+      "raw_score": 0.747
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d1k14t/proposed_eastwood_centre_redevelopment/l5v19jr/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

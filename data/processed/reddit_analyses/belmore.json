@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.296,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.296
     },
     "community": {
       "score": 0.51,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.51
     },
     "safety": {
       "score": 0.333,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.333
     },
     "affordability": {
       "score": 0.289,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.289
     },
     "green_space": {
       "score": 0.44,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.44
     },
     "nightlife": {
       "score": 0.659,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.659
     },
     "food_and_cafe": {
       "score": 0.707,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.707
     },
     "noise": {
       "score": 0.936,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.936
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1o60p3d/trying_to_remember_the_name_of_a_sydney_punk_band/",
       "score": 47
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:56.480542+00:00",
   "aspects": {
     "transport": {
-      "score": 0.175,
-      "mentions": 6
+      "score": 0.273,
+      "mentions": 6,
+      "raw_score": 0.175
     },
     "community": {
-      "score": 0.35,
-      "mentions": 9
+      "score": 0.395,
+      "mentions": 9,
+      "raw_score": 0.35
     },
     "safety": {
-      "score": 0.748,
-      "mentions": 5
+      "score": 0.674,
+      "mentions": 5,
+      "raw_score": 0.748
     },
     "noise": {
-      "score": 0.961,
-      "mentions": 3
+      "score": 0.823,
+      "mentions": 3,
+      "raw_score": 0.961
     },
     "affordability": {
-      "score": 0.862,
-      "mentions": 1
+      "score": 0.753,
+      "mentions": 1,
+      "raw_score": 0.862
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d9akxl/loud_bangs_heard_in_warwick_farm_and_edmonton_park/l7c6eff/",
       "score": 15
     }
-  ]
+  ],
+  "confidence": 0.7,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:21:09.089443+00:00",
   "aspects": {
     "community": {
-      "score": 0.865,
-      "mentions": 1
+      "score": 0.512,
+      "mentions": 1,
+      "raw_score": 0.865
     },
     "noise": {
-      "score": 0.865,
-      "mentions": 1
+      "score": 0.512,
+      "mentions": 1,
+      "raw_score": 0.865
     },
     "safety": {
-      "score": 0.865,
-      "mentions": 1
+      "score": 0.512,
+      "mentions": 1,
+      "raw_score": 0.865
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -52,5 +60,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwflzq/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.71,
-      "mentions": 43
+      "mentions": 43,
+      "raw_score": 0.71
     },
     "safety": {
       "score": 0.722,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.722
     },
     "community": {
       "score": 0.637,
-      "mentions": 86
+      "mentions": 86,
+      "raw_score": 0.637
     },
     "food_and_cafe": {
       "score": 0.644,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.644
     },
     "nightlife": {
       "score": 0.533,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.533
     },
     "affordability": {
       "score": 0.705,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.705
     },
     "green_space": {
       "score": 0.665,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.665
     },
     "noise": {
       "score": 0.664,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.664
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1evzojj/the_metro_was_heaps_fun/",
       "score": 180
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.54,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.54
     },
     "transport": {
       "score": 0.483,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.483
     },
     "safety": {
       "score": 0.506,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.506
     },
     "food_and_cafe": {
       "score": 0.804,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.804
     },
     "nightlife": {
       "score": 0.778,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.778
     },
     "affordability": {
       "score": 0.812,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.812
     },
     "green_space": {
       "score": 0.798,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.798
     },
     "noise": {
       "score": 0.872,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.872
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgur2tc/",
       "score": 44
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:05.392904+00:00",
   "aspects": {
     "transport": {
-      "score": 0.326,
-      "mentions": 2
+      "score": 0.454,
+      "mentions": 2,
+      "raw_score": 0.326
     },
     "safety": {
-      "score": 0.326,
-      "mentions": 2
+      "score": 0.454,
+      "mentions": 2,
+      "raw_score": 0.326
     },
     "community": {
-      "score": 0.526,
-      "mentions": 5
+      "score": 0.507,
+      "mentions": 5,
+      "raw_score": 0.526
     },
     "nightlife": {
-      "score": 0.139,
-      "mentions": 2
+      "score": 0.404,
+      "mentions": 2,
+      "raw_score": 0.139
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d9de1a/thursday_night_thread/l7ctjr0/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

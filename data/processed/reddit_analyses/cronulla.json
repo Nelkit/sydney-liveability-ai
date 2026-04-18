@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.628,
-      "mentions": 127
+      "mentions": 127,
+      "raw_score": 0.628
     },
     "nightlife": {
       "score": 0.65,
-      "mentions": 55
+      "mentions": 55,
+      "raw_score": 0.65
     },
     "noise": {
       "score": 0.509,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.509
     },
     "safety": {
       "score": 0.455,
-      "mentions": 50
+      "mentions": 50,
+      "raw_score": 0.455
     },
     "transport": {
       "score": 0.609,
-      "mentions": 64
+      "mentions": 64,
+      "raw_score": 0.609
     },
     "food_and_cafe": {
       "score": 0.644,
-      "mentions": 30
+      "mentions": 30,
+      "raw_score": 0.644
     },
     "affordability": {
       "score": 0.544,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.544
     },
     "green_space": {
       "score": 0.735,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.735
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1iw0mrm/enjoying_the_last_weekend_of_summer_cronulla_beach/",
       "score": 189
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

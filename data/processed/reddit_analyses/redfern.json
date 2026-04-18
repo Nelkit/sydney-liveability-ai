@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.575,
-      "mentions": 139
+      "mentions": 139,
+      "raw_score": 0.575
     },
     "safety": {
       "score": 0.325,
-      "mentions": 105
+      "mentions": 105,
+      "raw_score": 0.325
     },
     "community": {
       "score": 0.521,
-      "mentions": 226
+      "mentions": 226,
+      "raw_score": 0.521
     },
     "nightlife": {
       "score": 0.607,
-      "mentions": 66
+      "mentions": 66,
+      "raw_score": 0.607
     },
     "food_and_cafe": {
       "score": 0.459,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.459
     },
     "noise": {
       "score": 0.212,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.212
     },
     "affordability": {
       "score": 0.369,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.369
     },
     "green_space": {
       "score": 0.587,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.587
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1pctoxw/cowgirls_in_redfern_today/",
       "score": 458
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

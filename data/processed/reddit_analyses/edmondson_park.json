@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:32.090759+00:00",
   "aspects": {
     "safety": {
-      "score": 0.362,
-      "mentions": 6
+      "score": 0.413,
+      "mentions": 6,
+      "raw_score": 0.362
     },
     "affordability": {
-      "score": 0.609,
-      "mentions": 4
+      "score": 0.569,
+      "mentions": 4,
+      "raw_score": 0.609
     },
     "green_space": {
       "score": 0.501,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.501
     },
     "community": {
-      "score": 0.546,
-      "mentions": 15
+      "score": 0.529,
+      "mentions": 15,
+      "raw_score": 0.546
     },
     "transport": {
-      "score": 0.514,
-      "mentions": 5
+      "score": 0.509,
+      "mentions": 5,
+      "raw_score": 0.514
     },
     "food_and_cafe": {
-      "score": 0.831,
-      "mentions": 3
+      "score": 0.71,
+      "mentions": 3,
+      "raw_score": 0.831
     },
     "nightlife": {
-      "score": 0.824,
-      "mentions": 1
+      "score": 0.705,
+      "mentions": 1,
+      "raw_score": 0.824
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzwkwt1/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.494,
-      "mentions": 70
+      "mentions": 70,
+      "raw_score": 0.494
     },
     "transport": {
       "score": 0.458,
-      "mentions": 41
+      "mentions": 41,
+      "raw_score": 0.458
     },
     "safety": {
       "score": 0.351,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.351
     },
     "noise": {
       "score": 0.238,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.238
     },
     "nightlife": {
       "score": 0.496,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.496
     },
     "affordability": {
       "score": 0.41,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.41
     },
     "food_and_cafe": {
       "score": 0.454,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.454
     },
     "green_space": {
       "score": 0.443,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.443
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d0t0qd/is_erskinville_a_good_place_to_live/l5pfb3s/",
       "score": 57
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

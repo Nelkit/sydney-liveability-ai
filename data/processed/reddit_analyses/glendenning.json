@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:21:08.132068+00:00",
   "aspects": {
     "community": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "transport": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "affordability": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "safety": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "green_space": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "nightlife": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "food_and_cafe": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.511,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -52,5 +60,7 @@
       "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kive325/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

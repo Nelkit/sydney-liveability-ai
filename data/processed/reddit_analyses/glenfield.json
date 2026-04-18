@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.626,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.626
     },
     "safety": {
       "score": 0.626,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.626
     },
     "community": {
       "score": 0.593,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.593
     },
     "noise": {
       "score": 0.426,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.426
     },
     "affordability": {
       "score": 0.857,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.857
     },
     "food_and_cafe": {
       "score": 0.485,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.485
     },
     "nightlife": {
       "score": 0.381,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.381
     },
     "green_space": {
       "score": 0.607,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.607
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dsk5a1/how_much_has_the_sydney_rail_lines_changed_since/lb37n66/",
       "score": 21
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.416,
-      "mentions": 26
+      "mentions": 26,
+      "raw_score": 0.416
     },
     "transport": {
       "score": 0.458,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.458
     },
     "safety": {
       "score": 0.466,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.466
     },
     "green_space": {
       "score": 0.736,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.736
     },
     "noise": {
       "score": 0.64,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.64
     },
     "affordability": {
       "score": 0.678,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.678
     },
     "nightlife": {
       "score": 0.593,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.593
     },
     "food_and_cafe": {
       "score": 0.98,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.98
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfy5kh/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

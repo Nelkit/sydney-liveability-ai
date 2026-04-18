@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.498,
-      "mentions": 4
+      "score": 0.5,
+      "mentions": 4,
+      "raw_score": 0.498
     },
     "food_and_cafe": {
-      "score": 0.483,
-      "mentions": 2
+      "score": 0.496,
+      "mentions": 2,
+      "raw_score": 0.483
     },
     "safety": {
-      "score": 0.155,
-      "mentions": 2
+      "score": 0.419,
+      "mentions": 2,
+      "raw_score": 0.155
     },
     "nightlife": {
-      "score": 0.478,
-      "mentions": 2
+      "score": 0.495,
+      "mentions": 2,
+      "raw_score": 0.478
     },
     "transport": {
-      "score": 0.422,
-      "mentions": 1
+      "score": 0.482,
+      "mentions": 1,
+      "raw_score": 0.422
     },
     "noise": {
-      "score": 0.422,
-      "mentions": 1
+      "score": 0.482,
+      "mentions": 1,
+      "raw_score": 0.422
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dfi1tu/new_electorate_boundaries_proposed_for_nsw_with/l8nk3jc/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

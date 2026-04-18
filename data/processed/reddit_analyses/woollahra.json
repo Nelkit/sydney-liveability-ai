@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.732,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.732
     },
     "transport": {
       "score": 0.577,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.577
     },
     "affordability": {
       "score": 0.588,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.588
     },
     "nightlife": {
       "score": 0.879,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.879
     },
     "green_space": {
       "score": 0.882,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.882
     },
     "food_and_cafe": {
       "score": 0.918,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.918
     },
     "safety": {
       "score": 0.907,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.907
     },
     "noise": {
       "score": 0.993,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.993
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b29v1z/sydney_daily_random_discussion_thread_29022024/ksm2lqq/",
       "score": 21
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

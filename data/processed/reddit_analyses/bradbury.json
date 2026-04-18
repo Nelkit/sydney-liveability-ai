@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:49.025425+00:00",
   "aspects": {
     "community": {
-      "score": 0.754,
-      "mentions": 4
+      "score": 0.542,
+      "mentions": 4,
+      "raw_score": 0.754
     },
     "safety": {
-      "score": 0.815,
-      "mentions": 2
+      "score": 0.552,
+      "mentions": 2,
+      "raw_score": 0.815
     },
     "green_space": {
-      "score": 0.814,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.814
     },
     "transport": {
-      "score": 0.814,
-      "mentions": 1
+      "score": 0.552,
+      "mentions": 1,
+      "raw_score": 0.814
     },
     "noise": {
-      "score": 0.592,
-      "mentions": 2
+      "score": 0.515,
+      "mentions": 2,
+      "raw_score": 0.592
     },
     "affordability": {
-      "score": 0.607,
-      "mentions": 1
+      "score": 0.518,
+      "mentions": 1,
+      "raw_score": 0.607
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bto3p3/3_week_old_ducklings_at_camden_pool_over_the/kxondcg/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:48.202403+00:00",
   "aspects": {
     "safety": {
-      "score": 0.749,
-      "mentions": 3
+      "score": 0.525,
+      "mentions": 3,
+      "raw_score": 0.749
     },
     "community": {
-      "score": 0.749,
-      "mentions": 3
+      "score": 0.525,
+      "mentions": 3,
+      "raw_score": 0.749
     },
     "transport": {
-      "score": 0.925,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.925
     },
     "noise": {
-      "score": 0.925,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.925
     },
     "green_space": {
-      "score": 0.925,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.925
     },
     "affordability": {
-      "score": 0.925,
-      "mentions": 1
+      "score": 0.542,
+      "mentions": 1,
+      "raw_score": 0.925
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzynoey/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

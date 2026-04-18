@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.445,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.445
     },
     "safety": {
       "score": 0.629,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.629
     },
     "nightlife": {
       "score": 0.861,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.861
     },
     "community": {
       "score": 0.735,
-      "mentions": 38
+      "mentions": 38,
+      "raw_score": 0.735
     },
     "affordability": {
       "score": 0.493,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.493
     },
     "food_and_cafe": {
       "score": 0.703,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.703
     },
     "noise": {
       "score": 0.586,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.586
     },
     "green_space": {
       "score": 0.877,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.877
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bbxrql/has_the_reputation_of_western_sydney_vastly/kucmnhv/",
       "score": 41
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.42,
-      "mentions": 91
+      "mentions": 91,
+      "raw_score": 0.42
     },
     "community": {
       "score": 0.441,
-      "mentions": 132
+      "mentions": 132,
+      "raw_score": 0.441
     },
     "transport": {
       "score": 0.591,
-      "mentions": 95
+      "mentions": 95,
+      "raw_score": 0.591
     },
     "affordability": {
       "score": 0.947,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.947
     },
     "nightlife": {
       "score": 0.581,
-      "mentions": 44
+      "mentions": 44,
+      "raw_score": 0.581
     },
     "food_and_cafe": {
       "score": 0.697,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.697
     },
     "noise": {
       "score": 0.574,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.574
     },
     "green_space": {
       "score": 0.922,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.922
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1kvnhbw/public_freakout_in_aldi_bondi_junction/",
       "score": 274
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

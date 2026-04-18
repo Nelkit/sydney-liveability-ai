@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.5,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.505,
-      "mentions": 9
+      "score": 0.502,
+      "mentions": 9,
+      "raw_score": 0.505
     },
     "nightlife": {
-      "score": 0.592,
-      "mentions": 4
+      "score": 0.534,
+      "mentions": 4,
+      "raw_score": 0.592
     },
     "food_and_cafe": {
-      "score": 0.588,
-      "mentions": 2
+      "score": 0.532,
+      "mentions": 2,
+      "raw_score": 0.588
     },
     "transport": {
-      "score": 0.693,
-      "mentions": 3
+      "score": 0.571,
+      "mentions": 3,
+      "raw_score": 0.693
     },
     "affordability": {
-      "score": 0.506,
-      "mentions": 2
+      "score": 0.502,
+      "mentions": 2,
+      "raw_score": 0.506
     },
     "safety": {
-      "score": 0.636,
-      "mentions": 2
+      "score": 0.55,
+      "mentions": 2,
+      "raw_score": 0.636
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bf7a5x/inner_west_council_demerger_rejected/kv38ofa/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

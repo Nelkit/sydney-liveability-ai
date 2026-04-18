@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:20.461688+00:00",
   "aspects": {
     "transport": {
-      "score": 0.849,
-      "mentions": 3
+      "score": 0.651,
+      "mentions": 3,
+      "raw_score": 0.849
     },
     "community": {
-      "score": 0.785,
-      "mentions": 10
+      "score": 0.623,
+      "mentions": 10,
+      "raw_score": 0.785
     },
     "safety": {
-      "score": 0.826,
-      "mentions": 3
+      "score": 0.641,
+      "mentions": 3,
+      "raw_score": 0.826
     },
     "green_space": {
-      "score": 0.852,
-      "mentions": 2
+      "score": 0.653,
+      "mentions": 2,
+      "raw_score": 0.852
     },
     "affordability": {
-      "score": 0.829,
-      "mentions": 4
+      "score": 0.643,
+      "mentions": 4,
+      "raw_score": 0.829
     },
     "food_and_cafe": {
-      "score": 0.752,
-      "mentions": 1
+      "score": 0.609,
+      "mentions": 1,
+      "raw_score": 0.752
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqtuifb/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

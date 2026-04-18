@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:43.339608+00:00",
   "aspects": {
     "transport": {
-      "score": 0.438,
-      "mentions": 5
+      "score": 0.481,
+      "mentions": 5,
+      "raw_score": 0.438
     },
     "safety": {
-      "score": 0.182,
-      "mentions": 3
+      "score": 0.405,
+      "mentions": 3,
+      "raw_score": 0.182
     },
     "community": {
-      "score": 0.639,
-      "mentions": 7
+      "score": 0.542,
+      "mentions": 7,
+      "raw_score": 0.639
     },
     "noise": {
-      "score": 0.785,
-      "mentions": 2
+      "score": 0.585,
+      "mentions": 2,
+      "raw_score": 0.785
     },
     "nightlife": {
-      "score": 0.444,
-      "mentions": 2
+      "score": 0.483,
+      "mentions": 2,
+      "raw_score": 0.444
     },
     "affordability": {
-      "score": 0.942,
-      "mentions": 1
+      "score": 0.633,
+      "mentions": 1,
+      "raw_score": 0.942
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -92,5 +100,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b15w0d/have_sydneys_boundaries_always_been_the_same/kscu3ew/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

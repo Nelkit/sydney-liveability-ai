@@ -5,35 +5,43 @@
   "aspects": {
     "nightlife": {
       "score": 0.836,
-      "mentions": 74
+      "mentions": 74,
+      "raw_score": 0.836
     },
     "community": {
       "score": 0.767,
-      "mentions": 140
+      "mentions": 140,
+      "raw_score": 0.767
     },
     "food_and_cafe": {
       "score": 0.882,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.882
     },
     "green_space": {
       "score": 0.929,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.929
     },
     "transport": {
       "score": 0.638,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.638
     },
     "safety": {
       "score": 0.878,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.878
     },
     "affordability": {
       "score": 0.899,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.899
     },
     "noise": {
       "score": 0.973,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.973
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cewj6n/what_is_the_function_of_rocks_on_the_train_tracks/l1lly9l/",
       "score": 197
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

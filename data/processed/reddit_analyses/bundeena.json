@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.862,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.862
     },
     "community": {
       "score": 0.773,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.773
     },
     "nightlife": {
       "score": 0.533,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.533
     },
     "safety": {
       "score": 0.727,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.727
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.7,
-      "mentions": 21
+      "mentions": 21,
+      "raw_score": 0.7
     },
     "noise": {
       "score": 0.853,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.853
     },
     "food_and_cafe": {
       "score": 0.723,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.723
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1kwm28o/day_trip_to_bundeena/",
       "score": 47
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

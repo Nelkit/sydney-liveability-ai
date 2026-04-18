@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.568,
-      "mentions": 261
+      "mentions": 261,
+      "raw_score": 0.568
     },
     "safety": {
       "score": 0.471,
-      "mentions": 108
+      "mentions": 108,
+      "raw_score": 0.471
     },
     "community": {
       "score": 0.618,
-      "mentions": 382
+      "mentions": 382,
+      "raw_score": 0.618
     },
     "food_and_cafe": {
       "score": 0.532,
-      "mentions": 84
+      "mentions": 84,
+      "raw_score": 0.532
     },
     "green_space": {
       "score": 0.623,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.623
     },
     "affordability": {
       "score": 0.357,
-      "mentions": 41
+      "mentions": 41,
+      "raw_score": 0.357
     },
     "nightlife": {
       "score": 0.476,
-      "mentions": 87
+      "mentions": 87,
+      "raw_score": 0.476
     },
     "noise": {
       "score": 0.306,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.306
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1enk6z6/got_handed_this_at_chatswood_today_exciting_ive/",
       "score": 594
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

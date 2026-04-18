@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:43.219212+00:00",
   "aspects": {
     "community": {
-      "score": 0.822,
-      "mentions": 15
+      "score": 0.736,
+      "mentions": 15,
+      "raw_score": 0.822
     },
     "green_space": {
-      "score": 0.9,
-      "mentions": 3
+      "score": 0.793,
+      "mentions": 3,
+      "raw_score": 0.9
     },
     "affordability": {
-      "score": 0.909,
-      "mentions": 1
+      "score": 0.8,
+      "mentions": 1,
+      "raw_score": 0.909
     },
     "food_and_cafe": {
-      "score": 0.926,
-      "mentions": 3
+      "score": 0.812,
+      "mentions": 3,
+      "raw_score": 0.926
     },
     "transport": {
-      "score": 0.693,
-      "mentions": 4
+      "score": 0.642,
+      "mentions": 4,
+      "raw_score": 0.693
     },
     "safety": {
-      "score": 0.376,
-      "mentions": 8
+      "score": 0.409,
+      "mentions": 8,
+      "raw_score": 0.376
     },
     "noise": {
-      "score": 0.08,
-      "mentions": 1
+      "score": 0.192,
+      "mentions": 1,
+      "raw_score": 0.08
     },
     "nightlife": {
-      "score": 0.674,
-      "mentions": 3
+      "score": 0.628,
+      "mentions": 3,
+      "raw_score": 0.674
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt7w92/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 0.733,
+  "confidence_tier": "high"
 }

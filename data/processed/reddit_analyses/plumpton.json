@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:42.008140+00:00",
   "aspects": {
     "community": {
-      "score": 0.345,
-      "mentions": 9
+      "score": 0.453,
+      "mentions": 9,
+      "raw_score": 0.345
     },
     "transport": {
-      "score": 0.803,
-      "mentions": 4
+      "score": 0.591,
+      "mentions": 4,
+      "raw_score": 0.803
     },
     "affordability": {
-      "score": 0.85,
-      "mentions": 5
+      "score": 0.605,
+      "mentions": 5,
+      "raw_score": 0.85
     },
     "safety": {
-      "score": 0.828,
-      "mentions": 7
+      "score": 0.598,
+      "mentions": 7,
+      "raw_score": 0.828
     },
     "green_space": {
-      "score": 0.87,
-      "mentions": 4
+      "score": 0.611,
+      "mentions": 4,
+      "raw_score": 0.87
     },
     "nightlife": {
-      "score": 0.784,
-      "mentions": 5
+      "score": 0.585,
+      "mentions": 5,
+      "raw_score": 0.784
     },
     "food_and_cafe": {
-      "score": 0.848,
-      "mentions": 2
+      "score": 0.604,
+      "mentions": 2,
+      "raw_score": 0.848
     },
     "noise": {
-      "score": 0.899,
-      "mentions": 3
+      "score": 0.62,
+      "mentions": 3,
+      "raw_score": 0.899
     }
   },
   "emotions": {
@@ -92,5 +100,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktzgdqb/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

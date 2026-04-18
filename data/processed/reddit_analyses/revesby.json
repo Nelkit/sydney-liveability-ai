@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.403,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.403
     },
     "safety": {
       "score": 0.313,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.313
     },
     "transport": {
       "score": 0.544,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.544
     },
     "nightlife": {
       "score": 0.347,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.347
     },
     "affordability": {
       "score": 0.201,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.201
     },
     "noise": {
       "score": 0.065,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.065
     },
     "green_space": {
       "score": 0.218,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.218
     },
     "food_and_cafe": {
       "score": 0.15,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.15
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1qcho7i/are_there_services_anywhere_where_a_visually/",
       "score": 44
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

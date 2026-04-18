@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:44.767684+00:00",
   "aspects": {
     "community": {
-      "score": 0.806,
-      "mentions": 5
+      "score": 0.551,
+      "mentions": 5,
+      "raw_score": 0.806
     },
     "noise": {
-      "score": 0.989,
-      "mentions": 1
+      "score": 0.582,
+      "mentions": 1,
+      "raw_score": 0.989
     },
     "transport": {
-      "score": 0.762,
-      "mentions": 1
+      "score": 0.544,
+      "mentions": 1,
+      "raw_score": 0.762
     },
     "safety": {
-      "score": 0.762,
-      "mentions": 1
+      "score": 0.544,
+      "mentions": 1,
+      "raw_score": 0.762
     },
     "nightlife": {
-      "score": 0.762,
-      "mentions": 1
+      "score": 0.544,
+      "mentions": 1,
+      "raw_score": 0.762
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b8m4dy/figures_mezco_mafex_yamaguchi/ktq70s1/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

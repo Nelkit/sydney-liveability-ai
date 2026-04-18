@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.812,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.812
     },
     "community": {
       "score": 0.842,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.842
     },
     "nightlife": {
       "score": 0.898,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.898
     },
     "food_and_cafe": {
       "score": 0.981,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.981
     },
     "transport": {
       "score": 0.661,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.661
     },
     "affordability": {
       "score": 0.866,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.866
     },
     "noise": {
       "score": 0.977,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.977
     },
     "green_space": {
       "score": 0.657,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.657
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgf1xvj/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

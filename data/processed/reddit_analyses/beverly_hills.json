@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:15.755635+00:00",
   "aspects": {
     "community": {
-      "score": 0.475,
-      "mentions": 4
+      "score": 0.494,
+      "mentions": 4,
+      "raw_score": 0.475
     },
     "green_space": {
-      "score": 0.229,
-      "mentions": 1
+      "score": 0.437,
+      "mentions": 1,
+      "raw_score": 0.229
     },
     "safety": {
-      "score": 0.453,
-      "mentions": 3
+      "score": 0.489,
+      "mentions": 3,
+      "raw_score": 0.453
     },
     "nightlife": {
-      "score": 0.656,
-      "mentions": 2
+      "score": 0.536,
+      "mentions": 2,
+      "raw_score": 0.656
     },
     "affordability": {
-      "score": 0.755,
-      "mentions": 1
+      "score": 0.559,
+      "mentions": 1,
+      "raw_score": 0.755
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cggtrc/guy_who_designed_london_undergrounds_map_also/l20jruf/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

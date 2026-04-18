@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:56.407363+00:00",
   "aspects": {
     "community": {
-      "score": 0.205,
-      "mentions": 2
+      "score": 0.48,
+      "mentions": 2,
+      "raw_score": 0.205
     },
     "safety": {
-      "score": 0.205,
-      "mentions": 2
+      "score": 0.48,
+      "mentions": 2,
+      "raw_score": 0.205
     },
     "nightlife": {
-      "score": 0.196,
-      "mentions": 1
+      "score": 0.48,
+      "mentions": 1,
+      "raw_score": 0.196
     },
     "noise": {
-      "score": 0.196,
-      "mentions": 1
+      "score": 0.48,
+      "mentions": 1,
+      "raw_score": 0.196
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kmhdq/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.552,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.552
     },
     "community": {
       "score": 0.469,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.469
     },
     "safety": {
       "score": 0.744,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.744
     },
     "transport": {
       "score": 0.614,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.614
     },
     "noise": {
       "score": 0.754,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.754
     },
     "affordability": {
       "score": 0.858,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.858
     },
     "nightlife": {
       "score": 0.961,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.961
     },
     "food_and_cafe": {
       "score": 0.78,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.78
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6uhif6/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

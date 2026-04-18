@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:14.579030+00:00",
   "aspects": {
     "transport": {
-      "score": 0.878,
-      "mentions": 1
+      "score": 0.55,
+      "mentions": 1,
+      "raw_score": 0.878
     },
     "community": {
-      "score": 0.661,
-      "mentions": 2
+      "score": 0.521,
+      "mentions": 2,
+      "raw_score": 0.661
     },
     "nightlife": {
-      "score": 0.659,
-      "mentions": 1
+      "score": 0.521,
+      "mentions": 1,
+      "raw_score": 0.659
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1g415oq/street_corner_dancing_lady_in_gymeakirrawee/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:26.246377+00:00",
   "aspects": {
     "safety": {
-      "score": 0.385,
-      "mentions": 6
+      "score": 0.439,
+      "mentions": 6,
+      "raw_score": 0.385
     },
     "transport": {
-      "score": 0.555,
-      "mentions": 5
+      "score": 0.529,
+      "mentions": 5,
+      "raw_score": 0.555
     },
     "community": {
-      "score": 0.669,
-      "mentions": 12
+      "score": 0.59,
+      "mentions": 12,
+      "raw_score": 0.669
     },
     "nightlife": {
-      "score": 0.837,
-      "mentions": 3
+      "score": 0.68,
+      "mentions": 3,
+      "raw_score": 0.837
     },
     "noise": {
-      "score": 0.913,
-      "mentions": 1
+      "score": 0.72,
+      "mentions": 1,
+      "raw_score": 0.913
     },
     "food_and_cafe": {
-      "score": 0.699,
-      "mentions": 2
+      "score": 0.606,
+      "mentions": 2,
+      "raw_score": 0.699
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ar6505/asbestostainted_mulch_potentially_at_hundreds_of/kqijdi3/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

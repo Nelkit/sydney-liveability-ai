@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.539,
-      "mentions": 54
+      "mentions": 54,
+      "raw_score": 0.539
     },
     "safety": {
       "score": 0.595,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.595
     },
     "affordability": {
       "score": 0.792,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.792
     },
     "transport": {
       "score": 0.693,
-      "mentions": 33
+      "mentions": 33,
+      "raw_score": 0.693
     },
     "food_and_cafe": {
       "score": 0.747,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.747
     },
     "nightlife": {
       "score": 0.694,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.694
     },
     "green_space": {
       "score": 0.713,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.713
     },
     "noise": {
       "score": 0.388,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.388
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lah9wft/",
       "score": 90
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

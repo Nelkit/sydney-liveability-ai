@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:58.380314+00:00",
   "aspects": {
     "community": {
-      "score": 0.699,
-      "mentions": 3
+      "score": 0.533,
+      "mentions": 3,
+      "raw_score": 0.699
     },
     "transport": {
-      "score": 0.721,
-      "mentions": 3
+      "score": 0.537,
+      "mentions": 3,
+      "raw_score": 0.721
     },
     "safety": {
-      "score": 0.69,
-      "mentions": 2
+      "score": 0.532,
+      "mentions": 2,
+      "raw_score": 0.69
     },
     "affordability": {
-      "score": 0.309,
-      "mentions": 1
+      "score": 0.468,
+      "mentions": 1,
+      "raw_score": 0.309
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cwy33f/western_sydney_airport/l53tw1f/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:05.783919+00:00",
   "aspects": {
     "transport": {
-      "score": 0.257,
-      "mentions": 4
+      "score": 0.411,
+      "mentions": 4,
+      "raw_score": 0.257
     },
     "community": {
-      "score": 0.32,
-      "mentions": 7
+      "score": 0.434,
+      "mentions": 7,
+      "raw_score": 0.32
     },
     "nightlife": {
-      "score": 0.308,
-      "mentions": 2
+      "score": 0.43,
+      "mentions": 2,
+      "raw_score": 0.308
     },
     "affordability": {
-      "score": 0.075,
-      "mentions": 2
+      "score": 0.344,
+      "mentions": 2,
+      "raw_score": 0.075
     },
     "safety": {
-      "score": 0.418,
-      "mentions": 3
+      "score": 0.47,
+      "mentions": 3,
+      "raw_score": 0.418
     },
     "food_and_cafe": {
-      "score": 0.915,
-      "mentions": 3
+      "score": 0.652,
+      "mentions": 3,
+      "raw_score": 0.915
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1nqt0j5/sixalarm_fire_breaks_out_at_matraville_factory_9/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

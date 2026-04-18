@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:19.412492+00:00",
   "aspects": {
     "community": {
-      "score": 0.205,
-      "mentions": 4
+      "score": 0.461,
+      "mentions": 4,
+      "raw_score": 0.205
     },
     "nightlife": {
-      "score": 0.681,
-      "mentions": 1
+      "score": 0.524,
+      "mentions": 1,
+      "raw_score": 0.681
     },
     "green_space": {
-      "score": 0.681,
-      "mentions": 1
+      "score": 0.524,
+      "mentions": 1,
+      "raw_score": 0.681
     },
     "transport": {
-      "score": 0.681,
-      "mentions": 1
+      "score": 0.524,
+      "mentions": 1,
+      "raw_score": 0.681
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d3yp20/where_to_buy_sheeps_kidneys_lns/l6b5yd4/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

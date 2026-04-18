@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.594,
-      "mentions": 71
+      "mentions": 71,
+      "raw_score": 0.594
     },
     "transport": {
       "score": 0.647,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.647
     },
     "affordability": {
       "score": 0.747,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.747
     },
     "food_and_cafe": {
       "score": 0.757,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.757
     },
     "green_space": {
       "score": 0.632,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.632
     },
     "nightlife": {
       "score": 0.724,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.724
     },
     "safety": {
       "score": 0.474,
-      "mentions": 29
+      "mentions": 29,
+      "raw_score": 0.474
     },
     "noise": {
       "score": 0.74,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.74
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1f73wjr/liverpool_city_council_loses_legal_bid_to_stop/",
       "score": 122
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.427,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.427
     },
     "green_space": {
       "score": 0.859,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.859
     },
     "nightlife": {
       "score": 0.651,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.651
     },
     "community": {
       "score": 0.5,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.3,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.3
     },
     "transport": {
       "score": 0.466,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.466
     },
     "food_and_cafe": {
       "score": 0.943,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.943
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jqrxb7/how_is_the_bline_from_the_northern_beaches_to_the/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

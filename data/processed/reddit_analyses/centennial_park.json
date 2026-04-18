@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.609,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.609
     },
     "green_space": {
       "score": 0.645,
-      "mentions": 74
+      "mentions": 74,
+      "raw_score": 0.645
     },
     "community": {
       "score": 0.665,
-      "mentions": 67
+      "mentions": 67,
+      "raw_score": 0.665
     },
     "nightlife": {
       "score": 0.677,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.677
     },
     "food_and_cafe": {
       "score": 0.978,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.978
     },
     "transport": {
       "score": 0.57,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.57
     },
     "noise": {
       "score": 0.931,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.931
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1k7fpmb/whats_this_guy_looking_for/",
       "score": 66
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

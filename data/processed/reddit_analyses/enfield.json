@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:17.571361+00:00",
   "aspects": {
     "community": {
-      "score": 0.85,
-      "mentions": 7
+      "score": 0.582,
+      "mentions": 7,
+      "raw_score": 0.85
     },
     "green_space": {
-      "score": 0.885,
-      "mentions": 1
+      "score": 0.59,
+      "mentions": 1,
+      "raw_score": 0.885
     },
     "safety": {
-      "score": 0.865,
-      "mentions": 2
+      "score": 0.585,
+      "mentions": 2,
+      "raw_score": 0.865
     },
     "transport": {
-      "score": 0.71,
-      "mentions": 3
+      "score": 0.549,
+      "mentions": 3,
+      "raw_score": 0.71
     },
     "noise": {
-      "score": 0.875,
-      "mentions": 1
+      "score": 0.587,
+      "mentions": 1,
+      "raw_score": 0.875
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -82,5 +90,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dsrw8o/botanica_lidcombe_former_lidcombe_hospital/lb6wd47/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

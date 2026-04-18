@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:03.198764+00:00",
   "aspects": {
     "community": {
-      "score": 0.847,
-      "mentions": 12
+      "score": 0.708,
+      "mentions": 12,
+      "raw_score": 0.847
     },
     "transport": {
-      "score": 0.846,
-      "mentions": 7
+      "score": 0.708,
+      "mentions": 7,
+      "raw_score": 0.846
     },
     "safety": {
-      "score": 0.776,
-      "mentions": 5
+      "score": 0.666,
+      "mentions": 5,
+      "raw_score": 0.776
     },
     "noise": {
-      "score": 0.984,
-      "mentions": 1
+      "score": 0.79,
+      "mentions": 1,
+      "raw_score": 0.984
     },
     "nightlife": {
-      "score": 0.701,
-      "mentions": 1
+      "score": 0.621,
+      "mentions": 1,
+      "raw_score": 0.701
     },
     "food_and_cafe": {
-      "score": 0.739,
-      "mentions": 2
+      "score": 0.643,
+      "mentions": 2,
+      "raw_score": 0.739
     },
     "green_space": {
-      "score": 0.646,
-      "mentions": 2
+      "score": 0.588,
+      "mentions": 2,
+      "raw_score": 0.646
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/19fd6id/sydney_daily_random_discussion_thread_26012024/kjl9swv/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

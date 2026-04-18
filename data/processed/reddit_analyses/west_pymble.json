@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:25.663825+00:00",
   "aspects": {
     "community": {
-      "score": 0.123,
-      "mentions": 4
+      "score": 0.45,
+      "mentions": 4,
+      "raw_score": 0.123
     },
     "food_and_cafe": {
-      "score": 0.85,
-      "mentions": 1
+      "score": 0.547,
+      "mentions": 1,
+      "raw_score": 0.85
     },
     "nightlife": {
-      "score": 0.85,
-      "mentions": 1
+      "score": 0.547,
+      "mentions": 1,
+      "raw_score": 0.85
     },
     "affordability": {
-      "score": 0.85,
-      "mentions": 1
+      "score": 0.547,
+      "mentions": 1,
+      "raw_score": 0.85
     },
     "transport": {
-      "score": 0.85,
-      "mentions": 1
+      "score": 0.547,
+      "mentions": 1,
+      "raw_score": 0.85
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dm9fiy/best_thai_restaurants_in_sydney/l9usv5q/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

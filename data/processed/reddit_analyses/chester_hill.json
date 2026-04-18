@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:46.466183+00:00",
   "aspects": {
     "transport": {
-      "score": 0.311,
-      "mentions": 4
+      "score": 0.368,
+      "mentions": 4,
+      "raw_score": 0.311
     },
     "community": {
-      "score": 0.386,
-      "mentions": 16
+      "score": 0.42,
+      "mentions": 16,
+      "raw_score": 0.386
     },
     "safety": {
-      "score": 0.211,
-      "mentions": 11
+      "score": 0.298,
+      "mentions": 11,
+      "raw_score": 0.211
     },
     "affordability": {
-      "score": 0.287,
-      "mentions": 6
+      "score": 0.351,
+      "mentions": 6,
+      "raw_score": 0.287
     },
     "green_space": {
-      "score": 0.172,
-      "mentions": 4
+      "score": 0.27,
+      "mentions": 4,
+      "raw_score": 0.172
     },
     "nightlife": {
-      "score": 0.725,
-      "mentions": 6
+      "score": 0.657,
+      "mentions": 6,
+      "raw_score": 0.725
     },
     "food_and_cafe": {
-      "score": 0.484,
-      "mentions": 5
+      "score": 0.489,
+      "mentions": 5,
+      "raw_score": 0.484
     },
     "noise": {
-      "score": 0.849,
-      "mentions": 2
+      "score": 0.744,
+      "mentions": 2,
+      "raw_score": 0.849
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyairoo/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.7,
+  "confidence_tier": "high"
 }

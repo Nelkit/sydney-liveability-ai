@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:45.421570+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.344,
-      "mentions": 2
+      "score": 0.484,
+      "mentions": 2,
+      "raw_score": 0.344
     },
     "community": {
-      "score": 0.567,
-      "mentions": 3
+      "score": 0.507,
+      "mentions": 3,
+      "raw_score": 0.567
     },
     "food_and_cafe": {
-      "score": 0.994,
-      "mentions": 2
+      "score": 0.549,
+      "mentions": 2,
+      "raw_score": 0.994
     },
     "transport": {
-      "score": 0.967,
-      "mentions": 1
+      "score": 0.547,
+      "mentions": 1,
+      "raw_score": 0.967
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5zubis/",
       "score": 11
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:26.370735+00:00",
   "aspects": {
     "community": {
-      "score": 0.671,
-      "mentions": 4
+      "score": 0.523,
+      "mentions": 4,
+      "raw_score": 0.671
     },
     "affordability": {
-      "score": 0.734,
-      "mentions": 1
+      "score": 0.531,
+      "mentions": 1,
+      "raw_score": 0.734
     },
     "transport": {
-      "score": 0.835,
-      "mentions": 1
+      "score": 0.545,
+      "mentions": 1,
+      "raw_score": 0.835
     },
     "nightlife": {
-      "score": 0.835,
-      "mentions": 1
+      "score": 0.545,
+      "mentions": 1,
+      "raw_score": 0.835
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bs16vy/little_penguin_sydney_harbour/kxh1slx/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

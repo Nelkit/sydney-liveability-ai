@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:12.876985+00:00",
   "aspects": {
     "safety": {
-      "score": 0.063,
-      "mentions": 7
+      "score": 0.354,
+      "mentions": 7,
+      "raw_score": 0.063
     },
     "community": {
-      "score": 0.292,
-      "mentions": 7
+      "score": 0.431,
+      "mentions": 7,
+      "raw_score": 0.292
     },
     "transport": {
-      "score": 0.216,
-      "mentions": 3
+      "score": 0.405,
+      "mentions": 3,
+      "raw_score": 0.216
     },
     "affordability": {
-      "score": 0.201,
-      "mentions": 2
+      "score": 0.4,
+      "mentions": 2,
+      "raw_score": 0.201
     },
     "green_space": {
-      "score": 0.224,
-      "mentions": 3
+      "score": 0.408,
+      "mentions": 3,
+      "raw_score": 0.224
     },
     "nightlife": {
-      "score": 0.469,
-      "mentions": 2
+      "score": 0.49,
+      "mentions": 2,
+      "raw_score": 0.469
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d9f2we/cyclist_dies_after_horror_northern_beaches_crash/l7df2hi/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

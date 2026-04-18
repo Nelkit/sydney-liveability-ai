@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:43.173156+00:00",
   "aspects": {
     "community": {
-      "score": 0.545,
-      "mentions": 13
+      "score": 0.522,
+      "mentions": 13,
+      "raw_score": 0.545
     },
     "transport": {
-      "score": 0.557,
-      "mentions": 5
+      "score": 0.528,
+      "mentions": 5,
+      "raw_score": 0.557
     },
     "affordability": {
-      "score": 0.523,
-      "mentions": 3
+      "score": 0.512,
+      "mentions": 3,
+      "raw_score": 0.523
     },
     "green_space": {
-      "score": 0.568,
-      "mentions": 11
+      "score": 0.534,
+      "mentions": 11,
+      "raw_score": 0.568
     },
     "safety": {
-      "score": 0.163,
-      "mentions": 3
+      "score": 0.332,
+      "mentions": 3,
+      "raw_score": 0.163
     },
     "food_and_cafe": {
-      "score": 0.935,
-      "mentions": 2
+      "score": 0.718,
+      "mentions": 2,
+      "raw_score": 0.935
     },
     "nightlife": {
-      "score": 0.752,
-      "mentions": 4
+      "score": 0.626,
+      "mentions": 4,
+      "raw_score": 0.752
     },
     "noise": {
-      "score": 0.792,
-      "mentions": 1
+      "score": 0.646,
+      "mentions": 1,
+      "raw_score": 0.792
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bsm53z/frenchs_forest/kxgtmap/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:21:11.129900+00:00",
   "aspects": {
     "food_and_cafe": {
-      "score": 0.763,
-      "mentions": 1
+      "score": 0.509,
+      "mentions": 1,
+      "raw_score": 0.763
     },
     "community": {
-      "score": 0.763,
-      "mentions": 1
+      "score": 0.509,
+      "mentions": 1,
+      "raw_score": 0.763
     },
     "noise": {
-      "score": 0.763,
-      "mentions": 1
+      "score": 0.509,
+      "mentions": 1,
+      "raw_score": 0.763
     },
     "green_space": {
-      "score": 0.763,
-      "mentions": 1
+      "score": 0.509,
+      "mentions": 1,
+      "raw_score": 0.763
     },
     "safety": {
-      "score": 0.763,
-      "mentions": 1
+      "score": 0.509,
+      "mentions": 1,
+      "raw_score": 0.763
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -52,5 +60,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bvf674/team_dinner_options_granville_auburn_merrylands/kxz28f9/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

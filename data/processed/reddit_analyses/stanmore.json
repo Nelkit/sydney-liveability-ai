@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.842,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.842
     },
     "safety": {
       "score": 0.596,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.596
     },
     "nightlife": {
       "score": 0.803,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.803
     },
     "community": {
       "score": 0.703,
-      "mentions": 74
+      "mentions": 74,
+      "raw_score": 0.703
     },
     "transport": {
       "score": 0.452,
-      "mentions": 46
+      "mentions": 46,
+      "raw_score": 0.452
     },
     "noise": {
       "score": 0.315,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.315
     },
     "affordability": {
       "score": 0.799,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.799
     },
     "green_space": {
       "score": 0.637,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.637
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1j32k9q/the_stanmore_black_hole/",
       "score": 113
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

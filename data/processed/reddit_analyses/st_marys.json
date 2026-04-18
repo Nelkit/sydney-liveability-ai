@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.466,
-      "mentions": 43
+      "mentions": 43,
+      "raw_score": 0.466
     },
     "community": {
       "score": 0.498,
-      "mentions": 55
+      "mentions": 55,
+      "raw_score": 0.498
     },
     "safety": {
       "score": 0.367,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.367
     },
     "nightlife": {
       "score": 0.629,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.629
     },
     "noise": {
       "score": 0.481,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.481
     },
     "green_space": {
       "score": 0.8,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.8
     },
     "affordability": {
       "score": 0.71,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.71
     },
     "food_and_cafe": {
       "score": 0.874,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.874
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1edp7qd/psa_trains_are_not_running_between_st_marys/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

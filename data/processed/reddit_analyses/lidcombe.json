@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.349,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.349
     },
     "food_and_cafe": {
       "score": 0.343,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.343
     },
     "transport": {
       "score": 0.64,
-      "mentions": 87
+      "mentions": 87,
+      "raw_score": 0.64
     },
     "community": {
       "score": 0.591,
-      "mentions": 106
+      "mentions": 106,
+      "raw_score": 0.591
     },
     "nightlife": {
       "score": 0.556,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.556
     },
     "affordability": {
       "score": 0.726,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.726
     },
     "green_space": {
       "score": 0.676,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.676
     },
     "noise": {
       "score": 0.469,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.469
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b61vzk/just_wanna_vent_about_the_m4/",
       "score": 130
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

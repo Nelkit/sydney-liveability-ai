@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.487,
-      "mentions": 85
+      "mentions": 85,
+      "raw_score": 0.487
     },
     "community": {
       "score": 0.591,
-      "mentions": 232
+      "mentions": 232,
+      "raw_score": 0.591
     },
     "green_space": {
       "score": 0.646,
-      "mentions": 35
+      "mentions": 35,
+      "raw_score": 0.646
     },
     "affordability": {
       "score": 0.514,
-      "mentions": 50
+      "mentions": 50,
+      "raw_score": 0.514
     },
     "transport": {
       "score": 0.611,
-      "mentions": 76
+      "mentions": 76,
+      "raw_score": 0.611
     },
     "safety": {
       "score": 0.567,
-      "mentions": 77
+      "mentions": 77,
+      "raw_score": 0.567
     },
     "nightlife": {
       "score": 0.604,
-      "mentions": 88
+      "mentions": 88,
+      "raw_score": 0.604
     },
     "noise": {
       "score": 0.445,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.445
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1qm649g/chris_who_used_to_sit_next_to_the_clock_hotel_in/",
       "score": 654
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

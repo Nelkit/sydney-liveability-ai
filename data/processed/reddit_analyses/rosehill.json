@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.321,
-      "mentions": 37
+      "mentions": 37,
+      "raw_score": 0.321
     },
     "safety": {
       "score": 0.246,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.246
     },
     "transport": {
       "score": 0.486,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.486
     },
     "green_space": {
       "score": 0.487,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.487
     },
     "nightlife": {
       "score": 0.497,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.497
     },
     "affordability": {
       "score": 0.664,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.664
     },
     "noise": {
       "score": 0.821,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.821
     },
     "food_and_cafe": {
       "score": 0.987,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.987
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b8eg7s/backlash_is_mounting_against_the_contentious_plan/",
       "score": 139
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

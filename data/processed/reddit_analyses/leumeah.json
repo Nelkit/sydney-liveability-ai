@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:01.710178+00:00",
   "aspects": {
     "community": {
-      "score": 0.442,
-      "mentions": 6
+      "score": 0.485,
+      "mentions": 6,
+      "raw_score": 0.442
     },
     "safety": {
-      "score": 0.423,
-      "mentions": 4
+      "score": 0.479,
+      "mentions": 4,
+      "raw_score": 0.423
     },
     "noise": {
-      "score": 0.353,
-      "mentions": 2
+      "score": 0.461,
+      "mentions": 2,
+      "raw_score": 0.353
     },
     "transport": {
-      "score": 0.37,
-      "mentions": 4
+      "score": 0.465,
+      "mentions": 4,
+      "raw_score": 0.37
     },
     "affordability": {
-      "score": 0.06,
-      "mentions": 1
+      "score": 0.383,
+      "mentions": 1,
+      "raw_score": 0.06
     },
     "green_space": {
-      "score": 0.388,
-      "mentions": 3
+      "score": 0.47,
+      "mentions": 3,
+      "raw_score": 0.388
     },
     "nightlife": {
-      "score": 0.06,
-      "mentions": 1
+      "score": 0.383,
+      "mentions": 1,
+      "raw_score": 0.06
     },
     "food_and_cafe": {
-      "score": 0.06,
-      "mentions": 1
+      "score": 0.383,
+      "mentions": 1,
+      "raw_score": 0.06
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cbrpog/leumeah_dwellers_do_you_enjoy_it/l142qs1/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

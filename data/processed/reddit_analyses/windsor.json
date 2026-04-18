@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:47.052254+00:00",
   "aspects": {
     "safety": {
-      "score": 0.4,
-      "mentions": 5
+      "score": 0.437,
+      "mentions": 5,
+      "raw_score": 0.4
     },
     "community": {
-      "score": 0.529,
-      "mentions": 14
+      "score": 0.518,
+      "mentions": 14,
+      "raw_score": 0.529
     },
     "affordability": {
-      "score": 0.819,
-      "mentions": 4
+      "score": 0.702,
+      "mentions": 4,
+      "raw_score": 0.819
     },
     "food_and_cafe": {
-      "score": 0.972,
-      "mentions": 2
+      "score": 0.799,
+      "mentions": 2,
+      "raw_score": 0.972
     },
     "nightlife": {
-      "score": 0.956,
-      "mentions": 4
+      "score": 0.789,
+      "mentions": 4,
+      "raw_score": 0.956
     },
     "green_space": {
-      "score": 0.317,
-      "mentions": 4
+      "score": 0.384,
+      "mentions": 4,
+      "raw_score": 0.317
     },
     "transport": {
-      "score": 0.559,
-      "mentions": 5
+      "score": 0.537,
+      "mentions": 5,
+      "raw_score": 0.559
     },
     "noise": {
-      "score": 0.599,
-      "mentions": 1
+      "score": 0.563,
+      "mentions": 1,
+      "raw_score": 0.599
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1atkegq/anyone_feels_life_quality_improve_after_move_out/kqyu6pv/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

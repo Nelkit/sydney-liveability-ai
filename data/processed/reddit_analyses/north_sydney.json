@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.383,
-      "mentions": 127
+      "mentions": 127,
+      "raw_score": 0.383
     },
     "community": {
       "score": 0.505,
-      "mentions": 228
+      "mentions": 228,
+      "raw_score": 0.505
     },
     "noise": {
       "score": 0.23,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.23
     },
     "nightlife": {
       "score": 0.536,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.536
     },
     "green_space": {
       "score": 0.573,
-      "mentions": 47
+      "mentions": 47,
+      "raw_score": 0.573
     },
     "safety": {
       "score": 0.389,
-      "mentions": 91
+      "mentions": 91,
+      "raw_score": 0.389
     },
     "food_and_cafe": {
       "score": 0.704,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.704
     },
     "affordability": {
       "score": 0.648,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.648
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1rxnnwb/found_some_old_photos_in_my_cleanup/",
       "score": 542
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

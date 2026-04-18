@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:49.456247+00:00",
   "aspects": {
     "transport": {
-      "score": 0.707,
-      "mentions": 10
+      "score": 0.624,
+      "mentions": 10,
+      "raw_score": 0.707
     },
     "community": {
-      "score": 0.688,
-      "mentions": 16
+      "score": 0.613,
+      "mentions": 16,
+      "raw_score": 0.688
     },
     "nightlife": {
-      "score": 0.91,
-      "mentions": 2
+      "score": 0.746,
+      "mentions": 2,
+      "raw_score": 0.91
     },
     "safety": {
-      "score": 0.385,
-      "mentions": 3
+      "score": 0.431,
+      "mentions": 3,
+      "raw_score": 0.385
     },
     "green_space": {
-      "score": 0.415,
-      "mentions": 3
+      "score": 0.449,
+      "mentions": 3,
+      "raw_score": 0.415
     },
     "affordability": {
-      "score": 0.579,
-      "mentions": 2
+      "score": 0.547,
+      "mentions": 2,
+      "raw_score": 0.579
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1byrwja/i_dont_know_what_west_ryde_did_but_they_sure_aint/kylgwkj/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

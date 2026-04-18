@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:15:20.675458+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.817,
-      "mentions": 5
+      "score": 0.711,
+      "mentions": 5,
+      "raw_score": 0.817
     },
     "community": {
-      "score": 0.785,
-      "mentions": 13
+      "score": 0.69,
+      "mentions": 13,
+      "raw_score": 0.785
     },
     "affordability": {
-      "score": 0.909,
-      "mentions": 1
+      "score": 0.773,
+      "mentions": 1,
+      "raw_score": 0.909
     },
     "nightlife": {
-      "score": 0.771,
-      "mentions": 2
+      "score": 0.681,
+      "mentions": 2,
+      "raw_score": 0.771
     },
     "food_and_cafe": {
-      "score": 0.918,
-      "mentions": 1
+      "score": 0.779,
+      "mentions": 1,
+      "raw_score": 0.918
     },
     "safety": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "transport": {
-      "score": 0.527,
-      "mentions": 4
+      "score": 0.518,
+      "mentions": 4,
+      "raw_score": 0.527
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/194kp9f/aussie_suburb_erupts_in_6000_battle_over_rainbow/khiuk4u/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.667,
+  "confidence_tier": "medium"
 }

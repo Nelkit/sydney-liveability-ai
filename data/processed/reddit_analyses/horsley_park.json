@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:35.913438+00:00",
   "aspects": {
     "safety": {
-      "score": 0.138,
-      "mentions": 2
+      "score": 0.464,
+      "mentions": 2,
+      "raw_score": 0.138
     },
     "community": {
-      "score": 0.197,
-      "mentions": 3
+      "score": 0.47,
+      "mentions": 3,
+      "raw_score": 0.197
     },
     "noise": {
-      "score": 0.094,
-      "mentions": 1
+      "score": 0.459,
+      "mentions": 1,
+      "raw_score": 0.094
     },
     "green_space": {
-      "score": 0.492,
-      "mentions": 2
+      "score": 0.499,
+      "mentions": 2,
+      "raw_score": 0.492
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bo4bg1/reported_plan_to_move_sydneys_rosehill_racecourse/kwous2d/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

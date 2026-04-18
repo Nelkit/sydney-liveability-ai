@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.5,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.569,
-      "mentions": 4
+      "score": 0.512,
+      "mentions": 4,
+      "raw_score": 0.569
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.5
     },
     "noise": {
-      "score": 0.794,
-      "mentions": 2
+      "score": 0.549,
+      "mentions": 2,
+      "raw_score": 0.794
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -72,5 +80,7 @@
       "url": "https://reddit.com/r/sydney/comments/1buf7aa/horse_riding/kxuge4v/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

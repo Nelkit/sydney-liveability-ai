@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:41.156786+00:00",
   "aspects": {
     "community": {
-      "score": 0.562,
-      "mentions": 20
+      "score": 0.55,
+      "mentions": 20,
+      "raw_score": 0.562
     },
     "safety": {
-      "score": 0.67,
-      "mentions": 6
+      "score": 0.636,
+      "mentions": 6,
+      "raw_score": 0.67
     },
     "transport": {
-      "score": 0.638,
-      "mentions": 5
+      "score": 0.61,
+      "mentions": 5,
+      "raw_score": 0.638
     },
     "green_space": {
-      "score": 0.935,
-      "mentions": 4
+      "score": 0.848,
+      "mentions": 4,
+      "raw_score": 0.935
     },
     "food_and_cafe": {
-      "score": 0.382,
-      "mentions": 2
+      "score": 0.406,
+      "mentions": 2,
+      "raw_score": 0.382
     },
     "nightlife": {
-      "score": 0.673,
-      "mentions": 4
+      "score": 0.638,
+      "mentions": 4,
+      "raw_score": 0.673
     },
     "affordability": {
-      "score": 0.745,
-      "mentions": 3
+      "score": 0.696,
+      "mentions": 3,
+      "raw_score": 0.745
     },
     "noise": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.898,
+      "mentions": 1,
+      "raw_score": 0.997
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bdcgls/a_sample_of_open_mic_events_in_sydney/",
       "score": 20
     }
-  ]
+  ],
+  "confidence": 0.8,
+  "confidence_tier": "high"
 }

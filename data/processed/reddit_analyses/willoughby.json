@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.451,
-      "mentions": 34
+      "mentions": 34,
+      "raw_score": 0.451
     },
     "safety": {
       "score": 0.551,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.551
     },
     "nightlife": {
       "score": 0.509,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.509
     },
     "transport": {
       "score": 0.569,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.569
     },
     "affordability": {
       "score": 0.806,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.806
     },
     "green_space": {
       "score": 0.768,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.768
     },
     "food_and_cafe": {
       "score": 0.775,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.775
     },
     "noise": {
       "score": 0.736,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.736
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cnxy0s/roadside_lost_property/l3a72hb/",
       "score": 17
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

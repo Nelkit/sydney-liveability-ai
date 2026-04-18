@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.713,
-      "mentions": 93
+      "mentions": 93,
+      "raw_score": 0.713
     },
     "safety": {
       "score": 0.593,
-      "mentions": 39
+      "mentions": 39,
+      "raw_score": 0.593
     },
     "transport": {
       "score": 0.766,
-      "mentions": 57
+      "mentions": 57,
+      "raw_score": 0.766
     },
     "food_and_cafe": {
       "score": 0.828,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.828
     },
     "nightlife": {
       "score": 0.719,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.719
     },
     "affordability": {
       "score": 0.826,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.826
     },
     "green_space": {
       "score": 0.723,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.723
     },
     "noise": {
       "score": 0.646,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.646
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aw50bq/mascot_towers_ordeal_close_to_end_after_five/krezckd/",
       "score": 103
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:48.314381+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.955,
-      "mentions": 2
+      "score": 0.621,
+      "mentions": 2,
+      "raw_score": 0.955
     },
     "community": {
-      "score": 0.807,
-      "mentions": 8
+      "score": 0.582,
+      "mentions": 8,
+      "raw_score": 0.807
     },
     "safety": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.633,
+      "mentions": 1,
+      "raw_score": 0.997
     },
     "nightlife": {
-      "score": 0.814,
-      "mentions": 2
+      "score": 0.584,
+      "mentions": 2,
+      "raw_score": 0.814
     },
     "food_and_cafe": {
-      "score": 0.754,
-      "mentions": 1
+      "score": 0.568,
+      "mentions": 1,
+      "raw_score": 0.754
     },
     "transport": {
-      "score": 0.762,
-      "mentions": 2
+      "score": 0.57,
+      "mentions": 2,
+      "raw_score": 0.762
     },
     "affordability": {
-      "score": 0.624,
-      "mentions": 2
+      "score": 0.533,
+      "mentions": 2,
+      "raw_score": 0.624
     },
     "noise": {
-      "score": 0.806,
-      "mentions": 1
+      "score": 0.582,
+      "mentions": 1,
+      "raw_score": 0.806
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1byj2nu/will_woollahra_railway_station_ever_be_finished/kyjw37v/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

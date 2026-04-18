@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:56.125466+00:00",
   "aspects": {
     "community": {
-      "score": 0.829,
-      "mentions": 2
+      "score": 0.522,
+      "mentions": 2,
+      "raw_score": 0.829
     },
     "transport": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.523,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "affordability": {
-      "score": 0.829,
-      "mentions": 2
+      "score": 0.522,
+      "mentions": 2,
+      "raw_score": 0.829
     },
     "safety": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.523,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "green_space": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.523,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "nightlife": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.523,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "food_and_cafe": {
-      "score": 0.845,
-      "mentions": 1
+      "score": 0.523,
+      "mentions": 1,
+      "raw_score": 0.845
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -57,5 +65,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c2lk00/a_fulltime_wage_is_not_always_enough_to_live_in/kzc5noz/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

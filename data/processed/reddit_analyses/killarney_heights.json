@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:38.373043+00:00",
   "aspects": {
     "community": {
-      "score": 0.847,
-      "mentions": 3
+      "score": 0.535,
+      "mentions": 3,
+      "raw_score": 0.847
     },
     "transport": {
-      "score": 0.827,
-      "mentions": 2
+      "score": 0.533,
+      "mentions": 2,
+      "raw_score": 0.827
     },
     "affordability": {
-      "score": 0.827,
-      "mentions": 2
+      "score": 0.533,
+      "mentions": 2,
+      "raw_score": 0.827
     },
     "green_space": {
-      "score": 0.827,
-      "mentions": 2
+      "score": 0.533,
+      "mentions": 2,
+      "raw_score": 0.827
     },
     "food_and_cafe": {
-      "score": 0.847,
-      "mentions": 3
+      "score": 0.535,
+      "mentions": 3,
+      "raw_score": 0.847
     },
     "nightlife": {
-      "score": 0.827,
-      "mentions": 2
+      "score": 0.533,
+      "mentions": 2,
+      "raw_score": 0.827
     },
     "safety": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -62,5 +70,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l99290m/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

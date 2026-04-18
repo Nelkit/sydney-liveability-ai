@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.513,
-      "mentions": 261
+      "mentions": 261,
+      "raw_score": 0.513
     },
     "safety": {
       "score": 0.465,
-      "mentions": 104
+      "mentions": 104,
+      "raw_score": 0.465
     },
     "transport": {
       "score": 0.568,
-      "mentions": 121
+      "mentions": 121,
+      "raw_score": 0.568
     },
     "food_and_cafe": {
       "score": 0.56,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.56
     },
     "green_space": {
       "score": 0.726,
-      "mentions": 45
+      "mentions": 45,
+      "raw_score": 0.726
     },
     "nightlife": {
       "score": 0.619,
-      "mentions": 59
+      "mentions": 59,
+      "raw_score": 0.619
     },
     "affordability": {
       "score": 0.64,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.64
     },
     "noise": {
       "score": 0.511,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.511
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1p6xz59/trains_are_proper_fucked_between_parramatta/",
       "score": 265
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

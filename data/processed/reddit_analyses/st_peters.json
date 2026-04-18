@@ -5,35 +5,43 @@
   "aspects": {
     "food_and_cafe": {
       "score": 0.686,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.686
     },
     "safety": {
       "score": 0.547,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.547
     },
     "transport": {
       "score": 0.368,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.368
     },
     "community": {
       "score": 0.402,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.402
     },
     "noise": {
       "score": 0.058,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.058
     },
     "nightlife": {
       "score": 0.595,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.595
     },
     "green_space": {
       "score": 0.661,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.661
     },
     "affordability": {
       "score": 0.782,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.782
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ai696q/inner_west_ale_trail/kot0wjh/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

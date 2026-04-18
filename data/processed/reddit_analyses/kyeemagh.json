@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:20:18.148059+00:00",
   "aspects": {
     "safety": {
-      "score": 0.478,
-      "mentions": 2
+      "score": 0.497,
+      "mentions": 2,
+      "raw_score": 0.478
     },
     "community": {
-      "score": 0.545,
-      "mentions": 3
+      "score": 0.506,
+      "mentions": 3,
+      "raw_score": 0.545
     },
     "transport": {
-      "score": 0.648,
-      "mentions": 2
+      "score": 0.52,
+      "mentions": 2,
+      "raw_score": 0.648
     },
     "green_space": {
-      "score": 0.585,
-      "mentions": 2
+      "score": 0.511,
+      "mentions": 2,
+      "raw_score": 0.585
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -67,5 +75,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b2rxnb/cycling_from_bondi_to_royal_national_park_for/ksnltck/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

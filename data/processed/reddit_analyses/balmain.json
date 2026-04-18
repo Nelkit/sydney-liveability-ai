@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.486,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.486
     },
     "transport": {
       "score": 0.582,
-      "mentions": 42
+      "mentions": 42,
+      "raw_score": 0.582
     },
     "community": {
       "score": 0.649,
-      "mentions": 124
+      "mentions": 124,
+      "raw_score": 0.649
     },
     "nightlife": {
       "score": 0.655,
-      "mentions": 49
+      "mentions": 49,
+      "raw_score": 0.655
     },
     "noise": {
       "score": 0.626,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.626
     },
     "food_and_cafe": {
       "score": 0.707,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.707
     },
     "green_space": {
       "score": 0.428,
-      "mentions": 17
+      "mentions": 17,
+      "raw_score": 0.428
     },
     "affordability": {
       "score": 0.553,
-      "mentions": 16
+      "mentions": 16,
+      "raw_score": 0.553
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gbfkaf/sailing_tonight/",
       "score": 116
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

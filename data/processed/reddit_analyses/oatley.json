@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:14:59.614377+00:00",
   "aspects": {
     "community": {
-      "score": 0.708,
-      "mentions": 18
+      "score": 0.646,
+      "mentions": 18,
+      "raw_score": 0.708
     },
     "nightlife": {
-      "score": 0.528,
-      "mentions": 4
+      "score": 0.52,
+      "mentions": 4,
+      "raw_score": 0.528
     },
     "transport": {
-      "score": 0.726,
-      "mentions": 9
+      "score": 0.658,
+      "mentions": 9,
+      "raw_score": 0.726
     },
     "green_space": {
-      "score": 0.53,
-      "mentions": 4
+      "score": 0.521,
+      "mentions": 4,
+      "raw_score": 0.53
     },
     "safety": {
-      "score": 0.76,
-      "mentions": 3
+      "score": 0.682,
+      "mentions": 3,
+      "raw_score": 0.76
     },
     "food_and_cafe": {
-      "score": 0.728,
-      "mentions": 4
+      "score": 0.66,
+      "mentions": 4,
+      "raw_score": 0.728
     },
     "affordability": {
-      "score": 0.899,
-      "mentions": 1
+      "score": 0.779,
+      "mentions": 1,
+      "raw_score": 0.899
     },
     "noise": {
-      "score": 0.765,
-      "mentions": 2
+      "score": 0.685,
+      "mentions": 2,
+      "raw_score": 0.765
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ayrp4s/what_is_with_all_the_absolute_psychos_on_the_road/krzfaoz/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.7,
+  "confidence_tier": "high"
 }

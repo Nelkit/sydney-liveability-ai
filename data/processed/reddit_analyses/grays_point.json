@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "community": {
-      "score": 0.591,
-      "mentions": 7
+      "score": 0.524,
+      "mentions": 7,
+      "raw_score": 0.591
     },
     "green_space": {
-      "score": 0.944,
-      "mentions": 2
+      "score": 0.618,
+      "mentions": 2,
+      "raw_score": 0.944
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
-      "score": 0.519,
-      "mentions": 1
+      "score": 0.505,
+      "mentions": 1,
+      "raw_score": 0.519
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c1wuj5/bushwalks_suitable_for_5yo_60min_return_around/kz74g1u/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

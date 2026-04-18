@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:17:52.554495+00:00",
   "aspects": {
     "safety": {
-      "score": 0.425,
-      "mentions": 3
+      "score": 0.47,
+      "mentions": 3,
+      "raw_score": 0.425
     },
     "green_space": {
-      "score": 0.593,
-      "mentions": 7
+      "score": 0.537,
+      "mentions": 7,
+      "raw_score": 0.593
     },
     "affordability": {
-      "score": 0.839,
-      "mentions": 6
+      "score": 0.636,
+      "mentions": 6,
+      "raw_score": 0.839
     },
     "community": {
-      "score": 0.757,
-      "mentions": 10
+      "score": 0.603,
+      "mentions": 10,
+      "raw_score": 0.757
     },
     "transport": {
-      "score": 0.766,
-      "mentions": 7
+      "score": 0.606,
+      "mentions": 7,
+      "raw_score": 0.766
     },
     "noise": {
-      "score": 0.993,
-      "mentions": 1
+      "score": 0.697,
+      "mentions": 1,
+      "raw_score": 0.993
     },
     "food_and_cafe": {
-      "score": 0.978,
-      "mentions": 2
+      "score": 0.691,
+      "mentions": 2,
+      "raw_score": 0.978
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/191g688/bankstown_to_sydenham_train_line_shutdown_from/kh3c5jd/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

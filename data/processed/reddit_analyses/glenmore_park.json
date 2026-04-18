@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:57.025518+00:00",
   "aspects": {
     "community": {
-      "score": 0.666,
-      "mentions": 8
+      "score": 0.544,
+      "mentions": 8,
+      "raw_score": 0.666
     },
     "safety": {
-      "score": 0.661,
-      "mentions": 4
+      "score": 0.543,
+      "mentions": 4,
+      "raw_score": 0.661
     },
     "transport": {
-      "score": 0.494,
-      "mentions": 3
+      "score": 0.498,
+      "mentions": 3,
+      "raw_score": 0.494
     },
     "green_space": {
-      "score": 0.606,
-      "mentions": 7
+      "score": 0.528,
+      "mentions": 7,
+      "raw_score": 0.606
     },
     "nightlife": {
-      "score": 0.632,
-      "mentions": 2
+      "score": 0.535,
+      "mentions": 2,
+      "raw_score": 0.632
     },
     "affordability": {
-      "score": 0.897,
-      "mentions": 1
+      "score": 0.606,
+      "mentions": 1,
+      "raw_score": 0.897
     },
     "noise": {
-      "score": 0.897,
-      "mentions": 1
+      "score": 0.606,
+      "mentions": 1,
+      "raw_score": 0.897
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

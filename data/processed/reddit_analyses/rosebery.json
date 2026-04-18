@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.102,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.102
     },
     "food_and_cafe": {
       "score": 0.076,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.076
     },
     "community": {
       "score": 0.101,
-      "mentions": 23
+      "mentions": 23,
+      "raw_score": 0.101
     },
     "transport": {
       "score": 0.672,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.672
     },
     "nightlife": {
       "score": 0.641,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.641
     },
     "green_space": {
       "score": 0.49,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.49
     },
     "noise": {
       "score": 0.939,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.939
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bivdnn/streets_are_being_smashed_as_drivers_try_to_save/kvnmbkj/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

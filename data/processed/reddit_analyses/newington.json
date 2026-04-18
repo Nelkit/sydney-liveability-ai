@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.609,
-      "mentions": 24
+      "mentions": 24,
+      "raw_score": 0.609
     },
     "green_space": {
       "score": 0.577,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.577
     },
     "transport": {
       "score": 0.56,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.56
     },
     "safety": {
       "score": 0.496,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.496
     },
     "affordability": {
       "score": 0.654,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.654
     },
     "nightlife": {
       "score": 0.63,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.63
     },
     "noise": {
       "score": 0.872,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.872
     },
     "food_and_cafe": {
       "score": 0.71,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.71
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1sa8uy7/fromer_newington_college_teacher_benjamin_david/",
       "score": 31
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

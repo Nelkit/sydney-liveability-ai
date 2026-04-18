@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.544,
-      "mentions": 179
+      "mentions": 179,
+      "raw_score": 0.544
     },
     "community": {
       "score": 0.622,
-      "mentions": 183
+      "mentions": 183,
+      "raw_score": 0.622
     },
     "nightlife": {
       "score": 0.791,
-      "mentions": 36
+      "mentions": 36,
+      "raw_score": 0.791
     },
     "safety": {
       "score": 0.663,
-      "mentions": 60
+      "mentions": 60,
+      "raw_score": 0.663
     },
     "affordability": {
       "score": 0.844,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.844
     },
     "green_space": {
       "score": 0.795,
-      "mentions": 20
+      "mentions": 20,
+      "raw_score": 0.795
     },
     "noise": {
       "score": 0.637,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.637
     },
     "food_and_cafe": {
       "score": 0.878,
-      "mentions": 22
+      "mentions": 22,
+      "raw_score": 0.878
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bhar0k/testing_on_track_as_all_45_trains_complete/",
       "score": 167
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

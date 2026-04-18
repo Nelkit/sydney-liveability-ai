@@ -5,35 +5,43 @@
   "aspects": {
     "green_space": {
       "score": 0.832,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.832
     },
     "community": {
       "score": 0.724,
-      "mentions": 28
+      "mentions": 28,
+      "raw_score": 0.724
     },
     "nightlife": {
       "score": 0.508,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.508
     },
     "food_and_cafe": {
       "score": 0.512,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.512
     },
     "transport": {
       "score": 0.51,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.51
     },
     "safety": {
       "score": 0.45,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.45
     },
     "affordability": {
       "score": 0.711,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.711
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1axknwv/this_sign_shows_a_distance_to_leichhardt_over_40/krq0twx/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

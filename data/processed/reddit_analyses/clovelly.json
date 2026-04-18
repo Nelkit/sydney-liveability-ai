@@ -5,35 +5,43 @@
   "aspects": {
     "nightlife": {
       "score": 0.372,
-      "mentions": 11
+      "mentions": 11,
+      "raw_score": 0.372
     },
     "affordability": {
       "score": 0.391,
-      "mentions": 14
+      "mentions": 14,
+      "raw_score": 0.391
     },
     "safety": {
       "score": 0.371,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.371
     },
     "community": {
       "score": 0.523,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.523
     },
     "green_space": {
       "score": 0.727,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.727
     },
     "food_and_cafe": {
       "score": 0.52,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.52
     },
     "transport": {
       "score": 0.484,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.484
     },
     "noise": {
       "score": 0.822,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.822
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cobpql/favorite_running_routes/l3dmuly/",
       "score": 35
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

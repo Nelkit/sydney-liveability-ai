@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:31.542256+00:00",
   "aspects": {
     "community": {
-      "score": 0.64,
-      "mentions": 6
+      "score": 0.528,
+      "mentions": 6,
+      "raw_score": 0.64
     },
     "transport": {
-      "score": 0.913,
-      "mentions": 2
+      "score": 0.583,
+      "mentions": 2,
+      "raw_score": 0.913
     },
     "food_and_cafe": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.599,
+      "mentions": 1,
+      "raw_score": 0.997
     },
     "green_space": {
-      "score": 0.956,
-      "mentions": 3
+      "score": 0.591,
+      "mentions": 3,
+      "raw_score": 0.956
     },
     "safety": {
-      "score": 0.913,
-      "mentions": 2
+      "score": 0.583,
+      "mentions": 2,
+      "raw_score": 0.913
     },
     "noise": {
-      "score": 0.924,
-      "mentions": 1
+      "score": 0.585,
+      "mentions": 1,
+      "raw_score": 0.924
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -77,5 +85,7 @@
       "url": "https://reddit.com/r/sydney/comments/1avbkp2/which_establishment_has_the_most_pretentious/kr9s7x3/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

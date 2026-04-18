@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:38.374140+00:00",
   "aspects": {
     "community": {
-      "score": 0.632,
-      "mentions": 6
+      "score": 0.54,
+      "mentions": 6,
+      "raw_score": 0.632
     },
     "safety": {
-      "score": 0.585,
-      "mentions": 7
+      "score": 0.525,
+      "mentions": 7,
+      "raw_score": 0.585
     },
     "transport": {
-      "score": 0.635,
-      "mentions": 2
+      "score": 0.54,
+      "mentions": 2,
+      "raw_score": 0.635
     },
     "noise": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "green_space": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -92,5 +100,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dlmdzz/is_the_church_st_exit_the_worst_off_ramp_in_sydney/l9qkyvl/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

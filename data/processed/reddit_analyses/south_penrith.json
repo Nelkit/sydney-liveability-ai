@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:19:10.446595+00:00",
   "aspects": {
     "community": {
-      "score": 0.702,
-      "mentions": 7
+      "score": 0.554,
+      "mentions": 7,
+      "raw_score": 0.702
     },
     "safety": {
-      "score": 0.724,
-      "mentions": 4
+      "score": 0.56,
+      "mentions": 4,
+      "raw_score": 0.724
     },
     "noise": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.63,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "affordability": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.63,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "green_space": {
-      "score": 0.988,
-      "mentions": 1
+      "score": 0.63,
+      "mentions": 1,
+      "raw_score": 0.988
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -87,5 +95,7 @@
       "url": "https://reddit.com/r/sydney/comments/18wbqh5/why_is_there_a_helicopter_circling_over_south/kfx3ipp/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

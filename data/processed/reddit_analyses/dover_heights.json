@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:15.771976+00:00",
   "aspects": {
     "green_space": {
-      "score": 0.501,
-      "mentions": 3
+      "score": 0.5,
+      "mentions": 3,
+      "raw_score": 0.501
     },
     "community": {
-      "score": 0.547,
-      "mentions": 7
+      "score": 0.516,
+      "mentions": 7,
+      "raw_score": 0.547
     },
     "nightlife": {
-      "score": 0.515,
-      "mentions": 5
+      "score": 0.505,
+      "mentions": 5,
+      "raw_score": 0.515
     },
     "transport": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.5
     },
     "safety": {
-      "score": 0.365,
-      "mentions": 4
+      "score": 0.455,
+      "mentions": 4,
+      "raw_score": 0.365
     },
     "noise": {
-      "score": 0.595,
-      "mentions": 1
+      "score": 0.532,
+      "mentions": 1,
+      "raw_score": 0.595
     },
     "food_and_cafe": {
-      "score": 0.738,
-      "mentions": 1
+      "score": 0.579,
+      "mentions": 1,
+      "raw_score": 0.738
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bsk5rr/worst_experience_at_harris_farm_potts_point/kxgujxu/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

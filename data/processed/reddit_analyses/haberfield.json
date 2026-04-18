@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.698,
-      "mentions": 40
+      "mentions": 40,
+      "raw_score": 0.698
     },
     "green_space": {
       "score": 0.629,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.629
     },
     "safety": {
       "score": 0.746,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.746
     },
     "transport": {
       "score": 0.766,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.766
     },
     "affordability": {
       "score": 0.628,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.628
     },
     "food_and_cafe": {
       "score": 0.71,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.71
     },
     "nightlife": {
       "score": 0.648,
-      "mentions": 10
+      "mentions": 10,
+      "raw_score": 0.648
     },
     "noise": {
       "score": 0.423,
-      "mentions": 2
+      "mentions": 2,
+      "raw_score": 0.423
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cqx2m1/best_cheap_italian_food_in_sydney/l3u5sm4/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

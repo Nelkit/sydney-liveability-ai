@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.545,
-      "mentions": 48
+      "mentions": 48,
+      "raw_score": 0.545
     },
     "green_space": {
       "score": 0.851,
-      "mentions": 8
+      "mentions": 8,
+      "raw_score": 0.851
     },
     "affordability": {
       "score": 0.87,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.87
     },
     "transport": {
       "score": 0.399,
-      "mentions": 27
+      "mentions": 27,
+      "raw_score": 0.399
     },
     "safety": {
       "score": 0.42,
-      "mentions": 18
+      "mentions": 18,
+      "raw_score": 0.42
     },
     "noise": {
       "score": 0.142,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.142
     },
     "nightlife": {
       "score": 0.656,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.656
     },
     "food_and_cafe": {
       "score": 0.654,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.654
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1as0pl0/train_breakdown_at_milsons_point/kqnc2bu/",
       "score": 28
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

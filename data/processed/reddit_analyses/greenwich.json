@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:16:21.562512+00:00",
   "aspects": {
     "community": {
-      "score": 0.36,
-      "mentions": 12
+      "score": 0.425,
+      "mentions": 12,
+      "raw_score": 0.36
     },
     "transport": {
-      "score": 0.443,
-      "mentions": 7
+      "score": 0.47,
+      "mentions": 7,
+      "raw_score": 0.443
     },
     "affordability": {
-      "score": 0.568,
-      "mentions": 5
+      "score": 0.536,
+      "mentions": 5,
+      "raw_score": 0.568
     },
     "nightlife": {
-      "score": 0.582,
-      "mentions": 3
+      "score": 0.544,
+      "mentions": 3,
+      "raw_score": 0.582
     },
     "safety": {
-      "score": 0.576,
-      "mentions": 3
+      "score": 0.541,
+      "mentions": 3,
+      "raw_score": 0.576
     },
     "noise": {
-      "score": 0.571,
-      "mentions": 2
+      "score": 0.538,
+      "mentions": 2,
+      "raw_score": 0.571
     },
     "green_space": {
-      "score": 0.636,
-      "mentions": 4
+      "score": 0.573,
+      "mentions": 4,
+      "raw_score": 0.636
     },
     "food_and_cafe": {
-      "score": 0.055,
-      "mentions": 1
+      "score": 0.263,
+      "mentions": 1,
+      "raw_score": 0.055
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c59vd5/the_basin_kuringai_np/kzt2y1o/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

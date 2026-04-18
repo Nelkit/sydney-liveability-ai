@@ -5,35 +5,43 @@
   "aspects": {
     "safety": {
       "score": 0.265,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.265
     },
     "community": {
       "score": 0.506,
-      "mentions": 32
+      "mentions": 32,
+      "raw_score": 0.506
     },
     "food_and_cafe": {
       "score": 0.547,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.547
     },
     "transport": {
       "score": 0.707,
-      "mentions": 15
+      "mentions": 15,
+      "raw_score": 0.707
     },
     "nightlife": {
       "score": 0.623,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.623
     },
     "green_space": {
       "score": 0.545,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.545
     },
     "affordability": {
       "score": 0.641,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.641
     },
     "noise": {
       "score": 0.397,
-      "mentions": 1
+      "mentions": 1,
+      "raw_score": 0.397
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tkqb6/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

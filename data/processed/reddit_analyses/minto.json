@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:18:22.273826+00:00",
   "aspects": {
     "community": {
-      "score": 0.441,
-      "mentions": 8
+      "score": 0.48,
+      "mentions": 8,
+      "raw_score": 0.441
     },
     "nightlife": {
-      "score": 0.481,
-      "mentions": 2
+      "score": 0.494,
+      "mentions": 2,
+      "raw_score": 0.481
     },
     "food_and_cafe": {
-      "score": 0.481,
-      "mentions": 2
+      "score": 0.494,
+      "mentions": 2,
+      "raw_score": 0.481
     },
     "transport": {
-      "score": 0.237,
-      "mentions": 4
+      "score": 0.412,
+      "mentions": 4,
+      "raw_score": 0.237
     },
     "safety": {
-      "score": 0.225,
-      "mentions": 5
+      "score": 0.408,
+      "mentions": 5,
+      "raw_score": 0.225
     },
     "affordability": {
-      "score": 0.201,
-      "mentions": 2
+      "score": 0.4,
+      "mentions": 2,
+      "raw_score": 0.201
     },
     "green_space": {
-      "score": 0.06,
-      "mentions": 1
+      "score": 0.353,
+      "mentions": 1,
+      "raw_score": 0.06
     },
     "noise": {
-      "score": 0.06,
-      "mentions": 1
+      "score": 0.353,
+      "mentions": 1,
+      "raw_score": 0.06
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzw66e5/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

@@ -4,36 +4,44 @@
   "fetched_at": "2026-04-18T02:13:26.768691+00:00",
   "aspects": {
     "community": {
-      "score": 0.52,
-      "mentions": 20
+      "score": 0.517,
+      "mentions": 20,
+      "raw_score": 0.52
     },
     "nightlife": {
       "score": 0.501,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.501
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.5
     },
     "transport": {
-      "score": 0.522,
-      "mentions": 12
+      "score": 0.518,
+      "mentions": 12,
+      "raw_score": 0.522
     },
     "safety": {
-      "score": 0.484,
-      "mentions": 6
+      "score": 0.487,
+      "mentions": 6,
+      "raw_score": 0.484
     },
     "food_and_cafe": {
       "score": 0.502,
-      "mentions": 3
+      "mentions": 3,
+      "raw_score": 0.502
     },
     "green_space": {
-      "score": 0.674,
-      "mentions": 2
+      "score": 0.645,
+      "mentions": 2,
+      "raw_score": 0.674
     },
     "noise": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "raw_score": 0.5
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cheh7o/train_from_newtown_to_airport_without_changing/l22187i/",
       "score": 12
     }
-  ]
+  ],
+  "confidence": 0.833,
+  "confidence_tier": "high"
 }

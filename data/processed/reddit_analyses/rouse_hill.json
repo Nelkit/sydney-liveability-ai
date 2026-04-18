@@ -5,35 +5,43 @@
   "aspects": {
     "community": {
       "score": 0.503,
-      "mentions": 74
+      "mentions": 74,
+      "raw_score": 0.503
     },
     "transport": {
       "score": 0.399,
-      "mentions": 44
+      "mentions": 44,
+      "raw_score": 0.399
     },
     "food_and_cafe": {
       "score": 0.674,
-      "mentions": 12
+      "mentions": 12,
+      "raw_score": 0.674
     },
     "safety": {
       "score": 0.604,
-      "mentions": 19
+      "mentions": 19,
+      "raw_score": 0.604
     },
     "affordability": {
       "score": 0.769,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.769
     },
     "nightlife": {
       "score": 0.535,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.535
     },
     "green_space": {
       "score": 0.538,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.538
     },
     "noise": {
       "score": 0.833,
-      "mentions": 5
+      "mentions": 5,
+      "raw_score": 0.833
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1g13bpf/bird_just_flew_against_my_window_and_im_not_sure/",
       "score": 102
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

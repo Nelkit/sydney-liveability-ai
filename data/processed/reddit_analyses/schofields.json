@@ -5,35 +5,43 @@
   "aspects": {
     "transport": {
       "score": 0.605,
-      "mentions": 47
+      "mentions": 47,
+      "raw_score": 0.605
     },
     "community": {
       "score": 0.55,
-      "mentions": 52
+      "mentions": 52,
+      "raw_score": 0.55
     },
     "safety": {
       "score": 0.494,
-      "mentions": 13
+      "mentions": 13,
+      "raw_score": 0.494
     },
     "nightlife": {
       "score": 0.611,
-      "mentions": 6
+      "mentions": 6,
+      "raw_score": 0.611
     },
     "affordability": {
       "score": 0.732,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.732
     },
     "green_space": {
       "score": 0.781,
-      "mentions": 9
+      "mentions": 9,
+      "raw_score": 0.781
     },
     "noise": {
       "score": 0.888,
-      "mentions": 4
+      "mentions": 4,
+      "raw_score": 0.888
     },
     "food_and_cafe": {
       "score": 0.877,
-      "mentions": 7
+      "mentions": 7,
+      "raw_score": 0.877
     }
   },
   "emotions": {
@@ -97,5 +105,7 @@
       "url": "https://reddit.com/r/sydney/comments/1m1y1fr/why_is_sydney_wifimobile_data_so_bad_in_some_areas/",
       "score": 46
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }
