@@ -1,0 +1,86 @@
+{
+  "suburb": "Wisemans Ferry",
+  "post_count": 7,
+  "fetched_at": "2026-04-18T02:19:28.003276+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.613,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.672,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.547,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.526,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.926,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6771,
+    "surprise": 0.099,
+    "fear": 0.0749,
+    "joy": 0.0965,
+    "anger": 0.0193,
+    "sadness": 0.0257,
+    "disgust": 0.0074
+  },
+  "narrative": "Reddit discussions about Wisemans Ferry are most positive about green space (0.93) and safety (0.67). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Tawny frogmouth\nHad a tawny frogmouth just chillin on my power line out the front door. Here’s some grainy pictures . Around wisemans ferry area \n\n\nIt acknowledged us which was cool. \n\nThen it flew aw",
+      "url": "https://reddit.com/r/sydney/comments/1ajzd3r/tawny_frogmouth/",
+      "score": 25
+    },
+    {
+      "text": "if driving is the point could head out to wisemans ferry. cross the fery and turn left to st albans, past a few colonial cemeteries at the settlers arms pub, or turn right for some great driving roads",
+      "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l48ynkw/",
+      "score": 18
+    },
+    {
+      "text": "St Albans out.past Wisemans ferry",
+      "url": "https://reddit.com/r/sydney/comments/1bup1a7/people_of_sydney_isolated_pubs_with_a_view/kxw6zzy/",
+      "score": 9
+    },
+    {
+      "text": "Drive up to berowra waters and take the barge across, maybe have lunch down there. Or drive out to Wisemans Ferry, take the barge across and drive through Spencer up towards Gosford and come back down",
+      "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l48zw9a/",
+      "score": 5
+    },
+    {
+      "text": "To Wisemans Ferry via Dural and then back via Spencer, Sommersby, and the old Pacific Highway.",
+      "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l49n1j8/",
+      "score": 3
+    },
+    {
+      "text": "Yes. Unless you specifically need the car. take the train.\n\nAbsolute CF at the start of any holiday period.\n\nWindsor and then the Putty road would be faster.\n\nAlso, Dural, Wisemans Ferry, then Cessnoc",
+      "url": "https://reddit.com/r/sydney/comments/1bn4er5/driving_out_of_sydney_this_easter_long_weekend/kwkshmb/",
+      "score": 2
+    },
+    {
+      "text": "Just got back from taking myself on a road trip to Wisemans Ferry. Was a lovely drive with the most floating through the trees.\n\n10/10 start for my garden leave. \n\nNot sure what's on the cards for tom",
+      "url": "https://reddit.com/r/sydney/comments/1bt7wui/sydney_daily_random_discussion_thread_02042024/kxnnw5z/",
+      "score": 2
+    }
+  ]
+}

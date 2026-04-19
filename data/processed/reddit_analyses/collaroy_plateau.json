@@ -1,0 +1,56 @@
+{
+  "suburb": "Collaroy Plateau",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:05.675959+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.438,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.438,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.438,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4922,
+    "surprise": 0.3355,
+    "fear": 0.0659,
+    "sadness": 0.0498,
+    "anger": 0.0301,
+    "joy": 0.0172,
+    "disgust": 0.0093
+  },
+  "narrative": "Reddit discussions about Collaroy Plateau are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about community (0.44) and nightlife (0.44). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Not sure if all are still there but I know there were ones in Manly vale, allambie heights, white bay park in Balmain, Bondi beach, belrose, hockey ground wall in Newtown, CP wall in collaroy plateau",
+      "url": "https://reddit.com/r/sydney/comments/1aonuyu/legal_graffiti_walls_in_sydney/kq1f1yf/",
+      "score": 4
+    }
+  ]
+}

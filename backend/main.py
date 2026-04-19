@@ -1,8 +1,12 @@
 """FastAPI entry point for Sydney Liveability Explorer backend."""
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from api.reddit_router import router as reddit_router
+from api.router import router as system_router
 from api.chat import router as chat_router
 from api.civic import router as civic_router
 from config import settings
@@ -41,3 +45,5 @@ app.add_middleware(
 
 app.include_router(chat_router)
 app.include_router(civic_router)
+app.include_router(system_router)
+app.include_router(reddit_router)

@@ -1,0 +1,101 @@
+{
+  "suburb": "The Ponds",
+  "post_count": 34,
+  "fetched_at": "2026-04-18T02:11:25.775452+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.554,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.511,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.65,
+      "mentions": 18
+    },
+    "nightlife": {
+      "score": 0.555,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.564,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.912,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.845,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.1282,
+    "sadness": 0.0796,
+    "joy": 0.0577,
+    "fear": 0.0405,
+    "neutral": 0.4692,
+    "anger": 0.0759,
+    "surprise": 0.1488
+  },
+  "narrative": "Reddit discussions about The Ponds are most positive about transport (0.91) and food and cafe (0.84). Residents are most critical about affordability (0.51) and noise (0.50). This analysis is based on 34 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Housing in The Ponds, Western Sydney Australia",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/",
+      "score": 1431
+    },
+    {
+      "text": "Yep.\n\nBased on satellite imagery, this might even be right next to it. Take a look around Beauchamp Drive, The Ponds.",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0twonf/",
+      "score": 260
+    },
+    {
+      "text": "I’ve lived in areas like this before. I rented a home at the ponds and I could the next door neighbours kid playing his drums or raging while gaming.",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0u1v3e/",
+      "score": 162
+    },
+    {
+      "text": "Referencing the street at the bottom on the image, this is what would have been a perfect example for medium-density living. \n\nAll those houses could have been symmetrically attached but instead you'v",
+      "url": "https://reddit.com/r/sydney/comments/1da2q6i/i_recently_shot_a_house_next_to_the_big_ponds/l7hqq6p/",
+      "score": 116
+    },
+    {
+      "text": "The Ponds is pretty nice. The parklands are a great place to go for a run/bike. Fairly close to a couple of Metro stations as well that’ll soon go directly into the CBD. ",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0tyiyh/",
+      "score": 85
+    },
+    {
+      "text": "The Ponds are not impacted by floodplain issues.... Marsden Park (Elara specifically) on the other hand? 🥴🌊",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0ua9x8/",
+      "score": 77
+    },
+    {
+      "text": "The Ponds of Alexandria",
+      "url": "https://reddit.com/r/sydney/comments/1dfl2vj/alexandria_ponds/l8jrd84/",
+      "score": 72
+    },
+    {
+      "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kive325/",
+      "score": 51
+    },
+    {
+      "text": "I remember a while back residents of the Ponds were petitioning to be removed from Blacktown council and added to The Hills council instead 😂",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxyagzf/",
+      "score": 30
+    },
+    {
+      "text": "I was about to say. I accidentally drove through there one time and was like \"this is The Ponds?!\". Either it doesn't look like this from the ground or this image only captures a certain section of it",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0u3ry0/",
+      "score": 30
+    }
+  ]
+}

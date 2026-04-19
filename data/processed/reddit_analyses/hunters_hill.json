@@ -1,0 +1,101 @@
+{
+  "suburb": "Hunters Hill",
+  "post_count": 31,
+  "fetched_at": "2026-04-18T02:12:11.909570+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.324,
+      "mentions": 7
+    },
+    "community": {
+      "score": 0.311,
+      "mentions": 22
+    },
+    "safety": {
+      "score": 0.358,
+      "mentions": 8
+    },
+    "noise": {
+      "score": 0.399,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.493,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.528,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.86,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.238,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "anger": 0.1115,
+    "disgust": 0.1059,
+    "neutral": 0.5642,
+    "sadness": 0.0455,
+    "surprise": 0.0554,
+    "fear": 0.0714,
+    "joy": 0.0462
+  },
+  "narrative": "Reddit discussions about Hunters Hill are most positive about affordability (0.86) and food and cafe (0.53). Residents are most critical about community (0.31) and green space (0.24). This analysis is based on 31 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "As the article says, you got some LGAs with no heritage listed properties and some like Hunters Hill with practically all of it listed as “heritage”. As the councilor blatantly said, they are trying t",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgufti6/",
+      "score": 263
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "You got LGAs in Western Sydney having their population increase 10+% year after year and then you’ve got Waverley and hunters hill complaining about “transport” and “schools”. \n\nThey are the ones who ",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgutfai/",
+      "score": 127
+    },
+    {
+      "text": "Part of Gladesville is in hunters hill council, who are notoriously nimby.",
+      "url": "https://reddit.com/r/sydney/comments/1dhs12k/is_it_just_me_or_is_gladesville_kinda_rundown/l8yxin2/",
+      "score": 112
+    },
+    {
+      "text": "At least the soil isn’t radioactive like it was in Hunters Hill. Or the horrors hidden in the soil at Rhodes.",
+      "url": "https://reddit.com/r/sydney/comments/198nvm2/rozelle_parklands_an_australian_best/ki8mk1e/",
+      "score": 108
+    },
+    {
+      "text": "[Ongoing incident] Burns Bay Rd closed at Church Street, Hunters Hill, due to police operation — avoid the area if possible",
+      "url": "https://reddit.com/r/sydney/comments/1azkc16/ongoing_incident_burns_bay_rd_closed_at_church/",
+      "score": 95
+    },
+    {
+      "text": "It was so easy for them to prey. I went to St Josephs in Hunters Hill in the 80s and there was SO much suss behavior by the brothers. For instance, we had to have group showers like you see in prison.",
+      "url": "https://reddit.com/r/sydney/comments/1b6yn4u/what_on_earth_was_going_on_with_sydney_private/ktf6j8v/",
+      "score": 66
+    },
+    {
+      "text": "Hunters Hill Sunset",
+      "url": "https://reddit.com/r/sydney/comments/1i8p2mi/hunters_hill_sunset/",
+      "score": 63
+    },
+    {
+      "text": "The demarcation point you're after is the Spit Bridge. \n\nWhat is confusing there is that both Manly AND Palm Beach are somehow Northern Beaches when it's quicker to get to the airport from Manly than ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxgd0z/",
+      "score": 31
+    },
+    {
+      "text": "I’ve noticed everyone thinks they are in the more expensive regions and the cheaper region nearby starts two suburbs away. This applies even when their suburb is across a major body of water from the ",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxy7txd/",
+      "score": 29
+    }
+  ]
+}

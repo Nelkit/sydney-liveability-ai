@@ -1,0 +1,101 @@
+{
+  "suburb": "Artarmon",
+  "post_count": 70,
+  "fetched_at": "2026-04-18T02:02:56.565972+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.907,
+      "mentions": 17
+    },
+    "community": {
+      "score": 0.881,
+      "mentions": 37
+    },
+    "safety": {
+      "score": 0.901,
+      "mentions": 16
+    },
+    "green_space": {
+      "score": 0.97,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.964,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.956,
+      "mentions": 11
+    },
+    "food_and_cafe": {
+      "score": 0.963,
+      "mentions": 11
+    },
+    "noise": {
+      "score": 0.423,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "surprise": 0.1946,
+    "neutral": 0.4849,
+    "fear": 0.0205,
+    "anger": 0.1128,
+    "disgust": 0.0546,
+    "sadness": 0.0633,
+    "joy": 0.0693
+  },
+  "narrative": "Reddit discussions about Artarmon are most positive about green space (0.97) and affordability (0.96). Residents are most critical about community (0.88) and noise (0.42). This analysis is based on 70 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "AirTag Jacket Saga: The Final Update\nSee my last posts for the full story. I received lots of requests for an update, so here it is. Fair warning: I’m going to dramatise this a bit lol.\n\nEssentially, ",
+      "url": "https://reddit.com/r/sydney/comments/1er2cx9/airtag_jacket_saga_the_final_update/",
+      "score": 5871
+    },
+    {
+      "text": "I hate Artarmon Nazis!",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/",
+      "score": 1071
+    },
+    {
+      "text": "Could there be a softer bunch of Nazis than an Artarmon Nazi?",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/kjwwaev/",
+      "score": 647
+    },
+    {
+      "text": "BRGR in Artarmon this morning\nHampden road in Artarmon is partially closed this morning as a result.",
+      "url": "https://reddit.com/r/sydney/comments/1et60fr/brgr_in_artarmon_this_morning/",
+      "score": 473
+    },
+    {
+      "text": "Audi A3 in Artarmon - absolute dog act\nI thought I'd seen everything. Apparently not.\n\nNote: my partner took the photos from the passenger seat",
+      "url": "https://reddit.com/r/sydney/comments/1q2p8rj/audi_a3_in_artarmon_absolute_dog_act/",
+      "score": 456
+    },
+    {
+      "text": "Was asked why of all places would they start at Artarmon and, to be honest, the parking is pretty great there",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/kjwytwg/",
+      "score": 302
+    },
+    {
+      "text": "\"Hey, what's going on?\"      \r  \n\"Ah, those bums won their court case, so they're marching today.\"       \r  \n\"What bums?\"     \r  \n\"The fucking Nazi party.\"     \r  \n\"Artarmon Nazis.\"     \r  \n\"I hate Ar",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/kjwvmus/",
+      "score": 291
+    },
+    {
+      "text": "Artarmon Village Upgrade nears completion \nSome happy snaps of the new precinct. Love to see another one of Sydney’s Village ‘hearts’ getting a high quality upgrade. New features seem to include widen",
+      "url": "https://reddit.com/r/sydney/comments/1euyevf/artarmon_village_upgrade_nears_completion/",
+      "score": 260
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "What does this place in Artarmon, North Shore do?\nI always wonder when I go over the walking / cycling bridge above it.",
+      "url": "https://reddit.com/r/sydney/comments/1bc04ni/what_does_this_place_in_artarmon_north_shore_do/",
+      "score": 188
+    }
+  ]
+}

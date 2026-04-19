@@ -1,0 +1,101 @@
+{
+  "suburb": "Dee Why",
+  "post_count": 60,
+  "fetched_at": "2026-04-18T02:04:50.613966+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.294,
+      "mentions": 10
+    },
+    "community": {
+      "score": 0.573,
+      "mentions": 35
+    },
+    "transport": {
+      "score": 0.65,
+      "mentions": 17
+    },
+    "noise": {
+      "score": 0.622,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.551,
+      "mentions": 17
+    },
+    "green_space": {
+      "score": 0.904,
+      "mentions": 10
+    },
+    "affordability": {
+      "score": 0.913,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.741,
+      "mentions": 7
+    }
+  },
+  "emotions": {
+    "fear": 0.1025,
+    "disgust": 0.0484,
+    "sadness": 0.0708,
+    "surprise": 0.2702,
+    "neutral": 0.3816,
+    "anger": 0.0653,
+    "joy": 0.0612
+  },
+  "narrative": "Reddit discussions about Dee Why are most positive about affordability (0.91) and green space (0.90). Residents are most critical about nightlife (0.55) and safety (0.29). This analysis is based on 60 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "A second shark attack has just been reported in Sydney\nMoments ago another reported shark attack in Dee Why, NSW, on a 11 year old boy whilst surfing. The victim is believed to be uninjured but his su",
+      "url": "https://reddit.com/r/sydney/comments/1qgubyl/a_second_shark_attack_has_just_been_reported_in/",
+      "score": 548
+    },
+    {
+      "text": "Ranking all 27 music venues I’ve been to in Sydney, from worst to best\nLet’s just get straight into it.\n\n28 – **Luna Park Big Top** (Shows seen: King Gizzard and the Lizard Wizard)\n\nYeah I’m pretty co",
+      "url": "https://reddit.com/r/sydney/comments/1hjvaqd/ranking_all_27_music_venues_ive_been_to_in_sydney/",
+      "score": 442
+    },
+    {
+      "text": "Sydney, you are a showoff!\nTook some coastal walks along Dee Why to Palm Beach.",
+      "url": "https://reddit.com/r/sydney/comments/1nxf9b4/sydney_you_are_a_showoff/",
+      "score": 418
+    },
+    {
+      "text": "Poseidon is angry at dee why today…",
+      "url": "https://reddit.com/r/sydney/comments/1k1t6rz/poseidon_is_angry_at_dee_why_today/",
+      "score": 277
+    },
+    {
+      "text": "Dee why 6am",
+      "url": "https://reddit.com/r/sydney/comments/1phl90o/dee_why_6am/",
+      "score": 263
+    },
+    {
+      "text": "Dee Why this evening",
+      "url": "https://reddit.com/r/sydney/comments/1padrbe/dee_why_this_evening/",
+      "score": 166
+    },
+    {
+      "text": "Dee Why and Curl Curl were epic tonight with the wind and waves.  Crazy that you'd go surfing in it, but I suppose big waves are big waves",
+      "url": "https://reddit.com/r/sydney/comments/1i3epry/dee_why_and_curl_curl_were_epic_tonight_with_the/",
+      "score": 158
+    },
+    {
+      "text": "Dee Why",
+      "url": "https://reddit.com/r/sydney/comments/1fwi8bg/dee_why/",
+      "score": 151
+    },
+    {
+      "text": "Watching people surfing at Dee Why this morning",
+      "url": "https://reddit.com/r/sydney/comments/1h7q3g0/watching_people_surfing_at_dee_why_this_morning/",
+      "score": 120
+    },
+    {
+      "text": "NSW Government Petition - Conduct a Feasibility Study for a Northern Beaches Metro Line\nDue to all of the issues we on the Northern Beaches experience with transport to the city and beyond, I've submi",
+      "url": "https://reddit.com/r/sydney/comments/1jtbnjw/nsw_government_petition_conduct_a_feasibility/",
+      "score": 118
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Annandale",
+  "post_count": 77,
+  "fetched_at": "2026-04-18T02:01:32.271693+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.71,
+      "mentions": 62
+    },
+    "nightlife": {
+      "score": 0.637,
+      "mentions": 26
+    },
+    "transport": {
+      "score": 0.642,
+      "mentions": 23
+    },
+    "safety": {
+      "score": 0.618,
+      "mentions": 18
+    },
+    "food_and_cafe": {
+      "score": 0.482,
+      "mentions": 11
+    },
+    "green_space": {
+      "score": 0.546,
+      "mentions": 12
+    },
+    "affordability": {
+      "score": 0.547,
+      "mentions": 11
+    },
+    "noise": {
+      "score": 0.836,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "joy": 0.094,
+    "neutral": 0.5318,
+    "surprise": 0.1469,
+    "sadness": 0.0543,
+    "anger": 0.0435,
+    "fear": 0.0576,
+    "disgust": 0.0719
+  },
+  "narrative": "Reddit discussions about Annandale are most positive about noise (0.84) and community (0.71). Residents are most critical about green space (0.55) and food and cafe (0.48). This analysis is based on 77 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Annandale as the Eastern Suburbs is a very big lol",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxx8asn/",
+      "score": 649
+    },
+    {
+      "text": "A walk along Parramatta Road\nA walk along what once was a grand stretch of businesses but are now mostly unloved. There's about 4km of mostly heritage-looking shopfronts. It's sad to see so many grand",
+      "url": "https://reddit.com/r/sydney/comments/1hw82zn/a_walk_along_parramatta_road/",
+      "score": 620
+    },
+    {
+      "text": "It never amazes me how much Sydneysiders redefine the location of their suburb.\nToday I encountered someone referring to their suburb of Annandale as “the Eastern Suburbs”. Not sure what they were aim",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/",
+      "score": 602
+    },
+    {
+      "text": "Johnstone's Creek in Annandale\nJust walked past this, so haven't had chance to Photoshop fuck newscorp on to it, but certainly grabbed my attention, first thought it was a housing price piece, wasn't ",
+      "url": "https://reddit.com/r/sydney/comments/1lfrcgg/johnstones_creek_in_annandale/",
+      "score": 352
+    },
+    {
+      "text": "This is even more cooked than that lunatic the OP of that other post mentioned who claimed Annandale was an Eastern Suburb.",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxyhvx3/",
+      "score": 267
+    },
+    {
+      "text": "Annandale is inner city or inner west.\n\nKings Park is in the blacktown area. North of blacktown.\n\nThe shire is definitely part of sydney, but denoted anywhere south of the George’s River and north of ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxa2pb/",
+      "score": 166
+    },
+    {
+      "text": "All those people that are saying they're all the same - you don't know what you're talking about.\n\nYeah, the ingredients are the same and there's only a few meat vendors. How about the bread and salad",
+      "url": "https://reddit.com/r/sydney/comments/1ci3gap/best_kebab_in_sydney/l27bnbj/",
+      "score": 105
+    },
+    {
+      "text": "3 people closed the Annandale - of which, one was DEAD, by the time it closed!?!?",
+      "url": "https://reddit.com/r/sydney/comments/1dicx4c/future_of_sydney_live_venue_targeted_by_nimbys_in/l93suab/",
+      "score": 101
+    },
+    {
+      "text": "I never understood this. The Annandale is the perfect venue for music being on parramatta road, in largely a commercial area. Surely the music wasn't penetrating down the street.",
+      "url": "https://reddit.com/r/sydney/comments/1dicx4c/future_of_sydney_live_venue_targeted_by_nimbys_in/l942ok7/",
+      "score": 79
+    },
+    {
+      "text": "Yeah no contention there. I'd even let Annandale be considered \"city fringe\", but no way is it Eastern",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxy1577/",
+      "score": 56
+    }
+  ]
+}

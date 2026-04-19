@@ -1,0 +1,101 @@
+{
+  "suburb": "Bundeena",
+  "post_count": 52,
+  "fetched_at": "2026-04-18T02:06:14.464651+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.862,
+      "mentions": 23
+    },
+    "community": {
+      "score": 0.773,
+      "mentions": 42
+    },
+    "nightlife": {
+      "score": 0.533,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.727,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.7,
+      "mentions": 21
+    },
+    "noise": {
+      "score": 0.853,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.723,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "joy": 0.1301,
+    "neutral": 0.5947,
+    "surprise": 0.0921,
+    "fear": 0.0775,
+    "anger": 0.0222,
+    "sadness": 0.0637,
+    "disgust": 0.0197
+  },
+  "narrative": "Reddit discussions about Bundeena are most positive about green space (0.86) and noise (0.85). Residents are most critical about nightlife (0.53) and affordability (0.50). This analysis is based on 52 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "The Royal National Park today\nFrom the 'Coastal Classic' Otford to Bundeena 30km trail run today. \n\nThe Royal National Park is a true natural treasure and Sydneysiders are lucky to have this gem in ou",
+      "url": "https://reddit.com/r/sydney/comments/1fazq57/the_royal_national_park_today/",
+      "score": 510
+    },
+    {
+      "text": "A (muddy) walk from Engadine to Bundeena through the Royal National Park\nTook a walk through the Royal National Park this morning starting at Engadine station and finishing at the Bundeena ferry.\n\nGre",
+      "url": "https://reddit.com/r/sydney/comments/1jwftlk/a_muddy_walk_from_engadine_to_bundeena_through/",
+      "score": 436
+    },
+    {
+      "text": "Bundeena you beauty\nThis was only a quarter of royal national park coastal trail, from Bundeena.",
+      "url": "https://reddit.com/r/sydney/comments/1mkon71/bundeena_you_beauty/",
+      "score": 427
+    },
+    {
+      "text": "Looking at Cronulla from Bundeena",
+      "url": "https://reddit.com/r/sydney/comments/1k6pail/looking_at_cronulla_from_bundeena/",
+      "score": 161
+    },
+    {
+      "text": "Bundeena Ferry at Cronulla",
+      "url": "https://reddit.com/r/sydney/comments/1guh4t4/bundeena_ferry_at_cronulla/",
+      "score": 141
+    },
+    {
+      "text": "NPWS shuts down a boat ramp for the long weekend. Boat owner has a sook\nAdditional context: https://www2.environment.nsw.gov.au/news/bonnie-vale-boat-launch-closed-australia-day-long-weekend\n\n\"To ensu",
+      "url": "https://reddit.com/r/sydney/comments/1ib219j/npws_shuts_down_a_boat_ramp_for_the_long_weekend/",
+      "score": 126
+    },
+    {
+      "text": "A New Coastal Walk Has Just Opened In Sydney – With Wild Clifftops And Incredible Ocean Views\nThis looks really cool. Seems to loop around past the old fisheries research station to Darook Park (in th",
+      "url": "https://reddit.com/r/sydney/comments/1ptshq8/a_new_coastal_walk_has_just_opened_in_sydney_with/",
+      "score": 106
+    },
+    {
+      "text": "solo getaway ideas outside sydney\nHi all! I’m looking for recommendations for a peaceful solo date/getaway spot outside of Sydney.\n\nI’m hoping for somewhere with a beach, a quiet atmosphere, and ideal",
+      "url": "https://reddit.com/r/sydney/comments/1lcfxha/solo_getaway_ideas_outside_sydney/",
+      "score": 57
+    },
+    {
+      "text": "Bundeena from Cronulla",
+      "url": "https://reddit.com/r/sydney/comments/1o81avp/bundeena_from_cronulla/",
+      "score": 56
+    },
+    {
+      "text": "Day trip to Bundeena\n(photos from a little while ago)",
+      "url": "https://reddit.com/r/sydney/comments/1kwm28o/day_trip_to_bundeena/",
+      "score": 47
+    }
+  ]
+}

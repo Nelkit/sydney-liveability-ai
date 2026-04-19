@@ -1,0 +1,91 @@
+{
+  "suburb": "Mount Annan",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:19:04.114174+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.524,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.527,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6486,
+    "disgust": 0.0319,
+    "sadness": 0.0274,
+    "fear": 0.0432,
+    "anger": 0.0248,
+    "surprise": 0.093,
+    "joy": 0.1312
+  },
+  "narrative": "Reddit discussions about Mount Annan are most positive about community (0.53) and green space (0.52). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Thers wallabies in the Mount Annan botanic Gardens",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5khqpx/",
+      "score": 52
+    },
+    {
+      "text": "You can see the city from Mount Annan",
+      "url": "https://reddit.com/r/sydney/comments/198tfaa/what_is_a_thing_sydney_does_better_than_any_other/ki9q8bp/",
+      "score": 8
+    },
+    {
+      "text": "T: with the lot at a local takeaway\n\nA: Pizzabakers (formerly Base n Burger) at Mount Annan\n\nAA: chips",
+      "url": "https://reddit.com/r/sydney/comments/1bmepix/20240324_not_another_night_thread/kwb5px8/",
+      "score": 8
+    },
+    {
+      "text": "Pizzabakers at Mount Annan",
+      "url": "https://reddit.com/r/sydney/comments/1ah7dk7/sydney_daily_random_discussion_thread_03022024/konh1gt/",
+      "score": 5
+    },
+    {
+      "text": "Mount Annan Botanical Gardens has a few from memory",
+      "url": "https://reddit.com/r/sydney/comments/1aj95vx/bunya_pine_cone_callan_park/kp4fdsg/",
+      "score": 2
+    },
+    {
+      "text": "We did one last year at the Australian PlantBank at Mount Annan Botanical Gardens.\n\nNice modern space with a great outdoor environment.",
+      "url": "https://reddit.com/r/sydney/comments/1ak308t/creative_meetingoffsite_spaces_in_sydney_for/kp5tzjq/",
+      "score": 2
+    },
+    {
+      "text": "# Australian Botanic Garden Mount Annan \n\n  \nWell worth the drive there; at the top of the hill (of rolling green grass hills) it looks across the entirety of Sydney, you can see every CBD (Parra, Bur",
+      "url": "https://reddit.com/r/sydney/comments/1chkbam/best_parks_in_sydney/l280s8t/",
+      "score": 2
+    },
+    {
+      "text": "Might as well answer my own questions while I’m here. \n\nT: I’ll call her tonight, distance being a bitch that is stopping me from seeing her. Also got her the new Troy Cassar-Daley album. \n\nA: I got h",
+      "url": "https://reddit.com/r/sydney/comments/1cq2hck/12052024_mothers_night_thread/l3om3oo/",
+      "score": 2
+    }
+  ]
+}

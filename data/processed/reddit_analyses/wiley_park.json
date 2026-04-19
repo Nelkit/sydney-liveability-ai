@@ -1,0 +1,101 @@
+{
+  "suburb": "Wiley Park",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:52.554495+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.425,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.593,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.839,
+      "mentions": 6
+    },
+    "community": {
+      "score": 0.757,
+      "mentions": 10
+    },
+    "transport": {
+      "score": 0.766,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.993,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.978,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "anger": 0.0772,
+    "disgust": 0.158,
+    "fear": 0.0322,
+    "neutral": 0.5477,
+    "sadness": 0.0291,
+    "surprise": 0.1321,
+    "joy": 0.0237
+  },
+  "narrative": "Reddit discussions about Wiley Park are most positive about noise (0.99) and food and cafe (0.98). Residents are most critical about nightlife (0.50) and safety (0.42). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney: Racist graffiti targets Arabic community in Wiley Park | news.com.au",
+      "url": "https://reddit.com/r/sydney/comments/1i3drz0/sydney_racist_graffiti_targets_arabic_community/",
+      "score": 27
+    },
+    {
+      "text": "Ashfield?\n\nBelmore, Lakemba, Wiley Park, etc? \n\nRockdale? \n\nNone are particularly glamorous, but all have relatively affordable apartments, definitely less than Lane Cove with shorter commutes as well",
+      "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lagtol7/",
+      "score": 24
+    },
+    {
+      "text": "Heaps of stations in the inner city can have long waits because of the myriad complex stopping patterns. I can understand the reasoning but it's quite a rubbish level of service.\n\nFor example, there a",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvtmjx5/",
+      "score": 13
+    },
+    {
+      "text": "The NSW Liberals have moved to kill off the Minns government’s signature density reforms and overturn new planning controls at 37 train stations, where six-storey apartment blocks would be built as pa",
+      "url": "https://reddit.com/r/sydney/comments/1d7sti8/sydney_housing_crisis_liberals_move_to_kill_off/l71fee2/",
+      "score": 10
+    },
+    {
+      "text": "Yes it’s decent. I’m in Punchbowl but close to the Roseland side. I just have to cross the road and I’m technically in Roselands. Some nice houses there, people of all backgrounds, good shopping centr",
+      "url": "https://reddit.com/r/sydney/comments/1cl614i/roseland_is_a_good_suburb_to_live/l2ryfa4/",
+      "score": 9
+    },
+    {
+      "text": "There will be double the amount of seats for minor station at Wiley Park and comparable for major stations like Bankstown\n\n\nBecause less seats but more services evens out. It's comparable to Sydney tr",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvtld2w/",
+      "score": 7
+    },
+    {
+      "text": "Real Estate's site is actively shit. I filtered for the same, and there's one in Hurstville but it's actually $500 same for Wiley Park's one.",
+      "url": "https://reddit.com/r/sydney/comments/1dhp6ci/a_map_of_2_bedroom_rentals_for_400_a_week_in/l8z2uvo/",
+      "score": 7
+    },
+    {
+      "text": "> For example, there are gaps of 19 mins at peak hour at St Peters, Erskineville, Hurlstone Park, Canterbury, Wiley Park and Punchbowl.\n\nInteresting, I wasn't quite aware of that.  I'd wager that will",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvtqa2h/",
+      "score": 6
+    },
+    {
+      "text": "About 75% of sydney suburbs don't have a train station. So at best I described 1/4 of suburbs. \n\nOf those with train stations go look at how many have stations surrounded by parking. Look at campsie a",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiewu8h/",
+      "score": 3
+    },
+    {
+      "text": "They really need to bring back buses like the one from Wiley Park to Beverly Hills before they shut the line down. Maybe it's selfish to say but I have a specific issue with my back where I can't stan",
+      "url": "https://reddit.com/r/sydney/comments/191g688/bankstown_to_sydenham_train_line_shutdown_from/kh3c5jd/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "suburb": "Woolwich",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:19:13.073988+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.269,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.679,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.866,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.855,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.903,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1559,
+    "neutral": 0.5566,
+    "anger": 0.0271,
+    "sadness": 0.0402,
+    "surprise": 0.0736,
+    "joy": 0.1371,
+    "disgust": 0.0094
+  },
+  "narrative": "Reddit discussions about Woolwich are most positive about safety (0.90) and transport (0.87). Residents are most critical about noise (0.50) and community (0.27). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Woolwich - Clarkes Point Reserve",
+      "url": "https://reddit.com/r/sydney/comments/1jy32gy/woolwich_clarkes_point_reserve/",
+      "score": 47
+    },
+    {
+      "text": "Does the peninsula east of Burns Bay Road (mostly occupied by Woolwich) have a name, or is it simply the Woolwich Peninsula?",
+      "url": "https://reddit.com/r/sydney/comments/1k843vo/does_the_peninsula_east_of_burns_bay_road_mostly/",
+      "score": 26
+    },
+    {
+      "text": "Cockatoo island \n\nCabramatta on the weekend \n\nWatch a show at Griffin Theatre / Fringe HQ\n\nWalk around Woolwich and catch a ferry\n\nNude beach at Lady Bay Beach",
+      "url": "https://reddit.com/r/sydney/comments/1d1i888/here_for_one_week_what_are_weird_places_things_to/l5u5nw4/",
+      "score": 20
+    },
+    {
+      "text": "The article talks about HCAs as the be-all and end-all of heritage.  Heritage listings on State/Federal registers are what I'd consider \"real\" heritage.\n\nHCAs are blanket heritage protections decided ",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgufaaf/",
+      "score": 13
+    },
+    {
+      "text": "Woolwich Pier hotel is lovely - a while back I organised a surprise bday party for hubby there and the events coodinator was very helpful.",
+      "url": "https://reddit.com/r/sydney/comments/1b8ic18/pub_wedding_reception_in_sydneysurrounds/ktphiyx/",
+      "score": 10
+    },
+    {
+      "text": "Woolwich - Charles Point Reserve",
+      "url": "https://reddit.com/r/sydney/comments/1jxytxq/woolwich_charles_point_reserve/",
+      "score": 8
+    },
+    {
+      "text": "Woolwich pier.  It’s suburban, but at the end if a peninsula and pretty quiet.  Very few pokies and they’re tucked away.  View is only from the upstairs balcony, but it’s nice over the city.   Probabl",
+      "url": "https://reddit.com/r/sydney/comments/1bup1a7/people_of_sydney_isolated_pubs_with_a_view/kxy6uhi/",
+      "score": 4
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Dundas",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:16.653888+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.768,
+      "mentions": 12
+    },
+    "transport": {
+      "score": 0.748,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.88,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.831,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.871,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.954,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.751,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5934,
+    "joy": 0.0868,
+    "surprise": 0.1128,
+    "sadness": 0.0441,
+    "anger": 0.0203,
+    "fear": 0.1176,
+    "disgust": 0.0251
+  },
+  "narrative": "Reddit discussions about Dundas are most positive about affordability (0.95) and safety (0.88). Residents are most critical about transport (0.75) and noise (0.50). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Thanks for this.  I grew up in the Telopea / Dundas areas.  They'd only be street parking around those stations unless there's been major redevelopments.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbistl7/",
+      "score": 63
+    },
+    {
+      "text": "Police Operation Telopea\nDriving home after work come to a road block in Telopea. Police, Army, Riot Squad ambos, at the Telopea shops A guy off his chops on ice robbed a store, climbed the roof,  ref",
+      "url": "https://reddit.com/r/sydney/comments/1pc04fg/police_operation_telopea/",
+      "score": 36
+    },
+    {
+      "text": "The Parramatta light rail is miles ahead of the Carlingford line. Friends lived in Dundas but never used it, how is every hour acceptable for a service in Sydney. And you have to change at Clyde as we",
+      "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kzlhy6l/",
+      "score": 25
+    },
+    {
+      "text": ">Places like Hornsby Heights, St Ives Chase are just extensions of their main suburbs that are on higher terrain / hillier, more residential areas\n\nDundas Valley was named after splitting from Dundas ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnrgmh/",
+      "score": 18
+    },
+    {
+      "text": "There's some major stuff coming on the Dundas side but it's 2 to 3 years away at least. Until then, yeah just street parking.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbiusdm/",
+      "score": 16
+    },
+    {
+      "text": "I grew up in Dundas and Ermington and this would’ve been fantastic for my family fifteen years ago, when we didn’t have a car and depended on buses with terrible frequencies to get us anywhere.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj31uu/",
+      "score": 16
+    },
+    {
+      "text": "They've already significantly increased parking at the Dundas station which should be available on opening day by the look of it. Not so much at telopea or carlingford I think.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj0v74/",
+      "score": 10
+    },
+    {
+      "text": "They don't even need to do this. They can simply branch off at Dundas, run up the median of Kissing Point Rd, then right across Brush farm to Rutledge and then link with the county road reserve which ",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbjgf9d/",
+      "score": 8
+    },
+    {
+      "text": "Wasn't Oatlands part of Dundas at one point in time as well, but a bit of a stigma for them to be associated with those housos down the road and probably their house values more importantly.  So renam",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvoc29h/",
+      "score": 6
+    },
+    {
+      "text": "Dundas Valley is good to go back to The Ponds, because I don't want to be associated with Dundas.",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjgb4ws/",
+      "score": 5
+    }
+  ]
+}

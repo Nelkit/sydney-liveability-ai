@@ -1,0 +1,66 @@
+{
+  "suburb": "Avalon Beach",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:28.756876+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.591,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.883,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.824,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.824,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5602,
+    "surprise": 0.3678,
+    "sadness": 0.033,
+    "joy": 0.0186,
+    "fear": 0.0088,
+    "anger": 0.0061,
+    "disgust": 0.0056
+  },
+  "narrative": "Reddit discussions about Avalon Beach are most positive about food and cafe (0.88) and transport (0.82). Residents are most critical about safety (0.50) and green space (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Avalon Beach",
+      "url": "https://reddit.com/r/sydney/comments/1py3l69/avalon_beach/",
+      "score": 699
+    },
+    {
+      "text": "Moonrise at Avalon Beach\nCaptured last night, was enjoying a succulent Chinese meal from the Chinese restaurant near Avalon Woolies. Was amazed how the moon glimmers through the clouds.",
+      "url": "https://reddit.com/r/sydney/comments/1rl2zyf/moonrise_at_avalon_beach/",
+      "score": 215
+    },
+    {
+      "text": "I looked in the About section and there wasn’t a whole lot of info about rental cars or ride share.\n\nMy wife, infant, and I are visiting from USA in a few weeks. We’re planning to stay in Sydney for a",
+      "url": "https://reddit.com/r/sydney/comments/1akdgy3/sydney_daily_random_discussion_thread_07022024/kp8wo3g/",
+      "score": 5
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Regents Park",
+  "post_count": 20,
+  "fetched_at": "2026-04-18T02:15:14.192336+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.558,
+      "mentions": 17
+    },
+    "community": {
+      "score": 0.573,
+      "mentions": 18
+    },
+    "affordability": {
+      "score": 0.714,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.739,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.697,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.45,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.664,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.6541,
+    "surprise": 0.0633,
+    "sadness": 0.0694,
+    "joy": 0.0217,
+    "fear": 0.1035,
+    "anger": 0.018,
+    "disgust": 0.0701
+  },
+  "narrative": "Reddit discussions about Regents Park are most positive about noise (0.74) and affordability (0.71). Residents are most critical about nightlife (0.50) and safety (0.45). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney trains network disruptions.\nThe power supply issues at Strathfield from yesterday are still ongoing, train services will not be to time table and will likely be infrequent and sporadic.\n\nT1 Wes",
+      "url": "https://reddit.com/r/sydney/comments/1krab5m/sydney_trains_network_disruptions/",
+      "score": 351
+    },
+    {
+      "text": "Looks like during the metro works between Sydenham and Bankstown, they will run T3 trains to the city via Regents Park and Lidcombe, and a new T6 shuttle service between Bankstown and Lidcombe.\n\nThen ",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1uwlau/",
+      "score": 25
+    },
+    {
+      "text": "City circle runs in both directions.\n\n\nThe current Bankstown line has 4x in each direction.\n\n\nSo 4x will go to East Hills line and the other 4 will go to regents park.\n\n\nT2 and T3 share a track pair s",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1uwg5x/",
+      "score": 20
+    },
+    {
+      "text": "It's fine, pretty boring. I work in regents park and live in Parra. If I were you I'd consider looking at housing in parra and driving to chester hill, its only like 15-20mins on a normal day.",
+      "url": "https://reddit.com/r/sydney/comments/1d3k4wt/chester_hill/l69uqtk/",
+      "score": 14
+    },
+    {
+      "text": "It’s to free up space for more Sydney Trains services towards Liverpool from the City, with existing T2 services via Granville, and the additional services that will run via Regents Park which inherit",
+      "url": "https://reddit.com/r/sydney/comments/1dmx97t/psa_confirmed_sydney_metro_to_open_in_august/la0hczr/",
+      "score": 10
+    },
+    {
+      "text": "[Daily Telegraph article](https://www.dailytelegraph.com.au/news/nsw/southwest-metro-travel-times-to-double-minister-warns-as-new-western-sydney-train-lines-revealed/news-story/912d0853eedb5e4bd2d10ed",
+      "url": "https://reddit.com/r/sydney/comments/1cg5d0d/sydney_daily_random_discussion_thread_30042024/l1up7tc/",
+      "score": 6
+    },
+    {
+      "text": "The T2 is crap because you have to share tracks between Lidcombe and Central.\n\n\nThere is only 6 tracks east of Strathfield as well.\n\n\n2 for BMT, CCN and T1 services \n2 for T9\n\n\nWhich leaves 2 for T2 a",
+      "url": "https://reddit.com/r/sydney/comments/1d7ik99/t2_line_this_morningwell_actually_almost_every/l71b07l/",
+      "score": 5
+    },
+    {
+      "text": "Oh that's a good one. All I ever saw were stickers added to some of the maps where the logo had the slogan \"We don't know whether we're coming or going\" underneath. And I'm right with you on the T num",
+      "url": "https://reddit.com/r/sydney/comments/1dsk5a1/how_much_has_the_sydney_rail_lines_changed_since/lb39li3/",
+      "score": 5
+    },
+    {
+      "text": "I can't guarantee it but it's most likely there will be some new service running through Regents Park and onto the Inner West line but it's impossible to know where these will stop in the long term. T",
+      "url": "https://reddit.com/r/sydney/comments/194rbf0/new_train_timetable/khi2m18/",
+      "score": 3
+    },
+    {
+      "text": "Don't forget about the metro conversion of the Bankstown Line. One of the plans is that the existing Sydney Trains will operate in shuttle mode between Bankstown and Regents Park / Lidcombe / Liverpoo",
+      "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/ky8kjid/",
+      "score": 3
+    }
+  ]
+}

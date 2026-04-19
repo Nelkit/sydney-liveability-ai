@@ -1,0 +1,76 @@
+{
+  "suburb": "Maianbar",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:59.034829+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.271,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.407,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.638,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.653,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.711,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.494,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.1495,
+    "neutral": 0.2533,
+    "sadness": 0.1912,
+    "anger": 0.0138,
+    "surprise": 0.2071,
+    "fear": 0.0158,
+    "joy": 0.1693
+  },
+  "narrative": "Reddit discussions about Maianbar are most positive about noise (0.71) and food and cafe (0.65). Residents are most critical about community (0.41) and transport (0.27). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "If you want places with poor public transport out that way try Maianbar. It has the bus route 989 to Miranda Station that runs one return trip on Fridays only. Yes. A once weekly bus service.  Has to ",
+      "url": "https://reddit.com/r/sydney/comments/18xbbxl/commuting_in_kurnell/kg3abti/",
+      "score": 57
+    },
+    {
+      "text": "Poor [Bundeena](https://en.m.wikipedia.org/wiki/Bundeena,_New_South_Wales) and [Maianbar](https://en.m.wikipedia.org/wiki/Maianbar) left to rot uncategorised:(",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxzo1mn/",
+      "score": 21
+    },
+    {
+      "text": ">Maianbar\n\nomg lol once a week...",
+      "url": "https://reddit.com/r/sydney/comments/18xbbxl/commuting_in_kurnell/kg3b9jz/",
+      "score": 8
+    },
+    {
+      "text": "Catch the ferry to Bundeena and take the short walk to Jibbon Beach. It's glorious. Or walk the other way to Maianbar via Bonnie Vale beach - but be warned the campground will be bogan city this long ",
+      "url": "https://reddit.com/r/sydney/comments/1abauyc/walks_around_the_sutherland_shire/kjme5ed/",
+      "score": 4
+    },
+    {
+      "text": "Train to Kiama, look around town and check out the blow hole.\n\nTrain to Cronulla, ferry to Bundeena. Check out the town, lunch with a view at the rsl, head to Bonnie Vale and take a short walk to Maia",
+      "url": "https://reddit.com/r/sydney/comments/1d9o7pa/sydney_daily_random_discussion_thread_07062024/l7gsucz/",
+      "score": 3
+    }
+  ]
+}

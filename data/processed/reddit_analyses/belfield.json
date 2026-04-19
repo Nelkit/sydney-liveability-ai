@@ -1,0 +1,91 @@
+{
+  "suburb": "Belfield",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:18:46.783228+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.808,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.724,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.816,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.935,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4618,
+    "surprise": 0.1401,
+    "joy": 0.1185,
+    "anger": 0.0435,
+    "disgust": 0.0214,
+    "sadness": 0.131,
+    "fear": 0.0836
+  },
+  "narrative": "Reddit discussions about Belfield are most positive about noise (0.94) and safety (0.82). Residents are most critical about nightlife (0.50) and food and cafe (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "What Sydney suburbs have taken their names from neighbouring suburbs?\nThis morning I found out that Ashbury's name was created from it's neighbouring Ashfield and Canterbury. I don't know why but I fi",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/",
+      "score": 231
+    },
+    {
+      "text": "Why is housing in Homebush cheap?\nLooking at buy a place for the family. 3-4 bedder. Happy to survive with kids in an apartment or townhouse. Just questioning what the deal is with the substantially c",
+      "url": "https://reddit.com/r/sydney/comments/1hw4fih/why_is_housing_in_homebush_cheap/",
+      "score": 124
+    },
+    {
+      "text": "History of this building and/or company?\nDoes anyone know anything about the history of this building and/or company? It's located on 444 Punchbowl Rd, Belfield. It is now a Storage King but the build",
+      "url": "https://reddit.com/r/sydney/comments/195jvcq/history_of_this_building_andor_company/",
+      "score": 31
+    },
+    {
+      "text": "Last year when Mark Latham appeared at a Belfield church in Sydney. LGBQT protestors were attacked by a Christian mob.",
+      "url": "https://reddit.com/r/sydney/comments/1c6zb98/first_person_charged_over_wakeley_riot_after/l04xht5/",
+      "score": 5
+    },
+    {
+      "text": "Nothing in belfield",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktwgffz/",
+      "score": 3
+    },
+    {
+      "text": "I think Belfield is more likely to be a combination of Belmore and Enfield.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvq5z43/",
+      "score": 3
+    },
+    {
+      "text": "Belfield, named because it’s between Belmore and Enfield",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnytew/",
+      "score": 2
+    },
+    {
+      "text": "This is a really dreary, irrelevant map. No one uses these terms. who talks about living in the inner south west? Belfield is west or south west. These are useless and dreary subcategories that no one",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxzxnpn/",
+      "score": 2
+    }
+  ]
+}

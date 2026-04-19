@@ -1,0 +1,81 @@
+{
+  "suburb": "Longueville",
+  "post_count": 6,
+  "fetched_at": "2026-04-18T02:19:35.176684+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.228,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.428,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.818,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1809,
+    "neutral": 0.2883,
+    "anger": 0.1234,
+    "sadness": 0.1348,
+    "surprise": 0.0785,
+    "joy": 0.1812,
+    "disgust": 0.0128
+  },
+  "narrative": "Reddit discussions about Longueville are most positive about affordability (0.82) and food and cafe (0.50). Residents are most critical about safety (0.43) and community (0.23). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Anyone know what happened this morning on Longueville Road?\nThere were 6 ambulances and around 3 fire trucks, police etc at a building site in Lane Cove. All the workers had been evacuated but the pre",
+      "url": "https://reddit.com/r/sydney/comments/1gpa6mg/anyone_know_what_happened_this_morning_on/",
+      "score": 59
+    },
+    {
+      "text": "If I win $200m, I’m defo buying a new house\n\nThis one would do it. I think \n\nhttps://www.domain.com.au/10-poole-street-longueville-nsw-2066-2018732831",
+      "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/kocvpei/",
+      "score": 20
+    },
+    {
+      "text": "https://www.abc.net.au/news/2023-11-28/nsw-trees-cut-down-longueville-lane-cove-council-investigation/103155676",
+      "url": "https://reddit.com/r/sydney/comments/1d3u4cf/how_good_is_this_view/l69w9wg/",
+      "score": 14
+    },
+    {
+      "text": "I just had a convo with a client today    - we've been taking care of the gardening at his share house in Burwood for approx 2 years now. \n\nHe did that they may not need us back next time as their lea",
+      "url": "https://reddit.com/r/sydney/comments/1c0y954/a_big_problem_for_a_large_part_of_society_sydney/kz2vkca/",
+      "score": 5
+    },
+    {
+      "text": "A little déclassé, the old Longueville. I like Northwood.",
+      "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/koepn9x/",
+      "score": 2
+    }
+  ]
+}

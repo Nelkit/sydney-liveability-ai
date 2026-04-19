@@ -1,0 +1,101 @@
+{
+  "suburb": "Summer Hill",
+  "post_count": 57,
+  "fetched_at": "2026-04-18T02:05:07.749544+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.565,
+      "mentions": 16
+    },
+    "community": {
+      "score": 0.608,
+      "mentions": 48
+    },
+    "transport": {
+      "score": 0.659,
+      "mentions": 16
+    },
+    "food_and_cafe": {
+      "score": 0.783,
+      "mentions": 9
+    },
+    "affordability": {
+      "score": 0.76,
+      "mentions": 6
+    },
+    "nightlife": {
+      "score": 0.604,
+      "mentions": 11
+    },
+    "green_space": {
+      "score": 0.692,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.799,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "anger": 0.0558,
+    "disgust": 0.0609,
+    "neutral": 0.5409,
+    "fear": 0.0678,
+    "sadness": 0.0557,
+    "surprise": 0.1326,
+    "joy": 0.0863
+  },
+  "narrative": "Reddit discussions about Summer Hill are most positive about noise (0.80) and food and cafe (0.78). Residents are most critical about nightlife (0.60) and safety (0.56). This analysis is based on 57 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Here's the response from my local member (Summer Hill) re police brutality in the city\nI saw someone post the response from their member in Penrith so thought I'd share mine for comparison",
+      "url": "https://reddit.com/r/sydney/comments/1r67gi1/heres_the_response_from_my_local_member_summer/",
+      "score": 320
+    },
+    {
+      "text": "Why is Marrickville so big?\nSo, we went to Olympic Meats in Marrickville for lunch today (side note, delicious) and noticed that while it is literally next door to Dulwich Hill railway station, its ad",
+      "url": "https://reddit.com/r/sydney/comments/1s5rpxo/why_is_marrickville_so_big/",
+      "score": 238
+    },
+    {
+      "text": "RIP Horse, the Inner West’s favourite (only?) pony\nPhoto and news from Summer Hill’s FB group",
+      "url": "https://reddit.com/r/sydney/comments/1jynt5a/rip_horse_the_inner_wests_favourite_only_pony/",
+      "score": 210
+    },
+    {
+      "text": "Train apparently on fire, tooting horn past Summer Hill station\nAnyone see or hear more about that? Smoke billowing out the back window as it went past.",
+      "url": "https://reddit.com/r/sydney/comments/1slyjpz/train_apparently_on_fire_tooting_horn_past_summer/",
+      "score": 153
+    },
+    {
+      "text": "Summer Hill to Petersham along Parramata road, you can probably rack up 15 points in a few ks if you don't understand what the signs mean and drive at speed limit plus GST.",
+      "url": "https://reddit.com/r/sydney/comments/1civ1d2/french_motorist_busted_racking_up_240_demerit/l2c0knw/",
+      "score": 102
+    },
+    {
+      "text": "My sister was 10m away from, but had her back turned to, an incident at Summer Hill years ago. Someone jumped in front of a train coming through the station that wasn't due to stop, so it was going at",
+      "url": "https://reddit.com/r/sydney/comments/1an78vl/fatality_at_stanmore_station/kpri4xn/",
+      "score": 70
+    },
+    {
+      "text": "I have lived in many places in the inner west, and honestly you just get use to it. I barely ever really noticed it in Petersham and Summer Hill to begin with. Most the places I have rented were old, ",
+      "url": "https://reddit.com/r/sydney/comments/1beiwkf/to_all_inner_west_residents_how_bad_is_the/kutj8qt/",
+      "score": 39
+    },
+    {
+      "text": "$6.50 schooeys for Beer of the Month at the Summer Hill Hotel",
+      "url": "https://reddit.com/r/sydney/comments/1c4gcm5/whats_a_schooner_cost_at_your_local/kzneprm/",
+      "score": 31
+    },
+    {
+      "text": "I just get a cheap room. Couple of places near Summer Hill are no frills and not expensive",
+      "url": "https://reddit.com/r/sydney/comments/1ct7zyz/heads_up_trains_between_epping_and_hornsby_and/l4a7lf3/",
+      "score": 26
+    },
+    {
+      "text": "Fresh arrival into Sydney from a minor city, just completed one of my first overnight shifts.  Decide to put my feet up and briefly close my eyes on the train. Wake up to sunlight steaming through the",
+      "url": "https://reddit.com/r/sydney/comments/1cojj2k/what_are_some_experiences_every_sydneysider_has/l3f99vk/",
+      "score": 22
+    }
+  ]
+}

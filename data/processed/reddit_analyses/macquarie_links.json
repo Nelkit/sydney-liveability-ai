@@ -1,0 +1,56 @@
+{
+  "suburb": "Macquarie Links",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:10.673990+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.863,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.863,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "community": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.9134,
+    "surprise": 0.0237,
+    "anger": 0.0163,
+    "disgust": 0.0149,
+    "fear": 0.0136,
+    "joy": 0.0122,
+    "sadness": 0.0059
+  },
+  "narrative": "Reddit discussions about Macquarie Links are most positive about safety (0.86) and green space (0.86). Residents are most critical about community (0.50) and noise (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "It's all relative. Generally it's pretty safe anywhere in Sydney compared to other parts of major cities around the world. \n\nHaven't given us many parameters OP.\n\nSo, random list of recently developed",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwjt5m/",
+      "score": 6
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Ingleburn",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:19.197823+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.705,
+      "mentions": 7
+    },
+    "safety": {
+      "score": 0.485,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1212,
+    "neutral": 0.5163,
+    "disgust": 0.0461,
+    "surprise": 0.156,
+    "fear": 0.1219,
+    "anger": 0.021,
+    "joy": 0.0176
+  },
+  "narrative": "Reddit discussions about Ingleburn are most positive about community (0.70) and transport (0.50). Residents are most critical about green space (0.50) and safety (0.48). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Manly to Ingleburn and back w/ a stop at IKEA: $42.50 in tolls\nI don't do this trip often, but I can see why people feel this is a lot actually.  You know it's bad when Transport NSW needs to topup yo",
+      "url": "https://reddit.com/r/sydney/comments/1rlx3z7/manly_to_ingleburn_and_back_w_a_stop_at_ikea_4250/",
+      "score": 678
+    },
+    {
+      "text": "Chinook\nDoing laps around Ingleburn",
+      "url": "https://reddit.com/r/sydney/comments/1ls3k1c/chinook/",
+      "score": 165
+    },
+    {
+      "text": "Shout out to Village Mowers in Ingleburn\nIf you are a big fan of being in the dull mens club like me, I’ve got a great review. \n\nI desperately needed spares to fix up my FILs old Atom edger, great uni",
+      "url": "https://reddit.com/r/sydney/comments/1cbpq8g/shout_out_to_village_mowers_in_ingleburn/",
+      "score": 151
+    },
+    {
+      "text": "it was the same on friday night! saw them at every exit from heathcote down to ingleburn! when i exited they were just doing random breath tests, and there was one of those vans that i think they use ",
+      "url": "https://reddit.com/r/sydney/comments/1and6xf/police_operation_on_m5/kprl5iu/",
+      "score": 24
+    },
+    {
+      "text": "A couple of weeks ago I ordered a small carpart on ebay to be delivered from Lugarno to Ingleburn (about 30kms). [Here is it's journey](https://auspost.com.au/mypost/track/details/TMP19690004030044640",
+      "url": "https://reddit.com/r/sydney/comments/1clp7xw/sydney_daily_random_discussion_thread_07052024/l2wvkq4/",
+      "score": 14
+    },
+    {
+      "text": "heres the list of affected clubs\n\n* Breakers Country Club\n* Bulahdelah Bowling Club\n* Central Coast Leagues Club\n* Mex Club Mayfield\n* City of Sydney RSL\n* East Cessnock Bowling Club\n* Fairfield RSL C",
+      "url": "https://reddit.com/r/sydney/comments/1ci0c69/more_than_a_million_nsw_club_patrons_reportedly/l277zo6/",
+      "score": 6
+    },
+    {
+      "text": "Still (sort of) sydney.\n\nVillage mowers in ingleburn",
+      "url": "https://reddit.com/r/sydney/comments/1atopoq/trustworthy_line_trimmerwhipper_snipper_repair/kqyrj0g/",
+      "score": 5
+    },
+    {
+      "text": "Had to look it up. Ingleburn angels, some interesting reviews, either 5 stars or 1.",
+      "url": "https://reddit.com/r/sydney/comments/1cbpq8g/shout_out_to_village_mowers_in_ingleburn/l10jb3z/",
+      "score": 5
+    },
+    {
+      "text": "Specifically in this instance, the northern parts of the Campbelltown LGA such as Ingleburn and Macquarie Fields, are somehow being lumped in with a seat that covers areas of the Sutherland Shire. \n\nE",
+      "url": "https://reddit.com/r/sydney/comments/1dfi1tu/new_electorate_boundaries_proposed_for_nsw_with/l8nk3jc/",
+      "score": 3
+    },
+    {
+      "text": "I haven’t done forklift but I did other high risk tickets at kallibr in Ingleburn. \nPrepare for lots of writing",
+      "url": "https://reddit.com/r/sydney/comments/1dtbasc/forklift_licence/lb8h20a/",
+      "score": 2
+    }
+  ]
+}

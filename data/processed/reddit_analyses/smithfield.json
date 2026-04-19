@@ -1,0 +1,66 @@
+{
+  "suburb": "Smithfield",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:49.546475+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7528,
+    "surprise": 0.1678,
+    "disgust": 0.018,
+    "anger": 0.0255,
+    "sadness": 0.0119,
+    "joy": 0.0075,
+    "fear": 0.0164
+  },
+  "narrative": "Reddit discussions about Smithfield are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "That's what I read too so I made this post. This dude has probably been flying around 400-500 ft above the ground over Smithfield and Fairfield.",
+      "url": "https://reddit.com/r/sydney/comments/1d0roh6/are_private_planes_allowed_to_fly_so_low/l5p30wt/",
+      "score": 107
+    },
+    {
+      "text": "I am thinking Smithfield. I see so many young guys driving Lambos, Ferraris and Maseratis driving around the Liverpool and Fairfield areas.",
+      "url": "https://reddit.com/r/sydney/comments/1b2ojer/today_at_bunnings_i_have_soo_many_questions/ksn4z3j/",
+      "score": 7
+    },
+    {
+      "text": "There is actually already a land value tax since the 1960s yet there's grass plots for decades.\n\nSome examples I've found:\n\nhttps://www.property.com.au/nsw/strathfield-2135/leicester-ave/2-pid-988727/",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgurc8z/",
+      "score": 2
+    }
+  ]
+}

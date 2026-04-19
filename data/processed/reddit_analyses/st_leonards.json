@@ -1,0 +1,101 @@
+{
+  "suburb": "St Leonards",
+  "post_count": 55,
+  "fetched_at": "2026-04-18T02:05:32.725550+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.545,
+      "mentions": 48
+    },
+    "green_space": {
+      "score": 0.851,
+      "mentions": 8
+    },
+    "affordability": {
+      "score": 0.87,
+      "mentions": 9
+    },
+    "transport": {
+      "score": 0.399,
+      "mentions": 27
+    },
+    "safety": {
+      "score": 0.42,
+      "mentions": 18
+    },
+    "noise": {
+      "score": 0.142,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.656,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.654,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "neutral": 0.5415,
+    "surprise": 0.1883,
+    "disgust": 0.051,
+    "joy": 0.0273,
+    "anger": 0.067,
+    "fear": 0.0769,
+    "sadness": 0.0479
+  },
+  "narrative": "Reddit discussions about St Leonards are most positive about affordability (0.87) and green space (0.85). Residents are most critical about transport (0.40) and noise (0.14). This analysis is based on 55 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney Skyline from 100km away in Bowral, NSW.\nThis is one, if not, the furthest point the Sydney Skyline can be seen. You can even see a Qantas plane taking off from the Sydney Aiport. You can also s",
+      "url": "https://reddit.com/r/sydney/comments/1oi4qrr/sydney_skyline_from_100km_away_in_bowral_nsw/",
+      "score": 589
+    },
+    {
+      "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",
+      "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
+      "score": 267
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "T1 North Shore line suspended 8:30pm \nWas on the train northbound when it stopped at St Leonards. Guard announcement saying overhead wiring issue between St Leonards and Gordon. Above official tweet s",
+      "url": "https://reddit.com/r/sydney/comments/1c5cqvn/t1_north_shore_line_suspended_830pm/",
+      "score": 165
+    },
+    {
+      "text": "St leonards is the hotspot for trespassers. A methadone clinic right next to the station, ready access of mentally ill people from RNSH and a easily accessible tracks from thr Street.",
+      "url": "https://reddit.com/r/sydney/comments/1c5cqvn/t1_north_shore_line_suspended_830pm/kztbd6f/",
+      "score": 97
+    },
+    {
+      "text": "* Get off metro\n* Oops city train literally left mere seconds ago, time to wait up to 10 minutes for the next one\n* Get on busy Sydney train, I'm still at Chatswood BTW (the metro will get me to Baran",
+      "url": "https://reddit.com/r/sydney/comments/1bbrpan/metro_upgrade_sign_replacement_has_begun_epping/kubntw0/",
+      "score": 66
+    },
+    {
+      "text": "Obviously St Leonards is in a giant air conditioned too. ",
+      "url": "https://reddit.com/r/sydney/comments/1h0o9r3/obviously_st_leonards_is_in_a_giant_air/",
+      "score": 49
+    },
+    {
+      "text": "I did hear a lot of sirens going up or down the Pacific Highway at about St Leonards/ Crowie and a helicopter around that area at about 10pm or 11pm last night.",
+      "url": "https://reddit.com/r/sydney/comments/1bghlwm/anyone_know_what_happened_at_wollstonecraft_train/kv7hg0x/",
+      "score": 45
+    },
+    {
+      "text": "Zen Japanese Massage at St Leonards (inside Salon Lane). They offer Facial Massage and Buccal Facial Massage.",
+      "url": "https://reddit.com/r/sydney/comments/1dn93yy/face_massage_in_sydney/la10e93/",
+      "score": 29
+    },
+    {
+      "text": "Currently stuck at St Leonards, what a week for TfNSW",
+      "url": "https://reddit.com/r/sydney/comments/1as0pl0/train_breakdown_at_milsons_point/kqnc2bu/",
+      "score": 28
+    }
+  ]
+}

@@ -22,3 +22,8 @@ shapely
 requests
 geopandas
 geoalchemy2
+zstandard
+transformers
+torch
+vaderSentiment
+textblob

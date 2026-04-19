@@ -1,0 +1,101 @@
+{
+  "suburb": "Sylvania",
+  "post_count": 11,
+  "fetched_at": "2026-04-18T02:18:11.598423+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.757,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.759,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.521,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.619,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.095,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.222,
+    "neutral": 0.6612,
+    "anger": 0.017,
+    "disgust": 0.0067,
+    "fear": 0.0347,
+    "surprise": 0.0437,
+    "sadness": 0.0147
+  },
+  "narrative": "Reddit discussions about Sylvania are most positive about green space (0.76) and community (0.76). Residents are most critical about transport (0.50) and safety (0.10). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Two disabled buddies on a fun day out in Sylvania ",
+      "url": "https://reddit.com/r/sydney/comments/1b15pjv/two_disabled_buddies_on_a_fun_day_out_in_sylvania/",
+      "score": 871
+    },
+    {
+      "text": "Streetlight Hunt\nHi r/Sydney!\n\nMost likely one of the \"weirder\" posts you'll read today, please reserve your judgement :)\n\nEveryone has hobbies, and one of the best things about them is the diversity ",
+      "url": "https://reddit.com/r/sydney/comments/19baq4d/streetlight_hunt/",
+      "score": 49
+    },
+    {
+      "text": "Paul’s in Sylvania",
+      "url": "https://reddit.com/r/sydney/comments/19f1oae/best_oz_burger_in_sydney/kjgxlaj/",
+      "score": 22
+    },
+    {
+      "text": "I'd always recommend the Royal National Park, and you get to drive over that ocean bridge that features in every car advertisement.\n\nTake the highway on the way back and have a Paul's Famous Hamburger",
+      "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l492qpw/",
+      "score": 11
+    },
+    {
+      "text": "This bend is so fun to flog it around late at night haha, and the turn-off left down Sylvania way too. \nBut yeah, ute had literally miles to pick a better lane there is actually no reason why he neede",
+      "url": "https://reddit.com/r/sydney/comments/1dlwls5/good_ol_sydney/l9ugycv/",
+      "score": 8
+    },
+    {
+      "text": "Also Mt Druitt, Penrith, Casula & Sylvania.",
+      "url": "https://reddit.com/r/sydney/comments/1c5wjzd/totally_random_questions_from_a_foreigner/kzzip48/",
+      "score": 5
+    },
+    {
+      "text": "The Crest Hotel in Sylvania appears to be kid friendly with a decent selection of pool tables. I’ve only been there once but did a few duos games with a random dad and his young kids who were probably",
+      "url": "https://reddit.com/r/sydney/comments/1cpxhgr/family_pubs_with_pool_tables/l3ny9hw/",
+      "score": 4
+    },
+    {
+      "text": "The one in Lucas Heights is very small in scale, at 20 megawatt https://www.ansto.gov.au/education/nuclear-facts\n\nIf the Libs are serious about building nuclear reactors, it would have to be at least ",
+      "url": "https://reddit.com/r/sydney/comments/1c2eou1/sydney_daily_random_discussion_thread_13042024/kzcokan/",
+      "score": 3
+    },
+    {
+      "text": "I have two 100w HPS lamps in my collection, to go with my 1999 and 2005 Sylvania Urban lights. I still need to repair those two and get them working, but aside from that I'd really like an MV fixture ",
+      "url": "https://reddit.com/r/sydney/comments/19baq4d/streetlight_hunt/kitwm3c/",
+      "score": 2
+    },
+    {
+      "text": "Those are the Sylvania Bourke Hill model, so the slightly more powerful version of the Nostalgia. The Bourke Hill is pretty much the road version, whilst the Nostalgia is the park/pedestrian path vers",
+      "url": "https://reddit.com/r/sydney/comments/19baq4d/streetlight_hunt/kium72c/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "suburb": "Enfield",
+  "post_count": 7,
+  "fetched_at": "2026-04-18T02:19:17.571361+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.85,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.885,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.865,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.71,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.875,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6792,
+    "fear": 0.0241,
+    "surprise": 0.0962,
+    "sadness": 0.0116,
+    "anger": 0.0109,
+    "disgust": 0.012,
+    "joy": 0.1661
+  },
+  "narrative": "Reddit discussions about Enfield are most positive about green space (0.89) and noise (0.88). Residents are most critical about nightlife (0.50) and affordability (0.50). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Anyone lost the Easter bunny round Henly Park?\nDo not think it is a wild bunny I assume someone has lost the little guy round Henly Park Enfield. \n\nFor the last week every day been seeing this cutie h",
+      "url": "https://reddit.com/r/sydney/comments/1rs4myq/anyone_lost_the_easter_bunny_round_henly_park/",
+      "score": 196
+    },
+    {
+      "text": "Can’t park there mate!\nAnother happy Sunday around Enfield!",
+      "url": "https://reddit.com/r/sydney/comments/1mg5brr/cant_park_there_mate/",
+      "score": 94
+    },
+    {
+      "text": "That's actually owned by a relative of mine. Used to be located on Burwood Road in Enfield until they turned the corner into a giant apartment building.",
+      "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/koupja9/",
+      "score": 5
+    },
+    {
+      "text": "Ashfield pool regularly has 6 people in outside lanes on weekday afternoons. Quietest pool in the area is probably Enfield.",
+      "url": "https://reddit.com/r/sydney/comments/1apdw1r/fellow_swimmers_in_the_inner_west_and_west/kq6ip05/",
+      "score": 5
+    },
+    {
+      "text": "Bro its literally not hard at all.\n\nYou can play nearly 7 days a week.\n\nMeetup app, search football choose the day you want to play, theres usually games in and around the inner city 5-6 days per week",
+      "url": "https://reddit.com/r/sydney/comments/1abu65p/whys_it_hard_to_find_social_sport_online_any/kjr7ogf/",
+      "score": 3
+    },
+    {
+      "text": "Yeah confused me when I lived there. It’s down to history apparently - North Strathfield has never been part of Strathfield municipality. It’s named after the station which itself is only called that ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/l332qzj/",
+      "score": 2
+    },
+    {
+      "text": "Yeah thanks, I liked the feel of the actual development too. The distance from the train is a concern, will have to think about how often I’d need the train. But just last weekend a house in Strathfie",
+      "url": "https://reddit.com/r/sydney/comments/1dsrw8o/botanica_lidcombe_former_lidcombe_hospital/lb6wd47/",
+      "score": 2
+    }
+  ]
+}
