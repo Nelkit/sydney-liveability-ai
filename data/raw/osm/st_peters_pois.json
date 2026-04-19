@@ -1,0 +1,757 @@
+{
+  "suburb": "St Peters",
+  "bbox": {
+    "south": -33.9251095,
+    "west": 151.1673311,
+    "north": -33.9066908,
+    "east": 151.1861842
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;",
+  "fallback_used": true,
+  "responses": [
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:29:05Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 3568163507,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "burger",
+              "name": "Little Birria Mascot"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3924591470,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop;sandwich;burger",
+              "email": "sydneyparkkiosk@gmail.com",
+              "name": "The Kiosk",
+              "opening_hours": "Mo-Su 07:00-16:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 413 022 747",
+              "website": "https://www.sydneyparkkiosk.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4811526718,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "burger;sandwich",
+              "level": "0",
+              "name": "Camy's",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4811526719,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "chocolate",
+              "level": "0",
+              "name": "Oliver Brown",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9776423615,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Panetta Mercado Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9776423616,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Firestone"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10925938064,
+            "tags": {
+              "addr:housenumber": "2",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "May Lane",
+              "addr:suburb": "St Peters",
+              "addr:unit": "5",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "check_date": "2026-02-21",
+              "contact:instagram": "domothreenine",
+              "cuisine": "japanese;coffee_shop",
+              "name": "domo 39",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-16:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12019910498,
+            "tags": {
+              "addr:housenumber": "75",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "Mary Street",
+              "addr:suburb": "St Peters",
+              "addr:unit": "1.03",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop;coffee_roaster",
+              "food": "coffee_beans",
+              "name": "Sample Coffee Pro Shop",
+              "opening_hours": "Mo-Fr 07:00-14:00; Sa 08:00-14:00",
+              "outdoor_seating": "yes",
+              "website": "https://samplecoffee.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12706486449,
+            "tags": {
+              "addr:housenumber": "641",
+              "addr:postcode": "2044",
+              "addr:street": "King Street",
+              "amenity": "cafe",
+              "check_date": "2026-01-27",
+              "name": "Dulcet Bakehouse",
+              "phone": "+61 499 394 969",
+              "website": "https://dulcet.com.au/locations/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12841024101,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-05",
+              "indoor_seating": "yes",
+              "name": "The Bearded Barista",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12841024106,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-05",
+              "cuisine": "cake",
+              "indoor_seating": "no",
+              "name": "Onu Cake",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13226869210,
+            "tags": {
+              "addr:housenumber": "58-60",
+              "addr:postcode": "2204",
+              "addr:street": "Smith Street",
+              "amenity": "cafe",
+              "check_date": "2026-01-17",
+              "cuisine": "coffee_shop",
+              "email": "onasydney@onacoffee.com.au",
+              "indoor_seating": "yes",
+              "name": "Ona",
+              "opening_hours": "Mo-Fr 07:30-15:00; Sa-Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "stroller": "yes",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "website": "https://www.onacoffeesydney.com/contact"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13305581971,
+            "tags": {
+              "addr:housenumber": "260",
+              "addr:postcode": "2020",
+              "addr:state": "NSW",
+              "addr:street": "Coward Street",
+              "addr:suburb": "Mascot",
+              "addr:unit": "3",
+              "amenity": "cafe",
+              "cuisine": "bubble_tea",
+              "internet_access": "no",
+              "name": "Machi Machi Mascot",
+              "opening_hours": "Mo-Su 11:00-22:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13585970805,
+            "tags": {
+              "addr:housenumber": "11",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "May Street",
+              "addr:suburb": "St Peters",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "check_date": "2026-02-21",
+              "cuisine": "coffee_shop",
+              "drive_through": "no",
+              "name": "Numero Uno Coffee Roasters",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa 07:00-13:30; Su 07:00-12:30",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "phone": "+61 2 8399 0111",
+              "takeaway": "yes",
+              "website": "https://www.numerouno.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13591750578,
+            "tags": {
+              "addr:housenumber": "8",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "May Lane",
+              "addr:suburb": "St Peters",
+              "amenity": "cafe",
+              "cuisine": "italian",
+              "name": "Ariomi The Space - Cafe",
+              "opening_hours": "Mo-Fr 06:30-15:00; Sa-Su 07:00-16:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "phone": "+61 423 520 690",
+              "takeaway": "yes",
+              "website": "https://www.ariomithespace.com",
+              "website:menu": "https://www.ariomithespace.com/menu"
+            }
+          },
+          {
+            "type": "way",
+            "id": 605984595,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Sergio's Cake Shop",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(cafe)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(restaurant)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(restaurant)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:30:20Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": []
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(gym)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(gym)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(school)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(school)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:30:20Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": []
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(hospital)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(hospital)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:31:21Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "way",
+            "id": 605984591,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Priceline Pharmacy",
+              "brand:wikidata": "Q7242652",
+              "brand:wikipedia": "en:Priceline (Australia)",
+              "dispensing": "yes",
+              "healthcare": "pharmacy",
+              "name": "Priceline Pharmacy",
+              "wheelchair": "yes"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(pharmacy)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(pharmacy)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:31:21Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 17853085,
+            "tags": {
+              "addr:housenumber": "39",
+              "addr:postcode": "2044",
+              "addr:street": "Unwins Bridge Road",
+              "alt_name": "St Peters/Sydenham Library",
+              "amenity": "library",
+              "check_date": "2026-01-27",
+              "check_date:opening_hours": "2023-09-21",
+              "email": "library@innerwest.nsw.gov.au",
+              "name": "St Peters Library",
+              "opening_hours": "Mo-We 10:00-17:30; Th 12:00-19:30; Fr 10:00-17:30; Sa 10:00-16:00; PH,Su off",
+              "phone": "+61 2 9392 5588",
+              "website": "https://www.innerwest.nsw.gov.au/explore/libraries/find-a-library-and-contact-us/st-peters-sydenham-library"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(library)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"amenity\"~\"^(library)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:31:21Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "way",
+            "id": 4688664,
+            "tags": {
+              "addr:postcode": "2044",
+              "addr:street": "May Street",
+              "addr:suburb": "St Peters",
+              "leisure": "park",
+              "name": "Camdenville Park",
+              "website": "http://www.marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 174137106,
+            "tags": {
+              "boundary": "hazard",
+              "description": "Dogs not allowed in: Wetlands, Alan Davidson Oval, Sydney Park Cycling Centre, playground, barbecue areas.",
+              "dog": "unleashed",
+              "hazard": "contamination",
+              "leisure": "park",
+              "name": "Sydney Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "related_law": "Contaminated Land Management Act 1997",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/sydney-park",
+              "wikidata": "Q7660094",
+              "wikipedia": "en:Sydney Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 247764392,
+            "tags": {
+              "leisure": "park",
+              "name": "Sydenham Green",
+              "source:name": "sign in park."
+            }
+          },
+          {
+            "type": "way",
+            "id": 247764393,
+            "tags": {
+              "leisure": "park",
+              "name": "Sydenham Green",
+              "source:name": "sign in park."
+            }
+          },
+          {
+            "type": "way",
+            "id": 292661101,
+            "tags": {
+              "addr:housenumber": "14",
+              "addr:street": "May Street",
+              "addr:suburb": "St Peters",
+              "leisure": "park",
+              "name": "May Street Reserve",
+              "operator": "Inner West Council",
+              "website": "https://www.innerwest.nsw.gov.au/explore/parks-sport-and-recreation/parks-and-playgrounds/parks-by-suburb/st-peters-parks/may-street-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 301881295,
+            "tags": {
+              "addr:postcode": "2044",
+              "addr:street": "Campbell Road",
+              "addr:suburb": "St Peters",
+              "leisure": "park",
+              "name": "Simpson Park",
+              "website": "http://www.marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 305548961,
+            "tags": {
+              "leisure": "park",
+              "name": "Sydenham Green",
+              "source": "mapbox",
+              "source:name": "sign in park."
+            }
+          },
+          {
+            "type": "way",
+            "id": 452953652,
+            "tags": {
+              "access": "yes",
+              "addr:housenumber": "186",
+              "addr:postcode": "2044",
+              "addr:street": "Unwins Bridge Road",
+              "addr:suburb": "Sydenham",
+              "leisure": "park",
+              "name": "Francis Playground",
+              "operator": "Inner West Council",
+              "website": "https://www.innerwest.nsw.gov.au/explore/parks-sport-and-recreation/parks-and-playgrounds/parks-by-suburb/st-peters-parks/francis-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 537565774,
+            "tags": {
+              "access": "private",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 548781428,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 723937101,
+            "tags": {
+              "leisure": "park",
+              "name": "Dr Darragh Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 723937102,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 723937103,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 723937105,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 815430411,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 824012787,
+            "tags": {
+              "leisure": "park",
+              "name": "Reverend Soo Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 892184196,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 892185036,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 953891122,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1029168896,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035597353,
+            "tags": {
+              "leisure": "park",
+              "name": "Sydenham Green"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(park)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"leisure\"~\"^(park)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:32:26Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 4733121147,
+            "tags": {
+              "leisure": "playground",
+              "source": "LPI Imagery Mar 2017"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7615756238,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13155093095,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 86792204,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "Sydney Park Playground",
+              "source": "survey",
+              "source:location": "nearmap",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273997654,
+            "tags": {
+              "access": "yes",
+              "addr:housenumber": "156-158",
+              "addr:postcode": "2042",
+              "addr:street": "Darley Street",
+              "addr:suburb": "Newtown",
+              "leisure": "playground",
+              "name": "Darley St Playground",
+              "website": "http://marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 920932521,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "Rowswell Playground",
+              "operator": "Inner West Council",
+              "source": "https://www.innerwest.nsw.gov.au/explore/parks-sport-and-recreation/parks-and-playgrounds/parks-by-suburb/st-peters-parks/rowswell-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 953891124,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1131871629,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1396137559,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1396137562,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1431153796,
+            "tags": {
+              "leisure": "playground"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(playground)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"leisure\"~\"^(playground)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:32:26Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 3275261797,
+            "tags": {
+              "addr:housenumber": "1-7",
+              "addr:postcode": "2044",
+              "addr:street": "Unwins Bridge Road",
+              "addr:suburb": "St Peters",
+              "addr:unit": "2K",
+              "leisure": "sports_centre",
+              "name": "Sydney Trapeze School",
+              "source": "knowledge",
+              "sport": "gymnastics",
+              "website": "https://www.sydneytrapezeschool.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3275261798,
+            "tags": {
+              "addr:housenumber": "1-7",
+              "addr:postcode": "2044",
+              "addr:street": "Unwins Bridge Road",
+              "addr:suburb": "St Peters",
+              "climbing:boulder": "yes",
+              "climbing:length:max": "25",
+              "climbing:routes": "420",
+              "climbing:sport": "120",
+              "climbing:toprope": "yes",
+              "email": "sicg2@hotmail.com",
+              "fax": "+61 2 9516 3894",
+              "fee": "yes",
+              "indoor": "yes",
+              "leisure": "sports_centre",
+              "name": "Sydney Indoor Climbing Gym St Peter\u2019s",
+              "opening_hours": "Mo-Fr 09:30-22:00; We 06:00-22:00; Th 09:30-23:00; Sa,Su 09:30-21:00; Dec 25 off; PH 09:30-19:00",
+              "phone": "+61 2 9519 3325",
+              "source": "knowledge",
+              "sport": "climbing",
+              "website": "https://indoorclimbing.com.au/stpeters/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11050644126,
+            "tags": {
+              "addr:housenumber": "49",
+              "addr:street": "Fitzroy St, Marrickville NSW 2204",
+              "description": "Bouldering gym with cafe, equipment shop and weight/cardio training equipment.",
+              "fee": "yes",
+              "leisure": "sports_centre",
+              "name": "BlocHaus Bouldering Sydney - Marrickville",
+              "opening_hours": "Mo 06:00-23:00; Tu 10:00-23:00; We 06:00-23:00; Th 10:00-23:00; Fr 06:00-22:00; Sa-Su 08:00-22:00",
+              "phone": "+61 2 7228 9304",
+              "sport": "climbing",
+              "website": "https://syd.blochaus.com.au/"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(sports_centre)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n  way[\"leisure\"~\"^(sports_centre)$\"](-33.9251095,151.1673311,-33.9066908,151.1861842);\n);\nout tags;"
+    }
+  ]
+}
