@@ -56,6 +56,9 @@ out/
 dist/
 
 # Data (local storage - ignored in Git)
+data/raw/
+data/processed/
+!data/processed/suburbs.geojson
 
 # Logs
 logs/
