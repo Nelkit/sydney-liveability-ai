@@ -52,6 +52,8 @@ def _query_gis_impl(suburb: str) -> dict[str, Any]:
         "facilities_score": suburb_row.facilities_score if suburb_row else None,
     }
     
+    # TODO(Luis): Populate the amenities values form postgres once `ingest_osm.py` is done. 
+    # For now, we return None for all amenities and a dummy osm_score.
     # Extract OSM amenities
     osm_amenities = {
         "cafe": osm_row.cafe if osm_row else None,
@@ -66,7 +68,9 @@ def _query_gis_impl(suburb: str) -> dict[str, Any]:
         "sports_centre": osm_row.sports_centre if osm_row else None,
         "osm_score": osm_row.osm_score if osm_row else None,
     }
-    
+
+    # TODO(Padmasri): Populate the transport values form postgres once `ingest_transport.py` is done.
+    # For now, we return None for all amenities and a dummy osm_score.
     # Extract transport details
     transport = {
         "bus_stops": transport_row.bus_stops if transport_row else None,
