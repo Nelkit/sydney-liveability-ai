@@ -11,6 +11,9 @@ An AI-assisted, map-based web application to compare Sydney suburbs using civic 
 - [🗂️ Repository Structure](#-repository-structure)
 - [🛠️ Tech Stack](#-tech-stack)
 - [🚀 Getting Started](#-getting-started)
+- [🤖 Skills Usage](#-skills-usage)
+- [🐞 VS Code Launch Profiles](#-vs-code-launch-profiles)
+- [🧪 SYNTHESIS_DEBUG_MODE](#-synthesis_debug_mode)
 - [🔐 Environment Variables](#-environment-variables)
 - [🌿 Branch Convention](#-branch-convention)
 - [👥 Team](#-team)
@@ -18,7 +21,7 @@ An AI-assisted, map-based web application to compare Sydney suburbs using civic 
 ## 🧭 Overview
 - Scope: ANLP 36118 project (UTS), Autumn 2026.
 - Suburb coverage: all suburbs available in the current backend datasets.
-- Current backend status: boilerplate endpoints are available at `/` and `/health`.
+- Current backend status: the main app flow is connected to `/api/chat` and `/api/civic`; the backend keeps `/` and `/health` available for local checks.
 
 ## 🗂️ Repository Structure
 
@@ -42,13 +45,24 @@ sydney-liveability-ai/
 │   ├── main.py
 │   ├── api/
 │   ├── core/
+│   ├── agents/
+│   ├── crews/
+│   ├── db/
+│   ├── scripts/
+│   ├── alembic/
+│   ├── alembic.ini
+│   ├── Makefile
 │   └── requirements.txt
 │
 ├── frontend/                     # Next.js frontend
 │   ├── src/
+│   │   ├── app/
+│   │   └── components/
+│   │       └── liveability/
 │   ├── public/
 │   ├── package.json
-│   └── tailwind.config.ts
+│   ├── tailwind.config.ts
+│   └── vercel.json
 │
 ├── data/                         # Local datasets (ignored in Git)
 │   ├── raw/
@@ -56,14 +70,15 @@ sydney-liveability-ai/
 │       └── suburbs.geojson       # Committed static geometry
 │
 ├── AGENTS.md
+├── README.md
 ├── .gitignore
-└── README.md
+└── .env.example
 ```
 
 ## 🛠️ Tech Stack
 - Frontend: Next.js, Tailwind CSS, Leaflet.js, Turf.js, Framer Motion.
 - Backend: FastAPI, uvicorn, Supabase.
-- Backend NLP: LangChain, ChromaDB, Claude API (`claude-sonnet-4-20250514`), sentence-transformers, pypdf, PRAW, spaCy, geopandas.
+- Backend NLP: LangChain, ChromaDB, configurable LLM provider/model via `backend/.env.example`, sentence-transformers, pypdf, PRAW, spaCy, geopandas.
 - Notebooks NLP/EDA: NLTK, Gensim, scikit-learn, VADER, TextBlob, pyLDAvis, Matplotlib, Seaborn.
 
 ## 🚀 Getting Started
@@ -71,7 +86,8 @@ sydney-liveability-ai/
 - Python 3.10+
 - Node.js 18+
 - Supabase account
-- Anthropic API Key
+- OpenRouter API key
+- Optional: Anthropic API key or OpenAI API key if you switch providers in `backend/.env`
 
 ### 1. 🧩 Backend Setup
 ```bash
@@ -117,28 +133,116 @@ VS Code option:
 
 Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into the backend `venv`.
 
+## 🤖 Skills Usage
+
+This project includes team skills under `skills/` to standardize common implementation tasks.
+
+Use skills in chat with slash-style invocation:
+
+- `/query-agent` for creating or updating specialists in `backend/agents/query/`
+- `/ingest-script` for ingestion workflows in `backend/scripts/ingest_*.py`
+- `/chromadb-embed` for chunking/embedding/upsert flows in ChromaDB
+- `/alembic-migration` for ORM and Alembic migration changes in `backend/db/models.py`
+- `/frontend-guard` for new or refactored UI components with strict typing and existing Tailwind design consistency
+
+Pattern:
+
+- `/name-of-skill` where `name-of-skill` matches the folder under `skills/`
+- Example: `/query-agent` loads `skills/query-agent/SKILL.md`
+
+If one task spans multiple domains, invoke skills in sequence (for example: `/alembic-migration` then `/ingest-script`).
+
+## 🐞 VS Code Launch Profiles
+
+Shared launch profiles are configured in `.vscode/launch.json`.
+
+- `Frontend: Next dev`
+	- Runs `npm run dev` in `frontend/`
+	- Opens the local app URL automatically when Next.js prints "Local"
+- `Backend: FastAPI dev`
+	- Runs `python -m uvicorn main:app --reload` in `backend/`
+	- Uses `${workspaceFolder}/venv/bin/python`
+	- Opens the backend URL automatically when Uvicorn starts
+
+How to run:
+
+1. Open Run and Debug in VS Code
+2. Select one of the profiles above
+3. Press F5
+
+If the backend profile fails due to interpreter path, recreate or activate the root `venv` and retry.
+
+## 🧪 SYNTHESIS_DEBUG_MODE
+
+`SYNTHESIS_DEBUG_MODE` is read from `backend/.env` and used by `backend/agents/query/synthesiser.py`.
+
+Supported modes currently implemented:
+
+- `off`: normal synthesiser flow (default)
+- `gis`: bypass synthesis and return GIS structured output
+- `all`: bypass synthesis and return consolidated outputs from router/crime/sentiment/gis/comparator
+
+How to enable or disable:
+
+1. Edit `backend/.env` and set `SYNTHESIS_DEBUG_MODE=off|gis|all`
+2. Restart backend (launch profile or `make dev`) so environment values reload
+3. Call `/api/chat` and inspect the response payload
+
+Important:
+
+- Values like `crime`, `sentiment`, or `comparator` are not currently implemented as dedicated passthrough modes
+- Unsupported values behave effectively like `off`
+
 ## 🔐 Environment Variables
-Create environment files from templates at repository root:
+Create environment files from the correct templates in each app folder:
 
 ```bash
-cp .env.backend.example backend/.env
-cp .env.example notebooks/.env
+cp backend/.env.example backend/.env
+cp frontend/.env.example frontend/.env
 ```
 
 Windows PowerShell:
 
 ```powershell
-Copy-Item .env.backend.example backend/.env
-Copy-Item .env.example notebooks/.env
+Copy-Item backend/.env.example backend/.env
+Copy-Item frontend/.env.example frontend/.env
 ```
 
 Then fill values in both files.
 
+Backend variables defined in `backend/.env.example`:
+
+```text
+LLM_PROVIDER
+LLM_MODEL
+OPENROUTER_API_KEY
+DATABASE_URL
+CHROMADB_PATH
+FRONTEND_URL
+SYNTHESIS_DEBUG_MODE
+ANTHROPIC_API_KEY
+OPENAI_API_KEY
+LLM_AGENT_MODELS_JSON
+```
+
+Frontend variables defined in `frontend/.env.example`:
+
+```text
+NEXT_PUBLIC_API_URL
+```
+
 ## 🌿 Branch Convention
 - Direct commits, pushes, or changes to `main` are prohibited.
-- Each student must work on a personal branch prefixed with their name.
+- Work on feature branches and open a Pull Request to `develop` when ready.
 
-Detailed workflow for each student:
+Branch naming:
+
+- `feature/data`
+- `feature/nlp`
+- `feature/backend`
+- `feature/frontend`
+
+Recommended workflow:
 
 1. Update your local `main` before creating a new branch:
 
@@ -147,17 +251,17 @@ git checkout main
 git pull origin main
 ```
 
-2. Create a personal branch with your name as prefix:
+2. Create a feature branch with the appropriate prefix:
 
 ```bash
-git checkout -b yourname/short-task-name
+git checkout -b feature/short-task-name
 ```
 
 Examples:
 
-- `nelkit/backend-boilerplate`
-- `juan/data-extraction`
-- `yingkai/notebook-cleaning`
+- `feature/backend-boilerplate`
+- `feature/data-extraction`
+- `feature/notebook-cleaning`
 
 3. Commit your work on your personal branch only:
 
@@ -169,15 +273,15 @@ git commit -m "feat: clear summary of change"
 4. Push your branch to remote:
 
 ```bash
-git push -u origin yourname/short-task-name
+git push -u origin feature/short-task-name
 ```
 
-5. Open a Pull Request from your branch to the team integration branch.
+5. Open a Pull Request from your branch to `develop`.
 
 Important:
 
 - Never push directly to `main`.
-- Keep working in your personal branch for all contributions.
+- Keep working in your feature branch for all contributions.
 - Merge only through Pull Request review.
 
 ## 👥 Team

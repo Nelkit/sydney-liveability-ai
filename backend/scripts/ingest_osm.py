@@ -2,7 +2,7 @@
 
 Reads: data/processed/osm_data.csv (or JSON, TBD)
 Writes: PostgreSQL table `osm_scores`
-Owner: assign in team meeting
+Owner: Luis Robinson
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ from __future__ import annotations
 
 def main() -> None:
     """Entrypoint for OSM score ingestion."""
-    # TODO(owner): Implement OSM ingestion for amenity counts and score.
+    # TODO(Luis Robinson): Implement OSM ingestion for amenity counts and score.
     # 1) Read source dataset with pandas (CSV now, JSON fallback if defined).
     # 2) Map columns to OsmScore fields including amenity counters and osm_score.
     # 3) Upsert by suburb using SQLAlchemy session.

@@ -407,7 +407,9 @@ export function MapPanel({
         color: heatColor,
         fillColor: heatColor,
         fillOpacity: opacity * 0.14,
-        weight: 0
+        weight: 0,
+        interactive: false,
+        bubblingMouseEvents: false
       });
 
       circle.addTo(overlayGroup);
@@ -417,7 +419,9 @@ export function MapPanel({
         color: heatColor,
         fillColor: heatColor,
         fillOpacity: opacity * 0.08,
-        weight: 0
+        weight: 0,
+        interactive: false,
+        bubblingMouseEvents: false
       });
 
       glow.addTo(overlayGroup);

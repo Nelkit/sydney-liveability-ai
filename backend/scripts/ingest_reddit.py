@@ -2,7 +2,7 @@
 
 Reads: data/raw/reddit/*.json
 Writes: ChromaDB collection `sydney_liveability`
-Owner: assign in team meeting
+Owner: Kai (Ying-Kai Liao)
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ from __future__ import annotations
 
 def main() -> None:
     """Entrypoint for Reddit ingestion without LLM calls."""
-    # TODO(owner): Implement the Reddit ingestion flow end-to-end.
+    # TODO(Kai): Implement the Reddit ingestion flow end-to-end.
     # 1) Use glob to load every JSON file from data/raw/reddit/.
     # 2) Parse each record and keep suburb, URL, and source text.
     # 3) Chunk text with RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=20).

@@ -2,7 +2,7 @@
 
 Inputs: suburb name
 Outputs: official_facilities, osm_amenities, transport, combined_score
-Owner: Nelkit Chavez
+Owner: Nelkit Chavez, Luis Robinson, Padmasri Srinivas
 """
 
 from __future__ import annotations
@@ -17,6 +17,10 @@ from config import get_agent_llm
 from db.models import Suburb, OsmScore, TransportScore
 from db.postgres import SessionLocal
 
+
+# TODO(Luis/Padmasri): Once `ingest_osm.py` and `ingest_transport.py` are finished,
+# review this agent against their final ingestion outputs, adapt the query/mapping logic
+# if needed, and confirm the combined GIS score still works end-to-end.
 
 def _query_gis_impl(suburb: str) -> dict[str, Any]:
     """Internal implementation: query three tables and return combined GIS output."""

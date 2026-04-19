@@ -29,8 +29,3 @@ export type ChatMessage = {
   html: string;
   source?: string;
 };
-
-export type ResponderItem = {
-  text: string;
-  source: string;
-};

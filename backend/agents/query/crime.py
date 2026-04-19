@@ -2,7 +2,7 @@
 
 Inputs: suburb name, optional crime_type
 Outputs: suburb crime_summary and trend signal
-Owner: assign in team meeting
+Owner: Amanda
 """
 
 from __future__ import annotations
@@ -17,7 +17,7 @@ from config import get_agent_llm
 
 def _query_crime_impl(suburb: str, crime_type: str | None = None) -> dict[str, Any]:
     """Internal implementation: query BOCSAR crime data."""
-    # TODO(owner): Implement SQLAlchemy query against table `bocsar`.
+    # TODO(Amanda): Implement SQLAlchemy query against table `bocsar`.
     # 1) Filter by suburb and optional crime_type.
     # 2) Group by crime_type and year to build crime_summary counts.
     # 3) Compute trend from latest 2 years:

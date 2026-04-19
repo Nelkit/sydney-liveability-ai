@@ -496,15 +496,7 @@ export default function HomePage() {
     if (!suburb) return;
     setSelectedSuburbId(suburb.id);
 
-    const scored = scoreSuburb(suburb, weights);
-    setChatMessages((prev) => [
-      ...prev,
-      {
-        role: "ai",
-        html: `You selected <strong>${suburb.name}</strong>. Current score: <strong style='color:${suburb.color}'>${scored}/100</strong>.`,
-        source: "BOCSAR - City of Sydney ArcGIS - Community Insights 2024 - Reddit"
-      }
-    ]);
+    void sendChat(`Tell me about ${suburb.name}`);
   }
 
   async function sendChat(text?: string) {
@@ -594,7 +586,7 @@ export default function HomePage() {
 
   return (
     <LayoutGroup>
-      <main className="h-screen overflow-hidden font-['Manrope',sans-serif] text-slateText">
+      <main className="h-screen overflow-hidden text-slateText">
         <AnimatePresence mode="sync" initial={false}>
           {!isAppOpen ? (
             <OnboardingPanel
@@ -632,16 +624,16 @@ export default function HomePage() {
                   <button
                     type="button"
                     onClick={() => setProfileOpen((prev) => !prev)}
-                    className="flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-1 shadow-[0_6px_16px_rgba(15,23,42,0.06)]"
+                    className="inline-flex flex-nowrap items-center justify-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-1 align-middle whitespace-nowrap shadow-[0_6px_16px_rgba(15,23,42,0.06)]"
                   >
-                    <span className="text-[10px] font-bold tracking-[0.04em] text-slate-700">MY PROFILE</span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700">
+                    <span className="inline-flex h-6 items-center justify-center text-[10px]/[1] font-bold tracking-[0.04em] text-slate-700">MY PROFILE</span>
+                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
                       <TrainFront size={10} /> {getImportanceLabel(selectedLevels.transport)}
                     </span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700">
+                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
                       <Shield size={10} /> {getImportanceLabel(selectedLevels.safety)}
                     </span>
-                    <span className="hidden h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700 sm:inline-flex">
+                    <span className="hidden h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700 sm:inline-flex">
                       <Coffee size={10} /> {getImportanceLabel(selectedLevels.lifestyle)}
                     </span>
                   </button>

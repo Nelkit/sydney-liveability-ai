@@ -2,7 +2,7 @@
 
 Inputs: question, router output, and activated specialist outputs
 Outputs: answer, sources, suburb_scores, map_state
-Owner: assign in team meeting
+Owner: Nelkit Chavez
 
 LLM Configuration:
 - DEV: Uses the shared LLM_MODEL from .env (default: mistralai/mistral-7b-instruct, free on OpenRouter)

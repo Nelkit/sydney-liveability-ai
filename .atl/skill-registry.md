@@ -10,6 +10,9 @@
 | issue-creation | Issue creation workflow for Agent Teams Lite following the issue-first enforcement system. | When creating a GitHub issue, reporting a bug, or requesting a feature. |
 | skill-creator | Creates new AI agent skills following the Agent Skills spec. | When user asks to create a new skill, add agent instructions, or document patterns for AI. |
 | ingest-script | Standard workflow to create backend/scripts/ingest_*.py for Sydney Liveability Explorer backend using idempotent upserts and migration-safe steps. | When creating or updating ingestion scripts that write to PostgreSQL tables. |
+| query-agent | Standard workflow to implement CrewAI query agents in backend/agents/query/ with get_agent_llm, DB tools via get_session, and isolated run(input_data). | When creating or updating router, crime, sentiment, gis, comparator, or synthesiser agents. |
+| chromadb-embed | Standard workflow to embed text and upsert chunks into ChromaDB with deterministic IDs and required metadata for RAG. | When creating or updating embedding helpers for Reddit, PDF, or sentiment text chunks. |
+| alembic-migration | Standard workflow to add or modify SQLAlchemy ORM fields using Alembic migrations and keep PostgreSQL schema synchronized. | When changing backend/db/models.py or generating/applying schema migrations. |
 
 ## Project Conventions
 

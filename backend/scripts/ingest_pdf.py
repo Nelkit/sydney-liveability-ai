@@ -2,7 +2,7 @@
 
 Reads: data/raw/community_report.pdf
 Writes: ChromaDB collection `sydney_liveability`
-Owner: assign in team meeting
+Owner: Juan David Rodriguez
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ from __future__ import annotations
 
 def main() -> None:
     """Entrypoint for PDF ingestion without LLM calls."""
-    # TODO(owner): Implement PDF ingestion with page-aware metadata.
+    # TODO(Juan David): Implement PDF ingestion with page-aware metadata.
     # 1) Read data/raw/community_report.pdf using pypdf PdfReader.
     # 2) Extract text page by page and skip empty pages.
     # 3) Infer suburb from page text when possible; fallback to "Unknown".

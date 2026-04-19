@@ -2,7 +2,7 @@
 
 Inputs: two suburbs and selected categories
 Outputs: comparison dictionary and category winners
-Owner: assign in team meeting
+Owner: Padmasri Srinivas or Luis Robinson
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ from config import get_agent_llm
 
 def _query_comparator_impl(suburb_a: str, suburb_b: str, categories: list[str]) -> dict[str, Any]:
     """Internal implementation: compare two suburbs."""
-    # TODO(owner): Implement category-wise comparison without agent nesting.
+    # TODO(Padmasri or Luis): Implement category-wise comparison without agent nesting.
     # 1) For each requested category call imported tools directly:
     #    query_crime_tool, query_sentiment_tool, query_gis_tool.
     # 2) Build per-category side-by-side payload for suburb_a and suburb_b.

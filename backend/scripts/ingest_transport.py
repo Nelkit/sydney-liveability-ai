@@ -2,7 +2,7 @@
 
 Reads: data/processed/transport_data.csv (TBD)
 Writes: PostgreSQL table `transport_scores`
-Owner: assign in team meeting
+Owner: Padmasri Srinivas
 """
 
 from __future__ import annotations
@@ -10,7 +10,7 @@ from __future__ import annotations
 
 def main() -> None:
     """Entrypoint for transport score ingestion."""
-    # TODO(owner): Implement transport score ingestion pipeline.
+    # TODO(Padmasri): Implement transport score ingestion pipeline.
     # 1) Read data/processed/transport_data.csv with pandas.
     # 2) Map dataset columns to TransportScore fields.
     # 3) Upsert rows by suburb through SQLAlchemy session.
