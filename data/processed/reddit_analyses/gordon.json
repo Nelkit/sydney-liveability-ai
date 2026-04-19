@@ -1,0 +1,101 @@
+{
+  "suburb": "Gordon",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:20.461688+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.849,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.785,
+      "mentions": 10
+    },
+    "safety": {
+      "score": 0.826,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.852,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.829,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.752,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.0491,
+    "neutral": 0.5511,
+    "sadness": 0.0775,
+    "anger": 0.0372,
+    "disgust": 0.0667,
+    "surprise": 0.2042,
+    "joy": 0.0141
+  },
+  "narrative": "Reddit discussions about Gordon are most positive about green space (0.85) and transport (0.85). Residents are most critical about nightlife (0.50) and noise (0.50). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Photos taken at Gordon station. Should I report them to staff?😂\nPhotos taken at Gordon station. Should I report them to staff?😂",
+      "url": "https://reddit.com/r/sydney/comments/1fit39m/photos_taken_at_gordon_station_should_i_report/",
+      "score": 486
+    },
+    {
+      "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",
+      "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
+      "score": 267
+    },
+    {
+      "text": "Spotted at Gordon Station today\nThrow back to the early 2000s. I wonder why they keep them at the station?",
+      "url": "https://reddit.com/r/sydney/comments/1l8g3ul/spotted_at_gordon_station_today/",
+      "score": 228
+    },
+    {
+      "text": "NSW shadow attorney-general Alister Henskens named Katie Joyner as the senior official who he said bought a property in an area of Gordon earmarked for higher density development",
+      "url": "https://reddit.com/r/sydney/comments/1beynxs/nsw_shadow_attorneygeneral_alister_henskens_named/",
+      "score": 97
+    },
+    {
+      "text": "In my suburb (Gordon) they were planted en masse to complement the Pettit & Sevitt homes that were constructed in the 1970s. I love them and their beautiful colours as the autumn weather approaches, b",
+      "url": "https://reddit.com/r/sydney/comments/1d6zhl7/which_clown_decided_know_what_liquid_amber_is_the/l6vx00h/",
+      "score": 44
+    },
+    {
+      "text": "It seems someone made a big mistake in approaching neighbours with a proposal.  Henskens lives quite close to Gordon station.  Alister is a pretty straight up guy for a pollie.",
+      "url": "https://reddit.com/r/sydney/comments/1beynxs/nsw_shadow_attorneygeneral_alister_henskens_named/kux6knp/",
+      "score": 43
+    },
+    {
+      "text": "I live on the north shore. I understand the need for more housing in Sydney and in Australia. If the apartment complexes that are going to be built were attractive (thinking of some of the beautiful o",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt9oi2/",
+      "score": 38
+    },
+    {
+      "text": "North shore pacific highway living\nTo those who live on the north shore in apartments on pacific highway, how is it? Is it noisy, dusty? Lots of apartments for sale all through Roseville, Killara, Gor",
+      "url": "https://reddit.com/r/sydney/comments/1r7uqkw/north_shore_pacific_highway_living/",
+      "score": 33
+    },
+    {
+      "text": "I am in this area.\n\nWhat a lot of the discussion misses is that there is *already* a significant amount of higher density development going up in all these suburbs. Gordon, Lindfield and between Rosev",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqttzva/",
+      "score": 17
+    },
+    {
+      "text": "There's already a significant amount of higher density blocks that have gone up in all these suburbs or are in the process of going up. All the buildings along the north side of Boundary Street and in",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqtuifb/",
+      "score": 10
+    }
+  ]
+}

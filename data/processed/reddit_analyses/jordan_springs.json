@@ -1,0 +1,101 @@
+{
+  "suburb": "Jordan Springs",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:20.517865+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.102,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.815,
+      "mentions": 6
+    },
+    "noise": {
+      "score": 0.912,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.683,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "anger": 0.1919,
+    "disgust": 0.0475,
+    "surprise": 0.173,
+    "fear": 0.03,
+    "neutral": 0.4305,
+    "sadness": 0.1159,
+    "joy": 0.0111
+  },
+  "narrative": "Reddit discussions about Jordan Springs are most positive about affordability (0.99) and noise (0.91). Residents are most critical about transport (0.50) and safety (0.10). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Entitled moron driver in Jordan Springs yesterday - got mad at me when I wouldn't back up and let him continue overtaking multiple cars at once, on the wrong side of the road, over double white lines,",
+      "url": "https://reddit.com/r/sydney/comments/1b6redr/entitled_moron_driver_in_jordan_springs_yesterday/",
+      "score": 1596
+    },
+    {
+      "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
+      "score": 27
+    },
+    {
+      "text": "I'm going with Jordan Springs.\n\nOr Oran Park.\n\nFuck. That could be any new estate in the last 10 years or so.",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgew3k1/",
+      "score": 18
+    },
+    {
+      "text": "The park area bound by Werrington, Ropes Crossing and Jordan Springs has a handful of truly wild ones that you can see occasionally.",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5khrq0/",
+      "score": 18
+    },
+    {
+      "text": "Oh so that's what that was! Felt it out here in Jordan Springs, I honestly thought it was another earthquake out in Leura or thunder.",
+      "url": "https://reddit.com/r/sydney/comments/1d5esew/whalan_explosion_house_blast_in_sydneys_west/l6lechd/",
+      "score": 13
+    },
+    {
+      "text": "Yep I thought it was Jordan Springs near Penrith",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tpott/",
+      "score": 12
+    },
+    {
+      "text": "Got ripped off Rapid Plumbing group in Jordan Springs once , charged me $ 750 for replacing 2 pipes",
+      "url": "https://reddit.com/r/sydney/comments/1car6bk/did_i_just_get_ripped_off_by_a_plumber/l0ukv58/",
+      "score": 3
+    },
+    {
+      "text": "for $200mil you could probably buy all of Jordan Springs East",
+      "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/kodn9j0/",
+      "score": 2
+    },
+    {
+      "text": "The Jordan Springs treatment",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tr4it/",
+      "score": 2
+    },
+    {
+      "text": "I assumed Oran Park or Jordan Springs.",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3ukl2x/",
+      "score": 2
+    }
+  ]
+}

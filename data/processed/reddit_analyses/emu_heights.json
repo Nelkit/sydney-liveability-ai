@@ -1,0 +1,76 @@
+{
+  "suburb": "Emu Heights",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:53.861082+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.441,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.786,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6518,
+    "surprise": 0.04,
+    "disgust": 0.0063,
+    "anger": 0.0072,
+    "sadness": 0.0451,
+    "fear": 0.01,
+    "joy": 0.2398
+  },
+  "narrative": "Reddit discussions about Emu Heights are most positive about transport (0.79) and nightlife (0.50). Residents are most critical about noise (0.50) and community (0.44). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Emu Plains is a flat lander colony, let them keep it in Sydney (also the sign on the M4 says it’s Sydney). Not sure what to do about Emu Heights though",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5urbai/",
+      "score": 33
+    },
+    {
+      "text": "There’s already Emu Heights",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnyz4y/",
+      "score": 13
+    },
+    {
+      "text": "There is a sign on the GWH at Glenbrook that says [Gateway to the Blue Mountains](https://maps.app.goo.gl/XPGXx7rPBGdYFjGk7?g_st=ac)\nI am happy with Emu Plains with being the western most suburb of Sy",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5v73f7/",
+      "score": 3
+    },
+    {
+      "text": "There's Emu heights, which I guess is above Emu Plains and Penrith.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnvopw/",
+      "score": 2
+    },
+    {
+      "text": "Emu Plains OR Emu Heights. \n\nLived in both.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxzyc6d/",
+      "score": 2
+    }
+  ]
+}

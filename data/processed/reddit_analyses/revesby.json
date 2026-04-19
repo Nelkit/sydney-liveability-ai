@@ -1,0 +1,101 @@
+{
+  "suburb": "Revesby",
+  "post_count": 46,
+  "fetched_at": "2026-04-18T02:07:24.051954+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.403,
+      "mentions": 36
+    },
+    "safety": {
+      "score": 0.313,
+      "mentions": 15
+    },
+    "transport": {
+      "score": 0.544,
+      "mentions": 27
+    },
+    "nightlife": {
+      "score": 0.347,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.201,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.065,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.218,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.15,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "sadness": 0.0657,
+    "surprise": 0.1368,
+    "neutral": 0.4968,
+    "fear": 0.1362,
+    "joy": 0.0657,
+    "disgust": 0.0478,
+    "anger": 0.051
+  },
+  "narrative": "Reddit discussions about Revesby are most positive about transport (0.54) and community (0.40). Residents are most critical about food and cafe (0.15) and noise (0.07). This analysis is based on 46 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Large factory fire at Fitzpatrick St Revesby.",
+      "url": "https://reddit.com/r/sydney/comments/1dd5o0l/anyone_know_whats_burning_out_west/l82li7p/",
+      "score": 137
+    },
+    {
+      "text": "Why though? We have exact same sign in a pharmacy in Revesby",
+      "url": "https://reddit.com/r/sydney/comments/1cjq6u3/tell_me_you_are_in_the_north_shore_without/l2i7qv6/",
+      "score": 110
+    },
+    {
+      "text": "All data is from [https://sudhosting2.web.app/stations/](https://sudhosting2.web.app/stations/), which is derived from TfNSW data. Thank you to both Sud and TfNSW for the data.\n\nThe top 25 stations on",
+      "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb0qsm/",
+      "score": 62
+    },
+    {
+      "text": "Reddit meet up at 6 Clive St revesby?",
+      "url": "https://reddit.com/r/sydney/comments/1asr6b6/more_questions_raised_than_answers_with_this/kqsf355/",
+      "score": 62
+    },
+    {
+      "text": "Or, developers buy run down fibro houses on big blocks, build a few townhouses and make a killing on subpar property\n\nThis is especially true for Revesby, Padstow etc",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyace77/",
+      "score": 54
+    },
+    {
+      "text": "T8 Airport line landslide/flooded\nA limited number of buses are replacing trains between Turrella and Revesby due to flooding on the tracks between Bardwell Park and Bexley North",
+      "url": "https://reddit.com/r/sydney/comments/1kt8t3v/t8_airport_line_landslideflooded/",
+      "score": 48
+    },
+    {
+      "text": "Factory fumes in Condell Park/ Revesby area. What is council doing?\nHas anyone else noticed the horrible rubber/chemical smell while driving down Milperra Road? It’s been going on for years now and it",
+      "url": "https://reddit.com/r/sydney/comments/1muyg0o/factory_fumes_in_condell_park_revesby_area_what/",
+      "score": 46
+    },
+    {
+      "text": "It's been happening for years ago around the place. Lotus donated an Elise to Revesby HWP in the hopes it would get them interested in using them as pursuit vehicles. But since it was a non-standard c",
+      "url": "https://reddit.com/r/sydney/comments/1bk3lxi/hills_police_driving_around_in_a_vehicle_with_a/kvvcpuw/",
+      "score": 45
+    },
+    {
+      "text": "Are there services anywhere where a visually impaired person could pay to have their clothing measurements taken? (Preferably in the CBD or the south, but willing to travel)\nHello. Just off the bat, I",
+      "url": "https://reddit.com/r/sydney/comments/1qcho7i/are_there_services_anywhere_where_a_visually/",
+      "score": 44
+    }
+  ]
+}

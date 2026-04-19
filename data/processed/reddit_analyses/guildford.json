@@ -1,0 +1,101 @@
+{
+  "suburb": "Guildford",
+  "post_count": 19,
+  "fetched_at": "2026-04-18T02:15:34.711567+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.75,
+      "mentions": 15
+    },
+    "green_space": {
+      "score": 0.792,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.817,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.849,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.805,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.949,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.46,
+      "mentions": 6
+    },
+    "noise": {
+      "score": 0.371,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "joy": 0.1526,
+    "surprise": 0.0743,
+    "neutral": 0.3475,
+    "sadness": 0.2225,
+    "disgust": 0.0695,
+    "anger": 0.0202,
+    "fear": 0.1135
+  },
+  "narrative": "Reddit discussions about Guildford are most positive about affordability (0.95) and food and cafe (0.85). Residents are most critical about safety (0.46) and noise (0.37). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Glad to see Guildford hasn’t changed in the last 15 years",
+      "url": "https://reddit.com/r/sydney/comments/18wng23/any_advice_on_dealing_with_local_teenagers/kg1cl28/",
+      "score": 78
+    },
+    {
+      "text": "I work in allied health and I feel really guilty for saying this, but when I have to go to yagoona, Guildford, and the entire lidcombe area, well I feel utterly depressed on those days; for the entire",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyajz36/",
+      "score": 45
+    },
+    {
+      "text": "Huh, I grew up in western suburbs my whole life and lived in Lidcombe for a few years. It is nowhere on the same level as Yagoona or Guildford. My gf lived in Guildford, and it's years behind Lidcombe",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyapmeq/",
+      "score": 42
+    },
+    {
+      "text": "Agree with this. There are some shabby areas of Lidcombe but overall it's not too bad, nowhere on the scale of fucking Guildford that's for sure.",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyaryv4/",
+      "score": 23
+    },
+    {
+      "text": "Up there with Villawood and Guildford as the most depressing suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyae519/",
+      "score": 21
+    },
+    {
+      "text": "I lived at Lidcombe for about 17 years up until around 2005 and it really was a bright spot in the middle of a bunch of shitholes. I had a friend at Guildford when I was in high school and that was al",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyargl3/",
+      "score": 18
+    },
+    {
+      "text": "I posted in last night's thread that I left about $300 odd worth of vinyl records on the train.\n\nI'm happy to report that some absolute legend at Guildford picked them up and handed them in. Huge prop",
+      "url": "https://reddit.com/r/sydney/comments/1bl33b3/sydney_daily_random_discussion_thread_23032024/kw5mfzi/",
+      "score": 17
+    },
+    {
+      "text": "I’m sorry, we lived in Guildford years ago.  It’s not a great neighbourhood.  Don’t attract more attention than necessary.",
+      "url": "https://reddit.com/r/sydney/comments/18wng23/any_advice_on_dealing_with_local_teenagers/kg2ybhb/",
+      "score": 15
+    },
+    {
+      "text": "Patronising as fuck… yagoona is literally 5 min from Bankstown which is extremely modernised and convenient. Not comparable to Guildford whatsoever",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyasisp/",
+      "score": 8
+    },
+    {
+      "text": ">One Nation event in Guildford \n\nDoesn’t sound like their traditional demographic",
+      "url": "https://reddit.com/r/sydney/comments/1cm5wzc/cumberland_city_council_bans_samesex_parenting/l2y8xbf/",
+      "score": 8
+    }
+  ]
+}

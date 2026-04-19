@@ -73,11 +73,11 @@ Thumbs.db
 # Arctic Shift dump files (large, downloaded locally)
 data/raw/arctic_shift/
 
-# Pre-processed Reddit data (generated locally from Arctic Shift)
-data/processed/reddit/
-
-# NLP analysis cache (generated locally)
-data/processed/reddit_analyses/
+# Pre-processed Reddit data and NLP analysis results are committed
+# as carve-out exceptions to the "no data/processed/" rule so teammates
+# and graders can run the chat demo without re-running extraction or
+# downloading the ~1.8 GB of transformer models the pipeline needs.
+# See AGENTS.md for the full list of exceptions.
 
 /openspec
 .claude

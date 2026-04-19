@@ -1,0 +1,101 @@
+{
+  "suburb": "Minto",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:22.273826+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.441,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.481,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.481,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.237,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.225,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.201,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.06,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.06,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "joy": 0.1599,
+    "surprise": 0.1236,
+    "neutral": 0.3606,
+    "fear": 0.2178,
+    "sadness": 0.0374,
+    "anger": 0.0359,
+    "disgust": 0.0648
+  },
+  "narrative": "Reddit discussions about Minto are most positive about nightlife (0.48) and food and cafe (0.48). Residents are most critical about green space (0.06) and noise (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Opening of El Jannah at Minto!",
+      "url": "https://reddit.com/r/sydney/comments/1ku28xp/opening_of_el_jannah_at_minto/",
+      "score": 378
+    },
+    {
+      "text": "Someone I knew jumped in front of a train at Minto last year. I was working just up the road from the station when it happened and I read that there'd been a fatality that morning. It wasn't until the",
+      "url": "https://reddit.com/r/sydney/comments/1b1xly3/to_whom_it_may_concern/ksiqnlk/",
+      "score": 59
+    },
+    {
+      "text": "Why on earth would you take a taxi all that way when you could take the train to Campbelltown (or Minto or Macarthur) station and taxi from there?",
+      "url": "https://reddit.com/r/sydney/comments/1dlt1a3/200_taxi_bill_was_i_scammed/l9r8fmp/",
+      "score": 33
+    },
+    {
+      "text": "Incident at Minto train station\nTrain currently stopped at the platform on line heading towards Macarthur. Large number of fire trucks. Police and ambulance in attendance as well. Expect delays.",
+      "url": "https://reddit.com/r/sydney/comments/1ebkv8e/incident_at_minto_train_station/",
+      "score": 24
+    },
+    {
+      "text": "I've lived in Ctown and rather liked it. I enjoyed living there more than Strathfield, Auburn, Ashfield, North Sydney and near the city. Lots of low cost of living options for house maintenance and su",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kvjfc6s/",
+      "score": 17
+    },
+    {
+      "text": "I'm aware of the contagion effect but to me it just feels a bit disrespectful. I'm not saying splash it all over the news but at the end of the day someone's dead and I think it's right to acknowledge",
+      "url": "https://reddit.com/r/sydney/comments/1b3mofl/just_heard_about_a_medical_emergency_at_central/kstlfji/",
+      "score": 9
+    },
+    {
+      "text": "There was never housing commission in Raby. It was private homes built primarily in the 1980s. Claymore, Minto, Airds all ex housing commission now new build estates.",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kvj037d/",
+      "score": 8
+    },
+    {
+      "text": "They still exist in Minto too! You can even get surf and turf for $20!",
+      "url": "https://reddit.com/r/sydney/comments/18y1z3r/15_steaks_still_exist_in_sydney_boyles_sutherland/kg8cdxz/",
+      "score": 5
+    },
+    {
+      "text": "I feel like it’d be better asking which ones don’t have it, seems like a really common machine for any decent sized AF gym. I’m pretty sure Minto, Campsie and Five Dock all have them. I’d just ring th",
+      "url": "https://reddit.com/r/sydney/comments/1bg4zt0/anytime_fitness_locations_with_hammer_incline/kv52kql/",
+      "score": 3
+    },
+    {
+      "text": "The Minto to Campbelltown walk. Beautiful this time of year",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzw66e5/",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "suburb": "Old Guildford",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:12.464921+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.711,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.711,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8384,
+    "surprise": 0.1199,
+    "sadness": 0.0127,
+    "anger": 0.008,
+    "fear": 0.0077,
+    "disgust": 0.0069,
+    "joy": 0.0064
+  },
+  "narrative": "Reddit discussions about Old Guildford are most positive about community (0.71) and nightlife (0.71). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "True, i reckon the centre would be Old Guildford.. Based on me squinting at google earth for a few minutes",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxzbl0e/",
+      "score": 3
+    }
+  ]
+}

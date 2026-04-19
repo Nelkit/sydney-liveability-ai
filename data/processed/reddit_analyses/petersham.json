@@ -1,0 +1,101 @@
+{
+  "suburb": "Petersham",
+  "post_count": 89,
+  "fetched_at": "2026-04-18T01:59:55.753910+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.634,
+      "mentions": 79
+    },
+    "safety": {
+      "score": 0.673,
+      "mentions": 22
+    },
+    "transport": {
+      "score": 0.713,
+      "mentions": 21
+    },
+    "food_and_cafe": {
+      "score": 0.678,
+      "mentions": 24
+    },
+    "affordability": {
+      "score": 0.779,
+      "mentions": 10
+    },
+    "nightlife": {
+      "score": 0.745,
+      "mentions": 24
+    },
+    "green_space": {
+      "score": 0.794,
+      "mentions": 10
+    },
+    "noise": {
+      "score": 0.693,
+      "mentions": 9
+    }
+  },
+  "emotions": {
+    "sadness": 0.0512,
+    "neutral": 0.5338,
+    "surprise": 0.1232,
+    "joy": 0.1082,
+    "disgust": 0.0661,
+    "anger": 0.0497,
+    "fear": 0.0679
+  },
+  "narrative": "Reddit discussions about Petersham are most positive about green space (0.79) and affordability (0.78). Residents are most critical about safety (0.67) and community (0.63). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "A walk along Parramatta Road\nA walk along what once was a grand stretch of businesses but are now mostly unloved. There's about 4km of mostly heritage-looking shopfronts. It's sad to see so many grand",
+      "url": "https://reddit.com/r/sydney/comments/1hw82zn/a_walk_along_parramatta_road/",
+      "score": 620
+    },
+    {
+      "text": "PSA: heavy flash flooding across parra road between haberfield and petersham\nTitle says it all. \n\nFlash flooding across all lanes and in both directions from Dalhousie down to west street. \n\nLivingsto",
+      "url": "https://reddit.com/r/sydney/comments/1rf4hmz/psa_heavy_flash_flooding_across_parra_road/",
+      "score": 244
+    },
+    {
+      "text": "Why is Marrickville so big?\nSo, we went to Olympic Meats in Marrickville for lunch today (side note, delicious) and noticed that while it is literally next door to Dulwich Hill railway station, its ad",
+      "url": "https://reddit.com/r/sydney/comments/1s5rpxo/why_is_marrickville_so_big/",
+      "score": 238
+    },
+    {
+      "text": "For at least 2 years, an underground water leak has been flooding this road in petersham\nThis road has been a hazard for me for years, it is perpetually wet, often big puddles and just on a bend so ba",
+      "url": "https://reddit.com/r/sydney/comments/1p619f6/for_at_least_2_years_an_underground_water_leak/",
+      "score": 182
+    },
+    {
+      "text": "Auction Price Insanity\nI got an email report in today of auctions in Sydney and one caught my eye.  \nHouse for sale in Petersham. 5 bed 2 bath 1 car. \n\nInitial guide $2,500,000. Sold at auction for $3",
+      "url": "https://reddit.com/r/sydney/comments/1c2z5xu/auction_price_insanity/",
+      "score": 155
+    },
+    {
+      "text": "Sunset from Petersham Station 24 Jul\nSome absolutely beautiful sunrise/sunsets these last few months, Petersham station has an underrated look out spot off the bridge.",
+      "url": "https://reddit.com/r/sydney/comments/1m7xu1g/sunset_from_petersham_station_24_jul/",
+      "score": 148
+    },
+    {
+      "text": "Anyone remember this restaurant on Parramatta Rd, Petersham?\nIt closed down many years ago, but I always remember seeing this restaurant and its red facade and blue wall every time I drove past Parram",
+      "url": "https://reddit.com/r/sydney/comments/1fcglvi/anyone_remember_this_restaurant_on_parramatta_rd/",
+      "score": 142
+    },
+    {
+      "text": "582sqm in Petersham. Was never going for less than $3m. Block sizes that large in the 'inner' inner west aren't the norm. Mostly bought up by developers or people subdividing.",
+      "url": "https://reddit.com/r/sydney/comments/1c2z5xu/auction_price_insanity/kzdj8wx/",
+      "score": 126
+    },
+    {
+      "text": "The local area map at Petersham Station hasn’t been updated in 17 years ",
+      "url": "https://reddit.com/r/sydney/comments/1dlk65a/the_local_area_map_at_petersham_station_hasnt/",
+      "score": 110
+    },
+    {
+      "text": "Summer Hill to Petersham along Parramata road, you can probably rack up 15 points in a few ks if you don't understand what the signs mean and drive at speed limit plus GST.",
+      "url": "https://reddit.com/r/sydney/comments/1civ1d2/french_motorist_busted_racking_up_240_demerit/l2c0knw/",
+      "score": 102
+    }
+  ]
+}

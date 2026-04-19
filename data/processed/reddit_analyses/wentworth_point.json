@@ -1,0 +1,101 @@
+{
+  "suburb": "Wentworth Point",
+  "post_count": 39,
+  "fetched_at": "2026-04-18T02:10:28.826707+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.552,
+      "mentions": 13
+    },
+    "community": {
+      "score": 0.469,
+      "mentions": 27
+    },
+    "safety": {
+      "score": 0.744,
+      "mentions": 8
+    },
+    "transport": {
+      "score": 0.614,
+      "mentions": 19
+    },
+    "noise": {
+      "score": 0.754,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.858,
+      "mentions": 6
+    },
+    "nightlife": {
+      "score": 0.961,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.78,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "neutral": 0.5204,
+    "surprise": 0.1074,
+    "sadness": 0.0955,
+    "joy": 0.0616,
+    "fear": 0.0596,
+    "anger": 0.0415,
+    "disgust": 0.114
+  },
+  "narrative": "Reddit discussions about Wentworth Point are most positive about nightlife (0.96) and affordability (0.86). Residents are most critical about green space (0.55) and community (0.47). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney Olympic Park with Wentworth Point and Rhodes",
+      "url": "https://reddit.com/r/sydney/comments/1hdtt6y/sydney_olympic_park_with_wentworth_point_and/",
+      "score": 373
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Missing Person | Mathew (Charlie) Hanham - Last seen 16th November\n[Hey all. Posting on behalf of friends and his family. Mathew \\(Charlie\\) Hanham was last seen on Friday the 16th November at around ",
+      "url": "https://reddit.com/r/sydney/comments/1gurvzn/missing_person_mathew_charlie_hanham_last_seen/",
+      "score": 107
+    },
+    {
+      "text": "Is there any reason today looks a lot hazy\nPhoto taken near Wentworth point suburb",
+      "url": "https://reddit.com/r/sydney/comments/1j0q251/is_there_any_reason_today_looks_a_lot_hazy/",
+      "score": 79
+    },
+    {
+      "text": "Still think it's ridiculous that they male wentworth point and carter St incredibly high density infill yet its skipped on the direct services to the city. Got to get the value add on yet to be develo",
+      "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6uerjr/",
+      "score": 39
+    },
+    {
+      "text": "think of wentworth point 5 years ago, looks like a decently planned new development but less than a quarter is habitable now so be a construction site for a while. Sits on victoria road so decent bus ",
+      "url": "https://reddit.com/r/sydney/comments/1cd9su6/melrose_park/l1al2wx/",
+      "score": 37
+    },
+    {
+      "text": "Same, could hear it fairly clearly from Wentworth Point.",
+      "url": "https://reddit.com/r/sydney/comments/1axx0kd/thousands_of_taylor_swift_enthusiasts_outside_her/krrhila/",
+      "score": 35
+    },
+    {
+      "text": "Wow that really does sound like every other apartment sprawl in Sydney to a Tee. Almost exactly describes Ryde/Meadowbank/Rhodes/Wentworth point as well",
+      "url": "https://reddit.com/r/sydney/comments/1altbdl/how_livable_is_wolli_creek_really/kpju1ob/",
+      "score": 29
+    },
+    {
+      "text": "I’ve noticed everyone thinks they are in the more expensive regions and the cheaper region nearby starts two suburbs away. This applies even when their suburb is across a major body of water from the ",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxy7txd/",
+      "score": 29
+    },
+    {
+      "text": "Carter St makes some sense with an approx 15min walk to a future metro stop.\n\nWentworth Point is a bit of a nightmare.",
+      "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6uhif6/",
+      "score": 26
+    }
+  ]
+}

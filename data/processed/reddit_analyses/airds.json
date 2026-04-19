@@ -1,0 +1,101 @@
+{
+  "suburb": "Airds",
+  "post_count": 19,
+  "fetched_at": "2026-04-18T02:15:23.322776+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.584,
+      "mentions": 13
+    },
+    "affordability": {
+      "score": 0.505,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.483,
+      "mentions": 6
+    },
+    "noise": {
+      "score": 0.711,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5107,
+    "surprise": 0.1093,
+    "joy": 0.0097,
+    "sadness": 0.0302,
+    "anger": 0.0535,
+    "disgust": 0.2603,
+    "fear": 0.0263
+  },
+  "narrative": "Reddit discussions about Airds are most positive about noise (0.71) and community (0.58). Residents are most critical about transport (0.50) and safety (0.48). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Druitt Heights, Rooty Estate, Airds Park.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie5ra6/",
+      "score": 176
+    },
+    {
+      "text": "I was just curious as to other 80's and 90's \"Westy's\" opinions on today's Essay culture?\nEdit - I meant to say Eshay in my title but autocorrect screwed me and I couldn't edit the title.\n\nI was born ",
+      "url": "https://reddit.com/r/sydney/comments/1bpoxvl/i_was_just_curious_as_to_other_80s_and_90s_westys/",
+      "score": 61
+    },
+    {
+      "text": "Airds = Newbrook Estate.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiektf4/",
+      "score": 28
+    },
+    {
+      "text": "Gentrification. Bankstown is not bad now, but once upon a time it used to be.\n\nThat \"ghetto\" has now moved further west. The dodgy bits are now Mount Druitt or Airds. Basically, look at the places whe",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie0nwd/",
+      "score": 10
+    },
+    {
+      "text": "Airds has been renamed to Newbrook lol",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kief629/",
+      "score": 9
+    },
+    {
+      "text": "We went there in 1998 as a geography excursion. Elite private school driving through airds \"understanding\" the social and people geography of the area and the contrasts to that of the near Sydney city",
+      "url": "https://reddit.com/r/sydney/comments/1bff76o/sydney_rental_is_unethical/kv1xbmh/",
+      "score": 9
+    },
+    {
+      "text": "Depends where you draw the boundary of Sydney. \n\nOr accept living in somewhere like Airds. (Which is in the $600's now, lol)",
+      "url": "https://reddit.com/r/sydney/comments/1bff76o/sydney_rental_is_unethical/kv1tf0l/",
+      "score": 8
+    },
+    {
+      "text": "There was never housing commission in Raby. It was private homes built primarily in the 1980s. Claymore, Minto, Airds all ex housing commission now new build estates.",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kvj037d/",
+      "score": 8
+    },
+    {
+      "text": "Spanian only goes to the \"housing\" areas, and to be fair Airds is a complete shit hole. Mt Druitt isn't as bad as it used to be, but the rep has stuck to it.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie9tu5/",
+      "score": 7
+    },
+    {
+      "text": "Christ, I lived in airds in the 80s. There were literal fucking riots going on. It was an absolute hole of a place.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie7w26/",
+      "score": 6
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "suburb": "Picnic Point",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:47.012233+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.806,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.806,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.845,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.783,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.612,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5925,
+    "joy": 0.144,
+    "surprise": 0.177,
+    "sadness": 0.0087,
+    "anger": 0.0325,
+    "disgust": 0.0162,
+    "fear": 0.0292
+  },
+  "narrative": "Reddit discussions about Picnic Point are most positive about community (0.84) and green space (0.81). Residents are most critical about nightlife (0.50) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I believe there doing some work now, theres picnic point, pleasure point and further along is gonna be Asbestos point.\n\nTalks are there is gonna be Asbestosville and Port Asbestos however locations ar",
+      "url": "https://reddit.com/r/sydney/comments/1b4x29l/how_much_asbestos_is_there_around_sydney/kt1zut5/",
+      "score": 12
+    },
+    {
+      "text": "There are a lot of suburbs between Roselands and Picnic Point. If you don’t need train access, then what about say Mortdale or Peakhurst? Mortdale has a small school which is not bad? Or Oatley West a",
+      "url": "https://reddit.com/r/sydney/comments/1cl614i/roseland_is_a_good_suburb_to_live/l2rtqo0/",
+      "score": 9
+    },
+    {
+      "text": "And I saw the police chopper too above Picnic Point.\n\nI've seen them do rbts at every M5 exit, but from what your describing it sounds more intense than that",
+      "url": "https://reddit.com/r/sydney/comments/1and6xf/police_operation_on_m5/kprkg5r/",
+      "score": 6
+    }
+  ]
+}

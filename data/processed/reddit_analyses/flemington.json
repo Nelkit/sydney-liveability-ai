@@ -1,0 +1,101 @@
+{
+  "suburb": "Flemington",
+  "post_count": 53,
+  "fetched_at": "2026-04-18T02:05:40.304764+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.58,
+      "mentions": 41
+    },
+    "nightlife": {
+      "score": 0.527,
+      "mentions": 7
+    },
+    "safety": {
+      "score": 0.464,
+      "mentions": 11
+    },
+    "transport": {
+      "score": 0.562,
+      "mentions": 18
+    },
+    "affordability": {
+      "score": 0.516,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.498,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.753,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.595,
+      "mentions": 5
+    }
+  },
+  "emotions": {
+    "sadness": 0.0529,
+    "fear": 0.0566,
+    "neutral": 0.5735,
+    "disgust": 0.0491,
+    "surprise": 0.1305,
+    "anger": 0.0472,
+    "joy": 0.0902
+  },
+  "narrative": "Reddit discussions about Flemington are most positive about noise (0.75) and food and cafe (0.59). Residents are most critical about green space (0.50) and safety (0.46). This analysis is based on 53 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Flemington markets aftermath",
+      "url": "https://reddit.com/r/sydney/comments/1plgbtt/flemington_markets_aftermath/",
+      "score": 648
+    },
+    {
+      "text": "why is it so littered in Flemington markets?",
+      "url": "https://reddit.com/r/sydney/comments/1mxwmqc/why_is_it_so_littered_in_flemington_markets/",
+      "score": 202
+    },
+    {
+      "text": "Flemington Markets also have great prices for anyone that lives closer to the city.\n\nEven if you can't find a decent market near you support your local butchers and green grocers.\n\nI find the ones nea",
+      "url": "https://reddit.com/r/sydney/comments/1da1jsq/went_to_parklea_markets_for_the_first_time_today/l7hc2pr/",
+      "score": 102
+    },
+    {
+      "text": "Sunrise near Flemington\nThe bonus of night shift and being awake early mornings are the occasional spectacular Sunrises",
+      "url": "https://reddit.com/r/sydney/comments/1of6d5j/sunrise_near_flemington/",
+      "score": 94
+    },
+    {
+      "text": "Spotted in Flemington: “Meeting New Friends by Accident”",
+      "url": "https://reddit.com/r/sydney/comments/1bs10jj/spotted_in_flemington_meeting_new_friends_by/",
+      "score": 74
+    },
+    {
+      "text": "Morning delays on Western/Inner West train services\nJust a heads up , services on the above lines are currently delayed due to an incident requiring emergency services at Flemington.",
+      "url": "https://reddit.com/r/sydney/comments/1mz5j27/morning_delays_on_westerninner_west_train_services/",
+      "score": 72
+    },
+    {
+      "text": "The prices that food trucks are charging is criminal.\n\nBut to answer your question there is a huge food truck event on Saturday 4th May 6-10pm at Paddy’s Markets Flemington (250 parramatta road) with ",
+      "url": "https://reddit.com/r/sydney/comments/1ci6cmj/food_truck_culture_in_sydney/l27k5op/",
+      "score": 65
+    },
+    {
+      "text": "All data is from [https://sudhosting2.web.app/stations/](https://sudhosting2.web.app/stations/), which is derived from TfNSW data. Thank you to both Sud and TfNSW for the data.\n\nThe top 25 stations on",
+      "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb0qsm/",
+      "score": 62
+    },
+    {
+      "text": "Cheap and fresh fruit and vegies (Sydney Markets Flemington)\nThe [Sydney Markets in Flemington](https://www.sydneymarkets.com.au/trading-hours/) are amazing. Lots of varieties of fruit and vegies at w",
+      "url": "https://reddit.com/r/sydney/comments/196dlyr/cheap_and_fresh_fruit_and_vegies_sydney_markets/",
+      "score": 49
+    },
+    {
+      "text": "Stuck at Homebush now , most of the folks got down at Flemington",
+      "url": "https://reddit.com/r/sydney/comments/1aqdkog/person_struck_by_a_train_macdonaldtown/kqc8be0/",
+      "score": 39
+    }
+  ]
+}

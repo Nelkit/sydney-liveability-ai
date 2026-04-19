@@ -1,0 +1,101 @@
+{
+  "suburb": "Epping",
+  "post_count": 282,
+  "fetched_at": "2026-04-18T01:29:06.977413+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.432,
+      "mentions": 233
+    },
+    "affordability": {
+      "score": 0.366,
+      "mentions": 40
+    },
+    "transport": {
+      "score": 0.571,
+      "mentions": 202
+    },
+    "safety": {
+      "score": 0.338,
+      "mentions": 81
+    },
+    "green_space": {
+      "score": 0.547,
+      "mentions": 30
+    },
+    "nightlife": {
+      "score": 0.648,
+      "mentions": 42
+    },
+    "food_and_cafe": {
+      "score": 0.599,
+      "mentions": 33
+    },
+    "noise": {
+      "score": 0.422,
+      "mentions": 12
+    }
+  },
+  "emotions": {
+    "neutral": 0.5368,
+    "surprise": 0.1361,
+    "disgust": 0.0738,
+    "anger": 0.0507,
+    "sadness": 0.0774,
+    "joy": 0.0566,
+    "fear": 0.0685
+  },
+  "narrative": "Reddit discussions about Epping are most positive about nightlife (0.65) and food and cafe (0.60). Residents are most critical about affordability (0.37) and safety (0.34). This analysis is based on 282 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "This apartment block in Epping has a map of Australia in the brickwork.",
+      "url": "https://reddit.com/r/sydney/comments/1qz2jxa/this_apartment_block_in_epping_has_a_map_of/",
+      "score": 2156
+    },
+    {
+      "text": "OGs still remember the promised Parramatta to Epping Rail Link.",
+      "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kzizdt8/",
+      "score": 466
+    },
+    {
+      "text": "Sydney’s unusual sewerage system to blame for faecal and fat balls on beaches, experts claim\nI don't understand why this is a mystery.\n\nI walk extensive around the Parramatta, Rosehill, Ryde, Epping, ",
+      "url": "https://reddit.com/r/sydney/comments/1i4nunc/sydneys_unusual_sewerage_system_to_blame_for/",
+      "score": 350
+    },
+    {
+      "text": "Homeless people are everywhere now.\n \nThere are a few around Castle Hill. \nThere's a guy roaming with a trolley around Epping. \nSomeone has set up a mattress and their things under a ramp that goes to",
+      "url": "https://reddit.com/r/sydney/comments/1clfy1u/anyone_else_in_ashfield_notice_an_uptick_in/l2tg9te/",
+      "score": 271
+    },
+    {
+      "text": "Why does the Parramatta light rail end at Carlingford? It is so close to Epping station. Epping is a major Metro and Heavy Rail interconnection. Could they dig another tunnel to connect it to Epping s",
+      "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/",
+      "score": 259
+    },
+    {
+      "text": "The metro is a game changer, it makes the existing lines look like dinosaurs. If I have to wait 7 minutes for a train in the middle of the day I think I'm being hard done by. We had to live with the E",
+      "url": "https://reddit.com/r/sydney/comments/1azboa5/sydney_metro_is_next_level/ks0bnqz/",
+      "score": 256
+    },
+    {
+      "text": "To all the people driving their crazy loud cars and motorcycles on Epping road at night \nResidents of the areas around it hate you so much. You don’t let them fall asleep, you wake them up in the midd",
+      "url": "https://reddit.com/r/sydney/comments/1gog6ih/to_all_the_people_driving_their_crazy_loud_cars/",
+      "score": 240
+    },
+    {
+      "text": "Metro upgrade sign replacement has begun (Epping)",
+      "url": "https://reddit.com/r/sydney/comments/1bbrpan/metro_upgrade_sign_replacement_has_begun_epping/",
+      "score": 221
+    },
+    {
+      "text": "Months later, this little guy is still hanging out in the Epping Metro station\nI guess it found a reliable source of water and food from somewhere.",
+      "url": "https://reddit.com/r/sydney/comments/1homwfo/months_later_this_little_guy_is_still_hanging_out/",
+      "score": 219
+    },
+    {
+      "text": "Oh sweet summer child.\n\n\nWay before the light rail project existed, the Carlingford line existed as a single bi directional line from Carlingford to Clyde.\n\nOnce upon a time, there was a project call ",
+      "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kziz6hk/",
+      "score": 169
+    }
+  ]
+}

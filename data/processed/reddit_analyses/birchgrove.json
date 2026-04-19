@@ -1,0 +1,101 @@
+{
+  "suburb": "Birchgrove",
+  "post_count": 15,
+  "fetched_at": "2026-04-18T02:16:37.272427+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.756,
+      "mentions": 8
+    },
+    "community": {
+      "score": 0.737,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.736,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.707,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.994,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.992,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.998,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.1994,
+    "neutral": 0.5427,
+    "sadness": 0.0166,
+    "disgust": 0.0812,
+    "surprise": 0.1108,
+    "fear": 0.0249,
+    "anger": 0.0243
+  },
+  "narrative": "Reddit discussions about Birchgrove are most positive about food and cafe (1.00) and affordability (0.99). Residents are most critical about safety (0.71) and noise (0.50). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Seal sunning at Birchgrove\nSleeping in on a public holiday",
+      "url": "https://reddit.com/r/sydney/comments/1bsnz8d/seal_sunning_at_birchgrove/",
+      "score": 283
+    },
+    {
+      "text": "Birchgrove Oval",
+      "url": "https://reddit.com/r/sydney/comments/1og6az6/birchgrove_oval/",
+      "score": 112
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2024!\nWelp, fuck again.\n\nThe flood of \"what do I do for New Year's?\" posts are starting, though you might not have noticed them as much since we started referring them ",
+      "url": "https://reddit.com/r/sydney/comments/1h5hf9b/sydney_nye_fireworks_megathread_2024/",
+      "score": 54
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2025!\nWe're four weeks out now. The posts have started, and we'd remind people there is [a Wiki page that you should totally check out.](https://old.reddit.com/r/sydney",
+      "url": "https://reddit.com/r/sydney/comments/1pchenr/sydney_nye_fireworks_megathread_2025/",
+      "score": 47
+    },
+    {
+      "text": "Why is my neighbours fence like that?\nI’m in Birchgrove, the neighbour’s fence seemingly finishes and then the neighbour on the other side (far left of frame) have about a 2 x 5 meter section of their",
+      "url": "https://reddit.com/r/sydney/comments/1f0iu1b/why_is_my_neighbours_fence_like_that/",
+      "score": 46
+    },
+    {
+      "text": "The eighth r/Sydney NYE fireworks meetup!\nHaving done ~~eight~~ seven (R.I.P 2020/21) of these meetups before, it's tough to find something new to say about this year's incarnation of the NYE meetup. ",
+      "url": "https://reddit.com/r/sydney/comments/1gz5pza/the_eighth_rsydney_nye_fireworks_meetup/",
+      "score": 45
+    },
+    {
+      "text": "Sydney NYE Fireworks Meetup: Round 9\nSydney's done major New Year's celebrations for 128 years now. And for 8 of them, the r/Sydney community has gathered at Ballast Point to watch the show, and celeb",
+      "url": "https://reddit.com/r/sydney/comments/1p5bmzj/sydney_nye_fireworks_meetup_round_9/",
+      "score": 30
+    },
+    {
+      "text": "Do people in Rozelle and Birchgrove, also on that Peninsula, get to consider themselves part of Balmain for this purpose?",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxpvr7/",
+      "score": 17
+    },
+    {
+      "text": "Balmain East, Mort bay, Birchgrove are all beautiful spots. They were kind of creative hubs for artists and musicians a few decades ago until the prices sky rocketed.",
+      "url": "https://reddit.com/r/sydney/comments/1c9aaqu/balmain_east_is_under_rated/l0kbejo/",
+      "score": 16
+    },
+    {
+      "text": "Birchgrove is one of the nicest parts of Sydney, the view from Birchgrove oval “beach” is next level",
+      "url": "https://reddit.com/r/sydney/comments/1c9aaqu/balmain_east_is_under_rated/l0keopz/",
+      "score": 8
+    }
+  ]
+}
