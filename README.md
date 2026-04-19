@@ -17,7 +17,7 @@ An AI-assisted, map-based web application to compare Sydney suburbs using civic 
 
 ## 🧭 Overview
 - Scope: ANLP 36118 project (UTS), Autumn 2026.
-- MVP suburbs: Newtown, Glebe, Redfern, Surry Hills, Haymarket.
+- Suburb coverage: all suburbs available in the current backend datasets.
 - Current backend status: boilerplate endpoints are available at `/` and `/health`.
 
 ## 🗂️ Repository Structure
@@ -75,11 +75,11 @@ sydney-liveability-ai/
 
 ### 1. 🧩 Backend Setup
 ```bash
-cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+cd backend
+make dev
 ```
 
 Backend URL: `http://127.0.0.1:8000`
@@ -115,7 +115,7 @@ VS Code option:
 2. Open any `.ipynb` in `notebooks/`.
 3. Select kernel from `notebooks/venv-notebooks`.
 
-Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into `backend/venv`.
+Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into the backend `venv`.
 
 ## 🔐 Environment Variables
 Create environment files from templates at repository root:

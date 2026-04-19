@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { FileText, SendHorizontal, Sparkles, X } from "lucide-react";
 import Image from "next/image";
 import { ChatMessage } from "./types";
@@ -28,6 +29,12 @@ export function AssistantSidebar({
   pdfLoaded,
   onTogglePdf
 }: AssistantSidebarProps) {
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, typing]);
+
   return (
     <aside className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white/94 shadow-[0_20px_45px_rgba(15,23,42,0.16)] backdrop-blur">
       <div className="shrink-0 bg-white flex items-center gap-2 border-b border-slate-200/80 px-3 py-2.5">
@@ -73,6 +80,8 @@ export function AssistantSidebar({
             <TypingDots />
           </div>
         ) : null}
+
+        <div ref={bottomRef} />
       </div>
 
       <button

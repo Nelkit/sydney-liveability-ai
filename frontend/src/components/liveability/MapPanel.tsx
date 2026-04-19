@@ -13,6 +13,7 @@ type RankedSuburb = Suburb & { computedScore: number };
 type MapPanelProps = {
   suburbs: Suburb[];
   ranked: RankedSuburb[];
+  isLoading: boolean;
   selectedSuburbId: string | null;
   onSelectSuburb: (name: string) => void;
   layer: string;
@@ -125,6 +126,7 @@ function getFeatureSuburbLabel(feature: GeoJSON.Feature) {
 export function MapPanel({
   suburbs,
   ranked,
+  isLoading,
   selectedSuburbId,
   onSelectSuburb,
   layer,
@@ -138,6 +140,7 @@ export function MapPanel({
   const [geoJsonLoaded, setGeoJsonLoaded] = useState(false);
   const [mapZoom, setMapZoom] = useState<number | null>(null);
   const hasFittedBoundsRef = useRef(false);
+  const previousLoadingRef = useRef(isLoading);
 
   const suburbsByName = useMemo(() => {
     const byName = new Map<string, Suburb>();
@@ -236,6 +239,14 @@ export function MapPanel({
   }, []);
 
   useEffect(() => {
+    if (previousLoadingRef.current && !isLoading) {
+      // Re-enable one animated fit when civic data has just finished loading.
+      hasFittedBoundsRef.current = false;
+    }
+    previousLoadingRef.current = isLoading;
+  }, [isLoading]);
+
+  useEffect(() => {
     const overlayGroup = overlaysRef.current;
     const map = mapRef.current;
     if (!overlayGroup || !map) return;
@@ -258,7 +269,7 @@ export function MapPanel({
 
       allSuburbsLayer.addTo(overlayGroup);
 
-      // Highlight layer: only the current top-5 mock suburbs.
+      // Highlight layer: only suburbs provided by the backend civic response.
       const highlightedLayer = L.geoJSON(suburbsGeoJson, {
         filter: (feature) => {
           if (!feature) return false;
@@ -303,15 +314,12 @@ export function MapPanel({
 
       highlightedLayer.addTo(overlayGroup);
 
-      if (!hasFittedBoundsRef.current) {
+      if (!hasFittedBoundsRef.current && !isLoading) {
         const preferredBounds = highlightedLayer.getBounds();
-        const fallbackBounds = allSuburbsLayer.getBounds();
-        const boundsToFit = preferredBounds.isValid() ? preferredBounds : fallbackBounds;
-
-        if (boundsToFit.isValid()) {
-          map.fitBounds(boundsToFit.pad(0.08), {
+        if (preferredBounds.isValid()) {
+          map.flyToBounds(preferredBounds.pad(0.08), {
             maxZoom: 15,
-            animate: false
+            duration: 0.9
           });
           hasFittedBoundsRef.current = true;
         }
@@ -434,7 +442,7 @@ export function MapPanel({
 
       label.addTo(overlayGroup);
     });
-  }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, mapZoom, layer, weights, selectedSuburbId, onSelectSuburb]);
+  }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, mapZoom, layer, weights, selectedSuburbId, onSelectSuburb, isLoading]);
 
   return (
     <section className="relative h-full overflow-hidden bg-[radial-gradient(circle_at_30%_18%,rgba(254,215,170,0.3),transparent_28%),linear-gradient(180deg,#eff2f8,#e9edf6)]">
@@ -457,6 +465,18 @@ export function MapPanel({
 
       <div ref={mapContainerRef} className="liveability-map h-full w-full" />
 
+      {isLoading ? (
+        <div className="pointer-events-none absolute inset-0 z-[430] grid place-items-center bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.88),rgba(248,250,252,0.58))] backdrop-blur-[1.5px]">
+          <div className="relative flex h-36 w-36 items-center justify-center">
+            <span className="absolute h-36 w-36 animate-ping rounded-full border border-blue-300/50" />
+            <span className="absolute h-24 w-24 animate-pulse rounded-full border-2 border-indigo-300/80" />
+            <span className="rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-600 shadow-[0_8px_20px_rgba(15,23,42,0.08)]">
+              Loading civic data
+            </span>
+          </div>
+        </div>
+      ) : null}
+
       <div className="pointer-events-none absolute bottom-6 right-3 z-[450] rounded-xl border border-white/70 bg-white/86 p-2 shadow-[0_10px_28px_rgba(15,23,42,0.08)] backdrop-blur">
         <div className="mb-1 flex items-center gap-1 text-[9px] font-semibold uppercase tracking-[0.06em] text-slateMuted">
           <Layers3 size={10} />
@@ -464,44 +484,61 @@ export function MapPanel({
         </div>
         <div className="flex items-center gap-2">
           <span className="text-[10px] font-medium text-slate-500">Cold</span>
-          <div className="h-2 w-24 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 via-orange-500 to-red-500" />
+          <div className="h-2 w-24 rounded-full bg-gradient-to-r from-blue-500 via-orange-500 to-red-500" />
           <span className="text-[10px] font-medium text-slate-500">Hot</span>
         </div>
       </div>
 
       <div className="scrollbar-none absolute inset-x-0 bottom-0 z-[450] flex gap-2 overflow-x-auto bg-gradient-to-t from-slate-900/20 via-slate-900/5 to-transparent pb-3 pl-2 pr-3 pt-6 md:pl-[370px]">
-        {ranked.map((suburb, index) => (
-          
-          <button
-            key={suburb.id}
-            type="button"
-            onClick={() => onSelectSuburb(suburb.name)}
-            className={`min-w-[146px] flex-shrink-0 rounded-2xl border p-3 text-left shadow-[0_10px_24px_rgba(15,23,42,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:shadow-cardLg ${
-              selectedSuburbId === suburb.id
-                ? "border-slate-500 bg-white"
-                : "border-white/80 bg-white/86"
-            }`}
-          >
-            <div className="mb-1 flex items-start justify-between">
-              <div>
-                <p className="text-[9px] font-semibold text-slateMuted">#{index + 1}</p>
-                <p className="text-xs font-bold text-slate-800">{suburb.name}</p>
-              </div>
-              <p className="text-2xl font-extrabold" style={{ color: scoreToHeatColor(layerValue(suburb, layer, weights)) }}>
-                {suburb.computedScore}
-              </p>
-            </div>
-            <div className="h-1 rounded bg-slate-200/70">
+        {isLoading
+          ? Array.from({ length: 5 }).map((_, index) => (
               <div
-                className="h-1 rounded"
-                style={{
-                  width: `${suburb.computedScore}%`,
-                  backgroundColor: scoreToHeatColor(layerValue(suburb, layer, weights))
-                }}
-              />
-            </div>
-          </button>
-        ))}
+                key={`loading-card-${index}`}
+                className="min-w-[146px] flex-shrink-0 animate-pulse rounded-2xl border border-white/85 bg-white/80 p-3 shadow-[0_10px_24px_rgba(15,23,42,0.08)] backdrop-blur"
+              >
+                <div className="mb-2 flex items-start justify-between">
+                  <div className="space-y-1.5">
+                    <div className="h-2 w-8 rounded bg-slate-200" />
+                    <div className="h-3 w-20 rounded bg-slate-300" />
+                  </div>
+                  <div className="h-8 w-10 rounded bg-slate-300" />
+                </div>
+                <div className="h-1 rounded bg-slate-200">
+                  <div className="h-1 w-2/3 rounded bg-slate-300" />
+                </div>
+              </div>
+            ))
+          : ranked.map((suburb, index) => (
+              <button
+                key={suburb.id}
+                type="button"
+                onClick={() => onSelectSuburb(suburb.name)}
+                className={`min-w-[146px] flex-shrink-0 rounded-2xl border p-3 text-left shadow-[0_10px_24px_rgba(15,23,42,0.08)] backdrop-blur transition hover:-translate-y-0.5 hover:shadow-cardLg ${
+                  selectedSuburbId === suburb.id
+                    ? "border-slate-500 bg-white"
+                    : "border-white/80 bg-white/86"
+                }`}
+              >
+                <div className="mb-1 flex items-start justify-between">
+                  <div>
+                    <p className="text-[9px] font-semibold text-slateMuted">#{index + 1}</p>
+                    <p className="text-xs font-bold text-slate-800">{suburb.name}</p>
+                  </div>
+                  <p className="text-2xl font-extrabold" style={{ color: scoreToHeatColor(layerValue(suburb, layer, weights)) }}>
+                    {suburb.computedScore}
+                  </p>
+                </div>
+                <div className="h-1 rounded bg-slate-200/70">
+                  <div
+                    className="h-1 rounded"
+                    style={{
+                      width: `${suburb.computedScore}%`,
+                      backgroundColor: scoreToHeatColor(layerValue(suburb, layer, weights))
+                    }}
+                  />
+                </div>
+              </button>
+            ))}
       </div>
 
       <div className="pointer-events-none absolute right-3 top-14 z-[450] rounded-xl border border-white/80 bg-white/86 px-3 py-2 text-xs shadow-[0_10px_24px_rgba(15,23,42,0.08)] backdrop-blur">

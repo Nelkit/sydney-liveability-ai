@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, CircleDollarSign, Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
 import { importanceOptions } from "./data";
@@ -35,6 +36,13 @@ export function OnboardingPanel({
   onWeightLevelChange,
   onContinue
 }: OnboardingPanelProps) {
+  const conversationRef = useRef<HTMLDivElement | null>(null);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, typing, profileReady]);
+
   const isConversationStarted = messages.length > 0;
   const previewPrompts = [
     { text: "Show top suburbs near trains", icon: TrainFront, tint: "bg-blue-100 text-blue-700" },
@@ -144,7 +152,10 @@ export function OnboardingPanel({
             </motion.div>
           </div>
         ) : (
-          <div className="scrollbar-none mx-auto px-10 flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible py-6">
+          <div
+            ref={conversationRef}
+            className="scrollbar-none mx-auto flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible px-10 py-6"
+          >
             {!profileReady ? (
               <div className="animate-fade-up w-full max-w-[92%] self-start rounded-2xl border border-white/75 bg-white/82 p-3 shadow-[0_8px_20px_rgba(15,23,42,0.07)] backdrop-blur">
                 <div className="mb-2 flex items-center justify-between">
@@ -260,6 +271,8 @@ export function OnboardingPanel({
                 </button>
               </motion.div>
             ) : null}
+
+            <div ref={bottomRef} />
           </div>
         )}
       </div>

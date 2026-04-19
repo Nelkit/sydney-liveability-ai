@@ -1,3 +1,21 @@
+# Skill Registry
+
+## Available Skills
+
+| Skill Name | Description | Trigger |
+|------------|-------------|---------|
+| branch-pr | PR creation workflow for Agent Teams Lite following the issue-first enforcement system. | When creating a pull request, opening a PR, or preparing changes for review. |
+| go-testing | Go testing patterns for Gentleman.Dots, including Bubbletea TUI testing. | When writing Go tests, using teatest, or adding test coverage. |
+| judgment-day | Parallel adversarial review protocol that launches two independent blind judge sub-agents simultaneously to review the same target, synthesizes their findings, applies fixes, and re-judges until both pass or escalates after 2 iterations. | When user says "judgment day", "judgment-day", "review adversarial", "dual review", "doble review", "juzgar", "que lo juzguen". |
+| issue-creation | Issue creation workflow for Agent Teams Lite following the issue-first enforcement system. | When creating a GitHub issue, reporting a bug, or requesting a feature. |
+| skill-creator | Creates new AI agent skills following the Agent Skills spec. | When user asks to create a new skill, add agent instructions, or document patterns for AI. |
+| ingest-script | Standard workflow to create backend/scripts/ingest_*.py for Sydney Liveability Explorer backend using idempotent upserts and migration-safe steps. | When creating or updating ingestion scripts that write to PostgreSQL tables. |
+
+## Project Conventions
+
+### /Users/nelkitchavezcalona/Desktop/NLP AT2/sydney-liveability-ai/AGENTS.md
+
+```markdown
 # AGENTS.md — Sydney Liveability AI
 
 This file provides context and rules for any AI assistant (Claude, Cursor, GitHub Copilot, ChatGPT, or similar) used by any team member during development. Read this file before generating any code, writing any text, or making any architectural decision.
@@ -284,16 +302,9 @@ Most of `backend/` · `data_extraction/` · and `notebooks/` still needs impleme
 
 ---
 
-## Project skills
-
-| Skill Name | Description | Path |
-|---|---|---|
-| `ingest-script` | Standard workflow to create `backend/scripts/ingest_*.py` with idempotent upserts, migration-safe steps, and team-ready documentation. | `skills/ingest-script/SKILL.md` |
-
----
-
 ## Team
 
 Group 3 · ANLP 36118 · UTS Master of Data Science and Innovation · Autumn 2026
 
 Ying-Kai Liao · Padmasri Srinivas · Nian-Ya Weng · Nelkit Chavez · Juan David Rodriguez · Luis Gerardo Robinson
+```
