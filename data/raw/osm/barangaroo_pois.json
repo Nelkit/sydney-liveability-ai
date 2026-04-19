@@ -1,0 +1,510 @@
+{
+  "suburb": "Barangaroo",
+  "bbox": {
+    "south": -33.8658334,
+    "west": 151.2000854,
+    "north": -33.8552506,
+    "east": 151.2031853
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8658334,151.2000854,-33.8552506,151.2031853);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8658334,151.2000854,-33.8552506,151.2031853);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8658334,151.2000854,-33.8552506,151.2031853);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8658334,151.2000854,-33.8552506,151.2031853);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:22:45Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 20958943,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5151396541,
+            "tags": {
+              "addr:housename": "Tower 1",
+              "addr:housenumber": "100",
+              "addr:street": "Barangaroo Avenue",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "cuisine": "steak",
+              "email": "barangaroo@themeatandwineco.com",
+              "name": "The Meat & Wine Co",
+              "phone": "+61 2 8629 8888",
+              "website": "https://themeatandwineco.com/locations/barangaroo/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5767617653,
+            "tags": {
+              "amenity": "restaurant",
+              "email": "info@nolasydney.com",
+              "name": "NOLA New Orleans Style BBQ Restaurant.",
+              "opening_hours": "Mo-Fr 11:45-01:00; Sa 16:00-01:00; Su 11:45-18:00",
+              "phone": "+61 2 9188 3039",
+              "website": "https://www.nolasydney.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5835837685,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "New Orleans Smokehouse."
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261160464,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Old Town"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169082,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese;ramen",
+              "level": "0",
+              "name": "Torotoro Ramen Bar",
+              "outdoor_seating": "yes",
+              "website": "https://www.torotoro.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169084,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-01-09",
+              "name": "Wild Sage",
+              "opening_hours": "Mo-Fr 07:30-15:00; Sa-Su 8:00-15:00",
+              "outdoor_seating": "yes",
+              "website": "https://wildsage.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169200,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Barangaroo Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169201,
+            "tags": {
+              "addr:housenumber": "300",
+              "addr:street": "Barangaroo Avenue",
+              "addr:unit": "T3.01",
+              "amenity": "restaurant",
+              "level": "0",
+              "name": "Bottega Coco",
+              "opening_hours": "Mo-We,Su 08:00-21:00; Th-Sa 08:00-22:00",
+              "website": "https://bottegacoco.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169204,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2026-02-11",
+              "cuisine": "italian",
+              "name": "Mr. Panino"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6261169684,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Toby's Estate",
+              "brand:website": "https://www.tobysestate.com.au/",
+              "brand:wikidata": "Q117006060",
+              "cuisine": "coffee_shop",
+              "name": "Toby's Estate",
+              "outdoor_seating": "no",
+              "shop": "coffee",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6287365494,
+            "tags": {
+              "amenity": "restaurant",
+              "indoor_seating": "yes",
+              "name": "The Butchers Block",
+              "outdoor_seating": "yes",
+              "website": "https://www.butchersblockgroup.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6287371073,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Callao",
+              "phone": "+61 2 8529 8996",
+              "website": "https://callao.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6287371076,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "brazilian",
+              "email": "hello@cinder.restaurant",
+              "name": "Cinder",
+              "phone": "+61 2 9413 9848",
+              "website": "https://cinder.restaurant/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6322295769,
+            "tags": {
+              "amenity": "restaurant",
+              "description": "Lunch - Dinner Monday - Sunday",
+              "name": "Born by Tapavino",
+              "phone": "+61 2 8072 7387",
+              "website": "http://borntapavino.com",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424612289,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "name": "Pho Mo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424612290,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "indian",
+              "name": "Spiced by Billus",
+              "opening_hours": "Su-We 12:00-21:15; Th 12:00-21:45; Fr-Sa 12:00-22:15",
+              "phone": "+61 2 9046 0979",
+              "toilets:wheelchair": "yes",
+              "website": "https://www.spicedbybillus.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424615120,
+            "tags": {
+              "addr:housenumber": "23",
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Barangaroo Avenue",
+              "addr:suburb": "Barangaroo",
+              "addr:unit": "5",
+              "amenity": "restaurant",
+              "cuisine": "turkish",
+              "email": "bookings@anason.com.au",
+              "name": "Anason",
+              "phone": "+61 2 9188 1581",
+              "website": "https://www.anason.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424615525,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-19",
+              "cuisine": "seafood",
+              "name": "love.fish",
+              "website": "https://www.lovefish.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424615717,
+            "tags": {
+              "addr:housenumber": "23",
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Barangaroo Avenue",
+              "addr:suburb": "Barangaroo",
+              "addr:unit": "6",
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "email": "barangarooinfo@muummaam.com.au",
+              "name": "Muum Maam",
+              "opening_hours": "Mo-Fr 11:30-15:00, 17:30-22:00; Sa 12:00-15:30, 17:30-22:00; Su 12:00-15:30, 17:30-21:00",
+              "phone": "+61 2 8252 0121",
+              "website": "https://muummaam.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424615733,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-19",
+              "name": "Lotus",
+              "website": "https://www.lotusdininggroup.com/chinese-restaurant-barangaroo",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6424615734,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "indoor_seating": "no",
+              "name": "Zushi",
+              "outdoor_seating": "yes",
+              "website": "https://zushi.com.au/barangaroo/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6474184897,
+            "tags": {
+              "addr:housenumber": "10",
+              "addr:street": "Scotch Row",
+              "addr:unit": "Shop T1",
+              "amenity": "restaurant",
+              "name": "Taku Taku",
+              "website": "https://www.takutaku.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6477383656,
+            "tags": {
+              "amenity": "cafe",
+              "contact:email": "hello@shelleycoffeebrewers.com",
+              "level": "0",
+              "name": "Shelley",
+              "opening_hours": "Mo 07:00-15:00; Tu-Th 07:00-16:00; Fr 07:00-15:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 424 792 478",
+              "website": "https://www.shelleybarangaroo.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12666110499,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "indoor_seating": "yes",
+              "name": "\u0100nn\u00e1m\u0113se",
+              "name:etymology": "Annam (French protectorate)",
+              "name:etymology:wikidata": "Q10828323",
+              "outdoor_seating": "yes",
+              "website": "https://annamese.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12998735021,
+            "tags": {
+              "amenity": "cafe",
+              "level": "0",
+              "name": "Sacrebleu!",
+              "opening_hours": "We-Fr 07:00-15:00; Sa-Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "website": "https://sacrebleu.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12998738401,
+            "tags": {
+              "amenity": "restaurant",
+              "indoor_seating": "yes",
+              "name": "Haven",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13011382971,
+            "tags": {
+              "amenity": "restaurant",
+              "level": "0",
+              "name": "Wood Cut Hickory Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13011387562,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Sharetea",
+              "brand:wikidata": "Q64827032",
+              "cuisine": "bubble_tea",
+              "level": "0",
+              "name": "Sharetea",
+              "name:en": "Sharetea",
+              "name:zh": "\u6b47\u8173\u4ead",
+              "takeaway": "yes",
+              "website": "https://sharetea.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13457737383,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "email": "hello@ginapastabar.com.au",
+              "name": "Gina",
+              "opening_hours": "Mo-Su 12:00-22:00",
+              "website": "https://ginapastabar.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13542684686,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "email": "info@tsuzumi.com.au",
+              "name": "Tsuzumi Omakase",
+              "opening_hours": "Tu-Fr 12:30-14:30, 18:30-20:30; Sa 17:30-19:30, 20:00-22:00",
+              "phone": "+61 488 787 814",
+              "website": "https://www.tsuzumi.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13542684691,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Winghaus",
+              "opening_hours": "Su-Mo 11:30-21:00; Tu-We 11:30-21:30; Th-Fr 11:30-22:30; Sa 11:30-22:00",
+              "website": "https://winghaus.com.au/winghaus-barangaroo/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13571590578,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "juice",
+              "level": "0",
+              "name": "Top Juice",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424430,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Munn Reserve",
+              "source": "survey",
+              "source:geometry": "LPI Base Map Feb 2016",
+              "source:name": "survey",
+              "start_date": "1981-09-21",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/munn-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424432,
+            "tags": {
+              "leisure": "park",
+              "name": "Clyne Reserve",
+              "source": "survey",
+              "source:geometry": "LPI Base Map Feb 2016",
+              "wikidata": "Q21962751"
+            }
+          },
+          {
+            "type": "way",
+            "id": 396635733,
+            "tags": {
+              "leisure": "park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 554373531,
+            "tags": {
+              "addr:housenumber": "35",
+              "addr:postcode": "2000",
+              "addr:street": "Barangaroo Avenue",
+              "amenity": "restaurant",
+              "building": "yes",
+              "building:levels": "3",
+              "cuisine": "contemporary",
+              "name": "Barangaroo House",
+              "toilets:wheelchair": "yes",
+              "website": "https://barangaroohouse.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1026912885,
+            "tags": {
+              "leisure": "park",
+              "name": "Hickson Park",
+              "start_date": "2020-12-08",
+              "website": "https://www.barangaroo.com/past-present-future/barangaroo-south/hickson-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1193701052,
+            "tags": {
+              "access": "no",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1299698503,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1308133778,
+            "tags": {
+              "leisure": "park"
+            }
+          }
+        ]
+      },
+      "endpoint": "https://overpass.kumi.systems/api/interpreter"
+    }
+  ]
+}

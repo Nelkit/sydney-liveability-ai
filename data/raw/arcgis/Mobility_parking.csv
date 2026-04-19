@@ -1,0 +1,361 @@
+﻿X,Y,OBJECTID,Address,Street,Location,Suburb,SideOfStreet,NumberParkingSpaces,ParkingSpaceWidth,ParkingSpaceLength,ParkingSpaceAngle,SignText,URL,AuditDate
+334200.399180522,6252305.46840194,1,36-64,George Street,between Cahill Walk and Lower Fort Street,Dawes Point,Westside,2,4.4,7.2,Parallel,,https://goo.gl/gaKZea,6/06/2017
+332501.69796361,6247157.06612758,2,51,Ashmore Street,between Mitchell Road and cul de sac,Erskineville,Southside,1,3.2,6.6,Parallel,,https://goo.gl/i1undt,1/06/2017
+331826.651204306,6246929.99751309,3,201,Rochford Street,between King Street and Knight Street,Erskineville,Westside,1,3.2,6,Parallel,,https://goo.gl/c5YuGC,2/06/2017
+334032.828074125,6249414.19688202,4,Central Station Western Forecourt,Railway Colonnade Drive ,between Lee Street an Eddy Avenue,Haymarket,Eastside,2,2.5,5.4,90-degree,Managed by RailCorp,https://goo.gl/zpP2y7,30/06/2017
+334039.741798049,6248101.29818714,5,261,Chalmers Street,between Turner Street and Phillip Street,Redfern,Eastside,1,3.4,5.6,60-degree,rear to kerb parking,https://goo.gl/FCHFUf,28/06/2017
+336407.477700365,6248633.13828944,6,55,Moore Park Road,between Cook Road and Poate Road,Centennial Park,Southside,1,2.6,7.4,Parallel,,https://goo.gl/7JLHju,9/06/2017
+333781.44453876,6249625.83723851,7,2,Quay Street,between Ultimo Road and Hay Street,Haymarket,Westside,1,3.2,7.1,Parallel,,https://goo.gl/e7bab6,6/06/2017
+334005.192447908,6249568.34417685,8,11,Rawson Place,between George Street and Pitt Street,Haymarket,Northside,2,2.8,5.5,Parallel,,https://goo.gl/maps/s9yCBUyXEyp3dAGbA,6/06/2017
+333923.479386457,6246412.66827236,9,17,Hansard Street,between Emmanuel Lane and Dunning Avenue,Zetland,Southside,1,3.4,5.8,60-degree,,https://goo.gl/Mx9HBZ,9/06/2017
+332933.254466956,6247716.32199954,10,142,Henderson Road,between Mitchell Road and Alexander Street,Alexandria,Southside,1,2.7,6.6,Parallel,,https://goo.gl/YoPp69,2/06/2017
+332843.020869157,6247704.94938418,11,164,Kingsclear Road,between Henderson Lane and Henderson Road,Alexandria,Westside,1,2.2,4,Parallel,,https://goo.gl/s3eoLu,2/06/2017
+334138.949960202,6247735.25390516,12,,Lenton Parade,between Raglan Lane and Wellington Street,Waterloo,Southside,1,3.2,7.5,Parallel,,https://goo.gl/LqpVE5,9/06/2017
+334110.924571851,6247667.44630058,13,43,Wellington Street,between Park Lane and Wellington Lane,Waterloo,Northside,1,3.2,5.4,Parallel,,https://goo.gl/z6g5TD,9/06/2017
+334171.612309981,6247442.87621161,14,22-26 ,McEvoy Street,between Hunter Street and Elizabeth Street,Waterloo,Southside,3,3.2,7.8,Parallel,No parking 4pm to 6pm Monday to Friday,https://goo.gl/HU5gWL,9/06/2017
+334209.508911093,6247435.73031809,15,22-26,McEvoy Street,between Hunter Street and Elizabeth Street,Waterloo,Southside,1,3.2,6.3,Parallel,,https://goo.gl/P3QJSM,9/06/2017
+333727.275222026,6247379.88633599,16,251,Cope Street,between John Street and McEvoy Street,Waterloo,Eastside,1,3.2,7.8,Parallel,,https://goo.gl/cjbefq,9/06/2017
+331788.768402815,6247525.58290486,17,,Angel Street,between Newman Lane and Newman Street,Erskineville,Westside,1,3.2,5.8,Parallel,,https://goo.gl/jLKurM,1/06/2017
+332356.060960431,6247178.19730267,18,24,Ashmore Street,between Binning Street and Binning Lane,Erskineville,Southside,1,3.2,6.4,Parallel,,https://goo.gl/Yi1r7d,1/06/2017
+332431.166462149,6247166.85111552,19,37,Ashmore Street,between Mitchell Road and cul de sac,Erskineville,Southside,1,3.2,5.4,Parallel,,https://goo.gl/3qxgSr,1/06/2017
+332502.202521394,6247404.52242693,20,29,Swanson Street,between Elliott Avenue and Malcolm Street,Erskineville,Southside,1,3,7.8,Parallel,,https://goo.gl/Z53uj2,1/06/2017
+332470.322039921,6247296.47302181,21,25,Elliott Avenue,between Binning Street and Swanson Street,Erskineville,Northside,3,3.2,7,Parallel,Mobility Parking Only,https://goo.gl/maps/86cz1MrQEFza1C4YA,3/8/2023
+332153.042012308,6247463.74166719,22,89,Erskineville Road,between George Street and Morrissey Road,Erskineville,Southside,1,2.9,5.5,Parallel,"Mobility parking only, 830am to 6pm Monday to Friday and 830am to 1230pm Saturdays",https://goo.gl/ndXwhA,1/06/2017
+331989.96869189,6247000.00584075,23,8A,Amy Street,between MacDonald Street and Knight Street,Erskineville,Eastside,1,3.2,7,Parallel,,https://goo.gl/QUAmHJ,2/06/2017
+332057.206293325,6246990.46835225,24,8,Flora Street,between MacDonald Street and Coulson Street,Erskineville,Eastside,1,2.2,7.3,Parallel,,https://goo.gl/Bj8Nq1,2/06/2017
+332425.691930455,6246766.53501578,25,Shop 14,Coulson Street,between Mitchell Road and Eve Street,Erskineville,Southside,1,3.5,6,60-degree,60 degree angle parking rear to kerb,https://goo.gl/hJC4mN,2/06/2017
+332159.506691991,6247582.73416794,26,Erskineville Mosque,Charles Street,between Erskineville Road and Albert Street,Erskineville,Westside,1,3.2,6.8,Parallel,,https://goo.gl/ieYiML,2/06/2017
+333002.642055765,6248953.18630768,27,,Myrtle Street,between City Road and Paints Lane,Chippendale,Northside,1,3.2,6.8,Parallel,,https://goo.gl/ndcijv,5/06/2017
+334104.677311313,6249781.20049318,28,13,Campbell Street,between Pitt Street and George Street,Haymarket,Southside,2,3.2,6.4,Parallel,,https://goo.gl/8UBdBw,6/06/2017
+334116.765125886,6246764.41710428,29,65,Portman Street,between Hansard Street and Merton Street,Zetland,Westside,1,3.2,6,Parallel,,https://goo.gl/TP9iue,9/06/2017
+333742.343246282,6248996.10583373,30,71,Regent Street,between Kensington Street and Outram Street,Chippendale,Westside,1,3.5,6.2,Parallel,,https://goo.gl/maps/QGy3VrKWCaXZKPzp7,5/06/2017
+333769.978540346,6248444.21874009,31,76,George Street,between Wells Street and James Street,Redfern,Westside,1,2.4,5.5,Parallel,,https://goo.gl/NvyXdQ,5/06/2017
+333951.136719273,6248564.64937064,32,10,Pitt Street,between Wells Street and James Street,Redfern,Westside,1,3.2,5.4,60-degree,,https://goo.gl/7JWDNT,5/06/2017
+333855.86066741,6248284.08195523,33,107,Redfern Street,between Pitt Street and George Street,Redfern,Southside,1,3.2,5.4,Parallel,,https://goo.gl/WY8zs8,5/06/2017
+333757.85656923,6248275.07593853,34,103-109,George Street,between Redfern Street and Turner Street,Redfern,Eastside,1,2.3,5.8,Parallel,,https://goo.gl/AtKizC,5/06/2017
+333413.042013753,6248019.97468048,35,,Boundary Street,between Wyndham Street and Regent Street,Redfern,Southside,1,3.2,7.8,Parallel,,https://goo.gl/bPNUFx,5/06/2017
+333298.19542797,6247938.59376113,36,13,Garden Street,between Central Avenue and Locomotive Street,Redfern,Westside,3,4,5.4,90-degree,,https://goo.gl/DcHyMJ,5/06/2017
+333767.692711133,6246270.71424621,37,,Reserve Street,between Botany Road and Beaconsfield Lane,Beaconsfield,Southside,1,3.2,7.8,Parallel,,https://goo.gl/X9Gm1z,9/06/2017
+334631.749716294,6247984.18408848,38,6,Zamia Street,between Baptist Street and Baptist Lane,Redfern,Southside,1,3.2,5.2,Parallel,,https://goo.gl/ZGeQzo,9/06/2017
+334941.088491803,6248122.41704083,39,19,Thurlow Street,between Thurlow Lane and Bourke Street,Redfern,Southside,1,3.2,7,Parallel,,https://goo.gl/RZPb4J,9/06/2017
+334025.701214595,6248004.55538503,40,267,Chalmers Street,between Turner Street and Phillip Street,Redfern,Eastside,1,3.9,6,60-degree,rear to kerb parking,https://goo.gl/XQCiHA,28/06/2017
+333576.743891797,6248145.86680802,41,16,Cope Street,between Phillip Street and Turner Street,Redfern,Westside,3,3.2,5.6,Parallel,"Mobility parking only, 7am to 5pm Monday to Friday",https://goo.gl/Xke29G,28/06/2017
+332117.339487214,6245852.95156589,42,Sydney Park,Harber Street,parking bay in Sydney Park,St Peters,Eastside,2,3.2,5.4,90-degree,90 degree angle parking rear to kerb,https://goo.gl/maps/hVXN3Xo4aXc5efh36,2/06/2017
+335869.424005402,6250371.74999241,43,31,Roslyn Street,between Ward Avenue and Roslyn Gardens,Rushcutters Bay,Eastside,1,3.2,7.3,Parallel,,https://goo.gl/G6D51Y,14/06/2017
+335850.467432332,6250800.49818788,44,81,Macleay Street,between Manning Street and Rockwall Crescent,Potts Point,Westside,2,3.2,5.7,Parallel,,https://goo.gl/RXagid,14/06/2017
+332884.902149328,6247820.46799098,45,41,Rowley Lane,between Rowley Street and Alexander Street,Eveleigh,Westside,1,3.2,7.2,Parallel,,https://goo.gl/2DYTXL,2/06/2017
+336361.773139509,6248404.47288233,46,60,Cook Road,between Furber Road and Furber Lane,Centennial Park,Westside,1,3.2,4.4,Parallel,,https://goo.gl/qLPyjA,9/06/2017
+335767.988495077,6247502.76968376,47,41,Robertson Road,between Dibbs Street and Oxley Lane,Centennial Park,Southside,1,3.2,5.4,Parallel,,https://goo.gl/WSMvtH,9/06/2017
+331349.618767458,6250085.37272236,48,rear of Webber's Carpet Warehouse ,Nelson Street,corner of Nelson Street and Chapman Road,Annandale,Eastside,2,3.3,5.4,90-degree,,https://goo.gl/acv2iD,13/06/2017
+331277.174841338,6250239.73020955,49,6,Chapman Road,Chapman Road cul de sac near the lightrail bridge,Annandale,Eastside,1,4.1,5.4,90-degree,,https://goo.gl/CDdWFs,13/06/2017
+331272.447712496,6250408.92930824,50,2-2A,Chapman Road,opposite Federal Park Playground,Annandale,Eastside,2,3.5,4.6,90-degree,,https://goo.gl/nmRLhB,28/06/2017
+334004.670343098,6249596.56547668,51,McKell Building,Barlow Street,between Barlow Street and George Street,Haymarket,Southside,2,3.2,5.4,Parallel,,https://goo.gl/U9wPy6,6/06/2017
+333867.102363189,6249481.13185356,52,10,Quay Street,between Bijou Lane and Thomas Street,Haymarket,Eastside,1,3.2,5.8,Parallel,,https://goo.gl/SVewpR,6/06/2017
+333968.174205452,6249817.93486979,53,417-419,Sussex Street,south of Little Hay Street,Haymarket,Westside,1,3.2,7.5,Parallel,Mobility Parking Only,https://maps.app.goo.gl/JWpfNCzXjuFV6dJY7,19/10/2023
+331480.182214998,6248631.85544894,54,100,Mallett Street,between Hampshire Lane and Fowler Street,Camperdown,Eastside,2,3.2,6.8,Parallel,,https://goo.gl/maps/mEMpdmjoN8JMatCm8,5/06/2017
+331540.613207954,6248672.14245913,55,92,Church Street,between Dunblane Street and Lucas Street,Camperdown,Eastside,1,3.2,8.5,Parallel,30 minute parking,https://goo.gl/grMhhR,5/06/2017
+331712.527792379,6248760.53358819,56,46,Dunblane Street,between Missenden Road and Church Street,Camperdown,Northside,2,3.2,4.8,Parallel,,https://goo.gl/tEM9Ed,5/06/2017
+331676.227683345,6248814.09208184,57,54-60,Briggs Street,between Church Street and Missenden Road,Camperdown,Northside,2,3.2,6,Parallel,,https://goo.gl/vcdJqM,5/06/2017
+331439.493844505,6249045.83824078,58,4,Lambert Street,between Lyons Road and Layton Street,Camperdown,Northside,1,3.2,5.7,Parallel,,https://goo.gl/vYdALg,13/06/2017
+335235.659393823,6249278.0080876,59,407,South Dowling Street,between Flinders Street and Hannam Street,Darlinghurst,Westside,1,3.2,6,Parallel,,https://goo.gl/NsPQho,9/06/2017
+335102.939205939,6249795.54566341,60,341,Bourke Street,between Foley Street and Burton Street,Darlinghurst,Westside,1,3.2,8.1,Parallel,,https://goo.gl/btaKxv,14/06/2017
+335134.259915223,6249740.54566891,61,301,Forbes Street,between Foley Street and Burton Street,Darlinghurst,Westside,7,3.2,4.8,60-degree,60 degree angle parking front to kerb. Vehicles under 6 metres only,https://goo.gl/1iio1X,14/06/2017
+335417.660117288,6249723.5693173,62,St Vincent's Hospital,Victoria Street,between Burton Street and Victoria Street,Darlinghurst,Eastside,1,3.7,8.2,45-degree,45 degree angle parking rear to kerb. Vehicles under 6 metres only,https://goo.gl/JfXhxf,14/06/2017
+335499.223796485,6249844.13583085,63,265,Victoria Street,between Liverpool Street and Burton Street,Darlinghurst,Eastside,1,3.2,6,Parallel,,https://goo.gl/9VWhvk,14/06/2017
+335748.78010263,6249803.78247354,65,43,Boundary Street,between Glenview Lane and Glenview Street,Darlinghurst,Northside,1,3.2,7,Parallel,,https://goo.gl/v1aJtH,14/06/2017
+335621.881967331,6250012.93555127,66,,Caldwell Street,between Surry Street and  Nimrod Street,Darlinghurst,Westside,1,3.2,4.2,Parallel,,https://goo.gl/ircYPm,14/06/2017
+335645.170268632,6250004.90705526,67,77,Surrey Street,between Caldwell Street and Surry Lane,Darlinghurst,Northside,1,3.2,5.5,Parallel,,https://goo.gl/dmyiAq,14/06/2017
+336183.692031419,6250800.08494471,68,7,Ithaca Road,between The Esplanade and Ithaca Road,Elizabeth Bay,Eastside,1,3.7,5.1,90-degree,90 degree angle parking rear to kerb. Vehicles under 6 metres only,https://goo.gl/JBVMB3,14/06/2017
+335837.245162622,6250623.13178615,69,50-58,Macleay Street,between Fitzroy Gardens and Greenknowe Avenue,Elizabeth Bay,Eastside,3,3.2,6,Parallel,,https://goo.gl/7vRYiY,14/06/2017
+336063.666363971,6250611.29792481,70,39,Elizabeth Bay Road,between Greenknowe Avenue and Amos Lane,Elizabeth Bay,Eastside,1,3.2,5.7,Parallel,,https://goo.gl/auE8iC,14/06/2017
+332602.020780958,6248226.07324151,71,Darlington Public School,Abercrombie Street,between Golden Grove Street and Codrington Street,Darlington,Northside,2,3.2,6.8,Parallel,Mobility parking only 8am to 6pm school days,https://goo.gl/j4EtFL,5/06/2017
+332977.63396945,6248287.1432054,72,444,Wilson Street,between Codrington Street and Sheppard Street,Darlington,Northside,1,3.2,6.2,Parallel,,https://goo.gl/AqndD5,5/06/2017
+333133.998958692,6248347.5239319,73,502,Wilson Street,between Sheppard Street and Sheppard Lane,Darlington,Northside,1,3.2,6.6,Parallel,,https://goo.gl/VjqJWA,5/06/2017
+332714.809588607,6248179.32056089,74,314,Wilson Street,between Golden Grove Street and Codrington Street,Darlington,Northside,1,3.2,6.6,Parallel,,https://goo.gl/3j4tk2,5/06/2017
+332447.143663908,6248328.68191479,75,,Darlington Road,between Golden Grove Street and King Street,Darlington,Southside,2,3.2,6.5,Parallel,,https://goo.gl/Wjkp9o,5/06/2017
+332569.773954512,6248381.67513555,76,121,Darlington Road,between Codrington Street and Golden Grove Street,Darlington,Southside,1,3.2,5.4,Parallel,Mobility parking 830am to 530pm Monday to Friday,https://goo.gl/KwYqxG,5/06/2017
+332555.566996083,6248138.19483385,77,45,Golden Grove Street,between Wilson Street and Abercrombie Street,Darlington,Westside,2,2.4,3.6,Parallel,,https://goo.gl/4cuFJp,2/06/2017
+333026.912527577,6248531.77631308,78,54,Calder Road,between Shephard Street and Shepard Lane,Darlington,Northside,1,2.2,8.6,Parallel,,https://goo.gl/XaUZfa,5/06/2017
+333084.588193339,6248731.50232232,79,108-118,Shephard Street,between Vine Street and Ivy Street,Darlington,Eastside,2,2,6.2,Parallel,,https://goo.gl/TUukuT,5/06/2017
+333210.833003331,6248670.77864404,80,30,Thomas Street,between Vine Street and Ivy Lane,Darlington,Westside,1,3.2,6.4,Parallel,,https://goo.gl/HTkHBq,5/06/2017
+333321.624456366,6248357.96586387,81,129-131,Little Eveleigh Street,between Lawson Street and Ivy Lane,Darlington,Southside,1,2.4,6.4,Parallel,,https://goo.gl/VrJU74,5/06/2017
+334119.355993032,6251647.12029009,82,121-127,Harrington Street,between Essex Street and Grosvenor Street,The Rocks,Eastside,3,3.2,6.7,Parallel,,https://goo.gl/tqS7An,6/06/2017
+334100.700049076,6251905.20948613,83,King George Fifth Recreation Centre,Cumberland Street,between Cahill Walk and Gloucester Street,The Rocks,Westside,1,2.5,9.4,Parallel,,https://goo.gl/4xPAMm,6/06/2017
+333993.67658722,6252269.74326679,85,5,Hickson Road,between Pottinger Street and Napoleon Street,Dawes Point,Southside,2,2.5,6.1,Parallel,,https://goo.gl/eKdHvy,6/06/2017
+333979.978586765,6252272.66266444,86,5,Hickson Road,between Napoleon Street and Pottinger Street,Dawes Point,Southside,1,2.5,6.8,Parallel,,https://goo.gl/9a8MWt,6/06/2017
+333988.728286006,6252276.95076592,87,5,Hickson Road,between Napoleon Street and Pottinger Street,Dawes Point,Southside,1,2.5,6.4,Parallel,,https://goo.gl/VFbY18,6/06/2017
+333836.260253817,6251881.93794111,88,84,Kent Street,between Argyle Street and High Street,Millers Point,Eastside,1,3.2,6.3,Parallel,,https://goo.gl/J95Hjx,6/06/2017
+333720.420836548,6251985.18432104,89,Nawi Square Lawn,Hickson Road,between Towns Place and Napoleon Street,Millers Point,Westside,2,3.6,5.2,90-degree,,https://goo.gl/7p29Jh,28/06/2017
+333742.174381444,6252307.94152378,90,6,Towns Place,between Dalgety Road and Hickson Road,Millers Point,Northside,2,2.5,4.8,90-degree,90 degree angle parking rear to kerb. Vehicles under 6 metres only,https://goo.gl/maps/ra9o9hMAuExWH7hq7,28/06/2017
+334290.258743049,6251937.28311837,91,107,George Street,between Globe Street and Argyle Street,The Rocks,Westside,3,3.3,6.2,Parallel,15 minute drop off only 9am to 6pm,https://goo.gl/X1eEXa,28/06/2017
+335320.880599987,6249240.40090225,92,16,Albion Avenue,between South Dowling Street and Selwyn Street,Paddington,Northside,1,3.2,7,Parallel,,https://goo.gl/365Shu,9/06/2017
+335409.39213524,6249032.19621798,93,26,Josephson Street,between Greens Road and Selwyn Street,Paddington,Southside,1,3.2,6.7,Parallel,,https://goo.gl/2YAvEY,9/06/2017
+331482.797553438,6249578.99484658,94,16,Albert Street,between Arthur Street and Upper Road,Forest Lodge,Southside,1,3.2,6.2,Parallel,,https://goo.gl/4fZtay,13/06/2017
+331510.110948353,6249608.34785115,95,3,Albert Street,between Upper Road and Arthur Street,Forest Lodge,Northside,1,3.2,6,Parallel,,https://goo.gl/7HKG81,13/06/2017
+331550.831250953,6249592.41205814,96,9-10,Arthur Street,between Albert Street and Wigram Road,Forest Lodge,Eastside,2,3.2,7.2,Parallel,,https://goo.gl/LAkRjn,13/06/2017
+335951.759615715,6249137.27591017,97,1,Oatley Road,between Renny Street and Oatley Road,Paddington,Westside,1,3.2,5.6,Parallel,,https://goo.gl/2jPTsV,30/06/2017
+331815.435746516,6247855.16350843,98,22-28,Wilson Street,between Erskineville Road and Brown Street,Newtown,Southside,2,2.6,5.3,90-degree,,https://goo.gl/SrSsRW,2/06/2017
+331986.872252891,6247814.8823378,99,25,Brown Street,between Linthorpe Street and Linthorpe Lane,Newtown,Westside,1,3.2,6.4,Parallel,,https://goo.gl/maps/ySHcUczpZA942pHx6,1/06/2017
+331965.020133674,6247927.89843374,100,16,Brown Street,between Buckland Lane and Bruce Lane,Newtown,Eastside,1,2.3,4.8,Parallel,,https://goo.gl/KDXzVs,2/06/2017
+331953.870628895,6247956.11033175,101,Newtown Library,Brown Street,between Buckland Lane and Brown Lane,Newtown,Eastside,1,2.3,5.8,Parallel,,https://goo.gl/eC5hPc,2/06/2017
+331992.415008867,6248072.86243798,102,,Watkin Street,between Buckland Lane and King Street,Newtown,Westside,2,3.2,6.3,Parallel,,https://goo.gl/oD7rkC,2/06/2017
+331974.903086202,6248206.0240346,103,,Stephen Street,between Longdown Street and Victoria Street,Newtown,Eastside,1,3.2,7,Parallel,,https://goo.gl/4J3E9h,2/06/2017
+332150.744968928,6248304.2950643,104,69,Campbell Street,between Missenden Road and Little Queen Street,Newtown,Northside,2,3.2,6.3,Parallel,,https://goo.gl/XdDaua,2/06/2017
+331872.333069011,6248308.54071679,105,67,O'Connell Street,between Carillon Street and Campbell Street,Newtown,Eastside,1,3.2,7.6,Parallel,,https://goo.gl/4AGV7b,2/06/2017
+331889.464879113,6248249.04521989,106,50,O'Connell Street,between Chalder Street and Prospect Street,Newtown,Westside,1,3.2,5.4,Parallel,,https://goo.gl/vgVP1R,2/06/2017
+332475.977096996,6248134.22372028,107,56,Forbes Street,between Elvy Place and Wilson Street,Newtown,Eastside,1,3.2,6.2,Parallel,,https://goo.gl/3ASDoa,5/06/2017
+335532.027839469,6250764.16563368,108,52,McElhone Street,between Nesbitt Street and Pring Street,Woolloomooloo,Eastside,1,3.2,6,Parallel,,https://goo.gl/SckAE1,14/06/2017
+335398.078328571,6250830.37551063,109,13,Nicholson Street,between Maclean Street and Forbes Street,Woolloomooloo,Southside,2,3.2,7.5,Parallel,,https://goo.gl/QeY8hJ,14/06/2017
+335494.471172989,6250568.24992786,110,128,McElhone Street,between Windeyer Street and Rae Place,Woolloomooloo,Eastside,2,3.2,5.8,Parallel,,https://goo.gl/QByd9G,14/06/2017
+335417.976903359,6250391.52801535,111,153,Dowling Street,between William Street and Reid Avenue,Woolloomooloo,Westside,1,3.2,5.1,Parallel,,https://goo.gl/4id59s,14/06/2017
+335085.142859307,6250655.55485778,112,18,Crown Street,between Sir John Young Crescent and Cathedral Street,Woolloomooloo,Eastside,1,2.2,8.4,Parallel,,https://goo.gl/d4cHLQ,14/06/2017
+334158.074450725,6248962.94920474,113,120,Chalmers Street,between Chalmers Lane and Rutland Street,Surry Hills,Westside,2,3.2,7,Parallel,"Mobility parking only, 10am to 3pm Monday to Friday and 6am to 8pm Saturday to Sunday",https://goo.gl/Bt2qxq,6/06/2017
+334584.000661484,6249478.82267584,114,11,Ann Street,between Batman Lane and Smith Street,Surry Hills,Northside,1,3.2,5.4,Parallel,,https://goo.gl/aipcnm,6/06/2017
+334748.432466715,6249445.33220399,115,63-73,Ann Street,between Riley Street and Lt Riley Street,Surry Hills,Southside,1,3.2,6.4,Parallel,,https://goo.gl/ebEHya,6/06/2017
+334739.052997272,6249852.62190117,116,25,Pelican Street,between Goulburn Street and Poplar Street,Surry Hills,Westside,1,3.2,6.6,Parallel,,https://goo.gl/vyvrtQ,6/06/2017
+335035.825758839,6248900.28465465,117,33,Phelps Street,between Kendall Street and Phelps Lane,Surry Hills,Northside,1,3.2,5.8,Parallel,,https://goo.gl/J2B5ng,9/06/2017
+335122.26715806,6248903.35956939,118,16,Chapman Street,between Phelps Street and Prospect Street,Surry Hills,Eastside,1,2.5,5,90-degree,Vehicles under 6 metres only,https://goo.gl/HFRS5q,9/06/2017
+334970.705748721,6248960.72584336,119,468,Bourke Street,between Prospect Street and Phelps Street,Surry Hills,Westside,1,3.2,6.2,Parallel,,https://goo.gl/p2QCfk,9/06/2017
+334773.921853892,6248933.78400988,120,,Arthur Street,between Crown Street and Tudor Place,Surry Hills,Southside,1,3.2,7,Parallel,,https://goo.gl/y7sMq1,9/06/2017
+334786.078505451,6249217.5808111,121,3,Little Norton Street,between Foveaux Street and Fitzroy Street,Surry Hills,Westside,1,3.2,8.8,Parallel,,https://goo.gl/mVYAdM,9/06/2017
+333413.217523491,6249721.66267542,122,71,Macarthur Street,between Hackett Street and Bulwara Road,Ultimo,Southside,1,3.4,5.4,90-degree,90 degree angle parking front to kerb. Vehicles under 6 metres only,https://goo.gl/bgK47y,14/06/2017
+333409.868958469,6249516.64187546,123,Ultimo TAFE,Mary Ann Street,between Jones Street and Harris Street,Ultimo,Southside,2,2.2,5.4,Parallel,,https://goo.gl/bQvmXe,14/06/2017
+333475.522648988,6249571.1051865,124,,Bulwara Road,between Macarthur Street and Mary Ann Street,Ultimo,Eastside,1,3.2,7.9,Parallel,,https://goo.gl/C37U71,14/06/2017
+333177.289667742,6249466.25993594,125,23,Mountain Street,between Kelly Street and Small Street,Ultimo,Eastside,2,3.2,5.6,Parallel,,https://goo.gl/z41YLJ,14/06/2017
+333107.7962618,6250088.58472223,126,352,Jones Street,between Fig Lane and Quarry Lane,Ultimo,Eastside,1,3.2,6.1,Parallel,,https://goo.gl/ceQ7xf,14/06/2017
+333137.186643519,6250195.26892693,127,80,Upper Fig Street,between Bulwara Road and Jones Street,Ultimo,Southside,2,3.2,6.2,Parallel,,https://goo.gl/81L6iq,14/06/2017
+333085.564433263,6250256.27871794,128,292,Jones Lane,between Fig Street,Ultimo,Eastside,1,3.2,5,90-degree,,https://goo.gl/9SJ1uM,14/06/2017
+334242.995208585,6249208.53881849,129,Central Station,Chalmers Street,between Randle Street and Elizabeth Street,Surry Hills,Eastside,3,3.2,6,Parallel,,https://goo.gl/jgwWMr,30/06/2017
+334761.968316395,6248567.57650894,130,624,Crown Street,between Lansdowne Street and Cleveland Street,Surry Hills,Eastside,1,3.2,7.5,Parallel,,https://goo.gl/1zr3xa,30/06/2017
+332746.661844495,6250782.54605857,131,21-27,Jones Street,between Miller Street and Clifftop Walk,Pyrmont,Westside,1,3.5,5,90-degree,90 degree angle parking front to kerb,https://goo.gl/m7QXpm,15/06/2017
+332792.141723466,6251491.45426421,132,Pirrama Park,Pirrama Road,between Herbert Street and Jones Bay Wharf,Pyrmont,Northside,2,3.2,5.4,90-degree,90 degree angle parking rear to kerb. Vehicles under 6 metres only,https://goo.gl/4nmGs4,15/06/2017
+332880.887265477,6251243.57458008,133,18,Point Street,between Scott Street and Bowman Street,Pyrmont,Eastside,1,3.2,7,Parallel,,https://goo.gl/MmAbGw,15/06/2017
+332735.021163036,6251260.39105515,134,9,Harris Street,between Pirrama Road and Pirrama Park,Pyrmont,Eastside,2,3.2,7.6,Parallel,,https://goo.gl/K6QydD,15/06/2017
+332779.92414894,6251342.25606257,135,Pirrama Park,Pirrama Road,between Harris Street and Jones Bay Road,Pyrmont,Westside,2,3.2,5.4,90-degree,90 degree angle parking rear to kerb. Vehicles under 6 metres only,https://goo.gl/6Heazt,15/06/2017
+331789.282698321,6250483.25879617,136,451,Glebe Point Road,between Federal Road and Mary Street,Glebe,Eastside,1,2.2,6.8,Parallel,,https://goo.gl/q4Y1e7,13/06/2017
+334660.841640605,6251358.8780833,137,155,Macquarie Street,between Bent Street and Bridge Street,Sydney,Westside,2,2.8,7,Parallel,,https://goo.gl/4NxDEr,6/06/2017
+334266.099589537,6250492.41231858,141,252,Pitt Street,between Druitt Street and Market Street,Sydney,Westside,2,2.6,8.7,Parallel,Loading zone from 6am to 6pm Monday to Friday and 6am to 10am Saturdays,https://goo.gl/TRPpgv,6/06/2017
+334717.975659501,6250660.76689515,142,Saint Mary's Cathedral,College Street,south of Prince Albert Road,Sydney,Eastside,2,3.2,15.6,Parallel,4P Mobility Parking  6am-10pm,https://maps.app.goo.gl/EXkuL8zH4MnA2T4W8,08/08/2024
+334803.611667808,6250610.5663099,143,Christian Brothers College,Cathedral Street,between Cathedral Square and Saint Marys Road,Sydney,Northside,2,3.2,11,Parallel,4P Mobility Parking  6am-10pm,https://maps.app.goo.gl/wBcgGN64MoiT8x34A,08/08/2024
+334523.169132682,6250821.33786144,144,Supreme Court of NSW,Saint James Road,between Macquarie Street and Elizabeth Street,Sydney,Southside,6,3.2,5.6,Parallel,,https://goo.gl/sDUU7M,6/06/2017
+334627.959099776,6251012.47667873,145,227,Macquarie Street,between Saint James Road and Martin Place,Sydney,Westside,2,2.9,6.9,Parallel,,https://goo.gl/AF774s,6/06/2017
+334545.704408542,6250962.51276486,146,182,Phillip Street,between Martin Place and King Street,Sydney,Eastside,2,3.2,16,Parallel,"Mobility Parking 8am-6pm Mon-Fri & 4P Ticket 6pm-12am Mon-Fri, 8am-10pm Sat-Sun & Public Holidays",https://goo.gl/pThXao,20/07/2023
+334694.125154757,6251275.34208923,147,State Library of NSW,Shakespeare Place,between Sir John Young Crescent and Macquarie Street,Sydney,Southside,4,3.2,5.9,Parallel,,https://goo.gl/QCZzdD,6/06/2017
+335086.963699102,6251008.52425703,150,Art Gallery of NSW,Art Gallery Road,between Sir John Young Crescent and Prince Albert Road,Sydney,Eastside,2,2.7,5.2,90-degree,,https://goo.gl/2DtPjC,14/06/2017
+334031.384091803,6251069.48667682,151,,Barrack Street,between York Street and York Lane,Sydney,Northside,2,2.6,7.4,Parallel,"Loading zone from 6am to 10pm, Monday to Saturday. Mobility parking other times",https://goo.gl/LVnFmK,28/06/2017
+334007.589092077,6251068.28037276,152,2-6,Barrack Street,between York Lane and Clarence Street,Sydney,Northside,2,2.6,6.6,Parallel,"Loading zone from 6am to 10pm, Monday to Saturday. Mobility parking other times",https://goo.gl/chvsyk,28/06/2017
+333760.83485703,6250691.69603181,153,7,Wheat Road,between Harbour Street and Pyrmont Bridge,Sydney,Westside,5,3.5,5.4,90-degree,,https://goo.gl/qiX4mn,30/06/2017
+334255.899857464,6250094.33241804,155,338,Pitt Street,between Liverpool Street and Central Street,Sydney,Eastside,1,2.4,6,Parallel,"Loading zone from 6am to 10am, Monday to Friday",https://goo.gl/Jmd5z6,30/06/2017
+333562.019253229,6248372.25500484,156,Redfern Police Station,Lawson Square,east of Gibbons Street,Redfern,Southside,2,4.1,8.2,60-degree,4P Mobility Parking Space,https://goo.gl/PXz678,12/09/2024
+332096.526480243,6250584.01984828,157,16,Leichhardt Street,parking bay near Blackwattle Bay Park,Glebe,Southside,1,3.3,5.7,90-degree,,https://goo.gl/96zdAZ,13/06/2017
+332300.512923477,6250327.04568383,158,,Forsyth Street,parking bay east of Taylor Street near Glebe foreshore,Glebe,Southside,1,3.2,5.4,90-degree,,https://goo.gl/ZebpTR,13/06/2017
+332675.931968341,6250057.62194866,159,,Cardigan Street,between Bellevue Lane and Wentworth Park Road,Glebe,Southside,1,3.2,5.6,Parallel,,https://goo.gl/XVMd15,13/06/2017
+332777.527027404,6249709.58996703,160,21,Mitchell Street,between Wentworth Street and Phillip Street,Glebe,Northside,1,3.2,5.5,Parallel,,https://goo.gl/S9hExH,1/06/2017
+332755.79093511,6249664.78826346,161,58,Mitchell Street,between Phillip Street and Broughton Street,Glebe,Southside,1,3.2,5.8,Parallel,,https://goo.gl/GjMvkT,1/06/2017
+332749.636334077,6249670.95356239,162,37,Mitchell Street,between Phillip Street and Broughton Street,Glebe,Northside,1,3.2,5.6,Parallel,,https://goo.gl/Ah1sXM,1/06/2017
+332734.797437566,6249650.73845991,163,49,Mitchell Street,between Phillip Street and Broughton Street,Glebe,Northside,1,3.2,6.4,Parallel,,https://goo.gl/nz4Jdy,1/06/2017
+332807.576636213,6249657.43157231,164,11,Phillip Street,between Mitchell Lane East and Cowper Lane,Glebe,Eastside,1,3.2,6.2,Parallel,,https://goo.gl/JD68b8,1/06/2017
+332874.004433837,6249670.2200836,165,43,Cowper Street,between Wentworth Street and Phillip Street,Glebe,Northside,1,3.2,6,Parallel,,https://goo.gl/JYRske,1/06/2017
+332823.815638482,6249643.84117512,166,1,Phillip Street,between Mitchell Lane East and Cowper Lane,Glebe,Eastside,1,3.2,5.2,Parallel,,https://goo.gl/dmY2bP,1/06/2017
+332779.546150369,6249574.92686778,167,16,Broughton Street,between Cowper Lane and Mitchell Street,Glebe,Westside,2,3.2,5.5,Parallel,,https://goo.gl/aWZnT2,1/06/2017
+332776.618847854,6249589.71376723,168,11,Broughton Street,between Cowper Lane and Mitchell Lane East,Glebe,Eastside,1,3.2,6.6,Parallel,,https://goo.gl/1LJ5R8,1/06/2017
+332758.020147254,6249593.55156405,169,24,Broughton Street,between Cowper Lane and Mitchell Street,Glebe,Westside,1,3.2,6,Parallel,,https://goo.gl/f2KQWX,1/06/2017
+332686.375734988,6249666.68515161,170,21,Broughton Street,between Mitchell Lane West and Saint Johns Road,Glebe,Eastside,1,3.2,5.8,Parallel,,https://goo.gl/WNLLiU,1/06/2017
+332545.24662139,6249748.82192729,171,10,Colbourne Avenue,between Saint Johns Road and Lyndhurst Street,Glebe,Westside,1,3.2,5.9,Parallel,,https://goo.gl/2zKWYC,1/06/2017
+332568.51093157,6249688.73103144,172,84,Saint Johns Road,between Glebe Street and Bernard Lane,Glebe,Southside,1,3.2,6.3,Parallel,,https://goo.gl/M1MS3s,1/06/2017
+332387.723553174,6249565.14670097,173,128,Saint Johns Road,between Glebe Point Road and Derwent Lane,Glebe,Southside,1,2,6.9,Parallel,,https://goo.gl/d6pCVX,1/06/2017
+332348.065855174,6249554.11459424,174,75,Saint Johns Road,between Glebe Point Road and Purves Street,Glebe,Northside,1,3.2,9.2,Parallel,,https://goo.gl/9vTSEP,1/06/2017
+332501.876147931,6249593.94572036,175,94,Campbell Street,between Norton Street and Saint Johns Road,Glebe,Westside,1,3.2,5.4,Parallel,,https://goo.gl/qjWF5y,1/06/2017
+332560.124753071,6249562.82063039,176,87,Campbell Street,between Norton Street and Mitchell Street,Glebe,Eastside,2,3.2,5.9,Parallel,,https://goo.gl/pqDm8U,1/06/2017
+332708.109570372,6249458.85935594,177,31,Campbell Street,between Mitchell Street and Cowper Street,Glebe,Eastside,3,3.2,5.1,Parallel,,https://goo.gl/8sF9wF,1/06/2017
+332749.600283302,6249382.33666324,178,117,Cowper Street,between Campbell Street and Campbell Lane,Glebe,Northside,1,3.2,6,Parallel,,https://goo.gl/EUkGWC,1/06/2017
+332797.10286634,6249480.99757105,179,103,Glebe Street,between Cowper Street and Mitchell Street,Glebe,Eastside,1,3.2,6,Parallel,,https://goo.gl/49hFMs,1/06/2017
+332709.824957585,6249533.787556,180,96,Glebe Street,between Cowper Street and Mitchell Street,Glebe,Westside,1,3.2,6.8,Parallel,,https://goo.gl/uA8xEd,1/06/2017
+332613.668943752,6249616.54363936,181,119,Glebe Street,between Norton Street and Mitchell Street,Glebe,Eastside,2,3.2,6.2,Parallel,,https://goo.gl/AFy7BR,1/06/2017
+332694.692816433,6249775.3270527,182,48,Saint Johns Road,between Phillip Street and Wentworth Street,Glebe,Southside,1,3.2,5.4,Parallel,,https://goo.gl/cmvCaJ,1/06/2017
+332512.161206893,6249248.08652314,183,3,Westmoreland Street,between Mitchell Street and Catherine Street,Glebe,Eastside,1,3.2,4.7,Parallel,,https://goo.gl/qsmjjg,13/06/2017
+332394.236807934,6249244.00320304,184,,Catherine Street,between Mount Vernon Street and Mount Vernon Lane,Glebe,Northside,1,3.5,10.1,Parallel,,https://goo.gl/7ikZZi,13/06/2017
+332348.450421691,6249164.11589547,185,65,Arundel Street,between Derwent Street and Seamer Street,Glebe,Southside,1,4.8,4.9,90-degree,,https://goo.gl/tiknsZ,13/06/2017
+332448.404319064,6249177.81721248,186,45,Arundel Street,between Derwent Street and Seamer Street,Glebe,Northside,1,2.2,6.5,Parallel,,https://goo.gl/Zx1W2d,13/06/2017
+332200.220013134,6249216.79867003,187,93,Arundel Street,between Forest Street and Lodge Street,Glebe,Northside,1,3.2,5.2,Parallel,,https://goo.gl/HBewQW,13/06/2017
+332311.062699906,6249292.48778871,188,21,Mount Vernon Street,between Saint Johns Road and Catherine Street,Glebe,Eastside,3,3.2,6.4,Parallel,,https://goo.gl/iSdT63,13/06/2017
+332593.578198798,6249294.16103689,189,20,Derwent Street,between Catherine Street and Mitchell Street,Glebe,Westside,1,3.2,8.6,Parallel,,https://goo.gl/nJtjxa,13/06/2017
+332483.700781329,6249398.44001784,190,71-73,Derwent Street,between Saint Johns Road and Mitchell Street,Glebe,Eastside,3,3.2,8.2,Parallel,,https://goo.gl/DRCW6G,13/06/2017
+332464.499581353,6249398.63751456,191,62,Derwent Street,between Mitchell Road and Saint Johns Road,Glebe,Westside,1,3.2,8.3,Parallel,,https://goo.gl/KL1ddc,13/06/2017
+332281.258375587,6249435.5621832,192,79,Westmoreland Street,between Saint Johns Road and Mitchell Street,Glebe,Eastside,1,3.2,7.2,Parallel,,https://goo.gl/xusV3n,13/06/2017
+332326.457781689,6249399.02769102,193,63,Westmoreland Street,between Saint Johns Road and Mitchell Street,Glebe,Eastside,2,3.2,6,Parallel,,https://goo.gl/Abqgtw,13/06/2017
+332385.737688882,6249355.83590126,194,45,Westmoreland Street,between Saint Johns Road and Mitchell Street,Glebe,Eastside,1,3.2,10.1,Parallel,,https://goo.gl/u8s9ib,13/06/2017
+332401.486594621,6249321.91810404,195,18,Westmoreland Street,between Mitchell Street and Saint Johns Road,Glebe,Westside,1,3.2,6,Parallel,,https://goo.gl/xh7Bnr,13/06/2017
+332266.835828193,6250299.97747817,196,76,Forsyth Street,between Taylor Street and Avon Street,Glebe,Southside,1,3.2,6.4,Parallel,,https://goo.gl/fE2Q4P,13/06/2017
+332182.983994316,6249913.72466501,197,315,Glebe Point Road,between Ferry Road and Palmerston Avenue,Glebe,Eastside,1,2.2,6.1,Parallel,,https://goo.gl/gp4QDD,13/06/2017
+331849.745941213,6250230.72570723,198,42,Allen Street,between Cotter Lane and Park Avenue,Glebe,Eastside,1,3.2,7.8,Parallel,,https://goo.gl/GwJNfA,13/06/2017
+332707.410688546,6249938.61605439,199,39,Bellevue Street,between Lyndhurst Street and Saint Johns Road,Glebe,Eastside,1,3.2,7,Parallel,,https://goo.gl/6L5Mmc,13/06/2017
+332753.04650279,6249854.31036242,200,10,Bellevue Street,between Saint Johns Road and Lyndhurst Street,Glebe,Westside,1,3.2,6,Parallel,,https://goo.gl/13zVNW,13/06/2017
+334306.702657245,6251267.38632318,201,68,Pitt Street,corner of Pitt Street and Hunt Street,Sydney,Eastside,1,,,Parallel,Mobility parking only. 2 hour ticketed parking. 6am to 6pm,https://goo.gl/maps/G6UKLEEnSge1sCLp7,6/08/2020
+334335.239907351,6251559.45502717,202,45-54,Pitt Street,corner of Pitt Street and Bridge Street,Sydney,Eastside,1,,,Parallel,Mobility parking only. 2 hour ticketed parking. 6am to 6pm,https://goo.gl/maps/NS22U23YZWJeAPRM9,6/08/2020
+334299.267177342,6251149.68392226,203,86-88,Pitt Street,between Angel Place and Hunter Street,Sydney,Eastside,1,,,Parallel,Mobility parking only. 2 hour ticketed parking. 6am to 6pm. No parking all other times.,https://goo.gl/maps/LkvWBsNHTt9Ji7q99,21/09/2020
+332276.944602659,6246932.00178991,205,8,Eve Street,south of Brightwell Lane,Erskineville,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/pYpYhX5tvtVL83oP6,2/11/2021
+331795.787204781,6250445.27209739,206,284,Glebe Point road,south of Eglinton Road,Glebe,Westside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/2YtK2Ru2if7fG72L7,17/03/2022
+334995.926434002,6250219.14084388,207,121-129,Crown Street,north of Stanley Street,Surry Hills,Westside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/FajhzScDwhniYRgu9,19/08/2021
+331932.022314166,6247456.59942951,208,24,Union Street,south of Newman Lane,Erskineville,Eastside,1,3.2,6.7,Parallel,Disability Parking Only,https://goo.gl/maps/m86AbwZ3h9cSU8rdA,24/06/2021
+335006.395589847,6249891.54944665,210,34,Burton Street,west of Palmer Street,Darlinghurst,Northside,2,3.2,19.5,Parallel,4P Disability Parking Only 8am-10pm,https://goo.gl/maps/zfsTnj9XPEpVzvb76,29/10/2021
+331923.25425025,6247245.23532864,211,,Munni Street,side of 95 Rochford Street,Erskineville,Northside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/RGvhvsh2ZjNWj6j38,21/04/2022
+333400.090061707,6245394.45308611,212,53-55,Ralph Street,north of Gillespie Avenue,Alexandria,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/R5ibGkBYyLXmQ8qYA,16/06/2022
+334547.875183652,6249349.47107007,213,1-7,Belmore Street,South of Albion Way,Surrh Hills,Westside,1,3.2,78,Parallel,Disability Parking Only,https://goo.gl/maps/zRFx3QGAbqnKYcA2A,16/06/2022
+331784.491582626,6248230.22560204,214,2,Chalder Street,east of Horden Street,Newtown,Southside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/8ATg5eDmc3c9ya3o6,16/06/2022
+331917.862768449,6248311.05912455,215,38,Susan Street,South of Carillon Avenue,Newtown,Westside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/5xXbGJN9RZxjP2VF9,19/05/2022
+334239.435888983,6247564.80672281,216,67,Kellick Street,east of Elizabeth Street,Waterloo,Northside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/9gQcgSjgQmRNv48E9,19/05/2022
+331901.945534026,6247340.70902472,217,72,Union Street,north of Munni Street,Erskineville,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/UL5nYHALjr9vmxfC6,19/05/2022
+334734.923700592,6248074.45420581,218,3,Kepos Street,South of Telopea Street,Redfern,Westside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/WN6WkbXTZ3Shs13D6,19/05/2022
+331853.692513916,6247459.40361613,219,48,Gowrie Street,between Newman Lane,Newtown,Eastside,2,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/SnpYospp4MFYFhu36,19/05/2022
+332495.993828004,6249710.880119,220,15,Gottenham Street,North of St Johns Road,Glebe,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/s4G9eYCD4jTSS1uv8,21/07/2022
+331706.280108342,6247494.58549089,221,16,Gibbes Street,east of Whitehorse Street,Newtown,Northside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/ThnQYPZY2AT73Q84A,18/08/2022
+333664.136750317,6247801.33622396,222,87,Cooper Street,South of Raglan Street,Newtown,Westside,2,5.4,7.9,90-degree,Disability Parking Only,https://goo.gl/maps/XGisf1fKNBwJvLrz6,18/08/2022
+333670.094734313,6246136.52732996,223,155,Victoria Street,north of Collins Street,Beaconsfield,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/bqms4s9e1e3SY5Vp7,18/08/2022
+332438.060273947,6249442.49660992,225,93,Derwent Street,South of St Johns Roadd,Glebe,Eastside,1,3.2,7.8,Parallel,Disability Parking Only,https://goo.gl/maps/1KPy8hz2BAYsFG9X7,8/12/2022
+334272.745675047,6252336.35661418,228,10,Hickson Road,South of George Street,Dawes Point,Westside,2,3.2,15.6,Parallel,Loading Zone 6-9:30am Mobility Parking At Other Times,https://goo.gl/maps/1kpULP7HAAVCK5NK7,8/12/2022
+334783.432139112,6249606.54980948,229,239,Riley Street,South of Campbell Street,Surry Hills,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/FtP6j9AsspzCM3Ed6,16/3/2023
+334019.027946947,6246642.63118797,230,,Paul Street,The Drying Green,Zetland,Eastside,1,3.2,7.8,Parallel,2P 8am to 10pm. Disability Parking Only,https://goo.gl/maps/stDrX2EDh8UCX2ax9,24/05/2023
+334003.8820739,6246484.91018586,231,1,Sonny Leonard Street,corner of Paul Street and Sonny Leonard Street,Zetland,Southside,1,3.2,7.8,Parallel,2P Ticket 8am to 10pm Disability Only,https://goo.gl/maps/oHXmCUxNfUSo5muB6,24/05/2023
+334120.49768898,6246394.51660603,232,Joynton Avenue Creative Centre ,Hansard Street,between Portman Street and Joynton Avenue,Zetland,Northside,2,3.2,7.8,60 rear to kerb,2P 8am to 6pm Mon-Fri. 60 deg angle parking. Rear to kerb.,https://goo.gl/maps/B3jEMaFEz8rsyY5y7,24/05/2023
+334212.53305316,6246602.9023211,233,,Zetland Avenue,between Portman Street and Joynton Avenue,Zetland,Southside,2,3.2,15.6,Parallel,P15 minutes 7am - 6pm Mon to Fri. Disability parking other times,,24/05/2023
+333914.666725029,6246772.91456978,234,,Zetland Avenue,Opposite Green Square Library,Zetland,Northside,1,3.2,7.8,Parallel,Disability parking only,https://goo.gl/maps/WbiY95s4KMgGWg669,24/05/2023
+334283.491460087,6246561.10803334,235,17,Zetland Street,front of Gunyama Park Aquatic and Recreation Centre,Zetland,Southside,2,3.2,15.6,Parallel,Disability parking only,,24/05/2023
+334322.483962583,6246545.77294003,236,17,Zetland Avenue,front of Gunyama Park Aquatic and Recreation Centre,Zetland,Southside,2,3.2,15.6,Parallel,Disability parking only,,24/05/2023
+334802.801740853,6247251.07511986,237,20,Archibald Avenue,between Gadigal Avenue and Amelia Street,Waterloo,Southside,2,3.2,7.8,Parallel,Disability parking only,https://goo.gl/maps/WvD7KbQAfF6vrapT9,25/05/2023
+334572.967623429,6247943.36417857,238,113,Marriott Street,South of Zamia Street,Redfern,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/QMyRMxwDTbgmVofn7,27/06/2023
+333272.497244697,6248427.21645528,239,161,Lawson Street,east of Ivy Lane,Redfern,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/w5wm6CE7U2sWXpxJ8,27/06/2023
+334695.974969728,6251773.86898804,639,81,Macquarie Street,between Albert Street and No Through Road,Sydney,Westside,3,3.2,23.4,Parallel,4 hour Mobility Parking Only,https://goo.gl/maps/j1gtVkte5pe7hj3j8,7/07/2023
+334637.830103102,6250406.47558224,640,,Park Street,between College Street and Elizabeth Street,Sydney,Southside,2,3.2,15.6,Parallel,"Loading Zone from 6am to 9:30am, Mobility Parking All Other Times",https://goo.gl/maps/uhiozrEz7fEd8yTL6,7/07/2023
+334035.98511732,6250333.46967981,641,93,Bathurst Street,between George Street and Kent Street,Sydney,Southside,1,3.2,7.8,Parallel,"Loading Zone from 6am to 6pm, Monday to Friday & 6am to 10am, Saturday. 4 hour parking 6pm to 12am, Monday to Friday & 10am to 12am, Saturday & 8am to 12am, Sunday & Public Holidays. Mobility Parking All Other Times",https://goo.gl/maps/du1Tjtryf69A37CL6,7/07/2023
+334282.616916186,6249749.57742363,642,39,Campbell Street,between Pitt Street and Castlereagh Street,Haymarket,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/UMH7kYQWPVL3KH7K6,7/07/2023
+334076.013836388,6249634.69038873,643,31,Parker Street,between Hay Street and Barlow Street,Haymarket,Eastside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/fX26nMrGrmMex8g58,7/07/2023
+334055.10784379,6249591.64338529,644,2,Barlow Street,between Pitt Street and George Street,Haymarket,Southside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/YFU3NeZFBzChDzEu8,7/07/2023
+332840.411164613,6251249.31117316,645,112,Bowman Street,between Point Street and Cross Street,Pyrmont,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/fjmiQWS1FHq2fQCt9,7/07/2023
+332772.952508512,6250993.05666242,646,5,Mount Street,between John Street and No Through Road,Pyrmont,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/r2AiJdZux91XM3uz6,7/07/2023
+331562.587457548,6250139.84625853,647,7,Victoria Road,between Maxwell Road and Alexandra Lane,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/6RWCi5K7WdaSdwoT8,7/07/2023
+332163.558364236,6249504.11826292,649,,Reuss Street,west of Purves Street,Glebe,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/abAAw2rk8RrNbU6z5,21/09/2023
+332206.50348843,6249361.53007067,650,40,Mount Vernon Street,between St Johns Road and Catherine Street,Glebe,Westside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/ZwEyhyxdWbrjzo9TA,7/07/2023
+332078.045000288,6249294.19484896,651,20,Forest Street,between St Johns Road and Arundel Street,Glebe,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/FVFX1buU6d4wKdbs9,28/7/2023
+332541.714607934,6249241.4770282,652,3,Catherine Street,between Westmoreland Street and Westmoreland Lane,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/7WruJskXmumwS941A,28/7/2023
+332643.752919043,6249174.6010458,653,19,Arundel Street,between Derwent Street and Seamer Street,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/YN6d9JiGxmwjK8yv6,28/7/2023
+332664.143719028,6249174.35744928,654,11,Arundel Street,between Derwent Street and Seamer Street,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/brdt3UgCxFxTvJzu6,28/7/2023
+332530.458893398,6249913.18302428,655,70,Darling Street,between Railway Street and Lyndhurst Street,Glebe,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/uk31EcgdkVjpZnPKA,28/7/2023
+332556.409399827,6249875.04352882,656,48,Darling Street,between Railway Street and Lyndhurst Street,Glebe,Westside,1,3.2,7.8,Parallel,"2 hour Parking 8am to 6pm Monday to Friday , Mobility Parking At Other Times",https://goo.gl/maps/5DQqgGV6cRPJNady7,28/7/2023
+332628.039526432,6249717.83514151,657,56,Broughton Street,between St Johns Road and Denman Lane,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/cuRtZwCZu3eJeZo78,28/7/2023
+332714.281925163,6249723.8040562,658,26,Phillip Street,between Denham Lane and Mitchell Lane West,Glebe,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/WcuujFQzve2ZFe9o7,28/7/2023
+332732.232225173,6249723.44325926,659,21,Phillip Street,between Denham Lane and Mitchell Lane West,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/euzo9yw57UCFg228A,28/7/2023
+332777.349816117,6249775.7679668,660,34,Wentworth Street,between Denham Lane and Mitchell Lane West,Glebe,Northside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/obNBqAoBjiRtwTg97,28/7/2023
+332885.901426315,6249714.1139855,661,43,Cowper Street,between Wentworth Street and Park Lane,Glebe,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/FvqgiatND5U7qQwZA,28/7/2023
+332898.573656307,6249538.06718819,662,15,Queen Street,between Cowper Street and Bay Street,Glebe,Northside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/YYfr9ksBZt5SZoWD6,3/8/2023
+331444.810298872,6248726.98694263,663,36,Mallett Street,between Hampshire Lane and Fowler Street,Camperdown,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/tosYY4csuK3j92NbA,3/8/2023
+331537.995111759,6248649.86945875,665,90,Church Street,between Lucas Street and Dunblane Street,Camperdown,Westside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/AYHKoPJbuPcSEh2w9,12/12/2024
+331767.051946561,6247269.50580192,666,36,Munni Street,between Gowrie Street and Angel Street,Newtown,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/NTQiGSXYMgkJh1AG9,3/8/2023
+332099.645059486,6247188.0895589,667,7,Victoria Street,between Turtle Lane and George Street,Erskineville,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/mrKH1GvSd3K6WFUu9,3/8/2023
+332434.753317649,6247427.63241536,668,64,Swanson Street,Between Clara Street and Sydney Lane,Erskineville,Northside,1,3.2,7.8,Parallel,No Parking Authorised Disabled Person Vehicle Excepted School Days 2:30pm to 3:30pm,https://goo.gl/maps/Eh94RpPNzzHKCVqt6,3/8/2023
+332850.536270987,6247107.87898724,669,203,Belmont Street,between Harley Street and Fountain Street,Alexandria,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/h2ZuWZzVP74yi5Lc6,3/8/2023
+333164.995156252,6247188.89894064,670,21,Fountain Street,between Belmont Street and McEvoy Street,Alexandria,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/ELJJLJJBCQZGdMyu6,3/8/2023
+333198.514572505,6247679.2499449,671,6,Phillip Street,between Henderson Road and Buckland Lane,Alexandria,Eastside,1,3.2,7.8,60-degree,Mobility Parking Only,https://goo.gl/maps/RoqkP4eiVmrRY5ej8,3/8/2023
+333372.685281748,6247622.07207478,672,105,Garden Street,between Henderson Road and Buckland Lane,Alexandria,Westside,1,3.2,7.8,60-degree,Mobility Parking Only,https://goo.gl/maps/jaP2j7CXr9qGvgF87,3/8/2023
+334048.439204548,6246890.66939225,673,24,Portman Street,between Navins Lane and Merton Street,Zetland,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/X84Zvwg3JvLKfbmD8,3/8/2023
+333640.166050727,6246040.83432513,675,169,Victoria Street,between Collins Street and Beaconsfield Street,Beaconsfield,Westside,1,3.2,7.8,Parallel,"Mobility Parking Only, Monday to Friday, 9am to 5pm",https://goo.gl/maps/e6ep8qhHfhAjaogv8,3/8/2023
+333820.285841818,6246089.94875572,676,19,Princess Avenue,between Cressy Street and Queen Street,Rosebery,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/XqnxjgsxwybSwA8S6,3/8/2023
+334044.031540703,6246092.66579388,677,1,Cressy Street,between Mentmore Avenue and Rothschild Avenue,Rosebery,Northside,1,3.2,7.8,Parallel,"Mobility Parking Only Monday to Friday, 8am to 6pm",https://goo.gl/maps/nDgctYPGrMUxQs8Q8,3/8/2023
+334028.882044879,6246068.45159137,679,14,Mentmore Avenue,between Sweet Street and Cressy Street,Rosebery,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/onvGuErwzAyAVrCu6,3/8/2023
+333715.06489988,6245751.45143878,680,37,Morley Avenue,between Botany Road and Dunning Avenue,Rosebery,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/4LwFrmsoT9HcUEm79,3/8/2023
+334392.14890922,6245685.0962545,681,1,Kimberley Grove,between Bannerman Crescent and Dalmeny Avenue,Rosebery,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/K96UW6r4ksTZ46oLA,3/8/2023
+334189.798596105,6245179.31142149,682,78,Harcourt Parade,between Primrose Avenue and Dalmeny Avenue,Rosebery,Northside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/kopNxsRLTGrnvLNH9,3/8/2023
+334410.048619078,6245040.88905948,683,78,Tweedmouth Avenue,between Dalmeny Avenue and No Through Road,Rosebery,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/ptRC5QyXdpKfPjs47,3/8/2023
+334567.010116041,6247400.57167919,684,6,Thread Lane,between Sam Sing Street and No Through Road,Waterloo,Northside,1,3.2,7.8,90-degree,Mobility Parking Only,https://goo.gl/maps/32jeiLPGqR18ikVM9,4/8/2023
+334210.213261897,6247724.08141735,685,51,Beaumont Street,between Brunswick Street and Clarendon Street,Waterloo,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/8DUP6gwB2PjftzoH7,4/8/2023
+334267.972236606,6247871.36002676,686,88,Walker Street,between Phillip Street and Clarendon Street,Waterloo,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/zfGv3FSTns5Vnns6A,4/8/2023
+333770.640592758,6248136.94424113,687,37,Albert Street,between George Street and Pitt Street,Redfern,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/nfz3vW9kNADE1YWD7,4/8/2023
+333793.535609268,6248625.99524357,688,4,George Street,between Cleveland Street and James Street,Redfern,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/tj5Sn59fF4HsZbJp8,4/8/2023
+333372.271925167,6248540.00747197,689,54,Hugo Street,Between Vine Street and Caroline Street,Darlington,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/gev4fonBXKxvoQE77,4/8/2023
+332620.23115069,6248403.22004409,690,108,Darlington Road,between Codrington Street and Golden Grove Street,Darlington,Southside,1,3.2,7.8,Parallel,"Mobility Parking Only Monday to Friday, 8:30am to 5:30pm",https://goo.gl/maps/5BVbEsEBFf3JEL7X7,4/8/2023
+334296.09704159,6248427.89012989,691,41,Cooper Street,between Elizabeth Street and Walker Street,Redfern,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/sUtPn4KqmCPSMtLSA,4/8/2023
+334321.602443386,6248416.90763428,692,37,Cooper Street,between Elizabeth Street and Walker Street,Redfern,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/UgVSxHK9HqFs9Qu29,4/8/2023
+334287.348204409,6248059.7809295,693,5,Kettle Street,between Elizabeth Street and Walker Street,Redfern,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/tEYNvkrF4ekjeY61A,10/8/2023
+334293.445699366,6248089.23453045,694,64,Walker Street,between Kettle Street and Redfern Street,Redfern,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/mCHPM6rexg5XdBLC9,10/8/2023
+334376.532308746,6248032.8275448,696,44,Morehead Street,between Kettle Street and Phillip Street,Redfern,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/pCZi84pT54M2fBw17,10/8/2023
+334551.441412424,6248008.25987471,697,1,Zamia Street,between Marriott Street and Young Street,Redfern,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/Gbjo2FGCumVKrTDB6,10/8/2023
+335006.844690748,6248127.49585203,698,4,Thurlow Street,between Maddison Lane and Stanley Street,Redfern,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/9HB6459h2WAk7aDAA,10/8/2023
+334668.618975682,6248221.61759405,699,56,Boronia Street,between Baptist Lane and Baptist Street,Redfern,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/gfEcBBMCwN57y6fU8,10/8/2023
+334926.319647424,6248382.84433753,702,1,Stanley Street,between Cleveland Street and Little Cleveland Street,Redfern,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/Hrs8UCidqG5iNXiY8,10/8/2023
+334374.547502912,6248653.2824426,705,2,Goodlet Street,between Wilton Street and Elizabeth Street,Surry Hills,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/UmwDnX3rqaikwhCw5,10/8/2023
+334411.962491877,6248717.33144879,706,29,Belvoir Street,between Clisdell Street and Wilton Street,Surry Hills,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/GYyEjm9gzn4CKSLn6,10/8/2023
+334375.542985045,6248758.01804245,708,16,Clisdell Street,between Dawson Street and Belvoir Street,Surry Hills,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/HSY9eXRKbvQBLZG2A,10/8/2023
+334306.211159876,6248906.75753018,709,434,Elizabeth Street,Between Brumby Street and Butt Street,Surry Hills,Eastside,2,3.2,15.6,Parallel,"Bus Lane Monday to Friday 6am to 10am & 3pm to 8pm, Tow Away Zone, Mobility Parking Only All Other Times",https://goo.gl/maps/SininLTM5jnr1Qd7A,10/8/2023
+334230.892456929,6248925.32941727,710,35,Buckingham Street,between Rutland Street and Pembroke Street,Surry Hills,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/pPfs3PzLynKb3jGu5,10/8/2023
+334647.998029989,6249076.10488797,711,139,Kippax Street,between Little Riley Street and Lacey Street,Surry Hills,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/eyTBEZfqaAyqMgtf8,10/8/2023
+334815.540633419,6249053.09931662,713,405,Crown Street,between Withers Lane and Foveaux Street,Surry Hills,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/Y5PJ21WxZ8pyrT2AA,10/8/2023
+335147.484255594,6248917.37417365,714,6,Chapman Lane,between Phelps Street and No Through Road,Surry Hills,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/BwAeEwPKZerMwQUX6,10/8/2023
+334803.124252037,6249530.43701307,715,147,Reservoir Street,between Riley Street and Crown Street,Surry Hills,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/Vy77mC5M7vrjo4Nb9,10/8/2023
+334497.764127615,6249678.87226054,716,100,Campbell Street,between Mary Street and Beauchamp Lane,Surry Hills,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/8if4RKhnxAKQMm4u7,10/8/2023
+335400.672012256,6249167.08531609,717,9,Iris Street,between Albion Street and Bartlett Lane,Paddington,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/raZfuJmu3hrcRL4J6,10/8/2023
+336214.51026709,6248831.55665592,719,38,Stewart Street,between Bent Street and Stewart Place,Paddington,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/BYj6j3DkKE4okHmm9,10/8/2023
+336299.907568736,6248820.40577052,720,91,Stewart Street,between Stewart Place and Gordon Street,Paddington,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/r6sZtCz9e3pQgpNc7,10/8/2023
+336251.806753409,6248911.11336204,721,13,Gordon Streetq,between Elizabeth Street and Regent Street,Paddington,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/WTf12sdA6dGX7RK79,10/8/2023
+335604.40282464,6249677.23924929,722,20,Leichhardt Street,between Barcom Avenue and Boundary Street,Paddington,Eastside,3,9.6,7.8,60-degree,Mobility Parking Only,https://goo.gl/maps/KaWvSGC6XniguWfk6,10/8/2023
+335634.549447757,6250127.47165308,723,23,Craigend Street,between Royston Street and Nimroad Street,Darlinghurst,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/kmWg2HSDARbDv61m6,10/8/2023
+335092.001026411,6250261.98906013,724,137,Palmer Street,between Stanley Street and Barnett Lane,Darlinghurst,Westside,2,3.2,15.6,Parallel,Mobility Parking Only,https://goo.gl/maps/WF4FiJM3MfKiVsCF9,10/8/2023
+336140.622600069,6250398.32093858,725,6,Waratah Street,between Roslyn Gardens and Queens Avenue,Rushcutters Bay,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/9sufGAukZVP2KM6U9,10/8/2023
+336108.79687903,6250522.21073278,726,16,Roslyn Gardens,between Waratah Street and Evans Road,Rushcutters Bay,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/ZoqdeSng64Ev3Q5H7,10/8/2023
+336282.525662651,6250615.24716213,727,81,Elizabeth Bay Road,between Holdsworth Avenue and Elizabeth Bay Crescent,Elizabeth Bay,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/2kSy9QbwXuRt79QWA,10/8/2023
+335958.500530394,6250809.99840627,728,7,Onslow Place,between Onslow Avenue and Onslow Avenue,Elizabeth Bay,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://goo.gl/maps/iLRM7KngpguhuwEw6,11/8/2023
+331724.10320284,6248698.99419035,729,57,Lucas Street,between Missenden Road and Church Street,Camperdown,Northside,3,3.2,23.4,Parallel,"Mobility Parking Only Monday to Friday, 8am to 6pm",https://goo.gl/maps/DcQAV6SxbkibtSbP9,11/8/2023
+333627.546582308,6245269.81322529,730,15,Harcourt Parade,east of Durdans Ave,Rosebery,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/BPQp6SDhr8xbx5b57,20/07/2023
+334132.003992058,6251652.62619223,732,118,Harrington Street,south of Essex Street,The Rocks,Eastside,2,3.2,15.6,Parallel,Mobility Parking Only,https://maps.app.goo.gl/hE8yYkxB8pdqWMVU8,20/07/2023
+334310.244932008,6252588.10101982,733,,Hickson Road,west of Sydney Harbour Bridge,Dawes Point,Southside,2,3.2,15.6,Parallel,Mobility Parking Only,https://maps.app.goo.gl/Gp9CPdig7PewTmQr9,20/07/2023
+333259.955324642,6247372.55075629,734,,Park Road,north of Power Avenue,Alexandria,Eastside,2,3.2,12.8,Parallel,"Mobility Parking Only 8-9.30am, 2.30-4pm Mon-Fri, 8am-1pm Sat and 2P 9.30am-2.30pm, 4-6pm Mon-Fri",https://maps.app.goo.gl/jN8tZZhMw1WyHVoFA,14/03/2024
+333278.44293135,6247332.91985957,735,,Power Avenue,south of Park Road,Alexandria,Southside,1,3.2,8.4,Parallel,"Mobility Parking  8-9:30am, 2:30-4pm Mon-Fri & 2P 9:30am-2:30pm, 4-6pm Mon-Fri",https://maps.app.goo.gl/LzK3CpQTeqXdMtyV7,17/08/2023
+333641.268182492,6245854.62332588,736,,Beaconsfield Street,west of Botany Road,Beaconsfield,Southside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/fKeXw6jLk6RoDtcj9,21/09/2023
+331927.889045969,6248442.67922587,737,,Missenden Road,north of Brown Street (Private RPA road),Camperdown,Westside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/JvaXbBzgDnuXHabK8,21/09/2023
+332420.219910677,6249227.46830752,738,,Catherine Street,east of Mount Vernon Street,Glebe,Southside,3,3.2,23.4,Parallel,Mobility Parking Only,https://maps.app.goo.gl/kZ62hrbBdr7RRPBp8,21/09/2023
+332260.457591775,6249340.99597993,739,,Mount Vernon Street,south of St Johns Road,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/8tCAao9M9APw7oWRA,21/09/2023
+336478.158481933,6248739.97410117,740,,Church Place,west of Ulster Street,Paddington,Southside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/J7gozK18JVN33UFk9,21/09/2023
+333300.012242616,6248438.93855994,741,,Lawson Street,west of Eveleigh Street,Redfern,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/4rMXqQbKQzrX4f5a7,21/09/2023
+334400.546494224,6249290.02214512,742,,Foveaux Street,east of Mary Street,Surry Hills,Northside,2,3.2,12,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/QQyhtf4L5jruZsoaA,21/09/2023
+334673.104068635,6248849.09849293,743,,Riley Street,north of Devonshire Street,Surry Hills,Eastside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/iJs6zDa6JytgP8h67,21/09/2023
+333293.487990851,6249915.08585442,744,,Bulwara Road,north of William Henry Street,Ultimo,Westside,1,3.2,8.4,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/TvYE4Jg76o6MJE9B6,21/09/2023
+333921.413008219,6246871.32827063,745,,Ebsworth Street,south of Bourke Street,Zetland,Westside,1,3.2,6.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/L3UxNbniqTMFmprk9,21/09/2023
+334670.26999679,6246925.46019823,746,,Wolseley Street,west of Gadigal Avenue,Zetland,Southside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/tcNwuagPwAnuqcs36,21/09/2023
+331792.764987263,6249375.41990006,747,,Foss Street,north of Bridge Road,Forest Lodge,Eastside,1,3.2,7.8,Parallel,P15 Minute Mobility Parking 8am to 9:30am and 3pm to 6pm School Days Only,https://maps.app.goo.gl/J3gCbn9RP8WiJUCT9,19/10/2023
+335466.861589036,6249302.07872697,748,,Greens Road ,north of Albion Avenue,Paddington,Eastside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/HqwF44ut3zemCud66,19/10/2023
+333604.959342698,6249019.49471023,749,,O'Connor Street,east of Central Park Avenue,Chippendale,Southside,1,3.2,7.1,Parallel,4P Mobility Parking 8am-10pm,https://maps.app.goo.gl/vyAQWQ7U1zseg2289,04/07/2025
+333966.392752027,6245441.48808259,750,,Rothschild Avenue,south of Hayes Road,Zetland,Eastside,1,3.2,7.8,Parallel,4P Mobility Parking 8am-10pm,https://maps.app.goo.gl/PgnSsNwPAhrJ6yLe9,04/07/2025
+333402.237708,6248640.13437678,751,,Vine Street,between Abercrombie Street and Evans Lane,Redfern,Southside,1,3.2,7.8,Parallel,4P Mobility Parking 8am-10pm,https://maps.app.goo.gl/W4EtXEo55Y1gKAp6A,19/10/2023
+333163.087468053,6246533.57674227,752,,Maddox Street,west of Bourke Street,Alexandria,Northside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/RxUwDth8Xa3M5Mew8,16/11/2023
+335038.717372386,6248820.82255539,753,,Arthur Street,east of Olivia Lane,Surry Hills,Southside,1,3.2,7.8,Parrallel,Mobility Parking Only,https://maps.app.goo.gl/2TCranSBJNSQoiAB9,8/02/2024
+334462.952490341,6246966.83036273,754,,Ausin Grove,east of Joynton Avenue,Zetland,Northside,1,3.2,7.8,Parallel,4P Mobility Parking  Only 8am-10pm,https://maps.app.goo.gl/BWMakQhhX9LoqbsW7,7/12/2023
+332251.211826712,6247377.62628419,755,,Bridge Street,south of Swanson Street,Erskineville,Eastside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/M7BRgUhAiRoE7tkb7,8/02/2024
+335045.939042508,6249582.11465433,756,,Campbell Street,north of Little Bourke Street,Surry Hills,Southside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/NLXHbP71VU1qBeDA6,16/11/2023
+335282.705727723,6249664.70539446,757,,Darlinghurst Road,east of Oxford Street,Darlinghurst,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only ,https://maps.app.goo.gl/SZ5VXFDQsMcanX6o7,11/04/2024
+331886.899426605,6250315.76231332,758,,Glebe Point Road,south of Cotter Lane,Glebe,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/3VqvX8fk3Ny5u52M8,11/04/2024
+334633.424378541,6251136.92147929,759,,Macquarie Street,south of Hunter Street,Sydney,Westside,2,3.2,15.6,Parallel,4P Mobility Parking  Only 6am-6pm Ambulance Vehicles Excepted & 4P Ticket 6-10pm,https://maps.app.goo.gl/FMmUGvV7CXZEvD719,14/03/2024
+331419.58178567,6248804.84053809,760,,Mallett Street,south of Hampshire Street,Camperdown,Eastside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/F6618Q72Twrc16uM9,14/03/2024
+332632.336796865,6246959.90865045,761,,Mitchell Road,north of MacDonald Street,Erskineville,Westside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/94au1vW8sCfpjJug6,7/12/2023
+333847.240704806,6245720.30356142,762,,Morley Avenue,east of Dunning Avenue,Rosebery,Northside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/EiQ22Lkie8NMXu7d8,16/11/2023
+331598.553387152,6247620.64757213,763,,Newman Street ,east of King  Street,Newtown,Northside,1,3.2,7.8,Parallel,4P Mobility Parking Only 8am-10pm,https://maps.app.goo.gl/spsFaCPUjmpAiaH96,16/11/2023
+333311.987525992,6247363.7590652,765,,Power Avenue,east of Park Road,Alexandria,Northside,1,3.2,7.8,Parallel,4P Mobility Parking  Only 8am-10pm,https://maps.app.goo.gl/9YbK5AKcC26vapvM9,14/03/2024
+332028.417939965,6247303.73704641,766,,Prospect Street,north of Victoria Street,Erskineville,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/eVFmVuaUHqtdBzRKA,14/03/2024
+335699.838685023,6250494.14816311,767,,Springfield Avenue,north of Earl Place,Potts Point,Westside,1,3.2,7.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/pKV5qssiWYnjFdp76,11/04/2024
+334985.6757135,6248580.70294706,1152,,Parkham Street,south of Olivia Lane ,Surry Hills,Northside,1,3.2,7.8,Parallel,Mobility Parking Only ,https://maps.app.goo.gl/2eUxdis7yBuoXqAr9,09/05/2024
+336098.147482287,6250503.30033102,1552,,Roslyn Gardens,south of Evans Road,Elizabeth Bay,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/rLDY57N5CtQueXRi8,13/06/2024
+334191.763620464,6250312.36260644,1553,,Bathurst Street,east of George Street,Sydney,Southside,1,3.2,7.8,Parallel,4P Mobility Parking Space,https://maps.app.goo.gl/bnQSSNvwyk6SBEvj8,13/06/2024
+332011.396056914,6250135.93443509,1554,,Glebe Point Road,north of Toxteth Road,Glebe,westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/6KemXQNJvWjJd9zR8,11/07/2024
+332427.39324967,6248412.49001117,1555,,Carillon Avenue,west of King Street,Camperdown,Southside,1,3.2,6,Parallel,4P Mobility Parking  Only 8am-10pm,https://maps.app.goo.gl/sZDgAwJaaRGt374W6,11/07/2024
+333180.51737705,6248825.37553841,1556,,Pine Street,north of Cleveland Street,Chippendale,Westside,1,3.2,6,Parallel,Mobility Parking Only,https://maps.app.goo.gl/vMfEdrgLYSWx9J7j8,11/07/2024
+332964.159245885,6250770.6808957,1557,,Harris Street,south of Miller Street,Pyrmont,Westside,1,3.2,7.8,Parallel,4P Mobility Parking  Only 8am-10pm,https://maps.app.goo.gl/KUHT9fPXf3CS1ejd6,08/08/2024
+333174.248781594,6249971.38943391,1952,,Jones Street,south of Quarry Street,Ultimo,Eastside,1,3.2,8.8,Parallel,4P Mobility Parking  8am-10pm,https://maps.app.goo.gl/239Afcev9WfUERAH9,08/08/2024
+331831.2774109,6249236.19070704,1953,,David Street,east of Junction Street,Forest Lodge,Southside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/dy9syTcbZyDg7oaz9,08/08/2024
+332398.377290545,6249345.87840344,1955,,Westmoreland Street,east of Mitchell Street,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only ,https://maps.app.goo.gl/i9ocvx98tqS3y1ab8,12/09/2024
+333069.784824915,6248546.65012035,1956,,Calder Street,east of Shepherd Street,Darlington,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/P8cdQCTdQ2iBEHh89,12/09/2024
+335855.734931087,6250221.39539052,1957,,Bayswater Road,west of Roslyn Street,Rushcutters Bay,Northside,1,3,6.1,60-degree,4P Mobility Parking Space,https://maps.app.goo.gl/rE9Pgdo9KLU4T3SA7,10/10/2024
+334259.96198951,6247561.37582632,1958,,Kellick Street,west of Morehead Street,Waterloo,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/a5fE9VsYbwErW5Js8,12/12/2024
+334504.732634295,6250812.19785832,1959,,St James Road,east of Elizabeth Street,Sydney,Southside,4,3.2,33,Parallel,4P Mobility Parking,https://maps.app.goo.gl/wdRx8XrJxWisoh5E7,12/12/2024
+334808.121808981,6248024.01881845,1960,,Bourke Street,north of Zamia Street,Redfern,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/AgUKM99Bid6Xp2so8,20/02/2025
+332772.510791398,6247575.76417253,1961,,Brandling Street,north of Allen Avenue,Alexandria,Westside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/yEPL4ojUuQU7wifW6,20/02/2025
+332403.015859939,6247180.27421068,1962,,Ashmore Street,east of Binning Street,Erskineville,Northside,1,3.2,6.1,Parallel,Mobility Parking Only,https://maps.app.goo.gl/fTvG3EawhSZB95TY6,20/02/2025
+334654.173667395,6248856.70078968,1963,,Riley Street,north of Devonshire Street,Surry Hills,Westside,1,3.2,7.8,Parallel,4P Mobility Parking 8am-10pm,https://maps.app.goo.gl/hTFtBxb3r8Wg1PPFA,20/02/2025
+332367.963318323,6249183.52969874,1965,,Arundel Street,east of Seamer Street,Glebe,Northside,1,3.2,7.8,Parallel,Mobility Parking Only,https://maps.app.goo.gl/qy6kUZdKAR8VyWDH8,04/07/2025

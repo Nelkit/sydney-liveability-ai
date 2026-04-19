@@ -1,4 +1,4 @@
-import { ImportanceOption, ResponderItem, Suburb, WeightKey } from "./types";
+import { ImportanceOption, Suburb, WeightKey } from "./types";
 
 export const importanceOptions: ImportanceOption[] = [
   { key: "veryImportant", label: "Very important", value: 90 },
@@ -116,30 +116,3 @@ export const quickChips = [
   "Compare Newtown vs Glebe",
   "Surry Hills for professionals?"
 ];
-
-export const responder: Record<string, ResponderItem> = {
-  ns: {
-    text: "Newtown has a <strong>moderate safety profile</strong> per BOCSAR 2024. <br /><br />Residents describe King St as lively and generally safe late at night, though <strong>petty theft near the station</strong> is occasionally reported. <br /><br />Safety score: <strong>72/100</strong>.",
-    source: "BOCSAR Crime Stats - Reddit /r/Sydney - 2024 Community Insights"
-  },
-  cg: {
-    text: "Glebe scores <strong>92/100 on lifestyle</strong> among MVP suburbs. <br /><br />Residents consistently describe Glebe Point Road as neighbourhood-focused with independent cafes and markets.",
-    source: "2024 Community Insights - Reddit /r/Sydney - City of Sydney ArcGIS"
-  },
-  rt: {
-    text: "Redfern has the <strong>highest transport score (90/100)</strong>. <br /><br />Direct City Circle access puts the CBD under 5 minutes by train.",
-    source: "City of Sydney ArcGIS - Transport NSW - 2024 Community Insights"
-  },
-  sp: {
-    text: "Surry Hills scores <strong>85/100 on lifestyle</strong> and is frequently preferred by young professionals.<br /><br />Trade-off: affordability is <strong>55/100</strong> due to high inner-city rents.",
-    source: "Reddit /r/Sydney - 2024 Community Insights - Domain rental data"
-  },
-  cmp: {
-    text: "<strong>Newtown vs Glebe</strong><br /><br />Transport: Newtown <strong>85</strong> vs Glebe <strong>82</strong><br />Safety: Glebe <strong>78</strong> vs Newtown <strong>72</strong><br />Lifestyle: Glebe <strong>92</strong> vs Newtown <strong>88</strong><br />Affordability: Newtown <strong>70</strong> vs Glebe <strong>65</strong>",
-    source: "BOCSAR - ArcGIS - Reddit /r/Sydney - Community Insights 2024"
-  },
-  def: {
-    text: "Based on verified resident voices and civic data, I can help with transport, safety, lifestyle, and affordability across the 5 MVP suburbs.<br /><br />Try: <em>Is Glebe good for families?</em>",
-    source: "13,500+ entries - BOCSAR - ArcGIS - Reddit /r/Sydney"
-  }
-};

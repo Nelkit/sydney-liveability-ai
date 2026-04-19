@@ -1,0 +1,1728 @@
+{
+  "suburb": "Ultimo",
+  "bbox": {
+    "south": -33.8844353,
+    "west": 151.1939397,
+    "north": -33.8745565,
+    "east": 151.2029092
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8844353,151.1939397,-33.8745565,151.2029092);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8844353,151.1939397,-33.8745565,151.2029092);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8844353,151.1939397,-33.8745565,151.2029092);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8844353,151.1939397,-33.8745565,151.2029092);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:33:26Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 13767762,
+            "tags": {
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Bulwara Road",
+              "addr:suburb": "Ultimo",
+              "amenity": "library",
+              "internet_access": "yes",
+              "internet_access:fee": "no",
+              "level": "1",
+              "name": "Ultimo Library",
+              "opening_hours": "Mo-Fr 10:00-18:00; Sa-Su off; PH off",
+              "operator": "City of Sydney",
+              "operator:type": "public",
+              "phone": "+61 2 9298 3110",
+              "source": "local knowledge",
+              "website": "https://cityofsydney.nsw.gov.au/explore/libraries/locations/ultimo",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20958865,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The BnG Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833116178,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Sunflower Crepe Caf\u00e9",
+              "source": "photo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833116180,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-06",
+              "name": "Taste Of Canton",
+              "source": "photo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833116182,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "CoCo",
+              "brand:wikidata": "Q65084369",
+              "check_date": "2025-06",
+              "cuisine": "bubble_tea",
+              "name": "CoCo Fresh Tea & Juice",
+              "short_name": "CoCo",
+              "source": "photo",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833142906,
+            "tags": {
+              "al_fresco": "yes",
+              "amenity": "cafe",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "name": "The Black Groodle Cafe",
+              "opening_hours": "Mo-Fr 07:00-15:00",
+              "source": "photo",
+              "toilets:wheelchair": "yes",
+              "wheelchair": "limited",
+              "wheelchair:description": "\u202a1 step at the entrance. Bathrooms are elsewhere on the ground floor of the building & there aren't steps from the cafe to toilets. No wheelchair specific toilet. Hallway to the toilets is a bit narrow but the cubicles have more space than typical ones.\u202c"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833201916,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11",
+              "cuisine": "coffee_shop",
+              "name": "Chambers Coffee",
+              "old_name": "Soma Cafe",
+              "website": "https://www.chamberscoffee.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833201928,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Hippo's On Harris",
+              "source": "photo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833201930,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "pie",
+              "name": "Hannah's Pies",
+              "source": "photo",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833228379,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Woolstore Cafe",
+              "source": "photo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1839978202,
+            "tags": {
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "check_date:opening_hours": "2025-12-02",
+              "level": "0",
+              "name": "Spices Hunan",
+              "opening_hours:signed": "no",
+              "smoking": "no",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2072463134,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe 8"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2524208131,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Chatime",
+              "brand:wikidata": "Q16829306",
+              "cuisine": "bubble_tea",
+              "name": "Chatime",
+              "takeaway": "yes",
+              "website": "https://chatime.com.au/stores/chatime-darling-quarter/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2911988523,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-12",
+              "name": "Wok Master"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2911988525,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "name": "Fast Pho"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2911988526,
+            "tags": {
+              "addr:housenumber": "66",
+              "addr:street": "Mountain Street",
+              "addr:unit": "5",
+              "amenity": "restaurant",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "cuisine": "malaysian",
+              "name": "Malacca Straits",
+              "opening_hours": "Mo-Sa 12:00-20:45",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 8021 7069",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3219669842,
+            "tags": {
+              "addr:housenumber": "80",
+              "addr:street": "Bay Street",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "check_date:opening_hours": "2025-07-22",
+              "cuisine": "coffee_shop",
+              "name": "Stitch Coffee",
+              "opening_hours:signed": "no",
+              "smoking": "no",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3619583265,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The Nectar House"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3623047696,
+            "tags": {
+              "leisure": "playground",
+              "source": "survey",
+              "source:location": "digitalglobe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3918034857,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3921514858,
+            "tags": {
+              "addr:housenumber": "732",
+              "addr:street": "Harris Street",
+              "amenity": "cafe",
+              "name": "Taragon Central"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4002324898,
+            "tags": {
+              "amenity": "restaurant",
+              "branch": "Darling Quarter",
+              "cuisine": "japanese",
+              "indoor_seating": "yes",
+              "name": "Dopa",
+              "opening_hours": "Mo-Th 11:30-21:30; Fr-Sa 11:30-22:00; Su 11:30-21:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 8971 0377",
+              "website": "https://dopa.com.au/locations/darling-quarter/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4002324899,
+            "tags": {
+              "amenity": "restaurant",
+              "brand": "K\u00fcrt\u0151sh",
+              "brand:wikidata": "Q117257108",
+              "cuisine": "hungarian",
+              "indoor_seating": "yes",
+              "name": "K\u00fcrt\u0151sh",
+              "outdoor_seating": "yes",
+              "shop": "pastry",
+              "website": "https://kurtosh.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4002325490,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Doodee"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4002325889,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Ichoume"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4071269492,
+            "tags": {
+              "amenity": "restaurant",
+              "brand": "PappaRich",
+              "brand:wikidata": "Q95721282",
+              "brand:wikipedia": "ms:PappaRich",
+              "cuisine": "malaysian",
+              "name": "PappaRich"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4242643120,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2026-01-14",
+              "name": "PumpHouse"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4242649412,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2024-01-07",
+              "cuisine": "chinese",
+              "name": "The Gardens by Lotus",
+              "outdoor_seating": "yes",
+              "website": "https://lotusdininggroup.com/the-gardens-by-lotus/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4476148789,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Knights Coffee & Tea co",
+              "website": "https://knightscoffeeandtea.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4484797889,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Jumbo Thai",
+              "name:en": "Jumbo Thai"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4865627021,
+            "tags": {
+              "amenity": "cafe",
+              "check_date:opening_hours": "2022-06-14",
+              "name": "Local Mbassy",
+              "name:en": "Local Mbassy",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5218814278,
+            "tags": {
+              "amenity": "cafe",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "Alma",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5218815814,
+            "tags": {
+              "amenity": "cafe",
+              "check_date:opening_hours": "2023-11-02",
+              "diet:vegan": "no",
+              "diet:vegetarian": "yes",
+              "level": "0",
+              "name": "Vesta Cafe & Ristorante",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5306361121,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Qube on Bay"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5732865622,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-04",
+              "indoor_seating": "yes",
+              "name": "Cornerstone Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5783072555,
+            "tags": {
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "capacity": "35",
+              "changing_table": "no",
+              "cuisine": "japanese;matcha",
+              "drink:coffee": "no",
+              "drink:tea": "yes",
+              "food": "yes",
+              "highchair": "no",
+              "ice_cream": "yes",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "Matcha Ya",
+              "opening_hours": "Mo-Tu off; We,Th 13:00-21:00; Fr 13:00-22:00; Sa 12:00-22:00; Su 12:00-21:00",
+              "outdoor_seating": "yes",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "toilets:access": "permissive",
+              "toilets:wheelchair": "designated",
+              "website": "https://matchaya.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5783556454,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "korean",
+              "name": "789 Korean",
+              "website": "https://789bbq.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5783581153,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "indoor_seating": "yes",
+              "name": "Holy Basil",
+              "outdoor_seating": "yes",
+              "website": "https://holybasil.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5814417702,
+            "tags": {
+              "addr:housenumber": "373",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Bulwara Road",
+              "addr:suburb": "Ultimo",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Cafe Crown",
+              "opening_hours": "Mo-Su 07:00-15:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5816694962,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "indonesian",
+              "name": "Martabak Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5870566297,
+            "tags": {
+              "amenity": "library",
+              "check_date": "2023-11-24",
+              "name": "TAFE NSW Ultimo Library",
+              "opening_hours": "Mo-Th 08:45-20:30; Fr 08:45-18:00; Sa 12:00-16:00",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5905380741,
+            "tags": {
+              "addr:district": "CBD",
+              "addr:housenumber": "14",
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Darling Drive",
+              "addr:suburb": "Sydney",
+              "addr:unit": "2",
+              "amenity": "restaurant",
+              "check_date": "2024-11-10",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "Fratelli Fresh",
+              "opening_hours": "Mo-Th 12:00-21:00; Fr 12:00-22:00; Sa 11:30-23:45; Su 11:30-20:30",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "website": "https://fratellifresh.com.au/venues/darling-harbour/",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6222997229,
+            "tags": {
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Jones Street",
+              "addr:suburb": "Ultimo",
+              "amenity": "cafe",
+              "check_date": "2025-04-05",
+              "cuisine": "coffee_shop",
+              "drink:almond_milk": "yes",
+              "drink:lactose_free_milk": "yes",
+              "drink:macadamia_milk": "yes",
+              "drink:soy_milk": "yes",
+              "name": "Jones St Cafe",
+              "opening_hours": "Mo-Fr 07:00-15:30; Sa, Su 07:30-14:30",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6539605558,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "indoor_seating": "yes",
+              "name": "Dragon Hot Pot",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6778432885,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Boutic"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6819714773,
+            "tags": {
+              "addr:housenumber": "597",
+              "addr:street": "Harris Street",
+              "amenity": "cafe",
+              "contact:instagram": "https://www.instagram.com/theqcoffee",
+              "cuisine": "coffee_shop",
+              "name": "The Q Caf\u00e9 & Roastery",
+              "opening_hours": "Mo-Fr 07:00-20:00; Sa 08:30-20:00",
+              "opening_hours:signed": "no",
+              "smoking": "no",
+              "source": "mapillary"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6819720876,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "House Diner"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7030232362,
+            "tags": {
+              "addr:housenumber": "1",
+              "addr:street": "Little Pier Street",
+              "air_conditioning": "yes",
+              "amenity": "library",
+              "changing_table": "yes",
+              "changing_table:location": "dedicated_room",
+              "check_date:opening_hours": "2025-12",
+              "internet_access": "wlan",
+              "internet_access:fee": "no",
+              "level": "1",
+              "name": "Darling Square Library",
+              "opening_hours": "Mo-Fr 10:00-18:00; Sa-Su 10:00-16:00",
+              "operator": "City of Sydney",
+              "operator:type": "public",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 8019 6477",
+              "toilets": "yes",
+              "toilets:wheelchair": "yes",
+              "website": "https://www.cityofsydney.nsw.gov.au/explore/libraries/locations/darling-square",
+              "wheelchair": "yes",
+              "wikidata": "Q87415680"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7030291185,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Starbucks",
+              "brand:wikidata": "Q37158",
+              "brand:wikipedia": "en:Starbucks",
+              "check_date": "2025-11-12",
+              "cuisine": "coffee_shop",
+              "indoor_seating": "yes",
+              "name": "Starbucks",
+              "official_name": "Starbucks Coffee",
+              "opening_hours": "Su-Th 07:00-19:00; Fr,Sa 07:00-20:00",
+              "outdoor_seating": "yes",
+              "smoking": "no",
+              "takeaway": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7041091585,
+            "tags": {
+              "addr:street": "Darling Drive",
+              "amenity": "cafe",
+              "check_date": "2025-02-19",
+              "cuisine": "coffee_shop",
+              "indoor_seating": "yes",
+              "name": "Edition Coffee Roasters",
+              "opening_hours": "Mo-We 08:16-16:00,Th-Sa 08:00-22:00,Su 08:00-16:00",
+              "outdoor_seating": "yes",
+              "takeaway": "yes",
+              "website": "https://editionroasters.com"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8246313828,
+            "tags": {
+              "addr:housenumber": "73-75",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "MacArthur Street",
+              "addr:suburb": "Ultimo",
+              "addr:unit": "Shop 1",
+              "amenity": "restaurant",
+              "name": "Noranise Dining",
+              "opening_hours:signed": "no",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8639776617,
+            "tags": {
+              "addr:district": "CBD",
+              "addr:housenumber": "14",
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Darling Drive",
+              "addr:suburb": "Sydney",
+              "addr:unit": "1",
+              "amenity": "restaurant",
+              "check_date": "2024-11-10",
+              "cuisine": "japanese",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "Harajuku Gyoza",
+              "opening_hours": "11:30-21:00",
+              "opening_hours:kitchen": "11:30-20:00",
+              "outdoor_seating": "yes",
+              "toilets": "yes",
+              "toilets:access": "customers",
+              "website": "https://www.harajukugyoza.com/locations#DHbook",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9480685417,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2024-04-21",
+              "contact:facebook": "hakatamondarlingsquare",
+              "cuisine": "japanese;ramen",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "name": "Hakatamon Ramen",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9642576281,
+            "tags": {
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "check_date": "2025-11-12",
+              "cuisine": "chinese",
+              "indoor_seating": "yes",
+              "name": "Lilong by Taste of Shanghai",
+              "opening_hours": "Mo-Sa 11:30-21:00; Su 11:30-20:30",
+              "outdoor_seating": "yes",
+              "smoking": "no",
+              "website": "https://tasteofshanghai.com.au/lilong-2/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9644382450,
+            "tags": {
+              "amenity": "cafe",
+              "check_date:opening_hours": "2022-06-15",
+              "indoor_seating": "yes",
+              "name": "Pigeonhole Cafe",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9647017163,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9818259766,
+            "tags": {
+              "amenity": "cafe",
+              "check_date:opening_hours": "2022-06-15",
+              "name": "Central Brew",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9819186756,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "The Small Lemongrass"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10590131122,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "drink:coffee": "yes",
+              "indoor_seating": "yes",
+              "name": "Auvers",
+              "outdoor_seating": "yes",
+              "website": "https://www.auverscafe.com.au/darlingsquare"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10590350430,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Pancakes on the Rocks",
+              "website": "https://pancakesontherocks.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10689677826,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "name": "Sushi Sei by Kuon",
+              "opening_hours": "Tu-Su 12:00-14:30,17:00-22:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10689683738,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "machi machi",
+              "brand:en": "machi machi",
+              "brand:wikidata": "Q114828290",
+              "brand:zh": "\u9ea5\u5409",
+              "cuisine": "bubble_tea",
+              "name": "Machi machi",
+              "opening_hours": "Mo-Th 12:00-22:00; Fr-Su 11:00-22:00",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10689694170,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "K\u00fcrt\u0151sh",
+              "brand:wikidata": "Q117257108",
+              "cuisine": "hungarian",
+              "indoor_seating": "yes",
+              "name": "K\u00fcrt\u0151sh",
+              "opening_hours": "Mo-Th 07:30-22:30; Fr 07:30-23:00; Sa 08:30-23:00; Su 08:30-22:00; PH 08:30-22:00",
+              "outdoor_seating": "yes",
+              "shop": "pastry"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10869993140,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-12",
+              "name": "Ume Burger",
+              "opening_hours": "We-Sa 11:30-14:30,16:30-21:00,Su 11:30-15:30"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11271537769,
+            "tags": {
+              "addr:housenumber": "14",
+              "addr:postcode": "2000",
+              "addr:street": "Steam Mill Lane",
+              "amenity": "restaurant",
+              "check_date": "2025-11-12",
+              "cuisine": "japanese",
+              "email": "info@nakanodarling.com.au",
+              "name": "Nakano Darling",
+              "opening_hours": "Su-We 17:00-00:00; Th-Sa 17:00-02:00",
+              "phone": "+61 2 8957 4301",
+              "website": "https://nakanodarling.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11372529615,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2024-09-27",
+              "name": "Cafe 80",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11380697323,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "The Terrace",
+              "opening_hours": "Mo-Fr 08:00-15:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11523986599,
+            "tags": {
+              "amenity": "cafe",
+              "description": "student-run",
+              "name": "The Apprentice"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11834192053,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2026-03-16",
+              "contact:instagram": "chintariabuddhalove",
+              "name": "Chinta Ria"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12018640970,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2026-03-19",
+              "cuisine": "vietnamese",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "stool",
+              "name": "Flappy Bird",
+              "opening_hours": "Mo-We 08:00-21:00;Th-Fr 08:00-22:00;Sa 09:00-23:00;Su 09:00-20:00",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12150773661,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Buttercrumbs Croissant",
+              "opening_hours": "Mo-Su 08:00-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12208368292,
+            "tags": {
+              "amenity": "cafe",
+              "bar": "no",
+              "check_date": "2025-06",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "chair;bench",
+              "name": "One Shot",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12247352595,
+            "tags": {
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "check_date:smoking": "2025-07-22",
+              "cuisine": "chinese",
+              "name": "Little Sichuan Canton",
+              "opening_hours:signed": "no",
+              "smoking": "no",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12247352599,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "cuisine": "asian",
+              "name": "Yummy Chilli Bean",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12247352600,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-06",
+              "cuisine": "asian",
+              "name": "Ulti Spoon",
+              "opening_hours": "Mo-Fr 11:00-21:00;Sa off;Su 11:00-21:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12247580258,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Merchants of Ultimo",
+              "website": "https://merchantsofultimo.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12360499420,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "greek",
+              "indoor_seating": "yes",
+              "name": "Zeus Street Greek",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12528689299,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-01",
+              "cuisine": "sushi",
+              "name": "Sushia"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12528689300,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-01-23",
+              "cuisine": "barbecue",
+              "name": "Golden Century BBQ"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12569848809,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-02-09",
+              "cuisine": "coffee_shop",
+              "indoor_seating": "yes",
+              "name": "Jaya Espresso",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "takeaway": "yes",
+              "website": "https://www.jayaespresso.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12730130546,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "chinese"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12730130548,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "name": "Ultimo Kitchen"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12791216730,
+            "tags": {
+              "access": "yes",
+              "amenity": "cafe",
+              "bar": "yes",
+              "check_date": "2025-04",
+              "cuisine": "coffee;cafe",
+              "indoor_seating": "yes",
+              "name": "Mrs & George"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739519,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "cuisine": "chinese;hot_pot",
+              "name": "Garden Hot Pot",
+              "opening_hours": "Mo-Sa 11:30-15:00,17:00-21:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739520,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-06",
+              "cuisine": "taiwanese",
+              "indoor_seating": "yes",
+              "name": "Sunflower Taiwanese Goumet",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739532,
+            "tags": {
+              "addr:housenumber": "155",
+              "addr:street": "Broadway",
+              "amenity": "restaurant",
+              "check_date": "2025-06",
+              "cuisine": "chinese",
+              "indoor_seating": "yes",
+              "name": "Duoway Chinese Noodle Hub"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739537,
+            "tags": {
+              "addr:housenumber": "153",
+              "addr:street": "Broadway",
+              "amenity": "restaurant",
+              "check_date": "2025-06",
+              "cuisine": "chinese",
+              "name": "Chilli Man",
+              "start_date": "2020"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739538,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-22",
+              "check_date:opening_hours": "2025-07-22",
+              "name": "Gamma College",
+              "opening_hours:signed": "no",
+              "website": "https://gamma.edu.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12953739543,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date:opening_hours": "2025-07-22",
+              "name": "Taste Legend",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13028462510,
+            "tags": {
+              "addr:housenumber": "1",
+              "addr:street": "Little Pier Street",
+              "addr:unit": "Shop T.03",
+              "amenity": "cafe",
+              "bar": "yes",
+              "changing_table": "no",
+              "cuisine": "brunch",
+              "indoor_seating": "yes",
+              "name": "The Brothers Cafe",
+              "opening_hours": "Mo-We 09:00-15:45; Th-Su 09:00-19:45",
+              "outdoor_seating": "veranda",
+              "phone": "+61 430 366 711",
+              "website": "https://thebrotherscafe.com.au",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13046889447,
+            "tags": {
+              "addr:housenumber": "63",
+              "addr:street": "Mountain Street",
+              "amenity": "restaurant",
+              "check_date": "2025-12",
+              "cuisine": "malaysian",
+              "name": "Kafe Kooks",
+              "website": "https://kafekooks.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13191886476,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-10",
+              "cuisine": "coffee_shop",
+              "indoor_seating": "yes",
+              "name": "Stitch Coffee",
+              "opening_hours": "Mo-Fr 07:00-15:00;Sa 08:30-14:00",
+              "outdoor_seating": "yes",
+              "power_supply": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13233851015,
+            "tags": {
+              "addr:housenumber": "61",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Broadway",
+              "addr:suburb": "Ultimo",
+              "addr:unit": "UTS Building 2 Food Court, Kiosk 2, Level 3",
+              "amenity": "cafe",
+              "brand": "Chatime",
+              "brand:wikidata": "Q16829306",
+              "cuisine": "bubble_tea",
+              "name": "Chatime",
+              "opening_hours": "Mo-Th 09:30-19:30, Fr 09:30-6:30",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9283 0880",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13233851016,
+            "tags": {
+              "addr:housenumber": "61",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Broadway",
+              "addr:suburb": "Ultimo",
+              "addr:unit": "UTS building 2, Level 7,8,9",
+              "amenity": "library",
+              "internet_access": "wlan",
+              "internet_access:fee": "customers",
+              "name": "UTS Library",
+              "opening_hours": "Mo-Fr 08:00-22:00",
+              "operator": "University of Technology Sydney",
+              "operator:type": "university",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13454950910,
+            "tags": {
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Harris Street",
+              "addr:suburb": "Ultimo",
+              "addr:unit": "745",
+              "leisure": "sports_centre",
+              "name": "Ross-Milbourne Sports Hall",
+              "sport": "basketball;table_tennis;multi;netball"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13459500701,
+            "tags": {
+              "addr:housenumber": "1",
+              "addr:street": "Little Pier Street",
+              "addr:unit": "Level 5",
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "level": "5",
+              "name": "Haidilao Hotpot Darling Square",
+              "opening_hours": "Mo-Fr 12:00-01:00; Sa-Su 11:30-01:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 7252 3500",
+              "reservation": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13475270001,
+            "tags": {
+              "addr:housenumber": "81-83",
+              "addr:street": "Harbour Street",
+              "amenity": "restaurant",
+              "brand": "Meet Fresh",
+              "brand:wikidata": "Q11172707",
+              "cuisine": "taiwanese",
+              "diet:vegan": "limited",
+              "indoor_seating": "yes",
+              "name": "Meet Fresh",
+              "outdoor_seating": "yes",
+              "website": "https://www.meetfresh.com.tw/en"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13475274201,
+            "tags": {
+              "addr:housenumber": "1",
+              "addr:street": "Little Pier Street",
+              "amenity": "cafe",
+              "cuisine": "bubble_tea",
+              "diet:vegan": "limited",
+              "diet:vegetarian": "yes",
+              "name": "Bubble Nini",
+              "website": "https://bubblenini.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13589620871,
+            "tags": {
+              "amenity": "restaurant",
+              "level": "1",
+              "name": "Kiki Dessert",
+              "opening_hours": "Tu-Sa 08:00-18:00, Mo,Su closed"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13589620879,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13589620880,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Age.3",
+              "opening_hours": "Mo 08:00-11:00, Tu-Th 08:00-14:30,16:00-18:30, Fr 08:00-14:30,16:00-18:30, Sa 11:00-14:30,16:00-19:30, Su 11:00-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13605407738,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "indoor_seating": "yes",
+              "name": "Brew Express"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13695155601,
+            "tags": {
+              "addr:housenumber": "1/33",
+              "addr:street": "Ultimo Road",
+              "amenity": "restaurant",
+              "check_date": "2026-03-31",
+              "check_date:opening_hours": "2026-03-31",
+              "contact:instagram": "temukangensydney",
+              "cuisine": "indonesian",
+              "name": "Temu Kangen by Medan Ciak",
+              "opening_hours": "Mo-Su 11:00-22:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 432 520 588"
+            }
+          },
+          {
+            "type": "way",
+            "id": 134603695,
+            "tags": {
+              "addr:housenumber": "458",
+              "addr:postcode": "2007",
+              "addr:street": "Harris Street",
+              "building": "sports_centre",
+              "building:levels": "2",
+              "leisure": "sports_centre",
+              "name": "Ian Thorpe Aquatic Centre",
+              "roof:shape": "round",
+              "sport": "swimming",
+              "website": "https://www.itac.org.au/",
+              "wheelchair": "yes",
+              "wikidata": "Q16892619",
+              "wikipedia": "en:Ian Thorpe Aquatic Centre"
+            }
+          },
+          {
+            "type": "way",
+            "id": 148331267,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Mary Ann Street Park",
+              "source": "survey",
+              "source:location": "Bing",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/mary-ann-street-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 148339388,
+            "tags": {
+              "check_date": "2023-11-15",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Fig Lane Park",
+              "source": "survey",
+              "source:location": "Bing",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/fig-lane-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173156830,
+            "tags": {
+              "leisure": "park",
+              "name": "Mountain Street Reserve",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173156845,
+            "tags": {
+              "amenity": "school",
+              "name": "International Grammar School",
+              "source": "Bing"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173157860,
+            "tags": {
+              "leisure": "park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173160714,
+            "tags": {
+              "addr:housenumber": "249-257",
+              "addr:postcode": "2007",
+              "addr:street": "Bulwara Road",
+              "addr:suburb": "Ultimo",
+              "alt_name": "Ultimo Public School",
+              "amenity": "school",
+              "contact:email": "ultimo-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9692 8823",
+              "contact:phone": "+61 2 9660 2130",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "KU Ultimo Children's Centre",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "287",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "source:geometry": "Bing",
+              "start_date": "1858-01-10",
+              "website": "https://www.ku.com.au/childcare/centres/kuultimo"
+            }
+          },
+          {
+            "type": "way",
+            "id": 183246960,
+            "tags": {
+              "check_date": "2023-09-27",
+              "leisure": "park",
+              "name": "Tumbalong Park",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/tumbalong-park",
+              "wikidata": "Q7852524",
+              "wikipedia": "en:Tumbalong Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 271608910,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "Tumbalong Park Playground",
+              "operator": "Placemaking NSW",
+              "operator:wikidata": "Q136439527",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/tumbalong-park-playground",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 271608911,
+            "tags": {
+              "check_date": "2025-07-05",
+              "leisure": "park",
+              "name": "Darling Quarter Village Green (North)",
+              "website": "https://www.darlingharbour.com/venues/darling-quarter-village-green-(north)"
+            }
+          },
+          {
+            "type": "way",
+            "id": 271608912,
+            "tags": {
+              "leisure": "park",
+              "name": "Darling Quarter Village Green (South)",
+              "website": "https://www.darlingharbour.com/venues/darling-quarter-village-green-(south)"
+            }
+          },
+          {
+            "type": "way",
+            "id": 337100965,
+            "tags": {
+              "leisure": "park",
+              "name": "UTS Alumni Green",
+              "operator": "University of Technology, Sydney",
+              "operator:wikidata": "Q1145731"
+            }
+          },
+          {
+            "type": "way",
+            "id": 521210975,
+            "tags": {
+              "addr:housenumber": "41",
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Darling Drive",
+              "leisure": "park",
+              "name": "MacArthur Park",
+              "paving_stones:material": "brick",
+              "surface": "paving_stones"
+            }
+          },
+          {
+            "type": "way",
+            "id": 548918559,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 603944763,
+            "tags": {
+              "addr:housenumber": "598",
+              "addr:street": "Harris Street",
+              "amenity": "cafe",
+              "building": "office",
+              "building:levels": "2",
+              "cuisine": "asian;malaysian;malay",
+              "name": "Kopitiam",
+              "opening_hours": "Mo 12:00-15:00; Tu-Su 12:00-15:00,18:00-21:00",
+              "phone": "+61 2 9282 9883",
+              "source": "photo"
+            }
+          },
+          {
+            "type": "way",
+            "id": 614671055,
+            "tags": {
+              "addr:housenumber": "47 - 53",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Jones Street",
+              "addr:suburb": "Ultimo",
+              "amenity": "school",
+              "contact:email": "ultimo-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9692 8823",
+              "contact:phone": "+61 2 9660 2130",
+              "fee": "no",
+              "fixme": "Nees a survey after the rebuild which opened recently.",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Ultimo Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1858-01-10",
+              "website": "https://ultimo-p.schools.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 614693101,
+            "tags": {
+              "addr:housenumber": "91",
+              "addr:postcode": "2007",
+              "addr:street": "William Henry Street",
+              "amenity": "cafe",
+              "building": "yes",
+              "building:levels": "2",
+              "cuisine": "pizza",
+              "name": "La Iltimo"
+            }
+          },
+          {
+            "type": "way",
+            "id": 614781888,
+            "tags": {
+              "check_date": "2025-02-09",
+              "leisure": "park",
+              "name": "Quarry Green"
+            }
+          },
+          {
+            "type": "way",
+            "id": 614781889,
+            "tags": {
+              "check_date": "2025-02-09",
+              "leisure": "park",
+              "name": "Quarry Green"
+            }
+          },
+          {
+            "type": "way",
+            "id": 615029541,
+            "tags": {
+              "leisure": "park",
+              "name": "Ada Place Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 615029570,
+            "tags": {
+              "check_date": "2025-02-09",
+              "leisure": "park",
+              "name": "Quarry Lane Streetscape"
+            }
+          },
+          {
+            "type": "way",
+            "id": 673246138,
+            "tags": {
+              "addr:housenumber": "33",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Mountain Street",
+              "addr:suburb": "Ultimo",
+              "amenity": "school",
+              "building": "yes",
+              "building:levels": "5",
+              "check_date": "2025-06-21",
+              "name": "Academy of Interactive Entertainment",
+              "short_name": "AIE",
+              "website": "https://aie.edu.au"
+            }
+          },
+          {
+            "type": "way",
+            "id": 717038734,
+            "tags": {
+              "access": "private",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 717038735,
+            "tags": {
+              "access": "private",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 826354467,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1047327153,
+            "tags": {
+              "addr:housenumber": "637",
+              "addr:street": "Harris Street",
+              "amenity": "cafe",
+              "building": "house",
+              "building:levels": "2",
+              "name": "Red Lemon Thai Cafe",
+              "opening_hours": "Mo-Sa 10:30-15:15,16:30-21:15",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1047327161,
+            "tags": {
+              "leisure": "park",
+              "name": "McKee Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1047327174,
+            "tags": {
+              "addr:housenumber": "430",
+              "addr:postcode": "2007",
+              "addr:state": "NSW",
+              "addr:street": "Wattle Street",
+              "addr:suburb": "Ultimo",
+              "amenity": "restaurant",
+              "building": "house",
+              "building:levels": "2",
+              "check_date": "2026-02",
+              "contact:facebook": "https://www.facebook.com/dumplingnoodlehouseultimo/",
+              "cuisine": "chinese;dumplings;noodle",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "indoor_seating": "yes",
+              "name": "Dumpling & Noodle House",
+              "opening_hours": "PH,Mo-Su 10:00-22:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 7902 0077",
+              "smoking": "no",
+              "source": "photo;Bing",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1136063020,
+            "tags": {
+              "amenity": "cafe",
+              "building": "retail",
+              "building:levels": "1",
+              "indoor_seating": "no",
+              "name": "Harry's Cafe De Wheels",
+              "outdoor_seating": "yes",
+              "roof:levels": "0",
+              "roof:shape": "flat",
+              "takeaway": "yes",
+              "website": "https://www.harryscafedewheels.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1226180569,
+            "tags": {
+              "amenity": "cafe",
+              "building": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1252288254,
+            "tags": {
+              "leisure": "park"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
