@@ -1,6 +1,7 @@
 "use client";
 
-import { FileText, SendHorizontal, Sparkles, X } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { FileText, SendHorizontal, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { ChatMessage } from "./types";
 import { TypingDots } from "./TypingDots";
@@ -28,19 +29,15 @@ export function AssistantSidebar({
   pdfLoaded,
   onTogglePdf
 }: AssistantSidebarProps) {
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, typing]);
+
   return (
     <aside className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white/94 shadow-[0_20px_45px_rgba(15,23,42,0.16)] backdrop-blur">
       <div className="shrink-0 bg-white flex items-center gap-2 border-b border-slate-200/80 px-3 py-2.5">
-        <div className="relative h-6 w-6 overflow-hidden rounded-full border border-slate-200 bg-white">
-          <Image
-            src="/img/logo.webp"
-            alt="Sydney Liveability AI logo"
-            fill
-            sizes="24px"
-            className="object-cover"
-            priority
-          />
-        </div>
         <div className="min-w-0">
           <p className="truncate text-[11px] font-semibold text-slate-800">Liveability Assistant</p>
         </div>
@@ -48,9 +45,6 @@ export function AssistantSidebar({
           <Sparkles size={10} />
           Live
         </div>
-        <button type="button" className="rounded-md p-1 text-slate-400 transition hover:bg-slate-100 hover:text-slate-600" aria-label="Close panel">
-          <X size={13} />
-        </button>
       </div>
 
       <div className="scrollbar-none min-h-0 flex-1 space-y-2 overflow-y-auto px-3 py-2.5">
@@ -73,6 +67,8 @@ export function AssistantSidebar({
             <TypingDots />
           </div>
         ) : null}
+
+        <div ref={bottomRef} />
       </div>
 
       <button
