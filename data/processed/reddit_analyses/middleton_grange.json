@@ -1,0 +1,66 @@
+{
+  "suburb": "Middleton Grange",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:43.751037+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.432,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.428,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.905,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.997,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.997,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "anger": 0.2424,
+    "sadness": 0.0586,
+    "fear": 0.0443,
+    "surprise": 0.1131,
+    "neutral": 0.4978,
+    "joy": 0.0046,
+    "disgust": 0.0391
+  },
+  "narrative": "Reddit discussions about Middleton Grange are most positive about food and cafe (1.00) and green space (1.00). Residents are most critical about safety (0.43) and community (0.43). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Knife-wielding man shot dead by police in Middleton Grange\nhttps://www.skynews.com.au/australia-news/crime/knife-wielding-man-shot-dead-by-police-after-attacking-officer-in-western-sydney-suburb-of-mi",
+      "url": "https://reddit.com/r/sydney/comments/1edsi1n/knifewielding_man_shot_dead_by_police_in/",
+      "score": 66
+    },
+    {
+      "text": "It's always been overblown and with a strong hint of classism and racism. \n\nIn saying that though, even with development it is still very much bland suburbia to me. There are parks, services, shops et",
+      "url": "https://reddit.com/r/sydney/comments/1ah1ika/why_do_people_still_trash_talk_western_sydney/kokqzt4/",
+      "score": 30
+    },
+    {
+      "text": "Nope Middleton Grange, been trying for 10 years to get a bus service. Nearest stop to get to a station is on Cowpasture rd a 3km walk, then it only goes to Liverpool station which takes nearly an hour",
+      "url": "https://reddit.com/r/sydney/comments/1bnaovc/the_new_station_set_to_take_over_central_as/kwlebiv/",
+      "score": 5
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Zetland",
+  "post_count": 53,
+  "fetched_at": "2026-04-18T02:05:58.768857+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.603,
+      "mentions": 15
+    },
+    "community": {
+      "score": 0.602,
+      "mentions": 39
+    },
+    "transport": {
+      "score": 0.8,
+      "mentions": 19
+    },
+    "noise": {
+      "score": 0.793,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.823,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.799,
+      "mentions": 13
+    },
+    "affordability": {
+      "score": 0.628,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.634,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "neutral": 0.5042,
+    "surprise": 0.1616,
+    "sadness": 0.0684,
+    "fear": 0.0832,
+    "anger": 0.0571,
+    "disgust": 0.0676,
+    "joy": 0.0579
+  },
+  "narrative": "Reddit discussions about Zetland are most positive about food and cafe (0.82) and transport (0.80). Residents are most critical about safety (0.60) and community (0.60). This analysis is based on 53 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Taking your 102 year-old car to do the grocery run in Zetland",
+      "url": "https://reddit.com/r/sydney/comments/1mej2wb/taking_your_102_yearold_car_to_do_the_grocery_run/",
+      "score": 1396
+    },
+    {
+      "text": "Charities who could help an old man with no family?\nI met an elderly gentleman at the bus stop today. He is an immigrant from Greece. He has to be in his 90s. \n\nHe told me he had to get the bus from Z",
+      "url": "https://reddit.com/r/sydney/comments/1jkxxqp/charities_who_could_help_an_old_man_with_no_family/",
+      "score": 489
+    },
+    {
+      "text": "CBD is prettier, light rail has changed the CBD into a more pedestrian friendly destination. More al fresco dining options and shopping.\n\nBarangaroo has shiny new skyscrapers and a new public park, wi",
+      "url": "https://reddit.com/r/sydney/comments/19dvw36/lived_in_london_for_12_years_considering_moving/kj8ntv1/",
+      "score": 361
+    },
+    {
+      "text": "What's the most useless sign in Sydney?\nFairly open question, look forward to serious and not so serious responses...!\n\nMy submission is this one on Joynton Avenue, Zetland. From certain angles I thin",
+      "url": "https://reddit.com/r/sydney/comments/1bex3ng/whats_the_most_useless_sign_in_sydney/",
+      "score": 256
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Sunny day in Zetland ",
+      "url": "https://reddit.com/r/sydney/comments/1i096o4/sunny_day_in_zetland/",
+      "score": 189
+    },
+    {
+      "text": "it’s not just Brighton, the same bullshit plagues Zetland. Straight piped sport bikes, Lambos/McLarens being launched and cracking gears like GT cars and of course the absolutely obnoxious pop/crackle",
+      "url": "https://reddit.com/r/sydney/comments/1ahvva1/brightonlesandsbexleybayside_loud_carsbikes_are/koshlkw/",
+      "score": 120
+    },
+    {
+      "text": "Are NSW Drivers legally allowed to ignore pedestrians at pedestrian crossings?\nThis post ended up being longer than I anticipated so there's a tldr at the end. \n\nI always thought and was taught that w",
+      "url": "https://reddit.com/r/sydney/comments/1la85kk/are_nsw_drivers_legally_allowed_to_ignore/",
+      "score": 114
+    },
+    {
+      "text": "Loud music in Zetland\nAny else hearing the loud music through the whole of Zetland and know what’s going on? Walked the entire suburb and couldn’t find the source, seems to be so loud it’s coming from",
+      "url": "https://reddit.com/r/sydney/comments/1g5o0gp/loud_music_in_zetland/",
+      "score": 105
+    },
+    {
+      "text": "Open on the Holidays \nSo my new favourite coffee place is open on the holidays. Thought I’d share in case anyone in the Zetland/Waterloo/Green Square area needs coffee later. Rang on Portman \n\nAnyone ",
+      "url": "https://reddit.com/r/sydney/comments/1hfexme/open_on_the_holidays/",
+      "score": 59
+    }
+  ]
+}

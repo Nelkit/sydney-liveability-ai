@@ -1,0 +1,101 @@
+{
+  "suburb": "Brookvale",
+  "post_count": 23,
+  "fetched_at": "2026-04-18T02:13:53.118099+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.857,
+      "mentions": 21
+    },
+    "transport": {
+      "score": 0.861,
+      "mentions": 9
+    },
+    "noise": {
+      "score": 0.937,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.843,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.903,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.933,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.906,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.909,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "fear": 0.0847,
+    "neutral": 0.5211,
+    "anger": 0.0232,
+    "joy": 0.1156,
+    "sadness": 0.0872,
+    "surprise": 0.1313,
+    "disgust": 0.037
+  },
+  "narrative": "Reddit discussions about Brookvale are most positive about noise (0.94) and nightlife (0.93). Residents are most critical about community (0.86) and safety (0.84). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "NSW Government Petition - Conduct a Feasibility Study for a Northern Beaches Metro Line\nDue to all of the issues we on the Northern Beaches experience with transport to the city and beyond, I've submi",
+      "url": "https://reddit.com/r/sydney/comments/1jtbnjw/nsw_government_petition_conduct_a_feasibility/",
+      "score": 118
+    },
+    {
+      "text": "I think you're mistaken thinking of a *brewery only*. Breweries by nature are licensed manufacturing locations with workplace hazards not present in pubs, as such they are not suitable for little kids",
+      "url": "https://reddit.com/r/sydney/comments/1bn1o4e/looking_for_a_kid_friendly_brewery_in_inner_sydney/kwfj3jx/",
+      "score": 21
+    },
+    {
+      "text": "Did a blacksmithing course the other day to make a chef's knife, but for some reason, Imgur is only letting me upload the [completed item](https://imgur.com/BWVT42V), not other pictures of the knife.\n",
+      "url": "https://reddit.com/r/sydney/comments/1b344sc/sydney_daily_random_discussion_thread_01032024/ksrtzxy/",
+      "score": 20
+    },
+    {
+      "text": "I drove out of Brookvale, casual only available, i was not \"employed\" until i clocked on, at clock off I was unemployed.\nLots of shifts but i didn't know day to day what shift. Not allowed to use any ",
+      "url": "https://reddit.com/r/sydney/comments/1c1tt4a/just_witnessed_a_second_person_in_a_week_get_hit/kz6dvnl/",
+      "score": 18
+    },
+    {
+      "text": "Our low density sprawl makes it almost mandatory that every adult aged resident need a car and to drive. We build cities around cars and land. It's around the wrong way.\n\nThis book goes into it. \n\nsyn",
+      "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koy42de/",
+      "score": 13
+    },
+    {
+      "text": "Your bus is operated by Keolis Downer Northern Beaches. If the driver found your bag it would have been handed into the depot where it will sit for a few days before going to the general Transport NSW",
+      "url": "https://reddit.com/r/sydney/comments/1ah7dk7/sydney_daily_random_discussion_thread_03022024/konk6jx/",
+      "score": 9
+    },
+    {
+      "text": "Ona coffee in Marrickville are great as is Danes in Brookvale. \n\nMost coffee Roasters offer some sort of tasting/tours.",
+      "url": "https://reddit.com/r/sydney/comments/1b7nxuc/is_coffee_tasting_a_thing/ktk3mzi/",
+      "score": 8
+    },
+    {
+      "text": "Highly recommend Bucketty’s in Brookvale as well, it’s absolutely perfect for kids.",
+      "url": "https://reddit.com/r/sydney/comments/1bn1o4e/looking_for_a_kid_friendly_brewery_in_inner_sydney/kwgt73w/",
+      "score": 6
+    },
+    {
+      "text": "Take him to the footy! Sunday not Saturday, but you can have a good day out at Brookvale.\n\nGeneral admission tickets on the Eastern Hill, $37.00 each + booking fee: https://www.ticketmaster.com.au/man",
+      "url": "https://reddit.com/r/sydney/comments/1deprff/ideas_for_someone_homesick/l8dmkvj/",
+      "score": 6
+    },
+    {
+      "text": "How far up? Alma or Randy’s in Avalon are a little fancy with nice atmosphere, Queen Ester in Mona/newport is incredible Israeli food. Two Hungry Bears in Narrabeen/Brookvale are the best burgers. Mod",
+      "url": "https://reddit.com/r/sydney/comments/1ahr7vn/eating_on_the_northern_beaches/koq0oms/",
+      "score": 5
+    }
+  ]
+}

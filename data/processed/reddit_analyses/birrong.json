@@ -1,0 +1,101 @@
+{
+  "suburb": "Birrong",
+  "post_count": 11,
+  "fetched_at": "2026-04-18T02:17:54.022765+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.49,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.598,
+      "mentions": 10
+    },
+    "safety": {
+      "score": 0.538,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.717,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.654,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.594,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.575,
+    "surprise": 0.0378,
+    "sadness": 0.0255,
+    "anger": 0.0155,
+    "joy": 0.1369,
+    "disgust": 0.1495,
+    "fear": 0.0598
+  },
+  "narrative": "Reddit discussions about Birrong are most positive about food and cafe (0.72) and nightlife (0.65). Residents are most critical about noise (0.50) and transport (0.49). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "It’s to free up space for more Sydney Trains services towards Liverpool from the City, with existing T2 services via Granville, and the additional services that will run via Regents Park which inherit",
+      "url": "https://reddit.com/r/sydney/comments/1dmx97t/psa_confirmed_sydney_metro_to_open_in_august/la0hczr/",
+      "score": 10
+    },
+    {
+      "text": "Whole area around there has gone to shit. Chester Hill, Bass Hill, even Georges Hall.\nThere's a great banh mi spot at Birrong though..😉",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyapfl7/",
+      "score": 7
+    },
+    {
+      "text": "Don’t forget the great pie shop in Birrong.",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyaqtre/",
+      "score": 7
+    },
+    {
+      "text": "The Sydney Metro conversion should have continued through here and Birrong and then just kept trucking into Parramatta and Norwest.",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyanwrg/",
+      "score": 6
+    },
+    {
+      "text": "The Italian Bistro in Birrong or La Piazza in bankstown sports club both do one that is pretty nice.",
+      "url": "https://reddit.com/r/sydney/comments/1cf7g2n/is_there_anywhere_in_sydney_that_does_a_really/l1pg03d/",
+      "score": 6
+    },
+    {
+      "text": "400 pw in Birrong for 2BR",
+      "url": "https://reddit.com/r/sydney/comments/193j69d/rent_stabilised_pfft/khabo6a/",
+      "score": 5
+    },
+    {
+      "text": "Birrong, you can buy the whole suburb for yourself",
+      "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/kocpsrn/",
+      "score": 3
+    },
+    {
+      "text": "Barber Lab in Birrong always has me sorted with my beard",
+      "url": "https://reddit.com/r/sydney/comments/1aj4t3z/where_in_sydney_can_i_find_a_barber_with_matty/kozmgpe/",
+      "score": 3
+    },
+    {
+      "text": "A worthless shuttle train servicing four minor stations that runs 10% full all the time? I feel like Yagoona and Birrong people will be on buses only at some time in the future then.",
+      "url": "https://reddit.com/r/sydney/comments/1966bps/bankstown_to_penrith_commute_time/khsrf5m/",
+      "score": 2
+    },
+    {
+      "text": "Big fan of parks and went around Sydney exploring last winter, personal favourites were; Muston Park (revisited and definitely recommend going during summer/spring) with an amazing vine tunnel, Dudley",
+      "url": "https://reddit.com/r/sydney/comments/1chkbam/best_parks_in_sydney/l23cb9u/",
+      "score": 2
+    }
+  ]
+}

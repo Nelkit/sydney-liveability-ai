@@ -1,0 +1,101 @@
+{
+  "suburb": "Eastgardens",
+  "post_count": 26,
+  "fetched_at": "2026-04-18T02:13:06.680448+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.124,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.011,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.045,
+      "mentions": 17
+    },
+    "nightlife": {
+      "score": 0.01,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.42,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.275,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.35,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.849,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "fear": 0.0701,
+    "anger": 0.0852,
+    "disgust": 0.2224,
+    "neutral": 0.4287,
+    "surprise": 0.0896,
+    "sadness": 0.0938,
+    "joy": 0.0102
+  },
+  "narrative": "Reddit discussions about Eastgardens are most positive about food and cafe (0.85) and green space (0.42). Residents are most critical about noise (0.01) and nightlife (0.01). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Teenagers around Eastgardens are ASSAULTING Asian students — and getting away with it\nEnough is enough.\n\nIn the past few days, Chinese social media has been flooded with videos and posts of Asian stud",
+      "url": "https://reddit.com/r/sydney/comments/1krxqzd/teenagers_around_eastgardens_are_assaulting_asian/",
+      "score": 2209
+    },
+    {
+      "text": "Chinese couple's assault in Sydney's Eastgardens sparks 27,000-strong petition for youth justice reform - ABC News",
+      "url": "https://reddit.com/r/sydney/comments/1kx50ox/chinese_couples_assault_in_sydneys_eastgardens/",
+      "score": 745
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "37⁰ at Eastgardens. Couldn't get in the Westfield quick enough. This is about as bad as it gets.",
+      "url": "https://reddit.com/r/sydney/comments/19bx07w/what_an_absolute_stinker_of_a_day/kiuw2k3/",
+      "score": 143
+    },
+    {
+      "text": "Something is on fire behind the airport :/\nLooks to be Botany/Eastgardens area",
+      "url": "https://reddit.com/r/sydney/comments/1i7pfie/something_is_on_fire_behind_the_airport/",
+      "score": 129
+    },
+    {
+      "text": "L2/L3 are perfectly fine and I prefer them significantly to buses. Could they have been extended well into Maroubra/Eastgardens? Yes. But as they are? They've been a game changer in terms of any city ",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj7n4t/",
+      "score": 35
+    },
+    {
+      "text": "If the light rail isn't going to be extended, there definitely needs to be a direct service from Bunnerong Rd/Eastgardens to the city somewhere given the huge amount of development there. It's really ",
+      "url": "https://reddit.com/r/sydney/comments/1axmx4v/these_have_to_be_the_worst_bus_services_in_sydney/krp30bk/",
+      "score": 32
+    },
+    {
+      "text": "I cross from Randwick to Bayside a lot as I live in Little Bay and shop at Southpoint and Eastgardens. The difference in management is just insane. Traffic management is just horrible on the wrong sid",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki7t8em/",
+      "score": 31
+    },
+    {
+      "text": "meh, this concept applies everywhere. Wanna get from Double Bay to Eastgardens?\n\nOK, what self-respecting Double Bay local goes to Eastgardens? So let's say Double Bay to Bondi Beach by public transpo",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krupzaj/",
+      "score": 27
+    },
+    {
+      "text": "About a year ago, there was a bit of chatter about adding some of the La Perouse line to the Parramatta Metro project, with maybe a stop at Zetland. But that chatter just dropped off, and I reckon not",
+      "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1gj4ab/",
+      "score": 20
+    }
+  ]
+}

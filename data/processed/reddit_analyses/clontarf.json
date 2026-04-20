@@ -1,0 +1,76 @@
+{
+  "suburb": "Clontarf",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:51.031114+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.417,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.352,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.375,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.352,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.564,
+    "disgust": 0.0807,
+    "neutral": 0.282,
+    "surprise": 0.0233,
+    "sadness": 0.0194,
+    "anger": 0.0198,
+    "joy": 0.0108
+  },
+  "narrative": "Reddit discussions about Clontarf are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.35) and noise (0.35). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is fear.",
+  "sources": [
+    {
+      "text": "I know it’s not a long walk, but not too bad for an out-of-shape old guy! Some incredible scenery on the way, and some challenging bits; climbing on the rocks near Clontarf beach and that bloody awful",
+      "url": "https://reddit.com/r/sydney/comments/195lnoz/me_should_i_do_the_spit_to_manly_or_the_manly_to/khnjurh/",
+      "score": 78
+    },
+    {
+      "text": "The Northern Beaches are physically separated from the North Shore by the Spit bridge in the south & the Roseville bridge in the west, & the north border is the start of Terrey Hills. \n\nBeaches start ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxgyka/",
+      "score": 65
+    },
+    {
+      "text": "Usual caveat of not swimming after any decent rain applies to most beaches. \n\nThe Spit and the channel leading up to it are insanely deep. If you’ve swum at Clontarf, you’ll know what I mean with the ",
+      "url": "https://reddit.com/r/sydney/comments/1b25kwd/safe_to_swim_at_chinamans_beach/ksld7pd/",
+      "score": 25
+    },
+    {
+      "text": "Wallaby at Clontarf\nI was going fishing at Clontarf this morning and a boat came to the shore and released a wallaby. I reckon they found it swimming and helped it get back. However, the wallaby start",
+      "url": "https://reddit.com/r/sydney/comments/1hk97ph/wallaby_at_clontarf/",
+      "score": 22
+    },
+    {
+      "text": "Clontarf (harbour beach and park)",
+      "url": "https://reddit.com/r/sydney/comments/1chkbam/best_parks_in_sydney/l23pypr/",
+      "score": 4
+    }
+  ]
+}

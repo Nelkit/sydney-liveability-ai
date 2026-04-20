@@ -1,6 +1,7 @@
 "use client";
 
-import { FileText, SendHorizontal, Sparkles, X } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { FileText, SendHorizontal, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { ChatMessage } from "./types";
 import { TypingDots } from "./TypingDots";
@@ -12,6 +13,7 @@ type AssistantSidebarProps = {
   onInputChange: (value: string) => void;
   onSend: () => void;
   onChipSend: (text: string) => void;
+  onOpenDetailedReport: (messageIndex: number) => void;
   chips: string[];
   pdfLoaded: boolean;
   onTogglePdf: () => void;
@@ -24,23 +26,20 @@ export function AssistantSidebar({
   onInputChange,
   onSend,
   onChipSend,
+  onOpenDetailedReport,
   chips,
   pdfLoaded,
   onTogglePdf
 }: AssistantSidebarProps) {
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, typing]);
+
   return (
     <aside className="flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-slate-200/90 bg-white/94 shadow-[0_20px_45px_rgba(15,23,42,0.16)] backdrop-blur">
       <div className="shrink-0 bg-white flex items-center gap-2 border-b border-slate-200/80 px-3 py-2.5">
-        <div className="relative h-6 w-6 overflow-hidden rounded-full border border-slate-200 bg-white">
-          <Image
-            src="/img/logo.webp"
-            alt="Sydney Liveability AI logo"
-            fill
-            sizes="24px"
-            className="object-cover"
-            priority
-          />
-        </div>
         <div className="min-w-0">
           <p className="truncate text-[11px] font-semibold text-slate-800">Liveability Assistant</p>
         </div>
@@ -48,9 +47,6 @@ export function AssistantSidebar({
           <Sparkles size={10} />
           Live
         </div>
-        <button type="button" className="rounded-md p-1 text-slate-400 transition hover:bg-slate-100 hover:text-slate-600" aria-label="Close panel">
-          <X size={13} />
-        </button>
       </div>
 
       <div className="scrollbar-none min-h-0 flex-1 space-y-2 overflow-y-auto px-3 py-2.5">
@@ -62,8 +58,20 @@ export function AssistantSidebar({
                   ? "rounded-tl-[4px] border border-slate-200 bg-slate-50 text-slate-700"
                   : "rounded-tr-[4px] bg-gradient-to-r from-slate-900 to-slate-700 text-white shadow-[0_8px_16px_rgba(15,23,42,0.24)]"
               }`}
-              dangerouslySetInnerHTML={{ __html: message.html }}
-            />
+            >
+              <div dangerouslySetInnerHTML={{ __html: message.html }} />
+              {message.role === "ai" ? (
+                <div className="mt-2 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => onOpenDetailedReport(index)}
+                    className="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 transition hover:border-slate-500"
+                  >
+                    Open Detailed Report
+                  </button>
+                </div>
+              ) : null}
+            </div>
             {message.source ? <p className="mt-1 border-t border-slate-200 pt-1 text-[10px] text-slate-500">{message.source}</p> : null}
           </div>
         ))}
@@ -73,6 +81,8 @@ export function AssistantSidebar({
             <TypingDots />
           </div>
         ) : null}
+
+        <div ref={bottomRef} />
       </div>
 
       <button

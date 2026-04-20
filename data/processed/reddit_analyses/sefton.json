@@ -1,0 +1,91 @@
+{
+  "suburb": "Sefton",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:19:08.981521+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.469,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.406,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.449,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.2028,
+    "neutral": 0.4295,
+    "anger": 0.0123,
+    "disgust": 0.0105,
+    "fear": 0.0969,
+    "joy": 0.0852,
+    "sadness": 0.163
+  },
+  "narrative": "Reddit discussions about Sefton are most positive about nightlife (0.50) and affordability (0.50). Residents are most critical about safety (0.45) and transport (0.41). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sefton playhouse?",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1riz3i/",
+      "score": 35
+    },
+    {
+      "text": "If you're using the T2 or T8 lines then that’s related to the T3 shutdown unfortunately.   It’s causing some timetable changes impacting the T2 line mainly due to requiring trains to Liverpool via Sef",
+      "url": "https://reddit.com/r/sydney/comments/191fimg/peak_train_fares_for_off_peak_service/kgv6fw1/",
+      "score": 15
+    },
+    {
+      "text": "Is that the Sefton Hotel in it?",
+      "url": "https://reddit.com/r/sydney/comments/1apa8sa/is_there_a_book_or_series_non_fiction_or_fiction/kq5it4w/",
+      "score": 10
+    },
+    {
+      "text": "Also \"signal repairs\" at Sefton.  I note how they never say \"signal damage\" but focus on the \"repair\" part ... not sure what the point of that is.",
+      "url": "https://reddit.com/r/sydney/comments/1ajt33u/whats_going_on_right_now_at_townhall_station_all/kp4jw45/",
+      "score": 7
+    },
+    {
+      "text": "Sefton Hotel as featured in Mr Inbetween.",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1uy400/",
+      "score": 6
+    },
+    {
+      "text": "I am trying to raise ebough money to live there.  We'll probably settle for Sefton.",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyb05ne/",
+      "score": 3
+    },
+    {
+      "text": "Visit Sefton Playhouse.",
+      "url": "https://reddit.com/r/sydney/comments/1cojj2k/what_are_some_experiences_every_sydneysider_has/l3iqfwe/",
+      "score": 3
+    },
+    {
+      "text": "I grew up around that area in the 90s, used to go exploring in the old hospital a lot.\nI haven’t been that way for a few years, if I can remember correctly that development popped up around the olympi",
+      "url": "https://reddit.com/r/sydney/comments/1dsrw8o/botanica_lidcombe_former_lidcombe_hospital/lb4jv7l/",
+      "score": 2
+    }
+  ]
+}

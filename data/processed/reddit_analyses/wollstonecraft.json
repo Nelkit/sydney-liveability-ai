@@ -1,0 +1,101 @@
+{
+  "suburb": "Wollstonecraft",
+  "post_count": 26,
+  "fetched_at": "2026-04-18T02:13:15.353256+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.241,
+      "mentions": 9
+    },
+    "community": {
+      "score": 0.218,
+      "mentions": 20
+    },
+    "transport": {
+      "score": 0.525,
+      "mentions": 17
+    },
+    "affordability": {
+      "score": 0.94,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.94,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.793,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.678,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1289,
+    "fear": 0.1179,
+    "disgust": 0.05,
+    "surprise": 0.1603,
+    "anger": 0.0574,
+    "neutral": 0.3875,
+    "joy": 0.0981
+  },
+  "narrative": "Reddit discussions about Wollstonecraft are most positive about affordability (0.94) and green space (0.94). Residents are most critical about safety (0.24) and community (0.22). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Someone was found dead on the tracks.\n\n\n>a man was found dead on railway tracks at Wollstonecraft at about 4.40am on Sunday morning.\n>Initial information provided to officers attached to North Shore P",
+      "url": "https://reddit.com/r/sydney/comments/1bghlwm/anyone_know_what_happened_at_wollstonecraft_train/kv78ftp/",
+      "score": 354
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Anyone know what happened at Wollstonecraft train station?\nAll closed off and about four cops",
+      "url": "https://reddit.com/r/sydney/comments/1bghlwm/anyone_know_what_happened_at_wollstonecraft_train/",
+      "score": 215
+    },
+    {
+      "text": "Didn’t realise how large the Wollstonecraft platform gap is\nWas thinking about that train gap video from the other day and arrived at Wollstonecraft just now, it has a massive gap! Never realised…",
+      "url": "https://reddit.com/r/sydney/comments/1b2u53b/didnt_realise_how_large_the_wollstonecraft/",
+      "score": 176
+    },
+    {
+      "text": "I got off work at 6pm from Lind field and took a Hornsby via central and Epping train. We were stuck at St Leonard's for 45 minutes. Then Wollstonecraft waverton and I'm in  North Sydney as I'm writin",
+      "url": "https://reddit.com/r/sydney/comments/1an78vl/fatality_at_stanmore_station/kprizv8/",
+      "score": 15
+    },
+    {
+      "text": "It is easier to consider gap fillers for straight stations. Curved platforms such as Wollstonecraft or Parramatta are more challenging, as the gap is required to allow trains to pass through. The door",
+      "url": "https://reddit.com/r/sydney/comments/1b17ype/people_consistently_falling_between_platform_and/ksfly83/",
+      "score": 15
+    },
+    {
+      "text": "We used to live around the area in 2018, Wollstonecraft to be precise but very close to Pacific Hway and the shopping strip. We wanted to buy as well but were priced out and the properties are on the ",
+      "url": "https://reddit.com/r/sydney/comments/1bgr15t/thoughts_on_house_prices_in_crows_nest_and_lower/kv90wf7/",
+      "score": 12
+    },
+    {
+      "text": "Edward Wollstonecraft fwiw.",
+      "url": "https://reddit.com/r/sydney/comments/19bw79z/where_do_ravenscrows_typically_live_in_sydney/kiuwa77/",
+      "score": 10
+    },
+    {
+      "text": "Councils' positions on increased density\nExtracted from this article: [https://www.smh.com.au/national/nsw/minns-says-a-fight-with-councils-is-the-last-thing-we-want-but-he-has-one-over-housing-202402",
+      "url": "https://reddit.com/r/sydney/comments/1ax1wnx/councils_positions_on_increased_density/",
+      "score": 8
+    },
+    {
+      "text": "The new line aspect is a huge benefit.\n\nJust think of how slow the existing north shore line is through Wollstonecraft and Waverton. Soon we’ll be able to skip that entire painful segment going straig",
+      "url": "https://reddit.com/r/sydney/comments/1azboa5/sydney_metro_is_next_level/ks0wp0v/",
+      "score": 7
+    }
+  ]
+}

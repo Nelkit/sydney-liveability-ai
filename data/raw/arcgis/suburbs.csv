@@ -1,0 +1,658 @@
+SAL_CODE21,SAL_NAME21,STE_CODE21,STE_NAME21,AUS_CODE21,AUS_NAME21,AREASQKM21,LOCI_URI21,SHAPE_Leng,SHAPE_Area
+10002,Abbotsbury,1,New South Wales,AUS,Australia,4.9788,http://linked.data.gov.au/dataset/asgsed3/SAL/10002,0.12305058675,0.00048510161
+10003,Abbotsford (NSW),1,New South Wales,AUS,Australia,1.018,http://linked.data.gov.au/dataset/asgsed3/SAL/10003,0.05342285936,9.915749e-05
+10014,Acacia Gardens,1,New South Wales,AUS,Australia,1.0013,http://linked.data.gov.au/dataset/asgsed3/SAL/10014,0.044557845,9.740725e-05
+10021,Agnes Banks,1,New South Wales,AUS,Australia,15.475,http://linked.data.gov.au/dataset/asgsed3/SAL/10021,0.21538347211,0.00150359463
+10022,Airds,1,New South Wales,AUS,Australia,2.3806,http://linked.data.gov.au/dataset/asgsed3/SAL/10022,0.07189197443,0.0002325582
+10030,Alexandria,1,New South Wales,AUS,Australia,3.537,http://linked.data.gov.au/dataset/asgsed3/SAL/10030,0.1028390391,0.00034477556
+10031,Alfords Point,1,New South Wales,AUS,Australia,2.5665,http://linked.data.gov.au/dataset/asgsed3/SAL/10031,0.0827868662,0.00025041173
+10036,Allambie Heights,1,New South Wales,AUS,Australia,6.6746,http://linked.data.gov.au/dataset/asgsed3/SAL/10036,0.130941438,0.0006496076
+10038,Allawah,1,New South Wales,AUS,Australia,0.5837,http://linked.data.gov.au/dataset/asgsed3/SAL/10038,0.03985884169,5.69672e-05
+10049,Ambarvale,1,New South Wales,AUS,Australia,2.848,http://linked.data.gov.au/dataset/asgsed3/SAL/10049,0.08008500444,0.00027818869
+10060,Angus,1,New South Wales,AUS,Australia,6.0899,http://linked.data.gov.au/dataset/asgsed3/SAL/10060,0.12552903274,0.00059211468
+10062,Annandale (NSW),1,New South Wales,AUS,Australia,1.4931,http://linked.data.gov.au/dataset/asgsed3/SAL/10062,0.05687058307,0.00014551432
+10063,Annangrove,1,New South Wales,AUS,Australia,10.2464,http://linked.data.gov.au/dataset/asgsed3/SAL/10063,0.26206393488,0.00099596359
+10073,Arcadia (NSW),1,New South Wales,AUS,Australia,22.4088,http://linked.data.gov.au/dataset/asgsed3/SAL/10073,0.29504456889,0.00217700586
+10087,Arncliffe,1,New South Wales,AUS,Australia,2.9429,http://linked.data.gov.au/dataset/asgsed3/SAL/10087,0.10265039108,0.00028705341
+10088,Arndell Park,1,New South Wales,AUS,Australia,2.0008,http://linked.data.gov.au/dataset/asgsed3/SAL/10088,0.07336607596,0.00019477458
+10091,Artarmon,1,New South Wales,AUS,Australia,2.5348,http://linked.data.gov.au/dataset/asgsed3/SAL/10091,0.07124887272,0.00024688812
+10094,Ashbury,1,New South Wales,AUS,Australia,1.0312,http://linked.data.gov.au/dataset/asgsed3/SAL/10094,0.0558629346,0.00010049048
+10098,Ashcroft,1,New South Wales,AUS,Australia,1.1539,http://linked.data.gov.au/dataset/asgsed3/SAL/10098,0.05932366697,0.00011249407
+10099,Ashfield (NSW),1,New South Wales,AUS,Australia,3.4144,http://linked.data.gov.au/dataset/asgsed3/SAL/10099,0.10131362102,0.00033270277
+10104,Asquith,1,New South Wales,AUS,Australia,3.5033,http://linked.data.gov.au/dataset/asgsed3/SAL/10104,0.10533179021,0.00034066006
+10107,Auburn (NSW),1,New South Wales,AUS,Australia,8.5637,http://linked.data.gov.au/dataset/asgsed3/SAL/10107,0.15358436289,0.00083429005
+10110,Austral,1,New South Wales,AUS,Australia,17.6611,http://linked.data.gov.au/dataset/asgsed3/SAL/10110,0.19911197864,0.00172189887
+10112,Avalon Beach,1,New South Wales,AUS,Australia,5.1524,http://linked.data.gov.au/dataset/asgsed3/SAL/10112,0.15963194346,0.00050062774
+10133,Badgerys Creek,1,New South Wales,AUS,Australia,26.981,http://linked.data.gov.au/dataset/asgsed3/SAL/10133,0.2935344297,0.00262933692
+10154,Balgowlah,1,New South Wales,AUS,Australia,1.959,http://linked.data.gov.au/dataset/asgsed3/SAL/10154,0.07228821683,0.0001907509
+10155,Balgowlah Heights,1,New South Wales,AUS,Australia,1.6838,http://linked.data.gov.au/dataset/asgsed3/SAL/10155,0.06280277503,0.00016392783
+10165,Balmain,1,New South Wales,AUS,Australia,1.5378,http://linked.data.gov.au/dataset/asgsed3/SAL/10165,0.0859491156,0.00014978352
+10166,Balmain East,1,New South Wales,AUS,Australia,0.343,http://linked.data.gov.au/dataset/asgsed3/SAL/10166,0.03986301686,3.339787e-05
+10178,Bangor (NSW),1,New South Wales,AUS,Australia,3.9221,http://linked.data.gov.au/dataset/asgsed3/SAL/10178,0.11505447972,0.00038284469
+10179,Banksia,1,New South Wales,AUS,Australia,0.9568,http://linked.data.gov.au/dataset/asgsed3/SAL/10179,0.06149242861,9.333824e-05
+10180,Banksmeadow,1,New South Wales,AUS,Australia,4.1582,http://linked.data.gov.au/dataset/asgsed3/SAL/10180,0.1292736558,0.00040557383
+10181,Bankstown,1,New South Wales,AUS,Australia,6.3542,http://linked.data.gov.au/dataset/asgsed3/SAL/10181,0.16382188393,0.00061953191
+10182,Bankstown Aerodrome,1,New South Wales,AUS,Australia,3.7302,http://linked.data.gov.au/dataset/asgsed3/SAL/10182,0.10402408281,0.00036368766
+10192,Barangaroo,1,New South Wales,AUS,Australia,0.2227,http://linked.data.gov.au/dataset/asgsed3/SAL/10192,0.02741725624,2.16934e-05
+10194,Barden Ridge,1,New South Wales,AUS,Australia,5.599,http://linked.data.gov.au/dataset/asgsed3/SAL/10194,0.11466912827,0.00054658208
+10195,Bardia,1,New South Wales,AUS,Australia,2.1106,http://linked.data.gov.au/dataset/asgsed3/SAL/10195,0.0679679299,0.00020584631
+10196,Bardwell Park,1,New South Wales,AUS,Australia,0.9557,http://linked.data.gov.au/dataset/asgsed3/SAL/10196,0.04862263156,9.319951e-05
+10197,Bardwell Valley,1,New South Wales,AUS,Australia,0.6271,http://linked.data.gov.au/dataset/asgsed3/SAL/10197,0.05091454046,6.114691e-05
+10224,Bass Hill,1,New South Wales,AUS,Australia,2.9586,http://linked.data.gov.au/dataset/asgsed3/SAL/10224,0.11187456669,0.00028832953
+10233,Baulkham Hills,1,New South Wales,AUS,Australia,13.6507,http://linked.data.gov.au/dataset/asgsed3/SAL/10233,0.17381377974,0.00132837988
+10237,Bayview (NSW),1,New South Wales,AUS,Australia,3.7612,http://linked.data.gov.au/dataset/asgsed3/SAL/10237,0.15548393738,0.00036561181
+10238,Beacon Hill,1,New South Wales,AUS,Australia,2.8862,http://linked.data.gov.au/dataset/asgsed3/SAL/10238,0.10504115054,0.00028082927
+10239,Beaconsfield (NSW),1,New South Wales,AUS,Australia,0.1515,http://linked.data.gov.au/dataset/asgsed3/SAL/10239,0.02066871101,1.476656e-05
+10243,Beaumont Hills,1,New South Wales,AUS,Australia,3.1896,http://linked.data.gov.au/dataset/asgsed3/SAL/10243,0.08323745186,0.00031018541
+10249,Beecroft,1,New South Wales,AUS,Australia,5.1174,http://linked.data.gov.au/dataset/asgsed3/SAL/10249,0.11693909588,0.00049794357
+10257,Belfield,1,New South Wales,AUS,Australia,1.7826,http://linked.data.gov.au/dataset/asgsed3/SAL/10257,0.05748801939,0.00017377472
+10263,Bella Vista,1,New South Wales,AUS,Australia,4.3891,http://linked.data.gov.au/dataset/asgsed3/SAL/10263,0.10729313569,0.00042701353
+10271,Bellevue Hill,1,New South Wales,AUS,Australia,2.3731,http://linked.data.gov.au/dataset/asgsed3/SAL/10271,0.08309970677,0.00023124853
+10279,Belmore,1,New South Wales,AUS,Australia,2.731,http://linked.data.gov.au/dataset/asgsed3/SAL/10279,0.07963750401,0.00026622636
+10283,Belrose,1,New South Wales,AUS,Australia,13.533,http://linked.data.gov.au/dataset/asgsed3/SAL/10283,0.19494199751,0.00131638107
+10299,Berala,1,New South Wales,AUS,Australia,2.1278,http://linked.data.gov.au/dataset/asgsed3/SAL/10299,0.07690266565,0.00020733985
+10305,Berkshire Park,1,New South Wales,AUS,Australia,19.2666,http://linked.data.gov.au/dataset/asgsed3/SAL/10305,0.22891003009,0.00187307471
+10308,Berowra,1,New South Wales,AUS,Australia,8.2969,http://linked.data.gov.au/dataset/asgsed3/SAL/10308,0.16582485666,0.00080620613
+10309,Berowra Heights,1,New South Wales,AUS,Australia,8.0038,http://linked.data.gov.au/dataset/asgsed3/SAL/10309,0.1537531478,0.00077749169
+10310,Berowra Waters,1,New South Wales,AUS,Australia,1.6838,http://linked.data.gov.au/dataset/asgsed3/SAL/10310,0.18567842971,0.00016348114
+10318,Berrilee,1,New South Wales,AUS,Australia,12.0651,http://linked.data.gov.au/dataset/asgsed3/SAL/10318,0.18146091413,0.00117210529
+10329,Beverley Park,1,New South Wales,AUS,Australia,1.0055,http://linked.data.gov.au/dataset/asgsed3/SAL/10329,0.04584598807,9.808203e-05
+10330,Beverly Hills,1,New South Wales,AUS,Australia,3.023,http://linked.data.gov.au/dataset/asgsed3/SAL/10330,0.12490935898,0.00029485399
+10333,Bexley,1,New South Wales,AUS,Australia,4.3754,http://linked.data.gov.au/dataset/asgsed3/SAL/10333,0.10917467738,0.0004267514
+10334,Bexley North,1,New South Wales,AUS,Australia,1.2315,http://linked.data.gov.au/dataset/asgsed3/SAL/10334,0.05862697669,0.00012010435
+10339,Bidwill (NSW),1,New South Wales,AUS,Australia,1.5129,http://linked.data.gov.au/dataset/asgsed3/SAL/10339,0.05559883044,0.00014716855
+10349,Bilgola Beach,1,New South Wales,AUS,Australia,0.3298,http://linked.data.gov.au/dataset/asgsed3/SAL/10349,0.04423448349,3.206695e-05
+10350,Bilgola Plateau,1,New South Wales,AUS,Australia,1.3922,http://linked.data.gov.au/dataset/asgsed3/SAL/10350,0.08093976313,0.00013532893
+10373,Birchgrove,1,New South Wales,AUS,Australia,0.5858,http://linked.data.gov.au/dataset/asgsed3/SAL/10373,0.05600406256,5.707662e-05
+10378,Birrong,1,New South Wales,AUS,Australia,1.1958,http://linked.data.gov.au/dataset/asgsed3/SAL/10378,0.04806896095,0.00011655734
+10391,Blackett,1,New South Wales,AUS,Australia,1.0632,http://linked.data.gov.au/dataset/asgsed3/SAL/10391,0.0435096661,0.00010343944
+10396,Blacktown,1,New South Wales,AUS,Australia,16.0646,http://linked.data.gov.au/dataset/asgsed3/SAL/10396,0.26518507548,0.00156363265
+10399,Blair Athol (NSW),1,New South Wales,AUS,Australia,0.9009,http://linked.data.gov.au/dataset/asgsed3/SAL/10399,0.0528401986,8.799552e-05
+10400,Blairmount,1,New South Wales,AUS,Australia,2.9291,http://linked.data.gov.au/dataset/asgsed3/SAL/10400,0.07797712918,0.00028599972
+10402,Blakehurst,1,New South Wales,AUS,Australia,2.3046,http://linked.data.gov.au/dataset/asgsed3/SAL/10402,0.11625275785,0.00022484001
+10462,Bondi,1,New South Wales,AUS,Australia,0.8647,http://linked.data.gov.au/dataset/asgsed3/SAL/10462,0.05215786548,8.434874e-05
+10463,Bondi Beach,1,New South Wales,AUS,Australia,1.2192,http://linked.data.gov.au/dataset/asgsed3/SAL/10463,0.05909539221,0.00011881301
+10465,Bondi Junction,1,New South Wales,AUS,Australia,1.0793,http://linked.data.gov.au/dataset/asgsed3/SAL/10465,0.05438569792,0.00010516724
+10467,Bonnet Bay,1,New South Wales,AUS,Australia,1.1299,http://linked.data.gov.au/dataset/asgsed3/SAL/10467,0.05226978789,0.00011029035
+10469,Bonnyrigg,1,New South Wales,AUS,Australia,3.0422,http://linked.data.gov.au/dataset/asgsed3/SAL/10469,0.07594493784,0.00029648663
+10470,Bonnyrigg Heights,1,New South Wales,AUS,Australia,2.1537,http://linked.data.gov.au/dataset/asgsed3/SAL/10470,0.06368828349,0.00020987647
+10513,Bossley Park,1,New South Wales,AUS,Australia,4.5359,http://linked.data.gov.au/dataset/asgsed3/SAL/10513,0.09546150508,0.00044189864
+10515,Botany,1,New South Wales,AUS,Australia,3.2109,http://linked.data.gov.au/dataset/asgsed3/SAL/10515,0.07534297333,0.00031313554
+10524,Bow Bowing,1,New South Wales,AUS,Australia,0.7633,http://linked.data.gov.au/dataset/asgsed3/SAL/10524,0.03961327071,7.451962e-05
+10537,Box Hill (NSW),1,New South Wales,AUS,Australia,9.0582,http://linked.data.gov.au/dataset/asgsed3/SAL/10537,0.13776099364,0.00088044285
+10540,Bradbury (NSW),1,New South Wales,AUS,Australia,3.5423,http://linked.data.gov.au/dataset/asgsed3/SAL/10540,0.10074141897,0.00034602503
+10554,Breakfast Point,1,New South Wales,AUS,Australia,0.5243,http://linked.data.gov.au/dataset/asgsed3/SAL/10554,0.03305643094,5.108114e-05
+10566,Brighton-Le-Sands,1,New South Wales,AUS,Australia,1.6004,http://linked.data.gov.au/dataset/asgsed3/SAL/10566,0.071835806,0.00015615963
+10572,Bringelly,1,New South Wales,AUS,Australia,40.2134,http://linked.data.gov.au/dataset/asgsed3/SAL/10572,0.30505798653,0.0039216693
+10591,Bronte,1,New South Wales,AUS,Australia,1.3314,http://linked.data.gov.au/dataset/asgsed3/SAL/10591,0.0570436003,0.00012973936
+10596,Brooklyn (NSW),1,New South Wales,AUS,Australia,32.1375,http://linked.data.gov.au/dataset/asgsed3/SAL/10596,0.56917657287,0.00312120047
+10598,Brookvale,1,New South Wales,AUS,Australia,2.1951,http://linked.data.gov.au/dataset/asgsed3/SAL/10598,0.09021193398,0.00021362303
+10669,Bundeena,1,New South Wales,AUS,Australia,1.1786,http://linked.data.gov.au/dataset/asgsed3/SAL/10669,0.07412388323,0.00011511444
+10679,Bungarribee,1,New South Wales,AUS,Australia,2.4576,http://linked.data.gov.au/dataset/asgsed3/SAL/10679,0.0951518876,0.00023922835
+10702,Burraneer,1,New South Wales,AUS,Australia,1.4478,http://linked.data.gov.au/dataset/asgsed3/SAL/10702,0.08470851487,0.00014141189
+10716,Burwood (NSW),1,New South Wales,AUS,Australia,2.4456,http://linked.data.gov.au/dataset/asgsed3/SAL/10716,0.07316352795,0.00023831602
+10717,Burwood Heights,1,New South Wales,AUS,Australia,0.226,http://linked.data.gov.au/dataset/asgsed3/SAL/10717,0.02256381761,2.203251e-05
+10718,Busby,1,New South Wales,AUS,Australia,1.2111,http://linked.data.gov.au/dataset/asgsed3/SAL/10718,0.0481410949,0.00011803627
+10734,Cabarita (NSW),1,New South Wales,AUS,Australia,0.4997,http://linked.data.gov.au/dataset/asgsed3/SAL/10734,0.04372496419,4.869525e-05
+10738,Cabramatta,1,New South Wales,AUS,Australia,5.0415,http://linked.data.gov.au/dataset/asgsed3/SAL/10738,0.15043114279,0.00049144684
+10739,Cabramatta West,1,New South Wales,AUS,Australia,1.8278,http://linked.data.gov.au/dataset/asgsed3/SAL/10739,0.0585167305,0.00017818208
+10741,Caddens,1,New South Wales,AUS,Australia,0.9906,http://linked.data.gov.au/dataset/asgsed3/SAL/10741,0.06219001301,9.643531e-05
+10766,Cambridge Gardens,1,New South Wales,AUS,Australia,0.7727,http://linked.data.gov.au/dataset/asgsed3/SAL/10766,0.03547736757,7.518648e-05
+10767,Cambridge Park,1,New South Wales,AUS,Australia,2.6154,http://linked.data.gov.au/dataset/asgsed3/SAL/10767,0.07090959139,0.00025447803
+10769,Camden,1,New South Wales,AUS,Australia,4.6376,http://linked.data.gov.au/dataset/asgsed3/SAL/10769,0.11309565539,0.00045287589
+10772,Camden South,1,New South Wales,AUS,Australia,4.2363,http://linked.data.gov.au/dataset/asgsed3/SAL/10772,0.08871518954,0.00041377146
+10773,Camellia,1,New South Wales,AUS,Australia,0.5638,http://linked.data.gov.au/dataset/asgsed3/SAL/10773,0.04800553328,5.489913e-05
+10777,Cammeray,1,New South Wales,AUS,Australia,1.5527,http://linked.data.gov.au/dataset/asgsed3/SAL/10777,0.07205504781,0.00015120808
+10779,Campbelltown (NSW),1,New South Wales,AUS,Australia,11.1639,http://linked.data.gov.au/dataset/asgsed3/SAL/10779,0.27207464642,0.00109026568
+10780,Camperdown (NSW),1,New South Wales,AUS,Australia,1.5031,http://linked.data.gov.au/dataset/asgsed3/SAL/10780,0.07065449971,0.0001464779
+10781,Campsie,1,New South Wales,AUS,Australia,3.3734,http://linked.data.gov.au/dataset/asgsed3/SAL/10781,0.1063160161,0.00032889475
+10784,Canada Bay,1,New South Wales,AUS,Australia,0.3224,http://linked.data.gov.au/dataset/asgsed3/SAL/10784,0.02576568864,3.141197e-05
+10790,Canley Heights,1,New South Wales,AUS,Australia,2.6052,http://linked.data.gov.au/dataset/asgsed3/SAL/10790,0.07875586551,0.00025385458
+10791,Canley Vale,1,New South Wales,AUS,Australia,2.8866,http://linked.data.gov.au/dataset/asgsed3/SAL/10791,0.1086012952,0.00028131022
+10793,Canoelands,1,New South Wales,AUS,Australia,63.4478,http://linked.data.gov.au/dataset/asgsed3/SAL/10793,0.62667065293,0.00615622674
+10796,Canterbury (NSW),1,New South Wales,AUS,Australia,1.9638,http://linked.data.gov.au/dataset/asgsed3/SAL/10796,0.07959099856,0.0001914121
+10814,Caringbah,1,New South Wales,AUS,Australia,4.057,http://linked.data.gov.au/dataset/asgsed3/SAL/10814,0.09755041559,0.0003959927
+10815,Caringbah South,1,New South Wales,AUS,Australia,4.092,http://linked.data.gov.au/dataset/asgsed3/SAL/10815,0.12854726961,0.0003995121
+10817,Carlingford,1,New South Wales,AUS,Australia,8.5522,http://linked.data.gov.au/dataset/asgsed3/SAL/10817,0.22704771693,0.00083242098
+10818,Carlton (NSW),1,New South Wales,AUS,Australia,2.0413,http://linked.data.gov.au/dataset/asgsed3/SAL/10818,0.0891631609,0.000199114
+10819,Carnes Hill,1,New South Wales,AUS,Australia,1.3204,http://linked.data.gov.au/dataset/asgsed3/SAL/10819,0.05922097262,0.00012877675
+10825,Carramar (NSW),1,New South Wales,AUS,Australia,1.0174,http://linked.data.gov.au/dataset/asgsed3/SAL/10825,0.05375200263,9.914322e-05
+10836,Carss Park,1,New South Wales,AUS,Australia,0.6295,http://linked.data.gov.au/dataset/asgsed3/SAL/10836,0.0349946016,6.141204e-05
+10837,Cartwright,1,New South Wales,AUS,Australia,0.9627,http://linked.data.gov.au/dataset/asgsed3/SAL/10837,0.07148145735,9.385384e-05
+10844,Castle Cove,1,New South Wales,AUS,Australia,2.3428,http://linked.data.gov.au/dataset/asgsed3/SAL/10844,0.09508887302,0.00022806497
+10846,Castle Hill (NSW),1,New South Wales,AUS,Australia,18.8102,http://linked.data.gov.au/dataset/asgsed3/SAL/10846,0.23548244101,0.00182990116
+10848,Castlecrag,1,New South Wales,AUS,Australia,1.5058,http://linked.data.gov.au/dataset/asgsed3/SAL/10848,0.07521617836,0.00014662584
+10849,Castlereagh,1,New South Wales,AUS,Australia,32.1444,http://linked.data.gov.au/dataset/asgsed3/SAL/10849,0.29615706673,0.0031255362
+10851,Casula,1,New South Wales,AUS,Australia,7.072,http://linked.data.gov.au/dataset/asgsed3/SAL/10851,0.13748705595,0.00068973441
+10855,Catherine Field,1,New South Wales,AUS,Australia,10.3145,http://linked.data.gov.au/dataset/asgsed3/SAL/10855,0.19001032555,0.00100644373
+10858,Cattai,1,New South Wales,AUS,Australia,22.6977,http://linked.data.gov.au/dataset/asgsed3/SAL/10858,0.2619827505,0.00220344221
+10862,Cawdor (NSW),1,New South Wales,AUS,Australia,28.3206,http://linked.data.gov.au/dataset/asgsed3/SAL/10862,0.27071556946,0.00276674462
+10864,Cecil Hills,1,New South Wales,AUS,Australia,6.218,http://linked.data.gov.au/dataset/asgsed3/SAL/10864,0.11383914622,0.00060599872
+10865,Cecil Park,1,New South Wales,AUS,Australia,10.9759,http://linked.data.gov.au/dataset/asgsed3/SAL/10865,0.20967382909,0.00106959822
+10872,Centennial Park (NSW),1,New South Wales,AUS,Australia,2.2295,http://linked.data.gov.au/dataset/asgsed3/SAL/10872,0.0662742432,0.00021730548
+10891,Chatswood,1,New South Wales,AUS,Australia,5.0097,http://linked.data.gov.au/dataset/asgsed3/SAL/10891,0.13499840497,0.00048776754
+10892,Chatswood West,1,New South Wales,AUS,Australia,0.8099,http://linked.data.gov.au/dataset/asgsed3/SAL/10892,0.0515612109,7.8847e-05
+10895,Cheltenham (NSW),1,New South Wales,AUS,Australia,1.6535,http://linked.data.gov.au/dataset/asgsed3/SAL/10895,0.06593595127,0.00016088951
+10897,Cherrybrook,1,New South Wales,AUS,Australia,8.2603,http://linked.data.gov.au/dataset/asgsed3/SAL/10897,0.1461667831,0.00080345332
+10898,Chester Hill,1,New South Wales,AUS,Australia,3.976,http://linked.data.gov.au/dataset/asgsed3/SAL/10898,0.13027960773,0.00038738444
+10900,Chifley (NSW),1,New South Wales,AUS,Australia,1.0566,http://linked.data.gov.au/dataset/asgsed3/SAL/10900,0.05210931904,0.00010308921
+10906,Chippendale,1,New South Wales,AUS,Australia,0.4642,http://linked.data.gov.au/dataset/asgsed3/SAL/10906,0.03351703201,4.520904e-05
+10907,Chipping Norton,1,New South Wales,AUS,Australia,7.1332,http://linked.data.gov.au/dataset/asgsed3/SAL/10907,0.15471291437,0.00069544783
+10909,Chiswick,1,New South Wales,AUS,Australia,0.5136,http://linked.data.gov.au/dataset/asgsed3/SAL/10909,0.03442179146,5.000358e-05
+10913,Chullora,1,New South Wales,AUS,Australia,1.9887,http://linked.data.gov.au/dataset/asgsed3/SAL/10913,0.07385513692,0.00019382322
+10914,Church Point,1,New South Wales,AUS,Australia,0.7212,http://linked.data.gov.au/dataset/asgsed3/SAL/10914,0.10380585051,7.007836e-05
+10917,Claremont Meadows,1,New South Wales,AUS,Australia,3.0397,http://linked.data.gov.au/dataset/asgsed3/SAL/10917,0.08513393221,0.00029586692
+10922,Clareville,1,New South Wales,AUS,Australia,0.5039,http://linked.data.gov.au/dataset/asgsed3/SAL/10922,0.05896251276,4.8965e-05
+10923,Claymore,1,New South Wales,AUS,Australia,1.4204,http://linked.data.gov.au/dataset/asgsed3/SAL/10923,0.05013420512,0.000138678
+10927,Clemton Park,1,New South Wales,AUS,Australia,0.3692,http://linked.data.gov.au/dataset/asgsed3/SAL/10927,0.03280088762,3.601576e-05
+10934,Clontarf (NSW),1,New South Wales,AUS,Australia,0.8597,http://linked.data.gov.au/dataset/asgsed3/SAL/10934,0.06675237044,8.368721e-05
+10937,Clovelly,1,New South Wales,AUS,Australia,0.7859,http://linked.data.gov.au/dataset/asgsed3/SAL/10937,0.05353791332,7.66331e-05
+10940,Clyde (NSW),1,New South Wales,AUS,Australia,0.6718,http://linked.data.gov.au/dataset/asgsed3/SAL/10940,0.0387245736,6.541774e-05
+10945,Coasters Retreat,1,New South Wales,AUS,Australia,0.1163,http://linked.data.gov.au/dataset/asgsed3/SAL/10945,0.02341364963,1.129449e-05
+10953,Cobbitty,1,New South Wales,AUS,Australia,52.1638,http://linked.data.gov.au/dataset/asgsed3/SAL/10953,0.4601139152,0.00508985104
+10965,Colebee,1,New South Wales,AUS,Australia,3.4761,http://linked.data.gov.au/dataset/asgsed3/SAL/10965,0.09085608723,0.0003381567
+10970,Collaroy (NSW),1,New South Wales,AUS,Australia,2.6786,http://linked.data.gov.au/dataset/asgsed3/SAL/10970,0.10862150254,0.00026061158
+10971,Collaroy Plateau,1,New South Wales,AUS,Australia,1.2202,http://linked.data.gov.au/dataset/asgsed3/SAL/10971,0.06265965082,0.00011869737
+10987,Colyton,1,New South Wales,AUS,Australia,3.3644,http://linked.data.gov.au/dataset/asgsed3/SAL/10987,0.09098244807,0.00032750921
+10996,Como (NSW),1,New South Wales,AUS,Australia,1.5975,http://linked.data.gov.au/dataset/asgsed3/SAL/10996,0.05950822717,0.00015588926
+10999,Concord,1,New South Wales,AUS,Australia,5.0575,http://linked.data.gov.au/dataset/asgsed3/SAL/10999,0.10889814477,0.0004927016
+11000,Concord West,1,New South Wales,AUS,Australia,2.5424,http://linked.data.gov.au/dataset/asgsed3/SAL/11000,0.10550884405,0.00024763487
+11001,Condell Park,1,New South Wales,AUS,Australia,3.8948,http://linked.data.gov.au/dataset/asgsed3/SAL/11001,0.08940295665,0.00037980145
+11013,Connells Point,1,New South Wales,AUS,Australia,1.0348,http://linked.data.gov.au/dataset/asgsed3/SAL/11013,0.05900774961,0.00010096321
+11014,Constitution Hill,1,New South Wales,AUS,Australia,1.1883,http://linked.data.gov.au/dataset/asgsed3/SAL/11014,0.06192743238,0.00011569368
+11015,Coogee (NSW),1,New South Wales,AUS,Australia,1.9175,http://linked.data.gov.au/dataset/asgsed3/SAL/11015,0.07724897304,0.00018702599
+11086,Cottage Point,1,New South Wales,AUS,Australia,0.4048,http://linked.data.gov.au/dataset/asgsed3/SAL/11086,0.02965592448,3.932786e-05
+11097,Cowan,1,New South Wales,AUS,Australia,31.897,http://linked.data.gov.au/dataset/asgsed3/SAL/11097,0.44227007238,0.0030972422
+11105,Cranebrook,1,New South Wales,AUS,Australia,14.9492,http://linked.data.gov.au/dataset/asgsed3/SAL/11105,0.18690568524,0.00145394191
+11113,Cremorne (NSW),1,New South Wales,AUS,Australia,1.6376,http://linked.data.gov.au/dataset/asgsed3/SAL/11113,0.07122426311,0.00015948274
+11114,Cremorne Point,1,New South Wales,AUS,Australia,0.4278,http://linked.data.gov.au/dataset/asgsed3/SAL/11114,0.03912467456,4.164707e-05
+11119,Cromer (NSW),1,New South Wales,AUS,Australia,6.2058,http://linked.data.gov.au/dataset/asgsed3/SAL/11119,0.15201315172,0.00060371608
+11120,Cronulla,1,New South Wales,AUS,Australia,3.8724,http://linked.data.gov.au/dataset/asgsed3/SAL/11120,0.13745629905,0.000378043
+11132,Crows Nest (NSW),1,New South Wales,AUS,Australia,0.7622,http://linked.data.gov.au/dataset/asgsed3/SAL/11132,0.04413450486,7.424331e-05
+11135,Croydon (NSW),1,New South Wales,AUS,Australia,2.4354,http://linked.data.gov.au/dataset/asgsed3/SAL/11135,0.08245532225,0.00023732259
+11136,Croydon Park (NSW),1,New South Wales,AUS,Australia,2.5503,http://linked.data.gov.au/dataset/asgsed3/SAL/11136,0.07854763143,0.00024857415
+11168,Curl Curl,1,New South Wales,AUS,Australia,1.2761,http://linked.data.gov.au/dataset/asgsed3/SAL/11168,0.06535860348,0.00012418906
+11176,Currans Hill,1,New South Wales,AUS,Australia,3.6075,http://linked.data.gov.au/dataset/asgsed3/SAL/11176,0.08839664639,0.00035224192
+11186,Daceyville,1,New South Wales,AUS,Australia,0.4877,http://linked.data.gov.au/dataset/asgsed3/SAL/11186,0.03122493692,4.757588e-05
+11200,Dangar Island,1,New South Wales,AUS,Australia,0.3163,http://linked.data.gov.au/dataset/asgsed3/SAL/11200,0.0257933545,3.070527e-05
+11212,Darling Point,1,New South Wales,AUS,Australia,0.6705,http://linked.data.gov.au/dataset/asgsed3/SAL/11212,0.05148287711,6.532818e-05
+11213,Darlinghurst,1,New South Wales,AUS,Australia,0.8569,http://linked.data.gov.au/dataset/asgsed3/SAL/11213,0.0493326738,8.351566e-05
+11215,Darlington (Sydney - NSW),1,New South Wales,AUS,Australia,0.3808,http://linked.data.gov.au/dataset/asgsed3/SAL/11215,0.0292740533,3.710894e-05
+11221,Davidson,1,New South Wales,AUS,Australia,2.5183,http://linked.data.gov.au/dataset/asgsed3/SAL/11221,0.08867145894,0.00024500492
+11224,Dawes Point,1,New South Wales,AUS,Australia,0.1515,http://linked.data.gov.au/dataset/asgsed3/SAL/11224,0.03023849153,1.475281e-05
+11226,Dean Park,1,New South Wales,AUS,Australia,1.5118,http://linked.data.gov.au/dataset/asgsed3/SAL/11226,0.05785298323,0.00014708976
+11229,Dee Why,1,New South Wales,AUS,Australia,3.0839,http://linked.data.gov.au/dataset/asgsed3/SAL/11229,0.11198059897,0.00030008622
+11237,Denham Court,1,New South Wales,AUS,Australia,13.3798,http://linked.data.gov.au/dataset/asgsed3/SAL/11237,0.18890281172,0.00130537402
+11240,Denistone,1,New South Wales,AUS,Australia,1.5078,http://linked.data.gov.au/dataset/asgsed3/SAL/11240,0.064469196,0.00014679684
+11241,Denistone East,1,New South Wales,AUS,Australia,0.6984,http://linked.data.gov.au/dataset/asgsed3/SAL/11241,0.03875825688,6.801677e-05
+11242,Denistone West,1,New South Wales,AUS,Australia,0.321,http://linked.data.gov.au/dataset/asgsed3/SAL/11242,0.0247333067,3.126399e-05
+11250,Dharruk,1,New South Wales,AUS,Australia,0.9417,http://linked.data.gov.au/dataset/asgsed3/SAL/11250,0.04058459219,9.162165e-05
+11268,Dolans Bay,1,New South Wales,AUS,Australia,0.2593,http://linked.data.gov.au/dataset/asgsed3/SAL/11268,0.03011142283,2.532583e-05
+11269,Dolls Point,1,New South Wales,AUS,Australia,0.2203,http://linked.data.gov.au/dataset/asgsed3/SAL/11269,0.02396882622,2.14731e-05
+11277,Doonside,1,New South Wales,AUS,Australia,5.9582,http://linked.data.gov.au/dataset/asgsed3/SAL/11277,0.14911166493,0.0005798736
+11283,Double Bay,1,New South Wales,AUS,Australia,0.7929,http://linked.data.gov.au/dataset/asgsed3/SAL/11283,0.0680874353,7.725005e-05
+11286,Dover Heights,1,New South Wales,AUS,Australia,0.9472,http://linked.data.gov.au/dataset/asgsed3/SAL/11286,0.05862208073,9.229302e-05
+11296,Drummoyne,1,New South Wales,AUS,Australia,2.3101,http://linked.data.gov.au/dataset/asgsed3/SAL/11296,0.09310723238,0.0002250678
+11304,Duffys Forest,1,New South Wales,AUS,Australia,4.6204,http://linked.data.gov.au/dataset/asgsed3/SAL/11304,0.13114069584,0.00044920869
+11306,Dulwich Hill,1,New South Wales,AUS,Australia,2.1219,http://linked.data.gov.au/dataset/asgsed3/SAL/11306,0.0704336831,0.00020683085
+11315,Dundas (NSW),1,New South Wales,AUS,Australia,1.3874,http://linked.data.gov.au/dataset/asgsed3/SAL/11315,0.08939596989,0.00013508303
+11316,Dundas Valley,1,New South Wales,AUS,Australia,1.8055,http://linked.data.gov.au/dataset/asgsed3/SAL/11316,0.08531881907,0.00017575163
+11331,Dural (Hornsby - NSW),1,New South Wales,AUS,Australia,34.1349,http://linked.data.gov.au/dataset/asgsed3/SAL/11331,0.38499560412,0.00331894596
+11344,Eagle Vale,1,New South Wales,AUS,Australia,2.5188,http://linked.data.gov.au/dataset/asgsed3/SAL/11344,0.07953218114,0.00024593031
+11346,Earlwood,1,New South Wales,AUS,Australia,5.6094,http://linked.data.gov.au/dataset/asgsed3/SAL/11346,0.13509358781,0.0005469477
+11354,East Hills,1,New South Wales,AUS,Australia,1.4271,http://linked.data.gov.au/dataset/asgsed3/SAL/11354,0.0560653502,0.00013923438
+11358,East Killara,1,New South Wales,AUS,Australia,3.1902,http://linked.data.gov.au/dataset/asgsed3/SAL/11358,0.08885998997,0.00031045141
+11360,East Lindfield,1,New South Wales,AUS,Australia,2.3305,http://linked.data.gov.au/dataset/asgsed3/SAL/11360,0.07223024524,0.00022684097
+11364,East Ryde,1,New South Wales,AUS,Australia,1.0928,http://linked.data.gov.au/dataset/asgsed3/SAL/11364,0.05608753049,0.00010640646
+11369,Eastern Creek,1,New South Wales,AUS,Australia,20.431,http://linked.data.gov.au/dataset/asgsed3/SAL/11369,0.30010538691,0.00198925455
+11370,Eastgardens,1,New South Wales,AUS,Australia,0.5373,http://linked.data.gov.au/dataset/asgsed3/SAL/11370,0.03852852255,5.239955e-05
+11371,Eastlakes,1,New South Wales,AUS,Australia,2.0026,http://linked.data.gov.au/dataset/asgsed3/SAL/11371,0.06143403831,0.00019528444
+11372,Eastwood (NSW),1,New South Wales,AUS,Australia,5.1944,http://linked.data.gov.au/dataset/asgsed3/SAL/11372,0.13137267484,0.00050559281
+11380,Edensor Park,1,New South Wales,AUS,Australia,3.0955,http://linked.data.gov.au/dataset/asgsed3/SAL/11380,0.07785348988,0.00030162675
+11382,Edgecliff,1,New South Wales,AUS,Australia,0.3194,http://linked.data.gov.au/dataset/asgsed3/SAL/11382,0.04553463017,3.11274e-05
+11386,Edmondson Park,1,New South Wales,AUS,Australia,6.9463,http://linked.data.gov.au/dataset/asgsed3/SAL/11386,0.13408366882,0.0006775467
+11392,Elanora Heights,1,New South Wales,AUS,Australia,3.8765,http://linked.data.gov.au/dataset/asgsed3/SAL/11392,0.1016084161,0.00037698944
+11394,Elderslie (Camden - NSW),1,New South Wales,AUS,Australia,5.251,http://linked.data.gov.au/dataset/asgsed3/SAL/11394,0.10840806969,0.00051270993
+11398,Elizabeth Bay,1,New South Wales,AUS,Australia,0.2509,http://linked.data.gov.au/dataset/asgsed3/SAL/11398,0.02539097698,2.446078e-05
+11400,Elizabeth Hills,1,New South Wales,AUS,Australia,1.1228,http://linked.data.gov.au/dataset/asgsed3/SAL/11400,0.04551278932,0.00010943892
+11408,Ellis Lane,1,New South Wales,AUS,Australia,3.5761,http://linked.data.gov.au/dataset/asgsed3/SAL/11408,0.09945273718,0.00034912019
+11413,Elvina Bay,1,New South Wales,AUS,Australia,0.2523,http://linked.data.gov.au/dataset/asgsed3/SAL/11413,0.03317522191,2.451606e-05
+11416,Emerton,1,New South Wales,AUS,Australia,0.896,http://linked.data.gov.au/dataset/asgsed3/SAL/11416,0.04407739123,8.714923e-05
+11420,Emu Heights (NSW),1,New South Wales,AUS,Australia,3.4297,http://linked.data.gov.au/dataset/asgsed3/SAL/11420,0.10346926277,0.00033367479
+11421,Emu Plains,1,New South Wales,AUS,Australia,8.1202,http://linked.data.gov.au/dataset/asgsed3/SAL/11421,0.14815897223,0.00079008402
+11424,Enfield (NSW),1,New South Wales,AUS,Australia,0.7266,http://linked.data.gov.au/dataset/asgsed3/SAL/11424,0.03360746142,7.079996e-05
+11425,Engadine,1,New South Wales,AUS,Australia,9.2325,http://linked.data.gov.au/dataset/asgsed3/SAL/11425,0.20677815482,0.00090152505
+11426,Englorie Park,1,New South Wales,AUS,Australia,0.1075,http://linked.data.gov.au/dataset/asgsed3/SAL/11426,0.01534076541,1.049451e-05
+11428,Enmore (Inner West - NSW),1,New South Wales,AUS,Australia,0.4477,http://linked.data.gov.au/dataset/asgsed3/SAL/11428,0.04460986824,4.365682e-05
+11431,Epping (NSW),1,New South Wales,AUS,Australia,6.8382,http://linked.data.gov.au/dataset/asgsed3/SAL/11431,0.14410322133,0.00066548163
+11438,Ermington,1,New South Wales,AUS,Australia,3.8596,http://linked.data.gov.au/dataset/asgsed3/SAL/11438,0.09285739653,0.00037585229
+11441,Erskine Park,1,New South Wales,AUS,Australia,8.3944,http://linked.data.gov.au/dataset/asgsed3/SAL/11441,0.14349367742,0.00081739825
+11442,Erskineville,1,New South Wales,AUS,Australia,0.8075,http://linked.data.gov.au/dataset/asgsed3/SAL/11442,0.04256023869,7.874659e-05
+11444,Eschol Park,1,New South Wales,AUS,Australia,2.7262,http://linked.data.gov.au/dataset/asgsed3/SAL/11444,0.08538441213,0.00026613026
+11474,Eveleigh,1,New South Wales,AUS,Australia,0.5272,http://linked.data.gov.au/dataset/asgsed3/SAL/11474,0.04152641814,5.137559e-05
+11480,Fairfield (NSW),1,New South Wales,AUS,Australia,4.4299,http://linked.data.gov.au/dataset/asgsed3/SAL/11480,0.13264307024,0.00043169589
+11481,Fairfield East,1,New South Wales,AUS,Australia,1.9874,http://linked.data.gov.au/dataset/asgsed3/SAL/11481,0.06520627004,0.00019365998
+11482,Fairfield Heights,1,New South Wales,AUS,Australia,1.4742,http://linked.data.gov.au/dataset/asgsed3/SAL/11482,0.05411703534,0.00014363469
+11483,Fairfield West,1,New South Wales,AUS,Australia,3.2173,http://linked.data.gov.au/dataset/asgsed3/SAL/11483,0.09374803999,0.00031345822
+11485,Fairlight,1,New South Wales,AUS,Australia,1.1683,http://linked.data.gov.au/dataset/asgsed3/SAL/11485,0.05533398253,0.00011372634
+11516,Fiddletown,1,New South Wales,AUS,Australia,69.4133,http://linked.data.gov.au/dataset/asgsed3/SAL/11516,0.56749178498,0.00673947006
+11533,Five Dock,1,New South Wales,AUS,Australia,2.4622,http://linked.data.gov.au/dataset/asgsed3/SAL/11533,0.09289421505,0.00023985816
+11545,Forest Glen (NSW),1,New South Wales,AUS,Australia,5.603,http://linked.data.gov.au/dataset/asgsed3/SAL/11545,0.11987001752,0.00054392476
+11549,Forest Lodge,1,New South Wales,AUS,Australia,0.4502,http://linked.data.gov.au/dataset/asgsed3/SAL/11549,0.03988870929,4.381509e-05
+11551,Forestville (NSW),1,New South Wales,AUS,Australia,4.6871,http://linked.data.gov.au/dataset/asgsed3/SAL/11551,0.14171891666,0.00045611125
+11571,Frenchs Forest,1,New South Wales,AUS,Australia,8.6914,http://linked.data.gov.au/dataset/asgsed3/SAL/11571,0.23460955654,0.00084569806
+11572,Freshwater (NSW),1,New South Wales,AUS,Australia,1.7543,http://linked.data.gov.au/dataset/asgsed3/SAL/11572,0.07767692924,0.00017072921
+11580,Gables,1,New South Wales,AUS,Australia,6.121,http://linked.data.gov.au/dataset/asgsed3/SAL/11580,0.10777849403,0.00059477105
+11586,Galston,1,New South Wales,AUS,Australia,23.5592,http://linked.data.gov.au/dataset/asgsed3/SAL/11586,0.27764740191,0.00228971739
+11605,Georges Hall,1,New South Wales,AUS,Australia,3.2933,http://linked.data.gov.au/dataset/asgsed3/SAL/11605,0.10790903441,0.00032100912
+11621,Gilead,1,New South Wales,AUS,Australia,28.0354,http://linked.data.gov.au/dataset/asgsed3/SAL/11621,0.30456911919,0.002740177
+11640,Girraween (NSW),1,New South Wales,AUS,Australia,2.3156,http://linked.data.gov.au/dataset/asgsed3/SAL/11640,0.06452971627,0.00022546908
+11642,Gladesville,1,New South Wales,AUS,Australia,3.5065,http://linked.data.gov.au/dataset/asgsed3/SAL/11642,0.11340454957,0.00034145101
+11645,Glebe (NSW),1,New South Wales,AUS,Australia,1.6872,http://linked.data.gov.au/dataset/asgsed3/SAL/11645,0.06575693011,0.00016444809
+11646,Gledswood Hills,1,New South Wales,AUS,Australia,5.8032,http://linked.data.gov.au/dataset/asgsed3/SAL/11646,0.14459807208,0.00056640716
+11649,Glen Alpine,1,New South Wales,AUS,Australia,5.3624,http://linked.data.gov.au/dataset/asgsed3/SAL/11649,0.13773366527,0.00052383415
+11663,Glendenning,1,New South Wales,AUS,Australia,3.5717,http://linked.data.gov.au/dataset/asgsed3/SAL/11663,0.09159188399,0.00034755124
+11668,Glenfield (NSW),1,New South Wales,AUS,Australia,6.9946,http://linked.data.gov.au/dataset/asgsed3/SAL/11668,0.12064468801,0.00068234279
+11671,Glenhaven,1,New South Wales,AUS,Australia,7.2139,http://linked.data.gov.au/dataset/asgsed3/SAL/11671,0.18071701367,0.00070159153
+11674,Glenmore Park,1,New South Wales,AUS,Australia,9.7306,http://linked.data.gov.au/dataset/asgsed3/SAL/11674,0.17944379708,0.00094730775
+11677,Glenorie,1,New South Wales,AUS,Australia,79.435,http://linked.data.gov.au/dataset/asgsed3/SAL/11677,0.54118423762,0.00771368234
+11686,Glenwood (NSW),1,New South Wales,AUS,Australia,5.1186,http://linked.data.gov.au/dataset/asgsed3/SAL/11686,0.1061649053,0.00049798335
+11724,Gordon (NSW),1,New South Wales,AUS,Australia,3.7885,http://linked.data.gov.au/dataset/asgsed3/SAL/11724,0.12491489522,0.00036864402
+11743,Grantham Farm,1,New South Wales,AUS,Australia,3.6184,http://linked.data.gov.au/dataset/asgsed3/SAL/11743,0.0866442168,0.00035177908
+11745,Granville (NSW),1,New South Wales,AUS,Australia,3.3556,http://linked.data.gov.au/dataset/asgsed3/SAL/11745,0.116444759,0.00032686665
+11746,Grasmere,1,New South Wales,AUS,Australia,5.4384,http://linked.data.gov.au/dataset/asgsed3/SAL/11746,0.11854111565,0.00053105452
+11750,Grays Point,1,New South Wales,AUS,Australia,1.3057,http://linked.data.gov.au/dataset/asgsed3/SAL/11750,0.09576072428,0.00012752332
+11751,Great Mackerel Beach,1,New South Wales,AUS,Australia,0.1217,http://linked.data.gov.au/dataset/asgsed3/SAL/11751,0.02359219478,1.182578e-05
+11762,Green Valley (NSW),1,New South Wales,AUS,Australia,3.2145,http://linked.data.gov.au/dataset/asgsed3/SAL/11762,0.08601990435,0.00031333378
+11763,Greenacre,1,New South Wales,AUS,Australia,7.4435,http://linked.data.gov.au/dataset/asgsed3/SAL/11763,0.15169244947,0.0007256031
+11765,Greendale (Liverpool - NSW),1,New South Wales,AUS,Australia,33.9317,http://linked.data.gov.au/dataset/asgsed3/SAL/11765,0.33485110624,0.00330844378
+11767,Greenfield Park,1,New South Wales,AUS,Australia,1.5028,http://linked.data.gov.au/dataset/asgsed3/SAL/11767,0.05155827997,0.00014645769
+11770,Greenhills Beach,1,New South Wales,AUS,Australia,0.3931,http://linked.data.gov.au/dataset/asgsed3/SAL/11770,0.03292888871,3.836567e-05
+11776,Greenwich,1,New South Wales,AUS,Australia,1.6623,http://linked.data.gov.au/dataset/asgsed3/SAL/11776,0.08469990181,0.00016185826
+11780,Gregory Hills,1,New South Wales,AUS,Australia,4.6567,http://linked.data.gov.au/dataset/asgsed3/SAL/11780,0.1376281039,0.00045456819
+11787,Greystanes,1,New South Wales,AUS,Australia,8.9689,http://linked.data.gov.au/dataset/asgsed3/SAL/11787,0.18589347399,0.00087347095
+11796,Guildford (NSW),1,New South Wales,AUS,Australia,5.904,http://linked.data.gov.au/dataset/asgsed3/SAL/11796,0.1463954537,0.00057520032
+11797,Guildford West,1,New South Wales,AUS,Australia,1.6085,http://linked.data.gov.au/dataset/asgsed3/SAL/11797,0.05975138938,0.00015671944
+11833,Gymea,1,New South Wales,AUS,Australia,2.2066,http://linked.data.gov.au/dataset/asgsed3/SAL/11833,0.0971640873,0.00021538663
+11834,Gymea Bay,1,New South Wales,AUS,Australia,2.381,http://linked.data.gov.au/dataset/asgsed3/SAL/11834,0.07926650512,0.00023247639
+11835,Haberfield,1,New South Wales,AUS,Australia,2.3858,http://linked.data.gov.au/dataset/asgsed3/SAL/11835,0.06899129025,0.00023245129
+11851,Hammondville,1,New South Wales,AUS,Australia,1.8176,http://linked.data.gov.au/dataset/asgsed3/SAL/11851,0.07635387959,0.00017727944
+11866,Harrington Park,1,New South Wales,AUS,Australia,8.0043,http://linked.data.gov.au/dataset/asgsed3/SAL/11866,0.13185513313,0.00078128662
+11867,Harris Park,1,New South Wales,AUS,Australia,0.6342,http://linked.data.gov.au/dataset/asgsed3/SAL/11867,0.03582938731,6.179834e-05
+11873,Hassall Grove,1,New South Wales,AUS,Australia,1.2203,http://linked.data.gov.au/dataset/asgsed3/SAL/11873,0.0447128022,0.00011873661
+11884,Haymarket,1,New South Wales,AUS,Australia,0.5179,http://linked.data.gov.au/dataset/asgsed3/SAL/11884,0.03227958619,5.051183e-05
+11890,Heathcote (NSW),1,New South Wales,AUS,Australia,10.1724,http://linked.data.gov.au/dataset/asgsed3/SAL/11890,0.16388578062,0.00099362377
+11893,Hebersham,1,New South Wales,AUS,Australia,1.6812,http://linked.data.gov.au/dataset/asgsed3/SAL/11893,0.05982337127,0.00016356542
+11894,Heckenberg,1,New South Wales,AUS,Australia,0.9283,http://linked.data.gov.au/dataset/asgsed3/SAL/11894,0.0468103654,9.047751e-05
+11898,Henley,1,New South Wales,AUS,Australia,0.2731,http://linked.data.gov.au/dataset/asgsed3/SAL/11898,0.02875673613,2.65995e-05
+11918,Hillsdale,1,New South Wales,AUS,Australia,0.5461,http://linked.data.gov.au/dataset/asgsed3/SAL/11918,0.03298812195,5.328671e-05
+11922,Hinchinbrook (NSW),1,New South Wales,AUS,Australia,3.2282,http://linked.data.gov.au/dataset/asgsed3/SAL/11922,0.09851898665,0.00031475629
+11932,Holroyd,1,New South Wales,AUS,Australia,0.5042,http://linked.data.gov.au/dataset/asgsed3/SAL/11932,0.03410607958,4.910781e-05
+11933,Holsworthy,1,New South Wales,AUS,Australia,190.2772,http://linked.data.gov.au/dataset/asgsed3/SAL/11933,1.07144085016,0.0185828252
+11936,Homebush (NSW),1,New South Wales,AUS,Australia,2.0479,http://linked.data.gov.au/dataset/asgsed3/SAL/11936,0.09803528206,0.00019954326
+11937,Homebush West,1,New South Wales,AUS,Australia,1.7008,http://linked.data.gov.au/dataset/asgsed3/SAL/11937,0.07146745807,0.00016569975
+11942,Horningsea Park,1,New South Wales,AUS,Australia,0.9808,http://linked.data.gov.au/dataset/asgsed3/SAL/11942,0.04901734205,9.56308e-05
+11943,Hornsby,1,New South Wales,AUS,Australia,8.3837,http://linked.data.gov.au/dataset/asgsed3/SAL/11943,0.20277201086,0.00081526045
+11944,Hornsby Heights,1,New South Wales,AUS,Australia,10.2176,http://linked.data.gov.au/dataset/asgsed3/SAL/11944,0.20740001274,0.00099315825
+11950,Horsley Park,1,New South Wales,AUS,Australia,21.9683,http://linked.data.gov.au/dataset/asgsed3/SAL/11950,0.22734411858,0.00213981436
+11958,Hoxton Park,1,New South Wales,AUS,Australia,1.5387,http://linked.data.gov.au/dataset/asgsed3/SAL/11958,0.07354215019,0.00015002496
+11961,Hunters Hill,1,New South Wales,AUS,Australia,3.6317,http://linked.data.gov.au/dataset/asgsed3/SAL/11961,0.1357054463,0.00035372078
+11964,Huntingwood,1,New South Wales,AUS,Australia,1.7233,http://linked.data.gov.au/dataset/asgsed3/SAL/11964,0.06654493511,0.00016778334
+11967,Huntleys Cove,1,New South Wales,AUS,Australia,0.274,http://linked.data.gov.au/dataset/asgsed3/SAL/11967,0.02893835034,2.668721e-05
+11968,Huntleys Point,1,New South Wales,AUS,Australia,0.2135,http://linked.data.gov.au/dataset/asgsed3/SAL/11968,0.02329157359,2.080202e-05
+11970,Hurlstone Park,1,New South Wales,AUS,Australia,1.2013,http://linked.data.gov.au/dataset/asgsed3/SAL/11970,0.04747681657,0.00011709388
+11971,Hurstville,1,New South Wales,AUS,Australia,4.2255,http://linked.data.gov.au/dataset/asgsed3/SAL/11971,0.10738270411,0.00041231728
+11972,Hurstville Grove,1,New South Wales,AUS,Australia,0.9185,http://linked.data.gov.au/dataset/asgsed3/SAL/11972,0.04861025326,8.95997e-05
+11982,Illawong,1,New South Wales,AUS,Australia,4.7601,http://linked.data.gov.au/dataset/asgsed3/SAL/11982,0.15400305463,0.00046448138
+11987,Ingleburn,1,New South Wales,AUS,Australia,12.4382,http://linked.data.gov.au/dataset/asgsed3/SAL/11987,0.19059330783,0.00121385918
+11988,Ingleside,1,New South Wales,AUS,Australia,18.0872,http://linked.data.gov.au/dataset/asgsed3/SAL/11988,0.2786290248,0.00175879503
+12009,Jamisontown,1,New South Wales,AUS,Australia,3.9581,http://linked.data.gov.au/dataset/asgsed3/SAL/12009,0.0827114814,0.00038517406
+12010,Jannali,1,New South Wales,AUS,Australia,2.4959,http://linked.data.gov.au/dataset/asgsed3/SAL/12010,0.1025245889,0.00024363552
+12050,Jordan Springs,1,New South Wales,AUS,Australia,9.7299,http://linked.data.gov.au/dataset/asgsed3/SAL/12050,0.14549032122,0.00094651615
+12068,Kangaroo Point (NSW),1,New South Wales,AUS,Australia,0.2656,http://linked.data.gov.au/dataset/asgsed3/SAL/12068,0.03076431236,2.592396e-05
+12081,Kareela,1,New South Wales,AUS,Australia,1.5997,http://linked.data.gov.au/dataset/asgsed3/SAL/12081,0.06689909595,0.00015616365
+12087,Kearns,1,New South Wales,AUS,Australia,2.3589,http://linked.data.gov.au/dataset/asgsed3/SAL/12087,0.06581537327,0.00023026132
+12096,Kellyville,1,New South Wales,AUS,Australia,9.5979,http://linked.data.gov.au/dataset/asgsed3/SAL/12096,0.16094101572,0.00093350792
+12097,Kellyville Ridge,1,New South Wales,AUS,Australia,2.7068,http://linked.data.gov.au/dataset/asgsed3/SAL/12097,0.08568314621,0.0002632513
+12102,Kemps Creek,1,New South Wales,AUS,Australia,34.4032,http://linked.data.gov.au/dataset/asgsed3/SAL/12102,0.4121243723,0.00335204935
+12107,Kensington (NSW),1,New South Wales,AUS,Australia,2.6691,http://linked.data.gov.au/dataset/asgsed3/SAL/12107,0.0991053603,0.0002601992
+12108,Kenthurst,1,New South Wales,AUS,Australia,45.4945,http://linked.data.gov.au/dataset/asgsed3/SAL/12108,0.47244206175,0.00442144362
+12109,Kentlyn,1,New South Wales,AUS,Australia,11.2946,http://linked.data.gov.au/dataset/asgsed3/SAL/12109,0.21230061254,0.00110295793
+12137,Killara (NSW),1,New South Wales,AUS,Australia,4.6319,http://linked.data.gov.au/dataset/asgsed3/SAL/12137,0.14192465594,0.00045076721
+12138,Killarney Heights,1,New South Wales,AUS,Australia,4.244,http://linked.data.gov.au/dataset/asgsed3/SAL/12138,0.13143155447,0.00041304648
+12157,Kings Langley,1,New South Wales,AUS,Australia,3.6669,http://linked.data.gov.au/dataset/asgsed3/SAL/12157,0.09758451822,0.00035687162
+12158,Kings Park (NSW),1,New South Wales,AUS,Australia,2.6051,http://linked.data.gov.au/dataset/asgsed3/SAL/12158,0.07287152745,0.00025345855
+12164,Kingsford (NSW),1,New South Wales,AUS,Australia,1.9873,http://linked.data.gov.au/dataset/asgsed3/SAL/12164,0.08307288817,0.00019374444
+12166,Kingsgrove,1,New South Wales,AUS,Australia,4.491,http://linked.data.gov.au/dataset/asgsed3/SAL/12166,0.11034911035,0.00043793693
+12171,Kingswood (Penrith - NSW),1,New South Wales,AUS,Australia,5.4859,http://linked.data.gov.au/dataset/asgsed3/SAL/12171,0.13419034388,0.00053384
+12180,Kirkham,1,New South Wales,AUS,Australia,4.22,http://linked.data.gov.au/dataset/asgsed3/SAL/12180,0.1012162112,0.0004119793
+12181,Kirrawee,1,New South Wales,AUS,Australia,3.5675,http://linked.data.gov.au/dataset/asgsed3/SAL/12181,0.11208281649,0.00034829407
+12182,Kirribilli,1,New South Wales,AUS,Australia,0.4335,http://linked.data.gov.au/dataset/asgsed3/SAL/12182,0.03626221014,4.220865e-05
+12190,Kogarah,1,New South Wales,AUS,Australia,2.5954,http://linked.data.gov.au/dataset/asgsed3/SAL/12190,0.0874405375,0.00025318782
+12191,Kogarah Bay,1,New South Wales,AUS,Australia,0.6648,http://linked.data.gov.au/dataset/asgsed3/SAL/12191,0.03734104139,6.486011e-05
+12213,Ku-ring-gai Chase,1,New South Wales,AUS,Australia,93.9011,http://linked.data.gov.au/dataset/asgsed3/SAL/12213,0.96277452169,0.00912531084
+12224,Kurnell,1,New South Wales,AUS,Australia,19.3454,http://linked.data.gov.au/dataset/asgsed3/SAL/12224,0.49584969347,0.00188831896
+12225,Kurraba Point,1,New South Wales,AUS,Australia,0.2349,http://linked.data.gov.au/dataset/asgsed3/SAL/12225,0.02597369813,2.286486e-05
+12234,Kyeemagh,1,New South Wales,AUS,Australia,0.5966,http://linked.data.gov.au/dataset/asgsed3/SAL/12234,0.03646161544,5.819285e-05
+12235,Kyle Bay,1,New South Wales,AUS,Australia,0.369,http://linked.data.gov.au/dataset/asgsed3/SAL/12235,0.03522477195,3.600156e-05
+12238,La Perouse,1,New South Wales,AUS,Australia,1.7547,http://linked.data.gov.au/dataset/asgsed3/SAL/12238,0.10738354049,0.00017120614
+12266,Lakemba,1,New South Wales,AUS,Australia,2.1866,http://linked.data.gov.au/dataset/asgsed3/SAL/12266,0.07259139424,0.00021321355
+12270,Lalor Park,1,New South Wales,AUS,Australia,2.7014,http://linked.data.gov.au/dataset/asgsed3/SAL/12270,0.0782709608,0.00026288245
+12275,Lane Cove,1,New South Wales,AUS,Australia,2.5797,http://linked.data.gov.au/dataset/asgsed3/SAL/12275,0.08736376065,0.00025130016
+12276,Lane Cove North,1,New South Wales,AUS,Australia,2.3628,http://linked.data.gov.au/dataset/asgsed3/SAL/12276,0.09334946879,0.0002300602
+12277,Lane Cove West,1,New South Wales,AUS,Australia,1.6868,http://linked.data.gov.au/dataset/asgsed3/SAL/12277,0.07521961831,0.0001642649
+12281,Lansdowne (Canterbury-Bankstown - NSW),1,New South Wales,AUS,Australia,1.4103,http://linked.data.gov.au/dataset/asgsed3/SAL/12281,0.05231827929,0.00013746648
+12284,Lansvale,1,New South Wales,AUS,Australia,2.8932,http://linked.data.gov.au/dataset/asgsed3/SAL/12284,0.12064019643,0.00028200051
+12290,Laughtondale,1,New South Wales,AUS,Australia,27.059,http://linked.data.gov.au/dataset/asgsed3/SAL/12290,0.31748712532,0.00262362377
+12294,Lavender Bay,1,New South Wales,AUS,Australia,0.1642,http://linked.data.gov.au/dataset/asgsed3/SAL/12294,0.02738353678,1.59996e-05
+12303,Leets Vale,1,New South Wales,AUS,Australia,9.2707,http://linked.data.gov.au/dataset/asgsed3/SAL/12303,0.16355838879,0.00089875775
+12306,Leichhardt (NSW),1,New South Wales,AUS,Australia,2.5952,http://linked.data.gov.au/dataset/asgsed3/SAL/12306,0.07534936845,0.00025289183
+12310,Len Waters Estate,1,New South Wales,AUS,Australia,1.0897,http://linked.data.gov.au/dataset/asgsed3/SAL/12310,0.05462996508,0.00010623008
+12313,Leonay,1,New South Wales,AUS,Australia,2.47,http://linked.data.gov.au/dataset/asgsed3/SAL/12313,0.07404624055,0.0002403941
+12314,Leppington,1,New South Wales,AUS,Australia,20.3806,http://linked.data.gov.au/dataset/asgsed3/SAL/12314,0.26023202151,0.00198816211
+12316,Lethbridge Park,1,New South Wales,AUS,Australia,1.6238,http://linked.data.gov.au/dataset/asgsed3/SAL/12316,0.06848590658,0.00015795965
+12317,Leumeah,1,New South Wales,AUS,Australia,4.0547,http://linked.data.gov.au/dataset/asgsed3/SAL/12317,0.10489392591,0.00039592204
+12322,Lewisham (NSW),1,New South Wales,AUS,Australia,0.6418,http://linked.data.gov.au/dataset/asgsed3/SAL/12322,0.03803905212,6.256568e-05
+12324,Liberty Grove,1,New South Wales,AUS,Australia,0.2327,http://linked.data.gov.au/dataset/asgsed3/SAL/12324,0.02406436175,2.265653e-05
+12325,Lidcombe,1,New South Wales,AUS,Australia,6.7931,http://linked.data.gov.au/dataset/asgsed3/SAL/12325,0.17015427104,0.00066187615
+12331,Lilli Pilli (Sutherland Shire - NSW),1,New South Wales,AUS,Australia,0.607,http://linked.data.gov.au/dataset/asgsed3/SAL/12331,0.04522579975,5.926576e-05
+12334,Lilyfield,1,New South Wales,AUS,Australia,2.1588,http://linked.data.gov.au/dataset/asgsed3/SAL/12334,0.07505887136,0.00021035873
+12348,Lindfield,1,New South Wales,AUS,Australia,5.1312,http://linked.data.gov.au/dataset/asgsed3/SAL/12348,0.14052911957,0.00049944882
+12350,Linley Point,1,New South Wales,AUS,Australia,0.2021,http://linked.data.gov.au/dataset/asgsed3/SAL/12350,0.02001910937,1.968977e-05
+12358,Little Bay,1,New South Wales,AUS,Australia,2.457,http://linked.data.gov.au/dataset/asgsed3/SAL/12358,0.0896179188,0.00023975411
+12370,Liverpool,1,New South Wales,AUS,Australia,6.3559,http://linked.data.gov.au/dataset/asgsed3/SAL/12370,0.13837886733,0.00061963514
+12372,Llandilo,1,New South Wales,AUS,Australia,12.8861,http://linked.data.gov.au/dataset/asgsed3/SAL/12372,0.20262897856,0.0012531895
+12380,Loftus,1,New South Wales,AUS,Australia,2.5312,http://linked.data.gov.au/dataset/asgsed3/SAL/12380,0.06988612704,0.00024715854
+12384,Londonderry (NSW),1,New South Wales,AUS,Australia,36.2493,http://linked.data.gov.au/dataset/asgsed3/SAL/12384,0.26114587753,0.00352332989
+12390,Long Point (Campbelltown - NSW),1,New South Wales,AUS,Australia,2.0111,http://linked.data.gov.au/dataset/asgsed3/SAL/12390,0.07598610931,0.00019627663
+12394,Longueville,1,New South Wales,AUS,Australia,0.9933,http://linked.data.gov.au/dataset/asgsed3/SAL/12394,0.05432881913,9.671931e-05
+12406,Lovett Bay,1,New South Wales,AUS,Australia,0.4537,http://linked.data.gov.au/dataset/asgsed3/SAL/12406,0.05077042966,4.408809e-05
+12421,Lower Portland,1,New South Wales,AUS,Australia,60.0586,http://linked.data.gov.au/dataset/asgsed3/SAL/12421,0.56896603452,0.00582333839
+12426,Lucas Heights,1,New South Wales,AUS,Australia,9.9327,http://linked.data.gov.au/dataset/asgsed3/SAL/12426,0.15101082279,0.00096971986
+12428,Luddenham,1,New South Wales,AUS,Australia,44.1008,http://linked.data.gov.au/dataset/asgsed3/SAL/12428,0.38971496,0.00429682018
+12430,Lugarno,1,New South Wales,AUS,Australia,2.6791,http://linked.data.gov.au/dataset/asgsed3/SAL/12430,0.08878805564,0.00026135584
+12431,Lurnea,1,New South Wales,AUS,Australia,2.5038,http://linked.data.gov.au/dataset/asgsed3/SAL/12431,0.063869012,0.00024412623
+12442,Macquarie Fields,1,New South Wales,AUS,Australia,7.0125,http://linked.data.gov.au/dataset/asgsed3/SAL/12442,0.13178459908,0.00068418498
+12444,Macquarie Links,1,New South Wales,AUS,Australia,1.7723,http://linked.data.gov.au/dataset/asgsed3/SAL/12444,0.08860287243,0.00017289125
+12446,Macquarie Park,1,New South Wales,AUS,Australia,6.7633,http://linked.data.gov.au/dataset/asgsed3/SAL/12446,0.15599488883,0.00065832775
+12452,Maianbar,1,New South Wales,AUS,Australia,0.2931,http://linked.data.gov.au/dataset/asgsed3/SAL/12452,0.03471311507,2.861495e-05
+12462,Malabar,1,New South Wales,AUS,Australia,3.5736,http://linked.data.gov.au/dataset/asgsed3/SAL/12462,0.10440308775,0.0003485636
+12485,Manly (NSW),1,New South Wales,AUS,Australia,5.5668,http://linked.data.gov.au/dataset/asgsed3/SAL/12485,0.18694349796,0.00054205912
+12486,Manly Vale,1,New South Wales,AUS,Australia,1.9047,http://linked.data.gov.au/dataset/asgsed3/SAL/12486,0.06673554871,0.00018544578
+12494,Maraylya,1,New South Wales,AUS,Australia,19.4175,http://linked.data.gov.au/dataset/asgsed3/SAL/12494,0.29585279172,0.00188595729
+12495,Marayong,1,New South Wales,AUS,Australia,2.7059,http://linked.data.gov.au/dataset/asgsed3/SAL/12495,0.07656429912,0.0002632872
+12510,Maroota,1,New South Wales,AUS,Australia,57.1141,http://linked.data.gov.au/dataset/asgsed3/SAL/12510,0.46875143749,0.00553924473
+12511,Maroubra,1,New South Wales,AUS,Australia,5.9226,http://linked.data.gov.au/dataset/asgsed3/SAL/12511,0.12747168538,0.0005776692
+12514,Marrickville,1,New South Wales,AUS,Australia,5.7714,http://linked.data.gov.au/dataset/asgsed3/SAL/12514,0.12571814245,0.00056259106
+12515,Marsden Park,1,New South Wales,AUS,Australia,12.8957,http://linked.data.gov.au/dataset/asgsed3/SAL/12515,0.20452317471,0.00125422152
+12516,Marsfield,1,New South Wales,AUS,Australia,3.8632,http://linked.data.gov.au/dataset/asgsed3/SAL/12516,0.13148658367,0.0003760589
+12529,Mascot,1,New South Wales,AUS,Australia,11.9607,http://linked.data.gov.au/dataset/asgsed3/SAL/12529,0.23350281268,0.00116641184
+12534,Matraville,1,New South Wales,AUS,Australia,3.933,http://linked.data.gov.au/dataset/asgsed3/SAL/12534,0.0994096628,0.00038365939
+12548,Mays Hill,1,New South Wales,AUS,Australia,0.299,http://linked.data.gov.au/dataset/asgsed3/SAL/12548,0.02847913505,2.914832e-05
+12557,McMahons Point,1,New South Wales,AUS,Australia,0.3492,http://linked.data.gov.au/dataset/asgsed3/SAL/12557,0.03468036156,3.400413e-05
+12560,Meadowbank (NSW),1,New South Wales,AUS,Australia,0.6855,http://linked.data.gov.au/dataset/asgsed3/SAL/12560,0.04391750499,6.675045e-05
+12573,Melonba,1,New South Wales,AUS,Australia,6.4715,http://linked.data.gov.au/dataset/asgsed3/SAL/12573,0.15506753009,0.00062927996
+12574,Melrose Park (NSW),1,New South Wales,AUS,Australia,1.2776,http://linked.data.gov.au/dataset/asgsed3/SAL/12574,0.06091129076,0.00012441572
+12578,Menai,1,New South Wales,AUS,Australia,12.9444,http://linked.data.gov.au/dataset/asgsed3/SAL/12578,0.21566692225,0.0012632715
+12580,Menangle Park,1,New South Wales,AUS,Australia,8.7197,http://linked.data.gov.au/dataset/asgsed3/SAL/12580,0.16072061577,0.00085190076
+12599,Merrylands,1,New South Wales,AUS,Australia,6.7259,http://linked.data.gov.au/dataset/asgsed3/SAL/12599,0.16323157719,0.00065513715
+12600,Merrylands West,1,New South Wales,AUS,Australia,1.7354,http://linked.data.gov.au/dataset/asgsed3/SAL/12600,0.0580136843,0.00016903197
+12613,Middle Cove,1,New South Wales,AUS,Australia,1.0362,http://linked.data.gov.au/dataset/asgsed3/SAL/12613,0.06127772656,0.00010087756
+12614,Middle Dural,1,New South Wales,AUS,Australia,7.6599,http://linked.data.gov.au/dataset/asgsed3/SAL/12614,0.16566540854,0.00074439107
+12618,Middleton Grange,1,New South Wales,AUS,Australia,2.5546,http://linked.data.gov.au/dataset/asgsed3/SAL/12618,0.06892886989,0.0002490322
+12628,Miller,1,New South Wales,AUS,Australia,1.2705,http://linked.data.gov.au/dataset/asgsed3/SAL/12628,0.05985913206,0.00012385625
+12630,Millers Point,1,New South Wales,AUS,Australia,0.2512,http://linked.data.gov.au/dataset/asgsed3/SAL/12630,0.02916773816,2.44762e-05
+12636,Milperra,1,New South Wales,AUS,Australia,5.3711,http://linked.data.gov.au/dataset/asgsed3/SAL/12636,0.11014457021,0.00052376187
+12639,Milsons Passage,1,New South Wales,AUS,Australia,0.6383,http://linked.data.gov.au/dataset/asgsed3/SAL/12639,0.05436237107,6.194055e-05
+12640,Milsons Point,1,New South Wales,AUS,Australia,0.1981,http://linked.data.gov.au/dataset/asgsed3/SAL/12640,0.02497405828,1.93211e-05
+12644,Minchinbury,1,New South Wales,AUS,Australia,4.1856,http://linked.data.gov.au/dataset/asgsed3/SAL/12644,0.12717422855,0.00040743794
+12653,Minto,1,New South Wales,AUS,Australia,9.5678,http://linked.data.gov.au/dataset/asgsed3/SAL/12653,0.14256548062,0.00093402176
+12654,Minto Heights,1,New South Wales,AUS,Australia,5.9613,http://linked.data.gov.au/dataset/asgsed3/SAL/12654,0.1305195133,0.00058195339
+12656,Miranda (NSW),1,New South Wales,AUS,Australia,4.708,http://linked.data.gov.au/dataset/asgsed3/SAL/12656,0.11120954608,0.00045955119
+12683,Mona Vale,1,New South Wales,AUS,Australia,4.6197,http://linked.data.gov.au/dataset/asgsed3/SAL/12683,0.13478363687,0.00044914939
+12697,Monterey,1,New South Wales,AUS,Australia,1.1522,http://linked.data.gov.au/dataset/asgsed3/SAL/12697,0.04590020247,0.00011241111
+12722,Moore Park,1,New South Wales,AUS,Australia,1.8625,http://linked.data.gov.au/dataset/asgsed3/SAL/12722,0.06053065804,0.0001815295
+12723,Moorebank,1,New South Wales,AUS,Australia,12.5155,http://linked.data.gov.au/dataset/asgsed3/SAL/12723,0.21054974851,0.001220521
+12736,Morning Bay,1,New South Wales,AUS,Australia,0.2156,http://linked.data.gov.au/dataset/asgsed3/SAL/12736,0.024341094,2.095221e-05
+12739,Mortdale,1,New South Wales,AUS,Australia,2.9348,http://linked.data.gov.au/dataset/asgsed3/SAL/12739,0.09297683565,0.00028621183
+12740,Mortlake (NSW),1,New South Wales,AUS,Australia,0.2384,http://linked.data.gov.au/dataset/asgsed3/SAL/12740,0.03095945128,2.32169e-05
+12749,Mosman,1,New South Wales,AUS,Australia,8.6503,http://linked.data.gov.au/dataset/asgsed3/SAL/12749,0.21607848454,0.00084254007
+12756,Mount Annan,1,New South Wales,AUS,Australia,10.2263,http://linked.data.gov.au/dataset/asgsed3/SAL/12756,0.15446573058,0.00099867335
+12761,Mount Colah,1,New South Wales,AUS,Australia,11.0623,http://linked.data.gov.au/dataset/asgsed3/SAL/12761,0.21864873177,0.00107541512
+12767,Mount Druitt,1,New South Wales,AUS,Australia,6.2561,http://linked.data.gov.au/dataset/asgsed3/SAL/12767,0.13011576044,0.00060880358
+12783,Mount Kuring-Gai,1,New South Wales,AUS,Australia,10.5767,http://linked.data.gov.au/dataset/asgsed3/SAL/12783,0.20098679084,0.001027942
+12785,Mount Lewis,1,New South Wales,AUS,Australia,0.3328,http://linked.data.gov.au/dataset/asgsed3/SAL/12785,0.02998019155,3.244737e-05
+12796,Mount Pritchard,1,New South Wales,AUS,Australia,3.0939,http://linked.data.gov.au/dataset/asgsed3/SAL/12796,0.07557873192,0.00030158129
+12807,Mount Vernon,1,New South Wales,AUS,Australia,6.5433,http://linked.data.gov.au/dataset/asgsed3/SAL/12807,0.11545968626,0.00063749803
+12825,Mulgoa,1,New South Wales,AUS,Australia,54.2696,http://linked.data.gov.au/dataset/asgsed3/SAL/12825,0.39936425812,0.00528529827
+12906,Narellan,1,New South Wales,AUS,Australia,3.991,http://linked.data.gov.au/dataset/asgsed3/SAL/12906,0.10756657455,0.0003896765
+12907,Narellan Vale,1,New South Wales,AUS,Australia,2.5557,http://linked.data.gov.au/dataset/asgsed3/SAL/12907,0.08068107158,0.00024953897
+12908,Naremburn,1,New South Wales,AUS,Australia,1.2495,http://linked.data.gov.au/dataset/asgsed3/SAL/12908,0.05379254106,0.00012168868
+12911,Narrabeen,1,New South Wales,AUS,Australia,2.1967,http://linked.data.gov.au/dataset/asgsed3/SAL/12911,0.11032461261,0.00021365902
+12919,Narraweena,1,New South Wales,AUS,Australia,1.7759,http://linked.data.gov.au/dataset/asgsed3/SAL/12919,0.06568176211,0.00017282272
+12921,Narwee,1,New South Wales,AUS,Australia,1.2426,http://linked.data.gov.au/dataset/asgsed3/SAL/12921,0.05866660849,0.00012120065
+12931,Nelson (The Hills Shire - NSW),1,New South Wales,AUS,Australia,4.9183,http://linked.data.gov.au/dataset/asgsed3/SAL/12931,0.1178798864,0.00047800397
+12943,Neutral Bay,1,New South Wales,AUS,Australia,1.2687,http://linked.data.gov.au/dataset/asgsed3/SAL/12943,0.05479273215,0.00012356338
+12962,Newington (NSW),1,New South Wales,AUS,Australia,0.9267,http://linked.data.gov.au/dataset/asgsed3/SAL/12962,0.05240911538,9.027713e-05
+12965,Newport (NSW),1,New South Wales,AUS,Australia,3.8119,http://linked.data.gov.au/dataset/asgsed3/SAL/12965,0.17579881977,0.00037053074
+12969,Newtown (NSW),1,New South Wales,AUS,Australia,1.5869,http://linked.data.gov.au/dataset/asgsed3/SAL/12969,0.07525968258,0.00015465807
+12977,Nirimba Fields,1,New South Wales,AUS,Australia,2.8543,http://linked.data.gov.au/dataset/asgsed3/SAL/12977,0.09832800703,0.0002776429
+12986,Normanhurst,1,New South Wales,AUS,Australia,2.2064,http://linked.data.gov.au/dataset/asgsed3/SAL/12986,0.08394545185,0.0002146831
+12991,North Balgowlah,1,New South Wales,AUS,Australia,1.1218,http://linked.data.gov.au/dataset/asgsed3/SAL/12991,0.05232765041,0.00010916281
+12994,North Bondi,1,New South Wales,AUS,Australia,1.2637,http://linked.data.gov.au/dataset/asgsed3/SAL/12994,0.06710095822,0.00012317034
+12998,North Curl Curl,1,New South Wales,AUS,Australia,1.18,http://linked.data.gov.au/dataset/asgsed3/SAL/12998,0.07318375267,0.00011485328
+13000,North Epping,1,New South Wales,AUS,Australia,2.3331,http://linked.data.gov.au/dataset/asgsed3/SAL/13000,0.06643232722,0.00022704727
+13003,North Kellyville,1,New South Wales,AUS,Australia,8.0711,http://linked.data.gov.au/dataset/asgsed3/SAL/13003,0.14745393298,0.00078477762
+13007,North Manly,1,New South Wales,AUS,Australia,1.0967,http://linked.data.gov.au/dataset/asgsed3/SAL/13007,0.07964952864,0.00010673576
+13009,North Narrabeen,1,New South Wales,AUS,Australia,2.509,http://linked.data.gov.au/dataset/asgsed3/SAL/13009,0.106284662,0.0002440302
+13011,North Parramatta,1,New South Wales,AUS,Australia,5.2719,http://linked.data.gov.au/dataset/asgsed3/SAL/13011,0.13573645585,0.0005132394
+13013,North Rocks,1,New South Wales,AUS,Australia,5.4615,http://linked.data.gov.au/dataset/asgsed3/SAL/13013,0.15334728468,0.00053159289
+13015,North Ryde,1,New South Wales,AUS,Australia,5.3598,http://linked.data.gov.au/dataset/asgsed3/SAL/13015,0.16235086497,0.00052178797
+13017,North St Marys,1,New South Wales,AUS,Australia,3.186,http://linked.data.gov.au/dataset/asgsed3/SAL/13017,0.08603626249,0.0003099994
+13019,North Strathfield,1,New South Wales,AUS,Australia,1.0358,http://linked.data.gov.au/dataset/asgsed3/SAL/13019,0.05922556065,0.00010089526
+13020,North Sydney,1,New South Wales,AUS,Australia,1.4753,http://linked.data.gov.au/dataset/asgsed3/SAL/13020,0.08396736669,0.00014367894
+13023,North Turramurra,1,New South Wales,AUS,Australia,11.6142,http://linked.data.gov.au/dataset/asgsed3/SAL/13023,0.18120158086,0.00112933331
+13025,North Wahroonga,1,New South Wales,AUS,Australia,3.8916,http://linked.data.gov.au/dataset/asgsed3/SAL/13025,0.0982041719,0.00037841766
+13026,North Willoughby,1,New South Wales,AUS,Australia,0.9346,http://linked.data.gov.au/dataset/asgsed3/SAL/13026,0.04982286395,9.097239e-05
+13032,Northbridge (NSW),1,New South Wales,AUS,Australia,2.7281,http://linked.data.gov.au/dataset/asgsed3/SAL/13032,0.08835223957,0.00026564272
+13033,Northmead,1,New South Wales,AUS,Australia,4.2857,http://linked.data.gov.au/dataset/asgsed3/SAL/13033,0.14900711283,0.0004171465
+13034,Northwood (NSW),1,New South Wales,AUS,Australia,0.382,http://linked.data.gov.au/dataset/asgsed3/SAL/13034,0.02923273877,3.720009e-05
+13036,Norwest,1,New South Wales,AUS,Australia,2.8067,http://linked.data.gov.au/dataset/asgsed3/SAL/13036,0.07526726966,0.00027305432
+13069,Oakhurst (NSW),1,New South Wales,AUS,Australia,2.0268,http://linked.data.gov.au/dataset/asgsed3/SAL/13069,0.07214974114,0.00019718881
+13074,Oatlands (NSW),1,New South Wales,AUS,Australia,2.4621,http://linked.data.gov.au/dataset/asgsed3/SAL/13074,0.07283872214,0.000239714
+13075,Oatley,1,New South Wales,AUS,Australia,4.3738,http://linked.data.gov.au/dataset/asgsed3/SAL/13075,0.14091896706,0.00042673641
+13088,Old Guildford,1,New South Wales,AUS,Australia,0.961,http://linked.data.gov.au/dataset/asgsed3/SAL/13088,0.03996847054,9.361896e-05
+13092,Old Toongabbie,1,New South Wales,AUS,Australia,1.2743,http://linked.data.gov.au/dataset/asgsed3/SAL/13092,0.07301462056,0.00012405832
+13102,Oran Park,1,New South Wales,AUS,Australia,13.2477,http://linked.data.gov.au/dataset/asgsed3/SAL/13102,0.19004421901,0.00129266508
+13106,Orchard Hills,1,New South Wales,AUS,Australia,43.0734,http://linked.data.gov.au/dataset/asgsed3/SAL/13106,0.28429202772,0.00419402524
+13117,Oxford Falls,1,New South Wales,AUS,Australia,6.4693,http://linked.data.gov.au/dataset/asgsed3/SAL/13117,0.14911763879,0.00062935298
+13121,Oxley Park,1,New South Wales,AUS,Australia,1.2705,http://linked.data.gov.au/dataset/asgsed3/SAL/13121,0.05039530519,0.00012363669
+13123,Oyster Bay,1,New South Wales,AUS,Australia,2.1011,http://linked.data.gov.au/dataset/asgsed3/SAL/13123,0.11152137675,0.00020506915
+13126,Paddington (NSW),1,New South Wales,AUS,Australia,1.6266,http://linked.data.gov.au/dataset/asgsed3/SAL/13126,0.05847145978,0.00015847195
+13131,Padstow,1,New South Wales,AUS,Australia,5.4016,http://linked.data.gov.au/dataset/asgsed3/SAL/13131,0.14450239159,0.00052678227
+13132,Padstow Heights,1,New South Wales,AUS,Australia,1.9307,http://linked.data.gov.au/dataset/asgsed3/SAL/13132,0.0769742161,0.00018831806
+13136,Pagewood,1,New South Wales,AUS,Australia,2.1981,http://linked.data.gov.au/dataset/asgsed3/SAL/13136,0.10009056017,0.00021434754
+13143,Palm Beach (NSW),1,New South Wales,AUS,Australia,2.7162,http://linked.data.gov.au/dataset/asgsed3/SAL/13143,0.13759112406,0.00026381905
+13155,Panania,1,New South Wales,AUS,Australia,4.7507,http://linked.data.gov.au/dataset/asgsed3/SAL/13155,0.12913769984,0.00046329955
+13164,Parklea,1,New South Wales,AUS,Australia,1.0605,http://linked.data.gov.au/dataset/asgsed3/SAL/13164,0.04735017218,0.00010314945
+13167,Parramatta,1,New South Wales,AUS,Australia,5.2345,http://linked.data.gov.au/dataset/asgsed3/SAL/13167,0.14658233919,0.00050970968
+13179,Peakhurst,1,New South Wales,AUS,Australia,3.6257,http://linked.data.gov.au/dataset/asgsed3/SAL/13179,0.11363009208,0.00035363998
+13180,Peakhurst Heights,1,New South Wales,AUS,Australia,0.8727,http://linked.data.gov.au/dataset/asgsed3/SAL/13180,0.04619174281,8.514643e-05
+13192,Pemulwuy,1,New South Wales,AUS,Australia,14.98,http://linked.data.gov.au/dataset/asgsed3/SAL/13192,0.20287239859,0.00145874484
+13193,Pendle Hill,1,New South Wales,AUS,Australia,1.9638,http://linked.data.gov.au/dataset/asgsed3/SAL/13193,0.06902227249,0.00019120789
+13194,Pennant Hills,1,New South Wales,AUS,Australia,6.1227,http://linked.data.gov.au/dataset/asgsed3/SAL/13194,0.17802850439,0.00059570335
+13195,Penrith,1,New South Wales,AUS,Australia,12.3325,http://linked.data.gov.au/dataset/asgsed3/SAL/13195,0.19650881072,0.00119988382
+13197,Penshurst (NSW),1,New South Wales,AUS,Australia,2.5303,http://linked.data.gov.au/dataset/asgsed3/SAL/13197,0.08669103874,0.00024681873
+13202,Petersham,1,New South Wales,AUS,Australia,1.2872,http://linked.data.gov.au/dataset/asgsed3/SAL/13202,0.06157105931,0.00012543992
+13205,Phillip Bay,1,New South Wales,AUS,Australia,0.6262,http://linked.data.gov.au/dataset/asgsed3/SAL/13205,0.03830857089,6.107314e-05
+13211,Picnic Point,1,New South Wales,AUS,Australia,3.8591,http://linked.data.gov.au/dataset/asgsed3/SAL/13211,0.11123338646,0.00037647174
+13241,Pleasure Point,1,New South Wales,AUS,Australia,1.55,http://linked.data.gov.au/dataset/asgsed3/SAL/13241,0.07311443515,0.00015120425
+13242,Plumpton (NSW),1,New South Wales,AUS,Australia,2.9581,http://linked.data.gov.au/dataset/asgsed3/SAL/13242,0.06989577248,0.00028783511
+13245,Point Piper,1,New South Wales,AUS,Australia,0.3862,http://linked.data.gov.au/dataset/asgsed3/SAL/13245,0.03923149691,3.760511e-05
+13255,Port Botany,1,New South Wales,AUS,Australia,1.2286,http://linked.data.gov.au/dataset/asgsed3/SAL/13255,0.05700985784,0.00011985238
+13256,Port Hacking,1,New South Wales,AUS,Australia,0.4066,http://linked.data.gov.au/dataset/asgsed3/SAL/13256,0.03319036435,3.970424e-05
+13267,Potts Hill,1,New South Wales,AUS,Australia,1.1278,http://linked.data.gov.au/dataset/asgsed3/SAL/13267,0.04676305841,0.0001099115
+13268,Potts Point,1,New South Wales,AUS,Australia,0.6249,http://linked.data.gov.au/dataset/asgsed3/SAL/13268,0.05596104966,6.091371e-05
+13270,Prairiewood,1,New South Wales,AUS,Australia,2.1339,http://linked.data.gov.au/dataset/asgsed3/SAL/13270,0.06724184751,0.00020788751
+13272,Prestons,1,New South Wales,AUS,Australia,9.2145,http://linked.data.gov.au/dataset/asgsed3/SAL/13272,0.15942331336,0.00089864377
+13278,Prospect (NSW),1,New South Wales,AUS,Australia,2.5793,http://linked.data.gov.au/dataset/asgsed3/SAL/13278,0.07908886267,0.00025113739
+13286,Punchbowl (Canterbury-Bankstown - NSW),1,New South Wales,AUS,Australia,4.3232,http://linked.data.gov.au/dataset/asgsed3/SAL/13286,0.13478115304,0.00042140593
+13290,Putney,1,New South Wales,AUS,Australia,1.5079,http://linked.data.gov.au/dataset/asgsed3/SAL/13290,0.0700360379,0.00014685936
+13294,Pymble,1,New South Wales,AUS,Australia,6.5679,http://linked.data.gov.au/dataset/asgsed3/SAL/13294,0.14493467658,0.00063904058
+13297,Pyrmont,1,New South Wales,AUS,Australia,0.9299,http://linked.data.gov.au/dataset/asgsed3/SAL/13297,0.06418535421,9.062506e-05
+13299,Quakers Hill,1,New South Wales,AUS,Australia,9.1601,http://linked.data.gov.au/dataset/asgsed3/SAL/13299,0.18307861362,0.00089112895
+13307,Queens Park (NSW),1,New South Wales,AUS,Australia,0.8435,http://linked.data.gov.au/dataset/asgsed3/SAL/13307,0.04153131691,8.222625e-05
+13309,Queenscliff (NSW),1,New South Wales,AUS,Australia,0.4228,http://linked.data.gov.au/dataset/asgsed3/SAL/13309,0.03538808752,4.114517e-05
+13316,Raby,1,New South Wales,AUS,Australia,2.6588,http://linked.data.gov.au/dataset/asgsed3/SAL/13316,0.06944481749,0.00025954262
+13322,Ramsgate,1,New South Wales,AUS,Australia,0.428,http://linked.data.gov.au/dataset/asgsed3/SAL/13322,0.03891059578,4.177742e-05
+13323,Ramsgate Beach,1,New South Wales,AUS,Australia,0.4028,http://linked.data.gov.au/dataset/asgsed3/SAL/13323,0.02893844994,3.92951e-05
+13325,Randwick,1,New South Wales,AUS,Australia,5.3081,http://linked.data.gov.au/dataset/asgsed3/SAL/13325,0.12941801424,0.00051757698
+13352,Redfern,1,New South Wales,AUS,Australia,1.1717,http://linked.data.gov.au/dataset/asgsed3/SAL/13352,0.05479047035,0.00011420044
+13358,Regents Park (NSW),1,New South Wales,AUS,Australia,1.9868,http://linked.data.gov.au/dataset/asgsed3/SAL/13358,0.07965201597,0.00019361799
+13359,Regentville,1,New South Wales,AUS,Australia,1.1938,http://linked.data.gov.au/dataset/asgsed3/SAL/13359,0.05614118796,0.00011619872
+13369,Revesby,1,New South Wales,AUS,Australia,5.6076,http://linked.data.gov.au/dataset/asgsed3/SAL/13369,0.16890786305,0.00054694304
+13370,Revesby Heights,1,New South Wales,AUS,Australia,0.8012,http://linked.data.gov.au/dataset/asgsed3/SAL/13370,0.0416953902,7.812415e-05
+13372,Rhodes,1,New South Wales,AUS,Australia,1.006,http://linked.data.gov.au/dataset/asgsed3/SAL/13372,0.04473203736,9.800077e-05
+13373,Richards,1,New South Wales,AUS,Australia,7.5392,http://linked.data.gov.au/dataset/asgsed3/SAL/13373,0.13998952723,0.00073288621
+13383,Riverstone,1,New South Wales,AUS,Australia,6.365,http://linked.data.gov.au/dataset/asgsed3/SAL/13383,0.13466851845,0.00061886665
+13385,Riverview (NSW),1,New South Wales,AUS,Australia,1.3719,http://linked.data.gov.au/dataset/asgsed3/SAL/13385,0.05131632698,0.00013359497
+13386,Riverwood,1,New South Wales,AUS,Australia,3.8632,http://linked.data.gov.au/dataset/asgsed3/SAL/13386,0.10634749657,0.0003767041
+13394,Rockdale,1,New South Wales,AUS,Australia,2.4424,http://linked.data.gov.au/dataset/asgsed3/SAL/13394,0.10731947897,0.00023817279
+13406,Rodd Point,1,New South Wales,AUS,Australia,0.3742,http://linked.data.gov.au/dataset/asgsed3/SAL/13406,0.03000396061,3.645281e-05
+13409,Rookwood (NSW),1,New South Wales,AUS,Australia,3.015,http://linked.data.gov.au/dataset/asgsed3/SAL/13409,0.06801820923,0.00029379497
+13410,Rooty Hill,1,New South Wales,AUS,Australia,6.8073,http://linked.data.gov.au/dataset/asgsed3/SAL/13410,0.12288574893,0.00066255301
+13411,Ropes Crossing,1,New South Wales,AUS,Australia,5.503,http://linked.data.gov.au/dataset/asgsed3/SAL/13411,0.11061184563,0.00053534942
+13412,Rose Bay (NSW),1,New South Wales,AUS,Australia,2.5302,http://linked.data.gov.au/dataset/asgsed3/SAL/13412,0.10783835245,0.00024650294
+13419,Rosebery (NSW),1,New South Wales,AUS,Australia,1.9279,http://linked.data.gov.au/dataset/asgsed3/SAL/13419,0.06413733578,0.00018798517
+13422,Rosehill (NSW),1,New South Wales,AUS,Australia,3.6704,http://linked.data.gov.au/dataset/asgsed3/SAL/13422,0.09924053535,0.00035745331
+13423,Roselands,1,New South Wales,AUS,Australia,2.7447,http://linked.data.gov.au/dataset/asgsed3/SAL/13423,0.08319339528,0.00026759195
+13424,Rosemeadow,1,New South Wales,AUS,Australia,3.0097,http://linked.data.gov.au/dataset/asgsed3/SAL/13424,0.08031679654,0.00029406233
+13426,Roseville,1,New South Wales,AUS,Australia,3.923,http://linked.data.gov.au/dataset/asgsed3/SAL/13426,0.10995664904,0.00038185062
+13427,Roseville Chase,1,New South Wales,AUS,Australia,1.2644,http://linked.data.gov.au/dataset/asgsed3/SAL/13427,0.05167887313,0.00012308752
+13434,Rossmore (NSW),1,New South Wales,AUS,Australia,16.3461,http://linked.data.gov.au/dataset/asgsed3/SAL/13434,0.19277178735,0.00159395884
+13444,Rouse Hill,1,New South Wales,AUS,Australia,12.8226,http://linked.data.gov.au/dataset/asgsed3/SAL/13444,0.21626056576,0.00124664864
+13448,Royal National Park,1,New South Wales,AUS,Australia,139.1565,http://linked.data.gov.au/dataset/asgsed3/SAL/13448,0.93019934686,0.0135970442
+13450,Rozelle,1,New South Wales,AUS,Australia,1.8337,http://linked.data.gov.au/dataset/asgsed3/SAL/13450,0.08376439948,0.00017868287
+13458,Ruse,1,New South Wales,AUS,Australia,2.5956,http://linked.data.gov.au/dataset/asgsed3/SAL/13458,0.08435932456,0.00025350231
+13459,Rushcutters Bay,1,New South Wales,AUS,Australia,0.1574,http://linked.data.gov.au/dataset/asgsed3/SAL/13459,0.0206110906,1.533844e-05
+13462,Russell Lea,1,New South Wales,AUS,Australia,1.0044,http://linked.data.gov.au/dataset/asgsed3/SAL/13462,0.05303832111,9.785114e-05
+13468,Rydalmere,1,New South Wales,AUS,Australia,3.8342,http://linked.data.gov.au/dataset/asgsed3/SAL/13468,0.11239804259,0.00037337717
+13469,Ryde,1,New South Wales,AUS,Australia,7.1015,http://linked.data.gov.au/dataset/asgsed3/SAL/13469,0.16804959301,0.0006914349
+13474,Sackville North,1,New South Wales,AUS,Australia,13.0907,http://linked.data.gov.au/dataset/asgsed3/SAL/13474,0.21204013963,0.00126994873
+13476,Sadleir,1,New South Wales,AUS,Australia,0.8992,http://linked.data.gov.au/dataset/asgsed3/SAL/13476,0.04238667378,8.766036e-05
+13493,Sandringham (NSW),1,New South Wales,AUS,Australia,0.4953,http://linked.data.gov.au/dataset/asgsed3/SAL/13493,0.04245011952,4.833972e-05
+13502,Sandy Point (NSW),1,New South Wales,AUS,Australia,0.3985,http://linked.data.gov.au/dataset/asgsed3/SAL/13502,0.02762341833,3.887773e-05
+13504,Sans Souci,1,New South Wales,AUS,Australia,3.0651,http://linked.data.gov.au/dataset/asgsed3/SAL/13504,0.10149319672,0.00029909578
+13517,Schofields,1,New South Wales,AUS,Australia,8.8765,http://linked.data.gov.au/dataset/asgsed3/SAL/13517,0.18949549014,0.00086326653
+13520,Scotland Island,1,New South Wales,AUS,Australia,0.546,http://linked.data.gov.au/dataset/asgsed3/SAL/13520,0.03703882683,5.308571e-05
+13524,Seaforth (NSW),1,New South Wales,AUS,Australia,3.1079,http://linked.data.gov.au/dataset/asgsed3/SAL/13524,0.09194019277,0.00030254021
+13531,Sefton,1,New South Wales,AUS,Australia,1.8148,http://linked.data.gov.au/dataset/asgsed3/SAL/13531,0.06478532534,0.00017686521
+13533,Seven Hills (NSW),1,New South Wales,AUS,Australia,9.629,http://linked.data.gov.au/dataset/asgsed3/SAL/13533,0.18810806889,0.00093715005
+13538,Shalvey,1,New South Wales,AUS,Australia,1.5839,http://linked.data.gov.au/dataset/asgsed3/SAL/13538,0.06703918274,0.00015408643
+13539,Shanes Park,1,New South Wales,AUS,Australia,8.7517,http://linked.data.gov.au/dataset/asgsed3/SAL/13539,0.15579980687,0.00085119444
+13562,Silverwater (Parramatta - NSW),1,New South Wales,AUS,Australia,2.7,http://linked.data.gov.au/dataset/asgsed3/SAL/13562,0.09017370982,0.00026298462
+13567,Singletons Mill,1,New South Wales,AUS,Australia,6.024,http://linked.data.gov.au/dataset/asgsed3/SAL/13567,0.15891028737,0.000584296
+13573,Smeaton Grange,1,New South Wales,AUS,Australia,2.7709,http://linked.data.gov.au/dataset/asgsed3/SAL/13573,0.07365934158,0.00027049627
+13575,Smithfield (NSW),1,New South Wales,AUS,Australia,8.9149,http://linked.data.gov.au/dataset/asgsed3/SAL/13575,0.14726773822,0.00086844045
+13595,South Coogee,1,New South Wales,AUS,Australia,1.1322,http://linked.data.gov.au/dataset/asgsed3/SAL/13595,0.05454260918,0.00011039585
+13599,South Granville,1,New South Wales,AUS,Australia,2.1908,http://linked.data.gov.au/dataset/asgsed3/SAL/13599,0.08864478716,0.00021349174
+13603,South Hurstville,1,New South Wales,AUS,Australia,1.0417,http://linked.data.gov.au/dataset/asgsed3/SAL/13603,0.05800184765,0.00010165992
+13608,South Maroota,1,New South Wales,AUS,Australia,34.8602,http://linked.data.gov.au/dataset/asgsed3/SAL/13608,0.31241200271,0.00338282888
+13612,South Penrith,1,New South Wales,AUS,Australia,5.06,http://linked.data.gov.au/dataset/asgsed3/SAL/13612,0.08534711677,0.00049253138
+13614,South Turramurra,1,New South Wales,AUS,Australia,3.0621,http://linked.data.gov.au/dataset/asgsed3/SAL/13614,0.0868504434,0.00029797611
+13615,South Wentworthville,1,New South Wales,AUS,Australia,1.8083,http://linked.data.gov.au/dataset/asgsed3/SAL/13615,0.06229782028,0.00017612888
+13628,Spring Farm (NSW),1,New South Wales,AUS,Australia,6.3571,http://linked.data.gov.au/dataset/asgsed3/SAL/13628,0.1302458985,0.00062081609
+13646,St Andrews (NSW),1,New South Wales,AUS,Australia,2.0822,http://linked.data.gov.au/dataset/asgsed3/SAL/13646,0.06504834076,0.00020327058
+13647,St Clair (Penrith - NSW),1,New South Wales,AUS,Australia,7.2035,http://linked.data.gov.au/dataset/asgsed3/SAL/13647,0.10947437529,0.00070131002
+13652,St Helens Park,1,New South Wales,AUS,Australia,5.1647,http://linked.data.gov.au/dataset/asgsed3/SAL/13652,0.12164045403,0.00050464566
+13654,St Ives (NSW),1,New South Wales,AUS,Australia,14.2634,http://linked.data.gov.au/dataset/asgsed3/SAL/13654,0.21092214099,0.00138742663
+13655,St Ives Chase,1,New South Wales,AUS,Australia,3.4791,http://linked.data.gov.au/dataset/asgsed3/SAL/13655,0.09062458851,0.0003383428
+13656,St Johns Park,1,New South Wales,AUS,Australia,1.9819,http://linked.data.gov.au/dataset/asgsed3/SAL/13656,0.05988840134,0.00019312534
+13657,St Leonards (NSW),1,New South Wales,AUS,Australia,0.8013,http://linked.data.gov.au/dataset/asgsed3/SAL/13657,0.04551431911,7.803727e-05
+13658,St Marys (NSW),1,New South Wales,AUS,Australia,9.6958,http://linked.data.gov.au/dataset/asgsed3/SAL/13658,0.21155856034,0.0009435768
+13659,St Peters (NSW),1,New South Wales,AUS,Australia,1.7296,http://linked.data.gov.au/dataset/asgsed3/SAL/13659,0.06323419346,0.00016862261
+13664,Stanhope Gardens,1,New South Wales,AUS,Australia,2.8403,http://linked.data.gov.au/dataset/asgsed3/SAL/13664,0.07283716263,0.00027629916
+13665,Stanmore (NSW),1,New South Wales,AUS,Australia,1.218,http://linked.data.gov.au/dataset/asgsed3/SAL/13665,0.05661812622,0.00011865979
+13690,Strathfield (NSW),1,New South Wales,AUS,Australia,6.5497,http://linked.data.gov.au/dataset/asgsed3/SAL/13690,0.15128383042,0.00063831603
+13691,Strathfield South,1,New South Wales,AUS,Australia,2.5112,http://linked.data.gov.au/dataset/asgsed3/SAL/13691,0.09052308497,0.00024473542
+13702,Summer Hill (Inner West - NSW),1,New South Wales,AUS,Australia,1.2031,http://linked.data.gov.au/dataset/asgsed3/SAL/13702,0.05423640272,0.00011726985
+13714,Surry Hills,1,New South Wales,AUS,Australia,1.3164,http://linked.data.gov.au/dataset/asgsed3/SAL/13714,0.05213569294,0.00012827718
+13716,Sutherland (NSW),1,New South Wales,AUS,Australia,3.5713,http://linked.data.gov.au/dataset/asgsed3/SAL/13716,0.10580654697,0.00034859825
+13729,Sydenham (NSW),1,New South Wales,AUS,Australia,0.2704,http://linked.data.gov.au/dataset/asgsed3/SAL/13729,0.02156850464,2.636002e-05
+13730,Sydney,1,New South Wales,AUS,Australia,2.9396,http://linked.data.gov.au/dataset/asgsed3/SAL/13730,0.11534761049,0.0002864232
+13731,Sydney Olympic Park,1,New South Wales,AUS,Australia,6.6402,http://linked.data.gov.au/dataset/asgsed3/SAL/13731,0.16817898173,0.00064676987
+13732,Sylvania,1,New South Wales,AUS,Australia,3.3625,http://linked.data.gov.au/dataset/asgsed3/SAL/13732,0.10548780204,0.0003281455
+13733,Sylvania Waters,1,New South Wales,AUS,Australia,1.0601,http://linked.data.gov.au/dataset/asgsed3/SAL/13733,0.13265357877,0.00010348318
+13747,Tallawong,1,New South Wales,AUS,Australia,3.6406,http://linked.data.gov.au/dataset/asgsed3/SAL/13747,0.10291725562,0.00035399836
+13757,Tamarama,1,New South Wales,AUS,Australia,0.3001,http://linked.data.gov.au/dataset/asgsed3/SAL/13757,0.03182062892,2.924814e-05
+13781,Taren Point,1,New South Wales,AUS,Australia,1.3586,http://linked.data.gov.au/dataset/asgsed3/SAL/13781,0.07829133289,0.00013261704
+13797,Telopea,1,New South Wales,AUS,Australia,1.4648,http://linked.data.gov.au/dataset/asgsed3/SAL/13797,0.07865739495,0.00014259884
+13800,Tempe,1,New South Wales,AUS,Australia,1.8539,http://linked.data.gov.au/dataset/asgsed3/SAL/13800,0.05745763923,0.00018075643
+13805,Tennyson Point,1,New South Wales,AUS,Australia,0.4491,http://linked.data.gov.au/dataset/asgsed3/SAL/13805,0.03203313551,4.373359e-05
+13819,Terrey Hills,1,New South Wales,AUS,Australia,8.4468,http://linked.data.gov.au/dataset/asgsed3/SAL/13819,0.20287833869,0.00082132989
+13851,The Ponds,1,New South Wales,AUS,Australia,4.6534,http://linked.data.gov.au/dataset/asgsed3/SAL/13851,0.11549126079,0.00045253855
+13856,The Rocks (Sydney - NSW),1,New South Wales,AUS,Australia,0.2042,http://linked.data.gov.au/dataset/asgsed3/SAL/13856,0.02769259592,1.989222e-05
+13866,Thornleigh,1,New South Wales,AUS,Australia,3.87,http://linked.data.gov.au/dataset/asgsed3/SAL/13866,0.13043839175,0.00037646666
+13925,Toongabbie (NSW),1,New South Wales,AUS,Australia,4.7334,http://linked.data.gov.au/dataset/asgsed3/SAL/13925,0.13784324234,0.00046076798
+13952,Tregear,1,New South Wales,AUS,Australia,1.6417,http://linked.data.gov.au/dataset/asgsed3/SAL/13952,0.05775437104,0.00015972416
+13998,Turramurra,1,New South Wales,AUS,Australia,6.0012,http://linked.data.gov.au/dataset/asgsed3/SAL/13998,0.1696711498,0.00058384441
+14000,Turrella,1,New South Wales,AUS,Australia,0.6397,http://linked.data.gov.au/dataset/asgsed3/SAL/14000,0.04134741954,6.237503e-05
+14024,Ultimo,1,New South Wales,AUS,Australia,0.5588,http://linked.data.gov.au/dataset/asgsed3/SAL/14024,0.03375816428,5.441723e-05
+14088,Varroville,1,New South Wales,AUS,Australia,7.2685,http://linked.data.gov.au/dataset/asgsed3/SAL/14088,0.14063544292,0.00070931903
+14089,Vaucluse,1,New South Wales,AUS,Australia,3.1065,http://linked.data.gov.au/dataset/asgsed3/SAL/14089,0.10103765078,0.00030261748
+14092,Villawood,1,New South Wales,AUS,Australia,3.9256,http://linked.data.gov.au/dataset/asgsed3/SAL/14092,0.08827013712,0.00038253097
+14094,Vineyard,1,New South Wales,AUS,Australia,10.6183,http://linked.data.gov.au/dataset/asgsed3/SAL/14094,0.21859504715,0.00103194344
+14097,Voyager Point,1,New South Wales,AUS,Australia,1.7302,http://linked.data.gov.au/dataset/asgsed3/SAL/14097,0.05267732589,0.00016875116
+14103,Wahroonga,1,New South Wales,AUS,Australia,9.7504,http://linked.data.gov.au/dataset/asgsed3/SAL/14103,0.22890154256,0.0009484066
+14104,Waitara,1,New South Wales,AUS,Australia,0.7618,http://linked.data.gov.au/dataset/asgsed3/SAL/14104,0.06195741369,7.408561e-05
+14107,Wakeley,1,New South Wales,AUS,Australia,1.6292,http://linked.data.gov.au/dataset/asgsed3/SAL/14107,0.05166834432,0.00015873035
+14119,Wallacia,1,New South Wales,AUS,Australia,25.5343,http://linked.data.gov.au/dataset/asgsed3/SAL/14119,0.32079444468,0.00248840075
+14166,Wareemba,1,New South Wales,AUS,Australia,0.317,http://linked.data.gov.au/dataset/asgsed3/SAL/14166,0.0267123785,3.086703e-05
+14183,Warrawee,1,New South Wales,AUS,Australia,1.3376,http://linked.data.gov.au/dataset/asgsed3/SAL/14183,0.08356415953,0.00013012465
+14191,Warriewood,1,New South Wales,AUS,Australia,4.136,http://linked.data.gov.au/dataset/asgsed3/SAL/14191,0.13148991423,0.0004022019
+14195,Warwick Farm,1,New South Wales,AUS,Australia,4.6126,http://linked.data.gov.au/dataset/asgsed3/SAL/14195,0.12727136322,0.00044968866
+14200,Waterfall,1,New South Wales,AUS,Australia,17.5829,http://linked.data.gov.au/dataset/asgsed3/SAL/14200,0.21303848301,0.0017181839
+14201,Waterloo (NSW),1,New South Wales,AUS,Australia,1.1339,http://linked.data.gov.au/dataset/asgsed3/SAL/14201,0.0472285859,0.00011050977
+14205,Watsons Bay,1,New South Wales,AUS,Australia,0.6083,http://linked.data.gov.au/dataset/asgsed3/SAL/14205,0.05158193555,5.924511e-05
+14210,Wattle Grove (NSW),1,New South Wales,AUS,Australia,2.5911,http://linked.data.gov.au/dataset/asgsed3/SAL/14210,0.08451218624,0.00025268809
+14217,Waverley (NSW),1,New South Wales,AUS,Australia,0.6007,http://linked.data.gov.au/dataset/asgsed3/SAL/14217,0.04666737131,5.85674e-05
+14219,Waverton,1,New South Wales,AUS,Australia,0.7025,http://linked.data.gov.au/dataset/asgsed3/SAL/14219,0.05761048032,6.840794e-05
+14226,Wedderburn (NSW),1,New South Wales,AUS,Australia,25.3761,http://linked.data.gov.au/dataset/asgsed3/SAL/14226,0.24774569322,0.00248037056
+14244,Wentworth Point,1,New South Wales,AUS,Australia,0.5739,http://linked.data.gov.au/dataset/asgsed3/SAL/14244,0.04013552864,5.587319e-05
+14245,Wentworthville,1,New South Wales,AUS,Australia,3.1203,http://linked.data.gov.au/dataset/asgsed3/SAL/14245,0.10283284177,0.00030378122
+14252,Werrington,1,New South Wales,AUS,Australia,4.5068,http://linked.data.gov.au/dataset/asgsed3/SAL/14252,0.11035622035,0.00043859527
+14253,Werrington County,1,New South Wales,AUS,Australia,2.0898,http://linked.data.gov.au/dataset/asgsed3/SAL/14253,0.0743403569,0.00020333434
+14254,Werrington Downs,1,New South Wales,AUS,Australia,1.1092,http://linked.data.gov.au/dataset/asgsed3/SAL/14254,0.04649228619,0.00010789421
+14263,West Hoxton,1,New South Wales,AUS,Australia,6.7081,http://linked.data.gov.au/dataset/asgsed3/SAL/14263,0.13025373969,0.00065411046
+14266,West Pennant Hills,1,New South Wales,AUS,Australia,9.2916,http://linked.data.gov.au/dataset/asgsed3/SAL/14266,0.15929396513,0.0009040911
+14267,West Pymble,1,New South Wales,AUS,Australia,3.6836,http://linked.data.gov.au/dataset/asgsed3/SAL/14267,0.09897730504,0.000358491
+14268,West Ryde,1,New South Wales,AUS,Australia,3.566,http://linked.data.gov.au/dataset/asgsed3/SAL/14268,0.11990934675,0.00034716752
+14277,Westleigh,1,New South Wales,AUS,Australia,3.821,http://linked.data.gov.au/dataset/asgsed3/SAL/14277,0.10250689538,0.00037162568
+14278,Westmead,1,New South Wales,AUS,Australia,2.9256,http://linked.data.gov.au/dataset/asgsed3/SAL/14278,0.09857705388,0.00028491374
+14281,Wetherill Park,1,New South Wales,AUS,Australia,11.2144,http://linked.data.gov.au/dataset/asgsed3/SAL/14281,0.16529234064,0.00109238142
+14283,Whalan,1,New South Wales,AUS,Australia,2.4294,http://linked.data.gov.au/dataset/asgsed3/SAL/14283,0.07230561015,0.00023638254
+14284,Whale Beach,1,New South Wales,AUS,Australia,0.4973,http://linked.data.gov.au/dataset/asgsed3/SAL/14284,0.04947767376,4.83092e-05
+14285,Wheeler Heights,1,New South Wales,AUS,Australia,0.852,http://linked.data.gov.au/dataset/asgsed3/SAL/14285,0.0414630121,8.288651e-05
+14310,Wiley Park,1,New South Wales,AUS,Australia,1.3622,http://linked.data.gov.au/dataset/asgsed3/SAL/14310,0.05409569767,0.00013279287
+14319,Willmot,1,New South Wales,AUS,Australia,0.9148,http://linked.data.gov.au/dataset/asgsed3/SAL/14319,0.04713536955,8.898811e-05
+14320,Willoughby (NSW),1,New South Wales,AUS,Australia,1.6277,http://linked.data.gov.au/dataset/asgsed3/SAL/14320,0.06830588515,0.00015845607
+14321,Willoughby East,1,New South Wales,AUS,Australia,0.5612,http://linked.data.gov.au/dataset/asgsed3/SAL/14321,0.03020657416,5.463349e-05
+14353,Winston Hills,1,New South Wales,AUS,Australia,4.7387,http://linked.data.gov.au/dataset/asgsed3/SAL/14353,0.12168547203,0.00046130215
+14362,Wisemans Ferry,1,New South Wales,AUS,Australia,13.4673,http://linked.data.gov.au/dataset/asgsed3/SAL/14362,0.28838064588,0.00130515285
+14371,Wolli Creek,1,New South Wales,AUS,Australia,0.6614,http://linked.data.gov.au/dataset/asgsed3/SAL/14371,0.04442859254,6.447492e-05
+14377,Wollstonecraft,1,New South Wales,AUS,Australia,1.2028,http://linked.data.gov.au/dataset/asgsed3/SAL/14377,0.06252916883,0.00011718833
+14396,Woodbine (NSW),1,New South Wales,AUS,Australia,1.6143,http://linked.data.gov.au/dataset/asgsed3/SAL/14396,0.07634282849,0.00015761721
+14399,Woodcroft (NSW),1,New South Wales,AUS,Australia,1.693,http://linked.data.gov.au/dataset/asgsed3/SAL/14399,0.05413727191,0.00016472223
+14408,Woodpark,1,New South Wales,AUS,Australia,0.3866,http://linked.data.gov.au/dataset/asgsed3/SAL/14408,0.02813973334,3.764519e-05
+14422,Woollahra,1,New South Wales,AUS,Australia,1.2307,http://linked.data.gov.au/dataset/asgsed3/SAL/14422,0.06649370537,0.00011992929
+14424,Woolloomooloo,1,New South Wales,AUS,Australia,0.3722,http://linked.data.gov.au/dataset/asgsed3/SAL/14424,0.03899729662,3.626454e-05
+14428,Woolooware,1,New South Wales,AUS,Australia,1.8599,http://linked.data.gov.au/dataset/asgsed3/SAL/14428,0.07573430959,0.00018158779
+14430,Woolwich,1,New South Wales,AUS,Australia,0.6987,http://linked.data.gov.au/dataset/asgsed3/SAL/14430,0.06658148427,6.805988e-05
+14438,Woronora,1,New South Wales,AUS,Australia,1.8813,http://linked.data.gov.au/dataset/asgsed3/SAL/14438,0.12946639938,0.0001836431
+14439,Woronora Dam,1,New South Wales,AUS,Australia,67.9227,http://linked.data.gov.au/dataset/asgsed3/SAL/14439,0.40965968347,0.00664073867
+14440,Woronora Heights,1,New South Wales,AUS,Australia,2.5994,http://linked.data.gov.au/dataset/asgsed3/SAL/14440,0.08459898644,0.00025375809
+14471,Yagoona,1,New South Wales,AUS,Australia,4.6181,http://linked.data.gov.au/dataset/asgsed3/SAL/14471,0.13251766838,0.00045008473
+14503,Yarrawarrah,1,New South Wales,AUS,Australia,1.2438,http://linked.data.gov.au/dataset/asgsed3/SAL/14503,0.0782822198,0.00012144038
+14524,Yennora,1,New South Wales,AUS,Australia,2.7387,http://linked.data.gov.au/dataset/asgsed3/SAL/14524,0.09223623753,0.00026685775
+14537,Yowie Bay,1,New South Wales,AUS,Australia,1.2045,http://linked.data.gov.au/dataset/asgsed3/SAL/14537,0.0570561619,0.00011760341
+14542,Zetland,1,New South Wales,AUS,Australia,0.8047,http://linked.data.gov.au/dataset/asgsed3/SAL/14542,0.03647710632,7.846137e-05

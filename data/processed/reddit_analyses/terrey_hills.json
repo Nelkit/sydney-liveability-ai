@@ -1,0 +1,101 @@
+{
+  "suburb": "Terrey Hills",
+  "post_count": 15,
+  "fetched_at": "2026-04-18T02:16:56.359057+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.72,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.735,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.229,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.445,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.775,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.609,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.0993,
+    "fear": 0.0681,
+    "neutral": 0.4657,
+    "anger": 0.0543,
+    "surprise": 0.2206,
+    "disgust": 0.0595,
+    "joy": 0.0325
+  },
+  "narrative": "Reddit discussions about Terrey Hills are most positive about green space (0.78) and food and cafe (0.73). Residents are most critical about community (0.45) and transport (0.23). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Mobile speed camera bogged at Terrey Hills 😂",
+      "url": "https://reddit.com/r/sydney/comments/1il4gt4/mobile_speed_camera_bogged_at_terrey_hills/",
+      "score": 1274
+    },
+    {
+      "text": "Clearly the radar is broken\nThe only explanation I can think of is that the weather radar at Terrey Hills is broken. This is clearly not possible…",
+      "url": "https://reddit.com/r/sydney/comments/1mxgzva/clearly_the_radar_is_broken/",
+      "score": 739
+    },
+    {
+      "text": "Where is Sydney's most expensive bacon n egg roll?\nTerrey Hills and Boathouse group for examples. What is your absolute maximum, considering many places will do a breakfast special roll and coffee for",
+      "url": "https://reddit.com/r/sydney/comments/1oajgdc/where_is_sydneys_most_expensive_bacon_n_egg_roll/",
+      "score": 287
+    },
+    {
+      "text": "You'd think living in Terrey Hills and working in Ingleside would be easy, but it's actually a pain in the arse",
+      "url": "https://reddit.com/r/sydney/comments/1eywgps/youd_think_living_in_terrey_hills_and_working_in/",
+      "score": 210
+    },
+    {
+      "text": "The Northern Beaches are physically separated from the North Shore by the Spit bridge in the south & the Roseville bridge in the west, & the north border is the start of Terrey Hills. \n\nBeaches start ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxgyka/",
+      "score": 65
+    },
+    {
+      "text": "I purchased eight bags of pine bark mulch from ANL (Australian Native Landscapes) in Terrey Hills before Christmas. I still have four unopened bags.\n\nThe email address on the bags is: [greenlife@anlsc",
+      "url": "https://reddit.com/r/sydney/comments/1ar6505/asbestostainted_mulch_potentially_at_hundreds_of/kqi0qyr/",
+      "score": 56
+    },
+    {
+      "text": "Oh wow go up to Terrey Hills driving range at dusk or dawn and you gotta be careful not to whack-a-wallaby.\n\nIt's the national park where they're living.",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5ki8k8/",
+      "score": 15
+    },
+    {
+      "text": "Topic: nice question! I particularly love the bush around Terrey Hills. I would live up that way if it wasn’t so far from family.\n\nAlt: lurking r/duggarsnark and generally just stalking fundie Christi",
+      "url": "https://reddit.com/r/sydney/comments/1d1mepu/20240527_night_thread/l5v3e9o/",
+      "score": 7
+    },
+    {
+      "text": "Any automatic softball batting cages?\nGoogle has failed me here. Looking for an American-style practise cage for softball batting practise. The ones with the automatic machines that fire balls at you.",
+      "url": "https://reddit.com/r/sydney/comments/1s1uupw/any_automatic_softball_batting_cages/",
+      "score": 6
+    },
+    {
+      "text": "yeah it's a shame, I used to visit the Lowenbrau Keller in The Rocks on the reg until it got franchised and went downhill.\n\nConcordia Club at Tempe is better without being amazing, Austrian Beer Bar a",
+      "url": "https://reddit.com/r/sydney/comments/1cw3pj7/rashays_food_frozenmicrowaved/l4u87eg/",
+      "score": 6
+    }
+  ]
+}

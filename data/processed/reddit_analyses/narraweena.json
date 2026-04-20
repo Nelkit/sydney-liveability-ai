@@ -1,0 +1,66 @@
+{
+  "suburb": "Narraweena",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:45.816732+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.455,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.309,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.309,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.558,
+    "surprise": 0.3721,
+    "joy": 0.0069,
+    "sadness": 0.0055,
+    "anger": 0.0409,
+    "disgust": 0.0075,
+    "fear": 0.0092
+  },
+  "narrative": "Reddit discussions about Narraweena are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.31) and green space (0.31). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Just checked Wikipedia and it seems to be legit. Also, Narraweena used to be Dee Why Heights, and Cromer was Dee Why West.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo4an7/",
+      "score": 9
+    },
+    {
+      "text": "Having grown up as an odd one out on the northern beaches (parents had no money really) \n\nYou'd be astonished how many Narraweena residents sweat they are in beacon hill and how many Dee Why ones say ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxmn4u/",
+      "score": 3
+    },
+    {
+      "text": "Denizens of Seaforth, Frenchs Forest, Narraweena and Allambie Heights would fight you on that",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxyhe3e/",
+      "score": 2
+    }
+  ]
+}

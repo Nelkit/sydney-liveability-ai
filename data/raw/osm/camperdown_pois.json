@@ -1,0 +1,2169 @@
+{
+  "suburb": "Camperdown",
+  "bbox": {
+    "south": -33.8946508,
+    "west": 151.1715676,
+    "north": -33.8826962,
+    "east": 151.1948315
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8946508,151.1715676,-33.8826962,151.1948315);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8946508,151.1715676,-33.8826962,151.1948315);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8946508,151.1715676,-33.8826962,151.1948315);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8946508,151.1715676,-33.8826962,151.1948315);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-03-19T15:34:53Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 263133047,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Asakusa"
+            }
+          },
+          {
+            "type": "node",
+            "id": 488904867,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Campos Coffee",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 501793212,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Kai on King sushi"
+            }
+          },
+          {
+            "type": "node",
+            "id": 515985916,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Wild Bean",
+              "note": "inside the servo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 515985924,
+            "tags": {
+              "addr:housenumber": "137",
+              "addr:postcode": "2050",
+              "addr:street": "Parramatta Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "contact:facebook": "https://www.facebook.com/Franks.Pizza.Bar",
+              "cuisine": "pizza",
+              "name": "Frank's Pizza Bar",
+              "opening_hours": "Tu-Su 17:00-21:30, Su 12:00-15:00",
+              "phone": "+61 2 9519 3404",
+              "smoking": "no",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1252086564,
+            "tags": {
+              "amenity": "library",
+              "name": "SciTech Library",
+              "website": "https://www.library.sydney.edu.au/visit/scitech-library"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1577806585,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1619638888,
+            "tags": {
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "diet:vegan": "only",
+              "name": "Green Gourmet",
+              "opening_hours": "Mo-Th 12:00-15:00,17:30-21:30; Fr-Sa 12:00-15:00,17:30-22:30",
+              "reservation": "yes",
+              "website": "https://www.greengourmet.com.au/pages/newtown-restaurant"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1619638889,
+            "tags": {
+              "addr:housenumber": "113",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "cuisine": "indian",
+              "name": "Green Mushroom",
+              "opening_hours": "Mo-Su 17:00-22:00, Th-Sa 11:30-14:00",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833317189,
+            "tags": {
+              "addr:housenumber": "32-36",
+              "addr:street": "City Road",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "brand": "Toby's Estate",
+              "brand:wikidata": "Q117006060",
+              "check_date": "2025-10",
+              "check_date:opening_hours": "2025-10",
+              "cuisine": "coffee_shop",
+              "highchair": "yes",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "stool",
+              "name": "Toby's Estate",
+              "opening_hours": "Mo-Fr 07:30-15:00, Sa-Su 08:00-15:00",
+              "outdoor_seating": "no",
+              "power_supply": "yes",
+              "source": "photo",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "website": "https://www.tobysestate.com.au/cafe-finder/chippendale"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1833899653,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "30",
+              "addr:postcode": "2050",
+              "addr:street": "Pyrmont Bridge Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "name": "Izakaya Shogun",
+              "opening_hours": "Mo-Sa 12:00-15:00, Mo-Su 17:30-21:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1894327023,
+            "tags": {
+              "addr:housenumber": "53-55",
+              "addr:postcode": "2037",
+              "addr:street": "Glebe Point Road",
+              "addr:suburb": "Glebe",
+              "amenity": "cafe",
+              "check_date": "2025-11-04",
+              "name": "The Wedge Espresso",
+              "opening_hours": "Mo-Sa 07:00-14:30; Su 08:00-14:00",
+              "toilets:wheelchair": "yes",
+              "website": "http://wedgeespresso.com/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2136793910,
+            "tags": {
+              "addr:housenumber": "17",
+              "addr:postcode": "2050",
+              "addr:street": "Fowler Street",
+              "addr:suburb": "Camperdown",
+              "amenity": "cafe",
+              "check_date:opening_hours": "2025-07-05",
+              "cuisine": "coffee_shop",
+              "name": "Store Espresso",
+              "opening_hours": "Mo-Sa 07:00-17:00, Su 07:30-17:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9517 4157",
+              "smoking": "no",
+              "website": "http://www.storeespresso.com.au/",
+              "wheelchair": "limited",
+              "wifi": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2136793911,
+            "tags": {
+              "addr:housenumber": "15",
+              "addr:postcode": "2050",
+              "addr:street": "Fowler Street",
+              "addr:suburb": "Camperdown",
+              "amenity": "cafe",
+              "check_date": "2026-03",
+              "contact:facebook": "https://www.facebook.com/GatherOnTheGreen",
+              "cuisine": "coffee_shop",
+              "internet_access": "no",
+              "name": "Gather on the Green",
+              "opening_hours": "Mo-Sa 07:00-17:00, Su 08:00-17:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 2 9557 4106",
+              "smoking": "no",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2138828877,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2138868221,
+            "tags": {
+              "leisure": "sports_centre",
+              "name": "Camperdown Fitness"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2138868228,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-09",
+              "cuisine": "coffee_shop",
+              "name": "The Twelve Cafe",
+              "opening_hours": "Mo-Fr 06:00-14:00; Sa,Su 06:00-14:30",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2163387594,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Grounded 2050",
+              "opening_hours": "Mo-Fr 06:00-15:30; Sa 06:00-13:30"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2170430679,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Taste Baguette"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2170430682,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "cafe;diner",
+              "name": "Parma Cucina and Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2170430692,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Carslaw Kitchen"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2337760355,
+            "tags": {
+              "addr:housenumber": "156",
+              "addr:postcode": "2042",
+              "addr:street": "Missenden Road",
+              "addr:suburb": "Newtown",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Hoochie Mamma Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2365233655,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Favola",
+              "opening_hours": "Mo-Su 17:00-22:00, Sa,Su 11:30-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2623046557,
+            "tags": {
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "internet_access": "wlan",
+              "name": "Lifehouse Cafe",
+              "note": "Excellent coffee!",
+              "opening_hours": "Mo-Fr 06:30-16:00; Sa 09:30-13:00; Su,PH off",
+              "smoking": "no",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2789946879,
+            "tags": {
+              "addr:housenumber": "176",
+              "addr:postcode": "2050",
+              "addr:street": "Salisbury Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Salisbury Spice Thai",
+              "opening_hours": "17:30-21:30",
+              "phone": "+61 2 9516 0708",
+              "smoking": "no",
+              "website": "http://www.salisburyspicethai.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2938269401,
+            "tags": {
+              "addr:housenumber": "90-92",
+              "addr:postcode": "2042",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "pharmacy",
+              "dispensing": "yes",
+              "healthcare": "pharmacy",
+              "name": "Day & Night Chemist @ Newtown",
+              "opening_hours": "Mo-Sa 09:00-21:00; Su 10:00-21:00",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2956549876,
+            "tags": {
+              "addr:postcode": "2048",
+              "addr:street": "Bridge Road",
+              "addr:suburb": "Stanmore",
+              "amenity": "cafe",
+              "name": "Freddy's Cafe",
+              "opening_hours": "Mo-Fr 07:00-14:00",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2958861483,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Matty & John's Espresso Bar",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2965437480,
+            "tags": {
+              "addr:housenumber": "336",
+              "addr:postcode": "2008",
+              "addr:street": "Abercrombie Street",
+              "addr:suburb": "Darlington",
+              "amenity": "cafe",
+              "name": "Cafe Abercrombie",
+              "opening_hours": "Mo-Sa 05:00-16:00",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2968344432,
+            "tags": {
+              "addr:housenumber": "51",
+              "addr:postcode": "2037",
+              "addr:street": "Glebe Point Road",
+              "addr:suburb": "Glebe",
+              "amenity": "cafe",
+              "name": "Sappho's Books, Cafe & Wine Bar",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2968346238,
+            "tags": {
+              "addr:housenumber": "35",
+              "addr:postcode": "2037",
+              "addr:street": "Glebe Point Road",
+              "addr:suburb": "Glebe",
+              "amenity": "cafe",
+              "name": "Well Connected Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3211894061,
+            "tags": {
+              "leisure": "playground",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3219684765,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Thai La Ong",
+              "note": "$7 lunch specials!",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3278462759,
+            "tags": {
+              "addr:housenumber": "138",
+              "addr:postcode": "2050",
+              "addr:street": "Parramatta Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "name": "Headquarters Bistro"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3278463861,
+            "tags": {
+              "addr:housenumber": "154",
+              "addr:postcode": "2050",
+              "addr:street": "Parramatta Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "name": "Open Korea",
+              "opening_hours": "Su 16:30-23:00; Mo-Fr 11:30-15:00,16:30-23:00; Sa 11:30-23:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3278466568,
+            "tags": {
+              "addr:housenumber": "12-14",
+              "addr:postcode": "2050",
+              "addr:state": "NSW",
+              "addr:street": "Layton Street",
+              "addr:suburb": "Camperdown",
+              "addr:unit": "28",
+              "amenity": "restaurant",
+              "name": "Urban Pizza Bar",
+              "opening_hours": "Mo-Su 16:00-21:30",
+              "phone": "+61 2 9557 8885",
+              "website": "https://www.urbanpizzabar.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3278466664,
+            "tags": {
+              "addr:housenumber": "12-14",
+              "addr:postcode": "2050",
+              "addr:street": "Layton Street",
+              "addr:suburb": "Camperdown",
+              "amenity": "cafe",
+              "name": "Bion Societe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3464150309,
+            "tags": {
+              "addr:housenumber": "130",
+              "addr:postcode": "2042",
+              "addr:street": "Carillon Avenue",
+              "addr:suburb": "Newtown",
+              "addr:unit": "8G",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Cordial"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3464317841,
+            "tags": {
+              "addr:housenumber": "6-8",
+              "addr:postcode": "2042",
+              "addr:street": "O'Connell Street",
+              "addr:suburb": "Newtown",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Brewtown"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3466559465,
+            "tags": {
+              "addr:housenumber": "2",
+              "addr:postcode": "2042",
+              "addr:street": "O'Connell Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "cuisine": "greek",
+              "name": "Steki Taverna"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3951218959,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Thanh Binh"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3951218960,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Thai Riffic"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3951219057,
+            "tags": {
+              "addr:housenumber": "18-20",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "bar": "yes",
+              "contact:email": "enquiries@rubyos.com.au",
+              "name": "Rubyos",
+              "opening_hours": "Fr-Sa 12:00-15:30; Tu-Sa 17:30-23:00",
+              "opening_hours:kitchen": "Fr-Sa 12:00-14:30; Tu-Sa 17:30-21:30",
+              "phone": "+61 2 9557 2669",
+              "website": "https://rubyos.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3951219160,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Mad Pizza eBar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3951219457,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Blossoming Lotus"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3977545469,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Priceline Pharmacy",
+              "brand:wikidata": "Q7242652",
+              "brand:wikipedia": "en:Priceline (Australia)",
+              "check_date": "2025-06-21",
+              "dispensing": "yes",
+              "healthcare": "pharmacy",
+              "level": "3",
+              "name": "Priceline Pharmacy",
+              "website": "https://www.priceline.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4115291422,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "A30",
+              "addr:place": "The Arena Sports Centre",
+              "addr:postcode": "2008",
+              "addr:state": "NSW",
+              "addr:street": "Western Drive",
+              "addr:suburb": "Darlington",
+              "climbing:boulder": "yes",
+              "climbing:toprope": "yes",
+              "fee": "yes",
+              "indoor": "yes",
+              "leisure": "sports_centre",
+              "name": "SUSF The Ledge",
+              "opening_hours": "Mo-Fr 12:00-22:00; Sa 11:00-17:00",
+              "phone": "+61 2 9351 4960",
+              "sport": "climbing",
+              "website": "https://www.susf.com.au/the-ledge.html"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4551849191,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "ThanhBinh Restaurant",
+              "name:en": "ThanhBinh Restaurant",
+              "name:vi": "Quan Thanh Binh"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5300089045,
+            "tags": {
+              "amenity": "cafe",
+              "changing_table": "no",
+              "name": "Handcraft Specialty Coffee",
+              "outdoor_seating": "yes",
+              "smoking": "no",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5586150042,
+            "tags": {
+              "addr:postcode": "2050",
+              "addr:suburb": "Camperdown",
+              "amenity": "school",
+              "contact:email": "rpahos-s.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9516 4853",
+              "contact:phone": "+61 2 9519 9934",
+              "fee": "no",
+              "name": "Royal Prince Alfred Hospital School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "special",
+              "start_date": "1924-08-01",
+              "website": "http://www.rpahos-s.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5624657599,
+            "tags": {
+              "leisure": "sports_centre",
+              "name": "The Ledge",
+              "sport": "climbing"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5708300758,
+            "tags": {
+              "addr:housenumber": "25",
+              "addr:postcode": "2050",
+              "addr:state": "NSW",
+              "addr:street": "Parramatta Road",
+              "addr:suburb": "Camperdown",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "brand": "Nando's",
+              "brand:wikidata": "Q3472954",
+              "capacity": "0",
+              "cuisine": "chicken;portuguese",
+              "level": "1",
+              "name": "Nando's",
+              "opening_hours": "Mo-Su 10:00-22:00",
+              "outdoor_seating": "yes",
+              "smoking": "no",
+              "takeaway": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5813784888,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-11-04",
+              "name": "Baja Cantina",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5813784889,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-04",
+              "name": "Chocolateria San Churro",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5813784901,
+            "tags": {
+              "amenity": "cafe",
+              "changing_table": "yes",
+              "check_date": "2025-02-09",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "dog": "yes",
+              "indoor_seating": "yes",
+              "name": "Dirty Red",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "takeaway": "yes",
+              "toilets:wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5843828189,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Grumpy Donuts",
+              "opening_hours": "Mo-Fr 09:00-17:00; Sa,Su 09:00-16:00",
+              "phone": "+61 403 837 898",
+              "website": "https://grumpydonuts.com"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5844879535,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Boss Lady Food & Co."
+            }
+          },
+          {
+            "type": "node",
+            "id": 6138478485,
+            "tags": {
+              "addr:housenumber": "170-172",
+              "addr:postcode": "2042",
+              "addr:street": "Missenden Road",
+              "air_conditioning": "no",
+              "amenity": "restaurant",
+              "name": "Bella Brutta",
+              "opening_hours": "Mo-Fr 17:00-18:00+; Sa,Su 16:00-18:00+",
+              "smoking": "no",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6901209379,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Ralph's Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6901634579,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Grandstand"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6901732598,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Forum",
+              "opening_hours": "Mo-Fr 07:00-15:30",
+              "website": "https://forum.catering/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6907320663,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Engo Grill"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6910779585,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "chinese"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6914017805,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6914022296,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Courtyard Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6914028406,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6914038226,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Ralph's Cafe",
+              "opening_hours": "Mo-Th 06:30-18:00; Fr 06:30-17:30; Sa 07:30-15:00; Su off"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6933606178,
+            "tags": {
+              "amenity": "cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7055897287,
+            "tags": {
+              "addr:housenumber": "45",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "cuisine": "thai",
+              "name": "Charles Thai",
+              "opening_hours": "Mo-Fr 11:00-21:30; Sa 11:30-21:30; Su 16:30-21:30",
+              "phone": "+61 2 9516 4510",
+              "website": "https://charlesthai.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7728132792,
+            "tags": {
+              "addr:housenumber": "62-64",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "changing_table": "no",
+              "contact:facebook": "callereymexican",
+              "contact:instagram": "calle.rey",
+              "cuisine": "mexican",
+              "diet:vegan": "only",
+              "name": "Calle Rey",
+              "opening_hours": "Tu-Sa 05:00-21:00",
+              "phone": "+61 475 587 074",
+              "reservation": "yes",
+              "smoking": "no",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "toilets:access": "customers",
+              "toilets:wheelchair": "no",
+              "website": "https://shareplantbased.com/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9894611313,
+            "tags": {
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "addr:unit": "2-4",
+              "amenity": "cafe",
+              "check_date": "2025-01",
+              "cuisine": "coffee_shop",
+              "name": "Double Barrel Coffee + Food house"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9894611314,
+            "tags": {
+              "addr:housenumber": "18-20",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "addr:unit": "1",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Ameru Espresso Bar",
+              "outdoor_seating": "no",
+              "website": "https://amerucoffee.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10069624651,
+            "tags": {
+              "addr:housenumber": "120",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "delivery": "yes",
+              "name": "Hanoi On King"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10131610766,
+            "tags": {
+              "addr:housenumber": "3",
+              "addr:street": "City Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "cafe",
+              "name": "Gardener\u2019s Lodge Cafe",
+              "outdoor_seating": "yes",
+              "website": "https://gardenerslodgecafe.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11207651993,
+            "tags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "Women and Babies Services",
+              "operator": "Royal Prince Alfred Hospital"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11345458030,
+            "tags": {
+              "addr:postcode": "2050",
+              "amenity": "cafe",
+              "email": "hello@soundssydney.com.au",
+              "name": "Sounds Sydney",
+              "opening_hours": "Mo-Fr 09:30-15:30; Sa-Su 11:00-15:30",
+              "outdoor_seating": "yes",
+              "phone": "+61 451 131 905",
+              "website": "https://www.soundssydney.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11978372669,
+            "tags": {
+              "addr:housenumber": "284",
+              "addr:postcode": "2037",
+              "addr:street": "Bridge Road",
+              "amenity": "cafe",
+              "contact:instagram": "delisia_au",
+              "cuisine": "sandwich",
+              "name": "D\u00e9li/sia panino & espresso",
+              "website": "https://linktr.ee/delisia_a"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12247580258,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Merchants of Ultimo",
+              "website": "https://merchantsofultimo.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12360499420,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "greek",
+              "indoor_seating": "yes",
+              "name": "Zeus Street Greek",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12438333795,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "indoor_seating": "yes",
+              "name": "Motto Motto",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12483743291,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-06",
+              "indoor_seating": "yes",
+              "name": "Black Cherry",
+              "opening_hours": "Mo-Fr 07:00-16:00;Sa-Su 07:30-15:00",
+              "outdoor_seating": "no",
+              "toilets": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12584396601,
+            "tags": {
+              "addr:housenumber": "134",
+              "addr:postcode": "2042",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "name": "Hikaru Japanese Restaurant",
+              "opening_hours": "Mo-Th 11:30-15:00, 17:30-22:00; Fr 11:30-15:00, 17:30-22:30; Sa 11:30-22:30; Su 11:30-22:00",
+              "phone": "+61 2 9516 5959"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13279332545,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Priceline Pharmacy",
+              "brand:wikidata": "Q7242652",
+              "check_date": "2025-11-04",
+              "healthcare": "pharmacy",
+              "name": "Priceline Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13327464091,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Priceline Pharmacy",
+              "brand:wikidata": "Q7242652",
+              "healthcare": "pharmacy",
+              "level": "3",
+              "name": "Priceline Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13635617995,
+            "tags": {
+              "access": "customers",
+              "check_date": "2026-03-11",
+              "fee": "no",
+              "leisure": "playground",
+              "operator": "Camperdown Commons",
+              "panoramax": "64bdcb60-0286-4858-8f11-df01be1fe6c6",
+              "website": "https://camperdown.commons.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13637707036,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese;ramen",
+              "name": "Goku",
+              "outdoor_seating": "yes",
+              "website": "https://ramengoku.com.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 4332381,
+            "tags": {
+              "leisure": "park",
+              "name": "Camperdown Memorial Rest Park",
+              "source:name": "NSW LPI Base Map",
+              "wikidata": "Q21927960"
+            }
+          },
+          {
+            "type": "way",
+            "id": 46208180,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 46212891,
+            "tags": {
+              "building": "university",
+              "building:levels": "3",
+              "leisure": "sports_centre",
+              "name": "University Sports & Aquatic Centre",
+              "operator": "The University of Sydney",
+              "source": "nearmap"
+            }
+          },
+          {
+            "type": "way",
+            "id": 46379795,
+            "tags": {
+              "highway": "footway",
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 46380943,
+            "tags": {
+              "leisure": "park",
+              "source": "nearmap"
+            }
+          },
+          {
+            "type": "way",
+            "id": 148331274,
+            "tags": {
+              "leisure": "park",
+              "name": "Minogue Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 161840131,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Charles Kernan Reserve",
+              "not:name": "Charles Keenan Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "source": "survey",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/charles-kernan-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 172612446,
+            "tags": {
+              "access": "yes",
+              "alt_name": "Orphan School Creek Playground",
+              "dog": "leashed",
+              "email": "council@cityofsydney.nsw.gov.au",
+              "leisure": "playground",
+              "name": "Wood Street Playground",
+              "operator": "City of Sydney",
+              "phone": "+61 2 9265 9333",
+              "source": "local_knowledge;bing",
+              "website": "https://www.cityofsydney.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 172614883,
+            "tags": {
+              "addr:housenumber": "98-104",
+              "addr:street": "Parramatta Road",
+              "amenity": "cafe",
+              "building": "yes",
+              "building:levels": "2",
+              "name": "Deus Cafe",
+              "opening_hours": "Mo-Su 07:00-18:00+",
+              "outdoor_seating": "no",
+              "smoking": "no",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 172734774,
+            "tags": {
+              "leisure": "park",
+              "name": "Camperdown Park",
+              "source:boundary": "LPI Base Map June 2018",
+              "website": "http://www.marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/",
+              "wikidata": "Q21927961"
+            }
+          },
+          {
+            "type": "way",
+            "id": 172734776,
+            "tags": {
+              "leisure": "park",
+              "name": "O\u2019Dea Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173921147,
+            "tags": {
+              "description": "Popular for dogs, provides plastic bags to dog owners.",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Hollis Park",
+              "source": "local knowledge, bing",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/hollis-park",
+              "wikidata": "Q21928931"
+            }
+          },
+          {
+            "type": "way",
+            "id": 205131028,
+            "tags": {
+              "leisure": "park",
+              "name": "Lawn",
+              "operator": "The University of Sydney"
+            }
+          },
+          {
+            "type": "way",
+            "id": 206334013,
+            "tags": {
+              "access": "yes",
+              "addr:housenumber": "43",
+              "addr:postcode": "2042",
+              "addr:street": "O'Connell Street",
+              "addr:suburb": "Newtown",
+              "leisure": "playground",
+              "name": "Goddard Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 206947765,
+            "tags": {
+              "fee": "yes",
+              "leisure": "sports_centre",
+              "name": "Victoria Park Pool",
+              "opening_hours": "06:00-20:00; PH 07:00-19:00",
+              "sport": "swimming",
+              "website": "https://www.vppool.com.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 206967239,
+            "tags": {
+              "addr:housenumber": "57-59",
+              "addr:postcode": "2050",
+              "addr:street": "Missenden Street",
+              "amenity": "hospital",
+              "emergency": "yes",
+              "healthcare": "hospital",
+              "name": "Royal Prince Alfred Hospital",
+              "short_name": "RPA",
+              "source:geometry": "https://ehealthcarparkbackend.azurewebsites.net/Images/RPA%20Final%20Site%20Map.jpg",
+              "website": "https://www.slhd.nsw.gov.au/rpa/",
+              "wheelchair": "yes",
+              "wikidata": "Q7374738",
+              "wikipedia": "en:Royal Prince Alfred Hospital"
+            }
+          },
+          {
+            "type": "way",
+            "id": 208642595,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 208642636,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 208642642,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 208642645,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 208642653,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 209795718,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 233704540,
+            "tags": {
+              "leisure": "park",
+              "name": "The Quadrangle"
+            }
+          },
+          {
+            "type": "way",
+            "id": 247979696,
+            "tags": {
+              "addr:postcode": "2037",
+              "addr:suburb": "Glebe",
+              "alt_name": "Glebe Public School",
+              "amenity": "school",
+              "contact:email": "glebe-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9552 1703",
+              "contact:phone": "+61 2 9660 4549",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Glebe Primary School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "259",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1858-11-01",
+              "website": "https://www.glebe-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 269107853,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 269107854,
+            "tags": {
+              "check_date": "2023-11-13",
+              "leisure": "park",
+              "name": "Seamer Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273013457,
+            "tags": {
+              "addr:housenumber": "31A",
+              "addr:postcode": "2050",
+              "addr:street": "Mallett Street",
+              "addr:suburb": "Camperdown",
+              "amenity": "restaurant",
+              "name": "Camperdown Commons",
+              "outdoor_seating": "yes",
+              "website": "https://camperdown.commons.com.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273054495,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273063728,
+            "tags": {
+              "access": "yes",
+              "dog": "no",
+              "leisure": "playground",
+              "operator": "Marrickville Council",
+              "survey:date": "2022-02-16"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273906835,
+            "tags": {
+              "addr:postcode": "2050",
+              "addr:street": "Salisbury Road",
+              "addr:suburb": "Camperdown",
+              "leisure": "park",
+              "name": "Peter Cotter Reserve",
+              "website": "http://www.marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 273948536,
+            "tags": {
+              "leisure": "park",
+              "name": "George Smith Playground",
+              "website": "http://www.marrickville.nsw.gov.au/en/outandabout/parks-and-reserves/park-locations-and-facilities/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 279681991,
+            "tags": {
+              "addr:housenumber": "24",
+              "addr:postcode": "2042",
+              "addr:street": "Hordern Street",
+              "addr:suburb": "Newtown",
+              "leisure": "park",
+              "name": "Ernest Wright Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 279681992,
+            "tags": {
+              "addr:housenumber": "3",
+              "addr:postcode": "2042",
+              "addr:street": "Egan Street",
+              "addr:suburb": "Newtown",
+              "leisure": "park",
+              "name": "M.J Hayes Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 290321469,
+            "tags": {
+              "addr:housenumber": "189",
+              "addr:postcode": "2042",
+              "addr:street": "Missenden Road",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "building": "yes",
+              "cuisine": "lebanese",
+              "name": "Al Aseel",
+              "opening_hours": "Mo-Su 11:00-22:00",
+              "phone": "+61 2 9550 3194",
+              "smoking": "no",
+              "website": "https://www.alaseel.com.au/",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 290321470,
+            "tags": {
+              "addr:housenumber": "195",
+              "addr:postcode": "2042",
+              "addr:street": "Missenden Road",
+              "addr:suburb": "Newtown",
+              "amenity": "cafe",
+              "building": "yes",
+              "cuisine": "coffee_shop",
+              "name": "Cafe Felix",
+              "opening_hours": "Mo-Fr 07:00-16:00, Sa-Su 08:00-16:00",
+              "smoking": "no",
+              "website": "https://cafefelixsydney.com/",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 299943556,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 411017201,
+            "tags": {
+              "addr:housenumber": "20",
+              "addr:street": "City Road",
+              "amenity": "cafe",
+              "cuisine": "chinese",
+              "name": "3Q Cafe 6 Noodle Bar",
+              "source": "LPI NSW Base Map; LPI NSW Imagery; local knowledge"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423230445,
+            "tags": {
+              "addr:housenumber": "170",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "building": "yes",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "D'Munchies",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423230446,
+            "tags": {
+              "addr:housenumber": "130",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "building": "yes",
+              "cuisine": "thai",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "height": "7",
+              "name": "Atom Thai"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423231135,
+            "tags": {
+              "addr:housenumber": "124",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "building": "yes",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "Schnitzel House"
+            }
+          },
+          {
+            "type": "way",
+            "id": 460473789,
+            "tags": {
+              "addr:housenumber": "181",
+              "addr:postcode": "2037",
+              "addr:state": "NSW",
+              "addr:street": "Arundel Street",
+              "addr:suburb": "Forest Lodge",
+              "dog": "leashed",
+              "email": "council@cityofsydney.nsw.gov.au",
+              "leisure": "park",
+              "name": "Arundel Street Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "phone": "+61 2 9265 9333",
+              "website": "https://www.cityofsydney.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 548632964,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 550183743,
+            "tags": {
+              "leisure": "park",
+              "name": "Michael Kelly Rest Area",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "ref": "MI01"
+            }
+          },
+          {
+            "type": "way",
+            "id": 560066434,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 560066437,
+            "tags": {
+              "leisure": "park",
+              "name": "Douglas Grant Memorial Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600246780,
+            "tags": {
+              "addr:postcode": "2037",
+              "addr:state": "NSW",
+              "addr:street": "Bridge Road",
+              "addr:suburb": "Forest Lodge",
+              "amenity": "school",
+              "contact:email": "forestlodg-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9660 5045",
+              "contact:phone": "+61 2 9660 3530",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Forest Lodge Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "347",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1883-01-01",
+              "website": "https://www.forestlodg-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600907465,
+            "tags": {
+              "addr:postcode": "2008",
+              "amenity": "school",
+              "contact:email": "darlington-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9550 4587",
+              "contact:phone": "+61 2 9516 2300",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Darlington Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "234",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1878-03-01",
+              "website": "https://www.darlington-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600907466,
+            "tags": {
+              "addr:postcode": "2042",
+              "addr:suburb": "Newtown",
+              "amenity": "school",
+              "contact:email": "newtownn-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9550 4607",
+              "contact:phone": "+61 2 9517 1110",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Newtown North Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "283",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1883-01-01",
+              "website": "https://www.newtownn-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600907467,
+            "tags": {
+              "addr:housenumber": "127",
+              "addr:postcode": "2050",
+              "addr:street": "Parramatta Road",
+              "addr:suburb": "Camperdown",
+              "amenity": "school",
+              "attribution:name": "James Livingstone",
+              "contact:email": "bridgerd-s.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9519 6418",
+              "fee": "no",
+              "name": "Bridge Road School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "phone": "+61 2 9519 8389",
+              "school:enrolment": "30",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "special",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1962-05-01",
+              "website": "https://www.bridgerd-s.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 610166678,
+            "tags": {
+              "addr:housenumber": "2-10",
+              "addr:postcode": "2050",
+              "addr:state": "NSW",
+              "addr:street": "Larkin Street",
+              "addr:suburb": "Camperdown",
+              "check_date": "2023-11-15",
+              "dog": "leashed",
+              "leisure": "park",
+              "name": "Larkin Street Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "source": "local knowledge;http://www.cityofsydney.nsw.gov.au/__data/assets/pdf_file/0004/138748/Appendix-D5-Site-Nos-400-498,-644-and-647.pdf"
+            }
+          },
+          {
+            "type": "way",
+            "id": 610175386,
+            "tags": {
+              "access": "yes",
+              "addr:housenumber": "205-209",
+              "addr:postcode": "2037",
+              "addr:state": "NSW",
+              "addr:street": "St Johns Road",
+              "addr:suburb": "Forest Lodge",
+              "dog": "no",
+              "leisure": "playground",
+              "name": "May Pitt Playground",
+              "operator": "City of Sydney"
+            }
+          },
+          {
+            "type": "way",
+            "id": 618252132,
+            "tags": {
+              "addr:housenumber": "12",
+              "addr:street": "Chester Street",
+              "addr:unit": "7",
+              "building": "warehouse",
+              "building:levels": "3",
+              "building:material": "brick",
+              "fee": "yes",
+              "leisure": "sports_centre",
+              "name": "NOMAD Bouldering Gym",
+              "opening_hours": "Mo-Fr 06:00-22:00; Sa-Su 08:00-21:30; PH 08:00-22:00",
+              "phone": "+61 402 670 784",
+              "sport": "climbing",
+              "website": "https://www.nomadbouldering.com.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 682335548,
+            "tags": {
+              "amenity": "restaurant",
+              "building": "yes",
+              "height": "7",
+              "name": "Brewtown"
+            }
+          },
+          {
+            "type": "way",
+            "id": 682335549,
+            "tags": {
+              "amenity": "restaurant",
+              "building": "yes",
+              "height": "7",
+              "level": "2"
+            }
+          },
+          {
+            "type": "way",
+            "id": 737206630,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 740583660,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 740583661,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 817428312,
+            "tags": {
+              "alt_name": "Badu Reserve",
+              "leisure": "park",
+              "name": "Badu Park",
+              "website": "https://www.innerwest.nsw.gov.au/explore/parks-sport-and-recreation/parks-and-playgrounds/parks-by-suburb/annandale-parks/badu-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 817954557,
+            "tags": {
+              "alt_name": "Caldwell Park",
+              "description": "On the border of Forest Lodge and Camperdown Orphan School Creek features a restored natural creek and a children's playground.",
+              "leisure": "park",
+              "name": "Orphan School Creek",
+              "operator": "City of Sydney Council",
+              "operator:phone:AU": "1300 651 301",
+              "operator:type": "public",
+              "operator:website": "https://www.sydney.nsw.gov.au",
+              "operator:wikidata": "Q56477532",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/orphan-school-creek"
+            }
+          },
+          {
+            "type": "way",
+            "id": 820789468,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 823991293,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 839493877,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164404,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164405,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164406,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164407,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164408,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164409,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164411,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 866164412,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 937482385,
+            "tags": {
+              "leisure": "park",
+              "name": "Matheison Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 937482391,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "Cahill Street Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 937482392,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 938290228,
+            "tags": {
+              "leisure": "park",
+              "name": "Lyons Road Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 940858249,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 942468101,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 942468102,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 957112629,
+            "tags": {
+              "amenity": "restaurant",
+              "building": "yes",
+              "name": "The Yard"
+            }
+          },
+          {
+            "type": "way",
+            "id": 983435296,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 983435297,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 983435298,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1008974197,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1009737557,
+            "tags": {
+              "access": "private",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1036184769,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1036487539,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1036487540,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1036487541,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1060958018,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1075634584,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1078411577,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1079380693,
+            "tags": {
+              "amenity": "cafe",
+              "building": "yes",
+              "name": "Coffee @ Fisher",
+              "operator": "University of Sydney"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1079900957,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1136933123,
+            "tags": {
+              "addr:housenumber": "4",
+              "addr:postcode": "2038",
+              "addr:state": "NSW",
+              "addr:street": "Booth Street",
+              "addr:suburb": "Annandale",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "building": "yes",
+              "cuisine": "turkish",
+              "diet:vegetarian": "yes",
+              "name": "Fez & Co.",
+              "opening_hours": "Mo-Su 05:30-17:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "phone": "+61 2 9552 2425",
+              "smoking": "no",
+              "website": "https://fezandco.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1204079400,
+            "tags": {
+              "landuse": "grass",
+              "leisure": "park",
+              "name": "Law Lawns"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1223089325,
+            "tags": {
+              "leisure": "park",
+              "name": "Shepherd Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1302199200,
+            "tags": {
+              "amenity": "hospital",
+              "healthcare": "hospital",
+              "name": "Chris O'Brien Lifehouse",
+              "source": "https://www.health.gov.au/resources/publications/list-of-declared-hospitals",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1369804698,
+            "tags": {
+              "leisure": "park",
+              "name": "Daranggara Park",
+              "source:name": "https://meetings.cityofsydney.nsw.gov.au/ieDecisionDetails.aspx?AIId=18944"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1385471396,
+            "tags": {
+              "leisure": "park"
+            }
+          }
+        ]
+      },
+      "endpoint": "https://overpass.kumi.systems/api/interpreter"
+    }
+  ]
+}

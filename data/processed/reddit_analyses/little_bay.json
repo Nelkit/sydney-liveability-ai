@@ -1,0 +1,101 @@
+{
+  "suburb": "Little Bay",
+  "post_count": 30,
+  "fetched_at": "2026-04-18T02:12:20.986070+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.499,
+      "mentions": 25
+    },
+    "safety": {
+      "score": 0.542,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.331,
+      "mentions": 11
+    },
+    "nightlife": {
+      "score": 0.371,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.093,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.602,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.781,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.982,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.5158,
+    "surprise": 0.0893,
+    "anger": 0.039,
+    "joy": 0.1289,
+    "disgust": 0.148,
+    "fear": 0.017,
+    "sadness": 0.062
+  },
+  "narrative": "Reddit discussions about Little Bay are most positive about noise (0.98) and green space (0.78). Residents are most critical about transport (0.33) and affordability (0.09). This analysis is based on 30 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "What movie is being filmed at Little Bay?\nAt the golf course here. Anyone know what movie is being filmed?",
+      "url": "https://reddit.com/r/sydney/comments/1ouv396/what_movie_is_being_filmed_at_little_bay/",
+      "score": 255
+    },
+    {
+      "text": "Little Bay beach",
+      "url": "https://reddit.com/r/sydney/comments/1fx8v02/little_bay_beach/",
+      "score": 201
+    },
+    {
+      "text": "Long exposure sunset shot taken from the rocks at Little Bay. Obviously not taken today lol",
+      "url": "https://reddit.com/r/sydney/comments/1mcy3ii/long_exposure_sunset_shot_taken_from_the_rocks_at/",
+      "score": 144
+    },
+    {
+      "text": "\"What is that, a Titleist? A hole in one, huh.\" - Little Bay public showers\nI",
+      "url": "https://reddit.com/r/sydney/comments/1ie9lpf/what_is_that_a_titleist_a_hole_in_one_huh_little/",
+      "score": 70
+    },
+    {
+      "text": "I expect Little Bay has a similar story - it would have a better name of not for it's proximity to Long Bay.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvno62b/",
+      "score": 42
+    },
+    {
+      "text": "I cross from Randwick to Bayside a lot as I live in Little Bay and shop at Southpoint and Eastgardens. The difference in management is just insane. Traffic management is just horrible on the wrong sid",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki7t8em/",
+      "score": 31
+    },
+    {
+      "text": "These have to be the worst bus services in Sydney\nThese 3 buses service have to be the worst in Sydney or at least in the Eastern suburbs. This is my analysis of bus encounters as a local Eastern Subu",
+      "url": "https://reddit.com/r/sydney/comments/1axmx4v/these_have_to_be_the_worst_bus_services_in_sydney/",
+      "score": 29
+    },
+    {
+      "text": "I found a tampon at Malabar beach in the water about 2 years back. Thought it was sea life and was going to show the kids.\n\nTurns out a lot washes up around there as little bay beach was closed due to",
+      "url": "https://reddit.com/r/sydney/comments/1aubpl0/is_that_runoff_from_the_darling_harbour/kr3c1kq/",
+      "score": 23
+    },
+    {
+      "text": "This really just sounds like you're shitting on locals enjoying the outdoors. I've lived in hte east for the past 20 years (grew up somewhere else) and been at all hours to everything from bondi to li",
+      "url": "https://reddit.com/r/sydney/comments/1avbkp2/which_establishment_has_the_most_pretentious/kr9sc5s/",
+      "score": 22
+    },
+    {
+      "text": "While Little Bay and Long Bay both take their names from geographical features in the suburbs Little Bay took that simple naming convention from Long Bay (which was actually called Brand, then Malabar",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnfl5y/",
+      "score": 15
+    }
+  ]
+}

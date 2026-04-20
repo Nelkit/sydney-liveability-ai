@@ -1,0 +1,66 @@
+{
+  "suburb": "McMahons Point",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:41.953536+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.728,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.998,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.998,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.998,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.998,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.998,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.998,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6813,
+    "anger": 0.1544,
+    "disgust": 0.0494,
+    "surprise": 0.065,
+    "fear": 0.0177,
+    "sadness": 0.0224,
+    "joy": 0.0099
+  },
+  "narrative": "Reddit discussions about McMahons Point are most positive about affordability (1.00) and transport (1.00). Residents are most critical about community (0.73) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Blues Point Tower was originally intended to be just the first building in a massive ‘modernist’ redevelopment of the entire Blues Point-McMahons Point precinct from Berry’s Bay to Lavender Bay.\n*Crit",
+      "url": "https://reddit.com/r/sydney/comments/1qma461/blues_point_tower_was_originally_intended_to_be/",
+      "score": 67
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2024!\nWelp, fuck again.\n\nThe flood of \"what do I do for New Year's?\" posts are starting, though you might not have noticed them as much since we started referring them ",
+      "url": "https://reddit.com/r/sydney/comments/1h5hf9b/sydney_nye_fireworks_megathread_2024/",
+      "score": 54
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2025!\nWe're four weeks out now. The posts have started, and we'd remind people there is [a Wiki page that you should totally check out.](https://old.reddit.com/r/sydney",
+      "url": "https://reddit.com/r/sydney/comments/1pchenr/sydney_nye_fireworks_megathread_2025/",
+      "score": 47
+    }
+  ]
+}

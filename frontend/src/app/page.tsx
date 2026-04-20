@@ -1,15 +1,17 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
+import { Coffee, Flame, Hexagon, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AssistantSidebar } from "../components/liveability/AssistantSidebar";
 import { importanceOptions, quickChips, suburbs, weightPrompts } from "../components/liveability/data";
+import { DetailedReportModal } from "../components/modals/DetailedReportModal";
 import { OnboardingPanel } from "../components/liveability/OnboardingPanel";
 import { SharedBrand } from "../components/liveability/SharedBrand";
-import { ChatMessage, ImportanceLevelKey, Weights } from "../components/liveability/types";
-import { getResponse, scoreSuburb } from "../components/liveability/utils";
+import { ChatMessage, ImportanceLevelKey, Weights, Suburb } from "../components/liveability/types";
+import { scoreSuburb } from "../components/liveability/utils";
 
 const MapPanel = dynamic(
   () => import("../components/liveability/MapPanel").then((module) => module.MapPanel),
@@ -23,13 +25,196 @@ const initialWeights: Weights = {
   afford: 0
 };
 
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
+const CHAT_ENDPOINT = `${API_BASE_URL}/api/chat`;
+const CIVIC_ENDPOINT = `${API_BASE_URL}/api/civic`;
+const CHAT_PREVIEW_MAX_LENGTH = 420;
+
 const initialLevels: Partial<Record<keyof Weights, ImportanceLevelKey>> = {};
 const PREFERENCES_STORAGE_KEY = "sydney-liveability-preferences-v1";
+const USER_WEIGHTS_STORAGE_KEY = "user_weights";
+
+type UserWeightLabels = {
+  transport?: string;
+  safety?: string;
+  lifestyle?: string;
+  affordability?: string;
+  nightlife?: string;
+};
+
+function getUserWeights() {
+  const defaults = {
+    transport: 0.2,
+    safety: 0.2,
+    lifestyle: 0.2,
+    affordability: 0.2,
+    nightlife: 0.2
+  };
+
+  const importanceMap: Record<string, number> = {
+    "Very important": 4,
+    Important: 3,
+    Neutral: 2,
+    "Not very important": 1,
+    "Not interested": 0
+  };
+
+  try {
+    const stored = window.localStorage.getItem(USER_WEIGHTS_STORAGE_KEY);
+    if (!stored) return defaults;
+
+    const prefs = JSON.parse(stored) as UserWeightLabels;
+    const keys = ["transport", "safety", "lifestyle", "affordability", "nightlife"] as const;
+
+    const raw: Record<(typeof keys)[number], number> = {
+      transport: 0,
+      safety: 0,
+      lifestyle: 0,
+      affordability: 0,
+      nightlife: 0
+    };
+
+    let total = 0;
+    for (const key of keys) {
+      const label = prefs[key];
+      const score = typeof label === "string" ? (importanceMap[label] ?? 2) : 2;
+      raw[key] = score;
+      total += score;
+    }
+
+    if (total === 0) return defaults;
+
+    const weights: Record<(typeof keys)[number], number> = {
+      transport: 0,
+      safety: 0,
+      lifestyle: 0,
+      affordability: 0,
+      nightlife: 0
+    };
+    for (const key of keys) {
+      weights[key] = parseFloat((raw[key] / total).toFixed(4));
+    }
+
+    return weights;
+  } catch {
+    return defaults;
+  }
+}
+
+function extractCenterAndPolygon(geometry: CivicGeometry | Record<string, never>): { center: [number, number]; polygon: [number, number][] } {
+  // Default fallback center (Sydney CBD)
+  const fallback = { center: [-33.8688, 151.2093] as [number, number], polygon: [] as [number, number][] };
+
+  if (!geometry || !("type" in geometry) || geometry.type !== "MultiPolygon" || !Array.isArray(geometry.coordinates)) {
+    return fallback;
+  }
+
+  try {
+    // For MultiPolygon: [[[outer_ring], [hole1], ...], [[outer_ring], ...], ...]
+    // We want the first polygon's outer ring
+    const firstPolygon = geometry.coordinates[0] as unknown[][];
+    if (!Array.isArray(firstPolygon) || firstPolygon.length === 0) {
+      return fallback;
+    }
+
+    const outerRing = firstPolygon[0] as unknown[][];
+    if (!Array.isArray(outerRing) || outerRing.length === 0) {
+      return fallback;
+    }
+
+    // Convert [lng, lat] to [lat, lng] for Leaflet
+    const polygonCoords = outerRing
+      .filter((coord) => Array.isArray(coord) && coord.length >= 2)
+      .map((coord) => [coord[1], coord[0]] as [number, number]);
+
+    if (polygonCoords.length === 0) {
+      return fallback;
+    }
+
+    // Calculate center (centroid of first polygon)
+    const sumLat = polygonCoords.reduce((sum, [lat]) => sum + lat, 0);
+    const sumLng = polygonCoords.reduce((sum, [, lng]) => sum + lng, 0);
+    const center: [number, number] = [sumLat / polygonCoords.length, sumLng / polygonCoords.length];
+
+    return { center, polygon: polygonCoords };
+  } catch {
+    return fallback;
+  }
+}
+
+function convertCivicFeaturesToSuburbs(civicResponse: CivicResponse): Suburb[] {
+  const colorMap: Record<string, string> = {
+    newtown: "#3b82f6",
+    glebe: "#10b981",
+    redfern: "#f59e0b",
+    "surry hills": "#8b5cf6",
+    haymarket: "#ef4444"
+  };
+
+  return civicResponse.features.map((feature) => {
+    const { suburb, liveability_score, safety_score, transport_score, lifestyle_score } = feature.properties;
+    const { center, polygon } = extractCenterAndPolygon(feature.geometry);
+
+    const suburbLower = suburb.toLowerCase();
+    const color = colorMap[suburbLower] || "#6366f1";
+
+    return {
+      id: suburbLower.replace(/\s+/g, "-"),
+      name: suburb,
+      color,
+      scoreBase: {
+        transport: Math.round(transport_score * 100),
+        safety: Math.round(safety_score * 100),
+        lifestyle: Math.round(lifestyle_score * 100),
+        afford: 50 // Placeholder; affordability_score not directly used in scoreSuburb
+      },
+      center,
+      polygon
+    };
+  });
+}
 
 type StoredPreferences = {
   weights: Weights;
   selectedLevels: Partial<Record<keyof Weights, ImportanceLevelKey>>;
   profileReady: boolean;
+};
+
+type ChatApiSource = {
+  text?: string;
+  suburb?: string;
+  source?: string;
+};
+
+type ChatApiResponse = {
+  answer?: string;
+  sources?: ChatApiSource[];
+};
+
+type CivicGeometry = {
+  type: string;
+  coordinates: unknown;
+};
+
+type CivicFeatureProperties = {
+  suburb: string;
+  sa4_area: string;
+  liveability_score: number;
+  safety_score: number;
+  transport_score: number;
+  lifestyle_score: number;
+  nightlife_score: number;
+};
+
+type CivicFeature = {
+  type: "Feature";
+  properties: CivicFeatureProperties;
+  geometry: CivicGeometry | Record<string, never>;
+};
+
+type CivicResponse = {
+  type: "FeatureCollection";
+  features: CivicFeature[];
 };
 
 function isValidWeights(value: unknown): value is Weights {
@@ -96,6 +281,17 @@ function getImportanceVisual(choiceKey: ImportanceLevelKey) {
   };
 }
 
+function toChatPreview(fullAnswerHtml: string): string {
+  const plainText = fullAnswerHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (plainText.length <= CHAT_PREVIEW_MAX_LENGTH) {
+    return fullAnswerHtml;
+  }
+  const previewSlice = plainText.slice(0, CHAT_PREVIEW_MAX_LENGTH);
+  const cutIndex = previewSlice.lastIndexOf(" ");
+  const safePreview = cutIndex > 200 ? previewSlice.slice(0, cutIndex) : previewSlice;
+  return `${safePreview.trim()}...`;
+}
+
 export default function HomePage() {
   const [isHydrated, setIsHydrated] = useState(false);
   const [isAppOpen, setIsAppOpen] = useState(false);
@@ -109,20 +305,47 @@ export default function HomePage() {
   const [onboardingTyping, setOnboardingTyping] = useState(false);
 
   const [selectedSuburbId, setSelectedSuburbId] = useState<string | null>(null);
+  const [detailedReportOpen, setDetailedReportOpen] = useState(false);
+  const [detailedReportSuburb, setDetailedReportSuburb] = useState<string | null>(null);
+  const [detailedReportMessage, setDetailedReportMessage] = useState("");
   const [layer, setLayer] = useState("Liveability");
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [chatTyping, setChatTyping] = useState(false);
   const [chatInput, setChatInput] = useState("");
   const [profileOpen, setProfileOpen] = useState(false);
   const [pdfLoaded, setPdfLoaded] = useState(false);
+  const [civicData, setCivicData] = useState<CivicResponse | null>(null);
+  const [isCivicLoading, setIsCivicLoading] = useState(true);
 
   const popoverRef = useRef<HTMLDivElement | null>(null);
 
   const rankedSuburbs = useMemo(() => {
-    return suburbs
+    // Use real civic data if available.
+    const suburbsToRank = civicData ? convertCivicFeaturesToSuburbs(civicData) : suburbs;
+
+    if (civicData) {
+      // Already ranked by liveability_score from civic endpoint
+      return civicData.features.map((feature, index) => {
+        const suburb = suburbsToRank[index];
+        return { ...suburb, computedScore: Math.round(feature.properties.liveability_score * 100) };
+      });
+    }
+
+    // While civic is loading we show placeholders in map/cards instead of static demo suburbs.
+    if (isCivicLoading) {
+      return [];
+    }
+
+    // Fall back to local scoring for static data
+    return suburbsToRank
       .map((suburb) => ({ ...suburb, computedScore: scoreSuburb(suburb, weights) }))
       .sort((a, b) => b.computedScore - a.computedScore);
-  }, [weights]);
+  }, [weights, civicData, isCivicLoading]);
+
+  const allSuburbsForMap = useMemo(() => {
+    if (isCivicLoading && !civicData) return [];
+    return civicData ? convertCivicFeaturesToSuburbs(civicData) : suburbs;
+  }, [civicData, isCivicLoading]);
 
   useEffect(() => {
     try {
@@ -159,7 +382,42 @@ export default function HomePage() {
     };
 
     window.localStorage.setItem(PREFERENCES_STORAGE_KEY, JSON.stringify(payload));
+
+    const keyToLabel = {
+      transport: getImportanceLabel(selectedLevels.transport),
+      safety: getImportanceLabel(selectedLevels.safety),
+      lifestyle: getImportanceLabel(selectedLevels.lifestyle),
+      affordability: getImportanceLabel(selectedLevels.afford),
+      nightlife: "Neutral"
+    };
+    window.localStorage.setItem(USER_WEIGHTS_STORAGE_KEY, JSON.stringify(keyToLabel));
   }, [isHydrated, profileReady, weights, selectedLevels]);
+
+  useEffect(() => {
+    if (!isHydrated) return;
+
+    setIsCivicLoading(true);
+
+    const numericWeights = getUserWeights();
+    const params = new URLSearchParams(
+      Object.entries(numericWeights).map(([key, value]) => [key, String(value)])
+    );
+
+    void fetch(`${CIVIC_ENDPOINT}?${params.toString()}`, { method: "GET" })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Civic API failed with status ${response.status}`);
+        return response.json() as Promise<CivicResponse>;
+      })
+      .then((data) => {
+        setCivicData(data);
+      })
+      .catch(() => {
+        // Silently fail and continue with static data
+      })
+      .finally(() => {
+        setIsCivicLoading(false);
+      });
+  }, [isHydrated, selectedLevels]);
 
   function startOnboardingConversation() {
     setOnboardingTyping(true);
@@ -199,6 +457,15 @@ export default function HomePage() {
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
   }, []);
+
+  function openDetailedReportFromMessage(messageIndex: number) {
+    const message = chatMessages[messageIndex];
+    if (!message || message.role !== "ai") return;
+
+    setDetailedReportMessage(message.fullHtml ?? message.html);
+    setDetailedReportSuburb(message.detailedSuburb ?? null);
+    setDetailedReportOpen(true);
+  }
 
   function updateWeight(key: keyof Weights, value: number) {
     setWeights((prev) => ({ ...prev, [key]: value }));
@@ -251,34 +518,72 @@ export default function HomePage() {
   }
 
   function onSelectSuburb(name: string) {
-    const suburb = suburbs.find((item) => item.name === name);
+    const suburb = allSuburbsForMap.find((item) => item.name === name);
     if (!suburb) return;
     setSelectedSuburbId(suburb.id);
-
-    const scored = scoreSuburb(suburb, weights);
-    setChatMessages((prev) => [
-      ...prev,
-      {
-        role: "ai",
-        html: `You selected <strong>${suburb.name}</strong>. Current score: <strong style='color:${suburb.color}'>${scored}/100</strong>.`,
-        source: "BOCSAR - City of Sydney ArcGIS - Community Insights 2024 - Reddit"
-      }
-    ]);
+    void sendChat(`Tell me about ${suburb.name}`, suburb.name);
   }
 
-  function sendChat(text?: string) {
+  async function sendChat(text?: string, selectedSuburb?: string) {
     const value = (text ?? chatInput).trim();
     if (!value) return;
+
+    const activeSuburbName = selectedSuburb
+      ?? allSuburbsForMap.find((item) => item.id === selectedSuburbId)?.name
+      ?? null;
 
     setChatMessages((prev) => [...prev, { role: "user", html: value }]);
     setChatInput("");
     setChatTyping(true);
 
-    const response = getResponse(value);
-    setTimeout(() => {
+    try {
+      const apiResponse = await fetch(CHAT_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: value,
+          weights: getUserWeights()
+        })
+      });
+
+      if (!apiResponse.ok) {
+        throw new Error(`Chat API request failed with status ${apiResponse.status}`);
+      }
+
+      const payload = (await apiResponse.json()) as ChatApiResponse;
+      const fullAnswer = (payload.answer ?? "I could not process that question right now.").trim();
+      const answerPreview = toChatPreview(fullAnswer);
+      const source = Array.isArray(payload.sources) && payload.sources.length > 0
+        ? payload.sources
+            .map((item) => [item.source, item.suburb].filter(Boolean).join(" - "))
+            .filter(Boolean)
+            .join(" | ")
+        : "Sydney Liveability API";
+
       setChatTyping(false);
-      setChatMessages((prev) => [...prev, { role: "ai", html: response.text, source: response.source }]);
-    }, 780);
+      setChatMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          html: answerPreview,
+          fullHtml: fullAnswer,
+          detailedSuburb: activeSuburbName,
+          source,
+        },
+      ]);
+    } catch {
+      setChatTyping(false);
+      setChatMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          html: "I could not process that question right now. Please try again.",
+          fullHtml: "I could not process that question right now. Please try again.",
+          detailedSuburb: activeSuburbName,
+          source: "Sydney Liveability API"
+        }
+      ]);
+    }
   }
 
   function togglePdf() {
@@ -300,6 +605,7 @@ export default function HomePage() {
 
   function resetPreferences() {
     window.localStorage.removeItem(PREFERENCES_STORAGE_KEY);
+    window.localStorage.removeItem(USER_WEIGHTS_STORAGE_KEY);
     setWeights(initialWeights);
     setSelectedLevels(initialLevels);
     setProfileReady(false);
@@ -307,6 +613,9 @@ export default function HomePage() {
     setOnboardingMessages([]);
     setOnboardingTyping(false);
     setSelectedSuburbId(null);
+    setDetailedReportOpen(false);
+    setDetailedReportSuburb(null);
+    setDetailedReportMessage("");
     setChatMessages([]);
     setChatTyping(false);
     setChatInput("");
@@ -321,7 +630,7 @@ export default function HomePage() {
 
   return (
     <LayoutGroup>
-      <main className="h-screen overflow-hidden font-['Manrope',sans-serif] text-slateText">
+      <main className="h-screen overflow-hidden text-slateText">
         <AnimatePresence mode="sync" initial={false}>
           {!isAppOpen ? (
             <OnboardingPanel
@@ -359,19 +668,27 @@ export default function HomePage() {
                   <button
                     type="button"
                     onClick={() => setProfileOpen((prev) => !prev)}
-                    className="flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-1 shadow-[0_6px_16px_rgba(15,23,42,0.06)]"
+                    className="inline-flex flex-nowrap items-center justify-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-1 align-middle whitespace-nowrap shadow-[0_6px_16px_rgba(15,23,42,0.06)]"
                   >
-                    <span className="text-[10px] font-bold tracking-[0.04em] text-slate-700">MY PROFILE</span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700">
+                    <span className="inline-flex h-6 items-center justify-center text-[10px]/[1] font-bold tracking-[0.04em] text-slate-700">MY PROFILE</span>
+                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
                       <TrainFront size={10} /> {getImportanceLabel(selectedLevels.transport)}
                     </span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700">
+                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
                       <Shield size={10} /> {getImportanceLabel(selectedLevels.safety)}
                     </span>
-                    <span className="hidden h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px] font-semibold leading-none text-slate-700 sm:inline-flex">
+                    <span className="hidden h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700 sm:inline-flex">
                       <Coffee size={10} /> {getImportanceLabel(selectedLevels.lifestyle)}
                     </span>
                   </button>
+
+                  <Link
+                    href="/overview"
+                    className="ml-2 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-bold tracking-[0.04em] text-slate-700 shadow-[0_6px_16px_rgba(15,23,42,0.06)] transition hover:border-slate-400 hover:text-slate-900"
+                  >
+                    <Hexagon size={11} />
+                    HEX OVERVIEW
+                  </Link>
 
                   {profileOpen ? (
                     <motion.div
@@ -435,8 +752,9 @@ export default function HomePage() {
 
               <div className="relative h-full min-h-0">
                 <MapPanel
-                  suburbs={suburbs}
+                  suburbs={allSuburbsForMap}
                   ranked={rankedSuburbs}
+                  isLoading={isCivicLoading && !civicData}
                   selectedSuburbId={selectedSuburbId}
                   onSelectSuburb={onSelectSuburb}
                   layer={layer}
@@ -453,6 +771,7 @@ export default function HomePage() {
                       onInputChange={setChatInput}
                       onSend={() => sendChat()}
                       onChipSend={sendChat}
+                      onOpenDetailedReport={openDetailedReportFromMessage}
                       chips={quickChips}
                       pdfLoaded={pdfLoaded}
                       onTogglePdf={togglePdf}
@@ -463,6 +782,17 @@ export default function HomePage() {
             </motion.section>
           )}
         </AnimatePresence>
+
+        <DetailedReportModal
+          isOpen={detailedReportOpen}
+          suburb={detailedReportSuburb}
+          messageHtml={detailedReportMessage}
+          onClose={() => {
+            setDetailedReportOpen(false);
+            setDetailedReportSuburb(null);
+            setDetailedReportMessage("");
+          }}
+        />
       </main>
     </LayoutGroup>
   );

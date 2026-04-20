@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "Library_locations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 92, "Name": "Waterloo Library", "Street_number": "770", "Street": "Elizabeth Street", "Street_extra": "", "Suburb": "Waterloo", "Postcode": "2017" }, "geometry": { "type": "Point", "coordinates": [ 151.20657145210501, -33.899335478334201 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 93, "Name": "Glebe Library", "Street_number": "186", "Street": "Glebe Point Road", "Street_extra": "", "Suburb": "Glebe", "Postcode": "2037" }, "geometry": { "type": "Point", "coordinates": [ 151.184906929754987, -33.8779721695932 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 94, "Name": "Kings Cross Library", "Street_number": "50-52", "Street": "Darlinghurst Road", "Street_extra": "Level 1", "Suburb": "Potts Point", "Postcode": "2011" }, "geometry": { "type": "Point", "coordinates": [ 151.223527784003011, -33.874056824565997 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 95, "Name": "Newtown Library", "Street_number": "8-10", "Street": "Brown Street", "Street_extra": "", "Suburb": "Newtown", "Postcode": "2042" }, "geometry": { "type": "Point", "coordinates": [ 151.182758495510996, -33.895340204031697 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 96, "Name": "Surry Hills Library", "Street_number": "405", "Street": "Crown Street", "Street_extra": "", "Suburb": "Surry Hills", "Postcode": "2010" }, "geometry": { "type": "Point", "coordinates": [ 151.213662739194007, -33.885981432289597 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 97, "Name": "Town Hall Library Express", "Street_number": "456", "Street": "Kent Street, Sydney", "Street_extra": "Level 1, Town Hall House", "Suburb": "Sydney", "Postcode": "2000" }, "geometry": { "type": "Point", "coordinates": [ 151.205292026917988, -33.872984010622197 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 98, "Name": "Green Square Library", "Street_number": "355", "Street": "Botany Road", "Street_extra": "", "Suburb": "Zetland", "Postcode": "2017" }, "geometry": { "type": "Point", "coordinates": [ 151.203657895280998, -33.906555151265998 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 99, "Name": "Pyrmont Link", "Street_number": "87-89", "Street": "Harris Street", "Street_extra": "Maybanke Community Centre", "Suburb": "Pyrmont", "Postcode": "2009" }, "geometry": { "type": "Point", "coordinates": [ 151.193113354561007, -33.868825064480099 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 100, "Name": "Customs House Library", "Street_number": "31", "Street": "Alfred Street", "Street_extra": "", "Suburb": "Sydney", "Postcode": "2000" }, "geometry": { "type": "Point", "coordinates": [ 151.210844032647998, -33.862242170378799 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 101, "Name": "Ultimo Library", "Street_number": "40", "Street": "William Henry Street", "Street_extra": "Level 1, Ultimo Community Centre", "Suburb": "Ultimo", "Postcode": "2007" }, "geometry": { "type": "Point", "coordinates": [ 151.19791057586599, -33.877940086234403 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 105, "Name": "Darling Square Library", "Street_number": "1", "Street": "Little Pier Street", "Street_extra": "Level 1 and 2", "Suburb": "Haymarket", "Postcode": "2000" }, "geometry": { "type": "Point", "coordinates": [ 151.202169797381003, -33.877938466542297 ] } }
+]
+}

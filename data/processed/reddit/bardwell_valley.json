@@ -1,0 +1,38 @@
+[
+  {
+    "text": "Nothing near Sydney airport, though there may have been alarms until 9pm from the Bardwell Valley M5 tunnel vents",
+    "suburb": "Bardwell Valley",
+    "score": 25,
+    "created_utc": 1709892730,
+    "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwcrwa/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  },
+  {
+    "text": "From memory, Bardwell Valley is higher elevation than Bardwell Park.",
+    "suburb": "Bardwell Valley",
+    "score": 15,
+    "created_utc": 1710908134,
+    "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvosf88/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  },
+  {
+    "text": "Bardwell Valley has been an official suburb for nearly 30 years now. Tyrell’s was split off Arncliffe in the 1950’s.",
+    "suburb": "Bardwell Valley",
+    "score": 8,
+    "created_utc": 1705556690,
+    "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kied54k/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  },
+  {
+    "text": "Bardwell Valley, which is on top of a hill, because Arncliffe had too many drive-bys about 10 years back",
+    "suburb": "Bardwell Valley",
+    "score": 4,
+    "created_utc": 1705555368,
+    "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiear4y/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  }
+]

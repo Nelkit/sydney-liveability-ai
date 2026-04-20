@@ -1,0 +1,66 @@
+{
+  "suburb": "Kareela",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:37.109437+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.862,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.841,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.879,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.879,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.879,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.879,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8039,
+    "surprise": 0.0534,
+    "anger": 0.0302,
+    "joy": 0.0714,
+    "fear": 0.0112,
+    "disgust": 0.0121,
+    "sadness": 0.0178
+  },
+  "narrative": "Reddit discussions about Kareela are most positive about nightlife (0.88) and transport (0.88). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Navigation Game - Challenge\nBif of fun if you're so inclined, sparked by another discussion. :)\n\nCan you find the route within Sydney between two places that requires the most turns (i.e., taking a tu",
+      "url": "https://reddit.com/r/sydney/comments/1adh7b2/navigation_game_challenge/",
+      "score": 11
+    },
+    {
+      "text": "https://jensensrestaurant.com.au/eat/\n\nI've never been there but my friend has and has recommended it. They have a vegan menu and a private function room. It's in Kareela though, so may not be the loc",
+      "url": "https://reddit.com/r/sydney/comments/1c444e9/historicaesthetically_beautiful_restaurants_with/kznma1z/",
+      "score": 2
+    },
+    {
+      "text": "I’m not sure where Kareela is but I’m not against travelling for the meal! I’ll Google now, thanks!",
+      "url": "https://reddit.com/r/sydney/comments/1c444e9/historicaesthetically_beautiful_restaurants_with/kznn8t8/",
+      "score": 2
+    }
+  ]
+}

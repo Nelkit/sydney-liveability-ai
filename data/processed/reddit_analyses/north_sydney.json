@@ -1,0 +1,101 @@
+{
+  "suburb": "North Sydney",
+  "post_count": 301,
+  "fetched_at": "2026-04-18T01:26:52.344977+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.383,
+      "mentions": 127
+    },
+    "community": {
+      "score": 0.505,
+      "mentions": 228
+    },
+    "noise": {
+      "score": 0.23,
+      "mentions": 17
+    },
+    "nightlife": {
+      "score": 0.536,
+      "mentions": 57
+    },
+    "green_space": {
+      "score": 0.573,
+      "mentions": 47
+    },
+    "safety": {
+      "score": 0.389,
+      "mentions": 91
+    },
+    "food_and_cafe": {
+      "score": 0.704,
+      "mentions": 36
+    },
+    "affordability": {
+      "score": 0.648,
+      "mentions": 40
+    }
+  },
+  "emotions": {
+    "neutral": 0.5511,
+    "joy": 0.0619,
+    "anger": 0.0664,
+    "surprise": 0.1373,
+    "sadness": 0.053,
+    "disgust": 0.0565,
+    "fear": 0.0738
+  },
+  "narrative": "Reddit discussions about North Sydney are most positive about food and cafe (0.70) and affordability (0.65). Residents are most critical about transport (0.38) and noise (0.23). This analysis is based on 301 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Shout out to Sydney folks who took the long way homes today\nGot on a bus to head home to Bondi just now and the poor bus driver accidentally got in the wrong lane from Pyrmont. Instead of heading into",
+      "url": "https://reddit.com/r/sydney/comments/1sl2oz1/shout_out_to_sydney_folks_who_took_the_long_way/",
+      "score": 2558
+    },
+    {
+      "text": "North Sydney - NYE sorted",
+      "url": "https://reddit.com/r/sydney/comments/1q07la7/north_sydney_nye_sorted/",
+      "score": 1751
+    },
+    {
+      "text": "A bunch of masked men currently being arrested in North Sydney...",
+      "url": "https://reddit.com/r/sydney/comments/1ab7gtq/a_bunch_of_masked_men_currently_being_arrested_in/",
+      "score": 1646
+    },
+    {
+      "text": "Bees enjoying their lunch break in North Sydney",
+      "url": "https://reddit.com/r/sydney/comments/1f274ui/bees_enjoying_their_lunch_break_in_north_sydney/",
+      "score": 1253
+    },
+    {
+      "text": "I walked from Rouse Hill to Sydney CBD\nI keep forgetting to post this but this walk was done on the 9th of January in order to prepare for my walk from the base of the Blue Mountains (Glenbrook) to Bo",
+      "url": "https://reddit.com/r/sydney/comments/1rag9dn/i_walked_from_rouse_hill_to_sydney_cbd/",
+      "score": 1250
+    },
+    {
+      "text": "Sydney Metro is next level\nVictoria Cross station in North Sydney.",
+      "url": "https://reddit.com/r/sydney/comments/1azboa5/sydney_metro_is_next_level/",
+      "score": 1146
+    },
+    {
+      "text": "Sydney Skyline from 100km away in Bowral, NSW.\nThis is one, if not, the furthest point the Sydney Skyline can be seen. You can even see a Qantas plane taking off from the Sydney Aiport. You can also s",
+      "url": "https://reddit.com/r/sydney/comments/1oi4qrr/sydney_skyline_from_100km_away_in_bowral_nsw/",
+      "score": 589
+    },
+    {
+      "text": "Sydney Metro Barangaroo to Victoria Cross \nBarangaroo to Victoria Cross (north Sydney) station. Approx 2mins.",
+      "url": "https://reddit.com/r/sydney/comments/1ewjfms/sydney_metro_barangaroo_to_victoria_cross/",
+      "score": 557
+    },
+    {
+      "text": "Metro issue in Barangaroo.\nAvoid if possible. People going down in north Sydney and taking the normal train.",
+      "url": "https://reddit.com/r/sydney/comments/1rvnvh1/metro_issue_in_barangaroo/",
+      "score": 557
+    },
+    {
+      "text": "Found some old photos in my cleanup.\nOne has the caption “Circular Quay 1892” handwritten on the back. The other, quaintly titled “Then and Now” on the front, says “Circular Quay ‘Then’ 1882 ‘Now’ mid",
+      "url": "https://reddit.com/r/sydney/comments/1rxnnwb/found_some_old_photos_in_my_cleanup/",
+      "score": 542
+    }
+  ]
+}

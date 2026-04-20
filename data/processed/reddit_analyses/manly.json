@@ -1,0 +1,101 @@
+{
+  "suburb": "Manly",
+  "post_count": 351,
+  "fetched_at": "2026-04-18T01:22:35.421590+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.69,
+      "mentions": 233
+    },
+    "nightlife": {
+      "score": 0.657,
+      "mentions": 92
+    },
+    "green_space": {
+      "score": 0.791,
+      "mentions": 67
+    },
+    "transport": {
+      "score": 0.574,
+      "mentions": 90
+    },
+    "safety": {
+      "score": 0.414,
+      "mentions": 60
+    },
+    "affordability": {
+      "score": 0.84,
+      "mentions": 18
+    },
+    "noise": {
+      "score": 0.614,
+      "mentions": 20
+    },
+    "food_and_cafe": {
+      "score": 0.739,
+      "mentions": 53
+    }
+  },
+  "emotions": {
+    "neutral": 0.4446,
+    "surprise": 0.1202,
+    "anger": 0.0457,
+    "sadness": 0.0473,
+    "disgust": 0.0729,
+    "joy": 0.175,
+    "fear": 0.0943
+  },
+  "narrative": "Reddit discussions about Manly are most positive about affordability (0.84) and green space (0.79). Residents are most critical about transport (0.57) and safety (0.41). This analysis is based on 351 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Some guy's hat fell off on the manly ferry and I incidentally took this photo\nAMA I guess. Gave him the photo after",
+      "url": "https://reddit.com/r/sydney/comments/1q1t99q/some_guys_hat_fell_off_on_the_manly_ferry_and_i/",
+      "score": 2681
+    },
+    {
+      "text": "Fun on the Manly Ferry",
+      "url": "https://reddit.com/r/sydney/comments/1qf9n9k/fun_on_the_manly_ferry/",
+      "score": 2460
+    },
+    {
+      "text": "A walk from Lindfield to Manly Beach\nWalked from Lindfield station to Manly beach. It’s an interesting route that goes through a lot of bush, national parks, interesting suburbs and of course the beac",
+      "url": "https://reddit.com/r/sydney/comments/1ja5w87/a_walk_from_lindfield_to_manly_beach/",
+      "score": 897
+    },
+    {
+      "text": "Manly beach isn't even the best beach in Manly.",
+      "url": "https://reddit.com/r/sydney/comments/1b0bo5v/manly_beach_only_australian_beach_in_tripadvisors/ks6tjl9/",
+      "score": 767
+    },
+    {
+      "text": "Whale spotted in Manly\nWas casually walking down the footpath from Shelly back to Manly main beach and saw a line of people spectating something. Turned around and saw this incredible scene! \n\nHaving ",
+      "url": "https://reddit.com/r/sydney/comments/1o6w0f1/whale_spotted_in_manly/",
+      "score": 756
+    },
+    {
+      "text": "Manly to Ingleburn and back w/ a stop at IKEA: $42.50 in tolls\nI don't do this trip often, but I can see why people feel this is a lot actually.  You know it's bad when Transport NSW needs to topup yo",
+      "url": "https://reddit.com/r/sydney/comments/1rlx3z7/manly_to_ingleburn_and_back_w_a_stop_at_ikea_4250/",
+      "score": 678
+    },
+    {
+      "text": "Spit to Manly",
+      "url": "https://reddit.com/r/sydney/comments/1pjyh0j/spit_to_manly/",
+      "score": 565
+    },
+    {
+      "text": "Anyone lost an Alpaca?\nAn Alpaca sauntered past us (living its best life) as we were walking the Spit bridge to Manly path today. No other animals or people around. Anyone missing one around the Balgo",
+      "url": "https://reddit.com/r/sydney/comments/1mozlgg/anyone_lost_an_alpaca/",
+      "score": 457
+    },
+    {
+      "text": "Tried to get home on the Manly to Circular Quay ferry on a Sunday afternoon during the school holidays. Not my brightest move. Everyone kept pushing in and putting their bags on seats so no one could ",
+      "url": "https://reddit.com/r/sydney/comments/1hu0bvv/tried_to_get_home_on_the_manly_to_circular_quay/",
+      "score": 436
+    },
+    {
+      "text": "A big echidna at Fairfax Walk, Manly today\nOne of four my son and I spotted.",
+      "url": "https://reddit.com/r/sydney/comments/1plefja/a_big_echidna_at_fairfax_walk_manly_today/",
+      "score": 428
+    }
+  ]
+}

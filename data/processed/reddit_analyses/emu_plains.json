@@ -1,0 +1,101 @@
+{
+  "suburb": "Emu Plains",
+  "post_count": 24,
+  "fetched_at": "2026-04-18T02:13:37.249051+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.39,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.373,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.513,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.511,
+      "mentions": 17
+    },
+    "nightlife": {
+      "score": 0.506,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.848,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.0888,
+    "neutral": 0.5331,
+    "surprise": 0.1664,
+    "fear": 0.0425,
+    "anger": 0.0221,
+    "disgust": 0.0843,
+    "joy": 0.0628
+  },
+  "narrative": "Reddit discussions about Emu Plains are most positive about noise (0.99) and affordability (0.85). Residents are most critical about transport (0.39) and safety (0.37). This analysis is based on 24 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "PSA Blue Mountains Line not running from Emu to Springwood\nTrains blocked in both directions between emu plains and springwood due to a car on the tracks at blaxland\n\nObligatory cant Park there mate",
+      "url": "https://reddit.com/r/sydney/comments/1pckkw9/psa_blue_mountains_line_not_running_from_emu_to/",
+      "score": 1212
+    },
+    {
+      "text": "Originally from Northern Rivers, now live in Camden Council. I say Sydney ends more or less where the suburban train lines end. Emu Plains, North Richmond, Glenorie, Berowra, Palm Beach, Waterfall, Ro",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5u92am/",
+      "score": 319
+    },
+    {
+      "text": "Found this little guy during my walk\nThis was at the Nepean River walk at the Emu Plains side. Anyone know what type of snake this is?",
+      "url": "https://reddit.com/r/sydney/comments/1jh5anv/found_this_little_guy_during_my_walk/",
+      "score": 109
+    },
+    {
+      "text": "PSA, trains borked west of Emu Plains\nReset the clock. No trains west of Emu, no eta, no word on replacements.  Source: central station announcement.",
+      "url": "https://reddit.com/r/sydney/comments/1pmyybc/psa_trains_borked_west_of_emu_plains/",
+      "score": 51
+    },
+    {
+      "text": "Grew up in Emu Plains which is the furthest suburb west.  next suburb is Glenbrook which is the first stop in the Blue Mountains",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uhyay/",
+      "score": 50
+    },
+    {
+      "text": "I live in the Blue Mountains. Sydney ends at the river, which means Emu Plains is the first town outside it to the West.",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5um5y7/",
+      "score": 43
+    },
+    {
+      "text": "Emu Plains is a flat lander colony, let them keep it in Sydney (also the sign on the M4 says it’s Sydney). Not sure what to do about Emu Heights though",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5urbai/",
+      "score": 33
+    },
+    {
+      "text": "Mate, you're showing footage from a rental in one of the most desirable areas of Sydney. Always been packed for competition, always will be. Show me the same footage in Emu Plains, Bankstown, Campbell",
+      "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/kok5kez/",
+      "score": 30
+    },
+    {
+      "text": "I was disappointed to find Emu Plains wasn't a surreal desert plain populated by wandering emus.",
+      "url": "https://reddit.com/r/sydney/comments/19eram5/train_collided_with_an_abandoned_trailer_on_a/kjf9xot/",
+      "score": 29
+    },
+    {
+      "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
+      "score": 27
+    }
+  ]
+}

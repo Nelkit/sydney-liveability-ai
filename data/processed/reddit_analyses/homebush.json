@@ -1,0 +1,101 @@
+{
+  "suburb": "Homebush",
+  "post_count": 116,
+  "fetched_at": "2026-04-18T01:54:37.870175+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.693,
+      "mentions": 89
+    },
+    "transport": {
+      "score": 0.748,
+      "mentions": 46
+    },
+    "nightlife": {
+      "score": 0.792,
+      "mentions": 23
+    },
+    "food_and_cafe": {
+      "score": 0.943,
+      "mentions": 12
+    },
+    "affordability": {
+      "score": 0.811,
+      "mentions": 20
+    },
+    "green_space": {
+      "score": 0.797,
+      "mentions": 21
+    },
+    "safety": {
+      "score": 0.713,
+      "mentions": 37
+    },
+    "noise": {
+      "score": 0.76,
+      "mentions": 12
+    }
+  },
+  "emotions": {
+    "neutral": 0.5397,
+    "surprise": 0.1337,
+    "sadness": 0.0629,
+    "joy": 0.0608,
+    "anger": 0.0548,
+    "fear": 0.0654,
+    "disgust": 0.0827
+  },
+  "narrative": "Reddit discussions about Homebush are most positive about food and cafe (0.94) and affordability (0.81). Residents are most critical about safety (0.71) and community (0.69). This analysis is based on 116 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Walk from Parramatta to the CBD - We did it!\n[We did it!](https://www.instagram.com/p/DCVaE-rPkz3/?igsh=MTh0bnE2Y3o5OGdwZA%3D%3D)\n\nInspired by the Flying Pieman himself (great story of Sydney history,",
+      "url": "https://reddit.com/r/sydney/comments/1gquh7l/walk_from_parramatta_to_the_cbd_we_did_it/",
+      "score": 744
+    },
+    {
+      "text": "Sydney Skyline from 100km away in Bowral, NSW.\nThis is one, if not, the furthest point the Sydney Skyline can be seen. You can even see a Qantas plane taking off from the Sydney Aiport. You can also s",
+      "url": "https://reddit.com/r/sydney/comments/1oi4qrr/sydney_skyline_from_100km_away_in_bowral_nsw/",
+      "score": 589
+    },
+    {
+      "text": "Parra Rd Homebush closed for the night (probably)\nDriver was having a seizure, called 000 right away. Saw him carted away alive and uninjured",
+      "url": "https://reddit.com/r/sydney/comments/1msn5qp/parra_rd_homebush_closed_for_the_night_probably/",
+      "score": 465
+    },
+    {
+      "text": "Car crash in Homebush this morning.",
+      "url": "https://reddit.com/r/sydney/comments/1h0ukfe/car_crash_in_homebush_this_morning/",
+      "score": 205
+    },
+    {
+      "text": "Strathfield Council plan to rename Homebush slammed for chasing snob value",
+      "url": "https://reddit.com/r/sydney/comments/1sgdm9n/strathfield_council_plan_to_rename_homebush/",
+      "score": 173
+    },
+    {
+      "text": "The new Homebush wave beach aerial photo",
+      "url": "https://reddit.com/r/sydney/comments/1b9ju0i/the_new_homebush_wave_beach_aerial_photo/",
+      "score": 165
+    },
+    {
+      "text": "AC/DC Rocking on at Homebush Stadium Tonight\nI live 5kms away from Homebush stadium & I can hear the AC/DC concert tonight, it’s so clear I’m laying in bed listening to each song. I took a little driv",
+      "url": "https://reddit.com/r/sydney/comments/1p2vjau/acdc_rocking_on_at_homebush_stadium_tonight/",
+      "score": 153
+    },
+    {
+      "text": "Photos taken from Homebush Station this evening",
+      "url": "https://reddit.com/r/sydney/comments/1kqzjdv/photos_taken_from_homebush_station_this_evening/",
+      "score": 151
+    },
+    {
+      "text": "If you're okay with an apartment Homebush is 27 mins to Central by train and has plenty of 2b apartments selling under $700k. If you can stretch slightly you can get into Strathfield/Burwood/Ashfield.",
+      "url": "https://reddit.com/r/sydney/comments/1d95u7b/sydneysiders_how_do_you_find_living_in_sydney/l7b32iz/",
+      "score": 141
+    },
+    {
+      "text": "Homebush",
+      "url": "https://reddit.com/r/sydney/comments/1ord9fc/homebush/",
+      "score": 138
+    }
+  ]
+}
