@@ -1,0 +1,101 @@
+{
+  "suburb": "Parklea",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:29.712807+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.778,
+      "mentions": 17
+    },
+    "safety": {
+      "score": 0.531,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.829,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.767,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.868,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.963,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.876,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.624,
+      "mentions": 12
+    }
+  },
+  "emotions": {
+    "neutral": 0.6793,
+    "surprise": 0.1173,
+    "fear": 0.0261,
+    "joy": 0.0505,
+    "disgust": 0.0256,
+    "anger": 0.0222,
+    "sadness": 0.079
+  },
+  "narrative": "Reddit discussions about Parklea are most positive about noise (0.96) and food and cafe (0.88). Residents are most critical about green space (0.62) and safety (0.53). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Went to Parklea markets for the first time today. Noted down the prices from Coles on the same day for comparison. 72% bump at Coles on the same produce. \nQuality of produce is similar or arguably bet",
+      "url": "https://reddit.com/r/sydney/comments/1da1jsq/went_to_parklea_markets_for_the_first_time_today/",
+      "score": 400
+    },
+    {
+      "text": "Parklea Correctional Centre to return to NSW government management",
+      "url": "https://reddit.com/r/sydney/comments/1j1h9dw/parklea_correctional_centre_to_return_to_nsw/",
+      "score": 167
+    },
+    {
+      "text": "I buy my fresh produce from the farmers markets. Its so much better pennywise and also the variety of produce is multitude better. Yes supermarkets keep the good looking stuff but the cost no way just",
+      "url": "https://reddit.com/r/sydney/comments/1b4x3tj/at_sydneys_fruit_and_veg_market_buying_in_bulk/kt20hq4/",
+      "score": 57
+    },
+    {
+      "text": "We've just rediscovered how great markets are. Flemington is a bit of a pain in the arse for us, but Parklea is only 12 mins drive away.\nThey're open fri through Sunday, and the best fresh produce is ",
+      "url": "https://reddit.com/r/sydney/comments/196dlyr/cheap_and_fresh_fruit_and_vegies_sydney_markets/khv6hi7/",
+      "score": 14
+    },
+    {
+      "text": "Take it from me.\n\nHere's my brothers story, starts from when he was 14 years old. \n\nCame from overseas. \n\nWent to a high school in Sydney's south west.\n\nStarted hanging out with the wrong crowd.\n\nTeac",
+      "url": "https://reddit.com/r/sydney/comments/1cmo9fc/what_services_are_available_for_teens_who_have/l33jy7j/",
+      "score": 13
+    },
+    {
+      "text": "I love going to Parklea too but sadly it's really far for me, but I did a price comparison between Coles and Aldi, spent $25 at Aldi and the same products for the cheapest versions at Coles was still ",
+      "url": "https://reddit.com/r/sydney/comments/1da1jsq/went_to_parklea_markets_for_the_first_time_today/l7hp92f/",
+      "score": 12
+    },
+    {
+      "text": "Stanhope gardens, acacia gardens, Kellyville ridge, parklea and Glenwood are all in the same area and all rely heavily on either driving and taking a metro and/or buses to commute. They’re all heavily",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/koi77hl/",
+      "score": 11
+    },
+    {
+      "text": "Jesus... Anyone have any idea how good prices are at paddy's?\n\nprob not close to parklea but I bet significantly less than colesworths",
+      "url": "https://reddit.com/r/sydney/comments/1da1jsq/went_to_parklea_markets_for_the_first_time_today/l7hizi7/",
+      "score": 9
+    },
+    {
+      "text": "Stanhope gardens is named that because it doesn't want to be associated with the goal even though it's technically part of Parklea and also the farmer...",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnxpng/",
+      "score": 7
+    },
+    {
+      "text": "Land value?\n\nI feel like units grow at different rates to houses and Norwest grew disproportionately to the rest of Sydney. \n\nSo if you bought a 2BR house 15 years ago you could have sold it today, mo",
+      "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l52o9zs/",
+      "score": 7
+    }
+  ]
+}

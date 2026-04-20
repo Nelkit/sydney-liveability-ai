@@ -1,0 +1,101 @@
+{
+  "suburb": "Stanmore",
+  "post_count": 101,
+  "fetched_at": "2026-04-18T01:57:07.573467+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.842,
+      "mentions": 11
+    },
+    "safety": {
+      "score": 0.596,
+      "mentions": 34
+    },
+    "nightlife": {
+      "score": 0.803,
+      "mentions": 17
+    },
+    "community": {
+      "score": 0.703,
+      "mentions": 74
+    },
+    "transport": {
+      "score": 0.452,
+      "mentions": 46
+    },
+    "noise": {
+      "score": 0.315,
+      "mentions": 10
+    },
+    "affordability": {
+      "score": 0.799,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.637,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "sadness": 0.0989,
+    "neutral": 0.4864,
+    "surprise": 0.1345,
+    "joy": 0.0603,
+    "disgust": 0.0825,
+    "anger": 0.0445,
+    "fear": 0.093
+  },
+  "narrative": "Reddit discussions about Stanmore are most positive about food and cafe (0.84) and nightlife (0.80). Residents are most critical about transport (0.45) and noise (0.32). This analysis is based on 101 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "A walk along Parramatta Road\nA walk along what once was a grand stretch of businesses but are now mostly unloved. There's about 4km of mostly heritage-looking shopfronts. It's sad to see so many grand",
+      "url": "https://reddit.com/r/sydney/comments/1hw82zn/a_walk_along_parramatta_road/",
+      "score": 620
+    },
+    {
+      "text": "Found a Conure at Stanmore Maccas\nObviously hand reared, they weren't scared to jump onto my hand. I don't know quite what to do with it, and suggestions would be welcome.",
+      "url": "https://reddit.com/r/sydney/comments/1fci6cq/found_a_conure_at_stanmore_maccas/",
+      "score": 587
+    },
+    {
+      "text": "Yes. I lived in Balmain once and worked in Stanmore. Do I drive 15 minutes or take several buses for over an hour? Spoiler: I never took the bus.",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krunecq/",
+      "score": 392
+    },
+    {
+      "text": "Fatality at Stanmore station\nNo trains are running on any lines through Stanmore.",
+      "url": "https://reddit.com/r/sydney/comments/1an78vl/fatality_at_stanmore_station/",
+      "score": 342
+    },
+    {
+      "text": "Just passing their peak\nThe sub was just talking about good places to see Jacarandas in Sydney. Here they are in Cardigan St Stanmore today. They’ll have shed completely by next week.",
+      "url": "https://reddit.com/r/sydney/comments/1gjuxqk/just_passing_their_peak/",
+      "score": 341
+    },
+    {
+      "text": "Wasn't there a similar thing at Stanmore just a few nights back?",
+      "url": "https://reddit.com/r/sydney/comments/1aqdkog/person_struck_by_a_train_macdonaldtown/kqcbklm/",
+      "score": 256
+    },
+    {
+      "text": "Why is Marrickville so big?\nSo, we went to Olympic Meats in Marrickville for lunch today (side note, delicious) and noticed that while it is literally next door to Dulwich Hill railway station, its ad",
+      "url": "https://reddit.com/r/sydney/comments/1s5rpxo/why_is_marrickville_so_big/",
+      "score": 238
+    },
+    {
+      "text": "Just passed by Stanmore on the train and can confirm that it’s a fatality. \nMay they rest in peace, so terribly sad for all involved. ☹️",
+      "url": "https://reddit.com/r/sydney/comments/1an78vl/fatality_at_stanmore_station/kpqvq0m/",
+      "score": 229
+    },
+    {
+      "text": "$16 'Kids Burger' at the Salisbury Hotel in Stanmore (aka a scone with a rissole on it)\nIt was even smaller than it looks in the picture. Those are normal sized chips. It was smaller than a slider.",
+      "url": "https://reddit.com/r/sydney/comments/1bctcff/16_kids_burger_at_the_salisbury_hotel_in_stanmore/",
+      "score": 205
+    },
+    {
+      "text": "The Stanmore black hole\nI live on the south side of Stanmore station, and if my WiFi is out, I’m lucky to get one bar of coverage.  This is the case walking for all the blocks around there between Tra",
+      "url": "https://reddit.com/r/sydney/comments/1j32k9q/the_stanmore_black_hole/",
+      "score": 113
+    }
+  ]
+}

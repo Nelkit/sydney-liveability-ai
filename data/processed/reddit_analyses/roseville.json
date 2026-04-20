@@ -1,0 +1,101 @@
+{
+  "suburb": "Roseville",
+  "post_count": 39,
+  "fetched_at": "2026-04-18T02:10:15.523494+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.307,
+      "mentions": 32
+    },
+    "transport": {
+      "score": 0.363,
+      "mentions": 13
+    },
+    "affordability": {
+      "score": 0.34,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.454,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.263,
+      "mentions": 12
+    },
+    "noise": {
+      "score": 0.481,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.785,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.658,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "fear": 0.0949,
+    "neutral": 0.5225,
+    "anger": 0.0491,
+    "sadness": 0.0635,
+    "surprise": 0.1115,
+    "joy": 0.0422,
+    "disgust": 0.1162
+  },
+  "narrative": "Reddit discussions about Roseville are most positive about food and cafe (0.79) and green space (0.66). Residents are most critical about community (0.31) and safety (0.26). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Cinderella, Your Slipper?\nCinderella left her slipper at Roseville station last night it seems. I'm no Prince Charming, nor am I into feet, so it's still there.\n\nFor now.",
+      "url": "https://reddit.com/r/sydney/comments/1jm59bv/cinderella_your_slipper/",
+      "score": 170
+    },
+    {
+      "text": "There’s a block of apartments in Roseville which constantly has apartments for sale. It’s a new development and when we went to inspect one for renting, it had terrible water damage needing the carpet",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt3d6y/",
+      "score": 105
+    },
+    {
+      "text": "Excuse me. Mosman (and anything south of Boundary road Roseville) is Lower North Shore.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxgjif/",
+      "score": 68
+    },
+    {
+      "text": "The Northern Beaches are physically separated from the North Shore by the Spit bridge in the south & the Roseville bridge in the west, & the north border is the start of Terrey Hills. \n\nBeaches start ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxgyka/",
+      "score": 65
+    },
+    {
+      "text": "I saw the electronic billboards coming off Roseville bridge saying that there had been an accident in Pymble… I’m assuming this was the accident? Very tragic",
+      "url": "https://reddit.com/r/sydney/comments/1cwvz0g/woman_dies_after_being_hit_by_van_at_pymble/l4yqbgb/",
+      "score": 65
+    },
+    {
+      "text": "PSA trains off north of Chatswood “until further notice” due to derailment at Roseville\nJust got announced at Chatswood station. Hornsby passengers advised to go via Epping.",
+      "url": "https://reddit.com/r/sydney/comments/1alo2x8/psa_trains_off_north_of_chatswood_until_further/",
+      "score": 42
+    },
+    {
+      "text": "ANZAC Bridge, Gladesville Bridge, Iron Cove Bridge, Roseville Bridge, Pyrmont Bridge. \n\nI'm all out.",
+      "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqh9nf/",
+      "score": 39
+    },
+    {
+      "text": "North shore pacific highway living\nTo those who live on the north shore in apartments on pacific highway, how is it? Is it noisy, dusty? Lots of apartments for sale all through Roseville, Killara, Gor",
+      "url": "https://reddit.com/r/sydney/comments/1r7uqkw/north_shore_pacific_highway_living/",
+      "score": 33
+    },
+    {
+      "text": "They need to be towers, we should be done tinkering around the edges at this stage. Build tall structures all around the 10km radius, then progressively go lower. People in Camden want to live in a fr",
+      "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koy7lj4/",
+      "score": 20
+    }
+  ]
+}

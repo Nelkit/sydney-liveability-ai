@@ -1,0 +1,101 @@
+{
+  "suburb": "Bankstown",
+  "post_count": 453,
+  "fetched_at": "2026-04-18T01:20:29.317531+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.695,
+      "mentions": 356
+    },
+    "nightlife": {
+      "score": 0.754,
+      "mentions": 85
+    },
+    "transport": {
+      "score": 0.624,
+      "mentions": 259
+    },
+    "safety": {
+      "score": 0.609,
+      "mentions": 162
+    },
+    "noise": {
+      "score": 0.56,
+      "mentions": 16
+    },
+    "affordability": {
+      "score": 0.586,
+      "mentions": 63
+    },
+    "food_and_cafe": {
+      "score": 0.59,
+      "mentions": 74
+    },
+    "green_space": {
+      "score": 0.549,
+      "mentions": 55
+    }
+  },
+  "emotions": {
+    "neutral": 0.5577,
+    "joy": 0.0582,
+    "fear": 0.0793,
+    "anger": 0.0594,
+    "disgust": 0.0677,
+    "sadness": 0.052,
+    "surprise": 0.1257
+  },
+  "narrative": "Reddit discussions about Bankstown are most positive about nightlife (0.75) and community (0.69). Residents are most critical about noise (0.56) and green space (0.55). This analysis is based on 453 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Dan Murphy’s Bankstown - Nice Trim 😂😂😂 ",
+      "url": "https://reddit.com/r/sydney/comments/1eq1vsz/dan_murphys_bankstown_nice_trim/",
+      "score": 2524
+    },
+    {
+      "text": "Jordan Mailata, the big man from Bankstown, has become the first Australian to win a Super Bowl",
+      "url": "https://reddit.com/r/sydney/comments/1ilwppj/jordan_mailata_the_big_man_from_bankstown_has/",
+      "score": 1898
+    },
+    {
+      "text": "I just walked from Cronulla to Parramatta\nI started this one at around 6:20 and finished at 20:20 taking just a little over 14 hours. The walk was around 52 kilometres. I had attempted this one before",
+      "url": "https://reddit.com/r/sydney/comments/1rmww7l/i_just_walked_from_cronulla_to_parramatta/",
+      "score": 968
+    },
+    {
+      "text": "Bankstown in a nut shell\nNot my video. Found this being shared around",
+      "url": "https://reddit.com/r/sydney/comments/1ourfsv/bankstown_in_a_nut_shell/",
+      "score": 927
+    },
+    {
+      "text": "Emergency landing at Bankstown Airport in Sydney today.",
+      "url": "https://reddit.com/r/sydney/comments/1d10ebi/emergency_landing_at_bankstown_airport_in_sydney/",
+      "score": 829
+    },
+    {
+      "text": "Why do people like to make out that western Sydney is literally like some ghetto when it’s really not\nIt’s really not, I don’t live there but I’ve been around Bankstown, black town etc everything with",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/",
+      "score": 767
+    },
+    {
+      "text": "Any of you drive past Bankstown Reservoir on the Hume Highway? As a kid, I used think it was a Roman amphitheater...",
+      "url": "https://reddit.com/r/sydney/comments/1h9i63a/any_of_you_drive_past_bankstown_reservoir_on_the/",
+      "score": 569
+    },
+    {
+      "text": "My own map of Sydney's trains, with the upcoming Metro and Bankstown lines",
+      "url": "https://reddit.com/r/sydney/comments/1cqrp8r/my_own_map_of_sydneys_trains_with_the_upcoming/",
+      "score": 465
+    },
+    {
+      "text": "If I was to take the tollway to/from work… it would cost me $40 a day.\n\nI legit can’t afford $200-$240 a week in tolls.\n\nSo I spend 2 hours navigating my way through Bankstown & Liverpool each afterno",
+      "url": "https://reddit.com/r/sydney/comments/1bivdnn/streets_are_being_smashed_as_drivers_try_to_save/kvn681b/",
+      "score": 390
+    },
+    {
+      "text": "Really excited for the Bankstown line. It'll suck for it to be down for a year but I'm really really keen to see how it grows and changes how Sydney works.",
+      "url": "https://reddit.com/r/sydney/comments/1azboa5/sydney_metro_is_next_level/ks0aoax/",
+      "score": 363
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "suburb": "Alfords Point",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:45.495422+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.457,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7038,
+    "surprise": 0.1958,
+    "anger": 0.0164,
+    "fear": 0.016,
+    "disgust": 0.0147,
+    "sadness": 0.0433,
+    "joy": 0.01
+  },
+  "narrative": "Reddit discussions about Alfords Point are most positive about transport (0.50) and nightlife (0.50). Residents are most critical about green space (0.50) and community (0.46). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "If you were to drive due west from the Shire, you'd likely end up in Victoria\nHere's some Friday evening geography to break your brain, which I accidentally noticed while scrolling through Google Maps",
+      "url": "https://reddit.com/r/sydney/comments/1qqy4db/if_you_were_to_drive_due_west_from_the_shire_youd/",
+      "score": 141
+    },
+    {
+      "text": "1. That thing that takes you from Eastern Valley Creek Rd to that random part of the mid north shore\n2. Gladesville\n3. Not sure what it's called, Castle Cove? Or is it literally the North Bridge?\n4. A",
+      "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqqwti/",
+      "score": 19
+    },
+    {
+      "text": "I'm originally from the Shire and can confirm that Sydney ends at Tom Uglys & Capt Cook. Throw in Alfords Point for good value.\n\nEverything south of that is Hobbitland.",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5ul2cb/",
+      "score": 18
+    },
+    {
+      "text": "Alfords Point road",
+      "url": "https://reddit.com/r/sydney/comments/1d32gah/i_dont_cross_the_bridge/l65337c/",
+      "score": 10
+    },
+    {
+      "text": "Woronora Bridge, Alfords Point Bridge, Tom Ugly Bridge, Como bridge, Captain Cook bridge",
+      "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqjhzw/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Elizabeth Bay",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:39.862470+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.504,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.501,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.389,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.625,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.562,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4626,
+    "joy": 0.1077,
+    "surprise": 0.1087,
+    "sadness": 0.0958,
+    "fear": 0.0974,
+    "disgust": 0.0493,
+    "anger": 0.0784
+  },
+  "narrative": "Reddit discussions about Elizabeth Bay are most positive about affordability (0.62) and transport (0.56). Residents are most critical about noise (0.50) and safety (0.39). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Spotted in Elizabeth Bay",
+      "url": "https://reddit.com/r/sydney/comments/1ax2z77/spotted_in_elizabeth_bay/",
+      "score": 1167
+    },
+    {
+      "text": "Sydney’s Garden Palace before the great burning in 1882\nRumoured to be deliberately torched by an unidentified man (according to witnesses). The fire was so ferocious that windows in the terraces alon",
+      "url": "https://reddit.com/r/sydney/comments/1n3zksx/sydneys_garden_palace_before_the_great_burning_in/",
+      "score": 523
+    },
+    {
+      "text": "Neutral Bay, Glebe, Elizabeth Bay comes to mind.",
+      "url": "https://reddit.com/r/sydney/comments/1abz41s/neighborhood_recs_for_long_term_relocation/kjr0g36/",
+      "score": 14
+    },
+    {
+      "text": "Yes! The [Museums of History NSW Website](https://mhnsw.au/visit-us/) lists a bunch of museums and heritage sites which are lesser known, and I believe they’re all free entry too. I visited the Elizab",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzxhlxw/",
+      "score": 10
+    },
+    {
+      "text": "I thought it was an ironic sticker to find in Elizabeth Bay 😅",
+      "url": "https://reddit.com/r/sydney/comments/1axa9ic/sydney_daily_random_discussion_thread_23022024/kro25fe/",
+      "score": 7
+    },
+    {
+      "text": "Since when is Elizabeth Bay/Rushcutterbay/PP/Woolie not Eastern Suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxzpw4m/",
+      "score": 7
+    },
+    {
+      "text": "Houses in Eastern houses and apartments? I hate to break it to you but Elizabeth Bay is the densest suburb in Australia. In inner city, we go vertical because we are done going horizontal. While we go",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0v6h9v/",
+      "score": 5
+    },
+    {
+      "text": "I was in Elizabeth Bay or Double Bay once and saw the local police there have a BMW from the local dealership. A really sporting looking one too.",
+      "url": "https://reddit.com/r/sydney/comments/1bk3lxi/hills_police_driving_around_in_a_vehicle_with_a/kvxpn1i/",
+      "score": 4
+    },
+    {
+      "text": "Shark attack in Sydney harbour, always spread when people swim at Elizabeth bay",
+      "url": "https://reddit.com/r/sydney/comments/1adstlr/shark_attack_in_sydney_harbour_always_spread_when/",
+      "score": 3
+    },
+    {
+      "text": "Shark attack at Elizabeth Bay.  Some\npoor girl is fighting for life after massive blood loss.",
+      "url": "https://reddit.com/r/sydney/comments/1ad6dwb/sydney_daily_random_discussion_thread_29012024/kk34jqv/",
+      "score": 3
+    }
+  ]
+}

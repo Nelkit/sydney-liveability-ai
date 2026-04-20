@@ -1,0 +1,20 @@
+[
+  {
+    "text": "I just heard the Highway is flooded at Bringelly rd Kingswood",
+    "suburb": "Bringelly",
+    "score": 2,
+    "created_utc": 1708314545,
+    "url": "https://reddit.com/r/sydney/comments/1aubbup/front_row_seats_to_the_storm/kr39dwc/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  },
+  {
+    "text": "The issue with converting Leppington to metro is that it has a major stabling facility for the existing rail system rolling stock. This complicates the whole thing as metro trains would need their own lines and station platforms and converting the existing lines over to metro would mean that an alternative stabling location would need to be found and built (Leppington was the best site) so the knock on effects to the network would be huge. \n\nLeppington was designed so that a heavy rail connection to the new airport could be accommodated via Rossmore and Bringelly. The switch to metro connections to the new airport did not fully consider the need to integrate with the rest of the network so we may ultimately end up with either a doubled up connection (heavy rail and metro) or an interchange between heavy rail and metro at Bringelly. \n\nThe second option is less than ideal as it removes the possibility of a single rail connection between the two airports. However I don’t think the airport station planning accommodates heavy rail as well as metro.",
+    "suburb": "Bringelly",
+    "score": 2,
+    "created_utc": 1712383958,
+    "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/kyadt53/",
+    "type": "comment",
+    "aspect_query": "bulk"
+  }
+]

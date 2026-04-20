@@ -1,0 +1,101 @@
+{
+  "suburb": "Westleigh",
+  "post_count": 14,
+  "fetched_at": "2026-04-18T02:17:10.703911+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.141,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.345,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.506,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.924,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.357,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5193,
+    "disgust": 0.0345,
+    "anger": 0.038,
+    "sadness": 0.0458,
+    "surprise": 0.1901,
+    "joy": 0.0858,
+    "fear": 0.0864
+  },
+  "narrative": "Reddit discussions about Westleigh are most positive about noise (0.92) and safety (0.51). Residents are most critical about community (0.34) and green space (0.14). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Hornsby Council sending out letters blaming the state government for their own incompetency\nHornsby Council was awarded $40M in funding to develop Westleigh Park in 2018, and over the course of 6 year",
+      "url": "https://reddit.com/r/sydney/comments/1e12b5i/hornsby_council_sending_out_letters_blaming_the/",
+      "score": 246
+    },
+    {
+      "text": "Westleigh is literally West Thornleigh",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnmffg/",
+      "score": 152
+    },
+    {
+      "text": "Early morning view from Quarter Sessions Road Lookout, Westleigh\nFeels like you're way out in the backblocks here where suburbia is right at your back.",
+      "url": "https://reddit.com/r/sydney/comments/1cjmhcq/early_morning_view_from_quarter_sessions_road/",
+      "score": 106
+    },
+    {
+      "text": "Without clicking, as a long time resident, I thought \"I bet that's Hornsby\".  The surprise to me is that it wasn't the park I thought it was going to be.  I thought it would be this one:  \nhttps://hor",
+      "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l82ftg4/",
+      "score": 54
+    },
+    {
+      "text": "The primary school is called Thornleigh West as it opened in 1965 before Westleigh was a suburb.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvoiwfr/",
+      "score": 13
+    },
+    {
+      "text": "Westleigh - see my post. The Hornsby Quarry debacle is a whole nother shocker in waiting.",
+      "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l82g2s4/",
+      "score": 11
+    },
+    {
+      "text": "mountain bike or road?  cooks river, or around SOP. the parrmaatta river bike trail follows the river from meadowbank to parramatta park with only 1 very quiet road crossing, loop the park and head ba",
+      "url": "https://reddit.com/r/sydney/comments/1c0ck26/can_anyone_living_in_inner_west_sydney_recommend/kyvn0vg/",
+      "score": 8
+    },
+    {
+      "text": "Ah, this is the info I was looking for, thanks.\n\nI remember seeing the proposal for the quarry site close to a decade ago and thinking \"no way that's ever going to happen\". Last time I went there, yea",
+      "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l82uht0/",
+      "score": 6
+    },
+    {
+      "text": "Westleigh is west of Thornleigh",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvp8wik/",
+      "score": 4
+    },
+    {
+      "text": "There were NIMBYs waving banners in the street some months ago protesting against the Westleigh development making outlandish traffic claims. I think they were from the \"Normanhurst\" side whining abou",
+      "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l82vvid/",
+      "score": 4
+    }
+  ]
+}

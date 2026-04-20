@@ -1,0 +1,101 @@
+{
+  "suburb": "Kogarah",
+  "post_count": 67,
+  "fetched_at": "2026-04-18T02:03:52.030289+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.677,
+      "mentions": 56
+    },
+    "green_space": {
+      "score": 0.633,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.456,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.773,
+      "mentions": 13
+    },
+    "transport": {
+      "score": 0.695,
+      "mentions": 29
+    },
+    "affordability": {
+      "score": 0.78,
+      "mentions": 14
+    },
+    "food_and_cafe": {
+      "score": 0.654,
+      "mentions": 11
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "neutral": 0.5012,
+    "surprise": 0.1578,
+    "joy": 0.122,
+    "anger": 0.0534,
+    "sadness": 0.0793,
+    "fear": 0.0272,
+    "disgust": 0.0591
+  },
+  "narrative": "Reddit discussions about Kogarah are most positive about affordability (0.78) and nightlife (0.77). Residents are most critical about noise (0.50) and safety (0.46). This analysis is based on 67 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "There are now 3 Greenways connecting Kogarah to the Bay Run\nA new greenway has recently opened around Kogarah through to Wolli Creek, connecting to the Cooks river walk, which connects to the new gree",
+      "url": "https://reddit.com/r/sydney/comments/1q2gxsu/there_are_now_3_greenways_connecting_kogarah_to/",
+      "score": 405
+    },
+    {
+      "text": "Every day at Kogarah\nEvery day, someone is blocking the EV charger in Kogarah. Do these people not read the sign? Calling the council gets the rangers out there quickly for an easy fine, but the stati",
+      "url": "https://reddit.com/r/sydney/comments/1lzfct4/every_day_at_kogarah/",
+      "score": 315
+    },
+    {
+      "text": "Move further down and you will find a large Nepalese population in the rockdale area. Brighton and parts of kogarah have large Greek populations.  People tend to gravitate to areas they feel comfortab",
+      "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5ytro8/",
+      "score": 185
+    },
+    {
+      "text": "'Uncontained' Arts Festival in Kogarah this weekend!\n'Uncontained,' the night time arts festival in Kogarah run by the Georges River Council is really popping off this weekend! Its like a mini vivid, ",
+      "url": "https://reddit.com/r/sydney/comments/1lmd8ns/uncontained_arts_festival_in_kogarah_this_weekend/",
+      "score": 184
+    },
+    {
+      "text": "is Kogarah completely dead as far as social life? M30's\nRecently moved to the area,  so far I know about the rsl, tavern, other pub, other other pub - but they don't really do events.",
+      "url": "https://reddit.com/r/sydney/comments/1slrgow/is_kogarah_completely_dead_as_far_as_social_life/",
+      "score": 107
+    },
+    {
+      "text": "Rockdale/Kogarah - not as posh as Lane Cove obviously but I think it's a half hour to Wynyard from there on the train? Ashfield's pretty good too, it's still got some apartments advertised at that pri",
+      "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lah0387/",
+      "score": 106
+    },
+    {
+      "text": "The reason Rockdale never merged with the old Kogarah and Hurstville councils to form Georges River council was purely a financial decision.\n\nThe old Rockdale council had a shitload of debt, and that ",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki7at1g/",
+      "score": 102
+    },
+    {
+      "text": "All data is from [https://sudhosting2.web.app/stations/](https://sudhosting2.web.app/stations/), which is derived from TfNSW data. Thank you to both Sud and TfNSW for the data.\n\nThe top 25 stations on",
+      "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb0qsm/",
+      "score": 62
+    },
+    {
+      "text": "This is a great list, but #3 Kogarah really surprised me. Been driving the network for 15 years and I thought it'd have been out of the top 10.",
+      "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb3yki/",
+      "score": 46
+    },
+    {
+      "text": "Motorcycle on fire this morning in Kogarah\nSome poor soul is going to have to catch the train to work this morning 🫤",
+      "url": "https://reddit.com/r/sydney/comments/1d6nw9s/motorcycle_on_fire_this_morning_in_kogarah/",
+      "score": 44
+    }
+  ]
+}

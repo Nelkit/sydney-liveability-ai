@@ -1,0 +1,71 @@
+{
+  "suburb": "Cartwright",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:09.136728+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4146,
+    "joy": 0.0343,
+    "fear": 0.0395,
+    "anger": 0.038,
+    "surprise": 0.3477,
+    "disgust": 0.1113,
+    "sadness": 0.0146
+  },
+  "narrative": "Reddit discussions about Cartwright are most positive about community (0.50) and transport (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I remember the opening for that volcano. I was just a kid and Nancy Cartwright was there, my parents dragged me along. \n\nThey thought it was something to do with an alien movie and we got free books, ",
+      "url": "https://reddit.com/r/sydney/comments/1anbkg1/years_later_the_hole_remains/kprflu6/",
+      "score": 95
+    },
+    {
+      "text": "Cartwright??",
+      "url": "https://reddit.com/r/sydney/comments/193273i/how_many_more_arguments_will_be_filmed_on_sydney/kh6s6j8/",
+      "score": 10
+    },
+    {
+      "text": "You’re not Cartwright…",
+      "url": "https://reddit.com/r/sydney/comments/193273i/how_many_more_arguments_will_be_filmed_on_sydney/kh79ccd/",
+      "score": 5
+    },
+    {
+      "text": "TIL Cartwright is a scientologist",
+      "url": "https://reddit.com/r/sydney/comments/1anbkg1/years_later_the_hole_remains/kpu7pcp/",
+      "score": 5
+    }
+  ]
+}

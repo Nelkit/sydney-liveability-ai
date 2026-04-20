@@ -1,0 +1,101 @@
+{
+  "suburb": "Double Bay",
+  "post_count": 41,
+  "fetched_at": "2026-04-18T02:09:01.909789+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.535,
+      "mentions": 13
+    },
+    "community": {
+      "score": 0.511,
+      "mentions": 27
+    },
+    "green_space": {
+      "score": 0.698,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.465,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.356,
+      "mentions": 6
+    },
+    "transport": {
+      "score": 0.434,
+      "mentions": 11
+    },
+    "affordability": {
+      "score": 0.837,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.532,
+      "mentions": 8
+    }
+  },
+  "emotions": {
+    "neutral": 0.4575,
+    "surprise": 0.1987,
+    "sadness": 0.0528,
+    "joy": 0.0647,
+    "anger": 0.1049,
+    "fear": 0.0753,
+    "disgust": 0.0462
+  },
+  "narrative": "Reddit discussions about Double Bay are most positive about affordability (0.84) and green space (0.70). Residents are most critical about transport (0.43) and food and cafe (0.36). This analysis is based on 41 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Cybertruck in Sydney\nIt’s also on the Tesla AU instagram story , but I caught it opposite the oak in double bay",
+      "url": "https://reddit.com/r/sydney/comments/1cdav1f/cybertruck_in_sydney/",
+      "score": 1226
+    },
+    {
+      "text": "#BREAKING: Police called to Double Bay as locals spot a ute in the area on a public holiday",
+      "url": "https://reddit.com/r/sydney/comments/1iaz58u/breaking_police_called_to_double_bay_as_locals/",
+      "score": 495
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Double Bay\nCould sit here all day and ponder. Lovely spot.",
+      "url": "https://reddit.com/r/sydney/comments/1qec251/double_bay/",
+      "score": 190
+    },
+    {
+      "text": "Satire, etc.\n\nBut... there is a takeaway coffee shop in Double Bay that opens at 6am and closes 10pm every single day and I have no idea how they do it. It's in a back alley, not a proper street front",
+      "url": "https://reddit.com/r/sydney/comments/1bc7n4v/calls_for_inquiry_into_how_sydney_is_among_the/kuf1d8i/",
+      "score": 141
+    },
+    {
+      "text": "Double bay, got its name from single bay, as it has one more bay than it.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnd2zv/",
+      "score": 137
+    },
+    {
+      "text": "He is at steyne park, double bay, standing on ocean avenue. I watched him take the photo earlier on.",
+      "url": "https://reddit.com/r/sydney/comments/1aihw65/simultaneously_the_most_specific_and_nonspecific/koum7z7/",
+      "score": 100
+    },
+    {
+      "text": "Was just walking from Edgecliff Station to Double Bay and saw 3 cop cars drive past with lights and sirens - a fucking car stopped in front of all 3 cop cars at the lights and refused to move/blocking",
+      "url": "https://reddit.com/r/sydney/comments/1c2uo3p/what_just_happened_at_bondi_junction/kzcl2w3/",
+      "score": 90
+    },
+    {
+      "text": "Poshest Sydney suburb?\nI've seen various lists (usually derived from ATO info) showing wealthiest suburbs in terms of mean weekly earnings per person or similar. Usually somewhere like Double Bay is t",
+      "url": "https://reddit.com/r/sydney/comments/1nalhd8/poshest_sydney_suburb/",
+      "score": 70
+    },
+    {
+      "text": "Of course it's in Double Bay",
+      "url": "https://reddit.com/r/sydney/comments/1cdav1f/cybertruck_in_sydney/l1as0de/",
+      "score": 65
+    }
+  ]
+}

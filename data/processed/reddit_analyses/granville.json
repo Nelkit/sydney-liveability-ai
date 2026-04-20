@@ -1,0 +1,101 @@
+{
+  "suburb": "Granville",
+  "post_count": 79,
+  "fetched_at": "2026-04-18T02:01:20.354688+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.435,
+      "mentions": 26
+    },
+    "community": {
+      "score": 0.483,
+      "mentions": 62
+    },
+    "transport": {
+      "score": 0.779,
+      "mentions": 33
+    },
+    "nightlife": {
+      "score": 0.906,
+      "mentions": 17
+    },
+    "food_and_cafe": {
+      "score": 0.835,
+      "mentions": 25
+    },
+    "affordability": {
+      "score": 0.944,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.914,
+      "mentions": 6
+    },
+    "noise": {
+      "score": 0.832,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "surprise": 0.1869,
+    "neutral": 0.4474,
+    "fear": 0.0611,
+    "sadness": 0.0827,
+    "anger": 0.0684,
+    "disgust": 0.0756,
+    "joy": 0.0779
+  },
+  "narrative": "Reddit discussions about Granville are most positive about affordability (0.94) and green space (0.91). Residents are most critical about community (0.48) and safety (0.43). This analysis is based on 79 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Plane laser attack after departure from Sydney last night\nI was a passenger flying from Sydney to Orange last night on QF2013 when my plane had an insanely bright laser directed at it several times by",
+      "url": "https://reddit.com/r/sydney/comments/1ozvzcw/plane_laser_attack_after_departure_from_sydney/",
+      "score": 839
+    },
+    {
+      "text": "Walk from Parramatta to the CBD - We did it!\n[We did it!](https://www.instagram.com/p/DCVaE-rPkz3/?igsh=MTh0bnE2Y3o5OGdwZA%3D%3D)\n\nInspired by the Flying Pieman himself (great story of Sydney history,",
+      "url": "https://reddit.com/r/sydney/comments/1gquh7l/walk_from_parramatta_to_the_cbd_we_did_it/",
+      "score": 744
+    },
+    {
+      "text": "Is this a fox i spotted in Granville ?",
+      "url": "https://reddit.com/r/sydney/comments/1rex1ud/is_this_a_fox_i_spotted_in_granville/",
+      "score": 339
+    },
+    {
+      "text": "Crime figure and lawyer shot in Granville street as gangland violence escalates",
+      "url": "https://reddit.com/r/sydney/comments/1kvhe9j/crime_figure_and_lawyer_shot_in_granville_street/",
+      "score": 238
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Yeah, it's a big shame. I miss the old, grungy, Granville El Jannah.\n\nIt's too polished nowadays. It seems like any old fast food joint. Food isn't as good. I've moved on to my local Lebanese chicken ",
+      "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj5bp4y/",
+      "score": 104
+    },
+    {
+      "text": "I noticed that too. Portion of sauce is smaller too. If we order from Granville we usually get another tub of sauce from somewhere in Guilford or Merrylands.",
+      "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4a1kf/",
+      "score": 78
+    },
+    {
+      "text": "Greenacre, Granville, Bankstown, Auburn, Punchbowl are great suburbs for Lebanese food. \nDishes to try: fattoush (salad), mixed plate of mashawi (bbq meat and chicken skewers), kibbeh nayyeh (pâté lik",
+      "url": "https://reddit.com/r/sydney/comments/1ab59cm/what_lebanesemiddle_eastern_foods_and_restaurants/kjldapi/",
+      "score": 71
+    },
+    {
+      "text": "I mean if they wanted to recoup some revenue just post some ticket inspectors at Granville or Parramatta stations 24/7. The amount of ghosting and gate hopping at those places is wild.",
+      "url": "https://reddit.com/r/sydney/comments/1dkumbe/fare_evasion_from_october_2023/l9kp93s/",
+      "score": 58
+    },
+    {
+      "text": "My personal favourite is Hawa which is across the road from the Granville El Jannah",
+      "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4pb1w/",
+      "score": 51
+    }
+  ]
+}

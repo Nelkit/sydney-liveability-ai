@@ -1,0 +1,66 @@
+{
+  "suburb": "Colyton",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:32.709602+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.914,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.914,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.988,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6267,
+    "fear": 0.0432,
+    "disgust": 0.016,
+    "anger": 0.0143,
+    "sadness": 0.014,
+    "surprise": 0.2332,
+    "joy": 0.0527
+  },
+  "narrative": "Reddit discussions about Colyton are most positive about safety (0.99) and noise (0.99). Residents are most critical about food and cafe (0.50) and transport (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
+      "score": 27
+    },
+    {
+      "text": "My bro really out here linking rentals in Tregear, Emerton, kingswood and colyton lmfao",
+      "url": "https://reddit.com/r/sydney/comments/1c2lk00/a_fulltime_wage_is_not_always_enough_to_live_in/kzc5noz/",
+      "score": 14
+    },
+    {
+      "text": "This is the right answer. That or the Colyton hotel.",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1vb3e8/",
+      "score": 3
+    }
+  ]
+}

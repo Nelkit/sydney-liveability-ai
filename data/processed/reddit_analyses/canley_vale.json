@@ -1,0 +1,101 @@
+{
+  "suburb": "Canley Vale",
+  "post_count": 11,
+  "fetched_at": "2026-04-18T02:17:57.115649+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.285,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.431,
+      "mentions": 10
+    },
+    "transport": {
+      "score": 0.365,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.0538,
+    "fear": 0.1825,
+    "surprise": 0.1332,
+    "neutral": 0.4175,
+    "anger": 0.0387,
+    "disgust": 0.1621,
+    "joy": 0.0121
+  },
+  "narrative": "Reddit discussions about Canley Vale are most positive about nightlife (0.50) and affordability (0.50). Residents are most critical about transport (0.36) and safety (0.28). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Crash\nCanley Vale road and Byrd Street section. Airbag popped but no one inside or nearby",
+      "url": "https://reddit.com/r/sydney/comments/1nuaxlj/crash/",
+      "score": 53
+    },
+    {
+      "text": "Lansvale in the southwest comes from Lansdowne and Canley Vale.\n\n\nalso, not suburbs but I know of Cabravale RSL (Cabramatta + Canley Vale), Rocksia Hotel (Rockdale + Banksia) and Glenquarie Town Centr",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnsi3b/",
+      "score": 46
+    },
+    {
+      "text": "T5 Stuck at Canley Vale\nBeen stuck at Canley Vale for a while, apparently there's emergency repairs at the level crossing at Yennora. Wonder what's happened?",
+      "url": "https://reddit.com/r/sydney/comments/1q7wzez/t5_stuck_at_canley_vale/",
+      "score": 28
+    },
+    {
+      "text": "Canley Heights came after Canley Vale ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnptmb/",
+      "score": 18
+    },
+    {
+      "text": "There's Lansvale in the south-west (combination of Lansdowne and Canley Vale)\n\nAlso some unofficial localities too:\n\n* Fairvale Public + High Schools (combination of Fairfield and Canley Vale)\n* Cabra",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnspru/",
+      "score": 11
+    },
+    {
+      "text": "While we’re in the Canley Vale area there’s also Fairvale High School between Canley Vale and Fairfield.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvorsdk/",
+      "score": 9
+    },
+    {
+      "text": "only a masochist or brave soul would dare drive to Cabramatta for lunar new year.\n\nBest way IMO take train to Cabramatta and walk.\n\nIf you're against public trains and hellbent on driving. \n\nDrive to ",
+      "url": "https://reddit.com/r/sydney/comments/1alnfyc/which_suburbs_lny_market_is_best/kpg8nt6/",
+      "score": 6
+    },
+    {
+      "text": "Nguyen Hot Bread in Canley Vale. None of this inner west wankery.",
+      "url": "https://reddit.com/r/sydney/comments/1airgyh/sydney_daily_random_discussion_thread_05022024/koyqcf7/",
+      "score": 3
+    },
+    {
+      "text": "Villawood. Canley Vale. East Fairfield etc. Still affordable",
+      "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lagzbvg/",
+      "score": 3
+    },
+    {
+      "text": "Nanny state removed the high diving platforms from Canley Vale pool.\n\nThat was a travesty almost as bad as Mike Baird's lockouts.",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kie743c/",
+      "score": 2
+    }
+  ]
+}

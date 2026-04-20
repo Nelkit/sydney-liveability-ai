@@ -1,0 +1,101 @@
+{
+  "suburb": "Darlington",
+  "post_count": 18,
+  "fetched_at": "2026-04-18T02:15:52.083386+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.522,
+      "mentions": 17
+    },
+    "transport": {
+      "score": 0.501,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.74,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.907,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.889,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.655,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4983,
+    "fear": 0.0789,
+    "surprise": 0.1577,
+    "sadness": 0.0302,
+    "disgust": 0.0288,
+    "anger": 0.0159,
+    "joy": 0.1902
+  },
+  "narrative": "Reddit discussions about Darlington are most positive about food and cafe (0.91) and green space (0.89). Residents are most critical about safety (0.50) and noise (0.50). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sunday morning coming down (Ivy Street, Darlington)",
+      "url": "https://reddit.com/r/sydney/comments/1qjmhei/sunday_morning_coming_down_ivy_street_darlington/",
+      "score": 1723
+    },
+    {
+      "text": "La Coppola in Redfern and Calico in Darlington are both pretty awesome",
+      "url": "https://reddit.com/r/sydney/comments/196ykf2/best_pizza_in_sydney/khxiyuv/",
+      "score": 28
+    },
+    {
+      "text": "New star in auburn for seesh kebab, dat chilli sauce they give on the side is greattt.\n\nFor your normal rotating slab of meat donee, i recommend ozturk in Darlington.\n\nGet the lamb special when they h",
+      "url": "https://reddit.com/r/sydney/comments/1ci3gap/best_kebab_in_sydney/l26rwgm/",
+      "score": 27
+    },
+    {
+      "text": "Not all the same, op didnt say doner kebabs only.\n\nThere are places that are miles ahead in sheesh kebab, and even doner kebabs certain places do the chicken better or do a good lamb.\n\nAnother thing i",
+      "url": "https://reddit.com/r/sydney/comments/1ci3gap/best_kebab_in_sydney/l26shcf/",
+      "score": 19
+    },
+    {
+      "text": "Darlington = Darlinghurst + Paddington",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo2g97/",
+      "score": 13
+    },
+    {
+      "text": "Ozturk jr darlington",
+      "url": "https://reddit.com/r/sydney/comments/1ci3gap/best_kebab_in_sydney/l27cs0t/",
+      "score": 6
+    },
+    {
+      "text": "There's a lot of suggestion in the [Wiki](https://np.reddit.com/r/sydney/wiki/index) so that's a good place start.\n\nDarlington is close to Redfern (now very gentrified with a lot of restaurants and sm",
+      "url": "https://reddit.com/r/sydney/comments/1cf9uve/travelling_to_darlington_for_a_week/l1pgjka/",
+      "score": 5
+    },
+    {
+      "text": "Newtown and Darlington are both practically in the city. They are *inner* west (with the emphasis on inner). They are also close to Sydney uni, so have a lot of that sort of crowd (for better or worse",
+      "url": "https://reddit.com/r/sydney/comments/1cve3sa/moving_to_a_sharehouse_for_the_first_time_and/l4p2wr8/",
+      "score": 5
+    },
+    {
+      "text": "Then you have Darlington, which is Redfern south-west.\n\nFunny - I was just looking up Darlington on Google Maps, and noticed that the southern border runs along Wilson St, so that places on the southe",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxya4bt/",
+      "score": 4
+    },
+    {
+      "text": "I live in Darlington:\n\nFood:\n- For the best croissant go to wild cockatoo \n- For a fancier/more expensive dinner go to kindred, get the set menu, you should book in advance (it’s worth it).\n- The thai",
+      "url": "https://reddit.com/r/sydney/comments/1cf9uve/travelling_to_darlington_for_a_week/l1pixoq/",
+      "score": 4
+    }
+  ]
+}

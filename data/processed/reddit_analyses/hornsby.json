@@ -1,0 +1,101 @@
+{
+  "suburb": "Hornsby",
+  "post_count": 300,
+  "fetched_at": "2026-04-18T01:27:36.456358+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.363,
+      "mentions": 79
+    },
+    "transport": {
+      "score": 0.611,
+      "mentions": 124
+    },
+    "community": {
+      "score": 0.605,
+      "mentions": 228
+    },
+    "nightlife": {
+      "score": 0.553,
+      "mentions": 45
+    },
+    "green_space": {
+      "score": 0.583,
+      "mentions": 34
+    },
+    "affordability": {
+      "score": 0.71,
+      "mentions": 27
+    },
+    "noise": {
+      "score": 0.475,
+      "mentions": 17
+    },
+    "food_and_cafe": {
+      "score": 0.748,
+      "mentions": 20
+    }
+  },
+  "emotions": {
+    "neutral": 0.5275,
+    "surprise": 0.1378,
+    "fear": 0.0626,
+    "anger": 0.0605,
+    "disgust": 0.0834,
+    "sadness": 0.0703,
+    "joy": 0.0578
+  },
+  "narrative": "Reddit discussions about Hornsby are most positive about food and cafe (0.75) and affordability (0.71). Residents are most critical about noise (0.47) and safety (0.36). This analysis is based on 300 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Hornsby is Hornsbying again with another person thinking this is a roundabout\nThey came from the direction of the Target entrance and left through the western end of Florence Street. Every time I'm in",
+      "url": "https://reddit.com/r/sydney/comments/1pep64u/hornsby_is_hornsbying_again_with_another_person/",
+      "score": 1045
+    },
+    {
+      "text": "Wholesome train announcer moment on the T1 yesterday\n\nSomething a bit different happened on my train ride yesterday morning that I felt like sharing.\n\nUsually, the announcements are the standard “This",
+      "url": "https://reddit.com/r/sydney/comments/1loef9i/wholesome_train_announcer_moment_on_the_t1/",
+      "score": 685
+    },
+    {
+      "text": "Had the whole cinema to ourselves this morning at Hornsby Odeon\nEarly screening (10.30am) of Spongebob movie at Odeon Cinema Hornsby for school holidays. Took my daughter and there was literally nobod",
+      "url": "https://reddit.com/r/sydney/comments/1q61s95/had_the_whole_cinema_to_ourselves_this_morning_at/",
+      "score": 681
+    },
+    {
+      "text": "Shenanigans at Westfield Hornsby Carpark Entry\nFound this on Facebook and I use this entry as I come in to work at Hornsby",
+      "url": "https://reddit.com/r/sydney/comments/1cxwto9/shenanigans_at_westfield_hornsby_carpark_entry/",
+      "score": 611
+    },
+    {
+      "text": ">Hornsby Shire Mayor Philip Ruddock said he is \"very angry\" and accused the state government of taking the money back as a way to cut costs ahead of next week's state budget.         \n\nGood. Hornsby w",
+      "url": "https://reddit.com/r/sydney/comments/1dd2f2m/sydney_council_ordered_to_repay_36_million_for/l820obw/",
+      "score": 392
+    },
+    {
+      "text": "Sydney’s unusual sewerage system to blame for faecal and fat balls on beaches, experts claim\nI don't understand why this is a mystery.\n\nI walk extensive around the Parramatta, Rosehill, Ryde, Epping, ",
+      "url": "https://reddit.com/r/sydney/comments/1i4nunc/sydneys_unusual_sewerage_system_to_blame_for/",
+      "score": 350
+    },
+    {
+      "text": "Ah Sydney Trains! \nWho on earth ever thought of making a Sydney-Newcastle train, on a public holiday, a 4 carriage Oscar train? Especially given it’s one of the busiest days for people with suitcases.",
+      "url": "https://reddit.com/r/sydney/comments/1bqcdb2/ah_sydney_trains/",
+      "score": 321
+    },
+    {
+      "text": "Steam Train at Hornsby and Normanhurst this weekend",
+      "url": "https://reddit.com/r/sydney/comments/1jn6irk/steam_train_at_hornsby_and_normanhurst_this/",
+      "score": 285
+    },
+    {
+      "text": "Found this lewd glow in the dark graffiti in Hornsby last night.  WTF?!?",
+      "url": "https://reddit.com/r/sydney/comments/1ibuwqw/found_this_lewd_glow_in_the_dark_graffiti_in/",
+      "score": 280
+    },
+    {
+      "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",
+      "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
+      "score": 267
+    }
+  ]
+}

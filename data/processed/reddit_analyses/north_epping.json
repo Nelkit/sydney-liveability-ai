@@ -1,0 +1,66 @@
+{
+  "suburb": "North Epping",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:46.610717+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.454,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.442,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.442,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5424,
+    "sadness": 0.0435,
+    "fear": 0.3282,
+    "surprise": 0.0473,
+    "anger": 0.0139,
+    "disgust": 0.0193,
+    "joy": 0.0055
+  },
+  "narrative": "Reddit discussions about North Epping are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about transport (0.44) and safety (0.44). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "> The Telstra site always reports outages and maintenance in our area but it doesn’t explain the issue. \n \nI don't live there, nor do I use Telstra, but https://www.telstra.com.au/outages reports a cu",
+      "url": "https://reddit.com/r/sydney/comments/1cixrhw/does_anyone_know_what_is_going_on_with_telstra/l2cdda4/",
+      "score": 6
+    },
+    {
+      "text": "The suburb of North Epping feels like it would have a community of sorts, especially if you have children in primary school and/or sport.\n\nIt's very Anglo at the moment but slowly changing as more peo",
+      "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l97nwko/",
+      "score": 3
+    },
+    {
+      "text": "yeah it's terrible. drive to North Epping and its still the leafy suburb i grew up in... but near the train station is a shambles",
+      "url": "https://reddit.com/r/sydney/comments/1cqbrri/is_epping_boring/l3wy2n2/",
+      "score": 2
+    }
+  ]
+}

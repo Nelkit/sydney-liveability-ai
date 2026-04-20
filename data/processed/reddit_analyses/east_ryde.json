@@ -1,0 +1,66 @@
+{
+  "suburb": "East Ryde",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:33.645941+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.234,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1263,
+    "neutral": 0.6723,
+    "anger": 0.0554,
+    "sadness": 0.0458,
+    "surprise": 0.0791,
+    "joy": 0.0063,
+    "disgust": 0.0147
+  },
+  "narrative": "Reddit discussions about East Ryde are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about green space (0.50) and community (0.23). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "North Ryde, West Ryde, and East Ryde.\n\nSouth Ryde dropping soon?",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnpr6r/",
+      "score": 118
+    },
+    {
+      "text": "Not just intended, the whole area from about Pennant Hills through to North Ryde was the Field of Mars for many years until it got chopped up and parceled out over the years.\n\nThere's still the Field ",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjgay78/",
+      "score": 13
+    }
+  ]
+}

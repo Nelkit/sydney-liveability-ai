@@ -1,0 +1,61 @@
+{
+  "suburb": "Bardia",
+  "post_count": 2,
+  "fetched_at": "2026-04-18T02:20:51.253705+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.964,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.964,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.964,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8558,
+    "surprise": 0.0691,
+    "joy": 0.0166,
+    "anger": 0.0237,
+    "disgust": 0.0168,
+    "sadness": 0.0067,
+    "fear": 0.0114
+  },
+  "narrative": "Reddit discussions about Bardia are most positive about transport (0.96) and affordability (0.96). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I live in the east so you obviously know a lot more about the actual state, but the plan is for it to become pretty dense and I reckon it will once the first terminal of the airport actually opens and",
+      "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1gt92h/",
+      "score": 4
+    },
+    {
+      "text": "Footpaths only on one side is correct, and usually because of council or it’s just significantly cheaper \n\nI have seen first hand in areas such Bardia (not too far from ops photos) where residents hav",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tkdbg/",
+      "score": 2
+    }
+  ]
+}

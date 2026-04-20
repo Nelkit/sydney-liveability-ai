@@ -1,0 +1,56 @@
+{
+  "suburb": "Hinchinbrook",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:09.089443+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.865,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.865,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.865,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6468,
+    "surprise": 0.1564,
+    "fear": 0.0818,
+    "joy": 0.0373,
+    "anger": 0.032,
+    "sadness": 0.0306,
+    "disgust": 0.0152
+  },
+  "narrative": "Reddit discussions about Hinchinbrook are most positive about community (0.86) and noise (0.86). Residents are most critical about transport (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Mrs felt and heard it here in Hinchinbrook, got video of the sound. Doggo went off after 👌",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwflzq/",
+      "score": 4
+    }
+  ]
+}

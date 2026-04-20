@@ -1,0 +1,101 @@
+{
+  "suburb": "Freshwater",
+  "post_count": 32,
+  "fetched_at": "2026-04-18T02:11:57.977940+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.679,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.58,
+      "mentions": 23
+    },
+    "safety": {
+      "score": 0.959,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.993,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.931,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.951,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.692,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6048,
+    "surprise": 0.1245,
+    "sadness": 0.0312,
+    "disgust": 0.1,
+    "anger": 0.0347,
+    "fear": 0.0522,
+    "joy": 0.0528
+  },
+  "narrative": "Reddit discussions about Freshwater are most positive about affordability (0.99) and safety (0.96). Residents are most critical about community (0.58) and noise (0.50). This analysis is based on 32 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Freshwater class MV Sirius",
+      "url": "https://reddit.com/r/sydney/comments/1ma43s0/freshwater_class_mv_sirius/",
+      "score": 452
+    },
+    {
+      "text": "This little guy popped his head out of the pond while I was at Fagan Park today. Some type of freshwater turtle. Not sure if he's a juvenile or has any martial arts experience",
+      "url": "https://reddit.com/r/sydney/comments/1i4vg2x/this_little_guy_popped_his_head_out_of_the_pond/",
+      "score": 240
+    },
+    {
+      "text": "Lane Cove River Clean up!\n**Hey Sydney and fellow environmental enthusiasts!**\n\nSome friends and I have been running a rubbish clean up group on Lane Cove river since about 2007. We kayak through the ",
+      "url": "https://reddit.com/r/sydney/comments/1c97ais/lane_cove_river_clean_up/",
+      "score": 239
+    },
+    {
+      "text": "Freshwater Beach",
+      "url": "https://reddit.com/r/sydney/comments/1i9gh4a/freshwater_beach/",
+      "score": 186
+    },
+    {
+      "text": "Does anyone know if the freshwater class are sticking around?",
+      "url": "https://reddit.com/r/sydney/comments/1qetjsm/does_anyone_know_if_the_freshwater_class_are/",
+      "score": 102
+    },
+    {
+      "text": "Freshwater Beach / Manly Wormhole / Curl Curl",
+      "url": "https://reddit.com/r/sydney/comments/1guk44z/freshwater_beach_manly_wormhole_curl_curl/",
+      "score": 92
+    },
+    {
+      "text": "I know it’s not a long walk, but not too bad for an out-of-shape old guy! Some incredible scenery on the way, and some challenging bits; climbing on the rocks near Clontarf beach and that bloody awful",
+      "url": "https://reddit.com/r/sydney/comments/195lnoz/me_should_i_do_the_spit_to_manly_or_the_manly_to/khnjurh/",
+      "score": 78
+    },
+    {
+      "text": "Did you have a nickname for your school/educational institution? I just learned 'Freshy', 'Bally Boys' and 'Ravo' are/were things\nThat's Freshwater Senior Campus, Balgowlah Boys Campus and Ravenswood ",
+      "url": "https://reddit.com/r/sydney/comments/1eavvz0/did_you_have_a_nickname_for_your/",
+      "score": 69
+    },
+    {
+      "text": "Freshwater Rocks",
+      "url": "https://reddit.com/r/sydney/comments/1aco0y8/freshwater_rocks/",
+      "score": 40
+    },
+    {
+      "text": "I still call Freshwater Harbord because I grew up there",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfq2zr/",
+      "score": 30
+    }
+  ]
+}
