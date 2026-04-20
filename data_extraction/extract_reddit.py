@@ -38,6 +38,9 @@ DEFAULT_SUBURBS = [
     "Surry Hills",
 ]
 
+REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_REDDIT_PROCESSED_DIR = REPO_ROOT / "data" / "processed" / "reddit"
+
 
 @dataclass
 class RedditPost:
@@ -156,7 +159,7 @@ def _suburb_slug(name: str) -> str:
 
 def load_suburb_posts(
     suburb: str,
-    data_dir: str | Path = "data/processed/reddit",
+    data_dir: str | Path = DEFAULT_REDDIT_PROCESSED_DIR,
     min_score: int = MIN_SCORE,
 ) -> list[RedditPost]:
     """Load pre-processed Reddit posts for a suburb from local JSON files.
@@ -186,7 +189,7 @@ def load_suburb_posts(
 
 
 def list_available_suburbs(
-    data_dir: str | Path = "data/processed/reddit",
+    data_dir: str | Path = DEFAULT_REDDIT_PROCESSED_DIR,
 ) -> list[str]:
     """List all suburbs that have pre-processed Reddit data available."""
     index_path = Path(data_dir) / "_suburb_index.json"

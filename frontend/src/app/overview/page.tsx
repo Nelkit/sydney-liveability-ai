@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { HexagonGrid, HexRow } from "../../components/liveability/HexagonGrid";
+import { DetailedReportModal } from "../../components/modals/DetailedReportModal";
 import { SharedBrand } from "../../components/liveability/SharedBrand";
 
 const API_BASE =
@@ -21,11 +21,12 @@ type FetchState =
   | { status: "error"; message: string };
 
 export default function OverviewPage() {
-  const router = useRouter();
   const [state, setState] = useState<FetchState>({ status: "loading" });
   const [sort, setSort] = useState<SortKey>("score");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [query, setQuery] = useState("");
+  const [selectedSuburb, setSelectedSuburb] = useState<string | null>(null);
+  const [analysisOpen, setAnalysisOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -98,7 +99,8 @@ export default function OverviewPage() {
   }, [state]);
 
   function handleSelect(suburb: string) {
-    router.push(`/suburb/${encodeURIComponent(suburb)}`);
+    setSelectedSuburb(suburb);
+    setAnalysisOpen(true);
   }
 
   return (
@@ -203,6 +205,18 @@ export default function OverviewPage() {
           </p>
         ) : null}
       </section>
+
+      <DetailedReportModal
+        isOpen={analysisOpen}
+        suburb={selectedSuburb}
+        messageHtml={null}
+        title="Suburb Analysis"
+        subtitle="Detailed Reddit NLP analysis for the selected suburb"
+        onClose={() => {
+          setAnalysisOpen(false);
+          setSelectedSuburb(null);
+        }}
+      />
 
       <footer className="mx-auto max-w-6xl px-5 pb-10 pt-2 text-center text-[11px] text-slate-400">
         Pipeline: BART-MNLI aspects · DistilRoBERTa emotion · VADER sentiment ·
