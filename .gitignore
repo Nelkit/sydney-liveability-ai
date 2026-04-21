@@ -57,6 +57,7 @@ out/
 dist/
 
 # Data (local storage - ignored in Git)
+data/raw/abs/
 
 # Logs
 logs/
