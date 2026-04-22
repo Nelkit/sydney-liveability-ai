@@ -1,0 +1,61 @@
+{
+  "suburb": "Scheyville",
+  "post_count": 2,
+  "fetched_at": "2026-04-18T02:21:01.852616+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.921,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.741,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.741,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.741,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7249,
+    "disgust": 0.1211,
+    "fear": 0.0338,
+    "surprise": 0.0675,
+    "joy": 0.0227,
+    "sadness": 0.0208,
+    "anger": 0.0091
+  },
+  "narrative": "Reddit discussions about Scheyville are most positive about green space (0.92) and community (0.74). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Easily seen at Cattai NP or Scheyville NP (Eastern grey kangaroos and Swamp Wallabies). Also Mt Annan Botanic Gardens (Eastern grey kangaroos and Wallaroos). Swamp Wallabies are in most of the nationa",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kix8n/",
+      "score": 11
+    },
+    {
+      "text": "Scheyville they are everywhere. Also see heaps in Marramarra NP",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5ku4iy/",
+      "score": 2
+    }
+  ]
+}

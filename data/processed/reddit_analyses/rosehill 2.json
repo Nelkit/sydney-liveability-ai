@@ -1,0 +1,101 @@
+{
+  "suburb": "Rosehill",
+  "post_count": 45,
+  "fetched_at": "2026-04-18T02:07:59.925878+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.321,
+      "mentions": 37
+    },
+    "safety": {
+      "score": 0.246,
+      "mentions": 12
+    },
+    "transport": {
+      "score": 0.486,
+      "mentions": 18
+    },
+    "green_space": {
+      "score": 0.487,
+      "mentions": 9
+    },
+    "nightlife": {
+      "score": 0.497,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.664,
+      "mentions": 8
+    },
+    "noise": {
+      "score": 0.821,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.987,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "sadness": 0.0995,
+    "neutral": 0.4845,
+    "anger": 0.0967,
+    "fear": 0.0761,
+    "disgust": 0.0587,
+    "surprise": 0.109,
+    "joy": 0.0754
+  },
+  "narrative": "Reddit discussions about Rosehill are most positive about food and cafe (0.99) and noise (0.82). Residents are most critical about community (0.32) and safety (0.25). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "NSW Premier Chris Minns to be referred to ICAC over relationship with key figure behind redevelopment of Rosehill Racecourse, ABC understands",
+      "url": "https://reddit.com/r/sydney/comments/1h6bcee/nsw_premier_chris_minns_to_be_referred_to_icac/",
+      "score": 517
+    },
+    {
+      "text": "I recently lived in Rosehill for 3 years and it’s already borderline a ghetto. The racecourse being removed is the first step to actually add more infrastructure and amenities to the suburb, something",
+      "url": "https://reddit.com/r/sydney/comments/1bcszhe/call_to_heritage_list_rosehill_racecourse_fails/kuhy52n/",
+      "score": 364
+    },
+    {
+      "text": "Sydney’s unusual sewerage system to blame for faecal and fat balls on beaches, experts claim\nI don't understand why this is a mystery.\n\nI walk extensive around the Parramatta, Rosehill, Ryde, Epping, ",
+      "url": "https://reddit.com/r/sydney/comments/1i4nunc/sydneys_unusual_sewerage_system_to_blame_for/",
+      "score": 350
+    },
+    {
+      "text": "Paramatta Light Rail usage tipped to double next year despite numbers falling short in its first year\n>In short:\n\n>It has been 12 months since the Parramatta Light Rail opened to the public, and it is",
+      "url": "https://reddit.com/r/sydney/comments/1py8rhy/paramatta_light_rail_usage_tipped_to_double_next/",
+      "score": 226
+    },
+    {
+      "text": "Call to heritage list Rosehill Racecourse fails - \"Rosehill will become a ghetto\"\nThe Parramatta Councillor who wanted to heritage list Rosehill Racecourse to stop development of new homes has failed ",
+      "url": "https://reddit.com/r/sydney/comments/1bcszhe/call_to_heritage_list_rosehill_racecourse_fails/",
+      "score": 206
+    },
+    {
+      "text": "First time stopping for the Parramatta Light Rail at Rosehill",
+      "url": "https://reddit.com/r/sydney/comments/1d32rn2/first_time_stopping_for_the_parramatta_light_rail/",
+      "score": 205
+    },
+    {
+      "text": "Rosehill Blood bank has stepped up on the treats",
+      "url": "https://reddit.com/r/sydney/comments/1fkac5a/rosehill_blood_bank_has_stepped_up_on_the_treats/",
+      "score": 188
+    },
+    {
+      "text": "State government announces new metro line running directly between Rosehill Racecourse and Crown Casino",
+      "url": "https://reddit.com/r/sydney/comments/1fev3aq/state_government_announces_new_metro_line_running/",
+      "score": 179
+    },
+    {
+      "text": "ATC members vote no to sale of Rosehill Gardens Racecourse",
+      "url": "https://reddit.com/r/sydney/comments/1kwi7kv/atc_members_vote_no_to_sale_of_rosehill_gardens/",
+      "score": 145
+    },
+    {
+      "text": "\"Backlash is mounting against the contentious plan to sell off Rosehill Gardens and convert it into a suburb with 25,000 homes. Now there’s calls to heritage list the historic site.\"\nSo I can't find a",
+      "url": "https://reddit.com/r/sydney/comments/1b8eg7s/backlash_is_mounting_against_the_contentious_plan/",
+      "score": 139
+    }
+  ]
+}

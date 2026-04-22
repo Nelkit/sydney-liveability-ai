@@ -1,0 +1,101 @@
+{
+  "suburb": "Wentworthville",
+  "post_count": 28,
+  "fetched_at": "2026-04-18T02:12:54.531223+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.444,
+      "mentions": 13
+    },
+    "transport": {
+      "score": 0.586,
+      "mentions": 9
+    },
+    "community": {
+      "score": 0.539,
+      "mentions": 19
+    },
+    "affordability": {
+      "score": 0.511,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.633,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.695,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.741,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.549,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "fear": 0.127,
+    "anger": 0.045,
+    "sadness": 0.0595,
+    "surprise": 0.1787,
+    "neutral": 0.4385,
+    "disgust": 0.0408,
+    "joy": 0.1106
+  },
+  "narrative": "Reddit discussions about Wentworthville are most positive about food and cafe (0.74) and nightlife (0.69). Residents are most critical about affordability (0.51) and safety (0.44). This analysis is based on 28 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Wentworthville shooting: NSW Police shoot two in western Sydney",
+      "url": "https://reddit.com/r/sydney/comments/1fvsehn/wentworthville_shooting_nsw_police_shoot_two_in/",
+      "score": 160
+    },
+    {
+      "text": "Incident near Wentworthville?",
+      "url": "https://reddit.com/r/sydney/comments/1fvpi5e/incident_near_wentworthville/",
+      "score": 135
+    },
+    {
+      "text": "What is this structure on the Great Western Highway near Wentworthville ?",
+      "url": "https://reddit.com/r/sydney/comments/1bcv9co/what_is_this_structure_on_the_great_western/",
+      "score": 68
+    },
+    {
+      "text": "* Get off metro\n* Oops city train literally left mere seconds ago, time to wait up to 10 minutes for the next one\n* Get on busy Sydney train, I'm still at Chatswood BTW (the metro will get me to Baran",
+      "url": "https://reddit.com/r/sydney/comments/1bbrpan/metro_upgrade_sign_replacement_has_begun_epping/kubntw0/",
+      "score": 66
+    },
+    {
+      "text": "https://lsre.com.au/property/house-nsw-wentworthville-2013789530/\n\nThis and the two adjacent blocks were sold in the not too distant past. Would require substantial excavation work, and you’d be build",
+      "url": "https://reddit.com/r/sydney/comments/1bcv9co/what_is_this_structure_on_the_great_western/kuigeok/",
+      "score": 42
+    },
+    {
+      "text": "PSA: M4 standstill west bound just after Cumberland hwy exit\nPartner narrowly avoided being part of a high speed multi car accident on the west bound m4, just after the Cumberland hwy exit. \n\nIf you’r",
+      "url": "https://reddit.com/r/sydney/comments/1boj69a/psa_m4_standstill_west_bound_just_after/",
+      "score": 32
+    },
+    {
+      "text": "Car on the railway tracks. Western line between Wentworthville and Pendle Hill.\nJust back from picking my son up from Wenty as train had to return to the station. I passed the car on the way. You can ",
+      "url": "https://reddit.com/r/sydney/comments/1lahkxk/car_on_the_railway_tracks_western_line_between/",
+      "score": 23
+    },
+    {
+      "text": "Seven Hills plaza is fine for shopping, has Woolies and Aldi and other smaller shops. Train station is well connected and gets more frequent trains than Toongabbie, Pendle Hill, and Wentworthville. Tr",
+      "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh4dk3q/",
+      "score": 13
+    },
+    {
+      "text": "man, shit. Wentworthville isn't a rich suburb, and that might have just been on the cusp of what they can afford to rent/buy.\n\nShit, sometimes its so cold that maybe they wanted a reprieve, I know ton",
+      "url": "https://reddit.com/r/sydney/comments/1dr5vp9/sydney_family_lucky_to_be_alive_after_inhaling/late4ub/",
+      "score": 12
+    },
+    {
+      "text": "Stanhope gardens, acacia gardens, Kellyville ridge, parklea and Glenwood are all in the same area and all rely heavily on either driving and taking a metro and/or buses to commute. They’re all heavily",
+      "url": "https://reddit.com/r/sydney/comments/1ag903m/suburb_recommendations_in_western_sydney/koi77hl/",
+      "score": 11
+    }
+  ]
+}

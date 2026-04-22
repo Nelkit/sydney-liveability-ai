@@ -1,0 +1,81 @@
+{
+  "suburb": "Narwee",
+  "post_count": 6,
+  "fetched_at": "2026-04-18T02:19:37.083623+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.653,
+      "mentions": 6
+    },
+    "transport": {
+      "score": 0.652,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.866,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.888,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.888,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.866,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6937,
+    "surprise": 0.1756,
+    "sadness": 0.0148,
+    "joy": 0.009,
+    "fear": 0.0277,
+    "anger": 0.039,
+    "disgust": 0.0401
+  },
+  "narrative": "Reddit discussions about Narwee are most positive about food and cafe (0.89) and affordability (0.89). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sunset at Narwee Station\nSunset at Narwee Station 🚉.\nTaken 21/6/25 17:23 AEST. 🌅\n\nhttps://maps.app.goo.gl/v3pEsQKyBk6MxkdA9?g_st=com.google.maps.preview.copy",
+      "url": "https://reddit.com/r/sydney/comments/1lguk0j/sunset_at_narwee_station/",
+      "score": 60
+    },
+    {
+      "text": "Peakhurst, better connectivity to trains either via Narwee or Mortdale station. As you've mentioned, you're a family of three and I imagine schools are on the cards. There are better schools options a",
+      "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l50eebh/",
+      "score": 34
+    },
+    {
+      "text": "What is Riverwood like to live in with young kids?\nWe've been looking for a house and are interested in some properties in Riverwood, mostly because they are big enough for our family, not too far fro",
+      "url": "https://reddit.com/r/sydney/comments/1cfvmhd/what_is_riverwood_like_to_live_in_with_young_kids/",
+      "score": 8
+    },
+    {
+      "text": "Drove through Broad Arrow Road from Narwee to Riverwood, saw a whole literal squadron of police officers, an ambulance and a stretcher on one of the assuming assisted living units. Something happened?",
+      "url": "https://reddit.com/r/sydney/comments/192il8z/sydney_daily_random_discussion_thread_10012024/kh63ce2/",
+      "score": 3
+    },
+    {
+      "text": "Ok I guess I dont know your yardstick for “easily”. To me, spending half an hour to go to a neighbouring suburb on a bus is not “easily”. Even from the closest bit of residential Greenacre, to get to ",
+      "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l54jdla/",
+      "score": 3
+    },
+    {
+      "text": "What’s Narwee Pub doing these days? Free pool Friday & Saturday nights was the bomb (coupled with free pours). Chance of a brawl was good odds. Made friends with the right guys and never had a problem",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1w239t/",
+      "score": 2
+    }
+  ]
+}

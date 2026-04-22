@@ -1,0 +1,81 @@
+{
+  "suburb": "Lalor Park",
+  "post_count": 6,
+  "fetched_at": "2026-04-18T02:19:34.020472+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.761,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.643,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.78,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.643,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.677,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.677,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.776,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7373,
+    "disgust": 0.0417,
+    "fear": 0.0202,
+    "anger": 0.0329,
+    "sadness": 0.1128,
+    "surprise": 0.0359,
+    "joy": 0.0192
+  },
+  "narrative": "Reddit discussions about Lalor Park are most positive about nightlife (0.78) and affordability (0.78). Residents are most critical about safety (0.64) and noise (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Yep. Grew up in Quakers, now live up in Newcastle and the areas people think are rough up here have nothing on walking around Blacktown, Lalor Park and Doony as a teen lmao",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktrhhwi/",
+      "score": 17
+    },
+    {
+      "text": "For dinner drinks I'd recommend Parramatta. Plenty of restaurants in Parramatta Square or along Eat St, all very accessible to the station. Parramatta should have direct trains to Olympic Park on the ",
+      "url": "https://reddit.com/r/sydney/comments/1aeg800/help_planning_my_trip/kk7x7wn/",
+      "score": 16
+    },
+    {
+      "text": "Father of three children killed in house fire at Lalor Park may have been on drugs, police say",
+      "url": "https://reddit.com/r/sydney/comments/1eggquu/father_of_three_children_killed_in_house_fire_at/",
+      "score": 8
+    },
+    {
+      "text": "Carevan Blacktown shares meals and conversations with individuals in Lalor Park every Tuesday night.",
+      "url": "https://reddit.com/r/sydney/comments/1ao1hpw/faith_in_humanity_restored_but_to_the_wrong/kpwd8fe/",
+      "score": 6
+    },
+    {
+      "text": "Just because its not posted on social media doesn't mean it doesn't happen. Demand for houses can alter pretty dramatically suburb to suburb out this way, from my experience anyway. Every house we loo",
+      "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/kontjmf/",
+      "score": 3
+    },
+    {
+      "text": "Property data is misleading because it's heavily skewed by investors, in particular, some specific overdeveloped McMansions that were sold at the height of the property boom. These are an outlier that",
+      "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh5piuv/",
+      "score": 2
+    }
+  ]
+}

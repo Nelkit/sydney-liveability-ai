@@ -1,0 +1,101 @@
+{
+  "suburb": "Erskineville",
+  "post_count": 75,
+  "fetched_at": "2026-04-18T02:01:48.120945+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.494,
+      "mentions": 70
+    },
+    "transport": {
+      "score": 0.458,
+      "mentions": 41
+    },
+    "safety": {
+      "score": 0.351,
+      "mentions": 23
+    },
+    "noise": {
+      "score": 0.238,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.496,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.41,
+      "mentions": 11
+    },
+    "food_and_cafe": {
+      "score": 0.454,
+      "mentions": 14
+    },
+    "green_space": {
+      "score": 0.443,
+      "mentions": 12
+    }
+  },
+  "emotions": {
+    "anger": 0.042,
+    "disgust": 0.0628,
+    "sadness": 0.0587,
+    "fear": 0.0919,
+    "neutral": 0.5379,
+    "surprise": 0.0993,
+    "joy": 0.1073
+  },
+  "narrative": "Reddit discussions about Erskineville are most positive about nightlife (0.50) and community (0.49). Residents are most critical about safety (0.35) and noise (0.24). This analysis is based on 75 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "My small collection of movies filmed in Sydney\nAny recommendations? Glaring omissions?\n\nI know Fall Guy is essentially a 2 hour Sydney tourism video and I plan to get it when prices drop.\n\nPriscilla i",
+      "url": "https://reddit.com/r/sydney/comments/1odzoih/my_small_collection_of_movies_filmed_in_sydney/",
+      "score": 508
+    },
+    {
+      "text": "The Imperial Hotel (Erskineville) scenes from Priscilla, Queen of the Desert\nClassic Australian film, picked up the DVD for $2 today",
+      "url": "https://reddit.com/r/sydney/comments/1ledrvp/the_imperial_hotel_erskineville_scenes_from/",
+      "score": 195
+    },
+    {
+      "text": "AusGrid outage in Newtown, Enmore, Erskineville, Alexandria",
+      "url": "https://reddit.com/r/sydney/comments/1conp4l/ausgrid_outage_in_newtown_enmore_erskineville/",
+      "score": 193
+    },
+    {
+      "text": "Train delayed due to person on tracks\nCurrently stuck on a packed train at Redfern due to someone on the tracks at Erskineville.\n\nThat's it, just having a whinge because I'm tired & want to get home.",
+      "url": "https://reddit.com/r/sydney/comments/1jphrl6/train_delayed_due_to_person_on_tracks/",
+      "score": 150
+    },
+    {
+      "text": "Anyone have an idea on what these birds are?  In Erskineville",
+      "url": "https://reddit.com/r/sydney/comments/1inmf40/anyone_have_an_idea_on_what_these_birds_are_in/",
+      "score": 114
+    },
+    {
+      "text": "Is this a new thing?\nErskineville station",
+      "url": "https://reddit.com/r/sydney/comments/1p2gzs8/is_this_a_new_thing/",
+      "score": 109
+    },
+    {
+      "text": "Four blocks of 900 new apartments in Macquarie Park are at risk of collapsing due to “serious damage” to the concrete in its basement, the state’s building authority says.\n\nBuilding Commission NSW iss",
+      "url": "https://reddit.com/r/sydney/comments/198lbm1/macquarie_parks_lachlans_line_apartment_complex/ki81w0f/",
+      "score": 86
+    },
+    {
+      "text": "Add Erskineville and Marrickville to the list",
+      "url": "https://reddit.com/r/sydney/comments/1chg4lr/why_is_mobile_service_so_shit_at_stanmore_station/l2298qz/",
+      "score": 70
+    },
+    {
+      "text": "I've lived and worked in the western/southwestern suburbs (Blacktown, Milperra, Roselands, Bonnyrigg) and the Inner West (Newtown, Erskineville, Glebe) and of course the inner west is more walkable in",
+      "url": "https://reddit.com/r/sydney/comments/1c7jaal/rant_hate_how_car_centric_this_city_is/l08e67v/",
+      "score": 59
+    },
+    {
+      "text": "I would like in Erskineville over anywhere else if money were no object.\n\nThe only downside is if you ever do want to get a car, parking is fucked and properties with parking are basically non existen",
+      "url": "https://reddit.com/r/sydney/comments/1d0t0qd/is_erskinville_a_good_place_to_live/l5pfb3s/",
+      "score": 57
+    }
+  ]
+}

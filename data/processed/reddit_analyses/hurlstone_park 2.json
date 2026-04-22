@@ -1,0 +1,101 @@
+{
+  "suburb": "Hurlstone Park",
+  "post_count": 29,
+  "fetched_at": "2026-04-18T02:12:39.313338+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.527,
+      "mentions": 18
+    },
+    "safety": {
+      "score": 0.574,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.526,
+      "mentions": 27
+    },
+    "affordability": {
+      "score": 0.56,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.406,
+      "mentions": 19
+    },
+    "nightlife": {
+      "score": 0.48,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5647,
+    "anger": 0.0596,
+    "surprise": 0.1137,
+    "disgust": 0.095,
+    "fear": 0.0563,
+    "sadness": 0.0897,
+    "joy": 0.021
+  },
+  "narrative": "Reddit discussions about Hurlstone Park are most positive about safety (0.57) and affordability (0.56). Residents are most critical about nightlife (0.48) and green space (0.41). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "15 speed bumps in 1km - Is this Sydney's most speed bumped street?\nWith the ongoing metro works, the rail replacement SW1 bus runs through Crinan St, Hurlstone Park and into Ewart St, Dulwich Hill.\n\n[",
+      "url": "https://reddit.com/r/sydney/comments/1h9wmb8/15_speed_bumps_in_1km_is_this_sydneys_most_speed/",
+      "score": 117
+    },
+    {
+      "text": "I went to an inspection of $500 a few months ago in Hurlstone Park. It was a literal ahithole with no laundry, no room for fridge, miserable toilet, miserable bathroom.\n\nThere were like 30 people on t",
+      "url": "https://reddit.com/r/sydney/comments/1dhp6ci/a_map_of_2_bedroom_rentals_for_400_a_week_in/l8yk8bb/",
+      "score": 58
+    },
+    {
+      "text": "I put Hurlstone Park/Dulwich Hill into Real Estate and 17 2 bed apartments come up under $650.\n\nI would choose here.",
+      "url": "https://reddit.com/r/sydney/comments/1dpg0p6/where_is_the_most_best_place_to_move_while_still/lagp2iw/",
+      "score": 54
+    },
+    {
+      "text": "Electric scooters?  How many will end up in the Cook's River then?\n\nTHey seem to be shortchanging the people who are at the further end of the line too.  One all stops bus no express buses.\n\nTiming su",
+      "url": "https://reddit.com/r/sydney/comments/1chgzi7/sydney_commuters_face_tough_time_as_t3_line/l22ebpu/",
+      "score": 49
+    },
+    {
+      "text": "to be fair, i'm in one of the areas that's using heritage to fight it. It seems to be the only tool that LGAs have to block development from proceeding, everything else such as \"insufficient schools i",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgur2tc/",
+      "score": 44
+    },
+    {
+      "text": "No announcement of a Sydenham to Hurlstone Park all stops shuttle for bus routes. Marrickville and Hurlstone Park get screwed, having to wait for an all stops Bankstown bus to turn up, which is always",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1v0pku/",
+      "score": 29
+    },
+    {
+      "text": "Hurlstone Park and Canterbury too",
+      "url": "https://reddit.com/r/sydney/comments/1de1ml2/maybe_a_stupid_question_but_are_there_any/l88z3xj/",
+      "score": 29
+    },
+    {
+      "text": "The light rail takes forever so is not a good option for Dulwich Hill.\n\nMarrickville is close enough to walk to Sydenham.\n\nI live in Hurlstone Park and it's currently quicker to cycle to Sydenham and ",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1v5qg9/",
+      "score": 21
+    },
+    {
+      "text": "I'd be in favour of changing Hurlstone Park back to Fernhill",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfvw43/",
+      "score": 16
+    },
+    {
+      "text": "They have increased the frequency of light rail so from Dulwich Hill in peak there’s a tram every 6 mins but I think they also have to increase the reliability and frequency of the 445 then plenty of ",
+      "url": "https://reddit.com/r/sydney/comments/1chgzi7/sydney_commuters_face_tough_time_as_t3_line/l22mvv7/",
+      "score": 15
+    }
+  ]
+}

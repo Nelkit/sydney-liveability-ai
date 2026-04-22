@@ -1,0 +1,56 @@
+{
+  "suburb": "Oakhurst",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:12.337730+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "community": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.9189,
+    "surprise": 0.0514,
+    "disgust": 0.0133,
+    "anger": 0.0067,
+    "sadness": 0.0051,
+    "joy": 0.0025,
+    "fear": 0.0022
+  },
+  "narrative": "Reddit discussions about Oakhurst are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "From Oakhurst, there's literally nothing here, lmao. I guess The Oaks residence. The Blacktown Native Institution, which is literally just grass now, was also here once upon a time and is on the NSW H",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgewqs8/",
+      "score": 2
+    }
+  ]
+}

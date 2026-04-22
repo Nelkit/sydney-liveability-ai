@@ -1,0 +1,101 @@
+{
+  "suburb": "Bass Hill",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:12.391109+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.74,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.701,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.704,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.787,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.826,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.77,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.795,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.747,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "surprise": 0.1867,
+    "disgust": 0.167,
+    "fear": 0.038,
+    "anger": 0.0271,
+    "neutral": 0.5014,
+    "sadness": 0.0426,
+    "joy": 0.0372
+  },
+  "narrative": "Reddit discussions about Bass Hill are most positive about green space (0.83) and affordability (0.80). Residents are most critical about transport (0.70) and safety (0.70). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "They grow big fungi at Bass Hill\nBiggest mushroom I've seen in my life!  Im a size 10 shoe and it dwarfed my foot. Found it while I was walking through the bush reserve at The Crest.",
+      "url": "https://reddit.com/r/sydney/comments/1l16zh4/they_grow_big_fungi_at_bass_hill/",
+      "score": 76
+    },
+    {
+      "text": "Little Bo Peep lose a sheep?\nCan someone tell me about the mystery sheep I saw at The Crest, Bass Hill yesterday?\n\nWas walking the dog & there it was, out in the open bold as brass.\n\nSheep 👀 at doggo ",
+      "url": "https://reddit.com/r/sydney/comments/1f0mqns/little_bo_peep_lose_a_sheep/",
+      "score": 24
+    },
+    {
+      "text": "Old flower power site Bass Hill\nIs there any reason why this site hasn't been bought by developers? The for sale/action sign has been there for nearly 5 years or so. \n\nI would guess contaminated soil?",
+      "url": "https://reddit.com/r/sydney/comments/1n6k79d/old_flower_power_site_bass_hill/",
+      "score": 13
+    },
+    {
+      "text": "I lived in bass hill before moving to concord early last year, a LOT better in the inner cities. The west is honestly not the best when it comes to quality of life, safety for women & general health a",
+      "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/koz4xzc/",
+      "score": 8
+    },
+    {
+      "text": "I hear them pretty often in Bass Hill",
+      "url": "https://reddit.com/r/sydney/comments/1d9akxl/loud_bangs_heard_in_warwick_farm_and_edmonton_park/l7bzy0c/",
+      "score": 8
+    },
+    {
+      "text": "Whole area around there has gone to shit. Chester Hill, Bass Hill, even Georges Hall.\nThere's a great banh mi spot at Birrong though..😉",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyapfl7/",
+      "score": 7
+    },
+    {
+      "text": "Did you know there are tunnels from Bankstown airport up to Bass Hill?\nOld WWii infrastructure.",
+      "url": "https://reddit.com/r/sydney/comments/1d9akxl/loud_bangs_heard_in_warwick_farm_and_edmonton_park/l7cn5ks/",
+      "score": 6
+    },
+    {
+      "text": "This is useful to know - thank you!! Boston Doughnuts in Bass Hill used to be card only. They charged a surcharge on top for card payments anyway. So not all businesses are aware of this rule.",
+      "url": "https://reddit.com/r/sydney/comments/18yyjpu/square_payment_terminals_surcharge/kgefpio/",
+      "score": 5
+    },
+    {
+      "text": "I lived in Yagoona for 20 years. Moved out of the area couple years ago. Random suburb but close to other major ones, living wise it’s totally fine. The whole suburb doesn’t look like these pics. That",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kydks8o/",
+      "score": 5
+    },
+    {
+      "text": "Bass Hill Plaza is so untouched by time you'd expect to see a Tandy or Venture store in there",
+      "url": "https://reddit.com/r/sydney/comments/1d1k14t/proposed_eastwood_centre_redevelopment/l5v19jr/",
+      "score": 5
+    }
+  ]
+}

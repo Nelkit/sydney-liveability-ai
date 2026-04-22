@@ -1,0 +1,101 @@
+{
+  "suburb": "Centennial Park",
+  "post_count": 85,
+  "fetched_at": "2026-04-18T02:00:53.644036+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.609,
+      "mentions": 23
+    },
+    "green_space": {
+      "score": 0.645,
+      "mentions": 74
+    },
+    "community": {
+      "score": 0.665,
+      "mentions": 67
+    },
+    "nightlife": {
+      "score": 0.677,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.978,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.57,
+      "mentions": 14
+    },
+    "noise": {
+      "score": 0.931,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.0802,
+    "neutral": 0.4134,
+    "anger": 0.0696,
+    "fear": 0.0813,
+    "surprise": 0.1559,
+    "sadness": 0.0621,
+    "joy": 0.1374
+  },
+  "narrative": "Reddit discussions about Centennial Park are most positive about food and cafe (0.98) and noise (0.93). Residents are most critical about transport (0.57) and affordability (0.50). This analysis is based on 85 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "People who just leave their rubbish are disgusting. I don't understand why they do it. I kept all my stuff in my bag and chucked it when I got home. Any big gathering gets like this... you should've s",
+      "url": "https://reddit.com/r/sydney/comments/1b55123/the_city_after_mardi_gra_parade/kt3ckkb/",
+      "score": 1308
+    },
+    {
+      "text": "Was anyone in Centennial Park on Monday 4th March and seen an incident where a dog knocked down a cyclist on Grand Drive, and the dog owner fled the scene without checking the fallen cyclist to offer ",
+      "url": "https://reddit.com/r/sydney/comments/1bh93fn/was_anyone_in_centennial_park_on_monday_4th_march/",
+      "score": 523
+    },
+    {
+      "text": "Tree dropped on a car at Centennial Park\nWas walking to Joe's icecream and I saw this.",
+      "url": "https://reddit.com/r/sydney/comments/1s6jrf1/tree_dropped_on_a_car_at_centennial_park/",
+      "score": 278
+    },
+    {
+      "text": "Nice day at Centennial Park",
+      "url": "https://reddit.com/r/sydney/comments/1nhdjoe/nice_day_at_centennial_park/",
+      "score": 231
+    },
+    {
+      "text": "Centennial Park Afternoons",
+      "url": "https://reddit.com/r/sydney/comments/1igkomc/centennial_park_afternoons/",
+      "score": 217
+    },
+    {
+      "text": "Very cool question, thanks op.\n\nI think the ethnic neighbourhood with a cheap but authentic restaurants are done much better in Sydney than other cities. The multiple cbd that sydney has set up with h",
+      "url": "https://reddit.com/r/sydney/comments/198tfaa/what_is_a_thing_sydney_does_better_than_any_other/ki9ic3t/",
+      "score": 98
+    },
+    {
+      "text": "Rainbow like ring, Sun Halo, captured at Centennial Park\nSpotted the ring while waiting to start my cricket umpire gig.",
+      "url": "https://reddit.com/r/sydney/comments/1rhlcfq/rainbow_like_ring_sun_halo_captured_at_centennial/",
+      "score": 96
+    },
+    {
+      "text": "Yeah, what an asshole. I hope he is punished severely.\n\nWhile not quite as tragic, my father-in-law was badly injured a few weeks ago while cycling in Centennial Park and an off leash dog ran towards ",
+      "url": "https://reddit.com/r/sydney/comments/1blbdl8/man_charged_over_alleged_hitandrun_named/kw4awv7/",
+      "score": 87
+    },
+    {
+      "text": "Centennial Park. He looks like his day is ruined. \nSome kind of owl looking creature. Possibly a baby but he wasn't flying away.",
+      "url": "https://reddit.com/r/sydney/comments/1hk8snk/centennial_park_he_looks_like_his_day_is_ruined/",
+      "score": 80
+    },
+    {
+      "text": "What's this guy looking for?\nI don't know if there's an ANZAC event on over at Moore/Centennial Park or something, but this civilian helicopter has been circling for quite a while now\n\nhttps://fr24.co",
+      "url": "https://reddit.com/r/sydney/comments/1k7fpmb/whats_this_guy_looking_for/",
+      "score": 66
+    }
+  ]
+}

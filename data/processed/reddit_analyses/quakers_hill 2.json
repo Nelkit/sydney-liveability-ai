@@ -1,0 +1,101 @@
+{
+  "suburb": "Quakers Hill",
+  "post_count": 21,
+  "fetched_at": "2026-04-18T02:15:03.153828+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.347,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.564,
+      "mentions": 12
+    },
+    "community": {
+      "score": 0.574,
+      "mentions": 19
+    },
+    "noise": {
+      "score": 0.537,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.811,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.76,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.667,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.976,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "anger": 0.0615,
+    "fear": 0.0931,
+    "disgust": 0.1799,
+    "neutral": 0.429,
+    "surprise": 0.1413,
+    "sadness": 0.0574,
+    "joy": 0.0377
+  },
+  "narrative": "Reddit discussions about Quakers Hill are most positive about nightlife (0.98) and affordability (0.81). Residents are most critical about noise (0.54) and safety (0.35). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "These people are scamming drivers in Quakers hills.\nMy friend was driving in Quakers Hill when suddenly a woman lay on the road in front of his car. They accused him of hitting the woman with his car ",
+      "url": "https://reddit.com/r/sydney/comments/1dmgpmk/these_people_are_scamming_drivers_in_quakers_hills/",
+      "score": 2358
+    },
+    {
+      "text": "PSA: Altered train running this afternoon and evening\nThere will be shuttle services on ALL lines (except T4) this afternoon at reduced frequencies.  Quakers Hill/Richmond trains will run from Blackto",
+      "url": "https://reddit.com/r/sydney/comments/1ktbpvp/psa_altered_train_running_this_afternoon_and/",
+      "score": 139
+    },
+    {
+      "text": "Standard Quakers hill, you should see little Delhi down near the train station.. haven’t seen soo much rubbish pollution in my life.",
+      "url": "https://reddit.com/r/sydney/comments/1dmgpmk/these_people_are_scamming_drivers_in_quakers_hills/l9vkmjc/",
+      "score": 66
+    },
+    {
+      "text": "How is the west now?\nHi guys,\n\nI was thinking about how I used to hang around the Blacktown area back in the day, about 20 years ago. Was pretty rough - not necessarily violent but you had bogans and ",
+      "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/",
+      "score": 28
+    },
+    {
+      "text": "Quakers Hill and Kings Langley are quite fancy now. Fairly expensive too. People pay a premium for the proximity to ‘the hills’ - I feel like a lot of the 30YOs who are priced out of The Hills try to ",
+      "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/koz6q2x/",
+      "score": 20
+    },
+    {
+      "text": "It does depend on the suburb.\n\nSome of the northern suburbs like Acacia gardens, Glenwood, (East) Quakers Hill, Stanhope etc are nice. Surrounding Blacktown centre suburb are a lot of low income and n",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kivbvh7/",
+      "score": 18
+    },
+    {
+      "text": "Chatswood 536 is horrendous. \n\nI worked as a nurse around this area - the time between buses is abysmal - esp. 3 years ago. \n\nMy shift would end at 10:00 pm (ish)  - and the 5 min drive would be 30 mi",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/kruufi1/",
+      "score": 13
+    },
+    {
+      "text": "I remember a friend of mine from Quakers Hill used to say it really fast so people would think she said Castle Hill.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxec8r/",
+      "score": 12
+    },
+    {
+      "text": "Quakers Hill here, I didn’t feel it and I’ve felt some biggies in Christchurch.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwewjm/",
+      "score": 11
+    },
+    {
+      "text": "Haha. I see to live out west. I’ve heard people from KingsPark, Kings Langley, Quakers Hill and Riverstone all claim to be from The Hills. Worst ive heard was someone from Eastwood claim to be Lower N",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxbctw/",
+      "score": 11
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Greystanes",
+  "post_count": 18,
+  "fetched_at": "2026-04-18T02:15:57.927778+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.203,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.055,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.189,
+      "mentions": 10
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.497,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.405,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.2407,
+    "anger": 0.0552,
+    "disgust": 0.0584,
+    "neutral": 0.4804,
+    "sadness": 0.0638,
+    "surprise": 0.0903,
+    "joy": 0.0112
+  },
+  "narrative": "Reddit discussions about Greystanes are most positive about transport (0.50) and affordability (0.50). Residents are most critical about community (0.19) and green space (0.06). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Canal Rd Park, Greystanes - thugs on motocross bikes\nEveryday at about 5pm, a group of thugs descent on Canal Rd park, Greystanes and go on a rampage on their motocross bikes. This goes on for a coupl",
+      "url": "https://reddit.com/r/sydney/comments/1g3b14r/canal_rd_park_greystanes_thugs_on_motocross_bikes/",
+      "score": 387
+    },
+    {
+      "text": "He uses a different car each time. Here’s one where he rolls up in a Ferrari and promptly introduces a rundown 4 bedder in Greystanes.\n\nhttps://www.instagram.com/reel/C2R64wVLTdH\n\nIt’s either brillian",
+      "url": "https://reddit.com/r/sydney/comments/1ag1e3g/real_estate_agents_are_hilarious/koeb4t7/",
+      "score": 228
+    },
+    {
+      "text": "Car set alight at Greystanes.\nAcross my house at 3am this morning",
+      "url": "https://reddit.com/r/sydney/comments/1ld7blv/car_set_alight_at_greystanes/",
+      "score": 154
+    },
+    {
+      "text": "Morning haze today at Greystanes.",
+      "url": "https://reddit.com/r/sydney/comments/1lccis3/morning_haze_today_at_greystanes/",
+      "score": 112
+    },
+    {
+      "text": "Police operation in Greystanes after reports of shots fired",
+      "url": "https://reddit.com/r/sydney/comments/1n90q9m/police_operation_in_greystanes_after_reports_of/",
+      "score": 29
+    },
+    {
+      "text": "Those guys are usually busy altering the sign for Canal Road in Greystanes",
+      "url": "https://reddit.com/r/sydney/comments/1c62fli/i_thought_parade_was_meant_to_be_pde_is_rde_a/kzyegdu/",
+      "score": 13
+    },
+    {
+      "text": "Request for video footage car swerving towards motorbike - Bett's road 5:25pm\nI was riding my motorbike on Betts Road (Cumberland highway) to my home in Greystanes. I was following my partner who was ",
+      "url": "https://reddit.com/r/sydney/comments/1qn9qm6/request_for_video_footage_car_swerving_towards/",
+      "score": 9
+    },
+    {
+      "text": "From https://www.sydneywater.com.au/water-the-environment/what-we-are-doing/works-near-you.html\n\n> GREYSTANES, PENDLE HILL, CONSTITUTION HILL and GIRRAWEEN, MERRYLANDS\n> \n> Our crews are responding to",
+      "url": "https://reddit.com/r/sydney/comments/1c0i1nz/sydney_water_outage_in_western_sydney_across/kywk3c2/",
+      "score": 8
+    },
+    {
+      "text": "Felt it in Greystanes and heard a thud in the ground",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktweyxw/",
+      "score": 6
+    },
+    {
+      "text": "Greystanes here - felt the bed sort of jolt and heard something bang against a wall.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktwgr4t/",
+      "score": 5
+    }
+  ]
+}

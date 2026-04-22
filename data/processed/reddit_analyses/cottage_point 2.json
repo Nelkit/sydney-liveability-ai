@@ -1,0 +1,61 @@
+{
+  "suburb": "Cottage Point",
+  "post_count": 2,
+  "fetched_at": "2026-04-18T02:20:54.945597+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.978,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8415,
+    "disgust": 0.0096,
+    "surprise": 0.0227,
+    "sadness": 0.0116,
+    "joy": 0.0959,
+    "anger": 0.0062,
+    "fear": 0.0125
+  },
+  "narrative": "Reddit discussions about Cottage Point are most positive about community (0.98) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Haven’t tried port hacking yet, but me and my bf went crabbing and fishing on the Hawkesbury several times in recent months. Yes it’s clean and safe to eat, with a fishing licence of course. We’ve bee",
+      "url": "https://reddit.com/r/sydney/comments/192a4qc/fishing_or_crab_port_hacking_and_hawkesbury_river/kh16o65/",
+      "score": 5
+    },
+    {
+      "text": "Worth the drive up to Palmy, and you can always find a quiet spot up by the lighthouse if you hit it early\nTake a picnic and a bottle of bubbles - hit it reasonably early so you don’t get too many ran",
+      "url": "https://reddit.com/r/sydney/comments/1b03682/quite_beach_with_rocks_on_a_cliff_near_by/ks6uncm/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Chullora",
+  "post_count": 21,
+  "fetched_at": "2026-04-18T02:14:49.346664+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.546,
+      "mentions": 15
+    },
+    "transport": {
+      "score": 0.573,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.535,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.682,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.87,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.855,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.934,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "neutral": 0.6458,
+    "surprise": 0.1671,
+    "joy": 0.0366,
+    "sadness": 0.0546,
+    "fear": 0.0304,
+    "disgust": 0.0484,
+    "anger": 0.0172
+  },
+  "narrative": "Reddit discussions about Chullora are most positive about green space (0.93) and food and cafe (0.87). Residents are most critical about nightlife (0.54) and noise (0.50). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Chullora to Mos Eisley",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfjtm5/",
+      "score": 162
+    },
+    {
+      "text": "The tracking probably just says it's arrived at Chullora 17 days ago.",
+      "url": "https://reddit.com/r/sydney/comments/18zmkx6/only_1_brick_found_in_bondi/kgjedbh/",
+      "score": 157
+    },
+    {
+      "text": "Peakhurst, better connectivity to trains either via Narwee or Mortdale station. As you've mentioned, you're a family of three and I imagine schools are on the cards. There are better schools options a",
+      "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l50eebh/",
+      "score": 34
+    },
+    {
+      "text": "I'm surprised it didn't visit the Chullora facility. That place operates like a boomerang!",
+      "url": "https://reddit.com/r/sydney/comments/1d9wieh/my_package_and_its_tour_of_sydney/l7gjp4w/",
+      "score": 25
+    },
+    {
+      "text": "You can’t google “car tyres near chullora” and make a few calls?",
+      "url": "https://reddit.com/r/sydney/comments/1aejm7b/anyone_know_where_i_can_buy_good_value_tyres/kk8gpv4/",
+      "score": 15
+    },
+    {
+      "text": "Chullora - The Parcel Void",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjgcqtn/",
+      "score": 11
+    },
+    {
+      "text": "Everyone priced out of Greenacre and Chullora moving into the area has pushed the median house price of Yagoona to $1.15m. Pre-covid, you could buy into there for under $850k.",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyapv39/",
+      "score": 8
+    },
+    {
+      "text": "Holy shit, I was just talking to someone about this a couple days ago, I was sure I dreamt it up. I think the one I remember was at Chullora or somewhere around there",
+      "url": "https://reddit.com/r/sydney/comments/1bpdbi5/i_need_help_remembering_a_shop/kwv9pdy/",
+      "score": 7
+    },
+    {
+      "text": "It’s not going back and forth. It has t left Granville.  When it says “in transit to Chullora” it means it’s programmed on the system to go to Chullora. But for whatever reason it keeps being left beh",
+      "url": "https://reddit.com/r/sydney/comments/1bvjerx/aus_post_sydney_up_your_game_please/kxzxv0l/",
+      "score": 7
+    },
+    {
+      "text": "I ordered something online recently fly from a place that’s address is in Randwick. I live in Bondi, the next suburb. The package went from Randwick, to “Western Sydney”, to Chullora, to “Sydney South",
+      "url": "https://reddit.com/r/sydney/comments/1d9wieh/my_package_and_its_tour_of_sydney/l7grs2w/",
+      "score": 7
+    }
+  ]
+}

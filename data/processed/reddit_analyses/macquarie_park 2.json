@@ -1,0 +1,101 @@
+{
+  "suburb": "Macquarie Park",
+  "post_count": 89,
+  "fetched_at": "2026-04-18T01:59:40.065848+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.765,
+      "mentions": 48
+    },
+    "community": {
+      "score": 0.71,
+      "mentions": 57
+    },
+    "green_space": {
+      "score": 0.657,
+      "mentions": 51
+    },
+    "safety": {
+      "score": 0.281,
+      "mentions": 25
+    },
+    "affordability": {
+      "score": 0.447,
+      "mentions": 19
+    },
+    "nightlife": {
+      "score": 0.623,
+      "mentions": 10
+    },
+    "food_and_cafe": {
+      "score": 0.535,
+      "mentions": 15
+    },
+    "noise": {
+      "score": 0.13,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "surprise": 0.1282,
+    "neutral": 0.5574,
+    "disgust": 0.044,
+    "fear": 0.0983,
+    "joy": 0.0636,
+    "anger": 0.0489,
+    "sadness": 0.0595
+  },
+  "narrative": "Reddit discussions about Macquarie Park are most positive about transport (0.77) and community (0.71). Residents are most critical about safety (0.28) and noise (0.13). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "It’s only 2025 yet the Metro is already at crush-load.\nTook the Metro this afternoon in a north-west direction from Chatswood to Macquarie Park. I simply can’t believe how crowded it is. On the one ha",
+      "url": "https://reddit.com/r/sydney/comments/1pi1fla/its_only_2025_yet_the_metro_is_already_at/",
+      "score": 1904
+    },
+    {
+      "text": "Crash @ Macquarie Park on Valentines Day\nI feel bad about the biker. Unlikely but hope he survived. That was exactly how my neighbour almost lost his life. He was bed bound for 8 months and totally ch",
+      "url": "https://reddit.com/r/sydney/comments/1aqgykx/crash_macquarie_park_on_valentines_day/",
+      "score": 567
+    },
+    {
+      "text": "20-year-old driver charged with dangerous driving occasioning death and negligent driving occasioning death, following fatal Macquarie Park motorcycle crash",
+      "url": "https://reddit.com/r/sydney/comments/1ar4uq7/20yearold_driver_charged_with_dangerous_driving/",
+      "score": 464
+    },
+    {
+      "text": "Buses are way too inefficient for getting from A to B.\n*Buses take way too long to get from A to B, with so many traffic lights and stops. If they were more direct and reliable in terms of times, peop",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/",
+      "score": 368
+    },
+    {
+      "text": "Cool stuff in Macquarie park",
+      "url": "https://reddit.com/r/sydney/comments/1izyn52/cool_stuff_in_macquarie_park/",
+      "score": 324
+    },
+    {
+      "text": "Used to live in the Camden area and it was such a jarring difference moving to Macquarie Park.  In Camden you have to drive everywhere because closest station was 15-20 minutes drive away with no traf",
+      "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koxnbod/",
+      "score": 317
+    },
+    {
+      "text": "Macquarie Park’s Lachlan’s Line apartment complex ‘at threat of collapse’",
+      "url": "https://reddit.com/r/sydney/comments/198lbm1/macquarie_parks_lachlans_line_apartment_complex/",
+      "score": 284
+    },
+    {
+      "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",
+      "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
+      "score": 267
+    },
+    {
+      "text": "Macquarie park shopping centre, 3 years ago today\nOk , it was a Wednesday so maybe it was quite /s",
+      "url": "https://reddit.com/r/sydney/comments/1epdhdz/macquarie_park_shopping_centre_3_years_ago_today/",
+      "score": 224
+    },
+    {
+      "text": "A tree has just fallen on University Ave, Macquarie Park\nIf you are planning to use this road, it is currently closed.",
+      "url": "https://reddit.com/r/sydney/comments/1i39ezr/a_tree_has_just_fallen_on_university_ave/",
+      "score": 172
+    }
+  ]
+}
