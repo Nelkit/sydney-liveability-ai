@@ -63,7 +63,7 @@ dist/
 # Logs
 logs/
 *.log
-
+d
 # OS
 .DS_Store
 Thumbs.db
