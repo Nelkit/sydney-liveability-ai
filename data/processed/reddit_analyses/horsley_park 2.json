@@ -1,0 +1,66 @@
+{
+  "suburb": "Horsley Park",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:35.913438+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.138,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.197,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.094,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.492,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4701,
+    "sadness": 0.0437,
+    "anger": 0.3116,
+    "fear": 0.1083,
+    "disgust": 0.0217,
+    "surprise": 0.024,
+    "joy": 0.0207
+  },
+  "narrative": "Reddit discussions about Horsley Park are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.14) and noise (0.09). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": ">Police today released CCTV footage showing Ms Zrinski in the car's passenger seat, as it drove into petrol stations at Horsley Park that night and Mount Victoria the next day, after returning from th",
+      "url": "https://reddit.com/r/sydney/comments/1cdayum/homicide_detectives_begin_threeday_search_for/l1b4vt7/",
+      "score": 57
+    },
+    {
+      "text": "Fires near me app shows fire at Horsley Park",
+      "url": "https://reddit.com/r/sydney/comments/1bdm5qs/kinda_smoky_in_the_parra_area/kundxc3/",
+      "score": 13
+    },
+    {
+      "text": "Randwick, Canterbury, Rosehill, Warwick Farm. \n\nThere is the lovely Equestrian Centre near the aptly named Horsley Park. Probably room to make a full on Horse Disney World nearby in the parklands.",
+      "url": "https://reddit.com/r/sydney/comments/1bo4bg1/reported_plan_to_move_sydneys_rosehill_racecourse/kwous2d/",
+      "score": 7
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Baulkham Hills",
+  "post_count": 25,
+  "fetched_at": "2026-04-18T02:13:18.938048+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.306,
+      "mentions": 9
+    },
+    "community": {
+      "score": 0.397,
+      "mentions": 22
+    },
+    "transport": {
+      "score": 0.218,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.448,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.876,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.241,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.666,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.1258,
+    "joy": 0.1102,
+    "fear": 0.0685,
+    "neutral": 0.4588,
+    "sadness": 0.0371,
+    "anger": 0.0684,
+    "disgust": 0.1313
+  },
+  "narrative": "Reddit discussions about Baulkham Hills are most positive about green space (0.88) and food and cafe (0.67). Residents are most critical about nightlife (0.24) and transport (0.22). This analysis is based on 25 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Miraculous Crash in Baulkham Hills",
+      "url": "https://reddit.com/r/sydney/comments/1gk51b5/miraculous_crash_in_baulkham_hills/",
+      "score": 980
+    },
+    {
+      "text": "Three bodies found in Baulkham Hills and North Parramatta",
+      "url": "https://reddit.com/r/sydney/comments/1av8z23/three_bodies_found_in_baulkham_hills_and_north/",
+      "score": 267
+    },
+    {
+      "text": ">Police allege the mother and son were killed inside the martial arts centre sometime between 5:30 and 6:30pm on Monday.  \nThe man then allegedly used the woman's BMW to leave North Parramatta after 6",
+      "url": "https://reddit.com/r/sydney/comments/1aw1d0m/man_arrested_over_alleged_triple_murder_after/krem3xk/",
+      "score": 230
+    },
+    {
+      "text": "Friday morning's moonset amongst the Belt of Venus - taken in Baulkham Hills\nThis doesnt happen super often, got to work early to make sure I got a pic lol",
+      "url": "https://reddit.com/r/sydney/comments/1lxirs3/friday_mornings_moonset_amongst_the_belt_of_venus/",
+      "score": 120
+    },
+    {
+      "text": "PSA: water outage\n\nBAULKHAM HILLS, WINSTON HILLS and NORTHMEAD\n\nOur crews are responding to a fault that is affecting water supply to customers in the area.  We will identify the issue and restore the",
+      "url": "https://reddit.com/r/sydney/comments/1hf1ta9/psa_water_outage/",
+      "score": 97
+    },
+    {
+      "text": "Yes the townhome at Baulkham Hills where the male was found also had a broken window so possibly someone else was involved.",
+      "url": "https://reddit.com/r/sydney/comments/1av8z23/three_bodies_found_in_baulkham_hills_and_north/kr9abkd/",
+      "score": 39
+    },
+    {
+      "text": "Why are there so many red-light cameras in Blacktown?\nHeaded over to the hood after quite a while to drop a friend off in Oxford St....what struck me was the sheer number of red light cameras installe",
+      "url": "https://reddit.com/r/sydney/comments/1fe99bl/why_are_there_so_many_redlight_cameras_in/",
+      "score": 26
+    },
+    {
+      "text": "Even the ones down the road at Baulkham Hills on the corner of Windsor and Seven Hills Roads also developed by his company Dyldam are just as defective as the ones on the back of Castle Towers.",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt7vgb/",
+      "score": 12
+    },
+    {
+      "text": "Asian grocer with Japanese selection (The Hills district)\nWe already know (and love) the Korean grocer in Baulkham Hills for fire sauce and kimchi but I'm looking for things like wakame packets, pickl",
+      "url": "https://reddit.com/r/sydney/comments/1dexkwt/asian_grocer_with_japanese_selection_the_hills/",
+      "score": 11
+    },
+    {
+      "text": "You're not wrong in terms of what direction it is from the city, but \"north west\"  is the name for North Rocks up through Baulkham Hills and Castle Hill. Probably ending before Kellyville where it's j",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxsefh/",
+      "score": 10
+    }
+  ]
+}

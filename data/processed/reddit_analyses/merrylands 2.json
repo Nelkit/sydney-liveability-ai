@@ -1,0 +1,101 @@
+{
+  "suburb": "Merrylands",
+  "post_count": 45,
+  "fetched_at": "2026-04-18T02:07:44.111234+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.191,
+      "mentions": 15
+    },
+    "community": {
+      "score": 0.293,
+      "mentions": 35
+    },
+    "transport": {
+      "score": 0.266,
+      "mentions": 15
+    },
+    "affordability": {
+      "score": 0.284,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.285,
+      "mentions": 11
+    },
+    "nightlife": {
+      "score": 0.322,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.685,
+      "mentions": 15
+    },
+    "noise": {
+      "score": 0.913,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "sadness": 0.0924,
+    "fear": 0.064,
+    "disgust": 0.0488,
+    "anger": 0.0788,
+    "neutral": 0.4588,
+    "surprise": 0.1334,
+    "joy": 0.1239
+  },
+  "narrative": "Reddit discussions about Merrylands are most positive about noise (0.91) and food and cafe (0.69). Residents are most critical about transport (0.27) and safety (0.19). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Memorial for Merrylands victim of stabbing attack\nWent to Merrylands yesterday to return some library books and saw this memorial near the site of the stabbing.",
+      "url": "https://reddit.com/r/sydney/comments/1rae626/memorial_for_merrylands_victim_of_stabbing_attack/",
+      "score": 588
+    },
+    {
+      "text": "Buses are way too inefficient for getting from A to B.\n*Buses take way too long to get from A to B, with so many traffic lights and stops. If they were more direct and reliable in terms of times, peop",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/",
+      "score": 368
+    },
+    {
+      "text": "One dead, two critically injured in Merrylands stabbing attack",
+      "url": "https://reddit.com/r/sydney/comments/1r6qxfn/one_dead_two_critically_injured_in_merrylands/",
+      "score": 228
+    },
+    {
+      "text": "Man arrested after fatal Merrylands stabbing escaped care 10 days before attack, health authorities say",
+      "url": "https://reddit.com/r/sydney/comments/1r717pv/man_arrested_after_fatal_merrylands_stabbing/",
+      "score": 216
+    },
+    {
+      "text": "Lost dog, Merrylands area\nhttps://preview.redd.it/ldyvyv4ez1bg1.png?width=3024&format=png&auto=webp&s=7cb14dc8e2f1c801a1297853aa1e373d8c41f21d\n\nMy red kelpie female has gone missing from my yard in th",
+      "url": "https://reddit.com/r/sydney/comments/1q2jn9g/lost_dog_merrylands_area/",
+      "score": 157
+    },
+    {
+      "text": "I noticed that too. Portion of sauce is smaller too. If we order from Granville we usually get another tub of sauce from somewhere in Guilford or Merrylands.",
+      "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4a1kf/",
+      "score": 78
+    },
+    {
+      "text": "Thanks for your support, happened in Merrylands (the s stands for shit hole)",
+      "url": "https://reddit.com/r/sydney/comments/1acar4h/harassed_in_shopping_centre_in_broad_daylight/kjt43sf/",
+      "score": 77
+    },
+    {
+      "text": "Merrylands options\nI just wannt vote for whoever will keep picking up the bins on a Monday morning... these options tho...",
+      "url": "https://reddit.com/r/sydney/comments/1fg8dav/merrylands_options/",
+      "score": 60
+    },
+    {
+      "text": "If he’s doing that to randoms in Merrylands he won’t last long lol… \n\nAlso Merrylands Stockland is the only shopping center I always see 2 cops walking up and down the long corridor all day.. must hav",
+      "url": "https://reddit.com/r/sydney/comments/1acar4h/harassed_in_shopping_centre_in_broad_daylight/kjtjgu3/",
+      "score": 51
+    },
+    {
+      "text": "Depends who you are and your life style. \n\nIf you are rich and/or wealthy retired  or professional lots of inner city and eastern suburbs will be your vibe. \n\nIf you are afghan , merrylands would be y",
+      "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l9548aq/",
+      "score": 50
+    }
+  ]
+}

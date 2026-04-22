@@ -1,0 +1,71 @@
+{
+  "suburb": "Strathfield South",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:23.670630+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.633,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.487,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.719,
+    "surprise": 0.2285,
+    "anger": 0.01,
+    "disgust": 0.0148,
+    "fear": 0.0156,
+    "sadness": 0.0085,
+    "joy": 0.0035
+  },
+  "narrative": "Reddit discussions about Strathfield South are most positive about community (0.63) and safety (0.50). Residents are most critical about green space (0.50) and transport (0.49). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Why is it North Strathfield, but Strathfield South?\nThat's it, that's the question.\n\nIn researching this I've learned that Strathfield used to be called Redmire and Strathfield South was Druitt Town (",
+      "url": "https://reddit.com/r/sydney/comments/1f2bazw/why_is_it_north_strathfield_but_strathfield_south/",
+      "score": 96
+    },
+    {
+      "text": "One that has bugged me is that there is North Strathfield and Strathfield South",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqo14/",
+      "score": 90
+    },
+    {
+      "text": "Preferred practice is to name suburbs with the cardinal direction as a suffix (Strathfield South) so that in a list, they’re all grouped together. North Strathfield appears alongside all the “N” subur",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo1sxo/",
+      "score": 26
+    },
+    {
+      "text": "Yeah confused me when I lived there. It’s down to history apparently - North Strathfield has never been part of Strathfield municipality. It’s named after the station which itself is only called that ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/l332qzj/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Wahroonga",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:43.219212+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.822,
+      "mentions": 15
+    },
+    "green_space": {
+      "score": 0.9,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.909,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.926,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.693,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.376,
+      "mentions": 8
+    },
+    "noise": {
+      "score": 0.08,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.674,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "surprise": 0.1269,
+    "joy": 0.1052,
+    "neutral": 0.4718,
+    "sadness": 0.0454,
+    "fear": 0.0578,
+    "anger": 0.0724,
+    "disgust": 0.1204
+  },
+  "narrative": "Reddit discussions about Wahroonga are most positive about food and cafe (0.93) and affordability (0.91). Residents are most critical about safety (0.38) and noise (0.08). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",
+      "url": "https://reddit.com/r/sydney/comments/1rt4ma3/i_just_walked_from_mount_cola_to_the_cbd/",
+      "score": 267
+    },
+    {
+      "text": "Fox & Hounds Restaurant\nJust had the most fab dinner at Fox & Hounds in Wahroonga. It was a bit of a trek but I feel like it deserves its own post. Gorgeous humble steakhouse and the owner Matthew was",
+      "url": "https://reddit.com/r/sydney/comments/1jos9pz/fox_hounds_restaurant/",
+      "score": 34
+    },
+    {
+      "text": "Moving to Wahroonga Area….\nMoving to the area for 6 months from the US. How is the public transport and is the area walkable or can I get around with an electric bike? I’m trying to avoid buying a car",
+      "url": "https://reddit.com/r/sydney/comments/1kk67kw/moving_to_wahroonga_area/",
+      "score": 29
+    },
+    {
+      "text": "Also Hornsby as \"Upper North Shore\" - no one but a real estate agent is going to stretch that term further than Wahroonga. It might be technically or geographically true, but in terms of what people a",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxb227/",
+      "score": 21
+    },
+    {
+      "text": "I remember, in my 20s, there was a cop out of Hornsby who had a chip on his shoulder which weighed a metric shit-ton. He also had some kind of physical disability - either cerebral palsy or a bad/twis",
+      "url": "https://reddit.com/r/sydney/comments/1auo5vp/cops_are_miserable/kr71e4o/",
+      "score": 19
+    },
+    {
+      "text": "It doesn't have to be Newtown.\n\nIf someone was screaming this in Double Bay or Wahroonga, the result would have been the same!",
+      "url": "https://reddit.com/r/sydney/comments/1ar79pq/impressed_by_how_level_headed_newtown_residents/kqhtt7o/",
+      "score": 16
+    },
+    {
+      "text": "Any tips for the Lifeline book fair this week?\nI’m am heading to the Lifeline book fair this Thursday in Wahroonga and am wondering if anyone had any tips. \n\nI’ve heard it can get pretty intense as th",
+      "url": "https://reddit.com/r/sydney/comments/1lzfmd6/any_tips_for_the_lifeline_book_fair_this_week/",
+      "score": 11
+    },
+    {
+      "text": "Yep 100% hornsby is the upper north shore! Suck it wahroonga!",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgeu2fs/",
+      "score": 10
+    },
+    {
+      "text": "Not a suburb but Bogan Place in Wahroonga, Sydney was renamed to \"Rainforest Close\" after the street sign was stolen god knows how many times.",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjgv2ol/",
+      "score": 9
+    },
+    {
+      "text": "All along the Pacific Hwy from St Leonard’s to Wahroonga is just a developers wet dream for land grabbing, demoing old houses and new multi-story appartments in their place.",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt7w92/",
+      "score": 9
+    }
+  ]
+}

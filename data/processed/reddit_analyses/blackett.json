@@ -1,0 +1,71 @@
+{
+  "suburb": "Blackett",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:06.066448+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.484,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.899,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.908,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "anger": 0.4698,
+    "fear": 0.0514,
+    "sadness": 0.2944,
+    "neutral": 0.0922,
+    "disgust": 0.0112,
+    "surprise": 0.0781,
+    "joy": 0.0028
+  },
+  "narrative": "Reddit discussions about Blackett are most positive about noise (0.91) and community (0.90). Residents are most critical about green space (0.50) and safety (0.48). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is anger.",
+  "sources": [
+    {
+      "text": "Man arrested after fatal road rage incident at Blackett yesterday",
+      "url": "https://reddit.com/r/sydney/comments/1dkpuuy/man_arrested_after_fatal_road_rage_incident_at/",
+      "score": 181
+    },
+    {
+      "text": "Lost Dog Around St Mary's\nRepost so I could remove the contact number. Please reply or DM me if you have any info!\n\nHi all, my brother and his wife had their dog go missing from a vet in St Mary's yes",
+      "url": "https://reddit.com/r/sydney/comments/1kxdrn5/lost_dog_around_st_marys/",
+      "score": 151
+    },
+    {
+      "text": "Lost Dog Around St Mary's\nHi all, my brother and his wife had their dog go missing from a vet in St Mary's yesterday. He was in for a medical procedure and I believe still has a canula and orange surg",
+      "url": "https://reddit.com/r/sydney/comments/1kxda4p/lost_dog_around_st_marys/",
+      "score": 26
+    },
+    {
+      "text": "You called it: [Man arrested over alleged fatal road rage attack at Blackett in Western Sydney](https://www.abc.net.au/news/2024-06-21/man-arrested-alleged-road-rage-death-western-sydney-blackett/1040",
+      "url": "https://reddit.com/r/sydney/comments/1dk7ddr/police_search_for_driver_of_ute_after_pedestrian/l9k5oy0/",
+      "score": 8
+    }
+  ]
+}

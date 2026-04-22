@@ -1,0 +1,101 @@
+{
+  "suburb": "Sydney Olympic Park",
+  "post_count": 39,
+  "fetched_at": "2026-04-18T02:10:22.512231+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.519,
+      "mentions": 26
+    },
+    "community": {
+      "score": 0.541,
+      "mentions": 26
+    },
+    "safety": {
+      "score": 0.319,
+      "mentions": 9
+    },
+    "noise": {
+      "score": 0.408,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.239,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.725,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.591,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.596,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "fear": 0.1049,
+    "neutral": 0.4651,
+    "sadness": 0.0788,
+    "surprise": 0.1089,
+    "anger": 0.0482,
+    "disgust": 0.0418,
+    "joy": 0.1523
+  },
+  "narrative": "Reddit discussions about Sydney Olympic Park are most positive about transport (0.72) and food and cafe (0.60). Residents are most critical about safety (0.32) and affordability (0.24). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "The mangrove forest at Sydney Olympic Park\nTaken on a cloudy evening not too long ago.",
+      "url": "https://reddit.com/r/sydney/comments/1lj7w2i/the_mangrove_forest_at_sydney_olympic_park/",
+      "score": 833
+    },
+    {
+      "text": "Sydney Olympic Park with Wentworth Point and Rhodes",
+      "url": "https://reddit.com/r/sydney/comments/1hdtt6y/sydney_olympic_park_with_wentworth_point_and/",
+      "score": 373
+    },
+    {
+      "text": "Sitting in a park pondering my next move…\nIt became homeless about two hours ago. 24 year relationship over. It was my fault, like it has been so many times, but this was the straw that broke the came",
+      "url": "https://reddit.com/r/sydney/comments/1ikmu41/sitting_in_a_park_pondering_my_next_move/",
+      "score": 276
+    },
+    {
+      "text": "I remember for Rep tour they renamed the Sydney Olympic Park station signs \"Repu-station\". Kinda corny kinda cute!",
+      "url": "https://reddit.com/r/sydney/comments/1axv7k8/look_what_you_made_cityrail_do/krqk6uy/",
+      "score": 227
+    },
+    {
+      "text": "Wren season\nThere are so many Fairy Wrens at Bicentennial Park (Sydney Olympic Park) this season. Used to be very rare to spot them in groups at the same time but managed to click this family on a ran",
+      "url": "https://reddit.com/r/sydney/comments/1ao4ndl/wren_season/",
+      "score": 169
+    },
+    {
+      "text": "20 photos taken around and in Sydney Olympic Park\nThere was a day back in June when I went to Sydney Olympic Park for work. These are the photos I took while walking to and from there.",
+      "url": "https://reddit.com/r/sydney/comments/1pldj4w/20_photos_taken_around_and_in_sydney_olympic_park/",
+      "score": 138
+    },
+    {
+      "text": "What is it like living in Sydney Olympic Park\nI find the area kind of intriguing as a place to actually live, especially with young kids. How would you describe your experience?",
+      "url": "https://reddit.com/r/sydney/comments/1jh7g30/what_is_it_like_living_in_sydney_olympic_park/",
+      "score": 113
+    },
+    {
+      "text": "They’re long gone, and who wants to be at Sydney Olympic park for more than one night.",
+      "url": "https://reddit.com/r/sydney/comments/1auz6x9/sydney_cbd_hotel_prices_for_this_saturday/kr7mwq5/",
+      "score": 112
+    },
+    {
+      "text": "Like w(hen)tf is parramatta road getting some love - been a year since this was last asked on r/syd\nI was just driving by to go to Sydney Olympic park to pick up kids after a concert and nothing has c",
+      "url": "https://reddit.com/r/sydney/comments/1g8o6s1/like_whentf_is_parramatta_road_getting_some_love/",
+      "score": 111
+    },
+    {
+      "text": "What is the best way to get back to the city from Sydney Olympic Park after a big event (when you don’t have a helicopter, and both not driving due to having a beer or two)?\nAfter standing in line for",
+      "url": "https://reddit.com/r/sydney/comments/1oweag7/what_is_the_best_way_to_get_back_to_the_city_from/",
+      "score": 111
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Harris Park",
+  "post_count": 44,
+  "fetched_at": "2026-04-18T02:08:20.323013+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.834,
+      "mentions": 41
+    },
+    "transport": {
+      "score": 0.939,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.877,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.906,
+      "mentions": 23
+    },
+    "affordability": {
+      "score": 0.976,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.867,
+      "mentions": 30
+    },
+    "safety": {
+      "score": 0.965,
+      "mentions": 8
+    },
+    "noise": {
+      "score": 0.212,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "neutral": 0.5734,
+    "surprise": 0.1046,
+    "sadness": 0.0386,
+    "joy": 0.1794,
+    "anger": 0.0205,
+    "fear": 0.0344,
+    "disgust": 0.049
+  },
+  "narrative": "Reddit discussions about Harris Park are most positive about affordability (0.98) and safety (0.96). Residents are most critical about community (0.83) and noise (0.21). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Walk from Parramatta to the CBD - We did it!\n[We did it!](https://www.instagram.com/p/DCVaE-rPkz3/?igsh=MTh0bnE2Y3o5OGdwZA%3D%3D)\n\nInspired by the Flying Pieman himself (great story of Sydney history,",
+      "url": "https://reddit.com/r/sydney/comments/1gquh7l/walk_from_parramatta_to_the_cbd_we_did_it/",
+      "score": 744
+    },
+    {
+      "text": "Burwood Chinatown is insanely cool.\n\nAnd generally, if you've already done the touristy things - why not dig into REAL sydney.\n\nGo out west to all the amazing communities and eat yourself to death!\n\nV",
+      "url": "https://reddit.com/r/sydney/comments/1djz93t/where_do_you_take_someone_for_their_second_visit/l9efhqh/",
+      "score": 112
+    },
+    {
+      "text": "Major train delays affecting T1   T2 T5\nMajor train delays currently on T1 T2 and T5 lines due to signalling power supply issues at Harris Park.",
+      "url": "https://reddit.com/r/sydney/comments/1dhg42o/major_train_delays_affecting_t1_t2_t5/",
+      "score": 75
+    },
+    {
+      "text": "Harris Park/Parramatta view",
+      "url": "https://reddit.com/r/sydney/comments/1bdjuoc/harris_parkparramatta_view/",
+      "score": 72
+    },
+    {
+      "text": "A lot of nimbyism from people living in more affluent areas wanting noise to be finished before it gets too late. Same reason aydney airport has curfews.\n\nYou could go out to harris park and find long",
+      "url": "https://reddit.com/r/sydney/comments/18zllfb/has_sydney_become_better_since_covid/kgimu1t/",
+      "score": 32
+    },
+    {
+      "text": "I’m not sure it’s seen as negatively as you’re suggesting. Look how Harris Park is being promoted as little India, look at the new Chinatown of Burwood. Cabra/Bankstown area could promote itself as li",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kieqhow/",
+      "score": 26
+    },
+    {
+      "text": "Is this from Harris Park? I love Parramatta and the whole concept of it being the population centre but it's always filthy. Why don't the surrounding councils do a better job of cleaning it up? Are pe",
+      "url": "https://reddit.com/r/sydney/comments/1b4j4wq/the_parramatta_skyline_has_really_built_up/kszawv1/",
+      "score": 26
+    },
+    {
+      "text": "The [State Library of NSW](https://www.sl.nsw.gov.au/) has opened many new gallery spaces as well as a rooftop bar.\n\nAnother vote for the new wing at the Art Gallery of NSW. A nice walk is from the ga",
+      "url": "https://reddit.com/r/sydney/comments/18w94ey/visiting_in_may/kfwka8s/",
+      "score": 21
+    },
+    {
+      "text": "Moving to Harris park soon, what are the best places to eat there?\nObviously Parramatta is nearby, but specifically for Harris park what are the notable places I need to check out?",
+      "url": "https://reddit.com/r/sydney/comments/1j7pi6l/moving_to_harris_park_soon_what_are_the_best/",
+      "score": 20
+    },
+    {
+      "text": "Here's hoping someone answered that they were from Harris Park",
+      "url": "https://reddit.com/r/sydney/comments/1anev5e/asian_women_attacked_at_burwood_station/kpu28wi/",
+      "score": 19
+    }
+  ]
+}

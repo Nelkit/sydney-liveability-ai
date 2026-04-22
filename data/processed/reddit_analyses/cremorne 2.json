@@ -1,0 +1,101 @@
+{
+  "suburb": "Cremorne",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:19.128965+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.47,
+      "mentions": 17
+    },
+    "transport": {
+      "score": 0.895,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.798,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.889,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.83,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.909,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.949,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.0999,
+    "neutral": 0.6336,
+    "anger": 0.0261,
+    "sadness": 0.0362,
+    "surprise": 0.0828,
+    "joy": 0.0856,
+    "disgust": 0.0357
+  },
+  "narrative": "Reddit discussions about Cremorne are most positive about affordability (0.95) and food and cafe (0.91). Residents are most critical about noise (0.50) and community (0.47). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "What's this Qantas airbus doing? QFA1300\nJust flew super low over Cremorne. Is it a special sight-seeing flight or something?",
+      "url": "https://reddit.com/r/sydney/comments/1p9cryy/whats_this_qantas_airbus_doing_qfa1300/",
+      "score": 164
+    },
+    {
+      "text": "Parking at the Orpheum on a Saturday night?\nI've never been to the Hayden Orpheum at Cremorne before (only driven past it), and I'm seriously considering going to one of their special event screenings",
+      "url": "https://reddit.com/r/sydney/comments/1eazivy/parking_at_the_orpheum_on_a_saturday_night/",
+      "score": 19
+    },
+    {
+      "text": "I’ve done three films at Sydney IMAX now and it is okay at best. I have not sat anywhere near the front because no way. \n\nAs all the Dune: Part Two sessions are sold out of all the good seats for the ",
+      "url": "https://reddit.com/r/sydney/comments/1b8si4r/imax_sydney_is_one_of_the_worst_designed_cinemas/kttfu8q/",
+      "score": 18
+    },
+    {
+      "text": "Between Cremorne and the zoo then again around Clifton Gardens & Georges head the beaches and bush are nearly the best in Australia. Wouldn't think you're in Australia's busiest city.\n\nhttps://www.bon",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzwgmen/",
+      "score": 18
+    },
+    {
+      "text": "Hayden Orpheum in Cremorne does.",
+      "url": "https://reddit.com/r/sydney/comments/1b9bhre/is_dune_2_worth_it_at_the_ritz_on_70mm/ktvh00r/",
+      "score": 9
+    },
+    {
+      "text": "Yeah probably Neutral Bay, Cremorne, Mosman. Plenty of pubs, small bars or the city right near by, a fair few stores and food options for pretty much everything from take away to fine dining along a 5",
+      "url": "https://reddit.com/r/sydney/comments/1abz41s/neighborhood_recs_for_long_term_relocation/kjrfm7w/",
+      "score": 7
+    },
+    {
+      "text": "They’ve done that before in Cremorne if I’m remembering right.",
+      "url": "https://reddit.com/r/sydney/comments/1axs5l9/mosman_council_scrambles_to_save_port_jackson_fig/krql66y/",
+      "score": 7
+    },
+    {
+      "text": ">but for Dune 2, I’d recommend going to see it at the Cremorne Orpheum or Randwick Ritz in 70mm, because that will look great!\n\nare the aspect ratios same?",
+      "url": "https://reddit.com/r/sydney/comments/1b8si4r/imax_sydney_is_one_of_the_worst_designed_cinemas/kturyes/",
+      "score": 6
+    },
+    {
+      "text": "It's actually more like Cremorne point.\nhttps://twitter.com/AusEmbCO/status/1446882687441068037/photo/2\n\nhttps://hillsdistrictmums.com.au/wp-content/uploads/2021/10/Cremorne-Point-Reserve.jpg",
+      "url": "https://reddit.com/r/sydney/comments/1bllf2z/p_sherman_42_wallaby_way/kw6cwcy/",
+      "score": 5
+    }
+  ]
+}

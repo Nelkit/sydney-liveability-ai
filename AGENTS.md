@@ -12,15 +12,9 @@ This is an academic project submitted for **ANLP 36118 (Autumn 2026) — Master 
 
 ---
 
-## MVP suburbs
+## Suburb coverage
 
-The application covers exactly five suburbs. Do not add, remove, or rename them without team agreement:
-
-- Newtown
-- Glebe
-- Redfern
-- Surry Hills
-- Haymarket
+The application is no longer limited to five suburbs. Backend routing and civic scoring should work with all suburbs available in the loaded datasets/database.
 
 ---
 
@@ -43,12 +37,27 @@ sydney-liveability-ai/
 │   ├── main.py
 │   ├── api/
 │   ├── core/
+│   ├── agents/
+│   ├── crews/
+│   ├── db/
+│   ├── scripts/
+│   ├── alembic/
+│   ├── alembic.ini
+│   ├── Makefile
 │   └── requirements.txt
 ├── frontend/               # Next.js application
-│   └── src/
+│   ├── src/
+│   │   ├── app/
+│   │   └── components/
+│   │       └── liveability/
+│   ├── public/
+│   ├── package.json
+│   ├── tailwind.config.ts
+│   └── vercel.json
 ├── data/                   # Local only — never committed to Git
 │   ├── raw/
 │   └── processed/
+│       └── suburbs.geojson
 └── .env.example            # Template for all required environment variables
 ```
 
@@ -61,11 +70,16 @@ Set up and run backend and notebooks with separate virtual environments.
 ### Backend environment
 
 ```bash
-cd backend
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn main:app --reload
+```
+
+Use `backend/Makefile` for the standard local backend workflow:
+
+```bash
+cd backend
+make dev
 ```
 
 ### Notebooks environment
@@ -79,6 +93,98 @@ jupyter notebook
 ```
 
 The two virtual environments must be kept separate — never install notebook dependencies into the backend venv or the production deploy will break.
+
+---
+
+## Agent quick commands
+
+Use these commands first when validating local flows.
+
+```bash
+# Backend
+cd backend
+make dev
+make db-upgrade
+make db-revision m="describe-change"
+
+# Frontend
+cd frontend
+npm run dev
+npm run lint
+
+# Notebooks (separate environment)
+cd notebooks
+jupyter notebook
+```
+
+Notes for agents:
+- Backend dev command is defined in `backend/Makefile` and uses `../venv/bin/uvicorn`.
+- Frontend scripts are defined in `frontend/package.json`.
+- There is currently no committed automated test suite in this repository. Do not invent test commands.
+
+### VS Code launch profiles
+
+The repository includes shared debug launches in `.vscode/launch.json`.
+
+- `Frontend: Next dev`
+  - Runs `npm run dev` in `frontend/`.
+  - Opens the local URL automatically when Next.js reports "Local".
+- `Backend: FastAPI dev`
+  - Runs `python -m uvicorn main:app --reload` in `backend/`.
+  - Uses `${workspaceFolder}/venv/bin/python`.
+  - Opens the API URL automatically when Uvicorn starts.
+
+How to use:
+1. Open Run and Debug in VS Code.
+2. Select one of the configured profiles by name.
+3. Start with F5.
+
+If the backend launch fails due to interpreter path, recreate or activate the root `venv` and retry.
+
+### SYNTHESIS_DEBUG_MODE (synthesiser debug switch)
+
+`SYNTHESIS_DEBUG_MODE` is read from `backend/.env` and normalized in `backend/agents/query/synthesiser.py`.
+
+Supported modes currently implemented:
+- `off`: standard synthesiser path (normal chat synthesis).
+- `gis`: bypass synthesis and return only GIS agent structured output.
+- `all`: bypass synthesis and return consolidated outputs from router/crime/sentiment/gis/comparator.
+
+Practical usage:
+1. Set `SYNTHESIS_DEBUG_MODE=off|gis|all` in `backend/.env`.
+2. Restart backend launch/session to reload env values.
+3. Call `/api/chat` and inspect the response shape.
+
+Important:
+- Values such as `crime`, `sentiment`, or `comparator` are not currently implemented as dedicated debug passthrough modes in code.
+- Any unsupported value behaves effectively like `off`.
+
+---
+
+## Agent orientation links
+
+Prefer linking these files instead of duplicating behavior notes across instruction files:
+
+- `README.md` — onboarding and local setup.
+- `backend/Makefile` — backend run and migration commands.
+- `backend/api/chat.py` — `/api/chat` response contract and graceful fallback behavior.
+- `backend/api/civic.py` — weight validation and GeoJSON scoring output.
+- `backend/crews/query_crew.py` — specialist routing orchestration and out-of-scope short-circuit.
+- `backend/agents/query/router.py` — dynamic suburb detection from database values.
+- `backend/agents/query/synthesiser.py` — final synthesis payload shaping.
+- `backend/db/models.py` — schema fields, including `sa4_area` and geometry support.
+- `skills/query-agent/SKILL.md` — implementation standard for query agents.
+- `skills/ingest-script/SKILL.md` — ingestion and idempotent upsert workflow.
+
+---
+
+## Common execution pitfalls for AI agents
+
+- Do not hardcode suburb names in router logic; use dynamic suburb support from the database.
+- Keep Turf.js and Leaflet coordinate ordering distinct when transforming coordinates.
+- Preserve fixed API contracts for `/api/chat`, `/api/civic`, and `/api/comparison`.
+- Keep backend and notebook dependencies isolated in separate virtual environments.
+- Never hardcode agent model strings; resolve through `get_agent_llm(agent_name)` and environment configuration.
 
 ---
 
@@ -110,6 +216,7 @@ Do not introduce new libraries or frameworks without team agreement. The approve
 ### Backend
 - All business logic lives in `backend/`. `main.py` is the entry point and must contain no business logic — only router registration, CORS configuration, and startup events.
 - Every endpoint lives in `backend/api/` as its own file. Shared utilities (ChromaDB client, scoring logic, prompt templates) live in `backend/core/`.
+- Ingestion scripts live in `backend/scripts/` and must follow the project skills for idempotent upserts and migration-safe writes.
 - The ChromaDB client and pre-computed suburb scores must be loaded once at server startup via `@app.on_event("startup")` — never reloaded per request.
 - All endpoints must return graceful error responses. Never return a 500 error to the frontend. Use `try/except` on all external API calls (Claude, ChromaDB, Supabase).
 - Dimension weights passed to `/api/civic` must always sum to 1.0. Validate this server-side and return a `400` error with a clear message if they do not.
@@ -122,8 +229,10 @@ Do not introduce new libraries or frameworks without team agreement. The approve
 
 ### Data
 - Raw data files go in `data/raw/` and are never committed to Git.
-- Processed data files go in `data/processed/` and are never committed to Git.
-- The only exception is `data/processed/suburbs.geojson` — this static geometry file must be committed to the repository.
+- Processed data files go in `data/processed/` and are never committed to Git, with three explicit exceptions that must be committed:
+  - `data/processed/suburbs.geojson` — static suburb geometry.
+  - `data/processed/reddit/` — pre-processed Reddit post data, produced from the Arctic Shift bulk dumps. Committed so the backend can serve suburb analyses without re-running extraction.
+  - `data/processed/reddit_analyses/` — NLP pipeline output (aspect scores, emotions, narrative, sources) per suburb. Committed so the chat demo runs without downloading the ~1.8 GB of transformer models the pipeline depends on.
 - The ChromaDB `persist_directory` must point to `data/processed/chromadb/`.
 - All text chunks ingested into ChromaDB must carry three metadata fields: `suburb` · `source` · `theme`.
 
@@ -219,26 +328,26 @@ These response shapes are fixed. Do not change them without updating both the ba
 - Never push directly to `main`. All work happens on feature branches.
 - Branch naming: `feature/data` · `feature/nlp` · `feature/backend` · `feature/frontend`.
 - Open a Pull Request to `develop` when a task is ready for review. At least one other team member must approve before merging.
-- Never commit: API keys · `.env` files · `data/raw/` · `data/processed/` · `node_modules/` · `venv/` · `.next/`.
+- Never commit: API keys · `.env` files · `data/raw/` · `node_modules/` · `venv/` · `.next/`. Most of `data/processed/` is also ignored; see the Data section above for the three committed exceptions.
 - Commit messages must be descriptive. Do not write "fix" or "update" alone — write "fix: suburb weight normalisation in /api/civic" instead.
 
 ---
 
 ## Environment variables
 
-All required variables must be present in the environment templates (`.env.backend.example` for backend and `.env.example` for notebooks/frontend). Never hardcode any of these values in source code:
+All required variables must be present in the correct environment templates (`backend/.env.example` for backend and `frontend/.env.example` for frontend). Never hardcode any of these values in source code:
 
 ```
-ANTHROPIC_API_KEY=
-SUPABASE_URL=
-SUPABASE_ANON_KEY=
-SUPABASE_SERVICE_KEY=
-REDDIT_CLIENT_ID=
-REDDIT_CLIENT_SECRET=
-REDDIT_USER_AGENT=
+LLM_PROVIDER=
+LLM_MODEL=
+OPENROUTER_API_KEY=
+DATABASE_URL=
+CHROMADB_PATH=
 FRONTEND_URL=
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SYNTHESIS_DEBUG_MODE=
+ANTHROPIC_API_KEY=
+OPENAI_API_KEY=
+LLM_AGENT_MODELS_JSON=
 NEXT_PUBLIC_API_URL=
 ```
 
@@ -246,7 +355,9 @@ NEXT_PUBLIC_API_URL=
 
 ## Claude API usage
 
-- Always use model `claude-sonnet-4-20250514`.
+- Never hardcode model strings in agent code.
+- Query agents must resolve models through `get_agent_llm(agent_name)` and use the shared default from `backend/.env` unless `LLM_AGENT_MODELS_JSON` overrides it.
+- If the team changes the shared model, update the environment configuration rather than editing individual agents.
 - Always set `max_tokens=1000` for chat responses to keep costs predictable during development.
 - The system prompt for `/api/chat` must explicitly instruct the model to: answer only from provided context · cite every claim · return `map_state` when the query has spatial intent · and respond with "I don't have data on that suburb yet" for out-of-scope suburbs.
 - Wrap every Claude API call in `try/except`. Return a graceful fallback message on failure — never propagate a raw API error to the frontend.
@@ -267,26 +378,50 @@ These rules apply to the technical report, README updates, docstrings, and any w
 
 ---
 
-## What is already built
+## Current implementation scope
 
-The following is fully implemented and must not be rewritten without team agreement:
+Use this section as the source of truth for what an agent should assume is already wired:
 
-- `frontend/src/page.tsx` — full client-side app state flow
-- `frontend/src/components/MapPanel.tsx` — interactive Leaflet map with suburb overlays
-- `frontend/src/components/AssistantSidebar.tsx` — chat panel with typing indicator
-- `frontend/src/components/OnboardingPanel.tsx` — preference onboarding flow
-- `frontend/src/components/SharedBrand.tsx` — animated brand component
-- `frontend/src/components/TypingDots.tsx` — typing indicator
-- `frontend/src/lib/data.ts` — seed data and canned responses (to be replaced by real API calls)
-- `frontend/src/lib/utils.ts` — suburb scoring and keyword routing (to be replaced by real API calls)
+- Frontend main flow is implemented in `frontend/src/app/page.tsx` and connected to `/api/chat` and `/api/civic`.
+- Core liveability UI components under `frontend/src/components/liveability/` are active and should be evolved, not rewritten blindly.
+- Backend query orchestration and routing are implemented under `backend/crews/query_crew.py` and `backend/agents/query/`.
+- Backend bootstrap endpoints `GET /` and `GET /health` are available and should remain stable.
 
-The current frontend uses static data from `data.ts` and `utils.ts`. The task is to replace those data sources with real API calls — not to redesign the UI.
+Do not keep speculative "missing" lists in this file. If implementation status changes, update this section with verified facts only.
 
 ---
 
-## What still needs to be built
+## Project skills
 
-Most of `backend/` · `data_extraction/` · and `notebooks/` still needs implementation. A minimal backend boilerplate is already in place (`/` and `/health`). See the Notion board for the full task list with priorities and dependencies.
+| Skill Name | Description | Path |
+|---|---|---|
+| `ingest-script` | Standard workflow to create `backend/scripts/ingest_*.py` with idempotent upserts, migration-safe steps, and team-ready documentation. | `skills/ingest-script/SKILL.md` |
+| `query-agent` | Standard workflow to implement CrewAI agents in `backend/agents/query/` using `get_agent_llm`, DB tools with `get_session()`, and isolated `run(input_data)` execution. | `skills/query-agent/SKILL.md` |
+| `chromadb-embed` | Standard workflow to embed text and upsert chunks into ChromaDB with deterministic IDs and required metadata for RAG. | `skills/chromadb-embed/SKILL.md` |
+| `alembic-migration` | Standard workflow to add or modify SQLAlchemy ORM fields using Alembic migrations and keep PostgreSQL schema synchronized. | `skills/alembic-migration/SKILL.md` |
+| `frontend-guard` | Standard workflow to keep frontend changes aligned with existing Tailwind design language, strict TypeScript typing, and current page-level state architecture. | `skills/frontend-guard/SKILL.md` |
+
+### How to use skills in chat
+
+Use skills explicitly from chat with slash-style invocation:
+
+- `/query-agent` when creating or updating specialists in `backend/agents/query/`.
+- `/ingest-script` when creating or refactoring `backend/scripts/ingest_*.py`.
+- `/chromadb-embed` when implementing chunking/embedding/upsert workflows.
+- `/alembic-migration` when changing `backend/db/models.py` and generating migrations.
+- `/frontend-guard` when creating or refactoring UI components in `frontend/src/components/liveability/` with strict typing and style consistency.
+
+Pattern:
+- `/name-of-skill` where `name-of-skill` matches the folder under `skills/`.
+- Example: `/query-agent` loads `skills/query-agent/SKILL.md`.
+
+Expected workflow:
+
+1. Invoke the relevant skill first.
+2. Execute only the scoped task for that skill.
+3. Keep API contracts and architecture rules from this file unchanged unless explicitly requested.
+
+If a task touches multiple domains, invoke multiple skills in sequence (for example: `/alembic-migration` then `/ingest-script`).
 
 ---
 

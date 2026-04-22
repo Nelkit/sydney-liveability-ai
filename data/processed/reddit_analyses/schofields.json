@@ -1,0 +1,101 @@
+{
+  "suburb": "Schofields",
+  "post_count": 73,
+  "fetched_at": "2026-04-18T02:02:24.522903+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.605,
+      "mentions": 47
+    },
+    "community": {
+      "score": 0.55,
+      "mentions": 52
+    },
+    "safety": {
+      "score": 0.494,
+      "mentions": 13
+    },
+    "nightlife": {
+      "score": 0.611,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.732,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.781,
+      "mentions": 9
+    },
+    "noise": {
+      "score": 0.888,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.877,
+      "mentions": 7
+    }
+  },
+  "emotions": {
+    "neutral": 0.4778,
+    "surprise": 0.1343,
+    "sadness": 0.1054,
+    "joy": 0.0279,
+    "fear": 0.0647,
+    "anger": 0.0856,
+    "disgust": 0.1044
+  },
+  "narrative": "Reddit discussions about Schofields are most positive about noise (0.89) and food and cafe (0.88). Residents are most critical about community (0.55) and safety (0.49). This analysis is based on 73 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney trains network disruptions.\nThe power supply issues at Strathfield from yesterday are still ongoing, train services will not be to time table and will likely be infrequent and sporadic.\n\nT1 Wes",
+      "url": "https://reddit.com/r/sydney/comments/1krab5m/sydney_trains_network_disruptions/",
+      "score": 351
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Schofields Station, Serial Waver\nI see this guy at Schofields station, I think on Wednesdays? Anyone know what the deal is?",
+      "url": "https://reddit.com/r/sydney/comments/1pax2bm/schofields_station_serial_waver/",
+      "score": 136
+    },
+    {
+      "text": "They should Immediately extend it from Tallawong to Schofields. It’s only 3 km and a lot of it would be cheaply above ground. It would allow the Metro to link to Sydney trains, provide a NW loop and a",
+      "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/ky8hmxm/",
+      "score": 135
+    },
+    {
+      "text": "I believe there's an ongoing business case for a St Marys - Tallawong metro link via Schofields. There needs to be an interchange between the two metro lines somewhere, though I'm not sure at which st",
+      "url": "https://reddit.com/r/sydney/comments/1cqrp8r/my_own_map_of_sydneys_trains_with_the_upcoming/l3tg83n/",
+      "score": 63
+    },
+    {
+      "text": "Not sure where the photo is in the link but recently drove through Box Hill, Riverstone and Schofields. My brain could no comprehend what I saw. Acres and acres of housing estates in the middle of old",
+      "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwbtaws/",
+      "score": 55
+    },
+    {
+      "text": "Imo they should have built the metro out to Schofields and had that as the other terminus, and link it on both extremities with Sydney trains",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvt3iwg/",
+      "score": 54
+    },
+    {
+      "text": "I was like bruh that's Riverstone or Schofields",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tkqb6/",
+      "score": 51
+    },
+    {
+      "text": "I did have a short stint of riding a bus, I can’t remember the exact number.\n\nI’m quite prone to motion sickness though, so I found catching a train actually gave me the chance to do something with my",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvt99gv/",
+      "score": 50
+    },
+    {
+      "text": "Why is Sydney wifi/mobile data so bad in some areas\n\nIn most places it’s *bearable*, just enough to watch Netflix or YouTube at a decent quality\n\nBut the second you enter a place like schofields or so",
+      "url": "https://reddit.com/r/sydney/comments/1m1y1fr/why_is_sydney_wifimobile_data_so_bad_in_some_areas/",
+      "score": 46
+    }
+  ]
+}

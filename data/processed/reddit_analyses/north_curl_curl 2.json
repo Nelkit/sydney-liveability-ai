@@ -1,0 +1,66 @@
+{
+  "suburb": "North Curl Curl",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:46.206772+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.513,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7481,
+    "surprise": 0.0324,
+    "sadness": 0.0266,
+    "joy": 0.1671,
+    "anger": 0.0094,
+    "fear": 0.0053,
+    "disgust": 0.0111
+  },
+  "narrative": "Reddit discussions about North Curl Curl are most positive about community (0.51) and nightlife (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "North Curl Curl Beach",
+      "url": "https://reddit.com/r/sydney/comments/1kmwlb7/north_curl_curl_beach/",
+      "score": 112
+    },
+    {
+      "text": "You could go even further and check out some of the smaller beaches up north.  North Curl Curl, for example, has a nice little walk out to the headland.",
+      "url": "https://reddit.com/r/sydney/comments/1acz3cb/how_do_i_best_to_take_advantage_of_a_weekday_off/kk077wi/",
+      "score": 17
+    },
+    {
+      "text": "> During the 1930s Depression era, money became available to councils through unemployment relief schemes.\n\n> The unemployed were given jobs to create many more pools in Sydney, including Mahon Pool a",
+      "url": "https://reddit.com/r/sydney/comments/1dq4bbz/i_love_nsw_ocean_pools/laluuhn/",
+      "score": 14
+    }
+  ]
+}

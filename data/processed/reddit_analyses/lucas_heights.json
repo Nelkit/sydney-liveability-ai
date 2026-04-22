@@ -1,0 +1,76 @@
+{
+  "suburb": "Lucas Heights",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:57.721752+00:00",
+  "aspects": {
+    "nightlife": {
+      "score": 0.506,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.862,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.873,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.597,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.763,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.763,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1861,
+    "neutral": 0.5308,
+    "surprise": 0.0798,
+    "anger": 0.0454,
+    "disgust": 0.0393,
+    "sadness": 0.0107,
+    "joy": 0.1079
+  },
+  "narrative": "Reddit discussions about Lucas Heights are most positive about green space (0.87) and community (0.86). Residents are most critical about food and cafe (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "CBD skyline from Lucas Heights - about 35km away ",
+      "url": "https://reddit.com/r/sydney/comments/1g0ek4w/cbd_skyline_from_lucas_heights_about_35km_away/",
+      "score": 136
+    },
+    {
+      "text": "We're in a pocket of Engadine that is basically directly across the Woronora from Lucas Heights and within the area we'd probably know a good chunk of people. We know 4/6 families in our street, both ",
+      "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l95jrur/",
+      "score": 22
+    },
+    {
+      "text": "The one in Lucas Heights is very small in scale, at 20 megawatt https://www.ansto.gov.au/education/nuclear-facts\n\nIf the Libs are serious about building nuclear reactors, it would have to be at least ",
+      "url": "https://reddit.com/r/sydney/comments/1c2eou1/sydney_daily_random_discussion_thread_13042024/kzcokan/",
+      "score": 3
+    },
+    {
+      "text": "Someone who works at LH told me once, the reactor at Lucas Heights is the size of a microwave.  \nThe fukushima plant for example was 6 reactors on a 3.5 square km site. where do they think this site w",
+      "url": "https://reddit.com/r/sydney/comments/1c2eou1/sydney_daily_random_discussion_thread_13042024/kzd5wlx/",
+      "score": 3
+    },
+    {
+      "text": ">Lucas Heights\n\nYou'd be positively glowing.",
+      "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l97nflr/",
+      "score": 3
+    }
+  ]
+}

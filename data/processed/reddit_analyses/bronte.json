@@ -1,0 +1,101 @@
+{
+  "suburb": "Bronte",
+  "post_count": 50,
+  "fetched_at": "2026-04-18T02:06:30.482439+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.517,
+      "mentions": 40
+    },
+    "safety": {
+      "score": 0.3,
+      "mentions": 9
+    },
+    "transport": {
+      "score": 0.232,
+      "mentions": 10
+    },
+    "green_space": {
+      "score": 0.569,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.461,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.647,
+      "mentions": 10
+    },
+    "noise": {
+      "score": 0.753,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.253,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "fear": 0.0901,
+    "neutral": 0.4867,
+    "surprise": 0.0884,
+    "sadness": 0.0806,
+    "anger": 0.0276,
+    "joy": 0.149,
+    "disgust": 0.0776
+  },
+  "narrative": "Reddit discussions about Bronte are most positive about noise (0.75) and food and cafe (0.65). Residents are most critical about affordability (0.25) and transport (0.23). This analysis is based on 50 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "bronte beach today\nIncoming",
+      "url": "https://reddit.com/r/sydney/comments/1hly3l2/bronte_beach_today/",
+      "score": 2749
+    },
+    {
+      "text": "The aftermath of yesterday's Christmas celebrations at Bronte Beach",
+      "url": "https://reddit.com/r/sydney/comments/1hmj8po/the_aftermath_of_yesterdays_christmas/",
+      "score": 2628
+    },
+    {
+      "text": "I thought I’d seen everything when it came to idiots on Lime bikes, but I was wrong.\nI saw a young woman riding a Lime Bike along Bronte Rd today, and I can’t stop thinking about it.\n\nI spend many hou",
+      "url": "https://reddit.com/r/sydney/comments/1rjnog4/i_thought_id_seen_everything_when_it_came_to/",
+      "score": 498
+    },
+    {
+      "text": "early dip at bronte beach this morning\nwas close to turning off the early alarm this morning but i got up, made the trip to the beach and caught a beautiful sunrise over the beach. Truly one of life’s",
+      "url": "https://reddit.com/r/sydney/comments/1of7m1a/early_dip_at_bronte_beach_this_morning/",
+      "score": 428
+    },
+    {
+      "text": "Thoughts on people reserving the picnic tables at Bronte beach in the morning during weekends?",
+      "url": "https://reddit.com/r/sydney/comments/1byqaa3/thoughts_on_people_reserving_the_picnic_tables_at/",
+      "score": 344
+    },
+    {
+      "text": "Born to be a mermaid, forced to be a human lady…\n… determined to get my salt water therapy as often as possible.\n\nBeautiful weather and conditions today at Bronte, even with the epic amounts of seawee",
+      "url": "https://reddit.com/r/sydney/comments/1p02hz5/born_to_be_a_mermaid_forced_to_be_a_human_lady/",
+      "score": 273
+    },
+    {
+      "text": "Here comes the sun (Bronte beach)",
+      "url": "https://reddit.com/r/sydney/comments/1r3ztpg/here_comes_the_sun_bronte_beach/",
+      "score": 223
+    },
+    {
+      "text": "Some “Now and Then” photos from a 1999 Newspaper souvenir\nBefore I get rid of this I thought I’d snap some of the images to share here. The B&W ones date from 1900 (eg Balmain) to 1939 (Bronte). The c",
+      "url": "https://reddit.com/r/sydney/comments/1sb61vd/some_now_and_then_photos_from_a_1999_newspaper/",
+      "score": 138
+    },
+    {
+      "text": "Washed up on Bronte Beach",
+      "url": "https://reddit.com/r/sydney/comments/1qho0p1/washed_up_on_bronte_beach/",
+      "score": 137
+    },
+    {
+      "text": "Bondi, Bronte, etc, aerial view from flight to NZ today",
+      "url": "https://reddit.com/r/sydney/comments/1jes75n/bondi_bronte_etc_aerial_view_from_flight_to_nz/",
+      "score": 110
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "suburb": "Ingleside",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:36.276808+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.229,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.93,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1715,
+    "disgust": 0.0812,
+    "surprise": 0.0519,
+    "neutral": 0.413,
+    "fear": 0.014,
+    "anger": 0.0112,
+    "joy": 0.2572
+  },
+  "narrative": "Reddit discussions about Ingleside are most positive about community (0.93) and nightlife (0.50). Residents are most critical about noise (0.50) and transport (0.23). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "You'd think living in Terrey Hills and working in Ingleside would be easy, but it's actually a pain in the arse",
+      "url": "https://reddit.com/r/sydney/comments/1eywgps/youd_think_living_in_terrey_hills_and_working_in/",
+      "score": 210
+    },
+    {
+      "text": "Monika’s Dog Rescue in Ingleside allows you to go to the shelter and take a dog out for a walk. We did it once and it was good fun and nice to get out and about at the same time",
+      "url": "https://reddit.com/r/sydney/comments/1bnztzr/any_sydney_animal_shelters_do_borrow_a_pet/kwlqfbi/",
+      "score": 56
+    },
+    {
+      "text": "I haven't been for a long time but plenty of options at Warriewood, Elanora and Ingleside on the Nth Beaches",
+      "url": "https://reddit.com/r/sydney/comments/198nb1u/nurseries_in_sydney_and_places_where_people_buy/ki8mm4s/",
+      "score": 3
+    }
+  ]
+}

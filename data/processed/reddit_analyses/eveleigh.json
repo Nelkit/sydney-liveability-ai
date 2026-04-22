@@ -1,0 +1,101 @@
+{
+  "suburb": "Eveleigh",
+  "post_count": 25,
+  "fetched_at": "2026-04-18T02:13:26.768691+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.52,
+      "mentions": 20
+    },
+    "nightlife": {
+      "score": 0.501,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.522,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.484,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.502,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.674,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5238,
+    "surprise": 0.1877,
+    "sadness": 0.0311,
+    "anger": 0.0268,
+    "fear": 0.0442,
+    "joy": 0.0893,
+    "disgust": 0.0972
+  },
+  "narrative": "Reddit discussions about Eveleigh are most positive about green space (0.67) and transport (0.52). Residents are most critical about noise (0.50) and safety (0.48). This analysis is based on 25 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "134 Little Eveleigh St",
+      "url": "https://reddit.com/r/sydney/comments/1j1dyn8/134_little_eveleigh_st/",
+      "score": 956
+    },
+    {
+      "text": "Distinguished Gentleman's Ride Sydney\nWe're leaving South Eveleigh now. Throw us a wave if you see us out and about. Raising money for prostate cancer research and men's mental health.",
+      "url": "https://reddit.com/r/sydney/comments/1cvb98q/distinguished_gentlemans_ride_sydney/",
+      "score": 180
+    },
+    {
+      "text": "Weirdly, I got a call from the Castle Hill Police one year after my bike got stolen from Eveleigh. Turns out since my bike's serial was registered, they were able to sus out that I was the owner.\n\nI'm",
+      "url": "https://reddit.com/r/sydney/comments/1cp61ed/stolen_bike_at_redfern/l3jiffe/",
+      "score": 31
+    },
+    {
+      "text": "It's a shame that they can't stretch this out of the CBD a little and utilise places like South Eveleigh/Technology Park, Victoria Park etc to host smaller scale fanily friendly events.",
+      "url": "https://reddit.com/r/sydney/comments/1dbh7pz/people_reportedly_trapped_in_large_crowds_at/l7roj7k/",
+      "score": 31
+    },
+    {
+      "text": "If you live in the area you'd probably go to the main Woolies to do a proper shop though. That one is far closer to Redfern's government housing area.    \nThe metro feels like it was put there for peo",
+      "url": "https://reddit.com/r/sydney/comments/1clbalq/woolworths_alexandria_now_a_woolworths_metro/l2subng/",
+      "score": 26
+    },
+    {
+      "text": "I think you got the history mixed up there.  The North Shore rail line was built before the Harbour Bridge, and it went to the original Milson's Point station, which was located roughly where Luna Par",
+      "url": "https://reddit.com/r/sydney/comments/1amd83f/sydney_trains_incident_burwood_guard_falls_off/kplqmms/",
+      "score": 20
+    },
+    {
+      "text": "We rode from South Eveleigh, across ANZAC bridge, around the bay run, back to the city, throught Barangaroo, under the bridge, through the rocks, past St Mary's Cathedral, up William st towards Watson",
+      "url": "https://reddit.com/r/sydney/comments/1cvb98q/distinguished_gentlemans_ride_sydney/l4pfu2j/",
+      "score": 18
+    },
+    {
+      "text": "The Metro at Redfern station is pretty much behaving as expected - if you in there, you're obviously there because of the handy location and willing to pay more for the highly limited range and patien",
+      "url": "https://reddit.com/r/sydney/comments/1clbalq/woolworths_alexandria_now_a_woolworths_metro/l2t09pd/",
+      "score": 15
+    },
+    {
+      "text": "There's already a plan in progress for the \"paint shop\" which is at the eastern end of Carriageworks (other side of the markets and performance space from this proposal). It's supposed to be mixed-use",
+      "url": "https://reddit.com/r/sydney/comments/1dsjcb9/nsw_government_announces_the_first_of_44/lb38ahf/",
+      "score": 14
+    },
+    {
+      "text": "Trains from Newtown have a few options; City Circle Outer via Central P17 then to Bankstown via Erko, via P17 then Airport Line, via P17 to stable in Eveleigh, straight into Sydney yard P1-12…. Then y",
+      "url": "https://reddit.com/r/sydney/comments/1cheh7o/train_from_newtown_to_airport_without_changing/l22187i/",
+      "score": 12
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "suburb": "Turrella",
+  "post_count": 7,
+  "fetched_at": "2026-04-18T02:19:27.070755+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.426,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.453,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.378,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1541,
+    "sadness": 0.0576,
+    "anger": 0.0557,
+    "surprise": 0.1655,
+    "neutral": 0.3601,
+    "disgust": 0.173,
+    "joy": 0.0341
+  },
+  "narrative": "Reddit discussions about Turrella are most positive about nightlife (0.50) and food and cafe (0.50). Residents are most critical about transport (0.43) and safety (0.38). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "T8 Airport line landslide/flooded\nA limited number of buses are replacing trains between Turrella and Revesby due to flooding on the tracks between Bardwell Park and Bexley North",
+      "url": "https://reddit.com/r/sydney/comments/1kt8t3v/t8_airport_line_landslideflooded/",
+      "score": 48
+    },
+    {
+      "text": "Incoming International Parcel with a misspelled suburb\nAs the title says, I ordered a replacement part for my umbrella from the UK, and have accidentally given the company the suburb destination as Tu",
+      "url": "https://reddit.com/r/sydney/comments/1fi0jvg/incoming_international_parcel_with_a_misspelled/",
+      "score": 16
+    },
+    {
+      "text": "I was watching the Tsets Transport [YouTube video](https://youtu.be/NfUS-uj_W5I?si=VR6SAnRGpAZfhtvo) of the entire trip.\nIt looks underwhelming in my opinion. That particular trip you go from Central ",
+      "url": "https://reddit.com/r/sydney/comments/1d0zh9x/vivid_anyone_been_on_the_tekno_train/l5tvwo4/",
+      "score": 6
+    },
+    {
+      "text": "Trains - 'Modified' Services changes without announcement. Be careful tonight\nJust had a trainload of people on a 'Modified' service to Revesby via Redfern, Erskineville, St Peters, Sydenham, Wolli Cr",
+      "url": "https://reddit.com/r/sydney/comments/1b3n447/trains_modified_services_changes_without/",
+      "score": 4
+    },
+    {
+      "text": "Would have been nice if they told us... they announced the change immediately AFTER leaving Central, and then didn't stop again until Turrella. \n\nThere was no explanation by anyone on the train or at ",
+      "url": "https://reddit.com/r/sydney/comments/1b3n447/trains_modified_services_changes_without/kstemx9/",
+      "score": 4
+    },
+    {
+      "text": "Just as long as you don't need to drive near it. I lived in an adjacent suburb for around 15 years and got to watch it get worse and worse as the unit blocks went up. Even now I have to go to Arncliff",
+      "url": "https://reddit.com/r/sydney/comments/1dr3ca2/come_to_ryde_stay_for_the_hole/laumps9/",
+      "score": 4
+    },
+    {
+      "text": "Move to Turrella.  It's the central melting pot of the surrounding suburbs!",
+      "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l60f4r7/",
+      "score": 2
+    }
+  ]
+}

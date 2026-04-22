@@ -1,0 +1,76 @@
+{
+  "suburb": "Potts Hill",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:20:01.296451+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.601,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.926,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.613,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.613,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8137,
+    "surprise": 0.0392,
+    "sadness": 0.0301,
+    "disgust": 0.0434,
+    "joy": 0.0394,
+    "anger": 0.0301,
+    "fear": 0.0042
+  },
+  "narrative": "Reddit discussions about Potts Hill are most positive about safety (0.93) and food and cafe (0.61). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Kind of different, but Potts Point and Potts Hill are a 40 minute drive from each other, and they're both named after the same guy (he owned land at both)",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnnzga/",
+      "score": 107
+    },
+    {
+      "text": "Yeah, but they're named after a big shot.\n\nPotts Point and Potts Hill were named after a bank guard that wasn't allowed to get married as long as he held the position. So he worked his way up to being",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnrylr/",
+      "score": 83
+    },
+    {
+      "text": "Keep in mind that I'm recalling this from something I read a long time ago.\n\nI think his role was called guard of the strong box (or something like it) for the Bank of New South Wales. He was required",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo7dp8/",
+      "score": 30
+    },
+    {
+      "text": "There’s a few that are directional eg Kellyville North, South Penrith, North Parramatta, East Killara etc.\n\nThere’s a few that seem similar but nowhere near each other (eg Annandale and Annangrove) - ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqhuc/",
+      "score": 10
+    },
+    {
+      "text": "Lol I'm in potts Hill about 5 mins from there but I'm always there for classic burger",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kye7q50/",
+      "score": 2
+    }
+  ]
+}

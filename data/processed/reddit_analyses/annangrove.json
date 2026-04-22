@@ -1,0 +1,66 @@
+{
+  "suburb": "Annangrove",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:28.363019+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.576,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.545,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.3238,
+    "neutral": 0.5567,
+    "surprise": 0.0872,
+    "joy": 0.0143,
+    "disgust": 0.0055,
+    "fear": 0.0048,
+    "anger": 0.0076
+  },
+  "narrative": "Reddit discussions about Annangrove are most positive about community (0.58) and safety (0.55). Residents are most critical about transport (0.50) and green space (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Missing cat in Annangrove\nHi Sydney.\n\nIf you're in the Annangrove area and happen to have seen this lovely girl, she is currently lost. Her family is missing her dearly.\n\nShe is microchipped but no co",
+      "url": "https://reddit.com/r/sydney/comments/1byj3ht/missing_cat_in_annangrove/",
+      "score": 95
+    },
+    {
+      "text": "There’s a few that are directional eg Kellyville North, South Penrith, North Parramatta, East Killara etc.\n\nThere’s a few that seem similar but nowhere near each other (eg Annandale and Annangrove) - ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqhuc/",
+      "score": 10
+    },
+    {
+      "text": ">Annangrove\n\nAnnangrove is named after Annangrove house, a house in Annandale (named after Annan in Scotland)",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo2p7n/",
+      "score": 4
+    }
+  ]
+}

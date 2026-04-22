@@ -28,9 +28,6 @@ export type ChatMessage = {
   role: "ai" | "user";
   html: string;
   source?: string;
-};
-
-export type ResponderItem = {
-  text: string;
-  source: string;
+  fullHtml?: string;
+  detailedSuburb?: string | null;
 };

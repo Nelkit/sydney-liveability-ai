@@ -1,0 +1,101 @@
+{
+  "suburb": "Cabramatta",
+  "post_count": 69,
+  "fetched_at": "2026-04-18T02:03:17.200112+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.587,
+      "mentions": 30
+    },
+    "community": {
+      "score": 0.656,
+      "mentions": 62
+    },
+    "transport": {
+      "score": 0.667,
+      "mentions": 21
+    },
+    "safety": {
+      "score": 0.522,
+      "mentions": 20
+    },
+    "nightlife": {
+      "score": 0.779,
+      "mentions": 20
+    },
+    "noise": {
+      "score": 0.887,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.84,
+      "mentions": 11
+    },
+    "green_space": {
+      "score": 0.842,
+      "mentions": 9
+    }
+  },
+  "emotions": {
+    "sadness": 0.0418,
+    "neutral": 0.5742,
+    "joy": 0.0609,
+    "surprise": 0.1175,
+    "disgust": 0.0475,
+    "anger": 0.0674,
+    "fear": 0.0908
+  },
+  "narrative": "Reddit discussions about Cabramatta are most positive about noise (0.89) and green space (0.84). Residents are most critical about food and cafe (0.59) and safety (0.52). This analysis is based on 69 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Vinata Hot Bread in Cabramatta makes the best pork roll in Sydney, but I can’t go anymore\nThey banh mi for life",
+      "url": "https://reddit.com/r/sydney/comments/1pho5u5/vinata_hot_bread_in_cabramatta_makes_the_best/",
+      "score": 416
+    },
+    {
+      "text": "Bus Misadventure\nOn Saturday night, our bus went off route 😂My sister and I timed ourselves from our bus stop to Cabramatta station. It would only be a 5min wait. We noticed it was running late so we ",
+      "url": "https://reddit.com/r/sydney/comments/1kq3m7v/bus_misadventure/",
+      "score": 272
+    },
+    {
+      "text": "Fired at a restaurant down in Cabramatta\n000 already called, also by some near me at that time did the same as some of the men ran in and tried to put the fire out with the fire extinguisher.\nAt the t",
+      "url": "https://reddit.com/r/sydney/comments/1e3nbfg/fired_at_a_restaurant_down_in_cabramatta/",
+      "score": 262
+    },
+    {
+      "text": "New Year Celebrations in Cabramatta tonight\nNew year festivities in Cabramatta tonight. Chuc mung nam moi to everyone. Great effort by all the lion dancing groups today.",
+      "url": "https://reddit.com/r/sydney/comments/1ipxdnr/new_year_celebrations_in_cabramatta_tonight/",
+      "score": 183
+    },
+    {
+      "text": "Not to put things too bluntly, but what's your ethnicity/nationality/religion/socioeconomic status? Birds of a feather flock together and all that. I'm Aussie born with Viet background so my childhood",
+      "url": "https://reddit.com/r/sydney/comments/1dio3yd/which_suburbs_or_areas_do_you_think_have_the/l950j3a/",
+      "score": 165
+    },
+    {
+      "text": "Burwood Chinatown is insanely cool.\n\nAnd generally, if you've already done the touristy things - why not dig into REAL sydney.\n\nGo out west to all the amazing communities and eat yourself to death!\n\nV",
+      "url": "https://reddit.com/r/sydney/comments/1djz93t/where_do_you_take_someone_for_their_second_visit/l9efhqh/",
+      "score": 112
+    },
+    {
+      "text": "Family brought back an abandoned baby pigeon\nGood evening everyone,\n\nI'm in a bit of a situation... my grandfather has brought back (I assume) a baby pigeon back to our household around an hour ago an",
+      "url": "https://reddit.com/r/sydney/comments/1enw93t/family_brought_back_an_abandoned_baby_pigeon/",
+      "score": 97
+    },
+    {
+      "text": "Long jetty on the central coast has a newtown feel\n\nLeura has a balmain vibe\n\nThirroul and Port kembla both have an innerwest feel too\n\nCanley heights has some enmore vibes\n\nAreas such as Lakemba, whi",
+      "url": "https://reddit.com/r/sydney/comments/1de1ml2/maybe_a_stupid_question_but_are_there_any/l88qbb7/",
+      "score": 77
+    },
+    {
+      "text": "Incident at Cabramatta causing train delays on T3\nA bit of forewarning to fellow train travellers. There is an ongoing incident at Cabramatta causing delays of all trains along the T3 and other lines ",
+      "url": "https://reddit.com/r/sydney/comments/1bd88dh/incident_at_cabramatta_causing_train_delays_on_t3/",
+      "score": 74
+    },
+    {
+      "text": "I was just curious as to other 80's and 90's \"Westy's\" opinions on today's Essay culture?\nEdit - I meant to say Eshay in my title but autocorrect screwed me and I couldn't edit the title.\n\nI was born ",
+      "url": "https://reddit.com/r/sydney/comments/1bpoxvl/i_was_just_curious_as_to_other_80s_and_90s_westys/",
+      "score": 61
+    }
+  ]
+}

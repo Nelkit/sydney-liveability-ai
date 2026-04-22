@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, CircleDollarSign, Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
 import { importanceOptions } from "./data";
@@ -35,6 +36,13 @@ export function OnboardingPanel({
   onWeightLevelChange,
   onContinue
 }: OnboardingPanelProps) {
+  const conversationRef = useRef<HTMLDivElement | null>(null);
+  const bottomRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [messages, typing, profileReady]);
+
   const isConversationStarted = messages.length > 0;
   const previewPrompts = [
     { text: "Show top suburbs near trains", icon: TrainFront, tint: "bg-blue-100 text-blue-700" },
@@ -51,35 +59,35 @@ export function OnboardingPanel({
     if (normalized.includes("not very")) {
       return {
         icon: Minus,
-        active: "border-slate-300 bg-slate-100 text-slate-700",
-        idle: "border-slate-200 bg-white text-slate-500 hover:border-slate-400"
+        active: "border-slate-500 bg-slate-200 text-slate-800 ring-2 ring-slate-300/70 shadow-[0_8px_18px_rgba(71,85,105,0.24)]",
+        idle: "border-slate-200 bg-white text-slate-600 hover:-translate-y-[1px] hover:border-slate-400 hover:bg-slate-50 hover:text-slate-800"
       };
     }
     if (normalized.includes("very")) {
       return {
         icon: Flame,
-        active: "border-rose-300 bg-rose-50 text-rose-700",
-        idle: "border-rose-100 bg-white text-rose-500 hover:border-rose-300"
+        active: "border-rose-500 bg-rose-100 text-rose-800 ring-2 ring-rose-300/60 shadow-[0_8px_18px_rgba(244,63,94,0.25)]",
+        idle: "border-rose-200 bg-white text-rose-600 hover:-translate-y-[1px] hover:border-rose-400 hover:bg-rose-50 hover:text-rose-800"
       };
     }
     if (normalized.includes("important")) {
       return {
         icon: ThumbsUp,
-        active: "border-amber-300 bg-amber-50 text-amber-700",
-        idle: "border-amber-100 bg-white text-amber-600 hover:border-amber-300"
+        active: "border-amber-500 bg-amber-100 text-amber-800 ring-2 ring-amber-300/60 shadow-[0_8px_18px_rgba(245,158,11,0.25)]",
+        idle: "border-amber-200 bg-white text-amber-700 hover:-translate-y-[1px] hover:border-amber-400 hover:bg-amber-50 hover:text-amber-900"
       };
     }
     if (normalized.includes("neutral")) {
       return {
         icon: Sparkles,
-        active: "border-sky-300 bg-sky-50 text-sky-700",
-        idle: "border-sky-100 bg-white text-sky-600 hover:border-sky-300"
+        active: "border-sky-500 bg-sky-100 text-sky-800 ring-2 ring-sky-300/60 shadow-[0_8px_18px_rgba(14,165,233,0.24)]",
+        idle: "border-sky-200 bg-white text-sky-700 hover:-translate-y-[1px] hover:border-sky-400 hover:bg-sky-50 hover:text-sky-900"
       };
     }
     return {
       icon: X,
-      active: "border-violet-300 bg-violet-50 text-violet-700",
-      idle: "border-violet-100 bg-white text-violet-500 hover:border-violet-300"
+      active: "border-violet-500 bg-violet-100 text-violet-800 ring-2 ring-violet-300/60 shadow-[0_8px_18px_rgba(139,92,246,0.25)]",
+      idle: "border-violet-200 bg-white text-violet-700 hover:-translate-y-[1px] hover:border-violet-400 hover:bg-violet-50 hover:text-violet-900"
     };
   }
 
@@ -107,7 +115,7 @@ export function OnboardingPanel({
             >
               <h1 className="text-[42px] font-extrabold tracking-tight text-slate-800 sm:text-[56px]">
                 Hi there,
-                <span className="bg-gradient-to-r from-slate-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent"> let's find your best suburb</span>
+                <span className="bg-gradient-to-r from-slate-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent"> let&apos;s find your best suburb</span>
               </h1>
               <p className="mx-auto mt-4 max-w-[560px] text-[15px] text-slate-500 sm:text-base">
                 Ask anything about transport, safety, affordability and lifestyle. I will build your profile in chat and then open the live map.
@@ -135,16 +143,21 @@ export function OnboardingPanel({
               <motion.button
                 type="button"
                 onClick={onContinue}
-                className="mt-8 inline-flex items-center rounded-full bg-gradient-to-r from-slate-900 to-slate-700 px-7 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(15,23,42,0.25)] transition hover:opacity-95"
+                className="mt-8 inline-grid h-11 appearance-none place-items-center rounded-full border border-slate-800 bg-slate-900 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 px-7 py-0 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(15,23,42,0.28)] transition hover:brightness-105"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0, transition: { delay: 0.25, duration: 0.4 } }}
               >
-                Start Conversation
+                <span className="block leading-none text-white" style={{ WebkitTextFillColor: "#ffffff" }}>
+                  Start Conversation
+                </span>
               </motion.button>
             </motion.div>
           </div>
         ) : (
-          <div className="scrollbar-none mx-auto px-10 flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible py-6">
+          <div
+            ref={conversationRef}
+            className="scrollbar-none mx-auto flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible px-10 py-6"
+          >
             {!profileReady ? (
               <div className="animate-fade-up w-full max-w-[92%] self-start rounded-2xl border border-white/75 bg-white/82 p-3 shadow-[0_8px_20px_rgba(15,23,42,0.07)] backdrop-blur">
                 <div className="mb-2 flex items-center justify-between">
@@ -185,7 +198,7 @@ export function OnboardingPanel({
             {!profileReady && !typing ? (
               <div className="animate-fade-up w-full max-w-[92%] self-start rounded-2xl border border-white/75 bg-white/85 p-4 shadow-[0_10px_28px_rgba(15,23,42,0.08)] backdrop-blur">
                 <p className="mb-2 text-xs font-semibold text-slate-500">Choose one option:</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2.5">
                   {importanceOptions.map((option) => {
                     const visual = getChoiceVisual(option.label);
                     const ChoiceIcon = visual.icon;
@@ -194,9 +207,9 @@ export function OnboardingPanel({
                         key={option.key}
                         type="button"
                         onClick={() => onSelectOnboardingChoice(option.key)}
-                        className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold leading-none transition ${visual.idle}`}
+                        className={`inline-flex min-h-11 items-center gap-2 rounded-xl border px-4 py-2 text-sm font-semibold leading-none transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 ${visual.idle}`}
                       >
-                        <ChoiceIcon size={12} />
+                        <ChoiceIcon size={14} />
                         {option.label}
                       </button>
                     );
@@ -233,14 +246,14 @@ export function OnboardingPanel({
                               key={option.key}
                               type="button"
                               onClick={() => onWeightLevelChange(key, option.key)}
-                              className={`inline-flex items-center rounded-full border px-2.5 py-1.5 text-[11px] font-medium leading-none transition ${
+                              className={`inline-flex min-h-10 items-center rounded-xl border px-3.5 py-2 text-xs font-semibold leading-none transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 ${
                                 active
                                   ? `${visual.active} font-semibold`
                                   : `${visual.idle}`
                               }`}
                             >
-                              <span className="inline-flex items-center gap-1 leading-none">
-                                <ChoiceIcon size={11} />
+                              <span className="inline-flex items-center gap-1.5 leading-none">
+                                <ChoiceIcon size={12} />
                                 {option.label}
                               </span>
                             </button>
@@ -254,12 +267,16 @@ export function OnboardingPanel({
                 <button
                   type="button"
                   onClick={onContinue}
-                    className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-slate-900 to-slate-700 px-3 py-3 text-sm font-semibold text-white transition hover:opacity-95"
+                    className="mt-4 grid h-11 w-full appearance-none place-items-center rounded-full border border-slate-800 bg-slate-900 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 px-3 py-0 text-sm font-semibold text-white transition hover:brightness-105"
                 >
-                  Continue to the main map
+                  <span className="block leading-none text-white" style={{ WebkitTextFillColor: "#ffffff" }}>
+                    Continue to the main map
+                  </span>
                 </button>
               </motion.div>
             ) : null}
+
+            <div ref={bottomRef} />
           </div>
         )}
       </div>

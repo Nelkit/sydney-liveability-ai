@@ -1,0 +1,101 @@
+{
+  "suburb": "Doonside",
+  "post_count": 29,
+  "fetched_at": "2026-04-18T02:12:34.638960+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.294,
+      "mentions": 10
+    },
+    "community": {
+      "score": 0.427,
+      "mentions": 18
+    },
+    "noise": {
+      "score": 0.239,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.592,
+      "mentions": 13
+    },
+    "green_space": {
+      "score": 0.503,
+      "mentions": 12
+    },
+    "nightlife": {
+      "score": 0.623,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.748,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.876,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "neutral": 0.4405,
+    "fear": 0.129,
+    "sadness": 0.0401,
+    "surprise": 0.0526,
+    "anger": 0.112,
+    "disgust": 0.0861,
+    "joy": 0.1396
+  },
+  "narrative": "Reddit discussions about Doonside are most positive about food and cafe (0.88) and affordability (0.75). Residents are most critical about transport (0.29) and noise (0.24). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Trains are proper fucked between Parramatta - Richmond/Penrith\nDidn't see a post so figured I'd make one, expect the afternoon peak to be pretty bad due to the storm that passed through mid afternoon.",
+      "url": "https://reddit.com/r/sydney/comments/1p6xz59/trains_are_proper_fucked_between_parramatta/",
+      "score": 265
+    },
+    {
+      "text": "Stay classy Doonside\nDoonside Medical Centre car park filled with dozens of dead pigeon carcasses, shit, rat traps and other assorted rubbish and trash. Mmmm mmm tasty.",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/",
+      "score": 220
+    },
+    {
+      "text": "Doonside where failure thrives and dreams die",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktqt2tr/",
+      "score": 116
+    },
+    {
+      "text": "This week I made a comment in /r/AusPropertyChat about Blacktown and Doonside being tough areas. People called me \"entitled\" despite the fact that I grew up there and my mum lived there for long after",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktqw34l/",
+      "score": 86
+    },
+    {
+      "text": "If you can’t handle the heat get out the kitchen, I still love you doonside",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktqosjp/",
+      "score": 85
+    },
+    {
+      "text": "Not to be pedantic but Westpoint isn't in Doonside.",
+      "url": "https://reddit.com/r/sydney/comments/1c22t88/teenager_dead_another_in_hospital_after_stabbings/kz7j2x1/",
+      "score": 81
+    },
+    {
+      "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kive325/",
+      "score": 51
+    },
+    {
+      "text": "I hope some fucking forklift driver syndicate from Doonside wins it",
+      "url": "https://reddit.com/r/sydney/comments/19exrkk/goodluck_yall/kjgtchy/",
+      "score": 44
+    },
+    {
+      "text": "It's fucking Doonside....",
+      "url": "https://reddit.com/r/sydney/comments/1b8pkdq/stay_classy_doonside/ktqs5zp/",
+      "score": 33
+    },
+    {
+      "text": "Yeah it works.\n\nFor example, instead of Doonside. You’ve got Bungarribee. Instead of Riverstone, you’ve got Anges. Instead of Marsden Park. You’ve got Melonba. instead of “former” ADF site, it’s now f",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kievzv2/",
+      "score": 18
+    }
+  ]
+}
