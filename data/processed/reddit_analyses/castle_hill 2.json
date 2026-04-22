@@ -1,0 +1,101 @@
+{
+  "suburb": "Castle Hill",
+  "post_count": 108,
+  "fetched_at": "2026-04-18T01:56:16.191928+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.523,
+      "mentions": 43
+    },
+    "community": {
+      "score": 0.527,
+      "mentions": 93
+    },
+    "noise": {
+      "score": 0.746,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.438,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.57,
+      "mentions": 16
+    },
+    "safety": {
+      "score": 0.396,
+      "mentions": 24
+    },
+    "green_space": {
+      "score": 0.624,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.761,
+      "mentions": 8
+    }
+  },
+  "emotions": {
+    "neutral": 0.5068,
+    "surprise": 0.1359,
+    "fear": 0.0536,
+    "joy": 0.107,
+    "sadness": 0.0528,
+    "anger": 0.0564,
+    "disgust": 0.0875
+  },
+  "narrative": "Reddit discussions about Castle Hill are most positive about food and cafe (0.76) and noise (0.75). Residents are most critical about affordability (0.44) and safety (0.40). This analysis is based on 108 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I saw the the Sydney Monorail - at Powerhouse Castle Hill",
+      "url": "https://reddit.com/r/sydney/comments/1omb039/i_saw_the_the_sydney_monorail_at_powerhouse/",
+      "score": 1176
+    },
+    {
+      "text": "Went all the way to Castle Hill to see this \nMy son wanted to see the monorail, was a bit disappointed it was behind glass but the Powerhouse Annexe does do family days and I promised to take him to o",
+      "url": "https://reddit.com/r/sydney/comments/1ejixki/went_all_the_way_to_castle_hill_to_see_this/",
+      "score": 678
+    },
+    {
+      "text": "Stepped into heaven at Castle Hill Showgrounds today",
+      "url": "https://reddit.com/r/sydney/comments/1lhduu5/stepped_into_heaven_at_castle_hill_showgrounds/",
+      "score": 524
+    },
+    {
+      "text": "Homeless people are everywhere now.\n \nThere are a few around Castle Hill. \nThere's a guy roaming with a trolley around Epping. \nSomeone has set up a mattress and their things under a ramp that goes to",
+      "url": "https://reddit.com/r/sydney/comments/1clfy1u/anyone_else_in_ashfield_notice_an_uptick_in/l2tg9te/",
+      "score": 271
+    },
+    {
+      "text": "People in Castle hill were very unhappy with apartment towers going up. Many were silenced by dollar signs when developers came knocking offering them big money to sell to them. It's only a problem wh",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt1cnd/",
+      "score": 249
+    },
+    {
+      "text": "Metro Broken Down at Hills Showground \nBeen stuck on the train for more than 30 minutes. Between Hills Showground and Castle Hill. Muffled announcents are saying everything from we should be moving so",
+      "url": "https://reddit.com/r/sydney/comments/1ezxmm5/metro_broken_down_at_hills_showground/",
+      "score": 180
+    },
+    {
+      "text": "Sydney Metro Pub Crawl\nOpen to suggestions on the pubs below, I skipped a few stations as there weren't any walkable pubs (open to input!) would you do it any different? \nThoughts?\n\n(Just keeping it R",
+      "url": "https://reddit.com/r/sydney/comments/1fqi65x/sydney_metro_pub_crawl/",
+      "score": 82
+    },
+    {
+      "text": "Having to change at Chatswood to get to the city grinds my gears. Can’t wait for the city stations to open! That being said, I now go to Castle Hill more often than my local shopping centre because it",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvt3jqx/",
+      "score": 73
+    },
+    {
+      "text": "Castle Hill to Castle Hills.",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfpd4s/",
+      "score": 71
+    },
+    {
+      "text": "All data is from [https://sudhosting2.web.app/stations/](https://sudhosting2.web.app/stations/), which is derived from TfNSW data. Thank you to both Sud and TfNSW for the data.\n\nThe top 25 stations on",
+      "url": "https://reddit.com/r/sydney/comments/193qgdx/map_of_the_25_most_used_rail_stations_sydney/khb0qsm/",
+      "score": 62
+    }
+  ]
+}

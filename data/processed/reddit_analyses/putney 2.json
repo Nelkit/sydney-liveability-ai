@@ -1,0 +1,71 @@
+{
+  "suburb": "Putney",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:22.547378+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.626,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.899,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.881,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.981,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.983,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.983,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.834,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8172,
+    "disgust": 0.0288,
+    "anger": 0.0114,
+    "surprise": 0.0188,
+    "sadness": 0.0249,
+    "joy": 0.096,
+    "fear": 0.0029
+  },
+  "narrative": "Reddit discussions about Putney are most positive about nightlife (0.98) and noise (0.98). Residents are most critical about transport (0.63) and safety (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "You’ve cherry-picked some examples which basically point out that Sydney’s historical radial network transport corridors needs working on. It’s an argument for more investment in buses, not that buses",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krvfu1l/",
+      "score": 12
+    },
+    {
+      "text": "I lived quite close to Concord until recently. The central bit of Concord is lovely, Majors Bay Road has become very nice both physically and in terms of the selection of restaurants, cafes and local ",
+      "url": "https://reddit.com/r/sydney/comments/1ccgz19/concord_or_frenchs_forest/l15gotf/",
+      "score": 7
+    },
+    {
+      "text": "It's always going to suffer because the high street is a 6 lane highway. Drummoyne is more vibrant with more young families and slightly higher density. It's also found it's niche with home stores alo",
+      "url": "https://reddit.com/r/sydney/comments/1dhs12k/is_it_just_me_or_is_gladesville_kinda_rundown/l92z2gn/",
+      "score": 6
+    },
+    {
+      "text": "The house part is very suburban but great in that context - direct access to Meadowbank Park and the river, easy cycle to Parramatta and Olympic Park, Meadowbank station is walkable by suburban standa",
+      "url": "https://reddit.com/r/sydney/comments/1cd9su6/melrose_park/l1aqwq2/",
+      "score": 3
+    }
+  ]
+}

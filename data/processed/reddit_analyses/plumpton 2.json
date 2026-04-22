@@ -1,0 +1,96 @@
+{
+  "suburb": "Plumpton",
+  "post_count": 9,
+  "fetched_at": "2026-04-18T02:18:42.008140+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.345,
+      "mentions": 9
+    },
+    "transport": {
+      "score": 0.803,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.85,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.828,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.87,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.784,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.848,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.899,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "sadness": 0.1209,
+    "surprise": 0.0484,
+    "neutral": 0.5674,
+    "fear": 0.2031,
+    "joy": 0.0067,
+    "disgust": 0.0291,
+    "anger": 0.0244
+  },
+  "narrative": "Reddit discussions about Plumpton are most positive about noise (0.90) and green space (0.87). Residents are most critical about nightlife (0.78) and community (0.34). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",
+      "url": "https://reddit.com/r/sydney/comments/19byr9u/whats_blacktown_like_to_live_in/kive325/",
+      "score": 51
+    },
+    {
+      "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwpeae/",
+      "score": 27
+    },
+    {
+      "text": "Yes, I felt it too. Plumpton here.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktwc4ib/",
+      "score": 12
+    },
+    {
+      "text": "Trouble at the Rooty Hill Pigeon Club. 17 members sued the club in the supreme court, claiming an election of 3 members to the committee was invalid. “There was no persuasive evidence that their real ",
+      "url": "https://reddit.com/r/sydney/comments/1aivgd7/trouble_at_the_rooty_hill_pigeon_club_17_members/",
+      "score": 10
+    },
+    {
+      "text": "Mt Druitt and Plumpton have them",
+      "url": "https://reddit.com/r/sydney/comments/1ag28cv/how_often_do_people_see_expired_alcohol_free_zones/kof592m/",
+      "score": 5
+    },
+    {
+      "text": "Nah I wouldn’t want my 4 BR house with views of middle harbour when I can live with the eshays of Plumpton.",
+      "url": "https://reddit.com/r/sydney/comments/1ah1ika/why_do_people_still_trash_talk_western_sydney/kokw1u1/",
+      "score": 5
+    },
+    {
+      "text": "Felt something while sitting at home at Plumpton, scared the living Christ out of me.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktzg0pk/",
+      "score": 3
+    },
+    {
+      "text": "Same with me, also in Plumpton too, went outside to my front yard to check to see if a car crashed.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktzgdqb/",
+      "score": 2
+    }
+  ]
+}

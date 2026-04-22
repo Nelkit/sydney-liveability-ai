@@ -1,0 +1,101 @@
+{
+  "suburb": "Bondi",
+  "post_count": 461,
+  "fetched_at": "2026-04-18T01:19:15.395733+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.533,
+      "mentions": 330
+    },
+    "food_and_cafe": {
+      "score": 0.701,
+      "mentions": 78
+    },
+    "transport": {
+      "score": 0.623,
+      "mentions": 117
+    },
+    "nightlife": {
+      "score": 0.69,
+      "mentions": 133
+    },
+    "green_space": {
+      "score": 0.881,
+      "mentions": 57
+    },
+    "safety": {
+      "score": 0.342,
+      "mentions": 180
+    },
+    "noise": {
+      "score": 0.234,
+      "mentions": 35
+    },
+    "affordability": {
+      "score": 0.645,
+      "mentions": 29
+    }
+  },
+  "emotions": {
+    "neutral": 0.4367,
+    "joy": 0.0989,
+    "surprise": 0.143,
+    "fear": 0.1089,
+    "anger": 0.072,
+    "disgust": 0.076,
+    "sadness": 0.0645
+  },
+  "narrative": "Reddit discussions about Bondi are most positive about green space (0.88) and food and cafe (0.70). Residents are most critical about safety (0.34) and noise (0.23). This analysis is based on 461 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Thanks Sydney\nJust returned to NZ after 3 1/2 weeks in Sydney. \n\nYour city is amazing, we walked beside whales on the Coogee to Bondi walk. We explored the Blue mountains. We trained, ferried, bussed ",
+      "url": "https://reddit.com/r/sydney/comments/1lbtkok/thanks_sydney/",
+      "score": 3215
+    },
+    {
+      "text": "What’s going on in bondi??\nPeople running away from the beach and screaming - anyone know what’s happening??",
+      "url": "https://reddit.com/r/sydney/comments/1pm8qmo/whats_going_on_in_bondi/",
+      "score": 2639
+    },
+    {
+      "text": "Shout out to Sydney folks who took the long way homes today\nGot on a bus to head home to Bondi just now and the poor bus driver accidentally got in the wrong lane from Pyrmont. Instead of heading into",
+      "url": "https://reddit.com/r/sydney/comments/1sl2oz1/shout_out_to_sydney_folks_who_took_the_long_way/",
+      "score": 2558
+    },
+    {
+      "text": "Avner's Bakery closing permanently in the wake of the Bondi massacre :(",
+      "url": "https://reddit.com/r/sydney/comments/1poj81v/avners_bakery_closing_permanently_in_the_wake_of/",
+      "score": 2404
+    },
+    {
+      "text": "Seeing the Aurora Australis in Bondi\nThis was captured by me around 5.15-5.30 am today morning at Mackenzie’s Point Lookout. iPhone 13\n\nWas visible to the naked eye slightly",
+      "url": "https://reddit.com/r/sydney/comments/1g0rbdr/seeing_the_aurora_australis_in_bondi/",
+      "score": 1910
+    },
+    {
+      "text": "Sydney, You're a Gem\nAmerican here, just wanted to give a shout-out to your city while waiting at the airport for my return home. Spent just over a week here, experienced Blue Mountains, New Year's on",
+      "url": "https://reddit.com/r/sydney/comments/1hunqpf/sydney_youre_a_gem/",
+      "score": 1870
+    },
+    {
+      "text": "I just walked from Penrith to Bondi\nOn the 23rd January 2026 I walk from the Knapsack Viaduct Trailhead 86 kilometres to Bondi Beach. It started around 2:10am on Friday and finished roughly 1:50am on ",
+      "url": "https://reddit.com/r/sydney/comments/1qlhkvr/i_just_walked_from_penrith_to_bondi/",
+      "score": 1810
+    },
+    {
+      "text": "PSA: If you can, please donate blood\nLifeblood Australia is calling for blood donations to support the need in Sydney following the Bondi terrorist attack. Blood has already been transported from inte",
+      "url": "https://reddit.com/r/sydney/comments/1pmsgx6/psa_if_you_can_please_donate_blood/",
+      "score": 1644
+    },
+    {
+      "text": "NSW to effectively ban protests for up to three months as premier links Gaza rallies to Bondi terror attack",
+      "url": "https://reddit.com/r/sydney/comments/1pr2b53/nsw_to_effectively_ban_protests_for_up_to_three/",
+      "score": 1281
+    },
+    {
+      "text": "Can anyone beat the Bondi Hotel surcharge?",
+      "url": "https://reddit.com/r/sydney/comments/1btiugf/can_anyone_beat_the_bondi_hotel_surcharge/",
+      "score": 1084
+    }
+  ]
+}

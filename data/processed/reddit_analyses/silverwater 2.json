@@ -1,0 +1,101 @@
+{
+  "suburb": "Silverwater",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:37.189404+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.534,
+      "mentions": 14
+    },
+    "safety": {
+      "score": 0.251,
+      "mentions": 12
+    },
+    "green_space": {
+      "score": 0.513,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.865,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.833,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.526,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.714,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1323,
+    "disgust": 0.0815,
+    "neutral": 0.3862,
+    "fear": 0.137,
+    "surprise": 0.1432,
+    "anger": 0.0499,
+    "joy": 0.07
+  },
+  "narrative": "Reddit discussions about Silverwater are most positive about transport (0.86) and nightlife (0.83). Residents are most critical about food and cafe (0.50) and safety (0.25). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney’s unusual sewerage system to blame for faecal and fat balls on beaches, experts claim\nI don't understand why this is a mystery.\n\nI walk extensive around the Parramatta, Rosehill, Ryde, Epping, ",
+      "url": "https://reddit.com/r/sydney/comments/1i4nunc/sydneys_unusual_sewerage_system_to_blame_for/",
+      "score": 350
+    },
+    {
+      "text": "3 years in Silverwater and I just got my first scrub turkey visitors to my garden\nAnd there was 3 of them! \nI lived in Queensland for 10 years and saw these guys everywhere, there's heaps in Newington",
+      "url": "https://reddit.com/r/sydney/comments/1k4t6tx/3_years_in_silverwater_and_i_just_got_my_first/",
+      "score": 205
+    },
+    {
+      "text": "Parking\nGreat parking at Service NSW, Silverwater 🤦‍♀️",
+      "url": "https://reddit.com/r/sydney/comments/1mkh25b/parking/",
+      "score": 168
+    },
+    {
+      "text": "What is your perfect suburb?\nbased off your lifestyle and everything you do and your family situation.\n\nfor me it would be lidcombe or burwood.\n\ni have an asian palette so both places and being close ",
+      "url": "https://reddit.com/r/sydney/comments/1sawb74/what_is_your_perfect_suburb/",
+      "score": 164
+    },
+    {
+      "text": "The first impression of Silverwater by Apple Maps\nCarlingford got a great one tho",
+      "url": "https://reddit.com/r/sydney/comments/1hjqq87/the_first_impression_of_silverwater_by_apple_maps/",
+      "score": 144
+    },
+    {
+      "text": "Missing Person | Mathew (Charlie) Hanham - Last seen 16th November\n[Hey all. Posting on behalf of friends and his family. Mathew \\(Charlie\\) Hanham was last seen on Friday the 16th November at around ",
+      "url": "https://reddit.com/r/sydney/comments/1gurvzn/missing_person_mathew_charlie_hanham_last_seen/",
+      "score": 107
+    },
+    {
+      "text": "I was never allowed to WFH during the pandemic, and I’ve worked in the same job for 4 years, so I have observed traffic changes, and it’s substantially worse this year than a year ago.\n\nMy commute tim",
+      "url": "https://reddit.com/r/sydney/comments/1bzb0et/wfh_is_it_still_a_thing/kyoqe6t/",
+      "score": 104
+    },
+    {
+      "text": "Avoid Victoria Road and Silverwater Road near Ermington - roads closed\nLive traffic details: https://www.facebook.com/share/p/19rB7BWXeP/",
+      "url": "https://reddit.com/r/sydney/comments/1ivc1h1/avoid_victoria_road_and_silverwater_road_near/",
+      "score": 38
+    },
+    {
+      "text": "Been amping up in Stratty for a good few years. Tents near the river in Clyde/Granville. Dosses around Silverwater, Rhodes, Meadowbank.\n\nPeople are hurting all over.",
+      "url": "https://reddit.com/r/sydney/comments/1clfy1u/anyone_else_in_ashfield_notice_an_uptick_in/l2tciq0/",
+      "score": 28
+    },
+    {
+      "text": "Actually he is apparently in Silverwater jail.... Where he belongs!",
+      "url": "https://reddit.com/r/sydney/comments/1b0am8o/just_watched_10news_coverage_of_the_murder_of_the/ks6snta/",
+      "score": 23
+    }
+  ]
+}

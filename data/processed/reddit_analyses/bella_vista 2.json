@@ -1,0 +1,101 @@
+{
+  "suburb": "Bella Vista",
+  "post_count": 35,
+  "fetched_at": "2026-04-18T02:10:55.849298+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.461,
+      "mentions": 14
+    },
+    "nightlife": {
+      "score": 0.439,
+      "mentions": 8
+    },
+    "community": {
+      "score": 0.608,
+      "mentions": 23
+    },
+    "green_space": {
+      "score": 0.843,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.896,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.48,
+      "mentions": 10
+    },
+    "food_and_cafe": {
+      "score": 0.668,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "disgust": 0.0333,
+    "fear": 0.1037,
+    "sadness": 0.069,
+    "neutral": 0.5407,
+    "anger": 0.0241,
+    "surprise": 0.1666,
+    "joy": 0.0626
+  },
+  "narrative": "Reddit discussions about Bella Vista are most positive about affordability (0.90) and green space (0.84). Residents are most critical about transport (0.46) and nightlife (0.44). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "This one is ||Bella Vista Station, South Concourse||. It's really grotty when you go up to it, it's got all sorts of unsightly stains and you can see the foam inside, looks like it's been stabbed a fe",
+      "url": "https://reddit.com/r/sydney/comments/1c69fgx/most_threatening_sydney_station_bathrooms/kzzdn4p/",
+      "score": 85
+    },
+    {
+      "text": "Sydney Metro Pub Crawl\nOpen to suggestions on the pubs below, I skipped a few stations as there weren't any walkable pubs (open to input!) would you do it any different? \nThoughts?\n\n(Just keeping it R",
+      "url": "https://reddit.com/r/sydney/comments/1fqi65x/sydney_metro_pub_crawl/",
+      "score": 82
+    },
+    {
+      "text": "Blacktown City Mayor hails common sense win for the community after changes to rezoning\nBlacktown City Mayor hails common sense win for the community after changes to rezoning\n\nThe NSW Government’s re",
+      "url": "https://reddit.com/r/sydney/comments/1h2atfe/blacktown_city_mayor_hails_common_sense_win_for/",
+      "score": 71
+    },
+    {
+      "text": "Storm through Bella Vista\nStorm coming from the west with rain and lightning, heading for Parramatta",
+      "url": "https://reddit.com/r/sydney/comments/1lbty60/storm_through_bella_vista/",
+      "score": 43
+    },
+    {
+      "text": "M7 Roadworks Speed Limit Enforcement\nFor my sins I've started a new job that requires me to commute the full length of the M7 for Moorebank to Bella Vista.\n\nOf that 36km, 25km is roadworks with an 80 ",
+      "url": "https://reddit.com/r/sydney/comments/1m2lndi/m7_roadworks_speed_limit_enforcement/",
+      "score": 14
+    },
+    {
+      "text": "Zac's Great Food in Bella Vista. Terrible name for a restaurant but brilliant food",
+      "url": "https://reddit.com/r/sydney/comments/1ab59cm/what_lebanesemiddle_eastern_foods_and_restaurants/kjldzyy/",
+      "score": 12
+    },
+    {
+      "text": "Western sydney is big.  What part?\n\nI recently went to the bella vista hotel.  I was pleasantly surprised. I thought drinks were expensive though",
+      "url": "https://reddit.com/r/sydney/comments/1cp61ll/nightlife_in_western_sydney/l3jhvuz/",
+      "score": 11
+    },
+    {
+      "text": "Bella Vista = McMansion Hillsong LNP voter hellscape.",
+      "url": "https://reddit.com/r/sydney/comments/1bnq663/the_road_to_nowhere_that_transformed_sydney/kwk2pnv/",
+      "score": 10
+    },
+    {
+      "text": "4 million dollar houses in bella vista next to blacktown",
+      "url": "https://reddit.com/r/sydney/comments/1bmzti8/best_scams_in_sydney/kwf4gbh/",
+      "score": 8
+    },
+    {
+      "text": "The Metro-Epping-Central route is almost the same time as Metro-Chatswood-Central route, unless you get lucky at Epping and there's a CCN to Central. If you're going to the more northern parts of the ",
+      "url": "https://reddit.com/r/sydney/comments/1d0xm7x/rouse_hill_to_cbd/l5q3qj9/",
+      "score": 8
+    }
+  ]
+}

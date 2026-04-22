@@ -1,0 +1,71 @@
+{
+  "suburb": "Chiswick",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:10.414297+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.647,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.989,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.994,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6212,
+    "fear": 0.0782,
+    "disgust": 0.0771,
+    "anger": 0.0313,
+    "surprise": 0.0295,
+    "sadness": 0.0234,
+    "joy": 0.1393
+  },
+  "narrative": "Reddit discussions about Chiswick are most positive about noise (0.99) and food and cafe (0.99). Residents are most critical about transport (0.50) and green space (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Spray painted on a road in Chiswick overnight.",
+      "url": "https://reddit.com/r/sydney/comments/1qrnif2/spray_painted_on_a_road_in_chiswick_overnight/",
+      "score": 18
+    },
+    {
+      "text": "Small restaurants that fit 25 people\nMy fiancée and I are looking to do a small reception type dinner in Sydney but would love to hire out a full venue so that we won't be disturbed by other diners an",
+      "url": "https://reddit.com/r/sydney/comments/1i0x7rj/small_restaurants_that_fit_25_people/",
+      "score": 7
+    },
+    {
+      "text": "There’s a servo on Victoria Road before the Iron Cove Bridge that has one of those drive in car washes.\n\nOtherwise Riviera complex in Chiswick has a car wash bay for residents on Blackadder Close near",
+      "url": "https://reddit.com/r/sydney/comments/190nb63/self_wash_car_bays_where_on_earth_are_they/kgpnd7f/",
+      "score": 3
+    },
+    {
+      "text": "Are you looking at weekend or weekday?  If you are looking at a weekday, it's much more accommodable.  If you want private dining room options, it'll also be cheaper.  If you are happy to dine in the ",
+      "url": "https://reddit.com/r/sydney/comments/1c444e9/historicaesthetically_beautiful_restaurants_with/kzofqiy/",
+      "score": 2
+    }
+  ]
+}

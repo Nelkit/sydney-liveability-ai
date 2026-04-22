@@ -1,0 +1,56 @@
+{
+  "suburb": "Middle Dural",
+  "post_count": 1,
+  "fetched_at": "2026-04-18T02:21:11.432664+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.169,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.169,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.169,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.9041,
+    "surprise": 0.0513,
+    "anger": 0.0132,
+    "fear": 0.0128,
+    "disgust": 0.0077,
+    "joy": 0.0067,
+    "sadness": 0.0041
+  },
+  "narrative": "Reddit discussions about Middle Dural are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about community (0.17) and green space (0.17). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Grew up in Leichhardt, living in Newcastle now. I take the train down the central coast line a lot. The first station I'd consider as 'in Sydney' would probably be Berowra, because that's where the T9",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uq8gi/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Wetherill Park",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:49.932761+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.925,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.966,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.924,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.907,
+      "mentions": 8
+    },
+    "affordability": {
+      "score": 0.969,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.969,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.97,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.748,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "surprise": 0.1794,
+    "neutral": 0.5019,
+    "fear": 0.1342,
+    "anger": 0.0644,
+    "disgust": 0.0823,
+    "sadness": 0.0256,
+    "joy": 0.012
+  },
+  "narrative": "Reddit discussions about Wetherill Park are most positive about food and cafe (0.97) and affordability (0.97). Residents are most critical about green space (0.91) and noise (0.75). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "AirTag Jacket Saga: The Final Update\nSee my last posts for the full story. I received lots of requests for an update, so here it is. Fair warning: I’m going to dramatise this a bit lol.\n\nEssentially, ",
+      "url": "https://reddit.com/r/sydney/comments/1er2cx9/airtag_jacket_saga_the_final_update/",
+      "score": 5871
+    },
+    {
+      "text": "Two teens killed in horror smash between bus and motorcycle at wetherill park bus stop",
+      "url": "https://reddit.com/r/sydney/comments/1s1gw1h/two_teens_killed_in_horror_smash_between_bus_and/",
+      "score": 303
+    },
+    {
+      "text": "There is always one dickhead!\nWetherill Park today. Just wanted to charge the car whilst I had a rare coffee with the missus.\n\nBell end!",
+      "url": "https://reddit.com/r/sydney/comments/1o1vgqj/there_is_always_one_dickhead/",
+      "score": 147
+    },
+    {
+      "text": "When it comes to regular retail, I see very little on my credit card statement that matches the price i remember paying. 11 cents here, 43 cents there? I don't remember that!  \n\nI like to check my sta",
+      "url": "https://reddit.com/r/sydney/comments/1dkdtc1/anyone_else_frustrated_with_surcharges_at/l9jyh7v/",
+      "score": 23
+    },
+    {
+      "text": "The heart of Sydney is Parramatta. Wetherill Park isn't that far away from Parramatta. ",
+      "url": "https://reddit.com/r/sydney/comments/1afeugn/has_anyone_been_to_carls_jr_at_wetherell_park/ko9j3yr/",
+      "score": 16
+    },
+    {
+      "text": "All non-Coke, non-Pepsi and non-Schweppes soft drinks in Australia are made by TruBlue Beverages, Wetherill Park.\n\nAs well as RC Cola.\n\nhttps://en.m.wikipedia.org/wiki/Tru_Blu_Beverages\n\nThat's who ha",
+      "url": "https://reddit.com/r/sydney/comments/1b9o4t0/butter_conspiracy_im_convinced_these_are_the_same/ktx6ku4/",
+      "score": 13
+    },
+    {
+      "text": "You can chuck them very cheaply at your nearest concrete recyclers, there is one at camellia. Also a  Boral recycling at wetherill park.\n\nRing ahead and see if they allow hand unloading, some may only",
+      "url": "https://reddit.com/r/sydney/comments/1bs5mhr/what_is_the_most_cost_effective_and_legal_way_to/kxdjx4o/",
+      "score": 11
+    },
+    {
+      "text": "Auburn, Merrlands, Wetherill Park, area to Bankstown / Greenacre",
+      "url": "https://reddit.com/r/sydney/comments/1d33omf/where_to_buy_womens_clothing_appropriate_for/l64xbjs/",
+      "score": 10
+    },
+    {
+      "text": "The offenders traveled from Fairfield and Wetherill Park to steal from an IGA in Riverstone. These are professional criminals on their way up from 'petty' to the big time, one is already on bail for '",
+      "url": "https://reddit.com/r/sydney/comments/1adq8kb/riverstone_supermarket_store_manager_stabbed_by/kk3zxs5/",
+      "score": 8
+    },
+    {
+      "text": "Wetherill Park is in Sydney.",
+      "url": "https://reddit.com/r/sydney/comments/1afeugn/has_anyone_been_to_carls_jr_at_wetherell_park/ko9m72a/",
+      "score": 8
+    }
+  ]
+}

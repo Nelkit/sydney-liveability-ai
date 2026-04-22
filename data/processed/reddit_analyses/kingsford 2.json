@@ -1,0 +1,101 @@
+{
+  "suburb": "Kingsford",
+  "post_count": 58,
+  "fetched_at": "2026-04-18T02:05:00.027939+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.308,
+      "mentions": 11
+    },
+    "nightlife": {
+      "score": 0.309,
+      "mentions": 15
+    },
+    "transport": {
+      "score": 0.617,
+      "mentions": 31
+    },
+    "community": {
+      "score": 0.565,
+      "mentions": 39
+    },
+    "affordability": {
+      "score": 0.844,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.985,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.807,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.438,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "surprise": 0.1053,
+    "neutral": 0.5736,
+    "anger": 0.0504,
+    "fear": 0.0601,
+    "sadness": 0.0649,
+    "joy": 0.043,
+    "disgust": 0.1027
+  },
+  "narrative": "Reddit discussions about Kingsford are most positive about green space (0.98) and affordability (0.84). Residents are most critical about nightlife (0.31) and safety (0.31). This analysis is based on 58 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Kingsford's Late Night Attack | IG\" crazy_news_in_sydney",
+      "url": "https://reddit.com/r/sydney/comments/1ra5m7n/kingsfords_late_night_attack_ig_crazy_news_in/",
+      "score": 2099
+    },
+    {
+      "text": "Living in the South-East the previous government completely fucked city accessibility through removal of bus routes. Outside peak it now takes twice as long to get to CQ. You have to transfer to the l",
+      "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koxk3ip/",
+      "score": 108
+    },
+    {
+      "text": "PSA: L2/L3 Lines in Sydney are not running this weekend\nAlthough the screens at each platform has stated that the light rail is not running on the L2/L3 lines this weekend, I'm aware most passengers p",
+      "url": "https://reddit.com/r/sydney/comments/1ctw15w/psa_l2l3_lines_in_sydney_are_not_running_this/",
+      "score": 71
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2024!\nWelp, fuck again.\n\nThe flood of \"what do I do for New Year's?\" posts are starting, though you might not have noticed them as much since we started referring them ",
+      "url": "https://reddit.com/r/sydney/comments/1h5hf9b/sydney_nye_fireworks_megathread_2024/",
+      "score": 54
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2025!\nWe're four weeks out now. The posts have started, and we'd remind people there is [a Wiki page that you should totally check out.](https://old.reddit.com/r/sydney",
+      "url": "https://reddit.com/r/sydney/comments/1pchenr/sydney_nye_fireworks_megathread_2025/",
+      "score": 47
+    },
+    {
+      "text": "Reminder: There will be no light rail services (L1 Dulwich Hill, L2 Randwick or L3 Kingsford) running from 11pm Tuesday to all of Wednesday tomorrow",
+      "url": "https://reddit.com/r/sydney/comments/1dd97zc/reminder_there_will_be_no_light_rail_services_l1/",
+      "score": 44
+    },
+    {
+      "text": "Walk to Sydney airport international\nHi guys , does anyone know if it's possible to walk to the international terminal in kingsford airport from mascot village? Have a friend arriving tomorrow and kee",
+      "url": "https://reddit.com/r/sydney/comments/1mjudb4/walk_to_sydney_airport_international/",
+      "score": 37
+    },
+    {
+      "text": "Their Kingsford branch was doing this 13+ years ago too :)",
+      "url": "https://reddit.com/r/sydney/comments/1d6u4iw/cheapest_bubble_tea_in_sydney/l6uznjo/",
+      "score": 37
+    },
+    {
+      "text": "Usually see them further down the line between Surry Hills and Kingsford targeting the UNSW students, city's to busy and they tend to avoid targeting tourists from what I've noticed.",
+      "url": "https://reddit.com/r/sydney/comments/1b3hptt/transit_officers_cbd_trams/kssedxf/",
+      "score": 33
+    },
+    {
+      "text": "It's about demand from the western suburbs, it's about giving operators a viable alternative to Kingsford Smith that doesn't have hourly movement caps and pesky curfews. It's easier ignore noise and p",
+      "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1hejpn/",
+      "score": 26
+    }
+  ]
+}

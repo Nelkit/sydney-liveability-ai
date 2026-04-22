@@ -1,0 +1,71 @@
+{
+  "suburb": "Gymea",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:14.579030+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.878,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.661,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.659,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.2593,
+    "neutral": 0.4736,
+    "surprise": 0.1762,
+    "sadness": 0.0298,
+    "disgust": 0.0234,
+    "anger": 0.0142,
+    "fear": 0.0235
+  },
+  "narrative": "Reddit discussions about Gymea are most positive about transport (0.88) and community (0.66). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Gymea train station this afternoon…\nWould not want to be the station manager that has to clean all this up. Gorgeous while it lasts, though.",
+      "url": "https://reddit.com/r/sydney/comments/1gllusw/gymea_train_station_this_afternoon/",
+      "score": 3518
+    },
+    {
+      "text": "Inspired by the recent enjoyment of the local jacarandas, here’s some art of these trees \nArtwork from throughout the years. 1st is from 2022, 2nd is 2023 and third is recent. Gymea, Yowie bay and Wyn",
+      "url": "https://reddit.com/r/sydney/comments/1gpcl8h/inspired_by_the_recent_enjoyment_of_the_local/",
+      "score": 2335
+    },
+    {
+      "text": "Gymea Fair",
+      "url": "https://reddit.com/r/sydney/comments/1gd6mjp/gymea_fair/",
+      "score": 97
+    },
+    {
+      "text": "Street corner dancing lady in Gymea/Kirrawee - anyone know her story?\nHas anyone seen the lady dancing by herself in Gymea or Kirrawee near the servos?  She's there for ages and gets right into it and",
+      "url": "https://reddit.com/r/sydney/comments/1g415oq/street_corner_dancing_lady_in_gymeakirrawee/",
+      "score": 2
+    }
+  ]
+}

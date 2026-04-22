@@ -1,0 +1,101 @@
+{
+  "suburb": "Wolli Creek",
+  "post_count": 99,
+  "fetched_at": "2026-04-18T01:57:25.458794+00:00",
+  "aspects": {
+    "affordability": {
+      "score": 0.724,
+      "mentions": 18
+    },
+    "community": {
+      "score": 0.615,
+      "mentions": 76
+    },
+    "green_space": {
+      "score": 0.613,
+      "mentions": 18
+    },
+    "food_and_cafe": {
+      "score": 0.95,
+      "mentions": 10
+    },
+    "nightlife": {
+      "score": 0.834,
+      "mentions": 16
+    },
+    "transport": {
+      "score": 0.468,
+      "mentions": 52
+    },
+    "noise": {
+      "score": 0.079,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.503,
+      "mentions": 25
+    }
+  },
+  "emotions": {
+    "neutral": 0.531,
+    "surprise": 0.1079,
+    "joy": 0.0422,
+    "sadness": 0.0783,
+    "anger": 0.0724,
+    "fear": 0.079,
+    "disgust": 0.0893
+  },
+  "narrative": "Reddit discussions about Wolli Creek are most positive about food and cafe (0.95) and nightlife (0.83). Residents are most critical about transport (0.47) and noise (0.08). This analysis is based on 99 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "\"Fully Furnished\" apartment for $1100 in Wolli Creek",
+      "url": "https://reddit.com/r/sydney/comments/1b0elwr/fully_furnished_apartment_for_1100_in_wolli_creek/",
+      "score": 454
+    },
+    {
+      "text": "There are now 3 Greenways connecting Kogarah to the Bay Run\nA new greenway has recently opened around Kogarah through to Wolli Creek, connecting to the Cooks river walk, which connects to the new gree",
+      "url": "https://reddit.com/r/sydney/comments/1q2gxsu/there_are_now_3_greenways_connecting_kogarah_to/",
+      "score": 405
+    },
+    {
+      "text": "Ethnic “segregation?”\nI’m not sure if that’s a right word, but I was wondering why so many suburbs in Sydney are divided so strongly ethnically? \n\nI just moved to arncliffe and it’s a great place to l",
+      "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/",
+      "score": 378
+    },
+    {
+      "text": "Spotted a little friend in the Cooks River at Wolli Creek\nThis guy seemed to be having a bit of a play and even waved hello 👋 🦭",
+      "url": "https://reddit.com/r/sydney/comments/1n5duhd/spotted_a_little_friend_in_the_cooks_river_at/",
+      "score": 320
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "All trains to City Circle are fucked this morning\nThat's what they are telling me at Wolli Creek. Entire network is fucked. There's some signal communication problem. Trains are stay on the track inde",
+      "url": "https://reddit.com/r/sydney/comments/1j9wttb/all_trains_to_city_circle_are_fucked_this_morning/",
+      "score": 229
+    },
+    {
+      "text": "Train on fire at Wolli Creek, prepare for a long trip home\nSo far appears to be affecting services on platform 1 and 2.",
+      "url": "https://reddit.com/r/sydney/comments/1efmvde/train_on_fire_at_wolli_creek_prepare_for_a_long/",
+      "score": 227
+    },
+    {
+      "text": "Steam to surf\nLittle late to post this as this happened like a month ago. Aussie locomotives cool\n3265 and 3526 passing wolli creek",
+      "url": "https://reddit.com/r/sydney/comments/1fjsao3/steam_to_surf/",
+      "score": 159
+    },
+    {
+      "text": "No bars or live spaces but literally 5 mins drive is the Rocksia which has all that. \n\n\nLiving here isn't any different to the apartment sprawls around Sydney. Super convenient train station with two ",
+      "url": "https://reddit.com/r/sydney/comments/1altbdl/how_livable_is_wolli_creek_really/kpgzq2q/",
+      "score": 147
+    },
+    {
+      "text": "Trains severely delayed between Redfern and Sydenham\nTrains are severely delayed between Redfern and Sydenham all lines due to emergency incident at St Peters affecting T3, T4 and South Coast Lines.  ",
+      "url": "https://reddit.com/r/sydney/comments/1ae4549/trains_severely_delayed_between_redfern_and/",
+      "score": 127
+    }
+  ]
+}

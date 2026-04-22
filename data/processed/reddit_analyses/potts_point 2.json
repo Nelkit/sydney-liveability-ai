@@ -1,0 +1,101 @@
+{
+  "suburb": "Potts Point",
+  "post_count": 63,
+  "fetched_at": "2026-04-18T02:04:24.426831+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.484,
+      "mentions": 50
+    },
+    "safety": {
+      "score": 0.314,
+      "mentions": 18
+    },
+    "transport": {
+      "score": 0.687,
+      "mentions": 13
+    },
+    "noise": {
+      "score": 0.124,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.176,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.27,
+      "mentions": 18
+    },
+    "nightlife": {
+      "score": 0.244,
+      "mentions": 17
+    },
+    "green_space": {
+      "score": 0.248,
+      "mentions": 9
+    }
+  },
+  "emotions": {
+    "neutral": 0.4325,
+    "fear": 0.1198,
+    "surprise": 0.1045,
+    "sadness": 0.0917,
+    "anger": 0.0617,
+    "joy": 0.1201,
+    "disgust": 0.0697
+  },
+  "narrative": "Reddit discussions about Potts Point are most positive about transport (0.69) and community (0.48). Residents are most critical about affordability (0.18) and noise (0.12). This analysis is based on 63 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney Storm Timelapse video \nfrom Potts Point",
+      "url": "https://reddit.com/r/sydney/comments/1i20lu1/sydney_storm_timelapse_video/",
+      "score": 1102
+    },
+    {
+      "text": "Spoiler: It's in Kings Cross/Potts Point, right near the Wayside Chapel. For those who have lived in the area, it's hardly the harbinger of doom the headline suggests.",
+      "url": "https://reddit.com/r/sydney/comments/1aixdcr/a_makeshift_camp_has_moved_into_one_of_sydneys/koxhpck/",
+      "score": 789
+    },
+    {
+      "text": "Potts Point shooting: Celebrity dentist Steven Lin identified as man shot dead by police",
+      "url": "https://reddit.com/r/sydney/comments/1rkbo60/potts_point_shooting_celebrity_dentist_steven_lin/",
+      "score": 546
+    },
+    {
+      "text": "I love Sydney ❤️\nThere’s been a lot of complaints lately on Reddit about Sydney & well founded too, outrageous rent costs, traffic, public transport, cafe cappuccino/food rip offs etc, but I just love",
+      "url": "https://reddit.com/r/sydney/comments/1oq8jgw/i_love_sydney/",
+      "score": 493
+    },
+    {
+      "text": "Man shot dead by police in Potts Point after allegedly assaulting two women",
+      "url": "https://reddit.com/r/sydney/comments/1rjh61i/man_shot_dead_by_police_in_potts_point_after/",
+      "score": 210
+    },
+    {
+      "text": "PSA: There's been a shooting in Potts Point, 3 people shot. Stay safe if you're in the Eastern Suburbs\nhttps://www.news.com.au/national/nsw-act/police-block-off-potts-point-street-as-major-police-oper",
+      "url": "https://reddit.com/r/sydney/comments/1rjb9pf/psa_theres_been_a_shooting_in_potts_point_3/",
+      "score": 168
+    },
+    {
+      "text": "Butler stairs, Potts Point-Woolloomooloo\nThe Butler Stairs are one of the three 19th century stone steps built to link Potts Point/Kings Cross. There is a big grade difference and at the time,  a grea",
+      "url": "https://reddit.com/r/sydney/comments/19af6bq/butler_stairs_potts_pointwoolloomooloo/",
+      "score": 160
+    },
+    {
+      "text": "Air bnb host never left a key or contacted us!\nTLDR: air bnb host ghosted us. Almost had to sleep in a park somewhere.\n\nThe whole point of this post is just to ask if anyone knows of any cheap accommo",
+      "url": "https://reddit.com/r/sydney/comments/1awfup4/air_bnb_host_never_left_a_key_or_contacted_us/",
+      "score": 132
+    },
+    {
+      "text": "I have a feeling were gonna need some people out west to chime in with this. As someone that was quoted $13 the other day for just a regular-sized schooner of Balter at the Potts Point Hotel I don't t",
+      "url": "https://reddit.com/r/sydney/comments/1d3ona8/righto_rsydney_whats_the_cheapest_alldayevery_day/l68t3wx/",
+      "score": 127
+    },
+    {
+      "text": "Kind of different, but Potts Point and Potts Hill are a 40 minute drive from each other, and they're both named after the same guy (he owned land at both)",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnnzga/",
+      "score": 107
+    }
+  ]
+}

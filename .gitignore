@@ -58,14 +58,12 @@ dist/
 *.tsbuildinfo
 
 # Data (local storage - ignored in Git)
-data/raw/
-data/processed/
 !data/processed/suburbs.geojson
 
 # Logs
 logs/
 *.log
-
+d
 # OS
 .DS_Store
 Thumbs.db

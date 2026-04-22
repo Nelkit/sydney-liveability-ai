@@ -1,0 +1,101 @@
+{
+  "suburb": "Kurnell",
+  "post_count": 41,
+  "fetched_at": "2026-04-18T02:09:13.840309+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.542,
+      "mentions": 27
+    },
+    "safety": {
+      "score": 0.633,
+      "mentions": 7
+    },
+    "green_space": {
+      "score": 0.661,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.508,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.529,
+      "mentions": 8
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.508,
+    "joy": 0.0859,
+    "surprise": 0.1373,
+    "disgust": 0.0572,
+    "fear": 0.0717,
+    "sadness": 0.0947,
+    "anger": 0.0452
+  },
+  "narrative": "Reddit discussions about Kurnell are most positive about green space (0.66) and safety (0.63). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 41 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Took a photo of the Aurora Australis from Kurnell.",
+      "url": "https://reddit.com/r/sydney/comments/1qioudo/took_a_photo_of_the_aurora_australis_from_kurnell/",
+      "score": 2762
+    },
+    {
+      "text": "Vandalism of trees in front of houses in Kurnell. They look like they’ve been burnt.\nI don’t know which came first. The burnt trees are adjacent to the signs and the freshly planted trees. It may have",
+      "url": "https://reddit.com/r/sydney/comments/1hyq90n/vandalism_of_trees_in_front_of_houses_in_kurnell/",
+      "score": 599
+    },
+    {
+      "text": "Took some photos in Kamay Botany Bay National Park earlier today\nDespite working for National Parks & Wildlife for a couple of years, and having lived in Sydney for \\~26 years, I've never actually hea",
+      "url": "https://reddit.com/r/sydney/comments/1shh1we/took_some_photos_in_kamay_botany_bay_national/",
+      "score": 292
+    },
+    {
+      "text": "Kurnell New wharf open for business",
+      "url": "https://reddit.com/r/sydney/comments/1j1m1n7/kurnell_new_wharf_open_for_business/",
+      "score": 187
+    },
+    {
+      "text": "The moon over Kurnell\nLooking north-east ish from Cronulla to Kurnell / Cape Solander last night.",
+      "url": "https://reddit.com/r/sydney/comments/1opgl6b/the_moon_over_kurnell/",
+      "score": 180
+    },
+    {
+      "text": "Kurnell",
+      "url": "https://reddit.com/r/sydney/comments/1i7zw90/kurnell/",
+      "score": 104
+    },
+    {
+      "text": "A few Whales in Kurnell today.",
+      "url": "https://reddit.com/r/sydney/comments/1epb616/a_few_whales_in_kurnell_today/",
+      "score": 99
+    },
+    {
+      "text": "The Royal, Kurnell, Yena Track",
+      "url": "https://reddit.com/r/sydney/comments/1d5zvxo/the_royal_kurnell_yena_track/",
+      "score": 82
+    },
+    {
+      "text": "Cape Bailey Track, Kurnell ",
+      "url": "https://reddit.com/r/sydney/comments/1e2ule9/cape_bailey_track_kurnell/",
+      "score": 80
+    },
+    {
+      "text": "Two women dead after being swept off rocks with a third woman at Kurnell in the Sutherland Shire",
+      "url": "https://reddit.com/r/sydney/comments/1dd39t7/two_women_dead_after_being_swept_off_rocks_with_a/",
+      "score": 49
+    }
+  ]
+}

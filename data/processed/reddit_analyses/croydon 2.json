@@ -1,0 +1,101 @@
+{
+  "suburb": "Croydon",
+  "post_count": 21,
+  "fetched_at": "2026-04-18T02:14:53.292471+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.515,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.538,
+      "mentions": 10
+    },
+    "community": {
+      "score": 0.477,
+      "mentions": 18
+    },
+    "green_space": {
+      "score": 0.833,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.234,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.199,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.1738,
+    "anger": 0.1514,
+    "neutral": 0.457,
+    "sadness": 0.0324,
+    "surprise": 0.1296,
+    "fear": 0.0462,
+    "joy": 0.0096
+  },
+  "narrative": "Reddit discussions about Croydon are most positive about green space (0.83) and transport (0.54). Residents are most critical about affordability (0.23) and food and cafe (0.20). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "F you to Croydon parallel car parkers\nThis is a big f you to the gronk who hit my car trying to parallel park and not leave details behind. You tried to clean it with jiff with no success and left mar",
+      "url": "https://reddit.com/r/sydney/comments/1c0c01u/f_you_to_croydon_parallel_car_parkers/",
+      "score": 41
+    },
+    {
+      "text": "Does anyone know what kind of bird this is? Looks like it fell out of its nest\nAs title — location is Croydon. No sign of nest in nearby tree or parents nearby. Unsure what to do with it — assume it’s",
+      "url": "https://reddit.com/r/sydney/comments/1fwkobw/does_anyone_know_what_kind_of_bird_this_is_looks/",
+      "score": 32
+    },
+    {
+      "text": "Fellow swimmers in the inner west and west - Question about pools\nHello,\n\nI am looking to potentially move into Ashfield/Summerhill/Croydon or Lidcombe areas. \n\nSwimming is a big part for me, so movin",
+      "url": "https://reddit.com/r/sydney/comments/1apdw1r/fellow_swimmers_in_the_inner_west_and_west/",
+      "score": 24
+    },
+    {
+      "text": "Oh no! This is the second time this month! I’m stuck at Croydon station at the moment.",
+      "url": "https://reddit.com/r/sydney/comments/1aqdkog/person_struck_by_a_train_macdonaldtown/kqc9y6s/",
+      "score": 24
+    },
+    {
+      "text": "I wouldn’t say so. \n\nI am not a big fan of the design but they do sit in a high density area that is only destined to grow.\n\nYou’re 10 mins walk to Croydon and 10mins walk to Ashfield where you can ac",
+      "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwc0ju1/",
+      "score": 23
+    },
+    {
+      "text": "I think Croydon train station has a book and pen for petitions. I get it those who have houses want to keep their views and blocks and dont want to look at apartments or make it a mini city like Parra",
+      "url": "https://reddit.com/r/sydney/comments/1b7iyba/proposal_to_rezone_whole_of_inner_west_to_6/ktiwl69/",
+      "score": 15
+    },
+    {
+      "text": "Not applicable at some stations such as Rockdale, St Leonards, Homebush, Croydon, Summer Hill, Clyde, and Stanmore.",
+      "url": "https://reddit.com/r/sydney/comments/1awfzht/sydney_daily_random_discussion_thread_22022024/krjrqb7/",
+      "score": 13
+    },
+    {
+      "text": "Heaps of stations in the inner city can have long waits because of the myriad complex stopping patterns. I can understand the reasoning but it's quite a rubbish level of service.\n\nFor example, there a",
+      "url": "https://reddit.com/r/sydney/comments/1bjqoay/caught_a_metro_train_for_the_first_time_the_other/kvtmjx5/",
+      "score": 13
+    },
+    {
+      "text": "Near Burwood station, is this part of the strike? (Blaring horns on the passenger trains?)\nSince about 8am every Oscar or S set that's flying through Burwood station to Croydon is blaring their horns ",
+      "url": "https://reddit.com/r/sydney/comments/1gv7vsm/near_burwood_station_is_this_part_of_the_strike/",
+      "score": 12
+    },
+    {
+      "text": "Councils' positions on increased density\nExtracted from this article: [https://www.smh.com.au/national/nsw/minns-says-a-fight-with-councils-is-the-last-thing-we-want-but-he-has-one-over-housing-202402",
+      "url": "https://reddit.com/r/sydney/comments/1ax1wnx/councils_positions_on_increased_density/",
+      "score": 8
+    }
+  ]
+}

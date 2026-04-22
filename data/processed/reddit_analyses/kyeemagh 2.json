@@ -1,0 +1,71 @@
+{
+  "suburb": "Kyeemagh",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:18.148059+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.478,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.545,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.648,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.585,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "anger": 0.1183,
+    "neutral": 0.5499,
+    "disgust": 0.0546,
+    "sadness": 0.0269,
+    "fear": 0.1219,
+    "surprise": 0.099,
+    "joy": 0.0293
+  },
+  "narrative": "Reddit discussions about Kyeemagh are most positive about transport (0.65) and green space (0.58). Residents are most critical about noise (0.50) and safety (0.48). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Cops. There’s a few streets in Kyeemagh which are the same, and the police sit and wait for anyone driving though. If their DL doesn’t have that street address then you get fined.",
+      "url": "https://reddit.com/r/sydney/comments/1c51z6u/why_no_left_turn_after_10pm/kzrtyzn/",
+      "score": 15
+    },
+    {
+      "text": "By memory it's not that bad: \n\n\nBondi to Centennial Park to Burke st cycle way to mascot then kyeemagh along the coast over the bridge to Taren point, then through the streets west (parallel to Kingsw",
+      "url": "https://reddit.com/r/sydney/comments/1b2rxnb/cycling_from_bondi_to_royal_national_park_for/ksnjwx6/",
+      "score": 10
+    },
+    {
+      "text": "Yeah, there's a new cycle way from coward st to wolli creek, from there there should be signs that lead you to kyeemagh, the bike path is a little hidden and goes under the Prince's Highway, should go",
+      "url": "https://reddit.com/r/sydney/comments/1b2rxnb/cycling_from_bondi_to_royal_national_park_for/ksnnprb/",
+      "score": 7
+    },
+    {
+      "text": "Thanks! The part that isn't clear is from Mascot to Kyeemagh, do you take Coward St into Airport Dr?",
+      "url": "https://reddit.com/r/sydney/comments/1b2rxnb/cycling_from_bondi_to_royal_national_park_for/ksnltck/",
+      "score": 2
+    }
+  ]
+}
