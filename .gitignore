@@ -58,6 +58,7 @@ dist/
 *.tsbuildinfo
 
 # Data (local storage - ignored in Git)
+data/raw/abs/
 !data/processed/suburbs.geojson
 
 # Logs
