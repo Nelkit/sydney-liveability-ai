@@ -5,8 +5,13 @@ from pathlib import Path
 from pypdf import PdfReader
 
 
-PDF_PATH = Path("data/raw/community_reports/Community_Insights_Report_2024.pdf")
-OUTPUT_PATH = Path("data/processed/community_report.json")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PDF_CANDIDATES = [
+    PROJECT_ROOT / "data/raw/community_reports/Community_Insights_Report_2024.pdf",
+    PROJECT_ROOT / "data/raw/community_reports/Community_Insights_Report_2024.pdf.pdf",
+]
+PDF_PATH = next((path for path in PDF_CANDIDATES if path.exists()), PDF_CANDIDATES[0])
+OUTPUT_PATH = PROJECT_ROOT / "data/processed/community_report.json"
 SOURCE_NAME = "Community Insights Report 2024"
 MVP_SUBURBS = ["Newtown", "Glebe", "Redfern", "Surry Hills", "Haymarket"]
 QUOTE_PATTERN = re.compile(r'[“"]([^”"]{30,500})[”"]')
