@@ -1,0 +1,101 @@
+{
+  "suburb": "Dover Heights",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:15.771976+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.501,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.547,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.515,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.365,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.595,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.738,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4961,
+    "surprise": 0.0393,
+    "fear": 0.0756,
+    "sadness": 0.1194,
+    "disgust": 0.1056,
+    "joy": 0.0925,
+    "anger": 0.0715
+  },
+  "narrative": "Reddit discussions about Dover Heights are most positive about food and cafe (0.74) and noise (0.59). Residents are most critical about affordability (0.50) and safety (0.36). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "People waiting for midnight\nAt Caffyn Park, Dover Heights.\n\nCame to Point Piper for some kayaking, and drove around looking for a playground and saw this.\n\nThat's dedication. At least it's overcast.",
+      "url": "https://reddit.com/r/sydney/comments/1q029bn/people_waiting_for_midnight/",
+      "score": 1524
+    },
+    {
+      "text": "A recent photowalk around Sydney\nA couple of photos I took last Friday that I would like to share with you all. Featuring Sydney (Haymarket), Dover Heights and Rose Bay.",
+      "url": "https://reddit.com/r/sydney/comments/1lzcc5c/a_recent_photowalk_around_sydney/",
+      "score": 328
+    },
+    {
+      "text": "Dover Heights, oils, 30x40cm",
+      "url": "https://reddit.com/r/sydney/comments/1plsj9v/dover_heights_oils_30x40cm/",
+      "score": 222
+    },
+    {
+      "text": "Car graffitied with anti-Semitic slur, torched in Dover Heights in Sydney's eastern suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1i327a0/car_graffitied_with_antisemitic_slur_torched_in/",
+      "score": 132
+    },
+    {
+      "text": "Sydney identity John Ibrahim was target of failed murder plot at Dover Heights, court hears",
+      "url": "https://reddit.com/r/sydney/comments/1fpls07/sydney_identity_john_ibrahim_was_target_of_failed/",
+      "score": 80
+    },
+    {
+      "text": "> If you want peace and quiet move to the outer burbs\n\nOf further east, they can fuck off to Dover Heights or Vaucluse, but not Watsons Bay as they have a pub and event venue there and I bet that's to",
+      "url": "https://reddit.com/r/sydney/comments/1d0nnge/noise_complaints_residents_in_nice_suburb_object/l5p9ja9/",
+      "score": 12
+    },
+    {
+      "text": "Dudley Page Reserve Dover Heights",
+      "url": "https://reddit.com/r/sydney/comments/194z1ge/sydney_daily_random_discussion_thread_13012024/khmnfyd/",
+      "score": 7
+    },
+    {
+      "text": "I always found cayenne pepper to be bland, not hot at all despite it's classification, and generally a forgettable inclusion on any recipe. After a few months doorknocking in Vaucluse, Dover Heights, ",
+      "url": "https://reddit.com/r/sydney/comments/1cevaxl/birthday_tragedy_vaucluse_teenager_gifted_new/l1lg10m/",
+      "score": 7
+    },
+    {
+      "text": "It looks like Dudley Page Reserve in Dover Heights",
+      "url": "https://reddit.com/r/sydney/comments/1dbnudl/sunset_viewing/l7sp3p4/",
+      "score": 5
+    },
+    {
+      "text": "It comes off like you feel blameless in this situation but presuming that one store will honour another’s purchase seems to be your biggest error. Not every chain runs like the big stores like myer et",
+      "url": "https://reddit.com/r/sydney/comments/1bsk5rr/worst_experience_at_harris_farm_potts_point/kxgujxu/",
+      "score": 4
+    }
+  ]
+}

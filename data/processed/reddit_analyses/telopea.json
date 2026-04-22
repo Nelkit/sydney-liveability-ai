@@ -1,0 +1,96 @@
+{
+  "suburb": "Telopea",
+  "post_count": 9,
+  "fetched_at": "2026-04-18T02:18:45.723514+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.726,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.74,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.905,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.751,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.751,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5965,
+    "surprise": 0.1309,
+    "sadness": 0.0541,
+    "disgust": 0.091,
+    "anger": 0.0259,
+    "fear": 0.0682,
+    "joy": 0.0334
+  },
+  "narrative": "Reddit discussions about Telopea are most positive about safety (0.91) and food and cafe (0.75). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "To save you a clock it is at Telopea.The light rail also runs next to the old James Hardie's site at Camelea where asbestos was processed.",
+      "url": "https://reddit.com/r/sydney/comments/1apra38/asbestos_trace_found_at_parramatta_light_rail_site/kq8jewh/",
+      "score": 87
+    },
+    {
+      "text": "Thanks for this.  I grew up in the Telopea / Dundas areas.  They'd only be street parking around those stations unless there's been major redevelopments.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbistl7/",
+      "score": 63
+    },
+    {
+      "text": "Police Operation Telopea\nDriving home after work come to a road block in Telopea. Police, Army, Riot Squad ambos, at the Telopea shops A guy off his chops on ice robbed a store, climbed the roof,  ref",
+      "url": "https://reddit.com/r/sydney/comments/1pc04fg/police_operation_telopea/",
+      "score": 36
+    },
+    {
+      "text": "They've already significantly increased parking at the Dundas station which should be available on opening day by the look of it. Not so much at telopea or carlingford I think.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj0v74/",
+      "score": 10
+    },
+    {
+      "text": "Telopea St in Punchbowl in the 90s was rough, now, it's a fart in a hurricane.\n\nMount Druitt and Airds is being developed almost entirely and the housing commission is being forced out, so even that i",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kiearwt/",
+      "score": 5
+    },
+    {
+      "text": "Not sure where you're located, but the convenience shop at Telopea shops has a really good range of chips, including these ones.",
+      "url": "https://reddit.com/r/sydney/comments/1cqoxj7/cheap_hot_cheetos_around_sydney/l3toc10/",
+      "score": 3
+    },
+    {
+      "text": "No one but me, getting to school from Telopea to Carlingford in the 90's 😩",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj9nx8/",
+      "score": 3
+    },
+    {
+      "text": "Carlingford has a (small) parking area.  Telopea has heaps of street parking and it'll all undergo redevelopment soon.  Not sure about further down.",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbizyrl/",
+      "score": 2
+    },
+    {
+      "text": "Oh right yeah sorry I meant the Dundas Valley side of the Telopea station, thats getting a bunch of development but it's very early days. The Dundas station is upgraded, and yeah Carlingford still jus",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj8jjl/",
+      "score": 2
+    }
+  ]
+}

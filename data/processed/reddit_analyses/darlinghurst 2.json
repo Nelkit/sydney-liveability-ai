@@ -1,0 +1,101 @@
+{
+  "suburb": "Darlinghurst",
+  "post_count": 86,
+  "fetched_at": "2026-04-18T02:00:39.324335+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.665,
+      "mentions": 27
+    },
+    "community": {
+      "score": 0.689,
+      "mentions": 75
+    },
+    "green_space": {
+      "score": 0.653,
+      "mentions": 13
+    },
+    "food_and_cafe": {
+      "score": 0.669,
+      "mentions": 33
+    },
+    "nightlife": {
+      "score": 0.584,
+      "mentions": 35
+    },
+    "transport": {
+      "score": 0.425,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.535,
+      "mentions": 13
+    },
+    "noise": {
+      "score": 0.369,
+      "mentions": 7
+    }
+  },
+  "emotions": {
+    "anger": 0.0464,
+    "disgust": 0.0972,
+    "neutral": 0.514,
+    "surprise": 0.1018,
+    "fear": 0.079,
+    "sadness": 0.0566,
+    "joy": 0.105
+  },
+  "narrative": "Reddit discussions about Darlinghurst are most positive about community (0.69) and food and cafe (0.67). Residents are most critical about transport (0.42) and noise (0.37). This analysis is based on 86 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Why are taxis in Sydney so f*cking shite?\nA post about taxis at 11.30pm on a Saturday night is clearly a rant but f*ck me cabs in Sydney are a joke.\n\nJust finished a smashing meal and nice couple of d",
+      "url": "https://reddit.com/r/sydney/comments/1bxao9n/why_are_taxis_in_sydney_so_fcking_shite/",
+      "score": 418
+    },
+    {
+      "text": "It's been fifty years today since Juanita Neilsen vanished.\nI suspect Big Jim.  But pretty much everyone involved is gone, and they took their secrets with them.\n\nEven now, a lot of Darlinghurst and t",
+      "url": "https://reddit.com/r/sydney/comments/1lr5t9h/its_been_fifty_years_today_since_juanita_neilsen/",
+      "score": 271
+    },
+    {
+      "text": "Where in Sydney are you driving to? Sydney is huge. Adelaide is like a postage stamp in comparison.\nStaying in Darlinghurst, you are right in the middle of the CBD and don’t need a car at all, so it c",
+      "url": "https://reddit.com/r/sydney/comments/1aygj0e/driving_in_sydney/krv9bym/",
+      "score": 81
+    },
+    {
+      "text": "\"... a video of him Tasering a man in the face in Darlinghurst went viral – but he was cleared of any wrongdoing by an internal investigation.\"\n\nWhat's the point of an internal investigation since the",
+      "url": "https://reddit.com/r/sydney/comments/1axq59k/police_officer_charged_with_murder_of_missing/krqvyrk/",
+      "score": 72
+    },
+    {
+      "text": "Found a new later night Cafe in Sydney\nThis isn't an ad on behalf of the business im jusg local to the Cafe.\n\nHave read a few threads here before lamenting availability of late night cafes / coffee pl",
+      "url": "https://reddit.com/r/sydney/comments/1qg6i8m/found_a_new_later_night_cafe_in_sydney/",
+      "score": 68
+    },
+    {
+      "text": "This is the KFC Original Crispery pop up in Darlinghurst until 5pm today. Free burger plus three sides. 118 Crown St. Note: I’m not affiliated with KFC. A rep came into my work and told me about it at",
+      "url": "https://reddit.com/r/sydney/comments/1cult5w/did_someone_say_kfc/l4jj7o8/",
+      "score": 67
+    },
+    {
+      "text": "390 Victoria Street, Darlinghurst NSW 2010\n\nSat & Sun till 4pm only.\n\nClosest one to CBD",
+      "url": "https://reddit.com/r/sydney/comments/1ci9350/my_experience_with_safe_haven/l27mle7/",
+      "score": 66
+    },
+    {
+      "text": "San Franciscan in Sydney...First time visitor. Any tips?\nHi everyone!\n\nVery excited to be traveling to Sydney on Thursday for the first time. While I'll have a bit of work at a conference in the morni",
+      "url": "https://reddit.com/r/sydney/comments/1fimydb/san_franciscan_in_sydneyfirst_time_visitor_any/",
+      "score": 56
+    },
+    {
+      "text": "Sydney octopus in 1960\nin  1960  a  giant  octopus  was  at  the  intersection of   Victoria Street  and darlinghurst  road kings cross.",
+      "url": "https://reddit.com/r/sydney/comments/19dfhyc/sydney_octopus_in_1960/",
+      "score": 48
+    },
+    {
+      "text": "Depends what style you’re going for. \n\nAmerican/NY style pizza: Sal’s in Darlinghurst\n\nAuthentic/Italian: Via Napoli in Lane Cove & Surry Hills, Bella Bruta in Newtown, Pizza Madre in Marrickville (le",
+      "url": "https://reddit.com/r/sydney/comments/196ykf2/best_pizza_in_sydney/khxfm4p/",
+      "score": 47
+    }
+  ]
+}

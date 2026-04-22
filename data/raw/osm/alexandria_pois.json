@@ -1,0 +1,2629 @@
+{
+  "suburb": "Alexandria",
+  "bbox": {
+    "south": -33.9214474,
+    "west": 151.1806849,
+    "north": -33.8949694,
+    "east": 151.2029968
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.9214474,151.1806849,-33.8949694,151.2029968);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.9214474,151.1806849,-33.8949694,151.2029968);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.9214474,151.1806849,-33.8949694,151.2029968);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.9214474,151.1806849,-33.8949694,151.2029968);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:22:45Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 488904860,
+            "tags": {
+              "addr:street": "Wilson Street",
+              "amenity": "cafe",
+              "indoor_seating": "yes",
+              "name": "Hollis Park Cafe",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa,Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 614585946,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 734898575,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Eat Me Espresso Bar",
+              "opening_hours": "Mo-Fr 05:00-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 816325207,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Piatsa Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1003326257,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Shenkin Cafe",
+              "outdoor_seating": "yes",
+              "website": "https://cafeshenkin.com.au/locations/shenkin-erskineville/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1472880746,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "sandwich",
+              "name": "Wheels and Cupcakes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1728586646,
+            "tags": {
+              "amenity": "cafe",
+              "created_by": "iLOE 1.9",
+              "name": "Patti's Gourmet Pizza and Caf\u00e9",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1731303096,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "fast_food",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1732566733,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Erskineville Chemist",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1735908953,
+            "tags": {
+              "addr:housenumber": "218",
+              "addr:street": "Lawrence Street",
+              "amenity": "cafe",
+              "contact:facebook": "https://www.facebook.com/people/Boh%C3%A4us-Cafe/100060917927334/",
+              "name": "Boh\u00e4us Cafe",
+              "phone": "+61 410 242 970",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1736838307,
+            "tags": {
+              "amenity": "cafe",
+              "dog": "yes",
+              "name": "Naked Brew"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1736838308,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The Bitton Room",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1738806346,
+            "tags": {
+              "leisure": "playground",
+              "operator": "City of Sydney",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1738807555,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1738813259,
+            "tags": {
+              "amenity": "cafe",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1963262433,
+            "tags": {
+              "addr:housenumber": "106",
+              "addr:postcode": "2043",
+              "addr:street": "Erskineville Road",
+              "amenity": "cafe",
+              "cuisine": "international",
+              "internet_access": "wlan",
+              "internet_access:fee": "no",
+              "name": "Cafe Piccolo",
+              "website": "https://www.cafepiccoloerko.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2022485140,
+            "tags": {
+              "addr:housenumber": "2",
+              "addr:street": "Huntley Street",
+              "addr:unit": "7A",
+              "amenity": "cafe",
+              "brand": "The Grounds",
+              "contact:phone": "+61 2 9699 2225",
+              "cuisine": "coffee_shop",
+              "name": "The Grounds of Alexandria",
+              "name:ko": "\ub354\uadf8\ub77c\uc6b4\uc988,\ud3ec\ud305\uc250\ub4dc",
+              "opening_hours": "Mo-Su 07:30-16:00",
+              "source": "local_knowledge",
+              "website": "https://thegrounds.com.au/dine-in/the-grounds-cafe/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2140868012,
+            "tags": {
+              "amenity": "cafe",
+              "name": "222",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2365231907,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Chemist Warehouse",
+              "brand:wikidata": "Q48782120",
+              "brand:wikipedia": "en:Chemist Warehouse",
+              "dispensing": "yes",
+              "healthcare": "pharmacy",
+              "name": "Chemist Warehouse"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2365233252,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "pie",
+              "currency:XBT": "no",
+              "name": "The Pie Tin",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2508397390,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Love Grub",
+              "source": "OpenStreetBugs"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2791873024,
+            "tags": {
+              "addr:housenumber": "36",
+              "addr:postcode": "2042",
+              "addr:street": "Lennox Street",
+              "addr:suburb": "Newtown",
+              "amenity": "cafe",
+              "cuisine": "ramen",
+              "name": "Rising Sun Workshop",
+              "opening_hours": "Mo-Fr 12:00-15:00, 17:00-21:00; Sa-Su 10:00-15:00, 17:00-21:00",
+              "smoking": "no",
+              "website": "https://www.risingsunworkshop.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 2968343588,
+            "tags": {
+              "addr:housenumber": "65",
+              "addr:postcode": "2043",
+              "addr:street": "Erskineville Road",
+              "addr:suburb": "Erskineville",
+              "addr:unit": "2",
+              "amenity": "cafe",
+              "name": "Bakerman",
+              "source": "survey",
+              "website": "http://www.bakerman.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3008464499,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3390271709,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe Japanon Waterloo"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3441886975,
+            "tags": {
+              "addr:housenumber": "43",
+              "addr:postcode": "2043",
+              "addr:street": "Erskineville Road",
+              "addr:suburb": "Erskineville",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "internet_access": "yes",
+              "name": "Fleetwood Macchiato",
+              "opening_hours": "07:00-15:00",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3509313696,
+            "tags": {
+              "addr:housenumber": "85",
+              "addr:street": "Bourke Road",
+              "amenity": "cafe",
+              "check_date": "2024-09-16",
+              "name": "Copper Rose Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3513602264,
+            "tags": {
+              "amenity": "pharmacy",
+              "check_date": "2025-08",
+              "healthcare": "pharmacy",
+              "name": "Kirby's Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3513602270,
+            "tags": {
+              "addr:housenumber": "29",
+              "amenity": "restaurant",
+              "check_date": "2025-08",
+              "cuisine": "vietnamese",
+              "name": "Water Lily Restaurant"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3513602271,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-08",
+              "cuisine": "chinese"
+            }
+          },
+          {
+            "type": "node",
+            "id": 3924591470,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop;sandwich;burger",
+              "email": "sydneyparkkiosk@gmail.com",
+              "name": "The Kiosk",
+              "opening_hours": "Mo-Su 07:00-16:00",
+              "outdoor_seating": "yes",
+              "phone": "+61 413 022 747",
+              "website": "https://www.sydneyparkkiosk.com.au/",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4091229576,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "pizza",
+              "outdoor_seating": "yes",
+              "takeaway": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4125343721,
+            "tags": {
+              "addr:housenumber": "35",
+              "amenity": "restaurant",
+              "cuisine": "chinese",
+              "name": "Xiang Ji Rice Breakfast Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4152981192,
+            "tags": {
+              "leisure": "park",
+              "name": "TJ Hickey Park"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4228107922,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4229064787,
+            "tags": {
+              "addr:housenumber": "Shop 1 797",
+              "addr:street": "Botany Road",
+              "amenity": "restaurant",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "Belfield on Botany"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4230884997,
+            "tags": {
+              "addr:housenumber": "21",
+              "addr:street": "Fountain Street",
+              "amenity": "restaurant",
+              "cuisine": "pizza",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "Salt Meats Cheese"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4367172396,
+            "tags": {
+              "addr:housenumber": "693A",
+              "addr:street": "Botany Road",
+              "amenity": "cafe",
+              "name": "Little Me Coffee",
+              "name:en": "Little Me Coffee",
+              "opening_hours": "Mo-Sa 06:00-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4386530164,
+            "tags": {
+              "addr:housenumber": "2-10",
+              "addr:street": "Fountain Street",
+              "addr:unit": "Shop 8",
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "delivery": "yes",
+              "email": "alexandria@sushijones.com",
+              "name": "Sushi Jones",
+              "opening_hours": "Mo 11:00-14:00; Mo-Fr 11:00-14:45; Sa-Su 12:00-15:00; Tu-Th 16:30-20:30; Fr-Sa 16:30-21:00; Su 16:30-20:30",
+              "phone": "+61 2 9550 5166",
+              "takeaway": "yes",
+              "website": "https://www.sushijones.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4470157193,
+            "tags": {
+              "addr:housenumber": "36",
+              "addr:postcode": "2018",
+              "addr:street": "Morley Avenue",
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "Da Mario"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4845190849,
+            "tags": {
+              "addr:housenumber": "362",
+              "addr:street": "Mitchell Road",
+              "amenity": "restaurant",
+              "contact:facebook": "https://www.facebook.com/p/Made-In-Italy-Pizza-61566388861572/",
+              "contact:instagram": "https://www.instagram.com/madeinitalypizzerie/",
+              "cuisine": "italian;pizza;pasta",
+              "delivery": "yes",
+              "diet:dairy_free": "yes",
+              "diet:gluten_free": "yes",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "name": "Made in Italy Alexandria",
+              "opening_hours": "Mo-Su 16:00-21:30",
+              "outdoor_seating": "yes",
+              "payment:cash": "yes",
+              "payment:contactless": "yes",
+              "payment:credit_cards": "yes",
+              "phone": "+61 2 8599 3132",
+              "takeaway": "yes",
+              "website": "https://madeinitaly.com.au",
+              "website:menu": "https://madeinitaly.com.au/menu"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4860759202,
+            "tags": {
+              "addr:housenumber": "609-611",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "cafe",
+              "check_date:opening_hours": "2025-07-27",
+              "cuisine": "breakfast;nepalese;modern",
+              "name": "End of King",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4860760253,
+            "tags": {
+              "addr:housenumber": "593",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "check_date:opening_hours": "2025-03-08",
+              "cuisine": "thai",
+              "name": "Ladda's The Thai Takeaway",
+              "opening_hours:signed": "no",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4860767558,
+            "tags": {
+              "addr:housenumber": "589",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "cuisine": "pizza;italian",
+              "name": "Alberto's Pizzeria",
+              "opening_hours": "Mo-Su 16:30-22:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4860768613,
+            "tags": {
+              "addr:housenumber": "587",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "check_date:opening_hours": "2025-03-08",
+              "cuisine": "vietnamese",
+              "name": "Mother Yen",
+              "opening_hours": "Tu-Fr 17:00-21:00; Sa-Su 12:00-21:00",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "self_service": "no",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4860771945,
+            "tags": {
+              "addr:housenumber": "632",
+              "addr:street": "King Street",
+              "air_conditioning": "no",
+              "amenity": "cafe",
+              "changing_table": "no",
+              "check_date:opening_hours": "2025-03-08",
+              "cuisine": "bar;coffee_shop",
+              "name": "Parliament on King",
+              "opening_hours:signed": "no",
+              "smoking": "no",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5027973695,
+            "tags": {
+              "amenity": "restaurant"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5027973696,
+            "tags": {
+              "amenity": "restaurant"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5027973697,
+            "tags": {
+              "amenity": "cafe",
+              "name": "The garden"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5203491922,
+            "tags": {
+              "addr:street": "Bourke Road",
+              "amenity": "restaurant",
+              "cuisine": "lebanese",
+              "name": "Al Aseel",
+              "opening_hours": "Su-Tu 11:00-21:00; We,Th 11:00-21:30; Fr,Sa 11:00-22:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5203491923,
+            "tags": {
+              "addr:street": "Huntley Street",
+              "amenity": "cafe",
+              "check_date:opening_hours": "2024-10-10",
+              "name": "Cynthia's Caf\u00e9",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5203492021,
+            "tags": {
+              "addr:street": "Bourke Road",
+              "amenity": "restaurant",
+              "name": "Madame Kim"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5204926289,
+            "tags": {
+              "addr:housenumber": "631",
+              "addr:postcode": "2042",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "cuisine": "burger;pub_food;tacos",
+              "email": "hello@sydneyparkhotel.com.au",
+              "name": "Sydney Park Hotel",
+              "opening_hours": "Mo-Sa 11:00-24:00, Su 12:00-22:00",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5205362421,
+            "tags": {
+              "addr:housenumber": "613",
+              "addr:street": "King Street",
+              "amenity": "cafe",
+              "check_date": "2026-03-28",
+              "check_date:opening_hours": "2026-03-28",
+              "cuisine": "vietnamese",
+              "name": "Little Vietnam Roll & Juice",
+              "opening_hours": "Mo-Sa 10:00-15:30; Su 10:00-16:00",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "no",
+              "phone": "+61 450 180 589"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5222609321,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-03",
+              "cuisine": "italian",
+              "name": "Pino's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5222609322,
+            "tags": {
+              "addr:housenumber": "338-356",
+              "addr:street": "Mitchell Road",
+              "amenity": "cafe",
+              "check_date": "2025-02",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "stool;chair",
+              "name": "The Copper Mill",
+              "opening_hours": "Mo-Fr 07:00-14:30; Sa-Su 07:30-14:30; PH 08:00-14:00",
+              "outdoor_seating": "yes",
+              "outdoor_seating:comfort": "stool",
+              "website": "https://www.thecoppermill.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5222609421,
+            "tags": {
+              "amenity": "cafe",
+              "name": "La Cachette",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5237302613,
+            "tags": {
+              "addr:housenumber": "605",
+              "addr:street": "King Street",
+              "addr:unit": "9",
+              "amenity": "restaurant",
+              "name": "Casa Mia Osteria",
+              "opening_hours": "Tu-Th,Su 17:30-21:00; Fr,Sa 17:30-21:30; Mo off"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5245251921,
+            "tags": {
+              "addr:housenumber": "140-142",
+              "addr:street": "McEvoy Street",
+              "amenity": "cafe",
+              "name": "Grandma's"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5255438455,
+            "tags": {
+              "addr:housenumber": "1-5",
+              "addr:postcode": "2044",
+              "addr:street": "Princes Highway",
+              "addr:unit": "1",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "check_date": "2026-01-27",
+              "cuisine": "greek",
+              "name": "Yiamas Greek Taverna",
+              "opening_hours": "Mo off; Tu-Sa 18:00-22:00; Su 12:00-15:00,18:00-22:00",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "phone": "+61 2 9517 9492",
+              "website": "https://www.yiamas.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5301446530,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2026-04",
+              "check_date:opening_hours": "2025-07-17",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "lounge;stool;chair",
+              "internet_access": "no",
+              "name": "Blackbird & Co",
+              "opening_hours": "Mo-Su 07:00-15:00",
+              "outdoor_seating": "yes",
+              "outdoor_seating:comfort": "chair"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5599458145,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe Sofia"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5862426444,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Yolk"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5905712358,
+            "tags": {
+              "addr:housenumber": "104A",
+              "addr:postcode": "2043",
+              "addr:state": "NSW",
+              "addr:street": "Swanson Street",
+              "addr:suburb": "Erskineville",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "The Coffee Nook on Swanson",
+              "opening_hours": "Mo-Sa",
+              "outdoor_seating": "yes",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5909750990,
+            "tags": {
+              "addr:housenumber": "128",
+              "addr:postcode": "2043",
+              "addr:state": "NSW",
+              "addr:street": "Erskineville Road",
+              "addr:suburb": "Erskineville",
+              "amenity": "cafe",
+              "name": "The Boroughs Food & Coffee",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5982120486,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Textbook",
+              "website": "https://www.textbookpatisserie.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6054058697,
+            "tags": {
+              "amenity": "cafe",
+              "check_date:opening_hours": "2025-07-15",
+              "name": "Loveat Cafe",
+              "opening_hours:signed": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6204412993,
+            "tags": {
+              "addr:housenumber": "612-622",
+              "addr:street": "King Street",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "name": "Betto Deli & Cucina",
+              "opening_hours": "Tu-Su 08:00-15:30; Mo off, Th-Sa 17:00-21:30",
+              "smoking": "no",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6283737900,
+            "tags": {
+              "addr:housenumber": "224",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "King Street",
+              "addr:suburb": "Newtown",
+              "amenity": "restaurant",
+              "name": "Thai Riffic"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6308025288,
+            "tags": {
+              "addr:housenumber": "8",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Central Avenue",
+              "addr:suburb": "Eveleigh",
+              "amenity": "cafe",
+              "name": "Sette Cafe",
+              "website": "https://www.settecafe.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7050613785,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Charlottes Little Sister Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7252098787,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Three Blue Ducks"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7379193662,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Howards Cantina",
+              "opening_hours": "Mo 17:00-23:00; Tu-Su 17:00-24:00; Su 17:00-22:00",
+              "website": "https://www.roseofaustralia.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7474734732,
+            "tags": {
+              "addr:housenumber": "133",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Mitchell Road",
+              "addr:suburb": "Alexandria",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "internet_access": "wlan",
+              "name": "Coffee Creative",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7615730477,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "pizza",
+              "name": "Crazy Tony's Pizza",
+              "opening_hours": "Mo-Su 17:00-22:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 7615756238,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8105836631,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Cafe 506",
+              "opening_hours": "Mo-Fr 07:00-16:00; Sa 08:00-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288970796,
+            "tags": {
+              "amenity": "restaurant",
+              "description": "Origano Pizza now closed",
+              "old_name": "Origano"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988113,
+            "tags": {
+              "amenity": "restaurant",
+              "brand": "Nando's",
+              "brand:wikidata": "Q3472954",
+              "cuisine": "chicken;portuguese",
+              "name": "Nando's",
+              "opening_hours": "Mo-Su 11:00-22:00; Th 11:00-21:00; Fr 12:00-22:00",
+              "operator": "Nando's",
+              "website": "https://www.nandos.com.au/restaurant/alexandria"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988116,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "name": "Sushi Aoki"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988118,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "145",
+              "addr:postcode": "2015",
+              "addr:street": "McEvoy Street",
+              "addr:suburb": "Alexandria",
+              "amenity": "restaurant",
+              "contact:email": "info@chickycharchar.com.au",
+              "contact:facebook": "https://www.facebook.com/chickycharchar/",
+              "contact:instagram": "https://www.instagram.com/chickycharchar/",
+              "contact:website": "https://www.chickycharchar.com.au/",
+              "cuisine": "chicken",
+              "name": "Chicky Char Char",
+              "opening_hours": "Mo,Su 07:00-20:15; Tu 07:00-20:30; We 07:00-24:00; Th 00:00-01:30,07:00-23:00; Fr,Sa 07:00-23:00",
+              "phone": "+61 2 9318 2000"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988126,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "11",
+              "addr:postcode": "2015",
+              "addr:street": "Bowden Street",
+              "addr:suburb": "Alexandria",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop;bakery",
+              "name": "Caf\u00e9 Imparo",
+              "opening_hours": "Mo-Fr 07:30-15:00",
+              "website": "https://www.angliss.edu.au/restaurants-events/angliss-dining/Cafe-Imparo/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988128,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "11",
+              "addr:postcode": "2015",
+              "addr:street": "Bowden Street",
+              "addr:suburb": "Alexandria",
+              "addr:unit": "Shop 1A",
+              "amenity": "cafe",
+              "contact:email": "info@zeropointsix.com.au",
+              "contact:facebook": "https://www.facebook.com/cafezeropointsix/",
+              "contact:instagram": "https://www.instagram.com/cafezeropointsix/",
+              "contact:phone": "+61 2 8205 9681",
+              "cuisine": "coffee_shop",
+              "name": "Cafe 0.6",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa 08:00-15:00; Su 09:00-15:00",
+              "outdoor_seating": "yes",
+              "website": "https://www.zeropointsix.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988182,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "8",
+              "addr:postcode": "2017",
+              "addr:street": "Allen Street",
+              "addr:suburb": "Waterloo",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "brewery": "yes",
+              "check_date": "2026-03-05",
+              "contact:facebook": "https://www.facebook.com/TAKESUSHIWATERLOO/",
+              "contact:instagram": "https://www.instagram.com/takesushiwaterloo/",
+              "contact:twitter": "https://twitter.com/Takesushisydney",
+              "cuisine": "sushi",
+              "delivery": "yes",
+              "level": "0",
+              "name": "Tak\u00e9 Sushi",
+              "opening_hours": "Mo-Fr 11:30-14:30,17:30-21:00; Sa 17:30-21:00",
+              "outdoor_seating": "yes",
+              "payment:cards": "yes",
+              "payment:contactless": "yes",
+              "payment:credit_cards": "yes",
+              "phone": "+61 2 9319 5565",
+              "reservation": "yes",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "website": "http://www.takesushiwaterloo.com.au/web/home.html"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8288988183,
+            "tags": {
+              "amenity": "cafe",
+              "contact:facebook": "https://www.facebook.com/Eggspresso-132331974060757/",
+              "contact:phone": "+61 2 8065 5949",
+              "cuisine": "vietnamese;coffee",
+              "name": "Eggspresso",
+              "opening_hours": "Mo-Fr 06:00-16:00; Sa 07:00-16:00; Su 07:30-15:30"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9129612041,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "name": "Sushi Train"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9329081676,
+            "tags": {
+              "amenity": "pharmacy",
+              "dispensing": "yes",
+              "healthcare": "pharmacy",
+              "name": "Erskineville Compounding Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9395973838,
+            "tags": {
+              "amenity": "pharmacy",
+              "brand": "Priceline Pharmacy",
+              "brand:wikidata": "Q7242652",
+              "brand:wikipedia": "en:Priceline (Australia)",
+              "healthcare": "pharmacy",
+              "name": "Priceline Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9494270942,
+            "tags": {
+              "addr:housenumber": "358",
+              "addr:street": "Botany Road",
+              "amenity": "cafe",
+              "check_date": "2025-05-26",
+              "check_date:opening_hours": "2025-05-26",
+              "name": "Taste Texture",
+              "opening_hours": "Mo-Fr 05:30-15:30; Sa 06:00-15:30; Su 07:00-15:30",
+              "website": "https://www.tastetexture.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9531211726,
+            "tags": {
+              "amenity": "cafe",
+              "name": "That Place Next Door - TPND"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9567294300,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Di Bartoli Espresso & Brew Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9567295531,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-07-19",
+              "name": "Hot Dish Asian Cuisine"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9567314150,
+            "tags": {
+              "addr:housenumber": "77",
+              "addr:postcode": "2018",
+              "addr:state": "NSW",
+              "addr:street": "Dunning Avenue",
+              "addr:suburb": "Rosebery",
+              "addr:unit": "G02",
+              "amenity": "cafe",
+              "name": "More \u2013 Rosebery",
+              "opening_hours": "Mo-Fr 06:30-15:00",
+              "outdoor_seating": "yes",
+              "website": "moredailyritual.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9567319235,
+            "tags": {
+              "amenity": "cafe",
+              "description": "manufacturers of fresh and frozen pasta",
+              "name": "Adamo's Pasta",
+              "opening_hours": "Mo-Fr 09:30-18:00; Sa 09:30-15:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9754341671,
+            "tags": {
+              "amenity": "cafe",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9876378052,
+            "tags": {
+              "addr:housenumber": "131",
+              "addr:postcode": "2042",
+              "addr:state": "NSW",
+              "addr:street": "Wilson Street",
+              "addr:suburb": "Newtown",
+              "addr:unit": "Shop 1",
+              "amenity": "cafe",
+              "bar": "no",
+              "check_date": "2026-02-12",
+              "delivery": "no",
+              "diet:gluten_free": "yes",
+              "diet:lactose_free": "yes",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "indoor_seating": "yes",
+              "level": "0",
+              "name": "One Another",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "payment:contactless": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "payment:mastercard": "yes",
+              "payment:visa": "yes",
+              "reservation": "no",
+              "takeaway": "yes",
+              "toilets:wheelchair": "yes",
+              "website": "https://www.oneanothercafe.com"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9893342073,
+            "tags": {
+              "addr:housenumber": "26",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Bourke Road",
+              "addr:suburb": "Alexandria",
+              "air_conditioning": "no",
+              "amenity": "cafe",
+              "check_date": "2026-03-18",
+              "check_date:opening_hours": "2025-05",
+              "check_date:smoking": "2025-07-24",
+              "cuisine": "coffee_shop",
+              "diet:gluten_free": "yes",
+              "diet:vegan": "yes",
+              "diet:vegetarian": "yes",
+              "drive_through": "no",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "stool;chair",
+              "level": "0;1",
+              "name": "Mecca",
+              "opening_hours": "Mo-Fr 07:30-15:00; Sa,Su 08:00-15:00",
+              "outdoor_seating": "yes",
+              "smoking": "no",
+              "takeaway": "yes",
+              "toilets": "yes",
+              "website": "https://www.mecca.coffee",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 9965305871,
+            "tags": {
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Australian Meat Emporium Cafe"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10073901067,
+            "tags": {
+              "amenity": "school",
+              "description": "early learning centre",
+              "name": "Mini Masterminds"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10073918432,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-03",
+              "name": "Piccolo Me"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10243619900,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Good Ways Deli",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-14:00"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10703264372,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2023-03-02",
+              "indoor_seating": "yes",
+              "name": "Lucky Kwong",
+              "outdoor_seating": "no",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10925938064,
+            "tags": {
+              "addr:housenumber": "2",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "May Lane",
+              "addr:suburb": "St Peters",
+              "addr:unit": "5",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "check_date": "2026-02-21",
+              "contact:instagram": "domothreenine",
+              "cuisine": "japanese;coffee_shop",
+              "name": "domo 39",
+              "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-16:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11749797117,
+            "tags": {
+              "addr:housenumber": "50-52",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Mitchell Road",
+              "addr:suburb": "Alexandria",
+              "amenity": "restaurant",
+              "check_date": "2025-03",
+              "cuisine": "pizza;burger;chicken",
+              "diet:gluten_free": "yes",
+              "diet:meat": "yes",
+              "diet:vegan": "yes",
+              "name": "Mitch Hotel",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11777715598,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "South Eveleigh Playground",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/south-eveleigh-playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12115912014,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "asian",
+              "name": "Eat Fuh"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12115927484,
+            "tags": {
+              "amenity": "restaurant",
+              "bar": "yes",
+              "cuisine": "thai",
+              "name": "Whitton",
+              "outdoor_seating": "yes",
+              "takeaway": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12115928724,
+            "tags": {
+              "amenity": "cafe",
+              "indoor_seating": "yes",
+              "name": "Ona",
+              "opening_hours": "open \"weekends as well as weekdays\"",
+              "takeaway": "yes",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12118135054,
+            "tags": {
+              "amenity": "cafe",
+              "indoor_seating": "yes",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12131333137,
+            "tags": {
+              "addr:housenumber": "149-153",
+              "addr:street": "Mitchell Road",
+              "addr:unit": "T2",
+              "air_conditioning": "yes",
+              "amenity": "restaurant",
+              "cuisine": "japanese",
+              "delivery": "yes",
+              "name": "Mizuki Sushi",
+              "opening_hours": "Mo-Su 11:00-21:00",
+              "phone": "+61 424 933 324",
+              "takeaway": "yes",
+              "website": "https://www.kpos.com.au/mizuki2/",
+              "website:menu": "https://www.kpos.com.au/mizuki2/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12181338419,
+            "tags": {
+              "addr:housenumber": "18",
+              "addr:street": "Huntley Street",
+              "air_conditioning": "yes",
+              "amenity": "cafe",
+              "changing_table": "yes",
+              "check_date:opening_hours": "2024-10-10",
+              "contact:instagram": "https://www.instagram.com/ellen18huntley/",
+              "indoor_seating": "yes",
+              "name": "Ellen",
+              "opening_hours:signed": "no",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "toilets": "yes",
+              "toilets:wheelchair": "yes",
+              "website": "none",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12632009801,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "name": "Photown"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12706486449,
+            "tags": {
+              "addr:housenumber": "641",
+              "addr:postcode": "2044",
+              "addr:street": "King Street",
+              "amenity": "cafe",
+              "check_date": "2026-01-27",
+              "name": "Dulcet Bakehouse",
+              "phone": "+61 499 394 969",
+              "website": "https://dulcet.com.au/locations/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12709371832,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Grind Pantry"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12841024101,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-05",
+              "indoor_seating": "yes",
+              "name": "The Bearded Barista",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12841024106,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-05",
+              "cuisine": "cake",
+              "indoor_seating": "no",
+              "name": "Onu Cake",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13189826788,
+            "tags": {
+              "addr:housenumber": "115-121",
+              "addr:street": "Dunning Avenue",
+              "addr:unit": "T103",
+              "amenity": "cafe",
+              "cuisine": "Coffee;Croissants",
+              "name": "Lune Croissanterie",
+              "opening_hours": "Mo-Fr 07:30-15:00; Sa-Su 08:00-15:00",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13189831868,
+            "tags": {
+              "addr:housenumber": "115-121",
+              "addr:street": "Dunning Avenue",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Pino Espresso Bar",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13288486961,
+            "tags": {
+              "addr:housenumber": "85",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "O'Riordan Street",
+              "addr:suburb": "Alexandria",
+              "addr:unit": "3",
+              "email": "alexandria@9degrees.com.au",
+              "fee": "yes",
+              "leisure": "sports_centre",
+              "mobile": "+61 408 870 473",
+              "name": "9 Degrees Alexandria",
+              "opening_hours": "Mo 10:00-22:00; Tu 16:00-22:00; We 06:00-22:00; Th-Fr 10:00-22:00; Sa-Su 8:00-21:00",
+              "operator": "9 Degrees",
+              "operator:type": "private",
+              "sport": "climbing",
+              "website": "https://www.9degrees.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13305873201,
+            "tags": {
+              "amenity": "restaurant",
+              "contact:instagram": "shinmachinewtown",
+              "cuisine": "japanese;ramen",
+              "level": "1",
+              "name": "Shinmachi",
+              "outdoor_seating": "no",
+              "phone": "+61 2 9557 1063",
+              "website": "https://www.japanesetapasshinmachi.com/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13545749990,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Burrito Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13591750578,
+            "tags": {
+              "addr:housenumber": "8",
+              "addr:postcode": "2044",
+              "addr:state": "NSW",
+              "addr:street": "May Lane",
+              "addr:suburb": "St Peters",
+              "amenity": "cafe",
+              "cuisine": "italian",
+              "name": "Ariomi The Space - Cafe",
+              "opening_hours": "Mo-Fr 06:30-15:00; Sa-Su 07:00-16:00",
+              "outdoor_seating": "yes",
+              "payment:credit_cards": "yes",
+              "payment:debit_cards": "yes",
+              "phone": "+61 423 520 690",
+              "takeaway": "yes",
+              "website": "https://www.ariomithespace.com",
+              "website:menu": "https://www.ariomithespace.com/menu"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13704754952,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2026-04-04",
+              "cuisine": "italian",
+              "name": "Pasta Mad"
+            }
+          },
+          {
+            "type": "way",
+            "id": 24479200,
+            "tags": {
+              "access": "permissive",
+              "leisure": "park",
+              "name": "Waterloo Green"
+            }
+          },
+          {
+            "type": "way",
+            "id": 61971478,
+            "tags": {
+              "addr:housename": "Basketball New South Wales",
+              "addr:housenumber": "53-57",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Maddox Street",
+              "addr:suburb": "Alexandria",
+              "building": "yes",
+              "leisure": "sports_centre",
+              "name": "Alexandria Basketball Stadium",
+              "sport": "basketball"
+            }
+          },
+          {
+            "type": "way",
+            "id": 61972634,
+            "tags": {
+              "addr:housename": "Yudi Gunyi School",
+              "addr:housenumber": "237",
+              "addr:postcode": "2017",
+              "addr:state": "NSW",
+              "addr:street": "Botany Road",
+              "addr:suburb": "Waterloo",
+              "amenity": "school",
+              "contact:email": "yudigunyi-s.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9310 3670",
+              "contact:phone": "+61 2 9319 1759",
+              "fee": "no",
+              "name": "Yudi Gunyi School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "18",
+              "school:gender": "mixed",
+              "school:selective": "yes",
+              "school:specialty": "comprehensive",
+              "school:type": "special",
+              "start_date": "2003-10-13",
+              "website": "https://yudigunyi-s.schools.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 62206031,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "135",
+              "addr:street": "McEvoy Street",
+              "amenity": "pharmacy",
+              "brand": "Chemist Warehouse",
+              "brand:wikidata": "Q48782120",
+              "building": "yes",
+              "healthcare": "pharmacy",
+              "name": "Chemist Warehouse"
+            }
+          },
+          {
+            "type": "way",
+            "id": 63071730,
+            "tags": {
+              "addr:housename": "Pharmacy Nutrition Warehouse",
+              "addr:housenumber": "530",
+              "addr:street": "Botany Road",
+              "amenity": "pharmacy",
+              "building": "retail",
+              "dispensing": "yes",
+              "drive_through": "no",
+              "healthcare": "pharmacy",
+              "name": "Pharmacy Nutrition Warehouse",
+              "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-16:00; Su 10:00-16:00",
+              "payment:cash": "yes",
+              "payment:coins": "yes",
+              "payment:credit_cards": "yes",
+              "payment:notes": "yes",
+              "payment:visa": "yes",
+              "phone": "+61 2 9699 1333"
+            }
+          },
+          {
+            "type": "way",
+            "id": 86792204,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "name": "Sydney Park Playground",
+              "source": "survey",
+              "source:location": "nearmap",
+              "wheelchair": "limited"
+            }
+          },
+          {
+            "type": "way",
+            "id": 137071989,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 139841882,
+            "tags": {
+              "leisure": "park",
+              "wheelchair": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 139841884,
+            "tags": {
+              "leisure": "park",
+              "name": "Vice Chancellor's Oval"
+            }
+          },
+          {
+            "type": "way",
+            "id": 161930128,
+            "tags": {
+              "leisure": "park",
+              "name": "Renwick Street Playground",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173921147,
+            "tags": {
+              "description": "Popular for dogs, provides plastic bags to dog owners.",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Hollis Park",
+              "source": "local knowledge, bing",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/hollis-park",
+              "wikidata": "Q21928931"
+            }
+          },
+          {
+            "type": "way",
+            "id": 174137106,
+            "tags": {
+              "boundary": "hazard",
+              "description": "Dogs not allowed in: Wetlands, Alan Davidson Oval, Sydney Park Cycling Centre, playground, barbecue areas.",
+              "dog": "unleashed",
+              "hazard": "contamination",
+              "leisure": "park",
+              "name": "Sydney Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "related_law": "Contaminated Land Management Act 1997",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/sydney-park",
+              "wikidata": "Q7660094",
+              "wikipedia": "en:Sydney Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 175699928,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Green Bans Park",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/green-bans-parks"
+            }
+          },
+          {
+            "type": "way",
+            "id": 175699935,
+            "tags": {
+              "leisure": "park",
+              "name": "Green Bans Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 203414282,
+            "tags": {
+              "designation": "Alexandria Park",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Alexandria Park",
+              "source": "bing.com/maps",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/alexandria-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 219861938,
+            "tags": {
+              "leisure": "park",
+              "source": "bing"
+            }
+          },
+          {
+            "type": "way",
+            "id": 232431377,
+            "tags": {
+              "leisure": "park",
+              "name": "McConville Reserve",
+              "source": "Bing",
+              "source:name": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 232431861,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Perry Park",
+              "source": "Bing",
+              "source:name": "sign",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/perry-park",
+              "wikidata": "Q21933570"
+            }
+          },
+          {
+            "type": "way",
+            "id": 297008833,
+            "tags": {
+              "leisure": "park",
+              "name": "Daniel Dawson reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 297368632,
+            "tags": {
+              "addr:housenumber": "75",
+              "addr:postcode": "2042",
+              "addr:street": "Union Street",
+              "addr:suburb": "Newtown",
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Mrs Isabella Hill Rest Area",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/isabella-hills-rest-area"
+            }
+          },
+          {
+            "type": "way",
+            "id": 297368977,
+            "tags": {
+              "leisure": "park",
+              "name": "Rochford Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 297368978,
+            "tags": {
+              "leisure": "park",
+              "name": "Union Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 301177709,
+            "tags": {
+              "addr:housenumber": "29",
+              "addr:postcode": "2043",
+              "addr:street": "Flora Street",
+              "addr:suburb": "Erskineville",
+              "leisure": "park",
+              "name": "Flora and Knight Reserve",
+              "website": "https://www.cityofsydney.nsw.gov.au/explore/facilities/parks/playgrounds"
+            }
+          },
+          {
+            "type": "way",
+            "id": 301177713,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 339895469,
+            "tags": {
+              "addr:postcode": "2043",
+              "addr:suburb": "Erskineville",
+              "amenity": "school",
+              "contact:email": "erskinevil-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9550 4593",
+              "contact:phone": "+61 2 9557 5206",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Erskineville Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "379",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1881-11-01",
+              "website": "https://www.erskinevil-p.schools.nsw.edu.au/",
+              "wikidata": "Q57386264"
+            }
+          },
+          {
+            "type": "way",
+            "id": 339905685,
+            "tags": {
+              "addr:street": "Park Road",
+              "amenity": "school",
+              "email": "alexparkcs-c.school@det.nsw.edu.au",
+              "fax": "+61 2 9319 5007",
+              "grades": "0-12",
+              "isced:level": "1;2;3",
+              "name": "Alexandria Park Community School",
+              "note": "Area needs to be redrawed",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "phone": "+61 2 9698 1967",
+              "school:gender": "mixed",
+              "school:selective": "partial",
+              "school:type": "community",
+              "website": "https://alexparkcs-c.schools.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 339906903,
+            "tags": {
+              "addr:housenumber": "57-77",
+              "addr:street": "Mitchell Road",
+              "amenity": "school",
+              "email": "centralsydneyintensiveenglishhs.school@det.nsw.edu.au",
+              "fax": "+61 2 9698 5691",
+              "name": "Central Sydney Intensive English High School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "phone": "+61 2 9595 9200",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:type": "secondary",
+              "website": "https://centralsydneyie-h.schools.nsw.gov.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 399833434,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 399833435,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 414107743,
+            "tags": {
+              "access": "permissive",
+              "leisure": "park",
+              "name": "Waterloo Green"
+            }
+          },
+          {
+            "type": "way",
+            "id": 414543827,
+            "tags": {
+              "addr:housenumber": "34",
+              "addr:street": "Henderson Road",
+              "addr:suburb": "Alexandria",
+              "amenity": "restaurant",
+              "building": "yes",
+              "cuisine": "tapas",
+              "name": "The Grumpy Barista"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423061383,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423064770,
+            "tags": {
+              "addr:housenumber": "235",
+              "addr:street": "Victoria Street",
+              "dog": "yes",
+              "ele": "4",
+              "leisure": "park",
+              "name": "Janet Beirne Reserve",
+              "opening_hours": "24/7",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423064772,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Beaconsfield Park",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/beaconsfield-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423218371,
+            "tags": {
+              "addr:housenumber": "33",
+              "addr:postcode": "2043",
+              "addr:street": "Bridge Street",
+              "addr:suburb": "Erskineville",
+              "amenity": "cafe",
+              "cuisine": "breakfast;coffee_shop;tea",
+              "description": "Cafe",
+              "internet_access": "wlan",
+              "level": "1",
+              "name": "Foodcraft",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423230447,
+            "tags": {
+              "addr:housenumber": "232",
+              "addr:street": "King Street",
+              "amenity": "restaurant",
+              "branch": "Newtown",
+              "building": "yes",
+              "cuisine": "burger",
+              "delivery": "yes",
+              "delivery:deliveroo": "yes",
+              "name": "Moo Gourmet Burgers"
+            }
+          },
+          {
+            "type": "way",
+            "id": 423988593,
+            "tags": {
+              "addr:housenumber": "827",
+              "addr:postcode": "2018",
+              "addr:state": "NSW",
+              "addr:street": "Botany Road",
+              "addr:suburb": "Rosebery",
+              "amenity": "school",
+              "contact:email": "gardeners-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9667 4906",
+              "contact:phone": "+61 2 9667 2193",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Gardeners Road Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "363",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "start_date": "1883-01-01",
+              "website": "https://www.gardeners-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 464218811,
+            "tags": {
+              "addr:country": "AU",
+              "addr:housenumber": "124",
+              "addr:postcode": "2015",
+              "addr:street": "McEvoy Street",
+              "addr:suburb": "Alexandria",
+              "amenity": "cafe",
+              "building": "commercial",
+              "contact:email": "info@substation.cafe",
+              "contact:facebook": "https://www.facebook.com/SubStationCafe/",
+              "contact:instagram": "https://www.instagram.com/substationcafe/",
+              "contact:phone": "+61 2 9557 9868",
+              "name": "Substation Cafe",
+              "opening_hours": "Mo-Fr 06:00-16:00; Sa 06:30-16:30, Su 07:00-16:30",
+              "website": "https://www.substation.cafe/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 501686113,
+            "tags": {
+              "leisure": "park",
+              "name": "Jack Shuttleworth Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 502800196,
+            "tags": {
+              "leisure": "playground",
+              "name": "Play Area"
+            }
+          },
+          {
+            "type": "way",
+            "id": 532633753,
+            "tags": {
+              "leisure": "park",
+              "name": "Dibbs Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 532634098,
+            "tags": {
+              "addr:housenumber": "136-140",
+              "addr:street": "George Street",
+              "leisure": "park",
+              "name": "Kirsova 2 Playground",
+              "name:etymology": "H\u00e9l\u00e8ne Kirsova",
+              "name:etymology:wikidata": "Q4958915",
+              "name:etymology:wikipedia": "en:H\u00e9l\u00e8ne Kirsova",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/kirsova-2-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 537565774,
+            "tags": {
+              "access": "private",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 548781407,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 548781428,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 550183744,
+            "tags": {
+              "leisure": "park",
+              "name": "Jack Haynes Rest Area",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "ref": "JK01"
+            }
+          },
+          {
+            "type": "way",
+            "id": 585993657,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 586000946,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Harry Noble Reserve",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/harry-noble-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 595751689,
+            "tags": {
+              "leisure": "playground",
+              "name": "Bowden Playground",
+              "operator": "City of Sydney",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/bowden-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 623603360,
+            "tags": {
+              "leisure": "park",
+              "name": "Devine Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 646026022,
+            "tags": {
+              "description": "Park with benches and shade",
+              "landuse": "recreation_ground",
+              "leisure": "park",
+              "name": "Alexandria Technology Park",
+              "note": "added park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 683479731,
+            "tags": {
+              "addr:housenumber": "380",
+              "addr:street": "Botany Road",
+              "amenity": "cafe",
+              "building": "yes",
+              "building:levels": "1",
+              "building:material": "brick",
+              "cuisine": "coffee_shop",
+              "height": "3.6",
+              "name": "The Coffee Roaster",
+              "opening_hours": "Mo-Fr 05:00-15:00; Sa,Su 06:00-14:00",
+              "roof:colour": "black"
+            }
+          },
+          {
+            "type": "way",
+            "id": 683479736,
+            "tags": {
+              "addr:housenumber": "392",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Botany Road",
+              "addr:suburb": "Beaconsfield",
+              "amenity": "restaurant",
+              "building": "yes",
+              "building:levels": "2",
+              "building:material": "cement_block",
+              "cuisine": "chinese",
+              "height": "4",
+              "name": "Gloden House Kitchen"
+            }
+          },
+          {
+            "type": "way",
+            "id": 683479741,
+            "tags": {
+              "addr:housenumber": "398",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Botany Road",
+              "addr:suburb": "Beaconsfield",
+              "amenity": "cafe",
+              "building": "yes",
+              "building:levels": "2",
+              "building:material": "cement_block",
+              "cuisine": "coffee_shop",
+              "height": "4",
+              "name": "Zion Sushi Cafe"
+            }
+          },
+          {
+            "type": "way",
+            "id": 683479743,
+            "tags": {
+              "addr:housenumber": "404",
+              "addr:postcode": "2015",
+              "addr:state": "NSW",
+              "addr:street": "Botany Road",
+              "addr:suburb": "Beaconsfield",
+              "amenity": "cafe",
+              "building": "yes",
+              "name": "Draft Coffee Roasters",
+              "opening_hours": "Mo-Sa 07:00-14:00; Su 07:00-13:00"
+            }
+          },
+          {
+            "type": "way",
+            "id": 683851397,
+            "tags": {
+              "addr:housenumber": "85-113",
+              "addr:street": "Dunning Avenue",
+              "addr:unit": "C1",
+              "amenity": "cafe",
+              "branch": "Rosebery",
+              "brand": "Black Star Pastry",
+              "building": "yes",
+              "building:levels": "1",
+              "contact:instagram": "blackstarpastry",
+              "cuisine": "cake;coffee_shop;dessert",
+              "email": "info@blackstarpastry.com.au",
+              "name": "Black Star Pastry Rosebery",
+              "opening_hours": "Mo-Fr 07:30-16:00; Sa 07:30-17:00; Su 07:30-16:30",
+              "outdoor_seating": "no",
+              "phone": "+61 2 9557 8656",
+              "roof:colour": "light_gray",
+              "roof:material": "metal",
+              "roof:shape": "pitched",
+              "website": "https://www.blackstarpastry.com/",
+              "website:menu": "https://blackstarpastry.foodstorm.com/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 684300798,
+            "tags": {
+              "addr:housenumber": "565",
+              "addr:street": "Botany Road",
+              "addr:unit": "2",
+              "amenity": "restaurant",
+              "building": "yes",
+              "cuisine": "thai",
+              "name": "To Thai For",
+              "opening_hours": "Mo-Su 10:45-21:00",
+              "outdoor_seating": "no"
+            }
+          },
+          {
+            "type": "way",
+            "id": 684359344,
+            "tags": {
+              "addr:housenumber": "34",
+              "addr:street": "O'Riordan Street",
+              "amenity": "restaurant",
+              "building": "detached",
+              "cuisine": "burger;american;coffee_shop",
+              "name": "L'americano Espresso Bar",
+              "opening_hours": "Mo-Su 07:30-16:00"
+            }
+          },
+          {
+            "type": "way",
+            "id": 685419586,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 723937105,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 783959966,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 799540163,
+            "tags": {
+              "leisure": "park",
+              "name": "Linear Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 815430411,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 820302791,
+            "tags": {
+              "leisure": "park",
+              "name": "Meriton Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 824012787,
+            "tags": {
+              "leisure": "park",
+              "name": "Reverend Soo Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 891830800,
+            "tags": {
+              "amenity": "hospital",
+              "building": "yes",
+              "emergency": "no",
+              "healthcare": "clinic",
+              "name": "Alexandria Specialist Day Hospital",
+              "opening_hours": "Mo-Fr 06:00-17:00; Sa 08:00-13:00",
+              "operator": "Virtus Health",
+              "website": "https://www.asdh.com.au"
+            }
+          },
+          {
+            "type": "way",
+            "id": 892184196,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 892185036,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 892616332,
+            "tags": {
+              "leisure": "park",
+              "name": "Burren Street Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "operator:wikipedia": "en:City of Sydney",
+              "surface": "grass",
+              "survey:date": "2022-02-16"
+            }
+          },
+          {
+            "type": "way",
+            "id": 896063444,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 937507793,
+            "tags": {
+              "addr:housenumber": "67",
+              "addr:street": "MacDonald Street",
+              "leisure": "park",
+              "name": "Kirsova 1 Playground",
+              "name:etymology": "H\u00e9l\u00e8ne Kirsova",
+              "name:etymology:wikidata": "Q4958915",
+              "name:etymology:wikipedia": "en:H\u00e9l\u00e8ne Kirsova",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/kirsova-1-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 960023174,
+            "tags": {
+              "fixme": "this place has a name",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1017585052,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1032388796,
+            "tags": {
+              "addr:housenumber": "8-10",
+              "addr:postcode": "2042",
+              "addr:street": "Brown Street",
+              "addr:suburb": "Newtown",
+              "amenity": "library",
+              "building": "yes",
+              "name": "Newtown Library",
+              "operator": "City of Sydney",
+              "source": "microsoft/BuildingFootprints",
+              "wikidata": "Q66410726"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1034041095,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035589527,
+            "tags": {
+              "addr:housenumber": "1B",
+              "addr:street": "Maddox Street",
+              "building": "yes",
+              "leisure": "sports_centre",
+              "name": "Perry Park Recreaction Centre"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035592737,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035594004,
+            "tags": {
+              "leisure": "park",
+              "name": "Swanson Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035594005,
+            "tags": {
+              "leisure": "park",
+              "name": "Bridge Street Rest Area"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1035594285,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1050580135,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1083672084,
+            "tags": {
+              "leisure": "park",
+              "name": "Eveleigh Green",
+              "website": "https://www.southeveleigh.com/explore/gardens-and-community-spaces"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1158184871,
+            "tags": {
+              "leisure": "park",
+              "name": "Les White Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1158187902,
+            "tags": {
+              "leisure": "park",
+              "name": "Mitchell Road Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1219478902,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1287329335,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1315658551,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1315658553,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1395647241,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "surface": "compacted"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1431153796,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1443165601,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1443165791,
+            "tags": {
+              "amenity": "school",
+              "denomination": "catholic",
+              "name": "Saint Mary's Catholic Primary School",
+              "religion": "christian"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1458432936,
+            "tags": {
+              "access": "customers",
+              "brand": "McDonald's",
+              "brand:wikidata": "Q38076",
+              "leisure": "playground",
+              "name": "McDonald's PlayPlace"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1460918216,
+            "tags": {
+              "access": "private",
+              "leisure": "park",
+              "opening_hours": "24/7",
+              "operator": "Erko",
+              "operator:type": "private"
+            }
+          }
+        ]
+      },
+      "endpoint": "https://overpass-api.de/api/interpreter"
+    }
+  ]
+}

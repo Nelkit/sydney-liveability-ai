@@ -1,0 +1,101 @@
+{
+  "suburb": "Beecroft",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:11.920539+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.571,
+      "mentions": 16
+    },
+    "green_space": {
+      "score": 0.563,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.435,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.456,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.536,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.828,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.981,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.1295,
+    "neutral": 0.5233,
+    "surprise": 0.1112,
+    "sadness": 0.0559,
+    "disgust": 0.099,
+    "anger": 0.0447,
+    "fear": 0.0364
+  },
+  "narrative": "Reddit discussions about Beecroft are most positive about noise (0.98) and food and cafe (0.83). Residents are most critical about nightlife (0.46) and safety (0.43). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Chunky guy visiting in my backyard\nIn Beecroft",
+      "url": "https://reddit.com/r/sydney/comments/1gq8p5l/chunky_guy_visiting_in_my_backyard/",
+      "score": 189
+    },
+    {
+      "text": "Wild Monsteras in Beecroft",
+      "url": "https://reddit.com/r/sydney/comments/1cqtvwy/wild_monsteras_in_beecroft/",
+      "score": 56
+    },
+    {
+      "text": "M2 is also another option -- Beecroft Rd to Christie Rd offramp is $9.66 each way, and it's pretty easy to head back on the M2 for the return trip.",
+      "url": "https://reddit.com/r/sydney/comments/1dml95p/shortest_trip_to_spend_50_on_tolls/l9wei7p/",
+      "score": 50
+    },
+    {
+      "text": "Patrick and Silvia Wedding bookmark found\nFound on a T9 service heading towards Hornsby. Handed in to Beecroft Station. Text reads “Patrick and Olivia 10-07-2022”",
+      "url": "https://reddit.com/r/sydney/comments/1e9yw43/patrick_and_silvia_wedding_bookmark_found/",
+      "score": 35
+    },
+    {
+      "text": "There’s a harp shop in Beecroft",
+      "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kotqv1q/",
+      "score": 32
+    },
+    {
+      "text": "M2 accident after Beecroft road this morning\nBus avoided going to the Pennant Hills M2 entrance. Police have blocked off the Beecroft road entrance. Traffic looked to be at a complete standstill.\n\nhtt",
+      "url": "https://reddit.com/r/sydney/comments/1notx3z/m2_accident_after_beecroft_road_this_morning/",
+      "score": 27
+    },
+    {
+      "text": "People should care, but you're right - you'll often find a car parked in a clearway when they shouldn't be. Will the cops care? Probably not unless they happen upon the car themselves. Beecroft Rd. is",
+      "url": "https://reddit.com/r/sydney/comments/1dh3slt/what_does_a_dashed_yellow_line_along_the_road_mean/l8u9mer/",
+      "score": 18
+    },
+    {
+      "text": "Beecroft is really a unique suburb in Sydney, like living in an ancient forest in some parts. How it is they love their trees while everywhere else people rip them out like they're weeds I'd love to k",
+      "url": "https://reddit.com/r/sydney/comments/1cqtvwy/wild_monsteras_in_beecroft/l3ug7gx/",
+      "score": 15
+    },
+    {
+      "text": "I find this comment really strange. I'm doubtful that you are lying so I'm thinking it must depend on which suburbs you were living in. The areas you've listed are pretty large and have a lot of subur",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kif0wxq/",
+      "score": 10
+    },
+    {
+      "text": "There are e-ink displays servicing the row of stops on Beecroft Road in Epping, very handy.",
+      "url": "https://reddit.com/r/sydney/comments/1c93x8f/ive_wanted_something_like_for_buses_for_years/l0j5hxc/",
+      "score": 10
+    }
+  ]
+}

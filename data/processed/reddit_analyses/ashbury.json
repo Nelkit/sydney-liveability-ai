@@ -1,0 +1,96 @@
+{
+  "suburb": "Ashbury",
+  "post_count": 9,
+  "fetched_at": "2026-04-18T02:18:30.960650+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.918,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.899,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.818,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.914,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.72,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.1879,
+    "neutral": 0.5885,
+    "joy": 0.0837,
+    "sadness": 0.0209,
+    "anger": 0.0327,
+    "disgust": 0.0531,
+    "fear": 0.0332
+  },
+  "narrative": "Reddit discussions about Ashbury are most positive about food and cafe (0.92) and safety (0.91). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "My entry for the best breakfast in Sydney (First Street Pantry, Ashbury, $25)\nHidden from pic are the mushrooms, and what it looked like pre and post beans being added. Pic also doesn't do it justice ",
+      "url": "https://reddit.com/r/sydney/comments/1grkdsx/my_entry_for_the_best_breakfast_in_sydney_first/",
+      "score": 592
+    },
+    {
+      "text": "What Sydney suburbs have taken their names from neighbouring suburbs?\nThis morning I found out that Ashbury's name was created from it's neighbouring Ashfield and Canterbury. I don't know why but I fi",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/",
+      "score": 231
+    },
+    {
+      "text": "Ashbury sure does sound a lot better than Canterfield.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnultk/",
+      "score": 43
+    },
+    {
+      "text": "I mean I'm all for them but like, u/cricketmad14 mustn't go to many of the ones that are for regular trading hours & not festivals.\n\nThe entire chubby buns menu bar the chips is priced roughly the sam",
+      "url": "https://reddit.com/r/sydney/comments/1d0s341/why_are_food_trucks_more_expensive_than_the/l5qdu0r/",
+      "score": 10
+    },
+    {
+      "text": "Not sure what's \"subsidised\" about it?\n\nHere's my take on the heritage stuff (again, I guess). I'm talking about when there's a whole district with a distinct historical character.\n\nLike, I lived in P",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kh0xb4e/",
+      "score": 3
+    },
+    {
+      "text": "While increasing density in areas that are suitable for it / can support it is fine, it's the blanket nature of the proposal which is silly. Parts of the Inner West (e.g. Newtown, Camperdown, Erskinev",
+      "url": "https://reddit.com/r/sydney/comments/1b7iyba/proposal_to_rezone_whole_of_inner_west_to_6/ktjb81n/",
+      "score": 3
+    },
+    {
+      "text": "Peace Park in Ashbury. It's never busy. Great view from the little tower too.",
+      "url": "https://reddit.com/r/sydney/comments/1chkbam/best_parks_in_sydney/l25naow/",
+      "score": 3
+    },
+    {
+      "text": "links: \n\nhttps://www.realestate.com.au/news/developer-bill-gertos-sells-ashbury-home-at-the-centre-of-a-bizarre-squatters-rights-case/\n\nhttps://www.9news.com.au/national/a-current-affair-bill-gertos-s",
+      "url": "https://reddit.com/r/sydney/comments/1dgf11l/demolishing_a_house_without_permission/l8tkrh5/",
+      "score": 3
+    },
+    {
+      "text": "Very much the same as the huge LGA that is Canterbury Bankstown. \n\nI'm sure the folks from Ashbury would love to pop over to Villawood for a sausage sizzle just for a change of scene",
+      "url": "https://reddit.com/r/sydney/comments/1bf7a5x/inner_west_council_demerger_rejected/kv1gk76/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Gladesville",
+  "post_count": 87,
+  "fetched_at": "2026-04-18T02:00:08.685453+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.475,
+      "mentions": 27
+    },
+    "community": {
+      "score": 0.522,
+      "mentions": 68
+    },
+    "transport": {
+      "score": 0.481,
+      "mentions": 24
+    },
+    "nightlife": {
+      "score": 0.604,
+      "mentions": 13
+    },
+    "noise": {
+      "score": 0.466,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.38,
+      "mentions": 10
+    },
+    "affordability": {
+      "score": 0.651,
+      "mentions": 13
+    },
+    "food_and_cafe": {
+      "score": 0.767,
+      "mentions": 7
+    }
+  },
+  "emotions": {
+    "fear": 0.0759,
+    "surprise": 0.1039,
+    "neutral": 0.4909,
+    "disgust": 0.1199,
+    "sadness": 0.0661,
+    "anger": 0.0547,
+    "joy": 0.0886
+  },
+  "narrative": "Reddit discussions about Gladesville are most positive about food and cafe (0.77) and affordability (0.65). Residents are most critical about noise (0.47) and green space (0.38). This analysis is based on 87 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Truck Hits Power Pole in Gladesville\nWas lucky to be able to crawl past after a couple of minutes. Saw cars in the opposite lane trying to three point turn against traffic.",
+      "url": "https://reddit.com/r/sydney/comments/1p7svfq/truck_hits_power_pole_in_gladesville/",
+      "score": 387
+    },
+    {
+      "text": "She aint the most famous Sydney bridge, but I still love the Gladesville Bridge.  Even if she isn't even technically in Gladesville.\nI appreciate that they could have built something more traditional,",
+      "url": "https://reddit.com/r/sydney/comments/1mxzqze/she_aint_the_most_famous_sydney_bridge_but_i/",
+      "score": 252
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Sydney from the Gladesville Bridge",
+      "url": "https://reddit.com/r/sydney/comments/1mu1fi3/sydney_from_the_gladesville_bridge/",
+      "score": 213
+    },
+    {
+      "text": "Victoria road closed both directions, gladesville \nHey all! \n\nJust a heads up, best to look for a detour today. Victoria road between Monash road and Tennyson road is closed in both directions due to ",
+      "url": "https://reddit.com/r/sydney/comments/1i3td6p/victoria_road_closed_both_directions_gladesville/",
+      "score": 120
+    },
+    {
+      "text": "Banjo Paterson house (in Gladesville) got damaged from a van crash",
+      "url": "https://reddit.com/r/sydney/comments/1hdv8tg/banjo_paterson_house_in_gladesville_got_damaged/",
+      "score": 119
+    },
+    {
+      "text": "Gladesville Hospital\n\nGladesville Hospital, formerly known as Gladesville Mental Hospital and Tarban Creek Asylum",
+      "url": "https://reddit.com/r/sydney/comments/1ribsgq/gladesville_hospital/",
+      "score": 115
+    },
+    {
+      "text": "Part of Gladesville is in hunters hill council, who are notoriously nimby.",
+      "url": "https://reddit.com/r/sydney/comments/1dhs12k/is_it_just_me_or_is_gladesville_kinda_rundown/l8yxin2/",
+      "score": 112
+    },
+    {
+      "text": "This is why you gotta plan ahead. Getting to the north-side cycleway from the south-western corner is not obvious, but if you’ve never been there before, you might not even know it exists. \n\nSame thin",
+      "url": "https://reddit.com/r/sydney/comments/198irdg/what_ya_mean_i_cant_ride_me_bike_across_anzac/ki7ns7k/",
+      "score": 111
+    },
+    {
+      "text": "Rode my bike from the city to the north shore over the Gladesville bridge last night...\nOk so I'll preface by saying I'm not an experienced cyclist by any means, and my bike is electric which makes li",
+      "url": "https://reddit.com/r/sydney/comments/1gd2fif/rode_my_bike_from_the_city_to_the_north_shore/",
+      "score": 107
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Ultimo",
+  "post_count": 69,
+  "fetched_at": "2026-04-18T02:03:30.372052+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.284,
+      "mentions": 18
+    },
+    "nightlife": {
+      "score": 0.385,
+      "mentions": 18
+    },
+    "green_space": {
+      "score": 0.421,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.457,
+      "mentions": 16
+    },
+    "community": {
+      "score": 0.599,
+      "mentions": 47
+    },
+    "noise": {
+      "score": 0.814,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.776,
+      "mentions": 18
+    },
+    "affordability": {
+      "score": 0.69,
+      "mentions": 11
+    }
+  },
+  "emotions": {
+    "neutral": 0.416,
+    "surprise": 0.1654,
+    "joy": 0.107,
+    "fear": 0.0903,
+    "anger": 0.0587,
+    "disgust": 0.0614,
+    "sadness": 0.1013
+  },
+  "narrative": "Reddit discussions about Ultimo are most positive about noise (0.81) and transport (0.78). Residents are most critical about nightlife (0.39) and safety (0.28). This analysis is based on 69 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Ultimo - Lowest clearance bridge in Sydney?\nLet’s play",
+      "url": "https://reddit.com/r/sydney/comments/1ghl2vw/ultimo_lowest_clearance_bridge_in_sydney/",
+      "score": 987
+    },
+    {
+      "text": "Ebikes blocking everything!\nThis is in Ultimo today. \n\nClose to 30 ebikes in a 20 metre radius.",
+      "url": "https://reddit.com/r/sydney/comments/1ot008x/ebikes_blocking_everything/",
+      "score": 650
+    },
+    {
+      "text": "Powerhouse Museum in Ultimo heritage listing expanded, locking in the NSW government's $300 million revitalisation project\nSo pleased to see the Powerhouse in Ultimo will be preserved. Always thought ",
+      "url": "https://reddit.com/r/sydney/comments/1fhymo8/powerhouse_museum_in_ultimo_heritage_listing/",
+      "score": 307
+    },
+    {
+      "text": "Yeah its weird, seems to have been this way for yrs. I worked in ultimo/glebe near Broadway back in 00s, by evenings there were always groups of ratty 10-16 yo, street urchin grubs roaming the streets",
+      "url": "https://reddit.com/r/sydney/comments/1ci53kz/group_of_children_arrested_after_sydney_delivery/l279wp7/",
+      "score": 179
+    },
+    {
+      "text": "The NSW Government has been doing absolutely everything to gut the Powerhouse Museum. The NSW Government has a hard-on to sell the site off to developers.\n\nAt this point the trust between the people a",
+      "url": "https://reddit.com/r/sydney/comments/1aia5r9/sydneys_powerhouse_musuem_to_shut_its_doors_for/kotbzz9/",
+      "score": 166
+    },
+    {
+      "text": "Clover Moore years ago said something along the lines of \"It's great to see such growth in the Western Suburbs such as Ultimo\" when the government was referring to the actual Western Suburbs.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxx8zio/",
+      "score": 157
+    },
+    {
+      "text": "Very cool question, thanks op.\n\nI think the ethnic neighbourhood with a cheap but authentic restaurants are done much better in Sydney than other cities. The multiple cbd that sydney has set up with h",
+      "url": "https://reddit.com/r/sydney/comments/198tfaa/what_is_a_thing_sydney_does_better_than_any_other/ki9ic3t/",
+      "score": 98
+    },
+    {
+      "text": "An interesting visitor at Ultimo",
+      "url": "https://reddit.com/r/sydney/comments/1eukcfj/an_interesting_visitor_at_ultimo/",
+      "score": 96
+    },
+    {
+      "text": "At the Vivid Fire Kitchen at Ultimo",
+      "url": "https://reddit.com/r/sydney/comments/1lb293n/at_the_vivid_fire_kitchen_at_ultimo/",
+      "score": 90
+    },
+    {
+      "text": "Ultimo sure has gone downhill ...\n... anyone know what they're shooting today?",
+      "url": "https://reddit.com/r/sydney/comments/1gxpo4h/ultimo_sure_has_gone_downhill/",
+      "score": 77
+    }
+  ]
+}

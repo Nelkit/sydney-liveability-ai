@@ -1,0 +1,101 @@
+{
+  "suburb": "Woollahra",
+  "post_count": 40,
+  "fetched_at": "2026-04-18T02:09:57.984164+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.732,
+      "mentions": 33
+    },
+    "transport": {
+      "score": 0.577,
+      "mentions": 19
+    },
+    "affordability": {
+      "score": 0.588,
+      "mentions": 9
+    },
+    "nightlife": {
+      "score": 0.879,
+      "mentions": 12
+    },
+    "green_space": {
+      "score": 0.882,
+      "mentions": 10
+    },
+    "food_and_cafe": {
+      "score": 0.918,
+      "mentions": 9
+    },
+    "safety": {
+      "score": 0.907,
+      "mentions": 14
+    },
+    "noise": {
+      "score": 0.993,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.5377,
+    "sadness": 0.0615,
+    "joy": 0.0385,
+    "surprise": 0.1131,
+    "disgust": 0.0632,
+    "anger": 0.1315,
+    "fear": 0.0545
+  },
+  "narrative": "Reddit discussions about Woollahra are most positive about noise (0.99) and food and cafe (0.92). Residents are most critical about affordability (0.59) and transport (0.58). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
+      "url": "https://reddit.com/r/sydney/comments/1kjwh57/grand_post_offices_of_sydney/",
+      "score": 602
+    },
+    {
+      "text": "NSW government to complete Woollahra Station, rezone nearby land for new homes",
+      "url": "https://reddit.com/r/sydney/comments/1myf1e2/nsw_government_to_complete_woollahra_station/",
+      "score": 591
+    },
+    {
+      "text": "The postie asked me to tell Michelle (my flatmate) that we lived in Bondi Junction, not Woollahra. Snob.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxx94av/",
+      "score": 68
+    },
+    {
+      "text": "When do NYE vantage points hit capacity?\nYes, I know it's several months away, but I had some free time this arvo to knock the table up.\n\nSo, one of the more common questions asked around NYE is \"what",
+      "url": "https://reddit.com/r/sydney/comments/1cog8bo/when_do_nye_vantage_points_hit_capacity/",
+      "score": 63
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2024!\nWelp, fuck again.\n\nThe flood of \"what do I do for New Year's?\" posts are starting, though you might not have noticed them as much since we started referring them ",
+      "url": "https://reddit.com/r/sydney/comments/1h5hf9b/sydney_nye_fireworks_megathread_2024/",
+      "score": 54
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2025!\nWe're four weeks out now. The posts have started, and we'd remind people there is [a Wiki page that you should totally check out.](https://old.reddit.com/r/sydney",
+      "url": "https://reddit.com/r/sydney/comments/1pchenr/sydney_nye_fireworks_megathread_2025/",
+      "score": 47
+    },
+    {
+      "text": "Will Woollahra railway station ever be finished?",
+      "url": "https://reddit.com/r/sydney/comments/1byj2nu/will_woollahra_railway_station_ever_be_finished/",
+      "score": 46
+    },
+    {
+      "text": "The 'Ile-de-Sydney'\nI was trying to explain to a friend that inner/eastern Sydney is basically an 'island' surrounded by a continuous waterline (the coastline for most of it, Alexandria Canal in the s",
+      "url": "https://reddit.com/r/sydney/comments/1e7q5re/the_iledesydney/",
+      "score": 43
+    },
+    {
+      "text": "Mate of mine decided everything west of Woollahra was Penrith.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxak5u/",
+      "score": 23
+    },
+    {
+      "text": "I'm tired of friends asking how we went about choosing where to buy. I went where my husband and I could afford (an apartment in Hornsby). When I tell them that they say \"oh but they don't see themsel",
+      "url": "https://reddit.com/r/sydney/comments/1b29v1z/sydney_daily_random_discussion_thread_29022024/ksm2lqq/",
+      "score": 21
+    }
+  ]
+}

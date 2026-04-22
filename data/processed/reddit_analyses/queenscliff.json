@@ -1,0 +1,91 @@
+{
+  "suburb": "Queenscliff",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:19:05.392904+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.326,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.326,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.526,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.139,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5351,
+    "surprise": 0.0356,
+    "sadness": 0.0206,
+    "fear": 0.0165,
+    "anger": 0.024,
+    "disgust": 0.1956,
+    "joy": 0.1725
+  },
+  "narrative": "Reddit discussions about Queenscliff are most positive about community (0.53) and food and cafe (0.50). Residents are most critical about safety (0.33) and nightlife (0.14). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "You should have taken the tunnel between queenscliff and freshwater",
+      "url": "https://reddit.com/r/sydney/comments/195lnoz/me_should_i_do_the_spit_to_manly_or_the_manly_to/khnnp7c/",
+      "score": 17
+    },
+    {
+      "text": "Surfing wise Queenscliff or South Steyne are just consistently great, but for relaxing & SUPing you can’t beat Collins or Quarantine beach.",
+      "url": "https://reddit.com/r/sydney/comments/1b0bo5v/manly_beach_only_australian_beach_in_tripadvisors/ks76mq7/",
+      "score": 15
+    },
+    {
+      "text": "> During the 1930s Depression era, money became available to councils through unemployment relief schemes.\n\n> The unemployed were given jobs to create many more pools in Sydney, including Mahon Pool a",
+      "url": "https://reddit.com/r/sydney/comments/1dq4bbz/i_love_nsw_ocean_pools/laluuhn/",
+      "score": 14
+    },
+    {
+      "text": "I find this comment really strange. I'm doubtful that you are lying so I'm thinking it must depend on which suburbs you were living in. The areas you've listed are pretty large and have a lot of subur",
+      "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kif0wxq/",
+      "score": 10
+    },
+    {
+      "text": "This isn’t new. I used to see the signs all over manly after heavy rainfall (pretty sure the articles title image is taken on the bridge over the manly lagoon rivulet at queenscliff). \n\nDefinitely mak",
+      "url": "https://reddit.com/r/sydney/comments/19a8xan/sydney_beachgoers_warned_about_pollution_in_water/kijggym/",
+      "score": 9
+    },
+    {
+      "text": "That Freshwater (Harbord)- Queenscliff hill is a great training hill. I call it Harlequin and each up and down is 1 Harlequin.",
+      "url": "https://reddit.com/r/sydney/comments/195lnoz/me_should_i_do_the_spit_to_manly_or_the_manly_to/khnqds5/",
+      "score": 6
+    },
+    {
+      "text": "https://www.timeout.com/sydney/things-to-do/queenscliff-tunnel",
+      "url": "https://reddit.com/r/sydney/comments/195lnoz/me_should_i_do_the_spit_to_manly_or_the_manly_to/khqn77u/",
+      "score": 3
+    },
+    {
+      "text": "T: Chicken and chick pea curry with Basmati Rice. I had some I’d made previously stuck in the freezer. Tonight was the night to defrost it. \n\nA: Headed to Melb tomorrow to see Mum, then Queenscliff fo",
+      "url": "https://reddit.com/r/sydney/comments/1d9de1a/thursday_night_thread/l7ctjr0/",
+      "score": 3
+    }
+  ]
+}

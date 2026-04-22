@@ -1,0 +1,66 @@
+{
+  "suburb": "Bossley Park",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:29.853582+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.982,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.982,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.997,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.982,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.982,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.925,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8581,
+    "disgust": 0.052,
+    "anger": 0.0251,
+    "sadness": 0.0162,
+    "fear": 0.0085,
+    "surprise": 0.0345,
+    "joy": 0.0055
+  },
+  "narrative": "Reddit discussions about Bossley Park are most positive about food and cafe (1.00) and transport (0.98). Residents are most critical about affordability (0.93) and nightlife (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "It's always been overblown and with a strong hint of classism and racism. \n\nIn saying that though, even with development it is still very much bland suburbia to me. There are parks, services, shops et",
+      "url": "https://reddit.com/r/sydney/comments/1ah1ika/why_do_people_still_trash_talk_western_sydney/kokqzt4/",
+      "score": 30
+    },
+    {
+      "text": "I'm a massive fan of public transport and use it for 90% of my daily travel needs. But I'm lucky to live in the inner west, an area with abundant public transport. \n\nThere are times for work or family",
+      "url": "https://reddit.com/r/sydney/comments/1bivdnn/streets_are_being_smashed_as_drivers_try_to_save/kvno1pa/",
+      "score": 8
+    },
+    {
+      "text": "Go out to Bossley Park then come back. Heaps of photocopied mansions there",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tqwd0/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Campbelltown",
+  "post_count": 211,
+  "fetched_at": "2026-04-18T01:32:51.393779+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.591,
+      "mentions": 101
+    },
+    "community": {
+      "score": 0.601,
+      "mentions": 173
+    },
+    "safety": {
+      "score": 0.458,
+      "mentions": 57
+    },
+    "nightlife": {
+      "score": 0.588,
+      "mentions": 43
+    },
+    "green_space": {
+      "score": 0.707,
+      "mentions": 30
+    },
+    "affordability": {
+      "score": 0.594,
+      "mentions": 39
+    },
+    "food_and_cafe": {
+      "score": 0.616,
+      "mentions": 23
+    },
+    "noise": {
+      "score": 0.49,
+      "mentions": 3
+    }
+  },
+  "emotions": {
+    "neutral": 0.5625,
+    "disgust": 0.0767,
+    "anger": 0.0558,
+    "fear": 0.067,
+    "surprise": 0.1278,
+    "sadness": 0.0612,
+    "joy": 0.0491
+  },
+  "narrative": "Reddit discussions about Campbelltown are most positive about green space (0.71) and food and cafe (0.62). Residents are most critical about noise (0.49) and safety (0.46). This analysis is based on 211 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "…because it’s Campbelltown. \n\nRightly or wrongly, Campbelltown has a bad rep. It’s also an outer suburb and an hour train trip from Central.",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kvinhak/",
+      "score": 705
+    },
+    {
+      "text": "Them old tin cans\nThem old tin cans that run the most important train to Campbelltown at 700mph",
+      "url": "https://reddit.com/r/sydney/comments/1fddmm8/them_old_tin_cans/",
+      "score": 494
+    },
+    {
+      "text": "What snake is this? \nWhat snakes are these? \nWe found them near Campbelltown. \n\nAre they lethal\n\n?",
+      "url": "https://reddit.com/r/sydney/comments/1gkog4i/what_snake_is_this/",
+      "score": 371
+    },
+    {
+      "text": "Sydney trains network disruptions.\nThe power supply issues at Strathfield from yesterday are still ongoing, train services will not be to time table and will likely be infrequent and sporadic.\n\nT1 Wes",
+      "url": "https://reddit.com/r/sydney/comments/1krab5m/sydney_trains_network_disruptions/",
+      "score": 351
+    },
+    {
+      "text": "If anyone is going to Canberra from Sydney and especially people who live in the south west, may I present the 777 bus and 779 coaches that go to Goulburn. These coaches only cost 10 dollars and use o",
+      "url": "https://reddit.com/r/sydney/comments/1br7149/if_anyone_is_going_to_canberra_from_sydney_and/",
+      "score": 306
+    },
+    {
+      "text": "I went for a drive on the newly opened M12 Motorway\nI started from the Northern Rd end (western end) and headed east to Elizabeth Dr, then back west, then east again via the WSI Airport link (Warami D",
+      "url": "https://reddit.com/r/sydney/comments/1rtd47r/i_went_for_a_drive_on_the_newly_opened_m12/",
+      "score": 304
+    },
+    {
+      "text": "My favourite pedestrian underpass in Campbelltown",
+      "url": "https://reddit.com/r/sydney/comments/1rguxfw/my_favourite_pedestrian_underpass_in_campbelltown/",
+      "score": 290
+    },
+    {
+      "text": "Campbelltown, are Opal cards \"not expected\" or \"not accepted\"?",
+      "url": "https://reddit.com/r/sydney/comments/194uwcg/campbelltown_are_opal_cards_not_expected_or_not/",
+      "score": 285
+    },
+    {
+      "text": "I'm not from there but some of my best friends are, so as a result, I have spent a lot of time in Campbelltown. Obviously I'm aware of the rep it has, but my God, I have never had so many compliments ",
+      "url": "https://reddit.com/r/sydney/comments/1bi8515/why_are_units_in_campbelltown_so_cheap/kviw73h/",
+      "score": 282
+    },
+    {
+      "text": "Life finds a way\nCampbelltown station",
+      "url": "https://reddit.com/r/sydney/comments/1d5em05/life_finds_a_way/",
+      "score": 268
+    }
+  ]
+}

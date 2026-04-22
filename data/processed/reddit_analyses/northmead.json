@@ -1,0 +1,101 @@
+{
+  "suburb": "Northmead",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:26.430721+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.664,
+      "mentions": 18
+    },
+    "green_space": {
+      "score": 0.564,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.502,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.502,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.486,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.487,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.972,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4942,
+    "surprise": 0.1817,
+    "disgust": 0.0796,
+    "joy": 0.0703,
+    "anger": 0.0629,
+    "sadness": 0.0753,
+    "fear": 0.036
+  },
+  "narrative": "Reddit discussions about Northmead are most positive about noise (0.97) and community (0.66). Residents are most critical about affordability (0.49) and safety (0.49). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney's councils realigned\nI had a bit of fun redesigning Sydney's local council areas. The idea was not \"how do we improve on the current\", but rather from a localised psychological point of view. I",
+      "url": "https://reddit.com/r/sydney/comments/1rn0lov/sydneys_councils_realigned/",
+      "score": 452
+    },
+    {
+      "text": "Raw chicken hanging at Northmead Dam \nBit of a weird sight I came across. Any idea what these could be for? First thought was fish bait but a bit strange since the basin only fills up when there is ra",
+      "url": "https://reddit.com/r/sydney/comments/1fhwc2t/raw_chicken_hanging_at_northmead_dam/",
+      "score": 393
+    },
+    {
+      "text": "PSA: water outage\n\nBAULKHAM HILLS, WINSTON HILLS and NORTHMEAD\n\nOur crews are responding to a fault that is affecting water supply to customers in the area.  We will identify the issue and restore the",
+      "url": "https://reddit.com/r/sydney/comments/1hf1ta9/psa_water_outage/",
+      "score": 97
+    },
+    {
+      "text": "Westmead and Northmead are basically bits of a meadow around the government house in Paramatta that were split off to become suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnosfr/",
+      "score": 44
+    },
+    {
+      "text": "Northmead and Westmead were derived from north/west meadow of the first farm in what’s now parramatta park",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnymc5/",
+      "score": 43
+    },
+    {
+      "text": "Parramatta should be either:\n\nEast Westmead or\n\nSouth Northmead",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjg0g73/",
+      "score": 31
+    },
+    {
+      "text": "Cheaper cinemas?\nLiving in Northmead and used to go to Reading cinema in either Auburn or Rouse Hill. I have noticed that they have gradually increased their prices to $22 for a standard ticket now! A",
+      "url": "https://reddit.com/r/sydney/comments/1hrd9l8/cheaper_cinemas/",
+      "score": 15
+    },
+    {
+      "text": "Lol, same at Northmead Bunnings except they graciously allowed 3 per customer. We just went back over several days to collect more, since we had to make multiple trips there anyways (currently renovat",
+      "url": "https://reddit.com/r/sydney/comments/1bcpqt6/pointless_rantpraise_the_bunnings_cardboard_box/kuhmstv/",
+      "score": 12
+    },
+    {
+      "text": "\"Cooking Fire\" = No Permit. Bonfire for burning off old wood = Permit. Both are not allowed during Fire Bans for obvious reasons, even cooking fires with briquettes or lump charcoal despite what all t",
+      "url": "https://reddit.com/r/sydney/comments/1agq0u1/is_there_anywhere_with_30_min_drive_of_sydney/kojnbvz/",
+      "score": 11
+    },
+    {
+      "text": "There’s a few that are directional eg Kellyville North, South Penrith, North Parramatta, East Killara etc.\n\nThere’s a few that seem similar but nowhere near each other (eg Annandale and Annangrove) - ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqhuc/",
+      "score": 10
+    }
+  ]
+}

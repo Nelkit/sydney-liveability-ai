@@ -1,0 +1,101 @@
+{
+  "suburb": "La Perouse",
+  "post_count": 40,
+  "fetched_at": "2026-04-18T02:09:41.438855+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.635,
+      "mentions": 32
+    },
+    "nightlife": {
+      "score": 0.526,
+      "mentions": 10
+    },
+    "food_and_cafe": {
+      "score": 0.516,
+      "mentions": 6
+    },
+    "transport": {
+      "score": 0.552,
+      "mentions": 14
+    },
+    "green_space": {
+      "score": 0.821,
+      "mentions": 11
+    },
+    "affordability": {
+      "score": 0.658,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.567,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.665,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "surprise": 0.1439,
+    "fear": 0.0625,
+    "disgust": 0.0385,
+    "neutral": 0.6128,
+    "anger": 0.0188,
+    "joy": 0.0986,
+    "sadness": 0.0248
+  },
+  "narrative": "Reddit discussions about La Perouse are most positive about green space (0.82) and noise (0.67). Residents are most critical about nightlife (0.53) and food and cafe (0.52). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Found this engine at La Perouse\nI was walking in the rock saw this guy. I had to take 2nd look into it. When I passed by it it looked like weird rock. Then I come back to it to check again. Yup it's p",
+      "url": "https://reddit.com/r/sydney/comments/1l6wkuz/found_this_engine_at_la_perouse/",
+      "score": 413
+    },
+    {
+      "text": "La Perouse New wharf open for business",
+      "url": "https://reddit.com/r/sydney/comments/1j01udj/la_perouse_new_wharf_open_for_business/",
+      "score": 388
+    },
+    {
+      "text": "Aurora Australis from La Perouse",
+      "url": "https://reddit.com/r/sydney/comments/1ov1ctr/aurora_australis_from_la_perouse/",
+      "score": 307
+    },
+    {
+      "text": "Water dragon at La Perouse beach today\nWalking at La Pa today & this water dragon appeared he wasn’t there at the start of the walk but was on turnaround. Never seen one at a beach before. He kept his",
+      "url": "https://reddit.com/r/sydney/comments/1jxb32g/water_dragon_at_la_perouse_beach_today/",
+      "score": 295
+    },
+    {
+      "text": "There’s a storm a-brewing!\nPhotos from la perouse",
+      "url": "https://reddit.com/r/sydney/comments/1q3gtfd/theres_a_storm_abrewing/",
+      "score": 227
+    },
+    {
+      "text": "First look at plans for First Nations Cultural Precinct on the La Perouse headland 🖤❤️💛\nJust announced. \n\nMore info  here:\n\nhttps://www.facebook.com/share/p/1Bsdb1dqL1/\n\nhttps://www.randwick.nsw.gov.a",
+      "url": "https://reddit.com/r/sydney/comments/1kx40pt/first_look_at_plans_for_first_nations_cultural/",
+      "score": 216
+    },
+    {
+      "text": "New Future Metro Plans Map! (including Airport Stations, La Perouse and rail connection from Leppinton to Aerotropolis Core)",
+      "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/",
+      "score": 192
+    },
+    {
+      "text": "Bare Island, La Perouse this arvo\nBit of a breeze down here!",
+      "url": "https://reddit.com/r/sydney/comments/1lotp34/bare_island_la_perouse_this_arvo/",
+      "score": 148
+    },
+    {
+      "text": "Bare Island Residents\nI was at La Perouse last night with my family and we were on the bridge to Bare Island. There was a couple nearby reading the signs inside the island, behind the gate, when a lad",
+      "url": "https://reddit.com/r/sydney/comments/1q78w90/bare_island_residents/",
+      "score": 82
+    },
+    {
+      "text": "Where do you take someone for their second visit to Sydney?\nHowdy\n\nMy best mate's visiting Sydney for the second time, at Xmas for 3 weeks, their previous visit was last Xmas (5 weeks).  \n  \nWasn't ex",
+      "url": "https://reddit.com/r/sydney/comments/1djz93t/where_do_you_take_someone_for_their_second_visit/",
+      "score": 81
+    }
+  ]
+}

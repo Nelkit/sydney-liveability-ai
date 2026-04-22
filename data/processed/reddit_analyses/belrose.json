@@ -1,0 +1,101 @@
+{
+  "suburb": "Belrose",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:12.876985+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.063,
+      "mentions": 7
+    },
+    "community": {
+      "score": 0.292,
+      "mentions": 7
+    },
+    "transport": {
+      "score": 0.216,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.201,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.224,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.469,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.1334,
+    "anger": 0.0661,
+    "sadness": 0.0504,
+    "surprise": 0.213,
+    "neutral": 0.3811,
+    "fear": 0.1346,
+    "joy": 0.0213
+  },
+  "narrative": "Reddit discussions about Belrose are most positive about food and cafe (0.50) and noise (0.50). Residents are most critical about affordability (0.20) and safety (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Unintentionally watching the news tonight, I wondered why it's described as \"a cyclist was killed\" rather than, say, \"a Belrose father of 3 was killed today while riding his bike\"?\n\nI mean, they don't",
+      "url": "https://reddit.com/r/sydney/comments/1d9f2we/cyclist_dies_after_horror_northern_beaches_crash/l7cw140/",
+      "score": 159
+    },
+    {
+      "text": "Belrose crash: Driver charged after cyclists injured in horror northern beaches smash",
+      "url": "https://reddit.com/r/sydney/comments/1d8cmie/belrose_crash_driver_charged_after_cyclists/",
+      "score": 128
+    },
+    {
+      "text": "What’s Normanhurst like to live in? Would you prefer life in Belrose/Frenchs Forest or Normanhurst?\nLooking to buy a home in Sydney and looks like me and the missus can afford something around the abo",
+      "url": "https://reddit.com/r/sydney/comments/1dzrszg/whats_normanhurst_like_to_live_in_would_you/",
+      "score": 33
+    },
+    {
+      "text": "Not sure if all are still there but I know there were ones in Manly vale, allambie heights, white bay park in Balmain, Bondi beach, belrose, hockey ground wall in Newtown, CP wall in collaroy plateau",
+      "url": "https://reddit.com/r/sydney/comments/1aonuyu/legal_graffiti_walls_in_sydney/kq1f1yf/",
+      "score": 4
+    },
+    {
+      "text": "In Belrose?",
+      "url": "https://reddit.com/r/sydney/comments/1d8w0qn/sydney_daily_random_discussion_thread_06062024/l7a6mfn/",
+      "score": 4
+    },
+    {
+      "text": "At least I don’t live anywhere close enough to Belrose and Terrey Hills, fuck that guy who owns the pharmacy.",
+      "url": "https://reddit.com/r/sydney/comments/1ami8mb/forestway_pharmacy_wants_you_to_know_exactly_why/kppgpi1/",
+      "score": 3
+    },
+    {
+      "text": "Palomino up in Belrose used to do trail rides when I was a kid, a while ago now. But may be worth a call, they're still running.",
+      "url": "https://reddit.com/r/sydney/comments/1buf7aa/horse_riding/kxsqmwo/",
+      "score": 3
+    },
+    {
+      "text": "I drove it most days for 6 months then every weekend once I moved to Belrose and I saw cyclists in the left lane numerous times",
+      "url": "https://reddit.com/r/sydney/comments/1d8cmie/belrose_crash_driver_charged_after_cyclists/l75ou32/",
+      "score": 3
+    },
+    {
+      "text": "There’s a few around Terry hills area that are good.\n\nFlower power\nHarvest seeds and native plants\nFour seasons garden centre Belrose\n\n\nThere’s a few others on Google maps in that area but not been to",
+      "url": "https://reddit.com/r/sydney/comments/198nb1u/nurseries_in_sydney_and_places_where_people_buy/ki99elx/",
+      "score": 2
+    },
+    {
+      "text": "I don't think he was from belrose btw, earlier articles said he rode to belrose from the north shore",
+      "url": "https://reddit.com/r/sydney/comments/1d9f2we/cyclist_dies_after_horror_northern_beaches_crash/l7df2hi/",
+      "score": 2
+    }
+  ]
+}

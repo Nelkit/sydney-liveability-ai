@@ -1,0 +1,101 @@
+{
+  "suburb": "Villawood",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:28.276555+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.724,
+      "mentions": 11
+    },
+    "safety": {
+      "score": 0.403,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.462,
+      "mentions": 7
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.657,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6037,
+    "surprise": 0.112,
+    "disgust": 0.0283,
+    "anger": 0.0089,
+    "sadness": 0.1551,
+    "joy": 0.0448,
+    "fear": 0.0471
+  },
+  "narrative": "Reddit discussions about Villawood are most positive about community (0.72) and food and cafe (0.66). Residents are most critical about transport (0.46) and safety (0.40). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I was just curious as to other 80's and 90's \"Westy's\" opinions on today's Essay culture?\nEdit - I meant to say Eshay in my title but autocorrect screwed me and I couldn't edit the title.\n\nI was born ",
+      "url": "https://reddit.com/r/sydney/comments/1bpoxvl/i_was_just_curious_as_to_other_80s_and_90s_westys/",
+      "score": 61
+    },
+    {
+      "text": "Petrol prices at the pump are not regulated and they can charge whatever they like. There’s usually a cycle of prices going up and down. Most petrol stations follow each other with price rises while M",
+      "url": "https://reddit.com/r/sydney/comments/1deldyh/what_is_with_the_price_of_petrol/l8cn9rr/",
+      "score": 28
+    },
+    {
+      "text": "Up there with Villawood and Guildford as the most depressing suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1bx3abg/random_sydney_suburbs_yagoona/kyae519/",
+      "score": 21
+    },
+    {
+      "text": "If you're using the T2 or T8 lines then that’s related to the T3 shutdown unfortunately.   It’s causing some timetable changes impacting the T2 line mainly due to requiring trains to Liverpool via Sef",
+      "url": "https://reddit.com/r/sydney/comments/191fimg/peak_train_fares_for_off_peak_service/kgv6fw1/",
+      "score": 15
+    },
+    {
+      "text": "I hear Villawood is really on the come up",
+      "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/koc1bj7/",
+      "score": 12
+    },
+    {
+      "text": "Villawood to Valhalla",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjg7h92/",
+      "score": 11
+    },
+    {
+      "text": "Baytouna in Villawood and also Afandina, also in Villawood, make the best Lebanese food I've had at a restaurant. These are the closest to home-made I've personally had. Can't go wrong with the mixed ",
+      "url": "https://reddit.com/r/sydney/comments/1ab59cm/what_lebanesemiddle_eastern_foods_and_restaurants/kjldxss/",
+      "score": 5
+    },
+    {
+      "text": "Villawood?\n\nTheres a Maccas with a playground + a tramampoline place and a Kidsmania indoor playground?\n\nBe forewarned, the parking is atrocious.",
+      "url": "https://reddit.com/r/sydney/comments/1bawmbg/what_bunnings_in_sydney_western_sydney_has_the/ku645us/",
+      "score": 5
+    },
+    {
+      "text": "Either Burwood, Villawood or Glasgow.",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgf1n9i/",
+      "score": 4
+    },
+    {
+      "text": "Bunnings Bonnyrigg is right opposite the T-Way station. Probably the closest you'll get \n\n\nTheres also Bunnings Villawood across the road from the station",
+      "url": "https://reddit.com/r/sydney/comments/1bh1f80/sydney_daily_random_discussion_thread_18032024/kvcp1se/",
+      "score": 3
+    }
+  ]
+}

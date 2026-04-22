@@ -1,0 +1,71 @@
+{
+  "suburb": "Bligh Park",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:07.079846+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.548,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.548,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.4223,
+    "neutral": 0.4668,
+    "anger": 0.0143,
+    "sadness": 0.0277,
+    "joy": 0.0074,
+    "disgust": 0.0115,
+    "fear": 0.0501
+  },
+  "narrative": "Reddit discussions about Bligh Park are most positive about green space (0.55) and community (0.55). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Just to Townson Road? It needs another lane in both directions all the way to Bligh Park! We drove out there to see family on the weekend and it took us almost as long to get from the M7 to Garfield R",
+      "url": "https://reddit.com/r/sydney/comments/1dhm2rv/richmond_road_upgrade_between_m7_motorway_and/l8xxth5/",
+      "score": 11
+    },
+    {
+      "text": "Not a matter of \"reaching Bligh Park\" - the lights just have to be strong enough to reach the cloud base.  The height of the cloud base determines how far away you can see the lights on the clouds.",
+      "url": "https://reddit.com/r/sydney/comments/1bynz18/northwest_west_sydney_strange_lights_in_the_sky/kykx25k/",
+      "score": 4
+    },
+    {
+      "text": "I get them all the time on my front lawn I’m in Bligh Park they come out of the Windsor down nature reserve usually at dusk.",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kw92t/",
+      "score": 3
+    },
+    {
+      "text": "Ah, that could certainly explain the lights around St Marys area!\n\nI wonder if the lights were strong enough to reach Bligh Park. There were quite a number of posts about the lights being seen there. ",
+      "url": "https://reddit.com/r/sydney/comments/1bynz18/northwest_west_sydney_strange_lights_in_the_sky/kykp9ym/",
+      "score": 2
+    }
+  ]
+}

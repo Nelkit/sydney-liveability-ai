@@ -1,0 +1,101 @@
+{
+  "suburb": "Crows Nest",
+  "post_count": 114,
+  "fetched_at": "2026-04-18T01:55:16.574683+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.71,
+      "mentions": 43
+    },
+    "safety": {
+      "score": 0.722,
+      "mentions": 29
+    },
+    "community": {
+      "score": 0.637,
+      "mentions": 86
+    },
+    "food_and_cafe": {
+      "score": 0.644,
+      "mentions": 27
+    },
+    "nightlife": {
+      "score": 0.533,
+      "mentions": 37
+    },
+    "affordability": {
+      "score": 0.705,
+      "mentions": 13
+    },
+    "green_space": {
+      "score": 0.665,
+      "mentions": 12
+    },
+    "noise": {
+      "score": 0.664,
+      "mentions": 5
+    }
+  },
+  "emotions": {
+    "neutral": 0.5496,
+    "surprise": 0.112,
+    "fear": 0.0518,
+    "sadness": 0.0805,
+    "joy": 0.0897,
+    "anger": 0.0547,
+    "disgust": 0.0617
+  },
+  "narrative": "Reddit discussions about Crows Nest are most positive about safety (0.72) and transport (0.71). Residents are most critical about community (0.64) and nightlife (0.53). This analysis is based on 114 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney Metro doors opened whilst moving this morning 2nd April 2025\nSydney Metro door remains opened whilst moving between Chatswood and Crows Nest this morning.  Please stay safe everyone when travel",
+      "url": "https://reddit.com/r/sydney/comments/1jp8h80/sydney_metro_doors_opened_whilst_moving_this/",
+      "score": 2769
+    },
+    {
+      "text": "Sydney is changing. El Jannah is opening in crows nest!\nSo when does the public listing come and they are in sydney airport next? And the chicken won’t be the same of course",
+      "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/",
+      "score": 613
+    },
+    {
+      "text": "Camilla, having a butcher’s hook on the way to Crows Nest Fest\nNorth Sydney St Thomas",
+      "url": "https://reddit.com/r/sydney/comments/1g7sjaa/camilla_having_a_butchers_hook_on_the_way_to/",
+      "score": 535
+    },
+    {
+      "text": "Why are all purveyors of Rugs all going out of business?\nThis rug place in Crows Nest has had a liquidation sale for as long as I can remember.\n\n“Up to” 90% off!\n\nIs this the most cut throat industry ",
+      "url": "https://reddit.com/r/sydney/comments/1aubujm/why_are_all_purveyors_of_rugs_all_going_out_of/",
+      "score": 318
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Crows Nest sunset",
+      "url": "https://reddit.com/r/sydney/comments/1giiuxz/crows_nest_sunset/",
+      "score": 237
+    },
+    {
+      "text": "Trolley Party? Coles Crows Nest\nAny idea why? Security?",
+      "url": "https://reddit.com/r/sydney/comments/1k7eglc/trolley_party_coles_crows_nest/",
+      "score": 204
+    },
+    {
+      "text": "Crows Nest metro station community event",
+      "url": "https://reddit.com/r/sydney/comments/1d0pg74/crows_nest_metro_station_community_event/",
+      "score": 185
+    },
+    {
+      "text": "The metro was heaps fun!\nJust went on it with some friends. The two year old loved it in particular. So fast and so smooth!\n\nWent from Sydenham to Chatswood for fun and to get dinner at Chatwood.\n\nNex",
+      "url": "https://reddit.com/r/sydney/comments/1evzojj/the_metro_was_heaps_fun/",
+      "score": 180
+    }
+  ]
+}

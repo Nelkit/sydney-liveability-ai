@@ -1,0 +1,27 @@
+{
+  "Glebe": {
+    "transport_score": 0.843,
+    "avg_services_per_hour": 8.64,
+    "stop_count": 69
+  },
+  "Haymarket": {
+    "transport_score": 0.894,
+    "avg_services_per_hour": 9.15,
+    "stop_count": 130
+  },
+  "Newtown": {
+    "transport_score": 0.969,
+    "avg_services_per_hour": 9.92,
+    "stop_count": 59
+  },
+  "Redfern": {
+    "transport_score": 0.814,
+    "avg_services_per_hour": 8.34,
+    "stop_count": 75
+  },
+  "Surry Hills": {
+    "transport_score": 1.0,
+    "avg_services_per_hour": 10.24,
+    "stop_count": 66
+  }
+}

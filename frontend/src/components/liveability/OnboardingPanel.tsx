@@ -115,7 +115,7 @@ export function OnboardingPanel({
             >
               <h1 className="text-[42px] font-extrabold tracking-tight text-slate-800 sm:text-[56px]">
                 Hi there,
-                <span className="bg-gradient-to-r from-slate-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent"> let's find your best suburb</span>
+                <span className="bg-gradient-to-r from-slate-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent"> let&apos;s find your best suburb</span>
               </h1>
               <p className="mx-auto mt-4 max-w-[560px] text-[15px] text-slate-500 sm:text-base">
                 Ask anything about transport, safety, affordability and lifestyle. I will build your profile in chat and then open the live map.

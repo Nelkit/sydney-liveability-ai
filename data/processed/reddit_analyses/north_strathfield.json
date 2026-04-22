@@ -1,0 +1,101 @@
+{
+  "suburb": "North Strathfield",
+  "post_count": 30,
+  "fetched_at": "2026-04-18T02:12:29.902343+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.68,
+      "mentions": 24
+    },
+    "transport": {
+      "score": 0.742,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.627,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.862,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.895,
+      "mentions": 6
+    },
+    "green_space": {
+      "score": 0.949,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.838,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.842,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "neutral": 0.6375,
+    "joy": 0.0729,
+    "fear": 0.061,
+    "surprise": 0.1279,
+    "anger": 0.0232,
+    "disgust": 0.0466,
+    "sadness": 0.0308
+  },
+  "narrative": "Reddit discussions about North Strathfield are most positive about green space (0.95) and affordability (0.90). Residents are most critical about community (0.68) and safety (0.63). This analysis is based on 30 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "North Strathfield Station has a free book exchange area.  ",
+      "url": "https://reddit.com/r/sydney/comments/1i3uujr/north_strathfield_station_has_a_free_book/",
+      "score": 247
+    },
+    {
+      "text": "I guess North strathfield is not the korean part of strathfield then",
+      "url": "https://reddit.com/r/sydney/comments/1d8j1aj/this_sydney_cafe_only_hiring_white_people/l76k5wi/",
+      "score": 137
+    },
+    {
+      "text": "Why is it North Strathfield, but Strathfield South?\nThat's it, that's the question.\n\nIn researching this I've learned that Strathfield used to be called Redmire and Strathfield South was Druitt Town (",
+      "url": "https://reddit.com/r/sydney/comments/1f2bazw/why_is_it_north_strathfield_but_strathfield_south/",
+      "score": 96
+    },
+    {
+      "text": "One that has bugged me is that there is North Strathfield and Strathfield South",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnqo14/",
+      "score": 90
+    },
+    {
+      "text": "Lidcombe is the place you want to be for KBBQ. You get more bang for your buck in terms of service and side dishes.\n\nFor what it's worth, all the good Korean restaurants from Strathfield have now migr",
+      "url": "https://reddit.com/r/sydney/comments/18vtrnw/best_korean_bbq/kftkyhu/",
+      "score": 38
+    },
+    {
+      "text": "A lot of Koreans moved from Strathfield to Lidcombe so you'll find a few restaurants there. There's a few shops around Eastwood in particular on the hilly side of the train station.\n\nI do like Myeongd",
+      "url": "https://reddit.com/r/sydney/comments/1c58y1h/korean_restaurant_recommendations/kzsnfkn/",
+      "score": 31
+    },
+    {
+      "text": "Preferred practice is to name suburbs with the cardinal direction as a suffix (Strathfield South) so that in a list, they’re all grouped together. North Strathfield appears alongside all the “N” subur",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo1sxo/",
+      "score": 26
+    },
+    {
+      "text": ">**Not stopping at**\r  \nStarted 2h ago, ended 2h ago\r  \nNorth Strathfield,Concord West,West Ryde,Denistone,Eastwood due to an issue with a freight train at Asquith. Please allow extra travel time.\n\nTh",
+      "url": "https://reddit.com/r/sydney/comments/199jhc4/just_a_shoutout_to_transport_nsw/kieqpgs/",
+      "score": 22
+    },
+    {
+      "text": "Lived nearby until recently but not in the old HMV factory complex itself. So don’t know what the actual build quality etc is like, but I can comment on the area - \nPros:\n- Pretty quiet and safe for a",
+      "url": "https://reddit.com/r/sydney/comments/1cjv9jz/nipper_street_homebush/l2ivdbs/",
+      "score": 16
+    },
+    {
+      "text": "Self wash car bays where on earth are they?\nHowdy all,\n\nI have scoured a few previous threads, but, alas have not really shown anything up that is recent.\n\nI live in the inner west (Burwood/Concord ar",
+      "url": "https://reddit.com/r/sydney/comments/190nb63/self_wash_car_bays_where_on_earth_are_they/",
+      "score": 14
+    }
+  ]
+}
