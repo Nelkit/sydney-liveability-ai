@@ -13,6 +13,7 @@ LLM Configuration:
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from typing import Any
 
 from crewai import Agent, Task
@@ -22,6 +23,21 @@ from sqlalchemy import select
 from config import get_agent_llm, settings
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
+
+_REDDIT_CACHE_DIR = Path(__file__).resolve().parents[3] / "data" / "processed" / "reddit_analyses"
+
+
+def _get_reddit_context(suburb: str) -> dict[str, Any] | None:
+    """Load pre-computed Reddit NLP analysis for a suburb from local file cache."""
+    slug = suburb.lower().replace(" ", "_").replace("-", "_")
+    path = _REDDIT_CACHE_DIR / f"{slug}.json"
+    if not path.exists():
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
 
 
 def _normalise_debug_mode() -> str:
@@ -61,23 +77,30 @@ def _format_debug_passthrough(agent_key: str, agent_output: dict[str, Any]) -> d
 def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
     """Render all agent outputs together in a consolidated debug response."""
     consolidated = "ALL AGENTS DEBUG OUTPUT:\n\n"
-    
+
+    suburb_scores: list[dict[str, Any]] = []
+
     for agent_key in ("router", "crime", "sentiment", "gis", "comparator"):
         output = agent_outputs.get(agent_key)
         if output and isinstance(output, dict):
             consolidated += f"{agent_key.upper()}:\n"
-            
+
             # Handle nested structure: {suburb: result}
             if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
                 for suburb, suburb_output in output.items():
                     consolidated += f"  {suburb}:\n"
                     consolidated += json.dumps(suburb_output, ensure_ascii=True, indent=4).replace("\n", "\n    ") + "\n"
+                    if agent_key == "gis" and isinstance(suburb_output, dict):
+                        suburb_scores.append({
+                            "suburb": suburb,
+                            "score": suburb_output.get("combined_score"),
+                        })
             else:
                 # Handle flat structure
                 consolidated += json.dumps(output, ensure_ascii=True, indent=2).replace("\n", "\n  ") + "\n"
-            
+
             consolidated += "\n"
-    
+
     # Keep response shape identical to /api/chat contract for frontend compatibility.
     return {
         "answer": consolidated,
@@ -88,7 +111,7 @@ def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
                 "source": "query_crew",
             }
         ],
-        "suburb_scores": [],
+        "suburb_scores": suburb_scores,
         "map_state": None,
     }
 
@@ -163,45 +186,89 @@ def _build_context_from_db(question: str, suburbs_list: list[str] | None = None)
         return context
 
 
-def _build_synthesis_prompt(question: str, context: dict[str, Any], agent_outputs: dict[str, Any] | None = None) -> str:
-    """Build the LLM prompt combining question, DB context, and agent outputs.
-    
-    Handles both flat (single-suburb per specialist) and nested (multi-suburb per specialist) structures.
-    """
-    prompt = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
+def _build_synthesis_prompt(
+    question: str,
+    context: dict[str, Any],
+    agent_outputs: dict[str, Any] | None = None,
+    reddit_by_suburb: dict[str, Any] | None = None,
+) -> str:
+    """Build the LLM prompt combining question, DB context, agent outputs, and Reddit data."""
+    is_general = not any(
+        kw in question.lower()
+        for kw in ("park", "transport", "facilities", "gym", "cafe", "walk",
+                   "amenities", "safe", "crime", "feel", "vibe", "community",
+                   "compare", "versus", "vs", "better")
+    )
+
+    if is_general:
+        format_instruction = (
+            "Write 2-3 paragraphs using ONLY the GIS & Facilities data as your primary source. "
+            "Cover: facilities score, key amenities counts (cafes, restaurants, parks, schools, etc.), OSM score, and combined liveability score. "
+            "At the very end, add ONE closing sentence (max 20 words) mentioning what residents value most, using the Reddit top aspect — no scores, no paragraph. "
+            "STRICT RULES: Do NOT start with Reddit. Do NOT write a Reddit paragraph. Do NOT list Reddit aspect scores. "
+            "Do NOT use bullet lists."
+        )
+    else:
+        format_instruction = (
+            "Answer in 2-3 focused sentences addressing exactly what was asked. "
+            "Be specific with numbers. Do not list unrelated data."
+        )
+
+    sections: list[str] = []
+
+    # GIS / facilities data
+    db_suburbs = context.get("suburbs", [])
+    if db_suburbs:
+        sections.append(f"GIS & Facilities Data:\n{json.dumps(db_suburbs, indent=2)}")
+
+    # Agent specialist outputs
+    if agent_outputs:
+        for agent_key, output in agent_outputs.items():
+            if not output or not isinstance(output, dict):
+                continue
+            if any(isinstance(v, dict) and "combined_score" in v for v in output.values()):
+                lines = [f"{agent_key.upper()} data (per suburb):"]
+                for sub, sub_out in output.items():
+                    lines.append(f"  {sub}: {json.dumps(sub_out, indent=2)}")
+                sections.append("\n".join(lines))
+            elif "pending" not in json.dumps(output):
+                sections.append(f"{agent_key.upper()} data:\n{json.dumps(output, indent=2)}")
+
+    # Reddit sentiment — secondary context, top aspect only
+    if reddit_by_suburb:
+        reddit_lines = ["Reddit Community Sentiment (secondary context — use sparingly):"]
+        for sub, rdata in reddit_by_suburb.items():
+            if not rdata:
+                continue
+            aspects = rdata.get("aspects", {})
+            scored = [(k, v.get("score", 0)) for k, v in aspects.items() if v.get("mentions", 0) > 0]
+            if scored:
+                top = max(scored, key=lambda x: x[1])
+                reddit_lines.append(f"  {sub}: residents rate '{top[0].replace('_', ' ')}' highest ({top[1]:.2f}).")
+            else:
+                reddit_lines.append(f"  {sub}: limited community data available.")
+        sections.append("\n".join(reddit_lines))
+
+    weights = context.get("weights") or {}
+    if weights:
+        sections.append(f"User Preference Weights:\n{json.dumps(weights, indent=2)}")
+
+    data_block = "\n\n".join(sections) if sections else "No data available."
+
+    return f"""You are a Sydney liveability expert assistant. Answer the user's question using only the data provided below.
 
 User Question: {question}
 
-Available Suburb Data:
-{json.dumps(context.get('suburbs', []), indent=2)}
+Available Data:
+{data_block}
 
 Instructions:
-1. Answer based ONLY on the provided data above
-2. Be specific with numbers and metrics
-3. For out-of-scope suburbs, respond: "I don't have data on that suburb yet"
-4. If the question has spatial intent (comparing suburbs), suggest top suburbs by liveability
-5. Keep answer concise (2-3 sentences max unless asking for comparison)
-6. Always cite your data source (facilities, transport, amenities)
+- {format_instruction}
+- Primary source is always GIS & Facilities data. Reddit is supplementary only.
+- Use only data provided above. Do not invent figures.
+- For suburbs with no data, say "I don't have data on that suburb yet."
+- Do not cite sources inline — just state the facts naturally.
 """
-    weights = context.get("weights")
-    if weights:
-        prompt += f"\nUser Preference Weights:\n{json.dumps(weights, indent=2)}\n"
-    
-    # Add agent outputs if available
-    if agent_outputs:
-        prompt += "\n\nAdditional Specialist Agent Outputs:\n"
-        for agent_key, output in agent_outputs.items():
-            if output and isinstance(output, dict):
-                # Handle nested structure: {suburb: result} for multi-suburb agents
-                if any(isinstance(v, dict) and "combined_score" in v for v in output.values()):
-                    prompt += f"\n{agent_key.upper()} (multi-suburb):\n"
-                    for suburb, suburb_output in output.items():
-                        prompt += f"  {suburb}: {json.dumps(suburb_output, indent=2)}\n"
-                else:
-                    # Handle flat structure: direct result
-                    prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2)}\n"
-    
-    return prompt
 
 
 def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
@@ -253,60 +320,84 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
 
     try:
         # Extract suburbs from nested specialist outputs (for context building)
-        suburbs_from_specialists = set()
+        suburbs_from_specialists: set[str] = set()
         if isinstance(outputs, dict):
             for agent_key, output in outputs.items():
                 if isinstance(output, dict):
-                    # Check if nested (multi-suburb): {suburb: result}
                     if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
                         suburbs_from_specialists.update(output.keys())
-                    # Check if flat with suburb key
                     elif "suburb" in output:
                         suburbs_from_specialists.add(output["suburb"])
-        
-        # Build context from DB (facilities, transport, OSM) - limit to mentioned suburbs if available
-        context = _build_context_from_db(
-            question,
-            list(suburbs_from_specialists) if suburbs_from_specialists else None
-        )
+
+        suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
+
+        # Build context from DB (facilities, transport, OSM)
+        context = _build_context_from_db(question, suburbs_list)
         context["weights"] = payload.get("weights") or {}
-        
-        # Build synthesis prompt
+
+        # Load Reddit sentiment for mentioned suburbs
+        reddit_by_suburb: dict[str, Any] = {}
+        for sub in (suburbs_list or []):
+            rdata = _get_reddit_context(sub)
+            if rdata:
+                reddit_by_suburb[sub] = rdata
+
+        # Build synthesis prompt including Reddit data
         synthesis_prompt = _build_synthesis_prompt(
             question,
             context,
-            agent_outputs=outputs if isinstance(outputs, dict) and outputs else None
+            agent_outputs=outputs if isinstance(outputs, dict) and outputs else None,
+            reddit_by_suburb=reddit_by_suburb if reddit_by_suburb else None,
         )
-        
+
         # Call LLM using the synthesiser agent configuration.
         llm = get_agent_llm("synthesiser")
         response = llm.call(synthesis_prompt)
-        
+
         answer = str(response).strip() if response else "Unable to generate response"
-        
-        # Build suburb_scores from context (DB-sourced liveability scores)
-        suburb_scores = [
+
+        # Build suburb_scores — prefer GIS combined_score, fall back to liveability_score
+        gis_output = outputs.get("gis", {}) if isinstance(outputs, dict) else {}
+        if isinstance(gis_output, dict) and gis_output:
+            if any(isinstance(v, dict) and "combined_score" in v for v in gis_output.values()):
+                suburb_scores = [
+                    {"suburb": sub_name, "score": sub_data.get("combined_score")}
+                    for sub_name, sub_data in gis_output.items()
+                    if isinstance(sub_data, dict)
+                ]
+            elif "combined_score" in gis_output:
+                suburb_scores = [{"suburb": gis_output.get("suburb", ""), "score": gis_output.get("combined_score")}]
+            else:
+                suburb_scores = []
+        else:
+            suburb_scores = [
+                {"suburb": sub.get("name", ""), "score": sub.get("liveability_score")}
+                for sub in context.get("suburbs", [])
+                if sub.get("liveability_score") is not None
+            ]
+
+        # Build sources — always include GIS; add Reddit when available
+        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else (suburbs_list[0] if suburbs_list else "Sydney")
+        sources: list[dict[str, Any]] = [
             {
-                "suburb": sub.get("name", ""),
-                "score": sub.get("liveability_score", 0),
+                "text": "Facilities, transport, and amenity data",
+                "suburb": main_suburb,
+                "source": "City of Sydney ArcGIS + OSM + Transport API",
             }
-            for sub in context.get("suburbs", [])
         ]
-        
-        # If no suburbs in context but outputs were analyzed, mention them
-        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else "Sydney"
-        
+        for sub, rdata in reddit_by_suburb.items():
+            post_count = rdata.get("post_count", 0)
+            sources.append({
+                "text": f"Reddit community analysis ({post_count} posts)",
+                "suburb": sub,
+                "source": "Reddit r/sydney",
+            })
+
         return {
             "answer": answer,
-            "sources": [
-                {
-                    "text": "Facilities, transport, and amenity data",
-                    "suburb": main_suburb,
-                    "source": "City of Sydney ArcGIS + OSM + Transport API",
-                }
-            ],
+            "sources": sources,
             "suburb_scores": suburb_scores,
-            "map_state": None,  # TODO: update when spatial intent is detected
+            "map_state": None,
         }
     except Exception as e:
         return {
