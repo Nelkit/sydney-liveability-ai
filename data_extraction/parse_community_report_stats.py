@@ -29,6 +29,10 @@ REPORT_CONFIG = {
         "source": "A community vision for Haymarket",
         "default_suburb": "Haymarket",
     },
+    "Haymarket Vision engagement report.pdf": {
+        "source": "Haymarket Vision engagement report",
+        "default_suburb": "Haymarket",
+    },
 }
 
 

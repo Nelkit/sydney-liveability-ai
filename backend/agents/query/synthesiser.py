@@ -21,6 +21,7 @@ from crewai.tools import tool
 from sqlalchemy import select
 
 from config import get_agent_llm, settings
+from db.chromadb import PDF_COLLECTION, REDDIT_COLLECTION, query_chunks
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
 
@@ -38,6 +39,23 @@ def _get_reddit_context(suburb: str) -> dict[str, Any] | None:
             return json.load(f)
     except Exception:
         return None
+
+
+def _retrieve_chromadb_chunks(
+    question: str,
+    suburbs_list: list[str] | None = None,
+    k_per_collection: int = 3,
+) -> list[dict[str, Any]]:
+    """Query community_insights and reddit_posts for semantically relevant chunks."""
+    suburb_filter = {"suburb": {"$in": suburbs_list}} if suburbs_list else None
+    chunks: list[dict[str, Any]] = []
+    for collection in (PDF_COLLECTION, REDDIT_COLLECTION):
+        try:
+            results = query_chunks(question, collection_name=collection, k=k_per_collection, filters=suburb_filter)
+            chunks.extend(results)
+        except Exception:
+            pass
+    return chunks
 
 
 def _normalise_debug_mode() -> str:
@@ -116,7 +134,7 @@ def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _build_context_from_db(question: str, suburbs_list: list[str] | None = None) -> dict[str, Any]:
+def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, Any]:
     """Retrieve suburb data from DB for synthesis context.
     
     Returns dict with suburbs data including facilities, transport, OSM scores.
@@ -191,6 +209,7 @@ def _build_synthesis_prompt(
     context: dict[str, Any],
     agent_outputs: dict[str, Any] | None = None,
     reddit_by_suburb: dict[str, Any] | None = None,
+    chromadb_chunks: list[dict[str, Any]] | None = None,
 ) -> str:
     """Build the LLM prompt combining question, DB context, agent outputs, and Reddit data."""
     is_general = not any(
@@ -249,6 +268,17 @@ def _build_synthesis_prompt(
                 reddit_lines.append(f"  {sub}: limited community data available.")
         sections.append("\n".join(reddit_lines))
 
+    # ChromaDB community chunks — resident quotes from PDFs and Reddit
+    if chromadb_chunks:
+        lines = ["Relevant community context (ChromaDB):"]
+        for i, chunk in enumerate(chromadb_chunks, 1):
+            text = chunk["text"][:400]
+            meta = chunk.get("metadata", {})
+            source = meta.get("source", "unknown")
+            suburb = meta.get("suburb", "unknown")
+            lines.append(f'Chunk {i} [source: {source} · suburb: {suburb}]:\n"{text}"')
+        sections.append("\n".join(lines))
+
     weights = context.get("weights") or {}
     if weights:
         sections.append(f"User Preference Weights:\n{json.dumps(weights, indent=2)}")
@@ -264,10 +294,10 @@ Available Data:
 
 Instructions:
 - {format_instruction}
-- Primary source is always GIS & Facilities data. Reddit is supplementary only.
+- Primary source is always GIS & Facilities data. Community context (ChromaDB) provides resident quotes to support claims.
 - Use only data provided above. Do not invent figures.
 - For suburbs with no data, say "I don't have data on that suburb yet."
-- Do not cite sources inline — just state the facts naturally.
+- Cite ChromaDB chunks naturally when they support a claim — mention the source type (pdf or reddit).
 """
 
 
@@ -322,7 +352,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         # Extract suburbs from nested specialist outputs (for context building)
         suburbs_from_specialists: set[str] = set()
         if isinstance(outputs, dict):
-            for agent_key, output in outputs.items():
+            for _agent_key, output in outputs.items():
                 if isinstance(output, dict):
                     if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
                         suburbs_from_specialists.update(output.keys())
@@ -332,7 +362,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
 
         # Build context from DB (facilities, transport, OSM)
-        context = _build_context_from_db(question, suburbs_list)
+        context = _build_context_from_db(suburbs_list)
         context["weights"] = payload.get("weights") or {}
 
         # Load Reddit sentiment for mentioned suburbs
@@ -342,12 +372,16 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             if rdata:
                 reddit_by_suburb[sub] = rdata
 
-        # Build synthesis prompt including Reddit data
+        # Retrieve semantically relevant chunks from ChromaDB
+        chromadb_chunks = _retrieve_chromadb_chunks(question, suburbs_list)
+
+        # Build synthesis prompt including Reddit data and ChromaDB chunks
         synthesis_prompt = _build_synthesis_prompt(
             question,
             context,
             agent_outputs=outputs if isinstance(outputs, dict) and outputs else None,
             reddit_by_suburb=reddit_by_suburb if reddit_by_suburb else None,
+            chromadb_chunks=chromadb_chunks if chromadb_chunks else None,
         )
 
         # Call LLM using the synthesiser agent configuration.
@@ -391,6 +425,14 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 "text": f"Reddit community analysis ({post_count} posts)",
                 "suburb": sub,
                 "source": "Reddit r/sydney",
+            })
+
+        for chunk in chromadb_chunks:
+            meta = chunk.get("metadata", {})
+            sources.append({
+                "text": chunk["text"][:120],
+                "suburb": meta.get("suburb", ""),
+                "source": meta.get("source", "chromadb"),
             })
 
         return {
