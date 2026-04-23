@@ -377,6 +377,17 @@ def write_outputs(records_by_file: dict[str, list[dict]]) -> None:
     combined.sort(key=lambda r: (r["source"], r["page_number"], r["theme"], r["text"]))
     COMBINED_OUTPUT_PATH.write_text(json.dumps(combined, indent=2, ensure_ascii=False))
 
+    # Suburb coverage summary — how many records mention each suburb
+    suburb_counts: dict[str, int] = {}
+    for record in combined:
+        suburb = record["suburb"] or "city-wide"
+        suburb_counts[suburb] = suburb_counts.get(suburb, 0) + 1
+    suburb_counts_sorted = dict(
+        sorted(suburb_counts.items(), key=lambda item: -item[1])
+    )
+    summary_path = OUTPUT_DIR / "community_report_suburb_summary.json"
+    summary_path.write_text(json.dumps(suburb_counts_sorted, indent=2, ensure_ascii=False))
+
 
 def main() -> None:
     records_by_file: dict[str, list[dict]] = {}
