@@ -20,8 +20,27 @@ REPORTS_DIR = PROJECT_ROOT / "data/raw/community_reports"
 OUTPUT_DIR = PROJECT_ROOT / "data/processed/community_reports"
 COMBINED_OUTPUT_PATH = OUTPUT_DIR / "community_report.json"
 
-QUOTE_PATTERN = re.compile(r'["“]([^"”]{30,500})["”]')
-DETECTION_SUBURBS = ["Newtown", "Glebe", "Redfern", "Surry Hills", "Haymarket"]
+QUOTE_PATTERN = re.compile("[“”\"]([^“”\"]{30,500})[“”\"]")
+SUBURBS_CSV = PROJECT_ROOT / "data/raw/arcgis/suburbs.csv"
+
+
+def _load_suburbs() -> list[str]:
+    import csv
+    suburbs = []
+    with SUBURBS_CSV.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            name = re.sub(r"\s*\(NSW\)\s*$", "", row["SAL_NAME21"]).strip()
+            if name:
+                suburbs.append(name)
+    # Sort longest first so multi-word names match before their substrings
+    return sorted(set(suburbs), key=len, reverse=True)
+
+
+_ALL_SUBURBS = _load_suburbs()
+_SUBURB_PATTERN = re.compile(
+    r"\b(" + "|".join(re.escape(s) for s in _ALL_SUBURBS) + r")\b",
+    re.IGNORECASE,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -205,11 +224,8 @@ def clean_page_text(text: str, header_patterns: list[str]) -> str:
 
 
 def find_suburb(text: str) -> str | None:
-    lower = text.lower()
-    for suburb in DETECTION_SUBURBS:
-        if suburb.lower() in lower:
-            return suburb
-    return None
+    match = _SUBURB_PATTERN.search(text)
+    return match.group(1).title() if match else None
 
 
 def score_theme(text: str, theme_keywords: dict[str, list[str]]) -> str | None:
