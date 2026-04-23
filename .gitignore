@@ -72,6 +72,9 @@ Thumbs.db
 # Arctic Shift dump files (large, downloaded locally)
 data/raw/arctic_shift/
 
+# Community report raw PDFs (large, local only — per AGENTS.md)
+data/raw/community_reports/*.pdf
+
 # Pre-processed Reddit data and NLP analysis results are committed
 # as carve-out exceptions to the "no data/processed/" rule so teammates
 # and graders can run the chat demo without re-running extraction or

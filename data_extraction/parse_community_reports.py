@@ -112,6 +112,11 @@ REPORT_CONFIG = {
         "default_suburb": "Haymarket",
         "min_words": 12,
     },
+    "Haymarket Vision engagement report.pdf": {
+        "source": "Haymarket Vision engagement report",
+        "default_suburb": "Haymarket",
+        "min_words": 12,
+    },
 }
 
 
