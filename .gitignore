@@ -81,6 +81,9 @@ data/raw/community_reports/*.pdf
 # downloading the ~1.8 GB of transformer models the pipeline needs.
 # See AGENTS.md for the full list of exceptions.
 
+# ChromaDB local vector store (machine-local, binary — regenerate with ingest scripts)
+backend/data/chromadb/
+
 /openspec
 .claude
 .codex
