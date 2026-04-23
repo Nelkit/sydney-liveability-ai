@@ -1,7 +1,7 @@
 """Ingest community PDF text into ChromaDB embeddings collection.
 
 Reads: data/processed/community_reports/community_report.json
-Writes: ChromaDB collection `sydney_liveability`
+Writes: ChromaDB collection `community_insights`
 Owner: Juan David Rodriguez
 """
 
@@ -12,23 +12,11 @@ from pathlib import Path
 from typing import Any
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
 
-from db.chromadb import get_chromadb_client
+from db.chromadb import PDF_COLLECTION, embed_texts, get_chromadb_client
 
 _JSON_PATH = Path(__file__).parents[2] / "data/processed/community_reports/community_report.json"
-_COLLECTION_NAME = "sydney_liveability"
-_EMBED_MODEL = "all-MiniLM-L6-v2"
 _BATCH_SIZE = 256
-
-_model: SentenceTransformer | None = None
-
-
-def get_embed_model() -> SentenceTransformer:
-    global _model
-    if _model is None:
-        _model = SentenceTransformer(_EMBED_MODEL)
-    return _model
 
 
 def chunk_text(text: str) -> list[str]:
@@ -41,11 +29,13 @@ def _upsert_batch(
     metadatas: list[dict[str, Any]],
     ids: list[str],
 ) -> None:
-    model = get_embed_model()
-    client = get_chromadb_client()
-    collection = client.get_or_create_collection(_COLLECTION_NAME)
-    embeddings = model.encode(texts, show_progress_bar=False).tolist()
-    collection.upsert(ids=ids, documents=texts, embeddings=embeddings, metadatas=metadatas)
+    collection = get_chromadb_client().get_or_create_collection(PDF_COLLECTION)
+    collection.upsert(
+        ids=ids,
+        documents=texts,
+        embeddings=embed_texts(texts),
+        metadatas=metadatas,
+    )
 
 
 def main() -> None:
