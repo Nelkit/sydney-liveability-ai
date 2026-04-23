@@ -1,0 +1,243 @@
+\documentclass[11pt,a4paper]{article}
+
+% -----------------------------
+% Packages
+% -----------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{caption}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black,
+  pdftitle={AT2 Part B Technical Report},
+  pdfauthor={Group [Number]}
+}
+
+\setstretch{1.15}
+
+% -----------------------------
+% Metadata Commands
+% -----------------------------
+\newcommand{\subjectcode}{36118 Applied Natural Language Processing}
+\newcommand{\course}{Master of Data Science and Innovation, UTS}
+\newcommand{\assessment}{Assessment Task 2B}
+\newcommand{\reporttitle}{End-to-End NLP Project --- Technical Report}
+\newcommand{\projectname}{Sydney Liveability Explorer}
+\newcommand{\duedate}{Monday, 4 May 2026, 23:59}
+\newcommand{\groupname}{Group [Number], Autumn 2026}
+\newcommand{\githublink}{\url{https://github.com/<org-or-user>/<repo>}}
+
+% -----------------------------
+% LLM Progress Logging Helpers
+% -----------------------------
+\newcommand{\llmupdate}[6]{%
+% #1 Date, #2 Author (Human/LLM), #3 Section, #4 Status, #5 Summary, #6 Next action
+#1 & #2 & #3 & #4 & #5 & #6 \\
+}
+
+\begin{document}
+
+% -----------------------------
+% Title Page
+% -----------------------------
+\begin{titlepage}
+  \centering
+
+  {\large \subjectcode \par}
+  \vspace{0.2cm}
+  {\large \course \par}
+  \vspace{0.8cm}
+
+  {\Large \assessment \par}
+  \vspace{0.4cm}
+  {\LARGE \textbf{\reporttitle} \par}
+  \vspace{0.3cm}
+  {\Large \projectname \par}
+
+  \vspace{1.2cm}
+
+  \begin{tabularx}{\textwidth}{>{\bfseries}lX}
+    Subject & \subjectcode \\
+    Submission & AT2 Part B --- Group Technical Report \\
+    Due Date & \duedate \\
+    Suggested Length & 10--15 pages (excluding appendix) \\
+    Group & \groupname \\
+    GitHub Repository & \githublink \\
+  \end{tabularx}
+
+  \vspace{1.0cm}
+  {\Large \textbf{Team Members} \par}
+  \vspace{0.4cm}
+
+  \begin{tabularx}{\textwidth}{>{\bfseries}l>{\bfseries}l>{\bfseries}l>{\bfseries}l}
+    Last Name & First Name & Student ID & GitHub Username \\
+  \end{tabularx}
+
+  \vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% -----------------------------
+% LLM-Assisted Progress Log
+% -----------------------------
+\section*{LLM-Assisted Progress Log}
+\addcontentsline{toc}{section}{LLM-Assisted Progress Log}
+
+This log is intended for incremental drafting with LLMs. Add one row per meaningful update so the report evolution is auditable and reproducible.
+
+\begin{longtable}{p{0.11\textwidth}p{0.12\textwidth}p{0.15\textwidth}p{0.09\textwidth}p{0.26\textwidth}p{0.23\textwidth}}
+\toprule
+\textbf{Date} & \textbf{Author} & \textbf{Section} & \textbf{Status} & \textbf{What Changed} & \textbf{Next Action} \\
+\midrule
+\endhead
+\llmupdate{2026-04-23}{LLM}{Template Init}{Done}{Initialized LaTeX report structure from DOCX template.}{Start drafting Section 1 with verified project outcomes.}
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\section{Executive Summary}
+% Rubric: Project design and innovation, technical execution, communication of insights.
+% Suggested length: ~0.5 page.
+Write a concise overview of the problem, target users, methods, and key outcomes.
+
+\section{Project Objectives and Scope}
+Define the primary objectives, intended user group, and boundaries of this submission.
+
+\section{Project Phases and Team Contributions}
+Describe project phases and map responsibilities to each team member.
+
+\subsection*{Phase Breakdown Table}
+\addcontentsline{toc}{subsection}{Phase Breakdown Table}
+\begin{longtable}{p{0.18\textwidth}p{0.50\textwidth}p{0.28\textwidth}}
+\toprule
+\textbf{Phase} & \textbf{Tasks} & \textbf{Team Member(s)} \\
+\midrule
+\endhead
+Phase 1 --- Data & Data acquisition and preprocessing from Reddit, PDF, BOCSAR, ArcGIS, OSM, and transport sources. & \\
+Phase 2 --- NLP Pipeline & Aspect-level sentiment, TF-IDF extraction, topic modeling, preprocessing pipeline. & \\
+Phase 3 --- RAG + LLM & Embeddings, ChromaDB vector store, CrewAI query crew, FastAPI backend. & \\
+Phase 4 --- Frontend & Next.js dashboard, Leaflet map, charts, conversational UI, onboarding weights. & \\
+Phase 5 --- Evaluation + Report & Traditional vs modern NLP comparison, metrics, report, poster, peer review. & \\
+\bottomrule
+\end{longtable}
+
+\section{Data Sources}
+Describe each source, access method, format, granularity, and known limitations.
+
+\subsection{Primary Data Sources}
+Document each source contribution to the pipeline.
+
+\subsection{Data Limitations and Ethical Considerations}
+Discuss data bias, staleness, privacy, consent, and social media ethics.
+
+\section{NLP Methods and Techniques}
+Explain methods, rationale, implementation details, and reproducibility settings.
+
+\subsection{Text Preprocessing}
+Tokenization, stopword removal, lemmatization, and domain-specific cleaning.
+
+\subsection{Traditional NLP Approaches}
+
+\subsubsection{Sentiment Analysis (VADER + TextBlob) --- Baseline}
+Explain baseline polarity and subjectivity workflow.
+
+\subsubsection{Topic Modelling (LDA --- Gensim)}
+Document topic count, parameters, labeling strategy, and coherence metrics.
+
+\subsubsection{TF-IDF Keyword Extraction}
+Describe extraction strategy and baseline value.
+
+\subsection{Modern NLP Approaches}
+
+\subsubsection{Sentence Embeddings (all-MiniLM-L6-v2)}
+Explain chunking strategy and ChromaDB upsert details.
+
+\subsubsection{Retrieval-Augmented Generation (RAG + LLM)}
+Detail query crew orchestration, retrieval filters, and grounded answer generation.
+
+\subsubsection{Aspect-Level Sentiment Analysis (DistilRoBERTa)}
+Describe aspect taxonomy, emotion profiling, and production rationale.
+
+\subsection{Traditional vs. Modern NLP Comparison}
+Compare representative query outputs and discuss trade-offs.
+
+\section{Findings and Evaluation}
+Present core findings and evidence from notebooks and backend outputs.
+
+\subsection{NLP Pipeline Results}
+Summarize aspect scores, emotions, topics, and keyword patterns.
+
+\subsection{Model Evaluation}
+Provide metrics and qualitative error analysis.
+
+\subsection{Application Evaluation}
+Report usability observations from walkthroughs or testing.
+
+\subsection{Temporal Trends}
+Summarize relevant time-based patterns from crime and sentiment data.
+
+\section{Outcomes and Value Added}
+Describe user-facing outcomes and practical value for target groups.
+
+\section{Recommendations and Next Steps}
+List highest-impact extensions and maintenance priorities.
+
+\section{Conclusion}
+Summarize contributions, lessons learned, and future potential.
+
+\section{References}
+Use APA 7th edition for all citations.
+
+% If using BibTeX, uncomment these lines and create a .bib file.
+% \bibliographystyle{apalike}
+% \bibliography{AT2B_report}
+
+\appendix
+
+\section{Appendix A --- System Architecture Diagram}
+Insert architecture diagrams and explain key flows.
+
+\section{Appendix B --- Dashboard Screenshots}
+Insert annotated screenshots of map, charts, chat, onboarding, and debug views.
+
+\section{Appendix C --- Sample Code}
+Add representative code snippets for ingestion, embeddings, agents, and API endpoints.
+
+\section{Appendix D --- Evaluation Tables and Charts}
+Include confusion matrices, coherence tables, and charts used in Section 6.
+
+\section{Appendix E --- Traditional vs. Modern NLP Comparison Table}
+\begin{table}[H]
+\centering
+\caption{Traditional vs. Modern NLP Comparison}
+\begin{tabularx}{\textwidth}{>{\bfseries}l>{\bfseries}l>{\bfseries}l>{\bfseries}lX}
+\toprule
+Technique & Type & Speed & Interpretability & Role in This Project \\
+\midrule
+TF-IDF Keyword Extraction & Traditional & Fast & High & Baseline retrieval --- top terms per suburb \\
+LDA Topic Modelling & Traditional & Medium & Medium & Thematic discovery baseline \\
+VADER + TextBlob & Traditional & Fast & High & Baseline sentiment benchmark \\
+RAG + LLM (CrewAI + ChromaDB) & Modern & Medium & Medium & Grounded, cited conversational answers \\
+DistilRoBERTa Aspect Sentiment & Modern & Medium & Medium & Production sentiment and emotion profiling \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\end{document}
