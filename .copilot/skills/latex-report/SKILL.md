@@ -99,11 +99,12 @@ If the user specified a section:
 
 Rules:
 - Replace placeholder text (lines starting with a bare instruction like "Write a concise...") with real content
-- Keep existing structure (`\subsection`, `\subsubsection`) intact — never rename or remove them
 - Use `\textbf{}`, `\emph{}`, `itemize`, `enumerate`, `longtable` as appropriate
-- Do not add new `\section` commands — only add content inside existing ones
 - Escape special characters: `&` → `\&`, `%` → `\%`, `_` → `\_`, `#` → `\#`
 - For code blocks use `\begin{verbatim}...\end{verbatim}`
+- Renaming, removing, or adding sections is allowed — just confirm with the user before doing it
+- When adding a new section, use the correct command for its level: `\section{}`, `\subsection{}`, or `\subsubsection{}`
+- When removing a section, also remove it from the structure list at the top of this skill so it stays in sync
 
 ### Step 3 — Update the Progress Log
 
@@ -181,6 +182,7 @@ Author, A.\ A., \& Author, B.\ B.\ (Year). \emph{Title of work}. Publisher. \url
 
 - Never read AT2B_report.tex to recall the structure — it is embedded above
 - Never create a new .tex file — there is only one report file
-- Never add `\section` commands for sections that don't exist in the structure
+- Never modify the preamble (fonts, colours, packages)
+- Never rename or remove a section without confirming with the user first
 - Never compile without asking first
 - Never skip the Progress Log update
