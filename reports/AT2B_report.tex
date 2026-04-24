@@ -13,16 +13,33 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage{hyperref}
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{caption}
 
+% Sans-serif font (Helvetica clone — bundled with any LaTeX distro)
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colours
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{039BE5}
+\definecolor{darkgray}{HTML}{404040}
+\definecolor{lightgray}{HTML}{666666}
+
+% Section heading colours
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries\color{darkgray}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{darkgray}}{\thesubsubsection}{1em}{}
+
+\usepackage{hyperref}
+
 \hypersetup{
   colorlinks=true,
-  linkcolor=black,
-  urlcolor=blue,
-  citecolor=black,
+  linkcolor=primary,
+  urlcolor=primary,
+  citecolor=darkgray,
   pdftitle={AT2 Part B Technical Report},
   pdfauthor={Group [Number]}
 }
@@ -57,16 +74,16 @@
 \begin{titlepage}
   \centering
 
-  {\large \subjectcode \par}
+  {\large\sffamily \subjectcode \par}
   \vspace{0.2cm}
-  {\large \course \par}
+  {\large\sffamily \course \par}
   \vspace{0.8cm}
 
-  {\Large \assessment \par}
+  {\Large\sffamily \assessment \par}
   \vspace{0.4cm}
-  {\LARGE \textbf{\reporttitle} \par}
+  {\LARGE\sffamily\bfseries \reporttitle \par}
   \vspace{0.3cm}
-  {\Large \projectname \par}
+  {\Large\sffamily\color{primary} \projectname \par}
 
   \vspace{1.2cm}
 
@@ -107,6 +124,7 @@ This log is intended for incremental drafting with LLMs. Add one row per meaning
 \midrule
 \endhead
 \llmupdate{2026-04-23}{LLM}{Template Init}{Done}{Initialized LaTeX report structure from DOCX template.}{Start drafting Section 1 with verified project outcomes.}
+\llmupdate{2026-04-24}{LLM}{Executive Summary}{Draft}{Added full Executive Summary: problem statement, data sources, technical stack, and key outcomes.}{Review with team and confirm project outcomes are accurate.}
 \bottomrule
 \end{longtable}
 
@@ -115,7 +133,13 @@ This log is intended for incremental drafting with LLMs. Add one row per meaning
 \section{Executive Summary}
 % Rubric: Project design and innovation, technical execution, communication of insights.
 % Suggested length: ~0.5 page.
-Write a concise overview of the problem, target users, methods, and key outcomes.
+The \textbf{Sydney Liveability Explorer} addresses a practical challenge faced by prospective residents, students, and urban planners: how to compare Sydney suburbs across multiple liveability dimensions in a unified, data-driven way. Existing tools present individual metrics in isolation, forcing users to manually cross-reference safety statistics, transport access, and community sentiment without a coherent synthesis.
+
+This project delivers an end-to-end NLP pipeline and interactive web application that integrates six structured data sources --- Reddit community posts, BOCSAR crime records, ArcGIS civic facilities, OpenStreetMap amenities, transport infrastructure data, and government PDF community reports --- to produce suburb-level liveability scores and conversational answers.
+
+The technical stack combines \textbf{traditional NLP} (VADER sentiment, LDA topic modelling, TF-IDF keyword extraction) as interpretable baselines with \textbf{modern approaches} (DistilRoBERTa aspect-level sentiment, sentence embeddings via \texttt{all-MiniLM-L6-v2}, and Retrieval-Augmented Generation via CrewAI and ChromaDB). A FastAPI backend exposes a weighted scoring API and a conversational chat endpoint, consumed by a Next.js frontend featuring an interactive Leaflet map, suburb comparison charts, and a preference-driven onboarding flow.
+
+Key outcomes include a functional multi-agent query crew that routes user questions to specialist data retrievers and synthesises grounded answers, a weighted liveability ranking engine covering over 30 Sydney suburbs, and a reproducible ingestion pipeline for all six data sources.
 
 \section{Project Objectives and Scope}
 Define the primary objectives, intended user group, and boundaries of this submission.

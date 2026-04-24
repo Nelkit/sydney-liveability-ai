@@ -85,5 +85,6 @@ data/raw/community_reports/*.pdf
 backend/data/chromadb/
 
 /openspec
-.claude
+.claude/*
+!.claude/skills/
 .codex
