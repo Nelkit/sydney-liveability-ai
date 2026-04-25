@@ -41,7 +41,7 @@
   urlcolor=primary,
   citecolor=darkgray,
   pdftitle={AT2 Part B Technical Report},
-  pdfauthor={Group [Number]}
+  pdfauthor={Group 3}
 }
 
 \setstretch{1.15}
@@ -55,16 +55,9 @@
 \newcommand{\reporttitle}{End-to-End NLP Project --- Technical Report}
 \newcommand{\projectname}{Sydney Liveability Explorer}
 \newcommand{\duedate}{Monday, 4 May 2026, 23:59}
-\newcommand{\groupname}{Group [Number], Autumn 2026}
-\newcommand{\githublink}{\url{https://github.com/<org-or-user>/<repo>}}
+\newcommand{\groupname}{Group 3, Autumn 2026}
+\newcommand{\githublink}{\url{https://github.com/Nelkit/sydney-liveability-ai}}
 
-% -----------------------------
-% LLM Progress Logging Helpers
-% -----------------------------
-\newcommand{\llmupdate}[6]{%
-% #1 Date, #2 Author (Human/LLM), #3 Section, #4 Status, #5 Summary, #6 Next action
-#1 & #2 & #3 & #4 & #5 & #6 \\
-}
 
 \begin{document}
 
@@ -102,6 +95,8 @@
 
   \begin{tabularx}{\textwidth}{>{\bfseries}l>{\bfseries}l>{\bfseries}l>{\bfseries}l}
     Last Name & First Name & Student ID & GitHub Username \\
+    \midrule
+    Chavez Calona & Nelkit & 25609227 & @Nelkit \\
   \end{tabularx}
 
   \vfill
@@ -110,42 +105,15 @@
 \tableofcontents
 \newpage
 
-% -----------------------------
-% LLM-Assisted Progress Log
-% -----------------------------
-\section*{LLM-Assisted Progress Log}
-\addcontentsline{toc}{section}{LLM-Assisted Progress Log}
-
-This log is intended for incremental drafting with LLMs. Add one row per meaningful update so the report evolution is auditable and reproducible.
-
-\begin{longtable}{p{0.11\textwidth}p{0.12\textwidth}p{0.15\textwidth}p{0.09\textwidth}p{0.26\textwidth}p{0.23\textwidth}}
-\toprule
-\textbf{Date} & \textbf{Author} & \textbf{Section} & \textbf{Status} & \textbf{What Changed} & \textbf{Next Action} \\
-\midrule
-\endhead
-\llmupdate{2026-04-23}{LLM}{Template Init}{Done}{Initialized LaTeX report structure from DOCX template.}{Start drafting Section 1 with verified project outcomes.}
-\llmupdate{2026-04-24}{LLM}{Executive Summary}{Draft}{Added full Executive Summary: problem statement, data sources, technical stack, and key outcomes.}{Review with team and confirm project outcomes are accurate.}
-\bottomrule
-\end{longtable}
-
-\newpage
-
+% NOTE: Write Executive Summary last — one paragraph per main section.
 \section{Executive Summary}
-% Rubric: Project design and innovation, technical execution, communication of insights.
-% Suggested length: ~0.5 page.
-The \textbf{Sydney Liveability Explorer} addresses a practical challenge faced by prospective residents, students, and urban planners: how to compare Sydney suburbs across multiple liveability dimensions in a unified, data-driven way. Existing tools present individual metrics in isolation, forcing users to manually cross-reference safety statistics, transport access, and community sentiment without a coherent synthesis.
-
-This project delivers an end-to-end NLP pipeline and interactive web application that integrates six structured data sources --- Reddit community posts, BOCSAR crime records, ArcGIS civic facilities, OpenStreetMap amenities, transport infrastructure data, and government PDF community reports --- to produce suburb-level liveability scores and conversational answers.
-
-The technical stack combines \textbf{traditional NLP} (VADER sentiment, LDA topic modelling, TF-IDF keyword extraction) as interpretable baselines with \textbf{modern approaches} (DistilRoBERTa aspect-level sentiment, sentence embeddings via \texttt{all-MiniLM-L6-v2}, and Retrieval-Augmented Generation via CrewAI and ChromaDB). A FastAPI backend exposes a weighted scoring API and a conversational chat endpoint, consumed by a Next.js frontend featuring an interactive Leaflet map, suburb comparison charts, and a preference-driven onboarding flow.
-
-Key outcomes include a functional multi-agent query crew that routes user questions to specialist data retrievers and synthesises grounded answers, a weighted liveability ranking engine covering over 30 Sydney suburbs, and a reproducible ingestion pipeline for all six data sources.
+Write this section last. Include one paragraph summarising each of the following: project objectives, data sources, NLP methods, findings, and outcomes.
 
 \section{Project Objectives and Scope}
-Define the primary objectives, intended user group, and boundaries of this submission.
+Describe the problem this project solves, the target user group, and what is in and out of scope for this submission.
 
 \section{Project Phases and Team Contributions}
-Describe project phases and map responsibilities to each team member.
+Describe project phases and map responsibilities to each team member. Each member must include an individual paragraph describing their specific contribution.
 
 \subsection*{Phase Breakdown Table}
 \addcontentsline{toc}{subsection}{Phase Breakdown Table}
@@ -154,80 +122,75 @@ Describe project phases and map responsibilities to each team member.
 \textbf{Phase} & \textbf{Tasks} & \textbf{Team Member(s)} \\
 \midrule
 \endhead
-Phase 1 --- Data & Data acquisition and preprocessing from Reddit, PDF, BOCSAR, ArcGIS, OSM, and transport sources. & \\
-Phase 2 --- NLP Pipeline & Aspect-level sentiment, TF-IDF extraction, topic modeling, preprocessing pipeline. & \\
-Phase 3 --- RAG + LLM & Embeddings, ChromaDB vector store, CrewAI query crew, FastAPI backend. & \\
-Phase 4 --- Frontend & Next.js dashboard, Leaflet map, charts, conversational UI, onboarding weights. & \\
-Phase 5 --- Evaluation + Report & Traditional vs modern NLP comparison, metrics, report, poster, peer review. & \\
+Phase 1: Data & Data acquisition and preprocessing from Reddit (Arc Shift), Community Insights PDF, BOCSAR CSV, TfNSW GTFS, OpenStreetMap (Overpass API), and City of Sydney ArcGIS. & \\
+Phase 2: NLP Pipeline & Aspect-level sentiment analysis (DistilRoBERTa), sentence embeddings (MiniLM), ChromaDB ingestion, spaCy preprocessing. & \\
+Phase 3: Multi-Agent Pipeline & CrewAI pipeline crew (pre-computation) and query crew (real-time), FastAPI backend, RAG with Claude API. & \\
+Phase 4: Frontend & Next.js dashboard, Leaflet map, aspect radar chart, emotion profile visualisation, conversational chat UI. & \\
+Phase 5: Evaluation and Report & NLP metrics, RAG quality, application evaluation, report, poster, peer review. & \\
 \bottomrule
 \end{longtable}
 
 \section{Data Sources}
-Describe each source, access method, format, granularity, and known limitations.
 
 \subsection{Primary Data Sources}
-Document each source contribution to the pipeline.
+Document each source: name, access method, format, granularity, and contribution to the pipeline. Sources include: Community Insights PDF, Reddit via Arc Shift, BOCSAR CSV, TfNSW GTFS, OpenStreetMap via Overpass API, and City of Sydney ArcGIS.
 
 \subsection{Data Limitations and Ethical Considerations}
-Discuss data bias, staleness, privacy, consent, and social media ethics.
+Discuss Reddit as a public but self-selected source, privacy considerations, geographic bias toward inner Sydney suburbs, PDF granularity limitations, and the ethical use of community-generated content.
 
 \section{NLP Methods and Techniques}
-Explain methods, rationale, implementation details, and reproducibility settings.
 
 \subsection{Text Preprocessing}
-Tokenization, stopword removal, lemmatization, and domain-specific cleaning.
+Describe the preprocessing pipeline using spaCy: tokenisation, lemmatisation, and named entity recognition (NER) for suburb extraction. Also describe LangChain chunking strategy used for RAG ingestion.
 
-\subsection{Traditional NLP Approaches}
+\subsection{Considered Approaches: Traditional NLP}
+Present a critical review of traditional NLP methods (VADER, LDA, TF-IDF) with reference to the literature. Explain why these approaches were considered but not adopted as the primary implementation for this project. Do not present them as implemented components.
 
-\subsubsection{Sentiment Analysis (VADER + TextBlob) --- Baseline}
-Explain baseline polarity and subjectivity workflow.
+\subsection{Implemented Approaches: Modern NLP}
 
-\subsubsection{Topic Modelling (LDA --- Gensim)}
-Document topic count, parameters, labeling strategy, and coherence metrics.
-
-\subsubsection{TF-IDF Keyword Extraction}
-Describe extraction strategy and baseline value.
-
-\subsection{Modern NLP Approaches}
-
-\subsubsection{Sentence Embeddings (all-MiniLM-L6-v2)}
-Explain chunking strategy and ChromaDB upsert details.
-
-\subsubsection{Retrieval-Augmented Generation (RAG + LLM)}
-Detail query crew orchestration, retrieval filters, and grounded answer generation.
+\subsubsection{Reddit Data Collection via Arc Shift}
+Explain why PRAW was replaced by Arc Shift for data collection. Report scale: 20,237 posts covering 563 suburbs.
 
 \subsubsection{Aspect-Level Sentiment Analysis (DistilRoBERTa)}
-Describe aspect taxonomy, emotion profiling, and production rationale.
+Describe the eight sentiment dimensions analysed per suburb, the emotion profiling approach, and implementation by Kai (Ying-Kai Liao).
 
-\subsection{Traditional vs. Modern NLP Comparison}
-Compare representative query outputs and discuss trade-offs.
+\subsubsection{Sentence Embeddings (all-MiniLM-L6-v2) and ChromaDB}
+Describe the chunking strategy, embedding model, ChromaDB upsert process, and metadata fields (suburb, source) stored per chunk.
+
+\subsubsection{Multi-Agent Pipeline (CrewAI)}
+Describe both crews: the pipeline crew (pre-computes suburb data) and the query crew (responds in real time). Detail each agent, its role, tools, and how agents collaborate.
+
+\subsubsection{Retrieval-Augmented Generation (RAG + LLM)}
+Detail the RAG chain built with LangChain and ChromaDB. Describe how the Claude API (Sonnet) generates answers grounded in retrieved source chunks with citations.
+
+\subsection{Justification: Why Modern Over Traditional}
+Present an academic argument for each design choice: DistilRoBERTa over VADER, sentence embeddings over TF-IDF, RAG over keyword search, and CrewAI for modular orchestration. Cite Lewis et al.\ (2020), Reimers \& Gurevych (2019), and Hutto \& Gilbert (2014).
 
 \section{Findings and Evaluation}
-Present core findings and evidence from notebooks and backend outputs.
 
 \subsection{NLP Pipeline Results}
-Summarize aspect scores, emotions, topics, and keyword patterns.
+Summarise aspect scores per suburb, emotion profiles, transport scores, POI density, and crime trends. Reference Appendix D for full tables and charts.
 
-\subsection{Model Evaluation}
-Provide metrics and qualitative error analysis.
+\subsection{NLP Model Performance Metrics}
+Report evaluation metrics for DistilRoBERTa, retrieval quality for the RAG pipeline, and representative query-response pairs with citations from the LLM.
 
-\subsection{Application Evaluation}
-Report usability observations from walkthroughs or testing.
+\subsection{User-Facing Application Quality}
+Describe the dashboard, aspect radar visualisation, emotion profile chart, chat interface, and overall user experience quality based on walkthroughs or testing.
 
 \subsection{Temporal Trends}
-Summarize relevant time-based patterns from crime and sentiment data.
+Summarise time-based patterns in Reddit sentiment per suburb where timestamps are available.
 
 \section{Outcomes and Value Added}
-Describe user-facing outcomes and practical value for target groups.
+Describe what the project achieved and the practical value delivered to the target user group.
 
 \section{Recommendations and Next Steps}
-List highest-impact extensions and maintenance priorities.
+List the highest-impact extensions: coverage of more suburbs, additional data sources, model fine-tuning, and integration with rental price APIs.
 
 \section{Conclusion}
-Summarize contributions, lessons learned, and future potential.
+Summarise the project contributions, lessons learned, and future potential.
 
 \section{References}
-Use APA 7th edition for all citations.
+Use APA 7th edition for all citations. Key references include: DistilRoBERTa (Sanh et al., 2019), all-MiniLM-L6-v2 (Reimers \& Gurevych, 2019), RAG (Lewis et al., 2020), CrewAI, and Arc Shift.
 
 % If using BibTeX, uncomment these lines and create a .bib file.
 % \bibliographystyle{apalike}
@@ -235,31 +198,33 @@ Use APA 7th edition for all citations.
 
 \appendix
 
-\section{Appendix A --- System Architecture Diagram}
-Insert architecture diagrams and explain key flows.
+\section{Appendix A: System Architecture Diagram}
+Insert the full pipeline diagram: Arc Shift, GTFS, OSM, BOCSAR, and PDF ingestion feeding into DistilRoBERTa and ChromaDB, then CrewAI, RAG, and the frontend.
 
-\section{Appendix B --- Dashboard Screenshots}
-Insert annotated screenshots of map, charts, chat, onboarding, and debug views.
+\section{Appendix B: Dashboard Screenshots}
+Insert annotated screenshots of the aspect radar, emotion profile, Leaflet map, and chat interface.
 
-\section{Appendix C --- Sample Code}
-Add representative code snippets for ingestion, embeddings, agents, and API endpoints.
+\section{Appendix C: Sample Code}
+Include representative code for \texttt{ingest\_sentiment.py}, CrewAI agents, the RAG chain, and FastAPI endpoints.
 
-\section{Appendix D --- Evaluation Tables and Charts}
-Include confusion matrices, coherence tables, and charts used in Section 6.
+\section{Appendix D: Evaluation Tables and Charts}
+Include suburb-level scores per sentiment dimension, emotion distributions, transport scores, and POI density charts.
 
-\section{Appendix E --- Traditional vs. Modern NLP Comparison Table}
+\section{Appendix E: Traditional vs. Modern NLP Comparison Table}
 \begin{table}[H]
 \centering
-\caption{Traditional vs. Modern NLP Comparison}
-\begin{tabularx}{\textwidth}{>{\bfseries}l>{\bfseries}l>{\bfseries}l>{\bfseries}lX}
+\caption{Traditional vs.\ Modern NLP Approach Comparison}
+\begin{tabularx}{\textwidth}{>{\bfseries}lllX}
 \toprule
-Technique & Type & Speed & Interpretability & Role in This Project \\
+\textbf{Approach} & \textbf{Type} & \textbf{Used} & \textbf{Rationale} \\
 \midrule
-TF-IDF Keyword Extraction & Traditional & Fast & High & Baseline retrieval --- top terms per suburb \\
-LDA Topic Modelling & Traditional & Medium & Medium & Thematic discovery baseline \\
-VADER + TextBlob & Traditional & Fast & High & Baseline sentiment benchmark \\
-RAG + LLM (CrewAI + ChromaDB) & Modern & Medium & Medium & Grounded, cited conversational answers \\
-DistilRoBERTa Aspect Sentiment & Modern & Medium & Medium & Production sentiment and emotion profiling \\
+VADER sentiment & Traditional & No & Lexicon-based, no aspect granularity \\
+LDA topic modelling & Traditional & No & Unsupervised, low coherence on Reddit text \\
+TF-IDF keyword extraction & Traditional & No & Frequency-based, no semantic understanding \\
+DistilRoBERTa aspect sentiment & Modern & Yes & 8-dimension aspect scoring, contextual \\
+all-MiniLM-L6-v2 embeddings & Modern & Yes & Semantic similarity, compact and fast \\
+RAG with Claude Sonnet & Modern & Yes & Grounded, cited answers from retrieved chunks \\
+CrewAI multi-agent pipeline & Modern & Yes & Modular orchestration, scalable per suburb \\
 \bottomrule
 \end{tabularx}
 \end{table}
