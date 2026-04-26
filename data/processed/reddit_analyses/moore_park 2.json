@@ -1,0 +1,101 @@
+{
+  "suburb": "Moore Park",
+  "post_count": 97,
+  "fetched_at": "2026-04-18T01:57:58.540164+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.659,
+      "mentions": 73
+    },
+    "safety": {
+      "score": 0.555,
+      "mentions": 35
+    },
+    "community": {
+      "score": 0.573,
+      "mentions": 75
+    },
+    "noise": {
+      "score": 0.449,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.565,
+      "mentions": 22
+    },
+    "nightlife": {
+      "score": 0.843,
+      "mentions": 12
+    },
+    "affordability": {
+      "score": 0.772,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.869,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "neutral": 0.4973,
+    "surprise": 0.1471,
+    "disgust": 0.0648,
+    "anger": 0.0977,
+    "sadness": 0.0706,
+    "fear": 0.0583,
+    "joy": 0.0641
+  },
+  "narrative": "Reddit discussions about Moore Park are most positive about food and cafe (0.87) and nightlife (0.84). Residents are most critical about safety (0.56) and noise (0.45). This analysis is based on 97 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "There's a fake Easter Show\nor maybe temu Easter show. Either way it's like a smaller, shit version, run by a private company that runs holidays parks. it's run out of Moore Park and their website uses",
+      "url": "https://reddit.com/r/sydney/comments/1sduhe5/theres_a_fake_easter_show/",
+      "score": 356
+    },
+    {
+      "text": "How to move an air-conditioner at 7am on a Sunday\nAbove Moore Park Supa Centa",
+      "url": "https://reddit.com/r/sydney/comments/1l08zgk/how_to_move_an_airconditioner_at_7am_on_a_sunday/",
+      "score": 336
+    },
+    {
+      "text": "Noise complaints: Residents in ‘nice suburb’ object to more events at Moore Park”",
+      "url": "https://reddit.com/r/sydney/comments/1d0nnge/noise_complaints_residents_in_nice_suburb_object/",
+      "score": 297
+    },
+    {
+      "text": "What on earth are taxis? \nManaged to lose my cards and only had cash to get home - first taxi used meter was $11.80 (moore park to central) apparently had no change….. righto….\n\n\nSecond taxi 7.1km hom",
+      "url": "https://reddit.com/r/sydney/comments/1g6kh80/what_on_earth_are_taxis/",
+      "score": 267
+    },
+    {
+      "text": "Took the ED for the first time in years, almost had a heart attack when I saw the pricing sign\nOnly took it from Moore Park, and only saves 5 minutes. Never again! Seems even worse value for money tha",
+      "url": "https://reddit.com/r/sydney/comments/1bdmsx9/took_the_ed_for_the_first_time_in_years_almost/",
+      "score": 177
+    },
+    {
+      "text": "Those folks around Moore Park must think they a very precious.  \n\nIts a bit like moving into a suburb next to an airport then complaining about plane noise. Moore Park Entertainment precinct has its o",
+      "url": "https://reddit.com/r/sydney/comments/1d0nnge/noise_complaints_residents_in_nice_suburb_object/l5oe1h9/",
+      "score": 170
+    },
+    {
+      "text": "Crash next to moore park",
+      "url": "https://reddit.com/r/sydney/comments/1bhefck/crash_next_to_moore_park/",
+      "score": 153
+    },
+    {
+      "text": "> In a video on Saturday, an impassioned Wahlberg acknowledged he was not a citizen of Australia but asked those who were to “save Moore Park Golf Club”.\n\n> “It’s been here for over 100 years, it’s be",
+      "url": "https://reddit.com/r/sydney/comments/1broyyd/hollywood_actor_mark_wahlberg_pleading_with/kxaykx0/",
+      "score": 140
+    },
+    {
+      "text": "Basically. This dates from residents concerns about the Fox Studios Backlot attraction. It's probably in the development consent -- the whole thing was controversial at the time: a mini theme park ope",
+      "url": "https://reddit.com/r/sydney/comments/1c51z6u/why_no_left_turn_after_10pm/kzrfk5d/",
+      "score": 100
+    },
+    {
+      "text": "FREE ticket to Halsey tonight\nhey i know it’s super last minute but does anyone want a FREE GA ticket to Halsey tonight? it’s at Hordern Pavilion in Moore Park. i can’t make it and i’d rather the tick",
+      "url": "https://reddit.com/r/sydney/comments/1r4e80v/free_ticket_to_halsey_tonight/",
+      "score": 86
+    }
+  ]
+}

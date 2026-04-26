@@ -1,0 +1,101 @@
+{
+  "suburb": "Barangaroo",
+  "post_count": 254,
+  "fetched_at": "2026-04-18T01:31:12.109284+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.62,
+      "mentions": 186
+    },
+    "nightlife": {
+      "score": 0.605,
+      "mentions": 101
+    },
+    "food_and_cafe": {
+      "score": 0.738,
+      "mentions": 54
+    },
+    "green_space": {
+      "score": 0.756,
+      "mentions": 55
+    },
+    "transport": {
+      "score": 0.598,
+      "mentions": 91
+    },
+    "safety": {
+      "score": 0.531,
+      "mentions": 54
+    },
+    "affordability": {
+      "score": 0.71,
+      "mentions": 24
+    },
+    "noise": {
+      "score": 0.687,
+      "mentions": 14
+    }
+  },
+  "emotions": {
+    "neutral": 0.509,
+    "surprise": 0.1411,
+    "joy": 0.1434,
+    "fear": 0.0622,
+    "anger": 0.0321,
+    "disgust": 0.0689,
+    "sadness": 0.0433
+  },
+  "narrative": "Reddit discussions about Barangaroo are most positive about green space (0.76) and food and cafe (0.74). Residents are most critical about transport (0.60) and safety (0.53). This analysis is based on 254 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney's new Pier Pavilion at Barangaroo\nIt's a new performance and gathering space right by the water and the ferry wharves - the columns are 7m in height. \n\nImages and stills from Infrastructure NSW",
+      "url": "https://reddit.com/r/sydney/comments/1kbuhw5/sydneys_new_pier_pavilion_at_barangaroo/",
+      "score": 1709
+    },
+    {
+      "text": "Barangaroo pool today",
+      "url": "https://reddit.com/r/sydney/comments/1aifi8z/barangaroo_pool_today/",
+      "score": 1326
+    },
+    {
+      "text": "What is Barangaroo Reserve's hill made of? Is it 100% dirt? A building? Something else?",
+      "url": "https://reddit.com/r/sydney/comments/1mxvcwp/what_is_barangaroo_reserves_hill_made_of_is_it/",
+      "score": 1159
+    },
+    {
+      "text": "Barangaroo - Surprise 🎉\nThis was a surprise this morning! Popped to Barangaroo for a meeting and bang 💵.",
+      "url": "https://reddit.com/r/sydney/comments/19dg1u3/barangaroo_surprise/",
+      "score": 1109
+    },
+    {
+      "text": "I visited the new Pier Pavilion in Barangaroo yesterday\nPretty cool space. The big hole in the roof is no good when it rains. But looks great in pics!",
+      "url": "https://reddit.com/r/sydney/comments/1ki1z2g/i_visited_the_new_pier_pavilion_in_barangaroo/",
+      "score": 634
+    },
+    {
+      "text": "Barangaroo always comes out looking futuristic in photos",
+      "url": "https://reddit.com/r/sydney/comments/1m9saft/barangaroo_always_comes_out_looking_futuristic_in/",
+      "score": 585
+    },
+    {
+      "text": "Sydney Metro Barangaroo to Victoria Cross \nBarangaroo to Victoria Cross (north Sydney) station. Approx 2mins.",
+      "url": "https://reddit.com/r/sydney/comments/1ewjfms/sydney_metro_barangaroo_to_victoria_cross/",
+      "score": 557
+    },
+    {
+      "text": "Metro issue in Barangaroo.\nAvoid if possible. People going down in north Sydney and taking the normal train.",
+      "url": "https://reddit.com/r/sydney/comments/1rvnvh1/metro_issue_in_barangaroo/",
+      "score": 557
+    },
+    {
+      "text": "What journey does this tiny Sydney Ferry do?\nWas docked at Barangaroo yesterday afternoon",
+      "url": "https://reddit.com/r/sydney/comments/1rnu3ye/what_journey_does_this_tiny_sydney_ferry_do/",
+      "score": 506
+    },
+    {
+      "text": "Barangaroo",
+      "url": "https://reddit.com/r/sydney/comments/1fho4fg/barangaroo/",
+      "score": 499
+    }
+  ]
+}

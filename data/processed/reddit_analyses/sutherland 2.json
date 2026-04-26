@@ -1,0 +1,101 @@
+{
+  "suburb": "Sutherland",
+  "post_count": 114,
+  "fetched_at": "2026-04-18T01:55:40.243734+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.801,
+      "mentions": 89
+    },
+    "safety": {
+      "score": 0.772,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.799,
+      "mentions": 11
+    },
+    "transport": {
+      "score": 0.764,
+      "mentions": 36
+    },
+    "noise": {
+      "score": 0.879,
+      "mentions": 7
+    },
+    "food_and_cafe": {
+      "score": 0.888,
+      "mentions": 12
+    },
+    "green_space": {
+      "score": 0.843,
+      "mentions": 16
+    },
+    "nightlife": {
+      "score": 0.573,
+      "mentions": 8
+    }
+  },
+  "emotions": {
+    "joy": 0.0761,
+    "sadness": 0.1049,
+    "neutral": 0.5044,
+    "surprise": 0.1023,
+    "disgust": 0.0556,
+    "fear": 0.0975,
+    "anger": 0.0592
+  },
+  "narrative": "Reddit discussions about Sutherland are most positive about food and cafe (0.89) and noise (0.88). Residents are most critical about transport (0.76) and nightlife (0.57). This analysis is based on 114 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Spotted Ahmed Al Ahmed today reading the heartfelt messages left in front of his shop in Sutherland",
+      "url": "https://reddit.com/r/sydney/comments/1qx7tf8/spotted_ahmed_al_ahmed_today_reading_the/",
+      "score": 4040
+    },
+    {
+      "text": "I just walked from Cronulla to Parramatta\nI started this one at around 6:20 and finished at 20:20 taking just a little over 14 hours. The walk was around 52 kilometres. I had attempted this one before",
+      "url": "https://reddit.com/r/sydney/comments/1rmww7l/i_just_walked_from_cronulla_to_parramatta/",
+      "score": 968
+    },
+    {
+      "text": "I made this map of some of the Aboriginal Clans of Sydney\nI made this as a personal project, and looked at a lot of websites for reference. In the end, the most useful/used were the Aboriginal Heritag",
+      "url": "https://reddit.com/r/sydney/comments/1kt9w6y/i_made_this_map_of_some_of_the_aboriginal_clans/",
+      "score": 667
+    },
+    {
+      "text": "Why do people from The Shire feel compelled to tell you how much they paid for their house?\nFor context, I’m a Westie born and bred. My job recently has required me to work around the Sutherland shire",
+      "url": "https://reddit.com/r/sydney/comments/1q9np88/why_do_people_from_the_shire_feel_compelled_to/",
+      "score": 550
+    },
+    {
+      "text": "Ranking all 27 music venues I’ve been to in Sydney, from worst to best\nLet’s just get straight into it.\n\n28 – **Luna Park Big Top** (Shows seen: King Gizzard and the Lizard Wizard)\n\nYeah I’m pretty co",
+      "url": "https://reddit.com/r/sydney/comments/1hjvaqd/ranking_all_27_music_venues_ive_been_to_in_sydney/",
+      "score": 442
+    },
+    {
+      "text": "Look up once in a while! I just took this photo from my backyard in the Sutherland Shire!\nCentaurus A galaxy, 6.2 hour exposure, 13 million light years away. I encourage everyone to look at the stars ",
+      "url": "https://reddit.com/r/sydney/comments/1rrrn1q/look_up_once_in_a_while_i_just_took_this_photo/",
+      "score": 412
+    },
+    {
+      "text": "The Sutherland shire area is slowly getting more diverse. I see mixed race families, South or East Asian kids attending schools.\n\nPolitically, it is conservative, the majority vote for the LNP and we ",
+      "url": "https://reddit.com/r/sydney/comments/1ccfy16/is_it_still_racist_around_cronulla/l156wix/",
+      "score": 214
+    },
+    {
+      "text": "I've been asked to run for council, what does a councilor do?\nSutherland Shire Council. Last night voted to pass a thing that allows developers to cut more trees more easily, despite:\n\n* There being a",
+      "url": "https://reddit.com/r/sydney/comments/1eqsoqr/ive_been_asked_to_run_for_council_what_does_a/",
+      "score": 204
+    },
+    {
+      "text": "If you were to drive due west from the Shire, you'd likely end up in Victoria\nHere's some Friday evening geography to break your brain, which I accidentally noticed while scrolling through Google Maps",
+      "url": "https://reddit.com/r/sydney/comments/1qqy4db/if_you_were_to_drive_due_west_from_the_shire_youd/",
+      "score": 141
+    },
+    {
+      "text": "Time Lapse of last night's storm.\nA quick time lapse of the storm heading into the Sutherland Shire from the south last night.  Wish I had started it a bit earlier would have been better.",
+      "url": "https://reddit.com/r/sydney/comments/1gqn91c/time_lapse_of_last_nights_storm/",
+      "score": 128
+    }
+  ]
+}

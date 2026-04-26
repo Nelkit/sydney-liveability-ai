@@ -1,0 +1,101 @@
+{
+  "suburb": "Pendle Hill",
+  "post_count": 14,
+  "fetched_at": "2026-04-18T02:17:08.474612+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.332,
+      "mentions": 6
+    },
+    "community": {
+      "score": 0.438,
+      "mentions": 12
+    },
+    "transport": {
+      "score": 0.532,
+      "mentions": 7
+    },
+    "noise": {
+      "score": 0.675,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.056,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.2083,
+    "anger": 0.0776,
+    "disgust": 0.0325,
+    "sadness": 0.1276,
+    "neutral": 0.3462,
+    "surprise": 0.1365,
+    "joy": 0.0714
+  },
+  "narrative": "Reddit discussions about Pendle Hill are most positive about noise (0.68) and transport (0.53). Residents are most critical about safety (0.33) and food and cafe (0.06). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "When you park under the wrong tree at Pendle Hill Station",
+      "url": "https://reddit.com/r/sydney/comments/1o8zpcw/when_you_park_under_the_wrong_tree_at_pendle_hill/",
+      "score": 317
+    },
+    {
+      "text": "Just an average day at work..\ncustomer trapped it under a shoe box on the shop floor! I got the little bugger in the empty bin and released him out the back (after confirming with wires over the phone",
+      "url": "https://reddit.com/r/sydney/comments/1rcvq5p/just_an_average_day_at_work/",
+      "score": 87
+    },
+    {
+      "text": "Trains are moving west out of Parra again\nJust FYI. I think I got the first one out. They're far from reliable. Now we're sitting in Pendle Hill.. so your mileage may vary.. but they're moving. I'll u",
+      "url": "https://reddit.com/r/sydney/comments/1p712ic/trains_are_moving_west_out_of_parra_again/",
+      "score": 72
+    },
+    {
+      "text": "PSA, T5 trains cancelled. Object in overhead wiring at Pendle Hill\nhttps://transportnsw.info/alerts/details/fcee595f0863497e7f02cd79a0eb5dddabbfa560\n\nMost T5 Cumberland Line trains are / will be cance",
+      "url": "https://reddit.com/r/sydney/comments/1q66o4v/psa_t5_trains_cancelled_object_in_overhead_wiring/",
+      "score": 27
+    },
+    {
+      "text": "Me trying to get home from parramatta to pendle hill. I totally understand the chaos of this tragedy on the network but ffs Sydney trains, please communicate openly on the platform what train is arriv",
+      "url": "https://reddit.com/r/sydney/comments/1an78vl/fatality_at_stanmore_station/kpr83j6/",
+      "score": 25
+    },
+    {
+      "text": "Car on the railway tracks. Western line between Wentworthville and Pendle Hill.\nJust back from picking my son up from Wenty as train had to return to the station. I passed the car on the way. You can ",
+      "url": "https://reddit.com/r/sydney/comments/1lahkxk/car_on_the_railway_tracks_western_line_between/",
+      "score": 23
+    },
+    {
+      "text": "There’s the Woodpecker Model Railways shop in Pendle Hill. Only reason why I know about it is that Rod Stewart have a visit whilst on tour here.\n\nhttps://www.dailymail.co.uk/tvshowbiz/article-11914711",
+      "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kotmysg/",
+      "score": 20
+    },
+    {
+      "text": "Sydney trains\nTree on the tracks near Pendle Hill ( I think  )\nFlooding at strathfield. \nPower issues on the Y link.",
+      "url": "https://reddit.com/r/sydney/comments/1h3x0kv/sydney_trains/",
+      "score": 13
+    },
+    {
+      "text": "Seven Hills plaza is fine for shopping, has Woolies and Aldi and other smaller shops. Train station is well connected and gets more frequent trains than Toongabbie, Pendle Hill, and Wentworthville. Tr",
+      "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh4dk3q/",
+      "score": 13
+    },
+    {
+      "text": "Retired priest caught ‘grooming 14-year-old boy online’ in Sydney sting\nA retired priest has been arrested while allegedly trying to groom a 14-year-old boy online.\n\nEarlier this year, Facebook identi",
+      "url": "https://reddit.com/r/sydney/comments/1hl7ekh/retired_priest_caught_grooming_14yearold_boy/",
+      "score": 9
+    }
+  ]
+}

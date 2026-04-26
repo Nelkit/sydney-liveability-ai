@@ -1,0 +1,71 @@
+{
+  "suburb": "Whale Beach",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:26.370735+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.671,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.734,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.835,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.835,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.2151,
+    "neutral": 0.4874,
+    "sadness": 0.0423,
+    "anger": 0.0255,
+    "joy": 0.1393,
+    "surprise": 0.0828,
+    "fear": 0.0076
+  },
+  "narrative": "Reddit discussions about Whale Beach are most positive about transport (0.83) and nightlife (0.83). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I remember going to whale beach on the New Years Day. It was stinking hot. The sand was burning my feet. Now we share memories together and that's so beautiful.",
+      "url": "https://reddit.com/r/sydney/comments/19ddzw6/im_sorry_wtaf_are_these_overnight_temps_for/kj5odyl/",
+      "score": 23
+    },
+    {
+      "text": "This is going to be a long response to this article, and the TL;DR is: They need apartments.\n\nI was fortunate enough to be born into a family whose grandparents purchased a house in Palm Beach in the ",
+      "url": "https://reddit.com/r/sydney/comments/19btepk/weve_had_enough_apartment_complex_deemed_a_threat/kivdwp7/",
+      "score": 16
+    },
+    {
+      "text": "> During the 1930s Depression era, money became available to councils through unemployment relief schemes.\n\n> The unemployed were given jobs to create many more pools in Sydney, including Mahon Pool a",
+      "url": "https://reddit.com/r/sydney/comments/1dq4bbz/i_love_nsw_ocean_pools/laluuhn/",
+      "score": 14
+    },
+    {
+      "text": "Thanks for that info.  They obviously get around - I've also seen them while surfing at Whale Beach.  That's a fair way from Manly Cove!",
+      "url": "https://reddit.com/r/sydney/comments/1bs16vy/little_penguin_sydney_harbour/kxh1slx/",
+      "score": 2
+    }
+  ]
+}

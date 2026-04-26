@@ -28,4 +28,6 @@ export type ChatMessage = {
   role: "ai" | "user";
   html: string;
   source?: string;
+  fullHtml?: string;
+  detailedSuburb?: string | null;
 };

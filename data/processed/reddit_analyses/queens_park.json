@@ -1,0 +1,76 @@
+{
+  "suburb": "Queens Park",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:20:02.195635+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.38,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.389,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.389,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.2008,
+    "anger": 0.0114,
+    "fear": 0.01,
+    "neutral": 0.6296,
+    "sadness": 0.0103,
+    "surprise": 0.1332,
+    "joy": 0.0047
+  },
+  "narrative": "Reddit discussions about Queens Park are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about community (0.39) and safety (0.38). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I was at queens park while this was unfolding. I saw about 7 police cars and 3 ambos rushing with sirens on towards the junction over a 30 minute period. When it was just the police cars we guessed a ",
+      "url": "https://reddit.com/r/sydney/comments/1c2uo3p/what_just_happened_at_bondi_junction/kzd3lmd/",
+      "score": 93
+    },
+    {
+      "text": "Hello there. From Surry Hills, you can access Moore Park and Centennial Park fairly easily for some running away from roads. A loop of Centennial Park is 3.5k or 5k, depending how far out you stick.\n\n",
+      "url": "https://reddit.com/r/sydney/comments/1cobpql/favorite_running_routes/l3dmuly/",
+      "score": 35
+    },
+    {
+      "text": "The residents of the suburb of Queens Park somehow got that created because they didn't want to be residents of Bondi Junction.",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxy4tf1/",
+      "score": 8
+    },
+    {
+      "text": "Try Queens Park -  an extension of Centennial Park to the east.\n\n\nI  used it a while ago not sure what it's like now.",
+      "url": "https://reddit.com/r/sydney/comments/1bvdigo/centennial_park_lights/kxytzb6/",
+      "score": 7
+    },
+    {
+      "text": "Queens Park isn't lit either, so you only have more light because there's less distance and less vegetation between the streets/houses and park.\n\nMoore Park West is sort of lit.\n\nOtherwise OP can run ",
+      "url": "https://reddit.com/r/sydney/comments/1bvdigo/centennial_park_lights/kxzqj7u/",
+      "score": 7
+    }
+  ]
+}

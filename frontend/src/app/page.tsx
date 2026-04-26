@@ -1,11 +1,13 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
+import { Coffee, Flame, Hexagon, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AssistantSidebar } from "../components/liveability/AssistantSidebar";
 import { importanceOptions, quickChips, suburbs, weightPrompts } from "../components/liveability/data";
+import { DetailedReportModal } from "../components/modals/DetailedReportModal";
 import { OnboardingPanel } from "../components/liveability/OnboardingPanel";
 import { SharedBrand } from "../components/liveability/SharedBrand";
 import { ChatMessage, ImportanceLevelKey, Weights, Suburb } from "../components/liveability/types";
@@ -26,6 +28,7 @@ const initialWeights: Weights = {
 const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 const CHAT_ENDPOINT = `${API_BASE_URL}/api/chat`;
 const CIVIC_ENDPOINT = `${API_BASE_URL}/api/civic`;
+const CHAT_PREVIEW_MAX_LENGTH = 420;
 
 const initialLevels: Partial<Record<keyof Weights, ImportanceLevelKey>> = {};
 const PREFERENCES_STORAGE_KEY = "sydney-liveability-preferences-v1";
@@ -278,6 +281,17 @@ function getImportanceVisual(choiceKey: ImportanceLevelKey) {
   };
 }
 
+function toChatPreview(fullAnswerHtml: string): string {
+  const plainText = fullAnswerHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (plainText.length <= CHAT_PREVIEW_MAX_LENGTH) {
+    return fullAnswerHtml;
+  }
+  const previewSlice = plainText.slice(0, CHAT_PREVIEW_MAX_LENGTH);
+  const cutIndex = previewSlice.lastIndexOf(" ");
+  const safePreview = cutIndex > 200 ? previewSlice.slice(0, cutIndex) : previewSlice;
+  return `${safePreview.trim()}...`;
+}
+
 export default function HomePage() {
   const [isHydrated, setIsHydrated] = useState(false);
   const [isAppOpen, setIsAppOpen] = useState(false);
@@ -291,6 +305,9 @@ export default function HomePage() {
   const [onboardingTyping, setOnboardingTyping] = useState(false);
 
   const [selectedSuburbId, setSelectedSuburbId] = useState<string | null>(null);
+  const [detailedReportOpen, setDetailedReportOpen] = useState(false);
+  const [detailedReportSuburb, setDetailedReportSuburb] = useState<string | null>(null);
+  const [detailedReportMessage, setDetailedReportMessage] = useState("");
   const [layer, setLayer] = useState("Liveability");
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
   const [chatTyping, setChatTyping] = useState(false);
@@ -441,6 +458,15 @@ export default function HomePage() {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  function openDetailedReportFromMessage(messageIndex: number) {
+    const message = chatMessages[messageIndex];
+    if (!message || message.role !== "ai") return;
+
+    setDetailedReportMessage(message.fullHtml ?? message.html);
+    setDetailedReportSuburb(message.detailedSuburb ?? null);
+    setDetailedReportOpen(true);
+  }
+
   function updateWeight(key: keyof Weights, value: number) {
     setWeights((prev) => ({ ...prev, [key]: value }));
   }
@@ -495,13 +521,16 @@ export default function HomePage() {
     const suburb = allSuburbsForMap.find((item) => item.name === name);
     if (!suburb) return;
     setSelectedSuburbId(suburb.id);
-
-    void sendChat(`Tell me about ${suburb.name}`);
+    void sendChat(`Tell me about ${suburb.name}`, suburb.name);
   }
 
-  async function sendChat(text?: string) {
+  async function sendChat(text?: string, selectedSuburb?: string) {
     const value = (text ?? chatInput).trim();
     if (!value) return;
+
+    const activeSuburbName = selectedSuburb
+      ?? allSuburbsForMap.find((item) => item.id === selectedSuburbId)?.name
+      ?? null;
 
     setChatMessages((prev) => [...prev, { role: "user", html: value }]);
     setChatInput("");
@@ -522,7 +551,8 @@ export default function HomePage() {
       }
 
       const payload = (await apiResponse.json()) as ChatApiResponse;
-      const answer = (payload.answer ?? "I could not process that question right now.").trim();
+      const fullAnswer = (payload.answer ?? "I could not process that question right now.").trim();
+      const answerPreview = toChatPreview(fullAnswer);
       const source = Array.isArray(payload.sources) && payload.sources.length > 0
         ? payload.sources
             .map((item) => [item.source, item.suburb].filter(Boolean).join(" - "))
@@ -531,7 +561,16 @@ export default function HomePage() {
         : "Sydney Liveability API";
 
       setChatTyping(false);
-      setChatMessages((prev) => [...prev, { role: "ai", html: answer, source }]);
+      setChatMessages((prev) => [
+        ...prev,
+        {
+          role: "ai",
+          html: answerPreview,
+          fullHtml: fullAnswer,
+          detailedSuburb: activeSuburbName,
+          source,
+        },
+      ]);
     } catch {
       setChatTyping(false);
       setChatMessages((prev) => [
@@ -539,6 +578,8 @@ export default function HomePage() {
         {
           role: "ai",
           html: "I could not process that question right now. Please try again.",
+          fullHtml: "I could not process that question right now. Please try again.",
+          detailedSuburb: activeSuburbName,
           source: "Sydney Liveability API"
         }
       ]);
@@ -572,6 +613,9 @@ export default function HomePage() {
     setOnboardingMessages([]);
     setOnboardingTyping(false);
     setSelectedSuburbId(null);
+    setDetailedReportOpen(false);
+    setDetailedReportSuburb(null);
+    setDetailedReportMessage("");
     setChatMessages([]);
     setChatTyping(false);
     setChatInput("");
@@ -637,6 +681,14 @@ export default function HomePage() {
                       <Coffee size={10} /> {getImportanceLabel(selectedLevels.lifestyle)}
                     </span>
                   </button>
+
+                  <Link
+                    href="/overview"
+                    className="ml-2 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-bold tracking-[0.04em] text-slate-700 shadow-[0_6px_16px_rgba(15,23,42,0.06)] transition hover:border-slate-400 hover:text-slate-900"
+                  >
+                    <Hexagon size={11} />
+                    HEX OVERVIEW
+                  </Link>
 
                   {profileOpen ? (
                     <motion.div
@@ -719,6 +771,7 @@ export default function HomePage() {
                       onInputChange={setChatInput}
                       onSend={() => sendChat()}
                       onChipSend={sendChat}
+                      onOpenDetailedReport={openDetailedReportFromMessage}
                       chips={quickChips}
                       pdfLoaded={pdfLoaded}
                       onTogglePdf={togglePdf}
@@ -729,6 +782,17 @@ export default function HomePage() {
             </motion.section>
           )}
         </AnimatePresence>
+
+        <DetailedReportModal
+          isOpen={detailedReportOpen}
+          suburb={detailedReportSuburb}
+          messageHtml={detailedReportMessage}
+          onClose={() => {
+            setDetailedReportOpen(false);
+            setDetailedReportSuburb(null);
+            setDetailedReportMessage("");
+          }}
+        />
       </main>
     </LayoutGroup>
   );

@@ -1,0 +1,91 @@
+{
+  "suburb": "Dawes Point",
+  "post_count": 8,
+  "fetched_at": "2026-04-18T02:18:55.969351+00:00",
+  "aspects": {
+    "nightlife": {
+      "score": 0.987,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.987,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.983,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.865,
+      "mentions": 7
+    },
+    "safety": {
+      "score": 0.914,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.993,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.837,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7923,
+    "surprise": 0.1159,
+    "anger": 0.0289,
+    "sadness": 0.0282,
+    "fear": 0.015,
+    "joy": 0.008,
+    "disgust": 0.0117
+  },
+  "narrative": "Reddit discussions about Dawes Point are most positive about affordability (0.99) and nightlife (0.99). Residents are most critical about transport (0.84) and noise (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "When do NYE vantage points hit capacity?\nYes, I know it's several months away, but I had some free time this arvo to knock the table up.\n\nSo, one of the more common questions asked around NYE is \"what",
+      "url": "https://reddit.com/r/sydney/comments/1cog8bo/when_do_nye_vantage_points_hit_capacity/",
+      "score": 63
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2024!\nWelp, fuck again.\n\nThe flood of \"what do I do for New Year's?\" posts are starting, though you might not have noticed them as much since we started referring them ",
+      "url": "https://reddit.com/r/sydney/comments/1h5hf9b/sydney_nye_fireworks_megathread_2024/",
+      "score": 54
+    },
+    {
+      "text": "Sydney NYE Fireworks Megathread 2025!\nWe're four weeks out now. The posts have started, and we'd remind people there is [a Wiki page that you should totally check out.](https://old.reddit.com/r/sydney",
+      "url": "https://reddit.com/r/sydney/comments/1pchenr/sydney_nye_fireworks_megathread_2025/",
+      "score": 47
+    },
+    {
+      "text": "I mean, if you count that as the CBD , then you could also count the Budget Petrol at Regent St, Chippendale.\n\nTo me the CBD is anywhere in the boundaries of suburbs of Sydney, Haymarket, Darling Harb",
+      "url": "https://reddit.com/r/sydney/comments/1cmrbf4/anyone_remember_where_the_service_station_in_the/l32l779/",
+      "score": 45
+    },
+    {
+      "text": "OP has specified \"train\" but let me emphasise, as much as I possibly can, that **you must not drive into the CBD, especially in Millers Point, Dawes Point or The Rocks**. **You will sit in your car fo",
+      "url": "https://reddit.com/r/sydney/comments/1bdoytg/vivid_is_imminent_transport_tips/kuo7z6a/",
+      "score": 32
+    },
+    {
+      "text": "Vantage Point closure times for NYE 2023/24 and 2024/25\nWell, I've finally rolled around to completing the list again. In expectation of the usual \"what time should I be at <place> to watch the NYE fi",
+      "url": "https://reddit.com/r/sydney/comments/1m71y2z/vantage_point_closure_times_for_nye_202324_and/",
+      "score": 16
+    },
+    {
+      "text": "Was it foggy last night? Could have been the Dawes Point foghorn https://www.portauthoritynsw.com.au/news-and-publications/2018-news/sydney-s-lighthouses-a-guiding-light-for-160-years/\n\nIt’s the box t",
+      "url": "https://reddit.com/r/sydney/comments/1avyh5k/did_anyone_else_hear_that_constant_ship_horn_type/kre3vkl/",
+      "score": 8
+    },
+    {
+      "text": "Rare Aviation Books in Dawes Point would be up there",
+      "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kou32ns/",
+      "score": 4
+    }
+  ]
+}

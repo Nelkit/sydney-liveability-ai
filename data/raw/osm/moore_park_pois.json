@@ -1,0 +1,833 @@
+{
+  "suburb": "Moore Park",
+  "bbox": {
+    "south": -33.904906,
+    "west": 151.2142904,
+    "north": -33.885516,
+    "east": 151.2299534
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.904906,151.2142904,-33.885516,151.2299534);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.904906,151.2142904,-33.885516,151.2299534);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.904906,151.2142904,-33.885516,151.2299534);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.904906,151.2142904,-33.885516,151.2299534);\n);\nout tags;",
+  "fallback_used": false,
+  "responses": [
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:32:26Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "node",
+            "id": 20979627,
+            "tags": {
+              "amenity": "restaurant",
+              "created_by": "JOSM",
+              "cuisine": "chinese",
+              "name": "Golden Century Seafood Restaurant"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979628,
+            "tags": {
+              "amenity": "cafe",
+              "created_by": "xybot",
+              "name": "Gosh Coffee"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979629,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Jamaica Blue",
+              "brand:wikidata": "Q24965819",
+              "brand:wikipedia": "en:Jamaica Blue",
+              "cuisine": "coffee_shop",
+              "name": "Jamaica Blue",
+              "takeaway": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979675,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Arena"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979677,
+            "tags": {
+              "amenity": "restaurant",
+              "created_by": "JOSM",
+              "name": "Ablaze Grill & Bar"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979678,
+            "tags": {
+              "amenity": "restaurant",
+              "created_by": "JOSM",
+              "cuisine": "italian",
+              "name": "Cine"
+            }
+          },
+          {
+            "type": "node",
+            "id": 20979690,
+            "tags": {
+              "amenity": "cafe",
+              "brand": "Gloria Jean's",
+              "brand:wikidata": "Q2666365",
+              "cuisine": "coffee_shop",
+              "name": "Gloria Jean's",
+              "official_name": "Gloria Jean's Coffees",
+              "takeaway": "yes",
+              "website": "www.gloriajeanscoffee.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1084662516,
+            "tags": {
+              "addr:housenumber": "688",
+              "addr:postcode": "2016",
+              "addr:state": "NSW",
+              "addr:street": "Bourke Street",
+              "addr:suburb": "Redfern",
+              "amenity": "cafe",
+              "check_date": "2023-11-10",
+              "name": "Little Evie",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1084662538,
+            "tags": {
+              "addr:street": "Bourke Street",
+              "amenity": "cafe",
+              "name": "Side Plate"
+            }
+          },
+          {
+            "type": "node",
+            "id": 1903600217,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4112641174,
+            "tags": {
+              "leisure": "playground",
+              "name": "Oatley Road Playground",
+              "source": "NSW LPI Base Map"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4689171659,
+            "tags": {
+              "alt_name": "10WilliamSt",
+              "amenity": "restaurant",
+              "email": "info@10williamst.com.au",
+              "name": "10 William St",
+              "phone": "+61 2 9360 3310",
+              "website": "http://10williamst.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 4978562832,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Artificer",
+              "name:en": "Artificer",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 5902813542,
+            "tags": {
+              "addr:country": "AU",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "restaurant",
+              "cuisine": "sushi",
+              "name": "Sushi n' Blue Train"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6037842301,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Missy K",
+              "opening_hours": "Mo-Su 17:30-21:30",
+              "phone": "+61 2 9331 0064",
+              "website": "https://www.missyk.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 6369840474,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 8971682176,
+            "tags": {
+              "amenity": "cafe",
+              "contact:facebook": "https://www.facebook.com/The-Greenhouse-1154790344562732",
+              "drink:coffee": "yes",
+              "mobile": "+61 435 234 043",
+              "name": "The Greenhouse Centenial Park",
+              "outdoor_seating": "yes",
+              "website": "http://thegreenhouse.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10740501905,
+            "tags": {
+              "amenity": "restaurant",
+              "name": "Il Baretto"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10740552105,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Fork"
+            }
+          },
+          {
+            "type": "node",
+            "id": 10948221309,
+            "tags": {
+              "amenity": "cafe",
+              "name": "Wilson Cafe",
+              "outdoor_seating": "yes",
+              "outdoor_seating:comfort": "stood;chair",
+              "website": "https://www.wilsoncafe.com.au/"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11004591774,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-09",
+              "indoor_seating": "yes",
+              "indoor_seating:comfort": "stool;chair",
+              "name": "Dougie",
+              "outdoor_seating": "yes",
+              "outdoor_seating:comfort": "bench;stool"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11126569043,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11126669449,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11126669450,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11337169546,
+            "tags": {
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11471881756,
+            "tags": {
+              "amenity": "pharmacy",
+              "healthcare": "pharmacy",
+              "name": "Paddington Compounding Pharmacy"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11591180761,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "italian",
+              "name": "La Panchina"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11794965494,
+            "tags": {
+              "addr:housenumber": "339",
+              "addr:postcode": "2021",
+              "addr:state": "NSW",
+              "addr:street": "Oxford Street",
+              "addr:suburb": "Paddington",
+              "amenity": "cafe",
+              "cuisine": "coffee_shop",
+              "name": "Paddington Grind",
+              "outdoor_seating": "yes",
+              "website": "https://m.facebook.com/pages/Paddington-Grind/142137619164649"
+            }
+          },
+          {
+            "type": "node",
+            "id": 11853405956,
+            "tags": {
+              "amenity": "restaurant",
+              "cuisine": "sushi"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12423584324,
+            "tags": {
+              "addr:unit": "11",
+              "amenity": "cafe",
+              "level": "1",
+              "name": "The Depot"
+            }
+          },
+          {
+            "type": "node",
+            "id": 12706575011,
+            "tags": {
+              "addr:housenumber": "1A",
+              "addr:state": "NSW",
+              "addr:street": "Entertainment Quarter",
+              "addr:suburb": "Moore Park",
+              "addr:unit": "210",
+              "amenity": "restaurant",
+              "cuisine": "vietnamese",
+              "name": "Saigon Summer",
+              "opening_hours": "Mo-Su 09:00-21:00",
+              "website": "https://saigonsummer.com.au"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843859,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-02",
+              "name": "Naid\u00ed A\u00e7ai",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843860,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-11-02",
+              "cuisine": "italian",
+              "diet:vegetarian": "yes",
+              "name": "Fratelli Fresh",
+              "outdoor_seating": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843861,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-11-02",
+              "name": "Winghaus"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843862,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-02",
+              "cocktails": "yes",
+              "name": "Margi",
+              "outdoor_seating": "yes",
+              "toilets:wheelchair": "yes"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843863,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-11-02",
+              "cuisine": "mexican",
+              "name": "El Camino Cantina",
+              "smoking": "no"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843865,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2025-11-02",
+              "cuisine": "african",
+              "name": "A Taste Of Ethiopia"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13274843866,
+            "tags": {
+              "amenity": "cafe",
+              "check_date": "2025-11-02",
+              "cuisine": "breakfast;burger",
+              "name": "Jamaica blue"
+            }
+          },
+          {
+            "type": "node",
+            "id": 13624184958,
+            "tags": {
+              "amenity": "restaurant",
+              "check_date": "2026-03",
+              "cuisine": "japanese",
+              "name": "RK San"
+            }
+          },
+          {
+            "type": "way",
+            "id": 10209197,
+            "tags": {
+              "addr:housenumber": "556",
+              "addr:postcode": "2021",
+              "addr:street": "Cleveland Street",
+              "addr:suburb": "Moore Park",
+              "amenity": "school",
+              "contact:email": "sydneyboys-h.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9662 9310",
+              "contact:phone": "+61 2 9662 9300",
+              "fee": "no",
+              "fenced": "yes",
+              "grades": "7-12",
+              "isced:level": "2-3",
+              "name": "Sydney Boys High School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "1200",
+              "school:gender": "male",
+              "school:selective": "yes",
+              "school:specialty": "comprehensive",
+              "school:type": "secondary",
+              "start_date": "1883-01-01",
+              "website": "https://www.sydneyboys-h.schools.nsw.edu.au/",
+              "wheelchair": "no",
+              "wikidata": "Q7659840",
+              "wikipedia": "en:Sydney Boys High School"
+            }
+          },
+          {
+            "type": "way",
+            "id": 10209231,
+            "tags": {
+              "amenity": "school",
+              "contact:email": "sydneygirl-h.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9360 9702",
+              "contact:phone": "+61 2 9331 2336",
+              "fee": "no",
+              "grades": "7-12",
+              "isced:level": "2-3",
+              "name": "Sydney Girls High School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "935",
+              "school:gender": "female",
+              "school:selective": "yes",
+              "school:specialty": "comprehensive",
+              "school:type": "secondary",
+              "start_date": "1883-01-01",
+              "website": "https://www.sydneygirl-h.schools.nsw.edu.au/",
+              "wikidata": "Q7659944",
+              "wikipedia": "en:Sydney Girls High School"
+            }
+          },
+          {
+            "type": "way",
+            "id": 12281514,
+            "tags": {
+              "leisure": "park",
+              "name": "Moore Park",
+              "operator": "Greater Sydney Parklands",
+              "operator:wikidata": "Q135059646",
+              "website": "https://www.centennialparklands.com.au/visit/our-parks/moore-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 26517413,
+            "tags": {
+              "dog": "no",
+              "leisure": "playground",
+              "name": "Cook's Paddock",
+              "website": "https://www.woollahra.nsw.gov.au/recreation/parks,_reserves_and_playgrounds/list_of_parks_and_playgrounds/parks_and_playgrounds/james_cook_reserve_cooks_paddock"
+            }
+          },
+          {
+            "type": "way",
+            "id": 93544955,
+            "tags": {
+              "addr:housenumber": "36",
+              "addr:street": "Little Cleveland Street",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 114256545,
+            "tags": {
+              "addr:housenumber": "811",
+              "addr:street": "South Dowling Street",
+              "leisure": "park",
+              "name": "Corning Park",
+              "opening_hours": "24/7",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 116160602,
+            "tags": {
+              "dog": "yes",
+              "leisure": "park",
+              "name": "Edmund Resch Reserve",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/edmund-resch-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 173735877,
+            "tags": {
+              "check_date": "2023-11-19",
+              "leisure": "park",
+              "name": "Paddington Reservoir Gardens",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/paddington-reservoir-gardens",
+              "wikidata": "Q7123336"
+            }
+          },
+          {
+            "type": "way",
+            "id": 174607918,
+            "tags": {
+              "leisure": "playground",
+              "name": "Arthur Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 222248656,
+            "tags": {
+              "check_date": "2023-11-19",
+              "leisure": "park",
+              "name": "Regent Street Reserve",
+              "note": "no name sign"
+            }
+          },
+          {
+            "type": "way",
+            "id": 247764399,
+            "tags": {
+              "check_date": "2023-11-10",
+              "leisure": "park",
+              "name": "Chelsea Street Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 299789243,
+            "tags": {
+              "check_date": "2024-08-10",
+              "leisure": "park",
+              "name": "Shannon Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "source": "local_knowledge",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/shannon-reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 331769890,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 331769891,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 366101931,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 445377932,
+            "tags": {
+              "access": "yes",
+              "communication:amateur_radio:pota": "AU-10422",
+              "leisure": "park",
+              "name": "Centennial Park",
+              "name:zh": "\u767e\u5e74\u7d00\u5ff5\u516c\u5712",
+              "opening_hours": "24/7",
+              "operator": "Greater Sydney Parklands",
+              "operator:wikidata": "Q135059646",
+              "source:location": "bing",
+              "start_date": "1888",
+              "toilets:wheelchair": "yes",
+              "website": "https://www.centennialparklands.com.au/visit/our-parks/centennial-park",
+              "wheelchair": "yes",
+              "wheelchair:description": "great access for wheelchairs throughout most of the park",
+              "wikidata": "Q61721649",
+              "wikipedia": "en:Centennial Park (Sydney)"
+            }
+          },
+          {
+            "type": "way",
+            "id": 587595473,
+            "tags": {
+              "leisure": "park",
+              "name": "Edgely Street Reserve"
+            }
+          },
+          {
+            "type": "way",
+            "id": 599073428,
+            "tags": {
+              "attribution:name": "neilphillips",
+              "leisure": "park",
+              "name": "Fred Miller Park",
+              "source": "survey",
+              "source:boundary": "LPI Base Map June 2018"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600047314,
+            "tags": {
+              "addr:postcode": "2021",
+              "addr:suburb": "Paddington",
+              "amenity": "school",
+              "contact:email": "paddington-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9360 9319",
+              "contact:phone": "+61 2 9361 6730",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Paddington Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "329",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1856-05-01",
+              "website": "https://www.paddington-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 600246789,
+            "tags": {
+              "addr:housenumber": "590",
+              "addr:postcode": "2010",
+              "addr:street": "Bourke Street",
+              "addr:suburb": "Surry Hills",
+              "amenity": "school",
+              "contact:email": "bourkest-p.school@det.nsw.edu.au",
+              "contact:fax": "+61 2 9310 2708",
+              "contact:phone": "+61 2 9319 7310",
+              "fee": "no",
+              "grades": "0-6",
+              "isced:level": "1",
+              "name": "Bourke Street Public School",
+              "operator": "NSW Department of Education",
+              "operator:type": "government",
+              "operator:wikidata": "Q5260271",
+              "school:enrolment": "417",
+              "school:gender": "mixed",
+              "school:selective": "no",
+              "school:specialty": "comprehensive",
+              "school:type": "primary",
+              "source:boundary": "LPI Base Map June 2018",
+              "start_date": "1880-10-01",
+              "website": "https://www.bourkest-p.schools.nsw.edu.au/"
+            }
+          },
+          {
+            "type": "way",
+            "id": 702177269,
+            "tags": {
+              "dog": "leashed",
+              "leisure": "park",
+              "name": "Wimbo Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/wimbo-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 801429031,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 906761242,
+            "tags": {
+              "leisure": "park",
+              "name": "Watchful Harry Square",
+              "wheelchair": "yes"
+            }
+          },
+          {
+            "type": "way",
+            "id": 916536554,
+            "tags": {
+              "check_date": "2025-11-17",
+              "leisure": "park",
+              "name": "Stewart Street Pocket Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 989348479,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1024706722,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1027354802,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1027354803,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1064211060,
+            "tags": {
+              "check_date": "2025-11-17",
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1225862414,
+            "tags": {
+              "leisure": "park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1306719305,
+            "tags": {
+              "access": "yes",
+              "leisure": "playground",
+              "website": "https://www.cityofsydney.nsw.gov.au/playgrounds/shannon-reserve-playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1409953610,
+            "tags": {
+              "leisure": "park",
+              "name": "Drivers Triangle",
+              "source": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856",
+              "source:start_date": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856",
+              "start_date": "1881",
+              "website": "https://archives.cityofsydney.nsw.gov.au/nodes/view/1968856"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1435794867,
+            "tags": {
+              "leisure": "park",
+              "name": "Chelsea Street Streetscape",
+              "source:name": "sign",
+              "surface": "brick"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1451181001,
+            "tags": {
+              "leisure": "park",
+              "name": "Stewart Street Reserve"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

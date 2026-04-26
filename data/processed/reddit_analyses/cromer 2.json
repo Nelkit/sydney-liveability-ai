@@ -1,0 +1,71 @@
+{
+  "suburb": "Cromer",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:12.393894+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.346,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.55,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.969,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.4655,
+    "neutral": 0.352,
+    "anger": 0.0325,
+    "disgust": 0.0238,
+    "sadness": 0.0116,
+    "joy": 0.0992,
+    "fear": 0.0154
+  },
+  "narrative": "Reddit discussions about Cromer are most positive about food and cafe (0.97) and community (0.55). Residents are most critical about green space (0.50) and safety (0.35). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is surprise.",
+  "sources": [
+    {
+      "text": "Teachers Pet? Cromer HS? He murdered the wife, just got jail time 40yrs later. Never found the body. Brilliant podcast!",
+      "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzxyigf/",
+      "score": 28
+    },
+    {
+      "text": "Just checked Wikipedia and it seems to be legit. Also, Narraweena used to be Dee Why Heights, and Cromer was Dee Why West.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvo4an7/",
+      "score": 9
+    },
+    {
+      "text": "Having grown up as an odd one out on the northern beaches (parents had no money really) \n\nYou'd be astonished how many Narraweena residents sweat they are in beacon hill and how many Dee Why ones say ",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxxmn4u/",
+      "score": 3
+    },
+    {
+      "text": "For the North! \n\nBucketty's at Brookvale used to have Dope Fusion Food Trailer and I saw them recently at James Morgan Reserve, Fisher Rd N & Carawa Rd, Cromer NSW 2099 👌\n\nOtherwise Nomad, & Dad n Dav",
+      "url": "https://reddit.com/r/sydney/comments/1ci6cmj/food_truck_culture_in_sydney/l2c0i9z/",
+      "score": 2
+    }
+  ]
+}

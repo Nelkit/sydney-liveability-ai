@@ -1,0 +1,101 @@
+{
+  "suburb": "Waverley",
+  "post_count": 38,
+  "fetched_at": "2026-04-18T02:10:44.883173+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.575,
+      "mentions": 30
+    },
+    "safety": {
+      "score": 0.531,
+      "mentions": 12
+    },
+    "nightlife": {
+      "score": 0.716,
+      "mentions": 5
+    },
+    "transport": {
+      "score": 0.523,
+      "mentions": 9
+    },
+    "noise": {
+      "score": 0.457,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.679,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.737,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.64,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "anger": 0.0935,
+    "neutral": 0.5373,
+    "sadness": 0.075,
+    "fear": 0.0805,
+    "disgust": 0.0711,
+    "surprise": 0.072,
+    "joy": 0.0706
+  },
+  "narrative": "Reddit discussions about Waverley are most positive about affordability (0.74) and nightlife (0.72). Residents are most critical about transport (0.52) and noise (0.46). This analysis is based on 38 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Waverley Council votes to cut down tuckeroo trees on multimillion-dollar street blocking Sydney Opera House views",
+      "url": "https://reddit.com/r/sydney/comments/1ohvwwt/waverley_council_votes_to_cut_down_tuckeroo_trees/",
+      "score": 171
+    },
+    {
+      "text": "Waverley Council to spend extra $220,000 to manage 'out of control' beach Christmas Day party",
+      "url": "https://reddit.com/r/sydney/comments/1le3mxk/waverley_council_to_spend_extra_220000_to_manage/",
+      "score": 149
+    },
+    {
+      "text": "You got LGAs in Western Sydney having their population increase 10+% year after year and then you’ve got Waverley and hunters hill complaining about “transport” and “schools”. \n\nThey are the ones who ",
+      "url": "https://reddit.com/r/sydney/comments/1918qv3/heritage_versus_housing_our_next_big_debate/kgutfai/",
+      "score": 127
+    },
+    {
+      "text": "Finding items lost on public transport - positive stories?\nHas anyone had any positive experiences retrieving items lost on public transport? I left a tote bag on the 370 the other day. It didn’t have",
+      "url": "https://reddit.com/r/sydney/comments/1qwwg26/finding_items_lost_on_public_transport_positive/",
+      "score": 58
+    },
+    {
+      "text": "Ex-Waverley councillor Sam Einfeld, who violently assaulted 81-year-old, tells court he was addicted to prescription medication",
+      "url": "https://reddit.com/r/sydney/comments/1eyxfrz/exwaverley_councillor_sam_einfeld_who_violently/",
+      "score": 54
+    },
+    {
+      "text": "I work for Waverley Council, If you didn’t get it on your windshield you didn’t receive a fine.",
+      "url": "https://reddit.com/r/sydney/comments/1c0fr2g/i_screwed_up_with_parking_does_anyone_know_how_i/kyw89df/",
+      "score": 52
+    },
+    {
+      "text": "The 'Ile-de-Sydney'\nI was trying to explain to a friend that inner/eastern Sydney is basically an 'island' surrounded by a continuous waterline (the coastline for most of it, Alexandria Canal in the s",
+      "url": "https://reddit.com/r/sydney/comments/1e7q5re/the_iledesydney/",
+      "score": 43
+    },
+    {
+      "text": "\"Other councils, like Sydney’s Waverley Council, have flat-out rejected paperless tickets because the model was deemed unfair, with drivers less likely to learn from their mistakes.\"\n\nRelax bud. You'r",
+      "url": "https://reddit.com/r/sydney/comments/1c0fr2g/i_screwed_up_with_parking_does_anyone_know_how_i/kyw3sc5/",
+      "score": 35
+    },
+    {
+      "text": "Waverley death: Man killed on quiet street south of Bondi Beach",
+      "url": "https://reddit.com/r/sydney/comments/1bgjzyk/waverley_death_man_killed_on_quiet_street_south/",
+      "score": 33
+    },
+    {
+      "text": "Demand isn’t changing a great deal, they’re just filling all the space with those who had already bought the plots decades ago. My great grandmother was buried at Waverley in 2018, her parents bought ",
+      "url": "https://reddit.com/r/sydney/comments/1apkb8d/even_the_cemetery_property_market_is_bad/kq6w9it/",
+      "score": 30
+    }
+  ]
+}

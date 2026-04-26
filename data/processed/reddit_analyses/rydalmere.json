@@ -1,0 +1,101 @@
+{
+  "suburb": "Rydalmere",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:33.668859+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.519,
+      "mentions": 18
+    },
+    "green_space": {
+      "score": 0.815,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.715,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.642,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.717,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.693,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.857,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.87,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "fear": 0.0388,
+    "neutral": 0.6184,
+    "anger": 0.0244,
+    "sadness": 0.0199,
+    "surprise": 0.1318,
+    "joy": 0.1149,
+    "disgust": 0.0518
+  },
+  "narrative": "Reddit discussions about Rydalmere are most positive about food and cafe (0.87) and noise (0.86). Residents are most critical about nightlife (0.64) and community (0.52). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "If you were at Bunnings Rydalmere this arvo and made this line up of Mazda 3s +1 happen, I love you",
+      "url": "https://reddit.com/r/sydney/comments/1k2rtpb/if_you_were_at_bunnings_rydalmere_this_arvo_and/",
+      "score": 104
+    },
+    {
+      "text": "Rydalmere has a good playground, also next door to a McDonald with an awesome playground.  Just off Victoria Rd in Rydalmere.",
+      "url": "https://reddit.com/r/sydney/comments/1bawmbg/what_bunnings_in_sydney_western_sydney_has_the/ku5jw0m/",
+      "score": 102
+    },
+    {
+      "text": "Stage 2 of the Parramatta Light Rail has been approved for construction by the NSW Government. It will connect stage 1 at Camellia - crosses Parramatta River on a new bridge to Rydalmere, Ermington, a",
+      "url": "https://reddit.com/r/sydney/comments/1azja3i/planning_approval_received_for_stage_2_parramatta/ks1ljw7/",
+      "score": 57
+    },
+    {
+      "text": "Rydalmere",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnryuj/",
+      "score": 34
+    },
+    {
+      "text": "Parramatta area: Does anyone know where this siren is coming from?\nHello! My partner and I have been wondering about this on and off for about a year now. 7 days a week, we can hear what sounds like a",
+      "url": "https://reddit.com/r/sydney/comments/1sk3mx9/parramatta_area_does_anyone_know_where_this_siren/",
+      "score": 30
+    },
+    {
+      "text": "Almost never any drive-up spaces, though if you come early you might be able to snag a street spot at Newington (and then uber there or walk the 2km after the concert).\n\nAn alternate option to conside",
+      "url": "https://reddit.com/r/sydney/comments/1bayzh7/olympic_park_parking/ku5x92h/",
+      "score": 22
+    },
+    {
+      "text": "Full story\n\n> Major construction work is set to finally begin on the second stage of the Parramatta Light Rail, with $2 billion in funding to be announced for the new tram line connecting the Parramat",
+      "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6v20g4/",
+      "score": 15
+    },
+    {
+      "text": "IMO there’s a few things going on here. Firstly Coles is often the most expensive. Their servo stores have a good range and their target market is possibly conditioned to think ‘Oh cool, I’ll buy that",
+      "url": "https://reddit.com/r/sydney/comments/1bznomm/petrol_prices/kyr4ly7/",
+      "score": 12
+    },
+    {
+      "text": "Can’t wait. Will save so much time getting home from work in Rydalmere.",
+      "url": "https://reddit.com/r/sydney/comments/1cyfohr/we_are_almost_there/l5ak6oq/",
+      "score": 11
+    }
+  ]
+}

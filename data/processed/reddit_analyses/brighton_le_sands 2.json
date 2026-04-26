@@ -1,0 +1,101 @@
+{
+  "suburb": "Brighton-Le-Sands",
+  "post_count": 14,
+  "fetched_at": "2026-04-18T02:17:01.796048+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.364,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.258,
+      "mentions": 11
+    },
+    "noise": {
+      "score": 0.048,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.172,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.828,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.823,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.949,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.3904,
+    "surprise": 0.1075,
+    "disgust": 0.2018,
+    "fear": 0.1069,
+    "anger": 0.1056,
+    "sadness": 0.0208,
+    "joy": 0.0669
+  },
+  "narrative": "Reddit discussions about Brighton-Le-Sands are most positive about affordability (0.95) and transport (0.83). Residents are most critical about green space (0.17) and noise (0.05). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "What is the name for this strip of sand?\nI never know what beach to call this when describing it to others. Brighton-le-sands? Lady Robinson Beach? \n\nIs there a name that sums up the whole beach or do",
+      "url": "https://reddit.com/r/sydney/comments/1i1kukt/what_is_the_name_for_this_strip_of_sand/",
+      "score": 280
+    },
+    {
+      "text": "Brighton-Le-Sands/Bexley/Bayside - loud cars/bikes are absolutely not bearable\nI've been a Bayside resident for many years now. This area is absolutely infested with ignorant/arrogant drivers/riders w",
+      "url": "https://reddit.com/r/sydney/comments/1ahvva1/brightonlesandsbexleybayside_loud_carsbikes_are/",
+      "score": 245
+    },
+    {
+      "text": "Comancheros are based in Brighton-Le-Sands so this is a risky move. Might run into some angry bikies.",
+      "url": "https://reddit.com/r/sydney/comments/1ahvva1/brightonlesandsbexleybayside_loud_carsbikes_are/kornbh7/",
+      "score": 34
+    },
+    {
+      "text": "I did that once when I got stuck in Bundeena.\n\nHad cycled to Wattamolla Beach in hopes that would impress some friends I was meeting (instead they looked at me like I was kinda crazy) - we met late ar",
+      "url": "https://reddit.com/r/sydney/comments/1bufuhs/got_ripped_by_a_locksmith_700_to_pick_a_lock_what/kxstiji/",
+      "score": 34
+    },
+    {
+      "text": "whose ex’s car is this\nspotted at brighton-le-sands",
+      "url": "https://reddit.com/r/sydney/comments/1c5guai/whose_exs_car_is_this/",
+      "score": 33
+    },
+    {
+      "text": ">I like to take up the entire lane because it feels much much safer,\n\nKeep doing this, riding defensively saves your life, you don't want to be stuck over on the side when an issue arises that you can",
+      "url": "https://reddit.com/r/sydney/comments/19ezywm/anyone_give_up_cycling_any_advice_how_to_deal/kjgghwo/",
+      "score": 30
+    },
+    {
+      "text": "I'm probably biased because I did grow up in Melbourne, but I would disagree. But then again, I live right next to Hurstville here in Sydney and I have to drive through Brighton-le-Sands on my work co",
+      "url": "https://reddit.com/r/sydney/comments/1dondjm/a_new_sydney_crapdriver_low/labnlx7/",
+      "score": 8
+    },
+    {
+      "text": "I really enjoyed Harry's Chinese cooking classes in brighton-le-sands. He teaches old school Australian Chinese cooking via demonstration and serves it to you. Dinner sorted for that night.\n\nI do mean",
+      "url": "https://reddit.com/r/sydney/comments/1ca92ee/cooking_classes_youd_recommend_in_the_city/l0sqa18/",
+      "score": 6
+    },
+    {
+      "text": "The open home might be scheduled to maximise the quiet periods. \n\nYou will want to go on a couple of different days. Things can vary depending on the wind and scheduling. 6-8 AM and PM is when a lot o",
+      "url": "https://reddit.com/r/sydney/comments/1beiwkf/to_all_inner_west_residents_how_bad_is_the/kuvwjuu/",
+      "score": 4
+    },
+    {
+      "text": "I'd recommend looking a bit north of the Shire. Bayside is lovely, easier to access other areas of Sydney from and is quite diverse, I think especially around Brighton-le-Sands and Rockfale? Can't spe",
+      "url": "https://reddit.com/r/sydney/comments/1ccfy16/is_it_still_racist_around_cronulla/l158pfp/",
+      "score": 4
+    }
+  ]
+}

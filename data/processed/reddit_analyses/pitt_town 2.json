@@ -1,0 +1,71 @@
+{
+  "suburb": "Pitt Town",
+  "post_count": 4,
+  "fetched_at": "2026-04-18T02:20:21.811824+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.91,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.903,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.695,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4263,
+    "joy": 0.0542,
+    "surprise": 0.1597,
+    "fear": 0.0892,
+    "sadness": 0.0075,
+    "disgust": 0.2505,
+    "anger": 0.0126
+  },
+  "narrative": "Reddit discussions about Pitt Town are most positive about food and cafe (0.91) and community (0.90). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Towns To Visit For A Daytrip\nWhat are some places to visit in NSW near Sydney for a day trip when it feels like you've been everywhere?\n\nSomething like a little town with good food, interesting shops ",
+      "url": "https://reddit.com/r/sydney/comments/1hbk2so/towns_to_visit_for_a_daytrip/",
+      "score": 29
+    },
+    {
+      "text": "That can’t be far off, Burns Pet Food is like an oasis surrounded by development chaos. \n\nIt must be The Gables as it is the development bordered by Boundary Rd, Old Pitt Town Rd and Windsor Rd. The G",
+      "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwelfk6/",
+      "score": 6
+    },
+    {
+      "text": "Not llamas but alpacas.\n\nHeaps of people with alpacas and a breeders in Pitt town.\n\nYou can see them from the roadside but obviously don't trespass and approach with caution.\n\nThe townsfolk are friend",
+      "url": "https://reddit.com/r/sydney/comments/1b4ph0v/llamas/kt3dtea/",
+      "score": 3
+    },
+    {
+      "text": "Cattai? Pitt Town?",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgfjx78/",
+      "score": 2
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Tamarama",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:28.196119+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.679,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.64,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.636,
+      "mentions": 6
+    },
+    "food_and_cafe": {
+      "score": 0.329,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.38,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "disgust": 0.1523,
+    "anger": 0.0863,
+    "fear": 0.0644,
+    "neutral": 0.3519,
+    "sadness": 0.2451,
+    "surprise": 0.077,
+    "joy": 0.023
+  },
+  "narrative": "Reddit discussions about Tamarama are most positive about transport (0.68) and safety (0.64). Residents are most critical about nightlife (0.38) and food and cafe (0.33). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "What the fuck is up with kids these days?\nMy partner and I were walking back from the bus stop in Tamarama and 5 kids, probably 12-15, on 2 e-bikes road passed us and called my partner the n word seve",
+      "url": "https://reddit.com/r/sydney/comments/1mquyfo/what_the_fuck_is_up_with_kids_these_days/",
+      "score": 921
+    },
+    {
+      "text": "Sausage sizzle prices are getting ridiculous \nThis was today in Tamarama",
+      "url": "https://reddit.com/r/sydney/comments/1gcf90s/sausage_sizzle_prices_are_getting_ridiculous/",
+      "score": 628
+    },
+    {
+      "text": "Forget Segaworld, let’s bring back  Tamarama Wonderland City\nhttps://www.visitsydneyaustralia.com.au/lost-theme-wondercity.html",
+      "url": "https://reddit.com/r/sydney/comments/1m9gmfa/forget_segaworld_lets_bring_back_tamarama/",
+      "score": 188
+    },
+    {
+      "text": "Scenic views over Tamarama Point today.",
+      "url": "https://reddit.com/r/sydney/comments/1by1o45/scenic_views_over_tamarama_point_today/",
+      "score": 98
+    },
+    {
+      "text": "Man who died in suspected hit and run in Tamarama identified as Sydney lawyer Mitch East",
+      "url": "https://reddit.com/r/sydney/comments/1bhify4/man_who_died_in_suspected_hit_and_run_in_tamarama/",
+      "score": 80
+    },
+    {
+      "text": "Tamarama ding dong",
+      "url": "https://reddit.com/r/sydney/comments/1bs8rgh/tamarama_ding_dong/",
+      "score": 31
+    },
+    {
+      "text": "So I’m guessing he dropped the deceased off in Tamarama while driving an Uber - and then probably checked his phone for the next fare while driving off - and must have hit his previous customer? This ",
+      "url": "https://reddit.com/r/sydney/comments/1blbdl8/man_charged_over_alleged_hitandrun_named/kw43s8b/",
+      "score": 25
+    },
+    {
+      "text": "Or the driver also happened to be in tamarama at 4am - and perhaps hit and run after this poor kid got out of an Uber? Need more info!",
+      "url": "https://reddit.com/r/sydney/comments/1blbdl8/man_charged_over_alleged_hitandrun_named/kw44k5t/",
+      "score": 23
+    },
+    {
+      "text": "Be real, which beach in the eastern suburbs has the best sand and is the most swimmable.\n\nIt’s not Tamarama, that’s a pro surfer’s delight but not a swimmers.\n\nBronte’s too rough for a casual swim and",
+      "url": "https://reddit.com/r/sydney/comments/1d2gd80/whitehaven_and_bondi_beach_ranked_11th_and_16th/l60ct5f/",
+      "score": 4
+    },
+    {
+      "text": "Tamarama and Bronté literally around the corner and no one knows they exist haha",
+      "url": "https://reddit.com/r/sydney/comments/1b0bo5v/manly_beach_only_australian_beach_in_tripadvisors/ksbb39c/",
+      "score": 2
+    }
+  ]
+}

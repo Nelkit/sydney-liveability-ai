@@ -62,7 +62,7 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
                 for suburb in suburbs:
                     print(f"Running {specialist_name} agent for suburb: {suburb}")
                     specialist_outputs[specialist_name][suburb] = run_func(
-                        {"suburb": suburb}
+                        {"suburb": suburb, "question": question}
                     )
 
         # Run comparator only if 2+ suburbs are mentioned

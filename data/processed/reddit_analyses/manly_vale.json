@@ -1,0 +1,66 @@
+{
+  "suburb": "Manly Vale",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:39.994784+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.563,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.469,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.438,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.937,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5306,
+    "surprise": 0.3771,
+    "fear": 0.0358,
+    "anger": 0.0189,
+    "disgust": 0.008,
+    "sadness": 0.0212,
+    "joy": 0.0085
+  },
+  "narrative": "Reddit discussions about Manly Vale are most positive about transport (0.94) and community (0.56). Residents are most critical about nightlife (0.47) and green space (0.44). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Manly Vale?",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgf1sji/",
+      "score": 4
+    },
+    {
+      "text": "Not sure if all are still there but I know there were ones in Manly vale, allambie heights, white bay park in Balmain, Bondi beach, belrose, hockey ground wall in Newtown, CP wall in collaroy plateau",
+      "url": "https://reddit.com/r/sydney/comments/1aonuyu/legal_graffiti_walls_in_sydney/kq1f1yf/",
+      "score": 4
+    },
+    {
+      "text": "Oh was this one from the tv show?? I never saw the show but are intrigued by which items they did. \n\n\nJust looking at wikipedia, the episode listed are;\n1. Canterbury\n2. Cleveland Street\n3. St Kilda\n4",
+      "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwg17b4/",
+      "score": 2
+    }
+  ]
+}

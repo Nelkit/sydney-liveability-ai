@@ -1,0 +1,101 @@
+{
+  "suburb": "Lidcombe",
+  "post_count": 138,
+  "fetched_at": "2026-04-18T01:53:08.962105+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.349,
+      "mentions": 40
+    },
+    "food_and_cafe": {
+      "score": 0.343,
+      "mentions": 24
+    },
+    "transport": {
+      "score": 0.64,
+      "mentions": 87
+    },
+    "community": {
+      "score": 0.591,
+      "mentions": 106
+    },
+    "nightlife": {
+      "score": 0.556,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.726,
+      "mentions": 16
+    },
+    "green_space": {
+      "score": 0.676,
+      "mentions": 22
+    },
+    "noise": {
+      "score": 0.469,
+      "mentions": 11
+    }
+  },
+  "emotions": {
+    "fear": 0.0546,
+    "neutral": 0.5158,
+    "anger": 0.0642,
+    "surprise": 0.143,
+    "disgust": 0.0845,
+    "sadness": 0.0635,
+    "joy": 0.0743
+  },
+  "narrative": "Reddit discussions about Lidcombe are most positive about affordability (0.73) and green space (0.68). Residents are most critical about safety (0.35) and food and cafe (0.34). This analysis is based on 138 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Lidcombe Shopping Centre\nNot sure exactly what happened here. \n\nHot day on a seemingly typical Friday. While having a casual coffee with a mate, the roof caved in over food court. Minutes later the en",
+      "url": "https://reddit.com/r/sydney/comments/1pqbfo1/lidcombe_shopping_centre/",
+      "score": 593
+    },
+    {
+      "text": "Sydney trains network disruptions.\nThe power supply issues at Strathfield from yesterday are still ongoing, train services will not be to time table and will likely be infrequent and sporadic.\n\nT1 Wes",
+      "url": "https://reddit.com/r/sydney/comments/1krab5m/sydney_trains_network_disruptions/",
+      "score": 351
+    },
+    {
+      "text": "Which suburbs reputations have drastically improved over the last 20 years?\nI’d say Parramatta, and Lidcombe.\n\nNot familiar with the North Shore or the Dee south/west",
+      "url": "https://reddit.com/r/sydney/comments/1i7t2zk/which_suburbs_reputations_have_drastically/",
+      "score": 269
+    },
+    {
+      "text": "This would have been the Lidcombe to Olympic Park leg, so 99% of people on that train would have been going to the gig.\n\nGreat to see!",
+      "url": "https://reddit.com/r/sydney/comments/1bfs8a8/djing_on_the_sydney_train_to_the_fred_again/kv2vrgd/",
+      "score": 253
+    },
+    {
+      "text": "Costco fuel overcharging\nCostco Lidcombe is advertising fuel at up to 6.8c under the real pump price.\n\nE10 should be 215.7 but when you get to the pump it's 222.7.\n\nKeep that in mind when you get ther",
+      "url": "https://reddit.com/r/sydney/comments/1rtxf5x/costco_fuel_overcharging/",
+      "score": 211
+    },
+    {
+      "text": "Good to see they learnt something after platform 0 at Lidcombe",
+      "url": "https://reddit.com/r/sydney/comments/1cnrnng/why_is_there_no_platform_1_at_tallawong/l397n67/",
+      "score": 194
+    },
+    {
+      "text": "What is your perfect suburb?\nbased off your lifestyle and everything you do and your family situation.\n\nfor me it would be lidcombe or burwood.\n\ni have an asian palette so both places and being close ",
+      "url": "https://reddit.com/r/sydney/comments/1sawb74/what_is_your_perfect_suburb/",
+      "score": 164
+    },
+    {
+      "text": "There's a direct train between Penrith and Lidcombe, doesn't even take an hour.",
+      "url": "https://reddit.com/r/sydney/comments/1b61vzk/just_wanna_vent_about_the_m4/kt9butt/",
+      "score": 161
+    },
+    {
+      "text": "What’s on fire in sydney west, looks like in lidcombe or auburn?",
+      "url": "https://reddit.com/r/sydney/comments/1gomk6u/whats_on_fire_in_sydney_west_looks_like_in/",
+      "score": 149
+    },
+    {
+      "text": "Just wanna vent about the M4 \nI am so sick of the m4 and the slow traffic that happens pretty much every day. Somedays it can be smooth sailing and you get to your destination with ease, but most days",
+      "url": "https://reddit.com/r/sydney/comments/1b61vzk/just_wanna_vent_about_the_m4/",
+      "score": 130
+    }
+  ]
+}

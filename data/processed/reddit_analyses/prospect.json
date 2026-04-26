@@ -1,0 +1,101 @@
+{
+  "suburb": "Prospect",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:25.569288+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.746,
+      "mentions": 8
+    },
+    "safety": {
+      "score": 0.548,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.835,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.925,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.739,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.696,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.889,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.0722,
+    "neutral": 0.4199,
+    "disgust": 0.3199,
+    "anger": 0.1591,
+    "fear": 0.0169,
+    "sadness": 0.0089,
+    "joy": 0.003
+  },
+  "narrative": "Reddit discussions about Prospect are most positive about affordability (0.93) and nightlife (0.89). Residents are most critical about safety (0.55) and noise (0.50). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Did Sydney's rivers/creek freeze up back in the 1700s or were the European settlers exaggerating things?\nThis is describing Watkin Tench's expedition in July 1791. They were near Prospect Creek in wha",
+      "url": "https://reddit.com/r/sydney/comments/1mkpt1a/did_sydneys_riverscreek_freeze_up_back_in_the/",
+      "score": 104
+    },
+    {
+      "text": "How is the west now?\nHi guys,\n\nI was thinking about how I used to hang around the Blacktown area back in the day, about 20 years ago. Was pretty rough - not necessarily violent but you had bogans and ",
+      "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/",
+      "score": 28
+    },
+    {
+      "text": "M4 accident west bound \nNot sure what’s happened out near Prospect but this is the worst traffic I’ve ever been in.",
+      "url": "https://reddit.com/r/sydney/comments/1d1l8rj/m4_accident_west_bound/",
+      "score": 26
+    },
+    {
+      "text": "Where did all the bogans go? I live in the Penrith area, come from Prospect originally, so a lot of my childhood memories are over that way. Back then, there were \"bogans\" everywhere, they just didn't",
+      "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/kozenwd/",
+      "score": 12
+    },
+    {
+      "text": ">The worst one is Blacktown council, because they neglect all the existing suburbs (Mt Druitt, Prospect, Seven Hills)\n\nFunny as a resident, I actually feel the opposite. I pay the same rates as people",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki827w2/",
+      "score": 10
+    },
+    {
+      "text": "Agreed, I'd rather somewhere around Prospect. That way you still get the big nature reserves, you're right by the T1 line, and you're also within shooting distance to the Blue Mountains. Similar house",
+      "url": "https://reddit.com/r/sydney/comments/1blnmw2/what_are_your_thoughts_on_the_australleppington/kw7306f/",
+      "score": 8
+    },
+    {
+      "text": "In light of the LA wildfires, I just remembered how intense the bushfires were near Prospect Reservoir back in 2019...",
+      "url": "https://reddit.com/r/sydney/comments/1hy4e8t/in_light_of_the_la_wildfires_i_just_remembered/",
+      "score": 7
+    },
+    {
+      "text": "Every council in Sydney is dodgy and bullshit, it's not exclusive to Bayside, if it's any consolation. Local government is a scam\n\nWas made worse by the 2016 mergers and boundary corrections. Council ",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki7mr6k/",
+      "score": 4
+    },
+    {
+      "text": "Even though I live in the Blacktown City Council area, I’m still outraged that this bell end of a former mayor of Cumberland City Council deciding to ban the book in their libraries due to “community ",
+      "url": "https://reddit.com/r/sydney/comments/1cm6yot/cumberland_city_council_bans_samesex_parenting/l33goqq/",
+      "score": 4
+    },
+    {
+      "text": "Property data is misleading because it's heavily skewed by investors, in particular, some specific overdeveloped McMansions that were sold at the height of the property boom. These are an outlier that",
+      "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh5piuv/",
+      "score": 2
+    }
+  ]
+}

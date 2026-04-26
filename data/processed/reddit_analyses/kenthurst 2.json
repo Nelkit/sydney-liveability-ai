@@ -1,0 +1,66 @@
+{
+  "suburb": "Kenthurst",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:37.652467+00:00",
+  "aspects": {
+    "affordability": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.34,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.397,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.34,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.169,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.8746,
+    "surprise": 0.0743,
+    "sadness": 0.0243,
+    "joy": 0.0075,
+    "disgust": 0.0062,
+    "anger": 0.007,
+    "fear": 0.0061
+  },
+  "narrative": "Reddit discussions about Kenthurst are most positive about affordability (0.50) and safety (0.50). Residents are most critical about green space (0.34) and transport (0.17). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "There is lots of McMansions in Kenthurst",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/l3tr69q/",
+      "score": 7
+    },
+    {
+      "text": "Have Riverstone, Kenthurst and Glenhaven covered in our group chat - all reported nothing as well.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kkka/did_anyone_feel_an_earthquake/ktweaks/",
+      "score": 6
+    },
+    {
+      "text": "Grew up in Leichhardt, living in Newcastle now. I take the train down the central coast line a lot. The first station I'd consider as 'in Sydney' would probably be Berowra, because that's where the T9",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uq8gi/",
+      "score": 2
+    }
+  ]
+}

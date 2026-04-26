@@ -1,0 +1,101 @@
+{
+  "suburb": "Ashfield",
+  "post_count": 279,
+  "fetched_at": "2026-04-18T01:29:47.673233+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.586,
+      "mentions": 210
+    },
+    "transport": {
+      "score": 0.49,
+      "mentions": 98
+    },
+    "safety": {
+      "score": 0.422,
+      "mentions": 73
+    },
+    "affordability": {
+      "score": 0.595,
+      "mentions": 36
+    },
+    "noise": {
+      "score": 0.676,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.737,
+      "mentions": 37
+    },
+    "nightlife": {
+      "score": 0.654,
+      "mentions": 46
+    },
+    "green_space": {
+      "score": 0.54,
+      "mentions": 28
+    }
+  },
+  "emotions": {
+    "neutral": 0.4906,
+    "surprise": 0.1524,
+    "joy": 0.0632,
+    "sadness": 0.059,
+    "anger": 0.0635,
+    "disgust": 0.0994,
+    "fear": 0.0718
+  },
+  "narrative": "Reddit discussions about Ashfield are most positive about food and cafe (0.74) and noise (0.68). Residents are most critical about transport (0.49) and safety (0.42). This analysis is based on 279 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Coles gaslighting our kiddies again\nAshfield Coles, in case you were interested",
+      "url": "https://reddit.com/r/sydney/comments/1r8rkga/coles_gaslighting_our_kiddies_again/",
+      "score": 1303
+    },
+    {
+      "text": "Found this in Ashfield mall.\nSomeones musings. Does anyone recognise themselves.",
+      "url": "https://reddit.com/r/sydney/comments/1ghivax/found_this_in_ashfield_mall/",
+      "score": 864
+    },
+    {
+      "text": "Pointless rant/praise: The Bunnings Cardboard Box Scandal\nOK, so this doesn't matter a bit, with everything else going on in the world. But geez. Stopped by Ashfield Bunnings today to grab some garden",
+      "url": "https://reddit.com/r/sydney/comments/1bcpqt6/pointless_rantpraise_the_bunnings_cardboard_box/",
+      "score": 772
+    },
+    {
+      "text": "What's the meaning of this? (Macdonald Town Station)\nSeen this morning at Macdonald Town Station, signs have been covered by \"Ashland\" signs. I think it also said NJ transit. Is this a film set? Is As",
+      "url": "https://reddit.com/r/sydney/comments/1jg2nkb/whats_the_meaning_of_this_macdonald_town_station/",
+      "score": 701
+    },
+    {
+      "text": "The actual furthest distance you can see the Sydney skyline from is Ashfield Park 6.9km\nThis is only if you include locations I can reach on my morning walk and if you count the centre of Sydney as Ce",
+      "url": "https://reddit.com/r/sydney/comments/1m0uhor/the_actual_furthest_distance_you_can_see_the/",
+      "score": 580
+    },
+    {
+      "text": "Tree vandalism at Ashfield",
+      "url": "https://reddit.com/r/sydney/comments/1jht2k7/tree_vandalism_at_ashfield/",
+      "score": 451
+    },
+    {
+      "text": "Bunnings Ashfield, 1930's\nBefore the clock tower, and Ibassume before Arnold's. Note the houses opposite, that street is long gone, now an offramp to the westlink",
+      "url": "https://reddit.com/r/sydney/comments/1h33srv/bunnings_ashfield_1930s/",
+      "score": 450
+    },
+    {
+      "text": "Trains messed up yet again\nAm heading west on T2 line and the train is stopped at Ashfield. Only tem minutes so far but the announcement says we should consider alternative transport. City bound train",
+      "url": "https://reddit.com/r/sydney/comments/1kqx1ub/trains_messed_up_yet_again/",
+      "score": 408
+    },
+    {
+      "text": "Sydney trains network disruptions.\nThe power supply issues at Strathfield from yesterday are still ongoing, train services will not be to time table and will likely be infrequent and sporadic.\n\nT1 Wes",
+      "url": "https://reddit.com/r/sydney/comments/1krab5m/sydney_trains_network_disruptions/",
+      "score": 351
+    },
+    {
+      "text": "What makes The Hills 'posh'?\nI'm new to Sydney and find the postcode politics interesting (albeit toxic af).\n\nI'm curious, how did The Hills district become known as relatively posh/affluent when it's",
+      "url": "https://reddit.com/r/sydney/comments/1en8c14/what_makes_the_hills_posh/",
+      "score": 283
+    }
+  ]
+}

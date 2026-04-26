@@ -1,0 +1,101 @@
+{
+  "suburb": "Oatley",
+  "post_count": 21,
+  "fetched_at": "2026-04-18T02:14:59.614377+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.708,
+      "mentions": 18
+    },
+    "nightlife": {
+      "score": 0.528,
+      "mentions": 4
+    },
+    "transport": {
+      "score": 0.726,
+      "mentions": 9
+    },
+    "green_space": {
+      "score": 0.53,
+      "mentions": 4
+    },
+    "safety": {
+      "score": 0.76,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.728,
+      "mentions": 4
+    },
+    "affordability": {
+      "score": 0.899,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.765,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.6339,
+    "fear": 0.0768,
+    "anger": 0.0203,
+    "disgust": 0.0361,
+    "surprise": 0.1162,
+    "joy": 0.0747,
+    "sadness": 0.0421
+  },
+  "narrative": "Reddit discussions about Oatley are most positive about affordability (0.90) and noise (0.77). Residents are most critical about green space (0.53) and nightlife (0.53). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Let's play guess the suburb name (Greater Sydney)\nGive a short cryptic clue and everyone else guesses what suburb it is. \n\nE.g. Uncle Toby's cereal spot => Oatley",
+      "url": "https://reddit.com/r/sydney/comments/1j399c6/lets_play_guess_the_suburb_name_greater_sydney/",
+      "score": 447
+    },
+    {
+      "text": "Add, subtract or change one letter of a Sydney suburb to make it better.\nE.g. Oatley can become GOATley",
+      "url": "https://reddit.com/r/sydney/comments/1f5hp2h/add_subtract_or_change_one_letter_of_a_sydney/",
+      "score": 82
+    },
+    {
+      "text": "Looking from Oatley",
+      "url": "https://reddit.com/r/sydney/comments/1iaa8qk/looking_from_oatley/",
+      "score": 51
+    },
+    {
+      "text": "Bit of a tangent, but if they make this permanent it could be used as a solid starting point for a much needed North-South rail line.\n\nInstead of following the current above-ground track between Yagoo",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1vczct/",
+      "score": 50
+    },
+    {
+      "text": "Peakhurst, better connectivity to trains either via Narwee or Mortdale station. As you've mentioned, you're a family of three and I imagine schools are on the cards. There are better schools options a",
+      "url": "https://reddit.com/r/sydney/comments/1cx4tii/if_you_had_the_choice_to_buy_a_duplex_in/l50eebh/",
+      "score": 34
+    },
+    {
+      "text": "Dee Why got its name because some old surveyor’s map marked the beach “D.Y.” and it stuck. \n\nBexley North borrowed its name from Bexley, but Bexley was just a bit further south. \n\nOatley got its name ",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvngkqu/",
+      "score": 24
+    },
+    {
+      "text": "Oatley Park in the suburbs ",
+      "url": "https://reddit.com/r/sydney/comments/1chkbam/best_parks_in_sydney/l22y8o1/",
+      "score": 17
+    },
+    {
+      "text": "Good independent craft beer bottle-o around Penshurst/Hurstville/Mortdale/Oatley?\nHave recently moved to the area and have been on the hunt for a bottle-o that stocks a good range of craft beers from ",
+      "url": "https://reddit.com/r/sydney/comments/1kzs5w2/good_independent_craft_beer_bottleo_around/",
+      "score": 12
+    },
+    {
+      "text": "Como rail bridge is #10, taken from Oatley! Tom Uglys and Iron Cove are quite similar with the truss design and how they were both duplicated with a modern bridge next to it over time",
+      "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqrvk9/",
+      "score": 12
+    },
+    {
+      "text": "They do the rat run up through South Hurstville, Oatley, Peakhurst and Padstow, back to Bankstown. Pass my place regularly.",
+      "url": "https://reddit.com/r/sydney/comments/1ayrp4s/what_is_with_all_the_absolute_psychos_on_the_road/krzfaoz/",
+      "score": 10
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "suburb": "Waterfall",
+  "post_count": 6,
+  "fetched_at": "2026-04-18T02:19:42.452424+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.652,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.786,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.786,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.669,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.7775,
+    "sadness": 0.0537,
+    "surprise": 0.0935,
+    "disgust": 0.0197,
+    "anger": 0.0135,
+    "fear": 0.0235,
+    "joy": 0.0186
+  },
+  "narrative": "Reddit discussions about Waterfall are most positive about nightlife (0.79) and food and cafe (0.79). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "They did when they renovated the entire area to create Darling Square. Waterfall area was demolished at least 9 years ago.\n\n\nFact that OP said Pier Street as location also shows they got old info and ",
+      "url": "https://reddit.com/r/sydney/comments/1acef55/i_knew_there_was_a_waterfall_here_people_were/kjvbrgg/",
+      "score": 7
+    },
+    {
+      "text": "We’ve currently got a waterfall in our apartment.",
+      "url": "https://reddit.com/r/sydney/comments/1bwgi4s/what_are_sydneys_best_waterfalls/ky5w71k/",
+      "score": 6
+    },
+    {
+      "text": "Ends where the suburban trains do, so Penrith, Waterfall, and Berowra. I’m from the eastern suburbs.",
+      "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uv1ia/",
+      "score": 5
+    },
+    {
+      "text": "I've never been but uloola falls is on my list. Its a hike or bike from waterfall station in the royal national park https://www.nationalparks.nsw.gov.au/camping-and-accommodation/campgrounds/uloola-f",
+      "url": "https://reddit.com/r/sydney/comments/1dbtolm/can_you_recommend_me_any_great_campgrounds/l7tjqm3/",
+      "score": 4
+    },
+    {
+      "text": "We have a lot of great walks in sydney that make use of the city’s natural beauty.\n[Bondi to Manly](https://www.bonditomanly.com/) takes advantage on both sides of the Harbour. \nLa Perouse to Coogee g",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzyk8k6/",
+      "score": 3
+    },
+    {
+      "text": "Uloola falls is beautiful. I recommend walking from either Engadine Station or Heathcote station. You can go from Waterfall but it is fire trail all the way and not very interesting. If you haven’t al",
+      "url": "https://reddit.com/r/sydney/comments/1dbtolm/can_you_recommend_me_any_great_campgrounds/l7vqn3y/",
+      "score": 2
+    }
+  ]
+}

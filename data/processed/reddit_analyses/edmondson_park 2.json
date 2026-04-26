@@ -1,0 +1,101 @@
+{
+  "suburb": "Edmondson Park",
+  "post_count": 19,
+  "fetched_at": "2026-04-18T02:15:32.090759+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.362,
+      "mentions": 6
+    },
+    "affordability": {
+      "score": 0.609,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.501,
+      "mentions": 13
+    },
+    "community": {
+      "score": 0.546,
+      "mentions": 15
+    },
+    "transport": {
+      "score": 0.514,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.831,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.824,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4734,
+    "surprise": 0.1157,
+    "disgust": 0.0657,
+    "anger": 0.0942,
+    "joy": 0.0638,
+    "fear": 0.1273,
+    "sadness": 0.0599
+  },
+  "narrative": "Reddit discussions about Edmondson Park are most positive about food and cafe (0.83) and nightlife (0.82). Residents are most critical about noise (0.50) and safety (0.36). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Urban sprawl in South West Sydney\nThe urban sprawl has been a frequent topic of discussion and we often see the aerial photos of medium sized houses built within an arms length of each other, I’m post",
+      "url": "https://reddit.com/r/sydney/comments/1cqs8ry/urban_sprawl_in_south_west_sydney/",
+      "score": 647
+    },
+    {
+      "text": "Out of control grass fire near Edmondson Park\nOut of control grass fire near Camden Valley Way. Stay safe on the road folks.",
+      "url": "https://reddit.com/r/sydney/comments/1f3216p/out_of_control_grass_fire_near_edmondson_park/",
+      "score": 140
+    },
+    {
+      "text": "My toolbox that’s mounted on my Ute was broken into a few nights ago in Edmondson park, cleaned me out with $4000 worth of tools I’ve had since my apprenticeship, can’t even work to pay rent anymore",
+      "url": "https://reddit.com/r/sydney/comments/1aow5b0/cars_getting_broken_into_around_inner_west/kq2i1tm/",
+      "score": 73
+    },
+    {
+      "text": "After growing up in South West Sydney, I moved out and bounced around the Inner West throughout my 20s and early 30s.\n\nI currently live in Edmondson Park, right by Ed Sq- returning out here after star",
+      "url": "https://reddit.com/r/sydney/comments/1blnmw2/what_are_your_thoughts_on_the_australleppington/kw6cz0e/",
+      "score": 69
+    },
+    {
+      "text": "Edmondson Park Mosque response to online threat against worshippers",
+      "url": "https://reddit.com/r/sydney/comments/1j35l71/edmondson_park_mosque_response_to_online_threat/",
+      "score": 39
+    },
+    {
+      "text": "Rural Fire Service issues warning for out-of-control grass fire burning in Edmondson Park",
+      "url": "https://reddit.com/r/sydney/comments/1f33xm5/rural_fire_service_issues_warning_for/",
+      "score": 29
+    },
+    {
+      "text": "Felt it here at Edmondson park too...",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktwbidx/",
+      "score": 19
+    },
+    {
+      "text": "Sounds a little high, but not unreasonable.\n\nI’m not far from you in a brand new terrace in Edmondson Park, right near Ed Square, right near the train station. 3 bedrooms, 2.5bath. \n\n$700/w.\n\nMake of ",
+      "url": "https://reddit.com/r/sydney/comments/1ahkh9s/need_advice_on_whether_to_move_after_a_rent/koonrnl/",
+      "score": 9
+    },
+    {
+      "text": "If you’re up for a drive or train trip then in my opinion the best Ogalos franchise is hands down at Ed Square opposite Edmondson Park. Always so fresh and none of the others I’ve been to compare",
+      "url": "https://reddit.com/r/sydney/comments/1augqsw/latenight_revellers_are_reeling_today_with_the/kr4a1wx/",
+      "score": 6
+    },
+    {
+      "text": "But there's is no metro at Edmondson park",
+      "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzwkwt1/",
+      "score": 6
+    }
+  ]
+}

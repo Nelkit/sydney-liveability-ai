@@ -1,0 +1,101 @@
+{
+  "suburb": "Thornleigh",
+  "post_count": 22,
+  "fetched_at": "2026-04-18T02:14:39.944783+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.303,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.278,
+      "mentions": 8
+    },
+    "nightlife": {
+      "score": 0.265,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.408,
+      "mentions": 18
+    },
+    "transport": {
+      "score": 0.613,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.845,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.486,
+      "mentions": 3
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "surprise": 0.1487,
+    "neutral": 0.6067,
+    "anger": 0.021,
+    "disgust": 0.0583,
+    "sadness": 0.0645,
+    "fear": 0.0389,
+    "joy": 0.0619
+  },
+  "narrative": "Reddit discussions about Thornleigh are most positive about green space (0.84) and transport (0.61). Residents are most critical about safety (0.28) and nightlife (0.27). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "If you go to Thornleigh Maccas and don't have a Cockatoo trying to steal your chips, did you really go?",
+      "url": "https://reddit.com/r/sydney/comments/1i9b6is/if_you_go_to_thornleigh_maccas_and_dont_have_a/",
+      "score": 252
+    },
+    {
+      "text": "Westleigh is literally West Thornleigh",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnmffg/",
+      "score": 152
+    },
+    {
+      "text": "I've only tried a few but I really like Pear Thai at Thornleigh. Not the most upmarket looking place in Sydney (far from bad either) but the food is great and fair priced.",
+      "url": "https://reddit.com/r/sydney/comments/1dm9fiy/best_thai_restaurants_in_sydney/l9u8q9a/",
+      "score": 19
+    },
+    {
+      "text": "Cowan to Hawkesbury River station on the jerusalem bay track was what i was thinking of\n\nOtford -> bundeena -> ferry to cronulla -> cronulla back to central is a 30km. Read the park closures for this ",
+      "url": "https://reddit.com/r/sydney/comments/198tfaa/what_is_a_thing_sydney_does_better_than_any_other/kictzzb/",
+      "score": 15
+    },
+    {
+      "text": "The primary school is called Thornleigh West as it opened in 1965 before Westleigh was a suburb.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvoiwfr/",
+      "score": 13
+    },
+    {
+      "text": "I'm so sorry to hear your story.  \n\nI'm not sure if auction houses can do anything but worth giving them a buzz.  There maybe a lot more out there, but here are two I know of.\n\nBargain Hunt Auctions a",
+      "url": "https://reddit.com/r/sydney/comments/1daac49/is_cashconvertors_or_panwshops_in_general_a_good/l7l9f5x/",
+      "score": 12
+    },
+    {
+      "text": "The one in Thornleigh is across the street from the National Head Office.",
+      "url": "https://reddit.com/r/sydney/comments/191ddr4/why_are_maccas_so_poorly_managed_these_days/kgv66ia/",
+      "score": 11
+    },
+    {
+      "text": "Thornleigh!",
+      "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgfe1ia/",
+      "score": 9
+    },
+    {
+      "text": "There used to be a bead shop on Druitt St in the city opposite Town Hall (Photios Bros) but they seem to have moved to Thornleigh. They had very specific sequin types with a hole to one side for cloth",
+      "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kou7tg0/",
+      "score": 8
+    },
+    {
+      "text": "We did the Thornleigh to Hornsby via the Heritage steps.",
+      "url": "https://reddit.com/r/sydney/comments/1bs44fw/the_great_north_walk_indeed_was_beautiful_today/kxdbeot/",
+      "score": 8
+    }
+  ]
+}

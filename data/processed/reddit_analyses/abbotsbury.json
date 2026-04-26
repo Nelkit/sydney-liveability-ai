@@ -1,0 +1,61 @@
+{
+  "suburb": "Abbotsbury",
+  "post_count": 2,
+  "fetched_at": "2026-04-18T01:49:39.187971+00:00",
+  "aspects": {
+    "affordability": {
+      "score": 0.271,
+      "mentions": 1
+    },
+    "community": {
+      "score": 0.36,
+      "mentions": 2
+    },
+    "green_space": {
+      "score": 0.985,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.985,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.2302,
+    "neutral": 0.5492,
+    "surprise": 0.1091,
+    "anger": 0.0279,
+    "disgust": 0.0217,
+    "sadness": 0.0152,
+    "joy": 0.0468
+  },
+  "narrative": "Reddit discussions about Abbotsbury are most positive about green space (0.98) and transport (0.98). Residents are most critical about community (0.36) and affordability (0.27). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Century 21 - no pets policy\nHi Sydney,\n\nJuggling my options for rental properties and thinking we need to move west to afford life with a toddler and a dog.\n\nNoticed all the listings by century 21 onl",
+      "url": "https://reddit.com/r/sydney/comments/1aq7j0b/century_21_no_pets_policy/",
+      "score": 14
+    },
+    {
+      "text": "Where about in Sydney are you? If your kid isn't too old, even small local parks can amuse them. For larger ones, I mainly have experience in Western Sydney. I would recommend:\n\n\\- Fairfield Adventure",
+      "url": "https://reddit.com/r/sydney/comments/1bawmbg/what_bunnings_in_sydney_western_sydney_has_the/kubi4oc/",
+      "score": 2
+    }
+  ]
+}

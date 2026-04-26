@@ -1,0 +1,101 @@
+{
+  "suburb": "Bondi Beach",
+  "post_count": 89,
+  "fetched_at": "2026-04-18T01:59:23.537949+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.403,
+      "mentions": 57
+    },
+    "transport": {
+      "score": 0.389,
+      "mentions": 28
+    },
+    "safety": {
+      "score": 0.34,
+      "mentions": 27
+    },
+    "noise": {
+      "score": 0.36,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.623,
+      "mentions": 22
+    },
+    "affordability": {
+      "score": 0.782,
+      "mentions": 3
+    },
+    "green_space": {
+      "score": 0.628,
+      "mentions": 8
+    },
+    "food_and_cafe": {
+      "score": 0.668,
+      "mentions": 8
+    }
+  },
+  "emotions": {
+    "neutral": 0.3986,
+    "surprise": 0.1567,
+    "fear": 0.1311,
+    "joy": 0.0957,
+    "anger": 0.0679,
+    "sadness": 0.0999,
+    "disgust": 0.0501
+  },
+  "narrative": "Reddit discussions about Bondi Beach are most positive about affordability (0.78) and food and cafe (0.67). Residents are most critical about noise (0.36) and safety (0.34). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "I just walked from Penrith to Bondi\nOn the 23rd January 2026 I walk from the Knapsack Viaduct Trailhead 86 kilometres to Bondi Beach. It started around 2:10am on Friday and finished roughly 1:50am on ",
+      "url": "https://reddit.com/r/sydney/comments/1qlhkvr/i_just_walked_from_penrith_to_bondi/",
+      "score": 1810
+    },
+    {
+      "text": "I walked from Rouse Hill to Sydney CBD\nI keep forgetting to post this but this walk was done on the 9th of January in order to prepare for my walk from the base of the Blue Mountains (Glenbrook) to Bo",
+      "url": "https://reddit.com/r/sydney/comments/1rag9dn/i_walked_from_rouse_hill_to_sydney_cbd/",
+      "score": 1250
+    },
+    {
+      "text": "Fairfield City Council is offering free bus services to Bondi Beach during summer",
+      "url": "https://reddit.com/r/sydney/comments/1hvckkt/fairfield_city_council_is_offering_free_bus/",
+      "score": 785
+    },
+    {
+      "text": "We Are One But We Are Many…\nA beautiful tribute from all of the Surf Lifesavers from Bondi And North Bondi Surf Lifesaving clubs covering  the entire length of Bondi Beach",
+      "url": "https://reddit.com/r/sydney/comments/1pqz8td/we_are_one_but_we_are_many/",
+      "score": 707
+    },
+    {
+      "text": "Pro Russian convoy in Bondi Beach\nWalking down in Bondi just now and saw about 6 pro Russian cars displaying “Z” symbol and flags plus one massive military truck with accompanying NSW police escort. A",
+      "url": "https://reddit.com/r/sydney/comments/1iw00j8/pro_russian_convoy_in_bondi_beach/",
+      "score": 562
+    },
+    {
+      "text": "Bondi Beach machete attack: Two teenage boys arrested after man allegedly stabbed",
+      "url": "https://reddit.com/r/sydney/comments/1rgrejv/bondi_beach_machete_attack_two_teenage_boys/",
+      "score": 390
+    },
+    {
+      "text": "NSW parliament passes tougher laws on guns and protests after Bondi Beach attack\nIn short: \n\n>After a long debate that ran into the early hours of this morning, the NSW parliament has passed tough new",
+      "url": "https://reddit.com/r/sydney/comments/1pu5e7r/nsw_parliament_passes_tougher_laws_on_guns_and/",
+      "score": 349
+    },
+    {
+      "text": "5am Bondi Beach vibes\nAt the start line of the Bondi To Manly Ultra 80km run.\n\nIt's windy and freezing and I love it.",
+      "url": "https://reddit.com/r/sydney/comments/1gc0qm2/5am_bondi_beach_vibes/",
+      "score": 280
+    },
+    {
+      "text": "NSW Police Commissioner Mal Lanyon ends post-Bondi Beach attack protest restrictions on Sydney CBD, eastern suburbs",
+      "url": "https://reddit.com/r/sydney/comments/1r6ss2u/nsw_police_commissioner_mal_lanyon_ends_postbondi/",
+      "score": 266
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    }
+  ]
+}

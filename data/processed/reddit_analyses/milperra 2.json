@@ -1,0 +1,101 @@
+{
+  "suburb": "Milperra",
+  "post_count": 20,
+  "fetched_at": "2026-04-18T02:15:10.908354+00:00",
+  "aspects": {
+    "nightlife": {
+      "score": 0.897,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.519,
+      "mentions": 14
+    },
+    "green_space": {
+      "score": 0.61,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.487,
+      "mentions": 10
+    },
+    "affordability": {
+      "score": 0.449,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.655,
+      "mentions": 5
+    },
+    "noise": {
+      "score": 0.046,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.046,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "joy": 0.1015,
+    "neutral": 0.3935,
+    "surprise": 0.135,
+    "sadness": 0.1253,
+    "anger": 0.0499,
+    "disgust": 0.0955,
+    "fear": 0.0992
+  },
+  "narrative": "Reddit discussions about Milperra are most positive about nightlife (0.90) and transport (0.66). Residents are most critical about noise (0.05) and food and cafe (0.05). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Unique harbour bridge replica found in Milperra\nLove the creativity of South West Sydney. Also drove past a hotel called Ramada which has a great 1980s Miami vibe.",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/",
+      "score": 501
+    },
+    {
+      "text": "Milperra and Warwick Farm aren't that close to one another",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4e57q0/",
+      "score": 381
+    },
+    {
+      "text": "GEC Z8420 Streetlight\nHi All,\n\nSome of you may remember me from previous posts I made regarding streetlights over the past few years.\n\nYesterday I was out on another photography trip to document more ",
+      "url": "https://reddit.com/r/sydney/comments/1jsmcbu/gec_z8420_streetlight/",
+      "score": 199
+    },
+    {
+      "text": "Yeah, the fuck OP smoking to think thos is Milperra? warwick farm station is pretty much to the left of this picture",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4efssw/",
+      "score": 142
+    },
+    {
+      "text": "Father and daughter identified as victims of fatal Milperra crash after rideshare vehicle and ute crash",
+      "url": "https://reddit.com/r/sydney/comments/1d2hobg/father_and_daughter_identified_as_victims_of/",
+      "score": 96
+    },
+    {
+      "text": "Lately been driving a lot along the Cumberland Highway, Hume Highway and Milperra Rd around the Liverpool and Bankstown areas. There are so many dangerous idiots around there, speeding and weaving in ",
+      "url": "https://reddit.com/r/sydney/comments/1ar4uq7/20yearold_driver_charged_with_dangerous_driving/kqhl40m/",
+      "score": 76
+    },
+    {
+      "text": "That’s not Milperra OP, it’s two suburbs away from Milperra. That’s Warwick Farm.",
+      "url": "https://reddit.com/r/sydney/comments/1ctsqdh/unique_harbour_bridge_replica_found_in_milperra/l4ed7a8/",
+      "score": 70
+    },
+    {
+      "text": "This is at the intersection of the Murray Jones Dr and Milperra. I drive that exact route 3 times a week and witnessed a similar T-bone once, when it was still day time. It was a combination of someon",
+      "url": "https://reddit.com/r/sydney/comments/1d2hobg/father_and_daughter_identified_as_victims_of/l60ujvi/",
+      "score": 70
+    },
+    {
+      "text": "I've lived and worked in the western/southwestern suburbs (Blacktown, Milperra, Roselands, Bonnyrigg) and the Inner West (Newtown, Erskineville, Glebe) and of course the inner west is more walkable in",
+      "url": "https://reddit.com/r/sydney/comments/1c7jaal/rant_hate_how_car_centric_this_city_is/l08e67v/",
+      "score": 59
+    },
+    {
+      "text": "Factory fumes in Condell Park/ Revesby area. What is council doing?\nHas anyone else noticed the horrible rubber/chemical smell while driving down Milperra Road? It’s been going on for years now and it",
+      "url": "https://reddit.com/r/sydney/comments/1muyg0o/factory_fumes_in_condell_park_revesby_area_what/",
+      "score": 46
+    }
+  ]
+}

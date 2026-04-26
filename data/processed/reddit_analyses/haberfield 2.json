@@ -1,0 +1,101 @@
+{
+  "suburb": "Haberfield",
+  "post_count": 47,
+  "fetched_at": "2026-04-18T02:07:02.723769+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.698,
+      "mentions": 40
+    },
+    "green_space": {
+      "score": 0.629,
+      "mentions": 5
+    },
+    "safety": {
+      "score": 0.746,
+      "mentions": 12
+    },
+    "transport": {
+      "score": 0.766,
+      "mentions": 10
+    },
+    "affordability": {
+      "score": 0.628,
+      "mentions": 5
+    },
+    "food_and_cafe": {
+      "score": 0.71,
+      "mentions": 15
+    },
+    "nightlife": {
+      "score": 0.648,
+      "mentions": 10
+    },
+    "noise": {
+      "score": 0.423,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.5507,
+    "surprise": 0.0809,
+    "joy": 0.0983,
+    "anger": 0.0306,
+    "sadness": 0.0615,
+    "fear": 0.09,
+    "disgust": 0.0879
+  },
+  "narrative": "Reddit discussions about Haberfield are most positive about transport (0.77) and safety (0.75). Residents are most critical about affordability (0.63) and noise (0.42). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "There are now 3 Greenways connecting Kogarah to the Bay Run\nA new greenway has recently opened around Kogarah through to Wolli Creek, connecting to the Cooks river walk, which connects to the new gree",
+      "url": "https://reddit.com/r/sydney/comments/1q2gxsu/there_are_now_3_greenways_connecting_kogarah_to/",
+      "score": 405
+    },
+    {
+      "text": "PSA: heavy flash flooding across parra road between haberfield and petersham\nTitle says it all. \n\nFlash flooding across all lanes and in both directions from Dalhousie down to west street. \n\nLivingsto",
+      "url": "https://reddit.com/r/sydney/comments/1rf4hmz/psa_heavy_flash_flooding_across_parra_road/",
+      "score": 244
+    },
+    {
+      "text": "Was driving down great north road towards maccas when I randomly decided I would go to the Haberfield maccas instead of Croydon - a minute after I turned off great north road to Ramsay Rd I heard the ",
+      "url": "https://reddit.com/r/sydney/comments/194om18/at_least_10_people_involved_in_crash_on_major/khhhul5/",
+      "score": 183
+    },
+    {
+      "text": "This is the exact answer.\n\n These inner west suburbs - haberfield another prime example have seen the boomers lock up the land through zoning regulations and lobbied council to refuse any development ",
+      "url": "https://reddit.com/r/sydney/comments/1c7k2uz/norton_st_leichhardt_what_happened/l08u00r/",
+      "score": 164
+    },
+    {
+      "text": "In Sydney all that matters is if you own a fully paid off piece of land. Anywhere. I'm not even talking Vaucluse type wealth. Simply if your parents bought one or two houses in say Epping or Hornsby 2",
+      "url": "https://reddit.com/r/sydney/comments/1c2lk00/a_fulltime_wage_is_not_always_enough_to_live_in/kzb0wb4/",
+      "score": 148
+    },
+    {
+      "text": "the disused Westconnex sites being turned into housing is a good idea\n\nThere's also that big, empty, fenced off lot where the Haberfield Westconnex dive used to be.",
+      "url": "https://reddit.com/r/sydney/comments/1dsjcb9/nsw_government_announces_the_first_of_44/lb2zn00/",
+      "score": 90
+    },
+    {
+      "text": "Parramatta Road\nDo you think Aldi and Coles will build at Haberfield,and have real supermarket wars. There is 2 corners up for grabs.",
+      "url": "https://reddit.com/r/sydney/comments/196dgpj/parramatta_road/",
+      "score": 64
+    },
+    {
+      "text": "Haberfield maccas is the fancy maccas",
+      "url": "https://reddit.com/r/sydney/comments/194om18/at_least_10_people_involved_in_crash_on_major/khhpdhp/",
+      "score": 41
+    },
+    {
+      "text": "Was the most random of decisions, I said to my mate let's go to Haberfield maccas, it tastes better than Croydon....when I looked on live traffic app and it said major accident end of great north road",
+      "url": "https://reddit.com/r/sydney/comments/194om18/at_least_10_people_involved_in_crash_on_major/khhkoxa/",
+      "score": 35
+    },
+    {
+      "text": "Best  \nCheap  \nView\n\nyou can only really pick 2, typially  \nIf you want to skip the view part, look around Haberfield/Five Dock/Leichhardt (in that order)",
+      "url": "https://reddit.com/r/sydney/comments/1cqx2m1/best_cheap_italian_food_in_sydney/l3u5sm4/",
+      "score": 26
+    }
+  ]
+}

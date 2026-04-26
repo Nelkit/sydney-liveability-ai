@@ -1,0 +1,101 @@
+{
+  "suburb": "Edgecliff",
+  "post_count": 27,
+  "fetched_at": "2026-04-18T02:13:02.579403+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.404,
+      "mentions": 22
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 16
+    },
+    "safety": {
+      "score": 0.355,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.734,
+      "mentions": 5
+    },
+    "affordability": {
+      "score": 0.741,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.381,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.381,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.0623,
+    "surprise": 0.1393,
+    "neutral": 0.5602,
+    "fear": 0.0567,
+    "joy": 0.0861,
+    "disgust": 0.0402,
+    "anger": 0.0552
+  },
+  "narrative": "Reddit discussions about Edgecliff are most positive about affordability (0.74) and green space (0.73). Residents are most critical about food and cafe (0.38) and safety (0.35). This analysis is based on 27 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "Three minutes from Hurstville to Edgecliff? The bullet trains are finally here!",
+      "url": "https://reddit.com/r/sydney/comments/1i6232f/three_minutes_from_hurstville_to_edgecliff_the/",
+      "score": 97
+    },
+    {
+      "text": "Was just walking from Edgecliff Station to Double Bay and saw 3 cop cars drive past with lights and sirens - a fucking car stopped in front of all 3 cop cars at the lights and refused to move/blocking",
+      "url": "https://reddit.com/r/sydney/comments/1c2uo3p/what_just_happened_at_bondi_junction/kzcl2w3/",
+      "score": 90
+    },
+    {
+      "text": "Even if you were to build a station there it wouldn't actually be that useful.\n\nThe site is practically surrounded by homes, so building a bus interchange or any meaningful parking is off the table. T",
+      "url": "https://reddit.com/r/sydney/comments/1byj2nu/will_woollahra_railway_station_ever_be_finished/kyjrrp1/",
+      "score": 80
+    },
+    {
+      "text": "Some sort of train incident T8\nAt Circular Quay station and there is an announcement saying there are delays due to an incident at Edgecliff. \n\nDelays expected, seems to be impacting the airport line.",
+      "url": "https://reddit.com/r/sydney/comments/1n78wpg/some_sort_of_train_incident_t8/",
+      "score": 75
+    },
+    {
+      "text": "Pro: the outdoor lifestyle year round especially if you’re  into fitness. Access to quality pubs and restaurants. Close vicinity to the Beaches (the harbour beaches, Bondi, Bronte, Clovelly, Coogee, m",
+      "url": "https://reddit.com/r/sydney/comments/1ce1ir8/what_are_the_pros_and_cons_of_living_at_bondi/l1gbkhg/",
+      "score": 39
+    },
+    {
+      "text": "Sydney had not one but two tram routes to Bondi - Oxford St/Bondi Road and Edgecliff Rd/Birriga Rd. Imagine that: A Sydney with a fifth of the population having two lines to the same destination.",
+      "url": "https://reddit.com/r/sydney/comments/1br8snt/will_sydney_ever_get_a_train_line_to_bondi_beach/kx7z8ty/",
+      "score": 37
+    },
+    {
+      "text": "I once had to hike from Edgecliff to Central after they halted all service due to a mechanical failure on one train. I still got there faster than some of the people who had queued up to get on a bus.",
+      "url": "https://reddit.com/r/sydney/comments/1bxd3qy/sydney_trains_draining_your_will_to_live_and_some/kydltua/",
+      "score": 31
+    },
+    {
+      "text": "I think this is the key thing that's often overlooked when Woolhara Station is discussed.  Yes, there were NIMBY's, but that could have been overcome if there was a case for redevelopment, bus interch",
+      "url": "https://reddit.com/r/sydney/comments/1byj2nu/will_woollahra_railway_station_ever_be_finished/kyjuzmp/",
+      "score": 25
+    },
+    {
+      "text": "I used to see him on New South Head Road at Edgecliff, but haven’t seen him for a while. Glad to see he is still out there.",
+      "url": "https://reddit.com/r/sydney/comments/1d7irm5/our_boy_danny_on_cleveland_st/l6zqhbn/",
+      "score": 25
+    }
+  ]
+}

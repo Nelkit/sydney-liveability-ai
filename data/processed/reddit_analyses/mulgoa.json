@@ -1,0 +1,96 @@
+{
+  "suburb": "Mulgoa",
+  "post_count": 9,
+  "fetched_at": "2026-04-18T02:18:38.374140+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.632,
+      "mentions": 6
+    },
+    "safety": {
+      "score": 0.585,
+      "mentions": 7
+    },
+    "transport": {
+      "score": 0.635,
+      "mentions": 2
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.3896,
+    "sadness": 0.0682,
+    "disgust": 0.0792,
+    "fear": 0.294,
+    "anger": 0.0385,
+    "surprise": 0.1168,
+    "joy": 0.0136
+  },
+  "narrative": "Reddit discussions about Mulgoa are most positive about transport (0.64) and community (0.63). Residents are most critical about affordability (0.50) and green space (0.50). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Tow forklift from the mud\nanyone please help recommend / suggest to pull forklift out from the mud. near penrith mulgoa.",
+      "url": "https://reddit.com/r/sydney/comments/1eitz5q/tow_forklift_from_the_mud/",
+      "score": 10
+    },
+    {
+      "text": "There's one place on Fairlight Road, Mulgoa where I've seen them each time I've gone.\n\nWord of warning, never approach wild roos.  They can become really aggressive.",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kmhdq/",
+      "score": 6
+    },
+    {
+      "text": "M4 westbound offramp at Mulgoa Road Penrith would like a word",
+      "url": "https://reddit.com/r/sydney/comments/1d1l8rj/m4_accident_west_bound/l5v5ha9/",
+      "score": 6
+    },
+    {
+      "text": "There are some at the back of Mt Schoenstatt shrine at Mulgoa, not all the time though",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5km8ai/",
+      "score": 3
+    },
+    {
+      "text": " What about the abandoned zoo in mulgoa, and other abandoned places? A",
+      "url": "https://reddit.com/r/sydney/comments/1d1i888/here_for_one_week_what_are_weird_places_things_to/l5u4rx2/",
+      "score": 3
+    },
+    {
+      "text": "We're near Mulgoa and thought there'd been an explosion, but couldn't work out why we felt it but didn't hear more than a slight boom.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktx7l6o/",
+      "score": 2
+    },
+    {
+      "text": "Same, the windows behind me face north and it sounded like those rattled first, then the rest of the house afterwards. We're near Mulgoa.",
+      "url": "https://reddit.com/r/sydney/comments/1b9kj5q/anyone_else_just_feel_an_earth_tremor_853pm_were/ktx7xed/",
+      "score": 2
+    },
+    {
+      "text": "Mulgoa, near the church",
+      "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kufj4/",
+      "score": 2
+    },
+    {
+      "text": "Westbound Mulgoa Road at Penrith.",
+      "url": "https://reddit.com/r/sydney/comments/1dlmdzz/is_the_church_st_exit_the_worst_off_ramp_in_sydney/l9qkyvl/",
+      "score": 2
+    }
+  ]
+}

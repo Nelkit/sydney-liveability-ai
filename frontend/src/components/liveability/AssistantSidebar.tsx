@@ -13,6 +13,7 @@ type AssistantSidebarProps = {
   onInputChange: (value: string) => void;
   onSend: () => void;
   onChipSend: (text: string) => void;
+  onOpenDetailedReport: (messageIndex: number) => void;
   chips: string[];
   pdfLoaded: boolean;
   onTogglePdf: () => void;
@@ -25,6 +26,7 @@ export function AssistantSidebar({
   onInputChange,
   onSend,
   onChipSend,
+  onOpenDetailedReport,
   chips,
   pdfLoaded,
   onTogglePdf
@@ -56,8 +58,20 @@ export function AssistantSidebar({
                   ? "rounded-tl-[4px] border border-slate-200 bg-slate-50 text-slate-700"
                   : "rounded-tr-[4px] bg-gradient-to-r from-slate-900 to-slate-700 text-white shadow-[0_8px_16px_rgba(15,23,42,0.24)]"
               }`}
-              dangerouslySetInnerHTML={{ __html: message.html }}
-            />
+            >
+              <div dangerouslySetInnerHTML={{ __html: message.html }} />
+              {message.role === "ai" ? (
+                <div className="mt-2 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => onOpenDetailedReport(index)}
+                    className="inline-flex items-center gap-1 rounded-full border border-slate-300 bg-white px-2 py-1 text-[10px] font-semibold text-slate-700 transition hover:border-slate-500"
+                  >
+                    Open Detailed Report
+                  </button>
+                </div>
+              ) : null}
+            </div>
             {message.source ? <p className="mt-1 border-t border-slate-200 pt-1 text-[10px] text-slate-500">{message.source}</p> : null}
           </div>
         ))}

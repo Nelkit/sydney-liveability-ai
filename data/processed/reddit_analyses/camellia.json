@@ -1,0 +1,101 @@
+{
+  "suburb": "Camellia",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:34.889150+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.758,
+      "mentions": 5
+    },
+    "community": {
+      "score": 0.674,
+      "mentions": 10
+    },
+    "noise": {
+      "score": 0.95,
+      "mentions": 3
+    },
+    "affordability": {
+      "score": 0.595,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.87,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.958,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.569,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.961,
+      "mentions": 1
+    }
+  },
+  "emotions": {
+    "neutral": 0.705,
+    "surprise": 0.0285,
+    "fear": 0.0876,
+    "joy": 0.0265,
+    "anger": 0.0463,
+    "sadness": 0.0164,
+    "disgust": 0.0897
+  },
+  "narrative": "Reddit discussions about Camellia are most positive about food and cafe (0.96) and green space (0.96). Residents are most critical about affordability (0.59) and safety (0.57). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Stage 2 of the Parramatta Light Rail has been approved for construction by the NSW Government. It will connect stage 1 at Camellia - crosses Parramatta River on a new bridge to Rydalmere, Ermington, a",
+      "url": "https://reddit.com/r/sydney/comments/1azja3i/planning_approval_received_for_stage_2_parramatta/ks1ljw7/",
+      "score": 57
+    },
+    {
+      "text": " camellia",
+      "url": "https://reddit.com/r/sydney/comments/1cq2w6q/what_plant_is_this_the_rainbow_lorikeets_love_them/l3oox2r/",
+      "score": 21
+    },
+    {
+      "text": "The powerchair football national club championships are on this week in Sydney\nPowerchair football is a game modified for electric wheelchair users. The 2026 national club championships are on from Tu",
+      "url": "https://reddit.com/r/sydney/comments/1sj66hc/the_powerchair_football_national_club/",
+      "score": 19
+    },
+    {
+      "text": "I'm going to go against everyone else and say it's a camellia.",
+      "url": "https://reddit.com/r/sydney/comments/1cq2w6q/what_plant_is_this_the_rainbow_lorikeets_love_them/l3otx6d/",
+      "score": 17
+    },
+    {
+      "text": "Full story\n\n> Major construction work is set to finally begin on the second stage of the Parramatta Light Rail, with $2 billion in funding to be announced for the new tram line connecting the Parramat",
+      "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6v20g4/",
+      "score": 15
+    },
+    {
+      "text": "Any house built between the 40’s and 90’s has it. Even as asbestos was getting banned in the 80’s, it still was used in eaves until the mid 90’s. If you dig up your front lawn you’ll probably find off",
+      "url": "https://reddit.com/r/sydney/comments/1b4x29l/how_much_asbestos_is_there_around_sydney/kt2ydeg/",
+      "score": 12
+    },
+    {
+      "text": "You can chuck them very cheaply at your nearest concrete recyclers, there is one at camellia. Also a  Boral recycling at wetherill park.\n\nRing ahead and see if they allow hand unloading, some may only",
+      "url": "https://reddit.com/r/sydney/comments/1bs5mhr/what_is_the_most_cost_effective_and_legal_way_to/kxdjx4o/",
+      "score": 11
+    },
+    {
+      "text": "Trams usually do not have grade separation whilst metro does. Two sections of our light rail network is grade separated - from a bit further from theend of Paddy's Market stop to Dulwich Hill and from",
+      "url": "https://reddit.com/r/sydney/comments/1ba563a/l2_and_l3_light_rail_patronage_highest_ever_while/ku1eiul/",
+      "score": 4
+    },
+    {
+      "text": "Camellia is terrible! The plans for that site are scary. But Rosehill while adjacent shouldn't be that contaminated and I would hope that if Rosehill is developed that Camellia is untouched.\n\nUnfortun",
+      "url": "https://reddit.com/r/sydney/comments/1b8eg7s/backlash_is_mounting_against_the_contentious_plan/ktqlfzz/",
+      "score": 3
+    },
+    {
+      "text": "Camellia",
+      "url": "https://reddit.com/r/sydney/comments/1cq2w6q/what_plant_is_this_the_rainbow_lorikeets_love_them/l3opns3/",
+      "score": 3
+    }
+  ]
+}

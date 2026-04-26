@@ -1,0 +1,66 @@
+{
+  "suburb": "Castlecrag",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:31.119572+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.117,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.289,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.2761,
+    "neutral": 0.2731,
+    "anger": 0.0607,
+    "sadness": 0.1519,
+    "surprise": 0.0629,
+    "joy": 0.1686,
+    "disgust": 0.0068
+  },
+  "narrative": "Reddit discussions about Castlecrag are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.29) and community (0.12). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is fear.",
+  "sources": [
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "I'd ebike if we had bike lanes but I know 3 people on lower north shore who have been hit by cars trying to to get to the bridge entry via Northbridge/Castlecrag/North Sydney where you mostly ride on ",
+      "url": "https://reddit.com/r/sydney/comments/1bivdnn/streets_are_being_smashed_as_drivers_try_to_save/kvoidfw/",
+      "score": 3
+    },
+    {
+      "text": "Castlecrag Dental is fantastic (my filling from them is 18 years old now!) but a bit of a trek for you. I recommend them to anyone on the LNS though.",
+      "url": "https://reddit.com/r/sydney/comments/1csxj5a/best_dental_places_for_fillings_in_syd/l49bhf3/",
+      "score": 2
+    }
+  ]
+}

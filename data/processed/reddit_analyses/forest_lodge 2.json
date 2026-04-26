@@ -1,0 +1,101 @@
+{
+  "suburb": "Forest Lodge",
+  "post_count": 13,
+  "fetched_at": "2026-04-18T02:17:18.359591+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.105,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.137,
+      "mentions": 3
+    },
+    "community": {
+      "score": 0.195,
+      "mentions": 12
+    },
+    "transport": {
+      "score": 0.491,
+      "mentions": 4
+    },
+    "green_space": {
+      "score": 0.663,
+      "mentions": 3
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "sadness": 0.1019,
+    "fear": 0.117,
+    "disgust": 0.041,
+    "anger": 0.0463,
+    "neutral": 0.4495,
+    "surprise": 0.1127,
+    "joy": 0.1316
+  },
+  "narrative": "Reddit discussions about Forest Lodge are most positive about green space (0.66) and food and cafe (0.50). Residents are most critical about nightlife (0.14) and safety (0.10). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "One man dead, another seriously injured in shooting outside Forest Lodge pub in Sydney's inner-city",
+      "url": "https://reddit.com/r/sydney/comments/1msnv1e/one_man_dead_another_seriously_injured_in/",
+      "score": 453
+    },
+    {
+      "text": "Tree downed on Bridge Rd near Layton St Forest Lodge\nThat's across the footpath and 3 lanes",
+      "url": "https://reddit.com/r/sydney/comments/1ddugzq/tree_downed_on_bridge_rd_near_layton_st_forest/",
+      "score": 28
+    },
+    {
+      "text": "Pretty much any inner west pub will be catered to the younger crowd.\n\nForest Lodge hotel is always pretty good.",
+      "url": "https://reddit.com/r/sydney/comments/1cnpoza/any_recommendations_for_best_trivia_in_sydney_for/l38uusa/",
+      "score": 28
+    },
+    {
+      "text": "It really depends where you are. For me in forest lodge it’s 35 minute drive to work in mascot in the morning if I include parking and walking to the office or 30 minutes via bus and train door to doo",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/kruo29k/",
+      "score": 24
+    },
+    {
+      "text": "Shooting near the Harold Park Hotel in Forest Lodge/Glebe\nhttps://www.smh.com.au/national/nsw/one-dead-one-critical-after-shooting-at-forest-lodge-s-harold-park-hotel-20250817-p5mnmz.html?btis=",
+      "url": "https://reddit.com/r/sydney/comments/1msnj1j/shooting_near_the_harold_park_hotel_in_forest/",
+      "score": 9
+    },
+    {
+      "text": "This would have destroyed Annandale and Forest Lodge, I’m glad the Anzac Bridge became a thing….",
+      "url": "https://reddit.com/r/sydney/comments/1azgd5r/proposed_lilyfield_interchange_and_freeways/ks19fwi/",
+      "score": 9
+    },
+    {
+      "text": "I kind of miss my old place. Forest Lodge near the top of the hill, by the school. The way it was built there was a steep drop immediately past my back courtyard, and my desk was at the window and the",
+      "url": "https://reddit.com/r/sydney/comments/1aubbup/front_row_seats_to_the_storm/kr30dfq/",
+      "score": 8
+    },
+    {
+      "text": "I used to live in Forest Lodge and definitely get what you mean. But I don't understand the not having a choice part.",
+      "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/kokrjqk/",
+      "score": 7
+    },
+    {
+      "text": "So all those people in Petersham, Lewisham, leichhardt, Annandale, stanmore, forest lodge and glebe who have (checks notes) buses every few minutes and a heavy rail line close by will have another for",
+      "url": "https://reddit.com/r/sydney/comments/1dp8uyg/revealed_plans_for_new_11km_lightrail_run_on_one/laf8542/",
+      "score": 6
+    },
+    {
+      "text": "Police Helicopter circling around Forest Lodge/Glebe at 1.30am\nHelicopter has been circling for at least 15 minutes continuously around the same area-anyone know who they’re looking for?",
+      "url": "https://reddit.com/r/sydney/comments/1f5qbt5/police_helicopter_circling_around_forest/",
+      "score": 4
+    }
+  ]
+}

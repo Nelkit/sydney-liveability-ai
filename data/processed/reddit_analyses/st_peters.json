@@ -1,0 +1,101 @@
+{
+  "suburb": "St Peters",
+  "post_count": 47,
+  "fetched_at": "2026-04-18T02:07:16.859616+00:00",
+  "aspects": {
+    "food_and_cafe": {
+      "score": 0.686,
+      "mentions": 8
+    },
+    "safety": {
+      "score": 0.547,
+      "mentions": 16
+    },
+    "transport": {
+      "score": 0.368,
+      "mentions": 23
+    },
+    "community": {
+      "score": 0.402,
+      "mentions": 36
+    },
+    "noise": {
+      "score": 0.058,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.595,
+      "mentions": 11
+    },
+    "green_space": {
+      "score": 0.661,
+      "mentions": 8
+    },
+    "affordability": {
+      "score": 0.782,
+      "mentions": 4
+    }
+  },
+  "emotions": {
+    "sadness": 0.1023,
+    "neutral": 0.5355,
+    "surprise": 0.0909,
+    "disgust": 0.0764,
+    "anger": 0.0455,
+    "fear": 0.0807,
+    "joy": 0.0688
+  },
+  "narrative": "Reddit discussions about St Peters are most positive about affordability (0.78) and food and cafe (0.69). Residents are most critical about transport (0.37) and noise (0.06). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Looks like the MAGA transphobe cafe in St Peters has shut",
+      "url": "https://reddit.com/r/sydney/comments/1kfrnu5/looks_like_the_maga_transphobe_cafe_in_st_peters/",
+      "score": 813
+    },
+    {
+      "text": "Trespasser on the Track between Erskinville & St Peters.\nExpect Major Delays on Sydney trains.",
+      "url": "https://reddit.com/r/sydney/comments/1jphsp8/trespasser_on_the_track_between_erskinville_st/",
+      "score": 441
+    },
+    {
+      "text": "Today on small inner western roads\nAustralian Idol going in brave new directions... backwards... badly. \n\nPoor bloody driver being made to get the bus down the lanes in St Peters.",
+      "url": "https://reddit.com/r/sydney/comments/1npa1qs/today_on_small_inner_western_roads/",
+      "score": 177
+    },
+    {
+      "text": "Trains severely delayed between Redfern and Sydenham\nTrains are severely delayed between Redfern and Sydenham all lines due to emergency incident at St Peters affecting T3, T4 and South Coast Lines.  ",
+      "url": "https://reddit.com/r/sydney/comments/1ae4549/trains_severely_delayed_between_redfern_and/",
+      "score": 127
+    },
+    {
+      "text": "Ticket inspector working hard at St Peters right now",
+      "url": "https://reddit.com/r/sydney/comments/1h06bp5/ticket_inspector_working_hard_at_st_peters_right/",
+      "score": 57
+    },
+    {
+      "text": "That might be that poorly signed dogshit turnoff that  ends you up in Beverly Hills when you wanted st peters.\nNot worth endangering lives for but man I've felt that sting after a 4 hr drive!",
+      "url": "https://reddit.com/r/sydney/comments/1de3l9r/cant_possibly_miss_your_exit_better_come_to_a/l897kuh/",
+      "score": 45
+    },
+    {
+      "text": "Bankstown line is kaput for the near future.\n\nErko, st peters and Sydenham have stops leaving platform 25. Extra trains from 25 and extra stops for south coast trains",
+      "url": "https://reddit.com/r/sydney/comments/1cxtqzx/t3_bankstown_line_delays/l550ye5/",
+      "score": 20
+    },
+    {
+      "text": "St Peters and Erskineville will eventually move onto T4 once a bunch of [works are completed](https://www.transport.nsw.gov.au/projects/more-trains-more-services) which will improve capacity on the T4",
+      "url": "https://reddit.com/r/sydney/comments/1cgcp1p/new_temporary_t6_line_announced_for_construction/l1vaq5b/",
+      "score": 17
+    },
+    {
+      "text": "PSA - trackwork in the CBD will impact all lines - 28/29 March\nTown Hall, Wynyard, Circular Quay, St James and Museum all closed.\n\nCentral, Gadigal, Martin Place and Barangaroo will be open.\n\nThe only",
+      "url": "https://reddit.com/r/sydney/comments/1ryfppf/psa_trackwork_in_the_cbd_will_impact_all_lines/",
+      "score": 16
+    },
+    {
+      "text": "They don't officially appear on the Inner West Ale Trail but there are two more breweries just before Willie the Boatman, Brickworks Brewing and Future Brewing.  Brickworks I've found to be so-so but ",
+      "url": "https://reddit.com/r/sydney/comments/1ai696q/inner_west_ale_trail/kot0wjh/",
+      "score": 16
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Sydenham",
+  "post_count": 216,
+  "fetched_at": "2026-04-18T01:32:18.324617+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.544,
+      "mentions": 179
+    },
+    "community": {
+      "score": 0.622,
+      "mentions": 183
+    },
+    "nightlife": {
+      "score": 0.791,
+      "mentions": 36
+    },
+    "safety": {
+      "score": 0.663,
+      "mentions": 60
+    },
+    "affordability": {
+      "score": 0.844,
+      "mentions": 13
+    },
+    "green_space": {
+      "score": 0.795,
+      "mentions": 20
+    },
+    "noise": {
+      "score": 0.637,
+      "mentions": 13
+    },
+    "food_and_cafe": {
+      "score": 0.878,
+      "mentions": 22
+    }
+  },
+  "emotions": {
+    "neutral": 0.5767,
+    "surprise": 0.1248,
+    "fear": 0.0746,
+    "joy": 0.043,
+    "anger": 0.0532,
+    "sadness": 0.061,
+    "disgust": 0.0667
+  },
+  "narrative": "Reddit discussions about Sydenham are most positive about food and cafe (0.88) and affordability (0.84). Residents are most critical about community (0.62) and transport (0.54). This analysis is based on 216 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Arrival of the first revenue passenger Metro service to Tallawong via the city at Sydenham",
+      "url": "https://reddit.com/r/sydney/comments/1evgmk4/arrival_of_the_first_revenue_passenger_metro/",
+      "score": 1149
+    },
+    {
+      "text": "Someone stealth-edited this poster in my street and I'm dying. Gotta love the Inner West 🤣\nLocation: Unwins Bridge Road, Sydenham",
+      "url": "https://reddit.com/r/sydney/comments/1cz8v1i/someone_stealthedited_this_poster_in_my_street/",
+      "score": 847
+    },
+    {
+      "text": "Got handed this at Chatswood today. Exciting! I’ve never been to Sydenham, what awaits me there?",
+      "url": "https://reddit.com/r/sydney/comments/1enk6z6/got_handed_this_at_chatswood_today_exciting_ive/",
+      "score": 594
+    },
+    {
+      "text": "This is petty af. but why are there only 5 opal turnstiles/gates at sydenham metro? ",
+      "url": "https://reddit.com/r/sydney/comments/1gf7szk/this_is_petty_af_but_why_are_there_only_5_opal/",
+      "score": 525
+    },
+    {
+      "text": "The state of affairs at Sydenham\nAll but 2 Opal gates out of order, shared from both directions. Ridiculous.\n\nI wonder if they're going to pin this on industrial action or COVID.",
+      "url": "https://reddit.com/r/sydney/comments/1rfniah/the_state_of_affairs_at_sydenham/",
+      "score": 525
+    },
+    {
+      "text": "Is this art wholesome or not?\nSpotted near Sydenham station",
+      "url": "https://reddit.com/r/sydney/comments/1aww1k6/is_this_art_wholesome_or_not/",
+      "score": 468
+    },
+    {
+      "text": "Car flipped Sydenham Rd, Sydenham",
+      "url": "https://reddit.com/r/sydney/comments/1s321wd/car_flipped_sydenham_rd_sydenham/",
+      "score": 328
+    },
+    {
+      "text": "Sydney Trains Lockout Megathread\n*Alternate Title: Minnsy and Jo's Fabulous Ferroequine Foreclosure!*\n\n&nbsp;\n\nG'day Slagicals,\n\nWhat a shemozzle. After the RTBU demanded 24-hour train service from Th",
+      "url": "https://reddit.com/r/sydney/comments/1gvx8ck/sydney_trains_lockout_megathread/",
+      "score": 314
+    },
+    {
+      "text": "The metro was heaps fun!\nJust went on it with some friends. The two year old loved it in particular. So fast and so smooth!\n\nWent from Sydenham to Chatswood for fun and to get dinner at Chatwood.\n\nNex",
+      "url": "https://reddit.com/r/sydney/comments/1evzojj/the_metro_was_heaps_fun/",
+      "score": 180
+    },
+    {
+      "text": "Testing on track as all 45 trains complete Tallawong to Sydenham return journey",
+      "url": "https://reddit.com/r/sydney/comments/1bhar0k/testing_on_track_as_all_45_trains_complete/",
+      "score": 167
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Pagewood",
+  "post_count": 10,
+  "fetched_at": "2026-04-18T02:18:23.994365+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.321,
+      "mentions": 8
+    },
+    "green_space": {
+      "score": 0.471,
+      "mentions": 2
+    },
+    "safety": {
+      "score": 0.196,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.225,
+      "mentions": 2
+    },
+    "food_and_cafe": {
+      "score": 0.914,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.53,
+      "mentions": 2
+    },
+    "transport": {
+      "score": 0.466,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "anger": 0.1559,
+    "disgust": 0.1073,
+    "neutral": 0.459,
+    "surprise": 0.1392,
+    "sadness": 0.0445,
+    "joy": 0.0176,
+    "fear": 0.0765
+  },
+  "narrative": "Reddit discussions about Pagewood are most positive about food and cafe (0.91) and affordability (0.53). Residents are most critical about nightlife (0.23) and safety (0.20). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Marist Brothers Pagewood.\n\n\nAlan Jones visited the school one day in the mid 90s - it was when he was involved with the South Sydney Rabbitohs and he was having contract talks with one of the older st",
+      "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzxfahv/",
+      "score": 205
+    },
+    {
+      "text": "Fire smell in eastern suburbs?\nGot a huge smell of smoke just in the last couple of minutes near pagewood. Any news? \n\nWe've had to shut all our windows because of our small Bub...",
+      "url": "https://reddit.com/r/sydney/comments/1pesa4l/fire_smell_in_eastern_suburbs/",
+      "score": 107
+    },
+    {
+      "text": "Pagewood resident here (old City of Botany Bay LGA). I *hate* Bayside. We voted 97% *against* the Rockdale merge and they still went ahead and merged us. \n\nNow we get all this highly informative mail ",
+      "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/ki8b2j4/",
+      "score": 31
+    },
+    {
+      "text": "Pagewood Hotel is one of the slimiest I can think of",
+      "url": "https://reddit.com/r/sydney/comments/1cfuowe/what_is_sydneys_scummiest_pub/l1rhkrx/",
+      "score": 15
+    },
+    {
+      "text": "Late closing/24 hour restaurant\nI'm going crazy over this right now and I'm  hoping you can help me find this place. I apologise  in advance for the lack of detail but vim going from memory.\n\nA few mo",
+      "url": "https://reddit.com/r/sydney/comments/1iq4zq0/late_closing24_hour_restaurant/",
+      "score": 10
+    },
+    {
+      "text": "I know. We're all still scratching our heads over here in Mascot/Botany/Pagewood. \n\nBayside keeps telling about all these great community events happening in Bexley. Why on Earth would I want to trave",
+      "url": "https://reddit.com/r/sydney/comments/1bf7a5x/inner_west_council_demerger_rejected/kuylzyv/",
+      "score": 9
+    },
+    {
+      "text": "SATS (1972) was really the first time actual practical designs from the 1948 County of Cumberland Plan were produced. \n\nPictured here the F4 interchange with a SATS-invented road - The Johnston's Cree",
+      "url": "https://reddit.com/r/sydney/comments/1azgd5r/proposed_lilyfield_interchange_and_freeways/ks1rams/",
+      "score": 7
+    },
+    {
+      "text": "> where are you going to find a 4bdr detached that’s under 5 mil within 10kms of the CBD.\n\nThe South-East. Kingsford has 4/2/2 for about 3. Maroubra, Pagewood etc. as well.",
+      "url": "https://reddit.com/r/sydney/comments/1casrjz/housing_in_the_ponds_western_sydney_australia/l0v7rgq/",
+      "score": 7
+    },
+    {
+      "text": "Big W has more Pokopia stock\nJust a PSA for anyone interested check the website: \n\nBankstown\nTown Hall\nRockdale\nMenai\nBonnyrigg\nCarnes Hill\nPagewood\nStanhope\nWarringah\nMiranda \n\nAll listed as stock, j",
+      "url": "https://reddit.com/r/sydney/comments/1rqjofu/big_w_has_more_pokopia_stock/",
+      "score": 5
+    },
+    {
+      "text": "The light rail is great for getting you to everywhere the light rail goes.\n\nBut they cancelled and reduced buses between mascot, eastgardens, maroubra, matraville, coogee and clovelly citing \"light ra",
+      "url": "https://reddit.com/r/sydney/comments/1c99l52/george_street_transformation_wins_australian/l0l67qm/",
+      "score": 5
+    }
+  ]
+}

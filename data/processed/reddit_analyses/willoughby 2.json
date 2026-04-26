@@ -1,0 +1,101 @@
+{
+  "suburb": "Willoughby",
+  "post_count": 41,
+  "fetched_at": "2026-04-18T02:09:27.783241+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.451,
+      "mentions": 34
+    },
+    "safety": {
+      "score": 0.551,
+      "mentions": 17
+    },
+    "nightlife": {
+      "score": 0.509,
+      "mentions": 6
+    },
+    "transport": {
+      "score": 0.569,
+      "mentions": 11
+    },
+    "affordability": {
+      "score": 0.806,
+      "mentions": 5
+    },
+    "green_space": {
+      "score": 0.768,
+      "mentions": 9
+    },
+    "food_and_cafe": {
+      "score": 0.775,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.736,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "neutral": 0.5843,
+    "disgust": 0.0452,
+    "fear": 0.0508,
+    "anger": 0.0671,
+    "sadness": 0.0843,
+    "surprise": 0.1168,
+    "joy": 0.0515
+  },
+  "narrative": "Reddit discussions about Willoughby are most positive about affordability (0.81) and food and cafe (0.78). Residents are most critical about nightlife (0.51) and community (0.45). This analysis is based on 41 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "\"Keep Left\" (Willoughby St, Kirribilli)",
+      "url": "https://reddit.com/r/sydney/comments/1r9otd9/keep_left_willoughby_st_kirribilli/",
+      "score": 363
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Rant: Is anyone else sick and tired of the Warringah Freeway Upgrade Works?\nI know I am a bit bias in this topic as I am a late night bus driver on the North Shore who drives the Warringah Freeway 3 t",
+      "url": "https://reddit.com/r/sydney/comments/1ddu3uh/rant_is_anyone_else_sick_and_tired_of_the/",
+      "score": 167
+    },
+    {
+      "text": "Anyone lose a rabbit near Willoughby?",
+      "url": "https://reddit.com/r/sydney/comments/1ph6l43/anyone_lose_a_rabbit_near_willoughby/",
+      "score": 134
+    },
+    {
+      "text": "Having interacted with several of the Mayors, Councillors, and MPs of this area - I believe the issue is not development in and of itself and so not NIMBY-ism.\n\nIt’s that the roads are chockers, schoo",
+      "url": "https://reddit.com/r/sydney/comments/1asuzo3/what_do_you_think_of_the_attitudes_in_the_north/kqt26sl/",
+      "score": 102
+    },
+    {
+      "text": "Anyone see the Epoch Times Stand at Chatswood last weekend?\nI'm surprised Willoughby Council would allow some far-right, anti-vax, Qanon, conspiracy peddling newspaper to have a stand smack bang in th",
+      "url": "https://reddit.com/r/sydney/comments/1aljicn/anyone_see_the_epoch_times_stand_at_chatswood/",
+      "score": 53
+    },
+    {
+      "text": "Another different one:\n\nChattie's Wood\n\n\r  \nby Henry Lawson\n\n\r  \n'Twas an old respected settler, in the unrespected days,\r  \nWho had land along the North Shore and — we'll say his name was Hayes;\r  \nA",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnsvva/",
+      "score": 37
+    },
+    {
+      "text": "They sold their premises at Willoughby - now being developed for housing.",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/kjxc5jg/",
+      "score": 23
+    },
+    {
+      "text": "annnd nothing will happen - I called my council about this kind of thing (Willoughby) and they said there is nothing they can do about it, if the ranger isn't nearby the trucks will be gone before the",
+      "url": "https://reddit.com/r/sydney/comments/1b15pjv/two_disabled_buddies_on_a_fun_day_out_in_sylvania/ksg9cpv/",
+      "score": 22
+    },
+    {
+      "text": "Spotted at the end of the southbound Willoughby Rd / Gore Hill Fwy on-ramp over the last few days, in case someone here is looking for it.",
+      "url": "https://reddit.com/r/sydney/comments/1cnxy0s/roadside_lost_property/l3a72hb/",
+      "score": 17
+    }
+  ]
+}

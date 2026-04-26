@@ -1,0 +1,66 @@
+{
+  "suburb": "Jamisontown",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:36.628852+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.596,
+      "mentions": 2
+    },
+    "community": {
+      "score": 0.601,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.423,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.451,
+      "mentions": 2
+    },
+    "nightlife": {
+      "score": 0.738,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.4561,
+    "disgust": 0.1895,
+    "fear": 0.0107,
+    "anger": 0.0179,
+    "sadness": 0.092,
+    "joy": 0.2116,
+    "surprise": 0.0221
+  },
+  "narrative": "Reddit discussions about Jamisontown are most positive about nightlife (0.74) and community (0.60). Residents are most critical about green space (0.45) and transport (0.42). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Most of penrith is generally safe. St Marys is still filled with plenty of ratbags. I'd choose somewhere in south penrith or jamisontown. ",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwhcb5/",
+      "score": 29
+    },
+    {
+      "text": "OP says Penrith but they could very well be Glenmore Park or Jamisontown which is right next to the motorway.\n\nThe bus is 30 mins to the station at 8:30 which kind of sucks.",
+      "url": "https://reddit.com/r/sydney/comments/1b61vzk/just_wanna_vent_about_the_m4/kta6hes/",
+      "score": 21
+    },
+    {
+      "text": "Jamisontown is quite nice. Atleast the side where Southlands Shopping Centre is.",
+      "url": "https://reddit.com/r/sydney/comments/1ao2k9l/safe_suburbs_in_western_sydney/kpwjobf/",
+      "score": 2
+    }
+  ]
+}

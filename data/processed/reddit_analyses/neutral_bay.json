@@ -1,0 +1,101 @@
+{
+  "suburb": "Neutral Bay",
+  "post_count": 33,
+  "fetched_at": "2026-04-18T02:11:47.480598+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.483,
+      "mentions": 25
+    },
+    "transport": {
+      "score": 0.646,
+      "mentions": 8
+    },
+    "food_and_cafe": {
+      "score": 0.889,
+      "mentions": 4
+    },
+    "nightlife": {
+      "score": 0.753,
+      "mentions": 11
+    },
+    "safety": {
+      "score": 0.584,
+      "mentions": 7
+    },
+    "affordability": {
+      "score": 0.537,
+      "mentions": 4
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.831,
+      "mentions": 2
+    }
+  },
+  "emotions": {
+    "disgust": 0.0831,
+    "anger": 0.0695,
+    "neutral": 0.58,
+    "fear": 0.0401,
+    "sadness": 0.0726,
+    "surprise": 0.1024,
+    "joy": 0.0524
+  },
+  "narrative": "Reddit discussions about Neutral Bay are most positive about food and cafe (0.89) and green space (0.83). Residents are most critical about noise (0.50) and community (0.48). This analysis is based on 33 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Crust in Neutral Bay :X",
+      "url": "https://reddit.com/r/sydney/comments/1g2dkl8/crust_in_neutral_bay_x/",
+      "score": 4648
+    },
+    {
+      "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
+      "url": "https://reddit.com/r/sydney/comments/1s3zv0z/sydney_residents_told_to_save_water_after_major/",
+      "score": 251
+    },
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "You can just go up and down the ramp at neutral bay in a loop. Its $2 a hit, so like 13 loops i guess. The full loop would be less than 3km",
+      "url": "https://reddit.com/r/sydney/comments/1dml95p/shortest_trip_to_spend_50_on_tolls/l9wah9k/",
+      "score": 99
+    },
+    {
+      "text": "Some of the veterans from Charcoal Charlie in Neutral Bay now run Rooster and Grill in Artarmon. The place doesn't look it, but their stuff is pretty good.",
+      "url": "https://reddit.com/r/sydney/comments/1acv28l/i_hate_artarmon_nazis/kjx3juj/",
+      "score": 82
+    },
+    {
+      "text": "It says the original cards were issued in a trial on Neutral Bay ferries. I imagine OP was catching Neutral Bay ferries at the time of the trial, and received this card during that trial.",
+      "url": "https://reddit.com/r/sydney/comments/1b45r8m/one_of_86_original_opal_cards_still_in_use/ksxdkvl/",
+      "score": 45
+    },
+    {
+      "text": "Ehh I live in Tokyo; the quality of Japanese food in sydney is extremely good just much more expensive. Ryo’s in crows nest puts out a better ramen than many stores here in Tokyo. Sushi in sydney is a",
+      "url": "https://reddit.com/r/sydney/comments/19bv05g/what_are_some_foods_sydney_does_just_as_good_if/kiuv9qj/",
+      "score": 33
+    },
+    {
+      "text": "The Oaks in Neutral Bay have $7 schooners and $20 jugs on one set beer each month. Normally a new beer they are trying to promote.",
+      "url": "https://reddit.com/r/sydney/comments/1c4gcm5/whats_a_schooner_cost_at_your_local/kzndy1v/",
+      "score": 33
+    },
+    {
+      "text": "Yeah, “wear and tear” from massive nights at your neutral bay mansion with the fair ladies of the night",
+      "url": "https://reddit.com/r/sydney/comments/1b45r8m/one_of_86_original_opal_cards_still_in_use/ksxip2h/",
+      "score": 30
+    },
+    {
+      "text": "Look further afield.\n\n$500 a week could get you a 1BR apartment in Neutral Bay. You can literally walk to the CBD.\n\nhttps://www.realestate.com.au/property-apartment-nsw-neutral+bay-438428972\n\n$450 for",
+      "url": "https://reddit.com/r/sydney/comments/1ahkh9s/need_advice_on_whether_to_move_after_a_rent/kop08fs/",
+      "score": 16
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Clyde",
+  "post_count": 12,
+  "fetched_at": "2026-04-18T02:17:36.766907+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.316,
+      "mentions": 8
+    },
+    "community": {
+      "score": 0.338,
+      "mentions": 7
+    },
+    "safety": {
+      "score": 0.526,
+      "mentions": 1
+    },
+    "affordability": {
+      "score": 0.526,
+      "mentions": 1
+    },
+    "noise": {
+      "score": 0.62,
+      "mentions": 1
+    },
+    "nightlife": {
+      "score": 0.62,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.637,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.6578,
+    "surprise": 0.1005,
+    "sadness": 0.0866,
+    "disgust": 0.1136,
+    "anger": 0.0204,
+    "joy": 0.0047,
+    "fear": 0.0163
+  },
+  "narrative": "Reddit discussions about Clyde are most positive about food and cafe (0.64) and noise (0.62). Residents are most critical about community (0.34) and transport (0.32). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Clyburn station presumably was because it was between Clyde and Auburn. Not suburb names per your request but a bit of rail history of combo names.",
+      "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvne6xh/",
+      "score": 211
+    },
+    {
+      "text": "No one used the Carlo rail line not because it was a rail line but how poor the frequencies were (1 train every 45 minutes, IIRC), single track, and the fact that it shuttled commuters to what is perh",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbiw6fb/",
+      "score": 145
+    },
+    {
+      "text": "Not my suburb, but Clyde should be called The Void",
+      "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjfvuav/",
+      "score": 37
+    },
+    {
+      "text": "The Carlingford line existed historically because of the power station, Rosehill racecourse and the industrial area such as the abattoir, james hardy and caltex.\n\nWhen the landscape changed, the raily",
+      "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kzj4f0q/",
+      "score": 33
+    },
+    {
+      "text": "Been amping up in Stratty for a good few years. Tents near the river in Clyde/Granville. Dosses around Silverwater, Rhodes, Meadowbank.\n\nPeople are hurting all over.",
+      "url": "https://reddit.com/r/sydney/comments/1clfy1u/anyone_else_in_ashfield_notice_an_uptick_in/l2tciq0/",
+      "score": 28
+    },
+    {
+      "text": "I don't think \"nobody used\" the Carlingford Line, but it didn't attract passengers because it didn't go anywhere. Clyde was a nothing suburb and it was an hourly service. So it wasn't convenient.\n\nNow",
+      "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbiwjmn/",
+      "score": 26
+    },
+    {
+      "text": "To anyone living in Silverwater/Auburn/Clyde/Granville - what is that Hindu (I assume) music that’s been playing near non stop for the past three days?\nI can hear it from Silverwater, it started on Fr",
+      "url": "https://reddit.com/r/sydney/comments/1ia0qiv/to_anyone_living_in/",
+      "score": 18
+    },
+    {
+      "text": "Not applicable at some stations such as Rockdale, St Leonards, Homebush, Croydon, Summer Hill, Clyde, and Stanmore.",
+      "url": "https://reddit.com/r/sydney/comments/1awfzht/sydney_daily_random_discussion_thread_22022024/krjrqb7/",
+      "score": 13
+    },
+    {
+      "text": "Leightonfield is a station with a certain cachet on the Sydney network. That, and Clyde. I always feel like either is a trip to the 1950s. If you commuted between Clyde and Leightonfield you’d be perm",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krvlixu/",
+      "score": 7
+    },
+    {
+      "text": "Door to door to the city you're looking at 90 mins each way. The train is not an express it goes all stations via Granville, skipping Clyde, then minor stations between Ashfield and Newtown.\n\n\nThe int",
+      "url": "https://reddit.com/r/sydney/comments/1blnmw2/what_are_your_thoughts_on_the_australleppington/kw6xp2p/",
+      "score": 5
+    }
+  ]
+}

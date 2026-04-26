@@ -1,0 +1,66 @@
+{
+  "suburb": "Church Point",
+  "post_count": 3,
+  "fetched_at": "2026-04-18T02:20:31.508049+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.644,
+      "mentions": 3
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1
+    },
+    "green_space": {
+      "score": 0.991,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.991,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "joy": 0.5054,
+    "surprise": 0.0586,
+    "neutral": 0.3018,
+    "fear": 0.0705,
+    "anger": 0.023,
+    "sadness": 0.0239,
+    "disgust": 0.0168
+  },
+  "narrative": "Reddit discussions about Church Point are most positive about green space (0.99) and transport (0.99). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is joy.",
+  "sources": [
+    {
+      "text": "Taking the Mothership to the Waterfront Store @ Church Point, a favourite of ours!",
+      "url": "https://reddit.com/r/sydney/comments/18zatae/sydney_daily_random_discussion_thread_06012024/kgig6v7/",
+      "score": 8
+    },
+    {
+      "text": "Another +1 for The Basin. Other places around Pittwater (Mackerel Beach, Currawong etc) are worthwhile seeing from the Ferry, but your best bet is to take a picnic lunch across to The Basin. Beautiful",
+      "url": "https://reddit.com/r/sydney/comments/19e3ort/northern_beachespittwater_ferries/kjang6p/",
+      "score": 3
+    },
+    {
+      "text": "TBF the northern beaches pin looks like it’s in Church Point which is not too far from the centre  point of the LGA. \n\nRandwick, on the other hand…..",
+      "url": "https://reddit.com/r/sydney/comments/1d222nz/go_home_abc_news_youre_drunk/l5y3c5f/",
+      "score": 3
+    }
+  ]
+}

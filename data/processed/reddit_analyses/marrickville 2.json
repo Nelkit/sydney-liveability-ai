@@ -1,0 +1,101 @@
+{
+  "suburb": "Marrickville",
+  "post_count": 440,
+  "fetched_at": "2026-04-18T01:21:39.587180+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.716,
+      "mentions": 388
+    },
+    "safety": {
+      "score": 0.597,
+      "mentions": 108
+    },
+    "transport": {
+      "score": 0.699,
+      "mentions": 137
+    },
+    "nightlife": {
+      "score": 0.753,
+      "mentions": 141
+    },
+    "food_and_cafe": {
+      "score": 0.724,
+      "mentions": 105
+    },
+    "affordability": {
+      "score": 0.767,
+      "mentions": 52
+    },
+    "green_space": {
+      "score": 0.668,
+      "mentions": 65
+    },
+    "noise": {
+      "score": 0.715,
+      "mentions": 36
+    }
+  },
+  "emotions": {
+    "neutral": 0.541,
+    "joy": 0.1015,
+    "surprise": 0.1384,
+    "sadness": 0.0555,
+    "anger": 0.0401,
+    "disgust": 0.0679,
+    "fear": 0.0556
+  },
+  "narrative": "Reddit discussions about Marrickville are most positive about affordability (0.77) and nightlife (0.75). Residents are most critical about green space (0.67) and safety (0.60). This analysis is based on 440 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "PSA: Lifeblood Marrickville turning people away, even if you have an appointment. Thank you, donors\nI popped in to the clinic and there must have been more than 100 people in the line.\nThe need for bl",
+      "url": "https://reddit.com/r/sydney/comments/1pmzl5p/psa_lifeblood_marrickville_turning_people_away/",
+      "score": 5434
+    },
+    {
+      "text": "Major fire in Marrickville!\nHUGE smoke plume. Saw planes going right thru it from Tempe. Apparently could be the Fraser Park sports club?",
+      "url": "https://reddit.com/r/sydney/comments/1p4vhf3/major_fire_in_marrickville/",
+      "score": 709
+    },
+    {
+      "text": "Saw a post about a guy claiming that immigration caused homelessness, so I came out for a chat but he's run off 😔\nThat's fine, I don't need them here to make my point. I didn't come here to argue with",
+      "url": "https://reddit.com/r/sydney/comments/1lxur8g/saw_a_post_about_a_guy_claiming_that_immigration/",
+      "score": 696
+    },
+    {
+      "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
+      "url": "https://reddit.com/r/sydney/comments/1kjwh57/grand_post_offices_of_sydney/",
+      "score": 602
+    },
+    {
+      "text": "Peak Sydney: former Police station converted to Commercial Real Estate agent with Audi taking two parking spots 😍\n\nThis was Marrickville on a Sunday so no other parking on the street. If he’d parked a",
+      "url": "https://reddit.com/r/sydney/comments/1915sar/peak_sydney_former_police_station_converted_to/",
+      "score": 550
+    },
+    {
+      "text": "My first attempted rideshare scam!\nWho says hours on reddit are wasted! I'd read about the scam where the rideshare driver (in my case Didi) accepts the fare, drives vaguely toward you during the \"fre",
+      "url": "https://reddit.com/r/sydney/comments/1accd40/my_first_attempted_rideshare_scam/",
+      "score": 495
+    },
+    {
+      "text": "To the dog walker with the brown Staffie at Addison Rd Community Center Marrickville last night.\nYou are a coward and a shit dog owner. You asked my ten year old if he'd like to throw the ball for you",
+      "url": "https://reddit.com/r/sydney/comments/1ed7oe5/to_the_dog_walker_with_the_brown_staffie_at/",
+      "score": 390
+    },
+    {
+      "text": "You can also see the generation effect with Greek restaurants. There were half a dozen zones filled with Greek restaurants, but now the traditional ones are scarce. The next generation of Greeks skipp",
+      "url": "https://reddit.com/r/sydney/comments/1c7k2uz/norton_st_leichhardt_what_happened/l08ncxc/",
+      "score": 356
+    },
+    {
+      "text": "Addison River, Marrickville\nIt be wet.",
+      "url": "https://reddit.com/r/sydney/comments/1i1ty5j/addison_river_marrickville/",
+      "score": 346
+    },
+    {
+      "text": "If you had to name yourself after a Sydney suburb...\nWas reading one of the \"name\" subreddits and someone said they thought \"Tempe\" was a cute nickname. Hmm. But it got me thinking. If you had to name",
+      "url": "https://reddit.com/r/sydney/comments/1ehbuxi/if_you_had_to_name_yourself_after_a_sydney_suburb/",
+      "score": 312
+    }
+  ]
+}

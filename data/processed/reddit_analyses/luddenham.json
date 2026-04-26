@@ -1,0 +1,76 @@
+{
+  "suburb": "Luddenham",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:58.380314+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.699,
+      "mentions": 3
+    },
+    "transport": {
+      "score": 0.721,
+      "mentions": 3
+    },
+    "safety": {
+      "score": 0.69,
+      "mentions": 2
+    },
+    "affordability": {
+      "score": 0.309,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "neutral": 0.5348,
+    "fear": 0.087,
+    "surprise": 0.1296,
+    "anger": 0.1586,
+    "disgust": 0.0503,
+    "sadness": 0.0182,
+    "joy": 0.0216
+  },
+  "narrative": "Reddit discussions about Luddenham are most positive about transport (0.72) and community (0.70). Residents are most critical about green space (0.50) and affordability (0.31). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Will a third CBD be built around the new Western Sydney airport?\nIs there a plan to build another Parramatta like satellite CBD around Luddenham? \n\nIs this part of the aerotropolis?",
+      "url": "https://reddit.com/r/sydney/comments/1jv2w9w/will_a_third_cbd_be_built_around_the_new_western/",
+      "score": 64
+    },
+    {
+      "text": "pretty rare for a track day. luddenham is too small to go fast enough for a big wreck. smsp is fast but has plenty of runoffs if you outbrake yourself",
+      "url": "https://reddit.com/r/sydney/comments/1b7vsfb/dont_need_licence_plates_when_you_drive_1million/ktldi1v/",
+      "score": 16
+    },
+    {
+      "text": "There where massive fuck off road reserves in that area, which allowed for the road to be widened - even though the road ended up bypassing Luddenham most of the houses are quite set back from the roa",
+      "url": "https://reddit.com/r/sydney/comments/1d1fopj/this_mans_castle_is_his_home_and_an_airport_is/l5toqp7/",
+      "score": 3
+    },
+    {
+      "text": "Still keeping on with a whopping two stations for 300,000 in the East, but at least we’re servicing boomtowns like Luddenham Road now.",
+      "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1gqo3l/",
+      "score": 2
+    },
+    {
+      "text": "The main business case for WSA isn't dependent on getting passengers from Cronulla.  Have a look at the project plans for St Marys Metro.  There are 6 stations confirmed so far.  Orchard Hills is desi",
+      "url": "https://reddit.com/r/sydney/comments/1cwy33f/western_sydney_airport/l53tw1f/",
+      "score": 2
+    }
+  ]
+}

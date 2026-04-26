@@ -1,0 +1,101 @@
+{
+  "suburb": "Balmain",
+  "post_count": 171,
+  "fetched_at": "2026-04-18T01:35:23.922399+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.486,
+      "mentions": 42
+    },
+    "transport": {
+      "score": 0.582,
+      "mentions": 42
+    },
+    "community": {
+      "score": 0.649,
+      "mentions": 124
+    },
+    "nightlife": {
+      "score": 0.655,
+      "mentions": 49
+    },
+    "noise": {
+      "score": 0.626,
+      "mentions": 10
+    },
+    "food_and_cafe": {
+      "score": 0.707,
+      "mentions": 23
+    },
+    "green_space": {
+      "score": 0.428,
+      "mentions": 17
+    },
+    "affordability": {
+      "score": 0.553,
+      "mentions": 16
+    }
+  },
+  "emotions": {
+    "neutral": 0.5386,
+    "surprise": 0.1075,
+    "disgust": 0.0903,
+    "anger": 0.0621,
+    "fear": 0.0683,
+    "sadness": 0.0446,
+    "joy": 0.0885
+  },
+  "narrative": "Reddit discussions about Balmain are most positive about food and cafe (0.71) and nightlife (0.66). Residents are most critical about safety (0.49) and green space (0.43). This analysis is based on 171 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Imagine if the Sydney Harbour Bridge had looked like this…\nThis is one of the finalists in the mid-1920s design contest for the Sydney Harbour Bridge, and it arguably came closer than any of the more ",
+      "url": "https://reddit.com/r/sydney/comments/1qg5x9i/imagine_if_the_sydney_harbour_bridge_had_looked/",
+      "score": 421
+    },
+    {
+      "text": "Yes. I lived in Balmain once and worked in Stanmore. Do I drive 15 minutes or take several buses for over an hour? Spoiler: I never took the bus.",
+      "url": "https://reddit.com/r/sydney/comments/1aygkqb/buses_are_way_too_inefficient_for_getting_from_a/krunecq/",
+      "score": 392
+    },
+    {
+      "text": "Darling St, Balmain\nTree let go in the last hour",
+      "url": "https://reddit.com/r/sydney/comments/1bxx254/darling_st_balmain/",
+      "score": 385
+    },
+    {
+      "text": "bus got usb?\n433 Balmain got usb now whattt",
+      "url": "https://reddit.com/r/sydney/comments/1gw51rs/bus_got_usb/",
+      "score": 305
+    },
+    {
+      "text": "I've never heard Balmain described as \"underrated\"",
+      "url": "https://reddit.com/r/sydney/comments/1c9aaqu/balmain_east_is_under_rated/l0k5gbx/",
+      "score": 285
+    },
+    {
+      "text": "😂 I always laugh because on the Balmain Facebook page they always refers to themselves as \"The Peninsula\". There is a thousand peninsulas around Sydney",
+      "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxx9ynt/",
+      "score": 249
+    },
+    {
+      "text": "Finally it's gone! The Balmain Leagues/Wests Tigers site on Victoria Rd today",
+      "url": "https://reddit.com/r/sydney/comments/1imqrqc/finally_its_gone_the_balmain_leagueswests_tigers/",
+      "score": 222
+    },
+    {
+      "text": "The London Hotel, Balmain, then and now l.",
+      "url": "https://reddit.com/r/sydney/comments/1ak1fac/the_london_hotel_balmain_then_and_now_l/",
+      "score": 182
+    },
+    {
+      "text": "Some “Now and Then” photos from a 1999 Newspaper souvenir\nBefore I get rid of this I thought I’d snap some of the images to share here. The B&W ones date from 1900 (eg Balmain) to 1939 (Bronte). The c",
+      "url": "https://reddit.com/r/sydney/comments/1sb61vd/some_now_and_then_photos_from_a_1999_newspaper/",
+      "score": 138
+    },
+    {
+      "text": "Sailing tonight\nHey everyone,\n\nGot 2, possibly 3 spots for sailing tonight if anyone's interested. Usual thing - meeting at Balmain at 1700, probably off the water around 1930ish. As ever, no experien",
+      "url": "https://reddit.com/r/sydney/comments/1gbfkaf/sailing_tonight/",
+      "score": 116
+    }
+  ]
+}

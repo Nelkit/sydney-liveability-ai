@@ -1,0 +1,101 @@
+{
+  "suburb": "Tallawong",
+  "post_count": 115,
+  "fetched_at": "2026-04-18T01:54:56.810391+00:00",
+  "aspects": {
+    "transport": {
+      "score": 0.479,
+      "mentions": 98
+    },
+    "community": {
+      "score": 0.509,
+      "mentions": 88
+    },
+    "nightlife": {
+      "score": 0.905,
+      "mentions": 9
+    },
+    "affordability": {
+      "score": 0.857,
+      "mentions": 12
+    },
+    "safety": {
+      "score": 0.555,
+      "mentions": 20
+    },
+    "green_space": {
+      "score": 0.867,
+      "mentions": 12
+    },
+    "noise": {
+      "score": 0.881,
+      "mentions": 4
+    },
+    "food_and_cafe": {
+      "score": 0.934,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "neutral": 0.6104,
+    "surprise": 0.1316,
+    "fear": 0.0419,
+    "joy": 0.0469,
+    "anger": 0.0454,
+    "sadness": 0.0796,
+    "disgust": 0.0443
+  },
+  "narrative": "Reddit discussions about Tallawong are most positive about food and cafe (0.93) and nightlife (0.91). Residents are most critical about community (0.51) and transport (0.48). This analysis is based on 115 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Arrival of the first revenue passenger Metro service to Tallawong via the city at Sydenham",
+      "url": "https://reddit.com/r/sydney/comments/1evgmk4/arrival_of_the_first_revenue_passenger_metro/",
+      "score": 1149
+    },
+    {
+      "text": "Metro missed a stop \nGot on at Martin place heading towards Tallawong. It’s been overshooting most stations where it stops, reverses, and sometimes even then goes forward again to align properly with ",
+      "url": "https://reddit.com/r/sydney/comments/1f3x4zl/metro_missed_a_stop/",
+      "score": 480
+    },
+    {
+      "text": "Sydney Trains Lockout Megathread\n*Alternate Title: Minnsy and Jo's Fabulous Ferroequine Foreclosure!*\n\n&nbsp;\n\nG'day Slagicals,\n\nWhat a shemozzle. After the RTBU demanded 24-hour train service from Th",
+      "url": "https://reddit.com/r/sydney/comments/1gvx8ck/sydney_trains_lockout_megathread/",
+      "score": 314
+    },
+    {
+      "text": "Sydney Metro completes first full line test run of the entire length of the M1 Metro North West & Bankstown Line from Tallawong to Bankstown",
+      "url": "https://reddit.com/r/sydney/comments/1qe6df1/sydney_metro_completes_first_full_line_test_run/",
+      "score": 268
+    },
+    {
+      "text": "Illegal parking at Tallawong Metro Station Park and Ride is getting out of hand.\nYes you see it right. The ute with the trailer isn't just idling there. It's been parked there for a few hours already.",
+      "url": "https://reddit.com/r/sydney/comments/1miuq17/illegal_parking_at_tallawong_metro_station_park/",
+      "score": 234
+    },
+    {
+      "text": "Blue Mountains + Bowen Mountain dusk view from a few days ago.\nCaught from Tallawong. Good for the soul.",
+      "url": "https://reddit.com/r/sydney/comments/1lug22y/blue_mountains_bowen_mountain_dusk_view_from_a/",
+      "score": 216
+    },
+    {
+      "text": "Why is there no Platform 1 at Tallawong?\nThere should be...",
+      "url": "https://reddit.com/r/sydney/comments/1cnrnng/why_is_there_no_platform_1_at_tallawong/",
+      "score": 185
+    },
+    {
+      "text": "Parking at Tallawong is now horrific\nAnyone else trying to park here early in the morning to get the metro to work? Holy shit what a shit show. It's basically packed by 7am. If you're there any later ",
+      "url": "https://reddit.com/r/sydney/comments/1ex978l/parking_at_tallawong_is_now_horrific/",
+      "score": 175
+    },
+    {
+      "text": "Testing on track as all 45 trains complete Tallawong to Sydenham return journey",
+      "url": "https://reddit.com/r/sydney/comments/1bhar0k/testing_on_track_as_all_45_trains_complete/",
+      "score": 167
+    },
+    {
+      "text": "Metro stopped at Barangaroo?\nAn “issue” at Barangaroo has blocked off and delayed the tallawong line of the metro. Need to get off at Barangaroo and catch a replacement metro from the other line.\n\n\nTh",
+      "url": "https://reddit.com/r/sydney/comments/1kwg6nr/metro_stopped_at_barangaroo/",
+      "score": 155
+    }
+  ]
+}

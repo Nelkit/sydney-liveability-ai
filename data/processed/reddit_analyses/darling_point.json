@@ -1,0 +1,76 @@
+{
+  "suburb": "Darling Point",
+  "post_count": 5,
+  "fetched_at": "2026-04-18T02:19:53.260425+00:00",
+  "aspects": {
+    "green_space": {
+      "score": 0.794,
+      "mentions": 4
+    },
+    "community": {
+      "score": 0.792,
+      "mentions": 5
+    },
+    "nightlife": {
+      "score": 0.754,
+      "mentions": 1
+    },
+    "food_and_cafe": {
+      "score": 0.754,
+      "mentions": 1
+    },
+    "transport": {
+      "score": 0.754,
+      "mentions": 1
+    },
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {
+    "fear": 0.1491,
+    "neutral": 0.6151,
+    "disgust": 0.018,
+    "sadness": 0.0178,
+    "surprise": 0.026,
+    "anger": 0.013,
+    "joy": 0.161
+  },
+  "narrative": "Reddit discussions about Darling Point are most positive about green space (0.79) and community (0.79). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Ctrl+C Ctrl+V\nSeen at Yarranabbe Park near the Darling Point ferry Wharf.",
+      "url": "https://reddit.com/r/sydney/comments/1mwvsq9/ctrlc_ctrlv/",
+      "score": 354
+    },
+    {
+      "text": "Lol yeah the great unwashed over the bridge in Point Piper, Darling Point, Bellevue Hill, Vaucluse, Double Bay, Bronte etc etc ...possibly some insecurity there on their behalf.\nAlso whatever did they",
+      "url": "https://reddit.com/r/sydney/comments/1d32gah/i_dont_cross_the_bridge/l64xih4/",
+      "score": 25
+    },
+    {
+      "text": "That's at McKell Park. You can see the Darling Point Wharf in the background. https://maps.app.goo.gl/YRakWgFfS7cYoHDv7",
+      "url": "https://reddit.com/r/sydney/comments/1aswsln/sydney_swimming_spot/kqt71s2/",
+      "score": 16
+    },
+    {
+      "text": "Darling Point Reserve in the inner eastern suburbs. It’s a lovely spot.",
+      "url": "https://reddit.com/r/sydney/comments/1aswsln/sydney_swimming_spot/kqt6u64/",
+      "score": 14
+    },
+    {
+      "text": "If you have the whole NYE day to kill, show up at McKell Park in Darling Point as early as you can and camp out with a picnic for 12 hours.\n\nIt's free and about a 15 min walk from Edgecliff train stat",
+      "url": "https://reddit.com/r/sydney/comments/195ctj1/new_years_fireworks_for_2025/khmrucq/",
+      "score": 9
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "suburb": "Maroubra",
+  "post_count": 97,
+  "fetched_at": "2026-04-18T01:57:42.450782+00:00",
+  "aspects": {
+    "community": {
+      "score": 0.535,
+      "mentions": 79
+    },
+    "safety": {
+      "score": 0.561,
+      "mentions": 29
+    },
+    "nightlife": {
+      "score": 0.591,
+      "mentions": 20
+    },
+    "green_space": {
+      "score": 0.674,
+      "mentions": 15
+    },
+    "food_and_cafe": {
+      "score": 0.76,
+      "mentions": 11
+    },
+    "affordability": {
+      "score": 0.731,
+      "mentions": 10
+    },
+    "transport": {
+      "score": 0.548,
+      "mentions": 30
+    },
+    "noise": {
+      "score": 0.928,
+      "mentions": 6
+    }
+  },
+  "emotions": {
+    "sadness": 0.0793,
+    "surprise": 0.0943,
+    "neutral": 0.4876,
+    "fear": 0.0652,
+    "joy": 0.0941,
+    "disgust": 0.1015,
+    "anger": 0.0778
+  },
+  "narrative": "Reddit discussions about Maroubra are most positive about noise (0.93) and food and cafe (0.76). Residents are most critical about transport (0.55) and community (0.54). This analysis is based on 97 posts and comments. The dominant emotion in community discussions is neutral.",
+  "sources": [
+    {
+      "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
+      "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
+      "score": 237
+    },
+    {
+      "text": "What is the collective noun for thousands and thousands of blue bottles. This arvo at Maroubra.",
+      "url": "https://reddit.com/r/sydney/comments/1j0t33z/what_is_the_collective_noun_for_thousands_and/",
+      "score": 223
+    },
+    {
+      "text": "Front row seats to the storm. \nMaroubra beach",
+      "url": "https://reddit.com/r/sydney/comments/1aubbup/front_row_seats_to_the_storm/",
+      "score": 220
+    },
+    {
+      "text": "Twin rainbows at Maroubra 🌈",
+      "url": "https://reddit.com/r/sydney/comments/1nd9yq8/twin_rainbows_at_maroubra/",
+      "score": 153
+    },
+    {
+      "text": "Not much in the way of bars but we are a fairly quick Uber ride into the Inner West. \n\nMy favourite things about living here:\n\n*Bang for your buck - eg 600K might get you a studio in Newtown but in Wo",
+      "url": "https://reddit.com/r/sydney/comments/1altbdl/how_livable_is_wolli_creek_really/kph7pcn/",
+      "score": 127
+    },
+    {
+      "text": "Coogee fireworks (from the Maroubra beach rock cliffs)\nPretty spectacular even from here and double the duration of the Sydney fireworks! Seems like every household in Maroubra came to the cliffs for ",
+      "url": "https://reddit.com/r/sydney/comments/1q0au97/coogee_fireworks_from_the_maroubra_beach_rock/",
+      "score": 121
+    },
+    {
+      "text": "Living in the South-East the previous government completely fucked city accessibility through removal of bus routes. Outside peak it now takes twice as long to get to CQ. You have to transfer to the l",
+      "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koxk3ip/",
+      "score": 108
+    },
+    {
+      "text": "Maroubra Beach",
+      "url": "https://reddit.com/r/sydney/comments/1ffe78f/maroubra_beach/",
+      "score": 87
+    },
+    {
+      "text": "Beaches with calmer water\nMoved here from Melbourne. As much as the beaches are much more beautiful, the water is always so rough. Melbourne, being a bay, always has calm water you can get into and en",
+      "url": "https://reddit.com/r/sydney/comments/1qm7vow/beaches_with_calmer_water/",
+      "score": 57
+    },
+    {
+      "text": "Maroubra",
+      "url": "https://reddit.com/r/sydney/comments/1lypkv3/maroubra/",
+      "score": 54
+    }
+  ]
+}
