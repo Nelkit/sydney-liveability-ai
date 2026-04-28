@@ -1,4 +1,5 @@
-﻿import json
+﻿import csv
+import json
 import os
 import time
 from pathlib import Path
@@ -22,14 +23,17 @@ REQUEST_RETRY_ATTEMPTS = int(os.getenv("OSM_REQUEST_RETRY_ATTEMPTS", "4"))
 AMENITY_CATEGORIES = [
     "cafe",
     "restaurant",
-    "gym",
     "school",
     "hospital",
     "pharmacy",
     "library",
 ]
 
-LEISURE_CATEGORIES = ["park", "playground", "sports_centre"]
+# OSM tags gyms as leisure=fitness_centre, not amenity=gym
+LEISURE_CATEGORIES = ["fitness_centre", "park", "playground", "sports_centre"]
+
+# leisure=fitness_centre is mapped to the "gym" output column for DB compatibility
+LEISURE_TO_OUTPUT = {"fitness_centre": "gym"}
 
 # Team-tunable weights for POI density scoring. Must remain aligned with /api/civic.
 WEIGHT_CAFE = 0.14
@@ -168,14 +172,16 @@ def run_overpass_query(
 
 
 def load_suburb_bboxes_from_overpass() -> Dict[str, Tuple[float, float, float, float]]:
-    # Prefer area by council name to include all City of Sydney suburb/locality relations.
+    # Query all suburb relations within the Greater Sydney bounding box.
+    # bbox order for Overpass: south, west, north, east
+    # Greater Sydney metro area: approx -34.3 to -33.35 lat, 150.45 to 151.35 lon
+    GREATER_SYDNEY_BBOX = "-34.3,150.45,-33.35,151.35"
     query = "\n".join(
         [
-            "[out:json][timeout:180];",
-            "area[\"name\"=\"Council of the City of Sydney\"]->.cityArea;",
+            "[out:json][timeout:300];",
             "(",
-            "  relation[\"boundary\"=\"administrative\"][\"admin_level\"=\"10\"][\"place\"=\"suburb\"](area.cityArea);",
-            "  relation[\"boundary\"=\"administrative\"][\"place\"=\"suburb\"](area.cityArea);",
+            f"  relation[\"boundary\"=\"administrative\"][\"admin_level\"=\"10\"][\"place\"=\"suburb\"]({GREATER_SYDNEY_BBOX});",
+            f"  relation[\"boundary\"=\"administrative\"][\"place\"=\"suburb\"]({GREATER_SYDNEY_BBOX});",
             ");",
             "out bb tags;",
         ]
@@ -352,8 +358,10 @@ def count_pois_by_category(elements: List[Dict]) -> Dict[str, int]:
 
         if amenity in counts:
             counts[amenity] += 1
-        if leisure in counts:
-            counts[leisure] += 1
+        if leisure is not None:
+            output_key = LEISURE_TO_OUTPUT.get(leisure, leisure)
+            if output_key in counts:
+                counts[output_key] += 1
 
     return counts
 
@@ -372,30 +380,75 @@ def min_max_normalize(values: Dict[str, float]) -> Dict[str, float]:
     return {k: (v - min_v) / (max_v - min_v) for k, v in values.items()}
 
 
-def main() -> None:
+def elements_from_cache(raw_payload: Dict) -> List[Dict]:
+    """Reconstruct deduplicated elements list from a cached JSON payload."""
+    seen: set = set()
+    elements: List[Dict] = []
+    for response in raw_payload.get("responses", []):
+        if response.get("status_code") != 200 or not response.get("data"):
+            continue
+        for element in response["data"].get("elements", []):
+            key = (element.get("type"), element.get("id"))
+            if key not in seen:
+                seen.add(key)
+                elements.append(element)
+    return elements
+
+
+def main(resume: bool = False) -> None:
     repo_root = Path(__file__).resolve().parents[1]
-    geojson_path = repo_root / "data" / "processed" / "suburbs.geojson"
+    geojson_path = repo_root / "data" / "raw" / "arcgis" / "suburbs.geojson"
     raw_osm_dir = repo_root / "data" / "raw" / "osm"
     processed_output_path = repo_root / "data" / "processed" / "osm_scores.json"
 
     raw_osm_dir.mkdir(parents=True, exist_ok=True)
     processed_output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    suburb_bboxes: Dict[str, Tuple[float, float, float, float]] = {}
     try:
         suburb_bboxes = load_suburb_bboxes_from_overpass()
         print(f"Loaded {len(suburb_bboxes)} suburbs from Overpass boundaries")
     except Exception as exc:
         print(f"Warning: could not load suburb boundaries from Overpass: {exc}")
-        print(f"Falling back to local GeoJSON: {geojson_path}")
-        suburb_bboxes = load_suburb_bboxes(geojson_path)
-        print(f"Loaded {len(suburb_bboxes)} suburbs from local GeoJSON")
+
+    # Supplement with local GeoJSON to cover suburbs Overpass may have missed
+    try:
+        geojson_bboxes = load_suburb_bboxes(geojson_path)
+        before = len(suburb_bboxes)
+        for name, bbox in geojson_bboxes.items():
+            if name not in suburb_bboxes:
+                suburb_bboxes[name] = bbox
+        added = len(suburb_bboxes) - before
+        if added:
+            print(f"Added {added} suburbs from local GeoJSON (total: {len(suburb_bboxes)})")
+    except Exception as exc:
+        print(f"Warning: could not supplement from local GeoJSON: {exc}")
+
+    if not suburb_bboxes:
+        raise RuntimeError("No suburb boundaries available")
 
     suburbs = sorted(suburb_bboxes.keys())
 
+    already_done: set = set()
     suburb_counts: Dict[str, Dict[str, int]] = {}
     suburb_weighted_scores: Dict[str, float] = {}
 
+    if resume:
+        for raw_path in raw_osm_dir.glob("*_pois.json"):
+            raw_payload = json.loads(raw_path.read_text(encoding="utf-8"))
+            suburb = raw_payload.get("suburb", "")
+            if not suburb:
+                continue
+            already_done.add(suburb)
+            elements = elements_from_cache(raw_payload)
+            counts = count_pois_by_category(elements)
+            suburb_counts[suburb] = counts
+            suburb_weighted_scores[suburb] = compute_weighted_raw_score(counts)
+        print(f"Resuming: skipping {len(already_done)} already-extracted suburbs, {len(suburbs) - len(already_done)} remaining")
+
     for index, suburb in enumerate(suburbs):
+        if suburb in already_done:
+            continue
         bbox = suburb_bboxes[suburb]
         print(f"Fetching {suburb} ({index + 1}/{len(suburbs)})")
         try:
@@ -441,7 +494,23 @@ def main() -> None:
     processed_output_path.write_text(json.dumps(output, ensure_ascii=True, indent=2), encoding="utf-8")
     print(f"Saved processed score file: {processed_output_path}")
 
+    csv_path = repo_root / "data" / "processed" / "osm_data.csv"
+    csv_columns = ["suburb", "osm_score"] + list(CATEGORY_WEIGHTS.keys())
+    with csv_path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=csv_columns)
+        writer.writeheader()
+        for suburb in suburbs:
+            row = {"suburb": suburb, "osm_score": output[suburb]["osm_score"]}
+            row.update(suburb_counts[suburb])
+            writer.writerow(row)
+    print(f"Saved CSV for ingest: {csv_path}")
+
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--resume", action="store_true", help="Skip suburbs already extracted to data/raw/osm/")
+    args = parser.parse_args()
+    main(resume=args.resume)
 

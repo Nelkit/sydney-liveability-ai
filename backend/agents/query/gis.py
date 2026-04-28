@@ -26,8 +26,6 @@ _AMENITY_KEYWORDS: dict[str, str] = {
     "restaurant": "restaurant",
     "food": "restaurant",
     "eat": "restaurant",
-    "gym": "gym",
-    "fitness": "gym",
     "school": "school",
     "education": "school",
     "hospital": "hospital",
@@ -129,7 +127,7 @@ def _query_gis_impl(suburb: str, question: str = "") -> dict[str, Any]:
         osm_contrib = osm_row.osm_score * 0.35
     
     if transport_row and transport_row.transport_score is not None:
-        transport_contrib = (transport_row.transport_score / 100.0) * 0.30
+        transport_contrib = transport_row.transport_score * 0.30
     
     combined_score = facilities_contrib + osm_contrib + transport_contrib
     

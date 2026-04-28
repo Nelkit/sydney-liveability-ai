@@ -18,20 +18,90 @@ from agents.query.sentiment import _query_sentiment_impl
 from config import get_agent_llm
 
 
+_IMPL_MAP = {
+    "gis": lambda suburb: _query_gis_impl(suburb),
+    "crime": lambda suburb: _query_crime_impl(suburb),
+    "sentiment": lambda suburb: _query_sentiment_impl(suburb),
+}
+
+_PENDING_SENTINEL = "pending for implementation"
+
+
+def _is_pending(value: Any) -> bool:
+    return isinstance(value, str) and _PENDING_SENTINEL in value
+
+
+def _gis_winner(result_a: dict, result_b: dict, suburb_a: str, suburb_b: str) -> str:
+    score_a = result_a.get("combined_score")
+    score_b = result_b.get("combined_score")
+    if not isinstance(score_a, (int, float)) or not isinstance(score_b, (int, float)):
+        return "tie"
+    if score_a > score_b:
+        return suburb_a
+    if score_b > score_a:
+        return suburb_b
+    return "tie"
+
+
+def _crime_winner(result_a: dict, result_b: dict, suburb_a: str, suburb_b: str) -> str:
+    sev_a = result_a.get("crime_severity")
+    sev_b = result_b.get("crime_severity")
+    if _is_pending(sev_a) or _is_pending(sev_b):
+        return "tie"
+    if not isinstance(sev_a, (int, float)) or not isinstance(sev_b, (int, float)):
+        return "tie"
+    # Lower crime severity is better
+    if sev_a < sev_b:
+        return suburb_a
+    if sev_b < sev_a:
+        return suburb_b
+    return "tie"
+
+
+def _sentiment_winner(result_a: dict, result_b: dict, suburb_a: str, suburb_b: str) -> str:
+    overall_a = result_a.get("overall")
+    overall_b = result_b.get("overall")
+    if _is_pending(overall_a) or _is_pending(overall_b):
+        return "tie"
+    if not isinstance(overall_a, (int, float)) or not isinstance(overall_b, (int, float)):
+        return "tie"
+    if overall_a > overall_b:
+        return suburb_a
+    if overall_b > overall_a:
+        return suburb_b
+    return "tie"
+
+
+_WINNER_FN = {
+    "gis": _gis_winner,
+    "crime": _crime_winner,
+    "sentiment": _sentiment_winner,
+}
+
+
 def _query_comparator_impl(suburb_a: str, suburb_b: str, categories: list[str]) -> dict[str, Any]:
-    """Internal implementation: compare two suburbs."""
-    # TODO(Padmasri or Luis): Implement category-wise comparison without agent nesting.
-    # 1) For each requested category call imported tools directly:
-    #    query_crime_tool, query_sentiment_tool, query_gis_tool.
-    # 2) Build per-category side-by-side payload for suburb_a and suburb_b.
-    # 3) Compute winner logic:
-    #    higher score wins for sentiment/gis; lower crime_index wins for crime.
-    # 4) Return {suburb_a, suburb_b, comparison, winner}.
+    """Internal implementation: compare two suburbs category by category."""
+    data_categories = [c for c in categories if c in _IMPL_MAP]
+
+    comparison: dict[str, Any] = {}
+    winner: dict[str, str] = {}
+
+    for category in data_categories:
+        impl = _IMPL_MAP[category]
+        try:
+            result_a = impl(suburb_a)
+            result_b = impl(suburb_b)
+            comparison[category] = {suburb_a: result_a, suburb_b: result_b}
+            winner[category] = _WINNER_FN[category](result_a, result_b, suburb_a, suburb_b)
+        except Exception as exc:
+            comparison[category] = {"error": str(exc)}
+            winner[category] = "tie"
+
     return {
         "suburb_a": suburb_a,
         "suburb_b": suburb_b,
-        "comparison": {category: {} for category in categories},
-        "winner": {category: "tie" for category in categories},
+        "comparison": comparison,
+        "winner": winner,
     }
 
 

@@ -67,9 +67,22 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
 
         # Run comparator only if 2+ suburbs are mentioned
         if "comparator" in categories and len(suburbs) >= 2:
+            # Always run all specialists for both suburbs so synthesiser has full data
+            for specialist_name in ["crime", "sentiment", "gis"]:
+                if specialist_name not in specialist_outputs:
+                    run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
+                    specialist_outputs[specialist_name] = {}
+                    for suburb in suburbs[:2]:
+                        print(f"Running {specialist_name} agent for suburb: {suburb}")
+                        specialist_outputs[specialist_name][suburb] = run_func(
+                            {"suburb": suburb, "question": question}
+                        )
             print(f"Running comparator agent for suburbs: {suburbs[0]} and {suburbs[1]}")
+            compare_cats = [c for c in categories if c in ("gis", "crime", "sentiment")]
+            if not compare_cats:
+                compare_cats = ["gis", "crime", "sentiment"]
             specialist_outputs["comparator"] = run_comparator(
-                {"suburb_a": suburbs[0], "suburb_b": suburbs[1], "categories": categories}
+                {"suburb_a": suburbs[0], "suburb_b": suburbs[1], "categories": compare_cats}
             )
 
         synthesis_payload = {
