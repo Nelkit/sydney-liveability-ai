@@ -146,4 +146,6 @@ class TransportScore(Base):
     bike_paths_km: Mapped[float | None] = mapped_column(Float, nullable=True)
     avg_commute_min: Mapped[float | None] = mapped_column(Float, nullable=True)
     transport_score: Mapped[float | None] = mapped_column(Float, nullable=True)
+    avg_services_per_hour: Mapped[float | None] = mapped_column(Float, nullable=True)
+    stop_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
     source: Mapped[str | None] = mapped_column(String, nullable=True)
