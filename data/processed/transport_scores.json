@@ -1,27 +1,3282 @@
 {
+  "Abbotsbury": {
+    "transport_score": 0.197,
+    "avg_services_per_hour": 2.58,
+    "stop_count": 58
+  },
+  "Abbotsford": {
+    "transport_score": 0.397,
+    "avg_services_per_hour": 5.2,
+    "stop_count": 33
+  },
+  "Acacia Gardens": {
+    "transport_score": 0.184,
+    "avg_services_per_hour": 2.41,
+    "stop_count": 39
+  },
+  "Agnes Banks": {
+    "transport_score": 0.049,
+    "avg_services_per_hour": 0.64,
+    "stop_count": 18
+  },
+  "Airds": {
+    "transport_score": 0.133,
+    "avg_services_per_hour": 1.74,
+    "stop_count": 74
+  },
+  "Alexandria": {
+    "transport_score": 0.296,
+    "avg_services_per_hour": 3.87,
+    "stop_count": 129
+  },
+  "Alfords Point": {
+    "transport_score": 0.136,
+    "avg_services_per_hour": 1.77,
+    "stop_count": 31
+  },
+  "Allambie Heights": {
+    "transport_score": 0.36,
+    "avg_services_per_hour": 4.71,
+    "stop_count": 81
+  },
+  "Allawah": {
+    "transport_score": 0.122,
+    "avg_services_per_hour": 1.6,
+    "stop_count": 5
+  },
+  "Ambarvale": {
+    "transport_score": 0.164,
+    "avg_services_per_hour": 2.15,
+    "stop_count": 105
+  },
+  "Angus": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.47,
+    "stop_count": 17
+  },
+  "Annandale": {
+    "transport_score": 0.424,
+    "avg_services_per_hour": 5.55,
+    "stop_count": 41
+  },
+  "Annangrove": {
+    "transport_score": 0.083,
+    "avg_services_per_hour": 1.09,
+    "stop_count": 83
+  },
+  "Arcadia": {
+    "transport_score": 0.078,
+    "avg_services_per_hour": 1.02,
+    "stop_count": 59
+  },
+  "Arncliffe": {
+    "transport_score": 0.1,
+    "avg_services_per_hour": 1.31,
+    "stop_count": 67
+  },
+  "Arndell Park": {
+    "transport_score": 0.124,
+    "avg_services_per_hour": 1.62,
+    "stop_count": 30
+  },
+  "Artarmon": {
+    "transport_score": 0.351,
+    "avg_services_per_hour": 4.6,
+    "stop_count": 57
+  },
+  "Ashbury": {
+    "transport_score": 0.333,
+    "avg_services_per_hour": 4.35,
+    "stop_count": 31
+  },
+  "Ashcroft": {
+    "transport_score": 0.208,
+    "avg_services_per_hour": 2.72,
+    "stop_count": 38
+  },
+  "Ashfield": {
+    "transport_score": 0.24,
+    "avg_services_per_hour": 3.14,
+    "stop_count": 188
+  },
+  "Asquith": {
+    "transport_score": 0.096,
+    "avg_services_per_hour": 1.25,
+    "stop_count": 73
+  },
+  "Auburn": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.46,
+    "stop_count": 308
+  },
+  "Austral": {
+    "transport_score": 0.082,
+    "avg_services_per_hour": 1.07,
+    "stop_count": 102
+  },
+  "Avalon Beach": {
+    "transport_score": 0.232,
+    "avg_services_per_hour": 3.03,
+    "stop_count": 163
+  },
+  "Badgerys Creek": {
+    "transport_score": 0.025,
+    "avg_services_per_hour": 0.33,
+    "stop_count": 15
+  },
+  "Balgowlah": {
+    "transport_score": 0.365,
+    "avg_services_per_hour": 4.78,
+    "stop_count": 103
+  },
+  "Balgowlah Heights": {
+    "transport_score": 0.163,
+    "avg_services_per_hour": 2.13,
+    "stop_count": 53
+  },
+  "Balmain": {
+    "transport_score": 0.442,
+    "avg_services_per_hour": 5.78,
+    "stop_count": 51
+  },
+  "Balmain East": {
+    "transport_score": 0.376,
+    "avg_services_per_hour": 4.92,
+    "stop_count": 12
+  },
+  "Bangor": {
+    "transport_score": 0.098,
+    "avg_services_per_hour": 1.29,
+    "stop_count": 52
+  },
+  "Banksia": {
+    "transport_score": 0.107,
+    "avg_services_per_hour": 1.4,
+    "stop_count": 21
+  },
+  "Banksmeadow": {
+    "transport_score": 0.386,
+    "avg_services_per_hour": 5.05,
+    "stop_count": 22
+  },
+  "Bankstown": {
+    "transport_score": 0.324,
+    "avg_services_per_hour": 4.24,
+    "stop_count": 282
+  },
+  "Bankstown Aerodrome": {
+    "transport_score": 0.09,
+    "avg_services_per_hour": 1.18,
+    "stop_count": 20
+  },
+  "Barangaroo": {
+    "transport_score": 0.308,
+    "avg_services_per_hour": 4.04,
+    "stop_count": 14
+  },
+  "Barden Ridge": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.69,
+    "stop_count": 54
+  },
+  "Bardia": {
+    "transport_score": 0.198,
+    "avg_services_per_hour": 2.59,
+    "stop_count": 11
+  },
+  "Bardwell Park": {
+    "transport_score": 0.133,
+    "avg_services_per_hour": 1.74,
+    "stop_count": 41
+  },
+  "Bardwell Valley": {
+    "transport_score": 0.092,
+    "avg_services_per_hour": 1.2,
+    "stop_count": 15
+  },
+  "Bass Hill": {
+    "transport_score": 0.145,
+    "avg_services_per_hour": 1.9,
+    "stop_count": 112
+  },
+  "Baulkham Hills": {
+    "transport_score": 0.232,
+    "avg_services_per_hour": 3.03,
+    "stop_count": 458
+  },
+  "Bayview": {
+    "transport_score": 0.154,
+    "avg_services_per_hour": 2.01,
+    "stop_count": 53
+  },
+  "Beacon Hill": {
+    "transport_score": 0.292,
+    "avg_services_per_hour": 3.82,
+    "stop_count": 76
+  },
+  "Beaconsfield": {
+    "transport_score": 0.363,
+    "avg_services_per_hour": 4.75,
+    "stop_count": 6
+  },
+  "Beaumont Hills": {
+    "transport_score": 0.229,
+    "avg_services_per_hour": 2.99,
+    "stop_count": 75
+  },
+  "Beecroft": {
+    "transport_score": 0.144,
+    "avg_services_per_hour": 1.88,
+    "stop_count": 95
+  },
+  "Belfield": {
+    "transport_score": 0.148,
+    "avg_services_per_hour": 1.94,
+    "stop_count": 57
+  },
+  "Bella Vista": {
+    "transport_score": 0.268,
+    "avg_services_per_hour": 3.51,
+    "stop_count": 120
+  },
+  "Bellevue Hill": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.37,
+    "stop_count": 123
+  },
+  "Belmore": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.37,
+    "stop_count": 109
+  },
+  "Belrose": {
+    "transport_score": 0.338,
+    "avg_services_per_hour": 4.43,
+    "stop_count": 127
+  },
+  "Berala": {
+    "transport_score": 0.077,
+    "avg_services_per_hour": 1.01,
+    "stop_count": 91
+  },
+  "Berkshire Park": {
+    "transport_score": 0.062,
+    "avg_services_per_hour": 0.81,
+    "stop_count": 34
+  },
+  "Berowra": {
+    "transport_score": 0.108,
+    "avg_services_per_hour": 1.41,
+    "stop_count": 90
+  },
+  "Berowra Heights": {
+    "transport_score": 0.108,
+    "avg_services_per_hour": 1.42,
+    "stop_count": 65
+  },
+  "Berowra Waters": {
+    "transport_score": 0.115,
+    "avg_services_per_hour": 1.5,
+    "stop_count": 2
+  },
+  "Berrilee": {
+    "transport_score": 0.076,
+    "avg_services_per_hour": 1.0,
+    "stop_count": 6
+  },
+  "Beverley Park": {
+    "transport_score": 0.199,
+    "avg_services_per_hour": 2.6,
+    "stop_count": 24
+  },
+  "Beverly Hills": {
+    "transport_score": 0.113,
+    "avg_services_per_hour": 1.48,
+    "stop_count": 98
+  },
+  "Bexley": {
+    "transport_score": 0.119,
+    "avg_services_per_hour": 1.56,
+    "stop_count": 240
+  },
+  "Bexley North": {
+    "transport_score": 0.164,
+    "avg_services_per_hour": 2.14,
+    "stop_count": 66
+  },
+  "Bidwill": {
+    "transport_score": 0.133,
+    "avg_services_per_hour": 1.74,
+    "stop_count": 73
+  },
+  "Bilgola Beach": {
+    "transport_score": 0.866,
+    "avg_services_per_hour": 11.33,
+    "stop_count": 6
+  },
+  "Bilgola Plateau": {
+    "transport_score": 0.149,
+    "avg_services_per_hour": 1.95,
+    "stop_count": 39
+  },
+  "Birchgrove": {
+    "transport_score": 0.135,
+    "avg_services_per_hour": 1.77,
+    "stop_count": 11
+  },
+  "Birrong": {
+    "transport_score": 0.083,
+    "avg_services_per_hour": 1.09,
+    "stop_count": 35
+  },
+  "Blackett": {
+    "transport_score": 0.176,
+    "avg_services_per_hour": 2.31,
+    "stop_count": 47
+  },
+  "Blacktown": {
+    "transport_score": 0.226,
+    "avg_services_per_hour": 2.96,
+    "stop_count": 538
+  },
+  "Blair Athol": {
+    "transport_score": 0.18,
+    "avg_services_per_hour": 2.36,
+    "stop_count": 25
+  },
+  "Blairmount": {
+    "transport_score": 0.21,
+    "avg_services_per_hour": 2.75,
+    "stop_count": 4
+  },
+  "Blakehurst": {
+    "transport_score": 0.158,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 82
+  },
+  "Bondi": {
+    "transport_score": 0.568,
+    "avg_services_per_hour": 7.43,
+    "stop_count": 34
+  },
+  "Bondi Beach": {
+    "transport_score": 0.986,
+    "avg_services_per_hour": 12.89,
+    "stop_count": 38
+  },
+  "Bondi Junction": {
+    "transport_score": 0.825,
+    "avg_services_per_hour": 10.8,
+    "stop_count": 98
+  },
+  "Bonnet Bay": {
+    "transport_score": 0.111,
+    "avg_services_per_hour": 1.45,
+    "stop_count": 72
+  },
+  "Bonnyrigg": {
+    "transport_score": 0.168,
+    "avg_services_per_hour": 2.2,
+    "stop_count": 96
+  },
+  "Bonnyrigg Heights": {
+    "transport_score": 0.223,
+    "avg_services_per_hour": 2.92,
+    "stop_count": 99
+  },
+  "Bossley Park": {
+    "transport_score": 0.251,
+    "avg_services_per_hour": 3.28,
+    "stop_count": 120
+  },
+  "Botany": {
+    "transport_score": 0.374,
+    "avg_services_per_hour": 4.9,
+    "stop_count": 62
+  },
+  "Bow Bowing": {
+    "transport_score": 0.109,
+    "avg_services_per_hour": 1.42,
+    "stop_count": 26
+  },
+  "Box Hill": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.96,
+    "stop_count": 155
+  },
+  "Bradbury": {
+    "transport_score": 0.096,
+    "avg_services_per_hour": 1.26,
+    "stop_count": 124
+  },
+  "Breakfast Point": {
+    "transport_score": 0.229,
+    "avg_services_per_hour": 3.0,
+    "stop_count": 4
+  },
+  "Brighton-Le-Sands": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.97,
+    "stop_count": 76
+  },
+  "Bringelly": {
+    "transport_score": 0.047,
+    "avg_services_per_hour": 0.62,
+    "stop_count": 56
+  },
+  "Bronte": {
+    "transport_score": 0.271,
+    "avg_services_per_hour": 3.54,
+    "stop_count": 59
+  },
+  "Brooklyn": {
+    "transport_score": 0.081,
+    "avg_services_per_hour": 1.06,
+    "stop_count": 36
+  },
+  "Brookvale": {
+    "transport_score": 0.88,
+    "avg_services_per_hour": 11.51,
+    "stop_count": 45
+  },
+  "Bundeena": {
+    "transport_score": 0.028,
+    "avg_services_per_hour": 0.37,
+    "stop_count": 30
+  },
+  "Bungarribee": {
+    "transport_score": 0.12,
+    "avg_services_per_hour": 1.57,
+    "stop_count": 27
+  },
+  "Burraneer": {
+    "transport_score": 0.081,
+    "avg_services_per_hour": 1.07,
+    "stop_count": 69
+  },
+  "Burwood": {
+    "transport_score": 0.45,
+    "avg_services_per_hour": 5.89,
+    "stop_count": 107
+  },
+  "Burwood Heights": {
+    "transport_score": 0.405,
+    "avg_services_per_hour": 5.3,
+    "stop_count": 5
+  },
+  "Busby": {
+    "transport_score": 0.192,
+    "avg_services_per_hour": 2.51,
+    "stop_count": 35
+  },
+  "Cabarita": {
+    "transport_score": 0.234,
+    "avg_services_per_hour": 3.06,
+    "stop_count": 18
+  },
+  "Cabramatta": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.7,
+    "stop_count": 142
+  },
+  "Cabramatta West": {
+    "transport_score": 0.124,
+    "avg_services_per_hour": 1.62,
+    "stop_count": 61
+  },
+  "Caddens": {
+    "transport_score": 0.12,
+    "avg_services_per_hour": 1.58,
+    "stop_count": 33
+  },
+  "Cambridge Gardens": {
+    "transport_score": 0.203,
+    "avg_services_per_hour": 2.66,
+    "stop_count": 25
+  },
+  "Cambridge Park": {
+    "transport_score": 0.167,
+    "avg_services_per_hour": 2.19,
+    "stop_count": 79
+  },
+  "Camden": {
+    "transport_score": 0.365,
+    "avg_services_per_hour": 4.77,
+    "stop_count": 59
+  },
+  "Camden South": {
+    "transport_score": 0.159,
+    "avg_services_per_hour": 2.08,
+    "stop_count": 77
+  },
+  "Camellia": {
+    "transport_score": 0.42,
+    "avg_services_per_hour": 5.5,
+    "stop_count": 3
+  },
+  "Cammeray": {
+    "transport_score": 0.401,
+    "avg_services_per_hour": 5.24,
+    "stop_count": 35
+  },
+  "Campbelltown": {
+    "transport_score": 0.258,
+    "avg_services_per_hour": 3.38,
+    "stop_count": 306
+  },
+  "Camperdown": {
+    "transport_score": 0.566,
+    "avg_services_per_hour": 7.41,
+    "stop_count": 50
+  },
+  "Campsie": {
+    "transport_score": 0.354,
+    "avg_services_per_hour": 4.63,
+    "stop_count": 112
+  },
+  "Canada Bay": {
+    "transport_score": 0.129,
+    "avg_services_per_hour": 1.69,
+    "stop_count": 8
+  },
+  "Canley Heights": {
+    "transport_score": 0.16,
+    "avg_services_per_hour": 2.1,
+    "stop_count": 57
+  },
+  "Canley Vale": {
+    "transport_score": 0.109,
+    "avg_services_per_hour": 1.43,
+    "stop_count": 79
+  },
+  "Canoelands": {
+    "transport_score": 0.051,
+    "avg_services_per_hour": 0.67,
+    "stop_count": 6
+  },
+  "Canterbury": {
+    "transport_score": 0.24,
+    "avg_services_per_hour": 3.13,
+    "stop_count": 71
+  },
+  "Caringbah": {
+    "transport_score": 0.138,
+    "avg_services_per_hour": 1.81,
+    "stop_count": 150
+  },
+  "Caringbah South": {
+    "transport_score": 0.119,
+    "avg_services_per_hour": 1.56,
+    "stop_count": 126
+  },
+  "Carlingford": {
+    "transport_score": 0.129,
+    "avg_services_per_hour": 1.69,
+    "stop_count": 302
+  },
+  "Carlton": {
+    "transport_score": 0.106,
+    "avg_services_per_hour": 1.39,
+    "stop_count": 83
+  },
+  "Carnes Hill": {
+    "transport_score": 0.195,
+    "avg_services_per_hour": 2.56,
+    "stop_count": 9
+  },
+  "Carramar": {
+    "transport_score": 0.071,
+    "avg_services_per_hour": 0.92,
+    "stop_count": 52
+  },
+  "Carss Park": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.97,
+    "stop_count": 16
+  },
+  "Cartwright": {
+    "transport_score": 0.227,
+    "avg_services_per_hour": 2.97,
+    "stop_count": 17
+  },
+  "Castle Cove": {
+    "transport_score": 0.143,
+    "avg_services_per_hour": 1.87,
+    "stop_count": 52
+  },
+  "Castle Hill": {
+    "transport_score": 0.282,
+    "avg_services_per_hour": 3.69,
+    "stop_count": 498
+  },
+  "Castlecrag": {
+    "transport_score": 0.337,
+    "avg_services_per_hour": 4.41,
+    "stop_count": 27
+  },
+  "Castlereagh": {
+    "transport_score": 0.081,
+    "avg_services_per_hour": 1.06,
+    "stop_count": 25
+  },
+  "Casula": {
+    "transport_score": 0.184,
+    "avg_services_per_hour": 2.41,
+    "stop_count": 197
+  },
+  "Catherine Field": {
+    "transport_score": 0.086,
+    "avg_services_per_hour": 1.13,
+    "stop_count": 35
+  },
+  "Cattai": {
+    "transport_score": 0.028,
+    "avg_services_per_hour": 0.36,
+    "stop_count": 25
+  },
+  "Cawdor": {
+    "transport_score": 0.1,
+    "avg_services_per_hour": 1.31,
+    "stop_count": 48
+  },
+  "Cecil Hills": {
+    "transport_score": 0.143,
+    "avg_services_per_hour": 1.87,
+    "stop_count": 63
+  },
+  "Cecil Park": {
+    "transport_score": 0.035,
+    "avg_services_per_hour": 0.46,
+    "stop_count": 26
+  },
+  "Centennial Park": {
+    "transport_score": 0.333,
+    "avg_services_per_hour": 4.36,
+    "stop_count": 29
+  },
+  "Chatswood": {
+    "transport_score": 0.273,
+    "avg_services_per_hour": 3.57,
+    "stop_count": 212
+  },
+  "Chatswood West": {
+    "transport_score": 0.084,
+    "avg_services_per_hour": 1.11,
+    "stop_count": 38
+  },
+  "Cheltenham": {
+    "transport_score": 0.071,
+    "avg_services_per_hour": 0.93,
+    "stop_count": 30
+  },
+  "Cherrybrook": {
+    "transport_score": 0.342,
+    "avg_services_per_hour": 4.47,
+    "stop_count": 229
+  },
+  "Chester Hill": {
+    "transport_score": 0.136,
+    "avg_services_per_hour": 1.78,
+    "stop_count": 184
+  },
+  "Chifley": {
+    "transport_score": 0.354,
+    "avg_services_per_hour": 4.64,
+    "stop_count": 55
+  },
+  "Chippendale": {
+    "transport_score": 1.0,
+    "avg_services_per_hour": 13.08,
+    "stop_count": 12
+  },
+  "Chipping Norton": {
+    "transport_score": 0.167,
+    "avg_services_per_hour": 2.18,
+    "stop_count": 111
+  },
+  "Chiswick": {
+    "transport_score": 0.287,
+    "avg_services_per_hour": 3.75,
+    "stop_count": 18
+  },
+  "Chullora": {
+    "transport_score": 0.121,
+    "avg_services_per_hour": 1.59,
+    "stop_count": 17
+  },
+  "Church Point": {
+    "transport_score": 0.192,
+    "avg_services_per_hour": 2.51,
+    "stop_count": 43
+  },
+  "Claremont Meadows": {
+    "transport_score": 0.182,
+    "avg_services_per_hour": 2.38,
+    "stop_count": 68
+  },
+  "Clareville": {
+    "transport_score": 0.138,
+    "avg_services_per_hour": 1.81,
+    "stop_count": 26
+  },
+  "Claymore": {
+    "transport_score": 0.175,
+    "avg_services_per_hour": 2.29,
+    "stop_count": 36
+  },
+  "Clemton Park": {
+    "transport_score": 0.401,
+    "avg_services_per_hour": 5.25,
+    "stop_count": 2
+  },
+  "Clontarf": {
+    "transport_score": 0.504,
+    "avg_services_per_hour": 6.59,
+    "stop_count": 11
+  },
+  "Clovelly": {
+    "transport_score": 0.408,
+    "avg_services_per_hour": 5.34,
+    "stop_count": 41
+  },
+  "Clyde": {
+    "transport_score": 0.145,
+    "avg_services_per_hour": 1.9,
+    "stop_count": 15
+  },
+  "Coasters Retreat": {
+    "transport_score": 0.01,
+    "avg_services_per_hour": 0.12,
+    "stop_count": 4
+  },
+  "Cobbitty": {
+    "transport_score": 0.055,
+    "avg_services_per_hour": 0.72,
+    "stop_count": 47
+  },
+  "Colebee": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.7,
+    "stop_count": 28
+  },
+  "Collaroy": {
+    "transport_score": 0.8,
+    "avg_services_per_hour": 10.46,
+    "stop_count": 40
+  },
+  "Collaroy Plateau": {
+    "transport_score": 0.271,
+    "avg_services_per_hour": 3.54,
+    "stop_count": 51
+  },
+  "Colyton": {
+    "transport_score": 0.156,
+    "avg_services_per_hour": 2.04,
+    "stop_count": 98
+  },
+  "Como": {
+    "transport_score": 0.058,
+    "avg_services_per_hour": 0.76,
+    "stop_count": 37
+  },
+  "Concord": {
+    "transport_score": 0.241,
+    "avg_services_per_hour": 3.16,
+    "stop_count": 154
+  },
+  "Concord West": {
+    "transport_score": 0.345,
+    "avg_services_per_hour": 4.51,
+    "stop_count": 58
+  },
+  "Condell Park": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.46,
+    "stop_count": 138
+  },
+  "Connells Point": {
+    "transport_score": 0.134,
+    "avg_services_per_hour": 1.75,
+    "stop_count": 30
+  },
+  "Constitution Hill": {
+    "transport_score": 0.32,
+    "avg_services_per_hour": 4.18,
+    "stop_count": 30
+  },
+  "Coogee": {
+    "transport_score": 0.607,
+    "avg_services_per_hour": 7.95,
+    "stop_count": 83
+  },
+  "Cottage Point": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Cowan": {
+    "transport_score": 0.055,
+    "avg_services_per_hour": 0.72,
+    "stop_count": 16
+  },
+  "Cranebrook": {
+    "transport_score": 0.195,
+    "avg_services_per_hour": 2.55,
+    "stop_count": 205
+  },
+  "Cremorne": {
+    "transport_score": 0.314,
+    "avg_services_per_hour": 4.11,
+    "stop_count": 71
+  },
+  "Cremorne Point": {
+    "transport_score": 0.22,
+    "avg_services_per_hour": 2.88,
+    "stop_count": 25
+  },
+  "Cromer": {
+    "transport_score": 0.237,
+    "avg_services_per_hour": 3.1,
+    "stop_count": 109
+  },
+  "Cronulla": {
+    "transport_score": 0.153,
+    "avg_services_per_hour": 2.0,
+    "stop_count": 135
+  },
+  "Crows Nest": {
+    "transport_score": 0.522,
+    "avg_services_per_hour": 6.83,
+    "stop_count": 61
+  },
+  "Croydon": {
+    "transport_score": 0.212,
+    "avg_services_per_hour": 2.77,
+    "stop_count": 99
+  },
+  "Croydon Park": {
+    "transport_score": 0.288,
+    "avg_services_per_hour": 3.77,
+    "stop_count": 73
+  },
+  "Curl Curl": {
+    "transport_score": 0.419,
+    "avg_services_per_hour": 5.49,
+    "stop_count": 41
+  },
+  "Currans Hill": {
+    "transport_score": 0.187,
+    "avg_services_per_hour": 2.45,
+    "stop_count": 60
+  },
+  "Daceyville": {
+    "transport_score": 0.652,
+    "avg_services_per_hour": 8.54,
+    "stop_count": 14
+  },
+  "Dangar Island": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 1
+  },
+  "Darling Point": {
+    "transport_score": 0.098,
+    "avg_services_per_hour": 1.28,
+    "stop_count": 27
+  },
+  "Darlinghurst": {
+    "transport_score": 0.612,
+    "avg_services_per_hour": 8.01,
+    "stop_count": 55
+  },
+  "Darlington (Sydney - NSW)": {
+    "transport_score": 0.972,
+    "avg_services_per_hour": 12.71,
+    "stop_count": 7
+  },
+  "Davidson": {
+    "transport_score": 0.148,
+    "avg_services_per_hour": 1.94,
+    "stop_count": 24
+  },
+  "Dawes Point": {
+    "transport_score": 0.255,
+    "avg_services_per_hour": 3.33,
+    "stop_count": 3
+  },
+  "Dean Park": {
+    "transport_score": 0.294,
+    "avg_services_per_hour": 3.85,
+    "stop_count": 47
+  },
+  "Dee Why": {
+    "transport_score": 0.54,
+    "avg_services_per_hour": 7.07,
+    "stop_count": 122
+  },
+  "Denham Court": {
+    "transport_score": 0.127,
+    "avg_services_per_hour": 1.67,
+    "stop_count": 51
+  },
+  "Denistone": {
+    "transport_score": 0.116,
+    "avg_services_per_hour": 1.52,
+    "stop_count": 28
+  },
+  "Denistone East": {
+    "transport_score": 0.132,
+    "avg_services_per_hour": 1.73,
+    "stop_count": 20
+  },
+  "Denistone West": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Dharruk": {
+    "transport_score": 0.272,
+    "avg_services_per_hour": 3.56,
+    "stop_count": 34
+  },
+  "Dolans Bay": {
+    "transport_score": 0.115,
+    "avg_services_per_hour": 1.5,
+    "stop_count": 10
+  },
+  "Dolls Point": {
+    "transport_score": 0.204,
+    "avg_services_per_hour": 2.67,
+    "stop_count": 15
+  },
+  "Doonside": {
+    "transport_score": 0.137,
+    "avg_services_per_hour": 1.79,
+    "stop_count": 165
+  },
+  "Double Bay": {
+    "transport_score": 0.305,
+    "avg_services_per_hour": 3.98,
+    "stop_count": 33
+  },
+  "Dover Heights": {
+    "transport_score": 0.177,
+    "avg_services_per_hour": 2.32,
+    "stop_count": 46
+  },
+  "Drummoyne": {
+    "transport_score": 0.463,
+    "avg_services_per_hour": 6.06,
+    "stop_count": 82
+  },
+  "Duffys Forest": {
+    "transport_score": 0.076,
+    "avg_services_per_hour": 1.0,
+    "stop_count": 41
+  },
+  "Dulwich Hill": {
+    "transport_score": 0.309,
+    "avg_services_per_hour": 4.04,
+    "stop_count": 75
+  },
+  "Dundas": {
+    "transport_score": 0.202,
+    "avg_services_per_hour": 2.65,
+    "stop_count": 44
+  },
+  "Dundas Valley": {
+    "transport_score": 0.28,
+    "avg_services_per_hour": 3.66,
+    "stop_count": 59
+  },
+  "Dural (Hornsby - NSW)": {
+    "transport_score": 0.182,
+    "avg_services_per_hour": 2.38,
+    "stop_count": 183
+  },
+  "Eagle Vale": {
+    "transport_score": 0.146,
+    "avg_services_per_hour": 1.91,
+    "stop_count": 82
+  },
+  "Earlwood": {
+    "transport_score": 0.224,
+    "avg_services_per_hour": 2.93,
+    "stop_count": 162
+  },
+  "East Hills": {
+    "transport_score": 0.118,
+    "avg_services_per_hour": 1.55,
+    "stop_count": 72
+  },
+  "East Killara": {
+    "transport_score": 0.094,
+    "avg_services_per_hour": 1.23,
+    "stop_count": 54
+  },
+  "East Lindfield": {
+    "transport_score": 0.125,
+    "avg_services_per_hour": 1.64,
+    "stop_count": 77
+  },
+  "East Ryde": {
+    "transport_score": 0.083,
+    "avg_services_per_hour": 1.09,
+    "stop_count": 29
+  },
+  "Eastern Creek": {
+    "transport_score": 0.207,
+    "avg_services_per_hour": 2.71,
+    "stop_count": 107
+  },
+  "Eastgardens": {
+    "transport_score": 0.705,
+    "avg_services_per_hour": 9.22,
+    "stop_count": 18
+  },
+  "Eastlakes": {
+    "transport_score": 0.442,
+    "avg_services_per_hour": 5.79,
+    "stop_count": 47
+  },
+  "Eastwood": {
+    "transport_score": 0.176,
+    "avg_services_per_hour": 2.3,
+    "stop_count": 214
+  },
+  "Edensor Park": {
+    "transport_score": 0.258,
+    "avg_services_per_hour": 3.38,
+    "stop_count": 80
+  },
+  "Edgecliff": {
+    "transport_score": 0.227,
+    "avg_services_per_hour": 2.96,
+    "stop_count": 41
+  },
+  "Edmondson Park": {
+    "transport_score": 0.159,
+    "avg_services_per_hour": 2.08,
+    "stop_count": 74
+  },
+  "Elanora Heights": {
+    "transport_score": 0.086,
+    "avg_services_per_hour": 1.13,
+    "stop_count": 46
+  },
+  "Elderslie (Camden - NSW)": {
+    "transport_score": 0.247,
+    "avg_services_per_hour": 3.23,
+    "stop_count": 74
+  },
+  "Elizabeth Bay": {
+    "transport_score": 0.239,
+    "avg_services_per_hour": 3.12,
+    "stop_count": 12
+  },
+  "Elizabeth Hills": {
+    "transport_score": 0.12,
+    "avg_services_per_hour": 1.57,
+    "stop_count": 20
+  },
+  "Ellis Lane": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 10
+  },
+  "Elvina Bay": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 2
+  },
+  "Emerton": {
+    "transport_score": 0.261,
+    "avg_services_per_hour": 3.41,
+    "stop_count": 23
+  },
+  "Emu Heights": {
+    "transport_score": 0.244,
+    "avg_services_per_hour": 3.19,
+    "stop_count": 45
+  },
+  "Emu Plains": {
+    "transport_score": 0.147,
+    "avg_services_per_hour": 1.93,
+    "stop_count": 190
+  },
+  "Enfield": {
+    "transport_score": 0.4,
+    "avg_services_per_hour": 5.24,
+    "stop_count": 17
+  },
+  "Engadine": {
+    "transport_score": 0.14,
+    "avg_services_per_hour": 1.83,
+    "stop_count": 235
+  },
+  "Englorie Park": {
+    "transport_score": 0.134,
+    "avg_services_per_hour": 1.75,
+    "stop_count": 4
+  },
+  "Enmore (Inner West - NSW)": {
+    "transport_score": 0.522,
+    "avg_services_per_hour": 6.83,
+    "stop_count": 6
+  },
+  "Epping": {
+    "transport_score": 0.177,
+    "avg_services_per_hour": 2.32,
+    "stop_count": 242
+  },
+  "Ermington": {
+    "transport_score": 0.148,
+    "avg_services_per_hour": 1.94,
+    "stop_count": 131
+  },
+  "Erskine Park": {
+    "transport_score": 0.156,
+    "avg_services_per_hour": 2.04,
+    "stop_count": 88
+  },
+  "Erskineville": {
+    "transport_score": 0.262,
+    "avg_services_per_hour": 3.43,
+    "stop_count": 38
+  },
+  "Eschol Park": {
+    "transport_score": 0.095,
+    "avg_services_per_hour": 1.24,
+    "stop_count": 25
+  },
+  "Eveleigh": {
+    "transport_score": 0.42,
+    "avg_services_per_hour": 5.5,
+    "stop_count": 16
+  },
+  "Fairfield": {
+    "transport_score": 0.228,
+    "avg_services_per_hour": 2.98,
+    "stop_count": 126
+  },
+  "Fairfield East": {
+    "transport_score": 0.085,
+    "avg_services_per_hour": 1.11,
+    "stop_count": 92
+  },
+  "Fairfield Heights": {
+    "transport_score": 0.276,
+    "avg_services_per_hour": 3.61,
+    "stop_count": 31
+  },
+  "Fairfield West": {
+    "transport_score": 0.169,
+    "avg_services_per_hour": 2.21,
+    "stop_count": 106
+  },
+  "Fairlight": {
+    "transport_score": 0.293,
+    "avg_services_per_hour": 3.83,
+    "stop_count": 63
+  },
+  "Fiddletown": {
+    "transport_score": 0.086,
+    "avg_services_per_hour": 1.12,
+    "stop_count": 4
+  },
+  "Five Dock": {
+    "transport_score": 0.279,
+    "avg_services_per_hour": 3.65,
+    "stop_count": 118
+  },
+  "Forest Glen": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Forest Lodge": {
+    "transport_score": 0.358,
+    "avg_services_per_hour": 4.69,
+    "stop_count": 24
+  },
+  "Forestville": {
+    "transport_score": 0.403,
+    "avg_services_per_hour": 5.27,
+    "stop_count": 75
+  },
+  "Frenchs Forest": {
+    "transport_score": 0.271,
+    "avg_services_per_hour": 3.55,
+    "stop_count": 195
+  },
+  "Freshwater": {
+    "transport_score": 0.356,
+    "avg_services_per_hour": 4.65,
+    "stop_count": 102
+  },
+  "Gables": {
+    "transport_score": 0.156,
+    "avg_services_per_hour": 2.04,
+    "stop_count": 76
+  },
+  "Galston": {
+    "transport_score": 0.117,
+    "avg_services_per_hour": 1.53,
+    "stop_count": 67
+  },
+  "Georges Hall": {
+    "transport_score": 0.119,
+    "avg_services_per_hour": 1.55,
+    "stop_count": 122
+  },
+  "Gilead": {
+    "transport_score": 0.124,
+    "avg_services_per_hour": 1.62,
+    "stop_count": 4
+  },
+  "Girraween": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.96,
+    "stop_count": 68
+  },
+  "Gladesville": {
+    "transport_score": 0.336,
+    "avg_services_per_hour": 4.39,
+    "stop_count": 107
+  },
   "Glebe": {
-    "transport_score": 0.843,
+    "transport_score": 0.66,
     "avg_services_per_hour": 8.64,
     "stop_count": 69
   },
+  "Gledswood Hills": {
+    "transport_score": 0.198,
+    "avg_services_per_hour": 2.59,
+    "stop_count": 60
+  },
+  "Glen Alpine": {
+    "transport_score": 0.066,
+    "avg_services_per_hour": 0.86,
+    "stop_count": 68
+  },
+  "Glendenning": {
+    "transport_score": 0.265,
+    "avg_services_per_hour": 3.47,
+    "stop_count": 51
+  },
+  "Glenfield": {
+    "transport_score": 0.164,
+    "avg_services_per_hour": 2.15,
+    "stop_count": 110
+  },
+  "Glenhaven": {
+    "transport_score": 0.146,
+    "avg_services_per_hour": 1.92,
+    "stop_count": 153
+  },
+  "Glenmore Park": {
+    "transport_score": 0.227,
+    "avg_services_per_hour": 2.97,
+    "stop_count": 218
+  },
+  "Glenorie": {
+    "transport_score": 0.065,
+    "avg_services_per_hour": 0.85,
+    "stop_count": 91
+  },
+  "Glenwood": {
+    "transport_score": 0.414,
+    "avg_services_per_hour": 5.42,
+    "stop_count": 127
+  },
+  "Gordon": {
+    "transport_score": 0.156,
+    "avg_services_per_hour": 2.05,
+    "stop_count": 76
+  },
+  "Grantham Farm": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.85,
+    "stop_count": 34
+  },
+  "Granville": {
+    "transport_score": 0.143,
+    "avg_services_per_hour": 1.87,
+    "stop_count": 177
+  },
+  "Grasmere": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 22
+  },
+  "Grays Point": {
+    "transport_score": 0.151,
+    "avg_services_per_hour": 1.97,
+    "stop_count": 52
+  },
+  "Great Mackerel Beach": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Green Valley": {
+    "transport_score": 0.158,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 115
+  },
+  "Greenacre": {
+    "transport_score": 0.149,
+    "avg_services_per_hour": 1.94,
+    "stop_count": 318
+  },
+  "Greendale (Liverpool - NSW)": {
+    "transport_score": 0.038,
+    "avg_services_per_hour": 0.5,
+    "stop_count": 2
+  },
+  "Greenfield Park": {
+    "transport_score": 0.202,
+    "avg_services_per_hour": 2.64,
+    "stop_count": 64
+  },
+  "Greenhills Beach": {
+    "transport_score": 0.191,
+    "avg_services_per_hour": 2.5,
+    "stop_count": 6
+  },
+  "Greenwich": {
+    "transport_score": 0.265,
+    "avg_services_per_hour": 3.46,
+    "stop_count": 71
+  },
+  "Gregory Hills": {
+    "transport_score": 0.176,
+    "avg_services_per_hour": 2.3,
+    "stop_count": 54
+  },
+  "Greystanes": {
+    "transport_score": 0.208,
+    "avg_services_per_hour": 2.72,
+    "stop_count": 315
+  },
+  "Guildford": {
+    "transport_score": 0.146,
+    "avg_services_per_hour": 1.92,
+    "stop_count": 268
+  },
+  "Guildford West": {
+    "transport_score": 0.214,
+    "avg_services_per_hour": 2.8,
+    "stop_count": 61
+  },
+  "Gymea": {
+    "transport_score": 0.148,
+    "avg_services_per_hour": 1.93,
+    "stop_count": 89
+  },
+  "Gymea Bay": {
+    "transport_score": 0.088,
+    "avg_services_per_hour": 1.15,
+    "stop_count": 44
+  },
+  "Haberfield": {
+    "transport_score": 0.361,
+    "avg_services_per_hour": 4.72,
+    "stop_count": 70
+  },
+  "Hammondville": {
+    "transport_score": 0.12,
+    "avg_services_per_hour": 1.56,
+    "stop_count": 47
+  },
+  "Harrington Park": {
+    "transport_score": 0.19,
+    "avg_services_per_hour": 2.48,
+    "stop_count": 100
+  },
+  "Harris Park": {
+    "transport_score": 0.084,
+    "avg_services_per_hour": 1.1,
+    "stop_count": 46
+  },
+  "Hassall Grove": {
+    "transport_score": 0.258,
+    "avg_services_per_hour": 3.38,
+    "stop_count": 42
+  },
   "Haymarket": {
-    "transport_score": 0.894,
+    "transport_score": 0.7,
     "avg_services_per_hour": 9.15,
     "stop_count": 130
   },
+  "Heathcote": {
+    "transport_score": 0.026,
+    "avg_services_per_hour": 0.34,
+    "stop_count": 108
+  },
+  "Hebersham": {
+    "transport_score": 0.22,
+    "avg_services_per_hour": 2.88,
+    "stop_count": 56
+  },
+  "Heckenberg": {
+    "transport_score": 0.136,
+    "avg_services_per_hour": 1.78,
+    "stop_count": 51
+  },
+  "Henley": {
+    "transport_score": 0.126,
+    "avg_services_per_hour": 1.64,
+    "stop_count": 7
+  },
+  "Hillsdale": {
+    "transport_score": 0.566,
+    "avg_services_per_hour": 7.4,
+    "stop_count": 10
+  },
+  "Hinchinbrook": {
+    "transport_score": 0.214,
+    "avg_services_per_hour": 2.8,
+    "stop_count": 80
+  },
+  "Holroyd": {
+    "transport_score": 0.287,
+    "avg_services_per_hour": 3.75,
+    "stop_count": 6
+  },
+  "Holsworthy": {
+    "transport_score": 0.155,
+    "avg_services_per_hour": 2.03,
+    "stop_count": 57
+  },
+  "Homebush": {
+    "transport_score": 0.197,
+    "avg_services_per_hour": 2.58,
+    "stop_count": 63
+  },
+  "Homebush West": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.85,
+    "stop_count": 24
+  },
+  "Horningsea Park": {
+    "transport_score": 0.38,
+    "avg_services_per_hour": 4.97,
+    "stop_count": 31
+  },
+  "Hornsby": {
+    "transport_score": 0.144,
+    "avg_services_per_hour": 1.88,
+    "stop_count": 239
+  },
+  "Hornsby Heights": {
+    "transport_score": 0.136,
+    "avg_services_per_hour": 1.79,
+    "stop_count": 112
+  },
+  "Horsley Park": {
+    "transport_score": 0.056,
+    "avg_services_per_hour": 0.74,
+    "stop_count": 115
+  },
+  "Hoxton Park": {
+    "transport_score": 0.175,
+    "avg_services_per_hour": 2.28,
+    "stop_count": 37
+  },
+  "Hunters Hill": {
+    "transport_score": 0.244,
+    "avg_services_per_hour": 3.19,
+    "stop_count": 120
+  },
+  "Huntingwood": {
+    "transport_score": 0.188,
+    "avg_services_per_hour": 2.46,
+    "stop_count": 28
+  },
+  "Huntleys Cove": {
+    "transport_score": 0.866,
+    "avg_services_per_hour": 11.33,
+    "stop_count": 6
+  },
+  "Huntleys Point": {
+    "transport_score": 0.134,
+    "avg_services_per_hour": 1.75,
+    "stop_count": 6
+  },
+  "Hurlstone Park": {
+    "transport_score": 0.221,
+    "avg_services_per_hour": 2.89,
+    "stop_count": 48
+  },
+  "Hurstville": {
+    "transport_score": 0.217,
+    "avg_services_per_hour": 2.84,
+    "stop_count": 227
+  },
+  "Hurstville Grove": {
+    "transport_score": 0.127,
+    "avg_services_per_hour": 1.67,
+    "stop_count": 30
+  },
+  "Illawong": {
+    "transport_score": 0.179,
+    "avg_services_per_hour": 2.34,
+    "stop_count": 86
+  },
+  "Ingleburn": {
+    "transport_score": 0.139,
+    "avg_services_per_hour": 1.82,
+    "stop_count": 235
+  },
+  "Ingleside": {
+    "transport_score": 0.097,
+    "avg_services_per_hour": 1.27,
+    "stop_count": 32
+  },
+  "Jamisontown": {
+    "transport_score": 0.175,
+    "avg_services_per_hour": 2.29,
+    "stop_count": 57
+  },
+  "Jannali": {
+    "transport_score": 0.18,
+    "avg_services_per_hour": 2.36,
+    "stop_count": 60
+  },
+  "Jordan Springs": {
+    "transport_score": 0.085,
+    "avg_services_per_hour": 1.11,
+    "stop_count": 74
+  },
+  "Kangaroo Point": {
+    "transport_score": 0.019,
+    "avg_services_per_hour": 0.25,
+    "stop_count": 2
+  },
+  "Kareela": {
+    "transport_score": 0.178,
+    "avg_services_per_hour": 2.33,
+    "stop_count": 45
+  },
+  "Kearns": {
+    "transport_score": 0.159,
+    "avg_services_per_hour": 2.09,
+    "stop_count": 29
+  },
+  "Kellyville": {
+    "transport_score": 0.222,
+    "avg_services_per_hour": 2.9,
+    "stop_count": 274
+  },
+  "Kellyville Ridge": {
+    "transport_score": 0.37,
+    "avg_services_per_hour": 4.85,
+    "stop_count": 36
+  },
+  "Kemps Creek": {
+    "transport_score": 0.053,
+    "avg_services_per_hour": 0.69,
+    "stop_count": 68
+  },
+  "Kensington": {
+    "transport_score": 0.684,
+    "avg_services_per_hour": 8.95,
+    "stop_count": 75
+  },
+  "Kenthurst": {
+    "transport_score": 0.077,
+    "avg_services_per_hour": 1.01,
+    "stop_count": 217
+  },
+  "Kentlyn": {
+    "transport_score": 0.066,
+    "avg_services_per_hour": 0.86,
+    "stop_count": 36
+  },
+  "Killara": {
+    "transport_score": 0.082,
+    "avg_services_per_hour": 1.08,
+    "stop_count": 125
+  },
+  "Killarney Heights": {
+    "transport_score": 0.23,
+    "avg_services_per_hour": 3.02,
+    "stop_count": 32
+  },
+  "Kings Langley": {
+    "transport_score": 0.256,
+    "avg_services_per_hour": 3.35,
+    "stop_count": 110
+  },
+  "Kings Park": {
+    "transport_score": 0.096,
+    "avg_services_per_hour": 1.26,
+    "stop_count": 46
+  },
+  "Kingsford": {
+    "transport_score": 0.678,
+    "avg_services_per_hour": 8.87,
+    "stop_count": 87
+  },
+  "Kingsgrove": {
+    "transport_score": 0.164,
+    "avg_services_per_hour": 2.14,
+    "stop_count": 177
+  },
+  "Kingswood (Penrith - NSW)": {
+    "transport_score": 0.189,
+    "avg_services_per_hour": 2.47,
+    "stop_count": 168
+  },
+  "Kirkham": {
+    "transport_score": 0.156,
+    "avg_services_per_hour": 2.04,
+    "stop_count": 12
+  },
+  "Kirrawee": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.47,
+    "stop_count": 118
+  },
+  "Kirribilli": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.85,
+    "stop_count": 17
+  },
+  "Kogarah": {
+    "transport_score": 0.25,
+    "avg_services_per_hour": 3.27,
+    "stop_count": 94
+  },
+  "Kogarah Bay": {
+    "transport_score": 0.186,
+    "avg_services_per_hour": 2.43,
+    "stop_count": 36
+  },
+  "Ku-ring-gai Chase": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.86,
+    "stop_count": 7
+  },
+  "Kurnell": {
+    "transport_score": 0.172,
+    "avg_services_per_hour": 2.25,
+    "stop_count": 75
+  },
+  "Kurraba Point": {
+    "transport_score": 0.115,
+    "avg_services_per_hour": 1.5,
+    "stop_count": 2
+  },
+  "Kyeemagh": {
+    "transport_score": 0.064,
+    "avg_services_per_hour": 0.84,
+    "stop_count": 31
+  },
+  "Kyle Bay": {
+    "transport_score": 0.115,
+    "avg_services_per_hour": 1.5,
+    "stop_count": 8
+  },
+  "La Perouse": {
+    "transport_score": 0.72,
+    "avg_services_per_hour": 9.42,
+    "stop_count": 6
+  },
+  "Lakemba": {
+    "transport_score": 0.126,
+    "avg_services_per_hour": 1.65,
+    "stop_count": 130
+  },
+  "Lalor Park": {
+    "transport_score": 0.114,
+    "avg_services_per_hour": 1.49,
+    "stop_count": 96
+  },
+  "Lane Cove": {
+    "transport_score": 0.325,
+    "avg_services_per_hour": 4.25,
+    "stop_count": 116
+  },
+  "Lane Cove North": {
+    "transport_score": 0.407,
+    "avg_services_per_hour": 5.33,
+    "stop_count": 88
+  },
+  "Lane Cove West": {
+    "transport_score": 0.289,
+    "avg_services_per_hour": 3.79,
+    "stop_count": 42
+  },
+  "Lansdowne (Canterbury-Bankstown - NSW)": {
+    "transport_score": 0.134,
+    "avg_services_per_hour": 1.75,
+    "stop_count": 2
+  },
+  "Lansvale": {
+    "transport_score": 0.077,
+    "avg_services_per_hour": 1.01,
+    "stop_count": 60
+  },
+  "Laughtondale": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Lavender Bay": {
+    "transport_score": 0.745,
+    "avg_services_per_hour": 9.75,
+    "stop_count": 6
+  },
+  "Leets Vale": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Leichhardt": {
+    "transport_score": 0.397,
+    "avg_services_per_hour": 5.19,
+    "stop_count": 100
+  },
+  "Len Waters Estate": {
+    "transport_score": 0.12,
+    "avg_services_per_hour": 1.57,
+    "stop_count": 7
+  },
+  "Leonay": {
+    "transport_score": 0.124,
+    "avg_services_per_hour": 1.62,
+    "stop_count": 33
+  },
+  "Leppington": {
+    "transport_score": 0.158,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 138
+  },
+  "Lethbridge Park": {
+    "transport_score": 0.298,
+    "avg_services_per_hour": 3.9,
+    "stop_count": 44
+  },
+  "Leumeah": {
+    "transport_score": 0.107,
+    "avg_services_per_hour": 1.4,
+    "stop_count": 169
+  },
+  "Lewisham": {
+    "transport_score": 0.32,
+    "avg_services_per_hour": 4.18,
+    "stop_count": 38
+  },
+  "Liberty Grove": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Lidcombe": {
+    "transport_score": 0.157,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 188
+  },
+  "Lilli Pilli (Sutherland Shire - NSW)": {
+    "transport_score": 0.195,
+    "avg_services_per_hour": 2.55,
+    "stop_count": 22
+  },
+  "Lilyfield": {
+    "transport_score": 0.416,
+    "avg_services_per_hour": 5.44,
+    "stop_count": 40
+  },
+  "Lindfield": {
+    "transport_score": 0.113,
+    "avg_services_per_hour": 1.48,
+    "stop_count": 125
+  },
+  "Linley Point": {
+    "transport_score": 0.325,
+    "avg_services_per_hour": 4.25,
+    "stop_count": 8
+  },
+  "Little Bay": {
+    "transport_score": 0.305,
+    "avg_services_per_hour": 3.99,
+    "stop_count": 46
+  },
+  "Liverpool": {
+    "transport_score": 0.307,
+    "avg_services_per_hour": 4.02,
+    "stop_count": 277
+  },
+  "Llandilo": {
+    "transport_score": 0.105,
+    "avg_services_per_hour": 1.38,
+    "stop_count": 36
+  },
+  "Loftus": {
+    "transport_score": 0.095,
+    "avg_services_per_hour": 1.24,
+    "stop_count": 93
+  },
+  "Londonderry": {
+    "transport_score": 0.098,
+    "avg_services_per_hour": 1.29,
+    "stop_count": 59
+  },
+  "Long Point (Campbelltown - NSW)": {
+    "transport_score": 0.029,
+    "avg_services_per_hour": 0.38,
+    "stop_count": 13
+  },
+  "Longueville": {
+    "transport_score": 0.186,
+    "avg_services_per_hour": 2.44,
+    "stop_count": 33
+  },
+  "Lovett Bay": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Lower Portland": {
+    "transport_score": 0.019,
+    "avg_services_per_hour": 0.25,
+    "stop_count": 4
+  },
+  "Lucas Heights": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Luddenham": {
+    "transport_score": 0.032,
+    "avg_services_per_hour": 0.42,
+    "stop_count": 19
+  },
+  "Lugarno": {
+    "transport_score": 0.209,
+    "avg_services_per_hour": 2.73,
+    "stop_count": 59
+  },
+  "Lurnea": {
+    "transport_score": 0.152,
+    "avg_services_per_hour": 1.98,
+    "stop_count": 126
+  },
+  "Macquarie Fields": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.85,
+    "stop_count": 172
+  },
+  "Macquarie Links": {
+    "transport_score": 0.199,
+    "avg_services_per_hour": 2.61,
+    "stop_count": 14
+  },
+  "Macquarie Park": {
+    "transport_score": 0.575,
+    "avg_services_per_hour": 7.52,
+    "stop_count": 169
+  },
+  "Maianbar": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 4
+  },
+  "Malabar": {
+    "transport_score": 0.225,
+    "avg_services_per_hour": 2.95,
+    "stop_count": 69
+  },
+  "Manly": {
+    "transport_score": 0.418,
+    "avg_services_per_hour": 5.47,
+    "stop_count": 128
+  },
+  "Manly Vale": {
+    "transport_score": 0.336,
+    "avg_services_per_hour": 4.4,
+    "stop_count": 67
+  },
+  "Maraylya": {
+    "transport_score": 0.051,
+    "avg_services_per_hour": 0.67,
+    "stop_count": 51
+  },
+  "Marayong": {
+    "transport_score": 0.23,
+    "avg_services_per_hour": 3.01,
+    "stop_count": 101
+  },
+  "Maroota": {
+    "transport_score": 0.026,
+    "avg_services_per_hour": 0.34,
+    "stop_count": 41
+  },
+  "Maroubra": {
+    "transport_score": 0.491,
+    "avg_services_per_hour": 6.43,
+    "stop_count": 259
+  },
+  "Marrickville": {
+    "transport_score": 0.284,
+    "avg_services_per_hour": 3.71,
+    "stop_count": 152
+  },
+  "Marsden Park": {
+    "transport_score": 0.172,
+    "avg_services_per_hour": 2.25,
+    "stop_count": 124
+  },
+  "Marsfield": {
+    "transport_score": 0.288,
+    "avg_services_per_hour": 3.77,
+    "stop_count": 98
+  },
+  "Mascot": {
+    "transport_score": 0.403,
+    "avg_services_per_hour": 5.28,
+    "stop_count": 136
+  },
+  "Matraville": {
+    "transport_score": 0.41,
+    "avg_services_per_hour": 5.37,
+    "stop_count": 96
+  },
+  "Mays Hill": {
+    "transport_score": 0.268,
+    "avg_services_per_hour": 3.5,
+    "stop_count": 8
+  },
+  "McMahons Point": {
+    "transport_score": 0.174,
+    "avg_services_per_hour": 2.28,
+    "stop_count": 25
+  },
+  "Meadowbank": {
+    "transport_score": 0.155,
+    "avg_services_per_hour": 2.02,
+    "stop_count": 20
+  },
+  "Melonba": {
+    "transport_score": 0.196,
+    "avg_services_per_hour": 2.57,
+    "stop_count": 37
+  },
+  "Melrose Park": {
+    "transport_score": 0.117,
+    "avg_services_per_hour": 1.53,
+    "stop_count": 43
+  },
+  "Menai": {
+    "transport_score": 0.19,
+    "avg_services_per_hour": 2.49,
+    "stop_count": 120
+  },
+  "Menangle Park": {
+    "transport_score": 0.033,
+    "avg_services_per_hour": 0.43,
+    "stop_count": 41
+  },
+  "Merrylands": {
+    "transport_score": 0.169,
+    "avg_services_per_hour": 2.21,
+    "stop_count": 298
+  },
+  "Merrylands West": {
+    "transport_score": 0.18,
+    "avg_services_per_hour": 2.35,
+    "stop_count": 89
+  },
+  "Middle Cove": {
+    "transport_score": 0.152,
+    "avg_services_per_hour": 1.98,
+    "stop_count": 32
+  },
+  "Middle Dural": {
+    "transport_score": 0.083,
+    "avg_services_per_hour": 1.09,
+    "stop_count": 34
+  },
+  "Middleton Grange": {
+    "transport_score": 0.124,
+    "avg_services_per_hour": 1.62,
+    "stop_count": 20
+  },
+  "Miller": {
+    "transport_score": 0.1,
+    "avg_services_per_hour": 1.3,
+    "stop_count": 61
+  },
+  "Millers Point": {
+    "transport_score": 0.437,
+    "avg_services_per_hour": 5.71,
+    "stop_count": 14
+  },
+  "Milperra": {
+    "transport_score": 0.227,
+    "avg_services_per_hour": 2.97,
+    "stop_count": 81
+  },
+  "Milsons Passage": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Milsons Point": {
+    "transport_score": 0.508,
+    "avg_services_per_hour": 6.64,
+    "stop_count": 21
+  },
+  "Minchinbury": {
+    "transport_score": 0.114,
+    "avg_services_per_hour": 1.49,
+    "stop_count": 103
+  },
+  "Minto": {
+    "transport_score": 0.182,
+    "avg_services_per_hour": 2.38,
+    "stop_count": 185
+  },
+  "Minto Heights": {
+    "transport_score": 0.012,
+    "avg_services_per_hour": 0.16,
+    "stop_count": 28
+  },
+  "Miranda": {
+    "transport_score": 0.146,
+    "avg_services_per_hour": 1.91,
+    "stop_count": 146
+  },
+  "Mona Vale": {
+    "transport_score": 0.336,
+    "avg_services_per_hour": 4.4,
+    "stop_count": 136
+  },
+  "Monterey": {
+    "transport_score": 0.215,
+    "avg_services_per_hour": 2.81,
+    "stop_count": 52
+  },
+  "Moore Park": {
+    "transport_score": 0.424,
+    "avg_services_per_hour": 5.55,
+    "stop_count": 54
+  },
+  "Moorebank": {
+    "transport_score": 0.17,
+    "avg_services_per_hour": 2.23,
+    "stop_count": 135
+  },
+  "Morning Bay": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 2
+  },
+  "Mortdale": {
+    "transport_score": 0.192,
+    "avg_services_per_hour": 2.51,
+    "stop_count": 76
+  },
+  "Mortlake": {
+    "transport_score": 0.229,
+    "avg_services_per_hour": 3.0,
+    "stop_count": 6
+  },
+  "Mosman": {
+    "transport_score": 0.304,
+    "avg_services_per_hour": 3.98,
+    "stop_count": 365
+  },
+  "Mount Annan": {
+    "transport_score": 0.228,
+    "avg_services_per_hour": 2.99,
+    "stop_count": 76
+  },
+  "Mount Colah": {
+    "transport_score": 0.106,
+    "avg_services_per_hour": 1.39,
+    "stop_count": 161
+  },
+  "Mount Druitt": {
+    "transport_score": 0.263,
+    "avg_services_per_hour": 3.45,
+    "stop_count": 182
+  },
+  "Mount Kuring-Gai": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 38
+  },
+  "Mount Lewis": {
+    "transport_score": 0.076,
+    "avg_services_per_hour": 1.0,
+    "stop_count": 14
+  },
+  "Mount Pritchard": {
+    "transport_score": 0.118,
+    "avg_services_per_hour": 1.54,
+    "stop_count": 152
+  },
+  "Mount Vernon": {
+    "transport_score": 0.047,
+    "avg_services_per_hour": 0.61,
+    "stop_count": 22
+  },
+  "Mulgoa": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.7,
+    "stop_count": 45
+  },
+  "Narellan": {
+    "transport_score": 0.435,
+    "avg_services_per_hour": 5.69,
+    "stop_count": 67
+  },
+  "Narellan Vale": {
+    "transport_score": 0.216,
+    "avg_services_per_hour": 2.83,
+    "stop_count": 73
+  },
+  "Naremburn": {
+    "transport_score": 0.296,
+    "avg_services_per_hour": 3.87,
+    "stop_count": 15
+  },
+  "Narrabeen": {
+    "transport_score": 0.457,
+    "avg_services_per_hour": 5.98,
+    "stop_count": 52
+  },
+  "Narraweena": {
+    "transport_score": 0.425,
+    "avg_services_per_hour": 5.56,
+    "stop_count": 69
+  },
+  "Narwee": {
+    "transport_score": 0.111,
+    "avg_services_per_hour": 1.45,
+    "stop_count": 66
+  },
+  "Nelson (The Hills Shire - NSW)": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.7,
+    "stop_count": 27
+  },
+  "Neutral Bay": {
+    "transport_score": 0.886,
+    "avg_services_per_hour": 11.59,
+    "stop_count": 65
+  },
+  "Newington": {
+    "transport_score": 0.576,
+    "avg_services_per_hour": 7.54,
+    "stop_count": 26
+  },
+  "Newport": {
+    "transport_score": 0.388,
+    "avg_services_per_hour": 5.08,
+    "stop_count": 64
+  },
   "Newtown": {
-    "transport_score": 0.969,
+    "transport_score": 0.759,
     "avg_services_per_hour": 9.92,
     "stop_count": 59
   },
+  "Nirimba Fields": {
+    "transport_score": 0.202,
+    "avg_services_per_hour": 2.64,
+    "stop_count": 11
+  },
+  "Normanhurst": {
+    "transport_score": 0.114,
+    "avg_services_per_hour": 1.49,
+    "stop_count": 69
+  },
+  "North Balgowlah": {
+    "transport_score": 0.149,
+    "avg_services_per_hour": 1.95,
+    "stop_count": 48
+  },
+  "North Bondi": {
+    "transport_score": 0.463,
+    "avg_services_per_hour": 6.06,
+    "stop_count": 61
+  },
+  "North Curl Curl": {
+    "transport_score": 0.263,
+    "avg_services_per_hour": 3.44,
+    "stop_count": 40
+  },
+  "North Epping": {
+    "transport_score": 0.172,
+    "avg_services_per_hour": 2.24,
+    "stop_count": 49
+  },
+  "North Kellyville": {
+    "transport_score": 0.227,
+    "avg_services_per_hour": 2.96,
+    "stop_count": 97
+  },
+  "North Manly": {
+    "transport_score": 0.391,
+    "avg_services_per_hour": 5.11,
+    "stop_count": 44
+  },
+  "North Narrabeen": {
+    "transport_score": 0.26,
+    "avg_services_per_hour": 3.4,
+    "stop_count": 76
+  },
+  "North Parramatta": {
+    "transport_score": 0.257,
+    "avg_services_per_hour": 3.36,
+    "stop_count": 154
+  },
+  "North Rocks": {
+    "transport_score": 0.172,
+    "avg_services_per_hour": 2.25,
+    "stop_count": 133
+  },
+  "North Ryde": {
+    "transport_score": 0.242,
+    "avg_services_per_hour": 3.16,
+    "stop_count": 190
+  },
+  "North St Marys": {
+    "transport_score": 0.105,
+    "avg_services_per_hour": 1.37,
+    "stop_count": 82
+  },
+  "North Strathfield": {
+    "transport_score": 0.165,
+    "avg_services_per_hour": 2.16,
+    "stop_count": 37
+  },
+  "North Sydney": {
+    "transport_score": 0.509,
+    "avg_services_per_hour": 6.65,
+    "stop_count": 113
+  },
+  "North Turramurra": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.37,
+    "stop_count": 67
+  },
+  "North Wahroonga": {
+    "transport_score": 0.096,
+    "avg_services_per_hour": 1.25,
+    "stop_count": 20
+  },
+  "North Willoughby": {
+    "transport_score": 0.367,
+    "avg_services_per_hour": 4.8,
+    "stop_count": 38
+  },
+  "Northbridge": {
+    "transport_score": 0.306,
+    "avg_services_per_hour": 4.0,
+    "stop_count": 77
+  },
+  "Northmead": {
+    "transport_score": 0.316,
+    "avg_services_per_hour": 4.14,
+    "stop_count": 77
+  },
+  "Northwood": {
+    "transport_score": 0.207,
+    "avg_services_per_hour": 2.71,
+    "stop_count": 14
+  },
+  "Norwest": {
+    "transport_score": 0.265,
+    "avg_services_per_hour": 3.47,
+    "stop_count": 84
+  },
+  "Oakhurst": {
+    "transport_score": 0.271,
+    "avg_services_per_hour": 3.55,
+    "stop_count": 66
+  },
+  "Oatlands": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.97,
+    "stop_count": 43
+  },
+  "Oatley": {
+    "transport_score": 0.045,
+    "avg_services_per_hour": 0.59,
+    "stop_count": 108
+  },
+  "Old Guildford": {
+    "transport_score": 0.121,
+    "avg_services_per_hour": 1.58,
+    "stop_count": 31
+  },
+  "Old Toongabbie": {
+    "transport_score": 0.145,
+    "avg_services_per_hour": 1.9,
+    "stop_count": 45
+  },
+  "Oran Park": {
+    "transport_score": 0.237,
+    "avg_services_per_hour": 3.11,
+    "stop_count": 90
+  },
+  "Orchard Hills": {
+    "transport_score": 0.097,
+    "avg_services_per_hour": 1.27,
+    "stop_count": 47
+  },
+  "Oxford Falls": {
+    "transport_score": 0.21,
+    "avg_services_per_hour": 2.75,
+    "stop_count": 2
+  },
+  "Oxley Park": {
+    "transport_score": 0.047,
+    "avg_services_per_hour": 0.61,
+    "stop_count": 35
+  },
+  "Oyster Bay": {
+    "transport_score": 0.29,
+    "avg_services_per_hour": 3.8,
+    "stop_count": 67
+  },
+  "Paddington": {
+    "transport_score": 0.625,
+    "avg_services_per_hour": 8.17,
+    "stop_count": 46
+  },
+  "Padstow": {
+    "transport_score": 0.266,
+    "avg_services_per_hour": 3.48,
+    "stop_count": 144
+  },
+  "Padstow Heights": {
+    "transport_score": 0.223,
+    "avg_services_per_hour": 2.92,
+    "stop_count": 32
+  },
+  "Pagewood": {
+    "transport_score": 0.32,
+    "avg_services_per_hour": 4.19,
+    "stop_count": 40
+  },
+  "Palm Beach": {
+    "transport_score": 0.364,
+    "avg_services_per_hour": 4.76,
+    "stop_count": 57
+  },
+  "Panania": {
+    "transport_score": 0.105,
+    "avg_services_per_hour": 1.37,
+    "stop_count": 132
+  },
+  "Parklea": {
+    "transport_score": 0.621,
+    "avg_services_per_hour": 8.12,
+    "stop_count": 12
+  },
+  "Parramatta": {
+    "transport_score": 0.42,
+    "avg_services_per_hour": 5.49,
+    "stop_count": 214
+  },
+  "Peakhurst": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.37,
+    "stop_count": 168
+  },
+  "Peakhurst Heights": {
+    "transport_score": 0.162,
+    "avg_services_per_hour": 2.12,
+    "stop_count": 40
+  },
+  "Pemulwuy": {
+    "transport_score": 0.185,
+    "avg_services_per_hour": 2.42,
+    "stop_count": 49
+  },
+  "Pendle Hill": {
+    "transport_score": 0.15,
+    "avg_services_per_hour": 1.97,
+    "stop_count": 79
+  },
+  "Pennant Hills": {
+    "transport_score": 0.217,
+    "avg_services_per_hour": 2.84,
+    "stop_count": 83
+  },
+  "Penrith": {
+    "transport_score": 0.289,
+    "avg_services_per_hour": 3.78,
+    "stop_count": 281
+  },
+  "Penshurst": {
+    "transport_score": 0.257,
+    "avg_services_per_hour": 3.37,
+    "stop_count": 86
+  },
+  "Petersham": {
+    "transport_score": 0.25,
+    "avg_services_per_hour": 3.27,
+    "stop_count": 61
+  },
+  "Phillip Bay": {
+    "transport_score": 0.354,
+    "avg_services_per_hour": 4.62,
+    "stop_count": 4
+  },
+  "Picnic Point": {
+    "transport_score": 0.085,
+    "avg_services_per_hour": 1.11,
+    "stop_count": 52
+  },
+  "Pleasure Point": {
+    "transport_score": 0.109,
+    "avg_services_per_hour": 1.43,
+    "stop_count": 7
+  },
+  "Plumpton": {
+    "transport_score": 0.208,
+    "avg_services_per_hour": 2.72,
+    "stop_count": 65
+  },
+  "Point Piper": {
+    "transport_score": 0.42,
+    "avg_services_per_hour": 5.5,
+    "stop_count": 6
+  },
+  "Port Botany": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Port Hacking": {
+    "transport_score": 0.115,
+    "avg_services_per_hour": 1.5,
+    "stop_count": 6
+  },
+  "Potts Hill": {
+    "transport_score": 0.245,
+    "avg_services_per_hour": 3.2,
+    "stop_count": 5
+  },
+  "Potts Point": {
+    "transport_score": 0.248,
+    "avg_services_per_hour": 3.24,
+    "stop_count": 33
+  },
+  "Prairiewood": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.36,
+    "stop_count": 40
+  },
+  "Prestons": {
+    "transport_score": 0.271,
+    "avg_services_per_hour": 3.55,
+    "stop_count": 156
+  },
+  "Prospect": {
+    "transport_score": 0.2,
+    "avg_services_per_hour": 2.62,
+    "stop_count": 29
+  },
+  "Punchbowl (Canterbury-Bankstown - NSW)": {
+    "transport_score": 0.142,
+    "avg_services_per_hour": 1.86,
+    "stop_count": 195
+  },
+  "Putney": {
+    "transport_score": 0.173,
+    "avg_services_per_hour": 2.26,
+    "stop_count": 48
+  },
+  "Pymble": {
+    "transport_score": 0.129,
+    "avg_services_per_hour": 1.68,
+    "stop_count": 150
+  },
+  "Pyrmont": {
+    "transport_score": 0.398,
+    "avg_services_per_hour": 5.2,
+    "stop_count": 49
+  },
+  "Quakers Hill": {
+    "transport_score": 0.201,
+    "avg_services_per_hour": 2.63,
+    "stop_count": 253
+  },
+  "Queens Park": {
+    "transport_score": 0.269,
+    "avg_services_per_hour": 3.52,
+    "stop_count": 33
+  },
+  "Queenscliff": {
+    "transport_score": 0.338,
+    "avg_services_per_hour": 4.42,
+    "stop_count": 33
+  },
+  "Raby": {
+    "transport_score": 0.242,
+    "avg_services_per_hour": 3.17,
+    "stop_count": 62
+  },
+  "Ramsgate": {
+    "transport_score": 0.206,
+    "avg_services_per_hour": 2.69,
+    "stop_count": 18
+  },
+  "Ramsgate Beach": {
+    "transport_score": 0.233,
+    "avg_services_per_hour": 3.05,
+    "stop_count": 30
+  },
+  "Randwick": {
+    "transport_score": 0.541,
+    "avg_services_per_hour": 7.07,
+    "stop_count": 234
+  },
   "Redfern": {
-    "transport_score": 0.814,
+    "transport_score": 0.637,
     "avg_services_per_hour": 8.34,
     "stop_count": 75
   },
+  "Regents Park": {
+    "transport_score": 0.121,
+    "avg_services_per_hour": 1.58,
+    "stop_count": 68
+  },
+  "Regentville": {
+    "transport_score": 0.146,
+    "avg_services_per_hour": 1.91,
+    "stop_count": 27
+  },
+  "Revesby": {
+    "transport_score": 0.196,
+    "avg_services_per_hour": 2.57,
+    "stop_count": 227
+  },
+  "Revesby Heights": {
+    "transport_score": 0.092,
+    "avg_services_per_hour": 1.2,
+    "stop_count": 22
+  },
+  "Rhodes": {
+    "transport_score": 0.308,
+    "avg_services_per_hour": 4.03,
+    "stop_count": 60
+  },
+  "Richards": {
+    "transport_score": 0.108,
+    "avg_services_per_hour": 1.42,
+    "stop_count": 6
+  },
+  "Riverstone": {
+    "transport_score": 0.183,
+    "avg_services_per_hour": 2.4,
+    "stop_count": 93
+  },
+  "Riverview": {
+    "transport_score": 0.189,
+    "avg_services_per_hour": 2.47,
+    "stop_count": 59
+  },
+  "Riverwood": {
+    "transport_score": 0.153,
+    "avg_services_per_hour": 2.01,
+    "stop_count": 159
+  },
+  "Rockdale": {
+    "transport_score": 0.208,
+    "avg_services_per_hour": 2.72,
+    "stop_count": 99
+  },
+  "Rodd Point": {
+    "transport_score": 0.174,
+    "avg_services_per_hour": 2.28,
+    "stop_count": 23
+  },
+  "Rookwood": {
+    "transport_score": 0.048,
+    "avg_services_per_hour": 0.63,
+    "stop_count": 34
+  },
+  "Rooty Hill": {
+    "transport_score": 0.165,
+    "avg_services_per_hour": 2.16,
+    "stop_count": 145
+  },
+  "Ropes Crossing": {
+    "transport_score": 0.172,
+    "avg_services_per_hour": 2.26,
+    "stop_count": 49
+  },
+  "Rose Bay": {
+    "transport_score": 0.295,
+    "avg_services_per_hour": 3.86,
+    "stop_count": 91
+  },
+  "Rosebery": {
+    "transport_score": 0.537,
+    "avg_services_per_hour": 7.03,
+    "stop_count": 82
+  },
+  "Rosehill": {
+    "transport_score": 0.166,
+    "avg_services_per_hour": 2.17,
+    "stop_count": 18
+  },
+  "Roselands": {
+    "transport_score": 0.131,
+    "avg_services_per_hour": 1.72,
+    "stop_count": 151
+  },
+  "Rosemeadow": {
+    "transport_score": 0.262,
+    "avg_services_per_hour": 3.42,
+    "stop_count": 60
+  },
+  "Roseville": {
+    "transport_score": 0.167,
+    "avg_services_per_hour": 2.18,
+    "stop_count": 158
+  },
+  "Roseville Chase": {
+    "transport_score": 0.538,
+    "avg_services_per_hour": 7.04,
+    "stop_count": 14
+  },
+  "Rossmore": {
+    "transport_score": 0.032,
+    "avg_services_per_hour": 0.42,
+    "stop_count": 53
+  },
+  "Rouse Hill": {
+    "transport_score": 0.304,
+    "avg_services_per_hour": 3.97,
+    "stop_count": 241
+  },
+  "Royal National Park": {
+    "transport_score": 0.062,
+    "avg_services_per_hour": 0.81,
+    "stop_count": 36
+  },
+  "Rozelle": {
+    "transport_score": 0.802,
+    "avg_services_per_hour": 10.49,
+    "stop_count": 53
+  },
+  "Ruse": {
+    "transport_score": 0.127,
+    "avg_services_per_hour": 1.66,
+    "stop_count": 55
+  },
+  "Rushcutters Bay": {
+    "transport_score": 0.204,
+    "avg_services_per_hour": 2.67,
+    "stop_count": 6
+  },
+  "Russell Lea": {
+    "transport_score": 0.292,
+    "avg_services_per_hour": 3.82,
+    "stop_count": 31
+  },
+  "Rydalmere": {
+    "transport_score": 0.185,
+    "avg_services_per_hour": 2.42,
+    "stop_count": 106
+  },
+  "Ryde": {
+    "transport_score": 0.265,
+    "avg_services_per_hour": 3.47,
+    "stop_count": 260
+  },
+  "Sackville North": {
+    "transport_score": 0.029,
+    "avg_services_per_hour": 0.38,
+    "stop_count": 4
+  },
+  "Sadleir": {
+    "transport_score": 0.17,
+    "avg_services_per_hour": 2.22,
+    "stop_count": 29
+  },
+  "Sandringham": {
+    "transport_score": 0.153,
+    "avg_services_per_hour": 2.0,
+    "stop_count": 20
+  },
+  "Sandy Point": {
+    "transport_score": 0.055,
+    "avg_services_per_hour": 0.71,
+    "stop_count": 14
+  },
+  "Sans Souci": {
+    "transport_score": 0.202,
+    "avg_services_per_hour": 2.65,
+    "stop_count": 98
+  },
+  "Schofields": {
+    "transport_score": 0.139,
+    "avg_services_per_hour": 1.81,
+    "stop_count": 123
+  },
+  "Scotland Island": {
+    "transport_score": 0.057,
+    "avg_services_per_hour": 0.75,
+    "stop_count": 8
+  },
+  "Seaforth": {
+    "transport_score": 0.191,
+    "avg_services_per_hour": 2.5,
+    "stop_count": 112
+  },
+  "Sefton": {
+    "transport_score": 0.075,
+    "avg_services_per_hour": 0.98,
+    "stop_count": 77
+  },
+  "Seven Hills": {
+    "transport_score": 0.231,
+    "avg_services_per_hour": 3.03,
+    "stop_count": 269
+  },
+  "Shalvey": {
+    "transport_score": 0.122,
+    "avg_services_per_hour": 1.6,
+    "stop_count": 60
+  },
+  "Shanes Park": {
+    "transport_score": 0.045,
+    "avg_services_per_hour": 0.59,
+    "stop_count": 22
+  },
+  "Silverwater (Parramatta - NSW)": {
+    "transport_score": 0.14,
+    "avg_services_per_hour": 1.83,
+    "stop_count": 53
+  },
+  "Singletons Mill": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Smeaton Grange": {
+    "transport_score": 0.18,
+    "avg_services_per_hour": 2.36,
+    "stop_count": 50
+  },
+  "Smithfield": {
+    "transport_score": 0.128,
+    "avg_services_per_hour": 1.67,
+    "stop_count": 214
+  },
+  "South Coogee": {
+    "transport_score": 0.438,
+    "avg_services_per_hour": 5.73,
+    "stop_count": 47
+  },
+  "South Granville": {
+    "transport_score": 0.158,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 80
+  },
+  "South Hurstville": {
+    "transport_score": 0.217,
+    "avg_services_per_hour": 2.84,
+    "stop_count": 51
+  },
+  "South Maroota": {
+    "transport_score": 0.02,
+    "avg_services_per_hour": 0.26,
+    "stop_count": 21
+  },
+  "South Penrith": {
+    "transport_score": 0.171,
+    "avg_services_per_hour": 2.23,
+    "stop_count": 136
+  },
+  "South Turramurra": {
+    "transport_score": 0.276,
+    "avg_services_per_hour": 3.61,
+    "stop_count": 46
+  },
+  "South Wentworthville": {
+    "transport_score": 0.18,
+    "avg_services_per_hour": 2.36,
+    "stop_count": 111
+  },
+  "Spring Farm": {
+    "transport_score": 0.147,
+    "avg_services_per_hour": 1.93,
+    "stop_count": 48
+  },
+  "St Andrews": {
+    "transport_score": 0.219,
+    "avg_services_per_hour": 2.86,
+    "stop_count": 48
+  },
+  "St Clair (Penrith - NSW)": {
+    "transport_score": 0.223,
+    "avg_services_per_hour": 2.91,
+    "stop_count": 156
+  },
+  "St Helens Park": {
+    "transport_score": 0.107,
+    "avg_services_per_hour": 1.4,
+    "stop_count": 76
+  },
+  "St Ives": {
+    "transport_score": 0.181,
+    "avg_services_per_hour": 2.37,
+    "stop_count": 216
+  },
+  "St Ives Chase": {
+    "transport_score": 0.223,
+    "avg_services_per_hour": 2.92,
+    "stop_count": 36
+  },
+  "St Johns Park": {
+    "transport_score": 0.208,
+    "avg_services_per_hour": 2.73,
+    "stop_count": 60
+  },
+  "St Leonards": {
+    "transport_score": 0.606,
+    "avg_services_per_hour": 7.93,
+    "stop_count": 30
+  },
+  "St Marys": {
+    "transport_score": 0.248,
+    "avg_services_per_hour": 3.24,
+    "stop_count": 176
+  },
+  "St Peters": {
+    "transport_score": 0.178,
+    "avg_services_per_hour": 2.33,
+    "stop_count": 38
+  },
+  "Stanhope Gardens": {
+    "transport_score": 0.331,
+    "avg_services_per_hour": 4.33,
+    "stop_count": 61
+  },
+  "Stanmore": {
+    "transport_score": 0.31,
+    "avg_services_per_hour": 4.06,
+    "stop_count": 34
+  },
+  "Strathfield": {
+    "transport_score": 0.254,
+    "avg_services_per_hour": 3.32,
+    "stop_count": 280
+  },
+  "Strathfield South": {
+    "transport_score": 0.362,
+    "avg_services_per_hour": 4.74,
+    "stop_count": 46
+  },
+  "Summer Hill (Inner West - NSW)": {
+    "transport_score": 0.189,
+    "avg_services_per_hour": 2.48,
+    "stop_count": 48
+  },
   "Surry Hills": {
-    "transport_score": 1.0,
+    "transport_score": 0.783,
     "avg_services_per_hour": 10.24,
     "stop_count": 66
+  },
+  "Sutherland": {
+    "transport_score": 0.277,
+    "avg_services_per_hour": 3.62,
+    "stop_count": 65
+  },
+  "Sydenham": {
+    "transport_score": 0.629,
+    "avg_services_per_hour": 8.23,
+    "stop_count": 33
+  },
+  "Sydney": {
+    "transport_score": 0.756,
+    "avg_services_per_hour": 9.89,
+    "stop_count": 354
+  },
+  "Sydney Olympic Park": {
+    "transport_score": 0.568,
+    "avg_services_per_hour": 7.44,
+    "stop_count": 40
+  },
+  "Sylvania": {
+    "transport_score": 0.139,
+    "avg_services_per_hour": 1.82,
+    "stop_count": 84
+  },
+  "Sylvania Waters": {
+    "transport_score": 0.058,
+    "avg_services_per_hour": 0.76,
+    "stop_count": 41
+  },
+  "Tallawong": {
+    "transport_score": 0.252,
+    "avg_services_per_hour": 3.3,
+    "stop_count": 63
+  },
+  "Tamarama": {
+    "transport_score": 0.096,
+    "avg_services_per_hour": 1.25,
+    "stop_count": 14
+  },
+  "Taren Point": {
+    "transport_score": 0.055,
+    "avg_services_per_hour": 0.72,
+    "stop_count": 34
+  },
+  "Telopea": {
+    "transport_score": 0.244,
+    "avg_services_per_hour": 3.19,
+    "stop_count": 40
+  },
+  "Tempe": {
+    "transport_score": 0.193,
+    "avg_services_per_hour": 2.52,
+    "stop_count": 26
+  },
+  "Tennyson Point": {
+    "transport_score": 0.166,
+    "avg_services_per_hour": 2.17,
+    "stop_count": 6
+  },
+  "Terrey Hills": {
+    "transport_score": 0.308,
+    "avg_services_per_hour": 4.02,
+    "stop_count": 63
+  },
+  "The Ponds": {
+    "transport_score": 0.157,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 84
+  },
+  "The Rocks (Sydney - NSW)": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Thornleigh": {
+    "transport_score": 0.089,
+    "avg_services_per_hour": 1.16,
+    "stop_count": 180
+  },
+  "Toongabbie": {
+    "transport_score": 0.143,
+    "avg_services_per_hour": 1.86,
+    "stop_count": 118
+  },
+  "Tregear": {
+    "transport_score": 0.197,
+    "avg_services_per_hour": 2.57,
+    "stop_count": 68
+  },
+  "Turramurra": {
+    "transport_score": 0.123,
+    "avg_services_per_hour": 1.61,
+    "stop_count": 182
+  },
+  "Turrella": {
+    "transport_score": 0.13,
+    "avg_services_per_hour": 1.7,
+    "stop_count": 22
+  },
+  "Ultimo": {
+    "transport_score": 0.744,
+    "avg_services_per_hour": 9.74,
+    "stop_count": 21
+  },
+  "Varroville": {
+    "transport_score": 0.038,
+    "avg_services_per_hour": 0.5,
+    "stop_count": 19
+  },
+  "Vaucluse": {
+    "transport_score": 0.214,
+    "avg_services_per_hour": 2.8,
+    "stop_count": 135
+  },
+  "Villawood": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.46,
+    "stop_count": 159
+  },
+  "Vineyard": {
+    "transport_score": 0.069,
+    "avg_services_per_hour": 0.91,
+    "stop_count": 49
+  },
+  "Voyager Point": {
+    "transport_score": 0.1,
+    "avg_services_per_hour": 1.31,
+    "stop_count": 21
+  },
+  "Wahroonga": {
+    "transport_score": 0.114,
+    "avg_services_per_hour": 1.49,
+    "stop_count": 252
+  },
+  "Waitara": {
+    "transport_score": 0.141,
+    "avg_services_per_hour": 1.85,
+    "stop_count": 26
+  },
+  "Wakeley": {
+    "transport_score": 0.157,
+    "avg_services_per_hour": 2.06,
+    "stop_count": 42
+  },
+  "Wallacia": {
+    "transport_score": 0.176,
+    "avg_services_per_hour": 2.3,
+    "stop_count": 35
+  },
+  "Wareemba": {
+    "transport_score": 0.203,
+    "avg_services_per_hour": 2.65,
+    "stop_count": 10
+  },
+  "Warrawee": {
+    "transport_score": 0.125,
+    "avg_services_per_hour": 1.64,
+    "stop_count": 25
+  },
+  "Warriewood": {
+    "transport_score": 0.305,
+    "avg_services_per_hour": 3.99,
+    "stop_count": 84
+  },
+  "Warwick Farm": {
+    "transport_score": 0.125,
+    "avg_services_per_hour": 1.63,
+    "stop_count": 58
+  },
+  "Waterfall": {
+    "transport_score": 0.118,
+    "avg_services_per_hour": 1.55,
+    "stop_count": 11
+  },
+  "Waterloo": {
+    "transport_score": 0.586,
+    "avg_services_per_hour": 7.67,
+    "stop_count": 77
+  },
+  "Watsons Bay": {
+    "transport_score": 0.195,
+    "avg_services_per_hour": 2.55,
+    "stop_count": 11
+  },
+  "Wattle Grove": {
+    "transport_score": 0.143,
+    "avg_services_per_hour": 1.87,
+    "stop_count": 94
+  },
+  "Waverley": {
+    "transport_score": 0.702,
+    "avg_services_per_hour": 9.19,
+    "stop_count": 42
+  },
+  "Waverton": {
+    "transport_score": 0.327,
+    "avg_services_per_hour": 4.28,
+    "stop_count": 23
+  },
+  "Wedderburn": {
+    "transport_score": 0.045,
+    "avg_services_per_hour": 0.58,
+    "stop_count": 6
+  },
+  "Wentworth Point": {
+    "transport_score": 0.674,
+    "avg_services_per_hour": 8.82,
+    "stop_count": 11
+  },
+  "Wentworthville": {
+    "transport_score": 0.135,
+    "avg_services_per_hour": 1.77,
+    "stop_count": 146
+  },
+  "Werrington": {
+    "transport_score": 0.222,
+    "avg_services_per_hour": 2.9,
+    "stop_count": 59
+  },
+  "Werrington County": {
+    "transport_score": 0.203,
+    "avg_services_per_hour": 2.66,
+    "stop_count": 57
+  },
+  "Werrington Downs": {
+    "transport_score": 0.231,
+    "avg_services_per_hour": 3.02,
+    "stop_count": 26
+  },
+  "West Hoxton": {
+    "transport_score": 0.255,
+    "avg_services_per_hour": 3.34,
+    "stop_count": 65
+  },
+  "West Pennant Hills": {
+    "transport_score": 0.232,
+    "avg_services_per_hour": 3.03,
+    "stop_count": 284
+  },
+  "West Pymble": {
+    "transport_score": 0.093,
+    "avg_services_per_hour": 1.21,
+    "stop_count": 141
+  },
+  "West Ryde": {
+    "transport_score": 0.209,
+    "avg_services_per_hour": 2.74,
+    "stop_count": 138
+  },
+  "Westleigh": {
+    "transport_score": 0.137,
+    "avg_services_per_hour": 1.8,
+    "stop_count": 64
+  },
+  "Westmead": {
+    "transport_score": 0.382,
+    "avg_services_per_hour": 5.0,
+    "stop_count": 93
+  },
+  "Wetherill Park": {
+    "transport_score": 0.173,
+    "avg_services_per_hour": 2.26,
+    "stop_count": 192
+  },
+  "Whalan": {
+    "transport_score": 0.148,
+    "avg_services_per_hour": 1.93,
+    "stop_count": 80
+  },
+  "Whale Beach": {
+    "transport_score": 0.014,
+    "avg_services_per_hour": 0.18,
+    "stop_count": 14
+  },
+  "Wheeler Heights": {
+    "transport_score": 0.307,
+    "avg_services_per_hour": 4.02,
+    "stop_count": 27
+  },
+  "Wiley Park": {
+    "transport_score": 0.112,
+    "avg_services_per_hour": 1.47,
+    "stop_count": 48
+  },
+  "Willmot": {
+    "transport_score": 0.14,
+    "avg_services_per_hour": 1.83,
+    "stop_count": 42
+  },
+  "Willoughby": {
+    "transport_score": 0.273,
+    "avg_services_per_hour": 3.58,
+    "stop_count": 59
+  },
+  "Willoughby East": {
+    "transport_score": 0.14,
+    "avg_services_per_hour": 1.83,
+    "stop_count": 24
+  },
+  "Winston Hills": {
+    "transport_score": 0.165,
+    "avg_services_per_hour": 2.16,
+    "stop_count": 158
+  },
+  "Wolli Creek": {
+    "transport_score": 0.471,
+    "avg_services_per_hour": 6.16,
+    "stop_count": 16
+  },
+  "Wollstonecraft": {
+    "transport_score": 0.285,
+    "avg_services_per_hour": 3.73,
+    "stop_count": 40
+  },
+  "Woodbine": {
+    "transport_score": 0.118,
+    "avg_services_per_hour": 1.55,
+    "stop_count": 51
+  },
+  "Woodcroft": {
+    "transport_score": 0.144,
+    "avg_services_per_hour": 1.88,
+    "stop_count": 42
+  },
+  "Woodpark": {
+    "transport_score": 0.191,
+    "avg_services_per_hour": 2.5,
+    "stop_count": 14
+  },
+  "Woollahra": {
+    "transport_score": 0.204,
+    "avg_services_per_hour": 2.66,
+    "stop_count": 49
+  },
+  "Woolloomooloo": {
+    "transport_score": 0.219,
+    "avg_services_per_hour": 2.87,
+    "stop_count": 19
+  },
+  "Woolooware": {
+    "transport_score": 0.09,
+    "avg_services_per_hour": 1.17,
+    "stop_count": 64
+  },
+  "Woolwich": {
+    "transport_score": 0.171,
+    "avg_services_per_hour": 2.24,
+    "stop_count": 23
+  },
+  "Woronora": {
+    "transport_score": 0.116,
+    "avg_services_per_hour": 1.51,
+    "stop_count": 41
+  },
+  "Woronora Dam": {
+    "transport_score": 0.0,
+    "avg_services_per_hour": 0.0,
+    "stop_count": 0
+  },
+  "Woronora Heights": {
+    "transport_score": 0.226,
+    "avg_services_per_hour": 2.96,
+    "stop_count": 35
+  },
+  "Yagoona": {
+    "transport_score": 0.14,
+    "avg_services_per_hour": 1.84,
+    "stop_count": 194
+  },
+  "Yarrawarrah": {
+    "transport_score": 0.072,
+    "avg_services_per_hour": 0.94,
+    "stop_count": 59
+  },
+  "Yennora": {
+    "transport_score": 0.206,
+    "avg_services_per_hour": 2.7,
+    "stop_count": 28
+  },
+  "Yowie Bay": {
+    "transport_score": 0.028,
+    "avg_services_per_hour": 0.37,
+    "stop_count": 31
+  },
+  "Zetland": {
+    "transport_score": 0.665,
+    "avg_services_per_hour": 8.69,
+    "stop_count": 36
   }
 }
