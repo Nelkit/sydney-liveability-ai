@@ -43,7 +43,7 @@ def _get_supported_suburbs() -> tuple[str, ...]:
 RULES: list[tuple[str, tuple[str, ...]]] = [
     ("crime", ("safe", "crime", "dangerous", "robbery", "assault")),
     ("sentiment", ("feel", "vibe", "community", "residents", "sentiment", "opinion")),
-    ("gis", ("park", "transport", "facilities", "gym", "cafe", "walk", "amenities")),
+    ("gis", ("park", "transport", "facilities", "cafe", "walk", "amenities")),
     ("comparator", ("vs", "versus", "compare", "difference", "better", "between")),
 ]
 

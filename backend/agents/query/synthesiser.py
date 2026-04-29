@@ -190,7 +190,6 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                     "osm_score": o.osm_score,
                     "cafes": o.cafe,
                     "restaurants": o.restaurant,
-                    "gyms": o.gym,
                     "schools": o.school,
                     "hospitals": o.hospital,
                     "pharmacies": o.pharmacy,
@@ -212,14 +211,25 @@ def _build_synthesis_prompt(
     chromadb_chunks: list[dict[str, Any]] | None = None,
 ) -> str:
     """Build the LLM prompt combining question, DB context, agent outputs, and Reddit data."""
-    is_general = not any(
-        kw in question.lower()
-        for kw in ("park", "transport", "facilities", "gym", "cafe", "walk",
-                   "amenities", "safe", "crime", "feel", "vibe", "community",
-                   "compare", "versus", "vs", "better")
+    q_lower = question.lower()
+    is_comparison = any(kw in q_lower for kw in ("vs", "versus", "compare", "difference", "better", "between"))
+    is_general = not is_comparison and not any(
+        kw in q_lower
+        for kw in ("park", "transport", "facilities", "cafe", "walk",
+                   "amenities", "safe", "crime", "feel", "vibe", "community")
     )
 
-    if is_general:
+    if is_comparison:
+        format_instruction = (
+            "Write a natural side-by-side comparison in 3-4 short paragraphs. "
+            "Paragraph 1: overall liveability scores and which suburb leads overall. "
+            "Paragraph 2: amenities — cafes, restaurants, parks, OSM score. Be specific with numbers but conversational. "
+            "Paragraph 3: transport access — bus stops, train stations, commute time, bike paths if available. "
+            "Paragraph 4: community feel — what Reddit residents say about each suburb, safety signals if available. "
+            "End with one sentence declaring a winner or saying it depends on what matters most to the person. "
+            "STRICT RULES: No bullet lists. No JSON. No headers. Speak directly to the reader. Use 'vs' or 'while' to contrast."
+        )
+    elif is_general:
         format_instruction = (
             "Write 2-3 paragraphs using ONLY the GIS & Facilities data as your primary source. "
             "Cover: facilities score, key amenities counts (cafes, restaurants, parks, schools, etc.), OSM score, and combined liveability score. "
