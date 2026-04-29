@@ -1,0 +1,222 @@
+{
+  "suburb": "Dawes Point",
+  "bbox": {
+    "south": -33.8588887,
+    "west": 151.2041609,
+    "north": -33.8535496,
+    "east": 151.2099705
+  },
+  "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(cafe|restaurant|gym|school|hospital|pharmacy|library)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  node[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"leisure\"~\"^(park|playground|sports_centre)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;",
+  "fallback_used": true,
+  "responses": [
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(cafe)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(cafe)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(restaurant)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(restaurant)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(gym)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(gym)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(school)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(school)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(hospital)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(hospital)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:25:56Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": []
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(pharmacy)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(pharmacy)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:25:56Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": []
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"amenity\"~\"^(library)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"amenity\"~\"^(library)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 200,
+      "data": {
+        "version": 0.6,
+        "generator": "Overpass API 0.7.62.11 87bfad18",
+        "osm3s": {
+          "timestamp_osm_base": "2026-04-18T08:25:56Z",
+          "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+        },
+        "elements": [
+          {
+            "type": "way",
+            "id": 55218510,
+            "tags": {
+              "dog": "unleashed",
+              "leisure": "park",
+              "name": "Observatory Hill Park",
+              "name:en": "Observatory Hill Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "source": "nearmap",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/observatory-park",
+              "wikidata": "Q21973063"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151982836,
+            "tags": {
+              "leisure": "park",
+              "name": "The Paddock",
+              "source": "survey",
+              "source:name": "LPI Base Map July 2018"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151982839,
+            "tags": {
+              "leisure": "park",
+              "name": "Argyle Place Park",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 151996603,
+            "tags": {
+              "check_date": "2025-10-08",
+              "leisure": "park",
+              "name": "Pottinger Park",
+              "operator": "City of Sydney",
+              "source": "survey"
+            }
+          },
+          {
+            "type": "way",
+            "id": 152424880,
+            "tags": {
+              "check_date": "2023-06-06",
+              "leisure": "park",
+              "name": "Watson Road Reserve",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194"
+            }
+          },
+          {
+            "type": "way",
+            "id": 282194920,
+            "tags": {
+              "communication:amateur_radio:pota": "AU-10402",
+              "leisure": "park",
+              "name": "Dawes Point Reserve",
+              "name:ko": "\ub3c4\uc2a4 \ud3ec\uc778\ud2b8 \uacf5\uc6d0",
+              "source": "NSW LPI Base Map",
+              "source:date": "2016-01"
+            }
+          },
+          {
+            "type": "way",
+            "id": 537322593,
+            "tags": {
+              "addr:postcode": "2000",
+              "addr:state": "NSW",
+              "addr:street": "Trinity Avenue",
+              "addr:suburb": "Dawes Point",
+              "leisure": "park",
+              "name": "Trinity Avenue Playground"
+            }
+          },
+          {
+            "type": "way",
+            "id": 597981886,
+            "tags": {
+              "check_date": "2025-10-08",
+              "leisure": "park",
+              "name": "Foundation Park",
+              "source": "LPI Base Map June 2018",
+              "tourism": "attraction"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1230017667,
+            "tags": {
+              "leisure": "park",
+              "name": "King George V Memorial Park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1252283967,
+            "tags": {
+              "leisure": "park",
+              "name": "Nita McCrae Park",
+              "operator": "City of Sydney",
+              "operator:type": "government",
+              "operator:wikidata": "Q1094194",
+              "website": "https://www.cityofsydney.nsw.gov.au/parks/nita-mccrae-park"
+            }
+          },
+          {
+            "type": "way",
+            "id": 1436357223,
+            "tags": {
+              "leisure": "park",
+              "name": "Parbury Lane Park",
+              "operator": "City of Sydney"
+            }
+          }
+        ]
+      },
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(park)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"leisure\"~\"^(park)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 504,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::timeout. The server is probably too busy to handle your request. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(playground)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"leisure\"~\"^(playground)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    },
+    {
+      "status_code": 429,
+      "data": null,
+      "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n<head>\n  <meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\" lang=\"en\"/>\n  <title>OSM3S Response</title>\n</head>\n<body>\n\n<p>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</p>\n<p><strong style=\"color:#FF0000\">Error</strong>: runtime error: open64: 0 Success /osm3s_osm_base Dispatcher_Client::request_read_and_idx::rate_limited. Please check /api/status for the quota of your IP address. </p>\n\n</body>\n</html>\n",
+      "query": "[out:json][timeout:120];\n(\n  node[\"leisure\"~\"^(sports_centre)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n  way[\"leisure\"~\"^(sports_centre)$\"](-33.8588887,151.2041609,-33.8535496,151.2099705);\n);\nout tags;"
+    }
+  ]
+}

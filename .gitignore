@@ -40,7 +40,6 @@ env/
 .venv
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -59,6 +58,9 @@ dist/
 *.tsbuildinfo
 
 # Data (local storage - ignored in Git)
+data/raw/
+data/processed/
+!data/processed/suburbs.geojson
 
 # Logs
 logs/
