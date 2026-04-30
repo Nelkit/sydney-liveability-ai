@@ -31,17 +31,15 @@ STRONG_SIMILARITY_THRESHOLD = 0.4
 # the "10 mentions = full confidence" idiom used elsewhere in the pipeline.
 TOP_K = 10
 
-_encoder = None
 _prototype_embeddings: dict[str, "list[float]"] | None = None
 
 
 def _get_encoder():
-    global _encoder
-    if _encoder is None:
-        from sentence_transformers import SentenceTransformer
+    # Shared singleton with backend/db/chromadb.py so the model loads once
+    # per process. See backend/core/embeddings.py for the rationale.
+    from core.embeddings import get_embedder
 
-        _encoder = SentenceTransformer("all-MiniLM-L6-v2")
-    return _encoder
+    return get_embedder()
 
 
 def _get_prototype_embeddings():

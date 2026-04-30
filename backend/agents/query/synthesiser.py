@@ -163,9 +163,43 @@ def _build_context_from_db(question: str, suburbs_list: list[str] | None = None)
         return context
 
 
+def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
+    """Render the sentiment agent's evidence_trace as one line per TraceEntry.
+
+    Empty string when no sentiment output is present or when the router
+    classified the question as out_of_scope, so the prompt omits the
+    section cleanly for non-spatial questions.
+    """
+    if not isinstance(agent_outputs, dict):
+        return ""
+    router_output = agent_outputs.get("router")
+    if isinstance(router_output, dict):
+        categories = router_output.get("categories") or []
+        if list(categories) == ["out_of_scope"]:
+            return ""
+    sentiment = agent_outputs.get("sentiment")
+    if not isinstance(sentiment, dict):
+        return ""
+    lines: list[str] = []
+    # sentiment is {suburb: result}; flatten across suburbs for the prompt.
+    for suburb, result in sentiment.items():
+        if not isinstance(result, dict):
+            continue
+        for entry in result.get("evidence_trace") or []:
+            args = json.dumps(entry.get("arguments", {}), default=str)
+            preview = (entry.get("result_preview") or "").replace("\n", " ")
+            lines.append(
+                f"- step {entry.get('step')} [{suburb}] {entry.get('tool')}({args}) "
+                f"-> n={entry.get('result_count')} | {preview}"
+            )
+    if not lines:
+        return ""
+    return "\n\nEvidence trace (every retrieval tool call this turn):\n" + "\n".join(lines)
+
+
 def _build_synthesis_prompt(question: str, context: dict[str, Any], agent_outputs: dict[str, Any] | None = None) -> str:
     """Build the LLM prompt combining question, DB context, and agent outputs.
-    
+
     Handles both flat (single-suburb per specialist) and nested (multi-suburb per specialist) structures.
     """
     prompt = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
@@ -176,12 +210,14 @@ Available Suburb Data:
 {json.dumps(context.get('suburbs', []), indent=2)}
 
 Instructions:
-1. Answer based ONLY on the provided data above
+1. Answer based ONLY on the provided data above and the evidence trace below
 2. Be specific with numbers and metrics
 3. For out-of-scope suburbs, respond: "I don't have data on that suburb yet"
 4. If the question has spatial intent (comparing suburbs), suggest top suburbs by liveability
 5. Keep answer concise (2-3 sentences max unless asking for comparison)
-6. Always cite your data source (facilities, transport, amenities)
+6. Always cite your data source (facilities, transport, amenities, or quoted Reddit chunk)
+7. When the sentiment agent returned `status: "no_data"` for a dimension, say so plainly — do NOT invent a value
+8. Cite at least one evidence-trace entry per named-suburb claim about resident sentiment
 """
     weights = context.get("weights")
     if weights:
@@ -191,16 +227,23 @@ Instructions:
     if agent_outputs:
         prompt += "\n\nAdditional Specialist Agent Outputs:\n"
         for agent_key, output in agent_outputs.items():
+            if agent_key == "router":
+                continue
             if output and isinstance(output, dict):
                 # Handle nested structure: {suburb: result} for multi-suburb agents
-                if any(isinstance(v, dict) and "combined_score" in v for v in output.values()):
+                if any(
+                    isinstance(v, dict)
+                    and ("combined_score" in v or "evidence_trace" in v)
+                    for v in output.values()
+                ):
                     prompt += f"\n{agent_key.upper()} (multi-suburb):\n"
                     for suburb, suburb_output in output.items():
-                        prompt += f"  {suburb}: {json.dumps(suburb_output, indent=2)}\n"
+                        prompt += f"  {suburb}: {json.dumps(suburb_output, indent=2, default=str)}\n"
                 else:
                     # Handle flat structure: direct result
-                    prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2)}\n"
-    
+                    prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2, default=str)}\n"
+
+    prompt += _format_evidence_trace_block(agent_outputs or {})
     return prompt
 
 
@@ -271,11 +314,15 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         )
         context["weights"] = payload.get("weights") or {}
         
-        # Build synthesis prompt
+        # Build synthesis prompt — thread router_output through agent_outputs
+        # so the prompt builder can gate the trace block on router categories.
+        combined_outputs: dict[str, Any] = dict(outputs) if isinstance(outputs, dict) else {}
+        if isinstance(router_output, dict) and router_output:
+            combined_outputs["router"] = router_output
         synthesis_prompt = _build_synthesis_prompt(
             question,
             context,
-            agent_outputs=outputs if isinstance(outputs, dict) and outputs else None
+            agent_outputs=combined_outputs if combined_outputs else None
         )
         
         # Call LLM using the synthesiser agent configuration.
@@ -296,15 +343,30 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         # If no suburbs in context but outputs were analyzed, mention them
         main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else "Sydney"
         
-        return {
-            "answer": answer,
-            "sources": [
+        # Citations: prefer the sentiment agent's grounded `sources`
+        # (drawn from the Reddit vector index this turn). Fall back to
+        # the structured-data attribution when no quote was retrieved.
+        sources: list[dict[str, Any]] = []
+        sentiment_outputs = outputs.get("sentiment") if isinstance(outputs, dict) else None
+        if isinstance(sentiment_outputs, dict):
+            for suburb_result in sentiment_outputs.values():
+                if not isinstance(suburb_result, dict):
+                    continue
+                for src in suburb_result.get("sources") or []:
+                    if isinstance(src, dict):
+                        sources.append(src)
+        if not sources:
+            sources = [
                 {
                     "text": "Facilities, transport, and amenity data",
                     "suburb": main_suburb,
                     "source": "City of Sydney ArcGIS + OSM + Transport API",
                 }
-            ],
+            ]
+
+        return {
+            "answer": answer,
+            "sources": sources,
             "suburb_scores": suburb_scores,
             "map_state": None,  # TODO: update when spatial intent is detected
         }

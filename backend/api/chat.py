@@ -21,6 +21,21 @@ class ChatRequest(BaseModel):
     weights: dict[str, Any] | None = None
 
 
+class EvidenceTraceSummary(BaseModel):
+    """Deterministic aggregate over the sentiment agent's evidence_trace."""
+
+    length: int = 0
+    by_tool: dict[str, int] = {}
+    last_action: dict[str, Any] | None = None
+    no_data_count: int = 0
+
+
+class QualityPayload(BaseModel):
+    """Optional quality-instrumentation block on the /api/chat response."""
+
+    evidence_trace_summary: EvidenceTraceSummary | None = None
+
+
 @router.post("/chat")
 def chat(payload: ChatRequest) -> dict[str, Any]:
     """Run query crew and return the stable chat response contract."""
@@ -36,12 +51,15 @@ def chat(payload: ChatRequest) -> dict[str, Any]:
 
     try:
         response = run_query(question, weights)
-        return {
+        result: dict[str, Any] = {
             "answer": response.get("answer", "I could not process that question right now."),
             "sources": response.get("sources", []),
             "suburb_scores": response.get("suburb_scores", []),
             "map_state": response.get("map_state"),
         }
+        if response.get("quality") is not None:
+            result["quality"] = response["quality"]
+        return result
     except Exception:
         # We keep a stable fallback shape so the frontend can fail gracefully.
         return {
