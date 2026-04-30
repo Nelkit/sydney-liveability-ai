@@ -5,7 +5,6 @@ langchain
 langchain-anthropic
 langchain-text-splitters
 chromadb
-sentence-transformers
 pypdf
 praw
 supabase
@@ -13,14 +12,11 @@ python-dotenv
 pydantic-settings
 sqlalchemy
 psycopg2-binary
-spacy
-textblob
-vaderSentiment
 pandas
 geopandas
 shapely
 requests
-geoalchemy2
-zstandard
 transformers
 torch
+textblob
+pyyaml

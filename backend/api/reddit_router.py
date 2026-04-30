@@ -11,14 +11,19 @@ from pathlib import Path
 
 from fastapi import APIRouter
 
-sys.path.insert(0, ".")
+# Ensure repo-root packages (e.g., data_extraction) are importable when
+# backend is started from backend/ as the working directory.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/reddit", tags=["reddit"])
 
 CACHE_TTL_HOURS = 24
-LOCAL_ANALYSIS_CACHE = Path("data/processed/reddit_analyses")
+LOCAL_ANALYSIS_CACHE = REPO_ROOT / "data" / "processed" / "reddit_analyses"
+REDDIT_PROCESSED_DIR = REPO_ROOT / "data" / "processed" / "reddit"
 
 
 def _normalise_suburb(raw: str) -> str:
@@ -154,7 +159,7 @@ def summary() -> dict:
 
     # Load suburb index for raw post counts (includes suburbs without
     # a cached NLP analysis).
-    index_path = Path("data/processed/reddit") / "_suburb_index.json"
+    index_path = REDDIT_PROCESSED_DIR / "_suburb_index.json"
     raw_counts: dict[str, int] = {}
     if index_path.exists():
         try:

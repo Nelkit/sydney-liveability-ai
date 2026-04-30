@@ -18,13 +18,42 @@ from db.models import Suburb, OsmScore, TransportScore
 from db.postgres import SessionLocal
 
 
-# TODO(Luis/Padmasri): Once `ingest_osm.py` and `ingest_transport.py` are finished,
-# review this agent against their final ingestion outputs, adapt the query/mapping logic
-# if needed, and confirm the combined GIS score still works end-to-end.
+# TODO(Padmasri): Once `ingest_transport.py` is finished, confirm the combined GIS score works end-to-end.
 
-def _query_gis_impl(suburb: str) -> dict[str, Any]:
+_AMENITY_KEYWORDS: dict[str, str] = {
+    "cafe": "cafe",
+    "coffee": "cafe",
+    "restaurant": "restaurant",
+    "food": "restaurant",
+    "eat": "restaurant",
+    "school": "school",
+    "education": "school",
+    "hospital": "hospital",
+    "health": "hospital",
+    "pharmacy": "pharmacy",
+    "chemist": "pharmacy",
+    "library": "library",
+    "park": "park",
+    "green": "park",
+    "playground": "playground",
+    "sports": "sports_centre",
+    "sport": "sports_centre",
+}
+
+
+def _detect_amenity_focus(question: str) -> str | None:
+    """Return the single OSM amenity column a question is focused on, or None for general queries."""
+    lowered = question.lower()
+    for keyword, amenity in _AMENITY_KEYWORDS.items():
+        if keyword in lowered:
+            return amenity
+    return None
+
+
+def _query_gis_impl(suburb: str, question: str = "") -> dict[str, Any]:
     """Internal implementation: query three tables and return combined GIS output."""
     suburb = suburb.strip()
+    amenity_focus = _detect_amenity_focus(question) if question else None
     
     with SessionLocal() as session:
         # Query suburbs table for facilities and facilities_score
@@ -52,10 +81,8 @@ def _query_gis_impl(suburb: str) -> dict[str, Any]:
         "facilities_score": suburb_row.facilities_score if suburb_row else None,
     }
     
-    # TODO(Luis): Populate the amenities values form postgres once `ingest_osm.py` is done. 
-    # For now, we return None for all amenities and a dummy osm_score.
-    # Extract OSM amenities
-    osm_amenities = {
+    # Extract OSM amenities — filtered to the asked dimension when focus is detected
+    all_osm_amenities = {
         "cafe": osm_row.cafe if osm_row else None,
         "restaurant": osm_row.restaurant if osm_row else None,
         "gym": osm_row.gym if osm_row else None,
@@ -68,6 +95,13 @@ def _query_gis_impl(suburb: str) -> dict[str, Any]:
         "sports_centre": osm_row.sports_centre if osm_row else None,
         "osm_score": osm_row.osm_score if osm_row else None,
     }
+    if amenity_focus:
+        osm_amenities = {
+            amenity_focus: all_osm_amenities.get(amenity_focus),
+            "osm_score": all_osm_amenities["osm_score"],
+        }
+    else:
+        osm_amenities = all_osm_amenities
 
     # TODO(Padmasri): Populate the transport values form postgres once `ingest_transport.py` is done.
     # For now, we return None for all amenities and a dummy osm_score.
@@ -93,7 +127,7 @@ def _query_gis_impl(suburb: str) -> dict[str, Any]:
         osm_contrib = osm_row.osm_score * 0.35
     
     if transport_row and transport_row.transport_score is not None:
-        transport_contrib = (transport_row.transport_score / 100.0) * 0.30
+        transport_contrib = transport_row.transport_score * 0.30
     
     combined_score = facilities_contrib + osm_contrib + transport_contrib
     
@@ -129,7 +163,10 @@ gis_task = Task(
 
 def run(input_data: dict[str, Any]) -> dict[str, Any]:
     """Isolated execution helper for query crew routing."""
-    return _query_gis_impl(suburb=str(input_data.get("suburb", "")))
+    return _query_gis_impl(
+        suburb=str(input_data.get("suburb", "")),
+        question=str(input_data.get("question", "")),
+    )
 
 
 if __name__ == "__main__":

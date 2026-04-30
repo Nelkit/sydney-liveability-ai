@@ -13,6 +13,7 @@ LLM Configuration:
 from __future__ import annotations
 
 import json
+from pathlib import Path
 from typing import Any
 
 from crewai import Agent, Task
@@ -20,8 +21,41 @@ from crewai.tools import tool
 from sqlalchemy import select
 
 from config import get_agent_llm, settings
+from db.chromadb import PDF_COLLECTION, REDDIT_COLLECTION, query_chunks
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
+
+_REDDIT_CACHE_DIR = Path(__file__).resolve().parents[3] / "data" / "processed" / "reddit_analyses"
+
+
+def _get_reddit_context(suburb: str) -> dict[str, Any] | None:
+    """Load pre-computed Reddit NLP analysis for a suburb from local file cache."""
+    slug = suburb.lower().replace(" ", "_").replace("-", "_")
+    path = _REDDIT_CACHE_DIR / f"{slug}.json"
+    if not path.exists():
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def _retrieve_chromadb_chunks(
+    question: str,
+    suburbs_list: list[str] | None = None,
+    k_per_collection: int = 3,
+) -> list[dict[str, Any]]:
+    """Query community_insights and reddit_posts for semantically relevant chunks."""
+    suburb_filter = {"suburb": {"$in": suburbs_list}} if suburbs_list else None
+    chunks: list[dict[str, Any]] = []
+    for collection in (PDF_COLLECTION, REDDIT_COLLECTION):
+        try:
+            results = query_chunks(question, collection_name=collection, k=k_per_collection, filters=suburb_filter)
+            chunks.extend(results)
+        except Exception:
+            pass
+    return chunks
 
 
 def _normalise_debug_mode() -> str:
@@ -61,23 +95,30 @@ def _format_debug_passthrough(agent_key: str, agent_output: dict[str, Any]) -> d
 def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
     """Render all agent outputs together in a consolidated debug response."""
     consolidated = "ALL AGENTS DEBUG OUTPUT:\n\n"
-    
+
+    suburb_scores: list[dict[str, Any]] = []
+
     for agent_key in ("router", "crime", "sentiment", "gis", "comparator"):
         output = agent_outputs.get(agent_key)
         if output and isinstance(output, dict):
             consolidated += f"{agent_key.upper()}:\n"
-            
+
             # Handle nested structure: {suburb: result}
             if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
                 for suburb, suburb_output in output.items():
                     consolidated += f"  {suburb}:\n"
                     consolidated += json.dumps(suburb_output, ensure_ascii=True, indent=4).replace("\n", "\n    ") + "\n"
+                    if agent_key == "gis" and isinstance(suburb_output, dict):
+                        suburb_scores.append({
+                            "suburb": suburb,
+                            "score": suburb_output.get("combined_score"),
+                        })
             else:
                 # Handle flat structure
                 consolidated += json.dumps(output, ensure_ascii=True, indent=2).replace("\n", "\n  ") + "\n"
-            
+
             consolidated += "\n"
-    
+
     # Keep response shape identical to /api/chat contract for frontend compatibility.
     return {
         "answer": consolidated,
@@ -88,12 +129,12 @@ def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
                 "source": "query_crew",
             }
         ],
-        "suburb_scores": [],
+        "suburb_scores": suburb_scores,
         "map_state": None,
     }
 
 
-def _build_context_from_db(question: str, suburbs_list: list[str] | None = None) -> dict[str, Any]:
+def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, Any]:
     """Retrieve suburb data from DB for synthesis context.
     
     Returns dict with suburbs data including facilities, transport, OSM scores.
@@ -149,7 +190,6 @@ def _build_context_from_db(question: str, suburbs_list: list[str] | None = None)
                     "osm_score": o.osm_score,
                     "cafes": o.cafe,
                     "restaurants": o.restaurant,
-                    "gyms": o.gym,
                     "schools": o.school,
                     "hospitals": o.hospital,
                     "pharmacies": o.pharmacy,
@@ -206,8 +246,8 @@ def _build_synthesis_prompt(question: str, context: dict[str, Any], agent_output
 
 User Question: {question}
 
-Available Suburb Data:
-{json.dumps(context.get('suburbs', []), indent=2)}
+Available Data:
+{data_block}
 
 Instructions:
 1. Answer based ONLY on the provided data above and the evidence trace below
@@ -296,22 +336,19 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
 
     try:
         # Extract suburbs from nested specialist outputs (for context building)
-        suburbs_from_specialists = set()
+        suburbs_from_specialists: set[str] = set()
         if isinstance(outputs, dict):
-            for agent_key, output in outputs.items():
+            for _agent_key, output in outputs.items():
                 if isinstance(output, dict):
-                    # Check if nested (multi-suburb): {suburb: result}
                     if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
                         suburbs_from_specialists.update(output.keys())
-                    # Check if flat with suburb key
                     elif "suburb" in output:
                         suburbs_from_specialists.add(output["suburb"])
-        
-        # Build context from DB (facilities, transport, OSM) - limit to mentioned suburbs if available
-        context = _build_context_from_db(
-            question,
-            list(suburbs_from_specialists) if suburbs_from_specialists else None
-        )
+
+        suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
+
+        # Build context from DB (facilities, transport, OSM)
+        context = _build_context_from_db(suburbs_list)
         context["weights"] = payload.get("weights") or {}
         
         # Build synthesis prompt — thread router_output through agent_outputs
@@ -324,20 +361,41 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             context,
             agent_outputs=combined_outputs if combined_outputs else None
         )
-        
+
         # Call LLM using the synthesiser agent configuration.
         llm = get_agent_llm("synthesiser")
         response = llm.call(synthesis_prompt)
-        
+
         answer = str(response).strip() if response else "Unable to generate response"
-        
-        # Build suburb_scores from context (DB-sourced liveability scores)
-        suburb_scores = [
+
+        # Build suburb_scores — prefer GIS combined_score, fall back to liveability_score
+        gis_output = outputs.get("gis", {}) if isinstance(outputs, dict) else {}
+        if isinstance(gis_output, dict) and gis_output:
+            if any(isinstance(v, dict) and "combined_score" in v for v in gis_output.values()):
+                suburb_scores = [
+                    {"suburb": sub_name, "score": sub_data.get("combined_score")}
+                    for sub_name, sub_data in gis_output.items()
+                    if isinstance(sub_data, dict)
+                ]
+            elif "combined_score" in gis_output:
+                suburb_scores = [{"suburb": gis_output.get("suburb", ""), "score": gis_output.get("combined_score")}]
+            else:
+                suburb_scores = []
+        else:
+            suburb_scores = [
+                {"suburb": sub.get("name", ""), "score": sub.get("liveability_score")}
+                for sub in context.get("suburbs", [])
+                if sub.get("liveability_score") is not None
+            ]
+
+        # Build sources — always include GIS; add Reddit when available
+        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else (suburbs_list[0] if suburbs_list else "Sydney")
+        sources: list[dict[str, Any]] = [
             {
-                "suburb": sub.get("name", ""),
-                "score": sub.get("liveability_score", 0),
+                "text": "Facilities, transport, and amenity data",
+                "suburb": main_suburb,
+                "source": "City of Sydney ArcGIS + OSM + Transport API",
             }
-            for sub in context.get("suburbs", [])
         ]
         
         # If no suburbs in context but outputs were analyzed, mention them
@@ -368,7 +426,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             "answer": answer,
             "sources": sources,
             "suburb_scores": suburb_scores,
-            "map_state": None,  # TODO: update when spatial intent is detected
+            "map_state": None,
         }
     except Exception as e:
         return {

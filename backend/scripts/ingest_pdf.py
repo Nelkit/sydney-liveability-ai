@@ -1,24 +1,89 @@
 """Ingest community PDF text into ChromaDB embeddings collection.
 
-Reads: data/raw/community_report.pdf
-Writes: ChromaDB collection `sydney_liveability`
+Reads: data/processed/community_reports/community_report.json
+Writes: ChromaDB collection `community_insights`
 Owner: Juan David Rodriguez
 """
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+from typing import Any
+
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+from db.chromadb import PDF_COLLECTION, embed_texts, get_chromadb_client
+
+_JSON_PATH = Path(__file__).parents[2] / "data/processed/community_reports/community_report.json"
+_BATCH_SIZE = 256
+
+
+def chunk_text(text: str) -> list[str]:
+    splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=20)
+    return splitter.split_text(text)
+
+
+def _upsert_batch(
+    texts: list[str],
+    metadatas: list[dict[str, Any]],
+    ids: list[str],
+) -> None:
+    collection = get_chromadb_client().get_or_create_collection(PDF_COLLECTION)
+    collection.upsert(
+        ids=ids,
+        documents=texts,
+        embeddings=embed_texts(texts),
+        metadatas=metadatas,
+    )
+
 
 def main() -> None:
-    """Entrypoint for PDF ingestion without LLM calls."""
-    # TODO(Juan David): Implement PDF ingestion with page-aware metadata.
-    # 1) Read data/raw/community_report.pdf using pypdf PdfReader.
-    # 2) Extract text page by page and skip empty pages.
-    # 3) Infer suburb from page text when possible; fallback to "Unknown".
-    # 4) Chunk extracted text with RecursiveCharacterTextSplitter(200, 20).
-    # 5) Embed chunks with all-MiniLM-L6-v2 sentence-transformers model.
-    # 6) Upsert to `sydney_liveability` in ChromaDB.
-    # 7) Store metadata: {suburb, source="pdf", chunk_index, page_number}.
-    pass
+    records: list[dict[str, Any]] = json.loads(_JSON_PATH.read_text())
+
+    batch_texts: list[str] = []
+    batch_metadatas: list[dict[str, Any]] = []
+    batch_ids: list[str] = []
+    total_written = 0
+    skipped = 0
+
+    for record_idx, record in enumerate(records):
+        text = (record.get("text") or "").strip()
+        if not text:
+            skipped += 1
+            continue
+
+        suburb = record.get("suburb") or "Unknown"
+        theme = record.get("theme") or ""
+        report = record.get("source") or ""
+        page_number = int(record.get("page_number") or 0)
+
+        for chunk_idx, chunk in enumerate(chunk_text(text)):
+            if not chunk.strip():
+                skipped += 1
+                continue
+
+            batch_texts.append(chunk)
+            batch_metadatas.append({
+                "suburb": suburb,
+                "source": "pdf",
+                "theme": theme,
+                "report": report,
+                "page_number": page_number,
+                "chunk_index": chunk_idx,
+            })
+            batch_ids.append(f"pdf_{record_idx}_{chunk_idx}")
+
+            if len(batch_texts) >= _BATCH_SIZE:
+                _upsert_batch(batch_texts, batch_metadatas, batch_ids)
+                total_written += len(batch_texts)
+                batch_texts, batch_metadatas, batch_ids = [], [], []
+
+    if batch_texts:
+        _upsert_batch(batch_texts, batch_metadatas, batch_ids)
+        total_written += len(batch_texts)
+
+    print(f"Ingested {total_written} chunks from {len(records)} records ({skipped} skipped).")
 
 
 if __name__ == "__main__":

@@ -6,14 +6,15 @@ from pypdf import PdfReader
 
 
 PDF_PATH = Path("data/raw/community_reports/Community_Insights_Report_2024.pdf")
-SUBURBS_PATH = Path("data/raw/community_reports/suburbs.json")
+SUBURBS_CSV = Path("data/raw/arcgis/suburbs.csv")
 OUTPUT_PATH = Path("data/processed/community_report_quick_findings.json")
 SOURCE_NAME = "Community Insights Report 2024"
 
 
 def load_target_suburbs() -> list[str]:
-    data = json.loads(SUBURBS_PATH.read_text())
-    return data["suburbs"]
+    import csv
+    with SUBURBS_CSV.open(newline="", encoding="utf-8") as f:
+        return [row["SAL_NAME21"] for row in csv.DictReader(f)]
 
 
 def clean_text(text: str) -> str:

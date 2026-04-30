@@ -1,0 +1,42 @@
+{
+  "suburb": "Sydney",
+  "post_count": 0,
+  "fetched_at": "2026-04-22T12:21:22.995184+00:00",
+  "aspects": {
+    "safety": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "food_and_cafe": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "community": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "noise": {
+      "score": 0.5,
+      "mentions": 0
+    },
+    "green_space": {
+      "score": 0.5,
+      "mentions": 0
+    }
+  },
+  "emotions": {},
+  "narrative": "There is not enough Reddit data available for Sydney to generate a meaningful analysis at this time.",
+  "sources": []
+}

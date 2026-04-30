@@ -1,311 +1,311 @@
-suburb,offence_category,subcategory,annual_avg
-Glebe,Homicide,Murder *,0.0
-Glebe,Homicide,Attempted murder,0.0
-Glebe,Homicide,"Murder accessory, conspiracy",0.0
-Glebe,Homicide,Manslaughter *,0.041666666666666664
-Glebe,Assault,Domestic violence related assault,7.541666666666667
-Glebe,Assault,Non-domestic violence related assault,14.5
-Glebe,Assault,Assault Police,0.875
-Glebe,Sexual offences,Sexual assault,2.5
-Glebe,Sexual offences,"Sexual touching, sexual act and other sexual offences",2.3333333333333335
-Glebe,Abduction and kidnapping,Abduction and kidnapping,0.08333333333333333
-Glebe,Robbery,Robbery without a weapon,0.5
-Glebe,Robbery,Robbery with a firearm,0.0
-Glebe,Robbery,Robbery with a weapon not a firearm,0.25
-Glebe,Blackmail and extortion,Blackmail and extortion,0.375
-Glebe,Coercive Control,Coercive Control,0.08333333333333333
-Glebe,"Intimidation, stalking and harassment","Intimidation, stalking and harassment",12.916666666666666
-Glebe,Other offences against the person,Other offences against the person,0.4583333333333333
-Glebe,Theft,Break and enter dwelling,5.458333333333333
-Glebe,Theft,Break and enter non-dwelling,0.9583333333333334
-Glebe,Theft,Receiving or handling stolen goods,3.3333333333333335
-Glebe,Theft,Motor vehicle theft,4.5
-Glebe,Theft,Steal from motor vehicle,4.958333333333333
-Glebe,Theft,Steal from retail store,24.333333333333332
-Glebe,Theft,Steal from dwelling,8.916666666666666
-Glebe,Theft,Steal from person,1.9166666666666667
-Glebe,Theft,Stock theft,0.0
-Glebe,Theft,Fraud,8.625
-Glebe,Theft,Other theft,12.166666666666666
-Glebe,Arson,Arson,0.625
-Glebe,Malicious damage to property,Malicious damage to property,13.833333333333334
-Glebe,Drug offences,Possession and/or use of cocaine,0.4583333333333333
-Glebe,Drug offences,Possession and/or use of narcotics,0.75
-Glebe,Drug offences,Possession and/or use of cannabis,3.8333333333333335
-Glebe,Drug offences,Possession and/or use of amphetamines,2.2083333333333335
-Glebe,Drug offences,Possession and/or use of ecstasy,0.125
-Glebe,Drug offences,Possession and/or use of other drugs,1.3333333333333333
-Glebe,Drug offences,"Dealing, trafficking in cocaine",0.16666666666666666
-Glebe,Drug offences,"Dealing, trafficking in narcotics",0.08333333333333333
-Glebe,Drug offences,"Dealing, trafficking in cannabis",0.08333333333333333
-Glebe,Drug offences,"Dealing, trafficking in amphetamines",0.08333333333333333
-Glebe,Drug offences,"Dealing, trafficking in ecstasy",0.0
-Glebe,Drug offences,"Dealing, trafficking in other drugs",0.125
-Glebe,Drug offences,Cultivating cannabis,0.0
-Glebe,Drug offences,Manufacture drug,0.0
-Glebe,Drug offences,Importing drugs,0.0
-Glebe,Drug offences,Other drug offences,1.2083333333333333
-Glebe,Prohibited and regulated weapons offences,Prohibited and regulated weapons offences,4.416666666666667
-Glebe,Disorderly conduct,Trespass,7.416666666666667
-Glebe,Disorderly conduct,Offensive conduct,0.875
-Glebe,Disorderly conduct,Offensive language,0.16666666666666666
-Glebe,Disorderly conduct,Criminal intent,1.7083333333333333
-Glebe,Betting and gaming offences,Betting and gaming offences,0.0
-Glebe,Liquor offences,Liquor offences,0.8333333333333334
-Glebe,Pornography offences,Pornography offences,0.125
-Glebe,Against justice procedures,Escape custody,0.125
-Glebe,Against justice procedures,Breach Apprehended Violence Order,4.541666666666667
-Glebe,Against justice procedures,Breach bail conditions,43.291666666666664
-Glebe,Against justice procedures,Fail to appear,0.08333333333333333
-Glebe,Against justice procedures,Resist or hinder officer,1.7916666666666667
-Glebe,Against justice procedures,Other offences against justice procedures,0.4166666666666667
-Glebe,Transport regulatory offences,Transport regulatory offences,0.4583333333333333
-Glebe,Other offences,Other offences,1.9166666666666667
-Haymarket,Homicide,Murder *,0.0
-Haymarket,Homicide,Attempted murder,0.0
-Haymarket,Homicide,"Murder accessory, conspiracy",0.0
-Haymarket,Homicide,Manslaughter *,0.0
-Haymarket,Assault,Domestic violence related assault,5.625
-Haymarket,Assault,Non-domestic violence related assault,25.291666666666668
-Haymarket,Assault,Assault Police,2.5416666666666665
-Haymarket,Sexual offences,Sexual assault,1.625
-Haymarket,Sexual offences,"Sexual touching, sexual act and other sexual offences",4.291666666666667
-Haymarket,Abduction and kidnapping,Abduction and kidnapping,0.041666666666666664
-Haymarket,Robbery,Robbery without a weapon,0.7083333333333334
-Haymarket,Robbery,Robbery with a firearm,0.041666666666666664
-Haymarket,Robbery,Robbery with a weapon not a firearm,0.2916666666666667
-Haymarket,Blackmail and extortion,Blackmail and extortion,0.25
-Haymarket,Coercive Control,Coercive Control,0.0
-Haymarket,"Intimidation, stalking and harassment","Intimidation, stalking and harassment",8.791666666666666
-Haymarket,Other offences against the person,Other offences against the person,0.4166666666666667
-Haymarket,Theft,Break and enter dwelling,0.4583333333333333
-Haymarket,Theft,Break and enter non-dwelling,1.5833333333333333
-Haymarket,Theft,Receiving or handling stolen goods,13.0
-Haymarket,Theft,Motor vehicle theft,1.2083333333333333
-Haymarket,Theft,Steal from motor vehicle,3.7916666666666665
-Haymarket,Theft,Steal from retail store,20.333333333333332
-Haymarket,Theft,Steal from dwelling,2.3333333333333335
-Haymarket,Theft,Steal from person,4.625
-Haymarket,Theft,Stock theft,0.0
-Haymarket,Theft,Fraud,12.5
-Haymarket,Theft,Other theft,25.666666666666668
-Haymarket,Arson,Arson,0.20833333333333334
-Haymarket,Malicious damage to property,Malicious damage to property,13.333333333333334
-Haymarket,Drug offences,Possession and/or use of cocaine,1.5416666666666667
-Haymarket,Drug offences,Possession and/or use of narcotics,1.2083333333333333
-Haymarket,Drug offences,Possession and/or use of cannabis,19.25
-Haymarket,Drug offences,Possession and/or use of amphetamines,7.5
-Haymarket,Drug offences,Possession and/or use of ecstasy,0.625
-Haymarket,Drug offences,Possession and/or use of other drugs,6.75
-Haymarket,Drug offences,"Dealing, trafficking in cocaine",0.20833333333333334
-Haymarket,Drug offences,"Dealing, trafficking in narcotics",0.08333333333333333
-Haymarket,Drug offences,"Dealing, trafficking in cannabis",0.375
-Haymarket,Drug offences,"Dealing, trafficking in amphetamines",0.4583333333333333
-Haymarket,Drug offences,"Dealing, trafficking in ecstasy",0.125
-Haymarket,Drug offences,"Dealing, trafficking in other drugs",0.25
-Haymarket,Drug offences,Cultivating cannabis,0.0
-Haymarket,Drug offences,Manufacture drug,0.0
-Haymarket,Drug offences,Importing drugs,0.0
-Haymarket,Drug offences,Other drug offences,5.458333333333333
-Haymarket,Prohibited and regulated weapons offences,Prohibited and regulated weapons offences,12.916666666666666
-Haymarket,Disorderly conduct,Trespass,3.7083333333333335
-Haymarket,Disorderly conduct,Offensive conduct,8.083333333333334
-Haymarket,Disorderly conduct,Offensive language,0.9583333333333334
-Haymarket,Disorderly conduct,Criminal intent,3.3333333333333335
-Haymarket,Betting and gaming offences,Betting and gaming offences,0.0
-Haymarket,Liquor offences,Liquor offences,7.583333333333333
-Haymarket,Pornography offences,Pornography offences,0.041666666666666664
-Haymarket,Against justice procedures,Escape custody,0.041666666666666664
-Haymarket,Against justice procedures,Breach Apprehended Violence Order,3.2083333333333335
-Haymarket,Against justice procedures,Breach bail conditions,13.375
-Haymarket,Against justice procedures,Fail to appear,0.125
-Haymarket,Against justice procedures,Resist or hinder officer,5.583333333333333
-Haymarket,Against justice procedures,Other offences against justice procedures,0.2916666666666667
-Haymarket,Transport regulatory offences,Transport regulatory offences,243.08333333333334
-Haymarket,Other offences,Other offences,10.708333333333334
-Newtown,Homicide,Murder *,0.0
-Newtown,Homicide,Attempted murder,0.0
-Newtown,Homicide,"Murder accessory, conspiracy",0.0
-Newtown,Homicide,Manslaughter *,0.0
-Newtown,Assault,Domestic violence related assault,5.208333333333333
-Newtown,Assault,Non-domestic violence related assault,12.583333333333334
-Newtown,Assault,Assault Police,1.2916666666666667
-Newtown,Sexual offences,Sexual assault,2.4166666666666665
-Newtown,Sexual offences,"Sexual touching, sexual act and other sexual offences",2.1666666666666665
-Newtown,Abduction and kidnapping,Abduction and kidnapping,0.0
-Newtown,Robbery,Robbery without a weapon,0.5833333333333334
-Newtown,Robbery,Robbery with a firearm,0.041666666666666664
-Newtown,Robbery,Robbery with a weapon not a firearm,0.125
-Newtown,Blackmail and extortion,Blackmail and extortion,0.3333333333333333
-Newtown,Coercive Control,Coercive Control,0.08333333333333333
-Newtown,"Intimidation, stalking and harassment","Intimidation, stalking and harassment",7.791666666666667
-Newtown,Other offences against the person,Other offences against the person,0.2916666666666667
-Newtown,Theft,Break and enter dwelling,3.5833333333333335
-Newtown,Theft,Break and enter non-dwelling,1.4583333333333333
-Newtown,Theft,Receiving or handling stolen goods,2.9583333333333335
-Newtown,Theft,Motor vehicle theft,2.375
-Newtown,Theft,Steal from motor vehicle,3.75
-Newtown,Theft,Steal from retail store,9.166666666666666
-Newtown,Theft,Steal from dwelling,7.666666666666667
-Newtown,Theft,Steal from person,0.625
-Newtown,Theft,Stock theft,0.0
-Newtown,Theft,Fraud,6.958333333333333
-Newtown,Theft,Other theft,8.333333333333334
-Newtown,Arson,Arson,0.25
-Newtown,Malicious damage to property,Malicious damage to property,12.125
-Newtown,Drug offences,Possession and/or use of cocaine,0.5416666666666666
-Newtown,Drug offences,Possession and/or use of narcotics,0.375
-Newtown,Drug offences,Possession and/or use of cannabis,3.4166666666666665
-Newtown,Drug offences,Possession and/or use of amphetamines,2.375
-Newtown,Drug offences,Possession and/or use of ecstasy,0.08333333333333333
-Newtown,Drug offences,Possession and/or use of other drugs,2.1666666666666665
-Newtown,Drug offences,"Dealing, trafficking in cocaine",0.08333333333333333
-Newtown,Drug offences,"Dealing, trafficking in narcotics",0.0
-Newtown,Drug offences,"Dealing, trafficking in cannabis",0.08333333333333333
-Newtown,Drug offences,"Dealing, trafficking in amphetamines",0.16666666666666666
-Newtown,Drug offences,"Dealing, trafficking in ecstasy",0.0
-Newtown,Drug offences,"Dealing, trafficking in other drugs",0.125
-Newtown,Drug offences,Cultivating cannabis,0.0
-Newtown,Drug offences,Manufacture drug,0.0
-Newtown,Drug offences,Importing drugs,0.0
-Newtown,Drug offences,Other drug offences,0.9166666666666666
-Newtown,Prohibited and regulated weapons offences,Prohibited and regulated weapons offences,2.3333333333333335
-Newtown,Disorderly conduct,Trespass,2.3333333333333335
-Newtown,Disorderly conduct,Offensive conduct,2.1666666666666665
-Newtown,Disorderly conduct,Offensive language,0.375
-Newtown,Disorderly conduct,Criminal intent,0.9583333333333334
-Newtown,Betting and gaming offences,Betting and gaming offences,0.0
-Newtown,Liquor offences,Liquor offences,13.041666666666666
-Newtown,Pornography offences,Pornography offences,0.041666666666666664
-Newtown,Against justice procedures,Escape custody,0.041666666666666664
-Newtown,Against justice procedures,Breach Apprehended Violence Order,4.708333333333333
-Newtown,Against justice procedures,Breach bail conditions,32.0
-Newtown,Against justice procedures,Fail to appear,0.16666666666666666
-Newtown,Against justice procedures,Resist or hinder officer,1.75
-Newtown,Against justice procedures,Other offences against justice procedures,0.5
-Newtown,Transport regulatory offences,Transport regulatory offences,15.416666666666666
-Newtown,Other offences,Other offences,2.125
-Redfern,Homicide,Murder *,0.08333333333333333
-Redfern,Homicide,Attempted murder,0.0
-Redfern,Homicide,"Murder accessory, conspiracy",0.0
-Redfern,Homicide,Manslaughter *,0.0
-Redfern,Assault,Domestic violence related assault,7.708333333333333
-Redfern,Assault,Non-domestic violence related assault,13.583333333333334
-Redfern,Assault,Assault Police,1.0833333333333333
-Redfern,Sexual offences,Sexual assault,2.5
-Redfern,Sexual offences,"Sexual touching, sexual act and other sexual offences",2.125
-Redfern,Abduction and kidnapping,Abduction and kidnapping,0.20833333333333334
-Redfern,Robbery,Robbery without a weapon,1.0
-Redfern,Robbery,Robbery with a firearm,0.08333333333333333
-Redfern,Robbery,Robbery with a weapon not a firearm,0.75
-Redfern,Blackmail and extortion,Blackmail and extortion,0.25
-Redfern,Coercive Control,Coercive Control,0.0
-Redfern,"Intimidation, stalking and harassment","Intimidation, stalking and harassment",14.291666666666666
-Redfern,Other offences against the person,Other offences against the person,0.4583333333333333
-Redfern,Theft,Break and enter dwelling,5.833333333333333
-Redfern,Theft,Break and enter non-dwelling,0.875
-Redfern,Theft,Receiving or handling stolen goods,5.916666666666667
-Redfern,Theft,Motor vehicle theft,3.2916666666666665
-Redfern,Theft,Steal from motor vehicle,6.208333333333333
-Redfern,Theft,Steal from retail store,12.666666666666666
-Redfern,Theft,Steal from dwelling,12.708333333333334
-Redfern,Theft,Steal from person,1.5
-Redfern,Theft,Stock theft,0.0
-Redfern,Theft,Fraud,15.208333333333334
-Redfern,Theft,Other theft,14.833333333333334
-Redfern,Arson,Arson,0.6666666666666666
-Redfern,Malicious damage to property,Malicious damage to property,15.25
-Redfern,Drug offences,Possession and/or use of cocaine,0.4583333333333333
-Redfern,Drug offences,Possession and/or use of narcotics,1.5416666666666667
-Redfern,Drug offences,Possession and/or use of cannabis,5.166666666666667
-Redfern,Drug offences,Possession and/or use of amphetamines,4.375
-Redfern,Drug offences,Possession and/or use of ecstasy,0.041666666666666664
-Redfern,Drug offences,Possession and/or use of other drugs,3.25
-Redfern,Drug offences,"Dealing, trafficking in cocaine",0.20833333333333334
-Redfern,Drug offences,"Dealing, trafficking in narcotics",1.0833333333333333
-Redfern,Drug offences,"Dealing, trafficking in cannabis",0.20833333333333334
-Redfern,Drug offences,"Dealing, trafficking in amphetamines",0.5416666666666666
-Redfern,Drug offences,"Dealing, trafficking in ecstasy",0.0
-Redfern,Drug offences,"Dealing, trafficking in other drugs",0.2916666666666667
-Redfern,Drug offences,Cultivating cannabis,0.0
-Redfern,Drug offences,Manufacture drug,0.0
-Redfern,Drug offences,Importing drugs,0.0
-Redfern,Drug offences,Other drug offences,1.875
-Redfern,Prohibited and regulated weapons offences,Prohibited and regulated weapons offences,5.833333333333333
-Redfern,Disorderly conduct,Trespass,5.083333333333333
-Redfern,Disorderly conduct,Offensive conduct,1.2916666666666667
-Redfern,Disorderly conduct,Offensive language,0.3333333333333333
-Redfern,Disorderly conduct,Criminal intent,1.375
-Redfern,Betting and gaming offences,Betting and gaming offences,0.0
-Redfern,Liquor offences,Liquor offences,1.375
-Redfern,Pornography offences,Pornography offences,0.16666666666666666
-Redfern,Against justice procedures,Escape custody,0.0
-Redfern,Against justice procedures,Breach Apprehended Violence Order,8.5
-Redfern,Against justice procedures,Breach bail conditions,97.66666666666667
-Redfern,Against justice procedures,Fail to appear,0.08333333333333333
-Redfern,Against justice procedures,Resist or hinder officer,1.9166666666666667
-Redfern,Against justice procedures,Other offences against justice procedures,1.0
-Redfern,Transport regulatory offences,Transport regulatory offences,17.416666666666668
-Redfern,Other offences,Other offences,4.375
-Surry Hills,Homicide,Murder *,0.0
-Surry Hills,Homicide,Attempted murder,0.0
-Surry Hills,Homicide,"Murder accessory, conspiracy",0.0
-Surry Hills,Homicide,Manslaughter *,0.0
-Surry Hills,Assault,Domestic violence related assault,8.875
-Surry Hills,Assault,Non-domestic violence related assault,19.541666666666668
-Surry Hills,Assault,Assault Police,3.4583333333333335
-Surry Hills,Sexual offences,Sexual assault,4.458333333333333
-Surry Hills,Sexual offences,"Sexual touching, sexual act and other sexual offences",2.9583333333333335
-Surry Hills,Abduction and kidnapping,Abduction and kidnapping,0.08333333333333333
-Surry Hills,Robbery,Robbery without a weapon,1.5833333333333333
-Surry Hills,Robbery,Robbery with a firearm,0.08333333333333333
-Surry Hills,Robbery,Robbery with a weapon not a firearm,0.75
-Surry Hills,Blackmail and extortion,Blackmail and extortion,0.6666666666666666
-Surry Hills,Coercive Control,Coercive Control,0.041666666666666664
-Surry Hills,"Intimidation, stalking and harassment","Intimidation, stalking and harassment",13.541666666666666
-Surry Hills,Other offences against the person,Other offences against the person,0.3333333333333333
-Surry Hills,Theft,Break and enter dwelling,5.75
-Surry Hills,Theft,Break and enter non-dwelling,3.8333333333333335
-Surry Hills,Theft,Receiving or handling stolen goods,13.875
-Surry Hills,Theft,Motor vehicle theft,3.5
-Surry Hills,Theft,Steal from motor vehicle,8.5
-Surry Hills,Theft,Steal from retail store,8.125
-Surry Hills,Theft,Steal from dwelling,13.625
-Surry Hills,Theft,Steal from person,1.9166666666666667
-Surry Hills,Theft,Stock theft,0.0
-Surry Hills,Theft,Fraud,12.375
-Surry Hills,Theft,Other theft,19.166666666666668
-Surry Hills,Arson,Arson,0.3333333333333333
-Surry Hills,Malicious damage to property,Malicious damage to property,16.583333333333332
-Surry Hills,Drug offences,Possession and/or use of cocaine,6.0
-Surry Hills,Drug offences,Possession and/or use of narcotics,2.0416666666666665
-Surry Hills,Drug offences,Possession and/or use of cannabis,8.291666666666666
-Surry Hills,Drug offences,Possession and/or use of amphetamines,7.5
-Surry Hills,Drug offences,Possession and/or use of ecstasy,1.5416666666666667
-Surry Hills,Drug offences,Possession and/or use of other drugs,5.833333333333333
-Surry Hills,Drug offences,"Dealing, trafficking in cocaine",8.666666666666666
-Surry Hills,Drug offences,"Dealing, trafficking in narcotics",0.2916666666666667
-Surry Hills,Drug offences,"Dealing, trafficking in cannabis",1.0416666666666667
-Surry Hills,Drug offences,"Dealing, trafficking in amphetamines",0.5833333333333334
-Surry Hills,Drug offences,"Dealing, trafficking in ecstasy",1.0833333333333333
-Surry Hills,Drug offences,"Dealing, trafficking in other drugs",1.25
-Surry Hills,Drug offences,Cultivating cannabis,0.0
-Surry Hills,Drug offences,Manufacture drug,0.0
-Surry Hills,Drug offences,Importing drugs,0.0
-Surry Hills,Drug offences,Other drug offences,3.1666666666666665
-Surry Hills,Prohibited and regulated weapons offences,Prohibited and regulated weapons offences,8.583333333333334
-Surry Hills,Disorderly conduct,Trespass,6.75
-Surry Hills,Disorderly conduct,Offensive conduct,3.5416666666666665
-Surry Hills,Disorderly conduct,Offensive language,0.7916666666666666
-Surry Hills,Disorderly conduct,Criminal intent,2.875
-Surry Hills,Betting and gaming offences,Betting and gaming offences,0.0
-Surry Hills,Liquor offences,Liquor offences,5.416666666666667
-Surry Hills,Pornography offences,Pornography offences,0.08333333333333333
-Surry Hills,Against justice procedures,Escape custody,0.25
-Surry Hills,Against justice procedures,Breach Apprehended Violence Order,5.958333333333333
-Surry Hills,Against justice procedures,Breach bail conditions,58.583333333333336
-Surry Hills,Against justice procedures,Fail to appear,0.08333333333333333
-Surry Hills,Against justice procedures,Resist or hinder officer,5.083333333333333
-Surry Hills,Against justice procedures,Other offences against justice procedures,0.5
-Surry Hills,Transport regulatory offences,Transport regulatory offences,5.625
-Surry Hills,Other offences,Other offences,5.25
+suburb,sa4_area,crime_type,year,incident_count
+Glebe,N/A,Homicide,2024-2025,0.0
+Glebe,N/A,Homicide,2024-2025,0.0
+Glebe,N/A,Homicide,2024-2025,0.0
+Glebe,N/A,Homicide,2024-2025,0.041666666666666664
+Glebe,N/A,Assault,2024-2025,7.541666666666667
+Glebe,N/A,Assault,2024-2025,14.5
+Glebe,N/A,Assault,2024-2025,0.875
+Glebe,N/A,Sexual offences,2024-2025,2.5
+Glebe,N/A,Sexual offences,2024-2025,2.3333333333333335
+Glebe,N/A,Abduction and kidnapping,2024-2025,0.08333333333333333
+Glebe,N/A,Robbery,2024-2025,0.5
+Glebe,N/A,Robbery,2024-2025,0.0
+Glebe,N/A,Robbery,2024-2025,0.25
+Glebe,N/A,Blackmail and extortion,2024-2025,0.375
+Glebe,N/A,Coercive Control,2024-2025,0.08333333333333333
+Glebe,N/A,"Intimidation, stalking and harassment",2024-2025,12.916666666666666
+Glebe,N/A,Other offences against the person,2024-2025,0.4583333333333333
+Glebe,N/A,Theft,2024-2025,5.458333333333333
+Glebe,N/A,Theft,2024-2025,0.9583333333333334
+Glebe,N/A,Theft,2024-2025,3.3333333333333335
+Glebe,N/A,Theft,2024-2025,4.5
+Glebe,N/A,Theft,2024-2025,4.958333333333333
+Glebe,N/A,Theft,2024-2025,24.333333333333332
+Glebe,N/A,Theft,2024-2025,8.916666666666666
+Glebe,N/A,Theft,2024-2025,1.9166666666666667
+Glebe,N/A,Theft,2024-2025,0.0
+Glebe,N/A,Theft,2024-2025,8.625
+Glebe,N/A,Theft,2024-2025,12.166666666666666
+Glebe,N/A,Arson,2024-2025,0.625
+Glebe,N/A,Malicious damage to property,2024-2025,13.833333333333334
+Glebe,N/A,Drug offences,2024-2025,0.4583333333333333
+Glebe,N/A,Drug offences,2024-2025,0.75
+Glebe,N/A,Drug offences,2024-2025,3.8333333333333335
+Glebe,N/A,Drug offences,2024-2025,2.2083333333333335
+Glebe,N/A,Drug offences,2024-2025,0.125
+Glebe,N/A,Drug offences,2024-2025,1.3333333333333333
+Glebe,N/A,Drug offences,2024-2025,0.16666666666666666
+Glebe,N/A,Drug offences,2024-2025,0.08333333333333333
+Glebe,N/A,Drug offences,2024-2025,0.08333333333333333
+Glebe,N/A,Drug offences,2024-2025,0.08333333333333333
+Glebe,N/A,Drug offences,2024-2025,0.0
+Glebe,N/A,Drug offences,2024-2025,0.125
+Glebe,N/A,Drug offences,2024-2025,0.0
+Glebe,N/A,Drug offences,2024-2025,0.0
+Glebe,N/A,Drug offences,2024-2025,0.0
+Glebe,N/A,Drug offences,2024-2025,1.2083333333333333
+Glebe,N/A,Prohibited and regulated weapons offences,2024-2025,4.416666666666667
+Glebe,N/A,Disorderly conduct,2024-2025,7.416666666666667
+Glebe,N/A,Disorderly conduct,2024-2025,0.875
+Glebe,N/A,Disorderly conduct,2024-2025,0.16666666666666666
+Glebe,N/A,Disorderly conduct,2024-2025,1.7083333333333333
+Glebe,N/A,Betting and gaming offences,2024-2025,0.0
+Glebe,N/A,Liquor offences,2024-2025,0.8333333333333334
+Glebe,N/A,Pornography offences,2024-2025,0.125
+Glebe,N/A,Against justice procedures,2024-2025,0.125
+Glebe,N/A,Against justice procedures,2024-2025,4.541666666666667
+Glebe,N/A,Against justice procedures,2024-2025,43.291666666666664
+Glebe,N/A,Against justice procedures,2024-2025,0.08333333333333333
+Glebe,N/A,Against justice procedures,2024-2025,1.7916666666666667
+Glebe,N/A,Against justice procedures,2024-2025,0.4166666666666667
+Glebe,N/A,Transport regulatory offences,2024-2025,0.4583333333333333
+Glebe,N/A,Other offences,2024-2025,1.9166666666666667
+Haymarket,N/A,Homicide,2024-2025,0.0
+Haymarket,N/A,Homicide,2024-2025,0.0
+Haymarket,N/A,Homicide,2024-2025,0.0
+Haymarket,N/A,Homicide,2024-2025,0.0
+Haymarket,N/A,Assault,2024-2025,5.625
+Haymarket,N/A,Assault,2024-2025,25.291666666666668
+Haymarket,N/A,Assault,2024-2025,2.5416666666666665
+Haymarket,N/A,Sexual offences,2024-2025,1.625
+Haymarket,N/A,Sexual offences,2024-2025,4.291666666666667
+Haymarket,N/A,Abduction and kidnapping,2024-2025,0.041666666666666664
+Haymarket,N/A,Robbery,2024-2025,0.7083333333333334
+Haymarket,N/A,Robbery,2024-2025,0.041666666666666664
+Haymarket,N/A,Robbery,2024-2025,0.2916666666666667
+Haymarket,N/A,Blackmail and extortion,2024-2025,0.25
+Haymarket,N/A,Coercive Control,2024-2025,0.0
+Haymarket,N/A,"Intimidation, stalking and harassment",2024-2025,8.791666666666666
+Haymarket,N/A,Other offences against the person,2024-2025,0.4166666666666667
+Haymarket,N/A,Theft,2024-2025,0.4583333333333333
+Haymarket,N/A,Theft,2024-2025,1.5833333333333333
+Haymarket,N/A,Theft,2024-2025,13.0
+Haymarket,N/A,Theft,2024-2025,1.2083333333333333
+Haymarket,N/A,Theft,2024-2025,3.7916666666666665
+Haymarket,N/A,Theft,2024-2025,20.333333333333332
+Haymarket,N/A,Theft,2024-2025,2.3333333333333335
+Haymarket,N/A,Theft,2024-2025,4.625
+Haymarket,N/A,Theft,2024-2025,0.0
+Haymarket,N/A,Theft,2024-2025,12.5
+Haymarket,N/A,Theft,2024-2025,25.666666666666668
+Haymarket,N/A,Arson,2024-2025,0.20833333333333334
+Haymarket,N/A,Malicious damage to property,2024-2025,13.333333333333334
+Haymarket,N/A,Drug offences,2024-2025,1.5416666666666667
+Haymarket,N/A,Drug offences,2024-2025,1.2083333333333333
+Haymarket,N/A,Drug offences,2024-2025,19.25
+Haymarket,N/A,Drug offences,2024-2025,7.5
+Haymarket,N/A,Drug offences,2024-2025,0.625
+Haymarket,N/A,Drug offences,2024-2025,6.75
+Haymarket,N/A,Drug offences,2024-2025,0.20833333333333334
+Haymarket,N/A,Drug offences,2024-2025,0.08333333333333333
+Haymarket,N/A,Drug offences,2024-2025,0.375
+Haymarket,N/A,Drug offences,2024-2025,0.4583333333333333
+Haymarket,N/A,Drug offences,2024-2025,0.125
+Haymarket,N/A,Drug offences,2024-2025,0.25
+Haymarket,N/A,Drug offences,2024-2025,0.0
+Haymarket,N/A,Drug offences,2024-2025,0.0
+Haymarket,N/A,Drug offences,2024-2025,0.0
+Haymarket,N/A,Drug offences,2024-2025,5.458333333333333
+Haymarket,N/A,Prohibited and regulated weapons offences,2024-2025,12.916666666666666
+Haymarket,N/A,Disorderly conduct,2024-2025,3.7083333333333335
+Haymarket,N/A,Disorderly conduct,2024-2025,8.083333333333334
+Haymarket,N/A,Disorderly conduct,2024-2025,0.9583333333333334
+Haymarket,N/A,Disorderly conduct,2024-2025,3.3333333333333335
+Haymarket,N/A,Betting and gaming offences,2024-2025,0.0
+Haymarket,N/A,Liquor offences,2024-2025,7.583333333333333
+Haymarket,N/A,Pornography offences,2024-2025,0.041666666666666664
+Haymarket,N/A,Against justice procedures,2024-2025,0.041666666666666664
+Haymarket,N/A,Against justice procedures,2024-2025,3.2083333333333335
+Haymarket,N/A,Against justice procedures,2024-2025,13.375
+Haymarket,N/A,Against justice procedures,2024-2025,0.125
+Haymarket,N/A,Against justice procedures,2024-2025,5.583333333333333
+Haymarket,N/A,Against justice procedures,2024-2025,0.2916666666666667
+Haymarket,N/A,Transport regulatory offences,2024-2025,243.08333333333334
+Haymarket,N/A,Other offences,2024-2025,10.708333333333334
+Newtown,N/A,Homicide,2024-2025,0.0
+Newtown,N/A,Homicide,2024-2025,0.0
+Newtown,N/A,Homicide,2024-2025,0.0
+Newtown,N/A,Homicide,2024-2025,0.0
+Newtown,N/A,Assault,2024-2025,5.208333333333333
+Newtown,N/A,Assault,2024-2025,12.583333333333334
+Newtown,N/A,Assault,2024-2025,1.2916666666666667
+Newtown,N/A,Sexual offences,2024-2025,2.4166666666666665
+Newtown,N/A,Sexual offences,2024-2025,2.1666666666666665
+Newtown,N/A,Abduction and kidnapping,2024-2025,0.0
+Newtown,N/A,Robbery,2024-2025,0.5833333333333334
+Newtown,N/A,Robbery,2024-2025,0.041666666666666664
+Newtown,N/A,Robbery,2024-2025,0.125
+Newtown,N/A,Blackmail and extortion,2024-2025,0.3333333333333333
+Newtown,N/A,Coercive Control,2024-2025,0.08333333333333333
+Newtown,N/A,"Intimidation, stalking and harassment",2024-2025,7.791666666666667
+Newtown,N/A,Other offences against the person,2024-2025,0.2916666666666667
+Newtown,N/A,Theft,2024-2025,3.5833333333333335
+Newtown,N/A,Theft,2024-2025,1.4583333333333333
+Newtown,N/A,Theft,2024-2025,2.9583333333333335
+Newtown,N/A,Theft,2024-2025,2.375
+Newtown,N/A,Theft,2024-2025,3.75
+Newtown,N/A,Theft,2024-2025,9.166666666666666
+Newtown,N/A,Theft,2024-2025,7.666666666666667
+Newtown,N/A,Theft,2024-2025,0.625
+Newtown,N/A,Theft,2024-2025,0.0
+Newtown,N/A,Theft,2024-2025,6.958333333333333
+Newtown,N/A,Theft,2024-2025,8.333333333333334
+Newtown,N/A,Arson,2024-2025,0.25
+Newtown,N/A,Malicious damage to property,2024-2025,12.125
+Newtown,N/A,Drug offences,2024-2025,0.5416666666666666
+Newtown,N/A,Drug offences,2024-2025,0.375
+Newtown,N/A,Drug offences,2024-2025,3.4166666666666665
+Newtown,N/A,Drug offences,2024-2025,2.375
+Newtown,N/A,Drug offences,2024-2025,0.08333333333333333
+Newtown,N/A,Drug offences,2024-2025,2.1666666666666665
+Newtown,N/A,Drug offences,2024-2025,0.08333333333333333
+Newtown,N/A,Drug offences,2024-2025,0.0
+Newtown,N/A,Drug offences,2024-2025,0.08333333333333333
+Newtown,N/A,Drug offences,2024-2025,0.16666666666666666
+Newtown,N/A,Drug offences,2024-2025,0.0
+Newtown,N/A,Drug offences,2024-2025,0.125
+Newtown,N/A,Drug offences,2024-2025,0.0
+Newtown,N/A,Drug offences,2024-2025,0.0
+Newtown,N/A,Drug offences,2024-2025,0.0
+Newtown,N/A,Drug offences,2024-2025,0.9166666666666666
+Newtown,N/A,Prohibited and regulated weapons offences,2024-2025,2.3333333333333335
+Newtown,N/A,Disorderly conduct,2024-2025,2.3333333333333335
+Newtown,N/A,Disorderly conduct,2024-2025,2.1666666666666665
+Newtown,N/A,Disorderly conduct,2024-2025,0.375
+Newtown,N/A,Disorderly conduct,2024-2025,0.9583333333333334
+Newtown,N/A,Betting and gaming offences,2024-2025,0.0
+Newtown,N/A,Liquor offences,2024-2025,13.041666666666666
+Newtown,N/A,Pornography offences,2024-2025,0.041666666666666664
+Newtown,N/A,Against justice procedures,2024-2025,0.041666666666666664
+Newtown,N/A,Against justice procedures,2024-2025,4.708333333333333
+Newtown,N/A,Against justice procedures,2024-2025,32.0
+Newtown,N/A,Against justice procedures,2024-2025,0.16666666666666666
+Newtown,N/A,Against justice procedures,2024-2025,1.75
+Newtown,N/A,Against justice procedures,2024-2025,0.5
+Newtown,N/A,Transport regulatory offences,2024-2025,15.416666666666666
+Newtown,N/A,Other offences,2024-2025,2.125
+Redfern,N/A,Homicide,2024-2025,0.08333333333333333
+Redfern,N/A,Homicide,2024-2025,0.0
+Redfern,N/A,Homicide,2024-2025,0.0
+Redfern,N/A,Homicide,2024-2025,0.0
+Redfern,N/A,Assault,2024-2025,7.708333333333333
+Redfern,N/A,Assault,2024-2025,13.583333333333334
+Redfern,N/A,Assault,2024-2025,1.0833333333333333
+Redfern,N/A,Sexual offences,2024-2025,2.5
+Redfern,N/A,Sexual offences,2024-2025,2.125
+Redfern,N/A,Abduction and kidnapping,2024-2025,0.20833333333333334
+Redfern,N/A,Robbery,2024-2025,1.0
+Redfern,N/A,Robbery,2024-2025,0.08333333333333333
+Redfern,N/A,Robbery,2024-2025,0.75
+Redfern,N/A,Blackmail and extortion,2024-2025,0.25
+Redfern,N/A,Coercive Control,2024-2025,0.0
+Redfern,N/A,"Intimidation, stalking and harassment",2024-2025,14.291666666666666
+Redfern,N/A,Other offences against the person,2024-2025,0.4583333333333333
+Redfern,N/A,Theft,2024-2025,5.833333333333333
+Redfern,N/A,Theft,2024-2025,0.875
+Redfern,N/A,Theft,2024-2025,5.916666666666667
+Redfern,N/A,Theft,2024-2025,3.2916666666666665
+Redfern,N/A,Theft,2024-2025,6.208333333333333
+Redfern,N/A,Theft,2024-2025,12.666666666666666
+Redfern,N/A,Theft,2024-2025,12.708333333333334
+Redfern,N/A,Theft,2024-2025,1.5
+Redfern,N/A,Theft,2024-2025,0.0
+Redfern,N/A,Theft,2024-2025,15.208333333333334
+Redfern,N/A,Theft,2024-2025,14.833333333333334
+Redfern,N/A,Arson,2024-2025,0.6666666666666666
+Redfern,N/A,Malicious damage to property,2024-2025,15.25
+Redfern,N/A,Drug offences,2024-2025,0.4583333333333333
+Redfern,N/A,Drug offences,2024-2025,1.5416666666666667
+Redfern,N/A,Drug offences,2024-2025,5.166666666666667
+Redfern,N/A,Drug offences,2024-2025,4.375
+Redfern,N/A,Drug offences,2024-2025,0.041666666666666664
+Redfern,N/A,Drug offences,2024-2025,3.25
+Redfern,N/A,Drug offences,2024-2025,0.20833333333333334
+Redfern,N/A,Drug offences,2024-2025,1.0833333333333333
+Redfern,N/A,Drug offences,2024-2025,0.20833333333333334
+Redfern,N/A,Drug offences,2024-2025,0.5416666666666666
+Redfern,N/A,Drug offences,2024-2025,0.0
+Redfern,N/A,Drug offences,2024-2025,0.2916666666666667
+Redfern,N/A,Drug offences,2024-2025,0.0
+Redfern,N/A,Drug offences,2024-2025,0.0
+Redfern,N/A,Drug offences,2024-2025,0.0
+Redfern,N/A,Drug offences,2024-2025,1.875
+Redfern,N/A,Prohibited and regulated weapons offences,2024-2025,5.833333333333333
+Redfern,N/A,Disorderly conduct,2024-2025,5.083333333333333
+Redfern,N/A,Disorderly conduct,2024-2025,1.2916666666666667
+Redfern,N/A,Disorderly conduct,2024-2025,0.3333333333333333
+Redfern,N/A,Disorderly conduct,2024-2025,1.375
+Redfern,N/A,Betting and gaming offences,2024-2025,0.0
+Redfern,N/A,Liquor offences,2024-2025,1.375
+Redfern,N/A,Pornography offences,2024-2025,0.16666666666666666
+Redfern,N/A,Against justice procedures,2024-2025,0.0
+Redfern,N/A,Against justice procedures,2024-2025,8.5
+Redfern,N/A,Against justice procedures,2024-2025,97.66666666666667
+Redfern,N/A,Against justice procedures,2024-2025,0.08333333333333333
+Redfern,N/A,Against justice procedures,2024-2025,1.9166666666666667
+Redfern,N/A,Against justice procedures,2024-2025,1.0
+Redfern,N/A,Transport regulatory offences,2024-2025,17.416666666666668
+Redfern,N/A,Other offences,2024-2025,4.375
+Surry Hills,N/A,Homicide,2024-2025,0.0
+Surry Hills,N/A,Homicide,2024-2025,0.0
+Surry Hills,N/A,Homicide,2024-2025,0.0
+Surry Hills,N/A,Homicide,2024-2025,0.0
+Surry Hills,N/A,Assault,2024-2025,8.875
+Surry Hills,N/A,Assault,2024-2025,19.541666666666668
+Surry Hills,N/A,Assault,2024-2025,3.4583333333333335
+Surry Hills,N/A,Sexual offences,2024-2025,4.458333333333333
+Surry Hills,N/A,Sexual offences,2024-2025,2.9583333333333335
+Surry Hills,N/A,Abduction and kidnapping,2024-2025,0.08333333333333333
+Surry Hills,N/A,Robbery,2024-2025,1.5833333333333333
+Surry Hills,N/A,Robbery,2024-2025,0.08333333333333333
+Surry Hills,N/A,Robbery,2024-2025,0.75
+Surry Hills,N/A,Blackmail and extortion,2024-2025,0.6666666666666666
+Surry Hills,N/A,Coercive Control,2024-2025,0.041666666666666664
+Surry Hills,N/A,"Intimidation, stalking and harassment",2024-2025,13.541666666666666
+Surry Hills,N/A,Other offences against the person,2024-2025,0.3333333333333333
+Surry Hills,N/A,Theft,2024-2025,5.75
+Surry Hills,N/A,Theft,2024-2025,3.8333333333333335
+Surry Hills,N/A,Theft,2024-2025,13.875
+Surry Hills,N/A,Theft,2024-2025,3.5
+Surry Hills,N/A,Theft,2024-2025,8.5
+Surry Hills,N/A,Theft,2024-2025,8.125
+Surry Hills,N/A,Theft,2024-2025,13.625
+Surry Hills,N/A,Theft,2024-2025,1.9166666666666667
+Surry Hills,N/A,Theft,2024-2025,0.0
+Surry Hills,N/A,Theft,2024-2025,12.375
+Surry Hills,N/A,Theft,2024-2025,19.166666666666668
+Surry Hills,N/A,Arson,2024-2025,0.3333333333333333
+Surry Hills,N/A,Malicious damage to property,2024-2025,16.583333333333332
+Surry Hills,N/A,Drug offences,2024-2025,6.0
+Surry Hills,N/A,Drug offences,2024-2025,2.0416666666666665
+Surry Hills,N/A,Drug offences,2024-2025,8.291666666666666
+Surry Hills,N/A,Drug offences,2024-2025,7.5
+Surry Hills,N/A,Drug offences,2024-2025,1.5416666666666667
+Surry Hills,N/A,Drug offences,2024-2025,5.833333333333333
+Surry Hills,N/A,Drug offences,2024-2025,8.666666666666666
+Surry Hills,N/A,Drug offences,2024-2025,0.2916666666666667
+Surry Hills,N/A,Drug offences,2024-2025,1.0416666666666667
+Surry Hills,N/A,Drug offences,2024-2025,0.5833333333333334
+Surry Hills,N/A,Drug offences,2024-2025,1.0833333333333333
+Surry Hills,N/A,Drug offences,2024-2025,1.25
+Surry Hills,N/A,Drug offences,2024-2025,0.0
+Surry Hills,N/A,Drug offences,2024-2025,0.0
+Surry Hills,N/A,Drug offences,2024-2025,0.0
+Surry Hills,N/A,Drug offences,2024-2025,3.1666666666666665
+Surry Hills,N/A,Prohibited and regulated weapons offences,2024-2025,8.583333333333334
+Surry Hills,N/A,Disorderly conduct,2024-2025,6.75
+Surry Hills,N/A,Disorderly conduct,2024-2025,3.5416666666666665
+Surry Hills,N/A,Disorderly conduct,2024-2025,0.7916666666666666
+Surry Hills,N/A,Disorderly conduct,2024-2025,2.875
+Surry Hills,N/A,Betting and gaming offences,2024-2025,0.0
+Surry Hills,N/A,Liquor offences,2024-2025,5.416666666666667
+Surry Hills,N/A,Pornography offences,2024-2025,0.08333333333333333
+Surry Hills,N/A,Against justice procedures,2024-2025,0.25
+Surry Hills,N/A,Against justice procedures,2024-2025,5.958333333333333
+Surry Hills,N/A,Against justice procedures,2024-2025,58.583333333333336
+Surry Hills,N/A,Against justice procedures,2024-2025,0.08333333333333333
+Surry Hills,N/A,Against justice procedures,2024-2025,5.083333333333333
+Surry Hills,N/A,Against justice procedures,2024-2025,0.5
+Surry Hills,N/A,Transport regulatory offences,2024-2025,5.625
+Surry Hills,N/A,Other offences,2024-2025,5.25

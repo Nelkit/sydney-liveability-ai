@@ -18,6 +18,19 @@ app = FastAPI(
     version="0.2.0",
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[settings.frontend_url],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(chat_router)
+app.include_router(civic_router)
+app.include_router(system_router)
+app.include_router(reddit_router)
+
 
 @app.get("/")
 def project_info() -> dict[str, object]:
@@ -33,17 +46,3 @@ def project_info() -> dict[str, object]:
 def health() -> dict[str, str]:
     """Return backend health for local checks and deployment probes."""
     return {"status": "ok"}
-
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[settings.frontend_url],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-app.include_router(chat_router)
-app.include_router(civic_router)
-app.include_router(system_router)
-app.include_router(reddit_router)

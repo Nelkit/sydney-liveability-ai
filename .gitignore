@@ -58,20 +58,23 @@ dist/
 *.tsbuildinfo
 
 # Data (local storage - ignored in Git)
-data/raw/
-data/processed/
+data/raw/abs/
+data/raw/osm/
 !data/processed/suburbs.geojson
 
 # Logs
 logs/
 *.log
-
+d
 # OS
 .DS_Store
 Thumbs.db
 
 # Arctic Shift dump files (large, downloaded locally)
 data/raw/arctic_shift/
+
+# Community report raw PDFs (large, local only — per AGENTS.md)
+data/raw/community_reports/*.pdf
 
 # Pre-processed Reddit data and NLP analysis results are committed
 # as carve-out exceptions to the "no data/processed/" rule so teammates
@@ -88,5 +91,10 @@ data/eval/results.csv
 data/chromadb/
 
 /openspec
-.claude
+.claude/*
+!.claude/skills/
 .codex
+# GTFS raw files (large, generated)
+data/raw/transport/*.txt
+data/raw/transport/*.zip
+# Raw transport files (GTFS, large, regenerable)data/raw/transport/# Large ArcGIS source dumps (regenerable from upstream)data/raw/arcgis/Trees_*.csvdata/raw/arcgis/Trees_*.geojsondata/raw/arcgis/Car_share_bays_usage.csvdata/raw/arcgis/Car_share_bays_usage.geojson "@ | Add-Content .gitignore
