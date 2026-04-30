@@ -7,16 +7,49 @@ Owner: Amanda
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from db.models import Bocsar
+from db.postgres import SessionLocal
+
 
 def main() -> None:
     """Entrypoint for BOCSAR structured ingestion."""
-    # TODO(Amanda): Implement CSV to PostgreSQL upsert for bocsar.
-    # 1) Read data/processed/bocsar_clean.csv with pandas.
-    # 2) Map CSV columns to bocsar ORM fields: suburb, crime_type, year, incident_count, sa4_area.
-    # 3) Open a SQLAlchemy session from db.postgres.SessionLocal.
-    # 4) Upsert each row by composite key (suburb, crime_type, year).
-    # 5) Commit in batches and rollback on errors with clear logging.
-    pass
+
+    # 1) Read CSV
+    csv_path = Path(__file__).resolve().parents[2] / "data/processed/bocsar_clean.csv"
+    df = pd.read_csv(csv_path, keep_default_na=False)
+    print(f"Loaded {len(df)} rows from {csv_path}")
+
+    # 2) Open session and upsert rows
+    session = SessionLocal()
+    try:
+        count = 0
+        for _, row in df.iterrows():
+            record = Bocsar(
+                suburb=row["suburb"],
+                crime_type=row["crime_type"],
+                year=int(str(row["year"]).split("-")[0]),
+                incident_count=round(row["incident_count"]),
+                sa4_area=row["sa4_area"],
+            )
+            session.add(record)
+            count += 1
+
+        session.commit()
+        print(f"Successfully inserted {count} rows into bocsar table.")
+
+    except Exception as e:
+        session.rollback()
+        print(f"Error: {e}")
+        raise
+    finally:
+        session.close()
 
 
 if __name__ == "__main__":

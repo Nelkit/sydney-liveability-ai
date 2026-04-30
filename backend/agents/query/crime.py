@@ -17,24 +17,62 @@ from config import get_agent_llm
 
 def _query_crime_impl(suburb: str, crime_type: str | None = None) -> dict[str, Any]:
     """Internal implementation: query BOCSAR crime data."""
-    # TODO(Amanda): Implement SQLAlchemy query against table `bocsar`.
-    # 1) Filter by suburb and optional crime_type.
-    # 2) Group by crime_type and year to build crime_summary counts.
-    # 3) Compute trend from latest 2 years:
-    #    improving if last_year_count < prev_year_count else worsening.
-    # 4) Return {suburb, crime_summary, trend} with explicit year keys.
-    return {
-        "suburb": suburb,
-        "crime_severity": "pending for implementation",
-        "crime_summary": {
-            "assault": "pending for implementation",
-            "theft": "pending for implementation",
-            "robbery": "pending for implementation",
-            "burglary": "pending for implementation",
-        },
-        "trend": "pending for implementation",
-        "implementation_status": "BOCSAR data integration in progress",
-    }
+    from db.postgres import SessionLocal
+    from sqlalchemy import text
+
+    session = SessionLocal()
+    try:
+        # 1) Query bocsar table filtered by suburb and optional crime_type
+        if crime_type:
+            query = text("""
+                SELECT crime_type, year, incident_count, sa4_area
+                FROM bocsar
+                WHERE suburb = :suburb AND crime_type = :crime_type
+                ORDER BY crime_type, year
+            """)
+            rows = session.execute(query, {"suburb": suburb, "crime_type": crime_type}).fetchall()
+        else:
+            query = text("""
+                SELECT crime_type, year, incident_count, sa4_area
+                FROM bocsar
+                WHERE suburb = :suburb
+                ORDER BY crime_type, year
+            """)
+            rows = session.execute(query, {"suburb": suburb}).fetchall()
+
+        if not rows:
+            return {"suburb": suburb, "crime_summary": {}, "trend": "no data", "sa4_area": "N/A"}
+
+        # 2) Build crime_summary and get sa4_area
+        sa4_area = rows[0][3]
+        crime_by_type: dict[str, dict[int, int]] = {}
+        for crime_type_val, year, count, _ in rows:
+            if crime_type_val not in crime_by_type:
+                crime_by_type[crime_type_val] = {}
+            crime_by_type[crime_type_val][year] = count
+
+        crime_summary = {ct: sum(years.values()) for ct, years in crime_by_type.items()}
+
+        # 3) Compute trend from latest 2 years
+        all_years = sorted({year for years in crime_by_type.values() for year in years})
+        if len(all_years) >= 2:
+            last_year = all_years[-1]
+            prev_year = all_years[-2]
+            last_total = sum(years.get(last_year, 0) for years in crime_by_type.values())
+            prev_total = sum(years.get(prev_year, 0) for years in crime_by_type.values())
+            trend = "improving" if last_total < prev_total else "worsening"
+        else:
+            trend = "insufficient data"
+
+        return {
+            "suburb": suburb,
+            "sa4_area": sa4_area,
+            "crime_summary": crime_summary,
+            "trend": trend,
+        }
+
+    finally:
+        session.close()
 
 
 @tool("query_crime_tool")
