@@ -1,47 +1,63 @@
 {
   "suburb": "West Pymble",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:25.663825+00:00",
+  "fetched_at": "2026-04-29T23:53:52.639149+00:00",
   "aspects": {
-    "community": {
-      "score": 0.45,
-      "mentions": 4,
-      "raw_score": 0.123
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.547,
-      "mentions": 1,
-      "raw_score": 0.85
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.547,
-      "mentions": 1,
-      "raw_score": 0.85
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.547,
-      "mentions": 1,
-      "raw_score": 0.85
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.547,
-      "mentions": 1,
-      "raw_score": 0.85
-    },
-    "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.1938,
     "disgust": 0.0072
   },
-  "narrative": "Reddit discussions about West Pymble are most positive about food and cafe (0.85) and nightlife (0.85). Residents are most critical about green space (0.50) and community (0.12). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about West Pymble are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",

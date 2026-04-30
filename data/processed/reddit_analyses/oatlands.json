@@ -1,47 +1,63 @@
 {
   "suburb": "Oatlands",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:23.613506+00:00",
+  "fetched_at": "2026-04-29T23:46:15.924992+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.485,
-      "mentions": 1,
-      "raw_score": 0.436
-    },
-    "community": {
-      "score": 0.517,
-      "mentions": 4,
-      "raw_score": 0.572
-    },
     "safety": {
-      "score": 0.577,
-      "mentions": 3,
-      "raw_score": 0.829
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "affordability": {
-      "score": 0.611,
-      "mentions": 1,
-      "raw_score": 0.976
+    "food_and_cafe": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.036,
     "joy": 0.0067
   },
-  "narrative": "Reddit discussions about Oatlands are most positive about affordability (0.98) and safety (0.83). Residents are most critical about green space (0.50) and food and cafe (0.44). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Oatlands are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Dee Why got its name because some old surveyor’s map marked the beach “D.Y.” and it stuck. \n\nBexley North borrowed its name from Bexley, but Bexley was just a bit further south. \n\nOatley got its name ",

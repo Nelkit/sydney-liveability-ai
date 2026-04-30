@@ -1,47 +1,63 @@
 {
   "suburb": "Gordon",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:20.461688+00:00",
+  "fetched_at": "2026-04-29T23:37:22.924696+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.651,
-      "mentions": 3,
-      "raw_score": 0.849
-    },
-    "community": {
-      "score": 0.623,
-      "mentions": 10,
-      "raw_score": 0.785
-    },
     "safety": {
-      "score": 0.641,
-      "mentions": 3,
-      "raw_score": 0.826
-    },
-    "green_space": {
-      "score": 0.653,
-      "mentions": 2,
-      "raw_score": 0.852
-    },
-    "affordability": {
-      "score": 0.643,
-      "mentions": 4,
-      "raw_score": 0.829
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.609,
-      "mentions": 1,
-      "raw_score": 0.752
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.541,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.2042,
     "joy": 0.0141
   },
-  "narrative": "Reddit discussions about Gordon are most positive about green space (0.85) and transport (0.85). Residents are most critical about nightlife (0.50) and noise (0.50). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Gordon are most positive about community (0.54) and green space (0.00). Residents are most critical about community (0.54) and green space (0.00). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Photos taken at Gordon station. Should I report them to staff?😂\nPhotos taken at Gordon station. Should I report them to staff?😂",

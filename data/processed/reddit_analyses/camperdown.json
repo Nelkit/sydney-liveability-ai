@@ -1,47 +1,63 @@
 {
   "suburb": "Camperdown",
   "post_count": 71,
-  "fetched_at": "2026-04-18T02:02:46.676789+00:00",
+  "fetched_at": "2026-04-29T23:30:54.276215+00:00",
   "aspects": {
-    "community": {
-      "score": 0.714,
-      "mentions": 55,
-      "raw_score": 0.714
-    },
     "safety": {
-      "score": 0.634,
+      "score": 0.402,
       "mentions": 17,
-      "raw_score": 0.634
-    },
-    "green_space": {
-      "score": 0.741,
-      "mentions": 19,
-      "raw_score": 0.741
-    },
-    "transport": {
-      "score": 0.586,
-      "mentions": 23,
-      "raw_score": 0.586
-    },
-    "nightlife": {
-      "score": 0.557,
-      "mentions": 15,
-      "raw_score": 0.557
-    },
-    "noise": {
-      "score": 0.836,
-      "mentions": 5,
-      "raw_score": 0.836
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.78,
+      "score": 0.538,
       "mentions": 11,
-      "raw_score": 0.78
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.607,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.478,
+      "score": 0.517,
       "mentions": 8,
-      "raw_score": 0.478
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.546,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.669,
+      "mentions": 55,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.69,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0322,
     "fear": 0.1011
   },
-  "narrative": "Reddit discussions about Camperdown are most positive about noise (0.84) and food and cafe (0.78). Residents are most critical about nightlife (0.56) and affordability (0.48). This analysis is based on 71 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Camperdown are most positive about green space (0.69) and community (0.67). Residents are most critical about affordability (0.52) and safety (0.40). This analysis is based on 71 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "A walk along Parramatta Road\nA walk along what once was a grand stretch of businesses but are now mostly unloved. There's about 4km of mostly heritage-looking shopfronts. It's sad to see so many grand",

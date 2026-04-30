@@ -1,47 +1,63 @@
 {
   "suburb": "East Ryde",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:33.645941+00:00",
+  "fetched_at": "2026-04-29T23:35:39.343176+00:00",
   "aspects": {
-    "community": {
-      "score": 0.473,
-      "mentions": 2,
-      "raw_score": 0.234
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0063,
     "disgust": 0.0147
   },
-  "narrative": "Reddit discussions about East Ryde are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about green space (0.50) and community (0.23). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about East Ryde are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",

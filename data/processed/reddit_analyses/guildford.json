@@ -1,47 +1,63 @@
 {
   "suburb": "Guildford",
   "post_count": 19,
-  "fetched_at": "2026-04-18T02:15:34.711567+00:00",
+  "fetched_at": "2026-04-29T23:38:00.117136+00:00",
   "aspects": {
-    "community": {
-      "score": 0.658,
-      "mentions": 15,
-      "raw_score": 0.75
-    },
-    "green_space": {
-      "score": 0.685,
-      "mentions": 3,
-      "raw_score": 0.792
-    },
-    "transport": {
-      "score": 0.701,
-      "mentions": 7,
-      "raw_score": 0.817
+    "safety": {
+      "score": 0.301,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.721,
+      "score": 0.793,
       "mentions": 3,
-      "raw_score": 0.849
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.693,
+      "score": 0.733,
       "mentions": 3,
-      "raw_score": 0.805
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.784,
-      "mentions": 1,
-      "raw_score": 0.949
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.475,
-      "mentions": 6,
-      "raw_score": 0.46
+    "transport": {
+      "score": 0.54,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.698,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.418,
-      "mentions": 2,
-      "raw_score": 0.371
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0202,
     "fear": 0.1135
   },
-  "narrative": "Reddit discussions about Guildford are most positive about affordability (0.95) and food and cafe (0.85). Residents are most critical about safety (0.46) and noise (0.37). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Guildford are most positive about food and cafe (0.79) and nightlife (0.73). Residents are most critical about safety (0.30) and green space (0.00). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Glad to see Guildford hasn’t changed in the last 15 years",

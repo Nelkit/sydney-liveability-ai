@@ -1,47 +1,63 @@
 {
   "suburb": "Norwest",
   "post_count": 39,
-  "fetched_at": "2026-04-18T02:10:03.958300+00:00",
+  "fetched_at": "2026-04-29T23:46:12.720709+00:00",
   "aspects": {
-    "community": {
-      "score": 0.596,
-      "mentions": 28,
-      "raw_score": 0.596
-    },
     "safety": {
-      "score": 0.593,
+      "score": 0.109,
       "mentions": 11,
-      "raw_score": 0.593
-    },
-    "nightlife": {
-      "score": 0.927,
-      "mentions": 4,
-      "raw_score": 0.927
-    },
-    "noise": {
-      "score": 0.748,
-      "mentions": 5,
-      "raw_score": 0.748
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.666,
+      "score": 0.384,
       "mentions": 11,
-      "raw_score": 0.666
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
-      "score": 0.433,
-      "mentions": 15,
-      "raw_score": 0.433
+    "nightlife": {
+      "score": 0.18,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.634,
+      "score": 0.522,
       "mentions": 2,
-      "raw_score": 0.634
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.415,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.401,
+      "mentions": 28,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0653,
     "anger": 0.0436
   },
-  "narrative": "Reddit discussions about Norwest are most positive about nightlife (0.93) and noise (0.75). Residents are most critical about green space (0.50) and transport (0.43). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Norwest are most positive about affordability (0.52) and green space (0.50). Residents are most critical about nightlife (0.18) and safety (0.11). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Bravo to this legend at Norwest Hospital…",

@@ -1,47 +1,63 @@
 {
   "suburb": "Woolloomooloo",
   "post_count": 29,
-  "fetched_at": "2026-04-18T02:12:50.903914+00:00",
+  "fetched_at": "2026-04-29T23:55:03.158375+00:00",
   "aspects": {
     "safety": {
-      "score": 0.564,
+      "score": 0.26,
       "mentions": 7,
-      "raw_score": 0.566
-    },
-    "community": {
-      "score": 0.731,
-      "mentions": 24,
-      "raw_score": 0.739
-    },
-    "green_space": {
-      "score": 0.781,
-      "mentions": 5,
-      "raw_score": 0.791
-    },
-    "nightlife": {
-      "score": 0.791,
-      "mentions": 8,
-      "raw_score": 0.801
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.817,
+      "score": 0.828,
       "mentions": 7,
-      "raw_score": 0.828
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.845,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
       "score": 0.5,
       "mentions": 1,
-      "raw_score": 0.5
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 2,
-      "raw_score": 0.5
+      "score": 0.7,
+      "mentions": 0,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "arcgis"
+    },
+    "community": {
+      "score": 0.611,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.702,
-      "mentions": 5,
-      "raw_score": 0.709
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.603,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0216,
     "joy": 0.1447
   },
-  "narrative": "Reddit discussions about Woolloomooloo are most positive about food and cafe (0.83) and nightlife (0.80). Residents are most critical about affordability (0.50) and transport (0.50). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Woolloomooloo are most positive about nightlife (0.84) and food and cafe (0.83). Residents are most critical about affordability (0.50) and safety (0.26). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "8 people a night sleeping rough in the same spot doesn’t seem any different to what has been happening for the last 10 years.\n\nThere are usually more out front of the Woolloomooloo police station or t",

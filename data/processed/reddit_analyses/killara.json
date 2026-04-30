@@ -1,47 +1,63 @@
 {
   "suburb": "Killara",
   "post_count": 11,
-  "fetched_at": "2026-04-18T02:18:02.261367+00:00",
+  "fetched_at": "2026-04-29T23:39:11.676450+00:00",
   "aspects": {
     "safety": {
-      "score": 0.565,
-      "mentions": 3,
-      "raw_score": 0.678
-    },
-    "community": {
-      "score": 0.458,
-      "mentions": 7,
-      "raw_score": 0.385
-    },
-    "nightlife": {
-      "score": 0.61,
-      "mentions": 2,
-      "raw_score": 0.8
-    },
-    "affordability": {
-      "score": 0.56,
-      "mentions": 1,
-      "raw_score": 0.663
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0567,
     "joy": 0.0079
   },
-  "narrative": "Reddit discussions about Killara are most positive about nightlife (0.80) and safety (0.68). Residents are most critical about green space (0.50) and community (0.39). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Killara are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sad graffiti on a bench in Killara. I hope they got help",

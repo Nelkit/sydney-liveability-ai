@@ -1,47 +1,63 @@
 {
   "suburb": "Emerton",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:56.125466+00:00",
+  "fetched_at": "2026-04-29T23:36:01.058680+00:00",
   "aspects": {
-    "community": {
-      "score": 0.522,
-      "mentions": 2,
-      "raw_score": 0.829
-    },
-    "transport": {
-      "score": 0.523,
-      "mentions": 1,
-      "raw_score": 0.845
-    },
-    "affordability": {
-      "score": 0.522,
-      "mentions": 2,
-      "raw_score": 0.829
-    },
     "safety": {
-      "score": 0.523,
+      "score": 0.963,
       "mentions": 1,
-      "raw_score": 0.845
-    },
-    "green_space": {
-      "score": 0.523,
-      "mentions": 1,
-      "raw_score": 0.845
-    },
-    "nightlife": {
-      "score": 0.523,
-      "mentions": 1,
-      "raw_score": 0.845
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.523,
+      "score": 0.918,
       "mentions": 1,
-      "raw_score": 0.845
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.884,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.848,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.86,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.942,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0036,
     "fear": 0.0015
   },
-  "narrative": "Reddit discussions about Emerton are most positive about transport (0.84) and safety (0.84). Residents are most critical about affordability (0.83) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Emerton are most positive about safety (0.96) and community (0.94). Residents are most critical about affordability (0.85) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",

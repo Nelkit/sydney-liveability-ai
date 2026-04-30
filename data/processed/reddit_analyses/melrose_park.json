@@ -1,47 +1,63 @@
 {
   "suburb": "Melrose Park",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:43.132355+00:00",
+  "fetched_at": "2026-04-29T23:43:41.194547+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.518,
-      "mentions": 3,
-      "raw_score": 0.683
-    },
-    "green_space": {
-      "score": 0.513,
-      "mentions": 2,
-      "raw_score": 0.633
-    },
-    "community": {
-      "score": 0.513,
-      "mentions": 2,
-      "raw_score": 0.633
-    },
-    "affordability": {
-      "score": 0.513,
-      "mentions": 2,
-      "raw_score": 0.633
-    },
-    "nightlife": {
-      "score": 0.546,
-      "mentions": 1,
-      "raw_score": 0.961
-    },
     "safety": {
-      "score": 0.546,
-      "mentions": 1,
-      "raw_score": 0.961
-    },
-    "noise": {
-      "score": 0.546,
-      "mentions": 1,
-      "raw_score": 0.961
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.546,
-      "mentions": 1,
-      "raw_score": 0.961
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0133,
     "disgust": 0.0591
   },
-  "narrative": "Reddit discussions about Melrose Park are most positive about nightlife (0.96) and safety (0.96). Residents are most critical about community (0.63) and affordability (0.63). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Melrose Park are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Stage 2 of the Parramatta Light Rail has been approved for construction by the NSW Government. It will connect stage 1 at Camellia - crosses Parramatta River on a new bridge to Rydalmere, Ermington, a",

@@ -1,47 +1,63 @@
 {
   "suburb": "Glenwood",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:17.617604+00:00",
+  "fetched_at": "2026-04-29T23:37:20.181199+00:00",
   "aspects": {
-    "community": {
-      "score": 0.624,
-      "mentions": 9,
-      "raw_score": 0.872
-    },
     "safety": {
-      "score": 0.641,
+      "score": 0.122,
       "mentions": 5,
-      "raw_score": 0.924
-    },
-    "nightlife": {
-      "score": 0.65,
-      "mentions": 3,
-      "raw_score": 0.949
-    },
-    "noise": {
-      "score": 0.659,
-      "mentions": 2,
-      "raw_score": 0.976
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.639,
+      "score": 0.165,
       "mentions": 3,
-      "raw_score": 0.916
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.608,
-      "mentions": 4,
-      "raw_score": 0.823
+    "nightlife": {
+      "score": 0.143,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.606,
-      "mentions": 5,
-      "raw_score": 0.819
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.52,
+      "score": 0.358,
       "mentions": 5,
-      "raw_score": 0.561
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.259,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1178,
     "joy": 0.0739
   },
-  "narrative": "Reddit discussions about Glenwood are most positive about noise (0.98) and nightlife (0.95). Residents are most critical about affordability (0.82) and transport (0.56). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Glenwood are most positive about transport (0.36) and community (0.26). Residents are most critical about safety (0.12) and green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Help with retrieving dead pet from M7 motorway in Norwest!! \nWhat a shambles it is to retrieve the body of a pet dog that was run over. \n\nWe had a freak incident yesterday where our family dog took of",

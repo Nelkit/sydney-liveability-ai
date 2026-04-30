@@ -1,47 +1,63 @@
 {
   "suburb": "Palm Beach",
   "post_count": 50,
-  "fetched_at": "2026-04-18T02:06:47.628511+00:00",
+  "fetched_at": "2026-04-29T17:23:42.544166+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.608,
-      "mentions": 15,
-      "raw_score": 0.608
-    },
-    "green_space": {
-      "score": 0.672,
-      "mentions": 13,
-      "raw_score": 0.672
-    },
-    "community": {
-      "score": 0.673,
-      "mentions": 34,
-      "raw_score": 0.673
-    },
     "safety": {
-      "score": 0.3,
+      "score": 0.348,
       "mentions": 6,
-      "raw_score": 0.3
-    },
-    "nightlife": {
-      "score": 0.689,
-      "mentions": 11,
-      "raw_score": 0.689
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.598,
+      "score": 0.648,
       "mentions": 10,
-      "raw_score": 0.598
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "noise": {
-      "score": 0.477,
-      "mentions": 1,
-      "raw_score": 0.477
+    "nightlife": {
+      "score": 0.617,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.6,
+      "score": 0.584,
       "mentions": 6,
-      "raw_score": 0.6
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.529,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.678,
+      "mentions": 34,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.336,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.655,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0477,
     "joy": 0.186
   },
-  "narrative": "Reddit discussions about Palm Beach are most positive about nightlife (0.69) and community (0.67). Residents are most critical about noise (0.48) and safety (0.30). This analysis is based on 50 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Palm Beach are most positive about community (0.68) and green space (0.66). Residents are most critical about safety (0.35) and noise (0.34). This analysis is based on 50 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What are these jelly like things in palm beach? Dead jellyfish?",

@@ -1,47 +1,63 @@
 {
   "suburb": "Liverpool",
   "post_count": 87,
-  "fetched_at": "2026-04-18T02:00:23.355697+00:00",
+  "fetched_at": "2026-04-29T23:42:10.453445+00:00",
   "aspects": {
-    "community": {
-      "score": 0.594,
-      "mentions": 71,
-      "raw_score": 0.594
-    },
-    "transport": {
-      "score": 0.647,
-      "mentions": 45,
-      "raw_score": 0.647
-    },
-    "affordability": {
-      "score": 0.747,
-      "mentions": 20,
-      "raw_score": 0.747
+    "safety": {
+      "score": 0.237,
+      "mentions": 29,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.757,
+      "score": 0.798,
       "mentions": 12,
-      "raw_score": 0.757
-    },
-    "green_space": {
-      "score": 0.632,
-      "mentions": 17,
-      "raw_score": 0.632
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.724,
+      "score": 0.763,
       "mentions": 14,
-      "raw_score": 0.724
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.474,
-      "mentions": 29,
-      "raw_score": 0.474
+    "affordability": {
+      "score": 0.598,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.484,
+      "mentions": 45,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.56,
+      "mentions": 71,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.74,
-      "mentions": 7,
-      "raw_score": 0.74
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.721,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0582,
     "fear": 0.1238
   },
-  "narrative": "Reddit discussions about Liverpool are most positive about food and cafe (0.76) and affordability (0.75). Residents are most critical about community (0.59) and safety (0.47). This analysis is based on 87 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Liverpool are most positive about food and cafe (0.80) and nightlife (0.76). Residents are most critical about transport (0.48) and safety (0.24). This analysis is based on 87 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney's councils realigned\nI had a bit of fun redesigning Sydney's local council areas. The idea was not \"how do we improve on the current\", but rather from a localised psychological point of view. I",

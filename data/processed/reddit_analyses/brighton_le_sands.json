@@ -1,47 +1,63 @@
 {
   "suburb": "Brighton-Le-Sands",
   "post_count": 14,
-  "fetched_at": "2026-04-18T02:17:01.796048+00:00",
+  "fetched_at": "2026-04-29T23:29:43.726218+00:00",
   "aspects": {
-    "community": {
-      "score": 0.437,
-      "mentions": 12,
-      "raw_score": 0.364
-    },
     "safety": {
-      "score": 0.387,
+      "score": 0.11,
       "mentions": 11,
-      "raw_score": 0.258
-    },
-    "noise": {
-      "score": 0.289,
-      "mentions": 2,
-      "raw_score": 0.048
-    },
-    "green_space": {
-      "score": 0.347,
-      "mentions": 3,
-      "raw_score": 0.172
-    },
-    "transport": {
-      "score": 0.653,
-      "mentions": 6,
-      "raw_score": 0.828
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.651,
+      "score": 0.624,
       "mentions": 2,
-      "raw_score": 0.823
-    },
-    "affordability": {
-      "score": 0.71,
-      "mentions": 1,
-      "raw_score": 0.949
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.294,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.354,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0208,
     "joy": 0.0669
   },
-  "narrative": "Reddit discussions about Brighton-Le-Sands are most positive about affordability (0.95) and transport (0.83). Residents are most critical about green space (0.17) and noise (0.05). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Brighton-Le-Sands are most positive about food and cafe (0.62) and community (0.35). Residents are most critical about safety (0.11) and green space (0.00). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What is the name for this strip of sand?\nI never know what beach to call this when describing it to others. Brighton-le-sands? Lady Robinson Beach? \n\nIs there a name that sums up the whole beach or do",

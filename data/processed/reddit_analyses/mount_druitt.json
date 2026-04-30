@@ -1,47 +1,63 @@
 {
   "suburb": "Mount Druitt",
   "post_count": 35,
-  "fetched_at": "2026-04-18T02:11:11.041058+00:00",
+  "fetched_at": "2026-04-29T23:44:57.637252+00:00",
   "aspects": {
     "safety": {
-      "score": 0.118,
+      "score": 0.051,
       "mentions": 12,
-      "raw_score": 0.118
-    },
-    "transport": {
-      "score": 0.2,
-      "mentions": 4,
-      "raw_score": 0.2
-    },
-    "community": {
-      "score": 0.395,
-      "mentions": 21,
-      "raw_score": 0.395
-    },
-    "affordability": {
-      "score": 0.644,
-      "mentions": 5,
-      "raw_score": 0.644
-    },
-    "green_space": {
-      "score": 0.844,
-      "mentions": 2,
-      "raw_score": 0.844
-    },
-    "noise": {
-      "score": 0.988,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "nightlife": {
-      "score": 0.811,
-      "mentions": 2,
-      "raw_score": 0.811
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.674,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.413,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.292,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.577,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "neutral": 0.3221,
     "joy": 0.0265
   },
-  "narrative": "Reddit discussions about Mount Druitt are most positive about noise (0.99) and green space (0.84). Residents are most critical about transport (0.20) and safety (0.12). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Mount Druitt are most positive about nightlife (0.67) and community (0.58). Residents are most critical about safety (0.05) and green space (0.00). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What the hell\nMOUNT DRUITT IS A SAFE SUBURB?? \n\nThe crime rate is extremely high. My friend got mugged, my other friend had a neighbour who was a drug dealer and had cops do a house raid on him, its a",

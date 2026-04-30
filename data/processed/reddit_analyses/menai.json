@@ -1,47 +1,63 @@
 {
   "suburb": "Menai",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:22.425584+00:00",
+  "fetched_at": "2026-04-29T23:43:43.471934+00:00",
   "aspects": {
-    "community": {
-      "score": 0.575,
-      "mentions": 11,
-      "raw_score": 0.674
-    },
-    "nightlife": {
-      "score": 0.654,
-      "mentions": 1,
-      "raw_score": 0.855
-    },
     "safety": {
-      "score": 0.508,
-      "mentions": 2,
-      "raw_score": 0.519
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.698,
+      "score": 0.904,
       "mentions": 1,
-      "raw_score": 0.956
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "noise": {
-      "score": 0.698,
+    "nightlife": {
+      "score": 0.536,
       "mentions": 1,
-      "raw_score": 0.956
-    },
-    "transport": {
-      "score": 0.601,
-      "mentions": 2,
-      "raw_score": 0.733
-    },
-    "green_space": {
-      "score": 0.714,
-      "mentions": 1,
-      "raw_score": 0.993
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0372,
     "fear": 0.0167
   },
-  "narrative": "Reddit discussions about Menai are most positive about green space (0.99) and food and cafe (0.96). Residents are most critical about safety (0.52) and affordability (0.50). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Menai are most positive about food and cafe (0.90) and nightlife (0.54). Residents are most critical about nightlife (0.54) and green space (0.00). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "yes, us menai people are affectionately known as south-bankstown citizens to those east of Woronora river.",

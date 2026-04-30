@@ -1,47 +1,63 @@
 {
   "suburb": "Tregear",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:24.237499+00:00",
+  "fetched_at": "2026-04-29T23:52:26.916179+00:00",
   "aspects": {
-    "community": {
-      "score": 0.547,
-      "mentions": 3,
-      "raw_score": 0.85
-    },
-    "transport": {
-      "score": 0.546,
-      "mentions": 1,
-      "raw_score": 0.845
-    },
-    "affordability": {
-      "score": 0.544,
-      "mentions": 2,
-      "raw_score": 0.829
-    },
     "safety": {
-      "score": 0.543,
+      "score": 0.932,
       "mentions": 2,
-      "raw_score": 0.822
-    },
-    "green_space": {
-      "score": 0.549,
-      "mentions": 2,
-      "raw_score": 0.867
-    },
-    "nightlife": {
-      "score": 0.549,
-      "mentions": 2,
-      "raw_score": 0.867
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.549,
+      "score": 0.923,
       "mentions": 2,
-      "raw_score": 0.867
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.899,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.848,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.951,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0057,
     "fear": 0.0062
   },
-  "narrative": "Reddit discussions about Tregear are most positive about green space (0.87) and nightlife (0.87). Residents are most critical about safety (0.82) and noise (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Tregear are most positive about community (0.95) and safety (0.93). Residents are most critical about affordability (0.85) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I currently live in the Blacktown Council area, although I'm right on the border with Hills Shire.\n\nI used to live in Penrith.\n\nIt's a diverse area and really depends on which suburbs you're talking a",

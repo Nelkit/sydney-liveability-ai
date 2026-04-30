@@ -1,47 +1,63 @@
 {
   "suburb": "Condell Park",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:11.873710+00:00",
+  "fetched_at": "2026-04-29T23:33:17.405153+00:00",
   "aspects": {
-    "community": {
-      "score": 0.442,
-      "mentions": 3,
-      "raw_score": 0.066
-    },
-    "affordability": {
-      "score": 0.434,
-      "mentions": 2,
-      "raw_score": 0.007
-    },
     "safety": {
-      "score": 0.434,
-      "mentions": 2,
-      "raw_score": 0.007
-    },
-    "noise": {
-      "score": 0.434,
-      "mentions": 2,
-      "raw_score": 0.007
-    },
-    "green_space": {
-      "score": 0.437,
-      "mentions": 3,
-      "raw_score": 0.025
-    },
-    "nightlife": {
-      "score": 0.434,
-      "mentions": 2,
-      "raw_score": 0.007
-    },
-    "transport": {
-      "score": 0.434,
-      "mentions": 2,
-      "raw_score": 0.007
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.437,
-      "mentions": 3,
-      "raw_score": 0.025
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.1749,
     "joy": 0.0206
   },
-  "narrative": "Reddit discussions about Condell Park are most positive about community (0.07) and green space (0.03). Residents are most critical about nightlife (0.01) and transport (0.01). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is disgust.",
+  "narrative": "Reddit discussions about Condell Park are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is disgust.",
   "sources": [
     {
       "text": "Factory fumes in Condell Park/ Revesby area. What is council doing?\nHas anyone else noticed the horrible rubber/chemical smell while driving down Milperra Road? It’s been going on for years now and it",

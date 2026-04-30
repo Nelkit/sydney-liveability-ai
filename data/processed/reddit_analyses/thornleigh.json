@@ -1,47 +1,63 @@
 {
   "suburb": "Thornleigh",
   "post_count": 22,
-  "fetched_at": "2026-04-18T02:14:39.944783+00:00",
+  "fetched_at": "2026-04-29T23:52:23.712833+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.356,
-      "mentions": 5,
-      "raw_score": 0.303
-    },
     "safety": {
-      "score": 0.337,
-      "mentions": 8,
-      "raw_score": 0.278
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": 0.621,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.328,
-      "mentions": 3,
-      "raw_score": 0.265
-    },
-    "community": {
-      "score": 0.433,
-      "mentions": 18,
-      "raw_score": 0.408
-    },
-    "transport": {
-      "score": 0.583,
-      "mentions": 8,
-      "raw_score": 0.613
-    },
-    "green_space": {
-      "score": 0.753,
-      "mentions": 3,
-      "raw_score": 0.845
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.49,
-      "mentions": 3,
-      "raw_score": 0.486
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.485,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0389,
     "joy": 0.0619
   },
-  "narrative": "Reddit discussions about Thornleigh are most positive about green space (0.84) and transport (0.61). Residents are most critical about safety (0.28) and nightlife (0.27). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Thornleigh are most positive about food and cafe (0.62) and transport (0.48). Residents are most critical about transport (0.48) and green space (0.00). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "If you go to Thornleigh Maccas and don't have a Cockatoo trying to steal your chips, did you really go?",

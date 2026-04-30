@@ -1,47 +1,63 @@
 {
   "suburb": "North Ryde",
   "post_count": 45,
-  "fetched_at": "2026-04-18T02:07:52.113802+00:00",
+  "fetched_at": "2026-04-29T23:45:50.043009+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.413,
-      "mentions": 26,
-      "raw_score": 0.413
-    },
-    "community": {
-      "score": 0.42,
-      "mentions": 38,
-      "raw_score": 0.42
-    },
     "safety": {
-      "score": 0.342,
+      "score": 0.109,
       "mentions": 15,
-      "raw_score": 0.342
-    },
-    "noise": {
-      "score": 0.323,
-      "mentions": 5,
-      "raw_score": 0.323
-    },
-    "affordability": {
-      "score": 0.336,
-      "mentions": 8,
-      "raw_score": 0.336
-    },
-    "nightlife": {
-      "score": 0.435,
-      "mentions": 10,
-      "raw_score": 0.435
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.281,
+      "score": 0.539,
       "mentions": 5,
-      "raw_score": 0.281
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.509,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.32,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.397,
+      "mentions": 38,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.291,
-      "mentions": 7,
-      "raw_score": 0.291
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.042,
     "fear": 0.1297
   },
-  "narrative": "Reddit discussions about North Ryde are most positive about nightlife (0.43) and community (0.42). Residents are most critical about green space (0.29) and food and cafe (0.28). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about North Ryde are most positive about food and cafe (0.54) and nightlife (0.51). Residents are most critical about safety (0.11) and green space (0.00). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "A pedestrian bridge does not have to be this cool\nWas out at North Ryde and had to use this, it’s near the metro station and with checking out",

@@ -1,47 +1,63 @@
 {
   "suburb": "Lindfield",
   "post_count": 34,
-  "fetched_at": "2026-04-18T02:11:21.348125+00:00",
+  "fetched_at": "2026-04-29T23:41:47.025211+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.925,
-      "mentions": 7,
-      "raw_score": 0.925
-    },
-    "community": {
-      "score": 0.586,
-      "mentions": 31,
-      "raw_score": 0.586
-    },
-    "nightlife": {
-      "score": 0.23,
-      "mentions": 3,
-      "raw_score": 0.23
-    },
     "safety": {
-      "score": 0.243,
+      "score": 0.477,
       "mentions": 9,
-      "raw_score": 0.243
-    },
-    "affordability": {
-      "score": 0.571,
-      "mentions": 6,
-      "raw_score": 0.571
-    },
-    "noise": {
-      "score": 0.777,
-      "mentions": 5,
-      "raw_score": 0.777
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.746,
+      "score": 0.501,
       "mentions": 5,
-      "raw_score": 0.746
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.373,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.702,
+      "score": 0.458,
       "mentions": 9,
-      "raw_score": 0.702
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.616,
+      "mentions": 31,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0558,
     "anger": 0.04
   },
-  "narrative": "Reddit discussions about Lindfield are most positive about green space (0.93) and noise (0.78). Residents are most critical about safety (0.24) and nightlife (0.23). This analysis is based on 34 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lindfield are most positive about community (0.62) and food and cafe (0.50). Residents are most critical about affordability (0.37) and green space (0.00). This analysis is based on 34 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "A walk from Lindfield to Manly Beach\nWalked from Lindfield station to Manly beach. It’s an interesting route that goes through a lot of bush, national parks, interesting suburbs and of course the beac",

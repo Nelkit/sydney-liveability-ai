@@ -1,47 +1,63 @@
 {
   "suburb": "Alfords Point",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:45.495422+00:00",
+  "fetched_at": "2026-04-29T23:27:04.091643+00:00",
   "aspects": {
-    "community": {
-      "score": 0.493,
-      "mentions": 2,
-      "raw_score": 0.457
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0433,
     "joy": 0.01
   },
-  "narrative": "Reddit discussions about Alfords Point are most positive about transport (0.50) and nightlife (0.50). Residents are most critical about green space (0.50) and community (0.46). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Alfords Point are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "If you were to drive due west from the Shire, you'd likely end up in Victoria\nHere's some Friday evening geography to break your brain, which I accidentally noticed while scrolling through Google Maps",

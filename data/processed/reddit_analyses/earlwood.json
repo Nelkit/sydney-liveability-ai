@@ -1,47 +1,63 @@
 {
   "suburb": "Earlwood",
   "post_count": 36,
-  "fetched_at": "2026-04-18T02:10:51.043935+00:00",
+  "fetched_at": "2026-04-29T23:35:32.965838+00:00",
   "aspects": {
+    "safety": {
+      "score": 0.271,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
     "food_and_cafe": {
-      "score": 0.964,
+      "score": 0.51,
       "mentions": 5,
-      "raw_score": 0.964
-    },
-    "community": {
-      "score": 0.702,
-      "mentions": 33,
-      "raw_score": 0.702
-    },
-    "affordability": {
-      "score": 0.967,
-      "mentions": 6,
-      "raw_score": 0.967
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.921,
+      "score": 0.634,
       "mentions": 10,
-      "raw_score": 0.921
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.41,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.928,
+      "score": 0.894,
       "mentions": 7,
-      "raw_score": 0.928
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.775,
-      "mentions": 12,
-      "raw_score": 0.775
-    },
-    "safety": {
-      "score": 0.64,
-      "mentions": 9,
-      "raw_score": 0.64
+    "community": {
+      "score": 0.588,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.859,
-      "mentions": 2,
-      "raw_score": 0.859
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.74,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0631,
     "joy": 0.1597
   },
-  "narrative": "Reddit discussions about Earlwood are most positive about affordability (0.97) and food and cafe (0.96). Residents are most critical about community (0.70) and safety (0.64). This analysis is based on 36 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Earlwood are most positive about transport (0.89) and green space (0.74). Residents are most critical about affordability (0.41) and safety (0.27). This analysis is based on 36 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Ethnic “segregation?”\nI’m not sure if that’s a right word, but I was wondering why so many suburbs in Sydney are divided so strongly ethnically? \n\nI just moved to arncliffe and it’s a great place to l",

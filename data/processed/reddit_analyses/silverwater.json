@@ -1,47 +1,63 @@
 {
   "suburb": "Silverwater",
   "post_count": 22,
-  "fetched_at": "2026-04-18T02:14:37.189404+00:00",
+  "fetched_at": "2026-04-29T23:50:52.681810+00:00",
   "aspects": {
-    "community": {
-      "score": 0.525,
-      "mentions": 14,
-      "raw_score": 0.534
-    },
     "safety": {
-      "score": 0.317,
+      "score": 0.119,
       "mentions": 12,
-      "raw_score": 0.251
-    },
-    "green_space": {
-      "score": 0.51,
-      "mentions": 3,
-      "raw_score": 0.513
-    },
-    "transport": {
-      "score": 0.768,
-      "mentions": 4,
-      "raw_score": 0.865
-    },
-    "nightlife": {
-      "score": 0.744,
-      "mentions": 2,
-      "raw_score": 0.833
-    },
-    "affordability": {
-      "score": 0.519,
-      "mentions": 1,
-      "raw_score": 0.526
-    },
-    "noise": {
-      "score": 0.657,
-      "mentions": 2,
-      "raw_score": 0.714
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.641,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.837,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.554,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.619,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0499,
     "joy": 0.07
   },
-  "narrative": "Reddit discussions about Silverwater are most positive about transport (0.86) and nightlife (0.83). Residents are most critical about food and cafe (0.50) and safety (0.25). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Silverwater are most positive about transport (0.84) and nightlife (0.64). Residents are most critical about food and cafe (0.50) and safety (0.12). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney’s unusual sewerage system to blame for faecal and fat balls on beaches, experts claim\nI don't understand why this is a mystery.\n\nI walk extensive around the Parramatta, Rosehill, Ryde, Epping, ",

@@ -1,47 +1,63 @@
 {
   "suburb": "Colyton",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:32.709602+00:00",
+  "fetched_at": "2026-04-29T23:33:05.721703+00:00",
   "aspects": {
     "safety": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "community": {
-      "score": 0.541,
-      "mentions": 2,
-      "raw_score": 0.914
-    },
-    "noise": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "affordability": {
-      "score": 0.541,
-      "mentions": 2,
-      "raw_score": 0.914
-    },
-    "green_space": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.896,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.401,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.526,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.2332,
     "joy": 0.0527
   },
-  "narrative": "Reddit discussions about Colyton are most positive about safety (0.99) and noise (0.99). Residents are most critical about food and cafe (0.50) and transport (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Colyton are most positive about nightlife (0.90) and community (0.53). Residents are most critical about affordability (0.40) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",

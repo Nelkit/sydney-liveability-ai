@@ -1,47 +1,63 @@
 {
   "suburb": "Bayview",
   "post_count": 9,
-  "fetched_at": "2026-04-18T02:18:32.467473+00:00",
+  "fetched_at": "2026-04-29T23:28:15.078867+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.622,
-      "mentions": 4,
-      "raw_score": 0.906
-    },
-    "community": {
-      "score": 0.61,
-      "mentions": 7,
-      "raw_score": 0.867
-    },
-    "transport": {
-      "score": 0.607,
-      "mentions": 2,
-      "raw_score": 0.855
-    },
-    "affordability": {
-      "score": 0.617,
-      "mentions": 1,
-      "raw_score": 0.889
-    },
-    "nightlife": {
-      "score": 0.589,
-      "mentions": 4,
-      "raw_score": 0.796
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.587,
+      "score": 0.63,
       "mentions": 4,
-      "raw_score": 0.789
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.618,
-      "mentions": 2,
-      "raw_score": 0.892
+    "nightlife": {
+      "score": 0.585,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.363,
-      "mentions": 1,
-      "raw_score": 0.043
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0576,
     "anger": 0.1011
   },
-  "narrative": "Reddit discussions about Bayview are most positive about green space (0.91) and safety (0.89). Residents are most critical about food and cafe (0.79) and noise (0.04). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bayview are most positive about food and cafe (0.63) and nightlife (0.58). Residents are most critical about nightlife (0.58) and green space (0.00). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Bayview Park near Pittwater today\nIf there is a heaven for dogs, I'd imagine it looks a bit like this.\n\nHighly recommended if you have dogs, or like dogs.",

@@ -1,47 +1,63 @@
 {
   "suburb": "Botany",
   "post_count": 116,
-  "fetched_at": "2026-04-18T01:54:18.103781+00:00",
+  "fetched_at": "2026-04-29T17:08:15.819845+00:00",
   "aspects": {
     "safety": {
-      "score": 0.397,
+      "score": 0.272,
       "mentions": 31,
-      "raw_score": 0.397
-    },
-    "community": {
-      "score": 0.614,
-      "mentions": 71,
-      "raw_score": 0.614
-    },
-    "transport": {
-      "score": 0.652,
-      "mentions": 29,
-      "raw_score": 0.652
-    },
-    "affordability": {
-      "score": 0.823,
-      "mentions": 6,
-      "raw_score": 0.823
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.786,
+      "score": 0.773,
       "mentions": 16,
-      "raw_score": 0.786
-    },
-    "green_space": {
-      "score": 0.619,
-      "mentions": 27,
-      "raw_score": 0.619
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.722,
+      "score": 0.707,
       "mentions": 26,
-      "raw_score": 0.722
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.703,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.578,
+      "mentions": 29,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.652,
+      "mentions": 71,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.547,
+      "score": 0.599,
       "mentions": 2,
-      "raw_score": 0.547
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.65,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0463,
     "joy": 0.0746
   },
-  "narrative": "Reddit discussions about Botany are most positive about affordability (0.82) and food and cafe (0.79). Residents are most critical about noise (0.55) and safety (0.40). This analysis is based on 116 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Botany are most positive about food and cafe (0.77) and nightlife (0.71). Residents are most critical about transport (0.58) and safety (0.27). This analysis is based on 116 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Border of backburnt land vs untouched in Kamay Botany Bay National Park",

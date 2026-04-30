@@ -1,47 +1,63 @@
 {
   "suburb": "Bella Vista",
   "post_count": 35,
-  "fetched_at": "2026-04-18T02:10:55.849298+00:00",
+  "fetched_at": "2026-04-29T23:28:26.848996+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.461,
-      "mentions": 14,
-      "raw_score": 0.461
-    },
-    "nightlife": {
-      "score": 0.439,
-      "mentions": 8,
-      "raw_score": 0.439
-    },
-    "community": {
-      "score": 0.608,
-      "mentions": 23,
-      "raw_score": 0.608
-    },
-    "green_space": {
-      "score": 0.843,
-      "mentions": 5,
-      "raw_score": 0.843
-    },
-    "affordability": {
-      "score": 0.896,
-      "mentions": 3,
-      "raw_score": 0.896
-    },
     "safety": {
-      "score": 0.48,
+      "score": 0.328,
       "mentions": 10,
-      "raw_score": 0.48
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.668,
+      "score": 0.755,
       "mentions": 5,
-      "raw_score": 0.668
+      "confidence": 0.5,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.646,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.527,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.486,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.614,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1666,
     "joy": 0.0626
   },
-  "narrative": "Reddit discussions about Bella Vista are most positive about affordability (0.90) and green space (0.84). Residents are most critical about transport (0.46) and nightlife (0.44). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bella Vista are most positive about food and cafe (0.76) and nightlife (0.65). Residents are most critical about safety (0.33) and green space (0.00). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "This one is ||Bella Vista Station, South Concourse||. It's really grotty when you go up to it, it's got all sorts of unsightly stains and you can see the foam inside, looks like it's been stabbed a fe",

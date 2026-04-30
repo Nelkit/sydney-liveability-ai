@@ -1,47 +1,63 @@
 {
   "suburb": "Kellyville Ridge",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:42.847104+00:00",
+  "fetched_at": "2026-04-29T23:39:08.295602+00:00",
   "aspects": {
-    "community": {
-      "score": 0.493,
-      "mentions": 11,
-      "raw_score": 0.482
-    },
-    "green_space": {
-      "score": 0.511,
-      "mentions": 5,
-      "raw_score": 0.527
-    },
-    "transport": {
-      "score": 0.568,
-      "mentions": 3,
-      "raw_score": 0.671
-    },
     "safety": {
-      "score": 0.524,
-      "mentions": 5,
-      "raw_score": 0.559
-    },
-    "affordability": {
-      "score": 0.474,
-      "mentions": 3,
-      "raw_score": 0.434
-    },
-    "nightlife": {
-      "score": 0.535,
-      "mentions": 2,
-      "raw_score": 0.588
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.666,
+      "score": 0.5,
       "mentions": 1,
-      "raw_score": 0.914
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.602,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.54,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.659,
-      "mentions": 1,
-      "raw_score": 0.897
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.1022,
     "joy": 0.0832
   },
-  "narrative": "Reddit discussions about Kellyville Ridge are most positive about food and cafe (0.91) and noise (0.90). Residents are most critical about community (0.48) and affordability (0.43). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Kellyville Ridge are most positive about nightlife (0.60) and community (0.54). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Kellyville\n\nKellyville Ridge\n\nNorth Kellyville\n\nThen just to confuse everyone there’s Kellyville North",

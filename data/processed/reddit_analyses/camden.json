@@ -1,47 +1,63 @@
 {
   "suburb": "Camden",
   "post_count": 33,
-  "fetched_at": "2026-04-18T02:11:31.875232+00:00",
+  "fetched_at": "2026-04-29T23:30:35.078436+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.435,
-      "mentions": 8,
-      "raw_score": 0.435
-    },
-    "green_space": {
-      "score": 0.345,
-      "mentions": 5,
-      "raw_score": 0.345
-    },
-    "community": {
-      "score": 0.415,
-      "mentions": 26,
-      "raw_score": 0.415
-    },
-    "affordability": {
-      "score": 0.198,
-      "mentions": 5,
-      "raw_score": 0.198
-    },
     "safety": {
-      "score": 0.207,
+      "score": 0.477,
       "mentions": 7,
-      "raw_score": 0.207
-    },
-    "nightlife": {
-      "score": 0.047,
-      "mentions": 4,
-      "raw_score": 0.047
-    },
-    "noise": {
-      "score": 0.13,
-      "mentions": 2,
-      "raw_score": 0.13
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.956,
+      "score": 0.906,
       "mentions": 2,
-      "raw_score": 0.956
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.679,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.665,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.384,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.653,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.696,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0546,
     "sadness": 0.0298
   },
-  "narrative": "Reddit discussions about Camden are most positive about food and cafe (0.96) and transport (0.43). Residents are most critical about noise (0.13) and nightlife (0.05). This analysis is based on 33 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Camden are most positive about food and cafe (0.91) and green space (0.70). Residents are most critical about safety (0.48) and transport (0.38). This analysis is based on 33 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Distribution of Sydney's population growth to 2024\nIt's interesting to look at where Sydney's population growth is occurring. New population growth numbers came out last week. This is comparing popula",

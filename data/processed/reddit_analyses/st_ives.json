@@ -1,47 +1,63 @@
 {
   "suburb": "St Ives",
   "post_count": 20,
-  "fetched_at": "2026-04-18T02:15:20.675458+00:00",
+  "fetched_at": "2026-04-29T23:51:04.362973+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.711,
-      "mentions": 5,
-      "raw_score": 0.817
-    },
-    "community": {
-      "score": 0.69,
-      "mentions": 13,
-      "raw_score": 0.785
-    },
-    "affordability": {
-      "score": 0.773,
-      "mentions": 1,
-      "raw_score": 0.909
-    },
-    "nightlife": {
-      "score": 0.681,
-      "mentions": 2,
-      "raw_score": 0.771
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.779,
+      "score": 0.573,
       "mentions": 1,
-      "raw_score": 0.918
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.518,
+      "score": 0.344,
       "mentions": 4,
-      "raw_score": 0.527
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.488,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.527,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0479,
     "disgust": 0.0599
   },
-  "narrative": "Reddit discussions about St Ives are most positive about food and cafe (0.92) and affordability (0.91). Residents are most critical about safety (0.50) and noise (0.50). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about St Ives are most positive about food and cafe (0.57) and green space (0.53). Residents are most critical about community (0.49) and transport (0.34). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Bobbin Head and St Ives today\nPhotos from the Jabulani Challenge 45km trail run. Highly recommend walks around Bobbin Head and St Ives Wildflower Garden.",

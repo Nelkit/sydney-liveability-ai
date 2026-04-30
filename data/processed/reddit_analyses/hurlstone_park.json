@@ -1,47 +1,63 @@
 {
   "suburb": "Hurlstone Park",
   "post_count": 29,
-  "fetched_at": "2026-04-18T02:12:39.313338+00:00",
+  "fetched_at": "2026-04-29T23:38:46.427376+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.526,
-      "mentions": 18,
-      "raw_score": 0.527
-    },
     "safety": {
-      "score": 0.572,
+      "score": 0.154,
       "mentions": 5,
-      "raw_score": 0.574
-    },
-    "community": {
-      "score": 0.525,
-      "mentions": 27,
-      "raw_score": 0.526
-    },
-    "affordability": {
-      "score": 0.558,
-      "mentions": 4,
-      "raw_score": 0.56
-    },
-    "green_space": {
-      "score": 0.409,
-      "mentions": 19,
-      "raw_score": 0.406
-    },
-    "nightlife": {
-      "score": 0.481,
-      "mentions": 3,
-      "raw_score": 0.48
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.538,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.823,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.287,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.398,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.552,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0897,
     "joy": 0.021
   },
-  "narrative": "Reddit discussions about Hurlstone Park are most positive about safety (0.57) and affordability (0.56). Residents are most critical about nightlife (0.48) and green space (0.41). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Hurlstone Park are most positive about affordability (0.82) and green space (0.55). Residents are most critical about transport (0.29) and safety (0.15). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "15 speed bumps in 1km - Is this Sydney's most speed bumped street?\nWith the ongoing metro works, the rail replacement SW1 bus runs through Crinan St, Hurlstone Park and into Ewart St, Dulwich Hill.\n\n[",

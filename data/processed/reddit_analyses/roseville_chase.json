@@ -1,47 +1,63 @@
 {
   "suburb": "Roseville Chase",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:13.122471+00:00",
+  "fetched_at": "2026-04-29T23:49:37.859475+00:00",
   "aspects": {
-    "community": {
-      "score": 0.487,
-      "mentions": 1,
-      "raw_score": 0.109
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0117,
     "disgust": 0.0035
   },
-  "narrative": "Reddit discussions about Roseville Chase are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about green space (0.50) and community (0.11). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is fear.",
+  "narrative": "Reddit discussions about Roseville Chase are most positive about affordability (0.50) and green space (0.00). Residents are most critical about affordability (0.50) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is fear.",
   "sources": [
     {
       "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",

@@ -1,47 +1,63 @@
 {
   "suburb": "Yennora",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:50.361415+00:00",
+  "fetched_at": "2026-04-29T23:55:14.950734+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.49,
-      "mentions": 3,
-      "raw_score": 0.401
-    },
-    "community": {
-      "score": 0.49,
-      "mentions": 3,
-      "raw_score": 0.401
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0587,
     "joy": 0.0103
   },
-  "narrative": "Reddit discussions about Yennora are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about transport (0.40) and community (0.40). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is surprise.",
+  "narrative": "Reddit discussions about Yennora are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is surprise.",
   "sources": [
     {
       "text": "T5 Stuck at Canley Vale\nBeen stuck at Canley Vale for a while, apparently there's emergency repairs at the level crossing at Yennora. Wonder what's happened?",

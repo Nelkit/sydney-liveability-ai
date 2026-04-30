@@ -1,47 +1,63 @@
 {
   "suburb": "Rosemeadow",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:21:00.957015+00:00",
+  "fetched_at": "2026-04-29T23:49:30.670178+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "community": {
-      "score": 0.5,
-      "mentions": 2,
-      "raw_score": 0.494
-    },
     "safety": {
-      "score": 0.469,
-      "mentions": 1,
-      "raw_score": 0.04
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0426,
     "disgust": 0.0171
   },
-  "narrative": "Reddit discussions about Rosemeadow are most positive about transport (0.50) and green space (0.50). Residents are most critical about community (0.49) and safety (0.04). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rosemeadow are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Originally from Northern Rivers, now live in Camden Council. I say Sydney ends more or less where the suburban train lines end. Emu Plains, North Richmond, Glenorie, Berowra, Palm Beach, Waterfall, Ro",

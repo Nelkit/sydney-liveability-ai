@@ -1,47 +1,63 @@
 {
   "suburb": "Hebersham",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:35.450687+00:00",
+  "fetched_at": "2026-04-29T23:38:25.653345+00:00",
   "aspects": {
     "safety": {
-      "score": 0.527,
-      "mentions": 3,
-      "raw_score": 0.766
-    },
-    "community": {
-      "score": 0.537,
-      "mentions": 2,
-      "raw_score": 0.866
-    },
-    "noise": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "affordability": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
-    },
-    "green_space": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.988
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.063,
     "joy": 0.0069
   },
-  "narrative": "Reddit discussions about Hebersham are most positive about noise (0.99) and affordability (0.99). Residents are most critical about nightlife (0.50) and transport (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Hebersham are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "How bout this OP, the only suburbs I’d avoid in the area you mentioned are: Oxley Park (way too crowded and noisy), Ropes Crossing (called Robbers Crossing as there’s been a lot of break ins there), I",

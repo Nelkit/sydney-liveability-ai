@@ -1,47 +1,63 @@
 {
   "suburb": "Bossley Park",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:29.853582+00:00",
+  "fetched_at": "2026-04-29T23:29:33.510864+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.548,
+    "safety": {
+      "score": 0.159,
       "mentions": 2,
-      "raw_score": 0.982
-    },
-    "community": {
-      "score": 0.548,
-      "mentions": 2,
-      "raw_score": 0.982
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.55,
+      "score": 0.19,
       "mentions": 1,
-      "raw_score": 0.997
-    },
-    "green_space": {
-      "score": 0.548,
-      "mentions": 2,
-      "raw_score": 0.982
-    },
-    "safety": {
-      "score": 0.548,
-      "mentions": 2,
-      "raw_score": 0.982
-    },
-    "noise": {
-      "score": 0.542,
-      "mentions": 1,
-      "raw_score": 0.925
-    },
-    "affordability": {
-      "score": 0.542,
-      "mentions": 1,
-      "raw_score": 0.925
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.218,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.251,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.557,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.0345,
     "joy": 0.0055
   },
-  "narrative": "Reddit discussions about Bossley Park are most positive about food and cafe (1.00) and transport (0.98). Residents are most critical about affordability (0.93) and nightlife (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bossley Park are most positive about green space (0.56) and nightlife (0.50). Residents are most critical about food and cafe (0.19) and safety (0.16). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "It's always been overblown and with a strong hint of classism and racism. \n\nIn saying that though, even with development it is still very much bland suburbia to me. There are parks, services, shops et",

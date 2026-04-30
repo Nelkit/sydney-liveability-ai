@@ -1,47 +1,63 @@
 {
   "suburb": "Lavender Bay",
   "post_count": 19,
-  "fetched_at": "2026-04-18T02:15:38.591887+00:00",
+  "fetched_at": "2026-04-29T23:41:14.160796+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.598,
-      "mentions": 10,
-      "raw_score": 0.655
-    },
-    "community": {
-      "score": 0.559,
-      "mentions": 14,
-      "raw_score": 0.593
-    },
-    "nightlife": {
-      "score": 0.599,
-      "mentions": 8,
-      "raw_score": 0.656
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.563,
+      "score": 0.594,
       "mentions": 5,
-      "raw_score": 0.599
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.543,
-      "mentions": 3,
-      "raw_score": 0.568
-    },
-    "noise": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "safety": {
-      "score": 0.81,
-      "mentions": 2,
-      "raw_score": 0.989
+    "nightlife": {
+      "score": 0.617,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.81,
-      "mentions": 2,
-      "raw_score": 0.989
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.737,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.1105,
     "sadness": 0.0469
   },
-  "narrative": "Reddit discussions about Lavender Bay are most positive about safety (0.99) and affordability (0.99). Residents are most critical about green space (0.57) and noise (0.50). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lavender Bay are most positive about transport (0.74) and nightlife (0.62). Residents are most critical about food and cafe (0.59) and green space (0.00). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "How good was the metro tonight for moving crowds?\nThe crowds went away so fast for Barangaroo. Usually it would be a long wait time, but this time it was very quick. \n\nThe same thing happened around V",

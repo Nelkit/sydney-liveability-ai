@@ -1,47 +1,63 @@
 {
   "suburb": "Wentworthville",
   "post_count": 28,
-  "fetched_at": "2026-04-18T02:12:54.531223+00:00",
+  "fetched_at": "2026-04-29T23:53:47.396863+00:00",
   "aspects": {
     "safety": {
-      "score": 0.448,
+      "score": 0.296,
       "mentions": 13,
-      "raw_score": 0.444
-    },
-    "transport": {
-      "score": 0.58,
-      "mentions": 9,
-      "raw_score": 0.586
-    },
-    "community": {
-      "score": 0.536,
-      "mentions": 19,
-      "raw_score": 0.539
-    },
-    "affordability": {
-      "score": 0.51,
-      "mentions": 6,
-      "raw_score": 0.511
-    },
-    "green_space": {
-      "score": 0.624,
-      "mentions": 7,
-      "raw_score": 0.633
-    },
-    "nightlife": {
-      "score": 0.682,
-      "mentions": 5,
-      "raw_score": 0.695
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.725,
+      "score": 0.572,
       "mentions": 3,
-      "raw_score": 0.741
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.617,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.472,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.286,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.3,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.546,
-      "mentions": 2,
-      "raw_score": 0.549
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0408,
     "joy": 0.1106
   },
-  "narrative": "Reddit discussions about Wentworthville are most positive about food and cafe (0.74) and nightlife (0.69). Residents are most critical about affordability (0.51) and safety (0.44). This analysis is based on 28 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Wentworthville are most positive about nightlife (0.62) and food and cafe (0.57). Residents are most critical about transport (0.29) and green space (0.00). This analysis is based on 28 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Wentworthville shooting: NSW Police shoot two in western Sydney",

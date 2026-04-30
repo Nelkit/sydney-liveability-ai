@@ -1,47 +1,63 @@
 {
   "suburb": "Enfield",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:17.571361+00:00",
+  "fetched_at": "2026-04-29T23:36:06.495001+00:00",
   "aspects": {
-    "community": {
-      "score": 0.582,
-      "mentions": 7,
-      "raw_score": 0.85
-    },
-    "green_space": {
-      "score": 0.59,
-      "mentions": 1,
-      "raw_score": 0.885
-    },
     "safety": {
-      "score": 0.585,
-      "mentions": 2,
-      "raw_score": 0.865
-    },
-    "transport": {
-      "score": 0.549,
-      "mentions": 3,
-      "raw_score": 0.71
-    },
-    "noise": {
-      "score": 0.587,
-      "mentions": 1,
-      "raw_score": 0.875
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.012,
     "joy": 0.1661
   },
-  "narrative": "Reddit discussions about Enfield are most positive about green space (0.89) and noise (0.88). Residents are most critical about nightlife (0.50) and affordability (0.50). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Enfield are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Anyone lost the Easter bunny round Henly Park?\nDo not think it is a wild bunny I assume someone has lost the little guy round Henly Park Enfield. \n\nFor the last week every day been seeing this cutie h",

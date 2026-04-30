@@ -1,47 +1,63 @@
 {
   "suburb": "Ashbury",
   "post_count": 9,
-  "fetched_at": "2026-04-18T02:18:30.960650+00:00",
+  "fetched_at": "2026-04-29T23:27:42.805627+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.625,
-      "mentions": 4,
-      "raw_score": 0.918
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "community": {
-      "score": 0.62,
-      "mentions": 8,
-      "raw_score": 0.899
+    "food_and_cafe": {
+      "score": 0.533,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.595,
-      "mentions": 1,
-      "raw_score": 0.818
-    },
-    "safety": {
-      "score": 0.624,
-      "mentions": 1,
-      "raw_score": 0.914
-    },
-    "green_space": {
-      "score": 0.566,
-      "mentions": 2,
-      "raw_score": 0.72
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0531,
     "fear": 0.0332
   },
-  "narrative": "Reddit discussions about Ashbury are most positive about food and cafe (0.92) and safety (0.91). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Ashbury are most positive about food and cafe (0.53) and green space (0.00). Residents are most critical about food and cafe (0.53) and green space (0.00). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "My entry for the best breakfast in Sydney (First Street Pantry, Ashbury, $25)\nHidden from pic are the mushrooms, and what it looked like pre and post beans being added. Pic also doesn't do it justice ",

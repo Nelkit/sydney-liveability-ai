@@ -1,47 +1,63 @@
 {
   "suburb": "Greenwich",
   "post_count": 16,
-  "fetched_at": "2026-04-18T02:16:21.562512+00:00",
+  "fetched_at": "2026-04-29T23:37:53.408177+00:00",
   "aspects": {
-    "community": {
-      "score": 0.425,
-      "mentions": 12,
-      "raw_score": 0.36
-    },
-    "transport": {
-      "score": 0.47,
-      "mentions": 7,
-      "raw_score": 0.443
-    },
-    "affordability": {
-      "score": 0.536,
-      "mentions": 5,
-      "raw_score": 0.568
-    },
-    "nightlife": {
-      "score": 0.544,
-      "mentions": 3,
-      "raw_score": 0.582
-    },
     "safety": {
-      "score": 0.541,
-      "mentions": 3,
-      "raw_score": 0.576
-    },
-    "noise": {
-      "score": 0.538,
-      "mentions": 2,
-      "raw_score": 0.571
-    },
-    "green_space": {
-      "score": 0.573,
-      "mentions": 4,
-      "raw_score": 0.636
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.263,
+      "score": 0.519,
       "mentions": 1,
-      "raw_score": 0.055
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.582,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.1163,
     "surprise": 0.1482
   },
-  "narrative": "Reddit discussions about Greenwich are most positive about green space (0.64) and nightlife (0.58). Residents are most critical about community (0.36) and food and cafe (0.06). This analysis is based on 16 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Greenwich are most positive about transport (0.58) and food and cafe (0.52). Residents are most critical about food and cafe (0.52) and green space (0.00). This analysis is based on 16 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "NSW independent MP Alex Greenwich awarded $140,000 after suing former One Nation NSW leader Mark Latham over defamation",

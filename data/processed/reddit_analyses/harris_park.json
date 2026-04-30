@@ -1,47 +1,63 @@
 {
   "suburb": "Harris Park",
   "post_count": 44,
-  "fetched_at": "2026-04-18T02:08:20.323013+00:00",
+  "fetched_at": "2026-04-29T23:38:18.934929+00:00",
   "aspects": {
-    "community": {
-      "score": 0.834,
-      "mentions": 41,
-      "raw_score": 0.834
-    },
-    "transport": {
-      "score": 0.939,
+    "safety": {
+      "score": 0.495,
       "mentions": 8,
-      "raw_score": 0.939
-    },
-    "nightlife": {
-      "score": 0.877,
-      "mentions": 15,
-      "raw_score": 0.877
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.906,
+      "score": 0.578,
       "mentions": 23,
-      "raw_score": 0.906
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.531,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.976,
-      "mentions": 4,
-      "raw_score": 0.976
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.867,
-      "mentions": 30,
-      "raw_score": 0.867
-    },
-    "safety": {
-      "score": 0.965,
+    "transport": {
+      "score": 0.511,
       "mentions": 8,
-      "raw_score": 0.965
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.581,
+      "mentions": 41,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.212,
-      "mentions": 3,
-      "raw_score": 0.212
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.526,
+      "mentions": 30,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0344,
     "disgust": 0.049
   },
-  "narrative": "Reddit discussions about Harris Park are most positive about affordability (0.98) and safety (0.96). Residents are most critical about community (0.83) and noise (0.21). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Harris Park are most positive about community (0.58) and food and cafe (0.58). Residents are most critical about transport (0.51) and safety (0.49). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Walk from Parramatta to the CBD - We did it!\n[We did it!](https://www.instagram.com/p/DCVaE-rPkz3/?igsh=MTh0bnE2Y3o5OGdwZA%3D%3D)\n\nInspired by the Flying Pieman himself (great story of Sydney history,",

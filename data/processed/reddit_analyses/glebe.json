@@ -1,47 +1,63 @@
 {
   "suburb": "Glebe",
   "post_count": 189,
-  "fetched_at": "2026-04-18T01:33:54.751964+00:00",
+  "fetched_at": "2026-04-29T17:00:12.806978+00:00",
   "aspects": {
-    "community": {
-      "score": 0.595,
-      "mentions": 159,
-      "raw_score": 0.595
-    },
-    "transport": {
-      "score": 0.627,
-      "mentions": 58,
-      "raw_score": 0.627
-    },
-    "nightlife": {
-      "score": 0.478,
-      "mentions": 49,
-      "raw_score": 0.478
-    },
     "safety": {
-      "score": 0.422,
+      "score": 0.225,
       "mentions": 61,
-      "raw_score": 0.422
-    },
-    "green_space": {
-      "score": 0.645,
-      "mentions": 29,
-      "raw_score": 0.645
-    },
-    "affordability": {
-      "score": 0.433,
-      "mentions": 25,
-      "raw_score": 0.433
-    },
-    "noise": {
-      "score": 0.502,
-      "mentions": 18,
-      "raw_score": 0.502
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.746,
+      "score": 0.655,
       "mentions": 29,
-      "raw_score": 0.746
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.455,
+      "mentions": 49,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.391,
+      "mentions": 25,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.515,
+      "mentions": 58,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.652,
+      "mentions": 159,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.405,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.605,
+      "mentions": 29,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0683,
     "fear": 0.072
   },
-  "narrative": "Reddit discussions about Glebe are most positive about food and cafe (0.75) and green space (0.65). Residents are most critical about affordability (0.43) and safety (0.42). This analysis is based on 189 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Glebe are most positive about food and cafe (0.66) and community (0.65). Residents are most critical about affordability (0.39) and safety (0.23). This analysis is based on 189 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",

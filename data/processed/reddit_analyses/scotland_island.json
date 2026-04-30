@@ -1,47 +1,63 @@
 {
   "suburb": "Scotland Island",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:20:03.627647+00:00",
+  "fetched_at": "2026-04-29T23:50:44.580059+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.575,
-      "mentions": 3,
-      "raw_score": 0.949
-    },
-    "community": {
-      "score": 0.57,
-      "mentions": 5,
-      "raw_score": 0.921
-    },
-    "affordability": {
-      "score": 0.581,
-      "mentions": 1,
-      "raw_score": 0.983
-    },
-    "nightlife": {
-      "score": 0.581,
-      "mentions": 1,
-      "raw_score": 0.983
-    },
-    "green_space": {
-      "score": 0.556,
-      "mentions": 2,
-      "raw_score": 0.836
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.8,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0129,
     "anger": 0.0091
   },
-  "narrative": "Reddit discussions about Scotland Island are most positive about affordability (0.98) and nightlife (0.98). Residents are most critical about food and cafe (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Scotland Island are most positive about nightlife (0.80) and food and cafe (0.50). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Scotland Island/Dangar Island visits\nI've been to cockatoo island a bunch of times  before and I think it's great. Even stayed over last year for girlfriends birthday and had a late night explore and ",

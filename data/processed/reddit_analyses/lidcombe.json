@@ -1,47 +1,63 @@
 {
   "suburb": "Lidcombe",
   "post_count": 138,
-  "fetched_at": "2026-04-18T01:53:08.962105+00:00",
+  "fetched_at": "2026-04-29T17:06:57.348355+00:00",
   "aspects": {
     "safety": {
-      "score": 0.349,
+      "score": 0.153,
       "mentions": 40,
-      "raw_score": 0.349
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.343,
+      "score": 0.581,
       "mentions": 24,
-      "raw_score": 0.343
-    },
-    "transport": {
-      "score": 0.64,
-      "mentions": 87,
-      "raw_score": 0.64
-    },
-    "community": {
-      "score": 0.591,
-      "mentions": 106,
-      "raw_score": 0.591
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.556,
+      "score": 0.588,
       "mentions": 22,
-      "raw_score": 0.556
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.726,
+      "score": 0.602,
       "mentions": 16,
-      "raw_score": 0.726
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.676,
-      "mentions": 22,
-      "raw_score": 0.676
+    "transport": {
+      "score": 0.542,
+      "mentions": 87,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.61,
+      "mentions": 106,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.469,
+      "score": 0.432,
       "mentions": 11,
-      "raw_score": 0.469
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.718,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0635,
     "joy": 0.0743
   },
-  "narrative": "Reddit discussions about Lidcombe are most positive about affordability (0.73) and green space (0.68). Residents are most critical about safety (0.35) and food and cafe (0.34). This analysis is based on 138 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lidcombe are most positive about green space (0.72) and community (0.61). Residents are most critical about noise (0.43) and safety (0.15). This analysis is based on 138 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Lidcombe Shopping Centre\nNot sure exactly what happened here. \n\nHot day on a seemingly typical Friday. While having a casual coffee with a mate, the roof caved in over food court. Minutes later the en",

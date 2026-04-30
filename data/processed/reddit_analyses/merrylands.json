@@ -1,47 +1,63 @@
 {
   "suburb": "Merrylands",
   "post_count": 45,
-  "fetched_at": "2026-04-18T02:07:44.111234+00:00",
+  "fetched_at": "2026-04-29T23:43:52.843634+00:00",
   "aspects": {
     "safety": {
-      "score": 0.191,
+      "score": 0.318,
       "mentions": 15,
-      "raw_score": 0.191
-    },
-    "community": {
-      "score": 0.293,
-      "mentions": 35,
-      "raw_score": 0.293
-    },
-    "transport": {
-      "score": 0.266,
-      "mentions": 15,
-      "raw_score": 0.266
-    },
-    "affordability": {
-      "score": 0.284,
-      "mentions": 6,
-      "raw_score": 0.284
-    },
-    "green_space": {
-      "score": 0.285,
-      "mentions": 11,
-      "raw_score": 0.285
-    },
-    "nightlife": {
-      "score": 0.322,
-      "mentions": 15,
-      "raw_score": 0.322
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.685,
+      "score": 0.584,
       "mentions": 15,
-      "raw_score": 0.685
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.411,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.196,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.187,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.366,
+      "mentions": 35,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.913,
-      "mentions": 3,
-      "raw_score": 0.913
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.217,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1334,
     "joy": 0.1239
   },
-  "narrative": "Reddit discussions about Merrylands are most positive about noise (0.91) and food and cafe (0.69). Residents are most critical about transport (0.27) and safety (0.19). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Merrylands are most positive about food and cafe (0.58) and nightlife (0.41). Residents are most critical about affordability (0.20) and transport (0.19). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Memorial for Merrylands victim of stabbing attack\nWent to Merrylands yesterday to return some library books and saw this memorial near the site of the stabbing.",

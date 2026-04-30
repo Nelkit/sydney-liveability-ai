@@ -1,47 +1,63 @@
 {
   "suburb": "Milsons Point",
   "post_count": 43,
-  "fetched_at": "2026-04-18T02:08:39.996656+00:00",
+  "fetched_at": "2026-04-29T23:44:11.837081+00:00",
   "aspects": {
-    "nightlife": {
-      "score": 0.837,
-      "mentions": 7,
-      "raw_score": 0.837
-    },
-    "community": {
-      "score": 0.74,
-      "mentions": 31,
-      "raw_score": 0.74
+    "safety": {
+      "score": 0.255,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.882,
+      "score": 0.613,
       "mentions": 3,
-      "raw_score": 0.882
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
-      "score": 0.545,
-      "mentions": 21,
-      "raw_score": 0.545
+    "nightlife": {
+      "score": 0.701,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.681,
-      "mentions": 1,
-      "raw_score": 0.681
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.538,
-      "mentions": 12,
-      "raw_score": 0.538
+    "transport": {
+      "score": 0.296,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.804,
-      "mentions": 5,
-      "raw_score": 0.804
+    "community": {
+      "score": 0.765,
+      "mentions": 31,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.146,
-      "mentions": 2,
-      "raw_score": 0.146
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0578,
     "sadness": 0.0621
   },
-  "narrative": "Reddit discussions about Milsons Point are most positive about food and cafe (0.88) and nightlife (0.84). Residents are most critical about safety (0.54) and noise (0.15). This analysis is based on 43 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Milsons Point are most positive about community (0.77) and nightlife (0.70). Residents are most critical about safety (0.26) and green space (0.00). This analysis is based on 43 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Kirribilli Hotel Cocktail List\nThe pub is filled with photos and names of historical politicians.\n\n  \nThe building itself is a great art deco example.\n\n  \nTotally recommended to grab a drink if you're",

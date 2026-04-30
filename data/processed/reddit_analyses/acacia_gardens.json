@@ -1,47 +1,63 @@
 {
   "suburb": "Acacia Gardens",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:26.912081+00:00",
+  "fetched_at": "2026-04-29T23:27:00.045084+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.51,
-      "mentions": 3,
-      "raw_score": 0.597
+    "safety": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.512,
+      "score": 0.7,
       "mentions": 1,
-      "raw_score": 0.622
-    },
-    "community": {
-      "score": 0.515,
-      "mentions": 2,
-      "raw_score": 0.65
-    },
-    "affordability": {
-      "score": 0.515,
-      "mentions": 2,
-      "raw_score": 0.65
-    },
-    "green_space": {
-      "score": 0.506,
-      "mentions": 2,
-      "raw_score": 0.561
-    },
-    "noise": {
-      "score": 0.54,
-      "mentions": 1,
-      "raw_score": 0.897
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.54,
+      "score": 0.779,
       "mentions": 1,
-      "raw_score": 0.897
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.54,
-      "mentions": 1,
-      "raw_score": 0.897
+    "affordability": {
+      "score": 0.191,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.295,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.268,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.004,
     "fear": 0.0157
   },
-  "narrative": "Reddit discussions about Acacia Gardens are most positive about noise (0.90) and nightlife (0.90). Residents are most critical about transport (0.60) and green space (0.56). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Acacia Gardens are most positive about nightlife (0.78) and food and cafe (0.70). Residents are most critical about affordability (0.19) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "It does depend on the suburb.\n\nSome of the northern suburbs like Acacia gardens, Glenwood, (East) Quakers Hill, Stanhope etc are nice. Surrounding Blacktown centre suburb are a lot of low income and n",

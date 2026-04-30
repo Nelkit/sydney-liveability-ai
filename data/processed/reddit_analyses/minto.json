@@ -1,47 +1,63 @@
 {
   "suburb": "Minto",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:22.273826+00:00",
+  "fetched_at": "2026-04-29T23:44:15.735164+00:00",
   "aspects": {
-    "community": {
-      "score": 0.48,
-      "mentions": 8,
-      "raw_score": 0.441
-    },
-    "nightlife": {
-      "score": 0.494,
-      "mentions": 2,
-      "raw_score": 0.481
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.494,
-      "mentions": 2,
-      "raw_score": 0.481
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "transport": {
-      "score": 0.412,
-      "mentions": 4,
-      "raw_score": 0.237
-    },
-    "safety": {
-      "score": 0.408,
-      "mentions": 5,
-      "raw_score": 0.225
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.4,
-      "mentions": 2,
-      "raw_score": 0.201
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.353,
-      "mentions": 1,
-      "raw_score": 0.06
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.353,
-      "mentions": 1,
-      "raw_score": 0.06
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0359,
     "disgust": 0.0648
   },
-  "narrative": "Reddit discussions about Minto are most positive about nightlife (0.48) and food and cafe (0.48). Residents are most critical about green space (0.06) and noise (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Minto are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Opening of El Jannah at Minto!",

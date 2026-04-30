@@ -1,47 +1,63 @@
 {
   "suburb": "Casula",
   "post_count": 11,
-  "fetched_at": "2026-04-18T02:18:00.732581+00:00",
+  "fetched_at": "2026-04-29T23:32:08.718209+00:00",
   "aspects": {
-    "community": {
-      "score": 0.441,
-      "mentions": 9,
-      "raw_score": 0.339
-    },
-    "noise": {
-      "score": 0.674,
-      "mentions": 1,
-      "raw_score": 0.974
-    },
-    "affordability": {
-      "score": 0.674,
-      "mentions": 1,
-      "raw_score": 0.974
-    },
-    "transport": {
-      "score": 0.646,
-      "mentions": 4,
-      "raw_score": 0.898
-    },
-    "nightlife": {
-      "score": 0.661,
-      "mentions": 2,
-      "raw_score": 0.939
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.661,
+      "score": 0.502,
       "mentions": 2,
-      "raw_score": 0.939
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.658,
-      "mentions": 4,
-      "raw_score": 0.932
-    },
-    "safety": {
-      "score": 0.649,
-      "mentions": 2,
-      "raw_score": 0.907
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.2816,
     "anger": 0.0602
   },
-  "narrative": "Reddit discussions about Casula are most positive about noise (0.97) and affordability (0.97). Residents are most critical about transport (0.90) and community (0.34). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Casula are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",

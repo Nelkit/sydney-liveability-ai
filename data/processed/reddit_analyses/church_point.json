@@ -1,47 +1,63 @@
 {
   "suburb": "Church Point",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:31.508049+00:00",
+  "fetched_at": "2026-04-29T23:32:51.147600+00:00",
   "aspects": {
-    "community": {
-      "score": 0.514,
-      "mentions": 3,
-      "raw_score": 0.644
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.991
-    },
-    "transport": {
-      "score": 0.549,
-      "mentions": 1,
-      "raw_score": 0.991
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0239,
     "disgust": 0.0168
   },
-  "narrative": "Reddit discussions about Church Point are most positive about green space (0.99) and transport (0.99). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is joy.",
+  "narrative": "Reddit discussions about Church Point are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is joy.",
   "sources": [
     {
       "text": "Taking the Mothership to the Waterfront Store @ Church Point, a favourite of ours!",

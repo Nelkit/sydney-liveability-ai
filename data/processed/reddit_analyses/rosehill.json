@@ -1,47 +1,63 @@
 {
   "suburb": "Rosehill",
   "post_count": 45,
-  "fetched_at": "2026-04-18T02:07:59.925878+00:00",
+  "fetched_at": "2026-04-29T23:49:25.511619+00:00",
   "aspects": {
-    "community": {
-      "score": 0.321,
-      "mentions": 37,
-      "raw_score": 0.321
-    },
     "safety": {
-      "score": 0.246,
-      "mentions": 12,
-      "raw_score": 0.246
-    },
-    "transport": {
-      "score": 0.486,
-      "mentions": 18,
-      "raw_score": 0.486
-    },
-    "green_space": {
-      "score": 0.487,
-      "mentions": 9,
-      "raw_score": 0.487
-    },
-    "nightlife": {
-      "score": 0.497,
-      "mentions": 4,
-      "raw_score": 0.497
-    },
-    "affordability": {
-      "score": 0.664,
-      "mentions": 8,
-      "raw_score": 0.664
-    },
-    "noise": {
-      "score": 0.821,
-      "mentions": 3,
-      "raw_score": 0.821
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.987,
+      "score": 0.771,
       "mentions": 2,
-      "raw_score": 0.987
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": 0.632,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.514,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.604,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.109,
     "joy": 0.0754
   },
-  "narrative": "Reddit discussions about Rosehill are most positive about food and cafe (0.99) and noise (0.82). Residents are most critical about community (0.32) and safety (0.25). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rosehill are most positive about food and cafe (0.77) and affordability (0.63). Residents are most critical about green space (0.60) and transport (0.51). This analysis is based on 45 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "NSW Premier Chris Minns to be referred to ICAC over relationship with key figure behind redevelopment of Rosehill Racecourse, ABC understands",

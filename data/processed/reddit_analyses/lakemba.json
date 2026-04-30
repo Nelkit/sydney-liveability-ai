@@ -1,47 +1,63 @@
 {
   "suburb": "Lakemba",
   "post_count": 56,
-  "fetched_at": "2026-04-18T02:05:16.052791+00:00",
+  "fetched_at": "2026-04-29T23:40:28.302863+00:00",
   "aspects": {
-    "community": {
-      "score": 0.813,
-      "mentions": 47,
-      "raw_score": 0.813
-    },
     "safety": {
-      "score": 0.35,
+      "score": 0.397,
       "mentions": 16,
-      "raw_score": 0.35
-    },
-    "affordability": {
-      "score": 0.622,
-      "mentions": 14,
-      "raw_score": 0.622
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.801,
+      "score": 0.78,
       "mentions": 18,
-      "raw_score": 0.801
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.769,
+      "score": 0.791,
       "mentions": 14,
-      "raw_score": 0.769
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.611,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.657,
+      "score": 0.589,
       "mentions": 18,
-      "raw_score": 0.657
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.666,
-      "mentions": 16,
-      "raw_score": 0.666
+    "community": {
+      "score": 0.691,
+      "mentions": 47,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.134,
-      "mentions": 1,
-      "raw_score": 0.134
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.592,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0664,
     "anger": 0.0606
   },
-  "narrative": "Reddit discussions about Lakemba are most positive about community (0.81) and food and cafe (0.80). Residents are most critical about safety (0.35) and noise (0.13). This analysis is based on 56 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lakemba are most positive about nightlife (0.79) and food and cafe (0.78). Residents are most critical about transport (0.59) and safety (0.40). This analysis is based on 56 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I just walked from Cronulla to Parramatta\nI started this one at around 6:20 and finished at 20:20 taking just a little over 14 hours. The walk was around 52 kilometres. I had attempted this one before",

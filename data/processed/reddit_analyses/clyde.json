@@ -1,47 +1,63 @@
 {
   "suburb": "Clyde",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:36.766907+00:00",
+  "fetched_at": "2026-04-29T23:33:03.796914+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.426,
-      "mentions": 8,
-      "raw_score": 0.316
-    },
-    "community": {
-      "score": 0.435,
-      "mentions": 7,
-      "raw_score": 0.338
-    },
     "safety": {
-      "score": 0.51,
-      "mentions": 1,
-      "raw_score": 0.526
-    },
-    "affordability": {
-      "score": 0.51,
-      "mentions": 1,
-      "raw_score": 0.526
-    },
-    "noise": {
-      "score": 0.548,
-      "mentions": 1,
-      "raw_score": 0.62
-    },
-    "nightlife": {
-      "score": 0.548,
-      "mentions": 1,
-      "raw_score": 0.62
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.555,
-      "mentions": 1,
-      "raw_score": 0.637
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.61,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.707,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0047,
     "fear": 0.0163
   },
-  "narrative": "Reddit discussions about Clyde are most positive about food and cafe (0.64) and noise (0.62). Residents are most critical about community (0.34) and transport (0.32). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Clyde are most positive about community (0.71) and transport (0.61). Residents are most critical about transport (0.61) and green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Clyburn station presumably was because it was between Clyde and Auburn. Not suburb names per your request but a bit of rail history of combo names.",

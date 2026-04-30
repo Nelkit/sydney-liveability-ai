@@ -1,47 +1,63 @@
 {
   "suburb": "Forestville",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:55.412743+00:00",
+  "fetched_at": "2026-04-29T23:36:55.243531+00:00",
   "aspects": {
-    "community": {
-      "score": 0.522,
-      "mentions": 5,
-      "raw_score": 0.635
-    },
-    "noise": {
-      "score": 0.525,
-      "mentions": 1,
-      "raw_score": 0.648
-    },
-    "green_space": {
-      "score": 0.515,
-      "mentions": 2,
-      "raw_score": 0.588
-    },
-    "nightlife": {
-      "score": 0.52,
-      "mentions": 3,
-      "raw_score": 0.618
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.557,
-      "mentions": 2,
-      "raw_score": 0.843
-    },
-    "transport": {
-      "score": 0.576,
-      "mentions": 1,
-      "raw_score": 0.957
-    },
-    "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0126,
     "joy": 0.0161
   },
-  "narrative": "Reddit discussions about Forestville are most positive about transport (0.96) and food and cafe (0.84). Residents are most critical about safety (0.50) and affordability (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Forestville are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Fighter jet noise over Sydney\nJust heard the unmistakable sound of a fighter jet overhead. For context I am in Forestville (north shore/northern beaches) and have never seen or heard this sort of thin",

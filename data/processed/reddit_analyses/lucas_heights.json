@@ -1,47 +1,63 @@
 {
   "suburb": "Lucas Heights",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:57.721752+00:00",
+  "fetched_at": "2026-04-29T23:42:15.904924+00:00",
   "aspects": {
-    "nightlife": {
-      "score": 0.501,
-      "mentions": 2,
-      "raw_score": 0.506
-    },
-    "community": {
-      "score": 0.56,
-      "mentions": 3,
-      "raw_score": 0.862
-    },
-    "green_space": {
-      "score": 0.562,
-      "mentions": 2,
-      "raw_score": 0.873
-    },
     "safety": {
-      "score": 0.516,
-      "mentions": 3,
-      "raw_score": 0.597
-    },
-    "transport": {
-      "score": 0.544,
-      "mentions": 1,
-      "raw_score": 0.763
-    },
-    "affordability": {
-      "score": 0.544,
-      "mentions": 1,
-      "raw_score": 0.763
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0107,
     "joy": 0.1079
   },
-  "narrative": "Reddit discussions about Lucas Heights are most positive about green space (0.87) and community (0.86). Residents are most critical about food and cafe (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lucas Heights are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "CBD skyline from Lucas Heights - about 35km away ",

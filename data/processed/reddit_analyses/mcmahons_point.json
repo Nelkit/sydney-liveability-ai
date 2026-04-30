@@ -1,47 +1,63 @@
 {
   "suburb": "McMahons Point",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:41.953536+00:00",
+  "fetched_at": "2026-04-29T23:43:39.505446+00:00",
   "aspects": {
-    "community": {
-      "score": 0.523,
-      "mentions": 3,
-      "raw_score": 0.728
-    },
-    "affordability": {
-      "score": 0.55,
-      "mentions": 2,
-      "raw_score": 0.998
-    },
-    "transport": {
-      "score": 0.55,
-      "mentions": 2,
-      "raw_score": 0.998
-    },
-    "nightlife": {
-      "score": 0.55,
-      "mentions": 2,
-      "raw_score": 0.998
-    },
-    "green_space": {
-      "score": 0.55,
-      "mentions": 2,
-      "raw_score": 0.998
-    },
     "safety": {
-      "score": 0.55,
-      "mentions": 2,
-      "raw_score": 0.998
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.55,
-      "mentions": 1,
-      "raw_score": 0.998
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": 0.8,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0224,
     "joy": 0.0099
   },
-  "narrative": "Reddit discussions about McMahons Point are most positive about affordability (1.00) and transport (1.00). Residents are most critical about community (0.73) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about McMahons Point are most positive about nightlife (0.80) and green space (0.00). Residents are most critical about nightlife (0.80) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Blues Point Tower was originally intended to be just the first building in a massive ‘modernist’ redevelopment of the entire Blues Point-McMahons Point precinct from Berry’s Bay to Lavender Bay.\n*Crit",

@@ -1,47 +1,63 @@
 {
   "suburb": "Ingleside",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:36.276808+00:00",
+  "fetched_at": "2026-04-29T23:38:48.824839+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.473,
-      "mentions": 1,
-      "raw_score": 0.229
-    },
-    "community": {
-      "score": 0.543,
-      "mentions": 2,
-      "raw_score": 0.93
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
     "safety": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "food_and_cafe": {
+      "score": 0.525,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.535,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0112,
     "joy": 0.2572
   },
-  "narrative": "Reddit discussions about Ingleside are most positive about community (0.93) and nightlife (0.50). Residents are most critical about noise (0.50) and transport (0.23). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Ingleside are most positive about nightlife (0.54) and food and cafe (0.53). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "You'd think living in Terrey Hills and working in Ingleside would be easy, but it's actually a pain in the arse",

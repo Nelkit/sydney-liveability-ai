@@ -1,47 +1,63 @@
 {
   "suburb": "The Ponds",
   "post_count": 34,
-  "fetched_at": "2026-04-18T02:11:25.775452+00:00",
+  "fetched_at": "2026-04-29T17:29:42.955736+00:00",
   "aspects": {
-    "community": {
-      "score": 0.554,
-      "mentions": 22,
-      "raw_score": 0.554
-    },
-    "affordability": {
-      "score": 0.511,
-      "mentions": 6,
-      "raw_score": 0.511
-    },
-    "green_space": {
-      "score": 0.65,
-      "mentions": 18,
-      "raw_score": 0.65
-    },
-    "nightlife": {
-      "score": 0.555,
-      "mentions": 5,
-      "raw_score": 0.555
-    },
     "safety": {
-      "score": 0.564,
+      "score": 0.323,
       "mentions": 5,
-      "raw_score": 0.564
-    },
-    "transport": {
-      "score": 0.912,
-      "mentions": 2,
-      "raw_score": 0.912
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.845,
+      "score": 0.918,
       "mentions": 1,
-      "raw_score": 0.845
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.587,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.52,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.641,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.672,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.772,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0759,
     "surprise": 0.1488
   },
-  "narrative": "Reddit discussions about The Ponds are most positive about transport (0.91) and food and cafe (0.84). Residents are most critical about affordability (0.51) and noise (0.50). This analysis is based on 34 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about The Ponds are most positive about food and cafe (0.92) and green space (0.77). Residents are most critical about noise (0.50) and safety (0.32). This analysis is based on 34 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Housing in The Ponds, Western Sydney Australia",

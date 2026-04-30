@@ -1,47 +1,63 @@
 {
   "suburb": "Millers Point",
   "post_count": 24,
-  "fetched_at": "2026-04-18T02:13:41.156786+00:00",
+  "fetched_at": "2026-04-29T23:43:59.370380+00:00",
   "aspects": {
-    "community": {
-      "score": 0.55,
-      "mentions": 20,
-      "raw_score": 0.562
-    },
     "safety": {
-      "score": 0.636,
+      "score": 0.334,
       "mentions": 6,
-      "raw_score": 0.67
-    },
-    "transport": {
-      "score": 0.61,
-      "mentions": 5,
-      "raw_score": 0.638
-    },
-    "green_space": {
-      "score": 0.848,
-      "mentions": 4,
-      "raw_score": 0.935
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.406,
+      "score": 0.656,
       "mentions": 2,
-      "raw_score": 0.382
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.638,
+      "score": 0.619,
       "mentions": 4,
-      "raw_score": 0.673
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.696,
-      "mentions": 3,
-      "raw_score": 0.745
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.54,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.711,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.898,
-      "mentions": 1,
-      "raw_score": 0.997
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.724,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0453,
     "sadness": 0.0578
   },
-  "narrative": "Reddit discussions about Millers Point are most positive about noise (1.00) and green space (0.94). Residents are most critical about community (0.56) and food and cafe (0.38). This analysis is based on 24 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Millers Point are most positive about green space (0.72) and community (0.71). Residents are most critical about transport (0.54) and safety (0.33). This analysis is based on 24 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Fort St Public School\nOne of the more unusual location for a primary school in Sydney, right by Observatory Hill in Millers Point. It is surrounded by a moat with cars going around.\n\nEstablished in 18",

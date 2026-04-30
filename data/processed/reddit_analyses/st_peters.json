@@ -1,47 +1,63 @@
 {
   "suburb": "St Peters",
   "post_count": 47,
-  "fetched_at": "2026-04-18T02:07:16.859616+00:00",
+  "fetched_at": "2026-04-29T23:51:38.456672+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.686,
-      "mentions": 8,
-      "raw_score": 0.686
-    },
     "safety": {
-      "score": 0.547,
+      "score": 0.052,
       "mentions": 16,
-      "raw_score": 0.547
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
-      "score": 0.368,
-      "mentions": 23,
-      "raw_score": 0.368
-    },
-    "community": {
-      "score": 0.402,
-      "mentions": 36,
-      "raw_score": 0.402
-    },
-    "noise": {
-      "score": 0.058,
-      "mentions": 2,
-      "raw_score": 0.058
+    "food_and_cafe": {
+      "score": 0.478,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.595,
+      "score": 0.627,
       "mentions": 11,
-      "raw_score": 0.595
-    },
-    "green_space": {
-      "score": 0.661,
-      "mentions": 8,
-      "raw_score": 0.661
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.782,
-      "mentions": 4,
-      "raw_score": 0.782
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.375,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.418,
+      "mentions": 36,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.564,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0807,
     "joy": 0.0688
   },
-  "narrative": "Reddit discussions about St Peters are most positive about affordability (0.78) and food and cafe (0.69). Residents are most critical about transport (0.37) and noise (0.06). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about St Peters are most positive about nightlife (0.63) and green space (0.56). Residents are most critical about transport (0.38) and safety (0.05). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Looks like the MAGA transphobe cafe in St Peters has shut",

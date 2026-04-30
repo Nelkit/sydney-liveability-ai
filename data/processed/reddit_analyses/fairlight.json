@@ -1,47 +1,63 @@
 {
   "suburb": "Fairlight",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:56.407363+00:00",
+  "fetched_at": "2026-04-29T23:36:34.267580+00:00",
   "aspects": {
-    "community": {
-      "score": 0.48,
-      "mentions": 2,
-      "raw_score": 0.205
-    },
     "safety": {
-      "score": 0.48,
+      "score": 0.458,
       "mentions": 2,
-      "raw_score": 0.205
-    },
-    "nightlife": {
-      "score": 0.48,
-      "mentions": 1,
-      "raw_score": 0.196
-    },
-    "noise": {
-      "score": 0.48,
-      "mentions": 1,
-      "raw_score": 0.196
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.005,
     "disgust": 0.0137
   },
-  "narrative": "Reddit discussions about Fairlight are most positive about food and cafe (0.50) and affordability (0.50). Residents are most critical about nightlife (0.20) and noise (0.20). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is fear.",
+  "narrative": "Reddit discussions about Fairlight are most positive about safety (0.46) and green space (0.00). Residents are most critical about safety (0.46) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is fear.",
   "sources": [
     {
       "text": "You almost certainly wont. People swim in the harbour around dusk all the time, particularly around Manly/Fairlight.\n\nSee the following for a list of shark attacks in Australia:\n\nhttps://taronga.org.a",

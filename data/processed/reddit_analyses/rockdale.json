@@ -1,47 +1,63 @@
 {
   "suburb": "Rockdale",
   "post_count": 105,
-  "fetched_at": "2026-04-18T01:56:35.266366+00:00",
+  "fetched_at": "2026-04-29T23:48:51.041139+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.486,
-      "mentions": 38,
-      "raw_score": 0.486
-    },
     "safety": {
-      "score": 0.3,
+      "score": 0.077,
       "mentions": 25,
-      "raw_score": 0.3
-    },
-    "community": {
-      "score": 0.584,
-      "mentions": 86,
-      "raw_score": 0.584
-    },
-    "green_space": {
-      "score": 0.642,
-      "mentions": 19,
-      "raw_score": 0.642
-    },
-    "nightlife": {
-      "score": 0.754,
-      "mentions": 20,
-      "raw_score": 0.754
-    },
-    "affordability": {
-      "score": 0.895,
-      "mentions": 15,
-      "raw_score": 0.895
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.809,
+      "score": 0.664,
       "mentions": 14,
-      "raw_score": 0.809
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.582,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.671,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.3,
+      "mentions": 38,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.455,
+      "mentions": 86,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.452,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0698,
     "joy": 0.061
   },
-  "narrative": "Reddit discussions about Rockdale are most positive about affordability (0.90) and food and cafe (0.81). Residents are most critical about transport (0.49) and safety (0.30). This analysis is based on 105 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rockdale are most positive about affordability (0.67) and food and cafe (0.66). Residents are most critical about transport (0.30) and safety (0.08). This analysis is based on 105 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "The 420 bus from SYD International Airport to Rockdale Station is a horrible experience & it's by design\nCatching a train from SYD International Airport to Rockdale Station costs $20.95: https://i.img",

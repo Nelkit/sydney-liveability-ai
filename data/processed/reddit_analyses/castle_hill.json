@@ -1,47 +1,63 @@
 {
   "suburb": "Castle Hill",
   "post_count": 108,
-  "fetched_at": "2026-04-18T01:56:16.191928+00:00",
+  "fetched_at": "2026-04-29T17:10:55.746943+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.523,
-      "mentions": 43,
-      "raw_score": 0.523
-    },
-    "community": {
-      "score": 0.527,
-      "mentions": 93,
-      "raw_score": 0.527
-    },
-    "noise": {
-      "score": 0.746,
-      "mentions": 6,
-      "raw_score": 0.746
-    },
-    "affordability": {
-      "score": 0.438,
-      "mentions": 14,
-      "raw_score": 0.438
-    },
-    "nightlife": {
-      "score": 0.57,
-      "mentions": 16,
-      "raw_score": 0.57
-    },
     "safety": {
-      "score": 0.396,
+      "score": 0.252,
       "mentions": 24,
-      "raw_score": 0.396
-    },
-    "green_space": {
-      "score": 0.624,
-      "mentions": 9,
-      "raw_score": 0.624
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.761,
+      "score": 0.561,
       "mentions": 8,
-      "raw_score": 0.761
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.69,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.303,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.528,
+      "mentions": 43,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.531,
+      "mentions": 93,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.503,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.562,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0564,
     "disgust": 0.0875
   },
-  "narrative": "Reddit discussions about Castle Hill are most positive about food and cafe (0.76) and noise (0.75). Residents are most critical about affordability (0.44) and safety (0.40). This analysis is based on 108 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Castle Hill are most positive about nightlife (0.69) and green space (0.56). Residents are most critical about affordability (0.30) and safety (0.25). This analysis is based on 108 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I saw the the Sydney Monorail - at Powerhouse Castle Hill",

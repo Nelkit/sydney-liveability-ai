@@ -1,47 +1,63 @@
 {
   "suburb": "Darlington",
   "post_count": 18,
-  "fetched_at": "2026-04-18T02:15:52.083386+00:00",
+  "fetched_at": "2026-04-29T23:34:31.362005+00:00",
   "aspects": {
-    "community": {
-      "score": 0.513,
-      "mentions": 17,
-      "raw_score": 0.522
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": 0.816,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.809,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
       "score": 0.501,
       "mentions": 5,
-      "raw_score": 0.501
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.5,
-      "mentions": 4,
-      "raw_score": 0.5
-    },
-    "nightlife": {
-      "score": 0.644,
-      "mentions": 7,
-      "raw_score": 0.74
-    },
-    "food_and_cafe": {
-      "score": 0.744,
-      "mentions": 7,
-      "raw_score": 0.907
-    },
-    "green_space": {
-      "score": 0.733,
-      "mentions": 3,
-      "raw_score": 0.889
-    },
-    "affordability": {
-      "score": 0.593,
-      "mentions": 4,
-      "raw_score": 0.655
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.687,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0159,
     "joy": 0.1902
   },
-  "narrative": "Reddit discussions about Darlington are most positive about food and cafe (0.91) and green space (0.89). Residents are most critical about safety (0.50) and noise (0.50). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Darlington are most positive about food and cafe (0.82) and nightlife (0.81). Residents are most critical about green space (0.69) and transport (0.50). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sunday morning coming down (Ivy Street, Darlington)",

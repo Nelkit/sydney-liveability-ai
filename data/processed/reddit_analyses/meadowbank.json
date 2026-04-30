@@ -1,47 +1,63 @@
 {
   "suburb": "Meadowbank",
   "post_count": 33,
-  "fetched_at": "2026-04-18T02:11:42.396274+00:00",
+  "fetched_at": "2026-04-29T17:30:05.289948+00:00",
   "aspects": {
-    "community": {
-      "score": 0.416,
-      "mentions": 26,
-      "raw_score": 0.416
-    },
-    "transport": {
-      "score": 0.458,
-      "mentions": 14,
-      "raw_score": 0.458
-    },
     "safety": {
-      "score": 0.466,
+      "score": 0.211,
       "mentions": 12,
-      "raw_score": 0.466
-    },
-    "green_space": {
-      "score": 0.736,
-      "mentions": 11,
-      "raw_score": 0.736
-    },
-    "noise": {
-      "score": 0.64,
-      "mentions": 3,
-      "raw_score": 0.64
-    },
-    "affordability": {
-      "score": 0.678,
-      "mentions": 12,
-      "raw_score": 0.678
-    },
-    "nightlife": {
-      "score": 0.593,
-      "mentions": 6,
-      "raw_score": 0.593
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.98,
+      "score": 0.68,
       "mentions": 2,
-      "raw_score": 0.98
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.547,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.566,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.526,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.668,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.638,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.588,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0555,
     "disgust": 0.0281
   },
-  "narrative": "Reddit discussions about Meadowbank are most positive about food and cafe (0.98) and green space (0.74). Residents are most critical about transport (0.46) and community (0.42). This analysis is based on 33 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Meadowbank are most positive about food and cafe (0.68) and community (0.67). Residents are most critical about transport (0.53) and safety (0.21). This analysis is based on 33 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",

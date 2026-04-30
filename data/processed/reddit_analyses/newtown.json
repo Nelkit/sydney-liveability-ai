@@ -1,47 +1,63 @@
 {
   "suburb": "Newtown",
   "post_count": 615,
-  "fetched_at": "2026-04-18T01:16:47.398844+00:00",
+  "fetched_at": "2026-04-29T16:40:10.168789+00:00",
   "aspects": {
-    "community": {
-      "score": 0.588,
-      "mentions": 533,
-      "raw_score": 0.588
+    "safety": {
+      "score": 0.357,
+      "mentions": 188,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.578,
+      "score": 0.541,
       "mentions": 167,
-      "raw_score": 0.578
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.584,
+      "score": 0.591,
       "mentions": 221,
-      "raw_score": 0.584
-    },
-    "transport": {
-      "score": 0.571,
-      "mentions": 167,
-      "raw_score": 0.571
-    },
-    "safety": {
-      "score": 0.482,
-      "mentions": 188,
-      "raw_score": 0.482
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.589,
+      "score": 0.474,
       "mentions": 67,
-      "raw_score": 0.589
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.482,
+      "mentions": 167,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.611,
+      "mentions": 533,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.538,
+      "score": 0.586,
       "mentions": 43,
-      "raw_score": 0.538
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.72,
+      "score": 0.712,
       "mentions": 67,
-      "raw_score": 0.72
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0408,
     "joy": 0.0956
   },
-  "narrative": "Reddit discussions about Newtown are most positive about green space (0.72) and affordability (0.59). Residents are most critical about noise (0.54) and safety (0.48). This analysis is based on 615 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Newtown are most positive about green space (0.71) and community (0.61). Residents are most critical about affordability (0.47) and safety (0.36). This analysis is based on 615 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "New mural Newtown",

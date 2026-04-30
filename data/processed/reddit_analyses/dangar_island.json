@@ -1,47 +1,63 @@
 {
   "suburb": "Dangar Island",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:14.522749+00:00",
+  "fetched_at": "2026-04-29T23:34:08.419967+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.64,
-      "mentions": 5,
-      "raw_score": 0.919
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.646,
+      "score": 0.676,
       "mentions": 2,
-      "raw_score": 0.939
-    },
-    "community": {
-      "score": 0.635,
-      "mentions": 9,
-      "raw_score": 0.905
-    },
-    "green_space": {
-      "score": 0.65,
-      "mentions": 3,
-      "raw_score": 0.949
-    },
-    "affordability": {
-      "score": 0.661,
-      "mentions": 1,
-      "raw_score": 0.983
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.635,
+      "score": 0.704,
       "mentions": 5,
-      "raw_score": 0.904
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.559,
-      "mentions": 2,
-      "raw_score": 0.678
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.008,
     "anger": 0.0096
   },
-  "narrative": "Reddit discussions about Dangar Island are most positive about affordability (0.98) and green space (0.95). Residents are most critical about safety (0.68) and noise (0.50). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is joy.",
+  "narrative": "Reddit discussions about Dangar Island are most positive about nightlife (0.70) and food and cafe (0.68). Residents are most critical about food and cafe (0.68) and green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is joy.",
   "sources": [
     {
       "text": "Less than two hours from Central is a train to Hawksbury River. Catch the ferry over to Dangar Island. Gorgeous little day trip and a lovely walk around the island and the cafe/ pub make all their foo",

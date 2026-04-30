@@ -1,47 +1,63 @@
 {
   "suburb": "South Hurstville",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:40.385771+00:00",
+  "fetched_at": "2026-04-29T23:50:56.424500+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.432,
-      "mentions": 2,
-      "raw_score": 0.161
-    },
-    "community": {
-      "score": 0.472,
-      "mentions": 5,
-      "raw_score": 0.359
-    },
     "safety": {
-      "score": 0.472,
-      "mentions": 5,
-      "raw_score": 0.359
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "transport": {
-      "score": 0.471,
-      "mentions": 3,
-      "raw_score": 0.354
-    },
-    "affordability": {
-      "score": 0.4,
-      "mentions": 1,
-      "raw_score": 0.002
-    },
-    "green_space": {
-      "score": 0.4,
-      "mentions": 1,
-      "raw_score": 0.002
+    "food_and_cafe": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.429,
-      "mentions": 2,
-      "raw_score": 0.145
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.4,
-      "mentions": 1,
-      "raw_score": 0.002
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0289,
     "joy": 0.0068
   },
-  "narrative": "Reddit discussions about South Hurstville are most positive about community (0.36) and safety (0.36). Residents are most critical about green space (0.00) and noise (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about South Hurstville are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "20-22 is pretty standard for a kebab combo man,  but wtf would you go to eastern suburbs for a kebab. Go down to brothers kebabs or king corner in banksia or south Hurstville",

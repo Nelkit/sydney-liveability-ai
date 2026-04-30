@@ -1,47 +1,63 @@
 {
   "suburb": "Croydon",
   "post_count": 21,
-  "fetched_at": "2026-04-18T02:14:53.292471+00:00",
+  "fetched_at": "2026-04-29T23:34:02.353074+00:00",
   "aspects": {
     "safety": {
-      "score": 0.51,
+      "score": 0.095,
       "mentions": 5,
-      "raw_score": 0.515
-    },
-    "transport": {
-      "score": 0.527,
-      "mentions": 10,
-      "raw_score": 0.538
-    },
-    "community": {
-      "score": 0.484,
-      "mentions": 18,
-      "raw_score": 0.477
-    },
-    "green_space": {
-      "score": 0.733,
-      "mentions": 1,
-      "raw_score": 0.833
-    },
-    "affordability": {
-      "score": 0.314,
-      "mentions": 3,
-      "raw_score": 0.234
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.289,
+      "score": 0.3,
       "mentions": 1,
-      "raw_score": 0.199
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.207,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.389,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0462,
     "joy": 0.0096
   },
-  "narrative": "Reddit discussions about Croydon are most positive about green space (0.83) and transport (0.54). Residents are most critical about affordability (0.23) and food and cafe (0.20). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Croydon are most positive about nightlife (0.50) and community (0.39). Residents are most critical about safety (0.10) and green space (0.00). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "F you to Croydon parallel car parkers\nThis is a big f you to the gronk who hit my car trying to parallel park and not leave details behind. You tried to clean it with jiff with no success and left mar",

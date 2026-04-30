@@ -1,47 +1,63 @@
 {
   "suburb": "Dulwich Hill",
   "post_count": 93,
-  "fetched_at": "2026-04-18T01:58:22.947461+00:00",
+  "fetched_at": "2026-04-29T17:13:24.004932+00:00",
   "aspects": {
-    "community": {
-      "score": 0.739,
-      "mentions": 80,
-      "raw_score": 0.739
-    },
     "safety": {
-      "score": 0.747,
+      "score": 0.453,
       "mentions": 35,
-      "raw_score": 0.747
-    },
-    "nightlife": {
-      "score": 0.538,
-      "mentions": 26,
-      "raw_score": 0.538
-    },
-    "noise": {
-      "score": 0.886,
-      "mentions": 11,
-      "raw_score": 0.886
-    },
-    "transport": {
-      "score": 0.763,
-      "mentions": 38,
-      "raw_score": 0.763
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.86,
+      "score": 0.676,
       "mentions": 21,
-      "raw_score": 0.86
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.603,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.854,
+      "score": 0.561,
       "mentions": 18,
-      "raw_score": 0.854
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.498,
+      "mentions": 38,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.681,
+      "mentions": 80,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.212,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.633,
+      "score": 0.615,
       "mentions": 16,
-      "raw_score": 0.633
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0691,
     "joy": 0.068
   },
-  "narrative": "Reddit discussions about Dulwich Hill are most positive about noise (0.89) and food and cafe (0.86). Residents are most critical about green space (0.63) and nightlife (0.54). This analysis is based on 93 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Dulwich Hill are most positive about community (0.68) and food and cafe (0.68). Residents are most critical about safety (0.45) and noise (0.21). This analysis is based on 93 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney’s shortest bike lane?\nFairfowl and Pile Sts Dulwich Hill",

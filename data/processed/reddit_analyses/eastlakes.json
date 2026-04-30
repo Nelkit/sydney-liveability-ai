@@ -1,47 +1,63 @@
 {
   "suburb": "Eastlakes",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:38.423123+00:00",
+  "fetched_at": "2026-04-29T23:35:50.433240+00:00",
   "aspects": {
     "safety": {
-      "score": 0.51,
-      "mentions": 5,
-      "raw_score": 0.525
-    },
-    "community": {
-      "score": 0.592,
-      "mentions": 8,
-      "raw_score": 0.73
-    },
-    "affordability": {
-      "score": 0.48,
-      "mentions": 1,
-      "raw_score": 0.449
-    },
-    "transport": {
-      "score": 0.599,
-      "mentions": 1,
-      "raw_score": 0.747
-    },
-    "noise": {
-      "score": 0.441,
-      "mentions": 1,
-      "raw_score": 0.352
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "neutral": 0.4063,
     "joy": 0.1456
   },
-  "narrative": "Reddit discussions about Eastlakes are most positive about transport (0.75) and community (0.73). Residents are most critical about affordability (0.45) and noise (0.35). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Eastlakes are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Another one from the carnage in Eastlakes/Rosebery area \nNot my photo, taken from a local FB group",

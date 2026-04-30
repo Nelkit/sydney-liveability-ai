@@ -1,47 +1,63 @@
 {
   "suburb": "Balgowlah",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:47.437633+00:00",
+  "fetched_at": "2026-04-29T23:28:02.094422+00:00",
   "aspects": {
-    "community": {
-      "score": 0.482,
-      "mentions": 5,
-      "raw_score": 0.389
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0115,
     "joy": 0.0272
   },
-  "narrative": "Reddit discussions about Balgowlah are most positive about nightlife (0.50) and transport (0.50). Residents are most critical about green space (0.50) and community (0.39). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Balgowlah are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Anyone lost an Alpaca?\nAn Alpaca sauntered past us (living its best life) as we were walking the Spit bridge to Manly path today. No other animals or people around. Anyone missing one around the Balgo",

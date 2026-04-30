@@ -1,47 +1,63 @@
 {
   "suburb": "Arncliffe",
   "post_count": 40,
-  "fetched_at": "2026-04-18T02:09:35.272921+00:00",
+  "fetched_at": "2026-04-29T23:27:29.512943+00:00",
   "aspects": {
+    "safety": {
+      "score": 0.591,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
     "food_and_cafe": {
-      "score": 0.928,
+      "score": 0.655,
       "mentions": 13,
-      "raw_score": 0.928
-    },
-    "community": {
-      "score": 0.799,
-      "mentions": 34,
-      "raw_score": 0.799
-    },
-    "affordability": {
-      "score": 0.927,
-      "mentions": 12,
-      "raw_score": 0.927
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.952,
+      "score": 0.628,
       "mentions": 8,
-      "raw_score": 0.952
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.734,
-      "mentions": 7,
-      "raw_score": 0.734
+    "affordability": {
+      "score": 0.498,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.872,
+      "score": 0.683,
       "mentions": 15,
-      "raw_score": 0.872
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.529,
+      "mentions": 34,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.867,
-      "mentions": 2,
-      "raw_score": 0.867
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.897,
-      "mentions": 8,
-      "raw_score": 0.897
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0808,
     "joy": 0.037
   },
-  "narrative": "Reddit discussions about Arncliffe are most positive about nightlife (0.95) and food and cafe (0.93). Residents are most critical about community (0.80) and green space (0.73). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Arncliffe are most positive about transport (0.68) and food and cafe (0.66). Residents are most critical about affordability (0.50) and green space (0.00). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Ethnic “segregation?”\nI’m not sure if that’s a right word, but I was wondering why so many suburbs in Sydney are divided so strongly ethnically? \n\nI just moved to arncliffe and it’s a great place to l",

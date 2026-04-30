@@ -1,47 +1,63 @@
 {
   "suburb": "Cambridge Park",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:04.897790+00:00",
+  "fetched_at": "2026-04-29T23:30:27.100074+00:00",
   "aspects": {
     "safety": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "community": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.0131,
     "joy": 0.0021
   },
-  "narrative": "Reddit discussions about Cambridge Park are most positive about safety (0.50) and green space (0.50). Residents are most critical about community (0.50) and noise (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is fear.",
+  "narrative": "Reddit discussions about Cambridge Park are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is fear.",
   "sources": [
     {
       "text": "NSW Police launch investigation after bodies of man and woman found at shop in Cambridge Park",

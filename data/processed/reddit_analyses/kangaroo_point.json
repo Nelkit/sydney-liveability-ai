@@ -1,47 +1,63 @@
 {
   "suburb": "Kangaroo Point",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:09.277153+00:00",
+  "fetched_at": "2026-04-29T23:38:53.401417+00:00",
   "aspects": {
-    "community": {
-      "score": 0.515,
-      "mentions": 1,
-      "raw_score": 0.955
-    },
     "safety": {
-      "score": 0.515,
-      "mentions": 1,
-      "raw_score": 0.955
-    },
-    "green_space": {
-      "score": 0.515,
-      "mentions": 1,
-      "raw_score": 0.955
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0051,
     "joy": 0.0038
   },
-  "narrative": "Reddit discussions about Kangaroo Point are most positive about community (0.95) and safety (0.95). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Kangaroo Point are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about nightlife (0.50) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I’m not sure about crabbing, the best spots are usually by boat but anywhere near mangroves you’ll have some luck, so if you can walk along the waters edge somewhere, but you have to be able to get yo",

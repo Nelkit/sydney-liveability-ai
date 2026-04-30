@@ -1,47 +1,63 @@
 {
   "suburb": "Pymble",
   "post_count": 26,
-  "fetched_at": "2026-04-18T02:13:10.639117+00:00",
+  "fetched_at": "2026-04-29T23:47:40.926934+00:00",
   "aspects": {
-    "community": {
-      "score": 0.487,
-      "mentions": 17,
-      "raw_score": 0.485
-    },
-    "green_space": {
-      "score": 0.783,
-      "mentions": 4,
-      "raw_score": 0.827
-    },
-    "affordability": {
-      "score": 0.829,
-      "mentions": 3,
-      "raw_score": 0.88
-    },
-    "transport": {
-      "score": 0.791,
-      "mentions": 3,
-      "raw_score": 0.836
-    },
     "safety": {
-      "score": 0.428,
-      "mentions": 11,
-      "raw_score": 0.417
-    },
-    "nightlife": {
-      "score": 0.182,
-      "mentions": 4,
-      "raw_score": 0.133
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.703,
-      "mentions": 2,
-      "raw_score": 0.734
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.477,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.801,
-      "mentions": 1,
-      "raw_score": 0.847
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.089,
     "disgust": 0.0965
   },
-  "narrative": "Reddit discussions about Pymble are most positive about affordability (0.88) and noise (0.85). Residents are most critical about safety (0.42) and nightlife (0.13). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pymble are most positive about community (0.48) and green space (0.00). Residents are most critical about community (0.48) and green space (0.00). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I just walked from Mount Cola to the CBD\nSo I have been putting off doing this walk ever since I got back from my Brisbane trip last October. This is my second walk from Hornsby to the CBD and it was ",

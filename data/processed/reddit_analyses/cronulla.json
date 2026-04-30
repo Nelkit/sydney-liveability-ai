@@ -1,47 +1,63 @@
 {
   "suburb": "Cronulla",
   "post_count": 160,
-  "fetched_at": "2026-04-18T01:37:06.239012+00:00",
+  "fetched_at": "2026-04-29T23:33:56.851721+00:00",
   "aspects": {
-    "community": {
-      "score": 0.628,
-      "mentions": 127,
-      "raw_score": 0.628
-    },
-    "nightlife": {
-      "score": 0.65,
-      "mentions": 55,
-      "raw_score": 0.65
-    },
-    "noise": {
-      "score": 0.509,
-      "mentions": 6,
-      "raw_score": 0.509
-    },
     "safety": {
-      "score": 0.455,
+      "score": 0.433,
       "mentions": 50,
-      "raw_score": 0.455
-    },
-    "transport": {
-      "score": 0.609,
-      "mentions": 64,
-      "raw_score": 0.609
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.644,
+      "score": 0.621,
       "mentions": 30,
-      "raw_score": 0.644
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.55,
+      "mentions": 55,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.544,
+      "score": 0.557,
       "mentions": 15,
-      "raw_score": 0.544
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.554,
+      "mentions": 64,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.679,
+      "mentions": 127,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.735,
+      "score": 0.674,
       "mentions": 39,
-      "raw_score": 0.735
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0578,
     "disgust": 0.0774
   },
-  "narrative": "Reddit discussions about Cronulla are most positive about green space (0.73) and nightlife (0.65). Residents are most critical about noise (0.51) and safety (0.46). This analysis is based on 160 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cronulla are most positive about community (0.68) and green space (0.67). Residents are most critical about nightlife (0.55) and safety (0.43). This analysis is based on 160 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Saw an incredible aurora this morning from Cronulla Beach while out with my camera",

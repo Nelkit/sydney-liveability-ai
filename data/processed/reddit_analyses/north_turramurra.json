@@ -1,47 +1,63 @@
 {
   "suburb": "North Turramurra",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:59.651484+00:00",
+  "fetched_at": "2026-04-29T23:45:57.056622+00:00",
   "aspects": {
-    "community": {
-      "score": 0.531,
-      "mentions": 1,
-      "raw_score": 0.958
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.3427,
     "fear": 0.0042
   },
-  "narrative": "Reddit discussions about North Turramurra are most positive about community (0.96) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is joy.",
+  "narrative": "Reddit discussions about North Turramurra are most positive about green space (0.50). Residents are most critical about green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is joy.",
   "sources": [
     {
       "text": "Well that was a blast back to the past. I went to scouts in Turramurra 30 years ago. So I looked at the image and it was my scout hall, burned into my childhood memory. Although I read the text and it",

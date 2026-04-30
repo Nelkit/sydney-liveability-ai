@@ -1,47 +1,63 @@
 {
   "suburb": "Newport",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:58.758318+00:00",
+  "fetched_at": "2026-04-29T23:45:24.425013+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 2,
-      "raw_score": 0.5
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 2,
-      "raw_score": 0.5
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.512,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0035,
     "disgust": 0.0146
   },
-  "narrative": "Reddit discussions about Newport are most positive about community (0.50) and nightlife (0.50). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Newport are most positive about nightlife (0.51) and food and cafe (0.50). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I’m from the area (Newport)",

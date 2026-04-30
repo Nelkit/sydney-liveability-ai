@@ -1,47 +1,63 @@
 {
   "suburb": "Doonside",
   "post_count": 29,
-  "fetched_at": "2026-04-18T02:12:34.638960+00:00",
+  "fetched_at": "2026-04-29T23:35:00.409500+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.301,
-      "mentions": 10,
-      "raw_score": 0.294
-    },
-    "community": {
-      "score": 0.429,
-      "mentions": 18,
-      "raw_score": 0.427
-    },
-    "noise": {
-      "score": 0.248,
-      "mentions": 2,
-      "raw_score": 0.239
-    },
     "safety": {
-      "score": 0.589,
+      "score": 0.402,
       "mentions": 13,
-      "raw_score": 0.592
-    },
-    "green_space": {
-      "score": 0.503,
-      "mentions": 12,
-      "raw_score": 0.503
-    },
-    "nightlife": {
-      "score": 0.619,
-      "mentions": 5,
-      "raw_score": 0.623
-    },
-    "affordability": {
-      "score": 0.74,
-      "mentions": 4,
-      "raw_score": 0.748
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.863,
+      "score": 0.917,
       "mentions": 3,
-      "raw_score": 0.876
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.685,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.258,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.38,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.576,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0861,
     "joy": 0.1396
   },
-  "narrative": "Reddit discussions about Doonside are most positive about food and cafe (0.88) and affordability (0.75). Residents are most critical about transport (0.29) and noise (0.24). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Doonside are most positive about food and cafe (0.92) and nightlife (0.69). Residents are most critical about community (0.38) and transport (0.26). This analysis is based on 29 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Trains are proper fucked between Parramatta - Richmond/Penrith\nDidn't see a post so figured I'd make one, expect the afternoon peak to be pretty bad due to the storm that passed through mid afternoon.",

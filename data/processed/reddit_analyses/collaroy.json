@@ -1,47 +1,63 @@
 {
   "suburb": "Collaroy",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:32.378849+00:00",
+  "fetched_at": "2026-04-29T23:33:04.933245+00:00",
   "aspects": {
     "safety": {
-      "score": 0.581,
-      "mentions": 1,
-      "raw_score": 0.905
-    },
-    "nightlife": {
-      "score": 0.579,
-      "mentions": 2,
-      "raw_score": 0.897
-    },
-    "community": {
-      "score": 0.555,
-      "mentions": 5,
-      "raw_score": 0.776
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.501
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.0524,
     "joy": 0.1647
   },
-  "narrative": "Reddit discussions about Collaroy are most positive about safety (0.91) and nightlife (0.90). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Collaroy are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Another taxi complaint \nI wish I'd gotten a receipt so I could formally complain, but alas r/sydney will have to hear my cries. \n\nMy friend and I were picked up in the CBD and dropped to Collaroy, aro",

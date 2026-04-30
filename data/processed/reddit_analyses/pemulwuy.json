@@ -1,47 +1,63 @@
 {
   "suburb": "Pemulwuy",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:21:00.412981+00:00",
+  "fetched_at": "2026-04-29T23:46:44.743121+00:00",
   "aspects": {
-    "community": {
-      "score": 0.511,
-      "mentions": 1,
-      "raw_score": 0.669
-    },
     "safety": {
-      "score": 0.524,
+      "score": 0.876,
       "mentions": 1,
-      "raw_score": 0.863
-    },
-    "green_space": {
-      "score": 0.524,
-      "mentions": 1,
-      "raw_score": 0.863
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.681,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.0096,
     "sadness": 0.0057
   },
-  "narrative": "Reddit discussions about Pemulwuy are most positive about safety (0.86) and green space (0.86). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pemulwuy are most positive about safety (0.88) and community (0.68). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Anybody else's suburb been overtaken by clover (well, I think that's what it is)? I'm in Pemulwuy and it's everywhere. It's as if the suburb has been seeded with it!",

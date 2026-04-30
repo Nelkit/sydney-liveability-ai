@@ -1,47 +1,63 @@
 {
   "suburb": "Forest Lodge",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:18.359591+00:00",
+  "fetched_at": "2026-04-29T23:36:54.403888+00:00",
   "aspects": {
     "safety": {
-      "score": 0.329,
+      "score": 0.127,
       "mentions": 4,
-      "raw_score": 0.105
-    },
-    "nightlife": {
-      "score": 0.343,
-      "mentions": 3,
-      "raw_score": 0.137
-    },
-    "community": {
-      "score": 0.368,
-      "mentions": 12,
-      "raw_score": 0.195
-    },
-    "transport": {
-      "score": 0.496,
-      "mentions": 4,
-      "raw_score": 0.491
-    },
-    "green_space": {
-      "score": 0.571,
-      "mentions": 3,
-      "raw_score": 0.663
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.508,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.583,
+      "mentions": 0,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "arcgis"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.769,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1127,
     "joy": 0.1316
   },
-  "narrative": "Reddit discussions about Forest Lodge are most positive about green space (0.66) and food and cafe (0.50). Residents are most critical about nightlife (0.14) and safety (0.10). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Forest Lodge are most positive about green space (0.77) and transport (0.58). Residents are most critical about food and cafe (0.50) and safety (0.13). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "One man dead, another seriously injured in shooting outside Forest Lodge pub in Sydney's inner-city",

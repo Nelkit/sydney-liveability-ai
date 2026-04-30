@@ -1,47 +1,63 @@
 {
   "suburb": "Chester Hill",
   "post_count": 21,
-  "fetched_at": "2026-04-18T02:14:46.466183+00:00",
+  "fetched_at": "2026-04-29T23:32:36.334270+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.368,
-      "mentions": 4,
-      "raw_score": 0.311
-    },
-    "community": {
-      "score": 0.42,
-      "mentions": 16,
-      "raw_score": 0.386
-    },
     "safety": {
-      "score": 0.298,
+      "score": 0.183,
       "mentions": 11,
-      "raw_score": 0.211
-    },
-    "affordability": {
-      "score": 0.351,
-      "mentions": 6,
-      "raw_score": 0.287
-    },
-    "green_space": {
-      "score": 0.27,
-      "mentions": 4,
-      "raw_score": 0.172
-    },
-    "nightlife": {
-      "score": 0.657,
-      "mentions": 6,
-      "raw_score": 0.725
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.489,
+      "score": 0.56,
       "mentions": 5,
-      "raw_score": 0.484
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.372,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.121,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.158,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.289,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.744,
-      "mentions": 2,
-      "raw_score": 0.849
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.024,
     "joy": 0.1274
   },
-  "narrative": "Reddit discussions about Chester Hill are most positive about noise (0.85) and nightlife (0.72). Residents are most critical about safety (0.21) and green space (0.17). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Chester Hill are most positive about food and cafe (0.56) and nightlife (0.37). Residents are most critical about affordability (0.12) and green space (0.00). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Buses are way too inefficient for getting from A to B.\n*Buses take way too long to get from A to B, with so many traffic lights and stops. If they were more direct and reliable in terms of times, peop",

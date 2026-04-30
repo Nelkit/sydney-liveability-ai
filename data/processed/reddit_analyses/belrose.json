@@ -1,47 +1,63 @@
 {
   "suburb": "Belrose",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:12.876985+00:00",
+  "fetched_at": "2026-04-29T23:28:39.016025+00:00",
   "aspects": {
     "safety": {
-      "score": 0.354,
-      "mentions": 7,
-      "raw_score": 0.063
-    },
-    "community": {
-      "score": 0.431,
-      "mentions": 7,
-      "raw_score": 0.292
-    },
-    "transport": {
-      "score": 0.405,
-      "mentions": 3,
-      "raw_score": 0.216
-    },
-    "affordability": {
-      "score": 0.4,
-      "mentions": 2,
-      "raw_score": 0.201
-    },
-    "green_space": {
-      "score": 0.408,
-      "mentions": 3,
-      "raw_score": 0.224
-    },
-    "nightlife": {
-      "score": 0.49,
-      "mentions": 2,
-      "raw_score": 0.469
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "fear": 0.1346,
     "joy": 0.0213
   },
-  "narrative": "Reddit discussions about Belrose are most positive about food and cafe (0.50) and noise (0.50). Residents are most critical about affordability (0.20) and safety (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Belrose are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Unintentionally watching the news tonight, I wondered why it's described as \"a cyclist was killed\" rather than, say, \"a Belrose father of 3 was killed today while riding his bike\"?\n\nI mean, they don't",

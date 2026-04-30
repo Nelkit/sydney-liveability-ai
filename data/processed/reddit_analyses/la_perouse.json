@@ -1,47 +1,63 @@
 {
   "suburb": "La Perouse",
   "post_count": 40,
-  "fetched_at": "2026-04-18T02:09:41.438855+00:00",
+  "fetched_at": "2026-04-29T23:40:18.279910+00:00",
   "aspects": {
-    "community": {
-      "score": 0.635,
-      "mentions": 32,
-      "raw_score": 0.635
-    },
-    "nightlife": {
-      "score": 0.526,
-      "mentions": 10,
-      "raw_score": 0.526
+    "safety": {
+      "score": 0.426,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.516,
+      "score": 0.521,
       "mentions": 6,
-      "raw_score": 0.516
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
+    "nightlife": {
       "score": 0.552,
-      "mentions": 14,
-      "raw_score": 0.552
-    },
-    "green_space": {
-      "score": 0.821,
-      "mentions": 11,
-      "raw_score": 0.821
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.658,
-      "mentions": 3,
-      "raw_score": 0.658
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.567,
-      "mentions": 4,
-      "raw_score": 0.567
+    "transport": {
+      "score": 0.602,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.497,
+      "mentions": 32,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.665,
-      "mentions": 1,
-      "raw_score": 0.665
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.696,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0986,
     "sadness": 0.0248
   },
-  "narrative": "Reddit discussions about La Perouse are most positive about green space (0.82) and noise (0.67). Residents are most critical about nightlife (0.53) and food and cafe (0.52). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about La Perouse are most positive about green space (0.70) and transport (0.60). Residents are most critical about community (0.50) and safety (0.43). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Found this engine at La Perouse\nI was walking in the rock saw this guy. I had to take 2nd look into it. When I passed by it it looked like weird rock. Then I come back to it to check again. Yup it's p",

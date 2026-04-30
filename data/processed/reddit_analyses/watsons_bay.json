@@ -1,47 +1,63 @@
 {
   "suburb": "Watsons Bay",
   "post_count": 32,
-  "fetched_at": "2026-04-18T02:12:06.463195+00:00",
+  "fetched_at": "2026-04-29T23:53:21.029812+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.522,
-      "mentions": 6,
-      "raw_score": 0.522
-    },
-    "community": {
-      "score": 0.592,
-      "mentions": 24,
-      "raw_score": 0.592
-    },
-    "transport": {
-      "score": 0.55,
-      "mentions": 13,
-      "raw_score": 0.55
-    },
     "safety": {
-      "score": 0.501,
+      "score": 0.481,
       "mentions": 6,
-      "raw_score": 0.501
-    },
-    "nightlife": {
-      "score": 0.538,
-      "mentions": 12,
-      "raw_score": 0.538
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.596,
+      "score": 0.629,
       "mentions": 7,
-      "raw_score": 0.596
+      "confidence": 0.7,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "noise": {
-      "score": 0.65,
-      "mentions": 2,
-      "raw_score": 0.65
+    "nightlife": {
+      "score": 0.58,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.812,
-      "mentions": 1,
-      "raw_score": 0.812
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.536,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.636,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.559,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.1703,
     "fear": 0.023
   },
-  "narrative": "Reddit discussions about Watsons Bay are most positive about affordability (0.81) and noise (0.65). Residents are most critical about green space (0.52) and safety (0.50). This analysis is based on 32 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Watsons Bay are most positive about community (0.64) and food and cafe (0.63). Residents are most critical about transport (0.54) and safety (0.48). This analysis is based on 32 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Then and now. Gap Park, Watsons Bay 1960 vs 2025.",

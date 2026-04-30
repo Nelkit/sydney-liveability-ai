@@ -1,47 +1,63 @@
 {
   "suburb": "Tallawong",
   "post_count": 115,
-  "fetched_at": "2026-04-18T01:54:56.810391+00:00",
+  "fetched_at": "2026-04-29T23:52:13.593857+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.479,
-      "mentions": 98,
-      "raw_score": 0.479
-    },
-    "community": {
-      "score": 0.509,
-      "mentions": 88,
-      "raw_score": 0.509
-    },
-    "nightlife": {
-      "score": 0.905,
-      "mentions": 9,
-      "raw_score": 0.905
-    },
-    "affordability": {
-      "score": 0.857,
-      "mentions": 12,
-      "raw_score": 0.857
-    },
     "safety": {
-      "score": 0.555,
+      "score": 0.175,
       "mentions": 20,
-      "raw_score": 0.555
-    },
-    "green_space": {
-      "score": 0.867,
-      "mentions": 12,
-      "raw_score": 0.867
-    },
-    "noise": {
-      "score": 0.881,
-      "mentions": 4,
-      "raw_score": 0.881
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.934,
+      "score": 0.322,
       "mentions": 6,
-      "raw_score": 0.934
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.384,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.44,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.455,
+      "mentions": 98,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.624,
+      "mentions": 88,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.403,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0796,
     "disgust": 0.0443
   },
-  "narrative": "Reddit discussions about Tallawong are most positive about food and cafe (0.93) and nightlife (0.91). Residents are most critical about community (0.51) and transport (0.48). This analysis is based on 115 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Tallawong are most positive about community (0.62) and transport (0.46). Residents are most critical about food and cafe (0.32) and safety (0.17). This analysis is based on 115 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Arrival of the first revenue passenger Metro service to Tallawong via the city at Sydenham",

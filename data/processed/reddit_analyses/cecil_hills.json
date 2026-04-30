@@ -1,47 +1,63 @@
 {
   "suburb": "Cecil Hills",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:31.542256+00:00",
+  "fetched_at": "2026-04-29T23:32:10.918213+00:00",
   "aspects": {
-    "community": {
-      "score": 0.528,
-      "mentions": 6,
-      "raw_score": 0.64
-    },
-    "transport": {
-      "score": 0.583,
-      "mentions": 2,
-      "raw_score": 0.913
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.599,
-      "mentions": 1,
-      "raw_score": 0.997
-    },
-    "green_space": {
-      "score": 0.591,
-      "mentions": 3,
-      "raw_score": 0.956
-    },
-    "safety": {
-      "score": 0.583,
-      "mentions": 2,
-      "raw_score": 0.913
-    },
-    "noise": {
-      "score": 0.585,
-      "mentions": 1,
-      "raw_score": 0.924
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.111,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.398,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0294,
     "joy": 0.0129
   },
-  "narrative": "Reddit discussions about Cecil Hills are most positive about food and cafe (1.00) and green space (0.96). Residents are most critical about nightlife (0.50) and affordability (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cecil Hills are most positive about community (0.40) and transport (0.11). Residents are most critical about transport (0.11) and green space (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "The fog at Cecil Hills this morning",

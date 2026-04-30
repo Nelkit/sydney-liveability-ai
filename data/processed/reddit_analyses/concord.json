@@ -1,47 +1,63 @@
 {
   "suburb": "Concord",
   "post_count": 22,
-  "fetched_at": "2026-04-18T02:14:15.614960+00:00",
+  "fetched_at": "2026-04-29T23:33:12.064918+00:00",
   "aspects": {
-    "community": {
-      "score": 0.782,
-      "mentions": 18,
-      "raw_score": 0.885
-    },
     "safety": {
-      "score": 0.333,
+      "score": 0.124,
       "mentions": 8,
-      "raw_score": 0.272
-    },
-    "transport": {
-      "score": 0.322,
-      "mentions": 8,
-      "raw_score": 0.257
-    },
-    "affordability": {
-      "score": 0.688,
-      "mentions": 7,
-      "raw_score": 0.757
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.776,
+      "score": 0.736,
       "mentions": 4,
-      "raw_score": 0.877
-    },
-    "green_space": {
-      "score": 0.812,
-      "mentions": 5,
-      "raw_score": 0.926
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.798,
+      "score": 0.72,
       "mentions": 7,
-      "raw_score": 0.906
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.734,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.139,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.718,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.843,
-      "mentions": 3,
-      "raw_score": 0.968
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0368,
     "joy": 0.0898
   },
-  "narrative": "Reddit discussions about Concord are most positive about noise (0.97) and green space (0.93). Residents are most critical about safety (0.27) and transport (0.26). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Concord are most positive about food and cafe (0.74) and affordability (0.73). Residents are most critical about safety (0.12) and green space (0.00). This analysis is based on 22 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What makes The Hills 'posh'?\nI'm new to Sydney and find the postcode politics interesting (albeit toxic af).\n\nI'm curious, how did The Hills district become known as relatively posh/affluent when it's",

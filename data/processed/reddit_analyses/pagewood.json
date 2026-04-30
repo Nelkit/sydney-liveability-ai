@@ -1,47 +1,63 @@
 {
   "suburb": "Pagewood",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:23.994365+00:00",
+  "fetched_at": "2026-04-29T23:46:33.771994+00:00",
   "aspects": {
-    "community": {
-      "score": 0.44,
-      "mentions": 8,
-      "raw_score": 0.321
-    },
-    "green_space": {
-      "score": 0.49,
-      "mentions": 2,
-      "raw_score": 0.471
-    },
     "safety": {
-      "score": 0.399,
-      "mentions": 2,
-      "raw_score": 0.196
-    },
-    "nightlife": {
-      "score": 0.408,
-      "mentions": 2,
-      "raw_score": 0.225
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.638,
-      "mentions": 1,
-      "raw_score": 0.914
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.51,
-      "mentions": 2,
-      "raw_score": 0.53
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.489,
-      "mentions": 1,
-      "raw_score": 0.466
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "joy": 0.0176,
     "fear": 0.0765
   },
-  "narrative": "Reddit discussions about Pagewood are most positive about food and cafe (0.91) and affordability (0.53). Residents are most critical about nightlife (0.23) and safety (0.20). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pagewood are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Marist Brothers Pagewood.\n\n\nAlan Jones visited the school one day in the mid 90s - it was when he was involved with the South Sydney Rabbitohs and he was having contract talks with one of the older st",

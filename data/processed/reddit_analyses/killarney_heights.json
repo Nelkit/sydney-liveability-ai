@@ -1,47 +1,63 @@
 {
   "suburb": "Killarney Heights",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:38.373043+00:00",
+  "fetched_at": "2026-04-29T23:39:12.540109+00:00",
   "aspects": {
-    "community": {
-      "score": 0.535,
-      "mentions": 3,
-      "raw_score": 0.847
-    },
-    "transport": {
-      "score": 0.533,
-      "mentions": 2,
-      "raw_score": 0.827
-    },
-    "affordability": {
-      "score": 0.533,
-      "mentions": 2,
-      "raw_score": 0.827
-    },
-    "green_space": {
-      "score": 0.533,
-      "mentions": 2,
-      "raw_score": 0.827
-    },
-    "food_and_cafe": {
-      "score": 0.535,
-      "mentions": 3,
-      "raw_score": 0.847
-    },
-    "nightlife": {
-      "score": 0.533,
-      "mentions": 2,
-      "raw_score": 0.827
-    },
     "safety": {
       "score": 0.5,
       "mentions": 1,
-      "raw_score": 0.5
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "food_and_cafe": {
+      "score": 0.562,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.5,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.577,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0052,
     "anger": 0.0037
   },
-  "narrative": "Reddit discussions about Killarney Heights are most positive about community (0.85) and food and cafe (0.85). Residents are most critical about safety (0.50) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Killarney Heights are most positive about community (0.58) and food and cafe (0.56). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Would you move?\nI’m considering moving from Avalon to Lane Cove. My husband and I moved to Avalon 6 years ago to be closer to my mum who has helped us out considerably with looking after our kids. \n\nM",

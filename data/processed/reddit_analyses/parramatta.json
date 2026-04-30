@@ -1,47 +1,63 @@
 {
   "suburb": "Parramatta",
   "post_count": 968,
-  "fetched_at": "2026-04-18T01:15:07.016540+00:00",
+  "fetched_at": "2026-04-29T16:38:16.270131+00:00",
   "aspects": {
-    "community": {
-      "score": 0.632,
-      "mentions": 727,
-      "raw_score": 0.632
-    },
-    "affordability": {
-      "score": 0.623,
-      "mentions": 117,
-      "raw_score": 0.623
-    },
-    "nightlife": {
-      "score": 0.676,
-      "mentions": 229,
-      "raw_score": 0.676
-    },
-    "green_space": {
-      "score": 0.697,
-      "mentions": 170,
-      "raw_score": 0.697
+    "safety": {
+      "score": 0.318,
+      "mentions": 265,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.732,
+      "score": 0.654,
       "mentions": 120,
-      "raw_score": 0.732
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.612,
+      "mentions": 229,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.549,
+      "mentions": 117,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.635,
+      "score": 0.546,
       "mentions": 486,
-      "raw_score": 0.635
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.506,
-      "mentions": 265,
-      "raw_score": 0.506
+    "community": {
+      "score": 0.622,
+      "mentions": 727,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.568,
+      "score": 0.544,
       "mentions": 40,
-      "raw_score": 0.568
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.674,
+      "mentions": 170,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0503,
     "disgust": 0.0803
   },
-  "narrative": "Reddit discussions about Parramatta are most positive about food and cafe (0.73) and green space (0.70). Residents are most critical about noise (0.57) and safety (0.51). This analysis is based on 968 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Parramatta are most positive about green space (0.67) and food and cafe (0.65). Residents are most critical about noise (0.54) and safety (0.32). This analysis is based on 968 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "View From my Appartment in Parramatta This Morning",

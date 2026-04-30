@@ -1,47 +1,63 @@
 {
   "suburb": "Alexandria",
   "post_count": 147,
-  "fetched_at": "2026-04-18T01:51:59.035485+00:00",
+  "fetched_at": "2026-04-29T17:05:35.244434+00:00",
   "aspects": {
-    "community": {
-      "score": 0.486,
-      "mentions": 120,
-      "raw_score": 0.486
-    },
     "safety": {
-      "score": 0.443,
+      "score": 0.237,
       "mentions": 34,
-      "raw_score": 0.443
-    },
-    "green_space": {
-      "score": 0.468,
-      "mentions": 24,
-      "raw_score": 0.468
-    },
-    "nightlife": {
-      "score": 0.438,
-      "mentions": 39,
-      "raw_score": 0.438
-    },
-    "affordability": {
-      "score": 0.393,
-      "mentions": 16,
-      "raw_score": 0.393
-    },
-    "transport": {
-      "score": 0.534,
-      "mentions": 37,
-      "raw_score": 0.534
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.59,
+      "score": 0.525,
       "mentions": 30,
-      "raw_score": 0.59
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.185,
+      "mentions": 39,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.107,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.396,
+      "mentions": 37,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.318,
+      "mentions": 120,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.803,
+      "score": 0.552,
       "mentions": 9,
-      "raw_score": 0.803
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.181,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0557,
     "joy": 0.0762
   },
-  "narrative": "Reddit discussions about Alexandria are most positive about noise (0.80) and food and cafe (0.59). Residents are most critical about nightlife (0.44) and affordability (0.39). This analysis is based on 147 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Alexandria are most positive about noise (0.55) and food and cafe (0.53). Residents are most critical about green space (0.18) and affordability (0.11). This analysis is based on 147 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Unpopular opinion: inner city people are way too obsessed with owning dogs\nThe amount of people in inner city suburbs living in shoe boxes that own dogs is genuinely insane. \n\nI’ve lived in three spot",

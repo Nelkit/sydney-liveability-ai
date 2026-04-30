@@ -1,59 +1,75 @@
 {
   "suburb": "Haymarket",
-  "post_count": 38,
-  "fetched_at": "2026-04-18T01:05:08.519226+00:00",
+  "post_count": 112,
+  "fetched_at": "2026-04-29T17:10:14.429607+00:00",
   "aspects": {
-    "community": {
-      "score": 0.69,
-      "mentions": 34,
-      "raw_score": 0.69
-    },
-    "nightlife": {
-      "score": 0.497,
-      "mentions": 10,
-      "raw_score": 0.497
+    "safety": {
+      "score": 0.293,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.62,
-      "mentions": 13,
-      "raw_score": 0.62
+      "score": 0.632,
+      "mentions": 49,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.537,
-      "mentions": 9,
-      "raw_score": 0.537
-    },
-    "noise": {
-      "score": 0.824,
-      "mentions": 8,
-      "raw_score": 0.824
+    "nightlife": {
+      "score": 0.574,
+      "mentions": 44,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.268,
-      "mentions": 2,
-      "raw_score": 0.268
+      "score": 0.497,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.594,
-      "mentions": 7,
-      "raw_score": 0.594
+      "score": 0.493,
+      "mentions": 28,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.688,
+      "mentions": 93,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.535,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.45,
-      "mentions": 3,
-      "raw_score": 0.45
+      "score": 0.431,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
-    "joy": 0.2041,
-    "surprise": 0.1914,
-    "neutral": 0.4106,
-    "fear": 0.0387,
-    "sadness": 0.0537,
-    "anger": 0.0462,
-    "disgust": 0.0554
+    "joy": 0.1575,
+    "surprise": 0.1296,
+    "neutral": 0.5141,
+    "fear": 0.0467,
+    "sadness": 0.0379,
+    "anger": 0.0417,
+    "disgust": 0.0724
   },
-  "narrative": "Reddit discussions about Haymarket are most positive about noise (0.82) and community (0.69). Residents are most critical about green space (0.45) and affordability (0.27). This analysis is based on 38 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Haymarket are most positive about community (0.69) and food and cafe (0.63). Residents are most critical about green space (0.43) and safety (0.29). This analysis is based on 112 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Awesome mural in Haymarket",
@@ -74,6 +90,11 @@
       "text": "Cool street art in Haymarket",
       "url": "https://reddit.com/r/sydney/comments/1ick4vx/cool_street_art_in_haymarket/",
       "score": 468
+    },
+    {
+      "text": "off to Haymarket?",
+      "url": "https://reddit.com/r/sydney/comments/1c0ht41/im_gonna_take_my_horse_to_the_old_town_road/kywffw6/",
+      "score": 394
     },
     {
       "text": "A recent photowalk around Sydney\nA couple of photos I took last Friday that I would like to share with you all. Featuring Sydney (Haymarket), Dover Heights and Rose Bay.",
@@ -99,11 +120,6 @@
       "text": "Lunch time walks - George Street with a detour into Chinatown/Haymarket\nShorter one today, need to get off the main streets more. Started at the Strand Arcade, wandered down to World Square and then m",
       "url": "https://reddit.com/r/sydney/comments/1qjoqe6/lunch_time_walks_george_street_with_a_detour_into/",
       "score": 151
-    },
-    {
-      "text": "How could George St around Town Hall/Haymarket be improved?\nThe strip from QVB down to Chinatown is absolutely pumping with foot traffic these days (which is great to see post covid), but I cant help ",
-      "url": "https://reddit.com/r/sydney/comments/1cf29sk/how_could_george_st_around_town_hallhaymarket_be/",
-      "score": 81
     }
   ],
   "confidence": 1.0,

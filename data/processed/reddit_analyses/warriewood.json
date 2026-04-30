@@ -1,47 +1,63 @@
 {
   "suburb": "Warriewood",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:24.833906+00:00",
+  "fetched_at": "2026-04-29T23:53:00.400690+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.537,
-      "mentions": 2,
-      "raw_score": 0.777
-    },
-    "community": {
-      "score": 0.515,
-      "mentions": 4,
-      "raw_score": 0.61
-    },
-    "transport": {
-      "score": 0.559,
-      "mentions": 1,
-      "raw_score": 0.944
-    },
     "safety": {
-      "score": 0.463,
-      "mentions": 1,
-      "raw_score": 0.221
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": 0.688,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
+      "score": 0.535,
       "mentions": 1,
-      "raw_score": 0.5
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.0064,
     "sadness": 0.0083
   },
-  "narrative": "Reddit discussions about Warriewood are most positive about transport (0.94) and food and cafe (0.78). Residents are most critical about noise (0.50) and safety (0.22). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Warriewood are most positive about food and cafe (0.69) and nightlife (0.54). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Hey, I work in Mona Vale, near Pittwater Place and was wondering what good, affordable, places there are nearby? I can't drive anywhere on my lunch break, so I can't go to Warriewood, just stuff withi",

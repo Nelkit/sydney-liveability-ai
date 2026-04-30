@@ -1,47 +1,63 @@
 {
   "suburb": "Minto Heights",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:11.799515+00:00",
+  "fetched_at": "2026-04-29T23:44:15.928089+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
-    },
     "safety": {
-      "score": 0.5,
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.401,
       "mentions": 1,
-      "raw_score": 0.5
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
       "score": 0.5,
       "mentions": 1,
-      "raw_score": 0.5
-    },
-    "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0,
-      "raw_score": 0.5
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 0,
-      "raw_score": 0.5
-    },
-    "affordability": {
-      "score": 0.5,
-      "mentions": 0,
-      "raw_score": 0.5
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.1,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0233,
     "joy": 0.0067
   },
-  "narrative": "Reddit discussions about Minto Heights are most positive about community (0.50) and safety (0.50). Residents are most critical about transport (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is surprise.",
+  "narrative": "Reddit discussions about Minto Heights are most positive about noise (0.50) and community (0.40). Residents are most critical about community (0.40) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is surprise.",
   "sources": [
     {
       "text": "To anyone living in Leumeah/Minto heights areas, does anyone hear booming sounds in the suburbs\nKeep hearing booming sounds near my house, sometimes I could feel the rattling of my items in my room. D",

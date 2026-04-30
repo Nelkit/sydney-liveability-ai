@@ -1,47 +1,63 @@
 {
   "suburb": "Dural",
   "post_count": 19,
-  "fetched_at": "2026-04-18T02:15:29.579616+00:00",
+  "fetched_at": "2026-04-29T23:35:25.223809+00:00",
   "aspects": {
     "safety": {
-      "score": 0.316,
-      "mentions": 4,
-      "raw_score": 0.21
-    },
-    "community": {
-      "score": 0.659,
-      "mentions": 12,
-      "raw_score": 0.751
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.665,
+      "score": 0.805,
       "mentions": 6,
-      "raw_score": 0.76
-    },
-    "transport": {
-      "score": 0.504,
-      "mentions": 7,
-      "raw_score": 0.507
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 3,
-      "raw_score": 0.5
-    },
-    "affordability": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.545,
+      "score": 0.561,
       "mentions": 5,
-      "raw_score": 0.571
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.507,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 1,
-      "raw_score": 0.5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1235,
     "joy": 0.0773
   },
-  "narrative": "Reddit discussions about Dural are most positive about food and cafe (0.76) and community (0.75). Residents are most critical about noise (0.50) and safety (0.21). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Dural are most positive about food and cafe (0.81) and nightlife (0.56). Residents are most critical about transport (0.51) and green space (0.00). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "NSW Police investigate after explosives found in caravan in Dural in Sydney's north-west\nNSW Police are investigating whether the discovery of explosives in a caravan at a property in Dural is linked ",

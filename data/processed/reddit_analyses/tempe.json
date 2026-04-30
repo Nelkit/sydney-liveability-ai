@@ -1,47 +1,63 @@
 {
   "suburb": "Tempe",
   "post_count": 74,
-  "fetched_at": "2026-04-18T02:02:13.025691+00:00",
+  "fetched_at": "2026-04-29T17:17:51.420331+00:00",
   "aspects": {
-    "community": {
-      "score": 0.669,
-      "mentions": 53,
-      "raw_score": 0.669
-    },
-    "nightlife": {
-      "score": 0.837,
-      "mentions": 20,
-      "raw_score": 0.837
-    },
     "safety": {
-      "score": 0.795,
+      "score": 0.587,
       "mentions": 22,
-      "raw_score": 0.795
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.806,
+      "score": 0.787,
       "mentions": 11,
-      "raw_score": 0.806
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.786,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.862,
+      "score": 0.745,
       "mentions": 9,
-      "raw_score": 0.862
-    },
-    "green_space": {
-      "score": 0.809,
-      "mentions": 15,
-      "raw_score": 0.809
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.758,
+      "score": 0.585,
       "mentions": 24,
-      "raw_score": 0.758
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.475,
+      "mentions": 53,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.799,
+      "score": 0.614,
       "mentions": 10,
-      "raw_score": 0.799
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.781,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.046,
     "joy": 0.0747
   },
-  "narrative": "Reddit discussions about Tempe are most positive about affordability (0.86) and nightlife (0.84). Residents are most critical about transport (0.76) and community (0.67). This analysis is based on 74 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Tempe are most positive about food and cafe (0.79) and nightlife (0.79). Residents are most critical about transport (0.58) and community (0.47). This analysis is based on 74 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Major fire in Marrickville!\nHUGE smoke plume. Saw planes going right thru it from Tempe. Apparently could be the Fraser Park sports club?",

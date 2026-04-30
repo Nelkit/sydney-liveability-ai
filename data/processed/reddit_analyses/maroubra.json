@@ -1,47 +1,63 @@
 {
   "suburb": "Maroubra",
   "post_count": 97,
-  "fetched_at": "2026-04-18T01:57:42.450782+00:00",
+  "fetched_at": "2026-04-29T23:43:02.933522+00:00",
   "aspects": {
-    "community": {
-      "score": 0.535,
-      "mentions": 79,
-      "raw_score": 0.535
-    },
     "safety": {
-      "score": 0.561,
+      "score": 0.45,
       "mentions": 29,
-      "raw_score": 0.561
-    },
-    "nightlife": {
-      "score": 0.591,
-      "mentions": 20,
-      "raw_score": 0.591
-    },
-    "green_space": {
-      "score": 0.674,
-      "mentions": 15,
-      "raw_score": 0.674
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.76,
+      "score": 0.771,
       "mentions": 11,
-      "raw_score": 0.76
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.559,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.731,
+      "score": 0.541,
       "mentions": 10,
-      "raw_score": 0.731
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.548,
+      "score": 0.432,
       "mentions": 30,
-      "raw_score": 0.548
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.602,
+      "mentions": 79,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.928,
-      "mentions": 6,
-      "raw_score": 0.928
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.653,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.1015,
     "anger": 0.0778
   },
-  "narrative": "Reddit discussions about Maroubra are most positive about noise (0.93) and food and cafe (0.76). Residents are most critical about transport (0.55) and community (0.54). This analysis is based on 97 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Maroubra are most positive about food and cafe (0.77) and green space (0.65). Residents are most critical about safety (0.45) and transport (0.43). This analysis is based on 97 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",

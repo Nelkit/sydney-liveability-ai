@@ -1,47 +1,63 @@
 {
   "suburb": "Canada Bay",
   "post_count": 15,
-  "fetched_at": "2026-04-18T02:16:40.850860+00:00",
+  "fetched_at": "2026-04-29T23:31:16.891860+00:00",
   "aspects": {
-    "community": {
-      "score": 0.498,
-      "mentions": 11,
-      "raw_score": 0.496
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.426,
+      "score": 0.473,
       "mentions": 1,
-      "raw_score": 0.352
-    },
-    "affordability": {
-      "score": 0.524,
-      "mentions": 3,
-      "raw_score": 0.549
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.635,
-      "mentions": 2,
-      "raw_score": 0.77
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": 0.177,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.586,
-      "mentions": 2,
-      "raw_score": 0.671
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.51,
-      "mentions": 2,
-      "raw_score": 0.52
-    },
-    "green_space": {
-      "score": 0.406,
-      "mentions": 2,
-      "raw_score": 0.313
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "anger": 0.0787,
     "fear": 0.0161
   },
-  "narrative": "Reddit discussions about Canada Bay are most positive about nightlife (0.77) and transport (0.67). Residents are most critical about food and cafe (0.35) and green space (0.31). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Canada Bay are most positive about food and cafe (0.47) and affordability (0.18). Residents are most critical about affordability (0.18) and green space (0.00). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "don't know if it's recently changed but\n\n\nCanada bay = Older Italians that have lived there for the last 40 yrs",

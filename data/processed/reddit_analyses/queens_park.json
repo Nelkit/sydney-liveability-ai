@@ -1,47 +1,63 @@
 {
   "suburb": "Queens Park",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:20:02.195635+00:00",
+  "fetched_at": "2026-04-29T23:47:46.289855+00:00",
   "aspects": {
     "safety": {
-      "score": 0.48,
+      "score": 0.219,
       "mentions": 4,
-      "raw_score": 0.38
-    },
-    "green_space": {
-      "score": 0.482,
-      "mentions": 5,
-      "raw_score": 0.389
-    },
-    "community": {
-      "score": 0.482,
-      "mentions": 5,
-      "raw_score": 0.389
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
       "score": 0.5,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.263,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "surprise": 0.1332,
     "joy": 0.0047
   },
-  "narrative": "Reddit discussions about Queens Park are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about community (0.39) and safety (0.38). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Queens Park are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about green space (0.26) and safety (0.22). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I was at queens park while this was unfolding. I saw about 7 police cars and 3 ambos rushing with sirens on towards the junction over a 30 minute period. When it was just the police cars we guessed a ",

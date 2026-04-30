@@ -1,47 +1,63 @@
 {
   "suburb": "Queenscliff",
   "post_count": 8,
-  "fetched_at": "2026-04-18T02:19:05.392904+00:00",
+  "fetched_at": "2026-04-29T23:47:47.681037+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.454,
-      "mentions": 2,
-      "raw_score": 0.326
-    },
     "safety": {
-      "score": 0.454,
-      "mentions": 2,
-      "raw_score": 0.326
-    },
-    "community": {
-      "score": 0.507,
-      "mentions": 5,
-      "raw_score": 0.526
-    },
-    "nightlife": {
-      "score": 0.404,
-      "mentions": 2,
-      "raw_score": 0.139
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
+      "score": 0.0,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "disgust": 0.1956,
     "joy": 0.1725
   },
-  "narrative": "Reddit discussions about Queenscliff are most positive about community (0.53) and food and cafe (0.50). Residents are most critical about safety (0.33) and nightlife (0.14). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Queenscliff are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "You should have taken the tunnel between queenscliff and freshwater",

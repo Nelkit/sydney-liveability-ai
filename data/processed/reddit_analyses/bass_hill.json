@@ -1,47 +1,63 @@
 {
   "suburb": "Bass Hill",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:12.391109+00:00",
+  "fetched_at": "2026-04-29T23:28:08.966490+00:00",
   "aspects": {
-    "community": {
-      "score": 0.604,
-      "mentions": 9,
-      "raw_score": 0.74
-    },
     "safety": {
-      "score": 0.587,
-      "mentions": 4,
-      "raw_score": 0.701
-    },
-    "transport": {
-      "score": 0.588,
-      "mentions": 5,
-      "raw_score": 0.704
-    },
-    "nightlife": {
-      "score": 0.624,
-      "mentions": 2,
-      "raw_score": 0.787
-    },
-    "green_space": {
-      "score": 0.641,
-      "mentions": 1,
-      "raw_score": 0.826
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.617,
+      "score": 0.64,
       "mentions": 5,
-      "raw_score": 0.77
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.72,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.628,
-      "mentions": 3,
-      "raw_score": 0.795
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.607,
-      "mentions": 1,
-      "raw_score": 0.747
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0426,
     "joy": 0.0372
   },
-  "narrative": "Reddit discussions about Bass Hill are most positive about green space (0.83) and affordability (0.80). Residents are most critical about transport (0.70) and safety (0.70). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bass Hill are most positive about nightlife (0.72) and food and cafe (0.64). Residents are most critical about food and cafe (0.64) and green space (0.00). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "They grow big fungi at Bass Hill\nBiggest mushroom I've seen in my life!  Im a size 10 shoe and it dwarfed my foot. Found it while I was walking through the bush reserve at The Crest.",

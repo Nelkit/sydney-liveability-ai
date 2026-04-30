@@ -1,47 +1,63 @@
 {
   "suburb": "Prospect",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:25.569288+00:00",
+  "fetched_at": "2026-04-29T23:47:26.027143+00:00",
   "aspects": {
-    "community": {
-      "score": 0.582,
-      "mentions": 8,
-      "raw_score": 0.746
-    },
     "safety": {
-      "score": 0.516,
-      "mentions": 2,
-      "raw_score": 0.548
-    },
-    "transport": {
-      "score": 0.612,
-      "mentions": 3,
-      "raw_score": 0.835
-    },
-    "affordability": {
-      "score": 0.642,
-      "mentions": 2,
-      "raw_score": 0.925
-    },
-    "green_space": {
-      "score": 0.58,
-      "mentions": 3,
-      "raw_score": 0.739
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.565,
-      "mentions": 1,
-      "raw_score": 0.696
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.63,
-      "mentions": 1,
-      "raw_score": 0.889
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
+      "score": null,
       "mentions": 0,
-      "raw_score": 0.5
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -53,7 +69,7 @@
     "sadness": 0.0089,
     "joy": 0.003
   },
-  "narrative": "Reddit discussions about Prospect are most positive about affordability (0.93) and nightlife (0.89). Residents are most critical about safety (0.55) and noise (0.50). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Prospect are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Did Sydney's rivers/creek freeze up back in the 1700s or were the European settlers exaggerating things?\nThis is describing Watkin Tench's expedition in July 1791. They were near Prospect Creek in wha",
