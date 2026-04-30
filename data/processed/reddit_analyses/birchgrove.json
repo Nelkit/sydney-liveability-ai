@@ -1,39 +1,63 @@
 {
   "suburb": "Birchgrove",
   "post_count": 15,
-  "fetched_at": "2026-04-18T02:16:37.272427+00:00",
+  "fetched_at": "2026-04-29T23:29:09.907975+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.756,
-      "mentions": 8
-    },
-    "community": {
-      "score": 0.737,
-      "mentions": 14
-    },
-    "nightlife": {
-      "score": 0.736,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.707,
-      "mentions": 5
-    },
-    "affordability": {
-      "score": 0.994,
-      "mentions": 3
-    },
-    "transport": {
-      "score": 0.992,
-      "mentions": 6
+      "score": 0.438,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.998,
-      "mentions": 1
+      "score": 0.8,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.642,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.635,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0249,
     "anger": 0.0243
   },
-  "narrative": "Reddit discussions about Birchgrove are most positive about food and cafe (1.00) and affordability (0.99). Residents are most critical about safety (0.71) and noise (0.50). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Birchgrove are most positive about food and cafe (0.80) and nightlife (0.64). Residents are most critical about safety (0.44) and green space (0.00). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Seal sunning at Birchgrove\nSleeping in on a public holiday",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c9aaqu/balmain_east_is_under_rated/l0keopz/",
       "score": 8
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

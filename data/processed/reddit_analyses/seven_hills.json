@@ -1,39 +1,63 @@
 {
   "suburb": "Seven Hills",
   "post_count": 70,
-  "fetched_at": "2026-04-18T02:03:06.636170+00:00",
+  "fetched_at": "2026-04-29T17:18:58.094409+00:00",
   "aspects": {
-    "community": {
-      "score": 0.614,
-      "mentions": 58
-    },
-    "transport": {
-      "score": 0.502,
-      "mentions": 28
-    },
     "safety": {
-      "score": 0.478,
-      "mentions": 23
-    },
-    "green_space": {
-      "score": 0.798,
-      "mentions": 14
+      "score": 0.167,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.755,
-      "mentions": 8
-    },
-    "noise": {
-      "score": 0.9,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.746,
-      "mentions": 12
+      "score": 0.806,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.736,
-      "mentions": 9
+      "score": 0.751,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.437,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.295,
+      "mentions": 28,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.415,
+      "mentions": 58,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.802,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.789,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0532,
     "joy": 0.0497
   },
-  "narrative": "Reddit discussions about Seven Hills are most positive about noise (0.90) and green space (0.80). Residents are most critical about transport (0.50) and safety (0.48). This analysis is based on 70 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Seven Hills are most positive about food and cafe (0.81) and noise (0.80). Residents are most critical about transport (0.29) and safety (0.17). This analysis is based on 70 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What makes The Hills 'posh'?\nI'm new to Sydney and find the postcode politics interesting (albeit toxic af).\n\nI'm curious, how did The Hills district become known as relatively posh/affluent when it's",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/192ffzi/opinion_on_seven_hills/kh4dsa1/",
       "score": 33
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

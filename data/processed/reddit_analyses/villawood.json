@@ -1,39 +1,63 @@
 {
   "suburb": "Villawood",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:28.276555+00:00",
+  "fetched_at": "2026-04-29T23:52:49.175741+00:00",
   "aspects": {
-    "community": {
-      "score": 0.724,
-      "mentions": 11
-    },
     "safety": {
-      "score": 0.403,
-      "mentions": 5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "transport": {
-      "score": 0.462,
-      "mentions": 7
+    "food_and_cafe": {
+      "score": 0.563,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 4
-    },
-    "food_and_cafe": {
-      "score": 0.657,
-      "mentions": 3
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.326,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0448,
     "fear": 0.0471
   },
-  "narrative": "Reddit discussions about Villawood are most positive about community (0.72) and food and cafe (0.66). Residents are most critical about transport (0.46) and safety (0.40). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Villawood are most positive about food and cafe (0.56) and nightlife (0.50). Residents are most critical about transport (0.33) and green space (0.00). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I was just curious as to other 80's and 90's \"Westy's\" opinions on today's Essay culture?\nEdit - I meant to say Eshay in my title but autocorrect screwed me and I couldn't edit the title.\n\nI was born ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bh1f80/sydney_daily_random_discussion_thread_18032024/kvcp1se/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

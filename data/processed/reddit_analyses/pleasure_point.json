@@ -1,39 +1,63 @@
 {
   "suburb": "Pleasure Point",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:47.627776+00:00",
+  "fetched_at": "2026-04-29T23:47:00.660331+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.806,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.806,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.84,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.89,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.821,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0035,
     "fear": 0.0159
   },
-  "narrative": "Reddit discussions about Pleasure Point are most positive about safety (0.89) and community (0.84). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pleasure Point are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I believe there doing some work now, theres picnic point, pleasure point and further along is gonna be Asbestos point.\n\nTalks are there is gonna be Asbestosville and Port Asbestos however locations ar",
@@ -62,5 +86,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b4gt9d/whats_this_place/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

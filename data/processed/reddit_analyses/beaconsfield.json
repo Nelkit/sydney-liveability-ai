@@ -1,39 +1,63 @@
 {
   "suburb": "Beaconsfield",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:03.462021+00:00",
+  "fetched_at": "2026-04-29T23:28:16.134046+00:00",
   "aspects": {
     "safety": {
-      "score": 0.323,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.323,
-      "mentions": 1
+      "score": 0.378,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.484,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.169,
+      "mentions": 0,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "arcgis"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.434,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "sadness": 0.0067,
     "joy": 0.0026
   },
-  "narrative": "Reddit discussions about Beaconsfield are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.32) and community (0.32). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Beaconsfield are most positive about transport (0.50) and food and cafe (0.48). Residents are most critical about safety (0.38) and community (0.17). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Very rare 4-way stop sign in Beaconsfield. Does the average motorist know how to approach these?",
       "url": "https://reddit.com/r/sydney/comments/1g08vep/very_rare_4way_stop_sign_in_beaconsfield_does_the/",
       "score": 326
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

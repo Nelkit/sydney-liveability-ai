@@ -1,39 +1,63 @@
 {
   "suburb": "Eastwood",
   "post_count": 147,
-  "fetched_at": "2026-04-18T01:52:20.653317+00:00",
+  "fetched_at": "2026-04-29T17:05:59.795699+00:00",
   "aspects": {
     "safety": {
-      "score": 0.332,
-      "mentions": 34
-    },
-    "transport": {
-      "score": 0.651,
-      "mentions": 44
-    },
-    "community": {
-      "score": 0.533,
-      "mentions": 103
-    },
-    "nightlife": {
-      "score": 0.501,
-      "mentions": 31
+      "score": 0.157,
+      "mentions": 34,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.64,
-      "mentions": 42
+      "score": 0.594,
+      "mentions": 42,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.531,
+      "mentions": 31,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.618,
-      "mentions": 9
+      "score": 0.499,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.525,
+      "mentions": 44,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.43,
+      "mentions": 103,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.697,
-      "mentions": 8
+      "score": 0.503,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.677,
-      "mentions": 13
+      "score": 0.415,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.1378,
     "joy": 0.0927
   },
-  "narrative": "Reddit discussions about Eastwood are most positive about noise (0.70) and green space (0.68). Residents are most critical about nightlife (0.50) and safety (0.33). This analysis is based on 147 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Eastwood are most positive about food and cafe (0.59) and nightlife (0.53). Residents are most critical about green space (0.41) and safety (0.16). This analysis is based on 147 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "If you bought fruit at Eastwood Woolworths today, maybe give it an extra wash\nWent to pick up some fruit and there were cockroaches all over the Apple and Raspberry area. Not seen were how half the Ap",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d1k14t/proposed_eastwood_centre_redevelopment/l5uhern/",
       "score": 146
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

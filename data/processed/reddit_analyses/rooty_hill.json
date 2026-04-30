@@ -1,39 +1,63 @@
 {
   "suburb": "Rooty Hill",
   "post_count": 39,
-  "fetched_at": "2026-04-18T02:10:09.645752+00:00",
+  "fetched_at": "2026-04-29T23:49:01.319018+00:00",
   "aspects": {
-    "nightlife": {
-      "score": 0.724,
-      "mentions": 16
-    },
-    "community": {
-      "score": 0.657,
-      "mentions": 33
-    },
     "safety": {
-      "score": 0.327,
-      "mentions": 10
-    },
-    "transport": {
-      "score": 0.422,
-      "mentions": 9
+      "score": 0.166,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.835,
-      "mentions": 4
+      "score": 0.69,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.609,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.572,
-      "mentions": 2
+    "nightlife": {
+      "score": 0.536,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.737,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.232,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.598,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0244,
     "fear": 0.0793
   },
-  "narrative": "Reddit discussions about Rooty Hill are most positive about food and cafe (0.83) and affordability (0.74). Residents are most critical about transport (0.42) and safety (0.33). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rooty Hill are most positive about food and cafe (0.69) and community (0.60). Residents are most critical about safety (0.17) and green space (0.00). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Rooty Hill is glamorous enough. I don’t think it can be improved.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/199fwlb/why_do_people_like_to_make_out_that_western/kieqhow/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

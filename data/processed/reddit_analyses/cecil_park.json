@@ -1,39 +1,63 @@
 {
   "suburb": "Cecil Park",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:53.642456+00:00",
+  "fetched_at": "2026-04-29T23:32:11.209024+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.613,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.613,
-      "mentions": 1
-    },
-    "noise": {
-      "score": 0.613,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.02,
     "joy": 0.0034
   },
-  "narrative": "Reddit discussions about Cecil Park are most positive about green space (0.61) and community (0.61). Residents are most critical about affordability (0.50) and transport (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cecil Park are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What artefacts of the Sydney 2000 Olympics are still surviving outside of Olympic Park?\nSaw this sign on Elizabeth Drive over in Cecil Park. Sadly it’s had better days and I worry with the road upgrad",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1khe92p/express_lake_cecil_park/",
       "score": 42
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

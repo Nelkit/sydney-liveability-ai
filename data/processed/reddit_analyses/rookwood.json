@@ -1,39 +1,63 @@
 {
   "suburb": "Rookwood",
   "post_count": 19,
-  "fetched_at": "2026-04-18T02:15:43.977332+00:00",
+  "fetched_at": "2026-04-29T23:48:54.341348+00:00",
   "aspects": {
-    "community": {
-      "score": 0.811,
-      "mentions": 16
-    },
-    "transport": {
-      "score": 0.855,
-      "mentions": 6
-    },
     "safety": {
-      "score": 0.798,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.667,
-      "mentions": 4
-    },
-    "nightlife": {
-      "score": 0.539,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "noise": {
-      "score": 0.861,
-      "mentions": 1
+      "score": 0.428,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.904,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.869,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.592,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0093,
     "disgust": 0.0189
   },
-  "narrative": "Reddit discussions about Rookwood are most positive about noise (0.86) and transport (0.85). Residents are most critical about affordability (0.50) and food and cafe (0.50). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rookwood are most positive about transport (0.90) and community (0.87). Residents are most critical about nightlife (0.50) and safety (0.43). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What is your perfect suburb?\nbased off your lifestyle and everything you do and your family situation.\n\nfor me it would be lidcombe or burwood.\n\ni have an asian palette so both places and being close ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/19czhiw/sydney_daily_random_discussion_thread_23012024/kj4s9lw/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

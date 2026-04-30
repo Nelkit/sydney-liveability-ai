@@ -1,39 +1,63 @@
 {
   "suburb": "Narrabeen",
   "post_count": 30,
-  "fetched_at": "2026-04-18T02:12:24.822699+00:00",
+  "fetched_at": "2026-04-29T23:45:08.233368+00:00",
   "aspects": {
     "safety": {
-      "score": 0.427,
-      "mentions": 5
-    },
-    "green_space": {
-      "score": 0.859,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.651,
-      "mentions": 11
-    },
-    "community": {
-      "score": 0.5,
-      "mentions": 17
-    },
-    "noise": {
-      "score": 0.3,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.466,
-      "mentions": 3
+      "score": 0.38,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.943,
-      "mentions": 1
+      "score": 0.522,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.736,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.651,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.655,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0316,
     "joy": 0.0862
   },
-  "narrative": "Reddit discussions about Narrabeen are most positive about food and cafe (0.94) and green space (0.86). Residents are most critical about safety (0.43) and noise (0.30). This analysis is based on 30 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Narrabeen are most positive about nightlife (0.74) and community (0.66). Residents are most critical about safety (0.38) and green space (0.00). This analysis is based on 30 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Maybe the same whales seen at coogee? Narrabeen yesterday",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1jqrxb7/how_is_the_bline_from_the_northern_beaches_to_the/",
       "score": 14
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

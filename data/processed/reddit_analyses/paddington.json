@@ -1,39 +1,63 @@
 {
   "suburb": "Paddington",
   "post_count": 23,
-  "fetched_at": "2026-04-18T02:14:08.806615+00:00",
+  "fetched_at": "2026-04-29T23:46:28.429459+00:00",
   "aspects": {
     "safety": {
-      "score": 0.279,
-      "mentions": 8
-    },
-    "transport": {
-      "score": 0.441,
-      "mentions": 10
-    },
-    "community": {
-      "score": 0.475,
-      "mentions": 20
-    },
-    "affordability": {
-      "score": 0.207,
-      "mentions": 8
-    },
-    "green_space": {
-      "score": 0.231,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.005,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.47,
-      "mentions": 8
+      "score": 0.219,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.556,
-      "mentions": 4
+      "score": 0.646,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.541,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.226,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.372,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.497,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.34,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0891,
     "joy": 0.1562
   },
-  "narrative": "Reddit discussions about Paddington are most positive about food and cafe (0.56) and community (0.47). Residents are most critical about affordability (0.21) and noise (0.01). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Paddington are most positive about food and cafe (0.65) and nightlife (0.54). Residents are most critical about affordability (0.23) and safety (0.22). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Today reporter almost taken down by cyclist on pedestrian crossing\nFollowing on from yesterday's post about Paddington NIMBYs taking the council to the Human Rights Commission over a pedestrian crossi",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5zjvyq/",
       "score": 25
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

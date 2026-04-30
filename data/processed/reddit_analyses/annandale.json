@@ -1,39 +1,63 @@
 {
   "suburb": "Annandale",
   "post_count": 77,
-  "fetched_at": "2026-04-18T02:01:32.271693+00:00",
+  "fetched_at": "2026-04-29T23:27:19.331924+00:00",
   "aspects": {
-    "community": {
-      "score": 0.71,
-      "mentions": 62
-    },
-    "nightlife": {
-      "score": 0.637,
-      "mentions": 26
-    },
-    "transport": {
-      "score": 0.642,
-      "mentions": 23
-    },
     "safety": {
-      "score": 0.618,
-      "mentions": 18
+      "score": 0.153,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.482,
-      "mentions": 11
+      "score": 0.536,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.546,
-      "mentions": 12
+    "nightlife": {
+      "score": 0.606,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.547,
-      "mentions": 11
+      "score": 0.389,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.447,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.744,
+      "mentions": 62,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.836,
-      "mentions": 4
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.824,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0576,
     "disgust": 0.0719
   },
-  "narrative": "Reddit discussions about Annandale are most positive about noise (0.84) and community (0.71). Residents are most critical about green space (0.55) and food and cafe (0.48). This analysis is based on 77 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Annandale are most positive about green space (0.82) and community (0.74). Residents are most critical about affordability (0.39) and safety (0.15). This analysis is based on 77 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Annandale as the Eastern Suburbs is a very big lol",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bv5n1h/it_never_amazes_me_how_much_sydneysiders_redefine/kxy1577/",
       "score": 56
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

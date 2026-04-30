@@ -1,39 +1,63 @@
 {
   "suburb": "Hunters Hill",
   "post_count": 31,
-  "fetched_at": "2026-04-18T02:12:11.909570+00:00",
+  "fetched_at": "2026-04-29T23:38:39.762323+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.324,
-      "mentions": 7
-    },
-    "community": {
-      "score": 0.311,
-      "mentions": 22
-    },
     "safety": {
-      "score": 0.358,
-      "mentions": 8
-    },
-    "noise": {
-      "score": 0.399,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.493,
-      "mentions": 7
+      "score": 0.116,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.528,
-      "mentions": 6
+      "score": 0.582,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.558,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.86,
-      "mentions": 2
+      "score": 0.5,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.256,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.357,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.238,
-      "mentions": 3
+      "score": 0.361,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0714,
     "joy": 0.0462
   },
-  "narrative": "Reddit discussions about Hunters Hill are most positive about affordability (0.86) and food and cafe (0.53). Residents are most critical about community (0.31) and green space (0.24). This analysis is based on 31 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Hunters Hill are most positive about food and cafe (0.58) and nightlife (0.56). Residents are most critical about transport (0.26) and safety (0.12). This analysis is based on 31 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "As the article says, you got some LGAs with no heritage listed properties and some like Hunters Hill with practically all of it listed as “heritage”. As the councilor blatantly said, they are trying t",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxy7txd/",
       "score": 29
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

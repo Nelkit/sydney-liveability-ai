@@ -1,39 +1,63 @@
 {
   "suburb": "Maroota",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:10.960045+00:00",
+  "fetched_at": "2026-04-29T23:42:44.233610+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.862,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "joy": 0.008,
     "sadness": 0.0066
   },
-  "narrative": "Reddit discussions about Maroota are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Maroota are most positive about community (0.86) and food and cafe (0.50). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Out in the Hawkesbury in Windsor and around those areas I see cows advertised on the maroota group",
       "url": "https://reddit.com/r/sydney/comments/1drvpoh/ordering_a_cow_in_nsw/layfjrx/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

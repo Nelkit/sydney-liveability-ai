@@ -174,26 +174,29 @@ def summary() -> dict:
         cached = _local_cache_lookup(suburb)
         if cached is not None:
             aspects = cached.get("aspects", {}) or {}
-            # Composite score = mean of aspect scores with at least 1 mention;
-            # if everything is unseen, fall back to mean of raw scores (0.5s).
+            # Composite score = mean over dims with a non-null score (Reddit-
+            # attested or cross-modal-fallback). Null dims are dropped — this
+            # is the wire-format contract from the deepen-reddit-transformer
+            # change.
             scored = [
-                v.get("score", 0.5)
+                v.get("score")
                 for v in aspects.values()
-                if v.get("mentions", 0) > 0
+                if v.get("score") is not None
             ]
-            if not scored:
-                scored = [v.get("score", 0.5) for v in aspects.values()] or [0.5]
-            composite = round(sum(scored) / len(scored), 3)
+            if scored:
+                composite = round(sum(scored) / len(scored), 3)
+            else:
+                composite = None
 
-            mentioned = [
-                (k, v.get("score", 0.5))
+            ranked = [
+                (k, v.get("score"))
                 for k, v in aspects.items()
-                if v.get("mentions", 0) > 0
+                if v.get("score") is not None
             ]
-            if mentioned:
-                mentioned.sort(key=lambda pair: pair[1], reverse=True)
-                top_aspect = mentioned[0][0]
-                bottom_aspect = mentioned[-1][0]
+            if ranked:
+                ranked.sort(key=lambda pair: pair[1], reverse=True)
+                top_aspect = ranked[0][0]
+                bottom_aspect = ranked[-1][0]
             else:
                 top_aspect = None
                 bottom_aspect = None
@@ -212,6 +215,8 @@ def summary() -> dict:
                     "bottom_aspect": bottom_aspect,
                     "dominant_emotion": dominant,
                     "cached": True,
+                    "confidence": cached.get("confidence", 0.0),
+                    "confidence_tier": cached.get("confidence_tier", "low"),
                 }
             )
         else:
@@ -224,6 +229,8 @@ def summary() -> dict:
                     "bottom_aspect": None,
                     "dominant_emotion": None,
                     "cached": False,
+                    "confidence": 0.0,
+                    "confidence_tier": "low",
                 }
             )
 

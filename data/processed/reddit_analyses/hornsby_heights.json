@@ -1,39 +1,63 @@
 {
   "suburb": "Hornsby Heights",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:15.514620+00:00",
+  "fetched_at": "2026-04-29T23:38:31.509450+00:00",
   "aspects": {
-    "community": {
-      "score": 0.63,
-      "mentions": 4
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 2
-    },
-    "safety": {
-      "score": 0.5,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0135,
     "fear": 0.0108
   },
-  "narrative": "Reddit discussions about Hornsby Heights are most positive about community (0.63) and nightlife (0.50). Residents are most critical about food and cafe (0.50) and noise (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Hornsby Heights are most positive about nightlife (0.50) and green space (0.00). Residents are most critical about nightlife (0.50) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": ">Places like Hornsby Heights, St Ives Chase are just extensions of their main suburbs that are on higher terrain / hillier, more residential areas\n\nDundas Valley was named after splitting from Dundas ",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1adh7b2/navigation_game_challenge/kk3eu5c/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

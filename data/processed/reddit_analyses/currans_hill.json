@@ -1,39 +1,63 @@
 {
   "suburb": "Currans Hill",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:05.930657+00:00",
+  "fetched_at": "2026-04-29T23:34:05.459086+00:00",
   "aspects": {
-    "community": {
-      "score": 0.363,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.363,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.363,
-      "mentions": 1
-    },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.07,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "sadness": 0.017,
     "joy": 0.0023
   },
-  "narrative": "Reddit discussions about Currans Hill are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about transport (0.36) and green space (0.36). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
+  "narrative": "Reddit discussions about Currans Hill are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about transport (0.07) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
   "sources": [
     {
       "text": "I grew up in that area too and getting anywhere before I was old enough to drive was shitty. The city always seemed like some far away, mystical land. If you wanted to get to the city, you had to go t",
       "url": "https://reddit.com/r/sydney/comments/1aiy1i1/a_cardependent_future_has_young_people_on_sydneys/koxpom6/",
       "score": 17
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

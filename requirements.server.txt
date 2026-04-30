@@ -16,5 +16,7 @@ pandas
 geopandas
 shapely
 requests
-geoalchemy2
-zstandard
+transformers
+torch
+textblob
+pyyaml

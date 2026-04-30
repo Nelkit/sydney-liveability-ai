@@ -1,39 +1,63 @@
 {
   "suburb": "Middleton Grange",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:43.751037+00:00",
+  "fetched_at": "2026-04-29T23:43:54.237477+00:00",
   "aspects": {
     "safety": {
-      "score": 0.432,
-      "mentions": 2
-    },
-    "community": {
-      "score": 0.428,
-      "mentions": 3
-    },
-    "transport": {
-      "score": 0.905,
-      "mentions": 2
+      "score": 0.368,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.997,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.997,
-      "mentions": 1
+      "score": 0.19,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.08,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.35,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0046,
     "disgust": 0.0391
   },
-  "narrative": "Reddit discussions about Middleton Grange are most positive about food and cafe (1.00) and green space (1.00). Residents are most critical about safety (0.43) and community (0.43). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Middleton Grange are most positive about safety (0.37) and community (0.35). Residents are most critical about transport (0.08) and green space (0.00). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Knife-wielding man shot dead by police in Middleton Grange\nhttps://www.skynews.com.au/australia-news/crime/knife-wielding-man-shot-dead-by-police-after-attacking-officer-in-western-sydney-suburb-of-mi",
@@ -62,5 +86,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bnaovc/the_new_station_set_to_take_over_central_as/kwlebiv/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Cabramatta",
   "post_count": 69,
-  "fetched_at": "2026-04-18T02:03:17.200112+00:00",
+  "fetched_at": "2026-04-29T23:30:26.145295+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.587,
-      "mentions": 30
-    },
-    "community": {
-      "score": 0.656,
-      "mentions": 62
-    },
-    "transport": {
-      "score": 0.667,
-      "mentions": 21
-    },
     "safety": {
-      "score": 0.522,
-      "mentions": 20
+      "score": 0.102,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "food_and_cafe": {
+      "score": 0.576,
+      "mentions": 30,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.779,
-      "mentions": 20
-    },
-    "noise": {
-      "score": 0.887,
-      "mentions": 3
+      "score": 0.658,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.84,
-      "mentions": 11
+      "score": 0.505,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.203,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.515,
+      "mentions": 62,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.842,
-      "mentions": 9
+      "score": 0.712,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0674,
     "fear": 0.0908
   },
-  "narrative": "Reddit discussions about Cabramatta are most positive about noise (0.89) and green space (0.84). Residents are most critical about food and cafe (0.59) and safety (0.52). This analysis is based on 69 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cabramatta are most positive about green space (0.71) and nightlife (0.66). Residents are most critical about transport (0.20) and safety (0.10). This analysis is based on 69 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Vinata Hot Bread in Cabramatta makes the best pork roll in Sydney, but I can’t go anymore\nThey banh mi for life",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bpoxvl/i_was_just_curious_as_to_other_80s_and_90s_westys/",
       "score": 61
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

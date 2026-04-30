@@ -1,0 +1,166 @@
+# Curated prompt set for offline RAG-grounding evaluation.
+#
+# Categories (per design §4):
+#   - spatial-grounded: well-covered Sydney suburbs; agent should retrieve
+#     trace entries supporting any suburb-named claim.
+#   - no-data:          null-scored aspects or low-coverage suburbs; agent
+#     should say "I don't have data" rather than confabulate.
+#   - multi-suburb:     comparison prompts that activate the comparator path.
+#   - out_of_scope:     non-liveability questions; agent should refuse politely
+#     with no trace block.
+#
+# Schema (per spec): id, prompt, expect_grounded, notes — all required.
+
+# ---------- spatial-grounded (10) ----------
+- id: spatial-grounded-001
+  prompt: How reliable is the train commute from Parramatta?
+  expect_grounded: true
+  notes: Heavy Reddit coverage; should retrieve transport chunks for Parramatta.
+
+- id: spatial-grounded-002
+  prompt: What's the transport like in Newtown?
+  expect_grounded: true
+  notes: Inner-west suburb with strong Reddit presence on transport.
+
+- id: spatial-grounded-003
+  prompt: How safe is Surry Hills at night?
+  expect_grounded: true
+  notes: Safety + Surry Hills should pull search_posts hits.
+
+- id: spatial-grounded-004
+  prompt: What do residents say about cafes in Glebe?
+  expect_grounded: true
+  notes: Lifestyle/amenities aspect on a well-covered suburb.
+
+- id: spatial-grounded-005
+  prompt: Is Marrickville good for families?
+  expect_grounded: true
+  notes: Should retrieve community/lifestyle chunks for Marrickville.
+
+- id: spatial-grounded-006
+  prompt: How is the noise level in Pyrmont?
+  expect_grounded: true
+  notes: Pyrmont noise is well-discussed on Reddit; routes to noise dim.
+
+- id: spatial-grounded-007
+  prompt: Are there good schools in Chatswood?
+  expect_grounded: true
+  notes: Chatswood education is a recurring Reddit topic.
+
+- id: spatial-grounded-008
+  prompt: What's the nightlife like in Bondi?
+  expect_grounded: true
+  notes: Bondi lifestyle aspect; should retrieve nightlife chunks.
+
+- id: spatial-grounded-009
+  prompt: How walkable is Redfern?
+  expect_grounded: true
+  notes: Redfern walkability discussed in Reddit threads.
+
+- id: spatial-grounded-010
+  prompt: What's the rental market like in Mosman?
+  expect_grounded: true
+  notes: Affordability/cost-of-living aspect on a well-covered suburb.
+
+# ---------- no-data (10) ----------
+- id: no-data-001
+  prompt: What is the noise like at night in Abbotsbury?
+  expect_grounded: true
+  notes: Abbotsbury noise is null-scored; agent should say 'no data', not invent.
+
+- id: no-data-002
+  prompt: How safe is Atlantis?
+  expect_grounded: true
+  notes: Unknown suburb; agent should refuse to invent metrics.
+
+- id: no-data-003
+  prompt: What's the transport like in Acacia Gardens?
+  expect_grounded: true
+  notes: Low-coverage outer-west suburb; expect honest 'no data'.
+
+- id: no-data-004
+  prompt: What's the cafe scene in Bardia?
+  expect_grounded: true
+  notes: Bardia has minimal Reddit presence on cafes; honest absence expected.
+
+- id: no-data-005
+  prompt: How are the schools in Bringelly?
+  expect_grounded: true
+  notes: Bringelly education aspect likely null-scored.
+
+- id: no-data-006
+  prompt: What's the nightlife like in Badgerys Creek?
+  expect_grounded: true
+  notes: Industrial/airport zone — no nightlife coverage.
+
+- id: no-data-007
+  prompt: How walkable is Agnes Banks?
+  expect_grounded: true
+  notes: Rural fringe suburb; walkability has no Reddit coverage.
+
+- id: no-data-008
+  prompt: What is the air quality in Annangrove?
+  expect_grounded: true
+  notes: Air-quality dimension is rarely covered for outer-west suburbs.
+
+- id: no-data-009
+  prompt: How are the parks in Bossley Park?
+  expect_grounded: true
+  notes: Niche dimension on a low-coverage suburb.
+
+- id: no-data-010
+  prompt: What's the local sentiment about Camden's cycling infrastructure?
+  expect_grounded: true
+  notes: Cycling-specific framing on outer suburb; expect 'no data'.
+
+# ---------- multi-suburb comparisons (5) ----------
+- id: multi-suburb-001
+  prompt: Compare Newtown versus Glebe for amenities and safety.
+  expect_grounded: true
+  notes: Both well-covered; comparator + per-suburb sentiment activate.
+
+- id: multi-suburb-002
+  prompt: Which is better for transport, Parramatta or Chatswood?
+  expect_grounded: true
+  notes: Two transport-hub suburbs; should ground each suburb's claim.
+
+- id: multi-suburb-003
+  prompt: Surry Hills or Redfern for nightlife?
+  expect_grounded: true
+  notes: Lifestyle comparison across two inner-city suburbs.
+
+- id: multi-suburb-004
+  prompt: Compare Mosman and Bondi for cafes.
+  expect_grounded: true
+  notes: Lifestyle aspect across two coastal suburbs.
+
+- id: multi-suburb-005
+  prompt: Which suburb is safer, Marrickville or Newtown?
+  expect_grounded: true
+  notes: Safety aspect comparison.
+
+# ---------- out_of_scope (5) ----------
+- id: out-of-scope-001
+  prompt: What's the best time to visit the Sydney Opera House?
+  expect_grounded: true
+  notes: router → out_of_scope; polite refusal, no trace block expected.
+
+- id: out-of-scope-002
+  prompt: How do I cook pavlova?
+  expect_grounded: true
+  notes: Non-liveability; polite refusal, no claims to ground.
+
+- id: out-of-scope-003
+  prompt: What's the score in the rugby?
+  expect_grounded: true
+  notes: Sports query; out_of_scope refusal expected.
+
+- id: out-of-scope-004
+  prompt: Can you write me a poem about Sydney?
+  expect_grounded: true
+  notes: Creative-writing request; out_of_scope refusal.
+
+- id: out-of-scope-005
+  prompt: What's 2 + 2?
+  expect_grounded: true
+  notes: Math/general knowledge; out_of_scope refusal.

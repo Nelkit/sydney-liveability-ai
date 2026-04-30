@@ -1,39 +1,63 @@
 {
   "suburb": "Auburn",
   "post_count": 44,
-  "fetched_at": "2026-04-18T02:08:13.622308+00:00",
+  "fetched_at": "2026-04-29T23:27:55.467094+00:00",
   "aspects": {
-    "community": {
-      "score": 0.553,
-      "mentions": 35
-    },
     "safety": {
-      "score": 0.468,
-      "mentions": 19
-    },
-    "green_space": {
-      "score": 0.491,
-      "mentions": 12
-    },
-    "transport": {
-      "score": 0.362,
-      "mentions": 13
-    },
-    "noise": {
-      "score": 0.396,
-      "mentions": 7
+      "score": 0.318,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.787,
-      "mentions": 6
+      "score": 0.826,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.517,
-      "mentions": 10
+      "score": 0.405,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.464,
-      "mentions": 7
+      "score": 0.511,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.287,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.601,
+      "mentions": 35,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.498,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0702,
     "fear": 0.1385
   },
-  "narrative": "Reddit discussions about Auburn are most positive about food and cafe (0.79) and community (0.55). Residents are most critical about noise (0.40) and transport (0.36). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Auburn are most positive about food and cafe (0.83) and community (0.60). Residents are most critical about safety (0.32) and transport (0.29). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Clyburn station presumably was because it was between Clyde and Auburn. Not suburb names per your request but a bit of rail history of combo names.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aom0nu/someone_has_illegally_dumped_construction_waste/kq0asta/",
       "score": 46
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Croydon Park",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:33.167465+00:00",
+  "fetched_at": "2026-04-29T23:34:03.223267+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.529,
-      "mentions": 6
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.529,
-      "mentions": 6
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.579,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 2
-    },
-    "safety": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.462,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.44,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.0883,
     "joy": 0.1928
   },
-  "narrative": "Reddit discussions about Croydon Park are most positive about green space (0.53) and community (0.53). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Croydon Park are most positive about nightlife (0.58) and food and cafe (0.50). Residents are most critical about community (0.46) and green space (0.44). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Croydon park and Earlwood are on the front line of gentrification.",
@@ -77,5 +101,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bff76o/sydney_rental_is_unethical/l4jl0dv/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

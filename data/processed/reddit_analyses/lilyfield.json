@@ -1,39 +1,63 @@
 {
   "suburb": "Lilyfield",
   "post_count": 23,
-  "fetched_at": "2026-04-18T02:13:56.880659+00:00",
+  "fetched_at": "2026-04-29T23:41:40.965684+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.538,
-      "mentions": 13
-    },
-    "community": {
-      "score": 0.522,
-      "mentions": 19
-    },
-    "green_space": {
-      "score": 0.619,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.591,
-      "mentions": 6
+    "safety": {
+      "score": 0.247,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.917,
-      "mentions": 2
+      "score": 0.361,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.418,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.917,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.632,
-      "mentions": 6
+    "transport": {
+      "score": 0.427,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.572,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.737,
-      "mentions": 4
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0887,
     "joy": 0.0288
   },
-  "narrative": "Reddit discussions about Lilyfield are most positive about food and cafe (0.92) and affordability (0.92). Residents are most critical about transport (0.54) and community (0.52). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lilyfield are most positive about community (0.57) and transport (0.43). Residents are most critical about safety (0.25) and green space (0.00). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Why is Lilyfield the only LR stop on this line with a central platform?",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bf9g5q/where_it_started_and_where_its_going_light_rail/kuzlwe2/",
       "score": 15
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

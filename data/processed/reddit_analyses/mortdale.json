@@ -1,39 +1,63 @@
 {
   "suburb": "Mortdale",
   "post_count": 18,
-  "fetched_at": "2026-04-18T02:16:00.682803+00:00",
+  "fetched_at": "2026-04-29T23:44:31.346152+00:00",
   "aspects": {
-    "food_and_cafe": {
-      "score": 0.923,
-      "mentions": 6
-    },
-    "community": {
-      "score": 0.884,
-      "mentions": 15
-    },
-    "transport": {
-      "score": 0.914,
-      "mentions": 7
-    },
     "safety": {
-      "score": 0.821,
-      "mentions": 3
+      "score": 0.447,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "affordability": {
-      "score": 0.893,
-      "mentions": 6
-    },
-    "green_space": {
-      "score": 0.904,
-      "mentions": 2
+    "food_and_cafe": {
+      "score": 0.802,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.851,
-      "mentions": 5
+      "score": 0.632,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.568,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.788,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.853,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.1241,
     "joy": 0.1064
   },
-  "narrative": "Reddit discussions about Mortdale are most positive about food and cafe (0.92) and transport (0.91). Residents are most critical about nightlife (0.85) and safety (0.82). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Mortdale are most positive about food and cafe (0.80) and community (0.79). Residents are most critical about safety (0.45) and green space (0.00). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Patients of a Mortdale dentist practice urged to get tested for blood-borne viruses including HIV",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvpb1x3/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

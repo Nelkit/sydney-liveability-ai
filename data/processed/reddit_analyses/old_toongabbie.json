@@ -1,39 +1,63 @@
 {
   "suburb": "Old Toongabbie",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:21:00.130876+00:00",
+  "fetched_at": "2026-04-29T23:46:19.862054+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0449,
     "joy": 0.0107
   },
-  "narrative": "Reddit discussions about Old Toongabbie are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Old Toongabbie are most positive about safety (0.50) and green space (0.00). Residents are most critical about safety (0.50) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Hit it while riding my motorbike through Old Toongabbie.",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dmx9bw/looks_like_the_city_misplaced_its_blanket_anyone/l9z7uyh/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

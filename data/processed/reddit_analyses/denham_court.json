@@ -1,39 +1,63 @@
 {
   "suburb": "Denham Court",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:13.006269+00:00",
+  "fetched_at": "2026-04-29T23:34:51.534099+00:00",
   "aspects": {
     "safety": {
-      "score": 0.152,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.43,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.43,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.863,
-      "mentions": 1
+      "score": 0.219,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0311,
     "joy": 0.0086
   },
-  "narrative": "Reddit discussions about Denham Court are most positive about green space (0.86) and nightlife (0.50). Residents are most critical about transport (0.43) and safety (0.15). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Denham Court are most positive about safety (0.22) and green space (0.00). Residents are most critical about safety (0.22) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Wild scene on the Hume Hwy today near Denham Court\nDriving down the Hume Hwy just before Denham Court on Monday, I witnessed something that really shook me. \n\nA 4WD had dropped some gear onto the road",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1blnmw2/what_are_your_thoughts_on_the_australleppington/kw9vocu/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

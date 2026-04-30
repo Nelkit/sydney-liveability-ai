@@ -1,39 +1,63 @@
 {
   "suburb": "Gregory Hills",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:56.900455+00:00",
+  "fetched_at": "2026-04-29T23:37:54.057051+00:00",
   "aspects": {
-    "community": {
-      "score": 0.222,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.28,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.643,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.786,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.786,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0164,
     "joy": 0.1164
   },
-  "narrative": "Reddit discussions about Gregory Hills are most positive about green space (0.79) and food and cafe (0.79). Residents are most critical about safety (0.28) and community (0.22). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Gregory Hills are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Do you live in the area? The growth of Camden LGA is from the Leppington, Gledswood Hills, Gregory Hills, Spring Farm etc developments.\n\nThese ten houses are in the dead centre of the old town. The lo",
@@ -72,5 +96,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cxtg8v/which_servicensw_takes_the_best_id_photos/l552qp0/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

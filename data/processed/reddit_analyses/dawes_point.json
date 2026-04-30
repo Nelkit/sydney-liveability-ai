@@ -1,39 +1,63 @@
 {
   "suburb": "Dawes Point",
   "post_count": 8,
-  "fetched_at": "2026-04-18T02:18:55.969351+00:00",
+  "fetched_at": "2026-04-29T23:34:40.217831+00:00",
   "aspects": {
-    "nightlife": {
-      "score": 0.987,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.987,
-      "mentions": 4
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.983,
-      "mentions": 3
+      "score": 0.534,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     },
-    "community": {
-      "score": 0.865,
-      "mentions": 7
-    },
-    "safety": {
-      "score": 0.914,
-      "mentions": 5
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.993,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.837,
-      "mentions": 5
+      "score": 0.469,
+      "mentions": 0,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "arcgis"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.535,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.008,
     "disgust": 0.0117
   },
-  "narrative": "Reddit discussions about Dawes Point are most positive about affordability (0.99) and nightlife (0.99). Residents are most critical about transport (0.84) and noise (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Dawes Point are most positive about green space (0.54) and food and cafe (0.53). Residents are most critical about food and cafe (0.53) and transport (0.47). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "When do NYE vantage points hit capacity?\nYes, I know it's several months away, but I had some free time this arvo to knock the table up.\n\nSo, one of the more common questions asked around NYE is \"what",
@@ -87,5 +111,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kou32ns/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

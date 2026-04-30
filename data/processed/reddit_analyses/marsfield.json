@@ -1,39 +1,63 @@
 {
   "suburb": "Marsfield",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:44.742695+00:00",
+  "fetched_at": "2026-04-29T23:43:05.107954+00:00",
   "aspects": {
-    "community": {
-      "score": 0.35,
-      "mentions": 10
-    },
-    "nightlife": {
-      "score": 0.635,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.404,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.324,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.384,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.521,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.521,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.562,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0583,
     "anger": 0.0231
   },
-  "narrative": "Reddit discussions about Marsfield are most positive about nightlife (0.64) and food and cafe (0.56). Residents are most critical about community (0.35) and noise (0.32). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Marsfield are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxz41tq/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

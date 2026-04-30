@@ -1,39 +1,63 @@
 {
   "suburb": "Revesby",
   "post_count": 46,
-  "fetched_at": "2026-04-18T02:07:24.051954+00:00",
+  "fetched_at": "2026-04-29T23:48:02.677551+00:00",
   "aspects": {
-    "community": {
-      "score": 0.403,
-      "mentions": 36
-    },
     "safety": {
-      "score": 0.313,
-      "mentions": 15
-    },
-    "transport": {
-      "score": 0.544,
-      "mentions": 27
-    },
-    "nightlife": {
-      "score": 0.347,
-      "mentions": 6
-    },
-    "affordability": {
-      "score": 0.201,
-      "mentions": 5
-    },
-    "noise": {
-      "score": 0.065,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.218,
-      "mentions": 4
+      "score": 0.169,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.15,
-      "mentions": 3
+      "score": 0.186,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.281,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.177,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.364,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.428,
+      "mentions": 36,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0478,
     "anger": 0.051
   },
-  "narrative": "Reddit discussions about Revesby are most positive about transport (0.54) and community (0.40). Residents are most critical about food and cafe (0.15) and noise (0.07). This analysis is based on 46 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Revesby are most positive about community (0.43) and transport (0.36). Residents are most critical about safety (0.17) and green space (0.00). This analysis is based on 46 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Your options for late night grocery shopping in Sydney\nMost Colesworths stores in Sydney close at 10pm - we're a bit luckier than Brisbane, where the majority close at 9, but at least they have a 24/7",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1qcho7i/are_there_services_anywhere_where_a_visually/",
       "score": 44
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

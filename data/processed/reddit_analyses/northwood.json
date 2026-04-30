@@ -1,39 +1,63 @@
 {
   "suburb": "Northwood",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:59.875530+00:00",
+  "fetched_at": "2026-04-29T23:46:05.760649+00:00",
   "aspects": {
-    "noise": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.681,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.4009,
     "disgust": 0.0197
   },
-  "narrative": "Reddit discussions about Northwood are most positive about community (0.68) and noise (0.50). Residents are most critical about transport (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is joy.",
+  "narrative": "Reddit discussions about Northwood are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is joy.",
   "sources": [
     {
       "text": "In other LCMC controversies, whatever happened to that guy that (ostensibly) burnt down the heritage place in Northwood ?  Was a big deal if the news but went quiet fast.",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1afhu32/can_somebody_recommend_a_good_affordable_suburb/koepn9x/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

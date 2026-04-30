@@ -1,39 +1,63 @@
 {
   "suburb": "Berowra Heights",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:51.505003+00:00",
+  "fetched_at": "2026-04-29T23:28:52.094186+00:00",
   "aspects": {
-    "community": {
-      "score": 0.203,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.181,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.203,
-      "mentions": 2
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0072,
     "fear": 0.004
   },
-  "narrative": "Reddit discussions about Berowra Heights are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about transport (0.20) and affordability (0.18). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Berowra Heights are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Except Berowra Heights, which is of a slightly lower elavation than Berowra. Apparently the name came about people were sick of their mail going to Boorowa.",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1adh7b2/navigation_game_challenge/kk1hlvu/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

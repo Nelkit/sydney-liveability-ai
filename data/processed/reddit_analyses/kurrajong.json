@@ -1,39 +1,63 @@
 {
   "suburb": "Kurrajong",
   "post_count": 11,
-  "fetched_at": "2026-04-18T02:18:03.938476+00:00",
+  "fetched_at": "2026-04-29T23:40:10.597091+00:00",
   "aspects": {
-    "community": {
-      "score": 0.119,
-      "mentions": 9
-    },
     "safety": {
-      "score": 0.066,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.507,
-      "mentions": 4
-    },
-    "nightlife": {
-      "score": 0.522,
-      "mentions": 4
-    },
-    "affordability": {
-      "score": 0.72,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.0721,
     "joy": 0.0895
   },
-  "narrative": "Reddit discussions about Kurrajong are most positive about affordability (0.72) and nightlife (0.52). Residents are most critical about community (0.12) and safety (0.07). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "There is not enough Reddit data available for Kurrajong to generate a community narrative at this time.",
   "sources": [
     {
       "text": "Explosion in St Mary's Saturday Night\nMore than 200 firefighters have contained an inferno that has engulfed a waste facility factory overnight at North St Marys in Sydney’s west.\n\nA huge fire ball er",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d1it8u/where_are_you_from_and_where_do_you_think_sydney/l5uwjpn/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

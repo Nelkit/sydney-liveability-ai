@@ -1,39 +1,63 @@
 {
   "suburb": "Richmond",
   "post_count": 20,
-  "fetched_at": "2026-04-18T02:15:17.796310+00:00",
+  "fetched_at": "2026-04-29T23:48:16.238116+00:00",
   "aspects": {
-    "community": {
-      "score": 0.526,
-      "mentions": 15
-    },
-    "transport": {
-      "score": 0.722,
-      "mentions": 12
-    },
     "safety": {
-      "score": 0.698,
-      "mentions": 5
-    },
-    "affordability": {
-      "score": 0.784,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.794,
-      "mentions": 3
-    },
-    "green_space": {
-      "score": 0.798,
-      "mentions": 4
+      "score": 0.586,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.898,
-      "mentions": 2
+      "score": 0.921,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.674,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.587,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.455,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0233,
     "fear": 0.0124
   },
-  "narrative": "Reddit discussions about Richmond are most positive about food and cafe (0.90) and green space (0.80). Residents are most critical about community (0.53) and noise (0.50). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Richmond are most positive about food and cafe (0.92) and nightlife (0.67). Residents are most critical about safety (0.59) and community (0.46). This analysis is based on 20 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Spending time in Melbourne made me hate Merivale even more\nI love Sydney. I’m from here. I lived in Melbourne and chose to come back.\n\nBut Sydney’s lack of genuine laid back pubs does my head in. Or t",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/19ekzpt/sydney_daily_random_discussion_thread_25012024/kjeuiru/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.667,
+  "confidence_tier": "medium"
 }

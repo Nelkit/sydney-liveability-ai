@@ -1,39 +1,63 @@
 {
   "suburb": "Petersham",
   "post_count": 89,
-  "fetched_at": "2026-04-18T01:59:55.753910+00:00",
+  "fetched_at": "2026-04-29T17:15:00.249703+00:00",
   "aspects": {
-    "community": {
-      "score": 0.634,
-      "mentions": 79
-    },
     "safety": {
-      "score": 0.673,
-      "mentions": 22
-    },
-    "transport": {
-      "score": 0.713,
-      "mentions": 21
+      "score": 0.191,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.678,
-      "mentions": 24
-    },
-    "affordability": {
-      "score": 0.779,
-      "mentions": 10
+      "score": 0.541,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.745,
-      "mentions": 24
+      "score": 0.661,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.794,
-      "mentions": 10
+    "affordability": {
+      "score": 0.578,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.507,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.472,
+      "mentions": 79,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.693,
-      "mentions": 9
+      "score": 0.486,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0497,
     "fear": 0.0679
   },
-  "narrative": "Reddit discussions about Petersham are most positive about green space (0.79) and affordability (0.78). Residents are most critical about safety (0.67) and community (0.63). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Petersham are most positive about nightlife (0.66) and affordability (0.58). Residents are most critical about safety (0.19) and green space (0.00). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "A walk along Parramatta Road\nA walk along what once was a grand stretch of businesses but are now mostly unloved. There's about 4km of mostly heritage-looking shopfronts. It's sad to see so many grand",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1civ1d2/french_motorist_busted_racking_up_240_demerit/l2c0knw/",
       "score": 102
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

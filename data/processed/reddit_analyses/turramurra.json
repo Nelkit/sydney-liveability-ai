@@ -1,39 +1,63 @@
 {
   "suburb": "Turramurra",
   "post_count": 25,
-  "fetched_at": "2026-04-18T02:13:30.316334+00:00",
+  "fetched_at": "2026-04-29T23:52:30.931636+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.414,
-      "mentions": 9
-    },
     "safety": {
-      "score": 0.409,
-      "mentions": 11
-    },
-    "community": {
-      "score": 0.586,
-      "mentions": 16
-    },
-    "affordability": {
-      "score": 0.493,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.499,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.636,
-      "mentions": 6
-    },
-    "noise": {
-      "score": 0.944,
-      "mentions": 1
+      "score": 0.46,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": 0.371,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.761,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0507,
     "joy": 0.0509
   },
-  "narrative": "Reddit discussions about Turramurra are most positive about noise (0.94) and nightlife (0.64). Residents are most critical about transport (0.41) and safety (0.41). This analysis is based on 25 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Turramurra are most positive about community (0.76) and food and cafe (0.50). Residents are most critical about affordability (0.37) and green space (0.00). This analysis is based on 25 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Coles Turramurra crazy driver\nNot my video - but I did see the aftermath while waiting for a train at the station and had been wondering what happened…",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aic51d/most_random_specialist_shop/kotub66/",
       "score": 19
     }
-  ]
+  ],
+  "confidence": 0.833,
+  "confidence_tier": "high"
 }

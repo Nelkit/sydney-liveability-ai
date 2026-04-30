@@ -1,39 +1,63 @@
 {
   "suburb": "Turrella",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:27.070755+00:00",
+  "fetched_at": "2026-04-29T23:52:32.278745+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.426,
-      "mentions": 5
-    },
-    "community": {
-      "score": 0.453,
-      "mentions": 5
-    },
     "safety": {
-      "score": 0.378,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1
+    "transport": {
+      "score": 0.074,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.173,
     "joy": 0.0341
   },
-  "narrative": "Reddit discussions about Turrella are most positive about nightlife (0.50) and food and cafe (0.50). Residents are most critical about transport (0.43) and safety (0.38). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Turrella are most positive about transport (0.07) and green space (0.00). Residents are most critical about transport (0.07) and green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "T8 Airport line landslide/flooded\nA limited number of buses are replacing trains between Turrella and Revesby due to flooding on the tracks between Bardwell Park and Bexley North",
@@ -82,5 +106,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l60f4r7/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

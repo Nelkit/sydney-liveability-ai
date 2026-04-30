@@ -77,6 +77,12 @@ def main() -> int:
         help="Process only these suburb names (overrides --limit).",
     )
     parser.add_argument(
+        "--only-from-file",
+        type=str,
+        default=None,
+        help="Read suburb names (one per line) from a file (overrides --limit).",
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Re-run even if a cached analysis already exists.",
@@ -88,6 +94,9 @@ def main() -> int:
 
     if args.only:
         targets = [s for s in args.only]
+    elif args.only_from_file:
+        with open(args.only_from_file, "r", encoding="utf-8") as f:
+            targets = [line.strip() for line in f if line.strip()]
     else:
         targets = list_available_suburbs()
 
@@ -102,7 +111,7 @@ def main() -> int:
     def count_for(name: str) -> int:
         return counts.get(name, 0)
 
-    if not args.only:
+    if not args.only and not args.only_from_file:
         targets = [t for t in targets if count_for(t) >= args.min_posts]
         targets.sort(key=count_for, reverse=True)
         if args.limit:

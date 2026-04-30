@@ -1,39 +1,63 @@
 {
   "suburb": "Rhodes",
   "post_count": 44,
-  "fetched_at": "2026-04-18T02:08:27.614136+00:00",
+  "fetched_at": "2026-04-29T23:48:11.738169+00:00",
   "aspects": {
+    "safety": {
+      "score": 0.151,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
     "food_and_cafe": {
-      "score": 0.665,
-      "mentions": 6
-    },
-    "transport": {
-      "score": 0.374,
-      "mentions": 18
-    },
-    "community": {
-      "score": 0.381,
-      "mentions": 37
+      "score": 0.957,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.418,
-      "mentions": 6
-    },
-    "safety": {
-      "score": 0.15,
-      "mentions": 9
+      "score": 0.545,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.133,
-      "mentions": 12
+      "score": 0.128,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.461,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.499,
+      "mentions": 37,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.007,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.187,
-      "mentions": 6
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0465,
     "disgust": 0.0922
   },
-  "narrative": "Reddit discussions about Rhodes are most positive about food and cafe (0.67) and nightlife (0.42). Residents are most critical about affordability (0.13) and noise (0.01). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rhodes are most positive about food and cafe (0.96) and nightlife (0.55). Residents are most critical about affordability (0.13) and green space (0.00). This analysis is based on 44 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "This Rhodes cafe and restaurant still open for business at midnight\nComing home from Metallica I got off at Rhodes where I parked to catch the train.\n\nSaw this restaurant and cafe still open for busin",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1altbdl/how_livable_is_wolli_creek_really/kpju1ob/",
       "score": 29
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

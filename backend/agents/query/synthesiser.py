@@ -203,99 +203,46 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
         return context
 
 
-def _build_synthesis_prompt(
-    question: str,
-    context: dict[str, Any],
-    agent_outputs: dict[str, Any] | None = None,
-    reddit_by_suburb: dict[str, Any] | None = None,
-    chromadb_chunks: list[dict[str, Any]] | None = None,
-) -> str:
-    """Build the LLM prompt combining question, DB context, agent outputs, and Reddit data."""
-    q_lower = question.lower()
-    is_comparison = any(kw in q_lower for kw in ("vs", "versus", "compare", "difference", "better", "between"))
-    is_general = not is_comparison and not any(
-        kw in q_lower
-        for kw in ("park", "transport", "facilities", "cafe", "walk",
-                   "amenities", "safe", "crime", "feel", "vibe", "community")
-    )
+def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
+    """Render the sentiment agent's evidence_trace as one line per TraceEntry.
 
-    if is_comparison:
-        format_instruction = (
-            "Write a natural side-by-side comparison in 3-4 short paragraphs. "
-            "Paragraph 1: overall liveability scores and which suburb leads overall. "
-            "Paragraph 2: amenities — cafes, restaurants, parks, OSM score. Be specific with numbers but conversational. "
-            "Paragraph 3: transport access — bus stops, train stations, commute time, bike paths if available. "
-            "Paragraph 4: community feel — what Reddit residents say about each suburb, safety signals if available. "
-            "End with one sentence declaring a winner or saying it depends on what matters most to the person. "
-            "STRICT RULES: No bullet lists. No JSON. No headers. Speak directly to the reader. Use 'vs' or 'while' to contrast."
-        )
-    elif is_general:
-        format_instruction = (
-            "Write 2-3 paragraphs using ONLY the GIS & Facilities data as your primary source. "
-            "Cover: facilities score, key amenities counts (cafes, restaurants, parks, schools, etc.), OSM score, and combined liveability score. "
-            "At the very end, add ONE closing sentence (max 20 words) mentioning what residents value most, using the Reddit top aspect — no scores, no paragraph. "
-            "STRICT RULES: Do NOT start with Reddit. Do NOT write a Reddit paragraph. Do NOT list Reddit aspect scores. "
-            "Do NOT use bullet lists."
-        )
-    else:
-        format_instruction = (
-            "Answer in 2-3 focused sentences addressing exactly what was asked. "
-            "Be specific with numbers. Do not list unrelated data."
-        )
+    Empty string when no sentiment output is present or when the router
+    classified the question as out_of_scope, so the prompt omits the
+    section cleanly for non-spatial questions.
+    """
+    if not isinstance(agent_outputs, dict):
+        return ""
+    router_output = agent_outputs.get("router")
+    if isinstance(router_output, dict):
+        categories = router_output.get("categories") or []
+        if list(categories) == ["out_of_scope"]:
+            return ""
+    sentiment = agent_outputs.get("sentiment")
+    if not isinstance(sentiment, dict):
+        return ""
+    lines: list[str] = []
+    # sentiment is {suburb: result}; flatten across suburbs for the prompt.
+    for suburb, result in sentiment.items():
+        if not isinstance(result, dict):
+            continue
+        for entry in result.get("evidence_trace") or []:
+            args = json.dumps(entry.get("arguments", {}), default=str)
+            preview = (entry.get("result_preview") or "").replace("\n", " ")
+            lines.append(
+                f"- step {entry.get('step')} [{suburb}] {entry.get('tool')}({args}) "
+                f"-> n={entry.get('result_count')} | {preview}"
+            )
+    if not lines:
+        return ""
+    return "\n\nEvidence trace (every retrieval tool call this turn):\n" + "\n".join(lines)
 
-    sections: list[str] = []
 
-    # GIS / facilities data
-    db_suburbs = context.get("suburbs", [])
-    if db_suburbs:
-        sections.append(f"GIS & Facilities Data:\n{json.dumps(db_suburbs, indent=2)}")
+def _build_synthesis_prompt(question: str, context: dict[str, Any], agent_outputs: dict[str, Any] | None = None) -> str:
+    """Build the LLM prompt combining question, DB context, and agent outputs.
 
-    # Agent specialist outputs
-    if agent_outputs:
-        for agent_key, output in agent_outputs.items():
-            if not output or not isinstance(output, dict):
-                continue
-            if any(isinstance(v, dict) and "combined_score" in v for v in output.values()):
-                lines = [f"{agent_key.upper()} data (per suburb):"]
-                for sub, sub_out in output.items():
-                    lines.append(f"  {sub}: {json.dumps(sub_out, indent=2)}")
-                sections.append("\n".join(lines))
-            elif "pending" not in json.dumps(output):
-                sections.append(f"{agent_key.upper()} data:\n{json.dumps(output, indent=2)}")
-
-    # Reddit sentiment — secondary context, top aspect only
-    if reddit_by_suburb:
-        reddit_lines = ["Reddit Community Sentiment (secondary context — use sparingly):"]
-        for sub, rdata in reddit_by_suburb.items():
-            if not rdata:
-                continue
-            aspects = rdata.get("aspects", {})
-            scored = [(k, v.get("score", 0)) for k, v in aspects.items() if v.get("mentions", 0) > 0]
-            if scored:
-                top = max(scored, key=lambda x: x[1])
-                reddit_lines.append(f"  {sub}: residents rate '{top[0].replace('_', ' ')}' highest ({top[1]:.2f}).")
-            else:
-                reddit_lines.append(f"  {sub}: limited community data available.")
-        sections.append("\n".join(reddit_lines))
-
-    # ChromaDB community chunks — resident quotes from PDFs and Reddit
-    if chromadb_chunks:
-        lines = ["Relevant community context (ChromaDB):"]
-        for i, chunk in enumerate(chromadb_chunks, 1):
-            text = chunk["text"][:400]
-            meta = chunk.get("metadata", {})
-            source = meta.get("source", "unknown")
-            suburb = meta.get("suburb", "unknown")
-            lines.append(f'Chunk {i} [source: {source} · suburb: {suburb}]:\n"{text}"')
-        sections.append("\n".join(lines))
-
-    weights = context.get("weights") or {}
-    if weights:
-        sections.append(f"User Preference Weights:\n{json.dumps(weights, indent=2)}")
-
-    data_block = "\n\n".join(sections) if sections else "No data available."
-
-    return f"""You are a Sydney liveability expert assistant. Answer the user's question using only the data provided below.
+    Handles both flat (single-suburb per specialist) and nested (multi-suburb per specialist) structures.
+    """
+    prompt = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
 
 User Question: {question}
 
@@ -303,12 +250,41 @@ Available Data:
 {data_block}
 
 Instructions:
-- {format_instruction}
-- Primary source is always GIS & Facilities data. Community context (ChromaDB) provides resident quotes to support claims.
-- Use only data provided above. Do not invent figures.
-- For suburbs with no data, say "I don't have data on that suburb yet."
-- Cite ChromaDB chunks naturally when they support a claim — mention the source type (pdf or reddit).
+1. Answer based ONLY on the provided data above and the evidence trace below
+2. Be specific with numbers and metrics
+3. For out-of-scope suburbs, respond: "I don't have data on that suburb yet"
+4. If the question has spatial intent (comparing suburbs), suggest top suburbs by liveability
+5. Keep answer concise (2-3 sentences max unless asking for comparison)
+6. Always cite your data source (facilities, transport, amenities, or quoted Reddit chunk)
+7. When the sentiment agent returned `status: "no_data"` for a dimension, say so plainly — do NOT invent a value
+8. Cite at least one evidence-trace entry per named-suburb claim about resident sentiment
 """
+    weights = context.get("weights")
+    if weights:
+        prompt += f"\nUser Preference Weights:\n{json.dumps(weights, indent=2)}\n"
+    
+    # Add agent outputs if available
+    if agent_outputs:
+        prompt += "\n\nAdditional Specialist Agent Outputs:\n"
+        for agent_key, output in agent_outputs.items():
+            if agent_key == "router":
+                continue
+            if output and isinstance(output, dict):
+                # Handle nested structure: {suburb: result} for multi-suburb agents
+                if any(
+                    isinstance(v, dict)
+                    and ("combined_score" in v or "evidence_trace" in v)
+                    for v in output.values()
+                ):
+                    prompt += f"\n{agent_key.upper()} (multi-suburb):\n"
+                    for suburb, suburb_output in output.items():
+                        prompt += f"  {suburb}: {json.dumps(suburb_output, indent=2, default=str)}\n"
+                else:
+                    # Handle flat structure: direct result
+                    prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2, default=str)}\n"
+
+    prompt += _format_evidence_trace_block(agent_outputs or {})
+    return prompt
 
 
 def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
@@ -374,24 +350,16 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         # Build context from DB (facilities, transport, OSM)
         context = _build_context_from_db(suburbs_list)
         context["weights"] = payload.get("weights") or {}
-
-        # Load Reddit sentiment for mentioned suburbs
-        reddit_by_suburb: dict[str, Any] = {}
-        for sub in (suburbs_list or []):
-            rdata = _get_reddit_context(sub)
-            if rdata:
-                reddit_by_suburb[sub] = rdata
-
-        # Retrieve semantically relevant chunks from ChromaDB
-        chromadb_chunks = _retrieve_chromadb_chunks(question, suburbs_list)
-
-        # Build synthesis prompt including Reddit data and ChromaDB chunks
+        
+        # Build synthesis prompt — thread router_output through agent_outputs
+        # so the prompt builder can gate the trace block on router categories.
+        combined_outputs: dict[str, Any] = dict(outputs) if isinstance(outputs, dict) else {}
+        if isinstance(router_output, dict) and router_output:
+            combined_outputs["router"] = router_output
         synthesis_prompt = _build_synthesis_prompt(
             question,
             context,
-            agent_outputs=outputs if isinstance(outputs, dict) and outputs else None,
-            reddit_by_suburb=reddit_by_suburb if reddit_by_suburb else None,
-            chromadb_chunks=chromadb_chunks if chromadb_chunks else None,
+            agent_outputs=combined_outputs if combined_outputs else None
         )
 
         # Call LLM using the synthesiser agent configuration.
@@ -429,21 +397,30 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 "source": "City of Sydney ArcGIS + OSM + Transport API",
             }
         ]
-        for sub, rdata in reddit_by_suburb.items():
-            post_count = rdata.get("post_count", 0)
-            sources.append({
-                "text": f"Reddit community analysis ({post_count} posts)",
-                "suburb": sub,
-                "source": "Reddit r/sydney",
-            })
-
-        for chunk in chromadb_chunks:
-            meta = chunk.get("metadata", {})
-            sources.append({
-                "text": chunk["text"][:120],
-                "suburb": meta.get("suburb", ""),
-                "source": meta.get("source", "chromadb"),
-            })
+        
+        # If no suburbs in context but outputs were analyzed, mention them
+        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else "Sydney"
+        
+        # Citations: prefer the sentiment agent's grounded `sources`
+        # (drawn from the Reddit vector index this turn). Fall back to
+        # the structured-data attribution when no quote was retrieved.
+        sources: list[dict[str, Any]] = []
+        sentiment_outputs = outputs.get("sentiment") if isinstance(outputs, dict) else None
+        if isinstance(sentiment_outputs, dict):
+            for suburb_result in sentiment_outputs.values():
+                if not isinstance(suburb_result, dict):
+                    continue
+                for src in suburb_result.get("sources") or []:
+                    if isinstance(src, dict):
+                        sources.append(src)
+        if not sources:
+            sources = [
+                {
+                    "text": "Facilities, transport, and amenity data",
+                    "suburb": main_suburb,
+                    "source": "City of Sydney ArcGIS + OSM + Transport API",
+                }
+            ]
 
         return {
             "answer": answer,

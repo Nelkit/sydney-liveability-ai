@@ -1,39 +1,63 @@
 {
   "suburb": "Beacon Hill",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:28.804668+00:00",
+  "fetched_at": "2026-04-29T23:28:15.996250+00:00",
   "aspects": {
     "safety": {
-      "score": 0.286,
-      "mentions": 2
-    },
-    "community": {
-      "score": 0.212,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.641,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.411,
-      "mentions": 1
+      "score": 0.333,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": 0.564,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0708,
     "joy": 0.034
   },
-  "narrative": "Reddit discussions about Beacon Hill are most positive about nightlife (0.64) and food and cafe (0.50). Residents are most critical about safety (0.29) and community (0.21). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is fear.",
+  "narrative": "Reddit discussions about Beacon Hill are most positive about nightlife (0.56) and safety (0.33). Residents are most critical about safety (0.33) and green space (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is fear.",
   "sources": [
     {
       "text": "Fire on the Northern Beaches\nTaken around 3pm from Beacon Hill",
@@ -77,5 +101,7 @@
       "url": "https://reddit.com/r/sydney/comments/1co36ew/sydney_daily_random_discussion_thread_10052024/l3eb2zt/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

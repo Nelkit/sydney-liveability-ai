@@ -1,39 +1,63 @@
 {
   "suburb": "South Granville",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:13.379012+00:00",
+  "fetched_at": "2026-04-29T23:50:53.931349+00:00",
   "aspects": {
     "safety": {
-      "score": 0.064,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.064,
-      "mentions": 1
+      "score": 0.158,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "community": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "surprise": 0.0014,
     "joy": 0.0004
   },
-  "narrative": "Reddit discussions about South Granville are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.06) and transport (0.06). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
+  "narrative": "Reddit discussions about South Granville are most positive about food and cafe (0.50) and community (0.50). Residents are most critical about safety (0.16) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
   "sources": [
     {
       "text": "I saw more of it when I worked around South Granville but it was numerous ethnicities but the Lebanese soccer mums in the flashy range rovers were the worst offenders",
       "url": "https://reddit.com/r/sydney/comments/1ayrp4s/what_is_with_all_the_absolute_psychos_on_the_road/krwp4fl/",
       "score": 75
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

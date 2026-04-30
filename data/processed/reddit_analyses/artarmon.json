@@ -1,39 +1,63 @@
 {
   "suburb": "Artarmon",
   "post_count": 70,
-  "fetched_at": "2026-04-18T02:02:56.565972+00:00",
+  "fetched_at": "2026-04-29T23:27:41.005903+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.907,
-      "mentions": 17
-    },
-    "community": {
-      "score": 0.881,
-      "mentions": 37
-    },
     "safety": {
-      "score": 0.901,
-      "mentions": 16
-    },
-    "green_space": {
-      "score": 0.97,
-      "mentions": 5
-    },
-    "affordability": {
-      "score": 0.964,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.956,
-      "mentions": 11
+      "score": 0.431,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.963,
-      "mentions": 11
+      "score": 0.721,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.711,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.687,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.636,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.645,
+      "mentions": 37,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.423,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.671,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0633,
     "joy": 0.0693
   },
-  "narrative": "Reddit discussions about Artarmon are most positive about green space (0.97) and affordability (0.96). Residents are most critical about community (0.88) and noise (0.42). This analysis is based on 70 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Artarmon are most positive about food and cafe (0.72) and nightlife (0.71). Residents are most critical about transport (0.64) and safety (0.43). This analysis is based on 70 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "AirTag Jacket Saga: The Final Update\nSee my last posts for the full story. I received lots of requests for an update, so here it is. Fair warning: I’m going to dramatise this a bit lol.\n\nEssentially, ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bc04ni/what_does_this_place_in_artarmon_north_shore_do/",
       "score": 188
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

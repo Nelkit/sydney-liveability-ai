@@ -1,39 +1,63 @@
 {
   "suburb": "Crows Nest",
   "post_count": 114,
-  "fetched_at": "2026-04-18T01:55:16.574683+00:00",
+  "fetched_at": "2026-04-29T17:09:25.910926+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.71,
-      "mentions": 43
-    },
     "safety": {
-      "score": 0.722,
-      "mentions": 29
-    },
-    "community": {
-      "score": 0.637,
-      "mentions": 86
+      "score": 0.391,
+      "mentions": 29,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.644,
-      "mentions": 27
+      "score": 0.632,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.533,
-      "mentions": 37
+      "score": 0.542,
+      "mentions": 37,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.705,
-      "mentions": 13
+      "score": 0.821,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.665,
-      "mentions": 12
+    "transport": {
+      "score": 0.46,
+      "mentions": 43,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.524,
+      "mentions": 86,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.664,
-      "mentions": 5
+      "score": 0.699,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.774,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0547,
     "disgust": 0.0617
   },
-  "narrative": "Reddit discussions about Crows Nest are most positive about safety (0.72) and transport (0.71). Residents are most critical about community (0.64) and nightlife (0.53). This analysis is based on 114 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Crows Nest are most positive about affordability (0.82) and green space (0.77). Residents are most critical about transport (0.46) and safety (0.39). This analysis is based on 114 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney Metro doors opened whilst moving this morning 2nd April 2025\nSydney Metro door remains opened whilst moving between Chatswood and Crows Nest this morning.  Please stay safe everyone when travel",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1evzojj/the_metro_was_heaps_fun/",
       "score": 180
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

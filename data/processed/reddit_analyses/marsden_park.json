@@ -1,39 +1,63 @@
 {
   "suburb": "Marsden Park",
   "post_count": 53,
-  "fetched_at": "2026-04-18T02:05:48.286251+00:00",
+  "fetched_at": "2026-04-29T17:22:27.359359+00:00",
   "aspects": {
+    "safety": {
+      "score": 0.324,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
     "food_and_cafe": {
-      "score": 0.606,
-      "mentions": 6
-    },
-    "green_space": {
-      "score": 0.634,
-      "mentions": 35
-    },
-    "affordability": {
-      "score": 0.609,
-      "mentions": 8
-    },
-    "community": {
-      "score": 0.689,
-      "mentions": 43
+      "score": 0.626,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.762,
-      "mentions": 8
+      "score": 0.578,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.756,
-      "mentions": 12
+    "affordability": {
+      "score": 0.634,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.742,
-      "mentions": 14
+      "score": 0.53,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.688,
+      "mentions": 43,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.943,
-      "mentions": 2
+      "score": 0.428,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.668,
+      "mentions": 35,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0893,
     "fear": 0.0683
   },
-  "narrative": "Reddit discussions about Marsden Park are most positive about noise (0.94) and nightlife (0.76). Residents are most critical about affordability (0.61) and food and cafe (0.61). This analysis is based on 53 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Marsden Park are most positive about community (0.69) and green space (0.67). Residents are most critical about noise (0.43) and safety (0.32). This analysis is based on 53 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Go to work for 14 hours a day, send your kids to $150 a day daycare, buy a house in marsden park after emptying out your savings, pay $5.20 for small coffee and go to Vivid. The Sydney middle class st",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bwtb64/sydney_metro_will_tallawong_st_marys_and_westmead/ky8hoi8/",
       "score": 34
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

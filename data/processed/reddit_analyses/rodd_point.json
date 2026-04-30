@@ -1,39 +1,63 @@
 {
   "suburb": "Rodd Point",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:21:00.661948+00:00",
+  "fetched_at": "2026-04-29T23:48:51.254163+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.5,
-      "mentions": 0
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0111,
     "fear": 0.0057
   },
-  "narrative": "Reddit discussions about Rodd Point are most positive about community (0.50) and nightlife (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Rodd Point are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Rodd Point overlooking Iron Cove.\nTook a day off from running/walking the bay and decided to take in the view instead. She's a beaut!!",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cqx2m1/best_cheap_italian_food_in_sydney/l3y47r0/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

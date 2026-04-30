@@ -1,39 +1,63 @@
 {
   "suburb": "Carramar",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:53.374767+00:00",
+  "fetched_at": "2026-04-29T23:31:59.847753+00:00",
   "aspects": {
-    "community": {
-      "score": 0.752,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.862,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0059,
     "joy": 0.005
   },
-  "narrative": "Reddit discussions about Carramar are most positive about affordability (0.86) and community (0.75). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is surprise.",
+  "narrative": "Reddit discussions about Carramar are most positive about affordability (0.50) and green space (0.00). Residents are most critical about affordability (0.50) and green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is surprise.",
   "sources": [
     {
       "text": "Did Sydney's rivers/creek freeze up back in the 1700s or were the European settlers exaggerating things?\nThis is describing Watkin Tench's expedition in July 1791. They were near Prospect Creek in wha",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ahkh9s/need_advice_on_whether_to_move_after_a_rent/kooy4qz/",
       "score": 19
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

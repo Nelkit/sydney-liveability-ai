@@ -1,39 +1,63 @@
 {
   "suburb": "Sylvania",
   "post_count": 11,
-  "fetched_at": "2026-04-18T02:18:11.598423+00:00",
+  "fetched_at": "2026-04-29T23:51:51.392742+00:00",
   "aspects": {
-    "community": {
-      "score": 0.757,
-      "mentions": 8
-    },
-    "green_space": {
-      "score": 0.759,
-      "mentions": 8
-    },
-    "nightlife": {
-      "score": 0.521,
-      "mentions": 2
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.619,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "safety": {
-      "score": 0.095,
-      "mentions": 1
-    },
-    "noise": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.0437,
     "sadness": 0.0147
   },
-  "narrative": "Reddit discussions about Sylvania are most positive about green space (0.76) and community (0.76). Residents are most critical about transport (0.50) and safety (0.10). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Sylvania are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Two disabled buddies on a fun day out in Sylvania ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/19baq4d/streetlight_hunt/kium72c/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

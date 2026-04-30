@@ -1,39 +1,63 @@
 {
   "suburb": "Double Bay",
   "post_count": 41,
-  "fetched_at": "2026-04-18T02:09:01.909789+00:00",
+  "fetched_at": "2026-04-29T23:35:08.847352+00:00",
   "aspects": {
     "safety": {
-      "score": 0.535,
-      "mentions": 13
-    },
-    "community": {
-      "score": 0.511,
-      "mentions": 27
-    },
-    "green_space": {
-      "score": 0.698,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.465,
-      "mentions": 2
+      "score": 0.442,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.356,
-      "mentions": 6
-    },
-    "transport": {
-      "score": 0.434,
-      "mentions": 11
-    },
-    "affordability": {
-      "score": 0.837,
-      "mentions": 5
+      "score": 0.425,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.532,
-      "mentions": 8
+      "score": 0.576,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.691,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.548,
+      "mentions": 11,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.668,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0753,
     "disgust": 0.0462
   },
-  "narrative": "Reddit discussions about Double Bay are most positive about affordability (0.84) and green space (0.70). Residents are most critical about transport (0.43) and food and cafe (0.36). This analysis is based on 41 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Double Bay are most positive about affordability (0.69) and community (0.67). Residents are most critical about food and cafe (0.42) and green space (0.00). This analysis is based on 41 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Cybertruck in Sydney\nIt’s also on the Tesla AU instagram story , but I caught it opposite the oak in double bay",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cdav1f/cybertruck_in_sydney/l1as0de/",
       "score": 65
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

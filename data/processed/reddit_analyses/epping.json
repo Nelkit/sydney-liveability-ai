@@ -1,39 +1,63 @@
 {
   "suburb": "Epping",
   "post_count": 282,
-  "fetched_at": "2026-04-18T01:29:06.977413+00:00",
+  "fetched_at": "2026-04-29T16:54:23.651013+00:00",
   "aspects": {
-    "community": {
-      "score": 0.432,
-      "mentions": 233
-    },
-    "affordability": {
-      "score": 0.366,
-      "mentions": 40
-    },
-    "transport": {
-      "score": 0.571,
-      "mentions": 202
-    },
     "safety": {
-      "score": 0.338,
-      "mentions": 81
-    },
-    "green_space": {
-      "score": 0.547,
-      "mentions": 30
-    },
-    "nightlife": {
-      "score": 0.648,
-      "mentions": 42
+      "score": 0.179,
+      "mentions": 81,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.599,
-      "mentions": 33
+      "score": 0.622,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.61,
+      "mentions": 42,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.561,
+      "mentions": 40,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.517,
+      "mentions": 202,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.61,
+      "mentions": 233,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.422,
-      "mentions": 12
+      "score": 0.447,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.567,
+      "mentions": 30,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0566,
     "fear": 0.0685
   },
-  "narrative": "Reddit discussions about Epping are most positive about nightlife (0.65) and food and cafe (0.60). Residents are most critical about affordability (0.37) and safety (0.34). This analysis is based on 282 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Epping are most positive about food and cafe (0.62) and nightlife (0.61). Residents are most critical about noise (0.45) and safety (0.18). This analysis is based on 282 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "This apartment block in Epping has a map of Australia in the brickwork.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c3st49/why_does_the_parramatta_light_rail_end_at/kziz6hk/",
       "score": 169
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

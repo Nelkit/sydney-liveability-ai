@@ -1,39 +1,63 @@
 {
   "suburb": "Granville",
   "post_count": 79,
-  "fetched_at": "2026-04-18T02:01:20.354688+00:00",
+  "fetched_at": "2026-04-29T23:37:37.568156+00:00",
   "aspects": {
     "safety": {
-      "score": 0.435,
-      "mentions": 26
-    },
-    "community": {
-      "score": 0.483,
-      "mentions": 62
-    },
-    "transport": {
-      "score": 0.779,
-      "mentions": 33
-    },
-    "nightlife": {
-      "score": 0.906,
-      "mentions": 17
+      "score": 0.255,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.835,
-      "mentions": 25
+      "score": 0.536,
+      "mentions": 25,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.527,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.944,
-      "mentions": 6
+      "score": 0.507,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.914,
-      "mentions": 6
+    "transport": {
+      "score": 0.468,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.427,
+      "mentions": 62,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.832,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0756,
     "joy": 0.0779
   },
-  "narrative": "Reddit discussions about Granville are most positive about affordability (0.94) and green space (0.91). Residents are most critical about community (0.48) and safety (0.43). This analysis is based on 79 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Granville are most positive about food and cafe (0.54) and nightlife (0.53). Residents are most critical about safety (0.26) and green space (0.00). This analysis is based on 79 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Plane laser attack after departure from Sydney last night\nI was a passenger flying from Sydney to Orange last night on QF2013 when my plane had an insanely bright laser directed at it several times by",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/19d9n06/sydney_is_changing_el_jannah_is_opening_in_crows/kj4pb1w/",
       "score": 51
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

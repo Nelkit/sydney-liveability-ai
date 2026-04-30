@@ -1,39 +1,63 @@
 {
   "suburb": "Burwood",
   "post_count": 341,
-  "fetched_at": "2026-04-18T01:23:30.111870+00:00",
+  "fetched_at": "2026-04-29T16:47:51.592468+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.337,
-      "mentions": 145
-    },
     "safety": {
-      "score": 0.303,
-      "mentions": 125
-    },
-    "community": {
-      "score": 0.582,
-      "mentions": 251
-    },
-    "nightlife": {
-      "score": 0.669,
-      "mentions": 78
+      "score": 0.262,
+      "mentions": 125,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.646,
-      "mentions": 55
+      "score": 0.54,
+      "mentions": 55,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.546,
+      "mentions": 78,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.754,
-      "mentions": 32
+      "score": 0.444,
+      "mentions": 32,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.402,
+      "mentions": 145,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.502,
+      "mentions": 251,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.381,
-      "mentions": 25
+      "score": 0.293,
+      "mentions": 25,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.63,
-      "mentions": 48
+      "score": 0.488,
+      "mentions": 48,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0644,
     "joy": 0.0625
   },
-  "narrative": "Reddit discussions about Burwood are most positive about affordability (0.75) and nightlife (0.67). Residents are most critical about transport (0.34) and safety (0.30). This analysis is based on 341 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Burwood are most positive about nightlife (0.55) and food and cafe (0.54). Residents are most critical about noise (0.29) and safety (0.26). This analysis is based on 341 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Asian women attacked at Burwood Station\nSupposedly the teenage attackers were taunting the 2 asian women with racist remarks for the entire train ride culminating in this video. \nThis was taken off a ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gpi53y/worst_fb_marketplace_interactions_lighthearted/",
       "score": 493
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

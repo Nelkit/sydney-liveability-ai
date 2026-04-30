@@ -1,39 +1,63 @@
 {
   "suburb": "Illawong",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:57.480837+00:00",
+  "fetched_at": "2026-04-29T23:38:46.700420+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0095,
     "joy": 0.0035
   },
-  "narrative": "Reddit discussions about Illawong are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Illawong are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I've seen them in this spot a bunch, they've got a long bit of motorway to catch 'em (as long as they don't get off at Illawong). I've see them pull them over \\~3km down the road.",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgf1vge/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

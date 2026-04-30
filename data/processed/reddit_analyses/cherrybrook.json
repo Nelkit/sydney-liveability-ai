@@ -1,39 +1,63 @@
 {
   "suburb": "Cherrybrook",
   "post_count": 18,
-  "fetched_at": "2026-04-18T02:15:49.456247+00:00",
+  "fetched_at": "2026-04-29T23:32:32.238458+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.707,
-      "mentions": 10
-    },
-    "community": {
-      "score": 0.688,
-      "mentions": 16
-    },
-    "nightlife": {
-      "score": 0.91,
-      "mentions": 2
-    },
     "safety": {
-      "score": 0.385,
-      "mentions": 3
-    },
-    "green_space": {
-      "score": 0.415,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.579,
-      "mentions": 2
+      "score": 0.495,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.797,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.491,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.789,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.503,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.1428,
     "anger": 0.0325
   },
-  "narrative": "Reddit discussions about Cherrybrook are most positive about nightlife (0.91) and transport (0.71). Residents are most critical about green space (0.41) and safety (0.39). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cherrybrook are most positive about nightlife (0.80) and community (0.79). Residents are most critical about safety (0.49) and transport (0.49). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Cherrybrook is 🌸\nThe one thing I loved about Sydney Metro is that it gave me time to explore stations up northwest directly from Central. Here’s a hidden gem that is lovely.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1byrwja/i_dont_know_what_west_ryde_did_but_they_sure_aint/kylgwkj/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

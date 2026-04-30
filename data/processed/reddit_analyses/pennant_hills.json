@@ -1,39 +1,63 @@
 {
   "suburb": "Pennant Hills",
   "post_count": 47,
-  "fetched_at": "2026-04-18T02:07:09.529161+00:00",
+  "fetched_at": "2026-04-29T23:46:55.354601+00:00",
   "aspects": {
     "safety": {
-      "score": 0.43,
-      "mentions": 16
-    },
-    "community": {
-      "score": 0.458,
-      "mentions": 34
-    },
-    "nightlife": {
-      "score": 0.872,
-      "mentions": 4
-    },
-    "affordability": {
-      "score": 0.87,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.807,
-      "mentions": 3
-    },
-    "transport": {
-      "score": 0.449,
-      "mentions": 14
-    },
-    "green_space": {
-      "score": 0.756,
-      "mentions": 5
+      "score": 0.089,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.827,
-      "mentions": 3
+      "score": 0.51,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.185,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.458,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.141,
+      "mentions": 34,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.549,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0317,
     "fear": 0.1169
   },
-  "narrative": "Reddit discussions about Pennant Hills are most positive about nightlife (0.87) and affordability (0.87). Residents are most critical about transport (0.45) and safety (0.43). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pennant Hills are most positive about green space (0.55) and food and cafe (0.51). Residents are most critical about community (0.14) and safety (0.09). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Is IGA becoming like Woolies/Coles?!\nPictured at Pennant Hills IGA, Broken Easter Eggs for sale?! Seriously and there isn’t even a full easter egg worth in there!!",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dr4ai6/t3_lane_added_on_parramatta_rd_between_ashfield/lasotmf/",
       "score": 62
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

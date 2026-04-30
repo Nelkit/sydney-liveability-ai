@@ -1,39 +1,63 @@
 {
   "suburb": "Randwick",
   "post_count": 162,
-  "fetched_at": "2026-04-18T01:36:40.895915+00:00",
+  "fetched_at": "2026-04-29T17:03:40.268951+00:00",
   "aspects": {
-    "community": {
-      "score": 0.684,
-      "mentions": 130
-    },
-    "affordability": {
-      "score": 0.709,
-      "mentions": 25
-    },
-    "nightlife": {
-      "score": 0.768,
-      "mentions": 33
-    },
     "safety": {
-      "score": 0.528,
-      "mentions": 41
-    },
-    "transport": {
-      "score": 0.569,
-      "mentions": 74
-    },
-    "green_space": {
-      "score": 0.533,
-      "mentions": 20
-    },
-    "noise": {
-      "score": 0.623,
-      "mentions": 12
+      "score": 0.314,
+      "mentions": 41,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.719,
-      "mentions": 21
+      "score": 0.523,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.552,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.268,
+      "mentions": 25,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.452,
+      "mentions": 74,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.458,
+      "mentions": 130,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.539,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.423,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0612,
     "disgust": 0.0788
   },
-  "narrative": "Reddit discussions about Randwick are most positive about nightlife (0.77) and food and cafe (0.72). Residents are most critical about green space (0.53) and safety (0.53). This analysis is based on 162 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Randwick are most positive about nightlife (0.55) and noise (0.54). Residents are most critical about safety (0.31) and affordability (0.27). This analysis is based on 162 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "recent (and not so recent) paintings from around sydney ✨\nIt’s been a while since I posted in here, so forgive me for being a bit rusty. But painted this random one of Randwick town hall recently and ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/198hadj/bayside_council_is_such_bullshit/",
       "score": 108
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

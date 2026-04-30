@@ -1,39 +1,63 @@
 {
   "suburb": "Kingsgrove",
   "post_count": 16,
-  "fetched_at": "2026-04-18T02:16:24.096774+00:00",
+  "fetched_at": "2026-04-29T23:39:36.069906+00:00",
   "aspects": {
-    "community": {
-      "score": 0.613,
-      "mentions": 14
-    },
     "safety": {
-      "score": 0.772,
-      "mentions": 6
-    },
-    "green_space": {
-      "score": 0.689,
-      "mentions": 5
-    },
-    "transport": {
-      "score": 0.737,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.812,
-      "mentions": 1
+      "score": 0.604,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.667,
-      "mentions": 2
+      "score": 0.545,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.612,
-      "mentions": 2
+      "score": 0.584,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.638,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.607,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.63,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.663,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0423,
     "disgust": 0.0134
   },
-  "narrative": "Reddit discussions about Kingsgrove are most positive about noise (0.81) and safety (0.77). Residents are most critical about community (0.61) and nightlife (0.61). This analysis is based on 16 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Kingsgrove are most positive about green space (0.66) and community (0.63). Residents are most critical about nightlife (0.58) and food and cafe (0.55). This analysis is based on 16 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Holidays = gronk kids being try hards\ngotta love school holidays kids popping wheelies acting hard like they are cool. no plates for rego or Ls or Ps and they are young doubt they even on Ls. going do",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5wqjz/what_school_did_you_go_to_and_what_was_the_most/kzzwdgg/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.533,
+  "confidence_tier": "medium"
 }

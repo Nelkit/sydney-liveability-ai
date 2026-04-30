@@ -1,39 +1,63 @@
 {
   "suburb": "Berala",
   "post_count": 15,
-  "fetched_at": "2026-04-18T02:16:33.161841+00:00",
+  "fetched_at": "2026-04-29T23:28:42.880065+00:00",
   "aspects": {
-    "community": {
-      "score": 0.87,
-      "mentions": 14
-    },
-    "green_space": {
-      "score": 0.88,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.868,
-      "mentions": 8
-    },
     "safety": {
-      "score": 0.503,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.468,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.421,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.421,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.262,
-      "mentions": 1
+      "score": 0.541,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.494,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0177,
     "fear": 0.0541
   },
-  "narrative": "Reddit discussions about Berala are most positive about green space (0.88) and community (0.87). Residents are most critical about noise (0.42) and food and cafe (0.26). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Berala are most positive about food and cafe (0.54) and transport (0.49). Residents are most critical about transport (0.49) and green space (0.00). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Spotted today on Park Rd Berala. Clever, very clever!",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dsrw8o/botanica_lidcombe_former_lidcombe_hospital/lb7rzyg/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

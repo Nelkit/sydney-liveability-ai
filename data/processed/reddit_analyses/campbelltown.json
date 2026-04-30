@@ -1,39 +1,63 @@
 {
   "suburb": "Campbelltown",
   "post_count": 211,
-  "fetched_at": "2026-04-18T01:32:51.393779+00:00",
+  "fetched_at": "2026-04-29T16:58:57.707559+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.591,
-      "mentions": 101
-    },
-    "community": {
-      "score": 0.601,
-      "mentions": 173
-    },
     "safety": {
-      "score": 0.458,
-      "mentions": 57
-    },
-    "nightlife": {
-      "score": 0.588,
-      "mentions": 43
-    },
-    "green_space": {
-      "score": 0.707,
-      "mentions": 30
-    },
-    "affordability": {
-      "score": 0.594,
-      "mentions": 39
+      "score": 0.383,
+      "mentions": 57,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.616,
-      "mentions": 23
+      "score": 0.552,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.61,
+      "mentions": 43,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.403,
+      "mentions": 39,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.455,
+      "mentions": 101,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.515,
+      "mentions": 173,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.49,
-      "mentions": 3
+      "score": 0.289,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.609,
+      "mentions": 30,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0612,
     "joy": 0.0491
   },
-  "narrative": "Reddit discussions about Campbelltown are most positive about green space (0.71) and food and cafe (0.62). Residents are most critical about noise (0.49) and safety (0.46). This analysis is based on 211 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Campbelltown are most positive about nightlife (0.61) and green space (0.61). Residents are most critical about safety (0.38) and noise (0.29). This analysis is based on 211 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "…because it’s Campbelltown. \n\nRightly or wrongly, Campbelltown has a bad rep. It’s also an outer suburb and an hour train trip from Central.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d5em05/life_finds_a_way/",
       "score": 268
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Sackville",
   "post_count": 3,
-  "fetched_at": "2026-04-18T02:20:48.688019+00:00",
+  "fetched_at": "2026-04-29T23:50:28.838645+00:00",
   "aspects": {
-    "community": {
-      "score": 0.192,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.906,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.224,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.224,
-      "mentions": 1
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.532,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0179,
     "disgust": 0.0091
   },
-  "narrative": "Reddit discussions about Sackville are most positive about nightlife (0.91) and food and cafe (0.50). Residents are most critical about safety (0.22) and community (0.19). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Sackville are most positive about nightlife (0.53) and safety (0.50). Residents are most critical about safety (0.50) and food and cafe (0.50). This analysis is based on 3 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Prepare to evacuate - parts of Richmond, Sackville, etc.\nSES has issued a notice for people in identified low lying areas on the Hawkesbury River to prepare now for evacuation ahead of rising flood wa",
@@ -62,5 +86,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bs836i/suggestions_for_powered_camping_near_sydney/kxiypwg/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.1,
+  "confidence_tier": "low"
 }

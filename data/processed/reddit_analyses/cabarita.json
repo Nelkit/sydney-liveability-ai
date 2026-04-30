@@ -1,39 +1,63 @@
 {
   "suburb": "Cabarita",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:32.041886+00:00",
+  "fetched_at": "2026-04-29T23:30:13.875372+00:00",
   "aspects": {
-    "nightlife": {
-      "score": 0.74,
-      "mentions": 4
-    },
-    "community": {
-      "score": 0.743,
-      "mentions": 9
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.71,
-      "mentions": 5
+      "score": 0.661,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
-      "score": 0.776,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.808,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.776,
-      "mentions": 2
+    "nightlife": {
+      "score": 0.697,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.592,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.371,
-      "mentions": 2
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0891,
     "fear": 0.0112
   },
-  "narrative": "Reddit discussions about Cabarita are most positive about green space (0.81) and transport (0.78). Residents are most critical about affordability (0.59) and safety (0.37). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cabarita are most positive about nightlife (0.70) and food and cafe (0.66). Residents are most critical about food and cafe (0.66) and green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Evening at Cabarita\nDeparting westward from Cabarita, nice sky!",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1csghqv/is_the_canada_bay_area_middle_or_upper_class/l48gqpu/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

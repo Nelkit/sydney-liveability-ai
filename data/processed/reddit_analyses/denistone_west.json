@@ -1,39 +1,63 @@
 {
   "suburb": "Denistone West",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:06.088208+00:00",
+  "fetched_at": "2026-04-29T23:34:54.224707+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": 0.615,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "sadness": 0.0167,
     "joy": 0.0062
   },
-  "narrative": "Reddit discussions about Denistone West are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Denistone West are most positive about community (0.61) and green space (0.00). Residents are most critical about community (0.61) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Denistone West got its name from being the western part of Denistone gazetted into its own suburb. Denistone East got its name from being the eastern part of Denistone gazetted into its own suburb. \n\n",
       "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnfi9n/",
       "score": 20
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Mosman",
   "post_count": 91,
-  "fetched_at": "2026-04-18T01:59:08.017257+00:00",
+  "fetched_at": "2026-04-29T23:44:50.321403+00:00",
   "aspects": {
     "safety": {
-      "score": 0.359,
-      "mentions": 21
-    },
-    "transport": {
-      "score": 0.409,
-      "mentions": 26
-    },
-    "community": {
-      "score": 0.679,
-      "mentions": 68
-    },
-    "green_space": {
-      "score": 0.708,
-      "mentions": 16
-    },
-    "nightlife": {
-      "score": 0.63,
-      "mentions": 17
+      "score": 0.472,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.581,
-      "mentions": 8
+      "score": 0.517,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.419,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.538,
-      "mentions": 15
+      "score": 0.477,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.504,
+      "mentions": 26,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.663,
+      "mentions": 68,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.998,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.507,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.1244,
     "joy": 0.0597
   },
-  "narrative": "Reddit discussions about Mosman are most positive about noise (1.00) and green space (0.71). Residents are most critical about transport (0.41) and safety (0.36). This analysis is based on 91 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Mosman are most positive about community (0.66) and food and cafe (0.52). Residents are most critical about safety (0.47) and nightlife (0.42). This analysis is based on 91 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Serious crime wave in Mosman",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1hzg55c/mandolong_road_mosman/",
       "score": 234
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Bonnyrigg",
   "post_count": 8,
-  "fetched_at": "2026-04-18T02:18:49.687609+00:00",
+  "fetched_at": "2026-04-29T23:29:32.431167+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.715,
-      "mentions": 5
-    },
-    "community": {
-      "score": 0.727,
-      "mentions": 8
-    },
-    "affordability": {
-      "score": 0.82,
-      "mentions": 5
-    },
     "safety": {
-      "score": 0.822,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.925,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.927,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.786,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.554,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.827,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0255,
     "joy": 0.1459
   },
-  "narrative": "Reddit discussions about Bonnyrigg are most positive about green space (0.93) and noise (0.93). Residents are most critical about transport (0.71) and food and cafe (0.50). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bonnyrigg are most positive about transport (0.83) and nightlife (0.55). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 8 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I've lived and worked in the western/southwestern suburbs (Blacktown, Milperra, Roselands, Bonnyrigg) and the Inner West (Newtown, Erskineville, Glebe) and of course the inner west is more walkable in",
@@ -87,5 +111,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dm9fiy/best_thai_restaurants_in_sydney/l9uj0rx/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.267,
+  "confidence_tier": "low"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Malabar",
   "post_count": 23,
-  "fetched_at": "2026-04-18T02:14:00.180207+00:00",
+  "fetched_at": "2026-04-29T23:42:43.463251+00:00",
   "aspects": {
-    "community": {
-      "score": 0.521,
-      "mentions": 13
-    },
-    "nightlife": {
-      "score": 0.491,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.863,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.962,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.87,
-      "mentions": 2
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.984,
-      "mentions": 2
+      "score": 0.881,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.379,
-      "mentions": 2
+    "nightlife": {
+      "score": 0.514,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0471,
     "disgust": 0.1253
   },
-  "narrative": "Reddit discussions about Malabar are most positive about food and cafe (0.98) and noise (0.96). Residents are most critical about nightlife (0.49) and safety (0.38). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Malabar are most positive about food and cafe (0.88) and nightlife (0.51). Residents are most critical about nightlife (0.51) and green space (0.00). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sunrise at Malabar today",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cbh3fl/recommendations_on_bushwalks_with_war_relics/l0yiqbj/",
       "score": 12
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

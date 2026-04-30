@@ -1,39 +1,63 @@
 {
   "suburb": "Haberfield",
   "post_count": 47,
-  "fetched_at": "2026-04-18T02:07:02.723769+00:00",
+  "fetched_at": "2026-04-29T23:38:09.650821+00:00",
   "aspects": {
-    "community": {
-      "score": 0.698,
-      "mentions": 40
-    },
-    "green_space": {
-      "score": 0.629,
-      "mentions": 5
-    },
     "safety": {
-      "score": 0.746,
-      "mentions": 12
-    },
-    "transport": {
-      "score": 0.766,
-      "mentions": 10
-    },
-    "affordability": {
-      "score": 0.628,
-      "mentions": 5
+      "score": 0.269,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.71,
-      "mentions": 15
+      "score": 0.638,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.648,
-      "mentions": 10
+      "score": 0.568,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.54,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.607,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.604,
+      "mentions": 40,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.423,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.753,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.09,
     "disgust": 0.0879
   },
-  "narrative": "Reddit discussions about Haberfield are most positive about transport (0.77) and safety (0.75). Residents are most critical about affordability (0.63) and noise (0.42). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Haberfield are most positive about green space (0.75) and food and cafe (0.64). Residents are most critical about affordability (0.54) and safety (0.27). This analysis is based on 47 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "There are now 3 Greenways connecting Kogarah to the Bay Run\nA new greenway has recently opened around Kogarah through to Wolli Creek, connecting to the Cooks river walk, which connects to the new gree",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cqx2m1/best_cheap_italian_food_in_sydney/l3u5sm4/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

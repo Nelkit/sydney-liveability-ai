@@ -1,39 +1,63 @@
 {
   "suburb": "Wakeley",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:47.778891+00:00",
+  "fetched_at": "2026-04-29T23:52:58.635601+00:00",
   "aspects": {
     "safety": {
-      "score": 0.23,
-      "mentions": 11
-    },
-    "community": {
-      "score": 0.319,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.407,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0071,
     "surprise": 0.2607
   },
-  "narrative": "Reddit discussions about Wakeley are most positive about nightlife (0.50) and food and cafe (0.50). Residents are most critical about community (0.32) and safety (0.23). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is surprise.",
+  "narrative": "Reddit discussions about Wakeley are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is surprise.",
   "sources": [
     {
       "text": "First person charged over Wakeley riot after Sydney church stabbing attack granted bail",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c4ii70/stabbing_at_good_shepherd_church_in_wakeley/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

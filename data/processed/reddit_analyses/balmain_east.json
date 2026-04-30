@@ -1,39 +1,63 @@
 {
   "suburb": "Balmain East",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:13.904787+00:00",
+  "fetched_at": "2026-04-29T23:28:02.991062+00:00",
   "aspects": {
-    "community": {
-      "score": 0.526,
-      "mentions": 7
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.514,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.526,
-      "mentions": 3
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 2
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.5,
-      "mentions": 1
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0074,
     "disgust": 0.1204
   },
-  "narrative": "Reddit discussions about Balmain East are most positive about community (0.53) and transport (0.53). Residents are most critical about affordability (0.50) and noise (0.50). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Balmain East are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Photos from Balmain East",
@@ -82,5 +106,7 @@
       "url": "https://reddit.com/r/sydney/comments/19dg1u3/barangaroo_surprise/kj7omvn/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

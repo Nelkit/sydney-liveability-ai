@@ -1,39 +1,63 @@
 {
   "suburb": "Bexley North",
   "post_count": 6,
-  "fetched_at": "2026-04-18T02:19:29.608940+00:00",
+  "fetched_at": "2026-04-29T23:28:59.946812+00:00",
   "aspects": {
-    "community": {
-      "score": 0.501,
-      "mentions": 6
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "food_and_cafe": {
+      "score": 0.693,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.518,
-      "mentions": 3
-    },
-    "safety": {
-      "score": 0.423,
-      "mentions": 1
-    },
-    "food_and_cafe": {
-      "score": 0.585,
-      "mentions": 2
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.158,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.0375,
     "sadness": 0.0495
   },
-  "narrative": "Reddit discussions about Bexley North are most positive about food and cafe (0.58) and transport (0.52). Residents are most critical about green space (0.50) and safety (0.42). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bexley North are most positive about food and cafe (0.69) and nightlife (0.50). Residents are most critical about transport (0.16) and green space (0.00). This analysis is based on 6 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Try my mother's cousin in Bexley North!",
@@ -77,5 +101,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cc3t4x/sydney_daily_random_discussion_thread_25042024/l153r96/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.2,
+  "confidence_tier": "low"
 }

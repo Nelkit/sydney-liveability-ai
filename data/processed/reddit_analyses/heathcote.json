@@ -1,39 +1,63 @@
 {
   "suburb": "Heathcote",
   "post_count": 35,
-  "fetched_at": "2026-04-18T02:11:06.376383+00:00",
+  "fetched_at": "2026-04-29T23:38:24.912767+00:00",
   "aspects": {
     "safety": {
-      "score": 0.613,
-      "mentions": 10
-    },
-    "community": {
-      "score": 0.611,
-      "mentions": 21
-    },
-    "nightlife": {
-      "score": 0.626,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.542,
-      "mentions": 8
+      "score": 0.233,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.637,
-      "mentions": 5
+      "score": 0.531,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.725,
-      "mentions": 5
+    "nightlife": {
+      "score": 0.494,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.382,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.474,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.517,
+      "mentions": 21,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.701,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.612,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0334,
     "joy": 0.0824
   },
-  "narrative": "Reddit discussions about Heathcote are most positive about green space (0.72) and noise (0.70). Residents are most critical about transport (0.54) and affordability (0.38). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Heathcote are most positive about green space (0.61) and food and cafe (0.53). Residents are most critical about transport (0.47) and safety (0.23). This analysis is based on 35 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Cooker stickers\nWhat is with these? Seems like some absolute cooker has been printing stickers in the shire and sticking them on traffic lights. (Not the free Assange one, or the free Palestine one). ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1de3l9r/cant_possibly_miss_your_exit_better_come_to_a/l89it9d/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

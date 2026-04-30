@@ -1,39 +1,63 @@
 {
   "suburb": "Bligh Park",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:07.079846+00:00",
+  "fetched_at": "2026-04-29T23:29:13.467157+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.548,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.548,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 1
+      "score": 0.022,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0115,
     "fear": 0.0501
   },
-  "narrative": "Reddit discussions about Bligh Park are most positive about green space (0.55) and community (0.55). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bligh Park are most positive about safety (0.02). Residents are most critical about safety (0.02). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Just to Townson Road? It needs another lane in both directions all the way to Bligh Park! We drove out there to see family on the weekend and it took us almost as long to get from the M7 to Garfield R",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bynz18/northwest_west_sydney_strange_lights_in_the_sky/kykp9ym/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

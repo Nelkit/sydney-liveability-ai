@@ -1,39 +1,63 @@
 {
   "suburb": "Dundas",
   "post_count": 13,
-  "fetched_at": "2026-04-18T02:17:16.653888+00:00",
+  "fetched_at": "2026-04-29T23:35:21.626251+00:00",
   "aspects": {
-    "community": {
-      "score": 0.768,
-      "mentions": 12
-    },
-    "transport": {
-      "score": 0.748,
-      "mentions": 6
-    },
     "safety": {
-      "score": 0.88,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.831,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.871,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.954,
-      "mentions": 1
+      "score": 0.225,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.751,
-      "mentions": 1
+      "score": 0.791,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.129,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.525,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.1176,
     "disgust": 0.0251
   },
-  "narrative": "Reddit discussions about Dundas are most positive about affordability (0.95) and safety (0.88). Residents are most critical about transport (0.75) and noise (0.50). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Dundas are most positive about food and cafe (0.79) and transport (0.53). Residents are most critical about nightlife (0.13) and green space (0.00). This analysis is based on 13 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Thanks for this.  I grew up in the Telopea / Dundas areas.  They'd only be street parking around those stations unless there's been major redevelopments.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/19ew546/the_sydney_suburb_of_dumbleton_changed_its_name/kjgb4ws/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.433,
+  "confidence_tier": "medium"
 }

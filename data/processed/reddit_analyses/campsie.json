@@ -1,39 +1,63 @@
 {
   "suburb": "Campsie",
   "post_count": 101,
-  "fetched_at": "2026-04-18T01:56:51.378202+00:00",
+  "fetched_at": "2026-04-29T23:31:12.498380+00:00",
   "aspects": {
     "safety": {
-      "score": 0.459,
-      "mentions": 35
-    },
-    "transport": {
-      "score": 0.441,
-      "mentions": 46
-    },
-    "community": {
-      "score": 0.553,
-      "mentions": 85
-    },
-    "affordability": {
-      "score": 0.833,
-      "mentions": 16
+      "score": 0.41,
+      "mentions": 35,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.834,
-      "mentions": 23
+      "score": 0.727,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.781,
-      "mentions": 20
+      "score": 0.718,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.617,
-      "mentions": 13
+    "affordability": {
+      "score": 0.772,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.384,
+      "mentions": 46,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.606,
+      "mentions": 85,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.475,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.616,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.1026,
     "disgust": 0.0672
   },
-  "narrative": "Reddit discussions about Campsie are most positive about food and cafe (0.83) and affordability (0.83). Residents are most critical about safety (0.46) and transport (0.44). This analysis is based on 101 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Campsie are most positive about affordability (0.77) and food and cafe (0.73). Residents are most critical about safety (0.41) and transport (0.38). This analysis is based on 101 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Can’t park there mate,  ⚠️ bus crash in Campsie",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1q4n0vs/old_campsie_centre_maccas/",
       "score": 96
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

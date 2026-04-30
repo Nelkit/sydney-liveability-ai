@@ -1,39 +1,63 @@
 {
   "suburb": "Belrose",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:12.876985+00:00",
+  "fetched_at": "2026-04-29T23:28:39.016025+00:00",
   "aspects": {
     "safety": {
-      "score": 0.063,
-      "mentions": 7
-    },
-    "community": {
-      "score": 0.292,
-      "mentions": 7
-    },
-    "transport": {
-      "score": 0.216,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.201,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.224,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.469,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.1346,
     "joy": 0.0213
   },
-  "narrative": "Reddit discussions about Belrose are most positive about food and cafe (0.50) and noise (0.50). Residents are most critical about affordability (0.20) and safety (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Belrose are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Unintentionally watching the news tonight, I wondered why it's described as \"a cyclist was killed\" rather than, say, \"a Belrose father of 3 was killed today while riding his bike\"?\n\nI mean, they don't",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d9f2we/cyclist_dies_after_horror_northern_beaches_crash/l7df2hi/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

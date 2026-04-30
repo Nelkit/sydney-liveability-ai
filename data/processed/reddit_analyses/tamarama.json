@@ -1,39 +1,63 @@
 {
   "suburb": "Tamarama",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:28.196119+00:00",
+  "fetched_at": "2026-04-29T23:52:15.087512+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.679,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.64,
-      "mentions": 5
-    },
-    "community": {
-      "score": 0.636,
-      "mentions": 6
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.329,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.38,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.077,
     "joy": 0.023
   },
-  "narrative": "Reddit discussions about Tamarama are most positive about transport (0.68) and safety (0.64). Residents are most critical about nightlife (0.38) and food and cafe (0.33). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Tamarama are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "What the fuck is up with kids these days?\nMy partner and I were walking back from the bus stop in Tamarama and 5 kids, probably 12-15, on 2 e-bikes road passed us and called my partner the n word seve",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b0bo5v/manly_beach_only_australian_beach_in_tripadvisors/ksbb39c/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

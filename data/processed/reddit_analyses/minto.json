@@ -1,39 +1,63 @@
 {
   "suburb": "Minto",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:22.273826+00:00",
+  "fetched_at": "2026-04-29T23:44:15.735164+00:00",
   "aspects": {
-    "community": {
-      "score": 0.441,
-      "mentions": 8
-    },
-    "nightlife": {
-      "score": 0.481,
-      "mentions": 2
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.481,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "transport": {
-      "score": 0.237,
-      "mentions": 4
-    },
-    "safety": {
-      "score": 0.225,
-      "mentions": 5
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.201,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.06,
-      "mentions": 1
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.06,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0359,
     "disgust": 0.0648
   },
-  "narrative": "Reddit discussions about Minto are most positive about nightlife (0.48) and food and cafe (0.48). Residents are most critical about green space (0.06) and noise (0.06). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Minto are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Opening of El Jannah at Minto!",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c5fb88/what_are_your_top_underatedlesser_known_things_to/kzw66e5/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

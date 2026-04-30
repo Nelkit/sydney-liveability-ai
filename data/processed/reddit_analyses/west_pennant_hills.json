@@ -1,39 +1,63 @@
 {
   "suburb": "West Pennant Hills",
   "post_count": 10,
-  "fetched_at": "2026-04-18T02:18:29.401377+00:00",
+  "fetched_at": "2026-04-29T23:53:51.745650+00:00",
   "aspects": {
-    "community": {
-      "score": 0.43,
-      "mentions": 7
-    },
-    "green_space": {
-      "score": 0.657,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.711,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0169,
     "sadness": 0.0204
   },
-  "narrative": "Reddit discussions about West Pennant Hills are most positive about food and cafe (0.71) and green space (0.66). Residents are most critical about noise (0.50) and community (0.43). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about West Pennant Hills are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 10 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "West Pennant Hills in the same area as Riverstone?\n\nThe pearl clutching from the WPH residents would cause a shock wave.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bvand2/for_the_confused_heres_the_suburbs_areas_of_sydney/kxz4psk/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.333,
+  "confidence_tier": "low"
 }

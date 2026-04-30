@@ -1,39 +1,63 @@
 {
   "suburb": "Northbridge",
   "post_count": 18,
-  "fetched_at": "2026-04-18T02:16:06.395145+00:00",
+  "fetched_at": "2026-04-29T23:46:01.778343+00:00",
   "aspects": {
     "safety": {
-      "score": 0.274,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.274,
-      "mentions": 4
-    },
-    "community": {
-      "score": 0.274,
-      "mentions": 14
-    },
-    "transport": {
-      "score": 0.512,
-      "mentions": 4
-    },
-    "affordability": {
-      "score": 0.509,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "green_space": {
-      "score": 0.509,
-      "mentions": 2
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0549,
     "surprise": 0.119
   },
-  "narrative": "Reddit discussions about Northbridge are most positive about transport (0.51) and affordability (0.51). Residents are most critical about nightlife (0.27) and community (0.27). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Northbridge are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Teenage brawl broke out at the Northbridge fireworks last night including a rumoured stabbing. 4 teenagers arrested.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1960f07/excluding_the_most_iconic_sydney_has_lots_of_nice/khqlfev/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

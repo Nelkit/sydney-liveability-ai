@@ -1,39 +1,63 @@
 {
   "suburb": "Oatley",
   "post_count": 21,
-  "fetched_at": "2026-04-18T02:14:59.614377+00:00",
+  "fetched_at": "2026-04-29T23:46:19.483134+00:00",
   "aspects": {
-    "community": {
-      "score": 0.708,
-      "mentions": 18
-    },
-    "nightlife": {
-      "score": 0.528,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.726,
-      "mentions": 9
-    },
-    "green_space": {
-      "score": 0.53,
-      "mentions": 4
-    },
     "safety": {
-      "score": 0.76,
-      "mentions": 3
+      "score": 0.444,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.728,
-      "mentions": 4
+      "score": 0.594,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.551,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.899,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.616,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.785,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.765,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0747,
     "sadness": 0.0421
   },
-  "narrative": "Reddit discussions about Oatley are most positive about affordability (0.90) and noise (0.77). Residents are most critical about green space (0.53) and nightlife (0.53). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Oatley are most positive about community (0.79) and transport (0.62). Residents are most critical about safety (0.44) and green space (0.00). This analysis is based on 21 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Let's play guess the suburb name (Greater Sydney)\nGive a short cryptic clue and everyone else guesses what suburb it is. \n\nE.g. Uncle Toby's cereal spot => Oatley",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ayrp4s/what_is_with_all_the_absolute_psychos_on_the_road/krzfaoz/",
       "score": 10
     }
-  ]
+  ],
+  "confidence": 0.7,
+  "confidence_tier": "high"
 }

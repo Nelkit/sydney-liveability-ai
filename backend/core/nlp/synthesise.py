@@ -30,14 +30,19 @@ class MockSynthesiser:
         aspects: dict[str, dict],
         emotions: dict[str, float],
     ) -> str:
-        if not aspects:
+        scored = [
+            (name, info)
+            for name, info in aspects.items()
+            if info.get("score") is not None
+        ]
+        if not scored:
             return (
                 f"There is not enough Reddit data available for {suburb} "
                 "to generate a community narrative at this time."
             )
 
         sorted_aspects = sorted(
-            aspects.items(), key=lambda x: x[1]["score"], reverse=True
+            scored, key=lambda x: x[1]["score"], reverse=True
         )
         top = sorted_aspects[:2]
         bottom = sorted_aspects[-2:]
@@ -83,10 +88,18 @@ class ClaudeSynthesiser:
         sample_texts = [p["text"][:200] for p in posts[:30]]
         texts_block = "\n---\n".join(sample_texts)
 
-        aspects_block = "\n".join(
-            f"- {name}: sentiment {info['score']:.2f} ({info['mentions']} mentions)"
-            for name, info in aspects.items()
-        )
+        aspects_lines = []
+        for name, info in aspects.items():
+            score = info.get("score")
+            if score is None:
+                aspects_lines.append(
+                    f"- {name}: no data (no Reddit signal and no cross-modal proxy)"
+                )
+            else:
+                aspects_lines.append(
+                    f"- {name}: sentiment {score:.2f} ({info['mentions']} mentions)"
+                )
+        aspects_block = "\n".join(aspects_lines)
 
         emotions_block = "\n".join(
             f"- {name}: {score:.2%}" for name, score in emotions.items()

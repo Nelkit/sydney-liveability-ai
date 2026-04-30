@@ -1,39 +1,63 @@
 {
   "suburb": "Woollahra",
   "post_count": 40,
-  "fetched_at": "2026-04-18T02:09:57.984164+00:00",
+  "fetched_at": "2026-04-29T23:54:56.653460+00:00",
   "aspects": {
-    "community": {
-      "score": 0.732,
-      "mentions": 33
-    },
-    "transport": {
-      "score": 0.577,
-      "mentions": 19
-    },
-    "affordability": {
-      "score": 0.588,
-      "mentions": 9
-    },
-    "nightlife": {
-      "score": 0.879,
-      "mentions": 12
-    },
-    "green_space": {
-      "score": 0.882,
-      "mentions": 10
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.918,
-      "mentions": 9
+      "score": 0.627,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.907,
-      "mentions": 14
+    "nightlife": {
+      "score": 0.626,
+      "mentions": 12,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.573,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.501,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.706,
+      "mentions": 33,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.993,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.1315,
     "fear": 0.0545
   },
-  "narrative": "Reddit discussions about Woollahra are most positive about noise (0.99) and food and cafe (0.92). Residents are most critical about affordability (0.59) and transport (0.58). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Woollahra are most positive about community (0.71) and food and cafe (0.63). Residents are most critical about transport (0.50) and green space (0.00). This analysis is based on 40 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b29v1z/sydney_daily_random_discussion_thread_29022024/ksm2lqq/",
       "score": 21
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

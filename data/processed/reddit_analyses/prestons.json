@@ -1,39 +1,63 @@
 {
   "suburb": "Prestons",
   "post_count": 9,
-  "fetched_at": "2026-04-18T02:18:43.339608+00:00",
+  "fetched_at": "2026-04-29T23:47:24.152681+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.438,
-      "mentions": 5
-    },
     "safety": {
-      "score": 0.182,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.639,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.785,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.444,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.942,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.46,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0717,
     "joy": 0.0062
   },
-  "narrative": "Reddit discussions about Prestons are most positive about affordability (0.94) and noise (0.79). Residents are most critical about transport (0.44) and safety (0.18). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Prestons are most positive about transport (0.46) and green space (0.00). Residents are most critical about transport (0.46) and green space (0.00). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Seems crazy as that doesn’t even cover Sydney let alone central coast and Wollongong where many commute from.\n\nAre they ready to rule out all staff who live anywhere further than Prestons? \n\nI hope th",
@@ -92,5 +116,7 @@
       "url": "https://reddit.com/r/sydney/comments/1b15w0d/have_sydneys_boundaries_always_been_the_same/kscu3ew/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

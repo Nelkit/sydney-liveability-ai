@@ -1,39 +1,63 @@
 {
   "suburb": "Cattai",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:16.604779+00:00",
+  "fetched_at": "2026-04-29T23:32:09.615746+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.511,
-      "mentions": 5
-    },
-    "noise": {
-      "score": 0.309,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.661,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.661,
-      "mentions": 2
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 1
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "safety": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.1446,
     "surprise": 0.1685
   },
-  "narrative": "Reddit discussions about Cattai are most positive about community (0.66) and nightlife (0.66). Residents are most critical about affordability (0.50) and noise (0.31). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Cattai are most positive about food and cafe (0.50) and green space (0.00). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Kangroos munching on Jacaranda Flowers \nAt Cattai National Park",
@@ -82,5 +106,7 @@
       "url": "https://reddit.com/r/sydney/comments/18z00af/what_is_your_suburb_known_for/kgfjx78/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

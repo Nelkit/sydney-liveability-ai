@@ -1,39 +1,63 @@
 {
   "suburb": "Glossodia",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:08.416067+00:00",
+  "fetched_at": "2026-04-29T23:37:20.497681+00:00",
   "aspects": {
     "safety": {
-      "score": 0.03,
-      "mentions": 1
-    },
-    "community": {
-      "score": 0.03,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "joy": 0.0244,
     "surprise": 0.0022
   },
-  "narrative": "Reddit discussions about Glossodia are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about safety (0.03) and community (0.03). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
+  "narrative": "Reddit discussions about Glossodia are most positive about affordability (0.50) and transport (0.50). Residents are most critical about affordability (0.50) and transport (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is disgust.",
   "sources": [
     {
       "text": "I love all toll roads. Driving is a net negative on society and isn’t a universal human right so making people pay for the privilege is good and morally sound. Unlike say healthcare, public transport ",
       "url": "https://reddit.com/r/sydney/comments/1cw9tcy/monday_night_thread/l4uvol4/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

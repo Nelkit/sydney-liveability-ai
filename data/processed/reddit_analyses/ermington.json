@@ -1,39 +1,63 @@
 {
   "suburb": "Ermington",
   "post_count": 18,
-  "fetched_at": "2026-04-18T02:15:55.394415+00:00",
+  "fetched_at": "2026-04-29T23:36:16.552608+00:00",
   "aspects": {
-    "community": {
-      "score": 0.244,
-      "mentions": 16
-    },
-    "transport": {
-      "score": 0.79,
-      "mentions": 6
-    },
     "safety": {
-      "score": 0.602,
-      "mentions": 6
-    },
-    "noise": {
-      "score": 0.79,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.909,
-      "mentions": 3
-    },
-    "green_space": {
-      "score": 0.949,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.851,
-      "mentions": 5
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.918,
-      "mentions": 2
+      "score": 0.286,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": 0.357,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.509,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.012,
     "disgust": 0.0374
   },
-  "narrative": "Reddit discussions about Ermington are most positive about green space (0.95) and food and cafe (0.92). Residents are most critical about safety (0.60) and community (0.24). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Ermington are most positive about transport (0.51) and affordability (0.36). Residents are most critical about food and cafe (0.29) and green space (0.00). This analysis is based on 18 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney residents told to save water after major water main burst\nLink: [https://www.smh.com.au/national/nsw/sydney-residents-told-to-save-water-after-major-water-main-burst-20260326-p5zj0y.html](https",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dusfbw/new_parramatta_lr_map_out_confirmed_that_itll_be/lbj31uu/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 0.6,
+  "confidence_tier": "medium"
 }

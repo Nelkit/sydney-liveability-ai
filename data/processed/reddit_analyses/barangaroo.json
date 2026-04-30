@@ -1,39 +1,63 @@
 {
   "suburb": "Barangaroo",
   "post_count": 254,
-  "fetched_at": "2026-04-18T01:31:12.109284+00:00",
+  "fetched_at": "2026-04-29T16:56:58.719472+00:00",
   "aspects": {
-    "community": {
-      "score": 0.62,
-      "mentions": 186
-    },
-    "nightlife": {
-      "score": 0.605,
-      "mentions": 101
+    "safety": {
+      "score": 0.254,
+      "mentions": 54,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.738,
-      "mentions": 54
+      "score": 0.581,
+      "mentions": 54,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.756,
-      "mentions": 55
-    },
-    "transport": {
-      "score": 0.598,
-      "mentions": 91
-    },
-    "safety": {
-      "score": 0.531,
-      "mentions": 54
+    "nightlife": {
+      "score": 0.599,
+      "mentions": 101,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.71,
-      "mentions": 24
+      "score": 0.548,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.55,
+      "mentions": 91,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.693,
+      "mentions": 186,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.687,
-      "mentions": 14
+      "score": 0.454,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.732,
+      "mentions": 55,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0689,
     "sadness": 0.0433
   },
-  "narrative": "Reddit discussions about Barangaroo are most positive about green space (0.76) and food and cafe (0.74). Residents are most critical about transport (0.60) and safety (0.53). This analysis is based on 254 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Barangaroo are most positive about green space (0.73) and community (0.69). Residents are most critical about noise (0.45) and safety (0.25). This analysis is based on 254 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney's new Pier Pavilion at Barangaroo\nIt's a new performance and gathering space right by the water and the ferry wharves - the columns are 7m in height. \n\nImages and stills from Infrastructure NSW",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1fho4fg/barangaroo/",
       "score": 499
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

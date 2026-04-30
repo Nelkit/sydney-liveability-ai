@@ -1,39 +1,63 @@
 {
   "suburb": "Beverly Hills",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:15.755635+00:00",
+  "fetched_at": "2026-04-29T23:28:54.177184+00:00",
   "aspects": {
-    "community": {
-      "score": 0.475,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.229,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.453,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.656,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.755,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0417,
     "fear": 0.0096
   },
-  "narrative": "Reddit discussions about Beverly Hills are most positive about affordability (0.76) and nightlife (0.66). Residents are most critical about safety (0.45) and green space (0.23). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Beverly Hills are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "The Sydney suburb of Dumbleton changed its name to Beverly Hills to be more “glamorous”. What should your suburb be renamed?\nI’m voting to change Parramatta to Paris",
@@ -82,5 +106,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cggtrc/guy_who_designed_london_undergrounds_map_also/l20jruf/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

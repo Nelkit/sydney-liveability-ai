@@ -1,39 +1,63 @@
 {
   "suburb": "Gladesville",
   "post_count": 87,
-  "fetched_at": "2026-04-18T02:00:08.685453+00:00",
+  "fetched_at": "2026-04-29T17:15:15.152773+00:00",
   "aspects": {
     "safety": {
-      "score": 0.475,
-      "mentions": 27
-    },
-    "community": {
-      "score": 0.522,
-      "mentions": 68
-    },
-    "transport": {
-      "score": 0.481,
-      "mentions": 24
-    },
-    "nightlife": {
-      "score": 0.604,
-      "mentions": 13
-    },
-    "noise": {
-      "score": 0.466,
-      "mentions": 5
-    },
-    "green_space": {
-      "score": 0.38,
-      "mentions": 10
-    },
-    "affordability": {
-      "score": 0.651,
-      "mentions": 13
+      "score": 0.19,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.767,
-      "mentions": 7
+      "score": 0.665,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.618,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.366,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.243,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.556,
+      "mentions": 68,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.403,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.342,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0547,
     "joy": 0.0886
   },
-  "narrative": "Reddit discussions about Gladesville are most positive about food and cafe (0.77) and affordability (0.65). Residents are most critical about noise (0.47) and green space (0.38). This analysis is based on 87 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Gladesville are most positive about food and cafe (0.67) and nightlife (0.62). Residents are most critical about transport (0.24) and safety (0.19). This analysis is based on 87 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Truck Hits Power Pole in Gladesville\nWas lucky to be able to crawl past after a couple of minutes. Saw cars in the opposite lane trying to three point turn against traffic.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gd2fif/rode_my_bike_from_the_city_to_the_north_shore/",
       "score": 107
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

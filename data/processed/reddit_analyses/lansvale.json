@@ -1,39 +1,63 @@
 {
   "suburb": "Lansvale",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:18.710196+00:00",
+  "fetched_at": "2026-04-29T23:41:06.695162+00:00",
   "aspects": {
-    "community": {
-      "score": 0.614,
-      "mentions": 4
-    },
     "safety": {
-      "score": 0.341,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0213,
     "joy": 0.0153
   },
-  "narrative": "Reddit discussions about Lansvale are most positive about community (0.61) and food and cafe (0.50). Residents are most critical about green space (0.50) and safety (0.34). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Lansvale are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about nightlife (0.50) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Did Sydney's rivers/creek freeze up back in the 1700s or were the European settlers exaggerating things?\nThis is describing Watkin Tench's expedition in July 1791. They were near Prospect Creek in wha",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bixei5/what_sydney_suburbs_have_taken_their_names_from/kvnspru/",
       "score": 11
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

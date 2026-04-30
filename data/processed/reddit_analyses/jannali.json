@@ -1,39 +1,63 @@
 {
   "suburb": "Jannali",
   "post_count": 7,
-  "fetched_at": "2026-04-18T02:19:20.150585+00:00",
+  "fetched_at": "2026-04-29T23:38:51.773464+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.44,
-      "mentions": 2
-    },
-    "community": {
-      "score": 0.487,
-      "mentions": 7
-    },
-    "nightlife": {
-      "score": 0.951,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.809,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.997,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.951,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.997,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0369,
     "joy": 0.0679
   },
-  "narrative": "Reddit discussions about Jannali are most positive about safety (1.00) and noise (1.00). Residents are most critical about community (0.49) and green space (0.44). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Jannali are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 7 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "There's a button shop in Newtown. Just sells buttons. Like, for sewing and clothes.\n\nThere's a place in Jannali which years ago was a super-creepy \"doll hospital\" but now is a more generic toy restora",
@@ -82,5 +106,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bmid07/are_these_the_most_soulless_buildings_in_sydney/kwg17b4/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.233,
+  "confidence_tier": "low"
 }

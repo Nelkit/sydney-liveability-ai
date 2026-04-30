@@ -1,39 +1,63 @@
 {
   "suburb": "North Balgowlah",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:12.090088+00:00",
+  "fetched_at": "2026-04-29T23:45:26.453140+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.5,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "sadness": 0.02,
     "anger": 0.0131
   },
-  "narrative": "Reddit discussions about North Balgowlah are most positive about community (0.50) and nightlife (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about North Balgowlah are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about nightlife (0.50) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Found cockatiel - Seaforth/Balgowlah/north Balgowlah area",
       "url": "https://reddit.com/r/sydney/comments/1cay84s/found_cockatiel_seaforthbalgowlahnorth_balgowlah/",
       "score": 16
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

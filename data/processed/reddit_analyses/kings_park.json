@@ -1,39 +1,63 @@
 {
   "suburb": "Kings Park",
   "post_count": 15,
-  "fetched_at": "2026-04-18T02:16:46.257794+00:00",
+  "fetched_at": "2026-04-29T23:39:17.777862+00:00",
   "aspects": {
-    "community": {
-      "score": 0.799,
-      "mentions": 14
-    },
-    "green_space": {
-      "score": 0.648,
-      "mentions": 10
-    },
-    "affordability": {
-      "score": 0.586,
-      "mentions": 2
-    },
     "safety": {
-      "score": 0.615,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.742,
-      "mentions": 4
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.714,
-      "mentions": 3
+      "score": 0.683,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.632,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.602,
-      "mentions": 2
+      "score": 0.438,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.723,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.601,
+      "mentions": 10,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.1215,
     "sadness": 0.0808
   },
-  "narrative": "Reddit discussions about Kings Park are most positive about community (0.80) and nightlife (0.74). Residents are most critical about affordability (0.59) and noise (0.50). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Kings Park are most positive about community (0.72) and food and cafe (0.68). Residents are most critical about green space (0.60) and transport (0.44). This analysis is based on 15 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "It never amazes me how much Sydneysiders redefine the location of their suburb.\nToday I encountered someone referring to their suburb of Annandale as “the Eastern Suburbs”. Not sure what they were aim",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aj64ov/how_is_the_west_now/kozg2d9/",
       "score": 7
     }
-  ]
+  ],
+  "confidence": 0.5,
+  "confidence_tier": "medium"
 }

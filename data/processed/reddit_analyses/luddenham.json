@@ -1,39 +1,63 @@
 {
   "suburb": "Luddenham",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:58.380314+00:00",
+  "fetched_at": "2026-04-29T23:42:16.677012+00:00",
   "aspects": {
-    "community": {
-      "score": 0.699,
-      "mentions": 3
-    },
-    "transport": {
-      "score": 0.721,
-      "mentions": 3
-    },
     "safety": {
-      "score": 0.69,
-      "mentions": 2
-    },
-    "affordability": {
-      "score": 0.309,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.526,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0182,
     "joy": 0.0216
   },
-  "narrative": "Reddit discussions about Luddenham are most positive about transport (0.72) and community (0.70). Residents are most critical about green space (0.50) and affordability (0.31). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Luddenham are most positive about transport (0.53) and green space (0.00). Residents are most critical about transport (0.53) and green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Will a third CBD be built around the new Western Sydney airport?\nIs there a plan to build another Parramatta like satellite CBD around Luddenham? \n\nIs this part of the aerotropolis?",
@@ -72,5 +96,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cwy33f/western_sydney_airport/l53tw1f/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Putney",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:22.547378+00:00",
+  "fetched_at": "2026-04-29T23:47:36.533964+00:00",
   "aspects": {
-    "transport": {
-      "score": 0.626,
-      "mentions": 3
-    },
-    "food_and_cafe": {
-      "score": 0.899,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.881,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.981,
-      "mentions": 2
-    },
-    "nightlife": {
-      "score": 0.983,
-      "mentions": 1
-    },
-    "noise": {
-      "score": 0.983,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.834,
-      "mentions": 2
-    },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "food_and_cafe": {
+      "score": 0.815,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.821,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.6,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.504,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.743,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.096,
     "fear": 0.0029
   },
-  "narrative": "Reddit discussions about Putney are most positive about nightlife (0.98) and noise (0.98). Residents are most critical about transport (0.63) and safety (0.50). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Putney are most positive about nightlife (0.82) and food and cafe (0.81). Residents are most critical about safety (0.50) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "You’ve cherry-picked some examples which basically point out that Sydney’s historical radial network transport corridors needs working on. It’s an argument for more investment in buses, not that buses",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1cd9su6/melrose_park/l1aqwq2/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

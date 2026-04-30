@@ -1,39 +1,63 @@
 {
   "suburb": "Bardwell Park",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:48.268602+00:00",
+  "fetched_at": "2026-04-29T23:28:06.496969+00:00",
   "aspects": {
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
     "food_and_cafe": {
-      "score": 0.974,
-      "mentions": 2
-    },
-    "community": {
-      "score": 0.899,
-      "mentions": 4
-    },
-    "affordability": {
-      "score": 0.975,
-      "mentions": 1
+      "score": 0.51,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.974,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.423,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.423,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.525,
-      "mentions": 3
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0524,
     "joy": 0.0104
   },
-  "narrative": "Reddit discussions about Bardwell Park are most positive about affordability (0.97) and food and cafe (0.97). Residents are most critical about transport (0.42) and safety (0.42). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bardwell Park are most positive about food and cafe (0.51) and green space (0.00). Residents are most critical about food and cafe (0.51) and green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Ethnic “segregation?”\nI’m not sure if that’s a right word, but I was wondering why so many suburbs in Sydney are divided so strongly ethnically? \n\nI just moved to arncliffe and it’s a great place to l",
@@ -72,5 +96,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d2826e/ethnic_segregation/l5zihca/",
       "score": 4
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

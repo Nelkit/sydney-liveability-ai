@@ -1,39 +1,63 @@
 {
   "suburb": "Wattle Grove",
   "post_count": 1,
-  "fetched_at": "2026-04-18T02:21:14.825945+00:00",
+  "fetched_at": "2026-04-29T23:53:21.160670+00:00",
   "aspects": {
-    "community": {
-      "score": 0.5,
-      "mentions": 1
-    },
     "safety": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,12 +69,14 @@
     "disgust": 0.0089,
     "joy": 0.0034
   },
-  "narrative": "Reddit discussions about Wattle Grove are most positive about community (0.50) and safety (0.50). Residents are most critical about noise (0.50) and green space (0.50). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Wattle Grove are most positive about safety (0.50) and food and cafe (0.50). Residents are most critical about food and cafe (0.50) and green space (0.00). This analysis is based on 1 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I particularly always see them just north of the orchard hills army base on the northern road. Have seen them around campbelltown and Narellan areas a bit too but more elusive there. I saw some in Wat",
       "url": "https://reddit.com/r/sydney/comments/1d02y38/where_can_we_see_wild_kangaroos_nearest_to_sydney/l5kk876/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.033,
+  "confidence_tier": "low"
 }

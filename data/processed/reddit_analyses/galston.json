@@ -1,39 +1,63 @@
 {
   "suburb": "Galston",
   "post_count": 12,
-  "fetched_at": "2026-04-18T02:17:41.294968+00:00",
+  "fetched_at": "2026-04-29T23:37:05.363274+00:00",
   "aspects": {
-    "community": {
-      "score": 0.579,
-      "mentions": 8
-    },
     "safety": {
-      "score": 0.429,
-      "mentions": 2
-    },
-    "noise": {
-      "score": 0.423,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.597,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.5,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.5,
-      "mentions": 1
+      "score": 0.123,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "neutral": 0.4173,
     "joy": 0.1406
   },
-  "narrative": "Reddit discussions about Galston are most positive about green space (0.60) and community (0.58). Residents are most critical about safety (0.43) and noise (0.42). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Galston are most positive about food and cafe (0.50) and transport (0.50). Residents are most critical about safety (0.12) and green space (0.00). This analysis is based on 12 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "TIL Galston was once the preferred second Sydney Airport site\nhttps://en.wikipedia.org/wiki/Second_Sydney_Airport\n\n*On 28 August 1973 the Minister for Transport Charlie Jones announced that Galston ha",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ct11iw/ive_got_a_car_and_half_a_day_to_kill_in_sydney/l48yfrm/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.4,
+  "confidence_tier": "medium"
 }

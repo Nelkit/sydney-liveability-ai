@@ -1,39 +1,63 @@
 {
   "suburb": "Padstow",
   "post_count": 19,
-  "fetched_at": "2026-04-18T02:15:41.366505+00:00",
+  "fetched_at": "2026-04-29T23:46:31.676806+00:00",
   "aspects": {
     "safety": {
-      "score": 0.582,
-      "mentions": 9
-    },
-    "community": {
-      "score": 0.657,
-      "mentions": 16
-    },
-    "nightlife": {
-      "score": 0.658,
-      "mentions": 2
-    },
-    "transport": {
-      "score": 0.575,
-      "mentions": 8
-    },
-    "affordability": {
-      "score": 0.533,
-      "mentions": 2
+      "score": 0.474,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.907,
-      "mentions": 1
+      "score": 0.822,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.5,
-      "mentions": 1
+    "nightlife": {
+      "score": 0.665,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.243,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.46,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0185,
     "disgust": 0.0519
   },
-  "narrative": "Reddit discussions about Padstow are most positive about food and cafe (0.91) and nightlife (0.66). Residents are most critical about green space (0.50) and noise (0.50). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Padstow are most positive about food and cafe (0.82) and nightlife (0.67). Residents are most critical about transport (0.24) and green space (0.00). This analysis is based on 19 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Look out!\nI couldn't take the best photos but yes, I can confirm it's out there (Location Padstow)",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c7mm3l/westconnex_speed_limit_increased_from_20_april/l09maor/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.633,
+  "confidence_tier": "medium"
 }

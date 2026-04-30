@@ -1,39 +1,63 @@
 {
   "suburb": "Brookvale",
   "post_count": 23,
-  "fetched_at": "2026-04-18T02:13:53.118099+00:00",
+  "fetched_at": "2026-04-29T23:30:01.219629+00:00",
   "aspects": {
-    "community": {
-      "score": 0.857,
-      "mentions": 21
-    },
-    "transport": {
-      "score": 0.861,
-      "mentions": 9
-    },
-    "noise": {
-      "score": 0.937,
-      "mentions": 2
-    },
     "safety": {
-      "score": 0.843,
-      "mentions": 6
-    },
-    "green_space": {
-      "score": 0.903,
-      "mentions": 3
-    },
-    "nightlife": {
-      "score": 0.933,
-      "mentions": 7
-    },
-    "affordability": {
-      "score": 0.906,
-      "mentions": 3
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.909,
-      "mentions": 6
+      "score": 0.544,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.743,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.68,
+      "mentions": 9,
+      "confidence": 0.9,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.1313,
     "disgust": 0.037
   },
-  "narrative": "Reddit discussions about Brookvale are most positive about noise (0.94) and nightlife (0.93). Residents are most critical about community (0.86) and safety (0.84). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Brookvale are most positive about nightlife (0.74) and transport (0.68). Residents are most critical about food and cafe (0.54) and green space (0.00). This analysis is based on 23 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "NSW Government Petition - Conduct a Feasibility Study for a Northern Beaches Metro Line\nDue to all of the issues we on the Northern Beaches experience with transport to the city and beyond, I've submi",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ahr7vn/eating_on_the_northern_beaches/koq0oms/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.767,
+  "confidence_tier": "high"
 }

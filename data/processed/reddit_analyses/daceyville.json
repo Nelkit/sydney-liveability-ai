@@ -1,39 +1,63 @@
 {
   "suburb": "Daceyville",
   "post_count": 5,
-  "fetched_at": "2026-04-18T02:19:52.558016+00:00",
+  "fetched_at": "2026-04-29T23:34:06.449055+00:00",
   "aspects": {
-    "community": {
-      "score": 0.708,
-      "mentions": 4
-    },
     "safety": {
-      "score": 0.914,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.914,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.914,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.864,
-      "mentions": 1
-    },
-    "affordability": {
-      "score": 0.657,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "affordability": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.33,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.752,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0095,
     "sadness": 0.0188
   },
-  "narrative": "Reddit discussions about Daceyville are most positive about safety (0.91) and green space (0.91). Residents are most critical about nightlife (0.50) and noise (0.50). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Daceyville are most positive about community (0.75) and transport (0.33). Residents are most critical about transport (0.33) and green space (0.00). This analysis is based on 5 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "It's a pretty strange geographical split when you think about it; Mascot to Daceyville is disconnected from the other side. \n\nThe councillors are a mixed bunch. A lot of hypocritical dead wood that ne",
@@ -72,5 +96,7 @@
       "url": "https://reddit.com/r/sydney/comments/1c7jaal/rant_hate_how_car_centric_this_city_is/l0a2ac1/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.167,
+  "confidence_tier": "low"
 }

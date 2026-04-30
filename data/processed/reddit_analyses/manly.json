@@ -1,39 +1,63 @@
 {
   "suburb": "Manly",
   "post_count": 351,
-  "fetched_at": "2026-04-18T01:22:35.421590+00:00",
+  "fetched_at": "2026-04-29T16:46:50.305049+00:00",
   "aspects": {
-    "community": {
-      "score": 0.69,
-      "mentions": 233
-    },
-    "nightlife": {
-      "score": 0.657,
-      "mentions": 92
-    },
-    "green_space": {
-      "score": 0.791,
-      "mentions": 67
-    },
-    "transport": {
-      "score": 0.574,
-      "mentions": 90
-    },
     "safety": {
-      "score": 0.414,
-      "mentions": 60
-    },
-    "affordability": {
-      "score": 0.84,
-      "mentions": 18
-    },
-    "noise": {
-      "score": 0.614,
-      "mentions": 20
+      "score": 0.292,
+      "mentions": 60,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.739,
-      "mentions": 53
+      "score": 0.683,
+      "mentions": 53,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.63,
+      "mentions": 92,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.631,
+      "mentions": 18,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.449,
+      "mentions": 90,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.649,
+      "mentions": 233,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": 0.371,
+      "mentions": 20,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "green_space": {
+      "score": 0.672,
+      "mentions": 67,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.175,
     "fear": 0.0943
   },
-  "narrative": "Reddit discussions about Manly are most positive about affordability (0.84) and green space (0.79). Residents are most critical about transport (0.57) and safety (0.41). This analysis is based on 351 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Manly are most positive about food and cafe (0.68) and green space (0.67). Residents are most critical about noise (0.37) and safety (0.29). This analysis is based on 351 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Some guy's hat fell off on the manly ferry and I incidentally took this photo\nAMA I guess. Gave him the photo after",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1plefja/a_big_echidna_at_fairfax_walk_manly_today/",
       "score": 428
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

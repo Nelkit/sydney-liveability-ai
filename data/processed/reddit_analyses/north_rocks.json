@@ -1,39 +1,63 @@
 {
   "suburb": "North Rocks",
   "post_count": 9,
-  "fetched_at": "2026-04-18T02:18:39.632098+00:00",
+  "fetched_at": "2026-04-29T23:45:40.184505+00:00",
   "aspects": {
-    "community": {
-      "score": 0.776,
-      "mentions": 5
-    },
-    "noise": {
-      "score": 0.646,
-      "mentions": 1
-    },
-    "transport": {
-      "score": 0.909,
-      "mentions": 1
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.909,
-      "mentions": 1
-    },
-    "safety": {
-      "score": 0.5,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0377,
     "joy": 0.0252
   },
-  "narrative": "Reddit discussions about North Rocks are most positive about transport (0.91) and food and cafe (0.91). Residents are most critical about affordability (0.50) and green space (0.50). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about North Rocks are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 9 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Anything on tomorrow morning north or north western suburbs through to Ryde? I can NOT do another bloody market!\nFriend and I usually meet at North Rocks market on Sunday but its boring as crap and wa",
@@ -92,5 +116,7 @@
       "url": "https://reddit.com/r/sydney/comments/1dtrxdc/sydney_daily_random_discussion_thread_03072024/lbehauj/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.3,
+  "confidence_tier": "low"
 }

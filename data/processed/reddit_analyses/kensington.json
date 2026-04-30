@@ -1,39 +1,63 @@
 {
   "suburb": "Kensington",
   "post_count": 4,
-  "fetched_at": "2026-04-18T02:20:17.632600+00:00",
+  "fetched_at": "2026-04-29T23:39:09.425623+00:00",
   "aspects": {
-    "community": {
-      "score": 0.376,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.289,
-      "mentions": 3
-    },
-    "green_space": {
-      "score": 0.891,
-      "mentions": 1
-    },
     "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.303,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "transport": {
       "score": 0.5,
-      "mentions": 0
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.394,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "fear": 0.0247,
     "joy": 0.0257
   },
-  "narrative": "Reddit discussions about Kensington are most positive about green space (0.89) and safety (0.50). Residents are most critical about community (0.38) and affordability (0.29). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Kensington are most positive about food and cafe (0.50) and nightlife (0.50). Residents are most critical about affordability (0.30) and green space (0.00). This analysis is based on 4 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "It's their home, their right to feel how they do about it. \n\nThere are suburbs getting shit developments of student towers instead of family apartments  - Kensington and Kingsford, that would want tho",
@@ -67,5 +91,7 @@
       "url": "https://reddit.com/r/sydney/comments/1djz93t/where_do_you_take_someone_for_their_second_visit/l9f3bv5/",
       "score": 5
     }
-  ]
+  ],
+  "confidence": 0.133,
+  "confidence_tier": "low"
 }

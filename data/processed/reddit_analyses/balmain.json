@@ -1,39 +1,63 @@
 {
   "suburb": "Balmain",
   "post_count": 171,
-  "fetched_at": "2026-04-18T01:35:23.922399+00:00",
+  "fetched_at": "2026-04-29T23:26:34.678939+00:00",
   "aspects": {
     "safety": {
-      "score": 0.486,
-      "mentions": 42
-    },
-    "transport": {
-      "score": 0.582,
-      "mentions": 42
-    },
-    "community": {
-      "score": 0.649,
-      "mentions": 124
-    },
-    "nightlife": {
-      "score": 0.655,
-      "mentions": 49
-    },
-    "noise": {
-      "score": 0.626,
-      "mentions": 10
+      "score": 0.281,
+      "mentions": 42,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.707,
-      "mentions": 23
+      "score": 0.717,
+      "mentions": 23,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
-    "green_space": {
-      "score": 0.428,
-      "mentions": 17
+    "nightlife": {
+      "score": 0.556,
+      "mentions": 49,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.553,
-      "mentions": 16
+      "score": 0.505,
+      "mentions": 16,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.502,
+      "mentions": 42,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.578,
+      "mentions": 124,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.564,
+      "mentions": 17,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0446,
     "joy": 0.0885
   },
-  "narrative": "Reddit discussions about Balmain are most positive about food and cafe (0.71) and nightlife (0.66). Residents are most critical about safety (0.49) and green space (0.43). This analysis is based on 171 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Balmain are most positive about food and cafe (0.72) and community (0.58). Residents are most critical about transport (0.50) and safety (0.28). This analysis is based on 171 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Imagine if the Sydney Harbour Bridge had looked like this…\nThis is one of the finalists in the mid-1920s design contest for the Sydney Harbour Bridge, and it arguably came closer than any of the more ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1gbfkaf/sailing_tonight/",
       "score": 116
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

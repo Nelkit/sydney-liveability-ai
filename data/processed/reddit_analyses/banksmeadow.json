@@ -1,39 +1,63 @@
 {
   "suburb": "Banksmeadow",
   "post_count": 2,
-  "fetched_at": "2026-04-18T02:20:50.934937+00:00",
+  "fetched_at": "2026-04-29T23:28:04.975504+00:00",
   "aspects": {
-    "community": {
-      "score": 0.536,
-      "mentions": 2
-    },
-    "green_space": {
-      "score": 0.536,
-      "mentions": 2
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.755,
-      "mentions": 1
-    },
-    "safety": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "transport": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.0046,
     "fear": 0.0027
   },
-  "narrative": "Reddit discussions about Banksmeadow are most positive about food and cafe (0.76) and community (0.54). Residents are most critical about transport (0.50) and noise (0.50). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Banksmeadow are most positive about green space (0.00). Residents are most critical about green space (0.00). This analysis is based on 2 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Botany, Port Botany, Banksmeadow and Bankstown are all named after the same person too!",
@@ -57,5 +81,7 @@
       "url": "https://reddit.com/r/sydney/comments/196ykf2/best_pizza_in_sydney/khxs0x1/",
       "score": 2
     }
-  ]
+  ],
+  "confidence": 0.067,
+  "confidence_tier": "low"
 }

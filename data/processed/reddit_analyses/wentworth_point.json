@@ -1,39 +1,63 @@
 {
   "suburb": "Wentworth Point",
   "post_count": 39,
-  "fetched_at": "2026-04-18T02:10:28.826707+00:00",
+  "fetched_at": "2026-04-29T23:53:42.932667+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.552,
-      "mentions": 13
-    },
-    "community": {
-      "score": 0.469,
-      "mentions": 27
-    },
     "safety": {
-      "score": 0.744,
-      "mentions": 8
-    },
-    "transport": {
-      "score": 0.614,
-      "mentions": 19
-    },
-    "noise": {
-      "score": 0.754,
-      "mentions": 3
-    },
-    "affordability": {
-      "score": 0.858,
-      "mentions": 6
-    },
-    "nightlife": {
-      "score": 0.961,
-      "mentions": 1
+      "score": 0.335,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.78,
-      "mentions": 6
+      "score": 0.851,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.899,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.824,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.536,
+      "mentions": 19,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.541,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.594,
+      "mentions": 13,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "anger": 0.0415,
     "disgust": 0.114
   },
-  "narrative": "Reddit discussions about Wentworth Point are most positive about nightlife (0.96) and affordability (0.86). Residents are most critical about green space (0.55) and community (0.47). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Wentworth Point are most positive about nightlife (0.90) and food and cafe (0.85). Residents are most critical about transport (0.54) and safety (0.34). This analysis is based on 39 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Sydney Olympic Park with Wentworth Point and Rhodes",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1d6raob/andrew_charlton_mp_2bn_funding_for_parramatta/l6uhif6/",
       "score": 26
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

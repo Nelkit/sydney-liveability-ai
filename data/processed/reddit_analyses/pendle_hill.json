@@ -1,39 +1,63 @@
 {
   "suburb": "Pendle Hill",
   "post_count": 14,
-  "fetched_at": "2026-04-18T02:17:08.474612+00:00",
+  "fetched_at": "2026-04-29T23:46:47.416154+00:00",
   "aspects": {
     "safety": {
-      "score": 0.332,
-      "mentions": 6
-    },
-    "community": {
-      "score": 0.438,
-      "mentions": 12
-    },
-    "transport": {
-      "score": 0.532,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.675,
-      "mentions": 2
+      "score": 0.079,
+      "mentions": 6,
+      "confidence": 0.6,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.056,
-      "mentions": 1
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "transport": {
+      "score": 0.347,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "green_space": {
-      "score": 0.5,
-      "mentions": 0
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "surprise": 0.1365,
     "joy": 0.0714
   },
-  "narrative": "Reddit discussions about Pendle Hill are most positive about noise (0.68) and transport (0.53). Residents are most critical about safety (0.33) and food and cafe (0.06). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Pendle Hill are most positive about transport (0.35) and safety (0.08). Residents are most critical about safety (0.08) and green space (0.00). This analysis is based on 14 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "When you park under the wrong tree at Pendle Hill Station",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1hl7ekh/retired_priest_caught_grooming_14yearold_boy/",
       "score": 9
     }
-  ]
+  ],
+  "confidence": 0.467,
+  "confidence_tier": "medium"
 }

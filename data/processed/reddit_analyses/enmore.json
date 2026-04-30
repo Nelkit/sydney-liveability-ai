@@ -1,39 +1,63 @@
 {
   "suburb": "Enmore",
   "post_count": 204,
-  "fetched_at": "2026-04-18T01:33:22.927379+00:00",
+  "fetched_at": "2026-04-29T16:59:35.191776+00:00",
   "aspects": {
+    "safety": {
+      "score": 0.375,
+      "mentions": 53,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
     "food_and_cafe": {
-      "score": 0.596,
-      "mentions": 50
+      "score": 0.574,
+      "mentions": 50,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.674,
-      "mentions": 111
-    },
-    "community": {
-      "score": 0.625,
-      "mentions": 173
-    },
-    "safety": {
-      "score": 0.653,
-      "mentions": 53
-    },
-    "transport": {
-      "score": 0.808,
-      "mentions": 36
+      "score": 0.617,
+      "mentions": 111,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
     },
     "affordability": {
-      "score": 0.659,
-      "mentions": 14
+      "score": 0.517,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.603,
+      "mentions": 36,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.553,
+      "mentions": 173,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "noise": {
-      "score": 0.503,
-      "mentions": 22
+      "score": 0.36,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "green_space": {
-      "score": 0.887,
-      "mentions": 24
+      "score": 0.739,
+      "mentions": 24,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "disgust": 0.078,
     "joy": 0.1206
   },
-  "narrative": "Reddit discussions about Enmore are most positive about green space (0.89) and transport (0.81). Residents are most critical about food and cafe (0.60) and noise (0.50). This analysis is based on 204 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Enmore are most positive about green space (0.74) and nightlife (0.62). Residents are most critical about safety (0.38) and noise (0.36). This analysis is based on 204 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "The Duke of Enmore, 9:34pm on a Tuesday\nI thought, naively I guess, that these kind of places would be full of people.\n\nThey said in their menus they have food until late, only to realise that a pizza",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1khk83m/enmore_theatre_seating/",
       "score": 158
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

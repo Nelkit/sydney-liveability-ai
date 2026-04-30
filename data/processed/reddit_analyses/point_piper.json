@@ -1,39 +1,63 @@
 {
   "suburb": "Point Piper",
   "post_count": 11,
-  "fetched_at": "2026-04-18T02:18:09.903775+00:00",
+  "fetched_at": "2026-04-29T23:47:06.889911+00:00",
   "aspects": {
-    "green_space": {
-      "score": 0.5,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.505,
-      "mentions": 9
-    },
-    "nightlife": {
-      "score": 0.592,
-      "mentions": 4
+    "safety": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "food_and_cafe": {
-      "score": 0.588,
-      "mentions": 2
+      "score": 0.485,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
     },
-    "transport": {
-      "score": 0.693,
-      "mentions": 3
+    "nightlife": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "affordability": {
-      "score": 0.506,
-      "mentions": 2
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
-    "safety": {
-      "score": 0.636,
-      "mentions": 2
+    "transport": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
     },
     "noise": {
-      "score": 0.5,
-      "mentions": 0
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.0874,
     "anger": 0.0784
   },
-  "narrative": "Reddit discussions about Point Piper are most positive about transport (0.69) and safety (0.64). Residents are most critical about green space (0.50) and noise (0.50). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Point Piper are most positive about food and cafe (0.48) and green space (0.00). Residents are most critical about food and cafe (0.48) and green space (0.00). This analysis is based on 11 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "People waiting for midnight\nAt Caffyn Park, Dover Heights.\n\nCame to Point Piper for some kayaking, and drove around looking for a playground and saw this.\n\nThat's dedication. At least it's overcast.",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1bf7a5x/inner_west_council_demerger_rejected/kv38ofa/",
       "score": 3
     }
-  ]
+  ],
+  "confidence": 0.367,
+  "confidence_tier": "low"
 }

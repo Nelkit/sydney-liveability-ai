@@ -1,39 +1,63 @@
 {
   "suburb": "Bondi Beach",
   "post_count": 89,
-  "fetched_at": "2026-04-18T01:59:23.537949+00:00",
+  "fetched_at": "2026-04-29T23:29:30.551957+00:00",
   "aspects": {
-    "community": {
-      "score": 0.403,
-      "mentions": 57
-    },
-    "transport": {
-      "score": 0.389,
-      "mentions": 28
-    },
     "safety": {
-      "score": 0.34,
-      "mentions": 27
-    },
-    "noise": {
-      "score": 0.36,
-      "mentions": 5
-    },
-    "nightlife": {
-      "score": 0.623,
-      "mentions": 22
-    },
-    "affordability": {
-      "score": 0.782,
-      "mentions": 3
-    },
-    "green_space": {
-      "score": 0.628,
-      "mentions": 8
+      "score": 0.438,
+      "mentions": 27,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.668,
-      "mentions": 8
+      "score": 0.755,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.536,
+      "mentions": 22,
+      "confidence": 1.0,
+      "coverage": "strong",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.492,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.319,
+      "mentions": 28,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.573,
+      "mentions": 57,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.662,
+      "mentions": 8,
+      "confidence": 0.8,
+      "coverage": "weak",
+      "source": "reddit"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0999,
     "disgust": 0.0501
   },
-  "narrative": "Reddit discussions about Bondi Beach are most positive about affordability (0.78) and food and cafe (0.67). Residents are most critical about noise (0.36) and safety (0.34). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Bondi Beach are most positive about food and cafe (0.76) and green space (0.66). Residents are most critical about safety (0.44) and transport (0.32). This analysis is based on 89 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "I just walked from Penrith to Bondi\nOn the 23rd January 2026 I walk from the Knapsack Viaduct Trailhead 86 kilometres to Bondi Beach. It started around 2:10am on Friday and finished roughly 1:50am on ",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ghscf0/your_options_for_late_night_grocery_shopping_in/",
       "score": 237
     }
-  ]
+  ],
+  "confidence": 1.0,
+  "confidence_tier": "high"
 }

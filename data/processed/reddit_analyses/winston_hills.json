@@ -1,39 +1,63 @@
 {
   "suburb": "Winston Hills",
   "post_count": 17,
-  "fetched_at": "2026-04-18T02:16:13.471276+00:00",
+  "fetched_at": "2026-04-29T23:54:31.655569+00:00",
   "aspects": {
-    "community": {
-      "score": 0.603,
-      "mentions": 14
-    },
-    "affordability": {
-      "score": 0.759,
-      "mentions": 4
+    "safety": {
+      "score": 0.424,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.735,
-      "mentions": 5
-    },
-    "safety": {
-      "score": 0.561,
-      "mentions": 5
-    },
-    "transport": {
-      "score": 0.421,
-      "mentions": 3
-    },
-    "noise": {
-      "score": 0.162,
-      "mentions": 1
-    },
-    "green_space": {
-      "score": 0.464,
-      "mentions": 4
+      "score": 0.468,
+      "mentions": 5,
+      "confidence": 0.5,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "nightlife": {
-      "score": 0.5,
-      "mentions": 1
+      "score": 0.54,
+      "mentions": 1,
+      "confidence": 0.1,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.223,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.847,
+      "mentions": 3,
+      "confidence": 0.3,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": 0.447,
+      "mentions": 14,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "joy": 0.1572,
     "disgust": 0.0801
   },
-  "narrative": "Reddit discussions about Winston Hills are most positive about affordability (0.76) and food and cafe (0.73). Residents are most critical about transport (0.42) and noise (0.16). This analysis is based on 17 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Winston Hills are most positive about transport (0.85) and nightlife (0.54). Residents are most critical about affordability (0.22) and green space (0.00). This analysis is based on 17 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "PSA: water outage\n\nBAULKHAM HILLS, WINSTON HILLS and NORTHMEAD\n\nOur crews are responding to a fault that is affecting water supply to customers in the area.  We will identify the issue and restore the",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1aowc8x/does_anybody_know_about_the_three_stores_boarded/kq2vplg/",
       "score": 6
     }
-  ]
+  ],
+  "confidence": 0.567,
+  "confidence_tier": "medium"
 }

@@ -1,39 +1,63 @@
 {
   "suburb": "Eastgardens",
   "post_count": 26,
-  "fetched_at": "2026-04-18T02:13:06.680448+00:00",
+  "fetched_at": "2026-04-29T23:35:48.545439+00:00",
   "aspects": {
     "safety": {
-      "score": 0.124,
-      "mentions": 7
-    },
-    "noise": {
-      "score": 0.011,
-      "mentions": 3
-    },
-    "community": {
-      "score": 0.045,
-      "mentions": 17
-    },
-    "nightlife": {
-      "score": 0.01,
-      "mentions": 4
-    },
-    "green_space": {
-      "score": 0.42,
-      "mentions": 7
-    },
-    "affordability": {
-      "score": 0.275,
-      "mentions": 4
-    },
-    "transport": {
-      "score": 0.35,
-      "mentions": 15
+      "score": 0.168,
+      "mentions": 7,
+      "confidence": 0.7,
+      "coverage": "weak",
+      "source": "reddit"
     },
     "food_and_cafe": {
-      "score": 0.849,
-      "mentions": 2
+      "score": 0.599,
+      "mentions": 2,
+      "confidence": 0.2,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "nightlife": {
+      "score": 0.1,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "affordability": {
+      "score": 0.044,
+      "mentions": 4,
+      "confidence": 0.4,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "transport": {
+      "score": 0.276,
+      "mentions": 15,
+      "confidence": 1.0,
+      "coverage": "weak",
+      "source": "reddit"
+    },
+    "community": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "noise": {
+      "score": null,
+      "mentions": 0,
+      "confidence": 0.0,
+      "coverage": "none",
+      "source": "none"
+    },
+    "green_space": {
+      "score": 0.0,
+      "mentions": 0,
+      "confidence": 0.6,
+      "coverage": "strong",
+      "source": "osm"
     }
   },
   "emotions": {
@@ -45,7 +69,7 @@
     "sadness": 0.0938,
     "joy": 0.0102
   },
-  "narrative": "Reddit discussions about Eastgardens are most positive about food and cafe (0.85) and green space (0.42). Residents are most critical about noise (0.01) and nightlife (0.01). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
+  "narrative": "Reddit discussions about Eastgardens are most positive about food and cafe (0.60) and transport (0.28). Residents are most critical about affordability (0.04) and green space (0.00). This analysis is based on 26 posts and comments. The dominant emotion in community discussions is neutral.",
   "sources": [
     {
       "text": "Teenagers around Eastgardens are ASSAULTING Asian students — and getting away with it\nEnough is enough.\n\nIn the past few days, Chinese social media has been flooded with videos and posts of Asian stud",
@@ -97,5 +121,7 @@
       "url": "https://reddit.com/r/sydney/comments/1ce5m47/new_future_metro_plans_map_including_airport/l1gj4ab/",
       "score": 20
     }
-  ]
+  ],
+  "confidence": 0.867,
+  "confidence_tier": "high"
 }
