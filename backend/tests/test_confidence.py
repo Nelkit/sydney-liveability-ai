@@ -8,7 +8,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from core.nlp.confidence import (
+    MODALITY_CONFIDENCE,
     compute_confidence,
+    compute_per_dimension_confidence,
     confidence_tier,
     shrink_aspects,
 )
@@ -93,3 +95,39 @@ def test_shrink_preserves_extra_entry_fields():
     out = shrink_aspects(raw, confidence=0.5)
     assert out["safety"]["notes"] == "anything"
     assert out["safety"]["mentions"] == 5
+
+
+def test_per_dimension_confidence_saturates_at_10():
+    assert compute_per_dimension_confidence(10) == 1.0
+
+
+def test_per_dimension_confidence_above_10_stays_saturated():
+    assert compute_per_dimension_confidence(42) == 1.0
+
+
+def test_per_dimension_confidence_partial():
+    assert compute_per_dimension_confidence(4) == 0.4
+
+
+def test_per_dimension_confidence_zero():
+    assert compute_per_dimension_confidence(0) == 0.0
+
+
+def test_per_dimension_confidence_negative_treated_as_zero():
+    assert compute_per_dimension_confidence(-3) == 0.0
+
+
+def test_modality_confidence_bocsar():
+    assert MODALITY_CONFIDENCE["bocsar"] == 0.7
+
+
+def test_modality_confidence_osm():
+    assert MODALITY_CONFIDENCE["osm"] == 0.6
+
+
+def test_modality_confidence_arcgis():
+    assert MODALITY_CONFIDENCE["arcgis"] == 0.5
+
+
+def test_modality_confidence_none():
+    assert MODALITY_CONFIDENCE["none"] == 0.0

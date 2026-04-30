@@ -1,13 +1,27 @@
-"""Single-signal confidence scoring and aspect-score shrinkage."""
+"""Confidence scoring (global + per-dimension) and aspect-score shrinkage."""
 
 from __future__ import annotations
 
 from typing import Literal
 
 FULL_CONFIDENCE_THRESHOLD = 30
+PER_DIMENSION_FULL_CONFIDENCE_THRESHOLD = 10
 NEUTRAL_SCORE = 0.5
 
 ConfidenceTier = Literal["high", "medium", "low"]
+
+# Fixed confidence per cross-modal data source. Used when an aspect is
+# scored from a fallback handler rather than Reddit. The values reflect
+# how directly each modality measures lived experience: BOCSAR is closest
+# (real reported events), OSM POI counts and ArcGIS proxies progressively
+# further. See design.md §4 for rationale.
+MODALITY_CONFIDENCE: dict[str, float] = {
+    "reddit": 1.0,  # mention-based — actual value computed per-dim
+    "bocsar": 0.7,
+    "osm": 0.6,
+    "arcgis": 0.5,
+    "none": 0.0,
+}
 
 
 def compute_confidence(post_count: int) -> float:
@@ -18,6 +32,17 @@ def compute_confidence(post_count: int) -> float:
     if post_count <= 0:
         return 0.0
     return min(1.0, post_count / FULL_CONFIDENCE_THRESHOLD)
+
+
+def compute_per_dimension_confidence(mentions: int) -> float:
+    """Per-dimension confidence in [0, 1] derived from mention count.
+
+    Reaches 1.0 at PER_DIMENSION_FULL_CONFIDENCE_THRESHOLD mentions for the
+    dimension. Mirrors compute_confidence's idiom at a finer grain.
+    """
+    if mentions <= 0:
+        return 0.0
+    return min(1.0, mentions / PER_DIMENSION_FULL_CONFIDENCE_THRESHOLD)
 
 
 def confidence_tier(confidence: float) -> ConfidenceTier:
