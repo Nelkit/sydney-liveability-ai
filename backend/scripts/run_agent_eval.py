@@ -283,7 +283,13 @@ def main(argv: list[str] | None = None) -> int:
             agreement_count += 1
 
         verdict_label = "grounded" if verdict["retrieval_grounded"] else "ungrounded"
-        print(f"[{prompt_id}] {verdict_label} — {verdict['reason'][:100]}")
+        # Some judge models return non-ASCII punctuation (em dashes, etc.) that
+        # Windows' default cp1252 stdout can't encode. Strip non-encodable chars
+        # from the progress line; the full reason is preserved in the CSV.
+        safe_reason = verdict["reason"][:100].encode(
+            sys.stdout.encoding or "utf-8", errors="replace"
+        ).decode(sys.stdout.encoding or "utf-8", errors="replace")
+        print(f"[{prompt_id}] {verdict_label} - {safe_reason}")
 
     with args.output.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=CSV_COLUMNS)
