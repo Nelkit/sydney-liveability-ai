@@ -1,11 +1,16 @@
 import { ImportanceOption, Suburb, WeightKey } from "./types";
 
 export const importanceOptions: ImportanceOption[] = [
-  { key: "veryImportant", label: "Very important", value: 90 },
-  { key: "important", label: "Important", value: 75 },
-  { key: "neutral", label: "Neutral", value: 50 },
-  { key: "notVeryImportant", label: "Not very important", value: 25 },
-  { key: "notInterested", label: "Not interested", value: 5 }
+  { key: "1",  label: "1",  value: 5  },
+  { key: "2",  label: "2",  value: 16 },
+  { key: "3",  label: "3",  value: 27 },
+  { key: "4",  label: "4",  value: 38 },
+  { key: "5",  label: "5",  value: 50 },
+  { key: "6",  label: "6",  value: 61 },
+  { key: "7",  label: "7",  value: 72 },
+  { key: "8",  label: "8",  value: 80 },
+  { key: "9",  label: "9",  value: 90 },
+  { key: "10", label: "10", value: 100 },
 ];
 
 export const weightPrompts: { key: WeightKey; label: string; prompt: string }[] = [

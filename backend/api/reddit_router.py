@@ -1,8 +1,7 @@
-"""Reddit analysis API endpoint with local data and optional Supabase caching."""
+"""Reddit analysis API endpoint — reads structured data from PostgreSQL."""
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 import sys
@@ -10,6 +9,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from fastapi import APIRouter
+from sqlalchemy import select
 
 # Ensure repo-root packages (e.g., data_extraction) are importable when
 # backend is started from backend/ as the working directory.
@@ -17,12 +17,14 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+from db.models import EmotionProfile, SentimentScore, SuburbNarrative
+from db.postgres import SessionLocal
+
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api/reddit", tags=["reddit"])
 
 CACHE_TTL_HOURS = 24
-LOCAL_ANALYSIS_CACHE = REPO_ROOT / "data" / "processed" / "reddit_analyses"
 REDDIT_PROCESSED_DIR = REPO_ROOT / "data" / "processed" / "reddit"
 
 
@@ -103,33 +105,128 @@ def _cache_write(supabase, analysis: dict) -> None:
         logger.warning("Cache write failed, result not cached")
 
 
-def _local_cache_path(suburb: str) -> Path:
-    slug = suburb.lower().replace(" ", "_").replace("-", "_")
-    return LOCAL_ANALYSIS_CACHE / f"{slug}.json"
-
-
-def _local_cache_lookup(suburb: str) -> dict | None:
-    """Check local file cache for a pre-computed NLP analysis."""
-    path = _local_cache_path(suburb)
-    if not path.exists():
-        return None
+def _pg_lookup(suburb: str) -> dict | None:
+    """Read structured sentiment analysis for a suburb from PostgreSQL."""
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+        with SessionLocal() as session:
+            emotion = session.get(EmotionProfile, suburb)
+            if emotion is None:
+                return None
+            aspect_rows = session.scalars(
+                select(SentimentScore).where(SentimentScore.suburb == suburb)
+            ).all()
+            narrative_row = session.get(SuburbNarrative, suburb)
+
+        return {
+            "suburb": suburb,
+            "post_count": emotion.post_count,
+            "fetched_at": emotion.fetched_at.isoformat() if emotion.fetched_at else None,
+            "aspects": {
+                row.aspect: {
+                    "score": row.score,
+                    "mentions": row.mentions,
+                    "confidence": row.confidence,
+                    "coverage": row.coverage,
+                    "source": row.source,
+                }
+                for row in aspect_rows
+            },
+            "emotions": {
+                "joy": emotion.joy,
+                "surprise": emotion.surprise,
+                "neutral": emotion.neutral,
+                "sadness": emotion.sadness,
+                "anger": emotion.anger,
+                "fear": emotion.fear,
+                "disgust": emotion.disgust,
+            },
+            "narrative": narrative_row.narrative if narrative_row else None,
+            "sources": narrative_row.sources if narrative_row else [],
+            "confidence": emotion.confidence,
+            "confidence_tier": emotion.confidence_tier,
+        }
     except Exception:
-        logger.warning("Local cache read failed for %s", suburb)
+        logger.warning("PostgreSQL lookup failed for %s", suburb)
         return None
 
 
-def _local_cache_write(suburb: str, analysis: dict) -> None:
-    """Write NLP analysis to local file cache."""
+def _pg_write(analysis: dict) -> None:
+    """Upsert a freshly-computed analysis into PostgreSQL."""
+    from sqlalchemy.dialects.postgresql import insert as pg_insert
+
+    suburb = analysis.get("suburb")
+    if not suburb:
+        return
     try:
-        LOCAL_ANALYSIS_CACHE.mkdir(parents=True, exist_ok=True)
-        path = _local_cache_path(suburb)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(analysis, f, indent=2, ensure_ascii=False)
+        aspects = analysis.get("aspects") or {}
+        emotions = analysis.get("emotions") or {}
+
+        aspect_rows = [
+            {
+                "suburb": suburb,
+                "aspect": aspect_name,
+                "score": entry.get("score"),
+                "mentions": entry.get("mentions"),
+                "confidence": entry.get("confidence"),
+                "coverage": entry.get("coverage"),
+                "source": entry.get("source"),
+            }
+            for aspect_name, entry in aspects.items()
+            if isinstance(entry, dict)
+        ]
+
+        fetched_raw = analysis.get("fetched_at")
+        fetched_at: datetime | None = None
+        if fetched_raw:
+            try:
+                fetched_at = datetime.fromisoformat(fetched_raw).replace(tzinfo=None)
+            except (ValueError, TypeError):
+                pass
+
+        emotion_row = {
+            "suburb": suburb,
+            "joy": emotions.get("joy"),
+            "surprise": emotions.get("surprise"),
+            "neutral": emotions.get("neutral"),
+            "sadness": emotions.get("sadness"),
+            "anger": emotions.get("anger"),
+            "fear": emotions.get("fear"),
+            "disgust": emotions.get("disgust"),
+            "post_count": analysis.get("post_count"),
+            "fetched_at": fetched_at,
+            "confidence": analysis.get("confidence"),
+            "confidence_tier": analysis.get("confidence_tier"),
+        }
+
+        narrative_row = {
+            "suburb": suburb,
+            "narrative": analysis.get("narrative"),
+            "sources": analysis.get("sources"),
+        }
+
+        with SessionLocal() as session:
+            if aspect_rows:
+                stmt = pg_insert(SentimentScore.__table__).values(aspect_rows)
+                session.execute(stmt.on_conflict_do_update(
+                    index_elements=["suburb", "aspect"],
+                    set_={c: stmt.excluded[c] for c in ["score", "mentions", "confidence", "coverage", "source"]},
+                ))
+            stmt = pg_insert(EmotionProfile.__table__).values([emotion_row])
+            session.execute(stmt.on_conflict_do_update(
+                index_elements=["suburb"],
+                set_={c: stmt.excluded[c] for c in [
+                    "joy", "surprise", "neutral", "sadness", "anger", "fear", "disgust",
+                    "post_count", "fetched_at", "confidence", "confidence_tier",
+                ]},
+            ))
+            stmt = pg_insert(SuburbNarrative.__table__).values([narrative_row])
+            session.execute(stmt.on_conflict_do_update(
+                index_elements=["suburb"],
+                set_={c: stmt.excluded[c] for c in ["narrative", "sources"]},
+            ))
+            session.commit()
     except Exception:
-        logger.warning("Local cache write failed for %s", suburb)
+        logger.warning("PostgreSQL write failed for %s", suburb)
 
 
 @router.get("/suburbs")
@@ -171,7 +268,7 @@ def summary() -> dict:
 
     rows: list[dict] = []
     for suburb in suburbs:
-        cached = _local_cache_lookup(suburb)
+        cached = _pg_lookup(suburb)
         if cached is not None:
             aspects = cached.get("aspects", {}) or {}
             # Composite score = mean over dims with a non-null score (Reddit-
@@ -247,19 +344,19 @@ def analyse_suburb_endpoint(suburb: str) -> dict:
     """
     normalised = _normalise_suburb(suburb)
 
-    # 1. Check local file cache (static data = permanent cache)
-    local_cached = _local_cache_lookup(normalised)
-    if local_cached is not None:
-        return local_cached
+    # 1. Check PostgreSQL (primary source of truth)
+    pg_cached = _pg_lookup(normalised)
+    if pg_cached is not None:
+        return pg_cached
 
     # 2. Check Supabase cache
     supabase = _get_supabase()
     cached = _cache_lookup(supabase, normalised)
     if cached is not None:
-        _local_cache_write(normalised, cached)
+        _pg_write(cached)
         return cached
 
-    # 3. Cache miss: load from pre-processed local data
+    # 3. Cache miss: load from pre-processed local data and run NLP pipeline
     from data_extraction.extract_reddit import load_suburb_posts
     from core.nlp.pipeline import analyse_suburb
 
@@ -267,8 +364,8 @@ def analyse_suburb_endpoint(suburb: str) -> dict:
     result = analyse_suburb(normalised, posts)
     response = result.to_dict()
 
-    # Cache the result locally and in Supabase
-    _local_cache_write(normalised, response)
+    # Persist result to PostgreSQL and optional Supabase
+    _pg_write(response)
     _cache_write(supabase, response)
 
     return response

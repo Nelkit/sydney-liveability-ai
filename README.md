@@ -11,6 +11,7 @@ An AI-assisted, map-based web application to compare Sydney suburbs using civic 
 - [🗂️ Repository Structure](#-repository-structure)
 - [🛠️ Tech Stack](#-tech-stack)
 - [🚀 Getting Started](#-getting-started)
+- [🧮 Scoring Formula](#scoring-formula)
 - [🤖 Skills Usage](#-skills-usage)
 - [🐞 VS Code Launch Profiles](#-vs-code-launch-profiles)
 - [🧪 SYNTHESIS_DEBUG_MODE](#-synthesis_debug_mode)
@@ -142,6 +143,51 @@ VS Code option:
 3. Select kernel from `notebooks/venv-notebooks`.
 
 Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into the backend `venv`.
+
+## Scoring Formula
+
+The liveability score is computed in [`backend/core/scoring.py`](backend/core/scoring.py) and used by both the `/api/civic` map endpoint and the chat synthesiser agent.
+
+### Step 1 — `gis_combined` (infrastructure index)
+
+A weighted composite of four GIS/transport components, all clamped to `[0.0, 1.0]`:
+
+| Component | Source table | Weight |
+| --- | --- | --- |
+| `transport_score` | `transport_scores` | 0.50 |
+| `walkability_score` | `suburbs` | 0.20 |
+| `facilities_score` | `suburbs` | 0.15 |
+| `osm_score` | `osm_scores` | 0.15 |
+
+Values greater than `1.0` are divided by `100`. `None` defaults to `0.0`.
+
+### Step 2 — Dimension scores
+
+| Dimension | Primary source | Fallback chain |
+| --- | --- | --- |
+| `safety` | `bocsar` crime counts (most recent year) | Inverse-normalised across all suburbs → `0.5` |
+| `transport` | `gis_combined` (Step 1) | — |
+| `lifestyle` | `sentiment_scores` aspect `community` | → `lifestyle` → `facilities_score` |
+| `nightlife` | `sentiment_scores` aspect `nightlife` | → `community` → `facilities_score` |
+| `affordability` | `sentiment_scores` aspect `affordability` | → `0.5` |
+
+### Step 3 — Final liveability score (user-weighted)
+
+```text
+liveability = (safety        × w_safety)
+            + (gis_combined  × w_transport)
+            + (lifestyle     × w_lifestyle)
+            + (affordability × w_affordability)
+            + (nightlife     × w_nightlife)
+```
+
+Weights come from the user's onboarding profile. Defaults: `safety = transport = lifestyle = affordability = 0.25`, `nightlife = 0.0`.
+
+### Data sources
+
+`suburbs` · `transport_scores` · `osm_scores` · `sentiment_scores` · `bocsar`
+
+---
 
 ## 🤖 Skills Usage
 

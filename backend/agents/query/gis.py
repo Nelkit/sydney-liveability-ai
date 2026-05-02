@@ -77,6 +77,7 @@ def _query_gis_impl(suburb: str, question: str = "") -> dict[str, Any]:
         "libraries_count": suburb_row.libraries_count if suburb_row else None,
         "mobility_parking_count": suburb_row.mobility_parking_count if suburb_row else None,
         "sports_facilities_count": suburb_row.sports_facilities_count if suburb_row else None,
+        "walkability_score": suburb_row.walkability_score if suburb_row else None,
         "total_facilities": suburb_row.total_facilities if suburb_row else None,
         "facilities_score": suburb_row.facilities_score if suburb_row else None,
     }
