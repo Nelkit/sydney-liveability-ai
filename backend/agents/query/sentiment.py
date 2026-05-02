@@ -11,18 +11,21 @@ LLM owns the strategy. This implements the "full ARAG" pattern in the
 sense of Du et al. (2026): autonomous strategy, iterative execution,
 interleaved tool use.
 
-`evidence_trace` is preserved as an empty list in the output dict so
-the synthesiser, the `/api/chat` quality field, and existing tests
-keep their shape; the synthesiser already handles an empty trace by
-omitting the trace block from its prompt.
+`evidence_trace` is recovered as a side channel: each tool wrapper
+appends a TraceEntry to a per-call ContextVar, and the impl drains
+it after the agent stops. The trace mirrors what the agent actually
+called, not what an orchestrator decided in advance, so it is an
+audit surface rather than a constraint.
 
 Owner: Kai (Ying-Kai Liao)
 """
 
 from __future__ import annotations
 
+import contextvars
 import json
 import re
+import time
 from typing import Any, Optional
 
 from crewai import Agent, Crew, Process, Task
@@ -33,6 +36,54 @@ from core.agent import tools as agent_tools
 
 POSITIVE_THRESHOLD = 0.65
 NEGATIVE_THRESHOLD = 0.45
+
+# Per-call trace accumulator. Set to a fresh list at the start of
+# `_query_sentiment_impl`; the tool wrappers append a TraceEntry on
+# every invocation. Exposing this as a side channel lets us recover
+# the audit surface without re-imposing a deterministic loop on the
+# agent.
+_TRACE_CTX: contextvars.ContextVar[Optional[list[dict[str, Any]]]] = contextvars.ContextVar(
+    "sentiment_trace_ctx", default=None
+)
+
+
+def _result_preview(tool_name: str, result: dict[str, Any]) -> tuple[int, str]:
+    if tool_name == "search_posts" and result.get("status") == "ok":
+        results = result.get("results") or []
+        first_text = (results[0].get("text") if results else "") or ""
+        return len(results), first_text[:200]
+    if result.get("status") == "no_data":
+        return 0, str(result.get("reason") or "no_data")
+    if result.get("status") == "ok":
+        preview = json.dumps(
+            {k: v for k, v in result.items() if k not in {"results"}},
+            default=str,
+        )
+        return 1, preview[:200]
+    return 0, str(result.get("reason") or result.get("status") or "error")
+
+
+def _record_call(
+    tool_name: str,
+    arguments: dict[str, Any],
+    result: dict[str, Any],
+    elapsed_ms: float,
+) -> None:
+    trace = _TRACE_CTX.get()
+    if trace is None:
+        return
+    count, preview = _result_preview(tool_name, result)
+    trace.append(
+        {
+            "step": len(trace) + 1,
+            "tool": tool_name,
+            "arguments": arguments,
+            "reasoning": "",
+            "result_count": count,
+            "result_preview": preview,
+            "elapsed_ms": round(elapsed_ms, 2),
+        }
+    )
 
 LIVEABILITY_DIMENSIONS = [
     "safety",
@@ -55,7 +106,16 @@ def _get_suburb_aspect_tool(suburb: str, dimension: str) -> dict[str, Any]:
     structured signals before deciding whether to also call
     search_posts.
     """
-    return agent_tools.get_suburb_aspect(suburb=suburb, dimension=dimension)
+    started = time.perf_counter()
+    result = agent_tools.get_suburb_aspect(suburb=suburb, dimension=dimension)
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "get_suburb_aspect",
+        {"suburb": suburb, "dimension": dimension},
+        result,
+        elapsed,
+    )
+    return result
 
 
 @tool("search_posts")
@@ -72,12 +132,21 @@ def _search_posts_tool(
     all dimensions. Use this to pull grounded quotes that support a
     claim about resident sentiment.
     """
-    return agent_tools.search_posts(
+    started = time.perf_counter()
+    result = agent_tools.search_posts(
         suburb=suburb,
         dimension=dimension or None,
         query=query,
         k=k,
     )
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "search_posts",
+        {"suburb": suburb, "dimension": dimension, "query": query, "k": k},
+        result,
+        elapsed,
+    )
+    return result
 
 
 @tool("compare_suburbs")
@@ -88,7 +157,16 @@ def _compare_suburbs_tool(suburbs: list[str], dimension: str) -> dict[str, Any]:
     into a `dropped` list. Use this only for explicit comparison
     questions, not as a substitute for global ranking.
     """
-    return agent_tools.compare_suburbs(suburbs=suburbs, dimension=dimension)
+    started = time.perf_counter()
+    result = agent_tools.compare_suburbs(suburbs=suburbs, dimension=dimension)
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "compare_suburbs",
+        {"suburbs": suburbs, "dimension": dimension},
+        result,
+        elapsed,
+    )
+    return result
 
 
 sentiment_agent = Agent(
@@ -133,6 +211,8 @@ Tools available (you call them by name; the framework wires the arguments):
 - get_suburb_aspect(suburb, dimension)
 - search_posts(suburb, query, dimension, k)
 - compare_suburbs(suburbs, dimension)
+
+Grounding rule. If the question is qualitative ("what's X like", "how is X", "is X good", "are residents happy with X"), call search_posts at least once on the relevant dimension to back the answer with actual resident quotes. If the question is purely a score lookup ("what is the safety score for X"), get_suburb_aspect alone is fine. If get_suburb_aspect returns status="no_data" for the asked dimension, do not call search_posts on that dimension — the no_data short-circuit already tells you Reddit has no signal there.
 
 When you are done, output ONLY a single JSON object with this exact shape — no prose, no markdown fences, no commentary:
 
@@ -225,10 +305,15 @@ def _query_sentiment_impl(
         verbose=False,
     )
 
+    trace: list[dict[str, Any]] = []
+    token = _TRACE_CTX.set(trace)
     try:
-        crew_output = crew.kickoff()
-    except Exception as exc:
-        return _no_data_response(suburb, reason=f"agent execution failed: {exc}")
+        try:
+            crew_output = crew.kickoff()
+        except Exception as exc:
+            return _no_data_response(suburb, reason=f"agent execution failed: {exc}")
+    finally:
+        _TRACE_CTX.reset(token)
 
     raw = getattr(crew_output, "raw", None) or str(crew_output or "")
     parsed = _parse_agent_json(raw)
@@ -260,7 +345,7 @@ def _query_sentiment_impl(
         "aspects": aspects,
         "emotions": emotions,
         "overall": _overall_label(aspects),
-        "evidence_trace": [],
+        "evidence_trace": trace,
         "sources": sources,
     }
 
