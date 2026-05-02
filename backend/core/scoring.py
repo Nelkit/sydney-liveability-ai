@@ -110,10 +110,12 @@ def compute_liveability_scores(
         facilities_component = _clamp_unit(row.facilities_score)
         osm_component = _clamp_unit(osm_row.osm_score if osm_row else None)
         transport_component = _clamp_unit(transport_row.transport_score if transport_row else None)
+        walkability_component = _clamp_unit(row.walkability_score)
         gis_combined = (
-            (facilities_component * 0.20)
-            + (osm_component * 0.20)
-            + (transport_component * 0.60)
+            (transport_component * 0.50)
+            + (walkability_component * 0.20)
+            + (facilities_component * 0.15)
+            + (osm_component * 0.15)
         )
 
         lifestyle_score = _clamp_unit(

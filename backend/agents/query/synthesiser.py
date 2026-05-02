@@ -169,7 +169,6 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                 "name": suburb.suburb,
                 "facilities_score": suburb.facilities_score,
                 "walkability_score": suburb.walkability_score,
-                "liveability_score": None,
                 "total_facilities": suburb.total_facilities,
                 "libraries": suburb.libraries_count,
                 "car_share_bays": suburb.car_share_bays_count,

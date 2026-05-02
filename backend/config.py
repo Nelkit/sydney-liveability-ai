@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     openrouter_api_key: str = ""
     anthropic_api_key: str = ""
     openai_api_key: str = ""
+    walkscore_api_key: str = ""
     database_url: str = ""
     chromadb_path: str = "./data/chromadb"
     frontend_url: str = "http://localhost:3000"
