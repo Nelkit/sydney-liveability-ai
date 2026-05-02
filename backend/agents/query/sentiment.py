@@ -1,50 +1,257 @@
-"""Sentiment specialist for aspect and emotion signals.
+"""Sentiment specialist — full agentic RAG (A-RAG style).
 
-Inputs: suburb name, optional aspect filter, optional question (for
-question-driven retrieval).
-Outputs: aspect scores (with explicit nulls), emotion profile, overall
-sentiment label, an `evidence_trace` of tool calls, and a `sources`
-list of grounded quotes for the synthesiser.
+Inputs: suburb name, optional aspect hint, optional question.
+Outputs: aspects (only those the agent queried), emotion profile,
+overall sentiment label, and a `sources` list of grounded quotes.
+
+The agent has direct access to three retrieval tools and decides
+adaptively which to call, in what order, and when to stop. There is
+no deterministic dimension fan-out and no question-call ceiling — the
+LLM owns the strategy. This implements the "full ARAG" pattern in the
+sense of Du et al. (2026): autonomous strategy, iterative execution,
+interleaved tool use.
+
+`evidence_trace` is recovered as a side channel: each tool wrapper
+appends a TraceEntry to a per-call ContextVar, and the impl drains
+it after the agent stops. The trace mirrors what the agent actually
+called, not what an orchestrator decided in advance, so it is an
+audit surface rather than a constraint.
 
 Owner: Kai (Ying-Kai Liao)
-
-Implementation note. The original `add-agentic-rag-synthesiser` design
-called for a LangGraph-style ReAct loop bounded to 5 tool calls per
-turn. This repo uses CrewAI; the equivalent contract is implemented
-here as a deterministic mini-pipeline over the new tool registry
-(`backend/core/agent/tools.py`). The trace shape is identical
-(`step, tool, arguments, reasoning, result_count, result_preview,
-elapsed_ms`) so the synthesiser and report figures are unchanged.
 """
 
 from __future__ import annotations
 
+import contextvars
 import json
+import re
 import time
 from typing import Any, Optional
 
-from crewai import Agent, Task
+from crewai import Agent, Crew, Process, Task
 from crewai.tools import tool
 
 from config import get_agent_llm
 from core.agent import tools as agent_tools
-from core.nlp.aspects import ASPECT_TAXONOMY
 
 POSITIVE_THRESHOLD = 0.65
 NEGATIVE_THRESHOLD = 0.45
 
-# Mirror the design's per-turn budget. Counted against question-driven
-# calls only (search_posts and deliberate dimension routing). The bulk
-# structured-aspect normalisation runs unbounded — it's a deterministic
-# fan-out across the eight liveability dimensions, not a ReAct decision.
-MAX_QUESTION_CALLS = 5
+# Per-call trace accumulator. Set to a fresh list at the start of
+# `_query_sentiment_impl`; the tool wrappers append a TraceEntry on
+# every invocation. Exposing this as a side channel lets us recover
+# the audit surface without re-imposing a deterministic loop on the
+# agent.
+_TRACE_CTX: contextvars.ContextVar[Optional[list[dict[str, Any]]]] = contextvars.ContextVar(
+    "sentiment_trace_ctx", default=None
+)
 
 
-def _overall_label(aspect_scores: list[float]) -> str:
-    """Map the mean of non-null aspect scores to a coarse label."""
-    if not aspect_scores:
+def _result_preview(tool_name: str, result: dict[str, Any]) -> tuple[int, str]:
+    if tool_name == "search_posts" and result.get("status") == "ok":
+        results = result.get("results") or []
+        first_text = (results[0].get("text") if results else "") or ""
+        return len(results), first_text[:200]
+    if result.get("status") == "no_data":
+        return 0, str(result.get("reason") or "no_data")
+    if result.get("status") == "ok":
+        preview = json.dumps(
+            {k: v for k, v in result.items() if k not in {"results"}},
+            default=str,
+        )
+        return 1, preview[:200]
+    return 0, str(result.get("reason") or result.get("status") or "error")
+
+
+def _record_call(
+    tool_name: str,
+    arguments: dict[str, Any],
+    result: dict[str, Any],
+    elapsed_ms: float,
+) -> None:
+    trace = _TRACE_CTX.get()
+    if trace is None:
+        return
+    count, preview = _result_preview(tool_name, result)
+    trace.append(
+        {
+            "step": len(trace) + 1,
+            "tool": tool_name,
+            "arguments": arguments,
+            "reasoning": "",
+            "result_count": count,
+            "result_preview": preview,
+            "elapsed_ms": round(elapsed_ms, 2),
+        }
+    )
+
+LIVEABILITY_DIMENSIONS = [
+    "safety",
+    "food_and_cafe",
+    "nightlife",
+    "affordability",
+    "transport",
+    "community",
+    "noise",
+    "green_space",
+]
+
+
+@tool("get_suburb_aspect")
+def _get_suburb_aspect_tool(suburb: str, dimension: str) -> dict[str, Any]:
+    """Return the cached aspect score for one (suburb, dimension) pair.
+
+    Status is `ok` with score/source/coverage, or `no_data` when the
+    upstream pipeline marked the dimension null. Use this to gather
+    structured signals before deciding whether to also call
+    search_posts.
+    """
+    started = time.perf_counter()
+    result = agent_tools.get_suburb_aspect(suburb=suburb, dimension=dimension)
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "get_suburb_aspect",
+        {"suburb": suburb, "dimension": dimension},
+        result,
+        elapsed,
+    )
+    return result
+
+
+@tool("search_posts")
+def _search_posts_tool(
+    suburb: str,
+    query: str,
+    dimension: str = "",
+    k: int = 5,
+) -> dict[str, Any]:
+    """Semantic search over Reddit chunks for one suburb.
+
+    Filter by `dimension` (one of the eight liveability dimensions) when
+    you want quotes specific to a topic; pass an empty string to search
+    all dimensions. Use this to pull grounded quotes that support a
+    claim about resident sentiment.
+    """
+    started = time.perf_counter()
+    result = agent_tools.search_posts(
+        suburb=suburb,
+        dimension=dimension or None,
+        query=query,
+        k=k,
+    )
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "search_posts",
+        {"suburb": suburb, "dimension": dimension, "query": query, "k": k},
+        result,
+        elapsed,
+    )
+    return result
+
+
+@tool("compare_suburbs")
+def _compare_suburbs_tool(suburbs: list[str], dimension: str) -> dict[str, Any]:
+    """Rank a list of suburbs descending by aspect score for one dimension.
+
+    Refuses inputs longer than ten suburbs. Drops null-scored entries
+    into a `dropped` list. Use this only for explicit comparison
+    questions, not as a substitute for global ranking.
+    """
+    started = time.perf_counter()
+    result = agent_tools.compare_suburbs(suburbs=suburbs, dimension=dimension)
+    elapsed = (time.perf_counter() - started) * 1000.0
+    _record_call(
+        "compare_suburbs",
+        {"suburbs": suburbs, "dimension": dimension},
+        result,
+        elapsed,
+    )
+    return result
+
+
+sentiment_agent = Agent(
+    role="Query Sentiment Analyst",
+    goal=(
+        "Answer questions about resident sentiment in Sydney suburbs by "
+        "calling retrieval tools adaptively. Refuse to fabricate when a "
+        "tool returns no_data."
+    ),
+    backstory=(
+        "You analyse Sydney suburbs by combining structured aspect scores "
+        "with grounded Reddit quotes. You decide which tools to call and "
+        "stop as soon as you have enough evidence to answer."
+    ),
+    llm=get_agent_llm("sentiment"),
+    tools=[
+        _get_suburb_aspect_tool,
+        _search_posts_tool,
+        _compare_suburbs_tool,
+    ],
+    verbose=True,
+)
+
+
+def _build_task_description(suburb: str, aspect: Optional[str], question: str) -> str:
+    aspect_hint = (
+        f"\nDimension hint (caller-provided, treat as guidance not a constraint): {aspect}"
+        if aspect
+        else ""
+    )
+    dims_csv = ", ".join(LIVEABILITY_DIMENSIONS)
+    return f"""You are answering a question about resident sentiment in a single Sydney suburb.
+
+Suburb: {suburb}
+Question: {question}{aspect_hint}
+
+Liveability dimensions you can query: {dims_csv}.
+
+Decide which retrieval tools to call and in what order. Use as few tool calls as you need; stop as soon as the evidence supports a confident answer. If a tool returns status="no_data" or status="error", record the absence and do not fabricate.
+
+Tools available (you call them by name; the framework wires the arguments):
+- get_suburb_aspect(suburb, dimension)
+- search_posts(suburb, query, dimension, k)
+- compare_suburbs(suburbs, dimension)
+
+Grounding rule. If the question is qualitative ("what's X like", "how is X", "is X good", "are residents happy with X"), call search_posts at least once on the relevant dimension to back the answer with actual resident quotes. If the question is purely a score lookup ("what is the safety score for X"), get_suburb_aspect alone is fine. If get_suburb_aspect returns status="no_data" for the asked dimension, do not call search_posts on that dimension — the no_data short-circuit already tells you Reddit has no signal there.
+
+When you are done, output ONLY a single JSON object with this exact shape — no prose, no markdown fences, no commentary:
+
+{{"aspects": {{"<dimension>": {{"score": <float between 0 and 1, or null>, "source": "<reddit|fallback|none>", "coverage": "<strong|weak|none>"}}}}, "sources": [{{"text": "<quote>", "suburb": "<suburb>", "dimension": "<dimension>", "url": "<url>"}}]}}
+
+Include only the dimensions you actually queried. The "sources" array must contain only quotes returned by search_posts; leave it empty if you made no search calls or all searches were no_data."""
+
+
+_JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)
+
+
+def _parse_agent_json(raw: str) -> Optional[dict[str, Any]]:
+    if not raw:
+        return None
+    fence = _JSON_FENCE_RE.search(raw)
+    if fence:
+        candidate = fence.group(1)
+    else:
+        start = raw.find("{")
+        end = raw.rfind("}")
+        if start == -1 or end <= start:
+            return None
+        candidate = raw[start : end + 1]
+    try:
+        parsed = json.loads(candidate)
+    except json.JSONDecodeError:
+        return None
+    return parsed if isinstance(parsed, dict) else None
+
+
+def _overall_label(aspects: dict[str, Any]) -> str:
+    scores = [
+        float(entry["score"])
+        for entry in aspects.values()
+        if isinstance(entry, dict) and isinstance(entry.get("score"), (int, float))
+    ]
+    if not scores:
         return "no_data"
-    avg = sum(aspect_scores) / len(aspect_scores)
+    avg = sum(scores) / len(scores)
     if avg > POSITIVE_THRESHOLD:
         return "positive"
     if avg < NEGATIVE_THRESHOLD:
@@ -52,72 +259,19 @@ def _overall_label(aspect_scores: list[float]) -> str:
     return "neutral"
 
 
-def _route_dimension(question: str, asked_aspect: Optional[str]) -> Optional[str]:
-    """Pick the dimension most relevant to the question.
-
-    If the caller passed `aspect` we honour it. Otherwise we use the
-    same keyword table the extractor uses (`ASPECT_TAXONOMY`) so the
-    routing here matches the rest of the pipeline.
-    """
-    if asked_aspect and asked_aspect in ASPECT_TAXONOMY:
-        return asked_aspect
-    if not question:
-        return None
-    lowered = question.lower()
-    for dim, meta in ASPECT_TAXONOMY.items():
-        for keyword in meta["search_keywords"]:
-            if keyword.lower() in lowered:
-                return dim
-    return None
-
-
-def _trace_entry(
-    step: int,
-    tool_name: str,
-    arguments: dict[str, Any],
-    reasoning: str,
-    result: dict[str, Any],
-    elapsed_ms: float,
-) -> dict[str, Any]:
-    """Build a TraceEntry matching the shape promised in the agent README."""
-    if tool_name == "search_posts" and result.get("status") == "ok":
-        results = result.get("results") or []
-        result_count = len(results)
-        first_text = (results[0].get("text") if results else "") or ""
-        preview = first_text[:200]
-    elif result.get("status") == "no_data":
-        result_count = 0
-        preview = result.get("reason") or "no_data"
-    else:
-        # get_suburb_aspect / compare_suburbs return a single structured dict
-        result_count = 1 if result.get("status") == "ok" else 0
-        preview = json.dumps(
-            {k: v for k, v in result.items() if k not in {"results"}},
-            default=str,
-        )[:200]
-    return {
-        "step": step,
-        "tool": tool_name,
-        "arguments": arguments,
-        "reasoning": reasoning,
-        "result_count": result_count,
-        "result_preview": preview,
-        "elapsed_ms": round(elapsed_ms, 2),
+def _no_data_response(suburb: str, reason: Optional[str] = None) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "suburb": suburb,
+        "status": "no_data",
+        "aspects": {},
+        "emotions": {},
+        "overall": "no_data",
+        "evidence_trace": [],
+        "sources": [],
     }
-
-
-def _call(tool_name: str, **kwargs) -> tuple[dict[str, Any], float]:
-    """Dispatch a tool call and time it. Returns (result, elapsed_ms)."""
-    started = time.perf_counter()
-    if tool_name == "get_suburb_aspect":
-        result = agent_tools.get_suburb_aspect(**kwargs)
-    elif tool_name == "search_posts":
-        result = agent_tools.search_posts(**kwargs)
-    elif tool_name == "compare_suburbs":
-        result = agent_tools.compare_suburbs(**kwargs)
-    else:
-        result = {"status": "error", "reason": f"unknown tool {tool_name}"}
-    return result, (time.perf_counter() - started) * 1000.0
+    if reason:
+        payload["reason"] = reason
+    return payload
 
 
 def _query_sentiment_impl(
@@ -125,179 +279,76 @@ def _query_sentiment_impl(
     aspect: str | None = None,
     question: str | None = None,
 ) -> dict[str, Any]:
-    """Return aspects, emotions, overall label, evidence trace, and sources.
-
-    The cached `SuburbAnalysis` is the source of structured aspect
-    scores and the emotion profile. When `question` is provided, we
-    additionally call `search_posts` to pull grounded quotes for the
-    synthesiser to cite.
-    """
+    """Run the full agentic RAG loop for one suburb and return its payload."""
     suburb = (suburb or "").strip()
     if not suburb:
-        return {
-            "suburb": "",
-            "status": "no_data",
-            "aspects": {},
-            "emotions": {},
-            "overall": "no_data",
-            "evidence_trace": [],
-            "sources": [],
-        }
+        return _no_data_response("")
 
     analysis = agent_tools._load_cached_analysis(suburb)
     if not analysis:
-        return {
-            "suburb": suburb,
-            "status": "no_data",
-            "reason": "no cached SuburbAnalysis for this suburb",
-            "aspects": {},
-            "emotions": {},
-            "overall": "no_data",
-            "evidence_trace": [],
-            "sources": [],
-        }
+        return _no_data_response(suburb, reason="no cached SuburbAnalysis for this suburb")
 
-    aspects_raw = analysis.get("aspects") or {}
     emotions = analysis.get("emotions") or {}
+    effective_question = (question or "").strip() or (
+        f"Summarise resident sentiment in {suburb} across relevant liveability dimensions."
+    )
 
-    # Build the structured aspects payload via get_suburb_aspect so each
-    # entry carries the same status/no_data shape the design specifies,
-    # not a free-form dict from the JSON file. The bulk fan-out is not
-    # counted against MAX_QUESTION_CALLS — that budget is reserved for
-    # question-driven retrieval below.
-    evidence_trace: list[dict[str, Any]] = []
-    aspects: dict[str, Any] = {}
-    non_null_scores: list[float] = []
-    step = 0
-    question_calls_used = 0
+    task = Task(
+        description=_build_task_description(suburb, aspect, effective_question),
+        expected_output="A single JSON object with keys 'aspects' and 'sources'.",
+        agent=sentiment_agent,
+    )
+    crew = Crew(
+        agents=[sentiment_agent],
+        tasks=[task],
+        process=Process.sequential,
+        verbose=False,
+    )
 
-    for dim in aspects_raw.keys():
-        step += 1
-        result, elapsed = _call("get_suburb_aspect", suburb=suburb, dimension=dim)
-        evidence_trace.append(
-            _trace_entry(
-                step=step,
-                tool_name="get_suburb_aspect",
-                arguments={"suburb": suburb, "dimension": dim},
-                reasoning="structured-aspect lookup for sentiment payload",
-                result=result,
-                elapsed_ms=elapsed,
-            )
-        )
-        if result.get("status") == "ok":
-            aspects[dim] = {
-                "score": result["score"],
-                "mentions": result["mentions"],
-                "confidence": result["confidence"],
-                "coverage": result["coverage"],
-                "source": result["source"],
-            }
-            score = result.get("score")
-            if isinstance(score, (int, float)):
-                non_null_scores.append(float(score))
-        else:
-            aspects[dim] = {
-                "status": "no_data",
-                "reason": "no Reddit coverage and no cross-modal proxy",
-            }
+    trace: list[dict[str, Any]] = []
+    token = _TRACE_CTX.set(trace)
+    try:
+        try:
+            crew_output = crew.kickoff()
+        except Exception as exc:
+            return _no_data_response(suburb, reason=f"agent execution failed: {exc}")
+    finally:
+        _TRACE_CTX.reset(token)
 
-    # Question-driven retrieval. We pick the most relevant dimension and
-    # pull up to 3 grounded chunks. If the dimension is null-scored,
-    # search_posts short-circuits with no_data and the synthesiser can
-    # verbalise the absence honestly. ChromaDB import is deferred inside
-    # the tool, so this whole block is a no-op when the index isn't
-    # populated (the search returns empty).
+    raw = getattr(crew_output, "raw", None) or str(crew_output or "")
+    parsed = _parse_agent_json(raw)
+    if not parsed:
+        return _no_data_response(suburb, reason="agent did not return parseable JSON")
+
+    aspects = parsed.get("aspects") or {}
+    if not isinstance(aspects, dict):
+        aspects = {}
+
+    sources_raw = parsed.get("sources") or []
     sources: list[dict[str, Any]] = []
-    routed_dim = _route_dimension(question or "", aspect)
-    if question and routed_dim and question_calls_used < MAX_QUESTION_CALLS:
-        step += 1
-        question_calls_used += 1
-        result, elapsed = _call(
-            "search_posts",
-            suburb=suburb,
-            dimension=routed_dim,
-            query=question,
-            k=3,
-        )
-        evidence_trace.append(
-            _trace_entry(
-                step=step,
-                tool_name="search_posts",
-                arguments={
-                    "suburb": suburb,
-                    "dimension": routed_dim,
-                    "query": question,
-                    "k": 3,
-                },
-                reasoning=f"pull grounded quotes for question-relevant dimension '{routed_dim}'",
-                result=result,
-                elapsed_ms=elapsed,
-            )
-        )
-        if result.get("status") == "ok":
-            for hit in result.get("results") or []:
-                meta = hit.get("metadata") or {}
+    if isinstance(sources_raw, list):
+        for item in sources_raw:
+            if isinstance(item, dict):
                 sources.append(
                     {
-                        "text": hit.get("text", ""),
-                        "suburb": meta.get("suburb") or suburb,
-                        "source": meta.get("source") or "reddit",
-                        "url": meta.get("url") or "",
-                        "dimension": meta.get("dimension") or routed_dim,
-                        "distance": hit.get("distance"),
+                        "text": str(item.get("text", "")),
+                        "suburb": str(item.get("suburb", suburb)),
+                        "dimension": str(item.get("dimension", "general")),
+                        "url": str(item.get("url", "")),
+                        "source": str(item.get("source", "reddit")),
                     }
                 )
-
-    # Fallback citations: when no question-driven results, fall back to
-    # the curated `sources[]` from the cached analysis so the synthesiser
-    # always has something to cite for known suburbs.
-    if not sources:
-        for quote in (analysis.get("sources") or [])[:3]:
-            if not isinstance(quote, dict):
-                continue
-            sources.append(
-                {
-                    "text": quote.get("text", ""),
-                    "suburb": suburb,
-                    "source": "sentiment_quote",
-                    "url": quote.get("url", ""),
-                    "dimension": "general",
-                }
-            )
 
     return {
         "suburb": suburb,
         "status": "ok",
         "aspects": aspects,
         "emotions": emotions,
-        "overall": _overall_label(non_null_scores),
-        "evidence_trace": evidence_trace,
+        "overall": _overall_label(aspects),
+        "evidence_trace": trace,
         "sources": sources,
     }
 
-
-@tool("query_sentiment_tool")
-def query_sentiment_tool(
-    suburb: str,
-    aspect: str | None = None,
-    question: str | None = None,
-) -> dict[str, Any]:
-    """Wrapper tool for CrewAI: query sentiment data with optional question-driven retrieval."""
-    return _query_sentiment_impl(suburb, aspect, question)
-
-
-sentiment_agent = Agent(
-    role="Query Sentiment Analyst",
-    goal="Explain local sentiment using aspect scores, emotion distributions, and grounded quotes.",
-    backstory=(
-        "You transform structured sentiment tables and a Reddit vector index into "
-        "clear suburb-level signals. You refuse to fabricate signals for "
-        "dimensions the upstream pipeline marked no-data."
-    ),
-    llm=get_agent_llm("sentiment"),
-    tools=[query_sentiment_tool],
-    verbose=True,
-)
 
 sentiment_task = Task(
     description="Fetch sentiment, emotion, and grounded-quote evidence for one suburb.",
