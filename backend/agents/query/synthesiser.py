@@ -21,7 +21,7 @@ from crewai.tools import tool
 from sqlalchemy import select
 
 from config import get_agent_llm, settings
-from db.chromadb import PDF_COLLECTION, REDDIT_COLLECTION, query_chunks
+from db.chromadb import REDDIT_COLLECTION, query_chunks
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
 
@@ -40,29 +40,48 @@ def _get_reddit_context(suburb: str) -> dict[str, Any] | None:
     except Exception:
         return None
 
-
 def _retrieve_chromadb_chunks(
     question: str,
     suburbs_list: list[str] | None = None,
-    k_per_collection: int = 3,
+    k_per_collection: int = 5,
 ) -> list[dict[str, Any]]:
-    """Query community_insights and reddit_posts for semantically relevant chunks."""
-    suburb_filter = {"suburb": {"$in": suburbs_list}} if suburbs_list else None
+    """Retrieve Reddit semantic chunks with fallback if suburb filter fails."""
+    
+    print(f"[RAG] Query: {question}")
+    print(f"[RAG] Suburbs filter: {suburbs_list}")
+
     chunks: list[dict[str, Any]] = []
-    for collection in (PDF_COLLECTION, REDDIT_COLLECTION):
-        try:
-            results = query_chunks(question, collection_name=collection, k=k_per_collection, filters=suburb_filter)
-            chunks.extend(results)
-        except Exception:
-            pass
+
+    try:
+        if suburbs_list:
+            for suburb in suburbs_list:
+                results = query_chunks(
+                    question,
+                    k=k_per_collection,
+                    filters={"suburb": _normalise_suburb(suburb)}
+                )
+
+                # fallback if nothing found
+                if not results:
+                    print(f"[RAG] No results for {suburb}, retrying without filter")
+                    results = query_chunks(question, k=k_per_collection)
+
+                chunks.extend(results)
+        else:
+            chunks = query_chunks(question, k=k_per_collection)
+
+    except Exception as e:
+        print(f"[RAG ERROR] {e}")
+
+    print(f"[RAG] Retrieved {len(chunks)} chunks")
     return chunks
 
+def _normalise_suburb(s: str) -> str:
+    return s.strip().lower().replace(" ", "_")
 
 def _normalise_debug_mode() -> str:
     """Return normalized debug mode from env: off, gis, all."""
     return (settings.synthesis_debug_mode or "off").strip().lower()
-
-
 
 
 def _format_debug_passthrough(agent_key: str, agent_output: dict[str, Any]) -> dict[str, Any]:
@@ -236,8 +255,17 @@ def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
         return ""
     return "\n\nEvidence trace (every retrieval tool call this turn):\n" + "\n".join(lines)
 
+def _build_synthesis_prompt(question: str, context: dict[str, Any], retrieved_chunks: list[dict] | None = None, agent_outputs: dict[str, Any] | None = None) -> str:
+    data_block = json.dumps(context, indent=2, default=str)
+    rag_block = ""
+    if retrieved_chunks:
+        rag_lines = []
+        for c in retrieved_chunks[:8]:
+            suburb = c["metadata"].get("suburb", "unknown")
+            text = c["text"][:200].replace("\n", " ")
+            rag_lines.append(f"- ({suburb}) {text}")
 
-def _build_synthesis_prompt(question: str, context: dict[str, Any], agent_outputs: dict[str, Any] | None = None) -> str:
+        rag_block = "\n\nRetrieved Context:\n" + "\n".join(rag_lines)
     """Build the LLM prompt combining question, DB context, and agent outputs.
 
     Handles both flat (single-suburb per specialist) and nested (multi-suburb per specialist) structures.
@@ -284,6 +312,7 @@ Instructions:
                     prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2, default=str)}\n"
 
     prompt += _format_evidence_trace_block(agent_outputs or {})
+    prompt += rag_block
     return prompt
 
 
@@ -296,7 +325,26 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
     debug_mode = _normalise_debug_mode()
     question = str(payload.get("question", "")).strip()
     router_output = payload.get("router", {})
+    
+    # Extract suburbs FIRST
+    suburbs_from_specialists: set[str] = set()
 
+    if isinstance(outputs, dict):
+        for _agent_key, output in outputs.items():
+            if isinstance(output, dict):
+                if any(
+                    isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v)
+                    for v in output.values()
+                ):
+                    suburbs_from_specialists.update(output.keys())
+                elif "suburb" in output:
+                    suburbs_from_specialists.add(output["suburb"])
+
+    suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
+
+    # THEN retrieve chunks
+    retrieved_chunks = _retrieve_chromadb_chunks(question, suburbs_list)
+    
     if isinstance(router_output, dict) and "out_of_scope" in router_output.get("categories", []):
         return {
             "answer": (
@@ -359,7 +407,8 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         synthesis_prompt = _build_synthesis_prompt(
             question,
             context,
-            agent_outputs=combined_outputs if combined_outputs else None
+            agent_outputs=combined_outputs if combined_outputs else None,
+            retrieved_chunks=retrieved_chunks,
         )
 
         # Call LLM using the synthesiser agent configuration.

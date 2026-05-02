@@ -1,0 +1,864 @@
+{
+  "metadata": {
+    "evaluated_at": "2026-05-01T23:15:35",
+    "endpoint": "http://127.0.0.1:8000/api/chat",
+    "weights_used": {},
+    "demo_suburbs": [
+      "Sydney",
+      "Surry Hills",
+      "Glebe",
+      "Eveleigh",
+      "Zetland"
+    ],
+    "tier_definitions": {
+      "demo": "Front-map demo suburbs, full agent stack expected to work",
+      "sparse_data": "In Reddit set but very few posts (data quality probe)",
+      "analysed_undemoed": "In 563-suburb Reddit set but not in front-map demo",
+      "high_density": "Suburbs with high Reddit post volume (rich data summarisation test)",
+      "comparison": "Cross-suburb comparison within demo set",
+      "out_of_scope": "Outside Greater Sydney (refusal probe)"
+    },
+    "questions_total": 15,
+    "responses_received": 15,
+    "responses_failed": 0
+  },
+  "responses": [
+    {
+      "id": 1,
+      "tier": "demo",
+      "category": "safety",
+      "suburbs": [
+        "Sydney"
+      ],
+      "question": "Is Sydney CBD safe at night?",
+      "answer": "I don\u2019t have any safety or crime\u2011related data for Sydney CBD in the provided dataset\u2014the crime agent returned \u201cno data\u201d for Sydney\u2019s crime summary and trend\u3010CRIME\u3011. Therefore I cannot assess whether the CBD is safe at night based on the available information.",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Abbotsford",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 43009,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 2,
+      "tier": "demo",
+      "category": "safety",
+      "suburbs": [
+        "Surry Hills"
+      ],
+      "question": "How safe is Surry Hills based on available data and resident sentiment?",
+      "answer": "Based on resident sentiment data, Surry Hills has a safety score of 0.409 from 77 Reddit mentions with strong coverage and confidence. Official crime data for Surry Hills is not available in the provided dataset. [Evidence: step 1]",
+      "sources": [
+        {
+          "text": "Please don\u2019t let opt-out tipping become a thing\nSaw this on a menu for a new restaurant in Surry Hills.  The meal prices seem reasonable. Just don\u2019t understand what this opt-out tipping is about. Do I",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1h5zgjv/please_dont_let_optout_tipping_become_a_thing/",
+          "dimension": "general"
+        },
+        {
+          "text": "RIP Chris\nI take my dog for a walk down Crown st Surry Hills everyday and I befriended a lovely man named Chris and his beautiful white boxer dog perched on the wall beside The Clock Hotel.\n\nEach day ",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1qj85xa/rip_chris/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney\u2019s rental crisis on full display as almost 100 people queue to inspect an apartment above a pub in Surry Hills",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 9,
+          "by_tool": {
+            "get_suburb_aspect": 8,
+            "search_posts": 1
+          },
+          "last_action": {
+            "step": 9,
+            "tool": "search_posts",
+            "suburb": "Surry Hills",
+            "dimension": "safety",
+            "result_count": 0
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 67508,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 3,
+      "tier": "demo",
+      "category": "transport",
+      "suburbs": [
+        "Sydney"
+      ],
+      "question": "How well-connected is Sydney CBD by public transport?",
+      "answer": "Sydney CBD\u2019s public\u2011transport connectivity is reflected in its transport_score of **0.756** (on a scale where higher values indicate better connectivity)\u3010GIS\u202ftransport\u3011. The detailed transport metrics (bus stops, train stations, light\u2011rail stops, bike\u2011path length, average commute time) are not provided in the dataset, so no further specifics can be given.",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Sydney",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Sydney",
+          "score": 0.748
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 8778,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 4,
+      "tier": "demo",
+      "category": "transport",
+      "suburbs": [
+        "Eveleigh"
+      ],
+      "question": "How well connected is Eveleigh by public transport?",
+      "answer": "Eveleigh has no recorded bus stops, train stations, light\u2011rail stops, bike paths or average commute times in the dataset, indicating a lack of publicly available transport infrastructure data. Its transport_score is 0.42, which suggests only moderate public\u2011transport connectivity based on the available metrics.\u3010GIS: transport\u3011",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Eveleigh",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Eveleigh",
+          "score": 0.158
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 8820,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 5,
+      "tier": "demo",
+      "category": "lifestyle",
+      "suburbs": [
+        "Glebe"
+      ],
+      "question": "What is the food and cafe scene like in Glebe?",
+      "answer": "Glebe has a lively food and caf\u00e9 scene, with **33 caf\u00e9s** and **27 restaurants** recorded in the suburb\u2019s facilities data\u3010suburbs\u3011. The OpenStreetMap amenity layer also lists **33 caf\u00e9s** for Glebe, confirming the high concentration of coffee and eatery options\u3010GIS\u3011. This suggests a dense and varied caf\u00e9 offering for residents and visitors.",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Glebe",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Glebe",
+          "score": 0.455
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 13525,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 6,
+      "tier": "demo",
+      "category": "lifestyle",
+      "suburbs": [
+        "Surry Hills"
+      ],
+      "question": "What is Surry Hills like in terms of lifestyle, including nightlife and amenities?",
+      "answer": "Surry Hills has a lively caf\u00e9 and restaurant scene with\u202f141\u202fcaf\u00e9s and\u202f206\u202frestaurants\u202f[OSM amenities] and plenty of green space\u201428\u202fparks and\u202f9\u202fplaygrounds\u202f[OSM amenities]. Its transport accessibility is solid, reflected by a transport score of\u202f0.783\u202f[transport], and it scores\u202f49.2\u202fon the facilities index, indicating a good range of libraries, car\u2011share bays, mobility parking and sports facilities\u202f[official facilities]. I have no resident\u2011sentiment data for Surry Hills (the sentiment agent returned\u202fstatus:\u202f\"no_data\"), so I cannot comment on how locals perceive its nightlife or overall liveliness.",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Surry Hills",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Surry Hills",
+          "score": 0.573
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 19779,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 7,
+      "tier": "demo",
+      "category": "lifestyle",
+      "suburbs": [
+        "Zetland"
+      ],
+      "question": "What is the lifestyle in Zetland like?",
+      "answer": "Residents describe Zetland\u2019s community as moderate (score\u202f0.532,\u202f39\u202fmentions) and note good access to caf\u00e9s and nightlife (food_and_cafe\u202f0.596, nightlife\u202f0.607)\u3010step\u202f6\u3011\u3010step\u202f2\u3011\u3010step\u202f3\u3011. Safety is perceived as low (score\u202f0.102,\u202f15\u202fmentions) while transport and green space receive moderate ratings (transport\u202f0.518,\u202f19\u202fmentions; green_space\u202f0.581,\u202f13\u202fmentions) and noise data is unavailable\u3010step\u202f1\u3011\u3010step\u202f5\u3011\u3010step\u202f8\u3011\u3010step\u202f7\u3011. The suburb offers 61 facilities including 41 car\u2011share bays, 21 parks, 25 caf\u00e9s and 33 restaurants, supporting an active, amenity\u2011rich lifestyle.",
+      "sources": [
+        {
+          "text": "Taking your 102 year-old car to do the grocery run in Zetland",
+          "suburb": "Zetland",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1mej2wb/taking_your_102_yearold_car_to_do_the_grocery_run/",
+          "dimension": "general"
+        },
+        {
+          "text": "Charities who could help an old man with no family?\nI met an elderly gentleman at the bus stop today. He is an immigrant from Greece. He has to be in his 90s. \n\nHe told me he had to get the bus from Z",
+          "suburb": "Zetland",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1jkxxqp/charities_who_could_help_an_old_man_with_no_family/",
+          "dimension": "general"
+        },
+        {
+          "text": "CBD is prettier, light rail has changed the CBD into a more pedestrian friendly destination. More al fresco dining options and shopping.\n\nBarangaroo has shiny new skyscrapers and a new public park, wi",
+          "suburb": "Zetland",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/19dvw36/lived_in_london_for_12_years_considering_moving/kj8ntv1/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Zetland",
+          "score": 0.378
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Zetland",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 1
+        }
+      },
+      "latency_ms": 33883,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 8,
+      "tier": "demo",
+      "category": "liveability",
+      "suburbs": [
+        "Sydney"
+      ],
+      "question": "What is overall liveability like in Sydney CBD?",
+      "answer": "Sydney CBD\u2019s facilities score is\u202f\u2248\u202f49\u202f(out of the scale used in the dataset) and its transport score is\u202f0.756, giving a combined GIS liveability score of\u202f0.748\u3010GIS data\u3011. This suggests a moderate\u2011to\u2011high level of liveability based on available amenities and transport access. Sentiment scores for all aspects (safety, food\u2011and\u2011cafe, nightlife, affordability, transport, community, noise, green space) are neutral at\u202f0.5 with zero resident mentions, indicating that no measurable sentiment evidence is currently available\u3010sentiment evidence trace, step\u202f1\u3011.",
+      "sources": [
+        {
+          "text": "Facilities, transport, and amenity data",
+          "suburb": "Sydney",
+          "source": "City of Sydney ArcGIS + OSM + Transport API"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Sydney",
+          "score": 0.748
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Sydney",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 17995,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 9,
+      "tier": "demo",
+      "category": "liveability",
+      "suburbs": [
+        "Glebe"
+      ],
+      "question": "How liveable is Glebe overall?",
+      "answer": "Glebe does not have a explicit liveability_score in the data, but its facilities_score is 58.29, transport_score is 0.66, and its OSM amenity score is 0.1504, yielding a combined GIS score of 0.455\u202f\u3010GIS\u3011. Sentiment analysis of resident Reddit posts gives an overall \u201cneutral\u201d tone for Glebe\u202f\u3010Sentiment\u3011, as evidenced by the sentiment\u2011aspect look\u2011ups (e.g., safety score\u202f0.225)\u202f\u3010Evidence trace step\u202f1\u3011. Taken together, these metrics suggest a moderate level of liveability.",
+      "sources": [
+        {
+          "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1kjwh57/grand_post_offices_of_sydney/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney, now here's a way to sell your property. Read the listing.\nLegit posting and quite the ad!\n\nhttps://www.realestate.com.au/property-house-nsw-glebe-146533376\n\nListed as a private seller. No agen",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1okbxeu/sydney_now_heres_a_way_to_sell_your_property_read/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney to get its first new inner-city suburb in decades as Glebe Island becomes Bays West",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1rj5n5h/sydney_to_get_its_first_new_innercity_suburb_in/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Glebe",
+          "score": 0.455
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Glebe",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 33880,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 10,
+      "tier": "sparse_data",
+      "category": "liveability",
+      "suburbs": [
+        "Wareemba"
+      ],
+      "question": "What's it like to live in Wareemba?",
+      "answer": "Wareemba offers very few amenities\u2014no cafes, libraries, schools, or transport stops recorded, with just one restaurant and two parks (facilities\u202f=\u202f0, restaurants\u202f=\u202f1, parks\u202f=\u202f2)\u3010suburbs data\u3011. Sentiment analysis shows a weak but positive sense of community (score\u202f0.8 from 1 Reddit mention)\u3010evidence trace step\u202f6\u3011, but no perceived green space (OSM\u2011based score\u202f0.0)\u3010evidence trace step\u202f8\u3011 and an overall negative resident outlook\u3010sentiment output: overall\u202f=\u202f\u201cnegative\u201d\u3011. Many aspects\u2014safety, food/cafe, nightlife, affordability, transport, and noise\u2014have no data available.",
+      "sources": [
+        {
+          "text": "Postcode pride/envy\nHey guys, a quick story and a question.\nTen years ago I was living in Abbotsford on Great North Road, near the roundabout that marks the entrance to the suburb. At a local social g",
+          "suburb": "Wareemba",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1f9aljs/postcode_prideenvy/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Wareemba",
+          "score": 0.062
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Wareemba",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 6
+        }
+      },
+      "latency_ms": 16649,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 11,
+      "tier": "analysed_undemoed",
+      "category": "liveability",
+      "suburbs": [
+        "Newtown"
+      ],
+      "question": "Tell me about Newtown for a young professional.",
+      "answer": "Newtown scores highly for its cafe culture (58 cafes, food_and_cafe sentiment\u202f0.541) and nightlife (0.591) and enjoys a strong sense of community (0.611), making it attractive to young professionals who value social life\u202f(steps\u202f2,\u202f3,\u202f6). Transport accessibility is decent (transport sentiment\u202f0.482, transport_score\u202f0.759) while safety and affordability are moderate (0.357 and 0.474 respectively) and green space is positively noted (0.712) though based on fewer mentions\u202f(steps\u202f1,\u202f4,\u202f5,\u202f8).",
+      "sources": [
+        {
+          "text": "New mural Newtown",
+          "suburb": "Newtown",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1r56wnx/new_mural_newtown/",
+          "dimension": "general"
+        },
+        {
+          "text": "New art in Newtown\nLove it. Scott Marsh is the mural artist",
+          "suburb": "Newtown",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1kokb2j/new_art_in_newtown/",
+          "dimension": "general"
+        },
+        {
+          "text": "The Duke of Enmore, 9:34pm on a Tuesday\nI thought, naively I guess, that these kind of places would be full of people.\n\nThey said in their menus they have food until late, only to realise that a pizza",
+          "suburb": "Newtown",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1pc58gp/the_duke_of_enmore_934pm_on_a_tuesday/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Newtown",
+          "score": 0.356
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Newtown",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 18684,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 12,
+      "tier": "high_density",
+      "category": "lifestyle",
+      "suburbs": [
+        "Parramatta"
+      ],
+      "question": "What is life like in Parramatta for residents?",
+      "answer": "Life in Parramatta features strong community sentiment (score 0.622, 727 mentions) and positive green space perceptions (score 0.674), though safety concerns are the lowest-rated aspect (score 0.318). Residents report moderate satisfaction with transport (score 0.546) and affordability (score 0.549), with overall sentiment appearing neutral based on emotional analysis (53.4% neutral). [Evidence: steps 1, 4, 5, 6, 8]",
+      "sources": [
+        {
+          "text": "View From my Appartment in Parramatta This Morning",
+          "suburb": "Parramatta",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1k83cv5/view_from_my_appartment_in_parramatta_this_morning/",
+          "dimension": "general"
+        },
+        {
+          "text": "Good ol Parramatta",
+          "suburb": "Parramatta",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1laqu33/good_ol_parramatta/",
+          "dimension": "general"
+        },
+        {
+          "text": "A tank somehow overturned at Lancer Barracks in Parramatta",
+          "suburb": "Parramatta",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1ou1jef/a_tank_somehow_overturned_at_lancer_barracks_in/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 8,
+          "by_tool": {
+            "get_suburb_aspect": 8
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Parramatta",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 79932,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 13,
+      "tier": "comparison",
+      "category": "comparison",
+      "suburbs": [
+        "Sydney",
+        "Surry Hills"
+      ],
+      "question": "If I want to live close to the CBD, should I pick Sydney or Surry Hills?",
+      "answer": "If you want to live as close to the CBD as possible, Sydney itself is the stronger option: it has a higher combined liveability score (0.748\u202fvs\u202f0.573) and a perfect OSM amenities score (1.0\u202fvs\u202f0.474)\u3010GIS data\u3011, while its facilities score is almost identical (48.974\u202fvs\u202f49.203)\u3010facilities data\u3011 and its transport score is only slightly lower (0.756\u202fvs\u202f0.783)\u3010transport data\u3011. Sentiment data show a neutral resident view for Sydney (transport\u202f0.5,\u202f0\u202fmentions)\u3010Sydney sentiment trace, step\u202f5\u3011, whereas Surry Hills reports a modestly positive transport sentiment (0.581 from 76 Reddit mentions)\u3010Surry Hills sentiment trace, step\u202f5\u3011. Overall, Sydney\u2019s superior combined and amenity scores outweigh Surry Hills\u2019 marginal transport edge for CBD proximity.",
+      "sources": [
+        {
+          "text": "Please don\u2019t let opt-out tipping become a thing\nSaw this on a menu for a new restaurant in Surry Hills.  The meal prices seem reasonable. Just don\u2019t understand what this opt-out tipping is about. Do I",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1h5zgjv/please_dont_let_optout_tipping_become_a_thing/",
+          "dimension": "general"
+        },
+        {
+          "text": "RIP Chris\nI take my dog for a walk down Crown st Surry Hills everyday and I befriended a lovely man named Chris and his beautiful white boxer dog perched on the wall beside The Clock Hotel.\n\nEach day ",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1qj85xa/rip_chris/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney\u2019s rental crisis on full display as almost 100 people queue to inspect an apartment above a pub in Surry Hills",
+          "suburb": "Surry Hills",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Surry Hills",
+          "score": 0.573
+        },
+        {
+          "suburb": "Sydney",
+          "score": 0.748
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 16,
+          "by_tool": {
+            "get_suburb_aspect": 16
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Surry Hills",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 28739,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 14,
+      "tier": "comparison",
+      "category": "comparison",
+      "suburbs": [
+        "Glebe",
+        "Eveleigh"
+      ],
+      "question": "How does Glebe compare to Eveleigh for a calmer lifestyle?",
+      "answer": "Glebe feels calmer than Eveleigh: its nightlife sentiment is lower (0.455 vs\u202f0.498)\u3010Glebe nightlife\u202fstep\u202f3\u3011, it has a measurable noise perception score of\u202f0.405 indicating moderate quietness while Eveleigh has no noise data\u3010Eveleigh noise\u202fstep\u202f7\u3011, and Glebe\u2019s community sentiment is stronger (0.652 vs\u202f0.512)\u3010Glebe community\u202fstep\u202f6\u3011. These sentiment metrics suggest Glebe offers a quieter, more community\u2011oriented environment compared to Eveleigh.",
+      "sources": [
+        {
+          "text": "134 Little Eveleigh St",
+          "suburb": "Eveleigh",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1j1dyn8/134_little_eveleigh_st/",
+          "dimension": "general"
+        },
+        {
+          "text": "Distinguished Gentleman's Ride Sydney\nWe're leaving South Eveleigh now. Throw us a wave if you see us out and about. Raising money for prostate cancer research and men's mental health.",
+          "suburb": "Eveleigh",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1cvb98q/distinguished_gentlemans_ride_sydney/",
+          "dimension": "general"
+        },
+        {
+          "text": "Weirdly, I got a call from the Castle Hill Police one year after my bike got stolen from Eveleigh. Turns out since my bike's serial was registered, they were able to sus out that I was the owner.\n\nI'm",
+          "suburb": "Eveleigh",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1cp61ed/stolen_bike_at_redfern/l3jiffe/",
+          "dimension": "general"
+        },
+        {
+          "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1kjwh57/grand_post_offices_of_sydney/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney, now here's a way to sell your property. Read the listing.\nLegit posting and quite the ad!\n\nhttps://www.realestate.com.au/property-house-nsw-glebe-146533376\n\nListed as a private seller. No agen",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1okbxeu/sydney_now_heres_a_way_to_sell_your_property_read/",
+          "dimension": "general"
+        },
+        {
+          "text": "Sydney to get its first new inner-city suburb in decades as Glebe Island becomes Bays West",
+          "suburb": "Glebe",
+          "source": "sentiment_quote",
+          "url": "https://reddit.com/r/sydney/comments/1rj5n5h/sydney_to_get_its_first_new_innercity_suburb_in/",
+          "dimension": "general"
+        }
+      ],
+      "suburb_scores": [
+        {
+          "suburb": "Eveleigh",
+          "score": 0.158
+        },
+        {
+          "suburb": "Glebe",
+          "score": 0.455
+        }
+      ],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 16,
+          "by_tool": {
+            "get_suburb_aspect": 16
+          },
+          "last_action": {
+            "step": 8,
+            "tool": "get_suburb_aspect",
+            "suburb": "Eveleigh",
+            "dimension": "green_space",
+            "result_count": 1
+          },
+          "no_data_count": 2
+        }
+      },
+      "latency_ms": 67117,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": 15,
+      "tier": "out_of_scope",
+      "category": "out_of_scope",
+      "suburbs": [
+        "Newcastle"
+      ],
+      "question": "I'm thinking about moving to Newcastle. Is it a good fit?",
+      "answer": "This system was designed only to answer questions related to Sydney liveability. Please ask about Sydney suburbs, safety, transport, amenities, or resident sentiment.",
+      "sources": [],
+      "suburb_scores": [],
+      "map_state": null,
+      "quality": {
+        "evidence_trace_summary": {
+          "length": 0,
+          "by_tool": {},
+          "last_action": null,
+          "no_data_count": 0
+        }
+      },
+      "latency_ms": 98,
+      "is_fallback": false,
+      "error": null,
+      "scores": {
+        "relevance_scorer_a": null,
+        "relevance_scorer_b": null,
+        "relevance_consensus": null,
+        "faithfulness_unverified_claims": null,
+        "faithfulness_total_claims": null,
+        "notes": ""
+      }
+    }
+  ]
+}
