@@ -106,6 +106,16 @@ curl http://127.0.0.1:8000/
 curl http://127.0.0.1:8000/health
 ```
 
+#### 🧠 ChromaDB index (prebuilt snapshot)
+
+`data/chromadb/` is gitignored — rebuilding the index from source ingestion takes ~10 hours. To skip the rebuild, download the prebuilt snapshot from GitHub Releases:
+
+1. Open the latest `chromadb-snapshot-*` release: https://github.com/Nelkit/sydney-liveability-ai/releases
+2. Download `chromadb-snapshot.zip` (~156 MB).
+3. Extract into the repo root so files land at `data/chromadb/...`.
+
+The backend reads from this path automatically (configured in `backend/db/chromadb.py`).
+
 ### 2. 🎨 Frontend Setup
 ```bash
 cd frontend
