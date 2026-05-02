@@ -77,7 +77,10 @@ def _retrieve_chromadb_chunks(
     return chunks
 
 def _normalise_suburb(s: str) -> str:
-    return s.strip().lower().replace(" ", "_")
+    # Reddit/sentiment chunks are ingested with Title Case + spaces in the
+    # `suburb` metadata. Lowercasing/snake-casing here returns 0 hits and
+    # silently triggers the unfiltered fallback in _retrieve_chromadb_chunks.
+    return s.replace("_", " ").replace("-", " ").strip().title()
 
 def _normalise_debug_mode() -> str:
     """Return normalized debug mode from env: off, gis, all."""
@@ -383,18 +386,6 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         }
 
     try:
-        # Extract suburbs from nested specialist outputs (for context building)
-        suburbs_from_specialists: set[str] = set()
-        if isinstance(outputs, dict):
-            for _agent_key, output in outputs.items():
-                if isinstance(output, dict):
-                    if any(isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v) for v in output.values()):
-                        suburbs_from_specialists.update(output.keys())
-                    elif "suburb" in output:
-                        suburbs_from_specialists.add(output["suburb"])
-
-        suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
-
         # Build context from DB (facilities, transport, OSM)
         context = _build_context_from_db(suburbs_list)
         context["weights"] = payload.get("weights") or {}
@@ -437,22 +428,10 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 if sub.get("liveability_score") is not None
             ]
 
-        # Build sources — always include GIS; add Reddit when available
-        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else (suburbs_list[0] if suburbs_list else "Sydney")
-        sources: list[dict[str, Any]] = [
-            {
-                "text": "Facilities, transport, and amenity data",
-                "suburb": main_suburb,
-                "source": "City of Sydney ArcGIS + OSM + Transport API",
-            }
-        ]
-        
-        # If no suburbs in context but outputs were analyzed, mention them
-        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else "Sydney"
-        
         # Citations: prefer the sentiment agent's grounded `sources`
         # (drawn from the Reddit vector index this turn). Fall back to
         # the structured-data attribution when no quote was retrieved.
+        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else (suburbs_list[0] if suburbs_list else "Sydney")
         sources: list[dict[str, Any]] = []
         sentiment_outputs = outputs.get("sentiment") if isinstance(outputs, dict) else None
         if isinstance(sentiment_outputs, dict):
