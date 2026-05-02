@@ -380,6 +380,7 @@ type CompareData = {
   aspectsB: AspectScore[];
   redditA: RedditHighlight[];
   redditB: RedditHighlight[];
+  answer: string;
 };
 
 async function fetchForSuburb(name: string): Promise<ChatAPIResponse> {
@@ -669,6 +670,8 @@ function CompareReport({
           setData(null);
           return;
         }
+        const answerA = pA.answer ?? "";
+        const answerB = pB.answer ?? "";
         setData({
           a: scoreA,
           b: scoreB,
@@ -676,6 +679,7 @@ function CompareReport({
           aspectsB: pB.aspect_scores?.[suburbB] ?? [],
           redditA: pA.reddit_highlights?.[suburbA] ?? [],
           redditB: pB.reddit_highlights?.[suburbB] ?? [],
+          answer: answerA.length >= answerB.length ? answerA : answerB,
         });
       })
       .catch(() => setData(null))
@@ -753,16 +757,31 @@ function CompareReport({
               Comparator data is not available for {suburbA} and/or {suburbB} yet.
             </div>
           </div>
-        ) : layout === "split" ? (
-          <SplitLayout
-            suburbA={suburbA}
-            suburbB={suburbB}
-            data={data}
-            hoverDim={hoverDim}
-            setHoverDim={setHoverDim}
-          />
         ) : (
-          <RowsLayout suburbA={suburbA} suburbB={suburbB} data={data} />
+          <div className="mx-auto flex max-w-[1280px] flex-col gap-5 p-6">
+            {data.answer && (
+              <SectionCard title="Assistant response" hint="synthesised comparison">
+                <div
+                  className="flex gap-4 rounded-lg p-4 text-[14px] leading-[1.65] tracking-[-0.005em]"
+                  style={{ background: "linear-gradient(180deg, oklch(0.99 0.01 285), oklch(0.992 0.002 250))" }}
+                >
+                  <div className="w-1 shrink-0 self-stretch rounded-sm" style={{ background: ACCENT_A }} />
+                  <div dangerouslySetInnerHTML={{ __html: data.answer }} />
+                </div>
+              </SectionCard>
+            )}
+            {layout === "split" ? (
+              <SplitLayout
+                suburbA={suburbA}
+                suburbB={suburbB}
+                data={data}
+                hoverDim={hoverDim}
+                setHoverDim={setHoverDim}
+              />
+            ) : (
+              <RowsLayout suburbA={suburbA} suburbB={suburbB} data={data} />
+            )}
+          </div>
         )}
       </div>
     </>

@@ -526,5 +526,131 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
         raise
 
 
+_SPECIALIST_LABELS: dict[str, str] = {
+    "crime": "Analysing crime data",
+    "sentiment": "Searching Reddit posts",
+    "gis": "Reading GIS layers",
+    "comparator": "Comparing suburbs",
+}
+
+
+def _step(text: str) -> tuple[str, dict[str, Any]]:
+    return ("step", {"text": text})
+
+
+def _build_final_result(
+    response: dict[str, Any],
+    router_ms: float,
+    router_output: dict[str, Any],
+    specialist_timings: dict[str, float],
+    specialist_outputs: dict[str, Any],
+    suburb_scores: list[dict[str, Any]],
+    suburb_names: list[str],
+    suburbs: list[str],
+    weights: dict[str, Any],
+) -> dict[str, Any]:
+    sentiment_surface = _load_sentiment_surface(suburb_names or suburbs)
+    response["quality"] = {
+        "evidence_trace_summary": _build_evidence_trace_summary(
+            router_ms, router_output, specialist_timings, specialist_outputs
+        )
+    }
+    response["outputs"] = specialist_outputs
+    response["router"] = {**router_output, "latencyMs": round(router_ms, 2)}
+    response["suburb_scores"] = suburb_scores
+    response["aspect_scores"] = _build_aspect_scores(sentiment_surface)
+    response["emotion_profile"] = _build_emotion_profiles(sentiment_surface)
+    response["reddit_highlights"] = _build_reddit_highlights(sentiment_surface)
+    response["crime_breakdown"] = _build_crime_breakdown(suburb_names or suburbs)
+    response["map_state"] = _build_map_state(router_output, suburb_scores)
+    return response
+
+
+def run_query_stream(
+    question: str, weights: dict[str, Any] | None = None
+) -> "Generator[tuple[str, Any], None, None]":
+    """Same pipeline as run_query but yields SSE events as each phase completes."""
+    from collections.abc import Generator  # local to avoid circular at module level
+
+    weights = weights or {}
+
+    yield _step("Routing question…")
+    router_started = time.perf_counter()
+    router_output = run_router({"question": question})
+    router_ms = (time.perf_counter() - router_started) * 1000.0
+    categories = list(router_output.get("categories", []))
+    suburbs = list(router_output.get("suburbs_mentioned", []))
+
+    if "out_of_scope" in categories:
+        yield _step("Synthesising answer…")
+        response = run_synthesiser({"question": question, "router": router_output, "outputs": {}})
+        response["quality"] = {
+            "evidence_trace_summary": _build_evidence_trace_summary(router_ms, router_output, {}, {})
+        }
+        response["outputs"] = {}
+        response["router"] = {**router_output, "latencyMs": round(router_ms, 2)}
+        response["suburb_scores"] = []
+        response["map_state"] = None
+        yield ("done", response)
+        return
+
+    specialist_outputs: dict[str, Any] = {}
+    specialist_timings: dict[str, float] = {}
+
+    for specialist_name in ["crime", "sentiment", "gis"]:
+        if specialist_name in categories and suburbs:
+            label = _SPECIALIST_LABELS[specialist_name]
+            for suburb in suburbs:
+                yield _step(f"{label} · {suburb}")
+            specialist_started = time.perf_counter()
+            specialist_outputs[specialist_name] = {}
+            run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
+            for suburb in suburbs:
+                specialist_outputs[specialist_name][suburb] = run_func(
+                    {"suburb": suburb, "question": question}
+                )
+            specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
+
+    if "comparator" in categories and len(suburbs) >= 2:
+        comparator_started = time.perf_counter()
+        for specialist_name in ["crime", "sentiment", "gis"]:
+            if specialist_name not in specialist_outputs:
+                label = _SPECIALIST_LABELS[specialist_name]
+                for suburb in suburbs[:2]:
+                    yield _step(f"{label} · {suburb}")
+                specialist_started = time.perf_counter()
+                run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
+                specialist_outputs[specialist_name] = {}
+                for suburb in suburbs[:2]:
+                    specialist_outputs[specialist_name][suburb] = run_func(
+                        {"suburb": suburb, "question": question}
+                    )
+                specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
+        yield _step(f"Comparing {suburbs[0]} vs {suburbs[1]}…")
+        compare_cats = [c for c in categories if c in ("gis", "crime", "sentiment")] or ["gis", "crime", "sentiment"]
+        specialist_outputs["comparator"] = run_comparator(
+            {"suburb_a": suburbs[0], "suburb_b": suburbs[1], "categories": compare_cats}
+        )
+        specialist_timings["comparator"] = (time.perf_counter() - comparator_started) * 1000.0
+
+    yield _step("Synthesising answer…")
+    response = run_synthesiser({
+        "question": question,
+        "weights": weights,
+        "router": router_output,
+        "outputs": specialist_outputs,
+    })
+
+    yield _step("Computing liveability scores…")
+    suburb_scores = _build_suburb_scores(weights, suburbs)
+    suburb_names = [row["name"] for row in suburb_scores if row.get("name")]
+
+    result = _build_final_result(
+        response, router_ms, router_output, specialist_timings,
+        specialist_outputs, suburb_scores, suburb_names, suburbs, weights,
+    )
+    yield ("done", result)
+
+
 if __name__ == "__main__":
     print(run_query("Compare Newtown versus Glebe for amenities and safety"))

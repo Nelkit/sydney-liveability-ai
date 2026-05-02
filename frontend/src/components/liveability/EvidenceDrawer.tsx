@@ -97,9 +97,9 @@ export function EvidenceDrawer({ trace, allCitations = [] }: Props) {
               </div>
             </div>
           ) : allCitations.length > 0 ? (
-            allCitations.map((c) => (
+            allCitations.map((c, i) => (
               <button
-                key={c.n}
+                key={`${c.n}-${i}`}
                 type="button"
                 className="flex w-full cursor-pointer items-center gap-2 rounded-md border border-border bg-bg p-2 text-left transition hover:bg-bg-elev"
               >

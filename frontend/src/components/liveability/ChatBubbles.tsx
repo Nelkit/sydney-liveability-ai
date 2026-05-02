@@ -2,6 +2,7 @@
 
 import { ArrowRight, BookOpen } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { CategoryChip } from "@/components/ui/CategoryChip";
 import { Cite } from "@/components/ui/Cite";
 import { SourceBadge } from "@/components/ui/SourceBadge";
@@ -212,16 +213,43 @@ export function OutOfScopeState({ onSuburbClick }: OutOfScopeStateProps) {
 
 // ---- Typing indicator ----
 
-export function TypingBubble() {
+const TYPING_PHRASES = [
+  "Thinking…",
+  "Searching Reddit…",
+  "Checking crime data…",
+  "Analysing sentiment…",
+  "Reading GIS layers…",
+  "Comparing suburbs…",
+  "Scoring liveability…",
+  "Processing…",
+  "Almost there…",
+];
+
+export function TypingBubble({ step }: { step?: string }) {
+  const [phraseIdx, setPhraseIdx] = useState(0);
+
+  useEffect(() => {
+    if (step) return;
+    const id = setInterval(() => {
+      setPhraseIdx((i) => (i + 1) % TYPING_PHRASES.length);
+    }, 1800);
+    return () => clearInterval(id);
+  }, [step]);
+
   return (
-    <div className="flex items-center gap-1.5 rounded-[6px_16px_16px_16px] border border-border bg-bg px-4 py-3 shadow-float backdrop-blur">
-      {[0, 150, 300].map((delay) => (
-        <span
-          key={delay}
-          className="size-1.5 animate-bounce rounded-full bg-fg-muted"
-          style={{ animationDelay: `${delay}ms` }}
-        />
-      ))}
+    <div className="flex flex-col gap-1.5 rounded-[6px_16px_16px_16px] border border-border bg-bg px-4 py-3 shadow-float backdrop-blur">
+      <div className="flex items-center gap-1.5">
+        {[0, 150, 300].map((delay) => (
+          <span
+            key={delay}
+            className="size-1.5 animate-bounce rounded-full bg-fg-muted"
+            style={{ animationDelay: `${delay}ms` }}
+          />
+        ))}
+      </div>
+      <span className="font-mono text-[10px] text-fg-muted transition-all duration-500">
+        {step ?? TYPING_PHRASES[phraseIdx]}
+      </span>
     </div>
   );
 }

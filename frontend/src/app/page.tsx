@@ -40,9 +40,8 @@ const MapPanel = dynamic(
 );
 
 const initialWeights: Weights = { transport: 0, safety: 0, lifestyle: 0, afford: 0 };
-const API_BASE_URL  = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
-const CHAT_ENDPOINT = `${API_BASE_URL}/api/chat`;
-const CIVIC_ENDPOINT= `${API_BASE_URL}/api/civic`;
+const API_BASE_URL   = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
+const CIVIC_ENDPOINT = `${API_BASE_URL}/api/civic`;
 const PREFERENCES_STORAGE_KEY = "sydney-liveability-preferences-v1";
 const USER_WEIGHTS_STORAGE_KEY = "user_weights";
 const CANCEL_SHOW_DELAY_MS = 3000;
@@ -230,7 +229,7 @@ type DisplayMessage =
   | { type: "user"; text: string; ts: string }
   | { type: "assistant"; message: AssistantMessage; payload: ChatAPIResponse; suburb: string | null }
   | { type: "out_of_scope" }
-  | { type: "typing" };
+  | { type: "typing"; step?: string };
 
 // ---------- component ----------
 
@@ -259,6 +258,7 @@ export default function HomePage() {
   const [showCancel, setShowCancel] = useState(false);
   const [showEvidence, setShowEvidence] = useState(true);
   const [chatActiveSuburbs, setChatActiveSuburbs] = useState<string[]>([]);
+  const [lastMentionedSuburb, setLastMentionedSuburb] = useState<string | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const cancelTimerRef     = useRef<ReturnType<typeof setTimeout> | null>(null);
   const chatScrollRef      = useRef<HTMLDivElement | null>(null);
@@ -442,6 +442,12 @@ export default function HomePage() {
     const mentionedSuburbs = allSuburbsForMap.filter((s) => valueLower.includes(s.name.toLowerCase())).map((s) => s.name);
     if (mentionedSuburbs.length > 0) setChatActiveSuburbs(mentionedSuburbs);
 
+    // If no suburb is mentioned in the message, append the last known suburb so the
+    // backend has context for follow-up questions like "what about transport?"
+    const messageToSend = mentionedSuburbs.length === 0 && lastMentionedSuburb
+      ? `${value} in ${lastMentionedSuburb}`
+      : value;
+
     setChatInput("");
     setIsLoading(true);
     setShowCancel(false);
@@ -459,45 +465,90 @@ export default function HomePage() {
     abortControllerRef.current = controller;
 
     try {
-      const res = await fetch(CHAT_ENDPOINT, {
+      const res = await fetch(`${API_BASE_URL}/api/chat/stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: value, weights: getUserWeights() }),
+        body: JSON.stringify({ message: messageToSend, weights: getUserWeights() }),
         signal: controller.signal,
       });
 
       if (!res.ok) throw new Error(`API error ${res.status}`);
-      const payload = (await res.json()) as ChatAPIResponse;
+      if (!res.body) throw new Error("No response body");
 
-      const message = apiResponseToAssistantMessage(payload, activeSuburbName);
-      const isOutOfScope = message.router.categories.includes("out_of_scope");
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
 
-      const hydratedPayload: ChatAPIResponse = payload.claims
-        ? payload
-        : { ...payload, claims: message.claims };
+      outer: while (true) {
+        const { done, value: chunk } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(chunk, { stream: true });
 
-      setLastPayload(hydratedPayload);
-      if (message.router.suburbs.length > 0) {
-        setSuburbPayloads((prev) => {
-          const next = { ...prev };
-          for (const s of message.router.suburbs) next[s.toLowerCase()] = hydratedPayload;
-          return next;
-        });
-      }
-      setDisplayMessages((prev) => [
-        ...prev.filter((m) => m.type !== "typing"),
-        isOutOfScope
-          ? { type: "out_of_scope" }
-          : { type: "assistant", message, payload: hydratedPayload, suburb: activeSuburbName },
-      ]);
+        const blocks = buffer.split("\n\n");
+        buffer = blocks.pop() ?? "";
 
-      // Update selected suburb and active map highlight from router
-      if (message.router.suburbs.length > 0) {
-        const detected = allSuburbsForMap.find((s) =>
-          s.name.toLowerCase() === message.router.suburbs[0].toLowerCase()
-        );
-        if (detected) setSelectedSuburbId(detected.id);
-        setChatActiveSuburbs(message.router.suburbs);
+        for (const block of blocks) {
+          const eventMatch = block.match(/^event: (\w+)/m);
+          const dataMatch  = block.match(/^data: (.+)/m);
+          if (!eventMatch || !dataMatch) continue;
+
+          const eventType = eventMatch[1];
+          const data = JSON.parse(dataMatch[1]);
+
+          if (eventType === "step") {
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              { type: "typing", step: data.text as string },
+            ]);
+          } else if (eventType === "error") {
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              {
+                type: "assistant",
+                message: {
+                  role: "assistant",
+                  ts: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+                  router: { categories: ["sentiment"], suburbs: [], latencyMs: 0 },
+                  claims: [{ text: data.message ?? "I could not process that question right now.", cites: [] }],
+                },
+                payload: { answer: "", sources: [] },
+                suburb: activeSuburbName,
+              },
+            ]);
+            break outer;
+          } else if (eventType === "done") {
+            const payload = data as ChatAPIResponse;
+            const message = apiResponseToAssistantMessage(payload, activeSuburbName);
+            const isOutOfScope = message.router.categories.includes("out_of_scope");
+            const hydratedPayload: ChatAPIResponse = payload.claims
+              ? payload
+              : { ...payload, claims: message.claims };
+
+            setLastPayload(hydratedPayload);
+            if (message.router.suburbs.length > 0) {
+              setSuburbPayloads((prev) => {
+                const next = { ...prev };
+                for (const s of message.router.suburbs) next[s.toLowerCase()] = hydratedPayload;
+                return next;
+              });
+            }
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              isOutOfScope
+                ? { type: "out_of_scope" }
+                : { type: "assistant", message, payload: hydratedPayload, suburb: activeSuburbName },
+            ]);
+            if (message.router.suburbs.length > 0) {
+              const detected = allSuburbsForMap.find((s) =>
+                s.name.toLowerCase() === message.router.suburbs[0].toLowerCase()
+              );
+              if (detected) setSelectedSuburbId(detected.id);
+              setChatActiveSuburbs(message.router.suburbs);
+              setLastMentionedSuburb(message.router.suburbs[0]);
+            }
+            break outer;
+          }
+        }
       }
     } catch (err) {
       if ((err as Error).name === "AbortError") return;
@@ -641,7 +692,7 @@ export default function HomePage() {
                     >
                       <PanelRight size={13} strokeWidth={1.4} />
                     </button>
-                    <button type="button" title="New chat" onClick={() => { setDisplayMessages([]); setChatActiveSuburbs([]); }} className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
+                    <button type="button" title="New chat" onClick={() => { setDisplayMessages([]); setChatActiveSuburbs([]); setLastMentionedSuburb(null); }} className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
                       <Plus size={13} strokeWidth={1.4} />
                     </button>
                   </div>
@@ -666,17 +717,9 @@ export default function HomePage() {
 
                       {displayMessages.map((m, i) => {
                         if (m.type === "user")       return <UserBubble key={i} text={m.text} ts={m.ts} />;
-                        if (m.type === "typing")     return <TypingBubble key={i} />;
+                        if (m.type === "typing")     return <TypingBubble key={i} step={m.step} />;
                         if (m.type === "out_of_scope") return <OutOfScopeState key={i} onSuburbClick={(t) => sendChat(t)} />;
                         if (m.type === "assistant") {
-                          const isLast = i === displayMessages.length - 1;
-                          const followUps = isLast && m.message.router.suburbs.length > 0
-                            ? [
-                                "What about transport?",
-                                `Compare with another suburb`,
-                                "Show detailed report",
-                              ]
-                            : undefined;
                           return (
                             <AssistantBubble
                               key={i}
@@ -687,8 +730,6 @@ export default function HomePage() {
                                   suburbs,
                                 });
                               }}
-                              followUpChips={followUps}
-                              onFollowUp={(t) => sendChat(t)}
                             />
                           );
                         }

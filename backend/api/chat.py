@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import json
+from collections.abc import Generator
 from typing import Any
 
 from fastapi import APIRouter
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from crews.query_crew import run_query
+from crews.query_crew import run_query, run_query_stream
 
 
 router = APIRouter(prefix="/api", tags=["chat"])
@@ -79,3 +82,35 @@ def chat(payload: ChatRequest) -> dict[str, Any]:
             "suburb_scores": [],
             "map_state": None,
         }
+
+
+def _sse(event: str, data: Any) -> str:
+    return f"event: {event}\ndata: {json.dumps(data)}\n\n"
+
+
+@router.post("/chat/stream")
+def chat_stream(payload: ChatRequest) -> StreamingResponse:
+    """SSE stream: emits step events then a final done event with the full payload."""
+    question = (payload.question or payload.message or "").strip()
+    weights = payload.weights or {}
+
+    def generate() -> Generator[str, None, None]:
+        if not question:
+            yield _sse("done", {
+                "answer": "Please provide a question.",
+                "sources": [],
+                "suburb_scores": [],
+                "map_state": None,
+            })
+            return
+
+        try:
+            for event_type, data in run_query_stream(question, weights):
+                yield _sse(event_type, data)
+        except Exception:
+            yield _sse("error", {"message": "I could not process that question right now. Please try again."})
+
+    return StreamingResponse(generate(), media_type="text/event-stream", headers={
+        "Cache-Control": "no-cache",
+        "X-Accel-Buffering": "no",
+    })
