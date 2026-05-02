@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "evaluated_at": "2026-05-01T23:15:35",
+    "evaluated_at": "2026-05-02T11:35:53",
     "endpoint": "http://127.0.0.1:8000/api/chat",
     "weights_used": {},
     "demo_suburbs": [
@@ -11,10 +11,10 @@
       "Zetland"
     ],
     "tier_definitions": {
-      "demo": "Front-map demo suburbs, full agent stack expected to work",
+      "demo": "Front-map demo suburbs, full agent stack expected",
       "sparse_data": "In Reddit set but very few posts (data quality probe)",
       "analysed_undemoed": "In 563-suburb Reddit set but not in front-map demo",
-      "high_density": "Suburbs with high Reddit post volume (rich data summarisation test)",
+      "high_density": "High Reddit post volume (rich data summarisation test)",
       "comparison": "Cross-suburb comparison within demo set",
       "out_of_scope": "Outside Greater Sydney (refusal probe)"
     },
@@ -31,7 +31,7 @@
         "Sydney"
       ],
       "question": "Is Sydney CBD safe at night?",
-      "answer": "I don\u2019t have any safety or crime\u2011related data for Sydney CBD in the provided dataset\u2014the crime agent returned \u201cno data\u201d for Sydney\u2019s crime summary and trend\u3010CRIME\u3011. Therefore I cannot assess whether the CBD is safe at night based on the available information.",
+      "answer": "The provided data contains no safety or crime metrics for Sydney CBD (suburb \"Sydney\"). According to the crime data specialist, the crime summary for Sydney is empty with a trend of \"no data\"\u3010CRIME\u3011.",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -49,7 +49,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 43009,
+      "latency_ms": 28466,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -69,28 +69,31 @@
         "Surry Hills"
       ],
       "question": "How safe is Surry Hills based on available data and resident sentiment?",
-      "answer": "Based on resident sentiment data, Surry Hills has a safety score of 0.409 from 77 Reddit mentions with strong coverage and confidence. Official crime data for Surry Hills is not available in the provided dataset. [Evidence: step 1]",
+      "answer": "Based on resident sentiment analysis, Surry Hills has a safety score of 0.409/1.0 (40.9%) from 77 Reddit mentions with strong confidence, indicating mixed perceptions of safety. Objective crime data shows no available statistics for the suburb. Specific resident concerns include cycling safety issues, reports of drug addiction among neighbors, and incidents like \"Neo getting chased through Surry Hills\" as evidenced in Reddit discussions. While the suburb scores well in other areas like nightlife (0.601), green space (0.629), and transport (0.581), the safety sentiment suggests residents have notable concerns despite its high facilities score (49.20) and transport accessibility (0.783).",
       "sources": [
         {
-          "text": "Please don\u2019t let opt-out tipping become a thing\nSaw this on a menu for a new restaurant in Surry Hills.  The meal prices seem reasonable. Just don\u2019t understand what this opt-out tipping is about. Do I",
+          "text": "Is it safe to cycle from Surry Hills to UTS",
           "suburb": "Surry Hills",
-          "source": "sentiment_quote",
-          "url": "https://reddit.com/r/sydney/comments/1h5zgjv/please_dont_let_optout_tipping_become_a_thing/",
-          "dimension": "general"
+          "source": "reddit",
+          "url": "https://reddit.com/r/sydney/comments/1dhverf/is_it_safe_to_cycle_from_surry_hills_to_uts/",
+          "dimension": "safety",
+          "distance": 0.3957309126853943
         },
         {
-          "text": "RIP Chris\nI take my dog for a walk down Crown st Surry Hills everyday and I befriended a lovely man named Chris and his beautiful white boxer dog perched on the wall beside The Clock Hotel.\n\nEach day ",
+          "text": "an offer for a flat in Surry Hills. If I said no, I'd have had to wait a couple years for another offer. The area itself is great, but 80% of my neighbours on my street were drug addicts, mentally",
           "suburb": "Surry Hills",
-          "source": "sentiment_quote",
-          "url": "https://reddit.com/r/sydney/comments/1qj85xa/rip_chris/",
-          "dimension": "general"
+          "source": "reddit",
+          "url": "https://reddit.com/r/sydney/comments/1dicx4c/future_of_sydney_live_venue_targeted_by_nimbys_in/l93byoa/",
+          "dimension": "safety",
+          "distance": 0.486197829246521
         },
         {
-          "text": "Sydney\u2019s rental crisis on full display as almost 100 people queue to inspect an apartment above a pub in Surry Hills",
+          "text": "Neo getting chased through Surry Hills",
           "suburb": "Surry Hills",
-          "source": "sentiment_quote",
-          "url": "https://reddit.com/r/sydney/comments/1aguiu8/sydneys_rental_crisis_on_full_display_as_almost/",
-          "dimension": "general"
+          "source": "reddit",
+          "url": "https://reddit.com/r/sydney/comments/1hzf6t7/neo_getting_chased_through_surry_hills/",
+          "dimension": "safety",
+          "distance": 0.5169411301612854
         }
       ],
       "suburb_scores": [],
@@ -107,12 +110,12 @@
             "tool": "search_posts",
             "suburb": "Surry Hills",
             "dimension": "safety",
-            "result_count": 0
+            "result_count": 3
           },
           "no_data_count": 0
         }
       },
-      "latency_ms": 67508,
+      "latency_ms": 67741,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -132,7 +135,7 @@
         "Sydney"
       ],
       "question": "How well-connected is Sydney CBD by public transport?",
-      "answer": "Sydney CBD\u2019s public\u2011transport connectivity is reflected in its transport_score of **0.756** (on a scale where higher values indicate better connectivity)\u3010GIS\u202ftransport\u3011. The detailed transport metrics (bus stops, train stations, light\u2011rail stops, bike\u2011path length, average commute time) are not provided in the dataset, so no further specifics can be given.",
+      "answer": "Sydney CBD\u2019s public\u2011transport connectivity is reflected in its transport score of **0.756** (out of a possible 1.0) and an OSM amenity score of **1.0**, indicating a high level of service availability\u3010GIS (multi\u2011suburb): Sydney \u2192 transport \u2192 transport_score: 0.756\u3011. However, the dataset does not provide specific counts for bus stops, train stations, light\u2011rail stops, or bike\u2011path lengths (all listed as null), so exact infrastructure numbers aren\u2019t available from this source.",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -155,7 +158,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 8778,
+      "latency_ms": 16957,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -175,7 +178,7 @@
         "Eveleigh"
       ],
       "question": "How well connected is Eveleigh by public transport?",
-      "answer": "Eveleigh has no recorded bus stops, train stations, light\u2011rail stops, bike paths or average commute times in the dataset, indicating a lack of publicly available transport infrastructure data. Its transport_score is 0.42, which suggests only moderate public\u2011transport connectivity based on the available metrics.\u3010GIS: transport\u3011",
+      "answer": "Eveleigh has a transport score of **0.42**, indicating a moderate level of public\u2011transport connectivity (GIS\u202ftransport data). The dataset reports no specific bus stops, train stations, light\u2011rail stops, or bike\u2011path kilometres for the suburb, so the score reflects limited measured infrastructure.",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -198,7 +201,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 8820,
+      "latency_ms": 6969,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -218,7 +221,7 @@
         "Glebe"
       ],
       "question": "What is the food and cafe scene like in Glebe?",
-      "answer": "Glebe has a lively food and caf\u00e9 scene, with **33 caf\u00e9s** and **27 restaurants** recorded in the suburb\u2019s facilities data\u3010suburbs\u3011. The OpenStreetMap amenity layer also lists **33 caf\u00e9s** for Glebe, confirming the high concentration of coffee and eatery options\u3010GIS\u3011. This suggests a dense and varied caf\u00e9 offering for residents and visitors.",
+      "answer": "Glebe has 33 cafes and 27 restaurants according to its facilities data\u202f(facilities). Residents highlight positive spots such as Staves near Broadway and recommend nice food options, while others criticize venues like the AB Hotel for miserable atmosphere and awful food\u202f(retrieved context).",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -241,7 +244,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 13525,
+      "latency_ms": 10293,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -261,7 +264,7 @@
         "Surry Hills"
       ],
       "question": "What is Surry Hills like in terms of lifestyle, including nightlife and amenities?",
-      "answer": "Surry Hills has a lively caf\u00e9 and restaurant scene with\u202f141\u202fcaf\u00e9s and\u202f206\u202frestaurants\u202f[OSM amenities] and plenty of green space\u201428\u202fparks and\u202f9\u202fplaygrounds\u202f[OSM amenities]. Its transport accessibility is solid, reflected by a transport score of\u202f0.783\u202f[transport], and it scores\u202f49.2\u202fon the facilities index, indicating a good range of libraries, car\u2011share bays, mobility parking and sports facilities\u202f[official facilities]. I have no resident\u2011sentiment data for Surry Hills (the sentiment agent returned\u202fstatus:\u202f\"no_data\"), so I cannot comment on how locals perceive its nightlife or overall liveliness.",
+      "answer": "Surry Hills boasts a vibrant dining and nightlife scene with\u202f141\u202fcaf\u00e9s and\u202f206\u202frestaurants\u202f(facilities data), while also offering\u202f28\u202fparks and\u202f9\u202fplaygrounds for outdoor recreation\u202f(facilities data). Its transport network is strong, reflected by a transport_score of\u202f0.783\u202f(GIS transport). Residents frequently compare it to Woollahra, noting the suburb\u2019s terrace\u2011house charm and affordability\u202f(retrieved context: \u201cvery similar to Surry Hills. Terrace houses there could be bought for next to nothing.\u201d).",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -284,7 +287,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 19779,
+      "latency_ms": 25386,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -304,7 +307,7 @@
         "Zetland"
       ],
       "question": "What is the lifestyle in Zetland like?",
-      "answer": "Residents describe Zetland\u2019s community as moderate (score\u202f0.532,\u202f39\u202fmentions) and note good access to caf\u00e9s and nightlife (food_and_cafe\u202f0.596, nightlife\u202f0.607)\u3010step\u202f6\u3011\u3010step\u202f2\u3011\u3010step\u202f3\u3011. Safety is perceived as low (score\u202f0.102,\u202f15\u202fmentions) while transport and green space receive moderate ratings (transport\u202f0.518,\u202f19\u202fmentions; green_space\u202f0.581,\u202f13\u202fmentions) and noise data is unavailable\u3010step\u202f1\u3011\u3010step\u202f5\u3011\u3010step\u202f8\u3011\u3010step\u202f7\u3011. The suburb offers 61 facilities including 41 car\u2011share bays, 21 parks, 25 caf\u00e9s and 33 restaurants, supporting an active, amenity\u2011rich lifestyle.",
+      "answer": "Zetland provides a wealth of everyday amenities \u2013 61 total facilities (including 41 car\u2011share bays, 25 caf\u00e9s, 33 restaurants, 21 parks and 2 schools) \u2013 but resident sentiment reveals weak safety perceptions (score\u202f0.10,\u202fstep\u202f1) and only moderate ratings for food/caf\u00e9 (0.60,\u202fstep\u202f2), nightlife (0.61,\u202fstep\u202f3), transport (0.52,\u202fstep\u202f5) and community (0.53,\u202fstep\u202f6), with no data on noise levels.\u202fThese figures suggest a convenient yet unevenly lived\u2011in lifestyle.\u202f[Data: suburb block; Sentiment steps\u202f1\u20116]",
       "sources": [
         {
           "text": "Taking your 102 year-old car to do the grocery run in Zetland",
@@ -351,7 +354,7 @@
           "no_data_count": 1
         }
       },
-      "latency_ms": 33883,
+      "latency_ms": 25171,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -371,7 +374,7 @@
         "Sydney"
       ],
       "question": "What is overall liveability like in Sydney CBD?",
-      "answer": "Sydney CBD\u2019s facilities score is\u202f\u2248\u202f49\u202f(out of the scale used in the dataset) and its transport score is\u202f0.756, giving a combined GIS liveability score of\u202f0.748\u3010GIS data\u3011. This suggests a moderate\u2011to\u2011high level of liveability based on available amenities and transport access. Sentiment scores for all aspects (safety, food\u2011and\u2011cafe, nightlife, affordability, transport, community, noise, green space) are neutral at\u202f0.5 with zero resident mentions, indicating that no measurable sentiment evidence is currently available\u3010sentiment evidence trace, step\u202f1\u3011.",
+      "answer": "Sydney CBD shows a moderate\u2011to\u2011good level of liveability based on the available quantitative metrics: its GIS\u2011derived combined score is **0.748** (on a 0\u20111 scale) and the transport score is **0.756**, indicating strong accessibility\u3010GIS (multi-suburb)\u3011. Sentiment\u2011based aspects (safety, food & cafe, nightlife, affordability, transport, community, noise, green space) all have a neutral score of **0.5** with zero resident mentions, reflecting a lack of strong positive or negative sentiment in the data\u3010SENTIMENT (multi-suburb) \u2013 steps\u202f1\u20118\u3011. Since the specific *liveability_score* field is null, we rely on the combined and transport scores as the best available proxies for overall liveability.",
       "sources": [
         {
           "text": "Facilities, transport, and amenity data",
@@ -402,7 +405,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 17995,
+      "latency_ms": 10506,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -422,7 +425,7 @@
         "Glebe"
       ],
       "question": "How liveable is Glebe overall?",
-      "answer": "Glebe does not have a explicit liveability_score in the data, but its facilities_score is 58.29, transport_score is 0.66, and its OSM amenity score is 0.1504, yielding a combined GIS score of 0.455\u202f\u3010GIS\u3011. Sentiment analysis of resident Reddit posts gives an overall \u201cneutral\u201d tone for Glebe\u202f\u3010Sentiment\u3011, as evidenced by the sentiment\u2011aspect look\u2011ups (e.g., safety score\u202f0.225)\u202f\u3010Evidence trace step\u202f1\u3011. Taken together, these metrics suggest a moderate level of liveability.",
+      "answer": "Glebe\u2019s liveability isn\u2019t captured by a single \u201cliveability_score\u201d in the data (that field is null), but the available metrics show a mixed picture. Its facilities score is **58.3** (based on 123 total facilities including 1 library, 46 car\u2011share bays, 69 mobility\u2011parking spaces and 7 sports facilities)\u3010facilities\u3011, its transport score is **0.66**\u3010transport\u3011, and its OSM amenity score is **0.1504** (reflecting 33 caf\u00e9s, 27 restaurants, 7 schools, 0 hospitals, 4 pharmacies, 37 parks and 19 playgrounds)\u3010OSM\u3011. Sentiment analysis highlights strong resident feelings about community (score\u202f0.652,\u202f159 mentions) and food/caf\u00e9 offerings (score\u202f0.655,\u202f29 mentions), while safety (0.225) and affordability (0.391) are lower\u3010sentiment: safety step\u202f1\u3011\u3010sentiment: food_and_cafe step\u202f2\u3011. Because no overall liveability score is provided, we cannot give a definitive liveability rating for Glebe beyond these individual indicators.",
       "sources": [
         {
           "text": "Grand Post Offices of Sydney\nNSW has some pretty grand post offices, with country towns taking the lead in some of the most beautiful. Here are some honourable mentions ranked that I think are some of",
@@ -469,7 +472,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 33880,
+      "latency_ms": 9377,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -489,7 +492,7 @@
         "Wareemba"
       ],
       "question": "What's it like to live in Wareemba?",
-      "answer": "Wareemba offers very few amenities\u2014no cafes, libraries, schools, or transport stops recorded, with just one restaurant and two parks (facilities\u202f=\u202f0, restaurants\u202f=\u202f1, parks\u202f=\u202f2)\u3010suburbs data\u3011. Sentiment analysis shows a weak but positive sense of community (score\u202f0.8 from 1 Reddit mention)\u3010evidence trace step\u202f6\u3011, but no perceived green space (OSM\u2011based score\u202f0.0)\u3010evidence trace step\u202f8\u3011 and an overall negative resident outlook\u3010sentiment output: overall\u202f=\u202f\u201cnegative\u201d\u3011. Many aspects\u2014safety, food/cafe, nightlife, affordability, transport, and noise\u2014have no data available.",
+      "answer": "Wareemba has virtually no local amenities\u20140 libraries, caf\u00e9s, schools or health services, just\u202f1 restaurant and\u202f2 parks\u2014and its transport score is low at\u202f0.203 (no bus/train/light\u2011rail data)\u3010suburbs\u3011\u3010GIS\u3011. Resident sentiment shows a weak sense of community (score\u202f0.8 from a single Reddit mention) and essentially no perceived green space (OSM\u2011based score\u202f0.0), leading to an overall negative impression\u3010sentiment step\u202f6\u3011\u3010sentiment step\u202f8\u3011.",
       "sources": [
         {
           "text": "Postcode pride/envy\nHey guys, a quick story and a question.\nTen years ago I was living in Abbotsford on Great North Road, near the roundabout that marks the entrance to the suburb. At a local social g",
@@ -522,7 +525,7 @@
           "no_data_count": 6
         }
       },
-      "latency_ms": 16649,
+      "latency_ms": 14020,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -542,7 +545,7 @@
         "Newtown"
       ],
       "question": "Tell me about Newtown for a young professional.",
-      "answer": "Newtown scores highly for its cafe culture (58 cafes, food_and_cafe sentiment\u202f0.541) and nightlife (0.591) and enjoys a strong sense of community (0.611), making it attractive to young professionals who value social life\u202f(steps\u202f2,\u202f3,\u202f6). Transport accessibility is decent (transport sentiment\u202f0.482, transport_score\u202f0.759) while safety and affordability are moderate (0.357 and 0.474 respectively) and green space is positively noted (0.712) though based on fewer mentions\u202f(steps\u202f1,\u202f4,\u202f5,\u202f8).",
+      "answer": "Newtown provides ample amenities for a young professional, with 58 caf\u00e9s, 48 parks and a facilities score of\u202f20.5\u202f(GIS facilities/amenities). Residents report a strong community feel (0.611 score from 533 Reddit mentions) and good transport access (transport score\u202f0.759\u202ffrom GIS), while safety perceptions are weaker (0.357 score from 188 Reddit mentions). Green\u2011space sentiment is high (0.712 from 67 mentions) and nightlife/food scores are positive, making it attractive despite moderate affordability concerns (0.474 score).\u3010facilities data\u3011\u3010transport data\u3011\u3010sentiment step\u202f6\u3011\u3010sentiment step\u202f5\u3011\u3010sentiment step\u202f1\u3011\u3010sentiment step\u202f8\u3011",
       "sources": [
         {
           "text": "New mural Newtown",
@@ -589,7 +592,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 18684,
+      "latency_ms": 14354,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -609,7 +612,7 @@
         "Parramatta"
       ],
       "question": "What is life like in Parramatta for residents?",
-      "answer": "Life in Parramatta features strong community sentiment (score 0.622, 727 mentions) and positive green space perceptions (score 0.674), though safety concerns are the lowest-rated aspect (score 0.318). Residents report moderate satisfaction with transport (score 0.546) and affordability (score 0.549), with overall sentiment appearing neutral based on emotional analysis (53.4% neutral). [Evidence: steps 1, 4, 5, 6, 8]",
+      "answer": "Life in Parramatta is viewed by residents as having a decent community vibe (score\u202f0.622)\u30106\u2020L1-L4\u3011 and good green\u2011space access (0.674)\u30108\u2020L1-L4\u3011, while safety feels weaker (0.318)\u30101\u2020L1-L4\u3011 and noise is a noted concern (0.544)\u30107\u2020L1-L4\u3011. The suburb also scores well for food\u2011and\u2011cafe options (0.654)\u30102\u2020L1-L4\u3011 and nightlife (0.612)\u30103\u2020L1-L4\u3011, with transport rated moderately (0.546)\u30105\u2020L1-L4\u3011 and affordability around the middle (0.549)\u30104\u2020L1-L4\u3011. In terms of amenities, Parramatta offers 90 caf\u00e9s, 149 restaurants, 17 schools, 3 hospitals, 12 pharmacies, 67 parks and 28 playgrounds, backed by a transport score of 0.42 and a high OSM accessibility score of 0.447.",
       "sources": [
         {
           "text": "View From my Appartment in Parramatta This Morning",
@@ -651,7 +654,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 79932,
+      "latency_ms": 30358,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -672,7 +675,7 @@
         "Surry Hills"
       ],
       "question": "If I want to live close to the CBD, should I pick Sydney or Surry Hills?",
-      "answer": "If you want to live as close to the CBD as possible, Sydney itself is the stronger option: it has a higher combined liveability score (0.748\u202fvs\u202f0.573) and a perfect OSM amenities score (1.0\u202fvs\u202f0.474)\u3010GIS data\u3011, while its facilities score is almost identical (48.974\u202fvs\u202f49.203)\u3010facilities data\u3011 and its transport score is only slightly lower (0.756\u202fvs\u202f0.783)\u3010transport data\u3011. Sentiment data show a neutral resident view for Sydney (transport\u202f0.5,\u202f0\u202fmentions)\u3010Sydney sentiment trace, step\u202f5\u3011, whereas Surry Hills reports a modestly positive transport sentiment (0.581 from 76 Reddit mentions)\u3010Surry Hills sentiment trace, step\u202f5\u3011. Overall, Sydney\u2019s superior combined and amenity scores outweigh Surry Hills\u2019 marginal transport edge for CBD proximity.",
+      "answer": "Sydney\u2019s suburb scores higher on the OSM amenity density (1.0\u202fvs\u202f0.474) and offers far more caf\u00e9s (325\u202fvs\u202f141) and restaurants (408\u202fvs\u202f206), signalling a denser, more central location\u202f\u3010suburbs data\u3011. Both areas have comparable transport accessibility (Sydney transport_score\u202f0.756, Surry Hills\u202f0.783)\u202f\u3010GIS data\u3011, so the richer amenity base suggests Sydney is marginally closer to the CBD. Therefore, if minimizing CBD commute is the priority, Sydney is the better choice.",
       "sources": [
         {
           "text": "Please don\u2019t let opt-out tipping become a thing\nSaw this on a menu for a new restaurant in Surry Hills.  The meal prices seem reasonable. Just don\u2019t understand what this opt-out tipping is about. Do I",
@@ -723,7 +726,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 28739,
+      "latency_ms": 19949,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -744,7 +747,7 @@
         "Eveleigh"
       ],
       "question": "How does Glebe compare to Eveleigh for a calmer lifestyle?",
-      "answer": "Glebe feels calmer than Eveleigh: its nightlife sentiment is lower (0.455 vs\u202f0.498)\u3010Glebe nightlife\u202fstep\u202f3\u3011, it has a measurable noise perception score of\u202f0.405 indicating moderate quietness while Eveleigh has no noise data\u3010Eveleigh noise\u202fstep\u202f7\u3011, and Glebe\u2019s community sentiment is stronger (0.652 vs\u202f0.512)\u3010Glebe community\u202fstep\u202f6\u3011. These sentiment metrics suggest Glebe offers a quieter, more community\u2011oriented environment compared to Eveleigh.",
+      "answer": "Glebe residents rate safety relatively low (0.225) and report a moderate noise level (0.405), while Eveleigh has no safety or noise data in the sentiment set\u202f\u3010step\u202f1\u202f[Glebe] get_suburb_aspect\u3011, \u3010step\u202f7\u202f[Glebe] get_suburb_aspect\u3011. In contrast, Eveleigh shows a higher perceived green\u2011space score (0.747) than Glebe\u2019s 0.605, suggesting more natural surroundings that could support a calmer feel\u202f\u3010step\u202f8\u202f[Eveleigh] get_suburb_aspect\u3011. Overall, based on the available sentiment metrics, Eveleigh appears to offer a quieter, greener setting, whereas Glebe scores higher on community activity (0.652 vs\u202f0.512) but lower on safety and higher on perceived noise.",
       "sources": [
         {
           "text": "134 Little Eveleigh St",
@@ -816,7 +819,7 @@
           "no_data_count": 2
         }
       },
-      "latency_ms": 67117,
+      "latency_ms": 26044,
       "is_fallback": false,
       "error": null,
       "scores": {
@@ -848,7 +851,7 @@
           "no_data_count": 0
         }
       },
-      "latency_ms": 98,
+      "latency_ms": 163,
       "is_fallback": false,
       "error": null,
       "scores": {
