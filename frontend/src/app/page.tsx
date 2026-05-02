@@ -1,12 +1,13 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { Coffee, Flame, Hexagon, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
+import { Coffee, Hexagon, Shield, TrainFront } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AssistantSidebar } from "../components/liveability/AssistantSidebar";
 import { importanceOptions, quickChips, suburbs, weightPrompts } from "../components/liveability/data";
+import { ImportanceSlider } from "../components/liveability/ImportanceSlider";
 import { DetailedReportModal } from "../components/modals/DetailedReportModal";
 import { OnboardingPanel } from "../components/liveability/OnboardingPanel";
 import { SharedBrand } from "../components/liveability/SharedBrand";
@@ -51,13 +52,9 @@ function getUserWeights() {
     nightlife: 0.2
   };
 
-  const importanceMap: Record<string, number> = {
-    "Very important": 4,
-    Important: 3,
-    Neutral: 2,
-    "Not very important": 1,
-    "Not interested": 0
-  };
+  const importanceValueMap: Record<string, number> = Object.fromEntries(
+    importanceOptions.map((o) => [o.key, o.value])
+  );
 
   try {
     const stored = window.localStorage.getItem(USER_WEIGHTS_STORAGE_KEY);
@@ -77,7 +74,7 @@ function getUserWeights() {
     let total = 0;
     for (const key of keys) {
       const label = prefs[key];
-      const score = typeof label === "string" ? (importanceMap[label] ?? 2) : 2;
+      const score = typeof label === "string" ? (importanceValueMap[label] ?? 50) : 50;
       raw[key] = score;
       total += score;
     }
@@ -245,41 +242,6 @@ function getImportanceLabel(choiceKey?: ImportanceLevelKey) {
   return importanceOptions.find((option) => option.key === choiceKey)?.label ?? "Unset";
 }
 
-function getImportanceVisual(choiceKey: ImportanceLevelKey) {
-  if (choiceKey === "veryImportant") {
-    return {
-      icon: Flame,
-      active: "border-rose-300 bg-rose-50 text-rose-700",
-      idle: "border-rose-100 bg-white text-rose-500 hover:border-rose-300"
-    };
-  }
-  if (choiceKey === "important") {
-    return {
-      icon: ThumbsUp,
-      active: "border-amber-300 bg-amber-50 text-amber-700",
-      idle: "border-amber-100 bg-white text-amber-600 hover:border-amber-300"
-    };
-  }
-  if (choiceKey === "neutral") {
-    return {
-      icon: Sparkles,
-      active: "border-sky-300 bg-sky-50 text-sky-700",
-      idle: "border-sky-100 bg-white text-sky-600 hover:border-sky-300"
-    };
-  }
-  if (choiceKey === "notVeryImportant") {
-    return {
-      icon: Minus,
-      active: "border-slate-300 bg-slate-100 text-slate-700",
-      idle: "border-slate-200 bg-white text-slate-500 hover:border-slate-400"
-    };
-  }
-  return {
-    icon: X,
-    active: "border-violet-300 bg-violet-50 text-violet-700",
-    idle: "border-violet-100 bg-white text-violet-500 hover:border-violet-300"
-  };
-}
 
 function toChatPreview(fullAnswerHtml: string): string {
   const plainText = fullAnswerHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
@@ -710,30 +672,10 @@ export default function HomePage() {
                             className={`${index < allItems.length - 1 ? "mb-4 border-b border-slate-200/90 pb-4" : ""}`}
                           >
                             <span className="mb-2 block text-sm font-semibold text-slate-700">{label}</span>
-                            <div className="scrollbar-none flex gap-1.5 overflow-x-auto pb-1">
-                              {importanceOptions.map((option) => {
-                                const active = selectedLevels[key] === option.key;
-                                const visual = getImportanceVisual(option.key);
-                                const OptionIcon = visual.icon;
-                                return (
-                                  <button
-                                    key={option.key}
-                                    type="button"
-                                    onClick={() => applyWeightChoice(key, option.key)}
-                                    className={`inline-flex shrink-0 items-center rounded-full border px-2.5 py-1.5 text-[11px] font-medium leading-none transition ${
-                                      active
-                                        ? `${visual.active} font-semibold`
-                                        : `${visual.idle}`
-                                    }`}
-                                  >
-                                    <span className="inline-flex items-center gap-1 leading-none">
-                                      <OptionIcon size={11} />
-                                      {option.label}
-                                    </span>
-                                  </button>
-                                );
-                              })}
-                            </div>
+                            <ImportanceSlider
+                              value={selectedLevels[key]}
+                              onChange={(k) => applyWeightChoice(key, k)}
+                            />
                           </div>
                         ))}
                       </div>

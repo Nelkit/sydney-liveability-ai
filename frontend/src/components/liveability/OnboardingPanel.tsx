@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, CircleDollarSign, Coffee, Flame, Minus, Shield, Sparkles, ThumbsUp, TrainFront, X } from "lucide-react";
-import { importanceOptions } from "./data";
+import { CheckCircle2, CircleDollarSign, Coffee, Shield, TrainFront } from "lucide-react";
+import { ImportanceSlider } from "./ImportanceSlider";
 import { SharedBrand } from "./SharedBrand";
 import { TypingDots } from "./TypingDots";
 import { ChatMessage, ImportanceLevelKey, Weights } from "./types";
@@ -31,7 +31,6 @@ export function OnboardingPanel({
   typing,
   profileReady,
   onSelectOnboardingChoice,
-  weights,
   selectedLevels,
   onWeightLevelChange,
   onContinue
@@ -53,43 +52,6 @@ export function OnboardingPanel({
   const totalQuestions = weightMeta.length;
   const answeredQuestions = weightMeta.filter(({ key }) => Boolean(selectedLevels[key])).length;
   const progressValue = Math.round((answeredQuestions / totalQuestions) * 100);
-
-  function getChoiceVisual(label: string) {
-    const normalized = label.toLowerCase();
-    if (normalized.includes("not very")) {
-      return {
-        icon: Minus,
-        active: "border-slate-500 bg-slate-200 text-slate-800 ring-2 ring-slate-300/70 shadow-[0_8px_18px_rgba(71,85,105,0.24)]",
-        idle: "border-slate-200 bg-white text-slate-600 hover:-translate-y-[1px] hover:border-slate-400 hover:bg-slate-50 hover:text-slate-800"
-      };
-    }
-    if (normalized.includes("very")) {
-      return {
-        icon: Flame,
-        active: "border-rose-500 bg-rose-100 text-rose-800 ring-2 ring-rose-300/60 shadow-[0_8px_18px_rgba(244,63,94,0.25)]",
-        idle: "border-rose-200 bg-white text-rose-600 hover:-translate-y-[1px] hover:border-rose-400 hover:bg-rose-50 hover:text-rose-800"
-      };
-    }
-    if (normalized.includes("important")) {
-      return {
-        icon: ThumbsUp,
-        active: "border-amber-500 bg-amber-100 text-amber-800 ring-2 ring-amber-300/60 shadow-[0_8px_18px_rgba(245,158,11,0.25)]",
-        idle: "border-amber-200 bg-white text-amber-700 hover:-translate-y-[1px] hover:border-amber-400 hover:bg-amber-50 hover:text-amber-900"
-      };
-    }
-    if (normalized.includes("neutral")) {
-      return {
-        icon: Sparkles,
-        active: "border-sky-500 bg-sky-100 text-sky-800 ring-2 ring-sky-300/60 shadow-[0_8px_18px_rgba(14,165,233,0.24)]",
-        idle: "border-sky-200 bg-white text-sky-700 hover:-translate-y-[1px] hover:border-sky-400 hover:bg-sky-50 hover:text-sky-900"
-      };
-    }
-    return {
-      icon: X,
-      active: "border-violet-500 bg-violet-100 text-violet-800 ring-2 ring-violet-300/60 shadow-[0_8px_18px_rgba(139,92,246,0.25)]",
-      idle: "border-violet-200 bg-white text-violet-700 hover:-translate-y-[1px] hover:border-violet-400 hover:bg-violet-50 hover:text-violet-900"
-    };
-  }
 
   return (
     <motion.section
@@ -197,24 +159,8 @@ export function OnboardingPanel({
 
             {!profileReady && !typing ? (
               <div className="animate-fade-up w-full max-w-[92%] self-start rounded-2xl border border-white/75 bg-white/85 p-4 shadow-[0_10px_28px_rgba(15,23,42,0.08)] backdrop-blur">
-                <p className="mb-2 text-xs font-semibold text-slate-500">Choose one option:</p>
-                <div className="flex flex-wrap gap-2.5">
-                  {importanceOptions.map((option) => {
-                    const visual = getChoiceVisual(option.label);
-                    const ChoiceIcon = visual.icon;
-                    return (
-                      <button
-                        key={option.key}
-                        type="button"
-                        onClick={() => onSelectOnboardingChoice(option.key)}
-                        className={`inline-flex min-h-11 items-center gap-2 rounded-xl border px-4 py-2 text-sm font-semibold leading-none transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 ${visual.idle}`}
-                      >
-                        <ChoiceIcon size={14} />
-                        {option.label}
-                      </button>
-                    );
-                  })}
-                </div>
+                <p className="mb-4 text-xs font-semibold text-slate-500">Rate your preference (1 = low, 10 = high)</p>
+                <ImportanceSlider value={undefined} onChange={onSelectOnboardingChoice} />
               </div>
             ) : null}
 
@@ -235,32 +181,16 @@ export function OnboardingPanel({
                       <div className={`flex h-7 w-7 items-center justify-center rounded-lg text-slate-800 ${bg}`}>
                         <Icon size={14} />
                       </div>
-                      <div className="w-24 text-sm font-medium text-slate-800">{label}</div>
-                      <div className="flex flex-1 flex-wrap gap-1.5">
-                        {importanceOptions.map((option) => {
-                          const visual = getChoiceVisual(option.label);
-                          const ChoiceIcon = visual.icon;
-                          const active = selectedLevels[key] === option.key;
-                          return (
-                            <button
-                              key={option.key}
-                              type="button"
-                              onClick={() => onWeightLevelChange(key, option.key)}
-                              className={`inline-flex min-h-10 items-center rounded-xl border px-3.5 py-2 text-xs font-semibold leading-none transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400/70 ${
-                                active
-                                  ? `${visual.active} font-semibold`
-                                  : `${visual.idle}`
-                              }`}
-                            >
-                              <span className="inline-flex items-center gap-1.5 leading-none">
-                                <ChoiceIcon size={12} />
-                                {option.label}
-                              </span>
-                            </button>
-                          );
-                        })}
+                      <div className="w-20 shrink-0 text-sm font-medium text-slate-800">{label}</div>
+                      <div className="flex flex-1 items-center gap-3">
+                        <ImportanceSlider
+                          value={selectedLevels[key]}
+                          onChange={(k) => onWeightLevelChange(key, k)}
+                        />
+                        <div className="w-6 shrink-0 text-right text-sm font-bold text-slate-700">
+                          {selectedLevels[key] ?? "–"}
+                        </div>
                       </div>
-                        <div className="w-10 text-right text-sm font-bold text-slate-700">{weights[key]}</div>
                     </div>
                   ))}
                 </div>

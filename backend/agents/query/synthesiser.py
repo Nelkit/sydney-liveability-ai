@@ -13,7 +13,6 @@ LLM Configuration:
 from __future__ import annotations
 
 import json
-from pathlib import Path
 from typing import Any
 
 from crewai import Agent, Task
@@ -24,21 +23,6 @@ from config import get_agent_llm, settings
 from db.chromadb import REDDIT_COLLECTION, query_chunks
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
-
-_REDDIT_CACHE_DIR = Path(__file__).resolve().parents[3] / "data" / "processed" / "reddit_analyses"
-
-
-def _get_reddit_context(suburb: str) -> dict[str, Any] | None:
-    """Load pre-computed Reddit NLP analysis for a suburb from local file cache."""
-    slug = suburb.lower().replace(" ", "_").replace("-", "_")
-    path = _REDDIT_CACHE_DIR / f"{slug}.json"
-    if not path.exists():
-        return None
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
 
 def _retrieve_chromadb_chunks(
     question: str,
@@ -185,7 +169,7 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                 "name": suburb.suburb,
                 "facilities_score": suburb.facilities_score,
                 "walkability_score": suburb.walkability_score,
-                "liveability_score": suburb.liveability_score,
+                "liveability_score": None,
                 "total_facilities": suburb.total_facilities,
                 "libraries": suburb.libraries_count,
                 "car_share_bays": suburb.car_share_bays_count,
@@ -408,7 +392,8 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
 
         answer = str(response).strip() if response else "Unable to generate response"
 
-        # Build suburb_scores — prefer GIS combined_score, fall back to liveability_score
+        # Build suburb_scores — prefer GIS combined_score, fall back to
+        # computed liveability score using the same formula as /api/civic.
         gis_output = outputs.get("gis", {}) if isinstance(outputs, dict) else {}
         if isinstance(gis_output, dict) and gis_output:
             if any(isinstance(v, dict) and "combined_score" in v for v in gis_output.values()):
@@ -422,10 +407,22 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             else:
                 suburb_scores = []
         else:
+            from core.scoring import compute_liveability_scores
+            user_weights = context.get("weights") or {}
+            liveability_weights = {
+                "safety": float(user_weights.get("safety", 0.25)),
+                "transport": float(user_weights.get("transport", 0.25)),
+                "lifestyle": float(user_weights.get("lifestyle", 0.25)),
+                "affordability": float(user_weights.get("affordability", 0.25)),
+                "nightlife": float(user_weights.get("nightlife", 0.0)),
+            }
+            scored = compute_liveability_scores(
+                weights=liveability_weights,
+                suburb_filter=suburbs_list or None,
+            )
             suburb_scores = [
-                {"suburb": sub.get("name", ""), "score": sub.get("liveability_score")}
-                for sub in context.get("suburbs", [])
-                if sub.get("liveability_score") is not None
+                {"suburb": name, "score": data["liveability"]}
+                for name, data in scored.items()
             ]
 
         # Citations: prefer the sentiment agent's grounded `sources`
