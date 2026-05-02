@@ -57,6 +57,17 @@ def chat(payload: ChatRequest) -> dict[str, Any]:
             "suburb_scores": response.get("suburb_scores", []),
             "map_state": response.get("map_state"),
         }
+        for key in (
+            "router",
+            "quality",
+            "claims",
+            "aspect_scores",
+            "emotion_profile",
+            "reddit_highlights",
+            "crime_breakdown",
+        ):
+            if response.get(key) is not None:
+                result[key] = response[key]
         if response.get("quality") is not None:
             result["quality"] = response["quality"]
         return result

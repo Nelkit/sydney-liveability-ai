@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sydney Liveability AI · Redesign</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ui: 'Inter', -apple-system, system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+    --bg: oklch(0.992 0.002 250);
+    --bg-elev: oklch(0.975 0.004 250);
+    --fg: oklch(0.18 0.01 250);
+    --muted: oklch(0.55 0.012 250);
+    --border: oklch(0.92 0.005 250);
+    --accent: oklch(0.55 0.18 285);
+    --accent-soft: oklch(0.95 0.04 285);
+  }
+  html, body { margin: 0; padding: 0; background: oklch(0.96 0.005 250); font-family: var(--ui); color: var(--fg); }
+  *, *::before, *::after { box-sizing: border-box; }
+  button { font-family: inherit; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+</style>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#f4f4f6">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#f4f4f6"/>
+    <g transform="translate(420 220)">
+      <circle cx="180" cy="180" r="160" fill="none" stroke="#dcdce0" stroke-width="14"/>
+      <circle cx="180" cy="180" r="160" fill="none" stroke="#7c4dff" stroke-width="14" stroke-dasharray="780 1005" stroke-linecap="round" transform="rotate(-90 180 180)"/>
+      <text x="180" y="200" text-anchor="middle" font-family="ui-monospace, monospace" font-size="86" font-weight="600" fill="#1a1a24">78</text>
+    </g>
+  </svg>
+</template>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="data.jsx"></script>
+<script type="text/babel" src="primitives.jsx"></script>
+<script type="text/babel" src="direction-a.jsx"></script>
+<script type="text/babel" src="direction-b.jsx"></script>
+<script type="text/babel" src="direction-c.jsx"></script>
+
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "compareLayout": "split"
+}/*EDITMODE-END*/;
+
+function App() {
+  const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+  return (
+    <DesignCanvas projectName="Sydney Liveability AI · Redesign">
+      <DCSection id="overview" title="Overview" subtitle="Two complementary directions to improve the chat, comparator, evidence trace and detailed report.">
+        <DCArtboard id="a" label="Direction A · Evidence-first chat" width={1280} height={820}>
+          <DirectionA />
+        </DCArtboard>
+        <DCArtboard id="b" label={`Direction B · Comparator (${tweaks.compareLayout})`} width={1280} height={820}>
+          <DirectionB layout={tweaks.compareLayout} />
+        </DCArtboard>
+        <DCArtboard id="c" label="Detailed Report · single suburb (Newtown)" width={1280} height={1480}>
+          <DirectionC />
+        </DCArtboard>
+      </DCSection>
+      <TweaksPanel title="Tweaks">
+        <TweakSection title="Comparator layout">
+          <TweakRadio
+            label="Layout"
+            value={tweaks.compareLayout}
+            onChange={(v) => setTweak('compareLayout', v)}
+            options={[
+              { value: "split", label: "Split 50/50" },
+              { value: "rows",  label: "Rows by dim" },
+            ]}
+          />
+        </TweakSection>
+      </TweaksPanel>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

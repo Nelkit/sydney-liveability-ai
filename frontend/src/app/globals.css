@@ -14,11 +14,17 @@
   }
 
   body {
-    @apply text-slateText;
-    font-family: "Noto Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background: radial-gradient(circle at 42% 18%, rgba(252, 211, 170, 0.2), transparent 26%),
-      radial-gradient(circle at 58% 58%, rgba(244, 114, 182, 0.09), transparent 24%),
-      linear-gradient(180deg, #f8f8fb 0%, #f1f2f7 100%);
+    @apply bg-bg text-fg antialiased;
+    background:
+      radial-gradient(circle at 18% 14%, oklch(0.97 0.025 75 / 0.55), transparent 26%),
+      radial-gradient(circle at 82% 18%, oklch(0.97 0.02 235 / 0.42), transparent 24%),
+      radial-gradient(circle at 50% 72%, oklch(0.965 0.02 285 / 0.20), transparent 28%),
+      linear-gradient(180deg, oklch(0.992 0.002 250) 0%, oklch(0.982 0.004 250) 100%);
+  }
+
+  ::selection {
+    background: oklch(0.88 0.06 285 / 0.5);
+    color: oklch(0.18 0.01 250);
   }
 }
 
