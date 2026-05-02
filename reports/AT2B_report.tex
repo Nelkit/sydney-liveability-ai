@@ -131,6 +131,12 @@ Phase 5: Evaluation and Report & NLP metrics, RAG quality, application evaluatio
 \bottomrule
 \end{longtable}
 
+\subsubsection*{Juan}
+
+This team member contributed to the data ingestion and retrieval layers of the pipeline, with a focus on making community-sourced qualitative data accessible to the language model.
+
+The primary contribution was the design and implementation of the full ingestion pipeline for the City of Sydney community consultation PDFs. Starting from structured JSON output produced by the PDF parser, each text chunk was embedded using the all-MiniLM-L6-v2 sentence transformer model and written to the ChromaDB collection \texttt{sydney\_liveability} with metadata including suburb, theme, source document, page number, and chunk index. This pipeline processed 1,114 records across three official PDF reports, forming the qualitative backbone of the RAG system. A secondary contribution was the completion of the Synthesiser agent's ChromaDB retrieval layer, which embeds each user query at runtime, retrieves the top five semantically relevant chunks, and injects them into the LLM prompt alongside structured PostgreSQL outputs and specialist agent results, enabling the model to cite resident quotes and PDF extracts by source and suburb.
+
 \section{Data Sources}
 
 \subsection{Primary Data Sources}
