@@ -97,8 +97,8 @@ export function ChatInput({
 
       {/* Footer row */}
       <div className="mt-2 flex items-center justify-between font-mono text-[10px] text-fg-muted">
-        <span>+40k Reddit Posts · BOCSAR · ArcGIS · OSM · GTFS Transport</span>
-        <span>cited · grounded</span>
+        <span>Reddit r/sydney · BOCSAR · ArcGIS · OSM · GTFS Transport · City of Sydney</span>
+        <span>cited &amp; grounded</span>
       </div>
     </div>
   );

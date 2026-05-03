@@ -32,12 +32,12 @@ export function RedditQuote({ q, variant = "full", accent }: Props) {
         <span>↑{q.up}</span>
         <span className="flex-1" />
         <a
-          href={`https://reddit.com/comments/${q.id}`}
+          href={q.id.startsWith("http") ? q.id : `https://reddit.com/comments/${q.id}`}
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-fg"
         >
-          reddit/{q.id}
+          view on reddit
         </a>
       </div>
     </div>

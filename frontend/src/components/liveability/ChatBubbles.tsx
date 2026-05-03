@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowRight, BookOpen } from "lucide-react";
-import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useEffect, useState } from "react";
 import { CategoryChip } from "@/components/ui/CategoryChip";
 import { Cite } from "@/components/ui/Cite";
@@ -48,7 +49,7 @@ const STREAM_INTERVAL_MS = 18;
 
 function useStreamedClaims(claims: AssistantMessage["claims"]) {
   const fullText = claims.map((cl) => cl.text).join(" ");
-  const words = fullText.split(" ").filter(Boolean);
+  const words = fullText.split(/\s+/).filter(Boolean);
   const [visibleCount, setVisibleCount] = useState(0);
   const isDone = visibleCount >= words.length;
 
@@ -68,7 +69,9 @@ function useStreamedClaims(claims: AssistantMessage["claims"]) {
     return () => clearInterval(id);
   }, [fullText, isDone]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const streamedText = words.slice(0, visibleCount).join(" ");
+  // Normalize escaped \n sequences (literal backslash-n from JSON) to real newlines
+  const normalizedFull = fullText.replace(/\\n/g, "\n");
+  const streamedText = isDone ? normalizedFull : words.slice(0, visibleCount).join(" ");
   return { streamedText, isDone };
 }
 
@@ -88,6 +91,9 @@ export function AssistantBubble({
   // Deduplicate all sources across all citations
   const allSources: SourceKind[] = claims.flatMap((cl) => cl.cites.map((c) => c.src));
   const groupedSources = groupSources(allSources);
+  const citations = Array.from(
+    new Map(claims.flatMap((cl) => cl.cites).map((c) => [c.n, c])).values()
+  );
 
   return (
     <div className="flex flex-col gap-2.5">
@@ -111,24 +117,34 @@ export function AssistantBubble({
 
       {/* Answer body */}
       <div className="rounded-[6px_16px_16px_16px] border border-border bg-bg p-4 text-sm leading-relaxed text-fg shadow-float backdrop-blur">
-        <span>
-          {streamedText}
-          {!isDone && (
+        {isDone ? (
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              p: ({ children }) => <p className="mb-1.5 last:mb-0">{children}</p>,
+              ul: ({ children }) => <ul className="my-1 ml-4 list-disc space-y-0.5">{children}</ul>,
+              li: ({ children }) => <li className="leading-snug">{children}</li>,
+              strong: ({ children }) => <strong className="font-semibold text-fg">{children}</strong>,
+              em: ({ children }) => <em className="italic text-fg-muted">{children}</em>,
+              blockquote: ({ children }) => (
+                <blockquote className="mt-2 border-l-2 border-border pl-3 text-fg-muted">
+                  {children}
+                </blockquote>
+              ),
+            }}
+          >
+            {streamedText}
+          </ReactMarkdown>
+        ) : (
+          <span>
+            {streamedText}
             <span className="ml-0.5 inline-block h-[1em] w-[2px] translate-y-[1px] animate-pulse rounded-sm bg-fg-muted" />
-          )}
-        </span>
+          </span>
+        )}
 
         {/* Citations and report CTA only after streaming finishes */}
         {isDone && (
           <>
-            {claims.some((cl) => cl.cites.length > 0) && (
-              <span className="ml-1">
-                {claims.flatMap((cl) => cl.cites).map((c) => (
-                  <Cite key={c.n} citation={c} />
-                ))}
-              </span>
-            )}
-
             {summary && summary.suburbs.length > 0 && (
               <div
                 className="mt-3.5 flex items-center justify-between gap-3 rounded-lg border px-3 py-2.5"
@@ -164,6 +180,18 @@ export function AssistantBubble({
         )}
       </div>
 
+      {/* Citations row — deduped and separated from the message body */}
+      {isDone && citations.length > 0 && (
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="mr-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">
+            cites
+          </span>
+          {citations.map((c) => (
+            <Cite key={c.n} citation={c} />
+          ))}
+        </div>
+      )}
+
       {/* Sources strip — only after streaming finishes */}
       {isDone && (
         <div className="flex flex-wrap items-center gap-1.5">
@@ -173,8 +201,6 @@ export function AssistantBubble({
           {groupedSources.map(({ kind, n }) => (
             <SourceBadge key={kind} kind={kind} n={n} />
           ))}
-          <span className="flex-1" />
-          <FeedbackButtons />
         </div>
       )}
 
@@ -193,31 +219,6 @@ export function AssistantBubble({
           ))}
         </div>
       )}
-    </div>
-  );
-}
-
-function FeedbackButtons() {
-  return (
-    <div className="flex gap-1">
-      <button
-        type="button"
-        title="Helpful"
-        className="flex size-6 cursor-pointer items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev"
-      >
-        <svg width="11" height="11" viewBox="0 0 14 14">
-          <path d="M3 6h2v6H3zm3 0v6h4l1.5-4-1-2H8V3a1 1 0 0 0-2 0z" fill="none" stroke="currentColor" strokeWidth="1.2" />
-        </svg>
-      </button>
-      <button
-        type="button"
-        title="Not helpful"
-        className="flex size-6 cursor-pointer items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev"
-      >
-        <svg width="11" height="11" viewBox="0 0 14 14" style={{ transform: "rotate(180deg)" }}>
-          <path d="M3 6h2v6H3zm3 0v6h4l1.5-4-1-2H8V3a1 1 0 0 0-2 0z" fill="none" stroke="currentColor" strokeWidth="1.2" />
-        </svg>
-      </button>
     </div>
   );
 }

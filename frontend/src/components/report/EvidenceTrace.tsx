@@ -2,10 +2,11 @@ import { Bar } from "@/components/ui/Bar";
 import type { EvidenceTrace as EvidenceTraceType } from "@/types/api";
 
 const RETRIEVAL_LABELS = [
-  { label: "Reddit · MiniLM",    key: "reddit" },
-  { label: "PostGIS facilities", key: "arcgis" },
-  { label: "BOCSAR SA4",         key: "bocsar" },
-  { label: "ArcGIS layers",      key: "osm"    },
+  { label: "Reddit · MiniLM",    key: "reddit"    },
+  { label: "PostGIS facilities", key: "arcgis"    },
+  { label: "BOCSAR SA4",         key: "bocsar"    },
+  { label: "OSM",                key: "osm"       },
+  { label: "GTFS Transport",     key: "transport" },
 ];
 
 type Props = {

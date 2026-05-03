@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -65,6 +67,13 @@ export default function SuburbReportPage() {
   const answer = payload?.answer ?? "";
   const router = payload?.router;
 
+  const normalizeAnswerMarkdown = (text: string) => {
+    let normalized = text.trim();
+    normalized = normalized.replace(/\s+\*\s+/g, "\n- ");
+    normalized = normalized.replace(/\s+>\s+/g, "\n\n> ");
+    return normalized;
+  };
+
   // Determine loved/concern from aspects
   const sorted    = [...aspects].sort((a, b) => b.pos - a.pos);
   const lovedItem = sorted[0];
@@ -124,7 +133,25 @@ export default function SuburbReportPage() {
                 style={{ background: "linear-gradient(180deg, oklch(0.99 0.01 285), oklch(0.992 0.002 250))" }}
               >
                 <div className="w-1 shrink-0 self-stretch rounded-sm" style={{ background: accentColor }} />
-                <div dangerouslySetInnerHTML={{ __html: answer }} />
+                <div className="flex-1">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ children }) => <p className="mb-1.5 last:mb-0">{children}</p>,
+                      ul: ({ children }) => <ul className="my-1 ml-4 list-disc space-y-0.5">{children}</ul>,
+                      li: ({ children }) => <li className="leading-snug">{children}</li>,
+                      strong: ({ children }) => <strong className="font-semibold text-fg">{children}</strong>,
+                      em: ({ children }) => <em className="italic text-fg-muted">{children}</em>,
+                      blockquote: ({ children }) => (
+                        <blockquote className="mt-2 border-l-2 border-border pl-3 text-fg-muted">
+                          {children}
+                        </blockquote>
+                      ),
+                    }}
+                  >
+                    {normalizeAnswerMarkdown(answer)}
+                  </ReactMarkdown>
+                </div>
               </div>
             </SectionCard>
 

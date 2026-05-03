@@ -31,6 +31,7 @@ import type {
   Claim,
   EvidenceTrace,
   RouterCategory,
+  RouterMeta,
   SourceKind,
 } from "../types/api";
 
@@ -127,8 +128,12 @@ function civicToSuburbs(data: CivicResponse): Suburb[] {
   });
 }
 
-// Minimal parser: splits answer string into Claim[] by sentence
+// Minimal parser: keep markdown intact when present
 function parseAnswerToClaims(answer: string): Claim[] {
+  const hasMarkdown = /\n|^\s*[-*]\s+|\*\*|^>\s+/m.test(answer);
+  if (hasMarkdown) {
+    return [{ text: answer, cites: [] }];
+  }
   return answer.split(/(?<=[.!?])\s+/).filter(Boolean).map((text) => ({ text, cites: [] }));
 }
 
@@ -152,8 +157,8 @@ function normalizeSourcesToCitations(
   payload: ChatAPIResponse,
   router: { suburbs: string[] }
 ): Citation[] {
-  const raw = payload.sources;
-  if (!Array.isArray(raw)) return [];
+  const raw: unknown[] = Array.isArray(payload.sources) ? (payload.sources as unknown[]) : [];
+  if (!raw.length) return [];
   const citations: Citation[] = [];
   let n = 1;
 
@@ -273,7 +278,6 @@ export default function HomePage() {
   const [showCancel, setShowCancel] = useState(false);
   const [showEvidence, setShowEvidence] = useState(true);
   const [chatActiveSuburbs, setChatActiveSuburbs] = useState<string[]>([]);
-  const [lastMentionedSuburb, setLastMentionedSuburb] = useState<string | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
   const cancelTimerRef     = useRef<ReturnType<typeof setTimeout> | null>(null);
   const chatScrollRef      = useRef<HTMLDivElement | null>(null);
@@ -372,10 +376,10 @@ export default function HomePage() {
     }));
   }, [isHydrated, profileReady, weights, selectedLevels]);
 
-  // Load civic data — derive weights directly from React state, not localStorage,
-  // to avoid a race condition between the persist useEffect and this fetch.
+  // Load civic data — only after profile is ready (all 5 weights selected).
+  // During onboarding selectedLevels changes 5 times; we must not fetch until done.
   useEffect(() => {
-    if (!isHydrated) return;
+    if (!isHydrated || !profileReady) return;
     setIsCivicLoading(true);
     const importanceValueMap: Record<string, number> = Object.fromEntries(
       importanceOptions.map((o) => [o.key, o.value])
@@ -403,7 +407,7 @@ export default function HomePage() {
         setIsCivicLoading(false);
         setCivicLoadingLabel("Loading civic data");
       });
-  }, [isHydrated, selectedLevels]);
+  }, [isHydrated, profileReady, selectedLevels]);
 
   // Popover close on outside click
   useEffect(() => {
@@ -420,13 +424,12 @@ export default function HomePage() {
     setDisplayMessages([]);
   }, [isAppOpen]);
 
-  // Auto-show profile panel briefly after onboarding, then hide
-  useEffect(() => {
-    if (!isAppOpen) return;
+  // Auto-show profile panel briefly — only when transitioning FROM onboarding, not on page refresh
+  function openAppFromOnboarding() {
+    setIsAppOpen(true);
     setProfileOpen(true);
-    const t = setTimeout(() => setProfileOpen(false), 4000);
-    return () => clearTimeout(t);
-  }, [isAppOpen]);
+    setTimeout(() => setProfileOpen(false), 4000);
+  }
 
   // Sync draft from committed state whenever the popover opens
   useEffect(() => {
@@ -483,11 +486,7 @@ export default function HomePage() {
     const mentionedSuburbs = allSuburbsForMap.filter((s) => valueLower.includes(s.name.toLowerCase())).map((s) => s.name);
     if (mentionedSuburbs.length > 0) setChatActiveSuburbs(mentionedSuburbs);
 
-    // If no suburb is mentioned in the message, append the last known suburb so the
-    // backend has context for follow-up questions like "what about transport?"
-    const messageToSend = mentionedSuburbs.length === 0 && lastMentionedSuburb
-      ? `${value} in ${lastMentionedSuburb}`
-      : value;
+    const messageToSend = value;
 
     setChatInput("");
     setIsLoading(true);
@@ -585,7 +584,6 @@ export default function HomePage() {
               );
               if (detected) setSelectedSuburbId(detected.id);
               setChatActiveSuburbs(message.router.suburbs);
-              setLastMentionedSuburb(message.router.suburbs[0]);
             }
             break outer;
           }
@@ -652,7 +650,13 @@ export default function HomePage() {
                 profileReady={profileReady}
                 selectedLevels={selectedLevels}
                 onWeightLevelChange={applyWeightChoice}
-                onContinue={profileReady ? () => setIsAppOpen(true) : () => {
+                onBack={() => {
+                  setOnboardingMessages([]);
+                  setOnboardingTyping(false);
+                  setCurrentQuestionIndex(0);
+                  setSelectedLevels({});
+                }}
+                onContinue={profileReady ? () => openAppFromOnboarding() : () => {
                   setOnboardingTyping(true);
                   setTimeout(() => {
                     setOnboardingTyping(false);
@@ -677,7 +681,7 @@ export default function HomePage() {
                     <SharedBrand compact />
                   </motion.div>
                   <div className="h-5 w-px bg-border" />
-                  <span className="font-mono text-[10px] text-fg-muted border border-border rounded px-1.5 py-px">v0.4.2</span>
+                  <span className="font-mono text-[10px] text-fg-muted border border-border rounded px-1.5 py-px">{`v${process.env.NEXT_PUBLIC_APP_VERSION ?? "0.1.0"}`}</span>
 
                   <div ref={popoverRef} className="relative">
                     <button
@@ -755,7 +759,7 @@ export default function HomePage() {
                     >
                       <PanelRight size={13} strokeWidth={1.4} />
                     </button>
-                    <button type="button" title="New chat" onClick={() => { setDisplayMessages([]); setChatActiveSuburbs([]); setLastMentionedSuburb(null); }} className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
+                    <button type="button" title="New chat" onClick={() => { setDisplayMessages([]); setChatActiveSuburbs([]); }} className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
                       <Plus size={13} strokeWidth={1.4} />
                     </button>
                   </div>

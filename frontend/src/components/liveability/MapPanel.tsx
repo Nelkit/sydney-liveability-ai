@@ -153,6 +153,7 @@ export function MapPanel({
   const [mapZoom, setMapZoom]               = useState<number | null>(null);
   const hasFittedBoundsRef    = useRef(false);
   const previousLoadingRef    = useRef(isLoading);
+  const previousRankedLenRef  = useRef(ranked.length);
 
   // Subscribe to citation hover — highlight cited suburbs on the map
   const { hoveredCite } = useCitationHover();
@@ -236,6 +237,14 @@ export function MapPanel({
     if (previousLoadingRef.current && !isLoading) hasFittedBoundsRef.current = false;
     previousLoadingRef.current = isLoading;
   }, [isLoading]);
+
+  // Reset zoom guard when ranked data arrives for the first time (e.g. navigating from onboarding
+  // while civic fetch already completed — isLoading never transitions true→false on this mount)
+  useEffect(() => {
+    const prev = previousRankedLenRef.current;
+    previousRankedLenRef.current = ranked.length;
+    if (prev === 0 && ranked.length > 0) hasFittedBoundsRef.current = false;
+  }, [ranked.length]);
 
   // Fly to active suburb(s) when chat response arrives
   useEffect(() => {

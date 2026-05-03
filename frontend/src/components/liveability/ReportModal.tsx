@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { CategoryChip } from "@/components/ui/CategoryChip";
 import { Pill } from "@/components/ui/Pill";
@@ -112,7 +114,9 @@ function SingleReport({
   const crime: CrimeRow[] = payload?.crime_breakdown?.[suburbName] ?? [];
   const trace = payload?.quality?.evidence_trace_summary as EvidenceTraceType | string | null | undefined;
 
-  const answer = payload?.answer ?? "";
+  const rawAnswer = payload?.answer ?? "";
+  // Strip the trailing blockquote CTA ("> ...") — it's a chat teaser, not report content
+  const answer = rawAnswer.replace(/\n>\s+[^\n]*$/s, "").trimEnd();
   const router = payload?.router;
 
   const sorted = [...aspects].sort((a, b) => b.pos - a.pos);
@@ -174,7 +178,20 @@ function SingleReport({
                   className="w-1 shrink-0 self-stretch rounded-sm"
                   style={{ background: ACCENT_SINGLE }}
                 />
-                <div dangerouslySetInnerHTML={{ __html: answer }} />
+                <div className="flex flex-col min-w-0">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ children }) => <p className="mb-1.5 last:mb-0">{children}</p>,
+                      ul: ({ children }) => <ul className="my-1 ml-4 list-disc space-y-0.5">{children}</ul>,
+                      li: ({ children }) => <li className="leading-snug">{children}</li>,
+                      strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
+                      em: ({ children }) => <em className="italic opacity-75">{children}</em>,
+                    }}
+                  >
+                    {answer}
+                  </ReactMarkdown>
+                </div>
               </div>
             </SectionCard>
 
@@ -766,7 +783,20 @@ function CompareReport({
                   style={{ background: "linear-gradient(180deg, oklch(0.99 0.01 285), oklch(0.992 0.002 250))" }}
                 >
                   <div className="w-1 shrink-0 self-stretch rounded-sm" style={{ background: ACCENT_A }} />
-                  <div dangerouslySetInnerHTML={{ __html: data.answer }} />
+                  <div className="flex flex-col min-w-0">
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        p: ({ children }) => <p className="mb-1.5 last:mb-0">{children}</p>,
+                        ul: ({ children }) => <ul className="my-1 ml-4 list-disc space-y-0.5">{children}</ul>,
+                        li: ({ children }) => <li className="leading-snug">{children}</li>,
+                        strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
+                        em: ({ children }) => <em className="italic opacity-75">{children}</em>,
+                      }}
+                    >
+                      {data.answer.replace(/\n>\s+[^\n]*$/s, "").trimEnd()}
+                    </ReactMarkdown>
+                  </div>
                 </div>
               </SectionCard>
             )}

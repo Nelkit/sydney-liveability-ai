@@ -137,7 +137,9 @@ export function EvidenceDrawer({ trace, allCitations = [] }: Props) {
             {[
               { label: "Reddit", value: null, note: "last crawl date" },
               { label: "BOCSAR", value: "2024", note: "dataset year" },
-              { label: "ArcGIS", value: "live", note: "real-time" },
+              { label: "ArcGIS", value: "2026", note: "dataset year" },
+              { label: "OSM", value: "2026", note: "dataset year" },
+              { label: "GTFS Transport", value: "2026", note: "dataset year" },
             ].map(({ label, value, note }) =>
               value ? (
                 <div key={label} className="flex items-center justify-between font-mono text-[10.5px]">
