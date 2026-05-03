@@ -11,6 +11,7 @@ supabase
 python-dotenv
 pydantic-settings
 sqlalchemy
+geoalchemy2
 psycopg2-binary
 pandas
 geopandas
