@@ -39,7 +39,7 @@ const MapPanel = dynamic(
   { ssr: false }
 );
 
-const initialWeights: Weights = { transport: 0, safety: 0, lifestyle: 0, afford: 0 };
+const initialWeights: Weights = { transport: 0, safety: 0, lifestyle: 0, afford: 0, proximity: 0 };
 const API_BASE_URL   = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 const CIVIC_ENDPOINT = `${API_BASE_URL}/api/civic`;
 const PREFERENCES_STORAGE_KEY = "sydney-liveability-preferences-v1";
@@ -57,14 +57,21 @@ const SOURCE_KIND_LIST: SourceKind[] = ["reddit", "bocsar", "arcgis", "osm", "tf
 // ---------- helpers ----------
 
 function getUserWeights() {
-  const defaults = { transport: 0.2, safety: 0.2, lifestyle: 0.2, affordability: 0.2, nightlife: 0.2 };
+  const defaults = { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 };
   const importanceValueMap: Record<string, number> = Object.fromEntries(importanceOptions.map((o) => [o.key, o.value]));
   try {
     const stored = window.localStorage.getItem(USER_WEIGHTS_STORAGE_KEY);
     if (!stored) return defaults;
     const prefs = JSON.parse(stored) as Record<string, string>;
-    const keys = ["transport", "safety", "lifestyle", "affordability", "nightlife"] as const;
-    const raw = Object.fromEntries(keys.map((k) => [k, importanceValueMap[prefs[k]] ?? 50]));
+    const keys = ["transport", "safety", "lifestyle", "affordability", "nightlife", "proximity"] as const;
+    const raw = {
+      transport: importanceValueMap[prefs.transport] ?? 50,
+      safety: importanceValueMap[prefs.safety] ?? 50,
+      lifestyle: importanceValueMap[prefs.lifestyle] ?? 50,
+      affordability: importanceValueMap[prefs.affordability] ?? 50,
+      nightlife: 0,
+      proximity: importanceValueMap[prefs.proximity] ?? 0,
+    } satisfies Record<(typeof keys)[number], number>;
     const total = Object.values(raw).reduce((a, b) => a + b, 0);
     if (!total) return defaults;
     return Object.fromEntries(keys.map((k) => [k, parseFloat((raw[k] / total).toFixed(4))])) as typeof defaults;
@@ -80,7 +87,7 @@ function getImportanceLabel(k?: ImportanceLevelKey) {
 }
 
 type CivicGeometry  = { type: string; coordinates: unknown };
-type CivicProperties= { suburb: string; sa4_area: string; liveability_score: number; safety_score: number; transport_score: number; lifestyle_score: number; nightlife_score: number };
+type CivicProperties= { suburb: string; sa4_area: string; liveability_score: number; safety_score: number; transport_score: number; lifestyle_score: number; nightlife_score: number; proximity_score: number };
 type CivicFeature   = { type: "Feature"; properties: CivicProperties; geometry: CivicGeometry | Record<string, never> };
 type CivicResponse  = { type: "FeatureCollection"; features: CivicFeature[] };
 
@@ -101,14 +108,20 @@ function extractCenterAndPolygon(geometry: CivicGeometry | Record<string, never>
 function civicToSuburbs(data: CivicResponse): Suburb[] {
   const colorMap: Record<string, string> = { newtown: "#3b82f6", glebe: "#10b981", redfern: "#f59e0b", "surry hills": "#8b5cf6", haymarket: "#ef4444" };
   return data.features.flatMap((f) => {
-    const { suburb, liveability_score, safety_score, transport_score, lifestyle_score } = f.properties;
+    const { suburb, liveability_score, safety_score, transport_score, lifestyle_score, proximity_score } = f.properties;
     if (!suburb) return [];
     const { center, polygon } = extractCenterAndPolygon(f.geometry);
     return [{
       id: suburb.toLowerCase().replace(/\s+/g, "-"),
       name: suburb,
       color: colorMap[suburb.toLowerCase()] ?? "#6366f1",
-      scoreBase: { transport: Math.round(transport_score * 100), safety: Math.round(safety_score * 100), lifestyle: Math.round(lifestyle_score * 100), afford: 50 },
+      scoreBase: {
+        transport: Math.round(transport_score * 100),
+        safety: Math.round(safety_score * 100),
+        lifestyle: Math.round(lifestyle_score * 100),
+        afford: 50,
+        proximity: Math.round((proximity_score ?? 0.5) * 100),
+      },
       center, polygon,
     }];
   });
@@ -238,6 +251,7 @@ export default function HomePage() {
   const [isAppOpen,  setIsAppOpen]    = useState(false);
   const [weights,    setWeights]      = useState<Weights>(initialWeights);
   const [selectedLevels, setSelectedLevels] = useState<Partial<Record<keyof Weights, ImportanceLevelKey>>>({});
+  const [draftLevels,    setDraftLevels]    = useState<Partial<Record<keyof Weights, ImportanceLevelKey>>>({});
   const [profileReady,   setProfileReady]   = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [onboardingMessages,   setOnboardingMessages]   = useState<ChatMessage[]>([]);
@@ -249,6 +263,7 @@ export default function HomePage() {
   const [profileOpen, setProfileOpen] = useState(false);
   const [civicData,   setCivicData]   = useState<CivicResponse | null>(null);
   const [isCivicLoading, setIsCivicLoading] = useState(true);
+  const [civicLoadingLabel, setCivicLoadingLabel] = useState("Loading civic data");
   const [hoveredSuburb,  setHoveredSuburb]  = useState<string | null>(null);
 
   const [reportModal, setReportModal] = useState<{ mode: "single" | "compare"; suburbs: string[] } | null>(null);
@@ -284,9 +299,8 @@ export default function HomePage() {
   }, [displayMessages, lastPayload]);
 
   const allSuburbsForMap = useMemo(() => {
-    if (isCivicLoading && !civicData) return [];
     return civicData ? civicToSuburbs(civicData) : suburbs;
-  }, [civicData, isCivicLoading]);
+  }, [civicData]);
 
   const rankedSuburbs = useMemo(() => {
     if (civicData) {
@@ -295,9 +309,8 @@ export default function HomePage() {
         return { ...s, computedScore: Math.round(f.properties.liveability_score * 100) };
       });
     }
-    if (isCivicLoading) return [];
     return allSuburbsForMap.map((s) => ({ ...s, computedScore: scoreSuburb(s, weights) })).sort((a, b) => b.computedScore - a.computedScore);
-  }, [weights, civicData, isCivicLoading, allSuburbsForMap]);
+  }, [weights, civicData, allSuburbsForMap]);
 
   const mapWeights = useMemo<Weights>(() => {
     const heat = lastPayload?.map_state?.heatmap_weights;
@@ -307,6 +320,7 @@ export default function HomePage() {
       safety: typeof heat.safety === "number" ? heat.safety : weights.safety,
       lifestyle: typeof heat.lifestyle === "number" ? heat.lifestyle : weights.lifestyle,
       afford: weights.afford,
+      proximity: weights.proximity,
     };
   }, [lastPayload, weights]);
 
@@ -335,7 +349,7 @@ export default function HomePage() {
       if (raw) {
         const parsed = JSON.parse(raw) as StoredPreferences;
         if (parsed.profileReady) {
-          setWeights(parsed.weights);
+          setWeights({ ...initialWeights, ...parsed.weights });
           setSelectedLevels(parsed.selectedLevels);
           setProfileReady(true);
           setIsAppOpen(true);
@@ -354,19 +368,41 @@ export default function HomePage() {
       lifestyle: getImportanceLabel(selectedLevels.lifestyle),
       affordability: getImportanceLabel(selectedLevels.afford),
       nightlife: "Neutral",
+      proximity: getImportanceLabel(selectedLevels.proximity),
     }));
   }, [isHydrated, profileReady, weights, selectedLevels]);
 
-  // Load civic data
+  // Load civic data — derive weights directly from React state, not localStorage,
+  // to avoid a race condition between the persist useEffect and this fetch.
   useEffect(() => {
     if (!isHydrated) return;
     setIsCivicLoading(true);
-    const params = new URLSearchParams(Object.entries(getUserWeights()).map(([k, v]) => [k, String(v)]));
+    const importanceValueMap: Record<string, number> = Object.fromEntries(
+      importanceOptions.map((o) => [o.key, o.value])
+    );
+    const raw = {
+      transport:     importanceValueMap[selectedLevels.transport     ?? ""] ?? 50,
+      safety:        importanceValueMap[selectedLevels.safety        ?? ""] ?? 50,
+      lifestyle:     importanceValueMap[selectedLevels.lifestyle     ?? ""] ?? 50,
+      affordability: importanceValueMap[selectedLevels.afford        ?? ""] ?? 50,
+      nightlife:     0,
+      proximity:     importanceValueMap[selectedLevels.proximity     ?? ""] ?? 0,
+    };
+    const total = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
+    const civicWeights = Object.fromEntries(
+      Object.entries(raw).map(([k, v]) => [k, parseFloat((v / total).toFixed(4))])
+    );
+    const params = new URLSearchParams(
+      Object.entries(civicWeights).map(([k, v]) => [k, String(v)])
+    );
     fetch(`${CIVIC_ENDPOINT}?${params}`)
       .then((r) => r.ok ? r.json() as Promise<CivicResponse> : Promise.reject())
       .then(setCivicData)
       .catch(() => {})
-      .finally(() => setIsCivicLoading(false));
+      .finally(() => {
+        setIsCivicLoading(false);
+        setCivicLoadingLabel("Loading civic data");
+      });
   }, [isHydrated, selectedLevels]);
 
   // Popover close on outside click
@@ -391,6 +427,11 @@ export default function HomePage() {
     const t = setTimeout(() => setProfileOpen(false), 4000);
     return () => clearTimeout(t);
   }, [isAppOpen]);
+
+  // Sync draft from committed state whenever the popover opens
+  useEffect(() => {
+    if (profileOpen) setDraftLevels(selectedLevels);
+  }, [profileOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Auto-scroll chat
   useEffect(() => {
@@ -661,23 +702,45 @@ export default function HomePage() {
                         layoutId="profile-card"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute left-0 top-[calc(100%+8px)] z-[900] w-max max-w-[94vw] rounded-[10px] border border-border p-4 shadow-cardLg"
+                        className="absolute left-0 top-[calc(100%+8px)] z-[900] w-max max-w-[94vw] rounded-b-[10px] border border-border p-4 shadow-float"
                         style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}
                       >
                         <p className="mb-3 font-mono text-[11px] font-bold uppercase tracking-[0.07em] text-fg-muted">
                           Adjust weighting profile
                         </p>
                         <div className="min-w-[620px] max-w-[760px] space-y-0">
-                          {([ ["transport", "Transport"], ["safety", "Safety"], ["lifestyle", "Lifestyle"], ["afford", "Affordability"] ] as [keyof Weights, string][]).map(([key, label], i, arr) => (
+                          {([ ["transport", "Transport"], ["safety", "Safety"], ["lifestyle", "Lifestyle"], ["afford", "Affordability"], ["proximity", "CBD Proximity"] ] as [keyof Weights, string][]).map(([key, label], i, arr) => (
                             <div key={key} className={i < arr.length - 1 ? "mb-4 border-b border-border pb-4" : ""}>
                               <span className="mb-2 block text-sm font-semibold text-fg">{label}</span>
-                              <ImportanceSlider value={selectedLevels[key]} onChange={(k) => applyWeightChoice(key, k)} />
+                              <ImportanceSlider
+                                value={draftLevels[key]}
+                                onChange={(k) => setDraftLevels((prev) => ({ ...prev, [key]: k }))}
+                              />
                             </div>
                           ))}
                         </div>
-                        <button type="button" onClick={resetPreferences} className="mt-4 w-full rounded-full border border-border px-3 py-2 text-xs font-semibold text-fg transition hover:border-fg">
-                          Reset preferences
-                        </button>
+                        <div className="mt-4 flex gap-2">
+                          <button
+                            type="button"
+                            onClick={resetPreferences}
+                            className="rounded-full border border-border px-3 py-2 text-xs font-semibold text-fg transition hover:border-fg"
+                          >
+                            Reset
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setCivicLoadingLabel("Updating weights…");
+                              (Object.entries(draftLevels) as [keyof Weights, ImportanceLevelKey][]).forEach(
+                                ([key, val]) => { if (val) applyWeightChoice(key, val); }
+                              );
+                              setProfileOpen(false);
+                            }}
+                            className="flex-1 rounded-full bg-fg px-3 py-2 text-xs font-semibold text-bg transition hover:opacity-90"
+                          >
+                            Apply
+                          </button>
+                        </div>
                       </motion.div>
                     )}
                   </div>
@@ -751,7 +814,8 @@ export default function HomePage() {
                     <MapPanel
                       suburbs={allSuburbsForMap}
                       ranked={rankedSuburbs}
-                      isLoading={isCivicLoading && !civicData}
+                      isLoading={isCivicLoading}
+                      loadingLabel={civicLoadingLabel}
                       selectedSuburbId={selectedSuburbId}
                       onSelectSuburb={onSelectSuburb}
                       layer={layer}

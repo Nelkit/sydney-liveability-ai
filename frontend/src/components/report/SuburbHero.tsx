@@ -8,7 +8,7 @@ const MapPanel = dynamic(
   () => import("@/components/liveability/MapPanel").then((m) => m.MapPanel),
   { ssr: false }
 );
-const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0 };
+const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0, proximity: 0 };
 
 type Props = {
   name: string;

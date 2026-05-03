@@ -29,7 +29,7 @@ const MapPanel = dynamic(
 );
 
 // Minimal stub so MapPanel compiles — it only needs these props for locator mode
-const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0 };
+const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0, proximity: 0 };
 
 export default function SuburbReportPage() {
   const params = useParams();
@@ -44,7 +44,7 @@ export default function SuburbReportPage() {
     fetch(`${API_BASE_URL}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: `Tell me about ${suburbName}`, weights: { transport: 0.2, safety: 0.2, lifestyle: 0.2, affordability: 0.2, nightlife: 0.2 } }),
+      body: JSON.stringify({ message: `Tell me about ${suburbName}`, weights: { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 } }),
     })
       .then((r) => r.ok ? r.json() as Promise<ChatAPIResponse> : Promise.reject())
       .then(setPayload)

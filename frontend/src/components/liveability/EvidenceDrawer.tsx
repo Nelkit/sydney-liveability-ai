@@ -98,10 +98,9 @@ export function EvidenceDrawer({ trace, allCitations = [] }: Props) {
             </div>
           ) : allCitations.length > 0 ? (
             allCitations.map((c, i) => (
-              <button
+              <div
                 key={`${c.n}-${i}`}
-                type="button"
-                className="flex w-full cursor-pointer items-center gap-2 rounded-md border border-border bg-bg p-2 text-left transition hover:bg-bg-elev"
+                className="flex w-full items-center gap-2 rounded-md border border-border bg-bg p-2 text-left transition hover:bg-bg-elev"
               >
                 <span className="w-5 text-center font-mono text-[10.5px] text-fg-muted">
                   [{c.n}]
@@ -110,7 +109,7 @@ export function EvidenceDrawer({ trace, allCitations = [] }: Props) {
                 <span className="flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-[11.5px] text-fg">
                   {c.detail}
                 </span>
-              </button>
+              </div>
             ))
           ) : (
             <div className="font-mono text-[10.5px] text-fg-muted">

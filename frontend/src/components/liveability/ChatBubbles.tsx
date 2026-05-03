@@ -44,6 +44,34 @@ function groupSources(sources: SourceKind[]): { kind: SourceKind; n: number }[] 
   return Array.from(counts.entries()).map(([kind, n]) => ({ kind, n }));
 }
 
+const STREAM_INTERVAL_MS = 18;
+
+function useStreamedClaims(claims: AssistantMessage["claims"]) {
+  const fullText = claims.map((cl) => cl.text).join(" ");
+  const words = fullText.split(" ").filter(Boolean);
+  const [visibleCount, setVisibleCount] = useState(0);
+  const isDone = visibleCount >= words.length;
+
+  useEffect(() => {
+    setVisibleCount(0);
+  }, [fullText]);
+
+  useEffect(() => {
+    if (isDone) return;
+    const id = setInterval(() => {
+      setVisibleCount((n) => {
+        const next = n + 1;
+        if (next >= words.length) clearInterval(id);
+        return next;
+      });
+    }, STREAM_INTERVAL_MS);
+    return () => clearInterval(id);
+  }, [fullText, isDone]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const streamedText = words.slice(0, visibleCount).join(" ");
+  return { streamedText, isDone };
+}
+
 export function AssistantBubble({
   message,
   onOpenReport,
@@ -54,6 +82,8 @@ export function AssistantBubble({
   const categories = Array.isArray(router?.categories) ? router.categories : [];
   const suburbs = Array.isArray(router?.suburbs) ? router.suburbs : [];
   const latencyMs = typeof router?.latencyMs === "number" ? router.latencyMs : 0;
+
+  const { streamedText, isDone } = useStreamedClaims(claims);
 
   // Deduplicate all sources across all citations
   const allSources: SourceKind[] = claims.flatMap((cl) => cl.cites.map((c) => c.src));
@@ -81,64 +111,75 @@ export function AssistantBubble({
 
       {/* Answer body */}
       <div className="rounded-[6px_16px_16px_16px] border border-border bg-bg p-4 text-sm leading-relaxed text-fg shadow-float backdrop-blur">
-        {claims.map((cl, i) => (
-          <span key={i}>
-            {cl.text}
-            {cl.cites.map((c) => (
-              <Cite key={c.n} citation={c} />
-            ))}
-            {i < claims.length - 1 ? " " : ""}
-          </span>
-        ))}
+        <span>
+          {streamedText}
+          {!isDone && (
+            <span className="ml-0.5 inline-block h-[1em] w-[2px] translate-y-[1px] animate-pulse rounded-sm bg-fg-muted" />
+          )}
+        </span>
 
-        {/* Report CTA */}
-        {summary && summary.suburbs.length > 0 && (
-          <div
-            className="mt-3.5 flex items-center justify-between gap-3 rounded-lg border px-3 py-2.5"
-            style={{
-              background: "linear-gradient(180deg, oklch(0.97 0.025 285), oklch(0.99 0.01 285))",
-              borderColor: "oklch(0.88 0.05 285)",
-            }}
-          >
-            <div className="flex items-center gap-2 min-w-0">
-              {summary.suburbs.map((s, i) => (
-                <span key={s} className="flex items-center gap-1.5">
-                  {i > 0 && <span className="font-mono text-[10px] text-fg-muted">vs</span>}
-                  <span
-                    className="rounded-md px-2 py-0.5 font-mono text-[11px] font-semibold text-white"
-                    style={{ background: i === 0 ? "oklch(0.55 0.18 285)" : "oklch(0.62 0.16 75)" }}
-                  >
-                    {s}
-                  </span>
-                </span>
-              ))}
-            </div>
-            <button
-              type="button"
-              onClick={() => onOpenReport?.(summary.suburbs)}
-              className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-[10px] py-1.5 text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
-            >
-              {summary.suburbs.length >= 2 ? "Compare" : "Open report"}
-              <ArrowRight size={12} strokeWidth={1.4} />
-            </button>
-          </div>
+        {/* Citations and report CTA only after streaming finishes */}
+        {isDone && (
+          <>
+            {claims.some((cl) => cl.cites.length > 0) && (
+              <span className="ml-1">
+                {claims.flatMap((cl) => cl.cites).map((c) => (
+                  <Cite key={c.n} citation={c} />
+                ))}
+              </span>
+            )}
+
+            {summary && summary.suburbs.length > 0 && (
+              <div
+                className="mt-3.5 flex items-center justify-between gap-3 rounded-lg border px-3 py-2.5"
+                style={{
+                  background: "linear-gradient(180deg, oklch(0.97 0.025 285), oklch(0.99 0.01 285))",
+                  borderColor: "oklch(0.88 0.05 285)",
+                }}
+              >
+                <div className="flex items-center gap-2 min-w-0">
+                  {summary.suburbs.map((s, i) => (
+                    <span key={s} className="flex items-center gap-1.5">
+                      {i > 0 && <span className="font-mono text-[10px] text-fg-muted">vs</span>}
+                      <span
+                        className="rounded-md px-2 py-0.5 font-mono text-[11px] font-semibold text-white"
+                        style={{ background: i === 0 ? "oklch(0.55 0.18 285)" : "oklch(0.62 0.16 75)" }}
+                      >
+                        {s}
+                      </span>
+                    </span>
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => onOpenReport?.(summary.suburbs)}
+                  className="flex shrink-0 cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-[10px] py-1.5 text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
+                >
+                  {summary.suburbs.length >= 2 ? "Compare" : "Open report"}
+                  <ArrowRight size={12} strokeWidth={1.4} />
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
 
-      {/* Sources strip */}
-      <div className="flex flex-wrap items-center gap-1.5">
-        <span className="mr-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">
-          sources
-        </span>
-        {groupedSources.map(({ kind, n }) => (
-          <SourceBadge key={kind} kind={kind} n={n} />
-        ))}
-        <span className="flex-1" />
-        <FeedbackButtons />
-      </div>
+      {/* Sources strip — only after streaming finishes */}
+      {isDone && (
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="mr-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">
+            sources
+          </span>
+          {groupedSources.map(({ kind, n }) => (
+            <SourceBadge key={kind} kind={kind} n={n} />
+          ))}
+          <span className="flex-1" />
+          <FeedbackButtons />
+        </div>
+      )}
 
       {/* Follow-up suggestion chips */}
-      {followUpChips && followUpChips.length > 0 && (
+      {isDone && followUpChips && followUpChips.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
           {followUpChips.map((chip) => (
             <button

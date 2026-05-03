@@ -36,6 +36,7 @@ export type SuburbScore = {
   safety: number;
   lifestyle: number;
   affordability: number;
+  proximity: number;
   facilities: number;
   walkability: number;
   crimeIdx: number;

@@ -40,7 +40,7 @@ async function fetchForSuburb(name: string): Promise<ChatAPIResponse> {
   const res = await fetch(`${API_BASE_URL}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: `Tell me about ${name}`, weights: { transport: 0.2, safety: 0.2, lifestyle: 0.2, affordability: 0.2, nightlife: 0.2 } }),
+    body: JSON.stringify({ message: `Tell me about ${name}`, weights: { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 } }),
   });
   if (!res.ok) throw new Error("API error");
   return res.json() as Promise<ChatAPIResponse>;

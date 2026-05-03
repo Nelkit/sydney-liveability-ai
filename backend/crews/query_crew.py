@@ -225,6 +225,7 @@ def _build_suburb_scores(weights: dict[str, Any], suburbs: list[str]) -> list[di
                 "safety": round(float(suburb_score["safety"]) * 100.0, 2),
                 "lifestyle": round(float(suburb_score["lifestyle"]) * 100.0, 2),
                 "affordability": round(float(suburb_score["affordability"]) * 100.0, 2),
+                "proximity": round(float(suburb_score["proximity"]) * 100.0, 2),
                 "facilities": _scale_to_100(getattr(row, "facilities_score", None) if row is not None else None),
                 "walkability": _scale_to_100(getattr(row, "walkability_score", None) if row is not None else None),
                 "crimeIdx": round((1.0 - float(suburb_score["safety"])) * 100.0, 2),

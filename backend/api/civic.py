@@ -49,13 +49,14 @@ def get_civic(
     lifestyle: float = Query(0.25, ge=0.0, le=1.0),
     affordability: float = Query(0.25, ge=0.0, le=1.0),
     nightlife: float = Query(0.0, ge=0.0, le=1.0),
+    proximity: float = Query(0.0, ge=0.0, le=1.0),
 ) -> dict[str, Any]:
     """Return top-5 suburbs ranked by weighted liveability from structured sources."""
-    weight_sum = safety + transport + lifestyle + affordability + nightlife
+    weight_sum = safety + transport + lifestyle + affordability + nightlife + proximity
     if abs(weight_sum - 1.0) > 0.001:
         raise HTTPException(
             status_code=400,
-            detail="Weights must sum to 1.0 across safety, transport, lifestyle, affordability, and nightlife.",
+            detail="Weights must sum to 1.0 across safety, transport, lifestyle, affordability, nightlife, and proximity.",
         )
 
     weights = {
@@ -64,6 +65,7 @@ def get_civic(
         "lifestyle": lifestyle,
         "affordability": affordability,
         "nightlife": nightlife,
+        "proximity": proximity,
     }
     scores = compute_liveability_scores(weights)
 
@@ -79,6 +81,7 @@ def get_civic(
                 "transport_score": s["transport"],
                 "lifestyle_score": s["lifestyle"],
                 "nightlife_score": s["nightlife"],
+                "proximity_score": s["proximity"],
             },
             "geometry": _to_geojson_geometry(s["_row"].geometry),
         }

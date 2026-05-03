@@ -8,10 +8,16 @@ from __future__ import annotations
 
 from typing import Any
 
-from sqlalchemy import func, select
+from geoalchemy2 import Geography
+from geoalchemy2.functions import ST_Centroid, ST_Distance, ST_MakePoint, ST_SetSRID
+from sqlalchemy import cast, func, select
 
 from db.models import Bocsar, OsmScore, SentimentScore, Suburb, TransportScore
 from db.postgres import SessionLocal
+
+CBD_LAT = -33.8688
+CBD_LNG = 151.2093
+MAX_DIST_M = 35_000.0
 
 
 def _clamp_unit(value: float | None) -> float:
@@ -41,25 +47,37 @@ def compute_liveability_scores(
 
     Args:
         weights: Dict with keys safety, transport, lifestyle, affordability,
-                 nightlife — must sum to 1.0.
+                 nightlife, proximity — must sum to 1.0.
         suburb_filter: When provided, only compute scores for those suburbs.
                        Pass None to score all suburbs (used by /api/civic).
 
     Returns:
         Dict mapping suburb name to a score breakdown:
-        {suburb: {liveability, safety, transport, lifestyle, affordability, nightlife}}
+        {suburb: {liveability, safety, transport, lifestyle, affordability, nightlife, proximity}}
     """
     w_safety = float(weights.get("safety", 0.25))
     w_transport = float(weights.get("transport", 0.25))
     w_lifestyle = float(weights.get("lifestyle", 0.25))
     w_affordability = float(weights.get("affordability", 0.25))
     w_nightlife = float(weights.get("nightlife", 0.0))
+    w_proximity = float(weights.get("proximity", 0.0))
 
     with SessionLocal() as session:
+        cbd_point = ST_SetSRID(ST_MakePoint(CBD_LNG, CBD_LAT), 4326)
+        distance_expr = ST_Distance(
+            cast(ST_Centroid(Suburb.geometry), Geography),
+            cast(cbd_point, Geography),
+        ).label("distance_m")
+
         suburbs_q = select(Suburb)
         if suburb_filter:
             suburbs_q = suburbs_q.where(Suburb.suburb.in_(suburb_filter))
         suburbs = session.scalars(suburbs_q).all()
+
+        distance_q = select(Suburb.suburb, distance_expr)
+        if suburb_filter:
+            distance_q = distance_q.where(Suburb.suburb.in_(suburb_filter))
+        distance_rows = session.execute(distance_q).all()
 
         sentiment_q = select(SentimentScore)
         if suburb_filter:
@@ -99,6 +117,10 @@ def compute_liveability_scores(
     osm_by_suburb = {row.suburb: row for row in osm_rows}
     transport_by_suburb = {row.suburb: row for row in transport_rows}
     safety_by_suburb = _inverse_normalise(crime_counts)
+    proximity_by_suburb = {
+        str(suburb): max(0.0, 1.0 - (float(distance_m or MAX_DIST_M) / MAX_DIST_M))
+        for suburb, distance_m in distance_rows
+    }
 
     results: dict[str, dict[str, Any]] = {}
     for row in suburbs:
@@ -125,6 +147,7 @@ def compute_liveability_scores(
             sentiment.get("nightlife", sentiment.get("community", row.facilities_score))
         )
         affordability_score = _clamp_unit(sentiment.get("affordability", 0.5))
+        proximity_score = _clamp_unit(proximity_by_suburb.get(row.suburb, 0.0))
 
         liveability_score = (
             (safety_score * w_safety)
@@ -132,6 +155,7 @@ def compute_liveability_scores(
             + (lifestyle_score * w_lifestyle)
             + (affordability_score * w_affordability)
             + (nightlife_score * w_nightlife)
+            + (proximity_score * w_proximity)
         )
 
         results[row.suburb] = {
@@ -141,6 +165,7 @@ def compute_liveability_scores(
             "lifestyle": round(lifestyle_score, 4),
             "affordability": round(affordability_score, 4),
             "nightlife": round(nightlife_score, 4),
+            "proximity": round(proximity_score, 4),
             "_row": row,
         }
 

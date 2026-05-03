@@ -8,7 +8,15 @@ from sqlalchemy.orm import Session, sessionmaker
 from config import settings
 
 
-engine = create_engine(settings.database_url, pool_pre_ping=True, future=True)
+engine = create_engine(
+    settings.database_url,
+    pool_pre_ping=True,
+    future=True,
+    pool_recycle=280,       # recycle before Supabase/Neon 5-min idle timeout kills the connection
+    pool_size=5,
+    max_overflow=10,
+    connect_args={"connect_timeout": 10},
+)
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
 

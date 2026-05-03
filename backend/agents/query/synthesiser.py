@@ -414,6 +414,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 "lifestyle": float(user_weights.get("lifestyle", 0.25)),
                 "affordability": float(user_weights.get("affordability", 0.25)),
                 "nightlife": float(user_weights.get("nightlife", 0.0)),
+                "proximity": float(user_weights.get("proximity", 0.0)),
             }
             scored = compute_liveability_scores(
                 weights=liveability_weights,

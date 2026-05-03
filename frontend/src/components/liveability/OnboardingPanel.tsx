@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, CircleDollarSign, Coffee, Shield, TrainFront } from "lucide-react";
+import { CheckCircle2, CircleDollarSign, Coffee, MapPin, Shield, TrainFront } from "lucide-react";
 import { ImportanceSlider } from "./ImportanceSlider";
 import { SharedBrand } from "./SharedBrand";
 import { TypingDots } from "./TypingDots";
@@ -23,7 +23,8 @@ const weightMeta = [
   { key: "transport", label: "Transport", icon: TrainFront, tint: "bg-bg-elev" },
   { key: "safety", label: "Safety", icon: Shield, tint: "bg-bg-elev" },
   { key: "lifestyle", label: "Lifestyle", icon: Coffee, tint: "bg-bg-elev" },
-  { key: "afford", label: "Affordability", icon: CircleDollarSign, tint: "bg-bg-elev" }
+  { key: "afford", label: "Affordability", icon: CircleDollarSign, tint: "bg-bg-elev" },
+  { key: "proximity", label: "CBD Proximity", icon: MapPin, tint: "bg-bg-elev" }
 ] as const;
 
 export function OnboardingPanel({
@@ -80,7 +81,7 @@ export function OnboardingPanel({
                 <span className="bg-gradient-to-r from-slate-500 via-indigo-500 to-pink-500 bg-clip-text text-transparent"> let&apos;s find your best suburb</span>
               </h1>
               <p className="mx-auto mt-4 max-w-[560px] text-[15px] text-fg-muted sm:text-base">
-                Ask anything about transport, safety, affordability and lifestyle. I will build your profile in chat and then open the live map.
+                Ask anything about transport, safety, affordability, lifestyle and CBD proximity. I will build your profile in chat and then open the live map.
               </p>
 
               <div className="mx-auto mt-10 grid w-full max-w-[640px] gap-2.5 sm:grid-cols-3">

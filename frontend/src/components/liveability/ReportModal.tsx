@@ -27,7 +27,7 @@ import type {
 
 const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 
-const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0 };
+const EMPTY_WEIGHTS = { transport: 0, safety: 0, lifestyle: 0, afford: 0, proximity: 0 };
 
 const MapPanel = dynamic(
   () => import("@/components/liveability/MapPanel").then((m) => m.MapPanel),
@@ -93,7 +93,7 @@ function SingleReport({
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         message: `Tell me about ${suburbName}`,
-        weights: { transport: 0.2, safety: 0.2, lifestyle: 0.2, affordability: 0.2, nightlife: 0.2 },
+        weights: { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 },
       }),
     })
       .then((r) => (r.ok ? (r.json() as Promise<ChatAPIResponse>) : Promise.reject()))
@@ -389,7 +389,7 @@ async function fetchForSuburb(name: string): Promise<ChatAPIResponse> {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       message: `Tell me about ${name}`,
-      weights: { transport: 0.2, safety: 0.2, lifestyle: 0.2, affordability: 0.2, nightlife: 0.2 },
+      weights: { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 },
     }),
   });
   if (!res.ok) throw new Error("API error");

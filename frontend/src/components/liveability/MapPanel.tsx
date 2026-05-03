@@ -15,6 +15,7 @@ type MapPanelProps = {
   suburbs: Suburb[];
   ranked: RankedSuburb[];
   isLoading: boolean;
+  loadingLabel?: string;
   selectedSuburbId: string | null;
   onSelectSuburb: (name: string) => void;
   layer: string;
@@ -29,19 +30,39 @@ type MapPanelProps = {
 const layers = ["Liveability", "Safety", "Transport", "Lifestyle"];
 const SMALL_LABEL_MIN_ZOOM = 15;
 
-const HEAT_STOPS = [
-  { t: 0,    color: { r: 59,  g: 130, b: 246 } },
-  { t: 0.34, color: { r: 99,  g: 102, b: 241 } },
-  { t: 0.68, color: { r: 249, g: 115, b: 22  } },
-  { t: 1,    color: { r: 239, g: 68,  b: 68  } },
-];
+type ColorStop = { t: number; color: { r: number; g: number; b: number } };
 
-const LAYER_LEGEND_GRADIENT: Record<string, string> = {
-  Liveability: "from-[oklch(0.92_0.02_285)] to-[oklch(0.55_0.18_285)]",
-  Safety:      "from-[oklch(0.92_0.02_25)] to-[oklch(0.55_0.18_25)]",
-  Transport:   "from-[oklch(0.92_0.02_235)] to-[oklch(0.55_0.16_235)]",
-  Lifestyle:   "from-[oklch(0.92_0.02_75)] to-[oklch(0.62_0.16_75)]",
+const LAYER_HEAT_STOPS: Record<string, ColorStop[]> = {
+  Liveability: [
+    { t: 0,    color: { r: 148, g: 163, b: 184 } }, // slate-400  — low
+    { t: 0.34, color: { r: 99,  g: 102, b: 241 } }, // indigo-500
+    { t: 0.68, color: { r: 139, g: 92,  b: 246 } }, // violet-500
+    { t: 1,    color: { r: 79,  g: 70,  b: 229 } }, // indigo-600 — high
+  ],
+  Safety: [
+    { t: 0,    color: { r: 248, g: 113, b: 113 } }, // red-400    — low (dangerous)
+    { t: 0.4,  color: { r: 251, g: 191, b: 36  } }, // amber-400
+    { t: 0.75, color: { r: 74,  g: 222, b: 128 } }, // green-400
+    { t: 1,    color: { r: 22,  g: 163, b: 74  } }, // green-600  — high (safe)
+  ],
+  Transport: [
+    { t: 0,    color: { r: 148, g: 163, b: 184 } }, // slate-400  — low
+    { t: 0.4,  color: { r: 56,  g: 189, b: 248 } }, // sky-400
+    { t: 0.75, color: { r: 14,  g: 165, b: 233 } }, // sky-500
+    { t: 1,    color: { r: 2,   g: 132, b: 199 } }, // sky-600    — high
+  ],
+  Lifestyle: [
+    { t: 0,    color: { r: 148, g: 163, b: 184 } }, // slate-400  — low
+    { t: 0.4,  color: { r: 251, g: 191, b: 36  } }, // amber-400
+    { t: 0.75, color: { r: 249, g: 115, b: 22  } }, // orange-500
+    { t: 1,    color: { r: 234, g: 88,  b: 12  } }, // orange-600 — high
+  ],
 };
+
+function stopsToGradientCSS(stops: ColorStop[]): string {
+  const parts = stops.map(({ t, color: { r, g, b } }) => `rgb(${r},${g},${b}) ${t * 100}%`);
+  return `linear-gradient(to right, ${parts.join(", ")})`;
+}
 
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value));
@@ -70,13 +91,14 @@ function smoothClosedPolygon(points: L.LatLngTuple[], segments = 10) {
   return result;
 }
 
-function scoreToHeatColor(score: number) {
+function scoreToHeatColor(score: number, layer = "Liveability") {
+  const stops = LAYER_HEAT_STOPS[layer] ?? LAYER_HEAT_STOPS.Liveability;
   const t = clamp(score, 0, 100) / 100;
-  const nextIndex = HEAT_STOPS.findIndex((stop) => stop.t >= t);
-  if (nextIndex <= 0) { const { r, g, b } = HEAT_STOPS[0].color; return `rgb(${r}, ${g}, ${b})`; }
-  if (nextIndex === -1) { const { r, g, b } = HEAT_STOPS[HEAT_STOPS.length - 1].color; return `rgb(${r}, ${g}, ${b})`; }
-  const prev = HEAT_STOPS[nextIndex - 1];
-  const next = HEAT_STOPS[nextIndex];
+  const nextIndex = stops.findIndex((stop) => stop.t >= t);
+  if (nextIndex <= 0) { const { r, g, b } = stops[0].color; return `rgb(${r}, ${g}, ${b})`; }
+  if (nextIndex === -1) { const { r, g, b } = stops[stops.length - 1].color; return `rgb(${r}, ${g}, ${b})`; }
+  const prev = stops[nextIndex - 1];
+  const next = stops[nextIndex];
   const localT = (t - prev.t) / (next.t - prev.t);
   const r = Math.round(prev.color.r + (next.color.r - prev.color.r) * localT);
   const g = Math.round(prev.color.g + (next.color.g - prev.color.g) * localT);
@@ -113,6 +135,7 @@ export function MapPanel({
   suburbs,
   ranked,
   isLoading,
+  loadingLabel = "Loading civic data",
   selectedSuburbId,
   onSelectSuburb,
   layer,
@@ -312,7 +335,7 @@ export function MapPanel({
           if (!suburb) return {};
 
           const value = layerValue(suburb, layer, weights);
-          const heatColor = scoreToHeatColor(value);
+          const heatColor = scoreToHeatColor(value, layer);
           const isCited  = citationActiveSuburbs.map((s) => s.toLowerCase()).includes(featureName);
           const isActive = activeSet.has(featureName);
           const isSelected = selectedSuburbId === suburb.id;
@@ -399,7 +422,7 @@ export function MapPanel({
       // Fallback: legacy polygon rendering
       suburbs.forEach((suburb) => {
         const value = layerValue(suburb, layer, weights);
-        const heatColor = scoreToHeatColor(value);
+        const heatColor = scoreToHeatColor(value, layer);
         const isActive   = activeSet.has(suburb.name.toLowerCase());
         const isSelected = selectedSuburbId === suburb.id;
         const opacity    = hasActiveFilter && !isActive ? 0.15 : (isSelected ? 0.60 : 0.52);
@@ -418,7 +441,7 @@ export function MapPanel({
 
     suburbs.forEach((suburb) => {
       const value = layerValue(suburb, layer, weights);
-      const heatColor = scoreToHeatColor(value);
+      const heatColor = scoreToHeatColor(value, layer);
       const isActive  = activeSet.has(suburb.name.toLowerCase());
       const opacity   = hasActiveFilter && !isActive ? 0.05 : 0.52;
 
@@ -435,7 +458,7 @@ export function MapPanel({
     });
   }, [suburbs, suburbsByName, suburbsGeoJson, geoJsonLoaded, mapZoom, layer, weights, selectedSuburbId, onSelectSuburb, isLoading, effectiveActive, activeSet, citationActiveSuburbs, onSuburbHover]);
 
-  const legendGradient = LAYER_LEGEND_GRADIENT[layer] ?? "from-blue-500 to-red-500";
+  const legendGradient = stopsToGradientCSS(LAYER_HEAT_STOPS[layer] ?? LAYER_HEAT_STOPS.Liveability);
 
   return (
     <section className="relative h-full overflow-hidden bg-[radial-gradient(circle_at_30%_18%,rgba(254,215,170,0.3),transparent_28%),linear-gradient(180deg,#eff2f8,#e9edf6)]">
@@ -483,13 +506,8 @@ export function MapPanel({
         </div>
       </div>
 
-      {/* Active suburbs badge + legend — right */}
+      {/* Legend + active suburbs badge — right */}
       <div className="absolute right-3 top-3 z-[450] flex flex-col items-end gap-2">
-        <div className="rounded-md border border-border bg-bg px-[10px] py-[5px] font-mono text-[10px] text-fg-muted shadow-float">
-          {effectiveActive.length > 0
-            ? `${effectiveActive.length} suburb${effectiveActive.length !== 1 ? "s" : ""} active`
-            : "all suburbs"}
-        </div>
         <div className="rounded-[10px] border border-border bg-bg p-2 shadow-float">
           <div className="mb-1 flex items-center gap-1 font-mono text-[9px] uppercase tracking-[0.06em] text-fg-muted">
             <Layers3 size={10} />
@@ -497,9 +515,14 @@ export function MapPanel({
           </div>
           <div className="flex items-center gap-2">
             <span className="font-mono text-[10px] text-fg-muted">Low</span>
-            <div className={`h-2 w-20 rounded-full bg-gradient-to-r ${legendGradient}`} />
+            <div className="h-2 w-20 rounded-full" style={{ background: legendGradient }} />
             <span className="font-mono text-[10px] text-fg-muted">High</span>
           </div>
+        </div>
+        <div className="rounded-md border border-border bg-bg px-[10px] py-[5px] font-mono text-[10px] text-fg-muted shadow-float">
+          {effectiveActive.length > 0
+            ? `${effectiveActive.length} suburb${effectiveActive.length !== 1 ? "s" : ""} active`
+            : "all suburbs"}
         </div>
       </div>
 
@@ -511,7 +534,7 @@ export function MapPanel({
             <span className="absolute h-36 w-36 animate-ping rounded-full border border-blue-300/50" />
             <span className="absolute h-24 w-24 animate-pulse rounded-full border-2 border-indigo-300/80" />
             <span className="rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-600 shadow-[0_8px_20px_rgba(15,23,42,0.08)]">
-              Loading civic data
+              {loadingLabel}
             </span>
           </div>
         </div>
