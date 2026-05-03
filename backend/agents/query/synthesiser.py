@@ -241,8 +241,25 @@ def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
         return ""
     return "\n\nEvidence trace (every retrieval tool call this turn):\n" + "\n".join(lines)
 
-def _build_synthesis_prompt(question: str, context: dict[str, Any], retrieved_chunks: list[dict] | None = None, agent_outputs: dict[str, Any] | None = None) -> str:
+
+def _detect_scenario(suburbs_list: list | None, router_output: dict) -> str:
+    categories = router_output.get("categories", []) if isinstance(router_output, dict) else []
+    if "out_of_scope" in categories:
+        return "out_of_scope"
+    if len(suburbs_list or []) > 1 or "comparator" in categories:
+        return "comparator"
+    return "single"
+
+def _build_synthesis_prompt(
+    question: str,
+    context: dict[str, Any],
+    retrieved_chunks: list[dict] | None = None,
+    agent_outputs: dict[str, Any] | None = None,
+    router_output: dict | None = None,
+    suburbs_list: list | None = None,
+) -> str:
     data_block = json.dumps(context, indent=2, default=str)
+
     rag_block = ""
     if retrieved_chunks:
         rag_lines = []
@@ -250,55 +267,77 @@ def _build_synthesis_prompt(question: str, context: dict[str, Any], retrieved_ch
             suburb = c["metadata"].get("suburb", "unknown")
             text = c["text"][:200].replace("\n", " ")
             rag_lines.append(f"- ({suburb}) {text}")
-
         rag_block = "\n\nRetrieved Context:\n" + "\n".join(rag_lines)
-    """Build the LLM prompt combining question, DB context, and agent outputs.
 
-    Handles both flat (single-suburb per specialist) and nested (multi-suburb per specialist) structures.
-    """
-    prompt = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
-
-User Question: {question}
-
-Available Data:
-{data_block}
-
-Instructions:
-1. Answer based ONLY on the provided data above and the evidence trace below
-2. Be specific with numbers and metrics
-3. For out-of-scope suburbs, respond: "I don't have data on that suburb yet"
-4. If the question has spatial intent (comparing suburbs), suggest top suburbs by liveability
-5. Keep answer concise (2-3 sentences max unless asking for comparison)
-6. Always cite your data source (facilities, transport, amenities, or quoted Reddit chunk)
-7. When the sentiment agent returned `status: "no_data"` for a dimension, say so plainly — do NOT invent a value
-8. Cite at least one evidence-trace entry per named-suburb claim about resident sentiment
-"""
-    weights = context.get("weights")
-    if weights:
-        prompt += f"\nUser Preference Weights:\n{json.dumps(weights, indent=2)}\n"
-    
-    # Add agent outputs if available
     if agent_outputs:
-        prompt += "\n\nAdditional Specialist Agent Outputs:\n"
+        agent_block = "\n\nAdditional Specialist Agent Outputs:\n"
         for agent_key, output in agent_outputs.items():
             if agent_key == "router":
                 continue
             if output and isinstance(output, dict):
-                # Handle nested structure: {suburb: result} for multi-suburb agents
                 if any(
-                    isinstance(v, dict)
-                    and ("combined_score" in v or "evidence_trace" in v)
+                    isinstance(v, dict) and ("combined_score" in v or "evidence_trace" in v)
                     for v in output.values()
                 ):
-                    prompt += f"\n{agent_key.upper()} (multi-suburb):\n"
+                    agent_block += f"\n{agent_key.upper()} (multi-suburb):\n"
                     for suburb, suburb_output in output.items():
-                        prompt += f"  {suburb}: {json.dumps(suburb_output, indent=2, default=str)}\n"
+                        agent_block += f"  {suburb}: {json.dumps(suburb_output, indent=2, default=str)}\n"
                 else:
-                    # Handle flat structure: direct result
-                    prompt += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2, default=str)}\n"
+                    agent_block += f"\n{agent_key.upper()}:\n{json.dumps(output, indent=2, default=str)}\n"
+        agent_block += _format_evidence_trace_block(agent_outputs)
+    else:
+        agent_block = ""
 
-    prompt += _format_evidence_trace_block(agent_outputs or {})
-    prompt += rag_block
+    weights = context.get("weights")
+    weights_block = f"\nUser Preference Weights:\n{json.dumps(weights, indent=2)}\n" if weights else ""
+
+    scenario = _detect_scenario(suburbs_list, router_output or {})
+    suburb_name = (suburbs_list[0] if suburbs_list else context.get("suburbs", [{}])[0].get("name", "the suburb"))
+    suburbs_csv = ", ".join(suburbs_list) if suburbs_list else suburb_name
+
+    if scenario == "single":
+        system = f"""You are the lead urban analyst for Sydney Liveability AI.
+Write a SHORT, PUNCHY chat response (3-5 sentences MAX) about {suburb_name} using the data below.
+
+STRUCTURE (use light markdown):
+- Open with 1 sentence capturing the suburb's overall character.
+- Use **bold** to highlight 1-2 key metrics or standout facts (e.g. "**walkability score of 87**").
+- Add a short bullet list (2-3 items MAX) of the most relevant highlights or concerns for the user's question.
+- Close with a natural 1-sentence invitation to open the full report for charts, scores, and crime data.
+- Format the closing invitation as a Markdown blockquote line starting with ">".
+
+TONE: Conversational, direct, like a knowledgeable local friend.
+CRITICAL: No walls of text. No headings (###). Do NOT invent data not present below. The dashboard already has the detail — your job is to make the user WANT to open it."""
+
+    elif scenario == "comparator":
+        system = f"""You are the lead urban analyst for Sydney Liveability AI.
+The user wants to compare: {suburbs_csv}.
+Write a SHORT comparison (4-6 sentences MAX).
+
+STRUCTURE (use light markdown):
+- Open with 1 sentence stating which suburb "wins" overall based on the data, OR that they suit different lifestyles.
+- Use **bold** to name the single biggest differentiator (e.g. "**safety**", "**transport score**").
+- Add a short bullet list (one line per suburb) summarising each suburb's strongest point.
+- Close with an invitation to open the Compare view for the full side-by-side breakdown.
+- Format the closing invitation as a Markdown blockquote line starting with ">".
+
+TONE: Decisive, direct, helpful.
+CRITICAL: No tables. No ### headings. Do NOT invent data not present below. The Compare dashboard already exists — your message is the teaser."""
+
+    else:  # fallback single
+        system = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
+Be specific with numbers and metrics. Keep the answer concise (2-3 sentences max unless asking for comparison).
+Always cite your data source. Use **bold** for key metrics. Do NOT invent data."""
+
+    prompt = f"""{system}
+
+User question: {question}
+{weights_block}
+Available Data:
+{data_block}
+{agent_block}
+{rag_block}"""
+
     return prompt
 
 
@@ -334,8 +373,12 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
     if isinstance(router_output, dict) and "out_of_scope" in router_output.get("categories", []):
         return {
             "answer": (
-                "This system was designed only to answer questions related to Sydney liveability. "
-                "Please ask about Sydney suburbs, safety, transport, amenities, or resident sentiment."
+                "I specialise in Sydney suburbs — try asking about safety, transport, "
+                "amenities, or how two suburbs compare.\n\n"
+                "For example:\n"
+                "- *Is Newtown safe at night?*\n"
+                "- *Compare Glebe and Surry Hills*\n"
+                "- *Best suburb for families near the CBD?*"
             ),
             "sources": [],
             "suburb_scores": [],
@@ -383,6 +426,8 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             context,
             agent_outputs=combined_outputs if combined_outputs else None,
             retrieved_chunks=retrieved_chunks,
+            router_output=router_output,
+            suburbs_list=suburbs_list,
         )
 
         # Call LLM using the synthesiser agent configuration.
@@ -414,6 +459,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 "lifestyle": float(user_weights.get("lifestyle", 0.25)),
                 "affordability": float(user_weights.get("affordability", 0.25)),
                 "nightlife": float(user_weights.get("nightlife", 0.0)),
+                "proximity": float(user_weights.get("proximity", 0.0)),
             }
             scored = compute_liveability_scores(
                 weights=liveability_weights,
@@ -424,27 +470,46 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 for name, data in scored.items()
             ]
 
-        # Citations: prefer the sentiment agent's grounded `sources`
-        # (drawn from the Reddit vector index this turn). Fall back to
-        # the structured-data attribution when no quote was retrieved.
-        main_suburb = context["suburbs"][0]["name"] if context.get("suburbs") else (suburbs_list[0] if suburbs_list else "Sydney")
+        # Build sources from every agent that ran this turn.
+        # Each agent may return a `sources` list with dicts containing a
+        # `source` key that maps to a SourceKind string the frontend knows.
+        AGENT_DEFAULT_SOURCE: dict[str, str] = {
+            "sentiment": "reddit",
+            "crime": "bocsar",
+            "gis": "arcgis",
+            "transport": "tfnsw",
+        }
         sources: list[dict[str, Any]] = []
-        sentiment_outputs = outputs.get("sentiment") if isinstance(outputs, dict) else None
-        if isinstance(sentiment_outputs, dict):
-            for suburb_result in sentiment_outputs.values():
-                if not isinstance(suburb_result, dict):
+        seen_kinds: set[str] = set()
+
+        if isinstance(outputs, dict):
+            for agent_key, agent_out in outputs.items():
+                if not isinstance(agent_out, dict):
                     continue
-                for src in suburb_result.get("sources") or []:
-                    if isinstance(src, dict):
-                        sources.append(src)
-        if not sources:
-            sources = [
-                {
-                    "text": "Facilities, transport, and amenity data",
-                    "suburb": main_suburb,
-                    "source": "City of Sydney ArcGIS + OSM + Transport API",
-                }
-            ]
+                # Nested structure: {suburb: result_dict}
+                results = (
+                    list(agent_out.values())
+                    if any(isinstance(v, dict) for v in agent_out.values())
+                    else [agent_out]
+                )
+                for result in results:
+                    if not isinstance(result, dict):
+                        continue
+                    for src in result.get("sources") or []:
+                        if isinstance(src, dict) and src.get("source"):
+                            sources.append(src)
+                            seen_kinds.add(str(src.get("source")))
+
+                # If agent ran but produced no explicit sources, add a default badge
+                default_kind = AGENT_DEFAULT_SOURCE.get(agent_key)
+                if default_kind and default_kind not in seen_kinds:
+                    main_suburb = (
+                        context["suburbs"][0]["name"]
+                        if context.get("suburbs")
+                        else (suburbs_list[0] if suburbs_list else "Sydney")
+                    )
+                    sources.append({"source": default_kind, "suburb": main_suburb})
+                    seen_kinds.add(default_kind)
 
         return {
             "answer": answer,

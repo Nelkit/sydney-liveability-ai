@@ -11,6 +11,8 @@ from sqlalchemy.types import UserDefinedType
 class PostGISGeometry(UserDefinedType):
     """Minimal PostGIS geometry type wrapper for ORM schema alignment."""
 
+    cache_ok = True
+
     def get_col_spec(self, **kw: object) -> str:
         return "geometry(MultiPolygon,4326)"
 

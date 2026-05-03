@@ -125,7 +125,7 @@ def search_posts(
     if not suburb:
         return {"status": "error", "reason": "suburb is required"}
     if not query or not query.strip():
-        return {"status": "error", "reason": "query is required"}
+        query = suburb
 
     if dimension:
         entry = _aspect_entry(suburb, dimension)

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef, useState } from "react";
 import { importanceOptions } from "./data";
 import { ImportanceLevelKey } from "./types";
 
@@ -15,9 +16,19 @@ type ImportanceSliderProps = {
 };
 
 export function ImportanceSlider({ value, onChange }: ImportanceSliderProps) {
-  const current = value ? parseInt(value) : 5;
+  const committed = value ? parseInt(value) : 5;
+  const [dragging, setDragging] = useState<number | null>(null);
+  const isDragging = useRef(false);
+
+  const current = dragging ?? committed;
   const { track, thumb } = sliderColor(current);
   const pct = ((current - 1) / 9) * 100;
+
+  function commit(val: number) {
+    isDragging.current = false;
+    setDragging(null);
+    onChange(String(val) as ImportanceLevelKey);
+  }
 
   return (
     <div className="w-full">
@@ -28,7 +39,13 @@ export function ImportanceSlider({ value, onChange }: ImportanceSliderProps) {
           max={10}
           step={1}
           value={current}
-          onChange={(e) => onChange(e.target.value as ImportanceLevelKey)}
+          onChange={(e) => {
+            isDragging.current = true;
+            setDragging(parseInt(e.target.value));
+          }}
+          onMouseUp={(e) => commit(parseInt((e.target as HTMLInputElement).value))}
+          onTouchEnd={(e) => commit(parseInt((e.target as HTMLInputElement).value))}
+          onKeyUp={(e) => commit(parseInt((e.target as HTMLInputElement).value))}
           className="h-2 w-full cursor-pointer appearance-none rounded-full outline-none focus-visible:ring-2 focus-visible:ring-slate-400/60"
           style={{
             background: `linear-gradient(to right, ${track} ${pct}%, #e2e8f0 ${pct}%)`,

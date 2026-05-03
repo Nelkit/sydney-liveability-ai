@@ -1,4 +1,4 @@
-export type WeightKey = "transport" | "safety" | "lifestyle" | "afford";
+export type WeightKey = "transport" | "safety" | "lifestyle" | "afford" | "proximity";
 
 export type ImportanceLevelKey =
   | "1" | "2" | "3" | "4" | "5"

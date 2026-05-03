@@ -1,741 +1,859 @@
 "use client";
 
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-import { Coffee, Hexagon, Shield, TrainFront } from "lucide-react";
+import { Coffee, PanelRight, Plus, Shield, TrainFront } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+
 import { AssistantSidebar } from "../components/liveability/AssistantSidebar";
 import { importanceOptions, quickChips, suburbs, weightPrompts } from "../components/liveability/data";
 import { ImportanceSlider } from "../components/liveability/ImportanceSlider";
-import { DetailedReportModal } from "../components/modals/DetailedReportModal";
 import { OnboardingPanel } from "../components/liveability/OnboardingPanel";
+import { ReportModal } from "../components/liveability/ReportModal";
 import { SharedBrand } from "../components/liveability/SharedBrand";
 import { ChatMessage, ImportanceLevelKey, Weights, Suburb } from "../components/liveability/types";
 import { scoreSuburb } from "../components/liveability/utils";
+import {
+  AssistantBubble,
+  AssistantBubbleSkeleton,
+  OutOfScopeState,
+  TypingBubble,
+  UserBubble,
+} from "../components/liveability/ChatBubbles";
+import { ChatInput } from "../components/liveability/ChatInput";
+import { EvidenceDrawer } from "../components/liveability/EvidenceDrawer";
+import { CitationHoverProvider } from "../context/CitationHoverContext";
+import type {
+  AssistantMessage,
+  ChatAPIResponse,
+  Citation,
+  Claim,
+  EvidenceTrace,
+  RouterCategory,
+  RouterMeta,
+  SourceKind,
+} from "../types/api";
 
 const MapPanel = dynamic(
-  () => import("../components/liveability/MapPanel").then((module) => module.MapPanel),
+  () => import("../components/liveability/MapPanel").then((m) => m.MapPanel),
   { ssr: false }
 );
 
-const initialWeights: Weights = {
-  transport: 0,
-  safety: 0,
-  lifestyle: 0,
-  afford: 0
-};
-
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
-const CHAT_ENDPOINT = `${API_BASE_URL}/api/chat`;
+const initialWeights: Weights = { transport: 0, safety: 0, lifestyle: 0, afford: 0, proximity: 0 };
+const API_BASE_URL   = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 const CIVIC_ENDPOINT = `${API_BASE_URL}/api/civic`;
-const CHAT_PREVIEW_MAX_LENGTH = 420;
-
-const initialLevels: Partial<Record<keyof Weights, ImportanceLevelKey>> = {};
 const PREFERENCES_STORAGE_KEY = "sydney-liveability-preferences-v1";
 const USER_WEIGHTS_STORAGE_KEY = "user_weights";
-
-type UserWeightLabels = {
-  transport?: string;
-  safety?: string;
-  lifestyle?: string;
-  affordability?: string;
-  nightlife?: string;
+const CANCEL_SHOW_DELAY_MS = 3000;
+const MAP_LAYERS = ["Liveability", "Safety", "Transport", "Lifestyle"] as const;
+const MAP_LAYER_MAP: Record<string, (typeof MAP_LAYERS)[number]> = {
+  liveability: "Liveability",
+  safety: "Safety",
+  transport: "Transport",
+  lifestyle: "Lifestyle",
 };
+const SOURCE_KIND_LIST: SourceKind[] = ["reddit", "bocsar", "arcgis", "osm", "tfnsw", "pdf"];
+
+// ---------- helpers ----------
 
 function getUserWeights() {
-  const defaults = {
-    transport: 0.2,
-    safety: 0.2,
-    lifestyle: 0.2,
-    affordability: 0.2,
-    nightlife: 0.2
-  };
-
-  const importanceValueMap: Record<string, number> = Object.fromEntries(
-    importanceOptions.map((o) => [o.key, o.value])
-  );
-
+  const defaults = { transport: 0.25, safety: 0.25, lifestyle: 0.25, affordability: 0.25, nightlife: 0.0, proximity: 0.0 };
+  const importanceValueMap: Record<string, number> = Object.fromEntries(importanceOptions.map((o) => [o.key, o.value]));
   try {
     const stored = window.localStorage.getItem(USER_WEIGHTS_STORAGE_KEY);
     if (!stored) return defaults;
-
-    const prefs = JSON.parse(stored) as UserWeightLabels;
-    const keys = ["transport", "safety", "lifestyle", "affordability", "nightlife"] as const;
-
-    const raw: Record<(typeof keys)[number], number> = {
-      transport: 0,
-      safety: 0,
-      lifestyle: 0,
-      affordability: 0,
-      nightlife: 0
-    };
-
-    let total = 0;
-    for (const key of keys) {
-      const label = prefs[key];
-      const score = typeof label === "string" ? (importanceValueMap[label] ?? 50) : 50;
-      raw[key] = score;
-      total += score;
-    }
-
-    if (total === 0) return defaults;
-
-    const weights: Record<(typeof keys)[number], number> = {
-      transport: 0,
-      safety: 0,
-      lifestyle: 0,
-      affordability: 0,
-      nightlife: 0
-    };
-    for (const key of keys) {
-      weights[key] = parseFloat((raw[key] / total).toFixed(4));
-    }
-
-    return weights;
-  } catch {
-    return defaults;
-  }
+    const prefs = JSON.parse(stored) as Record<string, string>;
+    const keys = ["transport", "safety", "lifestyle", "affordability", "nightlife", "proximity"] as const;
+    const raw = {
+      transport: importanceValueMap[prefs.transport] ?? 50,
+      safety: importanceValueMap[prefs.safety] ?? 50,
+      lifestyle: importanceValueMap[prefs.lifestyle] ?? 50,
+      affordability: importanceValueMap[prefs.affordability] ?? 50,
+      nightlife: 0,
+      proximity: importanceValueMap[prefs.proximity] ?? 0,
+    } satisfies Record<(typeof keys)[number], number>;
+    const total = Object.values(raw).reduce((a, b) => a + b, 0);
+    if (!total) return defaults;
+    return Object.fromEntries(keys.map((k) => [k, parseFloat((raw[k] / total).toFixed(4))])) as typeof defaults;
+  } catch { return defaults; }
 }
 
-function extractCenterAndPolygon(geometry: CivicGeometry | Record<string, never>): { center: [number, number]; polygon: [number, number][] } {
-  // Default fallback center (Sydney CBD)
+function getImportanceScore(k: ImportanceLevelKey) {
+  return importanceOptions.find((o) => o.key === k)?.value ?? 50;
+}
+function getImportanceLabel(k?: ImportanceLevelKey) {
+  if (!k) return "Unset";
+  return importanceOptions.find((o) => o.key === k)?.label ?? "Unset";
+}
+
+type CivicGeometry  = { type: string; coordinates: unknown };
+type CivicProperties= { suburb: string; sa4_area: string; liveability_score: number; safety_score: number; transport_score: number; lifestyle_score: number; nightlife_score: number; proximity_score: number };
+type CivicFeature   = { type: "Feature"; properties: CivicProperties; geometry: CivicGeometry | Record<string, never> };
+type CivicResponse  = { type: "FeatureCollection"; features: CivicFeature[] };
+
+function extractCenterAndPolygon(geometry: CivicGeometry | Record<string, never>) {
   const fallback = { center: [-33.8688, 151.2093] as [number, number], polygon: [] as [number, number][] };
-
-  if (!geometry || !("type" in geometry) || geometry.type !== "MultiPolygon" || !Array.isArray(geometry.coordinates)) {
-    return fallback;
-  }
-
+  if (!geometry || !("type" in geometry) || geometry.type !== "MultiPolygon" || !Array.isArray(geometry.coordinates)) return fallback;
   try {
-    // For MultiPolygon: [[[outer_ring], [hole1], ...], [[outer_ring], ...], ...]
-    // We want the first polygon's outer ring
-    const firstPolygon = geometry.coordinates[0] as unknown[][];
-    if (!Array.isArray(firstPolygon) || firstPolygon.length === 0) {
-      return fallback;
-    }
-
-    const outerRing = firstPolygon[0] as unknown[][];
-    if (!Array.isArray(outerRing) || outerRing.length === 0) {
-      return fallback;
-    }
-
-    // Convert [lng, lat] to [lat, lng] for Leaflet
-    const polygonCoords = outerRing
-      .filter((coord) => Array.isArray(coord) && coord.length >= 2)
-      .map((coord) => [coord[1], coord[0]] as [number, number]);
-
-    if (polygonCoords.length === 0) {
-      return fallback;
-    }
-
-    // Calculate center (centroid of first polygon)
-    const sumLat = polygonCoords.reduce((sum, [lat]) => sum + lat, 0);
-    const sumLng = polygonCoords.reduce((sum, [, lng]) => sum + lng, 0);
-    const center: [number, number] = [sumLat / polygonCoords.length, sumLng / polygonCoords.length];
-
-    return { center, polygon: polygonCoords };
-  } catch {
-    return fallback;
-  }
+    const outerRing = ((geometry.coordinates as unknown[][][])[0] as unknown[][])[0] as unknown[][];
+    if (!Array.isArray(outerRing) || !outerRing.length) return fallback;
+    const polygonCoords = outerRing.filter((c) => Array.isArray(c) && c.length >= 2).map((c) => [c[1], c[0]] as [number, number]);
+    if (!polygonCoords.length) return fallback;
+    const sumLat = polygonCoords.reduce((s, [lat]) => s + lat, 0);
+    const sumLng = polygonCoords.reduce((s, [, lng]) => s + lng, 0);
+    return { center: [sumLat / polygonCoords.length, sumLng / polygonCoords.length] as [number, number], polygon: polygonCoords };
+  } catch { return fallback; }
 }
 
-function convertCivicFeaturesToSuburbs(civicResponse: CivicResponse): Suburb[] {
-  const colorMap: Record<string, string> = {
-    newtown: "#3b82f6",
-    glebe: "#10b981",
-    redfern: "#f59e0b",
-    "surry hills": "#8b5cf6",
-    haymarket: "#ef4444"
-  };
-
-  return civicResponse.features.map((feature) => {
-    const { suburb, liveability_score, safety_score, transport_score, lifestyle_score } = feature.properties;
-    const { center, polygon } = extractCenterAndPolygon(feature.geometry);
-
-    const suburbLower = suburb.toLowerCase();
-    const color = colorMap[suburbLower] || "#6366f1";
-
-    return {
-      id: suburbLower.replace(/\s+/g, "-"),
+function civicToSuburbs(data: CivicResponse): Suburb[] {
+  const colorMap: Record<string, string> = { newtown: "#3b82f6", glebe: "#10b981", redfern: "#f59e0b", "surry hills": "#8b5cf6", haymarket: "#ef4444" };
+  return data.features.flatMap((f) => {
+    const { suburb, liveability_score, safety_score, transport_score, lifestyle_score, proximity_score } = f.properties;
+    if (!suburb) return [];
+    const { center, polygon } = extractCenterAndPolygon(f.geometry);
+    return [{
+      id: suburb.toLowerCase().replace(/\s+/g, "-"),
       name: suburb,
-      color,
+      color: colorMap[suburb.toLowerCase()] ?? "#6366f1",
       scoreBase: {
         transport: Math.round(transport_score * 100),
         safety: Math.round(safety_score * 100),
         lifestyle: Math.round(lifestyle_score * 100),
-        afford: 50 // Placeholder; affordability_score not directly used in scoreSuburb
+        afford: 50,
+        proximity: Math.round((proximity_score ?? 0.5) * 100),
       },
-      center,
-      polygon
-    };
+      center, polygon,
+    }];
   });
 }
 
-type StoredPreferences = {
-  weights: Weights;
-  selectedLevels: Partial<Record<keyof Weights, ImportanceLevelKey>>;
-  profileReady: boolean;
-};
-
-type ChatApiSource = {
-  text?: string;
-  suburb?: string;
-  source?: string;
-};
-
-type ChatApiResponse = {
-  answer?: string;
-  sources?: ChatApiSource[];
-};
-
-type CivicGeometry = {
-  type: string;
-  coordinates: unknown;
-};
-
-type CivicFeatureProperties = {
-  suburb: string;
-  sa4_area: string;
-  liveability_score: number;
-  safety_score: number;
-  transport_score: number;
-  lifestyle_score: number;
-  nightlife_score: number;
-};
-
-type CivicFeature = {
-  type: "Feature";
-  properties: CivicFeatureProperties;
-  geometry: CivicGeometry | Record<string, never>;
-};
-
-type CivicResponse = {
-  type: "FeatureCollection";
-  features: CivicFeature[];
-};
-
-function isValidWeights(value: unknown): value is Weights {
-  if (!value || typeof value !== "object") return false;
-  const candidate = value as Record<string, unknown>;
-  return (
-    typeof candidate.transport === "number" &&
-    typeof candidate.safety === "number" &&
-    typeof candidate.lifestyle === "number" &&
-    typeof candidate.afford === "number"
-  );
-}
-
-function isValidSelectedLevels(value: unknown): value is Partial<Record<keyof Weights, ImportanceLevelKey>> {
-  if (!value || typeof value !== "object") return false;
-  const validKeys = new Set(importanceOptions.map((option) => option.key));
-  const candidate = value as Record<string, unknown>;
-  const keys: (keyof Weights)[] = ["transport", "safety", "lifestyle", "afford"];
-  return keys.every((key) => candidate[key] === undefined || (typeof candidate[key] === "string" && validKeys.has(candidate[key] as ImportanceLevelKey)));
-}
-
-function getImportanceScore(choiceKey: ImportanceLevelKey) {
-  return importanceOptions.find((option) => option.key === choiceKey)?.value ?? 50;
-}
-
-function getImportanceLabel(choiceKey?: ImportanceLevelKey) {
-  if (!choiceKey) return "Unset";
-  return importanceOptions.find((option) => option.key === choiceKey)?.label ?? "Unset";
-}
-
-
-function toChatPreview(fullAnswerHtml: string): string {
-  const plainText = fullAnswerHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-  if (plainText.length <= CHAT_PREVIEW_MAX_LENGTH) {
-    return fullAnswerHtml;
+// Minimal parser: keep markdown intact when present
+function parseAnswerToClaims(answer: string): Claim[] {
+  const hasMarkdown = /\n|^\s*[-*]\s+|\*\*|^>\s+/m.test(answer);
+  if (hasMarkdown) {
+    return [{ text: answer, cites: [] }];
   }
-  const previewSlice = plainText.slice(0, CHAT_PREVIEW_MAX_LENGTH);
-  const cutIndex = previewSlice.lastIndexOf(" ");
-  const safePreview = cutIndex > 200 ? previewSlice.slice(0, cutIndex) : previewSlice;
-  return `${safePreview.trim()}...`;
+  return answer.split(/(?<=[.!?])\s+/).filter(Boolean).map((text) => ({ text, cites: [] }));
 }
+
+type SourceObject = { source?: SourceKind; suburb?: string; text?: string };
+
+function isSourceKind(value: unknown): value is SourceKind {
+  return typeof value === "string" && SOURCE_KIND_LIST.includes(value as SourceKind);
+}
+
+function isSourceObject(value: unknown): value is SourceObject {
+  return typeof value === "object" && value !== null && ("source" in value || "suburb" in value || "text" in value);
+}
+
+function sourceDetail(kind: SourceKind, suburbs: string[]) {
+  if (!suburbs.length) return `Source: ${kind}`;
+  if (suburbs.length === 1) return `${suburbs[0]} · ${kind}`;
+  return `${suburbs.join(", ")} · ${kind}`;
+}
+
+function normalizeSourcesToCitations(
+  payload: ChatAPIResponse,
+  router: { suburbs: string[] }
+): Citation[] {
+  const raw: unknown[] = Array.isArray(payload.sources) ? (payload.sources as unknown[]) : [];
+  if (!raw.length) return [];
+  const citations: Citation[] = [];
+  let n = 1;
+
+  raw.forEach((item) => {
+    if (isSourceKind(item)) {
+      const detail = sourceDetail(item, router.suburbs);
+      citations.push({ n: n++, src: item, suburbs: router.suburbs, detail });
+      return;
+    }
+
+    if (isSourceObject(item)) {
+      const kind = isSourceKind(item.source) ? item.source : null;
+      if (!kind) return;
+      const suburbs = item.suburb ? [item.suburb] : router.suburbs;
+      const detail = item.text ? item.text : sourceDetail(kind, suburbs);
+      citations.push({ n: n++, src: kind, suburbs, detail });
+    }
+  });
+
+  return citations;
+}
+
+function buildClaimsWithCitations(
+  payload: ChatAPIResponse,
+  router: { suburbs: string[] }
+): Claim[] {
+  const claims = payload.claims ? payload.claims : parseAnswerToClaims(payload.answer ?? "");
+  const hasCites = claims.some((cl) => cl.cites && cl.cites.length > 0);
+  if (hasCites) return claims;
+
+  const citations = normalizeSourcesToCitations(payload, router);
+  if (!citations.length) return claims;
+
+  return claims.map((cl, idx) => ({
+    ...cl,
+    cites: [citations[idx % citations.length]],
+  }));
+}
+
+// Convert old-style ChatApiResponse to AssistantMessage
+function normalizeRouter(payload: ChatAPIResponse, fallbackSuburb: string | null): AssistantMessage["router"] {
+  const raw = payload.router as (RouterMeta & { suburbs_mentioned?: string[] }) | undefined;
+  const suburbs = Array.isArray(raw?.suburbs)
+    ? raw.suburbs
+    : Array.isArray(raw?.suburbs_mentioned)
+      ? raw.suburbs_mentioned
+      : fallbackSuburb
+        ? [fallbackSuburb]
+        : [];
+
+  return {
+    categories: Array.isArray(raw?.categories) ? raw.categories : (["sentiment"] as RouterCategory[]),
+    suburbs,
+    latencyMs: typeof raw?.latencyMs === "number" ? raw.latencyMs : 0,
+  };
+}
+
+function apiResponseToAssistantMessage(payload: ChatAPIResponse, suburb: string | null): AssistantMessage {
+  const router = normalizeRouter(payload, suburb);
+
+  const isOutOfScope = router.categories.includes("out_of_scope");
+
+  const claims: Claim[] = buildClaimsWithCitations(payload, router);
+
+  // Collect all citations for evidence drawer
+  const sources = Array.isArray(payload.sources) ? payload.sources : [];
+
+  const summary = !isOutOfScope && router.suburbs.length > 0
+    ? { suburbs: router.suburbs }
+    : undefined;
+
+  return {
+    role: "assistant",
+    ts: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+    router,
+    claims: isOutOfScope ? [] : claims,
+    summary,
+  };
+}
+
+// ---------- types ----------
+
+type StoredPreferences = { weights: Weights; selectedLevels: Partial<Record<keyof Weights, ImportanceLevelKey>>; profileReady: boolean };
+
+type DisplayMessage =
+  | { type: "user"; text: string; ts: string }
+  | { type: "assistant"; message: AssistantMessage; payload: ChatAPIResponse; suburb: string | null }
+  | { type: "out_of_scope" }
+  | { type: "typing"; step?: string };
+
+// ---------- component ----------
 
 export default function HomePage() {
-  const [isHydrated, setIsHydrated] = useState(false);
-  const [isAppOpen, setIsAppOpen] = useState(false);
-
-  const [weights, setWeights] = useState<Weights>(initialWeights);
-  const [selectedLevels, setSelectedLevels] = useState<Partial<Record<keyof Weights, ImportanceLevelKey>>>(initialLevels);
-  const [profileReady, setProfileReady] = useState(false);
+  const [isHydrated, setIsHydrated]   = useState(false);
+  const [isAppOpen,  setIsAppOpen]    = useState(false);
+  const [weights,    setWeights]      = useState<Weights>(initialWeights);
+  const [selectedLevels, setSelectedLevels] = useState<Partial<Record<keyof Weights, ImportanceLevelKey>>>({});
+  const [draftLevels,    setDraftLevels]    = useState<Partial<Record<keyof Weights, ImportanceLevelKey>>>({});
+  const [profileReady,   setProfileReady]   = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
-  const [onboardingMessages, setOnboardingMessages] = useState<ChatMessage[]>([]);
-  const [onboardingTyping, setOnboardingTyping] = useState(false);
+  const [onboardingMessages,   setOnboardingMessages]   = useState<ChatMessage[]>([]);
+  const [onboardingTyping,     setOnboardingTyping]     = useState(false);
 
   const [selectedSuburbId, setSelectedSuburbId] = useState<string | null>(null);
-  const [detailedReportOpen, setDetailedReportOpen] = useState(false);
-  const [detailedReportSuburb, setDetailedReportSuburb] = useState<string | null>(null);
-  const [detailedReportMessage, setDetailedReportMessage] = useState("");
-  const [layer, setLayer] = useState("Liveability");
-  const [chatMessages, setChatMessages] = useState<ChatMessage[]>([]);
-  const [chatTyping, setChatTyping] = useState(false);
+  const [layer,    setLayer]    = useState("Liveability");
   const [chatInput, setChatInput] = useState("");
   const [profileOpen, setProfileOpen] = useState(false);
-  const [pdfLoaded, setPdfLoaded] = useState(false);
-  const [civicData, setCivicData] = useState<CivicResponse | null>(null);
+  const [civicData,   setCivicData]   = useState<CivicResponse | null>(null);
   const [isCivicLoading, setIsCivicLoading] = useState(true);
+  const [civicLoadingLabel, setCivicLoadingLabel] = useState("Loading civic data");
+  const [hoveredSuburb,  setHoveredSuburb]  = useState<string | null>(null);
 
-  const popoverRef = useRef<HTMLDivElement | null>(null);
+  const [reportModal, setReportModal] = useState<{ mode: "single" | "compare"; suburbs: string[] } | null>(null);
 
-  const rankedSuburbs = useMemo(() => {
-    // Use real civic data if available.
-    const suburbsToRank = civicData ? convertCivicFeaturesToSuburbs(civicData) : suburbs;
+  const [displayMessages, setDisplayMessages] = useState<DisplayMessage[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [showCancel, setShowCancel] = useState(false);
+  const [showEvidence, setShowEvidence] = useState(true);
+  const [chatActiveSuburbs, setChatActiveSuburbs] = useState<string[]>([]);
+  const abortControllerRef = useRef<AbortController | null>(null);
+  const cancelTimerRef     = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const chatScrollRef      = useRef<HTMLDivElement | null>(null);
+  const popoverRef         = useRef<HTMLDivElement | null>(null);
 
-    if (civicData) {
-      // Already ranked by liveability_score from civic endpoint
-      return civicData.features.map((feature, index) => {
-        const suburb = suburbsToRank[index];
-        return { ...suburb, computedScore: Math.round(feature.properties.liveability_score * 100) };
-      });
+  // Latest payload for EvidenceDrawer
+  const [lastPayload, setLastPayload] = useState<ChatAPIResponse | null>(null);
+  // Per-suburb payload cache — keyed by lowercase suburb name
+  const [suburbPayloads, setSuburbPayloads] = useState<Record<string, ChatAPIResponse>>({});
+  const allCitations = useMemo<Citation[]>(() => {
+    if (!lastPayload?.claims) return [];
+    return lastPayload.claims.flatMap((cl) => cl.cites);
+  }, [lastPayload]);
+
+  // Active suburbs for map — prefer explicit map_state from last payload, fallback to last assistant router
+  const activeSuburbs = useMemo<string[]>(() => {
+    if (lastPayload?.map_state?.activeSuburbs && lastPayload.map_state.activeSuburbs.length > 0) {
+      return lastPayload.map_state.activeSuburbs;
     }
-
-    // While civic is loading we show placeholders in map/cards instead of static demo suburbs.
-    if (isCivicLoading) {
-      return [];
-    }
-
-    // Fall back to local scoring for static data
-    return suburbsToRank
-      .map((suburb) => ({ ...suburb, computedScore: scoreSuburb(suburb, weights) }))
-      .sort((a, b) => b.computedScore - a.computedScore);
-  }, [weights, civicData, isCivicLoading]);
+    const last = [...displayMessages].reverse().find((m) => m.type === "assistant");
+    if (!last || last.type !== "assistant") return [];
+    return last.message.router.suburbs;
+  }, [displayMessages, lastPayload]);
 
   const allSuburbsForMap = useMemo(() => {
-    if (isCivicLoading && !civicData) return [];
-    return civicData ? convertCivicFeaturesToSuburbs(civicData) : suburbs;
-  }, [civicData, isCivicLoading]);
+    return civicData ? civicToSuburbs(civicData) : suburbs;
+  }, [civicData]);
 
+  const rankedSuburbs = useMemo(() => {
+    if (civicData) {
+      return civicData.features.map((f, i) => {
+        const s = civicToSuburbs(civicData)[i];
+        return { ...s, computedScore: Math.round(f.properties.liveability_score * 100) };
+      });
+    }
+    return allSuburbsForMap.map((s) => ({ ...s, computedScore: scoreSuburb(s, weights) })).sort((a, b) => b.computedScore - a.computedScore);
+  }, [weights, civicData, allSuburbsForMap]);
+
+  const mapWeights = useMemo<Weights>(() => {
+    const heat = lastPayload?.map_state?.heatmap_weights;
+    if (!heat || Object.keys(heat).length === 0) return weights;
+    return {
+      transport: typeof heat.transport === "number" ? heat.transport : weights.transport,
+      safety: typeof heat.safety === "number" ? heat.safety : weights.safety,
+      lifestyle: typeof heat.lifestyle === "number" ? heat.lifestyle : weights.lifestyle,
+      afford: weights.afford,
+      proximity: weights.proximity,
+    };
+  }, [lastPayload, weights]);
+
+  useEffect(() => {
+    const rawLayer = lastPayload?.map_state?.layer;
+    if (!rawLayer) return;
+    const normalized = MAP_LAYER_MAP[rawLayer.toLowerCase()] ?? rawLayer;
+    if (MAP_LAYERS.includes(normalized as (typeof MAP_LAYERS)[number])) {
+      setLayer(normalized);
+    }
+  }, [lastPayload]);
+
+  useEffect(() => {
+    const nextActive = lastPayload?.map_state?.activeSuburbs ?? [];
+    if (!nextActive.length) return;
+    const detected = allSuburbsForMap.find((s) =>
+      s.name.toLowerCase() === nextActive[0].toLowerCase()
+    );
+    if (detected) setSelectedSuburbId(detected.id);
+  }, [allSuburbsForMap, lastPayload]);
+
+  // Hydrate from storage
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(PREFERENCES_STORAGE_KEY);
-      if (!raw) {
-        setIsHydrated(true);
-        return;
+      if (raw) {
+        const parsed = JSON.parse(raw) as StoredPreferences;
+        if (parsed.profileReady) {
+          setWeights({ ...initialWeights, ...parsed.weights });
+          setSelectedLevels(parsed.selectedLevels);
+          setProfileReady(true);
+          setIsAppOpen(true);
+        }
       }
-
-      const parsed = JSON.parse(raw) as StoredPreferences;
-      if (!isValidWeights(parsed.weights) || !isValidSelectedLevels(parsed.selectedLevels) || !parsed.profileReady) {
-        setIsHydrated(true);
-        return;
-      }
-
-      setWeights(parsed.weights);
-      setSelectedLevels(parsed.selectedLevels);
-      setProfileReady(true);
-      setIsAppOpen(true);
-    } catch {
-      // Ignore malformed storage and continue with first-time onboarding.
-    } finally {
-      setIsHydrated(true);
-    }
+    } catch { /* ignore */ } finally { setIsHydrated(true); }
   }, []);
 
+  // Persist weights
   useEffect(() => {
     if (!isHydrated || !profileReady) return;
-
-    const payload: StoredPreferences = {
-      weights,
-      selectedLevels,
-      profileReady: true
-    };
-
-    window.localStorage.setItem(PREFERENCES_STORAGE_KEY, JSON.stringify(payload));
-
-    const keyToLabel = {
+    window.localStorage.setItem(PREFERENCES_STORAGE_KEY, JSON.stringify({ weights, selectedLevels, profileReady: true }));
+    window.localStorage.setItem(USER_WEIGHTS_STORAGE_KEY, JSON.stringify({
       transport: getImportanceLabel(selectedLevels.transport),
-      safety: getImportanceLabel(selectedLevels.safety),
+      safety:    getImportanceLabel(selectedLevels.safety),
       lifestyle: getImportanceLabel(selectedLevels.lifestyle),
       affordability: getImportanceLabel(selectedLevels.afford),
-      nightlife: "Neutral"
-    };
-    window.localStorage.setItem(USER_WEIGHTS_STORAGE_KEY, JSON.stringify(keyToLabel));
+      nightlife: "Neutral",
+      proximity: getImportanceLabel(selectedLevels.proximity),
+    }));
   }, [isHydrated, profileReady, weights, selectedLevels]);
 
+  // Load civic data — only after profile is ready (all 5 weights selected).
+  // During onboarding selectedLevels changes 5 times; we must not fetch until done.
   useEffect(() => {
-    if (!isHydrated) return;
-
+    if (!isHydrated || !profileReady) return;
     setIsCivicLoading(true);
-
-    const numericWeights = getUserWeights();
-    const params = new URLSearchParams(
-      Object.entries(numericWeights).map(([key, value]) => [key, String(value)])
+    const importanceValueMap: Record<string, number> = Object.fromEntries(
+      importanceOptions.map((o) => [o.key, o.value])
     );
-
-    void fetch(`${CIVIC_ENDPOINT}?${params.toString()}`, { method: "GET" })
-      .then((response) => {
-        if (!response.ok) throw new Error(`Civic API failed with status ${response.status}`);
-        return response.json() as Promise<CivicResponse>;
-      })
-      .then((data) => {
-        setCivicData(data);
-      })
-      .catch(() => {
-        // Silently fail and continue with static data
-      })
+    const raw = {
+      transport:     importanceValueMap[selectedLevels.transport     ?? ""] ?? 50,
+      safety:        importanceValueMap[selectedLevels.safety        ?? ""] ?? 50,
+      lifestyle:     importanceValueMap[selectedLevels.lifestyle     ?? ""] ?? 50,
+      affordability: importanceValueMap[selectedLevels.afford        ?? ""] ?? 50,
+      nightlife:     0,
+      proximity:     importanceValueMap[selectedLevels.proximity     ?? ""] ?? 0,
+    };
+    const total = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
+    const civicWeights = Object.fromEntries(
+      Object.entries(raw).map(([k, v]) => [k, parseFloat((v / total).toFixed(4))])
+    );
+    const params = new URLSearchParams(
+      Object.entries(civicWeights).map(([k, v]) => [k, String(v)])
+    );
+    fetch(`${CIVIC_ENDPOINT}?${params}`)
+      .then((r) => r.ok ? r.json() as Promise<CivicResponse> : Promise.reject())
+      .then(setCivicData)
+      .catch(() => {})
       .finally(() => {
         setIsCivicLoading(false);
+        setCivicLoadingLabel("Loading civic data");
       });
-  }, [isHydrated, selectedLevels]);
+  }, [isHydrated, profileReady, selectedLevels]);
 
-  function startOnboardingConversation() {
-    setOnboardingTyping(true);
-    setTimeout(() => {
-      setOnboardingTyping(false);
-      setOnboardingMessages([
-        {
-          role: "ai",
-          html: "Hi, I am your <strong>Sydney Liveability AI</strong>. Let us build your weighting profile in a conversational way."
-        },
-        {
-          role: "ai",
-          html: weightPrompts[0].prompt
-        }
-      ]);
-    }, 400);
-  }
-
+  // Popover close on outside click
   useEffect(() => {
-    if (!isAppOpen) return;
-    setChatMessages([
-      {
-        role: "ai",
-        html: "Profile saved. You now have a real Sydney map with active demo layers. You can adjust weights anytime from the profile widget.",
-        source: "13,500+ entries - BOCSAR - ArcGIS - Reddit"
-      }
-    ]);
-  }, [isAppOpen]);
-
-  useEffect(() => {
-    const handler = (event: MouseEvent) => {
-      if (!popoverRef.current) return;
-      if (popoverRef.current.contains(event.target as Node)) return;
-      setProfileOpen(false);
+    const handler = (e: MouseEvent) => {
+      if (popoverRef.current && !popoverRef.current.contains(e.target as Node)) setProfileOpen(false);
     };
-
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  function openDetailedReportFromMessage(messageIndex: number) {
-    const message = chatMessages[messageIndex];
-    if (!message || message.role !== "ai") return;
+  // Welcome message when app opens
+  useEffect(() => {
+    if (!isAppOpen) return;
+    setDisplayMessages([]);
+  }, [isAppOpen]);
 
-    setDetailedReportMessage(message.fullHtml ?? message.html);
-    setDetailedReportSuburb(message.detailedSuburb ?? null);
-    setDetailedReportOpen(true);
+  // Auto-show profile panel briefly — only when transitioning FROM onboarding, not on page refresh
+  function openAppFromOnboarding() {
+    setIsAppOpen(true);
+    setProfileOpen(true);
+    setTimeout(() => setProfileOpen(false), 4000);
   }
 
-  function updateWeight(key: keyof Weights, value: number) {
-    setWeights((prev) => ({ ...prev, [key]: value }));
-  }
+  // Sync draft from committed state whenever the popover opens
+  useEffect(() => {
+    if (profileOpen) setDraftLevels(selectedLevels);
+  }, [profileOpen]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Auto-scroll chat
+  useEffect(() => {
+    chatScrollRef.current?.scrollTo({ top: chatScrollRef.current.scrollHeight, behavior: "smooth" });
+  }, [displayMessages]);
 
   function applyWeightChoice(key: keyof Weights, choiceKey: ImportanceLevelKey) {
-    updateWeight(key, getImportanceScore(choiceKey));
+    setWeights((prev) => ({ ...prev, [key]: getImportanceScore(choiceKey) }));
     setSelectedLevels((prev) => ({ ...prev, [key]: choiceKey }));
   }
 
   function handleOnboardingChoice(choiceKey: ImportanceLevelKey) {
     if (profileReady) return;
-
     const prompt = weightPrompts[currentQuestionIndex];
-    const choiceLabel = getImportanceLabel(choiceKey);
-    setOnboardingMessages((prev) => [...prev, { role: "user", html: `${prompt.label}: ${choiceLabel}` }]);
-
+    setOnboardingMessages((prev) => [...prev, { role: "user", html: `${prompt.label}: ${getImportanceLabel(choiceKey)}` }]);
     applyWeightChoice(prompt.key, choiceKey);
-
-    const nextIndex = currentQuestionIndex + 1;
-    if (nextIndex < weightPrompts.length) {
-      setCurrentQuestionIndex(nextIndex);
+    const next = currentQuestionIndex + 1;
+    if (next < weightPrompts.length) {
+      setCurrentQuestionIndex(next);
       setOnboardingTyping(true);
       setTimeout(() => {
         setOnboardingTyping(false);
-        setOnboardingMessages((prev) => [
-          ...prev,
-          {
-            role: "ai",
-            html: `Perfect. ${weightPrompts[nextIndex].prompt}`
-          }
-        ]);
+        setOnboardingMessages((prev) => [...prev, { role: "ai", html: `Perfect. ${weightPrompts[next].prompt}` }]);
       }, 420);
-      return;
+    } else {
+      setProfileReady(true);
+      setOnboardingMessages((prev) => [...prev, { role: "ai", html: "Excellent, we have captured your profile. You can fine-tune each category using the same choice levels and then continue to the map." }]);
     }
-
-    setProfileReady(true);
-    setOnboardingMessages((prev) => [
-      ...prev,
-      {
-        role: "ai",
-        html: "Excellent, we have captured your profile. You can fine-tune each category using the same choice levels and then continue to the map."
-      }
-    ]);
   }
 
-  function openMainApp() {
-    if (!profileReady) return;
-    setIsAppOpen(true);
+  function cancelRequest() {
+    abortControllerRef.current?.abort();
+    if (cancelTimerRef.current) clearTimeout(cancelTimerRef.current);
+    setIsLoading(false);
+    setShowCancel(false);
+    setDisplayMessages((prev) => prev.filter((m) => m.type !== "typing"));
+  }
+
+  async function sendChat(text?: string, suburbOverride?: string) {
+    const value = (text ?? chatInput).trim();
+    if (!value || isLoading) return;
+
+    const activeSuburbName = suburbOverride
+      ?? allSuburbsForMap.find((s) => s.id === selectedSuburbId)?.name
+      ?? null;
+
+    // Detect suburbs in user message immediately — zoom + highlight before API responds
+    const valueLower = value.toLowerCase();
+    const mentionedSuburbs = allSuburbsForMap.filter((s) => valueLower.includes(s.name.toLowerCase())).map((s) => s.name);
+    if (mentionedSuburbs.length > 0) setChatActiveSuburbs(mentionedSuburbs);
+
+    const messageToSend = value;
+
+    setChatInput("");
+    setIsLoading(true);
+    setShowCancel(false);
+
+    setDisplayMessages((prev) => [
+      ...prev,
+      { type: "user", text: value, ts: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) },
+      { type: "typing" },
+    ]);
+
+    // Show cancel button after CANCEL_SHOW_DELAY_MS
+    cancelTimerRef.current = setTimeout(() => setShowCancel(true), CANCEL_SHOW_DELAY_MS);
+
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/chat/stream`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: messageToSend, weights: getUserWeights() }),
+        signal: controller.signal,
+      });
+
+      if (!res.ok) throw new Error(`API error ${res.status}`);
+      if (!res.body) throw new Error("No response body");
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      outer: while (true) {
+        const { done, value: chunk } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(chunk, { stream: true });
+
+        const blocks = buffer.split("\n\n");
+        buffer = blocks.pop() ?? "";
+
+        for (const block of blocks) {
+          const eventMatch = block.match(/^event: (\w+)/m);
+          const dataMatch  = block.match(/^data: (.+)/m);
+          if (!eventMatch || !dataMatch) continue;
+
+          const eventType = eventMatch[1];
+          const data = JSON.parse(dataMatch[1]);
+
+          if (eventType === "step") {
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              { type: "typing", step: data.text as string },
+            ]);
+          } else if (eventType === "error") {
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              {
+                type: "assistant",
+                message: {
+                  role: "assistant",
+                  ts: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+                  router: { categories: ["sentiment"], suburbs: [], latencyMs: 0 },
+                  claims: [{ text: data.message ?? "I could not process that question right now.", cites: [] }],
+                },
+                payload: { answer: "", sources: [] },
+                suburb: activeSuburbName,
+              },
+            ]);
+            break outer;
+          } else if (eventType === "done") {
+            const payload = data as ChatAPIResponse;
+            const message = apiResponseToAssistantMessage(payload, activeSuburbName);
+            const isOutOfScope = message.router.categories.includes("out_of_scope");
+            const hydratedPayload: ChatAPIResponse = payload.claims
+              ? payload
+              : { ...payload, claims: message.claims };
+
+            setLastPayload(hydratedPayload);
+            if (message.router.suburbs.length > 0) {
+              setSuburbPayloads((prev) => {
+                const next = { ...prev };
+                for (const s of message.router.suburbs) next[s.toLowerCase()] = hydratedPayload;
+                return next;
+              });
+            }
+            setDisplayMessages((prev) => [
+              ...prev.filter((m) => m.type !== "typing"),
+              isOutOfScope
+                ? { type: "out_of_scope" }
+                : { type: "assistant", message, payload: hydratedPayload, suburb: activeSuburbName },
+            ]);
+            if (message.router.suburbs.length > 0) {
+              const detected = allSuburbsForMap.find((s) =>
+                s.name.toLowerCase() === message.router.suburbs[0].toLowerCase()
+              );
+              if (detected) setSelectedSuburbId(detected.id);
+              setChatActiveSuburbs(message.router.suburbs);
+            }
+            break outer;
+          }
+        }
+      }
+    } catch (err) {
+      if ((err as Error).name === "AbortError") return;
+      setDisplayMessages((prev) => [
+        ...prev.filter((m) => m.type !== "typing"),
+        {
+          type: "assistant",
+          message: {
+            role: "assistant",
+            ts: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
+            router: { categories: ["sentiment"], suburbs: [], latencyMs: 0 },
+            claims: [{ text: "I could not process that question right now. Please try again.", cites: [] }],
+          },
+          payload: { answer: "", sources: [] },
+          suburb: activeSuburbName,
+        },
+      ]);
+    } finally {
+      if (cancelTimerRef.current) clearTimeout(cancelTimerRef.current);
+      setIsLoading(false);
+      setShowCancel(false);
+    }
   }
 
   function onSelectSuburb(name: string) {
-    const suburb = allSuburbsForMap.find((item) => item.name === name);
-    if (!suburb) return;
-    setSelectedSuburbId(suburb.id);
-    void sendChat(`Tell me about ${suburb.name}`, suburb.name);
+    const sub = allSuburbsForMap.find((s) => s.name === name);
+    if (sub) setSelectedSuburbId(sub.id);
+    void sendChat(`Tell me about ${name}`, name);
   }
 
-  async function sendChat(text?: string, selectedSuburb?: string) {
-    const value = (text ?? chatInput).trim();
-    if (!value) return;
-
-    const activeSuburbName = selectedSuburb
-      ?? allSuburbsForMap.find((item) => item.id === selectedSuburbId)?.name
-      ?? null;
-
-    setChatMessages((prev) => [...prev, { role: "user", html: value }]);
-    setChatInput("");
-    setChatTyping(true);
-
-    try {
-      const apiResponse = await fetch(CHAT_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: value,
-          weights: getUserWeights()
-        })
-      });
-
-      if (!apiResponse.ok) {
-        throw new Error(`Chat API request failed with status ${apiResponse.status}`);
-      }
-
-      const payload = (await apiResponse.json()) as ChatApiResponse;
-      const fullAnswer = (payload.answer ?? "I could not process that question right now.").trim();
-      const answerPreview = toChatPreview(fullAnswer);
-      const source = Array.isArray(payload.sources) && payload.sources.length > 0
-        ? payload.sources
-            .map((item) => [item.source, item.suburb].filter(Boolean).join(" - "))
-            .filter(Boolean)
-            .join(" | ")
-        : "Sydney Liveability API";
-
-      setChatTyping(false);
-      setChatMessages((prev) => [
-        ...prev,
-        {
-          role: "ai",
-          html: answerPreview,
-          fullHtml: fullAnswer,
-          detailedSuburb: activeSuburbName,
-          source,
-        },
-      ]);
-    } catch {
-      setChatTyping(false);
-      setChatMessages((prev) => [
-        ...prev,
-        {
-          role: "ai",
-          html: "I could not process that question right now. Please try again.",
-          fullHtml: "I could not process that question right now. Please try again.",
-          detailedSuburb: activeSuburbName,
-          source: "Sydney Liveability API"
-        }
-      ]);
-    }
-  }
-
-  function togglePdf() {
-    setPdfLoaded((prev) => {
-      const next = !prev;
-      if (next) {
-        setChatMessages((old) => [
-          ...old,
-          {
-            role: "ai",
-            html: "PDF loaded. <strong>45 King St, Newtown</strong> is a 12-minute walk from Newtown Station and in a low crime-density zone.",
-            source: "Address-level RAG - City of Sydney ArcGIS - BOCSAR"
-          }
-        ]);
-      }
-      return next;
-    });
-  }
 
   function resetPreferences() {
     window.localStorage.removeItem(PREFERENCES_STORAGE_KEY);
     window.localStorage.removeItem(USER_WEIGHTS_STORAGE_KEY);
     setWeights(initialWeights);
-    setSelectedLevels(initialLevels);
+    setSelectedLevels({});
     setProfileReady(false);
     setCurrentQuestionIndex(0);
     setOnboardingMessages([]);
-    setOnboardingTyping(false);
-    setSelectedSuburbId(null);
-    setDetailedReportOpen(false);
-    setDetailedReportSuburb(null);
-    setDetailedReportMessage("");
-    setChatMessages([]);
-    setChatTyping(false);
-    setChatInput("");
-    setProfileOpen(false);
-    setPdfLoaded(false);
     setIsAppOpen(false);
+    setDisplayMessages([]);
+    setSelectedSuburbId(null);
+    setLastPayload(null);
   }
 
-  if (!isHydrated) {
-    return <main className="h-screen" />;
-  }
+  if (!isHydrated) return <main className="h-screen bg-bg" />;
 
   return (
-    <LayoutGroup>
-      <main className="h-screen overflow-hidden text-slateText">
-        <AnimatePresence mode="sync" initial={false}>
-          {!isAppOpen ? (
-            <OnboardingPanel
-              key="onboarding"
-              messages={onboardingMessages}
-              typing={onboardingTyping}
-              onSelectOnboardingChoice={handleOnboardingChoice}
-              weights={weights}
-              profileReady={profileReady}
-              selectedLevels={selectedLevels}
-              onWeightLevelChange={applyWeightChoice}
-              onContinue={profileReady ? openMainApp : startOnboardingConversation}
-            />
-          ) : (
-            <motion.section
-              key="main-app"
-              initial={{ opacity: 0, scale: 0.992, y: 14 }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-                y: 0,
-                transition: { duration: 0.46, ease: [0.22, 1, 0.36, 1], delay: 0.02 }
-              }}
-              exit={{ opacity: 0, scale: 1.006, y: -8, transition: { duration: 0.26, ease: [0.4, 0, 1, 1] } }}
-              className="grid h-screen grid-rows-[56px_1fr] bg-[radial-gradient(circle_at_48%_22%,rgba(251,207,232,0.2),transparent_30%),linear-gradient(180deg,#f6f7fa,#f0f2f7)]"
-            >
-              <header className="relative z-[700] col-span-full flex items-center gap-3 border-b border-slate-200/80 bg-white/70 px-4 backdrop-blur lg:px-5">
-                <motion.div layoutId="top-shell">
-                  <SharedBrand compact />
-                </motion.div>
+    <CitationHoverProvider>
+      <LayoutGroup>
+        <main className="h-screen overflow-hidden">
+          <AnimatePresence mode="sync" initial={false}>
+            {!isAppOpen ? (
+              <OnboardingPanel
+                key="onboarding"
+                messages={onboardingMessages}
+                typing={onboardingTyping}
+                onSelectOnboardingChoice={handleOnboardingChoice}
+                weights={weights}
+                profileReady={profileReady}
+                selectedLevels={selectedLevels}
+                onWeightLevelChange={applyWeightChoice}
+                onBack={() => {
+                  setOnboardingMessages([]);
+                  setOnboardingTyping(false);
+                  setCurrentQuestionIndex(0);
+                  setSelectedLevels({});
+                }}
+                onContinue={profileReady ? () => openAppFromOnboarding() : () => {
+                  setOnboardingTyping(true);
+                  setTimeout(() => {
+                    setOnboardingTyping(false);
+                    setOnboardingMessages([
+                      { role: "ai", html: "Hi, I am your <strong>Sydney Liveability AI</strong>. Let us build your weighting profile in a conversational way." },
+                      { role: "ai", html: weightPrompts[0].prompt },
+                    ]);
+                  }, 400);
+                }}
+              />
+            ) : (
+              <motion.section
+                key="main-app"
+                initial={{ opacity: 0, scale: 0.992, y: 14 }}
+                animate={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.46, ease: [0.22, 1, 0.36, 1], delay: 0.02 } }}
+                exit={{ opacity: 0, scale: 1.006, y: -8, transition: { duration: 0.26, ease: [0.4, 0, 1, 1] } }}
+                className="grid h-screen grid-rows-[52px_1fr] bg-bg"
+              >
+                {/* ---- HEADER ---- */}
+                <header className="relative z-[700] col-span-full flex items-center gap-3 border-b border-border bg-bg px-4 lg:px-5">
+                  <motion.div layoutId="top-shell">
+                    <SharedBrand compact />
+                  </motion.div>
+                  <div className="h-5 w-px bg-border" />
+                  <span className="font-mono text-[10px] text-fg-muted border border-border rounded px-1.5 py-px">{`v${process.env.NEXT_PUBLIC_APP_VERSION ?? "0.1.0"}`}</span>
 
-                <div className="h-5 w-px bg-slate-200" />
-
-                <div ref={popoverRef} className="relative">
-                  <button
-                    type="button"
-                    onClick={() => setProfileOpen((prev) => !prev)}
-                    className="inline-flex flex-nowrap items-center justify-center gap-1 rounded-full border border-slate-200 bg-white px-2 py-1 align-middle whitespace-nowrap shadow-[0_6px_16px_rgba(15,23,42,0.06)]"
-                  >
-                    <span className="inline-flex h-6 items-center justify-center text-[10px]/[1] font-bold tracking-[0.04em] text-slate-700">MY PROFILE</span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
-                      <TrainFront size={10} /> {getImportanceLabel(selectedLevels.transport)}
-                    </span>
-                    <span className="inline-flex h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700">
-                      <Shield size={10} /> {getImportanceLabel(selectedLevels.safety)}
-                    </span>
-                    <span className="hidden h-6 items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-2 text-[10px]/[1] font-semibold text-slate-700 sm:inline-flex">
-                      <Coffee size={10} /> {getImportanceLabel(selectedLevels.lifestyle)}
-                    </span>
-                  </button>
-
-                  <Link
-                    href="/overview"
-                    className="ml-2 inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-[10px] font-bold tracking-[0.04em] text-slate-700 shadow-[0_6px_16px_rgba(15,23,42,0.06)] transition hover:border-slate-400 hover:text-slate-900"
-                  >
-                    <Hexagon size={11} />
-                    HEX OVERVIEW
-                  </Link>
-
-                  {profileOpen ? (
-                    <motion.div
-                      layoutId="profile-card"
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="absolute left-0 top-[calc(100%+8px)] z-[900] w-max max-w-[94vw] rounded-xl2 border border-slate-200 bg-white/95 p-4 shadow-cardLg backdrop-blur"
+                  <div ref={popoverRef} className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setProfileOpen((p) => !p)}
+                      className="inline-flex flex-nowrap items-center justify-center gap-1 rounded-full border border-border bg-bg px-2 py-1 whitespace-nowrap shadow-float"
                     >
-                      <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.07em] text-slate-500">Adjust weighting profile</p>
-                      <div className="min-w-[620px] max-w-[760px] space-y-0">
-                        {([
-                          ["transport", "Transport"],
-                          ["safety", "Safety"],
-                          ["lifestyle", "Lifestyle"],
-                          ["afford", "Affordability"]
-                        ] as [keyof Weights, string][]).map(([key, label], index, allItems) => (
-                          <div
-                            key={key}
-                            className={`${index < allItems.length - 1 ? "mb-4 border-b border-slate-200/90 pb-4" : ""}`}
-                          >
-                            <span className="mb-2 block text-sm font-semibold text-slate-700">{label}</span>
-                            <ImportanceSlider
-                              value={selectedLevels[key]}
-                              onChange={(k) => applyWeightChoice(key, k)}
-                            />
-                          </div>
-                        ))}
-                      </div>
+                      <span className="inline-flex h-6 items-center justify-center font-mono text-[10px] font-bold uppercase tracking-[0.04em] text-fg">MY PROFILE</span>
+                      {[
+                        { icon: <TrainFront size={10} />, key: "transport" as const },
+                        { icon: <Shield    size={10} />, key: "safety"    as const },
+                        { icon: <Coffee    size={10} />, key: "lifestyle" as const },
+                      ].map(({ icon, key }) => (
+                        <span key={key} className="inline-flex h-6 items-center gap-1 rounded-full border border-border bg-bg-elev px-2 font-mono text-[10px] font-semibold text-fg">
+                          {icon} {getImportanceLabel(selectedLevels[key])}
+                        </span>
+                      ))}
+                    </button>
 
-                      <button
-                        type="button"
-                        onClick={resetPreferences}
-                        className="mt-4 w-full rounded-full border border-slate-300 px-3 py-2 text-xs font-semibold text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
+                    {profileOpen && (
+                      <motion.div
+                        layoutId="profile-card"
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="absolute left-0 top-[calc(100%+8px)] z-[900] w-max max-w-[94vw] rounded-b-[10px] border border-border p-4 shadow-float"
+                        style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}
                       >
-                        Reset preferences
-                      </button>
-                    </motion.div>
-                  ) : null}
-                </div>
-              </header>
+                        <p className="mb-3 font-mono text-[11px] font-bold uppercase tracking-[0.07em] text-fg-muted">
+                          Adjust weighting profile
+                        </p>
+                        <div className="min-w-[620px] max-w-[760px] space-y-0">
+                          {([ ["transport", "Transport"], ["safety", "Safety"], ["lifestyle", "Lifestyle"], ["afford", "Affordability"], ["proximity", "CBD Proximity"] ] as [keyof Weights, string][]).map(([key, label], i, arr) => (
+                            <div key={key} className={i < arr.length - 1 ? "mb-4 border-b border-border pb-4" : ""}>
+                              <span className="mb-2 block text-sm font-semibold text-fg">{label}</span>
+                              <ImportanceSlider
+                                value={draftLevels[key]}
+                                onChange={(k) => setDraftLevels((prev) => ({ ...prev, [key]: k }))}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                        <div className="mt-4 flex gap-2">
+                          <button
+                            type="button"
+                            onClick={resetPreferences}
+                            className="rounded-full border border-border px-3 py-2 text-xs font-semibold text-fg transition hover:border-fg"
+                          >
+                            Reset
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setCivicLoadingLabel("Updating weights…");
+                              (Object.entries(draftLevels) as [keyof Weights, ImportanceLevelKey][]).forEach(
+                                ([key, val]) => { if (val) applyWeightChoice(key, val); }
+                              );
+                              setProfileOpen(false);
+                            }}
+                            className="flex-1 rounded-full bg-fg px-3 py-2 text-xs font-semibold text-bg transition hover:opacity-90"
+                          >
+                            Apply
+                          </button>
+                        </div>
+                      </motion.div>
+                    )}
+                  </div>
 
-              <div className="relative h-full min-h-0">
-                <MapPanel
-                  suburbs={allSuburbsForMap}
-                  ranked={rankedSuburbs}
-                  isLoading={isCivicLoading && !civicData}
-                  selectedSuburbId={selectedSuburbId}
-                  onSelectSuburb={onSelectSuburb}
-                  layer={layer}
-                  onLayerChange={setLayer}
-                  weights={weights}
-                />
 
-                <div className="pointer-events-none absolute inset-y-3 left-3 z-[650] w-[330px] max-w-[calc(100%-24px)] sm:w-[350px]">
-                  <div className="pointer-events-auto h-full">
-                    <AssistantSidebar
-                      messages={chatMessages}
-                      typing={chatTyping}
-                      input={chatInput}
-                      onInputChange={setChatInput}
+                  <div className="ml-auto flex items-center gap-2">
+                    <button
+                      type="button"
+                      title={showEvidence ? "Hide evidence trail" : "Show evidence trail"}
+                      onClick={() => setShowEvidence((v) => !v)}
+                      className={`flex size-7 items-center justify-center rounded-md border transition ${showEvidence ? "border-accent bg-accent/10 text-accent" : "border-border bg-bg text-fg hover:bg-bg-elev"}`}
+                    >
+                      <PanelRight size={13} strokeWidth={1.4} />
+                    </button>
+                    <button type="button" title="New chat" onClick={() => { setDisplayMessages([]); setChatActiveSuburbs([]); }} className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
+                      <Plus size={13} strokeWidth={1.4} />
+                    </button>
+                  </div>
+                </header>
+
+                {/* ---- 3-COLUMN LAYOUT ---- */}
+                <div className={`grid min-h-0 ${showEvidence ? "grid-cols-[440px_1fr_320px]" : "grid-cols-[440px_1fr]"}`}>
+                  {/* COL 1: CHAT */}
+                  <div className="flex min-h-0 flex-col border-r border-border" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
+                    <div
+                      ref={chatScrollRef}
+                      className="flex flex-1 flex-col gap-[18px] overflow-auto px-6 py-5"
+                    >
+                      {displayMessages.length === 0 && (
+                        <div className="flex max-w-[90%] flex-col gap-1.5 self-start">
+                          <div className="rounded-[6px_16px_16px_16px] border border-border bg-bg px-4 py-3 text-sm leading-relaxed text-fg shadow-float backdrop-blur">
+                            Welcome to Sydney Liveability AI. Ask me about any suburb — transport links, safety, lifestyle vibes, or compare two areas side by side.
+                          </div>
+                          <div className="font-mono text-[10px] text-fg-muted">assistant</div>
+                        </div>
+                      )}
+
+                      {displayMessages.map((m, i) => {
+                        if (m.type === "user")       return <UserBubble key={i} text={m.text} ts={m.ts} />;
+                        if (m.type === "typing")     return <TypingBubble key={i} step={m.step} />;
+                        if (m.type === "out_of_scope") return <OutOfScopeState key={i} onSuburbClick={(t) => sendChat(t)} />;
+                        if (m.type === "assistant") {
+                          return (
+                            <AssistantBubble
+                              key={i}
+                              message={m.message}
+                              onOpenReport={(suburbs) => {
+                                setReportModal({
+                                  mode: suburbs.length >= 2 ? "compare" : "single",
+                                  suburbs,
+                                });
+                              }}
+                            />
+                          );
+                        }
+                        return null;
+                      })}
+                    </div>
+
+                    <ChatInput
+                      value={chatInput}
+                      onChange={setChatInput}
                       onSend={() => sendChat()}
-                      onChipSend={sendChat}
-                      onOpenDetailedReport={openDetailedReportFromMessage}
-                      chips={quickChips}
-                      pdfLoaded={pdfLoaded}
-                      onTogglePdf={togglePdf}
+                      isLoading={isLoading}
+                      onCancel={showCancel ? cancelRequest : undefined}
                     />
                   </div>
-                </div>
-              </div>
-            </motion.section>
-          )}
-        </AnimatePresence>
 
-        <DetailedReportModal
-          isOpen={detailedReportOpen}
-          suburb={detailedReportSuburb}
-          messageHtml={detailedReportMessage}
-          onClose={() => {
-            setDetailedReportOpen(false);
-            setDetailedReportSuburb(null);
-            setDetailedReportMessage("");
-          }}
-        />
-      </main>
-    </LayoutGroup>
+                  {/* COL 2: MAP */}
+                  <div className="relative min-h-0">
+                    <MapPanel
+                      suburbs={allSuburbsForMap}
+                      ranked={rankedSuburbs}
+                      isLoading={isCivicLoading}
+                      loadingLabel={civicLoadingLabel}
+                      selectedSuburbId={selectedSuburbId}
+                      onSelectSuburb={onSelectSuburb}
+                      layer={layer}
+                      onLayerChange={setLayer}
+                      weights={mapWeights}
+                      activeSuburbs={chatActiveSuburbs}
+                      hoveredSuburb={hoveredSuburb}
+                      onSuburbHover={setHoveredSuburb}
+                    />
+                  </div>
+
+                  {/* COL 3: EVIDENCE DRAWER */}
+                  {showEvidence && (
+                    <EvidenceDrawer
+                      trace={lastPayload?.quality?.evidence_trace_summary as EvidenceTrace | string | null | undefined}
+                      allCitations={allCitations}
+                    />
+                  )}
+                </div>
+
+                {reportModal && (
+                  <ReportModal
+                    mode={reportModal.mode}
+                    suburbs={reportModal.suburbs}
+                    onClose={() => setReportModal(null)}
+                    payload={reportModal.mode === "single" && lastPayload ? lastPayload : undefined}
+                    payloads={suburbPayloads}
+                  />
+                )}
+              </motion.section>
+            )}
+          </AnimatePresence>
+        </main>
+      </LayoutGroup>
+    </CitationHoverProvider>
   );
 }
