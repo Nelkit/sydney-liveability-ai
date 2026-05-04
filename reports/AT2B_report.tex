@@ -486,11 +486,64 @@ The chat interface streams agent progress via Server-Sent Events (SSE) before de
 
 The application was tested through structured walkthroughs covering onboarding, map exploration, single-suburb queries, multi-suburb comparisons, and out-of-scope queries.
 
-\subsection{Temporal Trends}\label{64-temporal-trends}
+\subsection{Reddit Corpus EDA}\label{64-reddit-corpus-eda}
 
-Reddit posts with \passthrough{\lstinline!created\_utc!} timestamps allow limited temporal sentiment analysis where coverage permits. For suburbs with multi-year Reddit history (Newtown, Glebe, Surry Hills, Redfern), the pipeline can surface whether community sentiment on a dimension has shifted over time. BOCSAR crime data covers 2015--2025, enabling year-on-year trend detection at the suburb level; the Crime agent reports these trends as "improving", "worsening", or "insufficient data" based on a comparison of total incidents in the most recent year versus the prior year.
+A fine-grained EDA of the Reddit corpus was carried out in \passthrough{\lstinline!notebooks/07\_reddit\_eda.ipynb!} across three layers: the raw Arc Shift bulk dump (\passthrough{\lstinline!data/raw/arctic\_shift/!}), the per-suburb processed extractions (\passthrough{\lstinline!data/processed/reddit/!}), and the per-suburb pipeline analyses (\passthrough{\lstinline!data/processed/reddit\_analyses/!}). The goal was to characterise volume, temporal patterns, suburb coverage, and aspect / sentiment / emotion distributions to validate the design choices made in §5.3 and surface dataset risks.
 
-Summarise time-based patterns in Reddit sentiment per suburb where timestamps are available.
+\textbf{Volume and survival.} The Arc Shift dump contains 55,614 posts and 885,894 comments tagged \passthrough{\lstinline!subreddit=sydney!}. The pipeline floor of \passthrough{\lstinline!score >= 2!} retains 13,135 posts (23.6\%) and 443,610 comments (50.1\%) --- a deliberately aggressive cull that drops the bulk of low-engagement noise (single-upvote one-liners, removed comments) while preserving the long tail of useful resident commentary. The ABSA word-count floor of 10 further routes 9,446 posts and 346,538 comments (median word count = 9 for both) to the BART-MNLI fallback path, confirming the report's claim that the dual-floor design is doing material work.
+
+\textbf{Engagement skew.} Score distributions are heavy-tailed: median post score is 1, mean 52, 99th percentile 956, max 16,842. Median comment score is 2, mean 10.6. This is the canonical Reddit power law and motivates the median- and mention-weighted aggregations used in the analyses layer rather than mean-based scoring.
+
+\textbf{Temporal shape.} Monthly volume grows steadily over the dump window (Figure~\ref{fig:reddit-eda-monthly}), and weekly seasonality has the expected late-evening / weekend peak in Sydney local time. There are no anomalous gaps or duplicate-collection spikes, validating the dump as a single coherent snapshot.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\linewidth]{figs/reddit_eda/01_monthly_volume.png}
+  \caption{Monthly volume of r/sydney posts and comments in the Arc Shift dump. Activity grows steadily and shows weekly/seasonal regularity but no collection anomalies.}
+  \label{fig:reddit-eda-monthly}
+\end{figure}
+
+\textbf{Suburb coverage is heavily long-tailed.} Across 564 suburbs with at least one record, the processed corpus contains 20,423 records --- median 10 per suburb. Only 97 suburbs reach the $\geq$50-record threshold, 197 reach $\geq$20, and 280 sit below 10 (Figure~\ref{fig:reddit-eda-coverage}). The top 25 suburbs are dominated by inner Sydney (Newtown, Surry Hills, Bondi, Marrickville, Redfern, Parramatta, etc.). This empirically justifies the cross-modal fallback in the pipeline: when Reddit coverage for a dimension is \texttt{weak} or \texttt{none}, the system routes to the Community Insights PDF or civic data rather than producing a misleading sentiment score from a handful of posts.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/reddit_eda/04_suburb_coverage.png}
+  \caption{Left: distribution of records per suburb (clipped at 500, log y) across the 564 suburb files --- the long tail is unmistakable. Right: top 25 suburbs by record count, decomposed into posts vs. comments.}
+  \label{fig:reddit-eda-coverage}
+\end{figure}
+
+\textbf{Aspect mentions and coverage tiers.} ABSA mention counts are not uniform across the eight liveability aspects (Figure~\ref{fig:reddit-eda-aspects}). \texttt{community}, \texttt{safety} and \texttt{transport} dominate; \texttt{noise} and \texttt{green\_space} are the thinnest, with a large share of suburbs reporting \texttt{coverage = none} for those dimensions. This pattern is the empirical basis for the per-aspect coverage tier reported in the EvidenceDrawer.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/reddit_eda/06_aspect_mentions_coverage.png}
+  \caption{Left: ABSA mentions per aspect summed over all suburbs. Right: coverage tier breakdown per aspect (suburb counts) --- \texttt{noise} and \texttt{green\_space} are the dimensions where Reddit alone is insufficient.}
+  \label{fig:reddit-eda-aspects}
+\end{figure}
+
+\textbf{Sentiment skew is plausible and not collapsed.} Across suburbs, distributions for \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} sit notably above the neutral 0.5 line, while \texttt{safety} and \texttt{affordability} skew below it (Figure~\ref{fig:reddit-eda-violin}). Spearman correlations between aspect scores are mostly modest, with the largest off-diagonal magnitudes well below 0.6 (Figure~\ref{fig:reddit-eda-corr}). This is the desired outcome for an aspect-based pipeline --- the model is capturing genuinely distinct dimensions rather than a single underlying \emph{good-vs-bad-suburb} axis. Suburb leaderboards from the notebook also confirm intuitive ordering: \texttt{safety} top performers include leafy outer suburbs while inner-city flashpoints (Redfern, Burwood, Blacktown) sit at the bottom; \texttt{food\_and\_cafe} surfaces The Rocks, Pyrmont and Hornsby; \texttt{nightlife} surfaces Pyrmont, The Rocks, Coogee.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/reddit_eda/07_aspect_score_violin.png}
+  \caption{Per-aspect sentiment score distribution across suburbs (violin + quartiles). The dashed red line marks the 0.5 neutral midpoint. \texttt{safety} and \texttt{affordability} are systematically negative-leaning; \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} are systematically positive-leaning.}
+  \label{fig:reddit-eda-violin}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.78\linewidth]{figs/reddit_eda/08_aspect_score_correlation.png}
+  \caption{Spearman correlation matrix of aspect sentiment scores across suburbs. Most pairwise correlations are modest, indicating the eight aspects capture distinct dimensions of liveability rather than a single latent quality axis.}
+  \label{fig:reddit-eda-corr}
+\end{figure}
+
+\textbf{Emotion mix and confidence.} The j-hartmann emotion classifier output averages roughly 60--70\% \texttt{neutral}, with \texttt{joy}, \texttt{surprise} and \texttt{disgust} as the next tier and \texttt{anger} / \texttt{fear} / \texttt{sadness} small but visible. Pipeline \texttt{confidence} ramps with \texttt{post\_count} per suburb and saturates well before the top of the volume distribution, confirming that the ABSA-with-fallback design refuses to commit on thin evidence (the long tail of low-volume suburbs concentrates in the \texttt{low} confidence tier).
+
+\textbf{Lexical look.} TF-IDF run over the top 15 highest-volume suburbs (with the suburb's own name added to the stop-word list) surfaces topical content rather than place-name boilerplate: Newtown is dominated by \texttt{enmore}, \texttt{king street}, \texttt{vegan}, \texttt{thai}, \texttt{bars}; Bondi by \texttt{stabbing}, \texttt{coogee walk}, \texttt{attack}; Marrickville by \texttt{breweries}, \texttt{noise}, \texttt{pork roll}; Burwood by \texttt{chinese}, \texttt{chinatown}, \texttt{mayor}, \texttt{yimby}; Strathfield by \texttt{korean}, \texttt{homebush}. These signals match priors about each suburb's identity and dispel concerns that the corpus is dominated by generic Sydney chatter.
+
+\subsection{Temporal Trends}\label{65-temporal-trends}
+
+Reddit posts with \passthrough{\lstinline!created\_utc!} timestamps allow limited temporal sentiment analysis where coverage permits. For suburbs with multi-year Reddit history (Newtown, Glebe, Surry Hills, Redfern), the pipeline can surface whether community sentiment on a dimension has shifted over time. BOCSAR crime data covers 2015--2025, enabling year-on-year trend detection at the suburb level; the Crime agent reports these trends as "improving", "worsening", or "insufficient data" based on a comparison of total incidents in the most recent year versus the prior year. The Reddit EDA in §6.4 confirms the dump itself has no temporal anomalies that would corrupt these comparisons.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
