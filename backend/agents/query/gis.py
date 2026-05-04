@@ -11,11 +11,81 @@ from typing import Any
 
 from crewai import Agent, Task
 from crewai.tools import tool
-from sqlalchemy import select
+from sqlalchemy import select, desc, func
 
 from config import get_agent_llm
 from db.models import Suburb, OsmScore, TransportScore
 from db.postgres import SessionLocal
+
+
+_RANKABLE_FIELDS: dict[str, tuple[type, str]] = {
+    "park": (OsmScore, "park"),
+    "parks": (OsmScore, "park"),
+    "cafe": (OsmScore, "cafe"),
+    "cafes": (OsmScore, "cafe"),
+    "coffee": (OsmScore, "cafe"),
+    "restaurant": (OsmScore, "restaurant"),
+    "restaurants": (OsmScore, "restaurant"),
+    "food": (OsmScore, "restaurant"),
+    "school": (OsmScore, "school"),
+    "schools": (OsmScore, "school"),
+    "hospital": (OsmScore, "hospital"),
+    "hospitals": (OsmScore, "hospital"),
+    "pharmacy": (OsmScore, "pharmacy"),
+    "pharmacies": (OsmScore, "pharmacy"),
+    "playground": (OsmScore, "playground"),
+    "playgrounds": (OsmScore, "playground"),
+    "gym": (OsmScore, "gym"),
+    "gyms": (OsmScore, "gym"),
+    "sports": (OsmScore, "sports_centre"),
+    "library": (OsmScore, "library"),
+    "libraries": (OsmScore, "library"),
+    "transport": (TransportScore, "transport_score"),
+    "walkability": (Suburb, "walkability_score"),
+    "walkable": (Suburb, "walkability_score"),
+    "facilities": (Suburb, "facilities_score"),
+}
+
+
+def _detect_rank_field(question: str) -> tuple[type, str] | None:
+    """Return (Model, column_name) for the first rankable keyword found, or None."""
+    lowered = question.lower()
+    for keyword, model_col in _RANKABLE_FIELDS.items():
+        if keyword in lowered:
+            return model_col
+    return None
+
+
+def _rank_suburbs_impl(question: str, limit: int = 10) -> dict[str, Any]:
+    """Query the relevant table ordered DESC, return top N suburbs for a ranking question."""
+    field_info = _detect_rank_field(question)
+    if field_info is None:
+        return {"status": "no_data", "reason": "No rankable field detected in question"}
+
+    model_class, col_name = field_info
+    col = getattr(model_class, col_name)
+
+    with SessionLocal() as session:
+        rows = session.execute(
+            select(model_class.suburb, col)
+            .where(col.isnot(None))
+            .order_by(desc(col))
+            .limit(limit)
+        ).all()
+
+    if not rows:
+        return {"status": "no_data", "field": col_name}
+
+    ranking = [
+        {"rank": i + 1, "suburb": row[0], col_name: row[1]}
+        for i, row in enumerate(rows)
+    ]
+    return {
+        "status": "ok",
+        "field": col_name,
+        "ranking": ranking,
+        "suburbs": [r["suburb"] for r in ranking],
+    }
 
 
 # TODO(Padmasri): Once `ingest_transport.py` is finished, confirm the combined GIS score works end-to-end.
@@ -50,26 +120,42 @@ def _detect_amenity_focus(question: str) -> str | None:
     return None
 
 
+_TRANSPORT_KEYWORDS = {"transport", "bus", "train", "commute", "transit", "light rail", "bike", "walk"}
+_FACILITIES_KEYWORDS = {"facilities", "library", "parking", "sports", "car share", "walkability"}
+
+
+def _needs_transport(question: str) -> bool:
+    lowered = question.lower()
+    return not question or any(kw in lowered for kw in _TRANSPORT_KEYWORDS)
+
+
+def _needs_facilities(question: str) -> bool:
+    lowered = question.lower()
+    return not question or any(kw in lowered for kw in _FACILITIES_KEYWORDS)
+
+
 def _query_gis_impl(suburb: str, question: str = "") -> dict[str, Any]:
-    """Internal implementation: query three tables and return combined GIS output."""
+    """Internal implementation: query tables selectively based on question focus."""
     suburb = suburb.strip()
     amenity_focus = _detect_amenity_focus(question) if question else None
-    
+    load_transport = _needs_transport(question)
+    load_facilities = _needs_facilities(question)
+
+    # For amenity-focused questions, always load OSM; skip unneeded tables
+    load_osm = True  # OSM is always needed for combined_score and amenity data
+
     with SessionLocal() as session:
-        # Query suburbs table for facilities and facilities_score
         suburb_row = session.scalar(
             select(Suburb).where(Suburb.suburb == suburb)
-        )
-        
-        # Query OSM scores
+        ) if load_facilities else None
+
         osm_row = session.scalar(
             select(OsmScore).where(OsmScore.suburb == suburb)
-        )
-        
-        # Query transport scores
+        ) if load_osm else None
+
         transport_row = session.scalar(
             select(TransportScore).where(TransportScore.suburb == suburb)
-        )
+        ) if load_transport else None
     
     # Extract facilities data
     official_facilities = {
@@ -147,12 +233,18 @@ def query_gis_tool(suburb: str) -> dict[str, Any]:
     return _query_gis_impl(suburb)
 
 
+@tool("rank_suburbs_tool")
+def rank_suburbs_tool(question: str) -> dict[str, Any]:
+    """Wrapper tool for CrewAI: rank all suburbs by a field derived from the question."""
+    return _rank_suburbs_impl(question)
+
+
 gis_agent = Agent(
     role="Query GIS Analyst",
     goal="Explain suburb amenity and transport strength from structured GIS sources.",
     backstory="You merge official facilities, OSM amenities, and transport access signals.",
     llm=get_agent_llm("gis"),
-    tools=[query_gis_tool],
+    tools=[query_gis_tool, rank_suburbs_tool],
     verbose=True,
 )
 
@@ -163,7 +255,14 @@ gis_task = Task(
 )
 
 def run(input_data: dict[str, Any]) -> dict[str, Any]:
-    """Isolated execution helper for query crew routing."""
+    """Isolated execution helper for query crew routing.
+
+    Supports two modes:
+    - Standard: input_data has "suburb" key → single-suburb GIS lookup
+    - Ranking: input_data has mode="ranking" → cross-suburb ranking query
+    """
+    if input_data.get("mode") == "ranking":
+        return _rank_suburbs_impl(str(input_data.get("question", "")))
     return _query_gis_impl(
         suburb=str(input_data.get("suburb", "")),
         question=str(input_data.get("question", "")),

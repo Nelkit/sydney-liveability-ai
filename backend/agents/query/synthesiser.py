@@ -13,8 +13,11 @@ LLM Configuration:
 from __future__ import annotations
 
 import json
+import logging
 import traceback
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from crewai import Agent, Task
 from crewai.tools import tool
@@ -146,17 +149,25 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
         suburbs_query = select(Suburb)
         if suburbs_list:
             suburbs_query = suburbs_query.where(Suburb.suburb.in_(suburbs_list))
-        
+        else:
+            suburbs_query = suburbs_query.limit(10)
+
         suburbs_data = session.scalars(suburbs_query).all()
-        
-        # Enrich with transport and OSM scores
-        transport_query = select(TransportScore)
-        osm_query = select(OsmScore)
-        if suburbs_list:
-            transport_query = transport_query.where(TransportScore.suburb.in_(suburbs_list))
-            osm_query = osm_query.where(OsmScore.suburb.in_(suburbs_list))
-        transport_data = {row.suburb: row for row in session.scalars(transport_query).all()}
-        osm_data = {row.suburb: row for row in session.scalars(osm_query).all()}
+        target_suburbs = {s.suburb for s in suburbs_data}
+
+        # Enrich with transport and OSM scores — only for suburbs in scope
+        transport_data = {
+            row.suburb: row
+            for row in session.scalars(
+                select(TransportScore).where(TransportScore.suburb.in_(target_suburbs))
+            ).all()
+        }
+        osm_data = {
+            row.suburb: row
+            for row in session.scalars(
+                select(OsmScore).where(OsmScore.suburb.in_(target_suburbs))
+            ).all()
+        }
         
         context = {"suburbs": []}
         for suburb in suburbs_data:
@@ -302,7 +313,16 @@ def _build_synthesis_prompt(
             if agent_key == "router":
                 continue
             if output and isinstance(output, dict):
-                if any(
+                # Ranking output — render as a numbered list instead of raw JSON
+                if output.get("status") == "ok" and "ranking" in output:
+                    field = output.get("field", "value")
+                    agent_block += f"\n{agent_key.upper()} RANKING by {field}:\n"
+                    for entry in output["ranking"]:
+                        rank = entry.get("rank", "?")
+                        suburb = entry.get("suburb", "")
+                        val = entry.get(field, "")
+                        agent_block += f"  {rank}. {suburb}: {val}\n"
+                elif any(
                     isinstance(v, dict) and ("combined_score" in v or "evidence_trace" in v)
                     for v in output.values()
                 ):
@@ -539,6 +559,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             "map_state": None,
         }
     except Exception as e:
+        logger.error("Synthesiser failed: %s\n%s", e, traceback.format_exc())
         return {
             "answer": "I could not process that question right now. Please try again.",
             "sources": [],
