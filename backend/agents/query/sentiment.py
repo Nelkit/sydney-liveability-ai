@@ -96,6 +96,35 @@ LIVEABILITY_DIMENSIONS = [
     "green_space",
 ]
 
+_DIMENSION_KEYWORDS: dict[str, list[str]] = {
+    "safety": ["safe", "crime", "dangerous", "security", "unsafe"],
+    "food_and_cafe": ["food", "cafe", "coffee", "restaurant", "eat", "dining"],
+    "nightlife": ["nightlife", "night", "bar", "pub", "club", "entertainment"],
+    "affordability": ["afford", "cheap", "expensive", "rent", "price", "cost"],
+    "transport": ["transport", "bus", "train", "commute", "transit", "walk"],
+    "community": ["community", "vibe", "feel", "residents", "neighbour", "people"],
+    "noise": ["noise", "quiet", "loud", "noisy"],
+    "green_space": ["park", "green", "nature", "outdoor", "garden"],
+}
+
+
+def _relevant_dimensions(question: str) -> list[str]:
+    """Return the 1-3 dimensions most relevant to the question.
+
+    For open-ended questions ("tell me about X") return the top 3 most
+    commonly asked dimensions. For specific questions return only the
+    matching ones, capped at 3 to limit tool calls.
+    """
+    lowered = question.lower()
+    matched = [
+        dim for dim, keywords in _DIMENSION_KEYWORDS.items()
+        if any(kw in lowered for kw in keywords)
+    ]
+    if matched:
+        return matched[:3]
+    # Generic question — return the highest-signal dimensions only
+    return ["community", "safety", "transport"]
+
 
 @tool("get_suburb_aspect")
 def _get_suburb_aspect_tool(suburb: str, dimension: str) -> dict[str, Any]:
@@ -188,37 +217,37 @@ sentiment_agent = Agent(
         _compare_suburbs_tool,
     ],
     verbose=True,
+    max_iter=4,
 )
 
 
 def _build_task_description(suburb: str, aspect: Optional[str], question: str) -> str:
-    aspect_hint = (
-        f"\nDimension hint (caller-provided, treat as guidance not a constraint): {aspect}"
-        if aspect
-        else ""
-    )
-    dims_csv = ", ".join(LIVEABILITY_DIMENSIONS)
+    if aspect:
+        dims_to_query = [aspect] if aspect in LIVEABILITY_DIMENSIONS else _relevant_dimensions(question)
+    else:
+        dims_to_query = _relevant_dimensions(question)
+    dims_csv = ", ".join(dims_to_query)
+
     return f"""You are answering a question about resident sentiment in a single Sydney suburb.
 
 Suburb: {suburb}
-Question: {question}{aspect_hint}
+Question: {question}
 
-Liveability dimensions you can query: {dims_csv}.
+IMPORTANT — tool call budget: you have at most 4 tool calls total. Query ONLY these dimensions: {dims_csv}.
+Do NOT query dimensions outside this list. Stop as soon as you have scores for all listed dimensions.
 
-Decide which retrieval tools to call and in what order. Use as few tool calls as you need; stop as soon as the evidence supports a confident answer. If a tool returns status="no_data" or status="error", record the absence and do not fabricate.
-
-Tools available (you call them by name; the framework wires the arguments):
+Tools available:
 - get_suburb_aspect(suburb, dimension)
 - search_posts(suburb, query, dimension, k)
 - compare_suburbs(suburbs, dimension)
 
-Grounding rule. If the question is qualitative ("what's X like", "how is X", "is X good", "are residents happy with X"), call search_posts at least once on the relevant dimension to back the answer with actual resident quotes. If the question is purely a score lookup ("what is the safety score for X"), get_suburb_aspect alone is fine. If get_suburb_aspect returns status="no_data" for the asked dimension, do not call search_posts on that dimension — the no_data short-circuit already tells you Reddit has no signal there.
+Grounding rule: for qualitative questions call search_posts once on the most relevant dimension. For score lookups get_suburb_aspect alone is fine. If get_suburb_aspect returns status="no_data", skip search_posts for that dimension.
 
-When you are done, output ONLY a single JSON object with this exact shape — no prose, no markdown fences, no commentary:
+When done, output ONLY a single JSON object — no prose, no markdown fences:
 
-{{"aspects": {{"<dimension>": {{"score": <float between 0 and 1, or null>, "source": "<reddit|fallback|none>", "coverage": "<strong|weak|none>"}}}}, "sources": [{{"text": "<quote>", "suburb": "<suburb>", "dimension": "<dimension>", "url": "<url>"}}]}}
+{{"aspects": {{"<dimension>": {{"score": <float 0-1 or null>, "source": "<reddit|fallback|none>", "coverage": "<strong|weak|none>"}}}}, "sources": [{{"text": "<quote>", "suburb": "<suburb>", "dimension": "<dimension>", "url": "<url>"}}]}}
 
-Include only the dimensions you actually queried. The "sources" array must contain only quotes returned by search_posts; leave it empty if you made no search calls or all searches were no_data."""
+Include only queried dimensions. "sources" must contain only quotes from search_posts calls."""
 
 
 _JSON_FENCE_RE = re.compile(r"```(?:json)?\s*(\{.*?\})\s*```", re.DOTALL)

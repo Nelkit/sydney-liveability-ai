@@ -45,6 +45,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
     ("sentiment", ("feel", "vibe", "community", "residents", "sentiment", "opinion")),
     ("gis", ("park", "transport", "facilities", "cafe", "walk", "amenities")),
     ("comparator", ("vs", "versus", "compare", "difference", "better", "between")),
+    ("ranking", ("most", "best", "top", "highest", "lowest", "which suburbs", "ranked", "most parks", "most cafes", "most restaurants", "most schools", "most hospitals")),
 ]
 
 
@@ -75,6 +76,9 @@ def _route_question_impl(question: str) -> dict[str, Any]:
     categories = _detect_categories(question)
     if categories == ["sentiment", "gis"] and not suburbs_mentioned:
         categories = ["out_of_scope"]
+    elif "ranking" in categories and not suburbs_mentioned:
+        # Ranking queries are valid without a named suburb — never out_of_scope
+        pass
     return {
         "question": question,
         "categories": categories,

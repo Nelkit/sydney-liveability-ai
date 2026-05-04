@@ -442,12 +442,25 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
         specialist_outputs: dict[str, Any] = {}
         specialist_timings: dict[str, float] = {}
 
+        # Ranking mode: no suburb was named but the question asks to rank/compare
+        # all suburbs by a field (e.g. "which suburbs have the most parks").
+        # Run GIS in ranking mode, then promote the top results as the working
+        # suburb list so the synthesiser only loads those suburbs from the DB.
+        if "ranking" in categories and not suburbs:
+            ranking_started = time.perf_counter()
+            print("Running GIS agent in ranking mode")
+            ranking_result = run_gis({"question": question, "mode": "ranking"})
+            specialist_outputs["gis"] = ranking_result
+            specialist_timings["gis"] = (time.perf_counter() - ranking_started) * 1000.0
+            if ranking_result.get("status") == "ok":
+                suburbs = ranking_result.get("suburbs", [])[:10]
+
         # Run single-suburb specialists for each suburb mentioned. The
         # sentiment agent additionally consumes the original question so
         # it can route question-driven retrieval over the Reddit index;
         # the other specialists ignore the extra key.
         for specialist_name in ["crime", "sentiment", "gis"]:
-            if specialist_name in categories and suburbs:
+            if specialist_name in categories and suburbs and specialist_name not in specialist_outputs:
                 specialist_started = time.perf_counter()
                 specialist_outputs[specialist_name] = {}
                 run_func = {
@@ -491,6 +504,7 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
             "weights": weights or {},
             "router": router_output,
             "outputs": specialist_outputs,
+            "suburbs": suburbs,
         }
         response = run_synthesiser(synthesis_payload)
         suburb_scores = _build_suburb_scores(weights or {}, suburbs)
