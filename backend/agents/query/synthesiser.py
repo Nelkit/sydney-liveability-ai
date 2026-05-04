@@ -13,7 +13,11 @@ LLM Configuration:
 from __future__ import annotations
 
 import json
+import logging
+import traceback
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 from crewai import Agent, Task
 from crewai.tools import tool
@@ -150,17 +154,24 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
         suburbs_query = select(Suburb)
         if suburbs_list:
             suburbs_query = suburbs_query.where(Suburb.suburb.in_(suburbs_list))
-        
+        else:
+            suburbs_query = suburbs_query.limit(10)
+
         suburbs_data = session.scalars(suburbs_query).all()
-        
-        # Enrich with transport and OSM scores
+        target_suburbs = {s.suburb for s in suburbs_data}
+
+        # Enrich with transport and OSM scores — only for suburbs in scope
         transport_data = {
             row.suburb: row
-            for row in session.scalars(select(TransportScore)).all()
+            for row in session.scalars(
+                select(TransportScore).where(TransportScore.suburb.in_(target_suburbs))
+            ).all()
         }
         osm_data = {
             row.suburb: row
-            for row in session.scalars(select(OsmScore)).all()
+            for row in session.scalars(
+                select(OsmScore).where(OsmScore.suburb.in_(target_suburbs))
+            ).all()
         }
         
         context = {"suburbs": []}
@@ -275,7 +286,16 @@ def _build_synthesis_prompt(
             if agent_key == "router":
                 continue
             if output and isinstance(output, dict):
-                if any(
+                # Ranking output — render as a numbered list instead of raw JSON
+                if output.get("status") == "ok" and "ranking" in output:
+                    field = output.get("field", "value")
+                    agent_block += f"\n{agent_key.upper()} RANKING by {field}:\n"
+                    for entry in output["ranking"]:
+                        rank = entry.get("rank", "?")
+                        suburb = entry.get("suburb", "")
+                        val = entry.get(field, "")
+                        agent_block += f"  {rank}. {suburb}: {val}\n"
+                elif any(
                     isinstance(v, dict) and ("combined_score" in v or "evidence_trace" in v)
                     for v in output.values()
                 ):
@@ -365,7 +385,9 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
                 elif "suburb" in output:
                     suburbs_from_specialists.add(output["suburb"])
 
-    suburbs_list = list(suburbs_from_specialists) if suburbs_from_specialists else None
+    # Also accept suburbs passed directly from the crew (e.g. ranking mode)
+    crew_suburbs = payload.get("suburbs") or []
+    suburbs_list = list(suburbs_from_specialists or crew_suburbs) or None
 
     # THEN retrieve chunks
     retrieved_chunks = _retrieve_chromadb_chunks(question, suburbs_list)
@@ -518,8 +540,9 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
             "map_state": None,
         }
     except Exception as e:
+        logger.error("Synthesiser failed: %s\n%s", e, traceback.format_exc())
         return {
-            "answer": f"Error generating response: {str(e)[:100]}",
+            "answer": f"Error generating response: {e}",
             "sources": [],
             "suburb_scores": [],
             "map_state": None,

@@ -79,6 +79,14 @@ _WINNER_FN = {
 }
 
 
+_SENTIMENT_PRUNE_KEYS = {"evidence_trace", "emotions"}
+
+
+def _prune_sentiment(result: dict[str, Any]) -> dict[str, Any]:
+    """Strip heavy audit fields from sentiment output before storing in comparison."""
+    return {k: v for k, v in result.items() if k not in _SENTIMENT_PRUNE_KEYS}
+
+
 def _query_comparator_impl(suburb_a: str, suburb_b: str, categories: list[str]) -> dict[str, Any]:
     """Internal implementation: compare two suburbs category by category."""
     data_categories = [c for c in categories if c in _IMPL_MAP]
@@ -91,6 +99,10 @@ def _query_comparator_impl(suburb_a: str, suburb_b: str, categories: list[str]) 
         try:
             result_a = impl(suburb_a)
             result_b = impl(suburb_b)
+            # Prune heavy audit fields from sentiment to keep context small
+            if category == "sentiment":
+                result_a = _prune_sentiment(result_a)
+                result_b = _prune_sentiment(result_b)
             comparison[category] = {suburb_a: result_a, suburb_b: result_b}
             winner[category] = _WINNER_FN[category](result_a, result_b, suburb_a, suburb_b)
         except Exception as exc:
