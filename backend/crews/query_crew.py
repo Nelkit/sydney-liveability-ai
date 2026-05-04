@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import concurrent.futures
 import time
 from typing import Any
 
@@ -548,9 +549,56 @@ _SPECIALIST_LABELS: dict[str, str] = {
     "comparator": "Comparing suburbs",
 }
 
+_SPECIALIST_TIMEOUT: dict[str, int] = {
+    "sentiment": 45,
+    "crime": 15,
+    "gis": 15,
+    "comparator": 60,
+}
+
 
 def _step(text: str) -> tuple[str, dict[str, Any]]:
     return ("step", {"text": text})
+
+
+def _run_specialist_with_heartbeat(
+    run_func,
+    input_data: dict[str, Any],
+    specialist_name: str,
+    suburb: str,
+):
+    """Run a specialist in a thread and yield heartbeat steps while waiting.
+
+    Yields tuples of (event_type, data) — heartbeats are step events.
+    The final item yielded is always ("result", result_dict).
+    """
+    timeout = _SPECIALIST_TIMEOUT.get(specialist_name, 30)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(run_func, input_data)
+        deadline = time.perf_counter() + timeout
+        heartbeat_interval = 8.0
+        next_heartbeat = time.perf_counter() + heartbeat_interval
+        label = _SPECIALIST_LABELS.get(specialist_name, specialist_name)
+
+        while True:
+            done, _ = concurrent.futures.wait([future], timeout=0.5)
+            if done:
+                try:
+                    result = future.result()
+                except Exception as exc:
+                    result = {"status": "error", "reason": str(exc)}
+                yield ("result", result)
+                return
+
+            now = time.perf_counter()
+            if now >= deadline:
+                future.cancel()
+                yield ("result", {"status": "error", "reason": f"{specialist_name} timed out after {timeout}s"})
+                return
+
+            if now >= next_heartbeat:
+                yield ("step", {"text": f"{label} · {suburb}…"})
+                next_heartbeat = now + heartbeat_interval
 
 
 def _build_final_result(
@@ -583,10 +631,8 @@ def _build_final_result(
 
 def run_query_stream(
     question: str, weights: dict[str, Any] | None = None
-) -> "Generator[tuple[str, Any], None, None]":
+):
     """Same pipeline as run_query but yields SSE events as each phase completes."""
-    from collections.abc import Generator  # local to avoid circular at module level
-
     weights = weights or {}
 
     yield _step("Routing question…")
@@ -615,15 +661,18 @@ def run_query_stream(
     for specialist_name in ["crime", "sentiment", "gis"]:
         if specialist_name in categories and suburbs:
             label = _SPECIALIST_LABELS[specialist_name]
-            for suburb in suburbs:
-                yield _step(f"{label} · {suburb}")
+            run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
             specialist_started = time.perf_counter()
             specialist_outputs[specialist_name] = {}
-            run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
             for suburb in suburbs:
-                specialist_outputs[specialist_name][suburb] = run_func(
-                    {"suburb": suburb, "question": question}
-                )
+                yield _step(f"{label} · {suburb}")
+                for event_type, data in _run_specialist_with_heartbeat(
+                    run_func, {"suburb": suburb, "question": question}, specialist_name, suburb
+                ):
+                    if event_type == "result":
+                        specialist_outputs[specialist_name][suburb] = data
+                    else:
+                        yield (event_type, data)
             specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
 
     if "comparator" in categories and len(suburbs) >= 2:

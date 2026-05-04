@@ -25,8 +25,24 @@ from __future__ import annotations
 import contextvars
 import json
 import re
+import signal
 import time
 from typing import Any, Optional
+
+_AGENT_TIMEOUT_SECONDS = 45
+
+
+def _run_with_timeout(fn, timeout: int):
+    """Run fn() with a hard wall-clock timeout using SIGALRM (Unix only)."""
+    def _handler(signum, frame):
+        raise TimeoutError(f"agent timed out after {timeout}s")
+    old = signal.signal(signal.SIGALRM, _handler)
+    signal.alarm(timeout)
+    try:
+        return fn()
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old)
 
 from crewai import Agent, Crew, Process, Task
 from crewai.tools import tool
@@ -218,6 +234,7 @@ sentiment_agent = Agent(
     ],
     verbose=True,
     max_iter=4,
+    max_execution_time=30,
 )
 
 
@@ -332,13 +349,16 @@ def _query_sentiment_impl(
         tasks=[task],
         process=Process.sequential,
         verbose=False,
+        tracing=False,
     )
 
     trace: list[dict[str, Any]] = []
     token = _TRACE_CTX.set(trace)
     try:
         try:
-            crew_output = crew.kickoff()
+            crew_output = _run_with_timeout(crew.kickoff, _AGENT_TIMEOUT_SECONDS)
+        except TimeoutError as exc:
+            return _no_data_response(suburb, reason=str(exc))
         except Exception as exc:
             return _no_data_response(suburb, reason=f"agent execution failed: {exc}")
     finally:
