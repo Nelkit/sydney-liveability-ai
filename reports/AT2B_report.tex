@@ -262,8 +262,13 @@ The Reddit corpus was collected through two complementary extraction paths, both
 
 \textbf{BOCSAR Crime Statistics}
 
-Crime data was sourced from the Bureau of Crime Statistics and Research NSW (2024). The dataset was ingested from CSV format (\passthrough{\lstinline!suburb!}, \passthrough{\lstinline!crime\_type!}, \passthrough{\lstinline!year!}, \passthrough{\lstinline!incident\_count!}, \passthrough{\lstinline!sa4\_area!}) via \passthrough{\lstinline!data\_extraction/process\_bocsar.py!} and loaded into the \passthrough{\lstinline!bocsar!} PostgreSQL table. The Crime agent queries this table to compute per-suburb crime summaries and year-on-year trend indicators (improving/worsening/insufficient data).
+The primary crime data source for this project is the Bureau of Crime Statistics and Research (BOCSAR), a NSW government agency that publishes open criminal incident datasets. The dataset used is the \emph{Recorded Criminal Incidents by Month --- by Suburb}, downloaded from the BOCSAR Open Datasets portal in April 2025.
 
+The raw file (\passthrough{\lstinline!SuburbData25Q4.csv!}) covers criminal incidents from January 1995 to December 2025, spanning 4,508 NSW suburbs across 279,496 rows and 375 columns. The file size is approximately 432.8 MB.
+
+For this project, the dataset was filtered to the five MVP suburbs: Newtown, Glebe, Redfern, Surry Hills, and Haymarket. Only the most recent 24 months of data (January 2024 to December 2025) were retained to ensure relevance to current liveability conditions. After filtering, the working dataset contains 310 rows --- 62 offence categories per suburb.
+
+Each row records the average monthly incident count (\passthrough{\lstinline!incident\_count!}) for a specific crime type within a suburb, computed across the 24-month window.
 \textbf{TfNSW GTFS / Transport}
 
 Transport data was sourced from TfNSW GTFS feeds combined with OSM transit data (2026). The ingestion pipeline (\passthrough{\lstinline!data\_extraction/extract\_transport.py!}) populates the \passthrough{\lstinline!transport\_scores!} table with bus stops, train stations, light rail stops, bike path kilometres, average commute minutes, average services per hour, and a normalised transport score per suburb.
@@ -310,7 +315,25 @@ For RAG ingestion, text was chunked using LangChain\textquotesingle s \passthrou
 
 \subsection{Considered Approaches: Traditional NLP}\label{52-considered-approaches-traditional-nlp}
 
-Three traditional NLP approaches were evaluated during the design phase and ultimately not adopted as primary implementations.
+\subsection{Structured Data Pipeline for Crime Analysis}
+
+While the core NLP processing in this project --- including sentiment analysis, topic modelling, and retrieval-augmented generation (RAG) --- is handled by other components of the system, the crime data pipeline plays a foundational role by providing clean, structured inputs that the NLP agents rely on to generate grounded responses.
+
+\subsubsection{Why BOCSAR?}
+
+BOCSAR was selected as the crime data source because it is an official NSW government dataset with suburb-level granularity, updated quarterly, and freely available. Unlike general crime statistics from the Australian Bureau of Statistics (ABS), which are aggregated at a broader geographic level, BOCSAR provides monthly incident counts at the individual suburb level --- making it directly applicable to the five MVP suburbs in this project.
+
+\subsubsection{Data Preparation as a Prerequisite for NLP}
+
+Before any NLP processing can occur, the raw crime data must be cleaned and structured. The pipeline used pandas to filter, aggregate, and normalise the dataset. The 24-month window (January 2024 to December 2025) was selected to ensure the data reflects current conditions, as older crime statistics may not accurately represent today's liveability landscape.
+
+\subsubsection{Structured Storage for Agent Retrieval}
+
+The cleaned data was stored in a PostgreSQL database using SQLAlchemy ORM, rather than flat files, to enable efficient querying by the Crime Agent. This design allows the agent to filter by suburb and crime type dynamically in response to user queries, rather than loading the entire dataset into memory.
+
+\subsubsection{Crime Agent Integration}
+
+The Crime Agent queries the structured database and returns a JSON response containing a crime summary and trend signal to the Synthesizer. The Synthesizer then integrates this with outputs from other agents --- including GIS, transport, and sentiment --- before passing the combined context to the LLM for final response generation.
 
 \textbf{VADER Sentiment Analysis} (Hutto \& Gilbert, 2014) is a lexicon-based rule system that assigns positive, negative, and neutral polarity to text. While fast and well-established, VADER produces a single document-level score and cannot attribute sentiment to a specific aspect of a text. A Reddit post saying "the food is great but rent is brutal" would receive a near-neutral VADER score, losing the critical distinction between high food-and-cafe sentiment and low affordability sentiment. This limitation makes VADER insufficient for a system requiring 8-dimension aspect-level scores per suburb.
 
@@ -429,6 +452,31 @@ liveability = (safety * w_safety) + (transport * w_transport) + (lifestyle * w_l
 
 All component scores are normalised to {[}0.0, 1.0{]}. The safety score inverts crime counts (\passthrough{\lstinline!1 - crime/max\_crime!}); proximity uses PostGIS \passthrough{\lstinline!ST\_Distance!} from the suburb centroid to the CBD (\passthrough{\lstinline!lat=-33.8688, lng=151.2093!}), clamped at 35 km. The in-memory cache (\passthrough{\lstinline!\_RAW\_CACHE!} with double-checked locking) ensures that weight changes trigger instant re-ranking in pure Python without additional database calls.
 
+\subsection{Crime Data Analysis --- Five MVP Suburbs}
+
+Analysis of the cleaned BOCSAR dataset revealed distinct crime profiles across the five MVP suburbs for the period January 2024 to December 2025.
+
+\subsubsection{Overall Crime Volume}
+
+Haymarket recorded the highest total average monthly incidents (505.83), followed by Surry Hills (320.63), Redfern (304.54), Glebe (210.71), and Newtown (180.46).
+
+\subsubsection{Top Crime Categories by Suburb}
+
+Across all five suburbs, \textbf{Theft} was consistently the most prevalent property crime category. The following patterns were observed:
+
+\begin{itemize}
+\tightlist
+\item \textbf{Glebe} --- Theft (75.17), Against justice procedures (50.25), Assault (22.92)
+\item \textbf{Haymarket} --- Transport regulatory offences (243.08), Theft (85.50), Drug offences (43.83)
+\item \textbf{Newtown} --- Theft (46.88), Against justice procedures (39.17), Assault (19.08)
+\item \textbf{Redfern} --- Against justice procedures (109.17), Theft (79.04), Assault (22.38)
+\item \textbf{Surry Hills} --- Theft (90.67), Against justice procedures (70.46), Drug offences (47.29)
+\end{itemize}
+
+\subsubsection{Limitation}
+
+The \passthrough{\lstinline!incident\_count!} values represent average monthly incidents over the 24-month period, not raw counts. Additionally, \passthrough{\lstinline!sa4\_area!} is recorded as N/A for all entries, as suburb-level data was sourced directly from BOCSAR without requiring SA4-level mapping.
+
 \subsection{NLP Model Performance Metrics}\label{62-nlp-model-performance-metrics}
 
 The evaluation harness (\passthrough{\lstinline!backend/scripts/run\_agent\_eval.py!}) assesses retrieval quality out of band using a curated 30-prompt set from \passthrough{\lstinline!data/eval/prompts.yaml!}. Prompts are drawn from four categories:
@@ -493,6 +541,14 @@ Reddit posts with \passthrough{\lstinline!created\_utc!} timestamps allow limite
 Summarise time-based patterns in Reddit sentiment per suburb where timestamps are available.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Challenges}\label{challenges}
+
+\subsection{Data Granularity --- Suburb-Level vs SA4-Level}
+
+The original task specification assumed that BOCSAR only provided crime data at the SA4 (Statistical Area Level 4) level, which would have required mapping multiple suburbs to a single SA4 region. Under this assumption, Newtown and Glebe would have shared the same crime figures (Inner West), and Redfern, Surry Hills, and Haymarket would have shared the same figures (City and Inner South).
+
+During the data collection phase, a suburb-level dataset was identified on the BOCSAR Open Datasets portal. This dataset provided independent crime figures for each suburb directly, making the SA4 proxy mapping unnecessary and improving the accuracy of the liveability scoring for each MVP suburb.
 
 \section{Outcomes and Value Added}\label{7-outcomes-and-value-added}
 
