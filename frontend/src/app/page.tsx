@@ -712,8 +712,11 @@ export default function HomePage() {
                         layoutId="profile-card"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute left-0 top-[calc(100%+8px)] z-[900] rounded-b-[10px] border border-border p-4 shadow-float" style={{ width: "min(calc(100vw - 1rem), 780px)" }}
-                        style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}
+                        className="absolute left-0 top-[calc(100%+8px)] z-[900] rounded-b-[10px] border border-border p-4 shadow-float"
+                        style={{
+                          width: "min(calc(100vw - 1rem), 780px)",
+                          background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)",
+                        }}
                       >
                         <p className="mb-3 font-mono text-[11px] font-bold uppercase tracking-[0.07em] text-fg-muted">
                           Adjust weighting profile
