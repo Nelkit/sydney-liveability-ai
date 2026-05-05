@@ -27,7 +27,7 @@ export function EvidenceDrawer({ trace, allCitations = [] }: Props) {
   const structured = isStructuredTrace(trace) ? trace : null;
 
   return (
-    <div className="flex flex-col overflow-hidden border-l border-border" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
+    <div className="flex h-full flex-col overflow-hidden border-l border-border" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
       {/* Header */}
       <div className="flex h-[52px] items-center justify-between border-b border-border px-4">
         <div className="flex items-center gap-2">

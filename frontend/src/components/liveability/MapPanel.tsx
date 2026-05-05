@@ -16,6 +16,7 @@ type MapPanelProps = {
   ranked: RankedSuburb[];
   isLoading: boolean;
   loadingLabel?: string;
+  isVisible?: boolean;
   selectedSuburbId: string | null;
   onSelectSuburb: (name: string) => void;
   layer: string;
@@ -144,6 +145,7 @@ export function MapPanel({
   activeSuburbs = [],
   hoveredSuburb,
   onSuburbHover,
+  isVisible = true,
 }: MapPanelProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef          = useRef<L.Map | null>(null);
@@ -225,13 +227,37 @@ export function MapPanel({
     overlaysRef.current = overlayGroup;
     hasFittedBoundsRef.current = false;
 
+    // When the container goes from hidden (0×0) to visible, Leaflet's internal
+    // _size is stale. Calling invalidateSize() recomputes it so flyToBounds
+    // and coordinate projection don't produce NaN from division-by-zero.
+    const ro = new ResizeObserver(() => {
+      const m = mapRef.current;
+      if (m) m.invalidateSize();
+    });
+    ro.observe(container);
+
     return () => {
+      ro.disconnect();
       overlayGroup.clearLayers();
       map.remove();
       mapRef.current = null;
       overlaysRef.current = null;
     };
   }, []);
+
+  // When the map tab becomes visible on mobile, Leaflet's size is stale.
+  // invalidateSize() recomputes it, then re-center on Sydney if zoom is wrong.
+  useEffect(() => {
+    if (!isVisible) return;
+    const map = mapRef.current;
+    if (!map) return;
+    setTimeout(() => {
+      map.invalidateSize();
+      if (map.getZoom() < 10) {
+        map.setView([-33.8688, 151.2093], 13);
+      }
+    }, 50);
+  }, [isVisible]);
 
   useEffect(() => {
     if (previousLoadingRef.current && !isLoading) hasFittedBoundsRef.current = false;
@@ -260,9 +286,10 @@ export function MapPanel({
     if (matchingFeatures.length === 0) return;
 
     const tempLayer = L.geoJSON({ type: "FeatureCollection", features: matchingFeatures } as GeoJSON.FeatureCollection);
-    const bounds = tempLayer.getBounds();
-    if (bounds.isValid()) {
-      map.flyToBounds(bounds.pad(0.25), { maxZoom: 15, duration: 1.1 });
+    try {
+      map.flyToBounds(tempLayer.getBounds().pad(0.25), { maxZoom: 15, duration: 1.1 });
+    } catch {
+      // Feature has NaN coordinates — skip flyToBounds silently
     }
   }, [activeSuburbs, suburbsGeoJson]);
 
@@ -379,10 +406,12 @@ export function MapPanel({
       highlightedLayer.addTo(overlayGroup);
 
       if (!hasFittedBoundsRef.current && !isLoading) {
-        const bounds = highlightedLayer.getBounds();
-        if (bounds.isValid()) {
+        try {
+          const bounds = highlightedLayer.getBounds();
           map.flyToBounds(bounds.pad(0.08), { maxZoom: 15, duration: 0.9 });
           hasFittedBoundsRef.current = true;
+        } catch {
+          // Polygon has NaN coordinates — skip flyToBounds silently
         }
       }
 
@@ -472,14 +501,14 @@ export function MapPanel({
   return (
     <section className="relative h-full overflow-hidden bg-[radial-gradient(circle_at_30%_18%,rgba(254,215,170,0.3),transparent_28%),linear-gradient(180deg,#eff2f8,#e9edf6)]">
       {/* Layer switcher + zoom — left overlay */}
-      <div className="absolute left-3 top-3 z-[450] flex flex-col items-start gap-2">
-        <div className="flex items-center gap-1 rounded-lg border border-border bg-bg p-[3px] shadow-float">
+      <div className="absolute left-3 top-3 z-[450] flex flex-col items-start gap-2 max-w-[calc(100vw-5rem)]">
+        <div className="flex items-center gap-1 overflow-x-auto scrollbar-none rounded-lg border border-border bg-bg p-[3px] shadow-float">
           {layers.map((name) => (
             <button
               key={name}
               type="button"
               onClick={() => onLayerChange(name)}
-              className={`rounded-md border-none px-[10px] py-[5px] text-[11.5px] font-medium capitalize transition cursor-pointer ${
+              className={`shrink-0 rounded-md border-none px-[10px] py-[5px] text-[11.5px] font-medium capitalize transition cursor-pointer ${
                 layer === name
                   ? "bg-fg text-bg"
                   : "bg-transparent text-fg hover:bg-bg-elev"
@@ -551,12 +580,12 @@ export function MapPanel({
 
 
       {/* Top 5 — centrado sobre el mapa */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-6 z-[450] flex justify-center">
-        <div className="pointer-events-auto rounded-[12px] border border-border shadow-floatLg backdrop-blur-sm" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
+      <div className="pointer-events-none absolute inset-x-0 bottom-6 z-[450] flex justify-center px-3">
+        <div className="pointer-events-auto w-full max-w-[600px] overflow-hidden rounded-[12px] border border-border shadow-floatLg backdrop-blur-sm" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
           <div className="flex items-center gap-1 border-b border-border px-3 py-1.5">
             <span className="font-mono text-[9.5px] uppercase tracking-[0.08em] text-fg-muted">Top suburbs</span>
           </div>
-          <div className="flex gap-px p-1">
+          <div className="flex gap-px overflow-x-auto p-1 scrollbar-none">
             {isLoading
               ? Array.from({ length: 5 }).map((_, i) => (
                   <div key={`sk-${i}`} className="w-[108px] animate-pulse rounded-lg p-2.5">

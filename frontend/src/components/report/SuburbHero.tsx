@@ -37,30 +37,30 @@ function Fact({ label, v }: { label: string; v: number }) {
 
 export function SuburbHero({ name, data, accent, side }: Props) {
   return (
-    <div className={`p-6 ${side === "left" ? "border-r border-border" : ""}`}>
-      <div className="mb-4 flex items-start gap-4">
-        <div className="relative">
-          <ScoreGauge value={data.score} size={88} label="liveability" />
+    <div className={`p-4 sm:p-6 ${side === "left" ? "lg:border-r lg:border-border" : ""}`}>
+      <div className="mb-4 flex items-start gap-3 sm:gap-4">
+        <div className="relative shrink-0">
+          <ScoreGauge value={data.score} size={76} label="liveability" />
           <div
             className="pointer-events-none absolute inset-[-3px] rounded-full border-2 opacity-25"
             style={{ borderColor: accent }}
           />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">{data.sa4}</div>
-          <div className="text-2xl font-semibold tracking-[-0.02em]" style={{ color: accent }}>
+          <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted truncate">{data.sa4}</div>
+          <div className="text-xl sm:text-2xl font-semibold tracking-[-0.02em] truncate" style={{ color: accent }}>
             {name}
           </div>
-          <div className="mt-1.5 flex flex-wrap gap-1.5">
-            <Stat label="walkability" v={data.walkability.toFixed(1)} />
-            <Stat label="facilities"  v={data.facilities.toFixed(1)} />
-            <Stat label="sentiment"   v={data.sentiment.toFixed(2)} />
+          <div className="mt-1.5 flex flex-wrap gap-1">
+            <Stat label="walk" v={data.walkability.toFixed(1)} />
+            <Stat label="fac"  v={data.facilities.toFixed(1)} />
+            <Stat label="sent" v={data.sentiment.toFixed(2)} />
           </div>
         </div>
       </div>
 
       {/* Mini map in locator mode */}
-      <div className="overflow-hidden rounded-lg" style={{ height: 140 }}>
+      <div className="overflow-hidden rounded-lg" style={{ height: 130 }}>
         <MapPanel
           suburbs={[]}
           ranked={[]}
@@ -74,7 +74,7 @@ export function SuburbHero({ name, data, accent, side }: Props) {
         />
       </div>
 
-      <div className="mt-3.5 grid grid-cols-4 gap-2">
+      <div className="mt-3 grid grid-cols-2 gap-1.5 sm:grid-cols-4 sm:gap-2">
         <Fact label="cafes"       v={data.cafes} />
         <Fact label="restaurants" v={data.restaurants} />
         <Fact label="parks"       v={data.parks} />

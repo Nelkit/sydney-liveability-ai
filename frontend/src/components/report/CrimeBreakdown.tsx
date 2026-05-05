@@ -19,16 +19,20 @@ export function CrimeBreakdown({ data, crimeIdx, sa4 }: Props) {
   return (
     <div className="flex flex-col gap-2.5">
       {data.map((c) => (
-        <div key={c.cat} className="grid items-center gap-2.5" style={{ gridTemplateColumns: "180px 1fr 60px 50px" }}>
-          <div className="text-[12px] text-fg">{c.cat}</div>
-          <Bar value={c.v} max={500} color="oklch(0.55 0.18 25)" height={6} />
-          <div className="font-mono text-[11.5px] font-semibold">{c.v}</div>
-          <div
-            className="text-right font-mono text-[10.5px] font-semibold"
-            style={{ color: c.trend < 0 ? "oklch(0.55 0.16 145)" : "oklch(0.55 0.18 25)" }}
-          >
-            {c.trend > 0 ? "+" : ""}{c.trend}%
+        <div key={c.cat} className="flex flex-col gap-1">
+          <div className="flex items-center justify-between gap-2">
+            <div className="text-[12px] text-fg truncate">{c.cat}</div>
+            <div className="flex shrink-0 items-center gap-2">
+              <div className="font-mono text-[11.5px] font-semibold">{c.v}</div>
+              <div
+                className="font-mono text-[10.5px] font-semibold"
+                style={{ color: c.trend < 0 ? "oklch(0.55 0.16 145)" : "oklch(0.55 0.18 25)" }}
+              >
+                {c.trend > 0 ? "+" : ""}{c.trend}%
+              </div>
+            </div>
           </div>
+          <Bar value={c.v} max={500} color="oklch(0.55 0.18 25)" height={6} />
         </div>
       ))}
       {crimeIdx != null && (

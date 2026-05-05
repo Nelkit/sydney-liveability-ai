@@ -90,7 +90,7 @@ export default function SuburbReportPage() {
     <CitationHoverProvider>
       <div className="min-h-screen bg-bg font-sans text-[13px] text-fg">
         {/* HEADER */}
-        <div className="flex items-center gap-4 border-b border-border bg-bg px-6 py-4">
+        <div className="flex flex-wrap items-center gap-3 border-b border-border bg-bg px-4 py-3 sm:px-6 sm:py-4">
           <Link href="/" className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
             <svg width="12" height="12" viewBox="0 0 14 14">
               <path d="M11 7H3m3-3-3 3 3 3" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -107,11 +107,13 @@ export default function SuburbReportPage() {
               )}
             </div>
           </div>
-          {router?.categories.map((c) => <CategoryChip key={c} kind={c} />)}
+          <div className="hidden sm:flex items-center gap-2 flex-wrap">
+            {router?.categories.map((c) => <CategoryChip key={c} kind={c} />)}
+          </div>
           <button
             type="button"
             onClick={() => window.print()}
-            className="flex cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-3 py-[7px] text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
+            className="hidden sm:flex cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-3 py-[7px] text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
           >
             Export PDF
           </button>
@@ -125,7 +127,7 @@ export default function SuburbReportPage() {
             </div>
           </div>
         ) : (
-          <div className="mx-auto flex max-w-[1280px] flex-col gap-5 p-6">
+          <div className="mx-auto flex max-w-[1280px] flex-col gap-5 p-4 lg:p-6">
             {/* 1. ASSISTANT RESPONSE */}
             <SectionCard title="Assistant response" hint="echo of /api/chat answer">
               <div
@@ -158,7 +160,7 @@ export default function SuburbReportPage() {
             {/* 2. EXECUTIVE SUMMARY */}
             <SectionCard title="Executive summary" hint="weighted profile applied">
               {suburbScore ? (
-                <div className="grid items-center gap-6" style={{ gridTemplateColumns: "200px 1fr 280px" }}>
+                <div className="flex flex-col gap-4 lg:grid lg:items-center lg:gap-6" style={{ gridTemplateColumns: "200px 1fr 280px" }}>
                   <div className="flex flex-col items-center gap-2">
                     <ScoreGauge value={suburbScore.score} size={140} label="liveability" />
                     <div className="font-mono text-[10px] text-fg-muted">weighted · 0–100</div>
@@ -170,11 +172,11 @@ export default function SuburbReportPage() {
                       { k: "lifestyle",     v: suburbScore.lifestyle,     w: 7 },
                       { k: "affordability", v: suburbScore.affordability, w: 2 },
                     ] as const).map(({ k, v, w }) => (
-                      <div key={k} className="grid items-center gap-2.5" style={{ gridTemplateColumns: "100px 1fr 60px 60px" }}>
-                        <div className="text-[12px] font-medium capitalize">{k}</div>
-                        <Bar value={v} color={accentColor} height={6} />
-                        <div className="font-mono text-[11.5px] font-semibold">{v}</div>
-                        <div className="rounded border border-border bg-bg-elev text-center font-mono text-[10px] text-fg-muted px-1.5 py-px">
+                      <div key={k} className="flex items-center gap-2.5 lg:grid" style={{ gridTemplateColumns: "100px 1fr 60px 60px" }}>
+                        <div className="w-24 shrink-0 text-[12px] font-medium capitalize lg:w-auto">{k}</div>
+                        <div className="flex-1 lg:flex-none"><Bar value={v} color={accentColor} height={6} /></div>
+                        <div className="shrink-0 font-mono text-[11.5px] font-semibold">{v}</div>
+                        <div className="shrink-0 rounded border border-border bg-bg-elev text-center font-mono text-[10px] text-fg-muted px-1.5 py-px">
                           w·{w}
                         </div>
                       </div>
@@ -204,7 +206,7 @@ export default function SuburbReportPage() {
             </SectionCard>
 
             {/* 3. ASPECT RADAR + EMOTION */}
-            <div className="grid gap-4" style={{ gridTemplateColumns: "1.3fr 1fr" }}>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
               <SectionCard title="Aspect radar" hint={aspects.length > 0 ? `DeBERTa-v3 · ${aspects.reduce((a, b) => a + b.mentions, 0)} mentions` : undefined}>
                 {aspects.length > 0 ? (
                   <AspectRadar data={aspects} accent={accentColor} size="lg" />
@@ -226,7 +228,7 @@ export default function SuburbReportPage() {
             </div>
 
             {/* 4. CRIME + GIS */}
-            <div className="grid gap-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
               <SectionCard title="Crime breakdown" hint={suburbScore?.sa4 ? `BOCSAR · ${suburbScore.sa4} SA4 · per 100k · 2024` : "BOCSAR"}>
                 <CrimeBreakdown data={crime} crimeIdx={suburbScore?.crimeIdx} sa4={suburbScore?.sa4} />
               </SectionCard>
@@ -246,7 +248,7 @@ export default function SuburbReportPage() {
                   />
                 </div>
                 {suburbScore ? (
-                  <div className="mt-2.5 grid grid-cols-4 gap-2">
+                  <div className="mt-2.5 grid grid-cols-2 gap-2 lg:grid-cols-4">
                     {([
                       { label: "cafes",       v: suburbScore.cafes       },
                       { label: "restaurants", v: suburbScore.restaurants },
@@ -270,7 +272,7 @@ export default function SuburbReportPage() {
             {/* 5. REDDIT HIGHLIGHTS */}
             <SectionCard title="Reddit highlights" hint={reddit.length > 0 ? `${reddit.length} cited · permalinks preserved` : undefined}>
               {reddit.length > 0 ? (
-                <div className="grid grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-1 gap-2.5 lg:grid-cols-2 xl:grid-cols-3">
                   {reddit.map((q) => <RedditQuote key={q.id} q={q} variant="full" />)}
                 </div>
               ) : (
