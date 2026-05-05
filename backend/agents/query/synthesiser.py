@@ -33,7 +33,7 @@ def _retrieve_chromadb_chunks(
     suburbs_list: list[str] | None = None,
     k_per_collection: int = 5,
 ) -> list[dict[str, Any]]:
-    """Retrieve Reddit semantic chunks with fallback if suburb filter fails."""
+    """Retrieve Reddit semantic chunks for the routed suburb scope."""
     
     print(f"[RAG] Query: {question}")
     print(f"[RAG] Suburbs filter: {suburbs_list}")
@@ -48,11 +48,6 @@ def _retrieve_chromadb_chunks(
                     k=k_per_collection,
                     filters={"suburb": _normalise_suburb(suburb)}
                 )
-
-                # fallback if nothing found
-                if not results:
-                    print(f"[RAG] No results for {suburb}, retrying without filter")
-                    results = query_chunks(question, k=k_per_collection)
 
                 chunks.extend(results)
         else:
@@ -216,7 +211,39 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
             
             context["suburbs"].append(suburb_context)
         
-        return context
+    return context
+
+
+def _ordered_unique_suburbs(values: list[Any] | tuple[Any, ...] | set[Any] | None) -> list[str]:
+    """Return non-empty suburb names once, preserving source order."""
+    output: list[str] = []
+    seen: set[str] = set()
+    for value in values or []:
+        suburb = str(value or "").strip()
+        if suburb and suburb not in seen:
+            output.append(suburb)
+            seen.add(suburb)
+    return output
+
+
+def _extract_suburbs_from_outputs(outputs: dict[str, Any]) -> list[str]:
+    """Recover suburb order from specialist outputs when router data is absent."""
+    suburbs: list[str] = []
+    for agent_key in ("crime", "sentiment", "gis"):
+        output = outputs.get(agent_key)
+        if not isinstance(output, dict):
+            continue
+        if isinstance(output.get("suburb"), str):
+            suburbs.append(output["suburb"])
+        for key, value in output.items():
+            if isinstance(value, dict):
+                suburbs.append(str(value.get("suburb") or key))
+
+    comparator = outputs.get("comparator")
+    if isinstance(comparator, dict):
+        suburbs.extend([comparator.get("suburb_a"), comparator.get("suburb_b")])
+
+    return _ordered_unique_suburbs(suburbs)
 
 
 def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
@@ -371,23 +398,15 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
     question = str(payload.get("question", "")).strip()
     router_output = payload.get("router", {})
     
-    # Extract suburbs FIRST
-    suburbs_from_specialists: set[str] = set()
-
-    if isinstance(outputs, dict):
-        for _agent_key, output in outputs.items():
-            if isinstance(output, dict):
-                if any(
-                    isinstance(v, dict) and ("combined_score" in v or "crime_severity" in v)
-                    for v in output.values()
-                ):
-                    suburbs_from_specialists.update(output.keys())
-                elif "suburb" in output:
-                    suburbs_from_specialists.add(output["suburb"])
-
-    # Also accept suburbs passed directly from the crew (e.g. ranking mode)
-    crew_suburbs = payload.get("suburbs") or []
-    suburbs_list = list(suburbs_from_specialists or crew_suburbs) or None
+    # Keep the routed suburb scope intact. Crime-only and sentiment-only
+    # outputs do not expose `combined_score`, so deriving scope from GIS
+    # fields made the synthesiser fall back to all suburbs.
+    suburbs_list = _ordered_unique_suburbs(
+        router_output.get("suburbs_mentioned") if isinstance(router_output, dict) else []
+    )
+    if not suburbs_list and isinstance(outputs, dict):
+        suburbs_list = _extract_suburbs_from_outputs(outputs)
+    suburbs_list = suburbs_list or None
 
     # THEN retrieve chunks
     retrieved_chunks = _retrieve_chromadb_chunks(question, suburbs_list)
@@ -542,10 +561,15 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
     except Exception as e:
         logger.error("Synthesiser failed: %s\n%s", e, traceback.format_exc())
         return {
-            "answer": f"Error generating response: {e}",
+            "answer": "I could not process that question right now. Please try again.",
             "sources": [],
             "suburb_scores": [],
             "map_state": None,
+            "error": {
+                "type": type(e).__name__,
+                "message": str(e),
+                "traceback": traceback.format_exc(),
+            },
         }
 
 
