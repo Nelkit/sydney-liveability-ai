@@ -229,26 +229,70 @@ def _pg_write(analysis: dict) -> None:
         logger.warning("PostgreSQL write failed for %s", suburb)
 
 
-@router.get("/suburbs")
+@router.get(
+    "/suburbs",
+    summary="List suburbs with Reddit data",
+    response_description="Sorted list of suburb names that have at least one Reddit post ingested.",
+)
 def list_suburbs() -> dict:
-    """List all suburbs with available Reddit data."""
+    """Return all suburb names for which Reddit data has been ingested.
+
+    Useful for populating autocomplete widgets or validating suburb names
+    before calling `GET /api/reddit/{suburb}`.
+
+    **Response**
+    ```json
+    { "suburbs": ["Bondi", "Glebe", "Newtown", ...], "count": 657 }
+    ```
+    """
     from data_extraction.extract_reddit import list_available_suburbs
 
     suburbs = list_available_suburbs()
     return {"suburbs": suburbs, "count": len(suburbs)}
 
 
-@router.get("/summary")
+@router.get(
+    "/summary",
+    summary="Suburb sentiment summary (bulk)",
+    response_description=(
+        "Array of per-suburb summary rows. Cached suburbs include a composite score "
+        "and aspect breakdown; uncached suburbs return `score=null`."
+    ),
+)
 def summary() -> dict:
-    """Lightweight overview of every suburb that has data.
+    """Return a lightweight sentiment summary for every suburb that has data.
 
-    Returns per-suburb: post_count, composite liveability score (mean of
-    the 8 aspect scores), top/bottom aspect, dominant emotion.  Uses the
-    pre-computed NLP analysis cache; suburbs without a cached analysis
-    fall back to raw post_count from the suburb index (score=null).
+    Designed for the **hexagon overview page** — fetches all ~657 suburbs in
+    a single request rather than making one call per suburb.
 
-    Designed for the hexagon overview page to render ~hundreds of
-    suburbs in one request.
+    Each row contains:
+    - `suburb` — name
+    - `post_count` — number of Reddit posts analysed
+    - `score` — composite liveability sentiment score (mean of 8 aspect scores, 0–1), or `null`
+    - `top_aspect` / `bottom_aspect` — highest/lowest-scoring liveability dimension
+    - `dominant_emotion` — most common GoEmotions label across posts
+    - `cached` — whether a full NLP analysis is available
+    - `confidence` / `confidence_tier` — model confidence (`low | medium | high`)
+
+    **Response**
+    ```json
+    {
+      "suburbs": [
+        {
+          "suburb": "Newtown",
+          "post_count": 312,
+          "score": 0.673,
+          "top_aspect": "community",
+          "bottom_aspect": "affordability",
+          "dominant_emotion": "joy",
+          "cached": true,
+          "confidence": 0.81,
+          "confidence_tier": "high"
+        }
+      ],
+      "count": 657
+    }
+    ```
     """
     from data_extraction.extract_reddit import list_available_suburbs
 
@@ -334,13 +378,54 @@ def summary() -> dict:
     return {"suburbs": rows, "count": len(rows)}
 
 
-@router.get("/{suburb}")
+@router.get(
+    "/{suburb}",
+    summary="Suburb Reddit analysis",
+    response_description=(
+        "Full NLP analysis for the suburb: aspect sentiment scores, GoEmotions profile, "
+        "community narrative, and Reddit source URLs."
+    ),
+    responses={
+        200: {
+            "description": "Analysis returned from PostgreSQL cache or computed on demand.",
+        }
+    },
+)
 def analyse_suburb_endpoint(suburb: str) -> dict:
-    """Analyse Reddit discourse about a Sydney suburb.
+    """Return the full Reddit NLP analysis for a single Sydney suburb.
 
-    Returns aspect-based sentiment, emotion profile, community narrative,
-    and source references. Results are cached locally and optionally in
-    Supabase.
+    **Cache strategy** (fastest → slowest):
+    1. PostgreSQL (primary cache — pre-computed at ingestion time)
+    2. Supabase (secondary cache — 24 h TTL)
+    3. On-demand: loads raw Reddit posts and runs the full NLP pipeline
+
+    Suburb names are normalised to title case (`newtown` → `Newtown`).
+    Underscores and hyphens are replaced with spaces.
+
+    **Aspect dimensions** (DeBERTa-v3 fine-tuned on liveability corpus):
+    `safety`, `food_and_cafe`, `nightlife`, `affordability`, `transport`,
+    `community`, `noise`, `green_space`
+
+    **Emotion labels** (GoEmotions, averaged across posts):
+    `joy`, `surprise`, `neutral`, `sadness`, `anger`, `fear`, `disgust`
+
+    **Response**
+    ```json
+    {
+      "suburb": "Newtown",
+      "post_count": 312,
+      "fetched_at": "2025-03-01T10:00:00",
+      "aspects": {
+        "community": { "score": 0.82, "mentions": 47, "confidence": 0.91, "coverage": "strong", "source": "reddit" },
+        "affordability": { "score": 0.31, "mentions": 28, "confidence": 0.79, "coverage": "moderate", "source": "reddit" }
+      },
+      "emotions": { "joy": 0.41, "neutral": 0.29, "sadness": 0.12, "anger": 0.08, "surprise": 0.05, "fear": 0.03, "disgust": 0.02 },
+      "narrative": "Newtown residents celebrate the suburb's vibrant arts scene...",
+      "sources": ["https://reddit.com/r/sydney/comments/abc123", ...],
+      "confidence": 0.81,
+      "confidence_tier": "high"
+    }
+    ```
     """
     normalised = _normalise_suburb(suburb)
 

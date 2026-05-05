@@ -1,4 +1,4 @@
-"""Civic API endpoint that serves suburb scores from PostgreSQL."""
+"""Civic API — serves suburb scores from PostgreSQL as a weighted GeoJSON ranking."""
 
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 
 def _to_geojson_geometry(value: Any) -> dict[str, Any]:
-    """Convert a PostGIS geometry value into GeoJSON geometry dict."""
+    """Convert a PostGIS geometry value into a GeoJSON geometry dict."""
     if value is None:
         return {}
 
@@ -45,22 +45,103 @@ def _to_geojson_geometry(value: Any) -> dict[str, Any]:
     return {}
 
 
-
-@router.get("/civic")
+@router.get(
+    "/civic",
+    summary="Weighted suburb ranking (GeoJSON)",
+    response_description=(
+        "GeoJSON FeatureCollection with the top-5 suburbs ranked by the supplied "
+        "weight vector. Each Feature has a `properties` object with pre-computed "
+        "sub-scores and a `geometry` (MultiPolygon in WGS84) for map rendering."
+    ),
+    responses={
+        400: {"description": "Weights do not sum to 1.0."},
+        503: {"description": "PostgreSQL connection failed after 3 retries."},
+    },
+)
 def get_civic(
-    safety: float = Query(0.25, ge=0.0, le=1.0),
-    transport: float = Query(0.25, ge=0.0, le=1.0),
-    lifestyle: float = Query(0.25, ge=0.0, le=1.0),
-    affordability: float = Query(0.25, ge=0.0, le=1.0),
-    nightlife: float = Query(0.0, ge=0.0, le=1.0),
-    proximity: float = Query(0.0, ge=0.0, le=1.0),
+    safety: float = Query(
+        0.25,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the BOCSAR crime-safety score (0–1).",
+    ),
+    transport: float = Query(
+        0.25,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the TfNSW / OSM transport score (0–1).",
+    ),
+    lifestyle: float = Query(
+        0.25,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the OSM lifestyle amenities score (0–1).",
+    ),
+    affordability: float = Query(
+        0.25,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the median-rent affordability score (0–1).",
+    ),
+    nightlife: float = Query(
+        0.0,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the nightlife amenities score (0–1). Default 0.",
+    ),
+    proximity: float = Query(
+        0.0,
+        ge=0.0,
+        le=1.0,
+        description="Weight applied to the CBD proximity score (0–1). Default 0.",
+    ),
 ) -> dict[str, Any]:
-    """Return top-5 suburbs ranked by weighted liveability from structured sources."""
+    """Return the top-5 Sydney suburbs ranked by a user-defined weight vector.
+
+    All six weight parameters must sum to **1.0** (validated server-side;
+    a 400 is returned if they don't). The frontend uses this endpoint to
+    colour the choropleth map and populate the ranked sidebar.
+
+    **Score formula**
+
+    ```
+    liveability = safety×w_s + transport×w_t + lifestyle×w_l
+                + affordability×w_a + nightlife×w_n + proximity×w_p
+    ```
+
+    Scores are pre-normalised to 0–100 in the ingestion pipeline.
+
+    **Response shape**
+
+    ```json
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "suburb": "Newtown",
+            "liveability_score": 72.4,
+            "safety_score": 68.1,
+            "transport_score": 81.3,
+            "lifestyle_score": 74.0,
+            "nightlife_score": 65.2,
+            "proximity_score": 55.0
+          },
+          "geometry": { "type": "MultiPolygon", "coordinates": [...] }
+        }
+      ]
+    }
+    ```
+    """
     weight_sum = safety + transport + lifestyle + affordability + nightlife + proximity
     if abs(weight_sum - 1.0) > 0.001:
         raise HTTPException(
             status_code=400,
-            detail="Weights must sum to 1.0 across safety, transport, lifestyle, affordability, nightlife, and proximity.",
+            detail=(
+                "Weights must sum to 1.0 across safety, transport, lifestyle, "
+                "affordability, nightlife, and proximity."
+            ),
         )
 
     weights = {

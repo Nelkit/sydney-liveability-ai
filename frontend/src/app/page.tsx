@@ -98,11 +98,15 @@ function extractCenterAndPolygon(geometry: CivicGeometry | Record<string, never>
   try {
     const outerRing = ((geometry.coordinates as unknown[][][])[0] as unknown[][])[0] as unknown[][];
     if (!Array.isArray(outerRing) || !outerRing.length) return fallback;
-    const polygonCoords = outerRing.filter((c) => Array.isArray(c) && c.length >= 2).map((c) => [c[1], c[0]] as [number, number]);
+    const polygonCoords = outerRing
+      .filter((c) => Array.isArray(c) && c.length >= 2 && isFinite(c[0] as number) && isFinite(c[1] as number))
+      .map((c) => [c[1], c[0]] as [number, number]);
     if (!polygonCoords.length) return fallback;
     const sumLat = polygonCoords.reduce((s, [lat]) => s + lat, 0);
     const sumLng = polygonCoords.reduce((s, [, lng]) => s + lng, 0);
-    return { center: [sumLat / polygonCoords.length, sumLng / polygonCoords.length] as [number, number], polygon: polygonCoords };
+    const center: [number, number] = [sumLat / polygonCoords.length, sumLng / polygonCoords.length];
+    if (!isFinite(center[0]) || !isFinite(center[1])) return fallback;
+    return { center, polygon: polygonCoords };
   } catch { return fallback; }
 }
 
@@ -277,6 +281,7 @@ export default function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
   const [showCancel, setShowCancel] = useState(false);
   const [showEvidence, setShowEvidence] = useState(true);
+  const [mobileTab, setMobileTab] = useState<"chat" | "map" | "evidence">("chat");
   const [chatActiveSuburbs, setChatActiveSuburbs] = useState<string[]>([]);
   const abortControllerRef = useRef<AbortController | null>(null);
   const cancelTimerRef     = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -615,6 +620,7 @@ export default function HomePage() {
   function onSelectSuburb(name: string) {
     const sub = allSuburbsForMap.find((s) => s.name === name);
     if (sub) setSelectedSuburbId(sub.id);
+    setMobileTab("chat");
     void sendChat(`Tell me about ${name}`, name);
   }
 
@@ -673,10 +679,10 @@ export default function HomePage() {
                 initial={{ opacity: 0, scale: 0.992, y: 14 }}
                 animate={{ opacity: 1, scale: 1, y: 0, transition: { duration: 0.46, ease: [0.22, 1, 0.36, 1], delay: 0.02 } }}
                 exit={{ opacity: 0, scale: 1.006, y: -8, transition: { duration: 0.26, ease: [0.4, 0, 1, 1] } }}
-                className="grid h-screen grid-rows-[52px_1fr] bg-bg"
+                className="flex h-screen flex-col bg-bg lg:grid lg:grid-rows-[52px_1fr]"
               >
                 {/* ---- HEADER ---- */}
-                <header className="relative z-[700] col-span-full flex items-center gap-3 border-b border-border bg-bg px-4 lg:px-5">
+                <header className="relative z-[700] flex shrink-0 items-center gap-3 border-b border-border bg-bg px-4 lg:px-5">
                   <motion.div layoutId="top-shell">
                     <SharedBrand compact />
                   </motion.div>
@@ -695,7 +701,7 @@ export default function HomePage() {
                         { icon: <Shield    size={10} />, key: "safety"    as const },
                         { icon: <Coffee    size={10} />, key: "lifestyle" as const },
                       ].map(({ icon, key }) => (
-                        <span key={key} className="inline-flex h-6 items-center gap-1 rounded-full border border-border bg-bg-elev px-2 font-mono text-[10px] font-semibold text-fg">
+                        <span key={key} className="hidden sm:inline-flex h-6 items-center gap-1 rounded-full border border-border bg-bg-elev px-2 font-mono text-[10px] font-semibold text-fg">
                           {icon} {getImportanceLabel(selectedLevels[key])}
                         </span>
                       ))}
@@ -706,13 +712,13 @@ export default function HomePage() {
                         layoutId="profile-card"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute left-0 top-[calc(100%+8px)] z-[900] w-max max-w-[94vw] rounded-b-[10px] border border-border p-4 shadow-float"
+                        className="absolute left-0 top-[calc(100%+8px)] z-[900] rounded-b-[10px] border border-border p-4 shadow-float" style={{ width: "min(calc(100vw - 1rem), 780px)" }}
                         style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}
                       >
                         <p className="mb-3 font-mono text-[11px] font-bold uppercase tracking-[0.07em] text-fg-muted">
                           Adjust weighting profile
                         </p>
-                        <div className="min-w-[620px] max-w-[760px] space-y-0">
+                        <div className="w-full min-w-0 sm:min-w-[620px] sm:max-w-[760px] space-y-0">
                           {([ ["transport", "Transport"], ["safety", "Safety"], ["lifestyle", "Lifestyle"], ["afford", "Affordability"], ["proximity", "CBD Proximity"] ] as [keyof Weights, string][]).map(([key, label], i, arr) => (
                             <div key={key} className={i < arr.length - 1 ? "mb-4 border-b border-border pb-4" : ""}>
                               <span className="mb-2 block text-sm font-semibold text-fg">{label}</span>
@@ -765,10 +771,24 @@ export default function HomePage() {
                   </div>
                 </header>
 
-                {/* ---- 3-COLUMN LAYOUT ---- */}
-                <div className={`grid min-h-0 ${showEvidence ? "grid-cols-[440px_1fr_320px]" : "grid-cols-[440px_1fr]"}`}>
+                {/* ---- CONTENT ROW: tab bar (mobile) + columns ---- */}
+                <div className={`flex min-h-0 flex-1 flex-col lg:grid ${showEvidence ? "lg:grid-cols-[440px_1fr_320px]" : "lg:grid-cols-[440px_1fr]"}`}>
+
+                  {/* Mobile tab bar — shrink-0 so it never grows, only visible on small screens */}
+                  <div className="flex shrink-0 border-b border-border bg-bg lg:hidden">
+                    {(["chat", "map", ...(showEvidence ? ["evidence"] : [])] as ("chat" | "map" | "evidence")[]).map((tab) => (
+                      <button
+                        key={tab}
+                        type="button"
+                        onClick={() => setMobileTab(tab)}
+                        className={`flex-1 py-2 font-mono text-[11px] uppercase tracking-[0.06em] transition ${mobileTab === tab ? "border-b-2 border-accent text-accent" : "text-fg-muted hover:text-fg"}`}
+                      >
+                        {tab}
+                      </button>
+                    ))}
+                  </div>
                   {/* COL 1: CHAT */}
-                  <div className="flex min-h-0 flex-col border-r border-border" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
+                  <div className={`flex min-h-0 flex-col border-r border-border ${mobileTab !== "chat" ? "hidden lg:flex" : "flex flex-1"}`} style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
                     <div
                       ref={chatScrollRef}
                       className="flex flex-1 flex-col gap-[18px] overflow-auto px-6 py-5"
@@ -813,8 +833,8 @@ export default function HomePage() {
                     />
                   </div>
 
-                  {/* COL 2: MAP */}
-                  <div className="relative min-h-0">
+                  {/* COL 2: MAP — never display:none so Leaflet always has a real size */}
+                  <div className={`relative min-h-0 ${mobileTab !== "map" ? "invisible pointer-events-none absolute inset-0 lg:visible lg:pointer-events-auto lg:static" : "flex-1"}`}>
                     <MapPanel
                       suburbs={allSuburbsForMap}
                       ranked={rankedSuburbs}
@@ -828,15 +848,18 @@ export default function HomePage() {
                       activeSuburbs={chatActiveSuburbs}
                       hoveredSuburb={hoveredSuburb}
                       onSuburbHover={setHoveredSuburb}
+                      isVisible={mobileTab === "map"}
                     />
                   </div>
 
                   {/* COL 3: EVIDENCE DRAWER */}
                   {showEvidence && (
-                    <EvidenceDrawer
-                      trace={lastPayload?.quality?.evidence_trace_summary as EvidenceTrace | string | null | undefined}
-                      allCitations={allCitations}
-                    />
+                    <div className={`min-h-0 ${mobileTab !== "evidence" ? "hidden lg:block" : "flex flex-1 flex-col"}`}>
+                      <EvidenceDrawer
+                        trace={lastPayload?.quality?.evidence_trace_summary as EvidenceTrace | string | null | undefined}
+                        allCitations={allCitations}
+                      />
+                    </div>
                   )}
                 </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
@@ -54,6 +55,7 @@ function ComparePage() {
   const [loading, setLoading] = useState(true);
   const [hoverDim, setHoverDim] = useState<string | null>(null);
   const [layout, setLayout]   = useState<"split" | "rows">("split");
+  const [mobileSuburb, setMobileSuburb] = useState<"a" | "b">("a");
 
   useEffect(() => {
     if (!suburbA || !suburbB) return;
@@ -97,7 +99,7 @@ function ComparePage() {
     <CitationHoverProvider>
       <div className="min-h-screen bg-bg font-sans text-[13px] text-fg">
         {/* HEADER */}
-        <div className="flex items-center gap-4 border-b border-border bg-bg px-6 py-4">
+        <div className="flex flex-wrap items-center gap-3 border-b border-border bg-bg px-4 py-3 sm:px-6 sm:py-4">
           <Link href="/" className="flex size-7 items-center justify-center rounded-md border border-border bg-bg text-fg transition hover:bg-bg-elev">
             <svg width="12" height="12" viewBox="0 0 14 14">
               <path d="M11 7H3m3-3-3 3 3 3" stroke="currentColor" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -113,14 +115,16 @@ function ComparePage() {
               <span style={{ color: ACCENT_B }}>{suburbB}</span>
             </div>
           </div>
-          <CategoryChip kind="comparator" />
-          <CategoryChip kind="sentiment" />
-          <CategoryChip kind="gis" />
-          <CategoryChip kind="crime" />
+          <div className="hidden sm:flex items-center gap-2">
+            <CategoryChip kind="comparator" />
+            <CategoryChip kind="sentiment" />
+            <CategoryChip kind="gis" />
+            <CategoryChip kind="crime" />
+          </div>
 
           {winner && (
             <div
-              className="flex items-center gap-2 rounded-lg border px-3 py-1.5"
+              className="hidden sm:flex items-center gap-2 rounded-lg border px-3 py-1.5"
               style={{ background: "linear-gradient(180deg, oklch(0.97 0.025 285), oklch(0.99 0.01 285))", borderColor: "oklch(0.88 0.05 285)" }}
             >
               <span className="font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">verdict</span>
@@ -130,7 +134,7 @@ function ComparePage() {
           )}
 
           {/* Layout toggle */}
-          <div className="flex items-center gap-1 rounded-md border border-border p-[3px]">
+          <div className="hidden sm:flex items-center gap-1 rounded-md border border-border p-[3px]">
             {(["split", "rows"] as const).map((l) => (
               <button key={l} type="button" onClick={() => setLayout(l)}
                 className={`cursor-pointer rounded px-2 py-1 font-mono text-[10px] capitalize transition ${layout === l ? "bg-fg text-bg" : "text-fg-muted hover:text-fg"}`}>
@@ -158,6 +162,7 @@ function ComparePage() {
           <SplitLayout
             suburbA={suburbA} suburbB={suburbB} data={data}
             hoverDim={hoverDim} setHoverDim={setHoverDim}
+            mobileSuburb={mobileSuburb} setMobileSuburb={setMobileSuburb}
           />
         ) : (
           <RowsLayout suburbA={suburbA} suburbB={suburbB} data={data} />
@@ -170,70 +175,135 @@ function ComparePage() {
 // ---------- Split layout ----------
 
 function SplitLayout({
-  suburbA, suburbB, data, hoverDim, setHoverDim,
+  suburbA, suburbB, data, hoverDim, setHoverDim, mobileSuburb, setMobileSuburb,
 }: {
   suburbA: string; suburbB: string; data: CompareData;
   hoverDim: string | null; setHoverDim: (d: string | null) => void;
+  mobileSuburb: "a" | "b"; setMobileSuburb: (s: "a" | "b") => void;
 }) {
   return (
     <div>
-      {/* Heroes */}
-      <div className="grid grid-cols-2">
-        <SuburbHero name={suburbA} data={data.a} accent={ACCENT_A} side="left" />
-        <SuburbHero name={suburbB} data={data.b} accent={ACCENT_B} side="right" />
+      {/* ── MOBILE: tab bar + one suburb at a time ── */}
+      <div className="lg:hidden">
+        {/* Tab switcher */}
+        <div className="flex border-b border-border">
+          {([["a", suburbA, ACCENT_A], ["b", suburbB, ACCENT_B]] as const).map(([key, name, accent]) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setMobileSuburb(key)}
+              className="flex-1 py-3 font-mono text-[12px] font-semibold transition"
+              style={{
+                color: mobileSuburb === key ? accent : "oklch(0.55 0.012 250)",
+                borderBottom: mobileSuburb === key ? `2px solid ${accent}` : "2px solid transparent",
+              }}
+            >
+              {name}
+            </button>
+          ))}
+        </div>
+
+        {/* Tab A content */}
+        {mobileSuburb === "a" && (
+          <div className="flex flex-col gap-4 p-4">
+            <SuburbHero name={suburbA} data={data.a} accent={ACCENT_A} side="left" />
+            <SuburbAspects name={suburbA} aspects={data.aspectsA} reddit={data.redditA} accent={ACCENT_A} side="left" />
+          </div>
+        )}
+
+        {/* Tab B content */}
+        {mobileSuburb === "b" && (
+          <div className="flex flex-col gap-4 p-4">
+            <SuburbHero name={suburbB} data={data.b} accent={ACCENT_B} side="right" />
+            <SuburbAspects name={suburbB} aspects={data.aspectsB} reddit={data.redditB} accent={ACCENT_B} side="right" />
+          </div>
+        )}
+
+        {/* Head-to-head always visible on mobile */}
+        <div className="border-t border-border bg-bg-elev px-4 py-4">
+          <div className="mb-3 font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
+            head-to-head · weighted score 0–100
+          </div>
+          <div className="flex flex-col gap-2">
+            {DIMENSIONS.map((d) => {
+              const va = data.a[d.key as keyof SuburbScore] as number;
+              const vb = data.b[d.key as keyof SuburbScore] as number;
+              const winA = va > vb;
+              const winB = vb > va;
+              return (
+                <div key={d.key} className="flex items-center justify-between py-1">
+                  <span className="text-[12px] font-medium">{d.icon} {d.label}</span>
+                  <div className="flex items-center gap-2 font-mono text-[12px] font-semibold">
+                    <span style={{ color: winA ? ACCENT_A : "oklch(0.55 0.012 250)" }}>{va}</span>
+                    <span className="text-[10px] text-fg-muted">vs</span>
+                    <span style={{ color: winB ? ACCENT_B : "oklch(0.55 0.012 250)" }}>{vb}</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
 
-      {/* Head-to-head diverging bars */}
-      <div className="border-t border-b border-border bg-bg-elev px-8 py-5">
-        <div className="mb-3.5 flex items-center justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
-            head-to-head · weighted score 0–100
-          </span>
-          <div className="flex items-center gap-4 font-mono text-[11px] text-fg-muted">
-            {[{ a: ACCENT_A, label: suburbA }, { a: ACCENT_B, label: suburbB }].map(({ a, label }) => (
-              <span key={label} className="flex items-center gap-1.5">
-                <span className="size-2 rounded-sm" style={{ background: a }} />
-                {label}
-              </span>
-            ))}
+      {/* ── DESKTOP: two-column split (unchanged) ── */}
+      <div className="hidden lg:block">
+        {/* Heroes */}
+        <div className="grid grid-cols-2">
+          <SuburbHero name={suburbA} data={data.a} accent={ACCENT_A} side="left" />
+          <SuburbHero name={suburbB} data={data.b} accent={ACCENT_B} side="right" />
+        </div>
+
+        {/* Head-to-head diverging bars */}
+        <div className="border-t border-b border-border bg-bg-elev px-8 py-5">
+          <div className="mb-3.5 flex items-center justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
+              head-to-head · weighted score 0–100
+            </span>
+            <div className="flex items-center gap-4 font-mono text-[11px] text-fg-muted">
+              {[{ a: ACCENT_A, label: suburbA }, { a: ACCENT_B, label: suburbB }].map(({ a, label }) => (
+                <span key={label} className="flex items-center gap-1.5">
+                  <span className="size-2 rounded-sm" style={{ background: a }} />
+                  {label}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col gap-2.5">
+            {DIMENSIONS.map((d) => {
+              const va = data.a[d.key as keyof SuburbScore] as number;
+              const vb = data.b[d.key as keyof SuburbScore] as number;
+              const winA = va > vb;
+              const winB = vb > va;
+              return (
+                <div
+                  key={d.key}
+                  onMouseEnter={() => setHoverDim(d.key)}
+                  onMouseLeave={() => setHoverDim(null)}
+                  className={`grid items-center gap-3 rounded-lg px-2.5 py-2 transition ${hoverDim === d.key ? "bg-bg" : "bg-transparent"}`}
+                  style={{ gridTemplateColumns: "60px 1fr 120px 1fr 60px", cursor: "default" }}
+                >
+                  <div className="text-right font-mono text-[12px] font-semibold" style={{ color: winA ? ACCENT_A : "oklch(0.55 0.012 250)" }}>{va}</div>
+                  <div className="flex justify-end">
+                    <div className="h-2.5 rounded-l" style={{ width: `${va}%`, background: winA ? ACCENT_A : "oklch(0.85 0.05 285)" }} />
+                  </div>
+                  <div className="flex items-center justify-center gap-2 text-[12px] font-medium">
+                    <span>{d.icon}</span><span>{d.label}</span>
+                  </div>
+                  <div>
+                    <div className="h-2.5 rounded-r" style={{ width: `${vb}%`, background: winB ? ACCENT_B : "oklch(0.88 0.04 75)" }} />
+                  </div>
+                  <div className="font-mono text-[12px] font-semibold" style={{ color: winB ? ACCENT_B : "oklch(0.55 0.012 250)" }}>{vb}</div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
-        <div className="flex flex-col gap-2.5">
-          {DIMENSIONS.map((d) => {
-            const va = data.a[d.key as keyof SuburbScore] as number;
-            const vb = data.b[d.key as keyof SuburbScore] as number;
-            const winA = va > vb;
-            const winB = vb > va;
-            return (
-              <div
-                key={d.key}
-                onMouseEnter={() => setHoverDim(d.key)}
-                onMouseLeave={() => setHoverDim(null)}
-                className={`grid items-center gap-3 rounded-lg px-2.5 py-2 transition ${hoverDim === d.key ? "bg-bg" : "bg-transparent"}`}
-                style={{ gridTemplateColumns: "60px 1fr 120px 1fr 60px", cursor: "default" }}
-              >
-                <div className="text-right font-mono text-[12px] font-semibold" style={{ color: winA ? ACCENT_A : "oklch(0.55 0.012 250)" }}>{va}</div>
-                <div className="flex justify-end">
-                  <div className="h-2.5 rounded-l" style={{ width: `${va}%`, background: winA ? ACCENT_A : "oklch(0.85 0.05 285)" }} />
-                </div>
-                <div className="flex items-center justify-center gap-2 text-[12px] font-medium">
-                  <span>{d.icon}</span><span>{d.label}</span>
-                </div>
-                <div>
-                  <div className="h-2.5 rounded-r" style={{ width: `${vb}%`, background: winB ? ACCENT_B : "oklch(0.88 0.04 75)" }} />
-                </div>
-                <div className="font-mono text-[12px] font-semibold" style={{ color: winB ? ACCENT_B : "oklch(0.55 0.012 250)" }}>{vb}</div>
-              </div>
-            );
-          })}
+        {/* Aspect + Reddit per suburb */}
+        <div className="grid grid-cols-2">
+          <SuburbAspects name={suburbA} aspects={data.aspectsA} reddit={data.redditA} accent={ACCENT_A} side="left" />
+          <SuburbAspects name={suburbB} aspects={data.aspectsB} reddit={data.redditB} accent={ACCENT_B} side="right" />
         </div>
-      </div>
-
-      {/* Aspect + Reddit per suburb */}
-      <div className="grid grid-cols-2">
-        <SuburbAspects name={suburbA} aspects={data.aspectsA} reddit={data.redditA} accent={ACCENT_A} side="left" />
-        <SuburbAspects name={suburbB} aspects={data.aspectsB} reddit={data.redditB} accent={ACCENT_B} side="right" />
       </div>
     </div>
   );
@@ -244,7 +314,7 @@ function SuburbAspects({ name, aspects, reddit, accent, side }: {
   accent: string; side: "left" | "right";
 }) {
   return (
-    <div className={`flex flex-col gap-4 p-6 ${side === "left" ? "border-r border-border" : ""}`}>
+    <div className={`flex flex-col gap-4 p-4 sm:p-6 ${side === "left" ? "lg:border-r lg:border-border" : ""}`}>
       <SectionCard title="Aspect sentiment · DeBERTa-v3" hint={aspects.length > 0 ? `${aspects.reduce((a, b) => a + b.mentions, 0)} mentions` : undefined}>
         {aspects.length > 0 ? (
           <AspectRadar data={aspects} accent={accent} size="sm" />
@@ -281,7 +351,7 @@ function RowsLayout({ suburbA, suburbB, data }: { suburbA: string; suburbB: stri
         const va = data.a[d.key as keyof SuburbScore] as number;
         const vb = data.b[d.key as keyof SuburbScore] as number;
         return (
-          <div key={d.key} className="grid items-center gap-4 rounded-[10px] border border-border bg-bg p-4" style={{ gridTemplateColumns: "240px 1fr 1fr" }}>
+          <div key={d.key} className="flex flex-col gap-2 rounded-[10px] border border-border bg-bg p-4 sm:grid sm:items-center sm:gap-4" style={{ gridTemplateColumns: "240px 1fr 1fr" }}>
             <div>
               <div className="text-[14px] font-semibold tracking-[-0.01em]">{d.label}</div>
             </div>
