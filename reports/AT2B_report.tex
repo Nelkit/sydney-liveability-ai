@@ -147,7 +147,7 @@
     Rodriguez Arciniegas & Juan David & 25418551 & @juandavidrodriguezar \\
     Weng & Nian-Ya &  & @Amanda1005 \\
     Robinson & Luis Gerardo & 25519000 & @LuisRobinsonH \\
-    Srinivas & Padmasri &  & @Psri-01 \\
+    Srinivas & Padmasri & 25536071 & @Psri-01 \\
     Liao & Ying-Kai &  & @Ying-Kai-Liao \\
     \bottomrule
   \end{longtable}}
@@ -247,6 +247,14 @@ This team member led the geographic data layer of the pipeline, covering OSM ext
 The primary contribution was the design and implementation of the OSM extraction pipeline (\passthrough{\lstinline!data\_extraction/extract\_osm.py!}), which queried the Overpass API for ten amenity and leisure POI categories across all 657 Greater Sydney suburbs. The script implements a three-tier resilience strategy comprising multi-endpoint fallback, exponential backoff on rate-limit responses, and per-category retry on timeout. Raw JSON artefacts are persisted to \passthrough{\lstinline!data/raw/osm/!} for auditability. Weighted POI counts were min-max normalised to produce a per-suburb \passthrough{\lstinline!osm\_score!} and ingested into the \passthrough{\lstinline!osm\_scores!} PostgreSQL table via \passthrough{\lstinline!backend/scripts/ingest\_osm.py!} using idempotent upserts.
 
 A second contribution was the GIS specialist agent (\passthrough{\lstinline!backend/agents/query/gis.py!}), which joins three PostgreSQL tables (\passthrough{\lstinline!suburbs!} at 35\%, \passthrough{\lstinline!osm\_scores!} at 35\%, and \passthrough{\lstinline!transport\_scores!} at 30\%) into a single combined liveability score. The agent includes a keyword parser that filters the OSM payload to a single amenity dimension when the user query targets a specific category. The Comparator agent (\passthrough{\lstinline!backend/agents/query/comparator.py!}) extends this by querying GIS, crime, and sentiment data for two suburbs in parallel and applying a winner-determination rule per category, returning a structured \passthrough{\lstinline!\{suburb\_a, suburb\_b, comparison, winner\}!} JSON payload to the Synthesiser.
+
+\subsection{Padmasri Srinivas}\label{padmasri-srinivas}
+
+This team member contributed the transport data dimension end-to-end and led the Sprint~4 RAG evaluation pipeline.
+
+The primary contribution was the design and implementation of \passthrough{\lstinline!data\_extraction/extract\_transport.py!}, a reproducible pipeline that derives a normalised peak-hour transport frequency score for 656 Greater Sydney suburbs from the TfNSW GTFS Timetables (Full) dataset. The pipeline spatially joins 48,195 GTFS stops against ABS SAL~2021 suburb polygons using \passthrough{\lstinline!geopandas!}, chunks through the 500\,MB+ \passthrough{\lstinline!stop\_times.txt!} file at 100,000 rows at a time, filters to weekday peak-hour departures (07:00--08:59), and aggregates to a per-suburb mean services-per-hour score normalised 0--1. The resulting \passthrough{\lstinline!data/processed/transport\_scores.json!} was ingested into the \passthrough{\lstinline!transport\_scores!} PostgreSQL table via \passthrough{\lstinline!data\_extraction/ingest\_transport.py!}, which extended the ORM model with two GTFS-specific columns via Alembic migration \passthrough{\lstinline!20260428\_0006!} and performs idempotent upserts tagged \passthrough{\lstinline!source='gtfs'!}.
+
+A secondary contribution was the Sprint~4 evaluation harness: \passthrough{\lstinline!evaluation/evaluate\_rag.py!} runs 15 tier-stratified questions through \passthrough{\lstinline!/api/chat!}, records full response payloads, and embeds aggregated metrics (relevance, hallucination rate, blockquote compliance, latency) into a single UI-ready \passthrough{\lstinline!data/eval/rag\_evaluation.json!}. The evaluation produced a mean relevance score of 2.75 and a hallucination rate of 29.8\% across demo-tier questions, with qualitative findings on suburb-scoping bugs and Supabase session saturation that informed backend patches during the final sprint.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -437,6 +445,50 @@ The chat LLM is configurable via environment variables. During development the s
 
 A spatial-intent gate keeps the synthesiser from responding authoritatively to out-of-scope questions: when \passthrough{\lstinline!agent\_outputs["router"]["categories"]!} equals \passthrough{\lstinline!["out\_of\_scope"]!}, the prompt drops the spatial-context block entirely and the answer reverts to a polite refusal listing example valid questions.
 
+\subsubsection{RAG Evaluation Strategy}\label{536-rag-evaluation-strategy}
+
+A tier-stratified evaluation harness was implemented in \passthrough{\lstinline!evaluation/evaluate\_rag.py!} to measure system quality across three rubric-aligned metrics: answer relevance, source faithfulness, and suburb coverage. Summary aggregation was originally a separate script (\passthrough{\lstinline!evaluation/summarise\_rag.py!}) but was combined into \passthrough{\lstinline!evaluate\_rag.py!} as \passthrough{\lstinline!attach\_summary!} and \passthrough{\lstinline!print\_summary!} functions during Sprint~4 to produce a single self-contained \passthrough{\lstinline!data/eval/rag\_evaluation.json!} that is ready for UI consumption. A \passthrough{\lstinline!--summarise-only!} flag allows score metrics to be refreshed without re-running the 15 API calls.
+
+\textbf{Question design.} 15~questions were distributed across six tiers reflecting the system's real data-coverage conditions:
+
+\begin{table}[H]
+\centering
+\caption{RAG evaluation question tiers}
+\begin{tabular}{@{}L{0.28\textwidth}L{0.08\textwidth}L{0.50\textwidth}@{}}
+\toprule
+Tier & Count & Purpose \\
+\midrule
+Demo suburbs & 9 & Core coverage: Sydney, Surry Hills, Glebe, Eveleigh, Zetland across safety, transport, lifestyle, liveability \\
+Sparse data & 1 & Wareemba (1 Reddit post) --- data quality probe \\
+Analysed but undemoed & 1 & Newtown --- does the chat surface non-demo suburbs? \\
+High density & 1 & Parramatta (2,951 ChromaDB chunks) \\
+Cross-suburb comparison & 2 & Multi-suburb reasoning \\
+Out of scope & 1 & Newcastle --- graceful refusal probe \\
+\bottomrule
+\end{tabular}
+\label{tab:eval-tiers}
+\end{table}
+
+\textbf{Scoring protocol.} Two scorers assess each response independently. Relevance is rated 1--3 (1~=~does not address, 2~=~partially addresses, 3~=~fully addresses). Source faithfulness is audited by counting every specific factual claim and flagging those not traceable to a returned source. The hallucination rate is $\text{unverified claims} / \text{total claims}$.
+
+\textbf{Infrastructure.} Evaluation was run against the local backend (\passthrough{\lstinline!http://127.0.0.1:8000/api/chat!}) with the prebuilt ChromaDB snapshot loaded (72\,276~chunks). The initial 90-second timeout was insufficient for sentiment-heavy queries; this was raised to 240~seconds after profiling showed sentiment + synthesis paths taking up to 175~seconds. The Supabase pooler also hit session saturation during the first run; \passthrough{\lstinline!backend/db/postgres.py!} was patched to use \passthrough{\lstinline!NullPool!} for pooler URLs and force \passthrough{\lstinline!sslmode=require!}, matching Supabase's SQLAlchemy guidance, and stale sessions were cleared via \passthrough{\lstinline!pg\_terminate\_backend!} before the clean run.
+
+\subsubsection{Implications of the Evaluation Design}\label{537-implications-of-evaluation-design}
+
+The \passthrough{\lstinline!attach\_summary!} function in \passthrough{\lstinline!evaluate\_rag.py!} produces three headline numbers for the report's Technical Execution criterion, embedded directly into the \passthrough{\lstinline!summary!} block of \passthrough{\lstinline!rag\_evaluation.json!}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Mean relevance (1--3):} whether the multi-agent pipeline correctly identifies and answers user intent. A score $\ge 2.5$ indicates reliable routing and synthesis.
+\item
+  \textbf{Hallucination rate (\%):} whether every factual claim is grounded in a returned source. The synthesiser prompt explicitly forbids asserting values absent from agent outputs.
+\item
+  \textbf{Demo suburb coverage (\%):} proportion of demo suburbs receiving at least one relevance~$\ge 2$ answer with zero unverified claims. This metric uses a strict zero-tolerance faithfulness threshold, so the absolute value should be read alongside the hallucination rate rather than in isolation.
+\end{itemize}
+
+The JSON schema is structured for UI consumption: \passthrough{\lstinline!summary.headline!} holds the three numbers, \passthrough{\lstinline!summary.by\_tier!} holds per-tier breakdowns, and \passthrough{\lstinline!summary.errors!} records any timeout or infrastructure failures separately from scorable responses.
+
 \subsection{Justification: Why Modern Over Traditional}\label{54-justification-why-modern-over-traditional}
 
 Present an academic argument for each design choice: DistilRoBERTa over VADER, sentence embeddings over TF-IDF, RAG over keyword search, and CrewAI for modular orchestration. Cite Lewis et al. (2020), Reimers \& Gurevych (2019), and Hutto \& Gilbert (2014).
@@ -601,6 +653,89 @@ A fine-grained EDA of the Reddit corpus was carried out in \passthrough{\lstinli
 
 Reddit posts with \passthrough{\lstinline!created\_utc!} timestamps allow limited temporal sentiment analysis where coverage permits. For suburbs with multi-year Reddit history (Newtown, Glebe, Surry Hills, Redfern), the pipeline can surface whether community sentiment on a dimension has shifted over time. BOCSAR crime data covers 2015--2025, enabling year-on-year trend detection at the suburb level; the Crime agent reports these trends as "improving", "worsening", or "insufficient data" based on a comparison of total incidents in the most recent year versus the prior year. The Reddit EDA in §6.4 confirms the dump itself has no temporal anomalies that would corrupt these comparisons.
 
+\subsection{RAG Evaluation: System Quality}\label{66-rag-evaluation}
+
+The evaluation harness recorded 14~successful responses out of 15~questions (93.3\% completion rate). One question---Q7 (Zetland lifestyle)---timed out at 240~seconds due to a mid-run LLM JSON parse failure in the CrewAI sentiment agent (\passthrough{\lstinline!Expecting value: line 315 column 1!}), which triggered a retry loop before the client timeout was reached. This is an infrastructure intermittency issue, not a data absence: Zetland has Reddit analyses available and the same query succeeded in earlier runs.
+
+\subsubsection{Headline Metrics (Demo Tier, 8 Scorable Questions)}
+
+\begin{table}[H]
+\centering
+\caption{RAG evaluation headline metrics}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Metric & Value & Notes \\
+\midrule
+Mean relevance (1--3) & \textbf{2.75} & 8 demo questions scored \\
+Hallucination rate & \textbf{29.8\%} & 25 of 84 claims unverified \\
+Blockquote compliance & \textbf{100\%} & All demo responses correctly formatted \\
+Demo suburb coverage & 0\% & Strict criterion; see note below \\
+Median response latency & 90.7\,s & Range 85\,ms -- 175\,s \\
+\bottomrule
+\end{tabular}
+\label{tab:eval-headline}
+\end{table}
+
+\textit{Note on demo suburb coverage.} The coverage metric requires relevance~$\ge 2$ \textit{and} faithfulness\_unverified\_claims~$= 0$. Since no demo question achieved zero unverified claims, the metric reads 0\% despite 7 of 8 demo responses receiving relevance~$\ge 2$. This reflects a strict definition designed to identify questions where every claim is fully traceable; it should be read alongside the 2.75 mean relevance rather than as an indicator of system failure.
+
+\subsubsection{Robustness Across Data Conditions}
+
+\begin{table}[H]
+\centering
+\caption{Mean relevance and hallucination rate by tier}
+\begin{tabular}{@{}L{0.28\textwidth}L{0.08\textwidth}L{0.15\textwidth}L{0.15\textwidth}L{0.22\textwidth}@{}}
+\toprule
+Tier & Count & Relevance & Halluc.\ rate & Notes \\
+\midrule
+Demo (full stack) & 8 & 2.75 & 29.8\% & Q7 timed out; excluded \\
+Comparison & 2 & 2.0 & 29.4\% & Both suburbs addressed \\
+Analysed undemoed (Newtown) & 1 & 3.0 & 30.0\% & Correctly surfaced non-demo suburb \\
+High density (Parramatta) & 1 & 3.0 & 41.7\% & Rich data; suburb scoping bug affected first run \\
+Sparse data (Wareemba) & 1 & 2.0 & 33.3\% & Acknowledged limited evidence \\
+Out of scope (Newcastle) & 1 & 3.0 & 0\% & Clean refusal in 85\,ms \\
+\bottomrule
+\end{tabular}
+\label{tab:eval-tiers-results}
+\end{table}
+
+\subsubsection{Per-Category Breakdown}
+
+\begin{table}[H]
+\centering
+\caption{Mean relevance by question category}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Category & Mean relevance & Hallucination rate \\
+\midrule
+Lifestyle & 3.0 & 40.6\% \\
+Out of scope & 3.0 & 0\% \\
+Liveability & 2.75 & 23.2\% \\
+Safety & 2.5 & 26.7\% \\
+Transport & 2.5 & 42.9\% \\
+Comparison & 2.0 & 29.4\% \\
+\bottomrule
+\end{tabular}
+\label{tab:eval-categories}
+\end{table}
+
+\subsubsection{Qualitative Observations}
+
+\textbf{Q15 (Newcastle, out of scope)} returned a clean refusal in 85\,ms with zero sources, driven by the router's keyword classifier intercepting the query before any specialist agent ran. This confirms the cost-effectiveness of the deterministic router as a first-pass filter.
+
+\textbf{Q10 (Wareemba, sparse data)} received relevance~2: the response acknowledged limited amenities with concrete facility counts but drew on the structured database rather than Reddit sentiment, since Wareemba has only one Reddit post. The system did not fabricate sentiment scores. Six of 18 claims were unverified, reflecting some inference about lifestyle quality that was not directly sourced.
+
+\textbf{Q12 (Parramatta, high density)} scored relevance~3 in the clean run. An earlier run returned ``Forest Lodge'' as the suburb---a synthesiser suburb-scoping bug where crime-only and sentiment-only paths lost the routed suburb and fell back to all-suburb context. This was patched in \passthrough{\lstinline!backend/agents/query/synthesiser.py!} by using \passthrough{\lstinline!router.suburbs\_mentioned!} as the primary suburb source and removing the global Chroma fallback.
+
+\textbf{Transport questions (Q3, Q4)} achieved relevance~2 and relevance~3 respectively, with 42.9\% hallucination across both. Nine of 21 transport claims were unverified, typically because the synthesiser supplemented the GTFS score with lifestyle context not directly returned by the GIS agent. This points to tighter prompt constraints on which sources the synthesiser may draw from when answering transport-specific questions.
+
+\subsubsection{Scenario Distribution}
+
+Of 14~scorable responses, 11~(78.6\%) were classified as \passthrough{\lstinline!single!} suburb queries, 2~(14.3\%) as \passthrough{\lstinline!comparator!}, and 1~(7.1\%) as \passthrough{\lstinline!out\_of\_scope!}. The comparator scenario (Q13, Q14) achieved mean relevance~2.0, lower than single-suburb queries (2.75), consistent with the higher reasoning demands of multi-suburb synthesis.
+
+\subsubsection{Hallucination Rate Discussion}
+
+The 29.8\% hallucination rate across demo questions is the most significant finding. It does not indicate that the system fabricated suburb names or invented scores; rather, the synthesiser consistently added contextual inferences (e.g.\ characterising ``urban feel'' from facility density, or inferring nightlife quality from restaurant counts) that were not explicitly returned by any agent. These are plausible inferences from available data but are technically unverified by the strict claim-tracing protocol. Two mitigation strategies are recommended: tightening the synthesiser system prompt to explicitly limit claims to those present in agent outputs, and returning richer structured outputs from specialist agents so more of the synthesiser's natural-language claims have a traceable source.
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Challenges}\label{challenges}
@@ -642,6 +777,10 @@ The following extensions are recommended in order of estimated impact:
 \textbf{User authentication and personalisation.} Adding a user account system would allow the system to store preferences across sessions and support longer interaction histories. The current \passthrough{\lstinline!localStorage!}-only approach means that profile data is device-specific and not persistent across browsers.
 
 \textbf{LLM provider fallback.} The system currently depends on a single default LLM provider. Adding automatic fallback (e.g., OpenRouter -> Anthropic -> OpenAI) would improve production reliability.
+
+\textbf{Reduce hallucination rate through prompt and source augmentation.} The evaluation found a 29.8\% hallucination rate on demo questions. Most unverified claims are plausible contextual inferences rather than fabrications, but they fail the strict source-tracing criterion. Two targeted fixes: (1)~add an explicit constraint to the synthesiser prompt requiring every factual claim to cite its agent source, and (2)~expand the structured outputs of the GIS and sentiment agents to return the raw values the synthesiser currently infers (e.g.\ explicit ``transport service frequency: moderate'' field, rather than requiring the LLM to interpret a normalised score). A rerun of the evaluation after these changes would quantify the improvement and provide a before/after metric for the report.
+
+\textbf{Address Supabase session saturation in production.} During evaluation, the Supabase pooler reached its session limit (\passthrough{\lstinline!EMAXCONNSESSION: max clients reached in session mode!}), causing intermittent SSL connection closures. The \passthrough{\lstinline!NullPool!} patch to \passthrough{\lstinline!backend/db/postgres.py!} resolves this for local evaluation, but production deployments on Render may still accumulate stale sessions. Adding a startup health check and configuring Supabase's idle session timeout would prevent recurrence without requiring manual \passthrough{\lstinline!pg\_terminate\_backend!} intervention.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
