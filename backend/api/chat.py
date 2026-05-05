@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import traceback
 from collections.abc import Generator
 from typing import Any
 
@@ -44,6 +45,7 @@ class ChatRequest(BaseModel):
         ),
         examples=[{"transport": 0.4, "safety": 0.3, "lifestyle": 0.2, "affordability": 0.1, "nightlife": 0.0, "proximity": 0.0}],
     )
+    include_debug: bool = False
 
 
 class EvidenceTraceSummary(BaseModel):
@@ -132,14 +134,24 @@ def chat(payload: ChatRequest) -> dict[str, Any]:
                 result[key] = response[key]
         if response.get("quality") is not None:
             result["quality"] = response["quality"]
+        if payload.include_debug and response.get("error") is not None:
+            result["error"] = response["error"]
         return result
-    except Exception:
-        return {
+    except Exception as exc:
+        # We keep a stable fallback shape so the frontend can fail gracefully.
+        result = {
             "answer": "I could not process that question right now. Please try again.",
             "sources": [],
             "suburb_scores": [],
             "map_state": None,
         }
+        if payload.include_debug:
+            result["error"] = {
+                "type": type(exc).__name__,
+                "message": str(exc),
+                "traceback": traceback.format_exc(),
+            }
+        return result
 
 
 def _sse(event: str, data: Any) -> str:
