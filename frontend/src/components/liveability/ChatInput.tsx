@@ -62,7 +62,7 @@ export function ChatInput({
       </div>
 
       {/* Input row */}
-      <div className="flex items-center gap-2 rounded-[10px] border border-border bg-bg px-3.5 py-2 shadow-[0_1px_0_oklch(0.96_0.005_250)]">
+      <div className="flex text-base items-center gap-2 rounded-[10px] border border-border bg-bg px-3.5 py-2 shadow-[0_1px_0_oklch(0.96_0.005_250)]">
         <input
           ref={inputRef}
           type="text"
@@ -70,7 +70,7 @@ export function ChatInput({
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
           placeholder="Ask about transport, safety, vibes…"
-          className="flex-1 border-none bg-transparent text-[13.5px] text-fg placeholder:text-fg-muted outline-none"
+          className="flex-1 border-none bg-transparent text-base text-fg placeholder:text-fg-muted outline-none"
         />
 
         {/* Cancel button — visible after 3s of loading */}
