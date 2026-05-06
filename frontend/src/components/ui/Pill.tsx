@@ -31,7 +31,7 @@ export function Pill({ tone, label, body, sub }: Props) {
       >
         {label}
       </div>
-      <div className="mt-0.5 text-sm font-semibold">{body}</div>
+      <div className="mt-0.5 break-words text-sm font-semibold">{body}</div>
       {sub && <div className="mt-px font-mono text-[10.5px] text-fg-muted">{sub}</div>}
     </div>
   );

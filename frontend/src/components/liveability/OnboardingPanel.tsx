@@ -249,7 +249,7 @@ export function OnboardingPanel({
         ) : (
           <div
             ref={conversationRef}
-            className="scrollbar-none mx-auto flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible px-10 py-6"
+            className="scrollbar-none mx-auto flex w-full max-w-[760px] flex-1 flex-col gap-3 overflow-y-auto overflow-x-visible py-6"
           >
             {!profileReady ? (
               <div className="animate-fade-up w-full max-w-[92%] self-start rounded-2xl border border-border bg-bg p-3 shadow-float backdrop-blur">

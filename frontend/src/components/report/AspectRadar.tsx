@@ -28,7 +28,7 @@ export function AspectRadar({ data, accent = "oklch(0.55 0.18 285)", size = "sm"
     v >= 0.6 ? "oklch(0.55 0.16 145)" : v >= 0.4 ? "oklch(0.65 0.02 250)" : "oklch(0.55 0.18 25)";
 
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col items-center gap-3 md:flex-row md:items-center">
       <svg width={dim} height={dim}>
         {[0.25, 0.5, 0.75, 1].map((f) => (
           <circle key={f} cx={cx} cy={cy} r={rMax * f} fill="none" stroke="oklch(0.92 0.005 250)" strokeWidth="0.6" />
@@ -71,7 +71,7 @@ export function AspectRadar({ data, accent = "oklch(0.55 0.18 285)", size = "sm"
         )}
       </svg>
 
-      <div className="flex flex-1 flex-col gap-1.5">
+      <div className="flex w-full flex-col gap-1.5 md:flex-1">
         {size === "lg" && (
           <>
             <div className="flex gap-3 font-mono text-[10px] text-fg-muted">

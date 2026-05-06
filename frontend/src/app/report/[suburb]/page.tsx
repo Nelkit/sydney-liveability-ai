@@ -161,11 +161,11 @@ export default function SuburbReportPage() {
             <SectionCard title="Executive summary" hint="weighted profile applied">
               {suburbScore ? (
                 <div className="flex flex-col gap-4 lg:grid lg:items-center lg:gap-6" style={{ gridTemplateColumns: "200px 1fr 280px" }}>
-                  <div className="flex flex-col items-center gap-2">
+                  <div className=" flex flex-col items-center gap-2">
                     <ScoreGauge value={suburbScore.score} size={140} label="liveability" />
                     <div className="font-mono text-[10px] text-fg-muted">weighted · 0–100</div>
                   </div>
-                  <div className="flex flex-col gap-3">
+                  <div className=" flex flex-col gap-3">
                     {([
                       { k: "transport",     v: suburbScore.transport,     w: 7 },
                       { k: "safety",        v: suburbScore.safety,        w: 8 },

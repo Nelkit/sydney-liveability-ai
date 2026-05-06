@@ -682,7 +682,7 @@ export default function HomePage() {
                 className="flex h-screen flex-col bg-bg lg:grid lg:grid-rows-[52px_1fr]"
               >
                 {/* ---- HEADER ---- */}
-                <header className="relative z-[700] flex shrink-0 items-center gap-3 border-b border-border bg-bg px-4 lg:px-5">
+                <header className="relative z-[700] flex shrink-0 items-center gap-3 border-b border-border bg-bg py-3 px-4 lg:px-5">
                   <motion.div layoutId="top-shell">
                     <SharedBrand compact />
                   </motion.div>
@@ -712,7 +712,7 @@ export default function HomePage() {
                         layoutId="profile-card"
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="absolute left-0 top-[calc(100%+8px)] z-[900] rounded-b-[10px] border border-border p-4 shadow-float"
+                        className="fixed inset-x-2 top-auto z-[900] rounded-[10px] border border-border p-4 shadow-float sm:absolute sm:inset-x-auto sm:left-0 sm:top-[calc(100%+8px)] sm:rounded-b-[10px] max-sm:!w-auto"
                         style={{
                           width: "min(calc(100vw - 1rem), 780px)",
                           background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)",

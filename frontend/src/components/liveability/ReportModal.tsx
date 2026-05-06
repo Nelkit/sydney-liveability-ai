@@ -131,27 +131,36 @@ function SingleReport({
   return (
     <>
       {/* HEADER */}
-      <div className="flex items-center gap-4 border-b border-border bg-bg px-6 py-4 shrink-0">
-        <div className="flex-1">
-          <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
-            Detailed report · single suburb
+      <div className="flex flex-col gap-3 border-b border-border bg-bg px-6 py-4 shrink-0 md:flex-row md:items-center md:gap-4">
+        <div className="flex items-start justify-between gap-4 md:contents">
+          <div className="flex-1">
+            <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
+              Detailed report · single suburb
+            </div>
+            <div className="mt-0.5 text-[17px] font-semibold tracking-[-0.015em]">
+              {suburbName}
+              {suburbScore?.sa4 && (
+                <span className="ml-2 font-normal text-fg-muted">· {suburbScore.sa4}</span>
+              )}
+            </div>
           </div>
-          <div className="mt-0.5 text-[17px] font-semibold tracking-[-0.015em]">
-            {suburbName}
-            {suburbScore?.sa4 && (
-              <span className="ml-2 font-normal text-fg-muted">· {suburbScore.sa4}</span>
-            )}
+          <div className="shrink-0 md:hidden">
+            <CloseButton onClose={onClose} />
           </div>
         </div>
-        {router?.categories.map((c) => <CategoryChip key={c} kind={c} />)}
-        <button
-          type="button"
-          onClick={() => window.print()}
-          className="flex cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-3 py-[7px] text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
-        >
-          Export PDF
-        </button>
-        <CloseButton onClose={onClose} />
+        <div className="flex flex-wrap items-center gap-2 md:contents">
+          {router?.categories.map((c) => <CategoryChip key={c} kind={c} />)}
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="flex cursor-pointer items-center gap-1.5 rounded-md border border-border bg-bg px-3 py-[7px] text-[11.5px] font-medium text-fg transition hover:bg-bg-elev"
+          >
+            Export PDF
+          </button>
+        </div>
+        <div className="hidden md:block">
+          <CloseButton onClose={onClose} />
+        </div>
       </div>
 
       {/* CONTENT */}
@@ -199,8 +208,7 @@ function SingleReport({
             <SectionCard title="Executive summary" hint="weighted profile applied">
               {suburbScore ? (
                 <div
-                  className="grid items-center gap-6"
-                  style={{ gridTemplateColumns: "200px 1fr 280px" }}
+                  className="grid grid-cols-1 md:grid-cols-[200px_1fr_280px] items-center gap-6"
                 >
                   <div className="flex flex-col items-center gap-2">
                     <ScoreGauge value={suburbScore.score} size={140} label="liveability" />
@@ -229,7 +237,7 @@ function SingleReport({
                       </div>
                     ))}
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex w-full overflow-hidden flex-col gap-2">
                     {lovedItem && (
                       <Pill
                         tone="pos"
@@ -261,7 +269,7 @@ function SingleReport({
             </SectionCard>
 
             {/* 3. ASPECT RADAR + EMOTION */}
-            <div className="grid gap-4" style={{ gridTemplateColumns: "1.3fr 1fr" }}>
+            <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-4">
               <SectionCard
                 title="Aspect radar"
                 hint={
@@ -290,7 +298,7 @@ function SingleReport({
             </div>
 
             {/* 4. CRIME + GIS */}
-            <div className="grid gap-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <SectionCard
                 title="Crime breakdown"
                 hint={
@@ -353,7 +361,7 @@ function SingleReport({
               }
             >
               {reddit.length > 0 ? (
-                <div className="grid grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-1 gap-2.5 md:grid-cols-3">
                   {reddit.map((q) => (
                     <RedditQuote key={q.id} q={q} variant="full" />
                   ))}
@@ -470,19 +478,25 @@ function SplitLayout({
   data,
   hoverDim,
   setHoverDim,
+  mobileTab,
 }: {
   suburbA: string;
   suburbB: string;
   data: CompareData;
   hoverDim: string | null;
   setHoverDim: (d: string | null) => void;
+  mobileTab: "a" | "b";
 }) {
   return (
     <div>
       {/* Heroes */}
-      <div className="grid grid-cols-2">
-        <SuburbHero name={suburbA} data={data.a} accent={ACCENT_A} side="left" />
-        <SuburbHero name={suburbB} data={data.b} accent={ACCENT_B} side="right" />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className={mobileTab === "a" ? "block" : "hidden md:block"}>
+          <SuburbHero name={suburbA} data={data.a} accent={ACCENT_A} side="left" />
+        </div>
+        <div className={mobileTab === "b" ? "block" : "hidden md:block"}>
+          <SuburbHero name={suburbB} data={data.b} accent={ACCENT_B} side="right" />
+        </div>
       </div>
 
       {/* Head-to-head diverging bars */}
@@ -559,21 +573,25 @@ function SplitLayout({
       </div>
 
       {/* Aspect + Reddit per suburb */}
-      <div className="grid grid-cols-2">
-        <SuburbAspectsPanel
-          name={suburbA}
-          aspects={data.aspectsA}
-          reddit={data.redditA}
-          accent={ACCENT_A}
-          side="left"
-        />
-        <SuburbAspectsPanel
-          name={suburbB}
-          aspects={data.aspectsB}
-          reddit={data.redditB}
-          accent={ACCENT_B}
-          side="right"
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className={mobileTab === "a" ? "block" : "hidden md:block"}>
+          <SuburbAspectsPanel
+            name={suburbA}
+            aspects={data.aspectsA}
+            reddit={data.redditA}
+            accent={ACCENT_A}
+            side="left"
+          />
+        </div>
+        <div className={mobileTab === "b" ? "block" : "hidden md:block"}>
+          <SuburbAspectsPanel
+            name={suburbB}
+            aspects={data.aspectsB}
+            reddit={data.redditB}
+            accent={ACCENT_B}
+            side="right"
+          />
+        </div>
       </div>
     </div>
   );
@@ -623,10 +641,12 @@ function RowsLayout({
   suburbA,
   suburbB,
   data,
+  mobileTab,
 }: {
   suburbA: string;
   suburbB: string;
   data: CompareData;
+  mobileTab: "a" | "b";
 }) {
   return (
     <div className="flex flex-col gap-3 p-6">
@@ -636,14 +656,17 @@ function RowsLayout({
         return (
           <div
             key={d.key}
-            className="grid items-center gap-4 rounded-[10px] border border-border bg-bg p-4"
-            style={{ gridTemplateColumns: "240px 1fr 1fr" }}
+            className="grid items-center gap-4 rounded-[10px] border border-border bg-bg p-4 grid-cols-[1fr] md:grid-cols-[240px_1fr_1fr]"
           >
             <div>
               <div className="text-[14px] font-semibold tracking-[-0.01em]">{d.label}</div>
             </div>
-            <DimSide name={suburbA} value={va} accent={ACCENT_A} winning={va >= vb} />
-            <DimSide name={suburbB} value={vb} accent={ACCENT_B} winning={vb >= va} />
+            <div className={mobileTab === "a" ? "block" : "hidden md:block"}>
+              <DimSide name={suburbA} value={va} accent={ACCENT_A} winning={va >= vb} />
+            </div>
+            <div className={mobileTab === "b" ? "block" : "hidden md:block"}>
+              <DimSide name={suburbB} value={vb} accent={ACCENT_B} winning={vb >= va} />
+            </div>
           </div>
         );
       })}
@@ -666,6 +689,7 @@ function CompareReport({
   const [loading, setLoading] = useState(true);
   const [hoverDim, setHoverDim] = useState<string | null>(null);
   const [layout, setLayout] = useState<"split" | "rows">("split");
+  const [mobileTab, setMobileTab] = useState<"a" | "b">("a");
 
   useEffect(() => {
     if (!suburbA || !suburbB) return;
@@ -704,59 +728,70 @@ function CompareReport({
   }, [suburbA, suburbB, payloads]);
 
   const winner = data ? (data.a.score >= data.b.score ? suburbA : suburbB) : null;
-  const delta = data ? Math.abs(data.a.score - data.b.score) : 0;
+  const delta = data ? Math.abs(data.a.score - data.b.score).toFixed(2) : 0;
 
   return (
     <>
       {/* HEADER */}
-      <div className="flex items-center gap-4 border-b border-border bg-bg px-6 py-4 shrink-0">
-        <div className="flex flex-1 items-center gap-3.5">
-          <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
-            Detailed report · comparator
-          </span>
-          <div className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.015em]">
-            <span style={{ color: ACCENT_A }}>{suburbA}</span>
-            <span className="font-mono text-[13px] font-normal text-fg-muted">vs</span>
-            <span style={{ color: ACCENT_B }}>{suburbB}</span>
-          </div>
-        </div>
-        <CategoryChip kind="comparator" />
-        <CategoryChip kind="sentiment" />
-        <CategoryChip kind="gis" />
-        <CategoryChip kind="crime" />
-
-        {winner && (
-          <div
-            className="flex items-center gap-2 rounded-lg border px-3 py-1.5"
-            style={{
-              background:
-                "linear-gradient(180deg, oklch(0.97 0.025 285), oklch(0.99 0.01 285))",
-              borderColor: "oklch(0.88 0.05 285)",
-            }}
-          >
-            <span className="font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">
-              verdict
+      <div className="flex flex-col gap-3 border-b border-border bg-bg px-6 py-4 shrink-0 md:flex-row md:items-center md:gap-4">
+        {/* Row 1: title + suburbs + close (mobile) */}
+        <div className="flex items-start justify-between gap-4 md:contents">
+          <div className="flex flex-1 flex-col gap-1 md:flex-row md:items-center md:gap-3.5">
+            <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
+              Detailed report · comparator
             </span>
-            <span className="text-[13px] font-semibold">{winner}</span>
-            <span className="font-mono text-[11px] font-semibold text-accent">+{delta}</span>
+            <div className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.015em]">
+              <span style={{ color: ACCENT_A }}>{suburbA}</span>
+              <span className="font-mono text-[13px] font-normal text-fg-muted">vs</span>
+              <span style={{ color: ACCENT_B }}>{suburbB}</span>
+            </div>
           </div>
-        )}
-
-        {/* Layout toggle */}
-        <div className="flex items-center gap-1 rounded-md border border-border p-[3px]">
-          {(["split", "rows"] as const).map((l) => (
-            <button
-              key={l}
-              type="button"
-              onClick={() => setLayout(l)}
-              className={`cursor-pointer rounded px-2 py-1 font-mono text-[10px] capitalize transition ${layout === l ? "bg-fg text-bg" : "text-fg-muted hover:text-fg"}`}
-            >
-              {l}
-            </button>
-          ))}
+          <div className="shrink-0 md:hidden">
+            <CloseButton onClose={onClose} />
+          </div>
         </div>
 
-        <CloseButton onClose={onClose} />
+        {/* Row 2: chips + verdict + toggle */}
+        <div className="flex flex-wrap items-center gap-2 md:contents">
+          <CategoryChip kind="comparator" />
+          <CategoryChip kind="sentiment" />
+          <CategoryChip kind="gis" />
+          <CategoryChip kind="crime" />
+
+          {winner && (
+            <div
+              className="flex items-center gap-2 rounded-lg border px-3 py-1.5"
+              style={{
+                background:
+                  "linear-gradient(180deg, oklch(0.97 0.025 285), oklch(0.99 0.01 285))",
+                borderColor: "oklch(0.88 0.05 285)",
+              }}
+            >
+              <span className="font-mono text-[10px] uppercase tracking-[0.06em] text-fg-muted">
+                verdict
+              </span>
+              <span className="text-[13px] font-semibold">{winner}</span>
+              <span className="font-mono text-[11px] font-semibold text-accent">+{delta}</span>
+            </div>
+          )}
+
+          <div className="flex items-center gap-1 rounded-md border border-border p-[3px]">
+            {(["split", "rows"] as const).map((l) => (
+              <button
+                key={l}
+                type="button"
+                onClick={() => setLayout(l)}
+                className={`cursor-pointer rounded px-2 py-1 font-mono text-[10px] capitalize transition ${layout === l ? "bg-fg text-bg" : "text-fg-muted hover:text-fg"}`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="hidden md:block">
+          <CloseButton onClose={onClose} />
+        </div>
       </div>
 
       {/* CONTENT */}
@@ -800,6 +835,26 @@ function CompareReport({
                 </div>
               </SectionCard>
             )}
+
+            {/* Mobile tab switcher */}
+            <div className="flex rounded-lg border border-border p-1 md:hidden">
+              {([{ id: "a", name: suburbA, accent: ACCENT_A }, { id: "b", name: suburbB, accent: ACCENT_B }] as const).map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => setMobileTab(t.id)}
+                  className="flex-1 rounded-md py-2 font-mono text-[11px] font-semibold transition"
+                  style={
+                    mobileTab === t.id
+                      ? { background: t.accent, color: "oklch(0.99 0.005 250)" }
+                      : { color: "oklch(0.55 0.012 250)" }
+                  }
+                >
+                  {t.name}
+                </button>
+              ))}
+            </div>
+
             {layout === "split" ? (
               <SplitLayout
                 suburbA={suburbA}
@@ -807,9 +862,10 @@ function CompareReport({
                 data={data}
                 hoverDim={hoverDim}
                 setHoverDim={setHoverDim}
+                mobileTab={mobileTab}
               />
             ) : (
-              <RowsLayout suburbA={suburbA} suburbB={suburbB} data={data} />
+              <RowsLayout suburbA={suburbA} suburbB={suburbB} data={data} mobileTab={mobileTab} />
             )}
           </div>
         )}

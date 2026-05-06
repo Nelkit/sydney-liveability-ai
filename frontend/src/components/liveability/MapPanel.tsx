@@ -287,9 +287,12 @@ export function MapPanel({
 
     const tempLayer = L.geoJSON({ type: "FeatureCollection", features: matchingFeatures } as GeoJSON.FeatureCollection);
     try {
-      map.flyToBounds(tempLayer.getBounds().pad(0.25), { maxZoom: 15, duration: 1.1 });
+      const bounds = tempLayer.getBounds();
+      if (bounds.isValid()) {
+        map.flyToBounds(bounds.pad(0.25), { maxZoom: 15, duration: 1.1 });
+      }
     } catch {
-      // Feature has NaN coordinates — skip flyToBounds silently
+      // skip
     }
   }, [activeSuburbs, suburbsGeoJson]);
 
