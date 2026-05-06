@@ -23,7 +23,7 @@ export function EvidenceTrace({ trace }: Props) {
   return (
     <div className="flex flex-col gap-3">
       {/* Horizontal pipeline */}
-      <div className="flex items-stretch">
+      <div className="flex flex-col gap-2 md:flex-row md:items-stretch">
         {structured ? (
           <>
             <PipelineNode label="router" sub={structured.router.note || structured.router.model} ms={structured.router.ms} position="first" />
@@ -39,7 +39,7 @@ export function EvidenceTrace({ trace }: Props) {
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {/* Retrieval breakdown */}
         <div>
           <div className="mb-2 font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">retrieval</div>
@@ -89,13 +89,13 @@ function PipelineNode({
   label: string; sub: string; ms: number; position: "first" | "middle" | "last";
 }) {
   const radius =
-    position === "first" ? "rounded-l-lg"
-    : position === "last" ? "rounded-r-lg"
+    position === "first" ? "rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+    : position === "last" ? "rounded-b-lg md:rounded-r-lg md:rounded-b-none"
     : "";
   const border =
     position === "last"
       ? "border border-border"
-      : "border-t border-b border-l border-border";
+      : "border border-border md:border-r-0";
 
   return (
     <div className={`relative flex-1 bg-bg-elev px-3.5 py-3 ${radius} ${border}`}>
@@ -106,7 +106,7 @@ function PipelineNode({
       <div className="overflow-hidden text-ellipsis whitespace-nowrap text-[10.5px] text-fg-muted">{sub}</div>
       <div className="mt-1 font-mono text-[10.5px] text-fg-muted">{ms}ms</div>
       {position !== "last" && (
-        <div className="absolute -right-[7px] top-1/2 z-10 flex size-3.5 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-bg">
+        <div className="absolute -right-[7px] top-1/2 z-10 hidden size-3.5 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-bg md:flex">
           <svg width="8" height="8" viewBox="0 0 14 14">
             <path d="M5 4l3 3-3 3" stroke="currentColor" strokeWidth="1.6" fill="none" strokeLinecap="round" />
           </svg>

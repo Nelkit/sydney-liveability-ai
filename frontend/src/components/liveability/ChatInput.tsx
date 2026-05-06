@@ -47,7 +47,7 @@ export function ChatInput({
   return (
     <div className="border-t border-border px-4 pb-4 pt-3">
       {/* Suggestion chips */}
-      <div className="mb-2.5 flex flex-wrap gap-1.5">
+      <div className="mb-2.5 hidden flex-wrap gap-1.5 sm:flex">
         {SUGGESTION_CHIPS.map((s) => (
           <button
             key={s.label}
