@@ -93,6 +93,18 @@ The system has two hard requirements without which it cannot run:
 
 Everything else either has a working default (`CHROMADB_PATH`, `FRONTEND_URL`) or is optional.
 
+### Clone the repository
+
+```bash
+# SSH
+git clone git@github.com:Nelkit/sydney-liveability-ai.git
+
+# HTTPS
+git clone https://github.com/Nelkit/sydney-liveability-ai.git
+
+cd sydney-liveability-ai
+```
+
 ### Backend
 
 #### Step 1 — Install dependencies
