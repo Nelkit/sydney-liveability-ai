@@ -160,7 +160,7 @@
 
 \section{Executive Summary}\label{1-executive-summary}
 
-\emph{Write this section last. Include one paragraph summarising each of the following: project objectives, data sources, NLP methods, findings, and outcomes.}
+Sydney Liveability AI addresses a practical and underserved need: helping newcomers to Sydney --- international students, migrants, and young professionals --- choose where to live based on evidence rather than anecdote. The project ingests six verified data sources: Reddit r/sydney posts (20,237 records across 563 suburbs via Arc Shift), City of Sydney community consultation PDFs (1,114 chunks across three reports), BOCSAR crime statistics (62 offence categories per suburb), TfNSW GTFS transport timetables (656 Greater Sydney suburbs), OpenStreetMap amenity data (ten POI categories via the Overpass API), and City of Sydney ArcGIS facility and walkability data. The NLP pipeline applies DeBERTa-v3-based aspect-level sentiment analysis across eight liveability dimensions, GoEmotions-based emotion profiling (DistilRoBERTa), and sentence embedding via all-MiniLM-L6-v2 to produce 72,276 ChromaDB chunks for semantic retrieval. A two-crew CrewAI architecture separates offline pre-computation (sentiment, GIS, crime, topic modelling) from a real-time query crew (router, crime, sentiment, GIS, comparator, and synthesiser agents) that answers natural-language questions using Retrieval-Augmented Generation with Claude Sonnet as the synthesis LLM. The RAG evaluation harness ran 15 tier-stratified questions against the deployed system, recording a mean relevance score of 2.75 out of 3, a hallucination rate of 29.8\% on demo-tier questions, and a 93.3\% completion rate (14/15; one timeout due to an upstream LLM parsing failure). The application is deployed at \url{https://sydney-liveability-ai.vercel.app/} and demonstrates a production-grade implementation of agentic RAG with transparent, auditable evidence traces surfaced in the frontend EvidenceDrawer.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -319,6 +319,14 @@ From a privacy standpoint, all Reddit content used was publicly posted and acces
 
 Crime and infrastructure datasets are snapshots from 2024--2026. They do not reflect changes that may have occurred after the ingestion date. The BOCSAR data uses SA4-level geographic groupings for some crime categories, which may not perfectly align with suburb-level granularity.
 
+\textbf{TfNSW GTFS}
+
+The GTFS transport score is derived from a static timetable snapshot and captures scheduled service frequency rather than operational reliability. A suburb scoring highly on departures per hour may still attract negative resident transport sentiment if services run late, are overcrowded, or face frequent trackwork cancellations. This gap between schedule and lived experience is a known limitation of timetable-based transport metrics and is partially addressed by comparing the GTFS score against Reddit transport-aspect sentiment in the Sprint~2 EDA notebook.
+
+The bounding-box filter applied to reduce the 657-entry ABS SAL~2021 NSW dataset to 656 Greater Sydney suburbs (centroid within 150.5--151.4$^\circ$E, 33.4--34.2$^\circ$S) introduces a small number of edge cases: suburbs whose centroid falls outside the box but whose polygon partially overlaps the Greater Sydney metropolitan area may be excluded, and vice versa for boundary suburbs.
+
+The normalised \passthrough{\lstinline!transport\_score!} is within-pool comparative: a score of 0.5 indicates half the peak-hour service frequency of the best-served suburb in the 656-suburb pool, not an absolute national benchmark. Cross-city comparisons using this score are not valid without rescaling.
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{NLP Methods and Techniques}\label{5-nlp-methods-and-techniques}
@@ -330,6 +338,16 @@ All text data was preprocessed using spaCy before entering the NLP pipeline. The
 For RAG ingestion, text was chunked using LangChain\textquotesingle s \passthrough{\lstinline!RecursiveCharacterTextSplitter!} with a chunk size of 200 characters and 20-character overlap. This strategy balances retrieval granularity (small enough to isolate a specific claim) with context preservation (overlap avoids hard cuts mid-sentence). Chunk IDs are deterministic on \passthrough{\lstinline!(source, post\_id, chunk\_index)!}, enabling idempotent re-ingestion without duplicating records in ChromaDB.
 
 \subsection{Considered Approaches: Traditional NLP}\label{52-considered-approaches-traditional-nlp}
+
+Three traditional approaches were reviewed during the design phase as potential baselines for the sentiment and retrieval dimensions.
+
+\textbf{VADER Sentiment Analysis} (Hutto and Gilbert, 2014) is a lexicon-based rule system that assigns positive, negative, and neutral polarity to text. While fast and well-established, VADER produces a single document-level score and cannot attribute sentiment to a specific aspect of a text. A Reddit post saying ``the food is great but rent is brutal'' would receive a near-neutral VADER score, losing the critical distinction between high food-and-cafe sentiment and low affordability sentiment. This limitation makes VADER insufficient for a system requiring 8-dimension aspect-level scores per suburb.
+
+\textbf{LDA Topic Modelling} (Latent Dirichlet Allocation, Blei et al., 2003) was considered for discovering thematic structure in the Reddit corpus. LDA is an unsupervised method that identifies co-occurring word distributions as latent topics. However, LDA performs poorly on short, noisy, and informal Reddit text, which lacks the document length required for stable topic inference. Topic labels also require manual interpretation and produce inconsistent results across different random seeds, limiting reproducibility and evaluation rigour.
+
+\textbf{TF-IDF Keyword Extraction} was considered as a lightweight alternative to semantic search. TF-IDF measures term frequency weighted by inverse document frequency, highlighting distinctive terms per suburb. While useful for exploratory analysis and implemented in the Sprint~2 transport notebook (\passthrough{\lstinline!notebooks/06\_transport\_dimension.ipynb!}) to surface suburb-specific transport vocabulary, TF-IDF has no semantic understanding: it cannot recognise that ``flat'', ``apartment'', and ``unit'' refer to the same concept, or that ``dodgy'' and ``unsafe'' are semantically related to the safety dimension. This limits its utility for retrieval in a system where users ask open-ended natural language questions.
+
+None of these approaches were adopted as primary implementation components because the project's conversational, citation-grounded output requires semantic understanding and cross-source synthesis that lexicon- and frequency-based methods cannot provide.
 
 \subsection{Structured Data Pipeline for Crime Analysis}
 
@@ -491,7 +509,13 @@ The JSON schema is structured for UI consumption: \passthrough{\lstinline!summar
 
 \subsection{Justification: Why Modern Over Traditional}\label{54-justification-why-modern-over-traditional}
 
-Present an academic argument for each design choice: DistilRoBERTa over VADER, sentence embeddings over TF-IDF, RAG over keyword search, and CrewAI for modular orchestration. Cite Lewis et al. (2020), Reimers \& Gurevych (2019), and Hutto \& Gilbert (2014).
+Three properties of the project's output requirements made traditional NLP insufficient as a primary implementation.
+
+\textbf{Semantic routing.} The multi-agent query crew must classify user intent and identify suburb names from natural-language questions. A TF-IDF router would require exhaustive keyword lists and would fail on paraphrased intent (``Is it easy to get around without a car in Glebe?'' does not contain the word ``transport''). The deterministic keyword router used here is fast and cost-free for clear cases; the DeBERTa ABSA model handles ambiguous aspect attribution where lexicon matching would produce neutral scores.
+
+\textbf{Dense retrieval.} Lewis et al.\ (2020) demonstrated that dense retrieval with a learned encoder substantially outperforms sparse BM25 retrieval on knowledge-intensive tasks. ChromaDB semantic search using Reimers and Gurevych (2019) MiniLM embeddings retrieves relevant Reddit chunks even when the query shares no keywords with the stored text. A traditional BM25 retriever would miss ``the T3 Bankstown line is always packed'' when the query asks ``Is public transport crowded?'' because there is no lexical overlap on the key concept.
+
+\textbf{Grounded generation.} The synthesiser must compose a cited, multi-source narrative from heterogeneous structured data (PostgreSQL scores) and unstructured evidence (Reddit quotes). Hutto and Gilbert (2014) note that lexicon-based methods cannot generalise beyond their vocabulary, making them unsuitable for open-ended generation tasks. This compositional generation is an LLM capability with no traditional equivalent. The CrewAI multi-agent pattern, following the modular orchestration principles described by S.\ and Zhang (2024), separates retrieval strategy (specialist agents) from synthesis (the LLM), preventing the model from generating claims it has no evidence for.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -782,11 +806,15 @@ The following extensions are recommended in order of estimated impact:
 
 \textbf{Address Supabase session saturation in production.} During evaluation, the Supabase pooler reached its session limit (\passthrough{\lstinline!EMAXCONNSESSION: max clients reached in session mode!}), causing intermittent SSL connection closures. The \passthrough{\lstinline!NullPool!} patch to \passthrough{\lstinline!backend/db/postgres.py!} resolves this for local evaluation, but production deployments on Render may still accumulate stale sessions. Adding a startup health check and configuring Supabase's idle session timeout would prevent recurrence without requiring manual \passthrough{\lstinline!pg\_terminate\_backend!} intervention.
 
+\textbf{Expand transport scoring to mode-level breakdown.} The current \passthrough{\lstinline!transport\_score!} aggregates all modes (bus, train, metro, light rail, ferry) into a single services-per-hour metric. The \passthrough{\lstinline!TransportScore!} ORM model already includes \passthrough{\lstinline!bus\_stops!}, \passthrough{\lstinline!train\_stations!}, and \passthrough{\lstinline!light\_rail\_stops!} columns (currently null); populating these from the GTFS \passthrough{\lstinline!routes.txt!} route\_type field would enable mode-specific queries (``Does this suburb have train access?'') with grounded answers and improve the GIS agent's scoring resolution.
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Conclusion}\label{9-conclusion}
 
-Summarise the project contributions, lessons learned, and future potential.
+Sydney Liveability AI successfully delivers a working end-to-end NLP application that addresses a genuine and underserved information gap: no existing tool combines scheduled public transport frequency, official crime statistics, facility density, and what residents actually say about their neighbourhoods in a single conversational interface with cited, auditable evidence. The two-crew CrewAI architecture, with a deterministic keyword router as a cost-free first-pass filter and six specialist agents operating in parallel, demonstrates a scalable pattern for agentic RAG that could be extended to additional Australian cities or liveability dimensions without restructuring the core system. The transport dimension contributed a reproducible GTFS-based scoring pipeline for 656 Greater Sydney suburbs and identified, through RAG evaluation, that transport queries carry the highest hallucination rate (42.9\%) among all question categories --- a concrete finding that points directly to where tighter synthesiser prompt constraints are needed.
+
+The project surfaced several lessons that apply beyond the immediate implementation. The gap between scheduled service frequency and lived transport experience is not fully captured by GTFS data alone; Reddit sentiment provides a complementary subjective signal, but the correlation between the two requires explicit measurement rather than assumption. The strict zero-tolerance faithfulness criterion exposed that a 2.75 mean relevance does not guarantee full source traceability: the synthesiser consistently makes plausible contextual inferences from facility counts and sentiment scores that go beyond the literal data returned by agents. Addressing this through richer structured agent outputs --- rather than prompt constraints alone --- is the highest-impact technical next step. The project is open-source, publicly deployed, and structured for community extension.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
