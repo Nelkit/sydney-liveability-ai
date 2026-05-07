@@ -155,7 +155,7 @@
     \hline
     Srinivas & Padmasri & 25536071 & @Psri-01 \\
     \hline
-    Liao & Ying-Kai &  & @Ying-Kai-Liao \\
+    Liao & Ying-Kai & 25729500 & @Ying-Kai-Liao \\
     \hline
   \end{longtable}}
 
@@ -269,6 +269,16 @@ This team member contributed the transport data dimension end-to-end and led the
 The primary contribution was the design and implementation of \passthrough{\lstinline!data\_extraction/extract\_transport.py!}, a reproducible pipeline that derives a normalised peak-hour transport frequency score for 656 Greater Sydney suburbs from the TfNSW GTFS Timetables (Full) dataset. The pipeline spatially joins 48,195 GTFS stops against ABS SAL~2021 suburb polygons using \passthrough{\lstinline!geopandas!}, chunks through the 500\,MB+ \passthrough{\lstinline!stop\_times.txt!} file at 100,000 rows at a time, filters to weekday peak-hour departures (07:00--08:59), and aggregates to a per-suburb mean services-per-hour score normalised 0--1. The resulting \passthrough{\lstinline!data/processed/transport\_scores.json!} was ingested into the \passthrough{\lstinline!transport\_scores!} PostgreSQL table via \passthrough{\lstinline!data\_extraction/ingest\_transport.py!}, which extended the ORM model with two GTFS-specific columns via Alembic migration \passthrough{\lstinline!20260428\_0006!} and performs idempotent upserts tagged \passthrough{\lstinline!source='gtfs'!}.
 
 A secondary contribution was the Sprint~4 evaluation harness: \passthrough{\lstinline!evaluation/evaluate\_rag.py!} runs 15 tier-stratified questions through \passthrough{\lstinline!/api/chat!}, records full response payloads, and embeds aggregated metrics (relevance, hallucination rate, blockquote compliance, latency) into a single UI-ready \passthrough{\lstinline!data/eval/rag\_evaluation.json!}. The evaluation produced a mean relevance score of 2.75 and a hallucination rate of 29.8\% across demo-tier questions, with qualitative findings on suburb-scoping bugs and Supabase session saturation that informed backend patches during the final sprint.
+
+\subsection{Ying-Kai Liao}\label{ying-kai-liao}
+
+This team member owned the Reddit data layer, the offline NLP pipeline, and the agentic RAG rework of the query crew.
+
+The Reddit contribution pivoted extraction from the rate-limited PRAW path to the Arctic Shift NDJSON bulk dump (\passthrough{\lstinline!data\_extraction/download\_arctic\_shift.py!}), partitioning records per suburb by case-insensitive string matching against post and comment text and normalising both paths to a single record schema. The pipeline currently produces 565 per-suburb extraction files and 563 matching analysis files under \passthrough{\lstinline!data/processed/reddit/!}, with the Reddit corpus EDA in \passthrough{\lstinline!notebooks/07\_reddit\_eda.ipynb!} backing §6.4.
+
+The NLP pipeline contribution implemented \passthrough{\lstinline!backend/core/nlp/pipeline.py!} and its four staged modules: BART-MNLI zero-shot aspect classification over eight liveability dimensions, DeBERTa-v3 ABSA with a 0.55 confidence floor and 10-word minimum guarding ABSA's weakness on terse Reddit text, GoEmotions emotion profiling, MiniLM-based coverage detection that distinguishes ``topic not discussed'' from ``aspect mismatch'' via cosine similarity to per-dimension prototype sentences, and a deterministic cross-modal fallback that routes silent dimensions to BOCSAR, OSM, or ArcGIS so the schema never fabricates a value. Post-count confidence scoring dampens shallow-evidence suburbs in the per-suburb aggregate.
+
+The agentic RAG contribution replaced the scripted query orchestrator with a planner-driven agent loop. The Sentiment agent (\passthrough{\lstinline!backend/agents/query/sentiment.py!}) was reworked into a CrewAI ReAct agent that adaptively chooses among three retrieval tools (\passthrough{\lstinline!search\_posts!}, \passthrough{\lstinline!get\_suburb\_aspect!}, \passthrough{\lstinline!compare\_suburbs!}), and evidence tracing was redesigned as a per-call \passthrough{\lstinline!ContextVar!} side channel that records each tool invocation as a \passthrough{\lstinline!TraceEntry!} mirroring what the agent actually did, satisfying Du et al.\ (2026)'s three principles of agentic autonomy without constraining the loop.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
