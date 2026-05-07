@@ -151,9 +151,9 @@ export function OnboardingPanel({
               {/* Stat bar */}
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { value: "40k+", label: "Reddit posts indexed" },
+                  { value: "20k+", label: "Reddit posts indexed" },
                   { value: "600+", label: "Sydney suburbs scored" },
-                  { value: "5",    label: "Live data sources" },
+                  { value: "6",    label: "Live data sources" },
                 ].map(({ value, label }) => (
                   <div key={label} className="flex flex-col items-center gap-1 rounded-2xl border border-border bg-bg px-4 py-5 shadow-float">
                     <span className="text-[32px] font-extrabold tracking-tight text-fg">{value}</span>
@@ -179,6 +179,7 @@ export function OnboardingPanel({
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {[
                     { kind: "reddit" as const, title: "Reddit r/sydney", desc: "40k+ posts · MiniLM semantic search" },
+                    { kind: "pdf" as const, title: "City of Sydney Community Reports", desc: "557 excerpts · 11 themes · MiniLM semantic search" },
                     { kind: "bocsar" as const, title: "BOCSAR",           desc: "Crime incidents by suburb · 2024" },
                     { kind: "arcgis" as const, title: "ArcGIS",           desc: "City of Sydney facilities & parks · 2026" },
                     { kind: "osm"    as const, title: "OpenStreetMap",    desc: "Cafes, schools, hospitals, pharmacies · 2026" },
@@ -218,7 +219,7 @@ export function OnboardingPanel({
                   <div className="rounded-2xl border border-border bg-bg-elev p-4 shadow-float">
                     <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.07em] text-fg-muted">Stack</div>
                     <div className="flex flex-wrap gap-1.5">
-                      {["Next.js", "FastAPI", "PostGIS", "ChromaDB", "CrewAI", "Claude", "LangChain", "Leaflet"].map((t) => (
+                      {["Next.js", "FastAPI", "PostGIS", "ChromaDB", "CrewAI", "LLM", "LangChain", "Leaflet"].map((t) => (
                         <span key={t} className="rounded-full border border-border bg-bg px-2.5 py-0.5 font-mono text-[10.5px] text-fg">
                           {t}
                         </span>
