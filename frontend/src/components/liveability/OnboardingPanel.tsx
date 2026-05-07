@@ -151,9 +151,9 @@ export function OnboardingPanel({
               {/* Stat bar */}
               <div className="grid grid-cols-3 gap-4">
                 {[
-                  { value: "40k+", label: "Reddit posts indexed" },
+                  { value: "20k+", label: "Reddit posts indexed" },
                   { value: "600+", label: "Sydney suburbs scored" },
-                  { value: "5",    label: "Live data sources" },
+                  { value: "6",    label: "Live data sources" },
                 ].map(({ value, label }) => (
                   <div key={label} className="flex flex-col items-center gap-1 rounded-2xl border border-border bg-bg px-4 py-5 shadow-float">
                     <span className="text-[32px] font-extrabold tracking-tight text-fg">{value}</span>
@@ -179,6 +179,7 @@ export function OnboardingPanel({
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {[
                     { kind: "reddit" as const, title: "Reddit r/sydney", desc: "40k+ posts · MiniLM semantic search" },
+                    { kind: "pdf" as const, title: "City of Sydney Community Reports", desc: "557 excerpts · 11 themes · MiniLM semantic search" },
                     { kind: "bocsar" as const, title: "BOCSAR",           desc: "Crime incidents by suburb · 2024" },
                     { kind: "arcgis" as const, title: "ArcGIS",           desc: "City of Sydney facilities & parks · 2026" },
                     { kind: "osm"    as const, title: "OpenStreetMap",    desc: "Cafes, schools, hospitals, pharmacies · 2026" },
@@ -218,7 +219,7 @@ export function OnboardingPanel({
                   <div className="rounded-2xl border border-border bg-bg-elev p-4 shadow-float">
                     <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.07em] text-fg-muted">Stack</div>
                     <div className="flex flex-wrap gap-1.5">
-                      {["Next.js", "FastAPI", "PostGIS", "ChromaDB", "CrewAI", "Claude", "LangChain", "Leaflet"].map((t) => (
+                      {["Next.js", "FastAPI", "PostGIS", "ChromaDB", "CrewAI", "LLM", "LangChain", "Leaflet"].map((t) => (
                         <span key={t} className="rounded-full border border-border bg-bg px-2.5 py-0.5 font-mono text-[10.5px] text-fg">
                           {t}
                         </span>
@@ -351,6 +352,22 @@ export function OnboardingPanel({
           </div>
         )}
       </div>
+
+      <footer className="shrink-0 border-t border-border px-6 py-3 flex items-center justify-center gap-2 text-[11px] text-fg-muted font-mono">
+        <span>© {new Date().getFullYear()} Sydney Liveability AI</span>
+        <span className="text-border select-none">·</span>
+        <a
+          href="https://github.com/Nelkit/sydney-liveability-ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 rounded-full border border-border bg-bg px-2.5 py-1 text-fg shadow-float transition hover:border-fg hover:shadow-none"
+        >
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+          GitHub
+        </a>
+      </footer>
     </motion.section>
   );
 }

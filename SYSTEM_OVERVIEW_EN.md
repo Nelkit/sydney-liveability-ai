@@ -691,7 +691,7 @@ linear-gradient(180deg, #eff2f8, #e9edf6)
 
 ### Reddit r/sydney
 - **Source:** Reddit API via PRAW
-- **Volume:** 40k+ posts and comments
+- **Volume:** 20k+ posts and comments
 - **Scripts:** `data_extraction/extract_reddit.py`
 - **Processing pipeline:**
   1. Raw extraction via PRAW
@@ -801,7 +801,7 @@ This is not a single LLM answering general questions. The system has specialised
 Every response includes a pipeline trace: which agents ran, how many chunks were retrieved, latency per specialist. The user can see exactly where each claim came from.
 
 ### Multi-source grounding
-Responses combine quantitative data (crime counts, transport scores, OSM amenity counts) with qualitative sentiment (40k+ Reddit posts embedded and retrieved by semantic relevance). This produces richer answers than any single source alone.
+Responses combine quantitative data (crime counts, transport scores, OSM amenity counts) with qualitative sentiment (20k+ Reddit posts embedded and retrieved by semantic relevance). This produces richer answers than any single source alone.
 
 ### Customisable scoring
 The user defines their own weights for 5 dimensions. The map and ranking are recalculated instantly (in Python, without a DB call thanks to the cache).
