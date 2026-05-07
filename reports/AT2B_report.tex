@@ -40,8 +40,11 @@
 % Section heading colours
 \usepackage{titlesec}
 \titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{1.8em}{0.8em}
 \titleformat{\subsection}{\large\bfseries\color{darkgray}}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{1.4em}{0.6em}
 \titleformat{\subsubsection}{\normalsize\bfseries\color{darkgray}}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{1.0em}{0.4em}
 
 \usepackage{hyperref}
 \usepackage{xurl}
@@ -56,6 +59,7 @@
 }
 
 \setstretch{1.15}
+\setlength{\parskip}{0.6em}
 \setlength{\emergencystretch}{3em}
 \makeatletter
 \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
@@ -98,7 +102,7 @@
 \newcommand{\subjectcode}{36118 Applied Natural Language Processing}
 \newcommand{\course}{Master of Data Science and Innovation, UTS}
 \newcommand{\assessment}{Assessment Task 2B}
-\newcommand{\reporttitle}{End-to-End NLP Project --- Technical Report}
+\newcommand{\reporttitle}{End-to-End NLP Project: Technical Report}
 \newcommand{\projectname}{Sydney Liveability Explorer}
 \newcommand{\duedate}{Monday, 4 May 2026, 23:59}
 \newcommand{\groupname}{Group 3, Autumn 2026}
@@ -129,7 +133,7 @@
 
   \begin{tabularx}{\textwidth}{>{\bfseries}lX}
     Subject & \subjectcode \\
-    Submission & AT2 Part B --- Group Technical Report \\
+    Submission & AT2 Part B: Group Technical Report \\
     Due Date & \duedate \\
     Group & \groupname \\
     GitHub Repository & \githublink \\
@@ -162,27 +166,40 @@
   \vfill
 \end{titlepage}
 
-\tableofcontents
+{\setlength{\parskip}{0pt}\tableofcontents}
 \newpage
 
+\clearpage
 \section{Executive Summary}\label{1-executive-summary}
 
-Sydney Liveability AI addresses a practical and underserved need: helping newcomers to Sydney --- international students, migrants, and young professionals --- choose where to live based on evidence rather than anecdote. The project ingests six verified data sources: Reddit r/sydney posts (20,237 records across 563 suburbs via Arc Shift), City of Sydney community consultation PDFs (1,114 chunks across three reports), BOCSAR crime statistics (62 offence categories per suburb), TfNSW GTFS transport timetables (656 Greater Sydney suburbs), OpenStreetMap amenity data (ten POI categories via the Overpass API), and City of Sydney ArcGIS facility and walkability data. The NLP pipeline applies DeBERTa-v3-based aspect-level sentiment analysis across eight liveability dimensions, GoEmotions-based emotion profiling (DistilRoBERTa), and sentence embedding via all-MiniLM-L6-v2 to produce 72,276 ChromaDB chunks for semantic retrieval. A two-crew CrewAI architecture separates offline pre-computation (sentiment, GIS, crime, topic modelling) from a real-time query crew (router, crime, sentiment, GIS, comparator, and synthesiser agents) that answers natural-language questions using an LLM-agnostic model for response synthesis. The RAG evaluation harness ran 15 tier-stratified questions against the deployed system, recording a mean relevance score of 2.75 out of 3, a hallucination rate of 29.8\% on demo-tier questions, and a 93.3\% completion rate (14/15; one timeout due to an upstream LLM parsing failure). The application is deployed at \url{https://sydney-liveability-ai.vercel.app/} and demonstrates a production-grade implementation of agentic RAG with transparent, auditable evidence traces surfaced in the frontend EvidenceDrawer.
+Sydney Liveability AI addresses a practical and underserved need: helping newcomers to Sydney, including international students, migrants, and young professionals, choose where to live based on evidence rather than anecdote. The project ingests six verified data sources: Reddit r/sydney posts (+20k records across 563 suburbs via Arc Shift), City of Sydney community consultation PDFs (1,114 chunks across three reports), BOCSAR crime statistics (62 offence categories per suburb), TfNSW GTFS transport timetables (656 Greater Sydney suburbs), OpenStreetMap amenity data (ten POI categories via the Overpass API), and City of Sydney ArcGIS facility and walkability data.
+
+The NLP pipeline applies DeBERTa-v3-based aspect-level sentiment analysis across eight liveability dimensions, GoEmotions-based emotion profiling (DistilRoBERTa), and sentence embedding via all-MiniLM-L6-v2 to produce 72,276 ChromaDB chunks for semantic retrieval. A two-crew CrewAI architecture separates offline pre-computation (sentiment, GIS, crime, topic modelling) from a real-time query crew comprising router, crime, sentiment, GIS, comparator, and synthesiser agents that answer natural-language questions using an LLM-agnostic model for response synthesis.
+
+The RAG evaluation harness ran 15 tier-stratified questions against the deployed system, recording a mean relevance score of 2.75 out of 3, a hallucination rate of 29.8\% on demo-tier questions, and a 93.3\% completion rate (14/15; one timeout due to an upstream LLM parsing failure). The application is deployed at \url{https://sydney-liveability-ai.vercel.app/} and demonstrates a production-grade implementation of agentic RAG with transparent, auditable evidence traces surfaced in the frontend EvidenceDrawer.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{Project Objectives and Scope}\label{2-project-objectives-and-scope}
 
-Sydney Liveability AI addresses a practical and underserved need: helping newcomers to Sydney, including international students, migrants, and young professionals, choose where to live based on evidence rather than anecdote. Existing tools such as Domain or Google Maps provide price and location data, but no tool synthesises what residents actually say about their neighbourhoods with objective civic data about safety, transport, and infrastructure in a queryable, plain-language interface.
+This project set out to design, build, and evaluate an end-to-end NLP application that enables evidence-based suburb selection in Sydney. The primary objectives were:
 
-The project builds a two-layer application. The first layer is an offline NLP pipeline that ingests six verified data sources, runs aspect-level sentiment analysis, generates sentence embeddings, and stores structured results in PostgreSQL and ChromaDB. The second layer is a real-time multi-agent reasoning system that answers natural language questions grounded in that pre-computed evidence, visualised through an interactive suburb-level dashboard.
+\begin{itemize}
+\item To construct a multi-source data pipeline ingesting resident opinion (Reddit), official crime records (BOCSAR), public transport timetables (TfNSW GTFS), geospatial amenity data (OpenStreetMap), government facility data (City of Sydney ArcGIS), and community consultation documents (City of Sydney PDFs).
+\item To apply transformer-based aspect-level sentiment analysis across eight liveability dimensions, producing per-suburb scores grounded in resident discourse rather than editorial summaries.
+\item To implement a semantic retrieval layer using sentence embeddings and ChromaDB, enabling the system to surface relevant resident quotes and document extracts in response to natural-language queries.
+\item To build a multi-agent reasoning pipeline (CrewAI) that coordinates specialised agents for crime, sentiment, GIS, and comparison tasks, with Retrieval-Augmented Generation as the synthesis layer.
+\item To evaluate the system against a curated set of natural-language questions, measuring retrieval relevance, hallucination rate, and response completeness.
+\item To deliver a publicly accessible, interactive dashboard that presents suburb-level liveability data in a transparent and auditable interface.
+\end{itemize}
 
 \textbf{In scope for this submission:}
 
 \begin{itemize}
 \tightlist
 \item
-  Aspect-level sentiment analysis over Reddit r/sydney posts (40k+ records) using a transformer-based ABSA model across 8 liveability dimensions.
+  Aspect-level sentiment analysis over Reddit r/sydney posts (+20k records across 563 suburbs) using a transformer-based ABSA model across 8 liveability dimensions.
 \item
   Sentence embedding and semantic retrieval via ChromaDB (72,000+ indexed chunks).
 \item
@@ -207,6 +224,7 @@ The project builds a two-layer application. The first layer is an offline NLP pi
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{Project Phases and Team Contributions}\label{3-project-phases-and-team-contributions}
 
 The project was developed over five phases from data ingestion through to evaluation and reporting. Responsibilities were distributed across the team according to each member\textquotesingle s technical focus area.
@@ -223,7 +241,7 @@ The project was developed over five phases from data ingestion through to evalua
 \endlastfoot
 Phase 1: Data & Data acquisition and preprocessing from Reddit (Arc Shift), Community Insights PDF, BOCSAR CSV, TfNSW GTFS, OpenStreetMap (Overpass API), and City of Sydney ArcGIS. & All members \\
 \hline
-Phase 2: NLP Pipeline & Aspect-level sentiment analysis (DeBERTa-v3 ABSA), sentence embeddings (MiniLM), ChromaDB ingestion, spaCy preprocessing, emotion profiling (GoEmotions), coverage detection. & Juan David Rodriguez, Ying-Kai Liao \\
+Phase 2: NLP Pipeline & Aspect-level sentiment analysis (DeBERTa-v3 ABSA), sentence embeddings (MiniLM), ChromaDB ingestion, emotion profiling (GoEmotions), coverage detection. & Juan David Rodriguez, Ying-Kai Liao \\
 \hline
 Phase 3: Multi-Agent Pipeline & CrewAI pipeline crew (pre-computation) and query crew (real-time), FastAPI backend, RAG with Open Router API, Synthesiser and Router agents. & All members \\
 \hline
@@ -250,7 +268,7 @@ Primary contributions included the design and implementation of the Synthesiser 
 
 Backend contributions also included the GIS agent data layer, the full FastAPI endpoint architecture (\passthrough{\lstinline!/api/civic!}, \passthrough{\lstinline!/api/chat!}, \passthrough{\lstinline!/api/chat/stream!}), and the in-memory caching system with double-checked locking that prevents connection pool exhaustion on Supabase by loading all suburb data once and applying weight changes in pure Python on subsequent requests. A standalone data contribution was the civic ingestion pipeline: facility data from the City of Sydney ArcGIS REST API and walkability scores from the WalkScore API were cleaned, spatially joined with suburb polygons, and ingested into the \passthrough{\lstinline!suburbs!} PostgreSQL table with PostGIS geometry, forming the primary data source consumed by the GIS agent.
 
-On the frontend, this team member designed and built the three-column main layout, the \passthrough{\lstinline!OnboardingPanel!} conversational weight-setting flow, the \passthrough{\lstinline!MapPanel!} with Leaflet polygon rendering and \passthrough{\lstinline!flyToBounds!} behaviour, the \passthrough{\lstinline!EvidenceDrawer!} pipeline trace panel, the \passthrough{\lstinline!ReportModal!} for individual and comparative reports, and the application-wide OKLCH design system with Framer Motion transitions.
+On the frontend, this team member designed and built the three-column main layout, the \passthrough{\lstinline!OnboardingPanel!} conversational weight-setting flow, the \passthrough{\lstinline!MapPanel!} with Leaflet polygon rendering and \passthrough{\lstinline!flyToBounds!} behaviour, the \passthrough{\lstinline!EvidenceDrawer!} pipeline trace panel, the \passthrough{\lstinline!ReportModal!} for individual and comparative reports, and the application-wide design system ensuring visual consistency across all interface components.
 
 \subsection{Luis Gerardo Robinson Herrera}\label{luis-gerardo-robinson-herrera}
 
@@ -268,52 +286,39 @@ The primary contribution was the design and implementation of \passthrough{\lsti
 
 A secondary contribution was the Sprint~4 evaluation harness: \passthrough{\lstinline!evaluation/evaluate\_rag.py!} runs 15 tier-stratified questions through \passthrough{\lstinline!/api/chat!}, records full response payloads, and embeds aggregated metrics (relevance, hallucination rate, blockquote compliance, latency) into a single UI-ready \passthrough{\lstinline!data/eval/rag\_evaluation.json!}. The evaluation produced a mean relevance score of 2.75 and a hallucination rate of 29.8\% across demo-tier questions, with qualitative findings on suburb-scoping bugs and Supabase session saturation that informed backend patches during the final sprint.
 
+\subsection{Nian-Ya Weng}\label{nian-ya-weng}
+
+This team member contributed to the crime data pipeline, covering data acquisition, cleaning, structured ingestion, and agent implementation.
+
+The primary contribution was the identification and processing of suburb-level crime data from BOCSAR. A suburb-level dataset (\passthrough{\lstinline!SuburbData25Q4.csv!}) was sourced directly from the BOCSAR Open Datasets portal and aggregated across the most recent 24 months (January 2024 to December 2025) into a single \passthrough{\lstinline!incident\_count!} per suburb per crime category. The cleaned output (\passthrough{\lstinline!data/processed/bocsar\_clean.csv!}) contains 62 offence categories per suburb.
+
+A secondary contribution was the implementation of the ingestion script (\passthrough{\lstinline!backend/scripts/ingest\_bocsar.py!}), which maps the cleaned CSV to the \passthrough{\lstinline!Bocsar!} ORM model and writes the results into the PostgreSQL \passthrough{\lstinline!bocsar!} table. The Crime agent (\passthrough{\lstinline!backend/agents/query/crime.py!}) was also implemented, replacing the placeholder with real SQLAlchemy queries that return per-suburb crime summaries and year-on-year trend signals to the Synthesiser.
+
+Exploratory data analysis is documented in \passthrough{\lstinline!notebooks/01\_bocsar\_clean.ipynb!} and \passthrough{\lstinline!notebooks/01\_eda\_and\_cleaning.ipynb!}, including suburb-level visualisations.
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \section{Data Sources}\label{4-data-sources}
 
 \subsection{Primary Data Sources}\label{41-primary-data-sources}
 
-The pipeline ingests six distinct data sources, each contributing a different dimension of liveability evidence.
+The pipeline ingests six data sources, each contributing a distinct liveability dimension.
 
-\textbf{Community Insights PDF}
+\textbf{Community Insights PDF.} Three City of Sydney PDFs (Community Insights Report 2024, Haymarket Vision Engagement Report, Haymarket Summary) were parsed into 1,114 thematic chunks covering themes such as transport, housing, safety, and public spaces. Chunks were embedded into ChromaDB to support RAG retrieval. Raw survey microdata was not publicly available, so this source plays a complementary role, enriching evidence where Reddit coverage is sparse.
 
-This source is an official qualitative data source comprising three PDF documents published by the City of Sydney: the Community Insights Report 2024, the Haymarket Vision Engagement Report, and the Haymarket Summary. These reports capture structured resident feedback gathered through formal consultation processes, covering themes such as transport, housing, public spaces, environment, culture, safety, and social inclusion across suburbs including Haymarket, Sydney, Redfern, Belmore, Ultimo, Burwood, and Camperdown.
+\textbf{Reddit r/sydney (via PRAW and Arc Shift).} Resident opinion was collected via two paths: the PRAW API for live posts and the Arc Shift bulk NDJSON archive for historical content. Both paths were normalised to the same record schema and filtered to a minimum score of 2, yielding 20,423 records across 563 Greater Sydney suburbs.
 
-Raw PDFs were processed using a custom Python parser (\passthrough{\lstinline!data\_extraction/parse\_pdf.py!}) that extracted and segmented text into thematic chunks, tagging each record with its source document, suburb, theme, and page number. The pipeline produced four JSON files containing a total of 1,114 records across the three source documents. These structured records were subsequently ingested into ChromaDB as sentence embeddings, enabling the RAG pipeline to retrieve suburb-specific qualitative evidence in response to user queries.
+\textbf{BOCSAR Crime Statistics.} The BOCSAR \emph{Recorded Criminal Incidents by Month, by Suburb} dataset (April 2025 release) was filtered to the most recent 24 months (January 2024 to December 2025), retaining 62 offence categories per suburb.
 
-This source provides a dimension of liveability insight that quantitative datasets cannot capture: the lived experience and stated priorities of Sydney residents as documented by their local government. Its official provenance and thematic breadth make it a high-quality complement to the sentiment data collected from Reddit.
+\textbf{TfNSW GTFS / Transport.} Static GTFS timetable feeds were used to compute per-suburb counts of bus stops, train stations, light rail stops, and bike path kilometres, alongside average commute time and services per hour, normalised into a single transport score covering 656 Greater Sydney suburbs.
 
-It is important to note that the project originally intended to access the raw survey response data underlying the Community Insights reports. However, the City of Sydney does not make this dataset publicly available. As a result, the chunks derived from the Community Insights PDFs serve a complementary role, enriching the evidence base where Reddit coverage is sparse, rather than functioning as a primary quantitative source.
+\textbf{OpenStreetMap (OSM via Overpass API).} Ten amenity categories (cafe, restaurant, gym, school, hospital, pharmacy, library, park, playground, sports centre) were extracted via the Overpass API and normalised into a per-suburb OSM amenity score.
 
-\textbf{Reddit r/sydney (via PRAW and Arc Shift)}
-
-The Reddit corpus was collected through two complementary extraction paths, both normalised to the same record schema (\passthrough{\lstinline!text!}, \passthrough{\lstinline!suburb!}, \passthrough{\lstinline!score!}, \passthrough{\lstinline!created\_utc!}, \passthrough{\lstinline!url!}, \passthrough{\lstinline!type!}). The first path used the PRAW API against the live r/sydney feed, issuing eight aspect-targeted keyword searches per suburb. The second path used the Arc Shift bulk NDJSON archive of historical r/sydney content, partitioned per suburb via string matching against post and comment text. A minimum score threshold of 2 removed low-signal noise without discarding useful short-form resident comments. The pipeline currently covers 565 per-suburb extraction files and 563 matching analysis files under \passthrough{\lstinline!data/processed/reddit/!} and \passthrough{\lstinline!data/processed/reddit\_analyses/!}, covering 40,000+ posts and comments.
-
-\textbf{BOCSAR Crime Statistics}
-
-The primary crime data source for this project is the Bureau of Crime Statistics and Research (BOCSAR), a NSW government agency that publishes open criminal incident datasets. The dataset used is the \emph{Recorded Criminal Incidents by Month --- by Suburb}, downloaded from the BOCSAR Open Datasets portal in April 2025.
-
-The raw file (\passthrough{\lstinline!SuburbData25Q4.csv!}) covers criminal incidents from January 1995 to December 2025, spanning 4,508 NSW suburbs across 279,496 rows and 375 columns. The file size is approximately 432.8 MB.
-
-For this project, only the most recent 24 months of data (January 2024 to December 2025) were retained to ensure relevance to current liveability conditions, covering 62 offence categories per suburb.
-
-Each row records the average monthly incident count (\passthrough{\lstinline!incident\_count!}) for a specific crime type within a suburb, computed across the 24-month window.
-\textbf{TfNSW GTFS / Transport}
-
-Transport data was sourced from TfNSW GTFS feeds combined with OSM transit data (2026). The ingestion pipeline (\passthrough{\lstinline!data\_extraction/extract\_transport.py!}) populates the \passthrough{\lstinline!transport\_scores!} table with bus stops, train stations, light rail stops, bike path kilometres, average commute minutes, average services per hour, and a normalised transport score per suburb.
-
-\textbf{OpenStreetMap (OSM via Overpass API)}
-
-Amenity counts were extracted from OpenStreetMap using the Overpass API and OSMNX (2026). Amenity categories include cafe, restaurant, gym, school, hospital, pharmacy, library, park, playground, and sports centre. These are stored in the \passthrough{\lstinline!osm\_scores!} table and contribute to the GIS agent\textquotesingle s composite infrastructure score:
+\textbf{City of Sydney ArcGIS.} Facility data (libraries, car-share bays, mobility parking, sports facilities) and walkability scores were retrieved from the ArcGIS REST API and stored with PostGIS geometry, enabling map rendering and CBD proximity scoring. The OSM, ArcGIS, and transport scores are combined into a composite GIS score:
 
 \begin{lstlisting}
 combined_score = (facilities_score * 0.35) + (osm_score * 0.35) + (transport_score * 0.30)
 \end{lstlisting}
-
-\textbf{City of Sydney ArcGIS}
-
-City of Sydney facility data was retrieved from the ArcGIS REST API (2026), including libraries, car-share bays, mobility parking, sports facilities, and walkability scores per suburb. These are stored in the \passthrough{\lstinline!suburbs!} table with PostGIS geometry (MultiPolygon, EPSG:4326), enabling the map layer and CBD proximity scoring via \passthrough{\lstinline!ST\_Distance!}.
 
 \subsection{Data Limitations and Ethical Considerations}\label{42-data-limitations-and-ethical-considerations}
 
@@ -343,9 +348,7 @@ The normalised \passthrough{\lstinline!transport\_score!} is within-pool compara
 
 \textbf{OpenStreetMap and City of Sydney ArcGIS}
 
-Both the OSM and ArcGIS data sources are subject to currency and accuracy limitations inherent to their respective platforms. OpenStreetMap is a community-maintained dataset: coverage quality varies significantly by suburb, and individual features may be missing, mislabelled, or outdated depending on local contributor activity. The City of Sydney ArcGIS datasets are maintained by a government agency, where the cost and effort of continuous updates means that some layers reflect a point-in-time snapshot that may not capture recent infrastructure changes. Because the two sources are drawn from separate datasets with independent update cycles, the combined GIS score may reflect a mix of data from different reference dates, introducing inconsistencies that are difficult to detect or correct at ingestion time.
-
-A further limitation is that neither source follows a single, stable data standard. Each ArcGIS layer exposes its own field names, geometry types, and pagination behaviour, while OSM amenity categories are defined by community convention rather than a formal schema. This structural heterogeneity makes the ingestion pipeline inherently fragile: a change in field naming, API versioning, or category taxonomy in either source can break extraction silently, producing null or incorrect values rather than an explicit error. Robust re-ingestion therefore requires schema validation and regression checks at each pipeline run, which were not fully automated within the scope of this project.
+Both sources share two structural limitations. First, neither guarantees currency: OSM relies on volunteer contributors whose coverage varies by suburb, while ArcGIS layers are government point-in-time snapshots that may not reflect recent infrastructure changes. Because their update cycles are independent, the combined GIS score may mix data from different reference dates. Second, neither follows a stable data standard: ArcGIS layers expose heterogeneous field names, geometry types, and pagination behaviour, while OSM amenity categories are defined by community convention rather than a formal schema. A change in field naming, API versioning, or category taxonomy in either source can break extraction silently, producing null values rather than an explicit error. Schema validation and regression checks at each pipeline run were not fully automated within the scope of this project.
 
 
 
@@ -377,9 +380,9 @@ Two complementary extraction paths feed a single per-suburb JSON shape under \pa
 
 The pipeline currently covers 565 per-suburb extraction files in \passthrough{\lstinline!data/processed/reddit/!} and 563 matching analysis files in \passthrough{\lstinline!data/processed/reddit\_analyses/!}. A floor of \passthrough{\lstinline!score >= 2!} removes the bulk of low-signal noise without dropping useful one-line residents\textquotesingle{} comments.
 
-\subsubsection{Aspect-Level Sentiment Analysis (DistilRoBERTa)}\label{532-aspect-level-sentiment-analysis-distilroberta}
+\subsubsection{Aspect-Level Sentiment Analysis (DeBERTa-v3)}\label{532-aspect-level-sentiment-analysis-deberta}
 
-The per-suburb analysis (\passthrough{\lstinline!backend/core/nlp/pipeline.py!}) runs four transformer-backed stages followed by a deterministic cross-modal fallback. Although the section heading retains the DistilRoBERTa label used in early planning, the implemented sentiment model is \passthrough{\lstinline!yangheng/deberta-v3-base-absa-v1.1!}, chosen because it scores polarity jointly with the aspect span instead of treating the whole text as a single signal.
+The per-suburb analysis (\passthrough{\lstinline!backend/core/nlp/pipeline.py!}) runs four transformer-backed stages followed by a deterministic cross-modal fallback. The implemented sentiment model is \passthrough{\lstinline!yangheng/deberta-v3-base-absa-v1.1!}, chosen because it scores polarity jointly with the aspect span instead of treating the whole text as a single signal.
 
 \textbf{Aspect classification.} \passthrough{\lstinline!backend/core/nlp/aspects.py!} runs \passthrough{\lstinline!facebook/bart-large-mnli!} zero-shot classification over each chunk against eight liveability dimensions: safety, food and cafe, nightlife, affordability, transport, community, noise, and green space. A confidence threshold of 0.30 keeps the top label; below that the chunk is tagged "general" and excluded from per-aspect aggregation. The same aspect catalogue drives ingestion tagging, search-time filters, and the chat agent\textquotesingle s dimension routing, so changing it propagates consistently.
 
@@ -434,7 +437,7 @@ Each chunk carries metadata for suburb, dimension, source, url, and score, so al
 
 \subsubsection{Multi-Agent Pipeline (CrewAI)}\label{534-multi-agent-pipeline-crewai}
 
-The system uses two CrewAI crews with distinct responsibilities. The \textbf{pipeline crew} runs the per-suburb NLP analysis described above and writes \passthrough{\lstinline!SuburbAnalysis!} files; this is offline and runs whenever a suburb\textquotesingle s Reddit corpus is refreshed. The \textbf{query crew} (\passthrough{\lstinline!backend/crews/query\_crew.py!}) responds to chat turns in real time and is the focus here.
+The system uses two CrewAI crews with distinct responsibilities (see Appendix~A for the full system architecture diagram). The \textbf{pipeline crew} runs the per-suburb NLP analysis described above and writes \passthrough{\lstinline!SuburbAnalysis!} files; this is offline and runs whenever a suburb\textquotesingle s Reddit corpus is refreshed. The \textbf{query crew} (\passthrough{\lstinline!backend/crews/query\_crew.py!}) responds to chat turns in real time and is the focus here.
 
 Architecturally the query crew follows a two-layer agentic RAG pattern in the sense of Du et al. (2026): an upper agent layer (router, specialists, synthesiser) decides what to retrieve, and a lower tool layer exposes retrieval interfaces the agents can call adaptively. The query crew is sequential: a router, three specialists, an optional comparator, and a synthesiser. The architecture reflects best practices for building robust agentic systems by separating concerns into specialized roles, as proposed by \textbf{S. and Zhang (2024)}, ensuring that the LLM has a well-documented and easy-to-use interface through modular tools
 
@@ -442,7 +445,7 @@ The \textbf{Router} is entirely deterministic ( regex and keyword-based with no 
 
 The \textbf{Crime agent} queries the \passthrough{\lstinline!bocsar!} PostgreSQL table to compute per-suburb crime summaries by category and year-on-year trend indicators (improving/worsening/insufficient data).
 
-The \textbf{Sentiment agent} is the agentic retrieval entry point --- a CrewAI ReAct agent with three tools: \passthrough{\lstinline!search\_posts(suburb, dimension, query, k)!} for dense semantic ChromaDB search; \passthrough{\lstinline!get\_suburb\_aspect(suburb, dimension)!} for structured aspect lookups; and \passthrough{\lstinline!compare\_suburbs(suburbs, dimension)!} for ranking an input list by score. The agent decides which tools to call and in what order based on the question, satisfying the three principles of agentic autonomy identified by Du et al. (2026): autonomous strategy, iterative execution, and interleaved tool use. A prompt-level grounding rule nudges the agent to call \passthrough{\lstinline!search\_posts!} at least once on qualitative questions, but the agent retains full decision-making authority on ambiguous cases.
+The \textbf{Sentiment agent} is the agentic retrieval entry point, implemented as a CrewAI ReAct agent with three tools: \passthrough{\lstinline!search\_posts(suburb, dimension, query, k)!} for dense semantic ChromaDB search; \passthrough{\lstinline!get\_suburb\_aspect(suburb, dimension)!} for structured aspect lookups; and \passthrough{\lstinline!compare\_suburbs(suburbs, dimension)!} for ranking an input list by score. The agent decides which tools to call and in what order based on the question, satisfying the three principles of agentic autonomy identified by Du et al. (2026): autonomous strategy, iterative execution, and interleaved tool use. A prompt-level grounding rule nudges the agent to call \passthrough{\lstinline!search\_posts!} at least once on qualitative questions, but the agent retains full decision-making authority on ambiguous cases.
 
 The \textbf{GIS agent} queries \passthrough{\lstinline!suburbs!}, \passthrough{\lstinline!osm\_scores!}, and \passthrough{\lstinline!transport\_scores!} to compute the composite infrastructure score and returns detailed facilities, amenity counts, and transport data.
 
@@ -454,7 +457,7 @@ The \textbf{Synthesiser} composes the final markdown response using scenario-awa
 
 The synthesiser composes the final answer from the structured specialist outputs returned by the upper agent layer. For sentiment turns this output is the JSON the ReAct agent emits when it stops: a per-suburb payload of the dimensions the agent actually queried, an emotion softmax attached server-side, the suburb name, an overall sentiment label, a list of grounded quotes drawn from \passthrough{\lstinline!search\_posts!} results, and an \passthrough{\lstinline!evidence\_trace!}.
 
-The trace is recorded as a side channel rather than as a contract: each tool wrapper times its call and appends a \passthrough{\lstinline!TraceEntry!} (\passthrough{\lstinline!step!}, \passthrough{\lstinline!tool!}, \passthrough{\lstinline!arguments!}, \passthrough{\lstinline!result\_count!}, \passthrough{\lstinline!result\_preview!}, \passthrough{\lstinline!elapsed\_ms!}) to a per-call \passthrough{\lstinline!ContextVar!} that \passthrough{\lstinline!\_query\_sentiment\_impl!} sets before \passthrough{\lstinline!crew.kickoff!} and drains afterwards. The trace mirrors what the agent actually did --- it does not pre-decide the loop. The synthesiser sees both the agent\textquotesingle s settled conclusions (the dimensions, the quotes) and the trace of how it got there, and the existing citation rule ("cite at least one trace entry per named-suburb claim") applies naturally without constraining the agent\textquotesingle s decision-making.
+The trace is recorded as a side channel rather than as a contract: each tool wrapper times its call and appends a \passthrough{\lstinline!TraceEntry!} (\passthrough{\lstinline!step!}, \passthrough{\lstinline!tool!}, \passthrough{\lstinline!arguments!}, \passthrough{\lstinline!result\_count!}, \passthrough{\lstinline!result\_preview!}, \passthrough{\lstinline!elapsed\_ms!}) to a per-call \passthrough{\lstinline!ContextVar!} that \passthrough{\lstinline!\_query\_sentiment\_impl!} sets before \passthrough{\lstinline!crew.kickoff!} and drains afterwards. The trace mirrors what the agent actually did; it does not pre-decide the loop. The synthesiser sees both the agent\textquotesingle s settled conclusions (the dimensions, the quotes) and the trace of how it got there, and the existing citation rule ("cite at least one trace entry per named-suburb claim") applies naturally without constraining the agent\textquotesingle s decision-making.
 
 The chat LLM is configurable via environment variables. During development the system routes through OpenRouter, which provides access to free-tier models used for testing and iteration. For production, the system is configured to use paid OpenRouter models or OpenAI models, leveraging API credits provided by UTS for this subject. The synthesiser\textquotesingle s prompt includes the question, a database-derived context block (facilities, transport, OSM amenity counts), and the structured specialist outputs.
 
@@ -538,150 +541,23 @@ liveability = (safety * w_safety) + (transport * w_transport) + (lifestyle * w_l
 
 All component scores are normalised to {[}0.0, 1.0{]}. The safety score inverts crime counts (\passthrough{\lstinline!1 - crime/max\_crime!}); proximity uses PostGIS \passthrough{\lstinline!ST\_Distance!} from the suburb centroid to the CBD (\passthrough{\lstinline!lat=-33.8688, lng=151.2093!}), clamped at 35 km. The in-memory cache (\passthrough{\lstinline!\_RAW\_CACHE!} with double-checked locking) ensures that weight changes trigger instant re-ranking in pure Python without additional database calls.
 
-\subsection{Crime Data Analysis --- Sample Suburbs}
-
-Analysis of the cleaned BOCSAR dataset revealed distinct crime profiles across a representative set of inner Sydney suburbs for the period January 2024 to December 2025.
-
-\subsubsection{Overall Crime Volume}
-
-Haymarket recorded the highest total average monthly incidents (505.83), followed by Surry Hills (320.63), Redfern (304.54), Glebe (210.71), and Newtown (180.46).
-
-\subsubsection{Top Crime Categories by Suburb}
-
-Across the suburbs analysed, \textbf{Theft} was consistently the most prevalent property crime category. The following patterns were observed:
-
-\begin{itemize}
-\tightlist
-\item \textbf{Glebe} --- Theft (75.17), Against justice procedures (50.25), Assault (22.92)
-\item \textbf{Haymarket} --- Transport regulatory offences (243.08), Theft (85.50), Drug offences (43.83)
-\item \textbf{Newtown} --- Theft (46.88), Against justice procedures (39.17), Assault (19.08)
-\item \textbf{Redfern} --- Against justice procedures (109.17), Theft (79.04), Assault (22.38)
-\item \textbf{Surry Hills} --- Theft (90.67), Against justice procedures (70.46), Drug offences (47.29)
-\end{itemize}
-
-\subsubsection{Limitation}
-
-The \passthrough{\lstinline!incident\_count!} values represent average monthly incidents over the 24-month period, not raw counts. Additionally, \passthrough{\lstinline!sa4\_area!} is recorded as N/A for all entries, as suburb-level data was sourced directly from BOCSAR without requiring SA4-level mapping.
-
-\subsection{NLP Model Performance Metrics}\label{62-nlp-model-performance-metrics}
-
-The evaluation harness (\passthrough{\lstinline!backend/scripts/run\_agent\_eval.py!}) assesses retrieval quality out of band using a curated 30-prompt set from \passthrough{\lstinline!data/eval/prompts.yaml!}. Prompts are drawn from four categories:
-
-\begin{itemize}
-\tightlist
-\item
-  10 spatial-grounded prompts (questions about specific suburbs and dimensions)
-\item
-  10 no-data prompts (null-scored aspects or unknown suburbs)
-\item
-  5 multi-suburb comparison prompts
-\item
-  5 out-of-scope prompts
-\end{itemize}
-
-Each prompt is run through \passthrough{\lstinline!crews.query\_crew.run\_query!}, capturing the answer, the per-suburb evidence trace, and wall-clock latency. An LLM judge evaluates each response against a uniform criterion: \emph{"Does every named-suburb claim in the answer have a supporting trace entry?"} The judge returns a JSON verdict \passthrough{\lstinline!\{retrieval\_grounded, reason\}!}. Results are written to \passthrough{\lstinline!data/eval/results.csv!} with one row per prompt.
-
-\begin{table}[H]
-\centering
-\caption{Schema of \texttt{data/eval/results.csv}, one row per prompt.}
-\label{tab:eval-schema}
-\begin{tabular}{|L{0.20\textwidth}|L{0.10\textwidth}|L{0.16\textwidth}|L{0.42\textwidth}|}
-\hline
-\textbf{Column} & \textbf{Type} & \textbf{Source} & \textbf{Description} \\
-\hline
-id & str & prompts.yaml & Kebab-case prompt identifier. \\
-\hline
-prompt & str & prompts.yaml & The user question. \\
-\hline
-answer & str & agent & The synthesiser's response text. \\
-\hline
-retrieval\_grounded & bool & judge & Every named-suburb claim is supported by a trace entry. \\
-\hline
-expect\_grounded & bool & prompts.yaml & The labeller's prior verdict for agreement scoring. \\
-\hline
-reason & str & judge & The judge's free-text rationale. \\
-\hline
-trace\_length & int & agent & Total evidence\_trace entries this turn. \\
-\hline
-n\_no\_data & int & agent & Trace entries reporting no\_data. \\
-\hline
-judge\_model & str & CLI & Model name used by the judge. \\
-\hline
-agent\_latency\_ms & float & agent & Wall-clock time of run\_query() in milliseconds. \\
-\hline
-\end{tabular}
-\end{table}
-
-The uniform judge criterion generalises across categories: an out-of-scope refusal that names no suburbs is trivially grounded, an honest no-data answer with no fabricated claims is grounded, and a hallucinated suburb claim with no supporting trace is ungrounded. The judge\textquotesingle s full reasoning is logged per row, enabling manual audit of noisy verdicts without a hand-labelled gold set.
-
-Under the full agentic RAG implementation, trace lengths vary with question type rather than being uniform. The agent terminates earlier on score-lookup questions (typically 1--2 tool calls) and calls \passthrough{\lstinline!search\_posts!} on qualitative questions per the prompt-level grounding rule, producing longer traces with resident quote citations on those turns.
-
-Known limitations: LLM-judge verdicts on paraphrased citations are noisy; the 30-prompt set bounds generalisation claims to "directional retrieval-quality evidence on a curated set," not a production benchmark; and the Arc Shift dump is a snapshot, so discourse drift after the dump date is not reflected until the next bulk re-ingest.
-
 \subsection{User-Facing Application Quality}\label{63-user-facing-application-quality}
 
-The dashboard is deployed as a Next.js application on Vercel with the FastAPI backend on Render. The main interface uses a 3-column layout: a 440px chat sidebar, a full-flex Leaflet map panel, and a 320px collapsible EvidenceDrawer. The onboarding flow guides the user through a conversational weight-setting process across five dimensions (safety, transport, lifestyle, affordability, proximity to CBD), persisted in \passthrough{\lstinline!localStorage!} between sessions.
+The application is deployed as a Next.js frontend on Vercel with a FastAPI backend on Render. Users begin with a conversational onboarding flow that collects personalised liveability priorities across five dimensions (safety, transport, lifestyle, affordability, and proximity to CBD), which are then used to rank and display suburbs as colour-coded polygons on an interactive Leaflet map. Selecting a suburb opens a detailed report comprising an 8-dimension sentiment radar chart, an emotion profile, Reddit highlight quotes, and a crime breakdown with year-on-year trend indicators.
 
-On profile completion, the frontend fetches \passthrough{\lstinline!/api/civic!} with the user\textquotesingle s normalised weights and displays the top-5 ranked suburbs as colour-coded polygons on the map (\passthrough{\lstinline!flyToBounds!} centres the view on the ranked set). Clicking a suburb opens a \passthrough{\lstinline!ReportModal!} with the full suburb report: an 8-dimension sentiment radar chart (\passthrough{\lstinline!AspectRadar!}), a 7-emotion bar chart (\passthrough{\lstinline!EmotionBars!}), Reddit highlight quotes (\passthrough{\lstinline!RedditQuote!}), and a crime breakdown table with trend indicators (\passthrough{\lstinline!CrimeBreakdown!}).
-
-The chat interface streams agent progress via Server-Sent Events (SSE) before delivering the final response. During streaming, progress text updates word-by-word in the \passthrough{\lstinline!AssistantBubble!}; on completion, the full response is passed to \passthrough{\lstinline!ReactMarkdown!} with \passthrough{\lstinline!remark-gfm!} for correct rendering of bold, lists, and blockquotes. The \passthrough{\lstinline!EvidenceDrawer!} shows a pipeline trace: which agents ran, how many chunks were retrieved, latency per specialist, and source freshness badges.
-
-The application was tested through structured walkthroughs covering onboarding, map exploration, single-suburb queries, multi-suburb comparisons, and out-of-scope queries.
+The chat interface streams responses in real time and surfaces a full pipeline trace through the EvidenceDrawer, showing which agents ran, which sources were retrieved, and the latency per step. This transparency layer allows users to audit the reasoning behind every answer rather than accepting outputs at face value. The application was validated through structured walkthroughs covering onboarding, map exploration, single-suburb queries, multi-suburb comparisons, and out-of-scope queries.
 
 \subsection{Reddit Corpus EDA}\label{64-reddit-corpus-eda}
 
-A fine-grained EDA of the Reddit corpus was carried out in \passthrough{\lstinline!notebooks/07\_reddit\_eda.ipynb!} across three layers: the raw Arc Shift bulk dump (\passthrough{\lstinline!data/raw/arctic\_shift/!}), the per-suburb processed extractions (\passthrough{\lstinline!data/processed/reddit/!}), and the per-suburb pipeline analyses (\passthrough{\lstinline!data/processed/reddit\_analyses/!}). The goal was to characterise volume, temporal patterns, suburb coverage, and aspect / sentiment / emotion distributions to validate the design choices made in §5.3 and surface dataset risks.
+An exploratory data analysis of the Reddit corpus was carried out across three layers: the raw Arc Shift bulk dump, the per-suburb processed extractions, and the per-suburb pipeline analyses. The findings below validate the key design choices made in Section~5.
 
-\textbf{Volume and survival.} The Arc Shift dump contains 55,614 posts and 885,894 comments tagged \passthrough{\lstinline!subreddit=sydney!}. The pipeline floor of \passthrough{\lstinline!score >= 2!} retains 13,135 posts (23.6\%) and 443,610 comments (50.1\%) --- a deliberately aggressive cull that drops the bulk of low-engagement noise (single-upvote one-liners, removed comments) while preserving the long tail of useful resident commentary. The ABSA word-count floor of 10 further routes 9,446 posts and 346,538 comments (median word count = 9 for both) to the BART-MNLI fallback path, confirming the report's claim that the dual-floor design is doing material work.
+\textbf{Volume and survival.} The Arc Shift dump contains 55,614 posts and 885,894 comments tagged \passthrough{\lstinline!subreddit=sydney!}. The pipeline floor of \passthrough{\lstinline!score >= 2!} retains 13,135 posts (23.6\%) and 443,610 comments (50.1\%), dropping low-engagement noise while preserving useful resident commentary. The ABSA word-count floor of 10 further routes short texts to the BART-MNLI fallback path, confirming that the dual-floor design is doing material work. The dump contains no temporal anomalies that would corrupt sentiment or trend comparisons (see Appendix~D, Figure~D1).
 
-\textbf{Engagement skew.} Score distributions are heavy-tailed: median post score is 1, mean 52, 99th percentile 956, max 16,842. Median comment score is 2, mean 10.6. This is the canonical Reddit power law and motivates the median- and mention-weighted aggregations used in the analyses layer rather than mean-based scoring.
+\textbf{Suburb coverage is long-tailed.} Across 563 suburbs with at least one record, coverage is heavily concentrated in inner Sydney. Only 97 suburbs reach the $\geq$50-record threshold, while 280 sit below 10 records. This empirically justifies the cross-modal fallback: when Reddit coverage for a dimension is \texttt{weak} or \texttt{none}, the system routes to civic data rather than producing a misleading score from a handful of posts (see Appendix~D, Figure~D2).
 
-\textbf{Temporal shape.} Monthly volume grows steadily over the dump window (Figure~\ref{fig:reddit-eda-monthly}), and weekly seasonality has the expected late-evening / weekend peak in Sydney local time. There are no anomalous gaps or duplicate-collection spikes, validating the dump as a single coherent snapshot.
+\textbf{Aspect mentions and coverage tiers.} ABSA mention counts are not uniform across the eight liveability aspects. \texttt{community}, \texttt{safety} and \texttt{transport} dominate, while \texttt{noise} and \texttt{green\_space} are the thinnest dimensions, with a large share of suburbs reporting \texttt{coverage = none}. This pattern is the empirical basis for the per-aspect coverage tier reported in the EvidenceDrawer.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.92\linewidth]{figs/reddit_eda/01_monthly_volume.png}
-  \caption{Monthly volume of r/sydney posts and comments in the Arc Shift dump. Activity grows steadily and shows weekly/seasonal regularity but no collection anomalies.}
-  \label{fig:reddit-eda-monthly}
-\end{figure}
-
-\textbf{Suburb coverage is heavily long-tailed.} Across 564 suburbs with at least one record, the processed corpus contains 20,423 records --- median 10 per suburb. Only 97 suburbs reach the $\geq$50-record threshold, 197 reach $\geq$20, and 280 sit below 10 (Figure~\ref{fig:reddit-eda-coverage}). The top 25 suburbs are dominated by inner Sydney (Newtown, Surry Hills, Bondi, Marrickville, Redfern, Parramatta, etc.). This empirically justifies the cross-modal fallback in the pipeline: when Reddit coverage for a dimension is \texttt{weak} or \texttt{none}, the system routes to the Community Insights PDF or civic data rather than producing a misleading sentiment score from a handful of posts.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figs/reddit_eda/04_suburb_coverage.png}
-  \caption{Left: distribution of records per suburb (clipped at 500, log y) across the 564 suburb files --- the long tail is unmistakable. Right: top 25 suburbs by record count, decomposed into posts vs. comments.}
-  \label{fig:reddit-eda-coverage}
-\end{figure}
-
-\textbf{Aspect mentions and coverage tiers.} ABSA mention counts are not uniform across the eight liveability aspects (Figure~\ref{fig:reddit-eda-aspects}). \texttt{community}, \texttt{safety} and \texttt{transport} dominate; \texttt{noise} and \texttt{green\_space} are the thinnest, with a large share of suburbs reporting \texttt{coverage = none} for those dimensions. This pattern is the empirical basis for the per-aspect coverage tier reported in the EvidenceDrawer.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figs/reddit_eda/06_aspect_mentions_coverage.png}
-  \caption{Left: ABSA mentions per aspect summed over all suburbs. Right: coverage tier breakdown per aspect (suburb counts) --- \texttt{noise} and \texttt{green\_space} are the dimensions where Reddit alone is insufficient.}
-  \label{fig:reddit-eda-aspects}
-\end{figure}
-
-\textbf{Sentiment skew is plausible and not collapsed.} Across suburbs, distributions for \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} sit notably above the neutral 0.5 line, while \texttt{safety} and \texttt{affordability} skew below it (Figure~\ref{fig:reddit-eda-violin}). Spearman correlations between aspect scores are mostly modest, with the largest off-diagonal magnitudes well below 0.6 (Figure~\ref{fig:reddit-eda-corr}). This is the desired outcome for an aspect-based pipeline --- the model is capturing genuinely distinct dimensions rather than a single underlying \emph{good-vs-bad-suburb} axis. Suburb leaderboards from the notebook also confirm intuitive ordering: \texttt{safety} top performers include leafy outer suburbs while inner-city flashpoints (Redfern, Burwood, Blacktown) sit at the bottom; \texttt{food\_and\_cafe} surfaces The Rocks, Pyrmont and Hornsby; \texttt{nightlife} surfaces Pyrmont, The Rocks, Coogee.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figs/reddit_eda/07_aspect_score_violin.png}
-  \caption{Per-aspect sentiment score distribution across suburbs (violin + quartiles). The dashed red line marks the 0.5 neutral midpoint. \texttt{safety} and \texttt{affordability} are systematically negative-leaning; \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} are systematically positive-leaning.}
-  \label{fig:reddit-eda-violin}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.78\linewidth]{figs/reddit_eda/08_aspect_score_correlation.png}
-  \caption{Spearman correlation matrix of aspect sentiment scores across suburbs. Most pairwise correlations are modest, indicating the eight aspects capture distinct dimensions of liveability rather than a single latent quality axis.}
-  \label{fig:reddit-eda-corr}
-\end{figure}
-
-\textbf{Emotion mix and confidence.} The j-hartmann emotion classifier output averages roughly 60--70\% \texttt{neutral}, with \texttt{joy}, \texttt{surprise} and \texttt{disgust} as the next tier and \texttt{anger} / \texttt{fear} / \texttt{sadness} small but visible. Pipeline \texttt{confidence} ramps with \texttt{post\_count} per suburb and saturates well before the top of the volume distribution, confirming that the ABSA-with-fallback design refuses to commit on thin evidence (the long tail of low-volume suburbs concentrates in the \texttt{low} confidence tier).
-
-\textbf{Lexical look.} TF-IDF run over the top 15 highest-volume suburbs (with the suburb's own name added to the stop-word list) surfaces topical content rather than place-name boilerplate: Newtown is dominated by \texttt{enmore}, \texttt{king street}, \texttt{vegan}, \texttt{thai}, \texttt{bars}; Bondi by \texttt{stabbing}, \texttt{coogee walk}, \texttt{attack}; Marrickville by \texttt{breweries}, \texttt{noise}, \texttt{pork roll}; Burwood by \texttt{chinese}, \texttt{chinatown}, \texttt{mayor}, \texttt{yimby}; Strathfield by \texttt{korean}, \texttt{homebush}. These signals match priors about each suburb's identity and dispel concerns that the corpus is dominated by generic Sydney chatter.
+\textbf{Sentiment skew is plausible and not collapsed.} Across suburbs, \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} sit notably above the neutral 0.5 line, while \texttt{safety} and \texttt{affordability} skew below it (Appendix~D, Figure~D3). Spearman correlations between aspect scores are mostly modest, with the largest off-diagonal magnitudes well below 0.6 (Appendix~D, Figure~D4). This confirms that the pipeline is capturing genuinely distinct dimensions rather than a single underlying quality axis, which is the intended behaviour of an aspect-based model.
 
 \subsection{Temporal Trends}\label{65-temporal-trends}
 
@@ -689,7 +565,9 @@ Reddit posts with \passthrough{\lstinline!created\_utc!} timestamps allow limite
 
 \subsection{RAG Evaluation: System Quality}\label{66-rag-evaluation}
 
-The evaluation harness recorded 14~successful responses out of 15~questions (93.3\% completion rate). One question---Q7 (Zetland lifestyle)---timed out at 240~seconds due to a mid-run LLM JSON parse failure in the CrewAI sentiment agent (\passthrough{\lstinline!Expecting value: line 315 column 1!}), which triggered a retry loop before the client timeout was reached. This is an infrastructure intermittency issue, not a data absence: Zetland has Reddit analyses available and the same query succeeded in earlier runs.
+The evaluation comprised 15 questions in total, spanning six tiers. Headline metrics (relevance and hallucination rate) are reported on the 8 Demo Tier questions, which represent the core use case of the system. The remaining 7 questions cover robustness conditions (sparse data, high-density suburbs, cross-suburb comparison, and out-of-scope refusal) and are reported separately by tier.
+
+The harness recorded 14~successful responses out of 15~questions (93.3\% completion rate). One question, Q7 (Zetland lifestyle), timed out at 240~seconds due to a mid-run LLM JSON parse failure in the CrewAI sentiment agent, which triggered a retry loop before the client timeout was reached. This is an infrastructure intermittency issue, not a data absence: Zetland has Reddit analyses available and the same query succeeded in earlier runs.
 
 \subsubsection{Headline Metrics (Demo Tier, 8 Scorable Questions)}
 
@@ -786,19 +664,11 @@ The 29.8\% hallucination rate across demo questions is the most significant find
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Challenges}\label{challenges}
-
-\subsection{Data Granularity --- Suburb-Level vs SA4-Level}
-
-The original task specification assumed that BOCSAR only provided crime data at the SA4 (Statistical Area Level 4) level, which would have required mapping multiple suburbs to a single SA4 region. Under this assumption, Newtown and Glebe would have shared the same crime figures (Inner West), and Redfern, Surry Hills, and Haymarket would have shared the same figures (City and Inner South).
-
-During the data collection phase, a suburb-level dataset was identified on the BOCSAR Open Datasets portal. This dataset provided independent crime figures for each suburb directly, making the SA4 proxy mapping unnecessary and improving the accuracy of the liveability scoring across all Sydney suburbs covered by the project.
-
 \section{Outcomes and Value Added}\label{7-outcomes-and-value-added}
 
-Sydney Liveability AI delivers a working end-to-end NLP application that addresses a genuine and underserved information gap. For the target user group --- international students, migrants, and young professionals choosing a Sydney suburb --- the system provides evidence-based answers to questions that no existing tool handles: \emph{"Is Redfern safe?"}, \emph{"Which inner-west suburb is best without a car?"}, \emph{"How do Newtown and Glebe compare for nightlife?"}
+Sydney Liveability AI delivers a working end-to-end NLP application that addresses a genuine and underserved information gap. For the target user group, including international students, migrants, and young professionals choosing a Sydney suburb, the system provides evidence-based answers to questions that no existing tool handles: \emph{"Is Redfern safe?"}, \emph{"Which inner-west suburb is best without a car?"}, \emph{"How do Newtown and Glebe compare for nightlife?"}
 
-The key value delivered is the combination of \textbf{resident voice} (20k + Reddit posts indexed and retrieved semantically) with \textbf{civic data} (crime, transport, facilities, OSM amenities) in a single conversational interface with cited, auditable evidence. The EvidenceDrawer makes the system\textquotesingle s reasoning transparent: users can see exactly which agents ran, which sources were retrieved, and how long each step took --- a design choice that builds trust in the answers and distinguishes the system from opaque LLM-based tools.
+The key value delivered is grounded primarily in \textbf{resident voice}: +20k Reddit posts indexed semantically and made queryable through the RAG pipeline, complemented by qualitative evidence extracted from the City of Sydney Community Insights reports, which serve as a structured supplement where Reddit coverage is sparse. This combination, together with \textbf{civic data} (crime, transport, facilities, and OSM amenities), is presented through a single conversational interface with cited, auditable evidence. The EvidenceDrawer makes the system\textquotesingle s reasoning transparent: users can see exactly which agents ran, which sources were retrieved, and how long each step took, distinguishing the system from opaque LLM-based tools.
 
 From a technical standpoint, the project demonstrates a production-grade implementation of agentic RAG at the component level: a ReAct agent with three tools autonomously deciding retrieval strategy on each turn, an evidence trace recorded as a side channel without constraining the agent loop, and a synthesis LLM that composes grounded markdown answers from heterogeneous structured and unstructured inputs. The two-crew CrewAI architecture (offline pipeline crew + real-time query crew) is a scalable pattern that could be extended to additional cities or data sources without restructuring the core system.
 
@@ -806,13 +676,27 @@ The project is hosted and publicly accessible: the frontend on Vercel and the ba
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Recommendations and Next Steps}\label{8-recommendations-and-next-steps}
+\section{Challenges}\label{challenges}
 
-List the highest-impact extensions: coverage of more suburbs, additional data sources, model fine-tuning, and integration with rental price APIs.
+The following challenges were encountered during the development of the project:
+
+\begin{itemize}
+
+\item \textbf{Uneven data coverage across suburbs.} Publicly available data is disproportionately concentrated in inner Sydney suburbs. Reddit engagement, community consultation records, and civic datasets all favour well-documented areas, leaving peripheral suburbs with insufficient signal across multiple liveability dimensions. Finding balanced data sources that provide adequate coverage for all 563 suburbs remains an open challenge.
+
+\item \textbf{Restricted and proprietary datasets.} Several datasets required for a complete liveability picture are either not publicly available or accessible only through paid APIs. Rental and property sale data, which would be the most direct measure of affordability, exists behind commercial API paywalls (for example, Domain and CoreLogic). Walkability scores had to be sourced from a third-party private API, as the City of Sydney does not publish this information openly. These constraints limited the depth of certain liveability dimensions and introduced dependency on external services outside the team's control.
+
+\item \textbf{Data granularity mismatches across sources.} Different datasets expose data at different geographic levels, which does not always align with suburb boundaries. For example, BOCSAR crime data was initially assumed to be available only at the SA4 regional level, which would have forced multiple suburbs to share the same crime figures. A suburb-level dataset was later identified and used instead, but this type of granularity mismatch is a recurring challenge when integrating heterogeneous civic datasets and requires case-by-case resolution.
+
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Recommendations and Next Steps}\label{8-recommendations-and-next-steps}
 
 The following extensions are recommended in order of estimated impact:
 
-\textbf{Automated data refresh.} The most significant limitation of the current system is that all data is a static snapshot. An automated pipeline --- scheduled Reddit ingestion via PRAW, BOCSAR data download, and OSM refresh --- would keep the system current without manual re-ingestion. The ChromaDB index (\textasciitilde10 hours to rebuild from scratch) could be incrementally updated if chunk IDs remain deterministic.
+\textbf{Automated data refresh.} The most significant limitation of the current system is that all data is a static snapshot. An automated pipeline covering scheduled Reddit ingestion via PRAW, BOCSAR data download, and OSM refresh would keep the system current without manual re-ingestion. The ChromaDB index (\textasciitilde10 hours to rebuild from scratch) could be incrementally updated if chunk IDs remain deterministic.
 
 \textbf{Suburb coverage expansion.} Current sentiment coverage is concentrated in inner Sydney. Extending to outer suburbs (Parramatta, Blacktown, Liverpool, Penrith) would require targeted Reddit data collection and potentially augmentation from additional community sources (e.g., local Facebook groups, council consultation submissions from other LGAs).
 
@@ -838,10 +722,11 @@ The following extensions are recommended in order of estimated impact:
 
 Sydney Liveability AI successfully delivers a working end-to-end NLP application that addresses a genuine and underserved information gap: no existing tool combines scheduled public transport frequency, official crime statistics, facility density, and what residents actually say about their neighbourhoods in a single conversational interface with cited, auditable evidence. The two-crew CrewAI architecture, with a deterministic keyword router as a cost-free first-pass filter and six specialist agents operating in parallel, demonstrates a scalable pattern for agentic RAG that could be extended to additional Australian cities or liveability dimensions without restructuring the core system. The transport dimension contributed a reproducible GTFS-based scoring pipeline for 656 Greater Sydney suburbs and identified, through RAG evaluation, that transport queries carry the highest hallucination rate (42.9\%) among all question categories --- a concrete finding that points directly to where tighter synthesiser prompt constraints are needed.
 
-The project surfaced several lessons that apply beyond the immediate implementation. The gap between scheduled service frequency and lived transport experience is not fully captured by GTFS data alone; Reddit sentiment provides a complementary subjective signal, but the correlation between the two requires explicit measurement rather than assumption. The strict zero-tolerance faithfulness criterion exposed that a 2.75 mean relevance does not guarantee full source traceability: the synthesiser consistently makes plausible contextual inferences from facility counts and sentiment scores that go beyond the literal data returned by agents. Addressing this through richer structured agent outputs --- rather than prompt constraints alone --- is the highest-impact technical next step. The project is open-source, publicly deployed, and structured for community extension.
+The project surfaced several lessons that apply beyond the immediate implementation. The gap between scheduled service frequency and lived transport experience is not fully captured by GTFS data alone; Reddit sentiment provides a complementary subjective signal, but the correlation between the two requires explicit measurement rather than assumption. The strict zero-tolerance faithfulness criterion exposed that a 2.75 mean relevance does not guarantee full source traceability: the synthesiser consistently makes plausible contextual inferences from facility counts and sentiment scores that go beyond the literal data returned by agents. Addressing this through richer structured agent outputs, rather than prompt constraints alone, is the highest-impact technical next step. The project is open-source, publicly deployed, and structured for community extension.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{References}\label{10-references}
 
 Blei, D. M., Ng, A. Y., \& Jordan, M. I. (2003). Latent Dirichlet allocation. \emph{Journal of Machine Learning Research, 3}, 993--1022.
@@ -868,6 +753,7 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 
 \appendix
 
+\clearpage
 \section{Appendix A: System Architecture Diagram}\label{appendix-a-system-architecture-diagram}
 
 \begin{figure}[H]
@@ -878,6 +764,7 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{Appendix B: Dashboard Screenshots}\label{appendix-b-dashboard-screenshots}
 
 \begin{figure}[H]
@@ -912,6 +799,7 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{Appendix C: Sample Code}\label{appendix-c-sample-code}
 
 \subsection{ingest\_sentiment.py (ingest pipeline)}\label{ingest_sentimentpy-ingest-pipeline}
@@ -1113,12 +1001,40 @@ def analyse_suburb_endpoint(suburb: str) -> dict:
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\section{Appendix D: Evaluation Tables and Charts}\label{appendix-d-evaluation-tables-and-charts}
+\clearpage
+\section{Appendix D: Reddit Corpus EDA Supplementary Figures}\label{appendix-d-reddit-eda}
 
-Include suburb-level scores per sentiment dimension, emotion distributions, transport scores, and POI density charts.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.92\linewidth]{figs/reddit_eda/01_monthly_volume.png}
+  \caption{Figure D1: Monthly volume of r/sydney posts and comments in the Arc Shift dump. Activity grows steadily and shows weekly/seasonal regularity but no collection anomalies.}
+  \label{fig:reddit-eda-monthly}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/reddit_eda/04_suburb_coverage.png}
+  \caption{Figure D2: Distribution of records per suburb (clipped at 500, log y) across the 563 suburb files; the long tail is unmistakable. Right: top 25 suburbs by record count, decomposed into posts vs. comments.}
+  \label{fig:reddit-eda-coverage}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{figs/reddit_eda/07_aspect_score_violin.png}
+  \caption{Figure D3: Violin plot of DeBERTa-v3 aspect sentiment scores across all suburbs. Each violin shows the distribution of scores for one of the eight liveability dimensions, revealing variation in community sentiment patterns per aspect.}
+  \label{fig:reddit-eda-violin}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\linewidth]{figs/reddit_eda/08_aspect_score_correlation.png}
+  \caption{Figure D4: Pearson correlation matrix of the eight DeBERTa-v3 aspect sentiment scores. Strong positive correlations between safety and transport suggest that suburbs perceived as safe also tend to receive positive transport mentions.}
+  \label{fig:reddit-eda-corr}
+\end{figure}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
+\clearpage
 \section{Appendix E: Traditional vs. Modern NLP Comparison Table}\label{appendix-e-traditional-vs-modern-nlp-comparison-table}
 
 \begin{table}[H]
@@ -1135,7 +1051,7 @@ LDA topic modelling & Traditional & No & Unsupervised; low coherence on Reddit t
 \hline
 TF-IDF keyword extraction & Traditional & No & Frequency-based; no semantic understanding. \\
 \hline
-DistilRoBERTa aspect sentiment & Modern & Yes & 8-dimension aspect scoring, contextual. \\
+DeBERTa-v3 aspect sentiment & Modern & Yes & 8-dimension aspect scoring, contextual. \\
 \hline
 all-MiniLM-L6-v2 embeddings & Modern & Yes & Semantic similarity, compact and fast. \\
 \hline
