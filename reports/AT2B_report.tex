@@ -153,13 +153,13 @@
     \hline
     Rodriguez Arciniegas & Juan David & 25418551 & @juandavidrodriguezar \\
     \hline
-    Weng & Nian-Ya &  & @Amanda1005 \\
+    Weng & Nian-Ya & 25176165 & @Amanda1005 \\
     \hline
     Robinson & Luis Gerardo & 25519000 & @LuisRobinsonH \\
     \hline
     Srinivas & Padmasri & 25536071 & @Psri-01 \\
     \hline
-    Liao & Ying-Kai &  & @Ying-Kai-Liao \\
+    Liao & Ying-Kai & 25729500 & @Ying-Kai-Liao \\
     \hline
   \end{longtable}}
 
@@ -254,47 +254,39 @@ Phase 5: Evaluation and Report & NLP metrics, RAG quality evaluation (LLM-judge 
 
 \subsection{Juan David Rodriguez}\label{juan-david-rodriguez}
 
-This team member contributed to the data ingestion and retrieval layers of the pipeline, with a focus on making community-sourced qualitative data accessible to the language model.
+This team member contributed to the data ingestion and retrieval layers, focusing on making community-sourced qualitative data accessible to the language model.
 
-The primary contribution was the design and implementation of the full ingestion pipeline for the City of Sydney community consultation PDFs. Starting from structured JSON output produced by the PDF parser, each text chunk was embedded using the \passthrough{\lstinline!all-MiniLM-L6-v2!} sentence transformer model and written to the ChromaDB collection \passthrough{\lstinline!sydney\_liveability!} with metadata including suburb, theme, source document, page number, and chunk index. This pipeline processed 1,114 records across three official PDF reports, forming the qualitative backbone of the RAG system.
-
-A secondary contribution was the completion of the Synthesiser agent\textquotesingle s ChromaDB retrieval layer, which embeds each user query at runtime, retrieves the top five semantically relevant chunks, and injects them into the LLM prompt alongside structured PostgreSQL outputs and specialist agent results, enabling the model to cite resident quotes and PDF extracts by source and suburb.
+The primary contribution was the PDF ingestion pipeline: each chunk from the three City of Sydney consultation reports was embedded using \passthrough{\lstinline!all-MiniLM-L6-v2!} and written to the ChromaDB collection \passthrough{\lstinline!sydney\_liveability!} with suburb, theme, source, and page metadata (1,114 records total). A secondary contribution was the Synthesiser agent's ChromaDB retrieval layer, which embeds user queries at runtime, retrieves the top five semantically relevant chunks, and injects them into the LLM prompt alongside structured specialist outputs, enabling cited responses from resident quotes and PDF extracts.
 
 \subsection{Nelkit Chavez}\label{nelkit-chavez}
 
-This team member led the backend architecture, civic data pipeline, agent synthesis layer, and the frontend implementation.
+This team member led the backend architecture, civic data pipeline, agent synthesis layer, and the full frontend implementation.
 
-Primary contributions included the design and implementation of the Synthesiser agent (\passthrough{\lstinline!backend/agents/query/synthesiser.py!}), which receives structured outputs from all specialist agents and composes a final markdown response using a scenario-aware prompt system distinguishing three query scenarios: \passthrough{\lstinline!single!}, \passthrough{\lstinline!comparator!}, and \passthrough{\lstinline!out\_of\_scope!}. The Synthesiser iterates all agent outputs to build the cited source list, injects a ChromaDB-retrieved context block before calling the synthesis LLM, and exposes a \passthrough{\lstinline!SYNTHESIS\_DEBUG\_MODE!} flag for selective output inspection.
-
-Backend contributions also included the GIS agent data layer, the full FastAPI endpoint architecture (\passthrough{\lstinline!/api/civic!}, \passthrough{\lstinline!/api/chat!}, \passthrough{\lstinline!/api/chat/stream!}), and the in-memory caching system with double-checked locking that prevents connection pool exhaustion on Supabase by loading all suburb data once and applying weight changes in pure Python on subsequent requests. A standalone data contribution was the civic ingestion pipeline: facility data from the City of Sydney ArcGIS REST API and walkability scores from the WalkScore API were cleaned, spatially joined with suburb polygons, and ingested into the \passthrough{\lstinline!suburbs!} PostgreSQL table with PostGIS geometry, forming the primary data source consumed by the GIS agent.
-
-On the frontend, this team member designed and built the three-column main layout, the \passthrough{\lstinline!OnboardingPanel!} conversational weight-setting flow, the \passthrough{\lstinline!MapPanel!} with Leaflet polygon rendering and \passthrough{\lstinline!flyToBounds!} behaviour, the \passthrough{\lstinline!EvidenceDrawer!} pipeline trace panel, the \passthrough{\lstinline!ReportModal!} for individual and comparative reports, and the application-wide design system ensuring visual consistency across all interface components.
+On the backend, contributions included the Synthesiser agent (\passthrough{\lstinline!backend/agents/query/synthesiser.py!}) with a scenario-aware prompt distinguishing \passthrough{\lstinline!single!}, \passthrough{\lstinline!comparator!}, and \passthrough{\lstinline!out\_of\_scope!} queries; the FastAPI endpoint architecture (\passthrough{\lstinline!/api/civic!}, \passthrough{\lstinline!/api/chat!}, \passthrough{\lstinline!/api/chat/stream!}); an in-memory double-checked locking cache preventing Supabase connection pool exhaustion; and the ArcGIS civic ingestion pipeline (facility data spatially joined with suburb polygons and stored with PostGIS geometry). On the frontend, contributions included the three-column layout, the \passthrough{\lstinline!OnboardingPanel!} weight-setting flow, the \passthrough{\lstinline!MapPanel!} with Leaflet polygon rendering, the \passthrough{\lstinline!EvidenceDrawer!} trace panel, and the \passthrough{\lstinline!ReportModal!} for individual and comparative suburb reports.
 
 \subsection{Luis Gerardo Robinson Herrera}\label{luis-gerardo-robinson-herrera}
 
-This team member led the geographic data layer of the pipeline, covering OSM extraction, structured ingestion, and the GIS and Comparator specialist agents.
+This team member led the geographic data layer, covering OSM extraction, structured ingestion, and the GIS and Comparator specialist agents.
 
-The primary contribution was the design and implementation of the OSM extraction pipeline (\passthrough{\lstinline!data\_extraction/extract\_osm.py!}), which queried the Overpass API for ten amenity and leisure POI categories across all 657 Greater Sydney suburbs. The script implements a three-tier resilience strategy comprising multi-endpoint fallback, exponential backoff on rate-limit responses, and per-category retry on timeout. Raw JSON artefacts are persisted to \passthrough{\lstinline!data/raw/osm/!} for auditability. Weighted POI counts were min-max normalised to produce a per-suburb \passthrough{\lstinline!osm\_score!} and ingested into the \passthrough{\lstinline!osm\_scores!} PostgreSQL table via \passthrough{\lstinline!backend/scripts/ingest\_osm.py!} using idempotent upserts.
-
-A second contribution was the GIS specialist agent (\passthrough{\lstinline!backend/agents/query/gis.py!}), which joins three PostgreSQL tables (\passthrough{\lstinline!suburbs!} at 35\%, \passthrough{\lstinline!osm\_scores!} at 35\%, and \passthrough{\lstinline!transport\_scores!} at 30\%) into a single combined liveability score. The agent includes a keyword parser that filters the OSM payload to a single amenity dimension when the user query targets a specific category. The Comparator agent (\passthrough{\lstinline!backend/agents/query/comparator.py!}) extends this by querying GIS, crime, and sentiment data for two suburbs in parallel and applying a winner-determination rule per category, returning a structured \passthrough{\lstinline!\{suburb\_a, suburb\_b, comparison, winner\}!} JSON payload to the Synthesiser.
+The OSM extraction pipeline (\passthrough{\lstinline!data\_extraction/extract\_osm.py!}) queried the Overpass API for ten POI categories across 657 suburbs using a three-tier resilience strategy (multi-endpoint fallback, exponential backoff, per-category retry), producing min-max normalised \passthrough{\lstinline!osm\_score!} values ingested via idempotent upserts. The GIS agent (\passthrough{\lstinline!backend/agents/query/gis.py!}) combines facilities, OSM, and transport scores into a composite liveability score with a keyword parser for dimension-specific filtering. The Comparator agent (\passthrough{\lstinline!backend/agents/query/comparator.py!}) queries GIS, crime, and sentiment data for two suburbs in parallel and returns a structured winner-per-category payload to the Synthesiser.
 
 \subsection{Padmasri Srinivas}\label{padmasri-srinivas}
 
-This team member contributed the transport data dimension end-to-end and led the Sprint~4 RAG evaluation pipeline.
+This team member contributed the transport data pipeline end-to-end and led the Sprint~4 RAG evaluation harness.
 
-The primary contribution was the design and implementation of \passthrough{\lstinline!data\_extraction/extract\_transport.py!}, a reproducible pipeline that derives a normalised peak-hour transport frequency score for 656 Greater Sydney suburbs from the TfNSW GTFS Timetables (Full) dataset. The pipeline spatially joins 48,195 GTFS stops against ABS SAL~2021 suburb polygons using \passthrough{\lstinline!geopandas!}, chunks through the 500\,MB+ \passthrough{\lstinline!stop\_times.txt!} file at 100,000 rows at a time, filters to weekday peak-hour departures (07:00--08:59), and aggregates to a per-suburb mean services-per-hour score normalised 0--1. The resulting \passthrough{\lstinline!data/processed/transport\_scores.json!} was ingested into the \passthrough{\lstinline!transport\_scores!} PostgreSQL table via \passthrough{\lstinline!data\_extraction/ingest\_transport.py!}, which extended the ORM model with two GTFS-specific columns via Alembic migration \passthrough{\lstinline!20260428\_0006!} and performs idempotent upserts tagged \passthrough{\lstinline!source='gtfs'!}.
-
-A secondary contribution was the Sprint~4 evaluation harness: \passthrough{\lstinline!evaluation/evaluate\_rag.py!} runs 15 tier-stratified questions through \passthrough{\lstinline!/api/chat!}, records full response payloads, and embeds aggregated metrics (relevance, hallucination rate, blockquote compliance, latency) into a single UI-ready \passthrough{\lstinline!data/eval/rag\_evaluation.json!}. The evaluation produced a mean relevance score of 2.75 and a hallucination rate of 29.8\% across demo-tier questions, with qualitative findings on suburb-scoping bugs and Supabase session saturation that informed backend patches during the final sprint.
+The transport pipeline (\passthrough{\lstinline!data\_extraction/extract\_transport.py!}) spatially joins 48,195 GTFS stops against ABS SAL~2021 suburb polygons, filters to weekday peak-hour departures (07:00--08:59), and aggregates a normalised services-per-hour score for 656 suburbs, ingested via idempotent upserts with an Alembic schema migration. The evaluation harness (\passthrough{\lstinline!evaluation/evaluate\_rag.py!}) ran 15 tier-stratified questions through \passthrough{\lstinline!/api/chat!} and produced aggregated metrics (mean relevance 2.75/3, hallucination rate 29.8\%, 93.3\% completion), with qualitative findings on suburb-scoping bugs and Supabase session saturation that informed final-sprint backend patches.
 
 \subsection{Nian-Ya Weng}\label{nian-ya-weng}
 
-This team member contributed to the crime data pipeline, covering data acquisition, cleaning, structured ingestion, and agent implementation.
+This team member contributed the crime data pipeline end-to-end, from acquisition and cleaning through to agent implementation.
 
-The primary contribution was the identification and processing of suburb-level crime data from BOCSAR. A suburb-level dataset (\passthrough{\lstinline!SuburbData25Q4.csv!}) was sourced directly from the BOCSAR Open Datasets portal and aggregated across the most recent 24 months (January 2024 to December 2025) into a single \passthrough{\lstinline!incident\_count!} per suburb per crime category. The cleaned output (\passthrough{\lstinline!data/processed/bocsar\_clean.csv!}) contains 62 offence categories per suburb.
+The BOCSAR suburb-level dataset (\passthrough{\lstinline!SuburbData25Q4.csv!}) was aggregated across 24 months (January 2024 to December 2025) into a single \passthrough{\lstinline!incident\_count!} per suburb per crime category (62 categories), cleaned, and ingested into the PostgreSQL \passthrough{\lstinline!bocsar!} table via \passthrough{\lstinline!backend/scripts/ingest\_bocsar.py!}. The Crime agent (\passthrough{\lstinline!backend/agents/query/crime.py!}) was implemented with SQLAlchemy queries returning per-suburb crime summaries and year-on-year trend signals to the Synthesiser. EDA is documented in \passthrough{\lstinline!notebooks/01\_bocsar\_clean.ipynb!}.
 
-A secondary contribution was the implementation of the ingestion script (\passthrough{\lstinline!backend/scripts/ingest\_bocsar.py!}), which maps the cleaned CSV to the \passthrough{\lstinline!Bocsar!} ORM model and writes the results into the PostgreSQL \passthrough{\lstinline!bocsar!} table. The Crime agent (\passthrough{\lstinline!backend/agents/query/crime.py!}) was also implemented, replacing the placeholder with real SQLAlchemy queries that return per-suburb crime summaries and year-on-year trend signals to the Synthesiser.
+\subsection{Ying-Kai Liao}\label{ying-kai-liao}
 
-Exploratory data analysis is documented in \passthrough{\lstinline!notebooks/01\_bocsar\_clean.ipynb!} and \passthrough{\lstinline!notebooks/01\_eda\_and\_cleaning.ipynb!}, including suburb-level visualisations.
+This team member owned the Reddit data layer, the offline NLP pipeline, and the agentic RAG rework of the query crew.
+
+The Reddit extraction pivoted from rate-limited PRAW to the Arctic Shift NDJSON bulk dump (\passthrough{\lstinline!data\_extraction/download\_arctic\_shift.py!}), normalising both paths to a single record schema and producing 565 per-suburb extraction files and 563 analysis files. The NLP pipeline (\passthrough{\lstinline!backend/core/nlp/pipeline.py!}) implements four staged modules: BART-MNLI zero-shot aspect classification, DeBERTa-v3 ABSA (0.55 confidence floor, 10-word minimum), GoEmotions emotion profiling, and MiniLM-based coverage detection with a cross-modal fallback routing silent dimensions to BOCSAR, OSM, or ArcGIS. The Sentiment agent was reworked into a CrewAI ReAct agent choosing adaptively among three retrieval tools, with evidence tracing redesigned as a \passthrough{\lstinline!ContextVar!} side channel recording each \passthrough{\lstinline!TraceEntry!} without constraining the agent loop.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -494,7 +486,7 @@ Out of scope & 1 & Newcastle: graceful refusal probe. \\
 
 \textbf{Scoring protocol.} Two scorers assess each response independently. Relevance is rated 1--3 (1~=~does not address, 2~=~partially addresses, 3~=~fully addresses). Source faithfulness is audited by counting every specific factual claim and flagging those not traceable to a returned source. The hallucination rate is $\text{unverified claims} / \text{total claims}$.
 
-\textbf{Infrastructure.} Evaluation was run against the local backend (\passthrough{\lstinline!http://127.0.0.1:8000/api/chat!}) with the prebuilt ChromaDB snapshot loaded (72\,276~chunks). The initial 90-second timeout was insufficient for sentiment-heavy queries; this was raised to 240~seconds after profiling showed sentiment + synthesis paths taking up to 175~seconds. The Supabase pooler also hit session saturation during the first run; \passthrough{\lstinline!backend/db/postgres.py!} was patched to use \passthrough{\lstinline!NullPool!} for pooler URLs and force \passthrough{\lstinline!sslmode=require!}, matching Supabase's SQLAlchemy guidance, and stale sessions were cleared via \passthrough{\lstinline!pg\_terminate\_backend!} before the clean run.
+\textbf{Infrastructure.} Evaluation was run against the local backend with the prebuilt ChromaDB snapshot (72,276 chunks); the timeout was raised from 90 to 240 seconds after profiling showed sentiment and synthesis paths taking up to 175 seconds. The Supabase pooler hit session saturation during the first run and was resolved by patching \passthrough{\lstinline!backend/db/postgres.py!} to use \passthrough{\lstinline!NullPool!} with \passthrough{\lstinline!sslmode=require!} and clearing stale sessions via \passthrough{\lstinline!pg\_terminate\_backend!} before the clean run.
 
 \subsubsection{Implications of the Evaluation Design}\label{537-implications-of-evaluation-design}
 
@@ -551,13 +543,13 @@ The chat interface streams responses in real time and surfaces a full pipeline t
 
 An exploratory data analysis of the Reddit corpus was carried out across three layers: the raw Arc Shift bulk dump, the per-suburb processed extractions, and the per-suburb pipeline analyses. The findings below validate the key design choices made in Section~5.
 
-\textbf{Volume and survival.} The Arc Shift dump contains 55,614 posts and 885,894 comments tagged \passthrough{\lstinline!subreddit=sydney!}. The pipeline floor of \passthrough{\lstinline!score >= 2!} retains 13,135 posts (23.6\%) and 443,610 comments (50.1\%), dropping low-engagement noise while preserving useful resident commentary. The ABSA word-count floor of 10 further routes short texts to the BART-MNLI fallback path, confirming that the dual-floor design is doing material work. The dump contains no temporal anomalies that would corrupt sentiment or trend comparisons (see Appendix~D, Figure~D1).
+\textbf{Volume and survival.} The Arc Shift dump contains 55,614 posts and 885,894 comments tagged \passthrough{\lstinline!subreddit=sydney!}. The pipeline floor of \passthrough{\lstinline!score >= 2!} retains 13,135 posts (23.6\%) and 443,610 comments (50.1\%), dropping low-engagement noise while preserving useful resident commentary. The ABSA word-count floor of 10 further routes short texts to the BART-MNLI fallback path, confirming that the dual-floor design is doing material work. The dump contains no temporal anomalies that would corrupt sentiment or trend comparisons (see Appendix~D, Figure~\ref{fig:reddit-eda-monthly}).
 
-\textbf{Suburb coverage is long-tailed.} Across 563 suburbs with at least one record, coverage is heavily concentrated in inner Sydney. Only 97 suburbs reach the $\geq$50-record threshold, while 280 sit below 10 records. This empirically justifies the cross-modal fallback: when Reddit coverage for a dimension is \texttt{weak} or \texttt{none}, the system routes to civic data rather than producing a misleading score from a handful of posts (see Appendix~D, Figure~D2).
+\textbf{Suburb coverage is long-tailed.} Across 563 suburbs with at least one record, coverage is heavily concentrated in inner Sydney. Only 97 suburbs reach the $\geq$50-record threshold, while 280 sit below 10 records. This empirically justifies the cross-modal fallback: when Reddit coverage for a dimension is \texttt{weak} or \texttt{none}, the system routes to civic data rather than producing a misleading score from a handful of posts (see Appendix~D, Figure~\ref{fig:reddit-eda-coverage}).
 
 \textbf{Aspect mentions and coverage tiers.} ABSA mention counts are not uniform across the eight liveability aspects. \texttt{community}, \texttt{safety} and \texttt{transport} dominate, while \texttt{noise} and \texttt{green\_space} are the thinnest dimensions, with a large share of suburbs reporting \texttt{coverage = none}. This pattern is the empirical basis for the per-aspect coverage tier reported in the EvidenceDrawer.
 
-\textbf{Sentiment skew is plausible and not collapsed.} Across suburbs, \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} sit notably above the neutral 0.5 line, while \texttt{safety} and \texttt{affordability} skew below it (Appendix~D, Figure~D3). Spearman correlations between aspect scores are mostly modest, with the largest off-diagonal magnitudes well below 0.6 (Appendix~D, Figure~D4). This confirms that the pipeline is capturing genuinely distinct dimensions rather than a single underlying quality axis, which is the intended behaviour of an aspect-based model.
+\textbf{Sentiment skew is plausible and not collapsed.} Across suburbs, \texttt{food\_and\_cafe}, \texttt{community} and \texttt{green\_space} sit notably above the neutral 0.5 line, while \texttt{safety} and \texttt{affordability} skew below it (Appendix~D, Figure~\ref{fig:reddit-eda-violin}). Spearman correlations between aspect scores are mostly modest, with the largest off-diagonal magnitudes well below 0.6 (Appendix~D, Figure~\ref{fig:reddit-eda-corr}). This confirms that the pipeline is capturing genuinely distinct dimensions rather than a single underlying quality axis, which is the intended behaviour of an aspect-based model.
 
 \subsection{Temporal Trends}\label{65-temporal-trends}
 
@@ -678,17 +670,7 @@ The project is hosted and publicly accessible: the frontend on Vercel and the ba
 
 \section{Challenges}\label{challenges}
 
-The following challenges were encountered during the development of the project:
-
-\begin{itemize}
-
-\item \textbf{Uneven data coverage across suburbs.} Publicly available data is disproportionately concentrated in inner Sydney suburbs. Reddit engagement, community consultation records, and civic datasets all favour well-documented areas, leaving peripheral suburbs with insufficient signal across multiple liveability dimensions. Finding balanced data sources that provide adequate coverage for all 563 suburbs remains an open challenge.
-
-\item \textbf{Restricted and proprietary datasets.} Several datasets required for a complete liveability picture are either not publicly available or accessible only through paid APIs. Rental and property sale data, which would be the most direct measure of affordability, exists behind commercial API paywalls (for example, Domain and CoreLogic). Walkability scores had to be sourced from a third-party private API, as the City of Sydney does not publish this information openly. These constraints limited the depth of certain liveability dimensions and introduced dependency on external services outside the team's control.
-
-\item \textbf{Data granularity mismatches across sources.} Different datasets expose data at different geographic levels, which does not always align with suburb boundaries. For example, BOCSAR crime data was initially assumed to be available only at the SA4 regional level, which would have forced multiple suburbs to share the same crime figures. A suburb-level dataset was later identified and used instead, but this type of granularity mismatch is a recurring challenge when integrating heterogeneous civic datasets and requires case-by-case resolution.
-
-\end{itemize}
+Three principal challenges shaped the development of the project. First, publicly available data is disproportionately concentrated in inner Sydney: Reddit engagement, community consultation records, and civic datasets all favour well-documented areas, leaving peripheral suburbs with insufficient signal across multiple liveability dimensions. Second, several datasets required for a complete liveability picture sit behind commercial API paywalls: rental and property sale data (Domain, CoreLogic) and walkability scores from a third-party private API introduced dependency on external services outside the team's control and limited the depth of the affordability dimension. Third, heterogeneous civic datasets expose data at different geographic levels that do not always align with suburb boundaries: BOCSAR crime data was initially assumed to be available only at the SA4 regional level, which would have forced multiple suburbs to share the same crime figures, and a suburb-level dataset had to be identified and substituted instead. This type of granularity mismatch required case-by-case resolution at each data source integration point.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -696,25 +678,19 @@ The following challenges were encountered during the development of the project:
 
 The following extensions are recommended in order of estimated impact:
 
-\textbf{Automated data refresh.} The most significant limitation of the current system is that all data is a static snapshot. An automated pipeline covering scheduled Reddit ingestion via PRAW, BOCSAR data download, and OSM refresh would keep the system current without manual re-ingestion. The ChromaDB index (\textasciitilde10 hours to rebuild from scratch) could be incrementally updated if chunk IDs remain deterministic.
+\textbf{LLM infrastructure.} The current deterministic regex router is fast and cost-free but struggles with ambiguous queries; replacing it with a lightweight LLM classifier (e.g., a fine-tuned distilled model) would improve routing accuracy on edge cases without significantly increasing latency. The system also currently depends on a single default LLM provider; adding automatic fallback (e.g., OpenRouter to Anthropic to OpenAI) would improve production reliability at no architectural cost.
 
-\textbf{Suburb coverage expansion.} Current sentiment coverage is concentrated in inner Sydney. Extending to outer suburbs (Parramatta, Blacktown, Liverpool, Penrith) would require targeted Reddit data collection and potentially augmentation from additional community sources (e.g., local Facebook groups, council consultation submissions from other LGAs).
+\textbf{System quality and stability.} The evaluation found a 29.8\% hallucination rate on demo questions, where the synthesiser added contextual inferences not directly returned by any agent. Two targeted fixes are recommended: adding an explicit constraint to the synthesiser prompt requiring every factual claim to cite its agent source, and expanding the structured outputs of the GIS and sentiment agents to return raw values the synthesiser currently infers (e.g., an explicit ``transport service frequency: moderate'' field). During evaluation, the Supabase pooler also reached its session limit (\passthrough{\lstinline!EMAXCONNSESSION!}), resolved by patching \passthrough{\lstinline!backend/db/postgres.py!} to use \passthrough{\lstinline!NullPool!}; production deployments on Render should additionally configure Supabase's idle session timeout and a startup health check to prevent recurrence without manual \passthrough{\lstinline!pg\_terminate\_backend!} intervention.
 
-\textbf{Rental price integration.} Integrating current rental price data (e.g., from Domain API or property data providers) would complete the affordability dimension with objective market data, reducing reliance on Reddit-derived affordability sentiment which is subject to recency and selection bias.
+\textbf{Data coverage and affordability.} Current sentiment coverage is concentrated in inner Sydney; extending to outer suburbs (Parramatta, Blacktown, Liverpool, Penrith) would require targeted Reddit data collection and augmentation from additional community sources such as local council consultation submissions. Integrating rental price data (e.g., from the Domain API or CoreLogic) would complete the affordability dimension with objective market data, reducing reliance on Reddit-derived affordability sentiment subject to recency and selection bias.
 
-\textbf{LLM router upgrade.} The current deterministic regex router is fast and cost-free but struggles with ambiguous or creatively phrased questions. Replacing the keyword matching with a lightweight LLM classifier (e.g., a fine-tuned distilled model) would improve routing accuracy on edge cases without significantly increasing latency.
+\textbf{Automated data refresh.} All data is currently a static 2024/2026 snapshot. An automated pipeline covering scheduled Reddit ingestion via PRAW, BOCSAR data download, and OSM refresh would keep the system current. The ChromaDB index (approximately 10 hours to rebuild from scratch) could be incrementally updated if chunk IDs remain deterministic.
 
-\textbf{Model fine-tuning.} The DeBERTa ABSA model was not fine-tuned on Sydney liveability text. Fine-tuning on a small hand-labelled dataset of suburb-specific Reddit posts would likely improve aspect classification confidence, particularly for dimensions with informal vocabulary (e.g., "nightlife", "noise").
+\textbf{Model fine-tuning.} The DeBERTa ABSA model was not fine-tuned on Sydney liveability text. Fine-tuning on a small hand-labelled dataset of suburb-specific Reddit posts would improve aspect classification confidence, particularly for dimensions with informal vocabulary such as ``nightlife'' and ``noise''.
 
-\textbf{User authentication and personalisation.} Adding a user account system would allow the system to store preferences across sessions and support longer interaction histories. The current \passthrough{\lstinline!localStorage!}-only approach means that profile data is device-specific and not persistent across browsers.
+\textbf{User authentication and personalisation.} Adding a user account system would allow preference storage across sessions. The current \passthrough{\lstinline!localStorage!}-only approach makes profile data device-specific and non-persistent across browsers.
 
-\textbf{LLM provider fallback.} The system currently depends on a single default LLM provider. Adding automatic fallback (e.g., OpenRouter -> Anthropic -> OpenAI) would improve production reliability.
-
-\textbf{Reduce hallucination rate through prompt and source augmentation.} The evaluation found a 29.8\% hallucination rate on demo questions. Most unverified claims are plausible contextual inferences rather than fabrications, but they fail the strict source-tracing criterion. Two targeted fixes: (1)~add an explicit constraint to the synthesiser prompt requiring every factual claim to cite its agent source, and (2)~expand the structured outputs of the GIS and sentiment agents to return the raw values the synthesiser currently infers (e.g.\ explicit ``transport service frequency: moderate'' field, rather than requiring the LLM to interpret a normalised score). A rerun of the evaluation after these changes would quantify the improvement and provide a before/after metric for the report.
-
-\textbf{Address Supabase session saturation in production.} During evaluation, the Supabase pooler reached its session limit (\passthrough{\lstinline!EMAXCONNSESSION: max clients reached in session mode!}), causing intermittent SSL connection closures. The \passthrough{\lstinline!NullPool!} patch to \passthrough{\lstinline!backend/db/postgres.py!} resolves this for local evaluation, but production deployments on Render may still accumulate stale sessions. Adding a startup health check and configuring Supabase's idle session timeout would prevent recurrence without requiring manual \passthrough{\lstinline!pg\_terminate\_backend!} intervention.
-
-\textbf{Expand transport scoring to mode-level breakdown.} The current \passthrough{\lstinline!transport\_score!} aggregates all modes (bus, train, metro, light rail, ferry) into a single services-per-hour metric. The \passthrough{\lstinline!TransportScore!} ORM model already includes \passthrough{\lstinline!bus\_stops!}, \passthrough{\lstinline!train\_stations!}, and \passthrough{\lstinline!light\_rail\_stops!} columns (currently null); populating these from the GTFS \passthrough{\lstinline!routes.txt!} route\_type field would enable mode-specific queries (``Does this suburb have train access?'') with grounded answers and improve the GIS agent's scoring resolution.
+\textbf{Expand transport scoring to mode-level breakdown.} The current \passthrough{\lstinline!transport\_score!} aggregates all modes into a single services-per-hour metric. The \passthrough{\lstinline!TransportScore!} ORM model already includes \passthrough{\lstinline!bus\_stops!}, \passthrough{\lstinline!train\_stations!}, and \passthrough{\lstinline!light\_rail\_stops!} columns (currently null); populating these from the GTFS \passthrough{\lstinline!routes.txt!} route\_type field would enable mode-specific queries with grounded answers.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -754,7 +730,7 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 \appendix
 
 \clearpage
-\section{Appendix A: System Architecture Diagram}\label{appendix-a-system-architecture-diagram}
+\section{System Architecture Diagram}\label{appendix-a-system-architecture-diagram}
 
 \begin{figure}[H]
 \centering
@@ -765,7 +741,7 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \clearpage
-\section{Appendix B: Dashboard Screenshots}\label{appendix-b-dashboard-screenshots}
+\section{Dashboard Screenshots}\label{appendix-b-dashboard-screenshots}
 
 \begin{figure}[H]
 \centering
@@ -800,7 +776,9 @@ S., E., \& Zhang, B. (2024, December 19). Building effective agents. \emph{Anthr
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \clearpage
-\section{Appendix C: Sample Code}\label{appendix-c-sample-code}
+\section{Sample Code}\label{appendix-c-sample-code}
+
+\textbf{Note:} The excerpts below are representative illustrations of the functions used in the project. They have been simplified for readability. To read the full, unmodified source code, locate the corresponding functions directly in the repository at \url{https://github.com/Nelkit/sydney-liveability-ai}.
 
 \subsection{ingest\_sentiment.py (ingest pipeline)}\label{ingest_sentimentpy-ingest-pipeline}
 
@@ -1002,40 +980,43 @@ def analyse_suburb_endpoint(suburb: str) -> dict:
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \clearpage
-\section{Appendix D: Reddit Corpus EDA Supplementary Figures}\label{appendix-d-reddit-eda}
+\section{Reddit Corpus EDA Supplementary Figures}\label{appendix-d-reddit-eda}
+
+\renewcommand{\thefigure}{D\arabic{figure}}
+\setcounter{figure}{0}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.92\linewidth]{figs/reddit_eda/01_monthly_volume.png}
-  \caption{Figure D1: Monthly volume of r/sydney posts and comments in the Arc Shift dump. Activity grows steadily and shows weekly/seasonal regularity but no collection anomalies.}
+  \caption{Monthly volume of r/sydney posts and comments in the Arc Shift dump. Activity grows steadily and shows weekly/seasonal regularity but no collection anomalies.}
   \label{fig:reddit-eda-monthly}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{figs/reddit_eda/04_suburb_coverage.png}
-  \caption{Figure D2: Distribution of records per suburb (clipped at 500, log y) across the 563 suburb files; the long tail is unmistakable. Right: top 25 suburbs by record count, decomposed into posts vs. comments.}
+  \caption{Distribution of records per suburb (clipped at 500, log y) across the 563 suburb files; the long tail is unmistakable. Right: top 25 suburbs by record count, decomposed into posts vs. comments.}
   \label{fig:reddit-eda-coverage}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{figs/reddit_eda/07_aspect_score_violin.png}
-  \caption{Figure D3: Violin plot of DeBERTa-v3 aspect sentiment scores across all suburbs. Each violin shows the distribution of scores for one of the eight liveability dimensions, revealing variation in community sentiment patterns per aspect.}
+  \caption{Violin plot of DeBERTa-v3 aspect sentiment scores across all suburbs. Each violin shows the distribution of scores for one of the eight liveability dimensions, revealing variation in community sentiment patterns per aspect.}
   \label{fig:reddit-eda-violin}
 \end{figure}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.85\linewidth]{figs/reddit_eda/08_aspect_score_correlation.png}
-  \caption{Figure D4: Pearson correlation matrix of the eight DeBERTa-v3 aspect sentiment scores. Strong positive correlations between safety and transport suggest that suburbs perceived as safe also tend to receive positive transport mentions.}
+  \caption{Pearson correlation matrix of the eight DeBERTa-v3 aspect sentiment scores. Strong positive correlations between safety and transport suggest that suburbs perceived as safe also tend to receive positive transport mentions.}
   \label{fig:reddit-eda-corr}
 \end{figure}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \clearpage
-\section{Appendix E: Traditional vs. Modern NLP Comparison Table}\label{appendix-e-traditional-vs-modern-nlp-comparison-table}
+\section{Traditional vs. Modern NLP Comparison Table}\label{appendix-e-traditional-vs-modern-nlp-comparison-table}
 
 \begin{table}[H]
 \centering
