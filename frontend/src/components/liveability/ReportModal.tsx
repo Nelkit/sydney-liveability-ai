@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { CategoryChip } from "@/components/ui/CategoryChip";
+import { InlineCitations } from "@/components/ui/InlineCitations";
 import { Pill } from "@/components/ui/Pill";
 import { ScoreGauge } from "@/components/ui/ScoreGauge";
 import { SectionCard } from "@/components/ui/SectionCard";
@@ -20,12 +21,49 @@ import { CitationHoverProvider } from "@/context/CitationHoverContext";
 import type {
   AspectScore,
   ChatAPIResponse,
+  Citation,
   CrimeRow,
   EmotionProfile as EmotionProfileType,
   EvidenceTrace as EvidenceTraceType,
   RedditHighlight,
+  SourceKind,
   SuburbScore,
 } from "@/types/api";
+
+// ---------- citation helpers ----------
+
+const SOURCE_KIND_LIST: SourceKind[] = ["reddit", "bocsar", "arcgis", "osm", "tfnsw", "pdf"];
+
+function isSourceKind(v: unknown): v is SourceKind {
+  return typeof v === "string" && SOURCE_KIND_LIST.includes(v as SourceKind);
+}
+
+type SourceObject = { source?: SourceKind; suburb?: string; text?: string };
+
+function isSourceObject(v: unknown): v is SourceObject {
+  return typeof v === "object" && v !== null && ("source" in v || "suburb" in v || "text" in v);
+}
+
+function extractCitations(payload: ChatAPIResponse, suburbs: string[]): Citation[] {
+  const raw: unknown[] = Array.isArray(payload.sources) ? (payload.sources as unknown[]) : [];
+  if (!raw.length) return [];
+  const citations: Citation[] = [];
+  let n = 1;
+  raw.forEach((item) => {
+    if (isSourceKind(item)) {
+      citations.push({ n: n++, src: item, suburbs, detail: `${suburbs.join(", ")} · ${item}` });
+      return;
+    }
+    if (isSourceObject(item)) {
+      const kind = isSourceKind(item.source) ? item.source : null;
+      if (!kind) return;
+      const citeSuburbs = item.suburb ? [item.suburb] : suburbs;
+      const detail = item.text ? item.text : `${citeSuburbs.join(", ")} · ${kind}`;
+      citations.push({ n: n++, src: kind, suburbs: citeSuburbs, detail });
+    }
+  });
+  return citations;
+}
 
 const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000").replace(/\/$/, "");
 
@@ -41,6 +79,7 @@ const MapPanel = dynamic(
 export type ReportModalProps = {
   mode: "single" | "compare";
   suburbs: string[];
+  question?: string;
   onClose: () => void;
   payload?: ChatAPIResponse;
   payloads?: Record<string, ChatAPIResponse>;
@@ -77,10 +116,12 @@ const ACCENT_SINGLE = "oklch(0.55 0.18 285)";
 
 function SingleReport({
   suburbName,
+  question,
   onClose,
   initialPayload,
 }: {
   suburbName: string;
+  question?: string;
   onClose: () => void;
   initialPayload?: ChatAPIResponse;
 }) {
@@ -119,13 +160,15 @@ function SingleReport({
   const answer = rawAnswer.replace(/\n>\s+[^\n]*$/s, "").trimEnd();
   const router = payload?.router;
 
+  const citations = payload ? extractCitations(payload, [suburbName]) : [];
+
   const sorted = [...aspects].sort((a, b) => b.pos - a.pos);
   const lovedItem = sorted[0];
   const concernItem = sorted[sorted.length - 1];
 
   const formatAspectPos = (pos: number | null | undefined) => {
     if (typeof pos !== "number") return "n/a";
-    return pos.toFixed(2);
+    return `${Math.round(pos * 100)}%`;
   };
 
   return (
@@ -139,10 +182,18 @@ function SingleReport({
             </div>
             <div className="mt-0.5 text-[17px] font-semibold tracking-[-0.015em]">
               {suburbName}
-              {suburbScore?.sa4 && (
+              {suburbScore?.sa4 && suburbScore.sa4 !== "N/A" && (
                 <span className="ml-2 font-normal text-fg-muted">· {suburbScore.sa4}</span>
               )}
             </div>
+            {question && (
+              <div className="mt-1 flex items-center gap-1.5">
+                <span className="font-mono text-[9.5px] uppercase tracking-[0.06em] text-fg-muted">q</span>
+                <span className="font-mono text-[11px] text-fg-muted italic truncate max-w-[420px]">
+                  {question}
+                </span>
+              </div>
+            )}
           </div>
           <div className="shrink-0 md:hidden">
             <CloseButton onClose={onClose} />
@@ -187,7 +238,7 @@ function SingleReport({
                   className="w-1 shrink-0 self-stretch rounded-sm"
                   style={{ background: ACCENT_SINGLE }}
                 />
-                <div className="flex flex-col min-w-0">
+                <div className="flex flex-col min-w-0 flex-1">
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     components={{
@@ -200,21 +251,25 @@ function SingleReport({
                   >
                     {answer}
                   </ReactMarkdown>
+                  <InlineCitations citations={citations} />
                 </div>
               </div>
             </SectionCard>
 
             {/* 2. EXECUTIVE SUMMARY */}
-            <SectionCard title="Executive summary" hint="weighted profile applied">
+            <SectionCard title="Executive summary" hint="weighted liveability scores · 0–100">
               {suburbScore ? (
                 <div
                   className="grid grid-cols-1 md:grid-cols-[200px_1fr_280px] items-center gap-6"
                 >
                   <div className="flex flex-col items-center gap-2">
                     <ScoreGauge value={suburbScore.score} size={140} label="liveability" />
-                    <div className="font-mono text-[10px] text-fg-muted">weighted · 0–100</div>
+                    <div className="font-mono text-[10px] text-fg-muted">composite · 0–100</div>
                   </div>
                   <div className="flex flex-col gap-3">
+                    <div className="mb-0.5 font-mono text-[9.5px] uppercase tracking-[0.06em] text-fg-muted">
+                      Liveability dimensions · score 0–100 · weight %
+                    </div>
                     {(
                       [
                         { k: "transport", v: suburbScore.transport, w: 7 },
@@ -232,7 +287,7 @@ function SingleReport({
                         <Bar value={v} color={ACCENT_SINGLE} height={6} />
                         <div className="font-mono text-[11.5px] font-semibold">{v}</div>
                         <div className="rounded border border-border bg-bg-elev text-center font-mono text-[10px] text-fg-muted px-1.5 py-px">
-                          w·{w}
+                          {w * 10}%
                         </div>
                       </div>
                     ))}
@@ -243,7 +298,7 @@ function SingleReport({
                         tone="pos"
                         label="LOVED FOR"
                         body={lovedItem.aspect}
-                        sub={`${formatAspectPos(lovedItem.pos)} · ${lovedItem.mentions} mentions`}
+                        sub={`Reddit sentiment ${formatAspectPos(lovedItem.pos)} · ${lovedItem.mentions} mentions`}
                       />
                     )}
                     {concernItem && (
@@ -251,7 +306,7 @@ function SingleReport({
                         tone="neg"
                         label="CONCERN"
                         body={concernItem.aspect}
-                        sub={`${formatAspectPos(concernItem.pos)} · ${concernItem.mentions} mentions`}
+                        sub={`Reddit sentiment ${formatAspectPos(concernItem.pos)} · ${concernItem.mentions} mentions`}
                       />
                     )}
                     {!lovedItem && (
@@ -271,10 +326,10 @@ function SingleReport({
             {/* 3. ASPECT RADAR + EMOTION */}
             <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr] gap-4">
               <SectionCard
-                title="Aspect radar"
+                title="Reddit sentiment · by topic"
                 hint={
                   aspects.length > 0
-                    ? `DeBERTa-v3 · ${aspects.reduce((a, b) => a + b.mentions, 0)} mentions`
+                    ? `DeBERTa-v3 NLP · ${aspects.reduce((a, b) => a + b.mentions, 0)} Reddit mentions`
                     : undefined
                 }
               >
@@ -286,7 +341,10 @@ function SingleReport({
                   </div>
                 )}
               </SectionCard>
-              <SectionCard title="Emotion profile" hint="GoEmotions · averaged across posts">
+              <SectionCard
+                title="Resident emotion · Reddit posts"
+                hint="GoEmotions classifier · probability distribution"
+              >
                 {emotions ? (
                   <EmotionProfile data={emotions} />
                 ) : (
@@ -302,7 +360,7 @@ function SingleReport({
               <SectionCard
                 title="Crime breakdown"
                 hint={
-                  suburbScore?.sa4
+                  suburbScore?.sa4 && suburbScore.sa4 !== "N/A"
                     ? `BOCSAR · ${suburbScore.sa4} SA4 · per 100k · 2024`
                     : "BOCSAR"
                 }
@@ -325,6 +383,7 @@ function SingleReport({
                     onLayerChange={() => {}}
                     weights={EMPTY_WEIGHTS}
                     activeSuburbs={[suburbName]}
+                    hideRanking
                   />
                 </div>
                 {suburbScore ? (
@@ -406,6 +465,7 @@ type CompareData = {
   redditA: RedditHighlight[];
   redditB: RedditHighlight[];
   answer: string;
+  citations: Citation[];
 };
 
 async function fetchForSuburb(name: string): Promise<ChatAPIResponse> {
@@ -677,11 +737,13 @@ function RowsLayout({
 function CompareReport({
   suburbA,
   suburbB,
+  question,
   onClose,
   payloads,
 }: {
   suburbA: string;
   suburbB: string;
+  question?: string;
   onClose: () => void;
   payloads?: Record<string, ChatAPIResponse>;
 }) {
@@ -713,6 +775,8 @@ function CompareReport({
         }
         const answerA = pA.answer ?? "";
         const answerB = pB.answer ?? "";
+        const winnerPayload = answerA.length >= answerB.length ? pA : pB;
+        const winnerSuburbs = answerA.length >= answerB.length ? [suburbA] : [suburbB];
         setData({
           a: scoreA,
           b: scoreB,
@@ -721,6 +785,7 @@ function CompareReport({
           redditA: pA.reddit_highlights?.[suburbA] ?? [],
           redditB: pB.reddit_highlights?.[suburbB] ?? [],
           answer: answerA.length >= answerB.length ? answerA : answerB,
+          citations: extractCitations(winnerPayload, winnerSuburbs),
         });
       })
       .catch(() => setData(null))
@@ -736,15 +801,25 @@ function CompareReport({
       <div className="flex flex-col gap-3 border-b border-border bg-bg px-6 py-4 shrink-0 md:flex-row md:items-center md:gap-4">
         {/* Row 1: title + suburbs + close (mobile) */}
         <div className="flex items-start justify-between gap-4 md:contents">
-          <div className="flex flex-1 flex-col gap-1 md:flex-row md:items-center md:gap-3.5">
-            <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
-              Detailed report · comparator
-            </span>
-            <div className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.015em]">
-              <span style={{ color: ACCENT_A }}>{suburbA}</span>
-              <span className="font-mono text-[13px] font-normal text-fg-muted">vs</span>
-              <span style={{ color: ACCENT_B }}>{suburbB}</span>
+          <div className="flex flex-1 flex-col gap-0.5">
+            <div className="flex flex-wrap items-center gap-3.5">
+              <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted">
+                Detailed report · comparator
+              </span>
+              <div className="flex items-center gap-2.5 text-[17px] font-semibold tracking-[-0.015em]">
+                <span style={{ color: ACCENT_A }}>{suburbA}</span>
+                <span className="font-mono text-[13px] font-normal text-fg-muted">vs</span>
+                <span style={{ color: ACCENT_B }}>{suburbB}</span>
+              </div>
             </div>
+            {question && (
+              <div className="flex items-center gap-1.5">
+                <span className="font-mono text-[9.5px] uppercase tracking-[0.06em] text-fg-muted">q</span>
+                <span className="font-mono text-[11px] text-fg-muted italic truncate max-w-[480px]">
+                  {question}
+                </span>
+              </div>
+            )}
           </div>
           <div className="shrink-0 md:hidden">
             <CloseButton onClose={onClose} />
@@ -818,7 +893,7 @@ function CompareReport({
                   style={{ background: "linear-gradient(180deg, oklch(0.99 0.01 285), oklch(0.992 0.002 250))" }}
                 >
                   <div className="w-1 shrink-0 self-stretch rounded-sm" style={{ background: ACCENT_A }} />
-                  <div className="flex flex-col min-w-0">
+                  <div className="flex flex-col min-w-0 flex-1">
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
                       components={{
@@ -831,6 +906,7 @@ function CompareReport({
                     >
                       {data.answer.replace(/\n>\s+[^\n]*$/s, "").trimEnd()}
                     </ReactMarkdown>
+                    <InlineCitations citations={data.citations} />
                   </div>
                 </div>
               </SectionCard>
@@ -878,7 +954,7 @@ function CompareReport({
 // MODAL SHELL
 // ==========================================================================
 
-export function ReportModal({ mode, suburbs, onClose, payload, payloads }: ReportModalProps) {
+export function ReportModal({ mode, suburbs, question, onClose, payload, payloads }: ReportModalProps) {
   // Close on Escape
   useEffect(() => {
     function handleKey(e: KeyboardEvent) {
@@ -909,11 +985,12 @@ export function ReportModal({ mode, suburbs, onClose, payload, payloads }: Repor
           onClick={(e) => e.stopPropagation()}
         >
           {mode === "single" ? (
-            <SingleReport suburbName={suburbs[0] ?? ""} onClose={onClose} initialPayload={payload} />
+            <SingleReport suburbName={suburbs[0] ?? ""} question={question} onClose={onClose} initialPayload={payload} />
           ) : (
             <CompareReport
               suburbA={suburbs[0] ?? ""}
               suburbB={suburbs[1] ?? ""}
+              question={question}
               onClose={onClose}
               payloads={payloads}
             />

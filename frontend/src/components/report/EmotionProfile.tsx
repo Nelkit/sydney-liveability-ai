@@ -21,7 +21,7 @@ export function EmotionProfile({ data }: Props) {
         <div key={k} className="flex flex-col gap-1">
           <div className="flex items-center justify-between">
             <div className="text-[11.5px] capitalize text-fg">{k}</div>
-            <div className="font-mono text-[11.5px] font-semibold">{v}</div>
+            <div className="font-mono text-[11.5px] font-semibold">{Math.round(v * 100)}%</div>
           </div>
           <Bar value={v} max={max} color={EMOTION_COLORS[k] ?? "oklch(0.55 0.18 285)"} height={6} />
         </div>

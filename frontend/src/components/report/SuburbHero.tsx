@@ -47,14 +47,14 @@ export function SuburbHero({ name, data, accent, side }: Props) {
           />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted truncate">{data.sa4}</div>
+          {data.sa4 && data.sa4 !== "N/A" && <div className="font-mono text-[10px] uppercase tracking-[0.08em] text-fg-muted truncate">{data.sa4}</div>}
           <div className="text-xl sm:text-2xl font-semibold tracking-[-0.02em] truncate" style={{ color: accent }}>
             {name}
           </div>
           <div className="mt-1.5 flex flex-wrap gap-1">
             <Stat label="walk" v={data.walkability.toFixed(1)} />
             <Stat label="fac"  v={data.facilities.toFixed(1)} />
-            <Stat label="sent" v={data.sentiment.toFixed(2)} />
+            <Stat label="sent" v={typeof data.sentiment === "number" ? `${Math.round(data.sentiment)}%` : "n/a"} />
           </div>
         </div>
       </div>
@@ -71,6 +71,7 @@ export function SuburbHero({ name, data, accent, side }: Props) {
           onLayerChange={() => {}}
           weights={EMPTY_WEIGHTS}
           activeSuburbs={[name]}
+          hideRanking
         />
       </div>
 

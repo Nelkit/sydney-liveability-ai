@@ -26,6 +26,7 @@ type MapPanelProps = {
   activeSuburbs?: string[];
   hoveredSuburb?: string | null;
   onSuburbHover?: (name: string | null) => void;
+  hideRanking?: boolean;
 };
 
 const layers = ["Liveability", "Safety", "Transport", "Lifestyle"];
@@ -146,6 +147,7 @@ export function MapPanel({
   hoveredSuburb,
   onSuburbHover,
   isVisible = true,
+  hideRanking = false,
 }: MapPanelProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef          = useRef<L.Map | null>(null);
@@ -583,7 +585,7 @@ export function MapPanel({
 
 
       {/* Top 5 — centrado sobre el mapa */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-6 z-[450] flex justify-center px-3">
+      {!hideRanking && <div className="pointer-events-none absolute inset-x-0 bottom-6 z-[450] flex justify-center px-3">
         <div className="pointer-events-auto w-full max-w-[600px] overflow-hidden rounded-[12px] border border-border shadow-floatLg backdrop-blur-sm" style={{ background: "radial-gradient(circle at 30% 18%, rgba(254,215,170,0.22), transparent 28%), linear-gradient(180deg,#eff2f8,#e9edf6)" }}>
           <div className="flex items-center gap-1 border-b border-border px-3 py-1.5">
             <span className="font-mono text-[9.5px] uppercase tracking-[0.08em] text-fg-muted">Top suburbs</span>
@@ -624,7 +626,7 @@ export function MapPanel({
                 })}
           </div>
         </div>
-      </div>
+      </div>}
 
     </section>
   );
