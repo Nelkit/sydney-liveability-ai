@@ -33,16 +33,38 @@ _AGENT_TIMEOUT_SECONDS = 45
 
 
 def _run_with_timeout(fn, timeout: int):
-    """Run fn() with a hard wall-clock timeout using SIGALRM (Unix only)."""
-    def _handler(signum, frame):
-        raise TimeoutError(f"agent timed out after {timeout}s")
-    old = signal.signal(signal.SIGALRM, _handler)
-    signal.alarm(timeout)
-    try:
-        return fn()
-    finally:
-        signal.alarm(0)
-        signal.signal(signal.SIGALRM, old)
+    """Run fn() with a hard wall-clock timeout.
+
+    Uses SIGALRM when called from the main thread (zero overhead).
+    Falls back to a simple blocking call with concurrent.futures.Future
+    when called from a worker thread — signal.alarm raises ValueError
+    outside the main thread.  The nested executor carries the calling
+    thread's contextvars via copy_context so _TRACE_CTX is visible.
+    """
+    import threading
+    if threading.current_thread() is threading.main_thread():
+        def _handler(signum, frame):
+            raise TimeoutError(f"agent timed out after {timeout}s")
+        old = signal.signal(signal.SIGALRM, _handler)
+        signal.alarm(timeout)
+        try:
+            return fn()
+        finally:
+            signal.alarm(0)
+            signal.signal(signal.SIGALRM, old)
+    else:
+        import concurrent.futures as _cf
+        import contextvars as _cv
+        # copy_context captures the current ContextVar state (including
+        # _TRACE_CTX) so the nested thread sees the same trace list.
+        ctx = _cv.copy_context()
+        with _cf.ThreadPoolExecutor(max_workers=1) as pool:
+            future = pool.submit(ctx.run, fn)
+            try:
+                return future.result(timeout=timeout)
+            except _cf.TimeoutError:
+                future.cancel()
+                raise TimeoutError(f"agent timed out after {timeout}s")
 
 from crewai import Agent, Crew, Process, Task
 from crewai.tools import tool

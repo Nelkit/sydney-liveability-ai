@@ -14,7 +14,8 @@ export function AspectRadar({ data, accent = "oklch(0.55 0.18 285)", size = "sm"
   const n    = data.length;
 
   const toNumber = (value: number | null | undefined) => (typeof value === "number" ? value : 0);
-  const formatPos = (value: number | null | undefined) => (typeof value === "number" ? value.toFixed(2) : "n/a");
+  const formatPos = (value: number | null | undefined) =>
+    typeof value === "number" ? `${Math.round(value * 100)}%` : "n/a";
 
   const points = data.map((d, i) => {
     const ang = (i / n) * Math.PI * 2 - Math.PI / 2;

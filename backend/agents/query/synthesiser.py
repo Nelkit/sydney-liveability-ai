@@ -139,10 +139,18 @@ def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _scale(value: float | None) -> int | None:
+    """Scale a 0–1 score to 0–100 integer. Returns None when value is None."""
+    if value is None:
+        return None
+    return round(float(value) * 100)
+
+
 def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, Any]:
     """Retrieve suburb data from DB for synthesis context.
-    
-    Returns dict with suburbs data including facilities, transport, OSM scores.
+
+    All scores that arrive from the DB on a 0–1 scale are converted to 0–100
+    integers so the synthesiser LLM cites numbers consistent with the dashboard.
     Filters to requested suburbs if provided, otherwise returns top suburbs.
     """
     with SessionLocal() as session:
@@ -168,20 +176,20 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                 select(OsmScore).where(OsmScore.suburb.in_(target_suburbs))
             ).all()
         }
-        
+
         context = {"suburbs": []}
         for suburb in suburbs_data:
             suburb_context = {
                 "name": suburb.suburb,
-                "facilities_score": suburb.facilities_score,
-                "walkability_score": suburb.walkability_score,
+                "facilities_score": _scale(suburb.facilities_score),
+                "walkability_score": _scale(suburb.walkability_score),
                 "total_facilities": suburb.total_facilities,
                 "libraries": suburb.libraries_count,
                 "car_share_bays": suburb.car_share_bays_count,
                 "mobility_parking": suburb.mobility_parking_count,
                 "sports_facilities": suburb.sports_facilities_count,
             }
-            
+
             # Add transport data if available
             if suburb.suburb in transport_data:
                 t = transport_data[suburb.suburb]
@@ -191,14 +199,14 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                     "light_rail_stops": t.light_rail_stops,
                     "bike_paths_km": t.bike_paths_km,
                     "avg_commute_min": t.avg_commute_min,
-                    "transport_score": t.transport_score,
+                    "transport_score": _scale(t.transport_score),
                 })
-            
+
             # Add OSM amenity data if available
             if suburb.suburb in osm_data:
                 o = osm_data[suburb.suburb]
                 suburb_context.update({
-                    "osm_score": o.osm_score,
+                    "osm_score": _scale(o.osm_score),
                     "cafes": o.cafe,
                     "restaurants": o.restaurant,
                     "schools": o.school,
@@ -208,9 +216,9 @@ def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, A
                     "playgrounds": o.playground,
                     "sports_centres": o.sports_centre,
                 })
-            
+
             context["suburbs"].append(suburb_context)
-        
+
     return context
 
 
@@ -244,6 +252,40 @@ def _extract_suburbs_from_outputs(outputs: dict[str, Any]) -> list[str]:
         suburbs.extend([comparator.get("suburb_a"), comparator.get("suburb_b")])
 
     return _ordered_unique_suburbs(suburbs)
+
+
+def _scale_sentiment_outputs(outputs: dict[str, Any]) -> dict[str, Any]:
+    """Return a copy of specialist outputs with sentiment aspect scores scaled to 0–100.
+
+    The sentiment agent returns aspect scores on a 0–1 float scale.  The
+    synthesiser prompt tells the LLM that all scores are 0–100, so we must
+    convert before serialising into the prompt — otherwise the LLM cites
+    "score of 0.59" instead of "59%".
+    """
+    if not isinstance(outputs, dict):
+        return outputs
+    sentiment = outputs.get("sentiment")
+    if not isinstance(sentiment, dict):
+        return outputs
+
+    scaled_sentiment: dict[str, Any] = {}
+    for suburb, result in sentiment.items():
+        if not isinstance(result, dict):
+            scaled_sentiment[suburb] = result
+            continue
+        aspects = result.get("aspects") or {}
+        scaled_aspects: dict[str, Any] = {}
+        for dim, entry in aspects.items():
+            if isinstance(entry, dict) and isinstance(entry.get("score"), (int, float)):
+                scaled_aspects[dim] = {
+                    **entry,
+                    "score": round(float(entry["score"]) * 100),
+                }
+            else:
+                scaled_aspects[dim] = entry
+        scaled_sentiment[suburb] = {**result, "aspects": scaled_aspects}
+
+    return {**outputs, "sentiment": scaled_sentiment}
 
 
 def _format_evidence_trace_block(agent_outputs: dict[str, Any]) -> str:
@@ -348,12 +390,13 @@ Write a SHORT, PUNCHY chat response (3-5 sentences MAX) about {suburb_name} usin
 
 STRUCTURE (use light markdown):
 - Open with 1 sentence capturing the suburb's overall character.
-- Use **bold** to highlight 1-2 key metrics or standout facts (e.g. "**walkability score of 87**").
+- Use **bold** to highlight 1-2 key metrics or standout facts (e.g. "**transport score of 80**").
 - Add a short bullet list (2-3 items MAX) of the most relevant highlights or concerns for the user's question.
 - Close with a natural 1-sentence invitation to open the full report for charts, scores, and crime data.
 - Format the closing invitation as a Markdown blockquote line starting with ">".
 
 TONE: Conversational, direct, like a knowledgeable local friend.
+SCORES: All scores in the data are on a 0–100 scale. Always cite them as whole numbers (e.g. "transport score of 80", NOT "0.80"). For sentiment/aspect scores express them as a percentage (e.g. "59% community sentiment").
 CRITICAL: No walls of text. No headings (###). Do NOT invent data not present below. The dashboard already has the detail — your job is to make the user WANT to open it."""
 
     elif scenario == "comparator":
@@ -369,12 +412,14 @@ STRUCTURE (use light markdown):
 - Format the closing invitation as a Markdown blockquote line starting with ">".
 
 TONE: Decisive, direct, helpful.
+SCORES: All scores in the data are on a 0–100 scale. Always cite them as whole numbers. For sentiment/aspect scores express them as a percentage (e.g. "59% community sentiment").
 CRITICAL: No tables. No ### headings. Do NOT invent data not present below. The Compare dashboard already exists — your message is the teaser."""
 
     else:  # fallback single
         system = f"""You are a Sydney liveability expert assistant. Answer the user's question about Sydney suburbs using the provided data.
 Be specific with numbers and metrics. Keep the answer concise (2-3 sentences max unless asking for comparison).
-Always cite your data source. Use **bold** for key metrics. Do NOT invent data."""
+SCORES: All scores are on a 0–100 scale — cite them as whole numbers. Express sentiment scores as percentages.
+Use **bold** for key metrics. Do NOT invent data."""
 
     prompt = f"""{system}
 
@@ -459,7 +504,11 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         
         # Build synthesis prompt — thread router_output through agent_outputs
         # so the prompt builder can gate the trace block on router categories.
-        combined_outputs: dict[str, Any] = dict(outputs) if isinstance(outputs, dict) else {}
+        # Scale sentiment aspect scores to 0–100 so the LLM cites numbers
+        # consistent with the dashboard (same scale as suburb_scores).
+        combined_outputs: dict[str, Any] = _scale_sentiment_outputs(
+            dict(outputs) if isinstance(outputs, dict) else {}
+        )
         if isinstance(router_output, dict) and router_output:
             combined_outputs["router"] = router_output
         synthesis_prompt = _build_synthesis_prompt(

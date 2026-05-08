@@ -196,9 +196,9 @@ function buildClaimsWithCitations(
   const citations = normalizeSourcesToCitations(payload, router);
   if (!citations.length) return claims;
 
-  return claims.map((cl, idx) => ({
+  return claims.map((cl) => ({
     ...cl,
-    cites: [citations[idx % citations.length]],
+    cites: citations,
   }));
 }
 
@@ -275,7 +275,7 @@ export default function HomePage() {
   const [civicLoadingLabel, setCivicLoadingLabel] = useState("Loading civic data");
   const [hoveredSuburb,  setHoveredSuburb]  = useState<string | null>(null);
 
-  const [reportModal, setReportModal] = useState<{ mode: "single" | "compare"; suburbs: string[] } | null>(null);
+  const [reportModal, setReportModal] = useState<{ mode: "single" | "compare"; suburbs: string[]; question?: string } | null>(null);
 
   const [displayMessages, setDisplayMessages] = useState<DisplayMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -810,6 +810,8 @@ export default function HomePage() {
                         if (m.type === "typing")     return <TypingBubble key={i} step={m.step} />;
                         if (m.type === "out_of_scope") return <OutOfScopeState key={i} onSuburbClick={(t) => sendChat(t)} />;
                         if (m.type === "assistant") {
+                          const prevMsg = displayMessages[i - 1];
+                          const question = prevMsg?.type === "user" ? prevMsg.text : undefined;
                           return (
                             <AssistantBubble
                               key={i}
@@ -818,6 +820,7 @@ export default function HomePage() {
                                 setReportModal({
                                   mode: suburbs.length >= 2 ? "compare" : "single",
                                   suburbs,
+                                  question,
                                 });
                               }}
                             />
@@ -870,6 +873,7 @@ export default function HomePage() {
                   <ReportModal
                     mode={reportModal.mode}
                     suburbs={reportModal.suburbs}
+                    question={reportModal.question}
                     onClose={() => setReportModal(null)}
                     payload={reportModal.mode === "single" && lastPayload ? lastPayload : undefined}
                     payloads={suburbPayloads}
