@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 const BASE_URL = "https://sydney-liveability-ai.vercel.app";
 
@@ -43,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={spaceGrotesk.variable}>
       <body>
         {children}
         {GA_ID && (
