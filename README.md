@@ -3,129 +3,178 @@
 [![Backend: FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?style=flat&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Vector Store: ChromaDB](https://img.shields.io/badge/VectorStore-ChromaDB-FF6F00?style=flat)](https://www.trychroma.com/)
 [![RAG: LangChain](https://img.shields.io/badge/RAG-LangChain-121212?style=flat)](https://langchain.com/)
+[![Agents: CrewAI](https://img.shields.io/badge/Agents-CrewAI-6366f1?style=flat)](https://www.crewai.com/)
+[![DB: PostgreSQL](https://img.shields.io/badge/DB-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
-An AI-assisted, map-based web application to compare Sydney suburbs using civic data, crime statistics, and resident discourse.
+An AI-powered suburb recommendation platform for Greater Sydney. Combines structured government data (crime, transport, urban facilities), geospatial data (PostGIS), and community sentiment extracted from Reddit r/sydney to answer natural-language questions about where to live — backed by a multi-agent RAG pipeline with auditable evidence traces.
 
-## 📚 Table of Contents
-- [🧭 Overview](#-overview)
-- [🗂️ Repository Structure](#-repository-structure)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [🤖 Skills Usage](#-skills-usage)
-- [🐞 VS Code Launch Profiles](#-vs-code-launch-profiles)
-- [🧪 SYNTHESIS_DEBUG_MODE](#-synthesis_debug_mode)
-- [🔐 Environment Variables](#-environment-variables)
-- [🌿 Branch Convention](#-branch-convention)
-- [👥 Team](#-team)
+---
+
+## Table of Contents
+
+- [Overview](#-overview)
+- [System Architecture](#️-system-architecture)
+- [Local Setup](#-local-setup)
+- [Environment Variables](#-environment-variables)
+- [RAG Evaluation Harness](#-rag-evaluation-harness)
+- [Data Sources](#️-data-sources)
+- [NLP Pipeline and Models](#-nlp-pipeline-and-models)
+- [Ingestion Pipeline](#-ingestion-pipeline)
+- [Known Limitations](#️-known-limitations)
+- [Team](#-team)
+- [Links](#-links)
+
+---
 
 ## 🧭 Overview
-- Scope: ANLP 36118 project (UTS), Autumn 2026.
-- Suburb coverage: all suburbs available in the current backend datasets.
-- Current backend status: the main app flow is connected to `/api/chat` and `/api/civic`; the backend keeps `/` and `/health` available for local checks.
 
-## 🗂️ Repository Structure
+- **Subject:** ANLP 36118, Master of Data Science and Innovation, University of Technology Sydney (UTS), Autumn 2026
+- **Assessment:** AT2B — NLP system with multi-agent pipeline, RAG, and a production web interface
+- **Scope:** Suburb-level liveability analysis for Greater Sydney using crime statistics, transport data, OSM amenities, and community sentiment extracted from Reddit r/sydney
+- **Live demo:** [sydney-liveability-ai.vercel.app](https://sydney-liveability-ai.vercel.app)
+- **Architecture diagram:** [reports/AppendixA - system_architecture.png](reports/AppendixA%20-%20system_architecture.png)
+
+The user defines a personalised weight profile (safety, transport, lifestyle, affordability, proximity to CBD) through a conversational onboarding flow. The system ranks all available suburbs, displays the top-5 on an interactive map, and allows the user to explore each suburb in depth via a chat grounded in cited evidence.
+
+---
+
+## 🏗️ System Architecture
 
 ```text
-sydney-liveability-ai/
-│
-├── data_extraction/              # Data acquisition and preprocessing scripts
-│   ├── extract_reddit.py
-│   ├── extract_arcgis.py
-│   ├── parse_pdf.py
-│   └── process_bocsar.py
-│
-├── notebooks/                    # EDA and model training only
-│   ├── 01_eda_and_cleaning.ipynb
-│   ├── 02_traditional_nlp.ipynb
-│   ├── 03_topic_modeling.ipynb
-│   ├── 04_modern_nlp.ipynb
-│   └── requirements.txt
-│
-├── backend/                      # FastAPI production backend
-│   ├── main.py
-│   ├── api/
-│   ├── core/
-│   ├── agents/
-│   ├── crews/
-│   ├── db/
-│   ├── scripts/
-│   ├── alembic/
-│   ├── alembic.ini
-│   ├── Makefile
-│   └── requirements.txt
-│
-├── frontend/                     # Next.js frontend
-│   ├── src/
-│   │   ├── app/
-│   │   └── components/
-│   │       └── liveability/
-│   ├── public/
-│   ├── package.json
-│   ├── tailwind.config.ts
-│   └── vercel.json
-│
-├── data/                         # Local datasets (ignored in Git)
-│   ├── raw/
-│   └── processed/
-│       └── suburbs.geojson       # Committed static geometry
-│
-├── AGENTS.md
-├── README.md
-├── .gitignore
-└── .env.example
+┌──────────────────────────────────────────────────────────────────────┐
+│                     FRONTEND  (Next.js)                              │
+│                                                                      │
+│  OnboardingPanel ──► MapPanel ──► ChatPanel ──► EvidenceDrawer       │
+│        ▲                ▲               ▲                            │
+│     Weights          CivicData       StreamSSE                       │
+└────────┬────────────────┬─────────────┬──────────────────────────────┘
+         │               │             │
+  POST /api/chat   GET /api/civic   GET /api/chat/stream
+         │               │             │
+┌────────▼────────────────▼─────────────▼──────────────────────────────┐
+│                     BACKEND  (FastAPI)                               │
+│                                                                      │
+│  ┌────────────────────────────────────────────────────────────────┐  │
+│  │                  Query Crew  (CrewAI)                          │  │
+│  │                                                                │  │
+│  │  Router ──► [ Crime | Sentiment | GIS | Comparator ]           │  │
+│  │                        │                                       │  │
+│  │                 Synthesiser  (LLM)                             │  │
+│  └────────────────────────────────────────────────────────────────┘  │
+│                             │                                        │
+│          ┌──────────────────┼──────────────────┐                     │
+│          ▼                  ▼                  ▼                     │
+│  ┌──────────────┐  ┌─────────────┐  ┌──────────────────┐             │
+│  │  PostgreSQL  │  │  ChromaDB   │  │  LLM Provider    │             │
+│  │  (Supabase)  │  │             │  │                  │             │
+│  │              │  │  Reddit +   │  │  OpenRouter (✓)  │             │
+│  │  suburbs     │  │  PDF chunks │  │  Anthropic       │             │
+│  │  bocsar      │  │             │  │  OpenAI          │             │
+│  │  sentiment   │  │  MiniLM     │  │                  │             │
+│  │  osm/transp. │  │  L6-v2      │  │                  │             │
+│  └──────────────┘  └─────────────┘  └──────────────────┘             │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
-## 🛠️ Tech Stack
-- Frontend: Next.js, Tailwind CSS, Leaflet.js, Turf.js, Framer Motion.
-- Backend: FastAPI, uvicorn, Supabase.
-- Backend NLP: LangChain, ChromaDB, configurable LLM provider/model via `backend/.env.example`, sentence-transformers, pypdf, PRAW, spaCy, geopandas.
-- Notebooks NLP/EDA: NLTK, Gensim, scikit-learn, VADER, TextBlob, pyLDAvis, Matplotlib, Seaborn.
+The multi-agent pipeline is detailed in [SYSTEM_OVERVIEW_EN.md](SYSTEM_OVERVIEW_EN.md).
 
-## 🚀 Getting Started
-### ✅ Prerequisites
-- Python 3.10+
-- Node.js 18+
-- Supabase account
-- OpenRouter API key
-- Optional: Anthropic API key or OpenAI API key if you switch providers in `backend/.env`
+---
 
-### 1. 🧩 Backend Setup
+## 🚀 Local Setup
+
+### Before you start — what you must have
+
+The system has two hard requirements without which it cannot run:
+
+| Requirement | Why |
+| --- | --- |
+| **Supabase project** (PostgreSQL + PostGIS) | The backend creates the DB engine at startup. No `DATABASE_URL` → server fails to start. |
+| **LLM API key** (OpenRouter by default) | Every chat request calls the LLM. No key → `ValueError` on the first `/api/chat` call. |
+
+Everything else either has a working default (`CHROMADB_PATH`, `FRONTEND_URL`) or is optional.
+
+### Clone the repository
+
+```bash
+# SSH
+git clone git@github.com:Nelkit/sydney-liveability-ai.git
+
+# HTTPS
+git clone https://github.com/Nelkit/sydney-liveability-ai.git
+
+cd sydney-liveability-ai
+```
+
+### Backend
+
+#### Step 1 — Install dependencies
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+**Step 2 — Configure environment** (required)
+
+```bash
+cp backend/.env.example backend/.env
+```
+
+Open `backend/.env` and set at minimum:
+
+```bash
+DATABASE_URL=postgresql://user:password@host:5432/postgres   # Supabase Session Pooler URL
+OPENROUTER_API_KEY=sk-or-...                                  # or ANTHROPIC_API_KEY / OPENAI_API_KEY
+```
+
+See the [Environment Variables](#-environment-variables) section for the full reference.
+
+**Step 3 — Apply database migrations** (required on first run)
+
+```bash
+cd backend
+alembic upgrade head
+```
+
+**Step 4 — Download the ChromaDB snapshot** (required for chat to work)
+
+`data/chromadb/` is gitignored. Rebuilding from source takes ~10 hours. Download the prebuilt snapshot instead:
+
+1. Open the latest `chromadb-snapshot-*` release on [GitHub Releases](https://github.com/Nelkit/sydney-liveability-ai/releases).
+2. Download `chromadb-snapshot.zip` (~156 MB).
+3. Extract into the repo root so files land at `data/chromadb/`.
+
+The backend reads from this path automatically (`CHROMADB_PATH` defaults to `./data/chromadb`).
+
+#### Step 5 — Start the backend
+
+```bash
 cd backend
 make dev
 ```
 
-Backend URL: `http://127.0.0.1:8000`
+Backend runs at `http://127.0.0.1:8000`. Quick health check:
 
-Quick checks:
 ```bash
-curl http://127.0.0.1:8000/
 curl http://127.0.0.1:8000/health
 ```
 
-#### 🧠 ChromaDB index (prebuilt snapshot)
+### Frontend
 
-`data/chromadb/` is gitignored — rebuilding the index from source ingestion takes ~10 hours. To skip the rebuild, download the prebuilt snapshot from GitHub Releases:
-
-1. Open the latest `chromadb-snapshot-*` release: https://github.com/Nelkit/sydney-liveability-ai/releases
-2. Download `chromadb-snapshot.zip` (~156 MB).
-3. Extract into the repo root so files land at `data/chromadb/...`.
-
-The backend reads from this path automatically (configured in `backend/db/chromadb.py`).
-
-### 2. 🎨 Frontend Setup
 ```bash
 cd frontend
 npm install
+cp .env.example .env.local
 npm run dev
 ```
 
-Frontend URL: `http://localhost:3000` (or the port shown in terminal).
+`NEXT_PUBLIC_API_URL` defaults to `http://127.0.0.1:8000`, so no changes to `.env.local` are needed for a local setup where the backend runs on the default port.
 
-### 3. 📓 Notebooks Setup
+Frontend runs at `http://localhost:3000`.
+
+### Notebooks
+
 ```bash
 cd notebooks
 python -m venv venv-notebooks
@@ -134,183 +183,259 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Open the URL printed by Jupyter (commonly `http://localhost:8888/tree` with token).
+Keep the notebook virtualenv separate from the backend `venv` — they share some packages but at different versions.
 
-VS Code option:
-1. Install extensions: Python, Jupyter.
-2. Open any `.ipynb` in `notebooks/`.
-3. Select kernel from `notebooks/venv-notebooks`.
+VS Code option: install the Python and Jupyter extensions, open any `.ipynb`, and select the `notebooks/venv-notebooks` kernel.
 
-Important: keep backend and notebooks in separate virtual environments. Do not install notebook-only packages into the backend `venv`.
-
-## 🤖 Skills Usage
-
-This project includes team skills under `skills/` to standardize common implementation tasks.
-
-Use skills in chat with slash-style invocation:
-
-- `/query-agent` for creating or updating specialists in `backend/agents/query/`
-- `/ingest-script` for ingestion workflows in `backend/scripts/ingest_*.py`
-- `/chromadb-embed` for chunking/embedding/upsert flows in ChromaDB
-- `/alembic-migration` for ORM and Alembic migration changes in `backend/db/models.py`
-- `/frontend-guard` for new or refactored UI components with strict typing and existing Tailwind design consistency
-
-Pattern:
-
-- `/name-of-skill` where `name-of-skill` matches the folder under `skills/`
-- Example: `/query-agent` loads `skills/query-agent/SKILL.md`
-
-If one task spans multiple domains, invoke skills in sequence (for example: `/alembic-migration` then `/ingest-script`).
-
-## 🐞 VS Code Launch Profiles
-
-Shared launch profiles are configured in `.vscode/launch.json`.
-
-- `Frontend: Next dev`
-	- Runs `npm run dev` in `frontend/`
-	- Opens the local app URL automatically when Next.js prints "Local"
-- `Backend: FastAPI dev`
-	- Runs `python -m uvicorn main:app --reload` in `backend/`
-	- Uses `${workspaceFolder}/venv/bin/python`
-	- Opens the backend URL automatically when Uvicorn starts
-
-How to run:
-
-1. Open Run and Debug in VS Code
-2. Select one of the profiles above
-3. Press F5
-
-If the backend profile fails due to interpreter path, recreate or activate the root `venv` and retry.
-
-## 🧪 SYNTHESIS_DEBUG_MODE
-
-`SYNTHESIS_DEBUG_MODE` is read from `backend/.env` and used by `backend/agents/query/synthesiser.py`.
-
-Supported modes currently implemented:
-
-- `off`: normal synthesiser flow (default)
-- `gis`: bypass synthesis and return GIS structured output
-- `all`: bypass synthesis and return consolidated outputs from router/crime/sentiment/gis/comparator
-
-How to enable or disable:
-
-1. Edit `backend/.env` and set `SYNTHESIS_DEBUG_MODE=off|gis|all`
-2. Restart backend (launch profile or `make dev`) so environment values reload
-3. Call `/api/chat` and inspect the response payload
-
-Important:
-
-- Values like `crime`, `sentiment`, or `comparator` are not currently implemented as dedicated passthrough modes
-- Unsupported values behave effectively like `off`
+---
 
 ## 🔐 Environment Variables
-Create environment files from the correct templates in each app folder:
+
+Copy the templates and fill in the values:
 
 ```bash
 cp backend/.env.example backend/.env
-cp frontend/.env.example frontend/.env
+cp frontend/.env.example frontend/.env.local
 ```
 
 Windows PowerShell:
 
 ```powershell
 Copy-Item backend/.env.example backend/.env
-Copy-Item frontend/.env.example frontend/.env
+Copy-Item frontend/.env.example frontend/.env.local
 ```
 
-Then fill values in both files.
+### Backend (`backend/.env`)
 
-Backend variables defined in `backend/.env.example`:
+**Required — the backend will not start or function without these:**
+
+| Variable | Description |
+| --- | --- |
+| `DATABASE_URL` | PostgreSQL connection string. Use the Supabase **Session Pooler** URL (port **5432**, not 6543). |
+| `OPENROUTER_API_KEY` | API key for OpenRouter — required when `LLM_PROVIDER=openrouter` (the default). |
+
+**Required — set one key depending on the provider you choose:**
+
+| Variable | Description |
+| --- | --- |
+| `ANTHROPIC_API_KEY` | Required when `LLM_PROVIDER=anthropic`. |
+| `OPENAI_API_KEY` | Required when `LLM_PROVIDER=openai`. |
+
+**Optional — have working defaults for local development:**
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `LLM_PROVIDER` | `openrouter` | LLM provider: `openrouter`, `anthropic`, or `openai`. |
+| `LLM_MODEL` | `nvidia/nemotron-3-super-120b-a12b:free` | Model identifier passed to the provider. |
+| `CHROMADB_PATH` | `./data/chromadb` | Path to the ChromaDB snapshot, relative to repo root. |
+| `FRONTEND_URL` | `http://localhost:3000` | Frontend origin for CORS. |
+| `SYNTHESIS_DEBUG_MODE` | `off` | Synthesiser bypass: `off`, `gis`, or `all`. |
+| `LLM_AGENT_MODELS_JSON` | _(none)_ | JSON map for per-agent model overrides, e.g. `{"synthesiser": "claude-3-5-sonnet"}`. |
+
+**Not needed for the app — ingestion only:**
+
+| Variable | Description |
+| --- | --- |
+| `WALKSCORE_API_KEY` | Only required to re-run `ingest_walkscore.py`. Not used at runtime. |
+
+### Frontend (`frontend/.env.local`)
+
+**Optional — has a working default for local development:**
+
+| Variable | Default | Description |
+| --- | --- | --- |
+| `NEXT_PUBLIC_API_URL` | `http://127.0.0.1:8000` | Backend base URL. Only change this if the backend runs on a different host or port. |
+| `NEXT_PUBLIC_APP_VERSION` | _(from `package.json`)_ | Version string shown in the UI. |
+
+---
+
+## 🧪 RAG Evaluation Harness
+
+Two evaluation scripts are provided.
+
+### `evaluation/evaluate_rag.py` — end-to-end RAG response evaluator
+
+Runs 15 fixed questions through the live `/api/chat` endpoint and writes full response payloads to `data/eval/rag_evaluation.json`. Questions cover 6 tiers: demo suburbs, sparse-data suburbs, high-density suburbs, cross-suburb comparisons, and an out-of-scope refusal probe.
+
+```bash
+# Run against local backend (default)
+python evaluation/evaluate_rag.py
+
+# Run against production endpoint
+python evaluation/evaluate_rag.py --endpoint https://sydney-liveability-ai.vercel.app/api/chat
+
+# Print summary of an existing results file without re-running
+python evaluation/evaluate_rag.py --summarise-only
+
+# Summarise results separately
+python evaluation/summarise_rag.py
+```
+
+Environment variable override:
+
+```bash
+EVAL_ENDPOINT=https://... python evaluation/evaluate_rag.py
+```
+
+Output: `data/eval/rag_evaluation.json`
+
+### `backend/scripts/run_agent_eval.py` — LLM-judge retrieval grounding evaluator
+
+Reads prompts from `data/eval/prompts.yaml`, runs each through the full agent pipeline, uses an LLM judge to verify whether factual claims are supported by the evidence trace, and writes verdicts to `data/eval/results.csv`. This produces the retrieval-grounding numbers reported in the AT2B report.
+
+```bash
+python backend/scripts/run_agent_eval.py
+```
+
+The backend virtualenv must be active with `DATABASE_URL` and `CHROMADB_PATH` set before running this script.
+
+---
+
+## 🗃️ Data Sources
+
+| Source | Type | Volume | Script |
+| --- | --- | --- | --- |
+| [BOCSAR](https://www.bocsar.nsw.gov.au/) NSW crime statistics | Crime counts by suburb/year | 2024–2025 snapshot | `backend/scripts/ingest_bocsar.py` |
+| City of Sydney ArcGIS REST API | Facilities, walkability score | 2026 snapshot | `backend/scripts/ingest_arcgis.py` |
+| OpenStreetMap via Overpass API | Amenity counts (cafe, gym, park, etc.) | 2026 snapshot | `backend/scripts/ingest_osm.py` |
+| Reddit r/sydney via PRAW / Arctic Shift | Resident discourse | 20,423 records, 563 suburbs | `backend/scripts/ingest_reddit.py` |
+| TfNSW GTFS feeds | Transport stops, service frequency | 48,195 stops, 656 suburbs | `backend/scripts/ingest_transport.py` |
+| City of Sydney community PDFs | Demographic/housing narratives | 1,114 ChromaDB chunks | `backend/scripts/ingest_pdf.py` |
+
+Processed data lives in `data/processed/` (CSV/JSON) and `data/chromadb/` (vector index). Raw files are not committed; the prebuilt ChromaDB snapshot is available on GitHub Releases (see [Local Setup](#local-setup)).
+
+---
+
+## 🤖 NLP Pipeline and Models
+
+### Sentiment analysis (Agentic RAG)
+
+The sentiment agent is a fully agentic RAG loop implemented in `backend/agents/query/`. The LLM controls its own retrieval strategy via three tools:
+
+- `search_posts(suburb, dimension, query, k)` — semantic search over ChromaDB
+- `get_suburb_aspect(suburb, dimension)` — cached score from PostgreSQL
+- `compare_suburbs(suburbs, dimension)` — rank suburbs by aspect score
+
+**Offline NLP pipeline** (`backend/core/nlp/pipeline.py`): four staged modules — BART-MNLI zero-shot aspect classification → DeBERTa-v3 ABSA (0.55 confidence floor, 10-word minimum) → GoEmotions emotion profiling → MiniLM-based coverage detection with cross-modal fallback to BOCSAR/OSM/ArcGIS for silent dimensions.
+
+**8 liveability dimensions:** safety, food_and_cafe, nightlife, affordability, transport, community, noise, green_space
+
+**Embedding model:** `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions, cosine similarity)
+
+**Chunking:** `RecursiveCharacterTextSplitter`, 200 characters, 20-character overlap
+
+**Sentiment thresholds:** positive ≥ 0.65 · negative ≤ 0.45 · neutral: 0.45–0.65
+
+### Emotion profiles
+
+7-class emotion detection (joy, surprise, neutral, sadness, anger, fear, disgust) stored in the `emotion_profiles` table via the GoEmotions model.
+
+### Traditional NLP (notebooks)
+
+Exploratory analysis in `notebooks/` uses NLTK, VADER, TextBlob, Gensim LDA, scikit-learn TF-IDF, and pyLDAvis. These inform the production pipeline but are not in the serving path.
+
+### Scoring formula
+
+Liveability scores are computed in [`backend/core/scoring.py`](backend/core/scoring.py):
 
 ```text
-LLM_PROVIDER
-LLM_MODEL
-OPENROUTER_API_KEY
-DATABASE_URL
-CHROMADB_PATH
-FRONTEND_URL
-SYNTHESIS_DEBUG_MODE
-ANTHROPIC_API_KEY
-OPENAI_API_KEY
-LLM_AGENT_MODELS_JSON
+liveability = (safety        × w_safety)
+            + (transport     × w_transport)
+            + (lifestyle     × w_lifestyle)
+            + (affordability × w_affordability)
+            + (nightlife     × w_nightlife)
+            + (proximity     × w_proximity)
 ```
 
-Frontend variables defined in `frontend/.env.example`:
+Default weights: safety=transport=lifestyle=affordability=0.25, nightlife=proximity=0.0. All components normalised to [0.0, 1.0]. Full breakdown in [SYSTEM_OVERVIEW_EN.md § 4.3](SYSTEM_OVERVIEW_EN.md).
 
-```text
-NEXT_PUBLIC_API_URL
-```
+---
 
-## 🌿 Branch Convention
-- Direct commits, pushes, or changes to `main` are prohibited.
-- Work on feature branches and open a Pull Request to `develop` when ready.
+## 🔄 Ingestion Pipeline
 
-Branch naming:
-
-- `feature/data`
-- `feature/nlp`
-- `feature/backend`
-- `feature/frontend`
-
-Recommended workflow:
-
-1. Update your local `main` before creating a new branch:
+Run ingestion scripts from the **repo root** after activating the backend virtualenv. Each script is idempotent — re-running it upserts rather than duplicates.
 
 ```bash
-git checkout main
-git pull origin main
+source venv/bin/activate
 ```
 
-2. Create a feature branch with the appropriate prefix:
+### Structured data (PostgreSQL tables)
 
 ```bash
-git checkout -b feature/short-task-name
+# Crime statistics → bocsar table
+python backend/scripts/ingest_bocsar.py
+
+# City of Sydney facilities + walkability → suburbs table
+python backend/scripts/ingest_arcgis.py
+
+# OSM amenity counts → osm_scores table
+python backend/scripts/ingest_osm.py
+
+# TfNSW transport data → transport_scores table
+python backend/scripts/ingest_transport.py
+
+# Community PDF narratives → chromadb (pdf source)
+python backend/scripts/ingest_pdf.py
+
+# Sentiment scores from NLP pipeline → sentiment_scores + emotion_profiles tables
+python backend/scripts/ingest_sentiment_postgres.py
 ```
 
-Examples:
+### ChromaDB (vector index)
 
-- `feature/backend-boilerplate`
-- `feature/data-extraction`
-- `feature/notebook-cleaning`
-
-3. Commit your work on your personal branch only:
+These two scripts populate the `sydney_liveability` ChromaDB collection. Run them only if rebuilding the index from raw data (~10 hours; the prebuilt snapshot is recommended).
 
 ```bash
-git add .
-git commit -m "feat: clear summary of change"
+# Reddit posts/comments → ChromaDB (source=reddit)
+python backend/scripts/ingest_reddit.py
+
+# Sentiment narratives + curated quotes → ChromaDB (source=sentiment_narrative / sentiment_quote)
+python backend/scripts/ingest_sentiment.py
 ```
 
-4. Push your branch to remote:
+Optional flags (both scripts):
 
 ```bash
-git push -u origin feature/short-task-name
+--input-dir PATH      # override default input directory
+--batch-size N        # ChromaDB upsert batch size
+--suburb-limit N      # process only first N suburbs (for smoke tests)
 ```
 
-5. Open a Pull Request from your branch to `develop`.
+---
 
-Important:
+## ⚠️ Known Limitations
 
-- Never push directly to `main`.
-- Keep working in your feature branch for all contributions.
-- Merge only through Pull Request review.
+- **Static data.** All datasets (Reddit, BOCSAR, OSM, GTFS) are point-in-time snapshots from 2024/2026. There is no automated update pipeline.
+- **ChromaDB rebuild time.** Rebuilding the vector index from scratch takes ~10 hours. Use the prebuilt snapshot for local evaluation.
+- **Supabase connection limit.** The free/basic plan allows 15 connections on the Session Pooler. Under high concurrent load the `/api/civic` endpoint may return 503 before the cache warms.
+- **Uneven Reddit coverage.** Popular suburbs (Newtown, Glebe, Surry Hills) have many ChromaDB chunks; peripheral suburbs have few or none. Suburbs with sparse data default to a neutral score of 0.5.
+- **Fragile router.** The query router is deterministic (regex + keywords). Atypical phrasing may not trigger the correct specialist agents.
+- **No authentication.** User weights are stored in `localStorage` only. All users share the same backend instance.
+- **Pipeline latency.** Depending on the LLM model and question complexity, the multi-agent pipeline takes 5–15 seconds. SSE streaming mitigates perceived latency.
+
+---
 
 ## 👥 Team
+
 Group 3 — ANLP 36118 (UTS)
 
-- Ying-Kai Liao
-- Padmasri Srinivas
-- Nian-Ya Weng
-- Nelkit Chavez
-- Juan David Rodriguez
-- Luis Gerardo Robinson
+| Member | Primary contributions |
+| --- | --- |
+| Ying-Kai Liao | Reddit extraction (PRAW + Arctic Shift), offline NLP pipeline (BART-MNLI, DeBERTa-v3 ABSA, GoEmotions), Sentiment agent rework as CrewAI ReAct A-RAG |
+| Padmasri Srinivas | TfNSW GTFS transport pipeline (656 suburbs), RAG evaluation harness (`evaluation/evaluate_rag.py`) |
+| Nian-Ya Weng | BOCSAR crime data pipeline, Crime agent (`backend/agents/query/crime.py`), EDA notebooks |
+| Nelkit Chavez | FastAPI endpoint architecture, Synthesiser agent, scoring formula + in-memory cache, ArcGIS ingestion, full frontend (OnboardingPanel, MapPanel, EvidenceDrawer, ReportModal) |
+| Juan David Rodriguez | PDF ingestion pipeline (1,114 ChromaDB chunks), Synthesiser's ChromaDB retrieval layer |
+| Luis Gerardo Robinson | OSM extraction (Overpass API, 657 suburbs), GIS agent (`backend/agents/query/gis.py`), Comparator agent |
+
+---
+
+## 🔗 Links
+
+- [Poster (Figma)](https://www.figma.com/design/eBDd4sDvIbWX61pE25RYkK/Sydney-Liveability-AI%E2%80%94Poster?node-id=1-2&t=LRnrogOncMyVH9Si-1)
+- [Project planning (Notion)](https://www.notion.so/nelkitdev/Sydney-Liveability-AI-Project-3370093b498b806c9b28cd35348e208e?source=copy_link)
+- Full system documentation: [SYSTEM_OVERVIEW_EN.md](SYSTEM_OVERVIEW_EN.md)
 
 ---
 
 Subject: ANLP 36118 | Master of Data Science and Innovation | University of Technology Sydney (UTS)
-
-## 🔗 Links of Interest
-
-- Poster: https://www.figma.com/design/eBDd4sDvIbWX61pE25RYkK/Sydney-Liveability-AI%E2%80%94Poster?node-id=1-2&t=LRnrogOncMyVH9Si-1
-- Project Planning: https://www.notion.so/nelkitdev/Sydney-Liveability-AI-Project-3370093b498b806c9b28cd35348e208e?source=copy_link
-
-

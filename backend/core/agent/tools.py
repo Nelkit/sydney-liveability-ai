@@ -5,8 +5,7 @@ selects among these three tools per iteration. Every function returns a
 JSON-serialisable dict so the controller can drop the result into the
 `evidence_trace` without any conversion work.
 
-Each tool consults the cached `SuburbAnalysis` (in
-`data/processed/reddit_analyses/{suburb}.json`) before doing real work.
+Each tool consults the PostgreSQL sentiment tables before doing real work.
 When the upstream pipeline marked an aspect with `score: null` and
 `source: "none"` (i.e. no Reddit coverage AND no cross-modal proxy), the
 tool returns `{"status": "no_data", ...}` instead of querying ChromaDB.
@@ -20,18 +19,8 @@ keeping the helper local lets the tools stand alone.
 
 from __future__ import annotations
 
-import json
 from functools import lru_cache
-from pathlib import Path
 from typing import Any, Optional
-
-# Resolve relative to the repo root so tools work regardless of cwd
-# (the backend is sometimes run from `backend/`, sometimes from the
-# project root). `parents[3]` of this file points at the repo root:
-# backend/core/agent/tools.py -> backend/core/agent -> backend/core
-# -> backend -> repo root.
-_REPO_ROOT = Path(__file__).resolve().parents[3]
-ANALYSES_DIR = _REPO_ROOT / "data" / "processed" / "reddit_analyses"
 
 
 def _query_chunks(query: str, k: int, filters: dict[str, Any]) -> list[dict]:
@@ -52,23 +41,55 @@ def _query_chunks(query: str, k: int, filters: dict[str, Any]) -> list[dict]:
 MAX_COMPARE_SUBURBS = 10
 
 
-def _suburb_slug(name: str) -> str:
-    return name.strip().lower().replace(" ", "_").replace("-", "_")
-
-
 @lru_cache(maxsize=512)
 def _load_cached_analysis(suburb: str) -> Optional[dict[str, Any]]:
-    """Load the cached `SuburbAnalysis` for a suburb, or None if missing.
+    """Load sentiment analysis for a suburb from PostgreSQL.
 
-    Cached because the same suburb is hit multiple times within a single
-    chat turn (one for each tool call). LRU bound is generous enough to
-    cover the whole shortlist without evicting hot entries.
+    LRU-cached because the same suburb is hit multiple times within a
+    single chat turn. Cache is cleared on process restart (after ingest).
     """
-    path = ANALYSES_DIR / f"{_suburb_slug(suburb)}.json"
-    if not path.exists():
+    from db.models import EmotionProfile, SentimentScore, SuburbNarrative
+    from db.postgres import SessionLocal
+    from sqlalchemy import select
+
+    try:
+        with SessionLocal() as session:
+            emotion = session.get(EmotionProfile, suburb)
+            if emotion is None:
+                return None
+            aspect_rows = session.scalars(
+                select(SentimentScore).where(SentimentScore.suburb == suburb)
+            ).all()
+            narrative_row = session.get(SuburbNarrative, suburb)
+
+        return {
+            "aspects": {
+                row.aspect: {
+                    "score": row.score,
+                    "mentions": row.mentions,
+                    "confidence": row.confidence,
+                    "coverage": row.coverage,
+                    "source": row.source,
+                }
+                for row in aspect_rows
+            },
+            "emotions": {
+                "joy": emotion.joy,
+                "surprise": emotion.surprise,
+                "neutral": emotion.neutral,
+                "sadness": emotion.sadness,
+                "anger": emotion.anger,
+                "fear": emotion.fear,
+                "disgust": emotion.disgust,
+            },
+            "narrative": narrative_row.narrative if narrative_row else None,
+            "sources": narrative_row.sources if narrative_row else [],
+            "confidence": emotion.confidence,
+            "confidence_tier": emotion.confidence_tier,
+            "post_count": emotion.post_count,
+        }
+    except Exception:
         return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 def _aspect_entry(suburb: str, dimension: str) -> Optional[dict[str, Any]]:
@@ -104,7 +125,7 @@ def search_posts(
     if not suburb:
         return {"status": "error", "reason": "suburb is required"}
     if not query or not query.strip():
-        return {"status": "error", "reason": "query is required"}
+        query = suburb
 
     if dimension:
         entry = _aspect_entry(suburb, dimension)

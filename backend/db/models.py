@@ -11,6 +11,8 @@ from sqlalchemy.types import UserDefinedType
 class PostGISGeometry(UserDefinedType):
     """Minimal PostGIS geometry type wrapper for ORM schema alignment."""
 
+    cache_ok = True
+
     def get_col_spec(self, **kw: object) -> str:
         return "geometry(MultiPolygon,4326)"
 
@@ -33,8 +35,6 @@ class Suburb(Base):
     total_facilities: Mapped[int | None] = mapped_column(Integer, nullable=True)
     facilities_score: Mapped[float | None] = mapped_column(Float, nullable=True)
     walkability_score: Mapped[float | None] = mapped_column(Float, nullable=True)
-    liveability_score: Mapped[float | None] = mapped_column(Float, nullable=True)
-    sa4_area: Mapped[str | None] = mapped_column(String, nullable=True)
     geometry: Mapped[Any | None] = mapped_column(PostGISGeometry(), nullable=True)
 
 
@@ -51,31 +51,6 @@ class Bocsar(Base):
     sa4_area: Mapped[str] = mapped_column(String(80), nullable=False)
 
 
-class Sentiment(Base):
-    """Per-suburb sentiment features derived from social discourse."""
-
-    __tablename__ = "sentiment"
-
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    suburb: Mapped[str] = mapped_column(String(80), nullable=False)
-    topic: Mapped[str] = mapped_column(String(80), nullable=False)
-    vader_score: Mapped[float] = mapped_column(Float, nullable=False)
-    textblob_score: Mapped[float] = mapped_column(Float, nullable=False)
-    subjectivity: Mapped[float] = mapped_column(Float, nullable=False)
-    source: Mapped[str] = mapped_column(String(80), nullable=False)
-
-
-class TopicWeight(Base):
-    """Topic model weights and top terms used in explainability."""
-
-    __tablename__ = "topic_weights"
-
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    suburb: Mapped[str] = mapped_column(String(80), nullable=False)
-    topic_label: Mapped[str] = mapped_column(String(80), nullable=False)
-    weight: Mapped[float] = mapped_column(Float, nullable=False)
-    top_terms: Mapped[str] = mapped_column(Text, nullable=False)
-
 
 class SentimentScore(Base):
     """Aspect-level sentiment scores generated from suburb discourse."""
@@ -86,6 +61,9 @@ class SentimentScore(Base):
     aspect: Mapped[str] = mapped_column(String, primary_key=True)
     score: Mapped[float | None] = mapped_column(Float, nullable=True)
     mentions: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    confidence: Mapped[float | None] = mapped_column(Float, nullable=True)
+    coverage: Mapped[str | None] = mapped_column(String, nullable=True)
+    source: Mapped[str | None] = mapped_column(String, nullable=True)
 
 
 class EmotionProfile(Base):
@@ -103,6 +81,8 @@ class EmotionProfile(Base):
     disgust: Mapped[float | None] = mapped_column(Float, nullable=True)
     post_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
     fetched_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+    confidence: Mapped[float | None] = mapped_column(Float, nullable=True)
+    confidence_tier: Mapped[str | None] = mapped_column(String, nullable=True)
 
 
 class SuburbNarrative(Base):

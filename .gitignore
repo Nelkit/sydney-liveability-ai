@@ -98,3 +98,5 @@ data/chromadb/
 data/raw/transport/*.txt
 data/raw/transport/*.zip
 # Raw transport files (GTFS, large, regenerable)data/raw/transport/# Large ArcGIS source dumps (regenerable from upstream)data/raw/arcgis/Trees_*.csvdata/raw/arcgis/Trees_*.geojsondata/raw/arcgis/Car_share_bays_usage.csvdata/raw/arcgis/Car_share_bays_usage.geojson "@ | Add-Content .gitignore
+
+data/raw/bocsar

@@ -28,7 +28,7 @@ import chromadb
 from chromadb.api import ClientAPI
 from chromadb.api.models.Collection import Collection
 
-from backend.config import settings
+from config import settings
 
 # Resolve `settings.chromadb_path` against the repo root rather than
 # whatever cwd Python was started in. Without this, running ingestion
