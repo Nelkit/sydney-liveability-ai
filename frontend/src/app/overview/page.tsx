@@ -162,7 +162,7 @@ export default function OverviewPage() {
             placeholder="Filter suburbs…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="w-full max-w-xs rounded-full border border-slate-200 bg-white px-4 py-2 text-[13px] shadow-card outline-none placeholder:text-slate-400 focus:border-slate-400"
+            className="text-base w-full max-w-xs rounded-full border border-slate-200 bg-white px-4 py-2 shadow-card outline-none placeholder:text-slate-400 focus:border-slate-400"
           />
           <SegmentedControl<SortKey>
             label="Sort"

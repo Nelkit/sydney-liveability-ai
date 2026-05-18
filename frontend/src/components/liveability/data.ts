@@ -1,11 +1,16 @@
 import { ImportanceOption, Suburb, WeightKey } from "./types";
 
 export const importanceOptions: ImportanceOption[] = [
-  { key: "veryImportant", label: "Very important", value: 90 },
-  { key: "important", label: "Important", value: 75 },
-  { key: "neutral", label: "Neutral", value: 50 },
-  { key: "notVeryImportant", label: "Not very important", value: 25 },
-  { key: "notInterested", label: "Not interested", value: 5 }
+  { key: "1",  label: "1",  value: 5  },
+  { key: "2",  label: "2",  value: 16 },
+  { key: "3",  label: "3",  value: 27 },
+  { key: "4",  label: "4",  value: 38 },
+  { key: "5",  label: "5",  value: 50 },
+  { key: "6",  label: "6",  value: 61 },
+  { key: "7",  label: "7",  value: 72 },
+  { key: "8",  label: "8",  value: 80 },
+  { key: "9",  label: "9",  value: 90 },
+  { key: "10", label: "10", value: 100 },
 ];
 
 export const weightPrompts: { key: WeightKey; label: string; prompt: string }[] = [
@@ -28,6 +33,11 @@ export const weightPrompts: { key: WeightKey; label: string; prompt: string }[] 
     key: "afford",
     label: "Affordability",
     prompt: "How important is affordability in your decision?"
+  },
+  {
+    key: "proximity",
+    label: "CBD Proximity",
+    prompt: "How important is being close to the city centre?"
   }
 ];
 
@@ -36,7 +46,7 @@ export const suburbs: Suburb[] = [
     id: "glebe",
     name: "Glebe",
     color: "#10b981",
-    scoreBase: { transport: 82, safety: 78, lifestyle: 92, afford: 65 },
+    scoreBase: { transport: 82, safety: 78, lifestyle: 92, afford: 65, proximity: 90 },
     center: [-33.8792, 151.1862],
     polygon: [
       [-33.8748, 151.1769],
@@ -51,7 +61,7 @@ export const suburbs: Suburb[] = [
     id: "newtown",
     name: "Newtown",
     color: "#3b82f6",
-    scoreBase: { transport: 85, safety: 72, lifestyle: 88, afford: 70 },
+    scoreBase: { transport: 85, safety: 72, lifestyle: 88, afford: 70, proximity: 78 },
     center: [-33.8981, 151.1748],
     polygon: [
       [-33.8922, 151.1673],
@@ -66,7 +76,7 @@ export const suburbs: Suburb[] = [
     id: "redfern",
     name: "Redfern",
     color: "#f59e0b",
-    scoreBase: { transport: 90, safety: 60, lifestyle: 70, afford: 85 },
+    scoreBase: { transport: 90, safety: 60, lifestyle: 70, afford: 85, proximity: 96 },
     center: [-33.8923, 151.2049],
     polygon: [
       [-33.8867, 151.1983],
@@ -81,7 +91,7 @@ export const suburbs: Suburb[] = [
     id: "surry",
     name: "Surry Hills",
     color: "#8b5cf6",
-    scoreBase: { transport: 80, safety: 68, lifestyle: 85, afford: 55 },
+    scoreBase: { transport: 80, safety: 68, lifestyle: 85, afford: 55, proximity: 99 },
     center: [-33.8842, 151.2108],
     polygon: [
       [-33.8786, 151.2048],
@@ -96,7 +106,7 @@ export const suburbs: Suburb[] = [
     id: "hay",
     name: "Haymarket",
     color: "#ef4444",
-    scoreBase: { transport: 95, safety: 55, lifestyle: 72, afford: 45 },
+    scoreBase: { transport: 95, safety: 55, lifestyle: 72, afford: 45, proximity: 98 },
     center: [-33.8782, 151.2053],
     polygon: [
       [-33.8734, 151.1991],

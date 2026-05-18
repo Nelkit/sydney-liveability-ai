@@ -70,9 +70,6 @@ def _coerce_row(row: pd.Series) -> dict[str, Any]:
         "total_facilities": int(row["total_facilities"]),
         # Keep source score as-is; it is pre-computed upstream.
         "facilities_score": float(row["facilities_score"]),
-        "walkability_score": None,
-        "liveability_score": None,
-        "sa4_area": None,
     }
 
 
@@ -90,9 +87,6 @@ def _upsert_batch(rows: list[dict[str, Any]]) -> int:
         "sports_facilities_count": stmt.excluded.sports_facilities_count,
         "total_facilities": stmt.excluded.total_facilities,
         "facilities_score": stmt.excluded.facilities_score,
-        "walkability_score": stmt.excluded.walkability_score,
-        "liveability_score": stmt.excluded.liveability_score,
-        "sa4_area": stmt.excluded.sa4_area,
     }
     upsert_stmt = stmt.on_conflict_do_update(index_elements=["sal_code"], set_=update_map)
 

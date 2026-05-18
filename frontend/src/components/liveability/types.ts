@@ -1,11 +1,8 @@
-export type WeightKey = "transport" | "safety" | "lifestyle" | "afford";
+export type WeightKey = "transport" | "safety" | "lifestyle" | "afford" | "proximity";
 
 export type ImportanceLevelKey =
-  | "veryImportant"
-  | "important"
-  | "neutral"
-  | "notVeryImportant"
-  | "notInterested";
+  | "1" | "2" | "3" | "4" | "5"
+  | "6" | "7" | "8" | "9" | "10";
 
 export type ImportanceOption = {
   key: ImportanceLevelKey;
