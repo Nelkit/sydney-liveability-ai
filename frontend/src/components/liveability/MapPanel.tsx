@@ -32,6 +32,16 @@ type MapPanelProps = {
 const layers = ["Liveability", "Safety", "Transport", "Lifestyle"];
 const SMALL_LABEL_MIN_ZOOM = 15;
 
+// CARTO basemaps require an API key (query param `key`) since Sept 2026.
+// Without it, tiles render a blank "API KEY REQUIRED" watermark.
+const CARTO_API_KEY = process.env.NEXT_PUBLIC_CARTO_API_KEY ?? "";
+const CARTO_ATTRIBUTION = '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+function cartoTileUrl(style: string) {
+  const base = `https://{s}.basemaps.cartocdn.com/${style}/{z}/{x}/{y}{r}.png`;
+  return CARTO_API_KEY ? `${base}?key=${encodeURIComponent(CARTO_API_KEY)}` : base;
+}
+
 type ColorStop = { t: number; color: { r: number; g: number; b: number } };
 
 const LAYER_HEAT_STOPS: Record<string, ColorStop[]> = {
@@ -211,14 +221,18 @@ export function MapPanel({
     const map = L.map(container, { zoomControl: false, scrollWheelZoom: true, attributionControl: true })
       .setView([-33.8688, 151.2093], 13);
 
+    if (!CARTO_API_KEY) {
+      console.warn("NEXT_PUBLIC_CARTO_API_KEY is not set — CARTO basemap tiles will show an 'API key required' watermark.");
+    }
+
     // zoom control handled by custom React buttons
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    L.tileLayer(cartoTileUrl("light_nolabels"), {
+      attribution: CARTO_ATTRIBUTION,
       maxZoom: 20, subdomains: "abcd",
     }).addTo(map);
     // Labels only shown at high zoom; suppressed at lower zoom to avoid collision
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
-      attribution: '&copy; OpenStreetMap contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    L.tileLayer(cartoTileUrl("light_only_labels"), {
+      attribution: CARTO_ATTRIBUTION,
       maxZoom: 20, subdomains: "abcd", opacity: 0.5, minZoom: 14,
     }).addTo(map);
 

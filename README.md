@@ -240,6 +240,12 @@ Copy-Item frontend/.env.example frontend/.env.local
 
 ### Frontend (`frontend/.env.local`)
 
+**Required:**
+
+| Variable | Description |
+| --- | --- |
+| `NEXT_PUBLIC_CARTO_API_KEY` | Free CARTO basemaps key (get one at [carto.com/basemaps/apikey](https://carto.com/basemaps/apikey/)). Without it, the map shows an "API key required" watermark. The key is exposed to the browser, so restrict it to your hosts in the [Basemaps dashboard](https://dashboard.basemaps.carto.com). |
+
 **Optional — has a working default for local development:**
 
 | Variable | Default | Description |
