@@ -58,9 +58,18 @@ engine_kwargs = {
 }
 
 if _uses_supabase_pooler(db_url):
-    # Supavisor already pools connections. Do not layer SQLAlchemy's QueuePool
-    # or session-level SET options on top of it.
-    engine_kwargs["poolclass"] = NullPool
+    # Session pooler (5432): keep a small warm pool so each request does not
+    # pay a fresh TLS handshake to the Supabase region. No session-level SET
+    # options here — Supavisor rejects them.
+    engine_kwargs.update(
+        {
+            "pool_pre_ping": True,
+            "pool_recycle": 300,
+            "pool_size": 3,
+            "max_overflow": 2,
+            "pool_timeout": 20,
+        }
+    )
 else:
     connect_args["options"] = "-c statement_timeout=60000"
     engine_kwargs.update(
