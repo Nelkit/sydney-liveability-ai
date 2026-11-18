@@ -12,11 +12,21 @@ from typing import Any
 from crewai import Agent, Task
 from crewai.tools import tool
 
-from config import get_agent_llm
+from config import get_agent_llm, settings
+from core.cache import ttl_cached
 
 
+@ttl_cached(
+    maxsize=1000,
+    ttl=settings.static_data_cache_ttl_seconds,
+    key=lambda suburb, crime_type=None: (suburb, crime_type),
+)
 def _query_crime_impl(suburb: str, crime_type: str | None = None) -> dict[str, Any]:
-    """Internal implementation: query BOCSAR crime data."""
+    """Internal implementation: query BOCSAR crime data.
+
+    Cached per (suburb, crime_type): BOCSAR is refreshed quarterly, and this
+    query was the slowest single DB round trip in a chat turn.
+    """
     from db.postgres import SessionLocal
     from sqlalchemy import text
 

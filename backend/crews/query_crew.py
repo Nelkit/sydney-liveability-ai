@@ -18,6 +18,7 @@ from agents.query.sentiment import sentiment_agent
 from agents.query.synthesiser import run as run_synthesiser
 from agents.query.synthesiser import synthesiser_agent
 from config import get_agent_llm, settings
+from core.cache import ttl_cached
 from core.scoring import compute_liveability_scores
 from db.models import Bocsar, EmotionProfile, OsmScore, SentimentScore, SuburbNarrative
 from db.postgres import SessionLocal
@@ -38,6 +39,16 @@ def _scale_to_100(value: Any) -> float | None:
     return round(numeric * 100.0, 2) if numeric <= 1.0 else round(numeric, 2)
 
 
+# Static reference tables (sentiment profiles, BOCSAR, OSM) change at most
+# quarterly. Keys keep suburb order because the returned dicts iterate in it.
+_STATIC_TTL = settings.static_data_cache_ttl_seconds
+
+
+def _suburbs_key(suburbs: list[str]) -> tuple[str, ...]:
+    return tuple(suburbs or [])
+
+
+@ttl_cached(maxsize=1000, ttl=_STATIC_TTL, key=_suburbs_key)
 def _load_sentiment_surface(suburbs: list[str]) -> dict[str, dict[str, Any]]:
     if not suburbs:
         return {}
@@ -156,6 +167,7 @@ def _build_reddit_highlights(sentiment_surface: dict[str, dict[str, Any]]) -> di
     return highlights
 
 
+@ttl_cached(maxsize=1000, ttl=_STATIC_TTL, key=_suburbs_key)
 def _build_crime_breakdown(suburbs: list[str]) -> dict[str, list[dict[str, Any]]]:
     if not suburbs:
         return {}
@@ -190,6 +202,37 @@ def _build_crime_breakdown(suburbs: list[str]) -> dict[str, list[dict[str, Any]]
     return breakdown
 
 
+@ttl_cached(maxsize=1000, ttl=_STATIC_TTL, key=_suburbs_key)
+def _load_osm_and_sa4(suburbs: list[str]) -> dict[str, dict[str, Any]]:
+    """Return OSM amenity counts and BOCSAR SA4 area per suburb as plain dicts.
+
+    Replaces a per-suburb ``SELECT sa4_area`` that ran once for every suburb
+    on every chat turn.
+    """
+    if not suburbs:
+        return {}
+
+    with SessionLocal() as session:
+        osm_rows = session.scalars(select(OsmScore).where(OsmScore.suburb.in_(suburbs))).all()
+        sa4_rows = session.execute(
+            select(Bocsar.suburb, Bocsar.sa4_area).where(Bocsar.suburb.in_(suburbs)).distinct()
+        ).all()
+
+    data: dict[str, dict[str, Any]] = {suburb: {} for suburb in suburbs}
+    for row in osm_rows:
+        data.setdefault(row.suburb, {}).update(
+            {
+                "cafes": row.cafe,
+                "restaurants": row.restaurant,
+                "parks": row.park,
+                "playgrounds": row.playground,
+            }
+        )
+    for suburb, sa4_area in sa4_rows:
+        data.setdefault(str(suburb), {}).setdefault("sa4", sa4_area)
+    return data
+
+
 def _build_suburb_scores(weights: dict[str, Any], suburbs: list[str]) -> list[dict[str, Any]]:
     if not suburbs:
         return []
@@ -197,12 +240,7 @@ def _build_suburb_scores(weights: dict[str, Any], suburbs: list[str]) -> list[di
     scored = compute_liveability_scores(weights=weights, suburb_filter=suburbs)
     sentiment_surface = _load_sentiment_surface(suburbs)
     crime_breakdown = _build_crime_breakdown(suburbs)
-
-    with SessionLocal() as session:
-        osm_rows = {
-            row.suburb: row
-            for row in session.scalars(select(OsmScore).where(OsmScore.suburb.in_(suburbs))).all()
-        }
+    osm_and_sa4 = _load_osm_and_sa4(suburbs)
 
     output: list[dict[str, Any]] = []
     for suburb in suburbs:
@@ -210,13 +248,11 @@ def _build_suburb_scores(weights: dict[str, Any], suburbs: list[str]) -> list[di
         if not suburb_score:
             continue
         row = suburb_score.get("_row")
-        osm_row = osm_rows.get(suburb)
+        extras = osm_and_sa4.get(suburb, {})
         sentiment_row = sentiment_surface.get(suburb, {}).get("aspects", {}).get("community")
-        sa4_area = None
-        crime_rows = crime_breakdown.get(suburb) or []
-        if crime_rows:
-            with SessionLocal() as session:
-                sa4_area = session.scalar(select(Bocsar.sa4_area).where(Bocsar.suburb == suburb).limit(1))
+        # Matches the previous behaviour: SA4 is only reported when BOCSAR
+        # rows exist for the suburb.
+        sa4_area = extras.get("sa4") if crime_breakdown.get(suburb) else None
 
         output.append(
             {
@@ -231,10 +267,10 @@ def _build_suburb_scores(weights: dict[str, Any], suburbs: list[str]) -> list[di
                 "walkability": _scale_to_100(getattr(row, "walkability_score", None) if row is not None else None),
                 "crimeIdx": round((1.0 - float(suburb_score["safety"])) * 100.0, 2),
                 "sentiment": _scale_to_100(sentiment_row.get("score") if isinstance(sentiment_row, dict) else None),
-                "cafes": getattr(osm_row, "cafe", None) if osm_row is not None else None,
-                "restaurants": getattr(osm_row, "restaurant", None) if osm_row is not None else None,
-                "parks": getattr(osm_row, "park", None) if osm_row is not None else None,
-                "playgrounds": getattr(osm_row, "playground", None) if osm_row is not None else None,
+                "cafes": extras.get("cafes"),
+                "restaurants": extras.get("restaurants"),
+                "parks": extras.get("parks"),
+                "playgrounds": extras.get("playgrounds"),
                 "sa4": sa4_area,
             }
         )
@@ -456,47 +492,23 @@ def run_query(question: str, weights: dict[str, Any] | None = None) -> dict[str,
             if ranking_result.get("status") == "ok":
                 suburbs = ranking_result.get("suburbs", [])[:10]
 
-        # Run single-suburb specialists for each suburb mentioned. The
-        # sentiment agent additionally consumes the original question so
-        # it can route question-driven retrieval over the Reddit index;
-        # the other specialists ignore the extra key.
-        for specialist_name in ["crime", "sentiment", "gis"]:
-            if specialist_name in categories and suburbs and specialist_name not in specialist_outputs:
-                specialist_started = time.perf_counter()
-                specialist_outputs[specialist_name] = {}
-                run_func = {
-                    "crime": run_crime,
-                    "sentiment": run_sentiment,
-                    "gis": run_gis,
-                }[specialist_name]
-                for suburb in suburbs:
-                    print(f"Running {specialist_name} agent for suburb: {suburb}")
-                    specialist_outputs[specialist_name][suburb] = run_func(
-                        {"suburb": suburb, "question": question}
-                    )
-                specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
+        # Run every (specialist, suburb) pair concurrently. The sentiment
+        # agent additionally consumes the original question so it can route
+        # question-driven retrieval over the Reddit index; the other
+        # specialists ignore the extra key. When the comparator is active,
+        # the plan also covers every specialist for the first two suburbs.
+        tasks = _plan_specialist_tasks(categories, suburbs, skip=set(specialist_outputs))
+        parallel_outputs, parallel_timings = _run_specialists_parallel(tasks, question)
+        specialist_outputs.update(parallel_outputs)
+        specialist_timings.update(parallel_timings)
 
-        # Run comparator only if 2+ suburbs are mentioned
+        # Comparator reuses the specialist results gathered above instead of
+        # re-running them (sentiment alone is several LLM calls per suburb).
         if "comparator" in categories and len(suburbs) >= 2:
-            # Always run all specialists for both suburbs so synthesiser has full data
             comparator_started = time.perf_counter()
-            for specialist_name in ["crime", "sentiment", "gis"]:
-                if specialist_name not in specialist_outputs:
-                    specialist_started = time.perf_counter()
-                    run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
-                    specialist_outputs[specialist_name] = {}
-                    for suburb in suburbs[:2]:
-                        print(f"Running {specialist_name} agent for suburb: {suburb}")
-                        specialist_outputs[specialist_name][suburb] = run_func(
-                            {"suburb": suburb, "question": question}
-                        )
-                    specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
             print(f"Running comparator agent for suburbs: {suburbs[0]} and {suburbs[1]}")
-            compare_cats = [c for c in categories if c in ("gis", "crime", "sentiment")]
-            if not compare_cats:
-                compare_cats = ["gis", "crime", "sentiment"]
             specialist_outputs["comparator"] = run_comparator(
-                {"suburb_a": suburbs[0], "suburb_b": suburbs[1], "categories": compare_cats}
+                _comparator_input(categories, suburbs, specialist_outputs)
             )
             specialist_timings["comparator"] = (time.perf_counter() - comparator_started) * 1000.0
 
@@ -557,48 +569,189 @@ _SPECIALIST_TIMEOUT: dict[str, int] = {
 }
 
 
+_SPECIALIST_ORDER: tuple[str, ...] = ("crime", "sentiment", "gis")
+
+# Upper bound on concurrent specialist threads per question. The Supabase
+# session pooler allows 5 connections (pool_size 3 + overflow 2), and the
+# static-data caches keep most DB-bound specialists off the pool entirely.
+_MAX_SPECIALIST_WORKERS = 4
+
+SpecialistTask = tuple[str, str]  # (specialist_name, suburb)
+
+
 def _step(text: str) -> tuple[str, dict[str, Any]]:
     return ("step", {"text": text})
 
 
-def _run_specialist_with_heartbeat(
-    run_func,
-    input_data: dict[str, Any],
-    specialist_name: str,
-    suburb: str,
-):
-    """Run a specialist in a thread and yield heartbeat steps while waiting.
+def _default_runners() -> dict[str, Any]:
+    return {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}
 
-    Yields tuples of (event_type, data) — heartbeats are step events.
-    The final item yielded is always ("result", result_dict).
+
+def _plan_specialist_tasks(
+    categories: list[str],
+    suburbs: list[str],
+    skip: set[str] | frozenset[str] = frozenset(),
+) -> list[SpecialistTask]:
+    """List every (specialist, suburb) pair this question needs.
+
+    Mirrors the previous sequential logic: routed specialists run for every
+    suburb; when the comparator is active, any specialist not yet planned
+    runs for the first two suburbs so the comparison has full data.
     """
-    timeout = _SPECIALIST_TIMEOUT.get(specialist_name, 30)
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-        future = executor.submit(run_func, input_data)
-        deadline = time.perf_counter() + timeout
-        heartbeat_interval = 8.0
-        next_heartbeat = time.perf_counter() + heartbeat_interval
-        label = _SPECIALIST_LABELS.get(specialist_name, specialist_name)
+    if not suburbs:
+        return []
 
-        while True:
-            done, _ = concurrent.futures.wait([future], timeout=0.5)
-            if done:
-                try:
-                    result = future.result()
-                except Exception as exc:
-                    result = {"status": "error", "reason": str(exc)}
-                yield ("result", result)
-                return
+    tasks: list[SpecialistTask] = []
+    planned: set[str] = set(skip)
+    for name in _SPECIALIST_ORDER:
+        if name in categories and name not in planned:
+            tasks.extend((name, suburb) for suburb in suburbs)
+            planned.add(name)
+
+    if "comparator" in categories and len(suburbs) >= 2:
+        for name in _SPECIALIST_ORDER:
+            if name not in planned:
+                tasks.extend((name, suburb) for suburb in suburbs[:2])
+                planned.add(name)
+    return tasks
+
+
+def _comparator_input(
+    categories: list[str],
+    suburbs: list[str],
+    specialist_outputs: dict[str, Any],
+) -> dict[str, Any]:
+    compare_cats = [c for c in categories if c in _SPECIALIST_ORDER] or list(_SPECIALIST_ORDER)
+    return {
+        "suburb_a": suburbs[0],
+        "suburb_b": suburbs[1],
+        "categories": compare_cats,
+        "precomputed": specialist_outputs,
+    }
+
+
+def _group_results(
+    tasks: list[SpecialistTask],
+    results: dict[SpecialistTask, dict[str, Any]],
+    durations: dict[SpecialistTask, float],
+) -> tuple[dict[str, dict[str, Any]], dict[str, float]]:
+    """Fold per-task results into {specialist: {suburb: result}} in plan order.
+
+    A specialist's timing is the slowest of its tasks, since they overlap.
+    """
+    outputs: dict[str, dict[str, Any]] = {}
+    timings: dict[str, float] = {}
+    for task in tasks:
+        name, suburb = task
+        outputs.setdefault(name, {})[suburb] = results[task]
+        timings[name] = max(timings.get(name, 0.0), durations.get(task, 0.0))
+    return outputs, timings
+
+
+def _timed_call(run_func, input_data: dict[str, Any]) -> tuple[dict[str, Any], float]:
+    started = time.perf_counter()
+    try:
+        result = run_func(input_data)
+    except Exception as exc:
+        result = {"status": "error", "reason": str(exc)}
+    return result, (time.perf_counter() - started) * 1000.0
+
+
+def _run_specialists_parallel(
+    tasks: list[SpecialistTask],
+    question: str,
+    runners: dict[str, Any] | None = None,
+) -> tuple[dict[str, dict[str, Any]], dict[str, float]]:
+    """Run all specialist tasks concurrently and wait for every one.
+
+    A failing specialist yields an error payload instead of aborting the
+    whole turn, so the synthesiser can still answer from the others.
+    """
+    if not tasks:
+        return {}, {}
+    runners = runners or _default_runners()
+    results: dict[SpecialistTask, dict[str, Any]] = {}
+    durations: dict[SpecialistTask, float] = {}
+
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=min(_MAX_SPECIALIST_WORKERS, len(tasks))
+    ) as pool:
+        futures = {}
+        for name, suburb in tasks:
+            print(f"Running {name} agent for suburb: {suburb}")
+            futures[(name, suburb)] = pool.submit(
+                _timed_call, runners[name], {"suburb": suburb, "question": question}
+            )
+        for task, future in futures.items():
+            results[task], durations[task] = future.result()
+
+    return _group_results(tasks, results, durations)
+
+
+def _stream_specialists_parallel(
+    tasks: list[SpecialistTask],
+    question: str,
+    runners: dict[str, Any] | None = None,
+    heartbeat_interval: float = 8.0,
+    timeouts: dict[str, float] | None = None,
+):
+    """Streaming variant: run tasks concurrently while emitting heartbeats.
+
+    Yields ``("step", {...})`` events and finally
+    ``("result", (outputs, timings))``. A task that exceeds its
+    specialist's timeout is reported as an error. The executor is shut down
+    without waiting, so a hung worker no longer blocks the response (the old
+    ``with ThreadPoolExecutor`` block waited on exit, defeating the timeout).
+    """
+    if not tasks:
+        yield ("result", ({}, {}))
+        return
+    runners = runners or _default_runners()
+    timeouts = timeouts or _SPECIALIST_TIMEOUT
+    results: dict[SpecialistTask, dict[str, Any]] = {}
+    durations: dict[SpecialistTask, float] = {}
+
+    pool = concurrent.futures.ThreadPoolExecutor(max_workers=min(_MAX_SPECIALIST_WORKERS, len(tasks)))
+    try:
+        started = time.perf_counter()
+        pending: dict[concurrent.futures.Future, SpecialistTask] = {}
+        for name, suburb in tasks:
+            pending[pool.submit(_timed_call, runners[name], {"suburb": suburb, "question": question})] = (
+                name,
+                suburb,
+            )
+        next_heartbeat = started + heartbeat_interval
+
+        while pending:
+            done, _ = concurrent.futures.wait(
+                list(pending),
+                timeout=min(0.5, heartbeat_interval),
+                return_when=concurrent.futures.FIRST_COMPLETED,
+            )
+            for future in done:
+                task = pending.pop(future)
+                results[task], durations[task] = future.result()
 
             now = time.perf_counter()
-            if now >= deadline:
-                future.cancel()
-                yield ("result", {"status": "error", "reason": f"{specialist_name} timed out after {timeout}s"})
-                return
+            elapsed = now - started
+            for future, task in list(pending.items()):
+                name = task[0]
+                limit = timeouts.get(name, 30)
+                if elapsed >= limit:
+                    future.cancel()
+                    pending.pop(future)
+                    results[task] = {"status": "error", "reason": f"{name} timed out after {limit}s"}
+                    durations[task] = elapsed * 1000.0
 
-            if now >= next_heartbeat:
-                yield ("step", {"text": f"{label} · {suburb}…"})
+            if pending and now >= next_heartbeat:
+                name, suburb = next(iter(pending.values()))
+                label = _SPECIALIST_LABELS.get(name, name)
+                yield _step(f"{label} · {suburb}…")
                 next_heartbeat = now + heartbeat_interval
+    finally:
+        pool.shutdown(wait=False, cancel_futures=True)
+
+    yield ("result", _group_results(tasks, results, durations))
 
 
 def _build_final_result(
@@ -658,42 +811,23 @@ def run_query_stream(
     specialist_outputs: dict[str, Any] = {}
     specialist_timings: dict[str, float] = {}
 
-    for specialist_name in ["crime", "sentiment", "gis"]:
-        if specialist_name in categories and suburbs:
-            label = _SPECIALIST_LABELS[specialist_name]
-            run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
-            specialist_started = time.perf_counter()
-            specialist_outputs[specialist_name] = {}
-            for suburb in suburbs:
-                yield _step(f"{label} · {suburb}")
-                for event_type, data in _run_specialist_with_heartbeat(
-                    run_func, {"suburb": suburb, "question": question}, specialist_name, suburb
-                ):
-                    if event_type == "result":
-                        specialist_outputs[specialist_name][suburb] = data
-                    else:
-                        yield (event_type, data)
-            specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
+    tasks = _plan_specialist_tasks(categories, suburbs)
+    # Announce every task up front, since they now start together.
+    for name, suburb in tasks:
+        yield _step(f"{_SPECIALIST_LABELS[name]} · {suburb}")
+    for event_type, data in _stream_specialists_parallel(tasks, question):
+        if event_type == "result":
+            parallel_outputs, parallel_timings = data
+            specialist_outputs.update(parallel_outputs)
+            specialist_timings.update(parallel_timings)
+        else:
+            yield (event_type, data)
 
     if "comparator" in categories and len(suburbs) >= 2:
         comparator_started = time.perf_counter()
-        for specialist_name in ["crime", "sentiment", "gis"]:
-            if specialist_name not in specialist_outputs:
-                label = _SPECIALIST_LABELS[specialist_name]
-                for suburb in suburbs[:2]:
-                    yield _step(f"{label} · {suburb}")
-                specialist_started = time.perf_counter()
-                run_func = {"crime": run_crime, "sentiment": run_sentiment, "gis": run_gis}[specialist_name]
-                specialist_outputs[specialist_name] = {}
-                for suburb in suburbs[:2]:
-                    specialist_outputs[specialist_name][suburb] = run_func(
-                        {"suburb": suburb, "question": question}
-                    )
-                specialist_timings[specialist_name] = (time.perf_counter() - specialist_started) * 1000.0
         yield _step(f"Comparing {suburbs[0]} vs {suburbs[1]}…")
-        compare_cats = [c for c in categories if c in ("gis", "crime", "sentiment")] or ["gis", "crime", "sentiment"]
         specialist_outputs["comparator"] = run_comparator(
-            {"suburb_a": suburbs[0], "suburb_b": suburbs[1], "categories": compare_cats}
+            _comparator_input(categories, suburbs, specialist_outputs)
         )
         specialist_timings["comparator"] = (time.perf_counter() - comparator_started) * 1000.0
 
