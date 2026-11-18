@@ -87,18 +87,44 @@ def _prune_sentiment(result: dict[str, Any]) -> dict[str, Any]:
     return {k: v for k, v in result.items() if k not in _SENTIMENT_PRUNE_KEYS}
 
 
-def _query_comparator_impl(suburb_a: str, suburb_b: str, categories: list[str]) -> dict[str, Any]:
-    """Internal implementation: compare two suburbs category by category."""
+def _resolve_result(
+    category: str,
+    suburb: str,
+    precomputed: dict[str, Any] | None,
+) -> dict[str, Any]:
+    """Reuse a specialist result computed earlier this turn, else run the impl.
+
+    Re-running the sentiment impl here would repeat its full agentic RAG loop
+    (several LLM calls) for a suburb the specialist pass already covered.
+    """
+    by_suburb = (precomputed or {}).get(category)
+    if isinstance(by_suburb, dict):
+        result = by_suburb.get(suburb)
+        if isinstance(result, dict) and result.get("status") != "error":
+            return result
+    return _IMPL_MAP[category](suburb)
+
+
+def _query_comparator_impl(
+    suburb_a: str,
+    suburb_b: str,
+    categories: list[str],
+    precomputed: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """Internal implementation: compare two suburbs category by category.
+
+    ``precomputed`` maps category -> {suburb: specialist result}; matching
+    entries are reused instead of being recomputed.
+    """
     data_categories = [c for c in categories if c in _IMPL_MAP]
 
     comparison: dict[str, Any] = {}
     winner: dict[str, str] = {}
 
     for category in data_categories:
-        impl = _IMPL_MAP[category]
         try:
-            result_a = impl(suburb_a)
-            result_b = impl(suburb_b)
+            result_a = _resolve_result(category, suburb_a, precomputed)
+            result_b = _resolve_result(category, suburb_b, precomputed)
             # Prune heavy audit fields from sentiment to keep context small
             if category == "sentiment":
                 result_a = _prune_sentiment(result_a)
@@ -145,6 +171,7 @@ def run(input_data: dict[str, Any]) -> dict[str, Any]:
         suburb_a=str(input_data.get("suburb_a", "")),
         suburb_b=str(input_data.get("suburb_b", "")),
         categories=list(input_data.get("categories", [])),
+        precomputed=input_data.get("precomputed"),
     )
 
 

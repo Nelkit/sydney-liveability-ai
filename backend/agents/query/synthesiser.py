@@ -24,6 +24,7 @@ from crewai.tools import tool
 from sqlalchemy import select
 
 from config import get_agent_llm, settings
+from core.cache import ttl_cached
 from db.chromadb import REDDIT_COLLECTION, query_chunks
 from db.models import OsmScore, Suburb, TransportScore
 from db.postgres import SessionLocal
@@ -139,6 +140,11 @@ def _format_all_agents_debug(agent_outputs: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+# Output length drives synthesiser latency more than anything else. This word
+# budget keeps answers to the "teaser" size the prompts already describe.
+_MAX_ANSWER_WORDS = 150
+
+
 def _scale(value: float | None) -> int | None:
     """Scale a 0–1 score to 0–100 integer. Returns None when value is None."""
     if value is None:
@@ -146,12 +152,20 @@ def _scale(value: float | None) -> int | None:
     return round(float(value) * 100)
 
 
+@ttl_cached(
+    maxsize=1000,
+    ttl=settings.static_data_cache_ttl_seconds,
+    key=lambda suburbs_list=None: tuple(sorted(suburbs_list)) if suburbs_list else None,
+)
 def _build_context_from_db(suburbs_list: list[str] | None = None) -> dict[str, Any]:
     """Retrieve suburb data from DB for synthesis context.
 
     All scores that arrive from the DB on a 0–1 scale are converted to 0–100
     integers so the synthesiser LLM cites numbers consistent with the dashboard.
     Filters to requested suburbs if provided, otherwise returns top suburbs.
+
+    Cached per suburb set: facilities, transport and OSM tables change at most
+    quarterly. The cache hands out copies, so callers may mutate the result.
     """
     with SessionLocal() as session:
         suburbs_query = select(Suburb)
@@ -421,6 +435,9 @@ Be specific with numbers and metrics. Keep the answer concise (2-3 sentences max
 SCORES: All scores are on a 0–100 scale — cite them as whole numbers. Express sentiment scores as percentages.
 Use **bold** for key metrics. Do NOT invent data."""
 
+    if scenario != "out_of_scope":
+        system += f"\nLENGTH: Answer in at most {_MAX_ANSWER_WORDS} words and cite evidence inline."
+
     prompt = f"""{system}
 
 User question: {question}
@@ -521,7 +538,7 @@ def _query_synthesiser_impl(payload: dict[str, Any]) -> dict[str, Any]:
         )
 
         # Call LLM using the synthesiser agent configuration.
-        llm = get_agent_llm("synthesiser")
+        llm = get_agent_llm("synthesiser", max_tokens=settings.synthesiser_max_tokens)
         response = llm.call(synthesis_prompt)
 
         answer = str(response).strip() if response else "Unable to generate response"

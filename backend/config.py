@@ -36,6 +36,12 @@ class Settings(BaseSettings):
     chromadb_path: str = "./data/chromadb"
     frontend_url: str = "http://localhost:3000"
     synthesis_debug_mode: str = "off"
+    # Output-token ceiling for the synthesiser only. Other agents return JSON
+    # payloads that must not be truncated, so they keep the provider default.
+    synthesiser_max_tokens: int = 600
+    # TTLs in seconds; 0 disables the cache (useful while iterating on prompts).
+    answer_cache_ttl_seconds: int = 24 * 3600
+    static_data_cache_ttl_seconds: int = 24 * 3600
 
 
 settings = Settings()
@@ -80,34 +86,50 @@ def _get_agent_model_overrides() -> dict[str, str]:
 
 
 @lru_cache(maxsize=16)
-def get_llm(provider: str | None = None, model: str | None = None) -> LLM:
-    """Return a CrewAI LLM using env defaults, with optional per-agent override."""
+def get_llm(
+    provider: str | None = None,
+    model: str | None = None,
+    max_tokens: int | None = None,
+) -> LLM:
+    """Return a CrewAI LLM using env defaults, with optional per-agent override.
+
+    ``max_tokens`` caps generated tokens; ``None`` keeps the provider default.
+    """
     chosen_provider = _normalise_provider(provider)
     chosen_model = model or settings.llm_model
+    extra: dict[str, int] = {"max_tokens": max_tokens} if max_tokens else {}
 
     if chosen_provider == "openrouter":
         return LLM(
             model=f"openrouter/{chosen_model}",
             base_url="https://openrouter.ai/api/v1",
             api_key=_require_api_key(settings.openrouter_api_key, "openrouter"),
+            **extra,
         )
     if chosen_provider == "anthropic":
         return LLM(
             model=f"anthropic/{chosen_model}",
             api_key=_require_api_key(settings.anthropic_api_key, "anthropic"),
+            **extra,
         )
     if chosen_provider == "openai":
         return LLM(
             model=f"openai/{chosen_model}",
             api_key=_require_api_key(settings.openai_api_key, "openai"),
+            **extra,
         )
 
     msg = "Unsupported LLM provider. Use openrouter, anthropic, or openai."
     raise ValueError(msg)
 
 
-def get_agent_llm(agent_name: str, provider: str | None = None, model: str | None = None) -> LLM:
+def get_agent_llm(
+    agent_name: str,
+    provider: str | None = None,
+    model: str | None = None,
+    max_tokens: int | None = None,
+) -> LLM:
     """Return the LLM for a specific agent, falling back to the shared default."""
     agent_key = agent_name.strip().lower()
     resolved_model = model or _get_agent_model_overrides().get(agent_key) or settings.llm_model
-    return get_llm(provider=provider, model=resolved_model)
+    return get_llm(provider=provider, model=resolved_model, max_tokens=max_tokens)

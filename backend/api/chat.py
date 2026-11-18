@@ -11,10 +11,51 @@ from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field
 
+from config import settings
+from core.cache import MISSING, TTLCache, answer_cache_key
 from crews.query_crew import run_query, run_query_stream
 
 
 router = APIRouter(prefix="/api", tags=["chat"])
+
+
+# ---------------------------------------------------------------------------
+# Repeated-question cache
+# ---------------------------------------------------------------------------
+
+# Visitors repeat the suggested questions, so a full pipeline response is
+# cached by (normalised question, weights) and shared by /chat and
+# /chat/stream. Restarting the server clears it.
+_answer_cache = TTLCache(maxsize=500, ttl=settings.answer_cache_ttl_seconds)
+
+# Reasons that mean a specialist degraded transiently (timeouts, crashes), as
+# opposed to a stable "this suburb has no data" answer worth caching.
+_TRANSIENT_REASON_MARKERS = ("timed out", "failed", "error")
+
+
+def _is_cacheable(response: dict[str, Any]) -> bool:
+    """Only cache complete answers; a transient failure must not stick for 24 h."""
+    if response.get("error") is not None:
+        return False
+    outputs = response.get("outputs")
+    if not isinstance(outputs, dict):
+        return True
+    for specialist_output in outputs.values():
+        if not isinstance(specialist_output, dict):
+            continue
+        results = [v for v in specialist_output.values() if isinstance(v, dict)] or [specialist_output]
+        for result in results:
+            if result.get("status") == "error":
+                return False
+            reason = str(result.get("reason") or "").lower()
+            if any(marker in reason for marker in _TRANSIENT_REASON_MARKERS):
+                return False
+    return True
+
+
+def _cache_answer(question: str, weights: dict[str, Any], response: dict[str, Any]) -> None:
+    if _is_cacheable(response):
+        _answer_cache.set(answer_cache_key(question, weights), response)
 
 
 # ---------------------------------------------------------------------------
@@ -114,7 +155,10 @@ def chat(payload: ChatRequest) -> dict[str, Any]:
         }
 
     try:
-        response = run_query(question, weights)
+        response = _answer_cache.get(answer_cache_key(question, weights))
+        if response is MISSING:
+            response = run_query(question, weights)
+            _cache_answer(question, weights, response)
         result: dict[str, Any] = {
             "answer": response.get("answer", "I could not process that question right now."),
             "sources": response.get("sources", []),
@@ -219,7 +263,13 @@ def chat_stream(payload: ChatRequest) -> StreamingResponse:
             return
 
         try:
+            cached = _answer_cache.get(answer_cache_key(question, weights))
+            if cached is not MISSING:
+                yield _sse("done", cached)
+                return
             for event_type, data in run_query_stream(question, weights):
+                if event_type == "done" and isinstance(data, dict):
+                    _cache_answer(question, weights, data)
                 yield _sse(event_type, data)
         except Exception:
             yield _sse("error", {"message": "I could not process that question right now. Please try again."})

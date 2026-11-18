@@ -361,13 +361,17 @@ def _query_sentiment_impl(
         f"Summarise resident sentiment in {suburb} across relevant liveability dimensions."
     )
 
+    # Specialists run concurrently (one thread per suburb), so each call gets
+    # its own Agent instance instead of sharing the module-level one across
+    # simultaneous crew.kickoff() calls.
+    agent = sentiment_agent.copy()
     task = Task(
         description=_build_task_description(suburb, aspect, effective_question),
         expected_output="A single JSON object with keys 'aspects' and 'sources'.",
-        agent=sentiment_agent,
+        agent=agent,
     )
     crew = Crew(
-        agents=[sentiment_agent],
+        agents=[agent],
         tasks=[task],
         process=Process.sequential,
         verbose=False,

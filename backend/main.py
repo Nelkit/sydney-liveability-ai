@@ -1,6 +1,10 @@
 """FastAPI entry point for Sydney Liveability Explorer backend."""
 
+import logging
 import os
+import time
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -53,7 +57,44 @@ Each event has the form `event: <type>\\ndata: <json>\\n\\n`.
 Event types: `step` (progress update) · `heartbeat` (keep-alive) · `done` (final payload) · `error`.
 """
 
+logger = logging.getLogger("uvicorn.error")
+
+
+def _warm_up() -> None:
+    """Pay one-off loading costs at boot instead of on the first visitor's request.
+
+    Each step is independent and best-effort: if one fails (e.g. the database
+    is unreachable at boot) the server still starts and that resource loads
+    lazily on first use, exactly as before.
+    """
+    from core.embeddings import get_embedder
+    from core.scoring import _get_raw
+    from db.chromadb import initialize_collection
+
+    steps = (
+        ("MiniLM embedder", get_embedder),
+        ("ChromaDB collection", initialize_collection),
+        # Fills core.scoring._RAW_CACHE so compute_liveability_scores() stops
+        # querying the database (it runs twice per chat turn).
+        ("liveability score components", lambda: _get_raw(None)),
+    )
+    for label, step in steps:
+        started = time.perf_counter()
+        try:
+            step()
+            logger.info("Warm-up: %s ready in %.1fs", label, time.perf_counter() - started)
+        except Exception as exc:  # noqa: BLE001 - startup must never crash on warm-up
+            logger.warning("Warm-up: %s failed (%s); it will load on first use.", label, exc)
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
+    _warm_up()
+    yield
+
+
 app = FastAPI(
+    lifespan=lifespan,
     title="Sydney Liveability AI",
     description=_DESCRIPTION,
     version="0.2.0",
